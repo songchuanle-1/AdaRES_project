@@ -25,5 +25,13 @@
     "finite": true,
     "predict_keys_complete": true
   },
+  "run": {
+    "launcher_pid": 19792,
+    "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b0_20260917_044203.log",
+    "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b0_res/20260917_044215",
+    "dataloader": "2 GPUs x batch 1 = effective batch 2 (published recipe)",
+    "throughput_iter_per_second": 2.4,
+    "estimated_hours_for_20_epochs": 10.7
+  },
   "pending": "first-epoch ScanRefer validation mIoU"
 }
