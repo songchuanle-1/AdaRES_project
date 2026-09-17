@@ -1,0 +1,36 @@
+# AdaRES_project — self-authored 3D-RES baseline
+servers:
+  local:
+    host: 192.168.1.175
+    user: songcl
+    role: workstation
+    gpu: {count: 0, type: none}
+    remote_code_root: D:/project/AdaRES_project/AdaRES
+    data_root: D:/data/
+    work_dir: D:/project/AdaRES_project/Checkpoints
+
+  server-2:
+    host: 192.168.1.163
+    user: songcl
+    role: gpu_server
+    allowed_gpus: [0, 1]
+    max_tasks_per_gpu: 1
+    gpu: {count: 2, type: RTX3090}
+    remote_code_root: /bak_home/songcl/Project/AdaRES_project/AdaRES
+    conda_source: /home/dl01/anaconda3/etc/profile.d/conda.sh
+    conda_env: project_cluster
+    python: /home/songcl/.conda/envs/project_cluster/bin/python
+    site_packages: /home/songcl/.conda/envs/project_cluster/lib/python3.8/site-packages
+    pointnet_egg: /home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg
+    data_root: /bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/
+    work_dir: /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints
+
+  server-6:
+    host: 100.64.3.28
+    user: songcl
+    role: gpu_server
+    allowed_gpus: []
+    gpu: {count: 8, type: H100-80GB}
+    remote_code_root: /data3/songcl/Project/AdaRES_project/AdaRES
+    data_root: /data3/songcl/data/data_cluster/
+    work_dir: /data3/songcl/Project/AdaRES_project/AdaRES_checkpoints

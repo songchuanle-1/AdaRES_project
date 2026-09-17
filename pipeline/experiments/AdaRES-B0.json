@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-B0",
+  "label": "Metric-aligned occupancy-scored 3D-RES baseline",
+  "status": "training",
+  "date": "2026-09-17",
+  "server": "server-2",
+  "gpus": [0, 1],
+  "config": "configs_song/model_paper5/adares_b0_res.yaml",
+  "code_root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+  "epochs": 20,
+  "seed": 1999,
+  "design": {
+    "encoder": "released SPFormer sparse U-Net backbone (loaded with shape-compatible filter)",
+    "text": "RoBERTa token features",
+    "decoder": "6 alternating language/scene/query attention layers",
+    "occupancy_field": "language-conditioned per-superpoint target occupancy",
+    "query_score": "point-weighted soft IoU between the query's own mask and the occupancy field",
+    "selection": "argmax of the metric-aligned score",
+    "ranking_loss": "pairwise logistic ranking on true per-query IoU, weighted by |IoU difference|"
+  },
+  "smoke": {
+    "scenes": 2,
+    "losses": [30.353107452392578, 40.20387268066406],
+    "gradient_norms": [381.0605773925781, 589.9552001953125],
+    "finite": true,
+    "predict_keys_complete": true
+  },
+  "pending": "first-epoch ScanRefer validation mIoU"
+}

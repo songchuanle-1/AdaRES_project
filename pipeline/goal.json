@@ -1,0 +1,26 @@
+{
+  "metric": {
+    "name": "mIoU",
+    "target": 0.515,
+    "dataset": "ScanRefer"
+  },
+  "baseline_experiment_id": "AdaRES-B0",
+  "description": "AdaRES-B0: a self-authored 3D referring expression segmentation baseline whose per-query confidence is the point-weighted soft IoU between the query's own mask and a language-conditioned target-occupancy field, trained with an explicit pairwise IoU ranking loss.",
+  "constraints": [
+    "Use server-2 GPUs 0 and 1 only; never use server-6.",
+    "Train from the released SPFormer sparse-UNet backbone; the decoder is authored in this project.",
+    "Report mIoU, Acc@0.25, Acc@0.5, active queries, latency, and peak memory.",
+    "Do not tune thresholds, temperatures, loss weights, feature subsets, or training epochs on ScanRefer validation."
+  ],
+  "banned": [
+    "Do not use server-6.",
+    "Do not report the released b005/CFNet checkpoints as AdaRES-B0 results.",
+    "Do not scan the ranking margin or the occupancy loss weight on validation."
+  ],
+  "pipeline_policy": {
+    "steady_ticks_before_design": 2,
+    "fill_to_capacity": false,
+    "design_buffer": 0,
+    "max_candidates_per_design_tick": 1
+  }
+}
