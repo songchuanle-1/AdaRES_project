@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-B0",
   "label": "Metric-aligned occupancy-scored 3D-RES baseline",
-  "status": "training",
+  "status": "closed_low_metric",
   "date": "2026-09-17",
   "server": "server-2",
   "gpus": [0, 1],
@@ -33,5 +33,20 @@
     "throughput_iter_per_second": 2.4,
     "estimated_hours_for_20_epochs": 10.7
   },
-  "pending": "first-epoch ScanRefer validation mIoU"
+  "final": {
+    "best_miou": 0.333,
+    "best_acc_025": 0.490,
+    "best_acc_05": 0.260,
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b0_res/20260917_044215/best.pth",
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b0_20260917_044203.log"
+  },
+  "diagnostic": {
+    "expressions": 124,
+    "top1_miou": 0.201523439258322,
+    "oracle_miou": 0.8469504528949338,
+    "oracle_gap": 0.6454270136366118,
+    "oracle_rank1_count": 4,
+    "conclusion": "Mask candidates are strong; the metric-aligned occupancy score is a poor query-ranking function."
+  },
+  "conclusion": "AdaRES-B0 trained end-to-end and produced strong candidate masks, but its metric-aligned occupancy score selected the wrong query. Close this baseline revision and rebuild with a standard learned indicator before adding metric-aligned evidence."
 }

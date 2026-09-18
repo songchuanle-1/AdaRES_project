@@ -30,7 +30,12 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
 
 ## Current Status
 
-- 20-epoch training running on server-2 GPUs 0 and 1, seed 1999, effective
-  batch size 2, grad clip 0.1, AdamW lr 1e-4 (the published recipe).
-- Smoke test before launch: finite loss and gradients, full predict keys.
+- AdaRES-B0 completed 20 epochs at mIoU 0.333 and is closed as a low-metric
+  baseline revision. Its masks were strong (all-query oracle 0.847 on 124
+  validation expressions) but its metric-aligned ranking score was poor.
+- AdaRES-B1 faithful standard-indicator baseline is running on server-2
+  GPUs 0 and 1, 20 epochs, seed 1999.
+- AdaRES-B2 metric-calibrated indicator is queued behind a gated watchdog:
+  after B1 exits, the watcher runs a one-scene smoke test and only then
+  launches B2 on the same two GPUs.
 - Target: ScanRefer mIoU >= 0.515.

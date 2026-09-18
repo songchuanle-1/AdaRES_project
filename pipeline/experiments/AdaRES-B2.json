@@ -1,0 +1,20 @@
+{
+  "id": "AdaRES-B2",
+  "label": "Metric-calibrated indicator",
+  "status": "queued_via_watcher",
+  "date": "2026-09-18",
+  "server": "server-2",
+  "gpus": [0, 1],
+  "config": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
+  "code_package": "ipdn/model_paper5/adares_b2_metric_indicator",
+  "epochs": 20,
+  "seed": 1999,
+  "design": {
+    "parent": "AdaRES-B1",
+    "change": "Supervise the indicator head with the matched query's true IoU instead of a hard 0/1 label.",
+    "rationale": "The B0 diagnostic showed a large oracle gap caused by ranking. This keeps the strong standard mask generator and directly calibrates the ranking target to the evaluation metric.",
+    "fallback": "If the calibration does not improve top-1 mIoU, do not tune its coefficient; return to the standard indicator."
+  },
+  "watchdog": "scripts/watch_b1_then_b2.sh",
+  "pending": "automatic smoke and launch after AdaRES-B1 exits"
+}

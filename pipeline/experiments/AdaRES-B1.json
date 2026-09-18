@@ -1,0 +1,25 @@
+{
+  "id": "AdaRES-B1",
+  "label": "Faithful standard-indicator baseline",
+  "status": "training",
+  "date": "2026-09-18",
+  "server": "server-2",
+  "gpus": [0, 1],
+  "config": "configs_song/model_paper5/adares_b1_standard_res.yaml",
+  "code_package": "ipdn/model_paper5/adares_b1_standard",
+  "epochs": 20,
+  "seed": 1999,
+  "design": {
+    "encoder": "released SPFormer sparse U-Net backbone (shape-compatible pretrain load)",
+    "decoder": "standard 6-layer query decoder",
+    "selection": "learned two-way indicator embedding",
+    "loss": "Hungarian matching BCE/Dice plus the published indicator and semantic losses",
+    "purpose": "Reproduce a strong ScanRefer baseline inside AdaRES_project before adding new mechanisms."
+  },
+  "run": {
+    "launcher_pid": 60235,
+    "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b1_20260918_010841.log",
+    "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res"
+  },
+  "pending": "first-epoch ScanRefer validation mIoU"
+}
