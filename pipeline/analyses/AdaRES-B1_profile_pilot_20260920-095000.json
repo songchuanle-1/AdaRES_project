@@ -1,0 +1,16 @@
+{
+  "active_query_definition": "1/sum(w_q^2), w_q=s_q/sum_j(s_j), where s_q is the indicator positive-class probability",
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+  "config": "configs_song/model_paper5/adares_b1_standard_res.yaml",
+  "effective_active_queries_mean": 22.276963518725502,
+  "effective_active_queries_std": 10.106386603724147,
+  "expressions": 108,
+  "latency_ms_per_expression_mean": 25.77255074693649,
+  "latency_ms_per_expression_median": 13.883813575375825,
+  "peak_memory_mib": 2161.02685546875,
+  "scenes": 4,
+  "seed": 1999,
+  "subset_miou": 0.3111327310778304,
+  "subset_spmiou": 0.2667969336853949,
+  "scope": "Profiler admission pilot; do not compare subset accuracy to full-validation metrics."
+}

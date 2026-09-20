@@ -36,6 +36,11 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
 - AdaRES-B1 completed 20 epochs. Best ScanRefer mIoU is 0.502 at epoch 18,
   with Acc@0.50 0.553, Acc@0.25 0.610, and spmIOU 0.467. It is now the
   official project baseline and is 0.013 below the target.
+- A fixed checkpoint profiler now reports threshold-free effective active
+  queries, latency per expression, and peak allocated CUDA memory. Its B1
+  4-scene pilot (108 expressions) measured 22.277 effective queries,
+  25.773 ms/expression mean latency, and 2161.027 MiB peak memory. Pilot
+  subset mIoU is not used in place of full-validation mIoU.
 - The original B2 watchdog stopped safely because the smoke harness expected
   B0-only `occupancy_loss` and `iou_ranking_loss` keys. The harness was made
   model-agnostic and the real-batch smoke then passed.
