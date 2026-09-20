@@ -17,7 +17,7 @@ from ipdn.utils import get_root_logger
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="AdaRES-B0 real-batch smoke test."
+        description="AdaRES real-batch smoke test."
     )
     parser.add_argument("config")
     parser.add_argument("--output-dir", required=True)
@@ -81,21 +81,17 @@ def main():
         )
         losses.append(float(loss.detach().item()))
         gradients.append(float(gradient.detach().item()))
+        detached_terms = {
+            key: round(float(value.detach().item()), 4)
+            for key, value in terms.items()
+        }
         logger.info(
-            "scene=%d loss=%.6f grad=%.6f occupancy=%.6f rank=%.6f",
+            "scene=%d loss=%.6f grad=%.6f",
             index,
             losses[-1],
             gradients[-1],
-            float(terms["occupancy_loss"].detach().item()),
-            float(terms["iou_ranking_loss"].detach().item()),
         )
-        logger.info(
-            "loss terms: %s",
-            {
-                key: round(float(value.detach().item()), 4)
-                for key, value in terms.items()
-            },
-        )
+        logger.info("loss terms: %s", detached_terms)
 
     model.eval()
     batch = dataset.collate_fn([dataset[0]])
