@@ -1,4 +1,5 @@
 import argparse
+import importlib
 import os
 from pathlib import Path
 import sys
@@ -11,7 +12,6 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from ipdn.dataset import build_dataset
-from ipdn import IPDN
 from ipdn.utils import get_root_logger
 
 
@@ -24,6 +24,11 @@ def parse_args():
     parser.add_argument("--gpu-id", type=int, default=0)
     parser.add_argument("--scenes", type=int, default=2)
     parser.add_argument("--seed", type=int, default=1999)
+    parser.add_argument(
+        "--model-module",
+        default="ipdn",
+        help="Module that exports IPDN, e.g. ipdn.model_paper5.variant.",
+    )
     return parser.parse_args()
 
 
@@ -42,6 +47,8 @@ def main():
         log_file=os.path.join(args.output_dir, "smoke.log")
     )
     dataset = build_dataset(data_cfg, logger)
+    model_module = importlib.import_module(args.model_module)
+    IPDN = model_module.IPDN
     model = IPDN(**cfg.model)
     model = model.cuda()
     model.train()
