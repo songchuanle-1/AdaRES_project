@@ -1,8 +1,8 @@
 {
   "id": "AdaRES-B2",
   "label": "Metric-calibrated indicator",
-  "status": "queued_via_watcher",
-  "date": "2026-09-18",
+  "status": "training",
+  "date": "2026-09-20",
   "server": "server-2",
   "gpus": [0, 1],
   "config": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
@@ -16,5 +16,20 @@
     "fallback": "If the calibration does not improve top-1 mIoU, do not tune its coefficient; return to the standard indicator."
   },
   "watchdog": "scripts/watch_b1_then_b2.sh",
-  "pending": "automatic smoke and launch after AdaRES-B1 exits"
+  "smoke": {
+    "status": "passed_after_smoke_harness_fix",
+    "scenes": 1,
+    "loss": 22.316896438598633,
+    "gradient_norm": 249.0110626220703,
+    "piou": 0.008361203595995903,
+    "spiou": 0.011904762126505375,
+    "elapsed_seconds": 10.931209513917565
+  },
+  "run": {
+    "launcher_pid": 36242,
+    "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b2_20260919_204142.log",
+    "started_at": "2026-09-19 20:41:42 -0400",
+    "gpus": [0, 1]
+  },
+  "pending": "first ScanRefer validation after epoch 1"
 }

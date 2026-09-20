@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-B1",
   "label": "Faithful standard-indicator baseline",
-  "status": "training",
+  "status": "done_complete",
   "date": "2026-09-18",
   "server": "server-2",
   "gpus": [0, 1],
@@ -19,7 +19,17 @@
   "run": {
     "launcher_pid": 60235,
     "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b1_20260918_010841.log",
-    "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res"
+    "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854",
+    "finished_at": "2026-09-18 12:50:57 -0400"
   },
-  "pending": "first-epoch ScanRefer validation mIoU"
+  "final": {
+    "best_epoch": 18,
+    "best_miou": 0.502,
+    "best_acc_025": 0.610,
+    "best_acc_05": 0.553,
+    "best_spmiou": 0.467,
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+    "last_epoch_miou": 0.496
+  },
+  "conclusion": "The faithful standard-indicator implementation is a stable strong baseline, improving AdaRES-B0 by 0.169 mIoU and finishing 0.013 below the project target."
 }

@@ -33,9 +33,12 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
 - AdaRES-B0 completed 20 epochs at mIoU 0.333 and is closed as a low-metric
   baseline revision. Its masks were strong (all-query oracle 0.847 on 124
   validation expressions) but its metric-aligned ranking score was poor.
-- AdaRES-B1 faithful standard-indicator baseline is running on server-2
-  GPUs 0 and 1, 20 epochs, seed 1999.
-- AdaRES-B2 metric-calibrated indicator is queued behind a gated watchdog:
-  after B1 exits, the watcher runs a one-scene smoke test and only then
-  launches B2 on the same two GPUs.
+- AdaRES-B1 completed 20 epochs. Best ScanRefer mIoU is 0.502 at epoch 18,
+  with Acc@0.50 0.553, Acc@0.25 0.610, and spmIOU 0.467. It is now the
+  official project baseline and is 0.013 below the target.
+- The original B2 watchdog stopped safely because the smoke harness expected
+  B0-only `occupancy_loss` and `iou_ranking_loss` keys. The harness was made
+  model-agnostic and the real-batch smoke then passed.
+- AdaRES-B2 metric-calibrated indicator is training on server-2 GPUs 0 and 1.
+  Launcher PID 36242; log `train_adares_b2_20260919_204142.log`.
 - Target: ScanRefer mIoU >= 0.515.

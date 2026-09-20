@@ -4,8 +4,8 @@
     "target": 0.515,
     "dataset": "ScanRefer"
   },
-  "baseline_experiment_id": "AdaRES-B0",
-  "description": "AdaRES-B0: a self-authored 3D referring expression segmentation baseline whose per-query confidence is the point-weighted soft IoU between the query's own mask and a language-conditioned target-occupancy field, trained with an explicit pairwise IoU ranking loss.",
+  "baseline_experiment_id": "AdaRES-B1",
+  "description": "AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.",
   "constraints": [
     "Use server-2 GPUs 0 and 1 only; never use server-6.",
     "Train from the released SPFormer sparse-UNet backbone; the decoder is authored in this project.",
