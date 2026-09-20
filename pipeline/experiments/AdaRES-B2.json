@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-B2",
   "label": "Metric-calibrated indicator",
-  "status": "training",
+  "status": "done_complete",
   "date": "2026-09-20",
   "server": "server-2",
   "gpus": [0, 1],
@@ -30,7 +30,8 @@
     "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b2_20260919_204142.log",
     "started_at": "2026-09-19 20:41:42 -0400",
     "gpus": [0, 1],
-    "current_epoch": 4
+    "current_epoch": 20,
+    "finished_at": "2026-09-20 09:18:19 -0400"
   },
   "validation": {
     "epoch_1": {
@@ -58,5 +59,17 @@
       "sp_acc_05": 0.422
     }
   },
-  "pending": "subsequent validation trajectory and final best mIoU"
+  "final": {
+    "best_epoch": 19,
+    "best_miou": 0.505,
+    "best_acc_025": 0.607,
+    "best_acc_05": 0.555,
+    "best_spmiou": 0.471,
+    "best_sp_acc_025": 0.597,
+    "best_sp_acc_05": 0.525,
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/best.pth",
+    "last_epoch_miou": 0.497,
+    "last_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/last.pth"
+  },
+  "conclusion": "Metric-calibrated supervision improved B1 by 0.003 mIoU but remained 0.010 below the project target. The terminal TensorBoardX EOFError occurred after the final validation and last checkpoint save, so the run is classified as complete."
 }

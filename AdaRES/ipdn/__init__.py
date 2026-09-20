@@ -1,2 +1,2 @@
-# from ipdn.model_paper5.cf12_4_2 import IPDN
-from ipdn.model_paper5.adares_b0 import IPDN
+# AdaRES-B3: mask-evidence indicator
+from ipdn.model_paper5.adares_b3_mask_evidence import IPDN
