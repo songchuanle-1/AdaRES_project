@@ -30,7 +30,7 @@
     "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b2_20260919_204142.log",
     "started_at": "2026-09-19 20:41:42 -0400",
     "gpus": [0, 1],
-    "current_epoch": 2
+    "current_epoch": 3
   },
   "validation": {
     "epoch_1": {
@@ -40,6 +40,14 @@
       "spmiou": 0.300,
       "sp_acc_025": 0.419,
       "sp_acc_05": 0.315
+    },
+    "epoch_2": {
+      "miou": 0.380,
+      "acc_025": 0.479,
+      "acc_05": 0.418,
+      "spmiou": 0.352,
+      "sp_acc_025": 0.469,
+      "sp_acc_05": 0.385
     }
   },
   "pending": "subsequent validation trajectory and final best mIoU"

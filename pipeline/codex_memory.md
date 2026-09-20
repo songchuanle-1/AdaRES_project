@@ -47,7 +47,9 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
 - AdaRES-B2 metric-calibrated indicator is training on server-2 GPUs 0 and 1.
   Launcher PID 36242; log `train_adares_b2_20260919_204142.log`.
   Epoch 1 validation: mIoU 0.325, Acc@0.50 0.348, Acc@0.25 0.430,
-  spmIOU 0.300. It saved a best checkpoint and entered epoch 2.
+  spmIOU 0.300. Epoch 2 improved to mIoU 0.380, Acc@0.50 0.418,
+  Acc@0.25 0.479, and spmIOU 0.352. This is 0.024 below B1 at epoch 2,
+  but the +0.055 step indicates normal early convergence. It entered epoch 3.
 - AdaRES-B3 mask-evidence indicator is scientifically admitted and waiting.
   It changes the confidence information path, not a numeric setting: each
   query pools foreground and complementary background scene features through
