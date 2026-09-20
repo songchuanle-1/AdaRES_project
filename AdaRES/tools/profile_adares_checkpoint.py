@@ -68,7 +68,9 @@ def main():
     dataset = build_dataset(data_cfg, logger)
 
     model_module = importlib.import_module(args.model_module)
-    model = model_module.IPDN(**cfg.model).cuda().eval()
+    model = model_module.IPDN(**cfg.model)
+    model = model.cuda()
+    model.eval()
     load_checkpoint(model, args.checkpoint)
 
     latencies_ms = []
