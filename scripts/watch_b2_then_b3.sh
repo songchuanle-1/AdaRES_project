@@ -10,6 +10,26 @@ WATCH_LOG="$ROOT/logs/watch_b2_to_b3.log"
 B2_PID_FILE="$ROOT/logs/.pid_adares_b2"
 TARGET=0.515
 
+inspect_log() {
+  local log_file=$1
+  local metric_count
+  local best
+  metric_count=$(tr '\r' '\n' < "$log_file" | grep -c '^mIOU:' || true)
+  best=$(tr '\r' '\n' < "$log_file" |
+    awk '/^mIOU:/ {
+      value=$2
+      sub(/\.$/, "", value)
+      value += 0
+      if (value > best) best=value
+    } END {printf "%.3f", best+0}')
+  printf 'COUNT=%s BEST=%s\n' "$metric_count" "$best"
+}
+
+if [[ "${1:-}" == "--inspect-log" ]]; then
+  inspect_log "$2"
+  exit 0
+fi
+
 cd "$ROOT" || exit 1
 echo "[$(date '+%F %T')] watcher started" >> "$WATCH_LOG"
 
@@ -40,13 +60,17 @@ if [[ -z "${B2_LOG:-}" ]]; then
   echo "[$(date '+%F %T')] B2 log missing; abort" >> "$WATCH_LOG"
   exit 1
 fi
-METRIC_COUNT=$(tr '\r' '\n' < "$B2_LOG" | grep -c '^mIOU:' || true)
+INSPECTION=$(inspect_log "$B2_LOG")
+METRIC_COUNT=$(printf '%s\n' "$INSPECTION" | sed -n 's/^COUNT=\([0-9][0-9]*\) BEST=.*/\1/p')
+BEST=$(printf '%s\n' "$INSPECTION" | sed -n 's/^COUNT=[0-9][0-9]* BEST=\([0-9.][0-9.]*\)$/\1/p')
+if [[ -z "$METRIC_COUNT" || -z "$BEST" ]]; then
+  echo "[$(date '+%F %T')] failed to parse B2 metrics; abort" >> "$WATCH_LOG"
+  exit 1
+fi
 if [[ "$METRIC_COUNT" -lt 20 ]]; then
   echo "[$(date '+%F %T')] B2 ended with only $METRIC_COUNT/20 validations; abort for failure analysis" >> "$WATCH_LOG"
   exit 1
 fi
-BEST=$(tr '\r' '\n' < "$B2_LOG" |
-  awk '/^mIOU:/ {gsub(/\./, "", $2); value=$2/1000; if (value>best) best=value} END {printf "%.3f", best+0}')
 echo "[$(date '+%F %T')] B2 best mIoU=$BEST target=$TARGET" >> "$WATCH_LOG"
 
 if awk -v best="$BEST" -v target="$TARGET" 'BEGIN {exit !(best >= target)}'; then
