@@ -29,7 +29,18 @@
     "launcher_pid": 36242,
     "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b2_20260919_204142.log",
     "started_at": "2026-09-19 20:41:42 -0400",
-    "gpus": [0, 1]
+    "gpus": [0, 1],
+    "current_epoch": 2
   },
-  "pending": "first ScanRefer validation after epoch 1"
+  "validation": {
+    "epoch_1": {
+      "miou": 0.325,
+      "acc_025": 0.430,
+      "acc_05": 0.348,
+      "spmiou": 0.300,
+      "sp_acc_025": 0.419,
+      "sp_acc_05": 0.315
+    }
+  },
+  "pending": "subsequent validation trajectory and final best mIoU"
 }
