@@ -10,7 +10,7 @@
   "epochs": 20,
   "seed": 1999,
   "depends_on": ["AdaRES-B2"],
-  "launch_condition": "Launch only when AdaRES-B2 best mIoU is below 0.515.",
+  "launch_condition": "Launch only when AdaRES-B2 has 20 validation results and best mIoU is below 0.515.",
   "design": {
     "parent": "AdaRES-B1",
     "hypothesis": "The indicator needs direct evidence from its own predicted mask and selected scene content.",

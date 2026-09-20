@@ -9,7 +9,7 @@
         "status": "waiting",
         "label": "Mask-evidence indicator",
         "depends_on": ["AdaRES-B2"],
-        "launch_condition": "AdaRES-B2 best mIoU < 0.515"
+        "launch_condition": "AdaRES-B2 completed 20 validations and best mIoU < 0.515"
       }
     ]
   }

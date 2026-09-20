@@ -40,6 +40,11 @@ if [[ -z "${B2_LOG:-}" ]]; then
   echo "[$(date '+%F %T')] B2 log missing; abort" >> "$WATCH_LOG"
   exit 1
 fi
+METRIC_COUNT=$(tr '\r' '\n' < "$B2_LOG" | grep -c '^mIOU:' || true)
+if [[ "$METRIC_COUNT" -lt 20 ]]; then
+  echo "[$(date '+%F %T')] B2 ended with only $METRIC_COUNT/20 validations; abort for failure analysis" >> "$WATCH_LOG"
+  exit 1
+fi
 BEST=$(tr '\r' '\n' < "$B2_LOG" |
   awk '/^mIOU:/ {gsub(/\./, "", $2); value=$2/1000; if (value>best) best=value} END {printf "%.3f", best+0}')
 echo "[$(date '+%F %T')] B2 best mIoU=$BEST target=$TARGET" >> "$WATCH_LOG"

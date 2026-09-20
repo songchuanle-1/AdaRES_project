@@ -47,7 +47,8 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
   It changes the confidence information path, not a numeric setting: each
   query pools foreground and complementary background scene features through
   its own soft mask. Module gradients and a real ScanRefer scene smoke passed.
-  The conditional watcher launches B3 only if B2 finishes below mIoU 0.515.
+  The conditional watcher launches B3 only if B2 records all 20 validations
+  and finishes below mIoU 0.515. An early exit is reserved for failure analysis.
 - This Codex thread has an active native background goal. It automatically
   continues the research loop without user prompts or an hourly scheduler:
   monitor the current run, perform terminal analysis and evidence-based repair,
