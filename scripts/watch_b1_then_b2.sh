@@ -3,8 +3,8 @@
 set -u
 
 ROOT=/bak_home/songcl/Project/AdaRES_project/AdaRES
-PY=/home/songcl/.conda/envs/project_cluster/bin/python
-SITE=/home/songcl/.conda/envs/project_cluster/lib/python3.8/site-packages
+PY=/home/songcl/.conda/envs/adares_project/bin/python
+SITE=/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages
 EGG=/home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg
 LOG="$ROOT/logs/watch_b1_to_b2.log"
 cd "$ROOT" || exit 1

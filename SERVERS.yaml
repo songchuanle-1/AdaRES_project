@@ -18,9 +18,9 @@ servers:
     gpu: {count: 2, type: RTX3090}
     remote_code_root: /bak_home/songcl/Project/AdaRES_project/AdaRES
     conda_source: /home/dl01/anaconda3/etc/profile.d/conda.sh
-    conda_env: project_cluster
-    python: /home/songcl/.conda/envs/project_cluster/bin/python
-    site_packages: /home/songcl/.conda/envs/project_cluster/lib/python3.8/site-packages
+    conda_env: adares_project
+    python: /home/songcl/.conda/envs/adares_project/bin/python
+    site_packages: /home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages
     pointnet_egg: /home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg
     data_root: /bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/
     work_dir: /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints
