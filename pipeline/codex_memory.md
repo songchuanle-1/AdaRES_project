@@ -41,4 +41,8 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
   model-agnostic and the real-batch smoke then passed.
 - AdaRES-B2 metric-calibrated indicator is training on server-2 GPUs 0 and 1.
   Launcher PID 36242; log `train_adares_b2_20260919_204142.log`.
+- The `AdaRES Research Loop` hourly heartbeat is active. It stays quiet on
+  unchanged healthy runs, performs terminal analysis and one evidence-based
+  repair when needed, and maintains one scientifically admitted successor
+  candidate so released GPUs can be used without waiting for a user prompt.
 - Target: ScanRefer mIoU >= 0.515.

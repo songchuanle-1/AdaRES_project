@@ -18,8 +18,8 @@
     "Do not scan the ranking margin or the occupancy loss weight on validation."
   ],
   "pipeline_policy": {
-    "steady_ticks_before_design": 2,
-    "fill_to_capacity": false,
+    "steady_ticks_before_design": 1,
+    "fill_to_capacity": true,
     "design_buffer": 0,
     "max_candidates_per_design_tick": 1
   }
