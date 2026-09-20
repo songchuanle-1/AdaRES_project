@@ -41,8 +41,13 @@ def effective_query_count(scores):
 def load_checkpoint(model, checkpoint_path):
     checkpoint = torch.load(checkpoint_path, map_location="cpu")
     state = checkpoint.get("model", checkpoint)
-    result = model.load_state_dict(state, strict=True)
-    if result.missing_keys or result.unexpected_keys:
+    result = model.load_state_dict(state, strict=False)
+    allowed_unexpected = {
+        "text_encoder.embeddings.position_ids",
+        "text_encoder.embeddings.token_type_ids",
+    }
+    unexpected = set(result.unexpected_keys)
+    if result.missing_keys or unexpected - allowed_unexpected:
         raise RuntimeError(
             f"Checkpoint mismatch: missing={result.missing_keys}, "
             f"unexpected={result.unexpected_keys}"
