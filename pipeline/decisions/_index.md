@@ -6,3 +6,4 @@
 | 2026-09-18 01:20:00 | [route_change](20260918-012000_route_change.md) | How to avoid another idle period after B1? | Deploy a gated watchdog that smoke-tests and launches B2 after B1 |
 | 2026-09-20 09:14:44 | [other](20260920-091444_other.md) | Did the failed B2 smoke invalidate the model? | Fix the model-agnostic smoke harness, revalidate, and launch B2 |
 | 2026-09-20 09:20:00 | [manual](20260920-092000_manual.md) | Should new experiments require a user message? | Activate native background goal and successor queue replenishment |
+| 2026-09-20 09:37:08 | [next_batch](20260920-093708_next_batch.md) | What successor follows B2 if the target remains unmet? | Admit B3 mask-evidence indicator with conditional automatic launch |

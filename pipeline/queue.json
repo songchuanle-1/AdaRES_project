@@ -2,6 +2,15 @@
   "patience": 10,
   "min_epochs": 15,
   "gpu_queues": {
-    "server-2": []
+    "server-2": [
+      {
+        "id": "AdaRES-B3",
+        "config": "configs_song/model_paper5/adares_b3_mask_evidence_res.yaml",
+        "status": "waiting",
+        "label": "Mask-evidence indicator",
+        "depends_on": ["AdaRES-B2"],
+        "launch_condition": "AdaRES-B2 best mIoU < 0.515"
+      }
+    ]
   }
 }

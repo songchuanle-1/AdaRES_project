@@ -1,0 +1,38 @@
+{
+  "id": "AdaRES-B3",
+  "label": "Mask-evidence indicator",
+  "status": "waiting",
+  "date": "2026-09-20",
+  "server": "server-2",
+  "gpus": [0, 1],
+  "config": "configs_song/model_paper5/adares_b3_mask_evidence_res.yaml",
+  "code_package": "ipdn/model_paper5/adares_b3_mask_evidence",
+  "epochs": 20,
+  "seed": 1999,
+  "depends_on": ["AdaRES-B2"],
+  "launch_condition": "Launch only when AdaRES-B2 best mIoU is below 0.515.",
+  "design": {
+    "parent": "AdaRES-B1",
+    "hypothesis": "The indicator needs direct evidence from its own predicted mask and selected scene content.",
+    "foreground": "Soft-mask normalized pooling of scene features.",
+    "contrast": "Foreground evidence minus complementary background evidence.",
+    "supervision": "B1 hard matched-query indicator target, unchanged."
+  },
+  "admission": {
+    "module_test": {
+      "loss": 0.006533594336360693,
+      "query_gradient_norm": 0.0026205680333077908,
+      "mask_gradient_norm": 0.0007244962616823614,
+      "scene_gradient_norm": 0.0017157826805487275,
+      "padding_invariance": true
+    },
+    "real_scene_smoke": {
+      "loss": 21.744632720947266,
+      "gradient_norm": 246.0452880859375,
+      "piou": 0.008370302617549896,
+      "spiou": 0.011976048350334167,
+      "elapsed_seconds": 16.284660233184695
+    }
+  },
+  "watchdog": "scripts/watch_b2_then_b3.sh"
+}

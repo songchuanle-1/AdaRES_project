@@ -41,6 +41,11 @@ is `/bak_home/songcl/Project/AdaRES_project/AdaRES`.
   model-agnostic and the real-batch smoke then passed.
 - AdaRES-B2 metric-calibrated indicator is training on server-2 GPUs 0 and 1.
   Launcher PID 36242; log `train_adares_b2_20260919_204142.log`.
+- AdaRES-B3 mask-evidence indicator is scientifically admitted and waiting.
+  It changes the confidence information path, not a numeric setting: each
+  query pools foreground and complementary background scene features through
+  its own soft mask. Module gradients and a real ScanRefer scene smoke passed.
+  The conditional watcher launches B3 only if B2 finishes below mIoU 0.515.
 - This Codex thread has an active native background goal. It automatically
   continues the research loop without user prompts or an hourly scheduler:
   monitor the current run, perform terminal analysis and evidence-based repair,
