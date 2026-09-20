@@ -1,6 +1,7 @@
 import argparse
 import datetime
 import gorilla
+import importlib
 import os
 import os.path as osp
 import shutil
@@ -11,7 +12,6 @@ from tensorboardX import SummaryWriter
 from tqdm import tqdm
 
 from ipdn.dataset import build_dataloader, build_dataset
-from ipdn import IPDN
 # from ipdn.model import IPDN
 from ipdn.utils import AverageMeter, get_root_logger
 
@@ -65,6 +65,15 @@ def get_args():
 
     args = parser.parse_args()
     return args
+
+
+def resolve_model_class(config_path):
+    """Resolve the model package from the config basename."""
+    variant = osp.splitext(osp.basename(config_path))[0]
+    if variant.endswith('_res'):
+        variant = variant[:-4]
+    module = importlib.import_module(f'ipdn.model_paper5.{variant}')
+    return module.IPDN
 
 def list_avg(x):
     return sum(x) / len(x)
@@ -317,6 +326,7 @@ def eval(epoch, best_iou, model, dataloader, cfg, logger, writer, save_ckp=False
 
 
 def main(args):
+    IPDN = resolve_model_class(args.config)
     #os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
     cfg = gorilla.Config.fromfile(args.config)
     cfg.dist = args.dist

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Wait for AdaRES-B1 to finish, smoke-test AdaRES-B2, then launch it.
+# Historical only: do not reuse. Follow-up experiments use remote_train.sh
+# with one GPU per independent task.
 set -u
 
 ROOT=/bak_home/songcl/Project/AdaRES_project/AdaRES

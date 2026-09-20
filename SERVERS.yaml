@@ -15,6 +15,7 @@ servers:
     role: gpu_server
     allowed_gpus: [0, 1]
     max_tasks_per_gpu: 1
+    single_gpu_tasks_only: true
     gpu: {count: 2, type: RTX3090}
     remote_code_root: /bak_home/songcl/Project/AdaRES_project/AdaRES
     conda_source: /home/dl01/anaconda3/etc/profile.d/conda.sh

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Wait for B2, then launch B3 only if the Phase 1 target is still unmet.
+# Historical only: B3 is already running. Follow-up experiments use
+# remote_train.sh with one GPU per independent task.
 set -u
 
 ROOT=/bak_home/songcl/Project/AdaRES_project/AdaRES

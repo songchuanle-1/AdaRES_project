@@ -8,6 +8,8 @@
   "description": "AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.",
   "constraints": [
     "Use server-2 GPUs 0 and 1 only; never use server-6.",
+    "All experiments launched after AdaRES-B3 must use exactly one GPU; run at most one independent experiment on GPU 0 and one on GPU 1.",
+    "Do not design or queue a successor while AdaRES-B3 is running; after B3 reaches a terminal state, admit at most two structurally independent single-GPU candidates.",
     "Train from the released SPFormer sparse-UNet backbone; the decoder is authored in this project.",
     "Report mIoU, Acc@0.25, Acc@0.5, active queries, latency, and peak memory.",
     "Do not tune thresholds, temperatures, loss weights, feature subsets, or training epochs on ScanRefer validation."
@@ -21,6 +23,6 @@
     "steady_ticks_before_design": 1,
     "fill_to_capacity": true,
     "design_buffer": 0,
-    "max_candidates_per_design_tick": 1
+    "max_candidates_per_design_tick": 2
   }
 }

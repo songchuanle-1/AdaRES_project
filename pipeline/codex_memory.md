@@ -5,6 +5,10 @@
 - Root: D:/project/AdaRES_project; model code: AdaRES/.
 - Remote code: /bak_home/songcl/Project/AdaRES_project/AdaRES.
 - Use server-2 GPUs 0 and 1 only; server-6 is prohibited.
+- B3 remains on GPUs 0,1 until it exits. Every later launch is single-GPU:
+  one independent task on GPU0 and one independent task on GPU1.
+- Do not design or queue successors while B3 is running. After its terminal
+  analysis, admit at most two structurally independent single-GPU candidates.
 - Train from released SPFormer sparse-UNet with project-authored decoder.
   Never attribute released b005/CFNet results to AdaRES-B0.
 - No validation tuning of thresholds, temperatures, loss weights, feature
@@ -64,6 +68,8 @@
   to be measured; do not substitute B1 pilot measurements.
 - pipeline/closure_policy.json is absent. No due research-work IDs are listed;
   research_on_capacity_gap is not enabled in the supplied context/goal.
+- Concurrent variants must resolve their model package from the config basename;
+  do not switch variants by rewriting the shared `ipdn/__init__.py`.
 
 ## Last Tick
 - 2026-09-20 21:59 +0800 manual reconciliation.
