@@ -4,6 +4,16 @@
   "gpu_queues": {
     "server-2": [
       {
+        "id": "AdaRES-B2",
+        "config": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
+        "status": "running",
+        "label": "Metric-calibrated indicator",
+        "gpu": "0,1",
+        "pid": 36242,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b2_20260919_204142.log",
+        "started_at": "2026-09-19 20:41:42 -0400"
+      },
+      {
         "id": "AdaRES-B3",
         "config": "configs_song/model_paper5/adares_b3_mask_evidence_res.yaml",
         "status": "waiting",

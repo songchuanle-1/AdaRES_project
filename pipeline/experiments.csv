@@ -1,5 +1,5 @@
 id,status,server,gpus,config,best_miou,best_acc_05,best_acc_025,best_spmiou,best_epoch,notes
 AdaRES-B0,closed_low_metric,server-2,"0,1",configs_song/model_paper5/adares_b0_res.yaml,0.333,0.260,0.490,0.311,20,Strong oracle masks but failed query ranking
 AdaRES-B1,done_complete,server-2,"0,1",configs_song/model_paper5/adares_b1_standard_res.yaml,0.502,0.553,0.610,0.467,18,Official faithful standard-indicator baseline
-AdaRES-B2,training,server-2,"0,1",configs_song/model_paper5/adares_b2_metric_indicator_res.yaml,0.380,0.418,0.479,0.352,2,Improved 0.055 at epoch 2; 0.024 below B1 at the same epoch; training epoch 3
+AdaRES-B2,training,server-2,"0,1",configs_song/model_paper5/adares_b2_metric_indicator_res.yaml,0.412,0.452,0.523,0.384,3,Improved for three consecutive validations; 0.090 below B1 at the same epoch; training epoch 4
 AdaRES-B3,waiting,server-2,"0,1",configs_song/model_paper5/adares_b3_mask_evidence_res.yaml,,,,,,Scientifically admitted; launch after B2 only if target remains unmet
