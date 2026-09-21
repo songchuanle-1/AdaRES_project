@@ -4,76 +4,57 @@
 - Phase 1: ScanRefer mIoU >= 0.515; not reached. Phase 2 awaits Phase 1.
 - Root: D:/project/AdaRES_project; model code: AdaRES/.
 - Remote code: /bak_home/songcl/Project/AdaRES_project/AdaRES.
-- Use server-2 GPUs 0 and 1 only; server-6 is prohibited.
-- B3 remains on GPUs 0,1 until it exits. Every later launch is single-GPU:
-  one independent task on GPU0 and one independent task on GPU1.
-- Do not design or queue successors while B3 is running. After its terminal
-  analysis, admit at most two structurally independent single-GPU candidates.
-- Train from released SPFormer sparse-UNet with project-authored decoder.
-  Never attribute released b005/CFNet results to AdaRES-B0.
-- No validation tuning of thresholds, temperatures, loss weights, feature
-  subsets, epochs, ranking margin, or occupancy loss weight.
-- Report mIoU, Acc@0.25, Acc@0.5, active queries, latency, and peak memory.
+- Use server-2 GPUs 0 and 1 only; never use server-6.
+- All experiments launched after B3 use exactly one GPU and at most one task per allowed GPU.
+- Train from the released SPFormer sparse-UNet backbone with the project-authored decoder.
+- Do not tune thresholds, temperatures, loss weights, feature subsets, epochs, ranking margin, or occupancy loss weight.
+- Report mIoU, Acc@0.25, Acc@0.5, active queries, latency, and peak memory when measured.
 
 ## Champion And Baseline
-- AdaRES-B1 is the faithful standard-indicator baseline:
-  mIoU 0.502, Acc@0.25 0.610, Acc@0.5 0.553, spmIoU 0.467;
-  best epoch 18 of 20.
-- AdaRES-B2 is the current champion: mIoU 0.505, Acc@0.25 0.607,
-  Acc@0.5 0.555, spmIoU 0.471 at epoch 19. Target gap: 0.010.
-- B1 fixed-checkpoint pilot: 4 scenes / 108 expressions, 22.277 effective
-  active queries, 25.773 ms/expression mean latency, 2161.027 MiB peak memory.
-  Pilot subset mIoU does not replace full-validation mIoU.
-- Evidence: pipeline/analyses/AdaRES-B1_profile_pilot_20260920-095000.json
-  and pipeline/analyses/AdaRES-B1_done_complete_20260920-091444.md.
+- AdaRES-B1 faithful baseline: mIoU 0.502, Acc@0.25 0.610, Acc@0.5 0.553, spmIoU 0.467; best epoch 18.
+- AdaRES-B2 current champion: mIoU 0.505, Acc@0.25 0.607, Acc@0.5 0.555, spmIoU 0.471; best epoch 19. Target gap: 0.010.
+- B2 checkpoint:
+  /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/best.pth.
+- B1 efficiency pilot only: 4 scenes / 108 expressions, 22.277 active queries,
+  25.773 ms/expression, 2161.027 MiB peak memory.
 
 ## Active Hypotheses
-- B3 tests mask-conditioned confidence evidence: query latent state plus
-  foreground and complementary background scene features pooled by its mask.
-  It changes the confidence information path, not a numeric setting.
-- Existing admission evidence: finite nonzero module gradients and real-scene
-  smoke; B3 loss 21.7446, gradient norm 246.0453.
-- Review/design: pipeline/reviews/motivation_review_20260920-093708.md and
-  pipeline/designs/exp_design_20260920-093708.md; admission decision:
-  pipeline/decisions/20260920-093708_next_batch.md.
+- AdaRES-B4 query-competition indicator: relative soft-mask overlap among queries should improve top-1 ranking when candidates compete.
+- AdaRES-B5 token-grounding indicator: direct query-to-phrase token compatibility should add semantic evidence missing from confidence scoring.
+- B4 and B5 are structurally independent and preserve B1 indicator supervision.
+- Both are waiting for monitor dispatch; no training has started yet.
+- `pipeline/research_work.json` records both as queued with concrete post-dispatch checks.
 
 ## Closed Or Failed Directions
-- B0 closed after 20 epochs at mIoU 0.333. Strong oracle masks (0.847 on
-  124 validation expressions) but poor ranking; not the official baseline.
-- Applied fixes: shape-compatible pretrain loading, scalar loss reshape before
-  DDP reduction, and non-main-rank logger guard.
-- B2's original smoke harness incorrectly required B0-only loss keys.
-  Model-agnostic repair passed real-scene smoke: loss 22.3169, gradient
-  norm 249.0111. This was a harness failure, not a rejected B2 hypothesis.
-- B2 completed all 20 validations. True-IoU indicator supervision improved
-  B1 by 0.003 mIoU but remained 0.010 below target. The TensorBoardX EOFError
-  occurred after final validation and checkpoint save and is non-fatal.
+- AdaRES-B0 closed at mIoU 0.333; strong oracle masks but failed query ranking.
+- Applied fixes: shape-compatible pretrain loading, scalar loss reshape before DDP reduction, non-main-rank logger guard, and isolated criterion registration.
+- B2 closed after 20/20 validations at mIoU 0.505; post-validation TensorBoardX EOFError was non-fatal.
+- B3 closed after 20/20 validations at mIoU 0.5014, Acc@0.25 0.609,
+  Acc@0.5 0.554, spmIoU 0.464; best epoch 20. It did not beat B1 or B2.
+- Do not repeat B3 mask-evidence pooling or add scalar variations of failed routes.
 
 ## Running And Queue
-- B2 completed 20/20 validations; best epoch 19 mIoU 0.505. Best checkpoint:
-  /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/best.pth.
-- B3 was automatically launched at 2026-09-20 09:18:19 -0400 because B2
-  remained below 0.515. PID 122629 is live on server-2 GPUs 0,1.
-- B3 log: /bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b3_20260920_091819.log.
-- Latest live check: epoch 1/20 at 1208/4686 (26%); no validation yet.
-- GPU0 used 10216/24576 MiB at 47%; GPU1 used 10128/24576 MiB at 39%.
-- Queue and running map now consistently identify B3 as the sole running task.
+- No experiment is running.
+- Queue has two waiting single-GPU tasks:
+  - AdaRES-B4 on server-2 GPU 0, `adares_b4_query_competition_res.yaml`.
+  - AdaRES-B5 on server-2 GPU 1, `adares_b5_token_grounding_res.yaml`.
+- Both depend on terminal B3 and have satisfied unit/real-scene smoke gates.
+- Committed source: `03ca391804aa2b347acae00090f656473b6ab1a6`.
+- Remote `AdaRES/.codex_source_commit` matches local HEAD.
 
 ## Open Questions And Risks
-- Pending questions in snapshot manifest: none.
-- Remote clock reports 2026-09-19 22:11:21 -0400 while local check occurred
-  around 2026-09-20 10:42 +0800: roughly 31 minutes of skew after conversion.
-  Use observed iteration advancement, not cross-host mtime alone, for liveness.
-- B3 effect remains unknown until validation. B2/B3 efficiency metrics remain
-  to be measured; do not substitute B1 pilot measurements.
-- pipeline/closure_policy.json is absent. No due research-work IDs are listed;
-  research_on_capacity_gap is not enabled in the supplied context/goal.
-- Concurrent variants must resolve their model package from the config basename;
-  do not switch variants by rewriting the shared `ipdn/__init__.py`.
+- Pending questions in the snapshot manifest: none.
+- B4 uses differentiable soft overlap, not exact mask intersection; zero-overlap samples supply no competition evidence.
+- B5 may overlap with existing decoder language attention; a null result may indicate redundancy.
+- Real-scene smoke does not measure full-run throughput, peak training memory, or convergence.
+- B2 remains champion; no B3 efficiency measurement is available.
+- `pipeline/closure_policy.json`, project-local `formats.md`,
+  `references/autonomous_design.md`, and `log_decision.sh` are absent.
 
 ## Last Tick
-- 2026-09-20 21:59 +0800 manual reconciliation.
-- Confirmed B2 normal completion and B3 automatic launch with live training.
-- Updated queue, running map, experiment states, ledger, local model entry,
-  and B2 terminal analysis.
-- Next scheduled Windows tick: 2026-09-20 22:47 +0800.
+- 2026-09-21 14:50 +08:00 design tick; monitor_rc=0, goal_rc=0.
+- Candidate budget 2; both admissible candidates passed static, unit, and one-scene native smoke gates.
+- Added B4/B5 packages, configs, tests, motivation review, design, decision, and queue entries.
+- Local syntax checks passed; server-2 unit and real-scene smoke tests passed.
+- Report: `pipeline/reports/summary_20260921-145043.md`.
+- Next: monitor dispatch, verify each single-GPU process starts and progresses beyond PID-only evidence.

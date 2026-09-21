@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "candidate_id": "AdaRES-B5",
+  "timestamp": "2026-09-21T14:50:43+08:00",
+  "code_commit": "03ca391804aa2b347acae00090f656473b6ab1a6",
+  "unit_test": {
+    "command": "python tools/test_adares_b5_token_grounding.py",
+    "shape": [2, 3, 2],
+    "loss": 0.04208480939269066,
+    "query_grad": 0.004913336597383022,
+    "token_grad": 0.005070985294878483,
+    "padding_invariance": true,
+    "token_sensitivity": true
+  },
+  "native_backward": {
+    "command": "python tools/smoke_adares_b0.py configs_song/model_paper5/adares_b5_token_grounding_res.yaml --output-dir /tmp/adares_b5_smoke --gpu-id 1 --scenes 1 --model-module ipdn.model_paper5.adares_b5_token_grounding",
+    "loss": 21.330215454101562,
+    "gradient_norm": 245.9385223388672,
+    "finite_metrics": true,
+    "predict_keys": [
+      "ann_id",
+      "gt_pmask",
+      "indi",
+      "nt_label",
+      "object_ids",
+      "p_r_iou",
+      "piou",
+      "pred_pmask",
+      "sample_ind",
+      "scan_id",
+      "seed_ind",
+      "sp_r_iou",
+      "spiou"
+    ]
+  },
+  "resource_check": {
+    "server": "server-2",
+    "gpu": 1,
+    "gpu_memory_used_mib_before": 1,
+    "gpu_memory_used_mib_after": 1,
+    "single_gpu": true
+  },
+  "limitations": [
+    "One-scene smoke does not measure full-run throughput or peak training memory.",
+    "The direct token evidence may be partly redundant with existing decoder language attention."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "AdaRES-B5",
+  "config": "configs_song/model_paper5/adares_b5_token_grounding_res.yaml",
+  "code_commit": "03ca391804aa2b347acae00090f656473b6ab1a6",
+  "goal_sha256": "c07925202a7404438b123c27ab6b97a336e2d0ebc034e7a2e0930d7c4ae38868",
+  "decision": {
+    "path": "pipeline/decisions/20260921-145043_next_batch.md",
+    "sha256": "4b9bebb6cb4c7ec407b108eb41fa743bf02f416b7c162898a9946b88579a4009"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/AdaRES-B2_done_complete_20260920-215543.md",
+          "sha256": "2e9e65b9f442dd54a0c087a86b46fafd89a76d5ba7c54cd896961729db54d472"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-B3_done_complete_20260921-115300.md",
+          "sha256": "770ee7bc525aff56ff570d175464d9dce81d14022c704f44d1c947b97f7bc035"
+        },
+        {
+          "path": "pipeline/designs/exp_design_20260921-145043.md",
+          "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/designs/exp_design_20260921-145043.md",
+          "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        },
+        {
+          "path": "AdaRES/tools/test_adares_b5_token_grounding.py",
+          "sha256": "22ab5797d7ba7e07e7fb97476d7e033fa166197956c2ec04f06e164c006ab0a2"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/AdaRES-B5_admission_20260921.json",
+          "sha256": "0e227e5aecfe10571a5a677f62a0ae27ff3ebe7d37b0fd900b13acc8bfb9a2ac"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/AdaRES-B5_admission_20260921.json",
+          "sha256": "0e227e5aecfe10571a5a677f62a0ae27ff3ebe7d37b0fd900b13acc8bfb9a2ac"
+        },
+        {
+          "path": "pipeline/queue.json",
+          "sha256": "924816e183eec03365bbdecb9990f4a19b117908ac06e96ae5f65f9d9374dce3"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "AdaRES/configs_song/model_paper5/adares_b5_token_grounding_res.yaml",
+          "sha256": "d6d7537176eff38f53474b1dac1b3bed19da131eb52aba2340f0301cf1b7ff51"
+        },
+        {
+          "path": "AdaRES/ipdn/model_paper5/adares_b5_token_grounding/dec.py",
+          "sha256": "0d45d22bd796cb5e39800a9e31527dd0518749260eb5e9148c76aaa5756aad48"
+        },
+        {
+          "path": "AdaRES/tools/test_adares_b5_token_grounding.py",
+          "sha256": "22ab5797d7ba7e07e7fb97476d7e033fa166197956c2ec04f06e164c006ab0a2"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "c07925202a7404438b123c27ab6b97a336e2d0ebc034e7a2e0930d7c4ae38868"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_20260921-145043.md",
+          "sha256": "3b5fe8f74fc3552a105478fe0d4a7e014d3d04129700b21bc48447ff29a78764"
+        },
+        {
+          "path": "pipeline/designs/exp_design_20260921-145043.md",
+          "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Full theoretical derivation and literature novelty review are not claimed.",
+    "Full-run efficiency remains to be measured after dispatch."
+  ]
+}

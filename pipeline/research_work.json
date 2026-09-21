@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "candidates": [
+    {
+      "id": "AdaRES-B4",
+      "stage": "queued",
+      "experiment_id": "AdaRES-B4",
+      "next_action": "Wait for the safe monitor dispatch path to launch AdaRES-B4 on server-2 GPU 0. Verify a single-GPU process, finite training loss, and progress beyond epoch startup; do not treat PID existence as progress. After terminal validation, close B4 as improved, non-improving, or failed.",
+      "evidence": [
+        {
+          "path": "pipeline/admissions/AdaRES-B4.json",
+          "sha256": "1d08a2a6c55ba872efada8e5216efa24112ff29ff41abca3e1260766362439c4"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-B4_admission_20260921.json",
+          "sha256": "a4d7ec2cc76546aa85e9978bfa5047568da0c09d3d971793d10ab07c1cfbf0c8"
+        },
+        {
+          "path": "pipeline/designs/exp_design_20260921-145043.md",
+          "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        }
+      ]
+    },
+    {
+      "id": "AdaRES-B5",
+      "stage": "queued",
+      "experiment_id": "AdaRES-B5",
+      "next_action": "Wait for the safe monitor dispatch path to launch AdaRES-B5 on server-2 GPU 1. Verify a single-GPU process, finite training loss, and progress beyond epoch startup; do not treat PID existence as progress. After terminal validation, close B5 as improved, non-improving, or failed.",
+      "evidence": [
+        {
+          "path": "pipeline/admissions/AdaRES-B5.json",
+          "sha256": "176b61d56f2f6791232468fedcd7fb68333ba7d6740e3b477bf52cb5e4eeb32d"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-B5_admission_20260921.json",
+          "sha256": "0e227e5aecfe10571a5a677f62a0ae27ff3ebe7d37b0fd900b13acc8bfb9a2ac"
+        },
+        {
+          "path": "pipeline/designs/exp_design_20260921-145043.md",
+          "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        }
+      ]
+    }
+  ],
+  "migration_notes": "AdaRES did not previously have research work tracking; B4 and B5 are the first explicit queued records."
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "candidate_id": "AdaRES-B4",
+  "timestamp": "2026-09-21T14:50:43+08:00",
+  "code_commit": "03ca391804aa2b347acae00090f656473b6ab1a6",
+  "unit_test": {
+    "command": "python tools/test_adares_b4_query_competition.py",
+    "shape": [2, 4, 2],
+    "loss": 0.04965981841087341,
+    "query_grad": 0.004425165243446827,
+    "mask_grad": 0.0008215531124733388,
+    "padding_invariance": true,
+    "competitor_sensitivity": true
+  },
+  "native_backward": {
+    "command": "python tools/smoke_adares_b0.py configs_song/model_paper5/adares_b4_query_competition_res.yaml --output-dir /tmp/adares_b4_smoke --gpu-id 0 --scenes 1 --model-module ipdn.model_paper5.adares_b4_query_competition",
+    "loss": 21.429248809814453,
+    "gradient_norm": 245.208740234375,
+    "finite_metrics": true,
+    "predict_keys": [
+      "ann_id",
+      "gt_pmask",
+      "indi",
+      "nt_label",
+      "object_ids",
+      "p_r_iou",
+      "piou",
+      "pred_pmask",
+      "sample_ind",
+      "scan_id",
+      "seed_ind",
+      "sp_r_iou",
+      "spiou"
+    ]
+  },
+  "resource_check": {
+    "server": "server-2",
+    "gpu": 0,
+    "gpu_memory_used_mib_before": 1,
+    "gpu_memory_used_mib_after": 1,
+    "single_gpu": true
+  },
+  "limitations": [
+    "One-scene smoke does not measure full-run throughput or peak training memory.",
+    "Soft intersection is a differentiable overlap proxy rather than exact set intersection."
+  ]
+}
