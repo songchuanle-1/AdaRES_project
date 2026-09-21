@@ -4,16 +4,22 @@
   "gpu_queues": {
     "server-2": [
       {
-        "id": "AdaRES-B3",
-        "config": "configs_song/model_paper5/adares_b3_mask_evidence_res.yaml",
-        "status": "running",
-        "label": "Mask-evidence indicator",
-        "gpu": "0,1",
-        "pid": 122629,
-        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b3_20260920_091819.log",
-        "started_at": "2026-09-20 09:18:19 -0400",
-        "depends_on": ["AdaRES-B2"],
-        "launch_condition": "Satisfied: AdaRES-B2 completed 20 validations with best mIoU 0.505 < 0.515"
+        "id": "AdaRES-B4",
+        "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
+        "status": "waiting",
+        "label": "Query-competition indicator",
+        "gpu": "0",
+        "depends_on": ["AdaRES-B3"],
+        "launch_condition": "Satisfied: B3 completed 20 validations at mIoU 0.5014 < 0.515; B4 unit and real-scene smoke gates passed"
+      },
+      {
+        "id": "AdaRES-B5",
+        "config": "configs_song/model_paper5/adares_b5_token_grounding_res.yaml",
+        "status": "waiting",
+        "label": "Token-grounding indicator",
+        "gpu": "1",
+        "depends_on": ["AdaRES-B3"],
+        "launch_condition": "Satisfied: B3 completed 20 validations at mIoU 0.5014 < 0.515; B5 unit and real-scene smoke gates passed"
       }
     ]
   }
