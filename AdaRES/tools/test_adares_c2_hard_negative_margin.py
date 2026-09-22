@@ -34,10 +34,11 @@ def main():
     assert torch.isfinite(loss)
     assert loss > 0
     loss.backward()
-    for name, tensor in (("logits", logits), ("masks", masks)):
-        assert tensor.grad is not None, f"missing {name} gradient"
-        assert torch.isfinite(tensor.grad).all(), f"invalid {name} gradient"
-        assert tensor.grad.abs().sum() > 0, f"zero {name} gradient"
+    assert logits.grad is not None, "missing logits gradient"
+    assert torch.isfinite(logits.grad).all(), "invalid logits gradient"
+    assert logits.grad.abs().sum() > 0, "zero logits gradient"
+    # The oracle IoU defines the margin target, so it is intentionally detached.
+    assert masks.grad is None, "mask IoU must remain a stop-gradient target"
 
     corrected = logits.detach().clone()
     corrected.data[0, 0, 0] = -1.0
