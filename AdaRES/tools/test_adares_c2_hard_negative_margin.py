@@ -30,7 +30,7 @@ def main():
         hard_negative_min_gap=0.05,
     )
     logits, masks, targets = make_inputs()
-    loss = criterion.loss_hard_negative(logits, masks, targets)
+    loss = criterion.loss_hard_negative(logits, [masks[0]], targets)
     assert torch.isfinite(loss)
     assert loss > 0
     loss.backward()
@@ -45,7 +45,7 @@ def main():
     corrected.data[0, 1, 0] = -1.0
     corrected.data[0, 1, 1] = 1.0
     corrected_loss = criterion.loss_hard_negative(
-        corrected, masks.detach(), targets
+        corrected, [masks[0].detach()], targets
     )
     assert corrected_loss <= loss.detach()
     print(

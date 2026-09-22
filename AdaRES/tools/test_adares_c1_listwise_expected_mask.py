@@ -29,8 +29,10 @@ def main():
         target_temperature=0.05,
     )
     logits, masks, targets = make_inputs()
-    rank_loss = criterion.loss_listwise(logits, masks, targets)
-    expected_loss = criterion.loss_expected_mask(logits, masks, targets)
+    rank_loss = criterion.loss_listwise(logits, [masks[0]], targets)
+    expected_loss = criterion.loss_expected_mask(
+        logits, [masks[0]], targets
+    )
     loss = rank_loss + expected_loss
     assert torch.isfinite(loss)
     loss.backward()
@@ -42,7 +44,9 @@ def main():
     ordered = logits.detach().clone()
     ordered.data[0, :, 0] = torch.tensor([-1.0, -2.0, 0.0])
     ordered.data[0, :, 1] = torch.tensor([3.0, 2.0, 0.0])
-    ordered_loss = criterion.loss_listwise(ordered, masks.detach(), targets)
+    ordered_loss = criterion.loss_listwise(
+        ordered, [masks[0].detach()], targets
+    )
     assert ordered_loss < rank_loss.detach()
     print(
         {
