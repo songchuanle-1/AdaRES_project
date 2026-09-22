@@ -1,7 +1,7 @@
 work_dir: /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints
 train:
   seed: 1999
-  epochs: 20
+  epochs: 30
   interval: 1
   pretrain: /bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/sp_unet_backbone.pth
   save_epoch: 100

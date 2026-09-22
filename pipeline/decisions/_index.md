@@ -10,3 +10,7 @@
 | 2026-09-20 22:40:25 | [manual](20260920-224025_manual.md) | How should server-2 GPUs be allocated after the current B3 run? | Keep B3 unchanged; all later experiments use one independent task per GPU |
 | 2026-09-21 11:50:56 | [route_change](20260921-115056_route_change.md) | Does completed B3 replace B2 or justify continuing the same  | Retain B2 as champion; close B3 as completed without demonst |
 | 2026-09-21 14:50:43 | [next_batch](20260921-145043_next_batch.md) | Which two structurally independent successors follow B3? | Admit B4 query competition on GPU 0 and B5 token grounding on GPU 1 |
+| 2026-09-21 17:54:44 | [route_change](20260921-175444_route_change.md) | Why was B4 running while the scheduler recorded it as waitin | Reconcile B4 as running from verified remote progress; clear |
+| 2026-09-21 19:32:33 | [queue_push](20260921-193233_queue_push.md) | server-2 gpu1 空闲（util<10% 且显存<1024MB），推送哪个排队实验？ | 启动 [Token-grounding indicator] configs_song/model_paper5/ada |
+| 2026-09-22 08:56:52 | [route_change](20260922-085652_route_change.md) | How should the completed AdaRES-B4 result change the champio | Close B4 as done_complete, promote it to champion at mIoU 0. |
+| 2026-09-22 09:30:00 | [manual](20260922-093000_manual.md) | Should the top variants be extended beyond the accidental 20-epoch protocol? | Resume B2 and B4 from epoch 20 to a fixed 30-epoch protocol on separate GPUs |

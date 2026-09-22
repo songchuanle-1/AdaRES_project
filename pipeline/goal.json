@@ -10,9 +10,10 @@
     "Use server-2 GPUs 0 and 1 only; never use server-6.",
     "All experiments launched after AdaRES-B3 must use exactly one GPU; run at most one independent experiment on GPU 0 and one on GPU 1.",
     "Do not design or queue a successor while AdaRES-B3 is running; after B3 reaches a terminal state, admit at most two structurally independent single-GPU candidates.",
+    "Use a fixed 30-epoch protocol for the B2 and B4 extension. Resume both from their epoch-20 last checkpoints without resetting the optimizer or LR scheduler; do not tune the epoch count on validation.",
     "Train from the released SPFormer sparse-UNet backbone; the decoder is authored in this project.",
     "Report mIoU, Acc@0.25, Acc@0.5, active queries, latency, and peak memory.",
-    "Do not tune thresholds, temperatures, loss weights, feature subsets, or training epochs on ScanRefer validation."
+    "Do not tune thresholds, temperatures, loss weights, feature subsets, or the fixed 30-epoch protocol on ScanRefer validation."
   ],
   "banned": [
     "Do not use server-6.",
