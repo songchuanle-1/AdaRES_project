@@ -6,26 +6,32 @@
       {
         "id": "AdaRES-C1",
         "config": "configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml",
-        "status": "claiming",
+        "status": "running",
         "label": "Listwise expected-mask ranking",
         "gpu": "0",
         "epochs": 10,
         "min_epochs": 10,
         "patience": 10,
         "baseline": "AdaRES-B4-E30",
-        "baseline_miou": 0.5094
+        "baseline_miou": 0.5094,
+        "pid": 56410,
+        "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_c1_listwise_expected_mask_res_20260922_223145.log",
+        "launched": "2026-09-22T22:31:45+08:00"
       },
       {
         "id": "AdaRES-C2",
         "config": "configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml",
-        "status": "claiming",
+        "status": "running",
         "label": "Hard-negative IoU margin",
         "gpu": "1",
         "epochs": 10,
         "min_epochs": 10,
         "patience": 10,
         "baseline": "AdaRES-B4-E30",
-        "baseline_miou": 0.5094
+        "baseline_miou": 0.5094,
+        "pid": 56398,
+        "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_c2_hard_negative_margin_res_20260922_223146.log",
+        "launched": "2026-09-22T22:31:46+08:00"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-C2",
   "label": "Hard-negative IoU margin",
-  "status": "claiming",
+  "status": "running",
   "server": "server-2",
   "gpu": "1",
   "config": "configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml",
@@ -9,12 +9,21 @@
   "baseline": "AdaRES-B4-E30",
   "baseline_miou": 0.5094,
   "pretrain": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_210214/best.pth",
+  "pid": 56398,
+  "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_c2_hard_negative_margin_res_20260922_223146.log",
+  "launched": "2026-09-22T22:31:46+08:00",
   "history": [
     {
       "ts": "2026-09-22T22:30:00+08:00",
       "action": "admitted",
       "gpu": "1",
       "evidence": "Design, unit test, and real-batch smoke passed."
+    },
+    {
+      "ts": "2026-09-22T22:33:07+08:00",
+      "action": "launched",
+      "gpu": "1",
+      "evidence": "Native training log reports Train[1/10] and iteration 93/4686."
     }
   ]
 }
