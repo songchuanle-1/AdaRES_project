@@ -17,7 +17,7 @@ def make_inputs():
     masks = torch.full((1, 3, 6), -4.0, requires_grad=True)
     masks.data[0, 0, :4] = 4.0
     masks.data[0, 1, :2] = 4.0
-    targets = [{"masks": torch.tensor([[[1.0] * 4 + [0.0] * 2]])}]
+    targets = [{"masks": torch.tensor([[1.0] * 4 + [0.0] * 2])}]
     return logits, masks, targets
 
 
