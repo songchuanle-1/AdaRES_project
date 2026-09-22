@@ -59,15 +59,17 @@
     },
     {
       "id": "AdaRES-B4-E30",
-      "stage": "running",
+      "stage": "closed",
       "experiment_id": "AdaRES-B4-E30",
-      "next_action": "Monitor the fixed 30-epoch extension from the epoch-20 checkpoint on server-2 GPU 0. Do not relaunch, restart, or tune the epoch count.",
+      "next_action": "Closed and promoted as the best completed result at mIoU 0.5094 after 30/30 validations. The Phase 1 target remains 0.0056 away; do not launch a duplicate or tuning-only successor.",
       "evidence": [
         {
-          "path": "pipeline/experiments/AdaRES-B4-E30.json"
+          "path": "pipeline/experiments/AdaRES-B4-E30.json",
+          "sha256": "690d1149e8bf3f000b21e4114481f7838d1b8513bcd0ad210121ec848216ed5a"
         },
         {
-          "path": "pipeline/queue.json"
+          "path": "pipeline/analyses/AdaRES-B4-E30_done_complete_20260922-194858.md",
+          "sha256": "f3ade04a88af01a206045c12eafa98fc8f3483afad6d2917545fc7a3e136c89a"
         },
         {
           "path": "pipeline/decisions/20260922-093000_manual.md"
@@ -76,18 +78,54 @@
     },
     {
       "id": "AdaRES-B2-E30",
-      "stage": "running",
+      "stage": "closed",
       "experiment_id": "AdaRES-B2-E30",
-      "next_action": "Monitor the fixed 30-epoch extension from the epoch-20 checkpoint on server-2 GPU 1. Do not relaunch, restart, or tune the epoch count.",
+      "next_action": "Closed at mIoU 0.5058 after 30/30 validations and below the matched-budget B4-E30 result by 0.0036. Do not launch a duplicate, extension, or tuning-only successor.",
       "evidence": [
         {
-          "path": "pipeline/experiments/AdaRES-B2-E30.json"
+          "path": "pipeline/experiments/AdaRES-B2-E30.json",
+          "sha256": "aef186b7b6fc8ffb1178047f951c63ff58234cccb7dbda6d74b180fda40a5005"
         },
         {
-          "path": "pipeline/queue.json"
+          "path": "pipeline/analyses/AdaRES-B2-E30_done_complete_20260922-194858.md",
+          "sha256": "30613b6ef5ebc3132536ad5c95a2dc36015557416040ffdba201c40e89683e51"
         },
         {
           "path": "pipeline/decisions/20260922-093000_manual.md"
+        }
+      ]
+    },
+    {
+      "id": "AdaRES-C1",
+      "stage": "queued",
+      "experiment_id": "AdaRES-C1",
+      "next_action": "Launch on server-2 GPU 0, verify native training progress beyond epoch startup, and compare the fixed 10-epoch result against AdaRES-B4-E30.",
+      "evidence": [
+        {
+          "path": "pipeline/designs/exp_design_20260922-223000.md"
+        },
+        {
+          "path": "pipeline/admissions/AdaRES-C1.json"
+        },
+        {
+          "path": "pipeline/experiments/AdaRES-C1.json"
+        }
+      ]
+    },
+    {
+      "id": "AdaRES-C2",
+      "stage": "queued",
+      "experiment_id": "AdaRES-C2",
+      "next_action": "Launch on server-2 GPU 1, verify native training progress beyond epoch startup, and compare the fixed 10-epoch result against AdaRES-B4-E30.",
+      "evidence": [
+        {
+          "path": "pipeline/designs/exp_design_20260922-223000.md"
+        },
+        {
+          "path": "pipeline/admissions/AdaRES-C2.json"
+        },
+        {
+          "path": "pipeline/experiments/AdaRES-C2.json"
         }
       ]
     }

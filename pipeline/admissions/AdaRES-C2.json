@@ -1,0 +1,17 @@
+{
+  "id": "AdaRES-C2",
+  "label": "Hard-negative IoU margin",
+  "status": "admitted",
+  "baseline": "AdaRES-B4-E30",
+  "baseline_miou": 0.5094,
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_210214/best.pth",
+  "config": "configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml",
+  "epochs": 10,
+  "gpu": 1,
+  "tests": {
+    "python_compile": "passed",
+    "unit": "passed; violated margin loss=2.6000 and corrected ordering loss=0.0",
+    "real_batch_smoke": "passed; loss=12.1049, gradient_norm=269.5784, piou=0.7841, spiou=0.6364"
+  },
+  "gate_reason": "Directly targets hard top-1 ranking errors with an IoU-scaled hinge margin, independent of C1's listwise objective."
+}

@@ -1,33 +1,31 @@
 {
   "patience": 10,
-  "min_epochs": 15,
+  "min_epochs": 10,
   "gpu_queues": {
     "server-2": [
       {
-        "id": "AdaRES-B4-E30",
-        "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
-        "status": "running",
-        "label": "B4 30-epoch extension",
+        "id": "AdaRES-C1",
+        "config": "configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml",
+        "status": "claiming",
+        "label": "Listwise expected-mask ranking",
         "gpu": "0",
-        "extension_of": "AdaRES-B4",
-        "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_032553/last.pth",
-        "pid": 52617,
-        "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_b4_query_competition_res_20260922_093323.log",
-        "launched": "2026-09-22T09:33:23+08:00",
-        "epochs": 30
+        "epochs": 10,
+        "min_epochs": 10,
+        "patience": 10,
+        "baseline": "AdaRES-B4-E30",
+        "baseline_miou": 0.5094
       },
       {
-        "id": "AdaRES-B2-E30",
-        "config": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
-        "status": "running",
-        "label": "B2 30-epoch extension",
+        "id": "AdaRES-C2",
+        "config": "configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml",
+        "status": "claiming",
+        "label": "Hard-negative IoU margin",
         "gpu": "1",
-        "extension_of": "AdaRES-B2",
-        "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/last.pth",
-        "pid": 56854,
-        "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_b2_metric_indicator_res_20260922_093709.log",
-        "launched": "2026-09-22T09:37:09+08:00",
-        "epochs": 30
+        "epochs": 10,
+        "min_epochs": 10,
+        "patience": 10,
+        "baseline": "AdaRES-B4-E30",
+        "baseline_miou": 0.5094
       }
     ]
   }

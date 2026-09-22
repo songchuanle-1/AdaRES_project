@@ -1,0 +1,17 @@
+{
+  "id": "AdaRES-C1",
+  "label": "Listwise expected-mask ranking",
+  "status": "admitted",
+  "baseline": "AdaRES-B4-E30",
+  "baseline_miou": 0.5094,
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_210214/best.pth",
+  "config": "configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml",
+  "epochs": 10,
+  "gpu": 0,
+  "tests": {
+    "python_compile": "passed",
+    "unit": "passed; listwise loss decreased from 14.9993 to 0.6931 under corrected ordering",
+    "real_batch_smoke": "passed; loss=131.9064, gradient_norm=2190.8762, piou=0.7841, spiou=0.6364"
+  },
+  "gate_reason": "Directly tests global ranking distribution matching and expected-mask coupling on the current champion; no architecture or dataset change."
+}
