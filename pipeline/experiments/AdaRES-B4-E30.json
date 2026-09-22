@@ -1,0 +1,24 @@
+{
+  "id": "AdaRES-B4-E30",
+  "label": "B4 30-epoch extension",
+  "status": "running",
+  "server": "server-2",
+  "gpu": "0",
+  "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
+  "epochs": 30,
+  "extension_of": "AdaRES-B4",
+  "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_032553/last.pth",
+  "pid": 52617,
+  "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_b4_query_competition_res_20260922_093323.log",
+  "launched": "2026-09-22T09:33:23+08:00",
+  "history": [
+    {
+      "ts": "2026-09-22T09:33:23+08:00",
+      "action": "resumed",
+      "gpu": "0",
+      "start_epoch": 21,
+      "epochs": 30,
+      "evidence": "Log reports resume start_epoch:21,best_miou:0.5072171688079834 and sustained Train[21/30] progress."
+    }
+  ]
+}

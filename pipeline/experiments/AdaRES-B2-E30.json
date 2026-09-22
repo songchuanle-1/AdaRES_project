@@ -1,0 +1,24 @@
+{
+  "id": "AdaRES-B2-E30",
+  "label": "B2 30-epoch extension",
+  "status": "running",
+  "server": "server-2",
+  "gpu": "1",
+  "config": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
+  "epochs": 30,
+  "extension_of": "AdaRES-B2",
+  "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/last.pth",
+  "pid": 56854,
+  "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_b2_metric_indicator_res_20260922_093709.log",
+  "launched": "2026-09-22T09:37:09+08:00",
+  "history": [
+    {
+      "ts": "2026-09-22T09:37:09+08:00",
+      "action": "resumed",
+      "gpu": "1",
+      "start_epoch": 21,
+      "epochs": 30,
+      "evidence": "Log reports resume start_epoch:21,best_miou:0.5046102404594421 and Train[21/30]."
+    }
+  ]
+}

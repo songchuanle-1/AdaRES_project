@@ -3,9 +3,9 @@
   "candidates": [
     {
       "id": "AdaRES-B4",
-      "stage": "queued",
+      "stage": "closed",
       "experiment_id": "AdaRES-B4",
-      "next_action": "Wait for the safe monitor dispatch path to launch AdaRES-B4 on server-2 GPU 0. Verify a single-GPU process, finite training loss, and progress beyond epoch startup; do not treat PID existence as progress. After terminal validation, close B4 as improved, non-improving, or failed.",
+      "next_action": "Closed as improved at mIoU 0.5070 after 20 validations and promoted to champion. Do not launch a duplicate or tuning-only B4 successor; retain B5 as the independent token-grounding test.",
       "evidence": [
         {
           "path": "pipeline/admissions/AdaRES-B4.json",
@@ -18,14 +18,26 @@
         {
           "path": "pipeline/designs/exp_design_20260921-145043.md",
           "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        },
+        {
+          "path": "pipeline/experiments/AdaRES-B4.json",
+          "sha256": "c249cd776ecea33b740d445631eb9a02097946fbd743cd1bba4a22d45f852f56"
+        },
+        {
+          "path": "pipeline/queue.json",
+          "sha256": "a9c32a0bcaabd0bc471e5979d1791b93afbc6dc61673622ecf373168d73cf938"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-B4_done_complete_20260922-085300.md",
+          "sha256": "a7222f15124be706c41292e39d9095e71f3f5b2b24fd6727854d1dda961cfef"
         }
       ]
     },
     {
       "id": "AdaRES-B5",
-      "stage": "queued",
+      "stage": "closed",
       "experiment_id": "AdaRES-B5",
-      "next_action": "Wait for the safe monitor dispatch path to launch AdaRES-B5 on server-2 GPU 1. Verify a single-GPU process, finite training loss, and progress beyond epoch startup; do not treat PID existence as progress. After terminal validation, close B5 as improved, non-improving, or failed.",
+      "next_action": "Closed at mIoU 0.5030 after 20/20 validations. Do not relaunch this token-grounding route without new structural evidence.",
       "evidence": [
         {
           "path": "pipeline/admissions/AdaRES-B5.json",
@@ -38,6 +50,44 @@
         {
           "path": "pipeline/designs/exp_design_20260921-145043.md",
           "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+        },
+        {
+          "path": "pipeline/experiments/AdaRES-B5.json",
+          "sha256": "43acc70141802476a68407da770ee41f73b53d7e685703f626c7c06c2a5bf6e5"
+        }
+      ]
+    },
+    {
+      "id": "AdaRES-B4-E30",
+      "stage": "running",
+      "experiment_id": "AdaRES-B4-E30",
+      "next_action": "Monitor the fixed 30-epoch extension from the epoch-20 checkpoint on server-2 GPU 0. Do not relaunch, restart, or tune the epoch count.",
+      "evidence": [
+        {
+          "path": "pipeline/experiments/AdaRES-B4-E30.json"
+        },
+        {
+          "path": "pipeline/queue.json"
+        },
+        {
+          "path": "pipeline/decisions/20260922-093000_manual.md"
+        }
+      ]
+    },
+    {
+      "id": "AdaRES-B2-E30",
+      "stage": "running",
+      "experiment_id": "AdaRES-B2-E30",
+      "next_action": "Monitor the fixed 30-epoch extension from the epoch-20 checkpoint on server-2 GPU 1. Do not relaunch, restart, or tune the epoch count.",
+      "evidence": [
+        {
+          "path": "pipeline/experiments/AdaRES-B2-E30.json"
+        },
+        {
+          "path": "pipeline/queue.json"
+        },
+        {
+          "path": "pipeline/decisions/20260922-093000_manual.md"
         }
       ]
     }

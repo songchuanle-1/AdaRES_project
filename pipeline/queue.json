@@ -4,22 +4,30 @@
   "gpu_queues": {
     "server-2": [
       {
-        "id": "AdaRES-B4",
+        "id": "AdaRES-B4-E30",
         "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
-        "status": "waiting",
-        "label": "Query-competition indicator",
+        "status": "running",
+        "label": "B4 30-epoch extension",
         "gpu": "0",
-        "depends_on": ["AdaRES-B3"],
-        "launch_condition": "Satisfied: B3 completed 20 validations at mIoU 0.5014 < 0.515; B4 unit and real-scene smoke gates passed"
+        "extension_of": "AdaRES-B4",
+        "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_032553/last.pth",
+        "pid": 52617,
+        "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_b4_query_competition_res_20260922_093323.log",
+        "launched": "2026-09-22T09:33:23+08:00",
+        "epochs": 30
       },
       {
-        "id": "AdaRES-B5",
-        "config": "configs_song/model_paper5/adares_b5_token_grounding_res.yaml",
-        "status": "waiting",
-        "label": "Token-grounding indicator",
+        "id": "AdaRES-B2-E30",
+        "config": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
+        "status": "running",
+        "label": "B2 30-epoch extension",
         "gpu": "1",
-        "depends_on": ["AdaRES-B3"],
-        "launch_condition": "Satisfied: B3 completed 20 validations at mIoU 0.5014 < 0.515; B5 unit and real-scene smoke gates passed"
+        "extension_of": "AdaRES-B2",
+        "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b2_metric_indicator_res/20260919_204155/last.pth",
+        "pid": 56854,
+        "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_b2_metric_indicator_res_20260922_093709.log",
+        "launched": "2026-09-22T09:37:09+08:00",
+        "epochs": 30
       }
     ]
   }

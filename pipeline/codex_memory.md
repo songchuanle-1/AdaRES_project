@@ -49,13 +49,15 @@
   the running extension's epoch setting or restart it from pretrain.
 
 ## Running And Queue
-- AdaRES-B5 is running on server-2 GPU 1.
-- At 2026-09-22 08:53 +08:00 B5 was in epoch 20/20 at iteration 1,686/4,686;
-  one Python process used 17,184 MiB on GPU 1.
-- Preflight monitor reported B5 best validation mIoU 0.5008.
-- AdaRES-B4 is terminal and absent from the active queue; server-2 GPU 0 is idle.
-- Active queue is below its two-GPU target, but this event tick is not a design
-  tick.
+- AdaRES-B4-E30 is running on server-2 GPU 0, PID 52617. Verified log:
+  `resume_adares_b4_query_competition_res_20260922_093323.log`; resume began
+  at epoch 21 with best mIoU 0.5072 and training is progressing.
+- AdaRES-B2-E30 is running on server-2 GPU 1, PID 56854. Verified log:
+  `resume_adares_b2_metric_indicator_res_20260922_093709.log`; resume began
+  at epoch 21 with best mIoU 0.5046 and `Train[21/30]` is active.
+- `queue.json` and `running.json` now model both extensions as the two active
+  slots, preventing duplicate dispatch or unrelated design while they run.
+- AdaRES-B5 is closed at mIoU 0.5030 after 20/20 validations.
 
 ## Open Questions And Risks
 - Pending questions in the snapshot manifest: none.
@@ -67,11 +69,10 @@
   absent; the shared skill provides the decision logger.
 
 ## Last Tick
-- 2026-09-22 08:53 +08:00 event tick; monitor_rc=0, goal_rc=0.
-- Closed B4 at mIoU 0.5070 after 20 validations and promoted it to champion.
-- Verified B5 training progress, repaired the experiment ledger, updated
-  research-work state, terminal analysis, and durable memory.
-- Report: `pipeline/reports/summary_20260922-085300.md`.
-- Next: monitor B5's final validation and terminal transition; if B5 stops
-  improving and no design is pending, use the next design tick to propose one
-  structurally distinct candidate for the idle GPU.
+- 2026-09-22 09:30-09:42 +08:00 manual protocol correction.
+- Fixed B2 and B4 at 30 total epochs, resumed both from epoch-20 `last.pth`
+  without resetting optimizer or PolyLR state, and launched one per GPU.
+- Fixed B2's duplicate loss-registry error with `force=True` in commit
+  `f23036b`; verified both processes beyond PID existence.
+- Next: monitor validations 21-30, preserve the fixed protocol, and compare
+  B2-E30 versus B4-E30 on the same training budget.
