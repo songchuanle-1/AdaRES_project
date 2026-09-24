@@ -65,8 +65,12 @@ REMOTE_LOG="${REMOTE_CODE_ROOT}/logs/train_${CFG_BASENAME}_${TIMESTAMP}.log"
 SOURCE_COMMIT="$(git -C "${PROJECT_ROOT}" rev-parse HEAD)"
 
 echo "[1/3] Syncing committed AdaRES code to ${SERVER}..."
-git -C "${PROJECT_ROOT}" archive HEAD:AdaRES | ssh "${SSH_TARGET}" \
-    "mkdir -p '${REMOTE_CODE_ROOT}' && tar -C '${REMOTE_CODE_ROOT}' -xf - && printf '%s\n' '${SOURCE_COMMIT}' > '${REMOTE_CODE_ROOT}/.codex_source_commit'"
+bash "${SCRIPT_DIR}/sync.sh" "${SERVER}"
+REMOTE_COMMIT="$(ssh -o BatchMode=yes "${SSH_TARGET}" "cat '${REMOTE_CODE_ROOT}/.codex_source_commit'")"
+if [[ "${REMOTE_COMMIT}" != "${SOURCE_COMMIT}" ]]; then
+    echo "Error: remote source identity does not match committed code."
+    exit 4
+fi
 
 echo "[2/3] Verifying GPU ${GPU_ID} is idle..."
 GPU_USED="$(ssh "${SSH_TARGET}" "nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits -i '${GPU_ID}'")"
