@@ -3,10 +3,11 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+SERVERS_YAML="$(cygpath -m "$PROJECT_ROOT/SERVERS.yaml")"
 SERVER="${1:?Usage: sync.sh <server>}"
 
 read_value() {
-    python -c "import yaml; d=yaml.safe_load(open(r'$PROJECT_ROOT/SERVERS.yaml', encoding='utf-8'))['servers']['$SERVER']; print(d['$1'])"
+    python -c "import yaml; d=yaml.safe_load(open(r'$SERVERS_YAML', encoding='utf-8'))['servers']['$SERVER']; print(d['$1'])"
 }
 
 HOST="$(read_value host)"
