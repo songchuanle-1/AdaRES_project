@@ -4,6 +4,9 @@ set -euo pipefail
 SCRIPT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 PROJECT_ROOT="${PROJECT_DIR:-$(dirname "${SCRIPT_DIR}")}"
 SERVERS_YAML="${PROJECT_ROOT}/SERVERS.yaml"
+if command -v cygpath >/dev/null 2>&1; then
+    SERVERS_YAML="$(cygpath -m "${SERVERS_YAML}")"
+fi
 LOCAL_CODE_ROOT="${PROJECT_ROOT}/AdaRES"
 
 SERVER="${1:-}"

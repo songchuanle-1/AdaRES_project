@@ -27,8 +27,9 @@ if ! git -C "$PROJECT_ROOT" cat-file -e "$BASE^{commit}" ||
 fi
 mapfile -t CHANGES < <(git -C "$PROJECT_ROOT" diff --name-status "$BASE" "$HEAD" -- AdaRES)
 if (( ${#CHANGES[@]} == 0 )); then
-    echo "Refusing marker-only sync without AdaRES additions" >&2
-    exit 1
+    ssh -o BatchMode=yes "$TARGET" "printf '%s\n' '$HEAD' > '$REMOTE_ROOT/.codex_source_commit'"
+    echo "Verified no AdaRES changes; advanced source marker on $SERVER to $HEAD"
+    exit 0
 fi
 
 FILES=()
