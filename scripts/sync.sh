@@ -73,7 +73,7 @@ for file in "${FILES[@]}"; do
     [[ "$expected" == "$actual" ]] || { echo "Remote hash mismatch: $file" >&2; exit 1; }
 done
 if (( TRAIN_ENTRY_UPDATE == 1 )); then
-    python "$SCRIPT_DIR/sync_y17_train_entry.py" "$PROJECT_ROOT" \
+    MSYS_NO_PATHCONV=1 python "$SCRIPT_DIR/sync_y17_train_entry.py" "$(cygpath -m "$PROJECT_ROOT")" \
         "$TARGET" "$REMOTE_ROOT" "$BASE" "$HEAD"
 fi
 ssh -o BatchMode=yes "$TARGET" "printf '%s\n' '$HEAD' > '$REMOTE_ROOT/.codex_source_commit'"
