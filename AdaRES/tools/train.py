@@ -75,6 +75,12 @@ def resolve_model_class(config_path):
     module = importlib.import_module(f'ipdn.model_paper5.{variant}')
     return module.IPDN
 
+def resolve_train_dataset(config_path, data_cfg, logger):
+    model_class = resolve_model_class(config_path)
+    module = importlib.import_module(model_class.__module__.rsplit('.', 1)[0])
+    builder = getattr(module, 'build_train_dataset', build_dataset)
+    return builder(data_cfg, logger)
+
 def list_avg(x):
     return sum(x) / len(x)
 
@@ -397,7 +403,7 @@ def main(args):
         logger.info(f'Train batch size per gpu: {cfg.dataloader.train.batch_size}')
     # train and val dataset
     if not args.skip_training:
-        train_dataset = build_dataset(cfg.data.train, logger)
+        train_dataset = resolve_train_dataset(args.config, cfg.data.train, logger)
         train_loader = build_dataloader(train_dataset, dist=args.dist, **cfg.dataloader.train)
     if not args.skip_validate and gorilla.is_main_process():
         val_dataset = build_dataset(cfg.data.val, logger)

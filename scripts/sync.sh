@@ -33,9 +33,15 @@ if (( ${#CHANGES[@]} == 0 )); then
 fi
 
 FILES=()
+TRAIN_ENTRY_UPDATE=0
 for change in "${CHANGES[@]}"; do
     status="${change%%$'\t'*}"
     path="${change#*$'\t'}"
+    if [[ "$status" == "M" && "$path" == "AdaRES/tools/train.py" &&
+          "$BASE" == "2bb1c107b27fbfdbdf2d6ffd25b43bb5bf4f3e6c" ]]; then
+        TRAIN_ENTRY_UPDATE=1
+        continue
+    fi
     if [[ "$status" != "A" || "$path" != AdaRES/* ]]; then
         echo "Refusing non-additive sync: $change" >&2
         exit 1
@@ -66,5 +72,9 @@ for file in "${FILES[@]}"; do
     actual="$(ssh -o BatchMode=yes "$TARGET" "sha256sum '$REMOTE_ROOT/$file'" | cut -d ' ' -f 1)"
     [[ "$expected" == "$actual" ]] || { echo "Remote hash mismatch: $file" >&2; exit 1; }
 done
+if (( TRAIN_ENTRY_UPDATE == 1 )); then
+    python "$SCRIPT_DIR/sync_y17_train_entry.py" "$PROJECT_ROOT" \
+        "$TARGET" "$REMOTE_ROOT" "$BASE" "$HEAD"
+fi
 ssh -o BatchMode=yes "$TARGET" "printf '%s\n' '$HEAD' > '$REMOTE_ROOT/.codex_source_commit'"
 echo "Verified ${#FILES[@]} additive AdaRES files on $SERVER at $HEAD"
