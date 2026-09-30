@@ -45,7 +45,7 @@ done
 
 MISSING=()
 for file in "${FILES[@]}"; do
-    expected="$(git -C "$PROJECT_ROOT" archive "$HEAD:AdaRES" "$file" | tar -xO "$file" | sha256sum | cut -d ' ' -f 1)"
+    expected="$(git -C "$PROJECT_ROOT" -c core.autocrlf=false archive "$HEAD:AdaRES" "$file" | tar -xO "$file" | sha256sum | cut -d ' ' -f 1)"
     if ssh -o BatchMode=yes "$TARGET" "test -e '$REMOTE_ROOT/$file'"; then
         actual="$(ssh -o BatchMode=yes "$TARGET" "sha256sum '$REMOTE_ROOT/$file'" | cut -d ' ' -f 1)"
         if [[ "$expected" != "$actual" ]]; then
@@ -58,11 +58,11 @@ for file in "${FILES[@]}"; do
 done
 
 if (( ${#MISSING[@]} > 0 )); then
-    git -C "$PROJECT_ROOT" archive "$HEAD:AdaRES" "${MISSING[@]}" |
+    git -C "$PROJECT_ROOT" -c core.autocrlf=false archive "$HEAD:AdaRES" "${MISSING[@]}" |
         ssh -o BatchMode=yes "$TARGET" "tar --warning=no-timestamp -C '$REMOTE_ROOT' -xkf -"
 fi
 for file in "${FILES[@]}"; do
-    expected="$(git -C "$PROJECT_ROOT" archive "$HEAD:AdaRES" "$file" | tar -xO "$file" | sha256sum | cut -d ' ' -f 1)"
+    expected="$(git -C "$PROJECT_ROOT" -c core.autocrlf=false archive "$HEAD:AdaRES" "$file" | tar -xO "$file" | sha256sum | cut -d ' ' -f 1)"
     actual="$(ssh -o BatchMode=yes "$TARGET" "sha256sum '$REMOTE_ROOT/$file'" | cut -d ' ' -f 1)"
     [[ "$expected" == "$actual" ]] || { echo "Remote hash mismatch: $file" >&2; exit 1; }
 done
