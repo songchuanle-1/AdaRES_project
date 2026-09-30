@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import yaml
 
 
 BASE = "2bb1c107b27fbfdbdf2d6ffd25b43bb5bf4f3e6c"
@@ -16,7 +17,7 @@ BEFORE = {
 AFTER = "04afc00889dc58e439197a04be50457664a7906d42d7badfdc96033f9d99b41e"
 REMOTE = r'''
 import base64, fcntl, hashlib, json, os, pathlib, sys, tempfile
-d=json.loads(base64.b64decode(sys.argv[1]))
+d=json.loads(base64.b64decode(sys.argv[1]).decode("utf-8"))
 root=pathlib.Path(d["root"])
 lock=open(root/".codex_train_entry_sync.lock","a")
 fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
@@ -61,8 +62,14 @@ def main():
     payload = base64.b64encode(json.dumps(
         dict(root=root, base=base, before=sorted(BEFORE), after=AFTER,
              data=base64.b64encode(new).decode())).encode()).decode()
+    servers = yaml.safe_load((Path(project)/"SERVERS.yaml").read_text(encoding="utf-8"))
+    server = servers["servers"]["server-2"]
+    assert target == server["user"]+"@"+server["host"]
+    assert root == server["remote_code_root"]
+    program = REMOTE.replace("sys.argv[1]", repr(payload))
     subprocess.run(["ssh", "-o", "BatchMode=yes", target,
-                    "python3 - '"+payload+"'"], input=REMOTE.encode(), check=True)
+                    server["python"]+" -"], input=program.encode(),
+                   check=True, timeout=40)
 
 
 if __name__ == "__main__":

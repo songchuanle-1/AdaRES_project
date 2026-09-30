@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import argparse
 
 from sync_y17_train_entry import REMOTE
 
@@ -33,9 +34,15 @@ def main():
         data["base"] = "wrong parent"
         assert run().returncode != 0 and path.read_bytes() == new
         assert (root/".codex_source_commit").read_text() == "parent"
-        print(json.dumps(dict(passed=True, cases=[
+        result = dict(passed=True, python=sys.version, cases=[
             "foreign_bytes_rejected", "atomic_update", "idempotent",
-            "stale_marker_rejected", "marker_not_advanced"])))
+            "stale_marker_rejected", "marker_not_advanced"])
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--output")
+        args = parser.parse_args()
+        if args.output:
+            Path(args.output).write_text(json.dumps(result, indent=2))
+        print(json.dumps(result))
 
 
 if __name__ == "__main__":
