@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y79",
+  "token": "08e82df71e3743dcb86c0eec4d39460c",
+  "code_commit": "e0c7dba199fcf1a009941450d04aeb799418a7e6",
+  "CPU_native_callbacks_actually_executed": true,
+  "native_body": {
+    "path": "scripts/probe_y79_native_smoke.py",
+    "sha256": "2b69e6d51a4a1bf0ebe7855ed9ef6fe9a478772cf7ed18c7a787ba66a641ddd9"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y79_native_observer_CPU_08e82df71e3743dcb86c0eec4d39460c_program.py",
+    "sha256": "12437e39c09c614782dd3ea2b74f1eec5f0e93ae5bd19491e4bcd0861bbb82c3"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y79_native_observer_cpu_08e82df71e3743dcb86c0eec4d39460c.json",
+    "sha256": "0f42351401e0aeed48ee20e73788a148cb98eee58fae59b39fc9d1f9df7afe08"
+  },
+  "exact_callback_functions_and_classes": 16,
+  "original_full_model_pretrain_TRAIN_loaded": true,
+  "two_synthetic_CPU_decoder_optimizer_steps": true,
+  "full_seven_shared_confidence_query_norm_calls": true,
+  "six_exact_current_query_language_ffn_padding_identities": true,
+  "six_qla_and_five_next_lla_consumers": true,
+  "finite_both_input_and_new_weight_gradients_and_updates": true,
+  "zero_then_nonzero_response": true,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y79_native_observer_cpu_08e82df71e3743dcb86c0eec4d39460c.json",
+      "sha256": "0f42351401e0aeed48ee20e73788a148cb98eee58fae59b39fc9d1f9df7afe08"
+    },
+    {
+      "path": "pipeline/analyses/y79_native_observer_cpu_08e82df71e3743dcb86c0eec4d39460c.log",
+      "sha256": "97e754085442459ec8bcf2235d6479dd9a1b3b916d0f8c5ef42b917593caf826"
+    },
+    {
+      "path": "pipeline/checks/y79_native_observer_CPU_08e82df71e3743dcb86c0eec4d39460c_program.py",
+      "sha256": "12437e39c09c614782dd3ea2b74f1eec5f0e93ae5bd19491e4bcd0861bbb82c3"
+    },
+    {
+      "path": "scripts/probe_y79_native_smoke.py",
+      "sha256": "2b69e6d51a4a1bf0ebe7855ed9ef6fe9a478772cf7ed18c7a787ba66a641ddd9"
+    },
+    {
+      "path": "scripts/save_y79_native_observer_verification.py",
+      "sha256": "c4f71539deb4ee2200cc239c57633aa3dbecbf7867a67b886a2e9d7226f1a3ac"
+    },
+    {
+      "path": "scripts/prepare_y79_native_observer_cpu.py",
+      "sha256": "0f3e2ba1d4146abc79ef77a95a2d8e0845b2d6b852cf8cfeb0cbbde51e3406a4"
+    }
+  ],
+  "CUDA_initialized": false,
+  "native_sparse_task": false,
+  "native_smoke_passed": false,
+  "admission": false,
+  "efficacy_unknown": true
+}

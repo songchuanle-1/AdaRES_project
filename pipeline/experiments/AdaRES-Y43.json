@@ -1,0 +1,62 @@
+{
+  "id": "AdaRES-Y43",
+  "config": "configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-13T02:33:51.696863",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-13T19:58:44.120498",
+      "status": "stopped_unknown",
+      "best_miou": "0.5010",
+      "epochs": "14/30"
+    },
+    {
+      "ts": "2026-10-13T20:06:11.554122+08:00",
+      "action": "resumed_after_user_shutdown",
+      "original": {
+        "pid": 13155,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y43_point_asymmetry_res_20261013_023313.log",
+        "status": "stopped_unknown",
+        "launched": "2026-10-13T02:33:51"
+      },
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261012_140041/last.pth",
+      "pid": 15333,
+      "gpu": "0",
+      "evidence": "pipeline/reports/shutdown_resume_AdaRES-Y43_364e34f425ad445c958c450ac8df9691_verify.json",
+      "interruption_record": {
+        "finished_at": "2026-10-13T19:58:44",
+        "final_best": "0.5010",
+        "epochs_final": "14/30",
+        "log_local": ""
+      }
+    },
+    {
+      "ts": "2026-10-14T11:48:34.544944",
+      "status": "done_complete",
+      "best_miou": "0.5085",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 15333,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y43_point_asymmetry_res_364e34f425ad445c958c450ac8df9691.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-13T02:33:51",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261012_140041/last.pth",
+  "resume_checkpoint_sha256": "856c58bc77ac91d7fd77610401264b5b81d2039955fa11b9c86182dccc096e4c",
+  "resume_epoch": 14,
+  "resume_attempt_token": "364e34f425ad445c958c450ac8df9691",
+  "resumed_at": "2026-10-13T20:06:11.554122+08:00",
+  "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261013_072921",
+  "carried_best": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261013_072921/best.pth",
+  "final_best": "0.5085",
+  "finished_at": "2026-10-14T11:48:34",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

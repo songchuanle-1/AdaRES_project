@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "candidate_ids": [
+    "AdaRES-Y46",
+    "AdaRES-Y49"
+  ],
+  "resource_evidence": {
+    "path": "pipeline/analyses/due_resources_78bc_78bc50c1b2e8471f9a38e00c34829673.json",
+    "sha256": "0ac4a71bbf828a46be537d92ab8bbd8220d76b9bb8d232a23ddf72cda6ed34c1"
+  },
+  "observed_start_local": "2026-10-16T09:53:27.180243+08:00",
+  "observed_end_local": "2026-10-16T09:53:32.778825+08:00",
+  "recheck_boundary": {
+    "snapshot_generated_at": "2026-10-16T01:49:05.427268+00:00",
+    "snapshot_due_count": 0,
+    "timers": {
+      "AdaRES-Y46": {
+        "prior_retry_after": "2026-10-16T09:53:26.643432+08:00",
+        "previous_last_check_at": "2026-10-15T15:48:50.704714+00:00",
+        "effective_due_at": "2026-10-16T09:53:26.643432+08:00",
+        "due_at_observation": true
+      },
+      "AdaRES-Y49": {
+        "prior_retry_after": "2026-10-16T09:53:26.643432+08:00",
+        "previous_last_check_at": "2026-10-15T15:48:50.704714+00:00",
+        "effective_due_at": "2026-10-16T09:53:26.643432+08:00",
+        "due_at_observation": true
+      }
+    },
+    "explanation": "Snapshot predates fixed hourly retry. Bounded foreground wait only to that retry, not tick deadline; one shared actual check for SAME existing IDs. Reserve2/2 preparation0; no placeholders or context/checker/deadline edits."
+  },
+  "unchanged_frozen_tests": {
+    "AdaRES-Y46": {
+      "manifest": {
+        "path": "pipeline/analyses/y46_next_production_native_131e_131e82d16cb9437f968b1acd879766b7.json",
+        "sha256": "0c9ba94c9cb7261e5ba8df59cbe6a1682658c505fb98fd71538f26ce1b69a1ac"
+      },
+      "program": {
+        "path": "scripts/probe_y46_production_native_131e.py",
+        "sha256": "1e1affbd1d690cdb2d30039865fd0cf6dac2dc4a0c74f543ce6ce40fbc66e648"
+      }
+    },
+    "AdaRES-Y49": {
+      "manifest": {
+        "path": "pipeline/analyses/y49_next_native_freeze_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+        "sha256": "512bed923d9ad27fa8bbbe4622d5bbbf591845f651d67b6597e43e2a3931a371"
+      },
+      "program": {
+        "path": "pipeline/analyses/y49_instrumentation_program_c3e5_c3e5627500e14e3fa88075dc5544095e.py",
+        "sha256": "5d762fe9267264a4d8889f4787957c635fab3996ff897cd4fc3329b590db7d54"
+      }
+    }
+  },
+  "pending_gates": {
+    "AdaRES-Y46": [
+      "production_native_backward",
+      "production_tools_train_and_restore",
+      "resources",
+      "final_six_gate_review"
+    ],
+    "AdaRES-Y49": [
+      "native_task_diagnosis",
+      "native_backward",
+      "resources",
+      "independent_production",
+      "released_init_tools_train_restore",
+      "six_gate_review"
+    ]
+  },
+  "scientific_status_unchanged": {
+    "AdaRES-Y46": "production_CPU_controls_passed_GPU_validation_blocked",
+    "AdaRES-Y49": "CPU_information_and_hook_supported_native_GPU_pending"
+  },
+  "frozen_programs_syntax_valid": true,
+  "GPU_branches_executed": false,
+  "retry_after": "2026-10-16T10:53:32.778825+08:00",
+  "retry_basis": "Actual client-local observation end plus1hour, or genuine unblock; not automation time",
+  "GPU0_owner": "foreign PID19723",
+  "GPU1_owner": "own Y48 PID8877",
+  "GPU_diagnostics": 0,
+  "repeated_CPU_controls": false,
+  "new_candidates": 0,
+  "admissions": 0,
+  "new_training": 0,
+  "current_task_code_commit": "d18c228fd3796b5a87dbe313075b6ee748b2d51b",
+  "current_task_exact_source_hashes_verified": true,
+  "scope": "Both authorized GPUs genuinely occupied; necessary non-GPU preparation complete. GPU0 memory18530to21126MiB still PID19723/util100percent, not a free card. SAME frozen native tests blocked, not scientific efficacy/native/resource PASS/admission/route exhaustion."
+}

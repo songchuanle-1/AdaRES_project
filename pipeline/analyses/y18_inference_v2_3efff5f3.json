@@ -1,0 +1,96 @@
+{
+  "complete": true,
+  "mode": "inference",
+  "gpu_precheck": {
+    "memory_mib": 1,
+    "utilization": 0
+  },
+  "config_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "tool_sha256": "d465db1800abe00257358e674f8618f2e4994801db563fcf41d827e934c229dc",
+  "class_module": "ipdn.model_paper5.adares_y18_point_measure.ipdn",
+  "scans": [
+    "scene0000_00",
+    "scene0001_00",
+    "scene0002_00",
+    "scene0003_00",
+    "scene0004_00",
+    "scene0005_00",
+    "scene0006_00",
+    "scene0007_00"
+  ],
+  "rows": [
+    {
+      "scans": [
+        "scene0000_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 0.0014235377311706543,
+      "binary_flips": 0,
+      "max_indicator_change": 0.0002582371234893799
+    },
+    {
+      "scans": [
+        "scene0001_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 8.940696716308594e-07,
+      "binary_flips": 0,
+      "max_indicator_change": 5.364418029785156e-07
+    },
+    {
+      "scans": [
+        "scene0002_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 1.4901161193847656e-06,
+      "binary_flips": 0,
+      "max_indicator_change": 2.1457672119140625e-06
+    },
+    {
+      "scans": [
+        "scene0003_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 5.736947059631348e-07,
+      "binary_flips": 0,
+      "max_indicator_change": 3.5762786865234375e-07
+    },
+    {
+      "scans": [
+        "scene0004_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 1.2516975402832031e-06,
+      "binary_flips": 0,
+      "max_indicator_change": 4.172325134277344e-07
+    },
+    {
+      "scans": [
+        "scene0005_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 1.2218952178955078e-06,
+      "binary_flips": 0,
+      "max_indicator_change": 8.717179298400879e-07
+    },
+    {
+      "scans": [
+        "scene0006_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 2.205371856689453e-06,
+      "binary_flips": 0,
+      "max_indicator_change": 8.046627044677734e-07
+    },
+    {
+      "scans": [
+        "scene0007_00"
+      ],
+      "expressions": 4,
+      "max_mask_probability_change": 8.940696716308594e-07,
+      "binary_flips": 0,
+      "max_indicator_change": 7.748603820800781e-07
+    }
+  ],
+  "checkpoint_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52"
+}

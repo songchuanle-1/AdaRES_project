@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "token": "90bb8a2b74e6484893f5a70eec536310",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-25T12:43:35.955818+00:00",
+  "recorded_at": "2026-10-25T12:45:35.208596+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Unchanged known closure queue-opening predicate conflicts with measured external GPU0 compute occupation. Current evidence saved; do not replay failed finish or modify checker, blocker category, context or queue. Abort this tick only.",
+  "context_committed": false,
+  "lease_release": "released",
+  "usage": {
+    "status": "partial_window",
+    "calls": 6,
+    "input_tokens": 982071,
+    "cached_input_tokens": 967424,
+    "output_tokens": 4920,
+    "reasoning_output_tokens": 878,
+    "total_tokens": 986991,
+    "uncached_input_tokens": 14647,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 7,
+    "new_evidence_references": 7,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 7,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  },
+  "lease_released_at": "2026-10-25T12:45:35.990082+00:00"
+}

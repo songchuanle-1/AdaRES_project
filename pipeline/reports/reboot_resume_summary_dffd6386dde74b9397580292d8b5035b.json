@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "project": "AdaRES_project",
+  "token": "dffd6386dde74b9397580292d8b5035b",
+  "human_request": "不小心重启机器了 你重新resume吧",
+  "task": "continue_latest_verified_attempts_after_accidental_reboot",
+  "snapshot_at": "2026-10-20T15:43:46.631611+08:00",
+  "deadline_at": "2026-10-20T16:43:46.631611+08:00",
+  "snapshot_mode": "steady",
+  "snapshot_caveat": "Old running entries were still within deathwatch 1/3; native monitor reported no training processes. This explicit manual recovery has real later actions.",
+  "context_sha256": "794fc63247d06a0823d0bfaeb4b154bc286bc99dd4f245758974e23136006f58",
+  "pending_sha256": "d6a90cc1b5ec83bd250a78f9e394ec36876fcfbe0027e0aaf578eb82956af9da",
+  "source_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0",
+  "mount_uuid": "459a8db5-5b91-446b-a501-eed399c6a45d",
+  "former_pids_verified_absent": [35832, 36864],
+  "training_result": "both_existing_runs_resumed_with_verified_native_progress",
+  "postflight_result": "not_yet_observed_at_artifact_write",
+  "training": [
+    {
+      "id": "AdaRES-Y52", "server": "server-2", "gpu": 1, "pid": 5442,
+      "saved_epoch": 26, "resume_epoch": 27, "total_epochs": 30, "seed": 1999,
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_010311/last.pth",
+      "checkpoint_sha256": "85fcc6bdcfd9885f45f3057577776da9af4e2128a966d03e6ec4fe4a570aa6c8",
+      "preserved_best_mIoU": 0.5097084641456604,
+      "optimizer_states": 543,
+      "verified_progress": [[27, 0], [27, 6]],
+      "observation_window": ["2026-10-20T15:50:15.401777+08:00", "2026-10-20T15:50:34.076607+08:00"],
+      "original_checkpoints_unchanged": true,
+      "model_optimizer_scheduler_restored": true
+    },
+    {
+      "id": "AdaRES-Y54", "server": "server-2", "gpu": 0, "pid": 5702,
+      "saved_epoch": 27, "resume_epoch": 28, "total_epochs": 30, "seed": 1999,
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404/last.pth",
+      "checkpoint_sha256": "70906ef152a9a44e30194b401ca4f94d6327960585f8a443bb55d05dbfc2fd62",
+      "preserved_best_mIoU": 0.5063441395759583,
+      "optimizer_states": 543,
+      "verified_progress": [[28, 24], [28, 37]],
+      "observation_window": ["2026-10-20T15:50:49.914310+08:00", "2026-10-20T15:50:56.135395+08:00"],
+      "original_checkpoints_unchanged": true,
+      "model_optimizer_scheduler_restored": true
+    }
+  ],
+  "local_tests": {"command": "python -B -m unittest test_resume_mounted_training test_resume_reboot_training -v", "tests_run": 9, "result": "OK", "gpu_used": false},
+  "semantics": {"unfinished_epoch_replayed": true, "fresh_start": false, "new_candidate": false, "new_admission": false, "new_efficacy_claim": false, "git_commit_or_push": false, "scheduler_changed": false, "gpu_diagnostic_run": false},
+  "evidence": [
+    {"path": "scripts/resume_reboot_training.py", "sha256": "2591daf286595b7ea2c75e4e9e80a06e68e09c1d30225c6158829bbdf8c3ddf6"},
+    {"path": "scripts/test_resume_reboot_training.py", "sha256": "118a65fb4d1b7dd176cb1cd5bf2fc6e94f49d86b1de4996d9c98fc1fc4ff63a5"},
+    {"path": "pipeline/reports/reboot_resume_AdaRES-Y52_dffd6386dde74b9397580292d8b5035b_inspect.json", "sha256": "9c347a2da82ead65254a6f3f8653d6ca9cf39b133ca93b712aed55b72d2385bd"},
+    {"path": "pipeline/reports/reboot_resume_AdaRES-Y52_dffd6386dde74b9397580292d8b5035b_launch.json", "sha256": "121c0b902c2bffbf62145000991a75f6596b8f038470af2f7a7172ef1446edc6"},
+    {"path": "pipeline/reports/reboot_resume_AdaRES-Y52_dffd6386dde74b9397580292d8b5035b_verify.json", "sha256": "d01438254addc1cf9f2856360042bfdd49dd9c9da7cf380b4eece66d3bb60be4"},
+    {"path": "pipeline/reports/reboot_resume_AdaRES-Y54_dffd6386dde74b9397580292d8b5035b_inspect.json", "sha256": "dfc260431b3bcaf85dca9b5f8a8a20a503c3e739f686fdab44d3fe0e89753df8"},
+    {"path": "pipeline/reports/reboot_resume_AdaRES-Y54_dffd6386dde74b9397580292d8b5035b_launch.json", "sha256": "0c993d037605983c90a50c91eb6d62725b983bdd0a62af78208d27bc4a8b5021"},
+    {"path": "pipeline/reports/reboot_resume_AdaRES-Y54_dffd6386dde74b9397580292d8b5035b_verify.json", "sha256": "dc5814e0cdfa2515d695acb9c79fbd01def6a424f76bb6d8b4a926fce325e435"}
+  ]
+}

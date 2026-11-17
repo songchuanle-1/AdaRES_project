@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-29T06:50:42.681756+08:00",
+  "before": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "9bea5e906be3a478be50442db521e766c446a1ec",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "",
+    "compute_query_rc": 0,
+    "tasks": {}
+  },
+  "after": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 87, 16176, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 112356, 16168\n",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y65": {
+        "pid": 112356,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y65_confidence_feedback_res_20261029_065005.log",
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-B",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y65_confidence_feedback_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "tail": "Using backend: pytorch\n2026-10-28 18:49:38,538 - INFO - set random seed: 1999\nset CUDA_VISIBLE_DEVICES as 0\n\rTrain[1/30]:   0%|                    | 0/4686 [00:00<?, ?it/s]\rTrain[1/30]:   0%|                    | 0/4686 [00:19<?, ?it/s, lr=0.0001, eta=32 days, 5:02:34, iter_time=19.80]\rTrain[1/30]:   0%|                    | 1/4686 [00:19<25:45:45, 19.80s/it, lr=0.0001, eta=32 days, 5:02:34, iter_time=19.80]\rTrain[1/30]:   0%|                    | 1/4686 [00:20<25:45:45, 19.80s/it, lr=0.0001, eta=16 days, 13:23:06, iter_time=10.18]\rTrain[1/30]:   0%|                    | 2/4686 [00:20<11:01:54,  8.48s/it, lr=0.0001, eta=16 days, 13:23:06, iter_time=10.18]\rTrain[1/30]:   0%|                    | 2/4686 [00:20<11:01:54,  8.48s/it, lr=0.0001, eta=11 days, 6:07:27, iter_time=6.92]  \rTrain[1/30]:   0%|                    | 3/4686 [00:20<6:13:50,  4.79s/it, lr=0.0001, eta=11 days, 6:07:27, iter_time=6.92] \rTrain[1/30]:   0%|                    | 3/4686 [00:21<6:13:50,  4.79s/it, lr=0.0001, eta=8 days, 15:18:04, iter_time=5.31]\rTrain[1/30]:   0%|                    | 4/4686 [00:21<4:01:03,  3.09s/it, lr=0.0001, eta=8 days, 15:18:04, iter_time=5.31]\rTrain[1/30]:   0%|                    | 4/4686 [00:21<4:01:03,  3.09s/it, lr=0.0001, eta=7 days, 2:57:35, iter_time=4.38] \rTrain[1/30]:   0%|                    | 5/4686 [00:21<2:52:32,  2.21s/it, lr=0.0001, eta=7 days, 2:57:35, iter_time=4.38]\rTrain[1/30]:   0%|                    | 5/4686 [00:22<2:52:32,  2.21s/it, lr=0.0001, eta=6 days, 1:33:44, iter_time=3.73]\rTrain[1/30]:   0%|                    | 6/4686 [00:22<2:06:28,  1.62s/it, lr=0.0001, eta=6 days, 1:33:44, iter_time=3.73]\rTrain[1/30]:   0%|                    | 6/4686 [00:23<2:06:28,  1.62s/it, lr=0.0001, eta=5 days, 9:22:08, iter_time=3.31]\rTrain[1/30]:   0%|                    | 7/4686 [00:23<1:46:08,  1.36s/it, lr=0.0001, eta=5 days, 9:22:08, iter_time=3.31]\rTrain[1/30]:   0%|                    | 7/4686 [00:23<1:46:08,  1.36s/it, lr=0.0001, eta=4 days, 18:47:41, iter_time=2.94]\rTrain[1/30]:   0%|                    | 8/4686 [00:23<1:20:27,  1.03s/it, lr=0.0001, eta=4 days, 18:47:41, iter_time=2.94]"
+      }
+    }
+  },
+  "task": {
+    "id": "AdaRES-Y65",
+    "label": "AdaRES-Y65 fixed30",
+    "config": "configs_song/model_paper5/adares_y65_confidence_feedback_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "depends_on": [],
+    "code_commit": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y65.json",
+    "scientific_candidate_id": "AdaRES-Y65",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "server": "server-2",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 112356,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y65_confidence_feedback_res_20261029_065005.log",
+    "launched": "2026-10-29T06:50:42"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y65 fixed30] configs_song/model_paper5/adares_y65_confidence_feedback_res.yaml → server-2 gpu0"
+  ],
+  "Y57_still_paused": true,
+  "GPU1_not_used": true,
+  "hardware_settings_changed": false
+}

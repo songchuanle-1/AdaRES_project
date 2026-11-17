@@ -1,0 +1,36 @@
+{
+  "id": "AdaRES-D1",
+  "label": "Full-query pairwise confidence",
+  "status": "done_complete",
+  "server": "server-2",
+  "gpu": "0",
+  "config": "configs_song/model_paper5/adares_d1_full_query_comparison_res.yaml",
+  "epochs": 30,
+  "baseline": "AdaRES-B4-E30",
+  "baseline_miou": 0.5094,
+  "code_commit": "d7064cd697e651eeb79b2522e10c44c0f55edb15",
+  "admission": "pipeline/admissions/AdaRES-D1.json",
+  "history": [
+    {
+      "ts": "2026-09-24T09:55:43+08:00",
+      "action": "admitted",
+      "evidence": "Six gates reviewed; additive archive deployment and native indicator test verified."
+    },
+    {
+      "ts": "2026-09-24T10:47:09.716418",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-09-25T14:47:04.971575",
+      "status": "done_complete",
+      "best_miou": "0.5080",
+      "epochs": "30/30"
+    }
+  ],
+  "launched": "2026-09-24T10:47:09",
+  "final_best": "0.5080",
+  "finished_at": "2026-09-25T14:47:04",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

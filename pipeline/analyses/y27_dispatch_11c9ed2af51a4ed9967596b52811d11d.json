@@ -1,0 +1,31 @@
+{
+  "observed_at_local": "2026-10-04T19:30:52.264089+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y27 mask-centroid relative peer confidence] configs_song/model_paper5/adares_y27_relative_peer_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y27",
+    "label": "Y27 mask-centroid relative peer confidence",
+    "config": "configs_song/model_paper5/adares_y27_relative_peer_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "359a89d59dcf3990f4e45b1202d11d3257233e76",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y27.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 9901,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y27_relative_peer_res_20261004_193016.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-04T19:30:52"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y27.json",
+    "sha256": "00241992dc3583dea6e36452784d7d1074651aad0a4c7e817ac7e7c0eec97e3d"
+  },
+  "scope": "Canonical gated dispatcher; GPU inventory constrained to1, no monitor/goal preflight repeated."
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "ef1cb0315949492fa29cdadc8a96b016",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-09-28T04:17:39.194048+00:00",
+  "recorded_at": "2026-09-28T04:23:05.907193+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Recovery check confirmed closed due misclassification fixed (due_count=0), but design postflight requires new same-tick scientific evidence: Early stop requires evidence produced in this tick; no new hypothesis was tested",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 10,
+    "input_tokens": 1716477,
+    "cached_input_tokens": 1697920,
+    "output_tokens": 10072,
+    "reasoning_output_tokens": 7838,
+    "total_tokens": 1726549,
+    "uncached_input_tokens": 18557,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

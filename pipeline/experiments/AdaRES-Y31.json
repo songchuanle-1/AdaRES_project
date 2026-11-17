@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-Y31",
+  "config": "configs_song/model_paper5/adares_y31_mask_shape_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-07T19:14:04.738732",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-08T17:49:37.407960",
+      "status": "done_complete",
+      "best_miou": "0.5060",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 66677,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y31_mask_shape_res_20261007_191327.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-07T19:14:04",
+  "final_best": "0.5060",
+  "finished_at": "2026-10-08T17:49:37",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

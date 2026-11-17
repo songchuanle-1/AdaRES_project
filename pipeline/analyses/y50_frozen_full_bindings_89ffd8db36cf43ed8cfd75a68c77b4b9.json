@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "prepared_at": "2026-10-17T12:20:55.737043+08:00",
+  "prospective_freeze": {
+    "path": "pipeline/analyses/y50_post_training_freeze_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+    "sha256": "295cb04e409deb6994c7fa59b84caf6b19a13f644d6838fe657281caa0e970aa"
+  },
+  "terminal_observation": {
+    "path": "pipeline/analyses/y52_source_y50_exit_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "3017a4a2abcecb29f2459de1f40574abeb8eecf07c52d88d45b420f43411106f"
+  },
+  "code_binding": {
+    "path": "pipeline/analyses/y50_commit_binding_7548_75486f9263d34214b3bd2e1412c69639.json",
+    "sha256": "31e0836db927d447ac5045862978d050b14a38587aba6041d76c1f704afea506"
+  },
+  "body": {
+    "path": "scripts/probe_y50_frozen_eval_89ff.py",
+    "sha256": "6b1b440ddfaeba0bbab7bb7eb68c3eeff7bd054fc56f6f7735b6e6792a8ba053"
+  },
+  "programs": [
+    {
+      "path": "pipeline/analyses/y50_frozen_y50_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+      "sha256": "2fcf376bd6212936af10e4e55f7b94f167c0e155fa79f487bed66272b225d48a"
+    },
+    {
+      "path": "pipeline/analyses/y50_frozen_w2_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+      "sha256": "b914cd3cc06d6440a6e400737e6f1f3974a55aae5dc4acfb21b6d12a6abe0a48"
+    },
+    {
+      "path": "pipeline/analyses/y50_frozen_b1_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+      "sha256": "45798108bb2eda72675197ef501287964d6250b63ca063f805300df730d5b388"
+    }
+  ],
+  "evaluator_sha256": "7824e7807b44c6344b158570626d7ad90fb5fc44eb6852dbd475d34440b1dc13",
+  "protocol": "Unchanged full9508/141, twice each Y50/W2/B1, FIRST primary; existing evaluator and redundant-lock adapter reused exactly. Scene-bootstrap10000/1999, TRAIN cuts1487/3325 and CI upper<0 harm review unchanged.",
+  "canonical_deathwatch": "Preflight registry still running/deathwatch1of3; physical fixed30 exit is separately proven. No queue status forced, preflight repeated or history rewritten.",
+  "result": "pending"
+}

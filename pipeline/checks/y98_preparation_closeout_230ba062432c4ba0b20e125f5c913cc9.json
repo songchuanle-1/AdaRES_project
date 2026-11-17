@@ -1,0 +1,152 @@
+{
+  "complete": true,
+  "token": "230ba062432c4ba0b20e125f5c913cc9",
+  "observed_at": "2026-11-09T07:21:56.116546+08:00",
+  "observations": {
+    "AdaRES-Y92": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y92_230ba062432c4ba0b20e125f5c913cc9_release.json",
+        "sha256": "6427d1e138dea3c416811952fa24c2406c9954653be618c9c7e43c6557fdfc8d"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 27,
+        "total": 30,
+        "step": 966,
+        "count": 4686
+      },
+      "pid": 1305468
+    },
+    "AdaRES-Y93": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y93_230ba062432c4ba0b20e125f5c913cc9_release.json",
+        "sha256": "fcd9eba4921c4b4718a531f18fddc41c4b1a293faa910860fced81708db07f58"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 13,
+        "total": 30,
+        "step": 3185,
+        "count": 4686
+      },
+      "pid": 47380
+    }
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "60fb0207fa5408c2860679f132991650d0a8cc4cd1185a80c7bd5dae5ccad67f"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "f092c49f30a1e9f333e8efd5c675341d9b4abf450b95664ff818585e9b3ca113"
+    }
+  },
+  "earlier_preparations": {
+    "AdaRES-Y94": {
+      "path": "pipeline/checks/y94_y93_additive_binding_2683c4548e244340a4d06c50bec79b2e.json",
+      "sha256": "437d51952a3702ad341771a09c85b371a2eba9056bf54ab446283f33a04cfab4"
+    },
+    "AdaRES-Y95": {
+      "path": "pipeline/checks/y95_cpu_version_a7f1a4ec5ffc4c3a9837805bc45ce950.json",
+      "sha256": "49091dda2a519022d63df8e4c3cee9b61b732bc08c75b08faa684f938eaee974"
+    },
+    "AdaRES-Y96": {
+      "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497.json",
+      "sha256": "87456acabf54a157921dff20ed579aafea943c0a6ffe8bfb9f3f09518d08dabc"
+    }
+  },
+  "new_candidate": "AdaRES-Y98",
+  "CPU_result": {
+    "path": "pipeline/analyses/y98_cpu_230ba062432c4ba0b20e125f5c913cc9.json",
+    "sha256": "0d62f89467d6b8203206695b786c71001d5e8c6e39081fc7453af4376f1c4bdb"
+  },
+  "CPU_version": {
+    "path": "pipeline/checks/y98_cpu_version_230ba062432c4ba0b20e125f5c913cc9.json",
+    "sha256": "233b53672e6d3cfc65de615d267b0c9f423319fbc44c31a92b844044f93c0664"
+  },
+  "native_preparation": {
+    "path": "pipeline/checks/y98_native_230ba062432c4ba0b20e125f5c913cc9.json",
+    "sha256": "ae3441a2a5a7fadac9a8a0f6e9c5f1f2f597e94d39699d99eb78f5bb6f1f2f5d"
+  },
+  "current_owner_native_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y98_native_230ba062432c4ba0b20e125f5c913cc9_server1_plan.json",
+      "sha256": "3219b2b393c44ff242221f8d84b2329e7df7a0dfdf8ec2a0e84b1ec2b82d699e"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y98_native_230ba062432c4ba0b20e125f5c913cc9_server2_plan.json",
+      "sha256": "1d8d78eac8795122ee906499383725ef3a9aeb5dd6ffaeb2c15b1af894aa6009"
+    }
+  },
+  "original_Y97_numerical_failures_unchanged": true,
+  "original_Y92_Y93_preserved": true,
+  "new_scientific_candidates": 1,
+  "CPU_candidate_attempts": 1,
+  "CPU_candidate_attempt_result": "passed",
+  "actual_evidence_guards": 10,
+  "runtime_guards": 8,
+  "native_GPU_tasks": 0,
+  "new_admissions": 0,
+  "new_training_launches": 0,
+  "original_archives": 0,
+  "original_training_checkpoints_loaded": false,
+  "original_full_frozen_FIRST_and_cost_preserved": true,
+  "original_GPU1_and_Y57_pause_preserved": true,
+  "efficacy_measured": false,
+  "production_HEAD_index_queue_preserved": true,
+  "evidence": [
+    {
+      "path": "scripts/finish_y98_preparation_tick.py",
+      "sha256": "cc2f73e3433a2989fb99b06f17730b5250c918a7ae02c7bf26f7089b06037217"
+    },
+    {
+      "path": "pipeline/analyses/y98_cpu_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "0d62f89467d6b8203206695b786c71001d5e8c6e39081fc7453af4376f1c4bdb"
+    },
+    {
+      "path": "pipeline/checks/y98_cpu_230ba062432c4ba0b20e125f5c913cc9_program.py",
+      "sha256": "bcac63461a33e27278deb8e5868a786aac036cae8335d1a11bb409b91ec1f46d"
+    },
+    {
+      "path": "pipeline/checks/y98_cpu_version_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "233b53672e6d3cfc65de615d267b0c9f423319fbc44c31a92b844044f93c0664"
+    },
+    {
+      "path": "pipeline/checks/y98_native_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "ae3441a2a5a7fadac9a8a0f6e9c5f1f2f597e94d39699d99eb78f5bb6f1f2f5d"
+    },
+    {
+      "path": "pipeline/checks/y97_CPU_numerical_failure_73b979596bce48149cd5bfb9bc0ee1be.json",
+      "sha256": "d9875d4734907fca95bd7ae43f731d5af5feed79af3ffe35bf4e9bea2441ca9a"
+    },
+    {
+      "path": "pipeline/checks/y97_revision1_result_3c30c227fe6f499db25bd98f6811520a.json",
+      "sha256": "bfec5a76fd07752657f1423056987fc9df9943ccbaf097d94a9bcd2d7d6acd65"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y92_230ba062432c4ba0b20e125f5c913cc9_release.json",
+      "sha256": "6427d1e138dea3c416811952fa24c2406c9954653be618c9c7e43c6557fdfc8d"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y93_230ba062432c4ba0b20e125f5c913cc9_release.json",
+      "sha256": "fcd9eba4921c4b4718a531f18fddc41c4b1a293faa910860fced81708db07f58"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "60fb0207fa5408c2860679f132991650d0a8cc4cd1185a80c7bd5dae5ccad67f"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "f092c49f30a1e9f333e8efd5c675341d9b4abf450b95664ff818585e9b3ca113"
+    },
+    {
+      "path": "pipeline/checks/y98_native_230ba062432c4ba0b20e125f5c913cc9_server1_plan.json",
+      "sha256": "3219b2b393c44ff242221f8d84b2329e7df7a0dfdf8ec2a0e84b1ec2b82d699e"
+    },
+    {
+      "path": "pipeline/checks/y98_native_230ba062432c4ba0b20e125f5c913cc9_server2_plan.json",
+      "sha256": "1d8d78eac8795122ee906499383725ef3a9aeb5dd6ffaeb2c15b1af894aa6009"
+    }
+  ]
+}

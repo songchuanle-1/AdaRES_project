@@ -1,0 +1,108 @@
+{
+  "id": "AdaRES-Y54",
+  "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-19T15:50:18.445394",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-20T12:43:53.922209",
+      "status": "stopped_unknown",
+      "best_miou": "0.5060",
+      "epochs": "25/30"
+    },
+    {
+      "ts": "2026-10-20T13:05:47.537742+08:00",
+      "action": "resumed_after_mount_recovery",
+      "interruption": {
+        "id": "AdaRES-Y54",
+        "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+        "server": "server-2",
+        "gpu": "0",
+        "status": "stopped_unknown",
+        "history": [
+          {
+            "ts": "2026-10-19T15:50:18.445394",
+            "action": "launched",
+            "gpu": "0"
+          },
+          {
+            "ts": "2026-10-20T12:43:53.922209",
+            "status": "stopped_unknown",
+            "best_miou": "0.5060",
+            "epochs": "25/30"
+          }
+        ],
+        "pid": 47332,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y54_fine_support_res_20261019_154936.log",
+        "launch_verified": true,
+        "launch_verification": "training_progress",
+        "launched": "2026-10-19T15:50:18",
+        "final_best": "0.5060",
+        "finished_at": "2026-10-20T12:43:53.922209",
+        "log_local": "",
+        "epochs_final": "25/30",
+        "archive_id": "36f8d01305bb4c539d2a25272a62b86e"
+      },
+      "human_request": "挂载了 提交训练吧",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261019_031710/last.pth",
+      "pid": 36864,
+      "gpu": "0",
+      "evidence": "pipeline/reports/mount_resume_AdaRES-Y54_81e295aec4c1457c9689d4b62dd21b62_verify.json"
+    },
+    {
+      "ts": "2026-10-20T15:50:58.836448+08:00",
+      "action": "resumed_after_user_reboot",
+      "interruption": {
+        "status": "running",
+        "pid": 36864,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y54_fine_support_res_81e295aec4c1457c9689d4b62dd21b62.log",
+        "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261019_031710/last.pth",
+        "resume_epoch": 25,
+        "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404"
+      },
+      "human_request": "不小心重启机器了 你重新resume吧",
+      "boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404/last.pth",
+      "evidence": "pipeline/reports/reboot_resume_AdaRES-Y54_dffd6386dde74b9397580292d8b5035b_verify.json"
+    },
+    {
+      "ts": "2026-10-20T20:26:24.603074",
+      "status": "done_complete",
+      "best_miou": "0.5015",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 5702,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/reboot_resume_adares_y54_fine_support_res_dffd6386dde74b9397580292d8b5035b.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-19T15:50:18",
+  "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y54.json",
+  "patience": 30,
+  "min_epochs": 30,
+  "fixed_epochs": 30,
+  "total_epochs": 30,
+  "scientific_candidate_id": "AdaRES-Y54",
+  "requires_exclusive_ownership": true,
+  "resume_attempt_token": "dffd6386dde74b9397580292d8b5035b",
+  "dispatch_phase": "progress_verified",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404/last.pth",
+  "resume_checkpoint_sha256": "70906ef152a9a44e30194b401ca4f94d6327960585f8a443bb55d05dbfc2fd62",
+  "resumed_at": "2026-10-20T15:50:58.836448+08:00",
+  "resume_epoch": 28,
+  "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009",
+  "carried_best": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009/best.pth",
+  "reboot_boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0",
+  "final_best": "0.5015",
+  "finished_at": "2026-10-20T20:26:24.603074",
+  "log_local": "",
+  "epochs_final": "30/30",
+  "archive_id": "a010fac68c8347e2ac6e34ab98765138"
+}

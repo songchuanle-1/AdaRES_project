@@ -1,0 +1,24 @@
+{
+  "id": "AdaRES-Y56",
+  "original_program": {
+    "path": "pipeline/analyses/y56_broader_incidence_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "6f0d9bdb0e9dfdfb338730d7f85f42d1bb957d5811ba9a833e9a054e94a5a905"
+  },
+  "failed_log": {
+    "path": "pipeline/analyses/y56_broader_incidence_6debf88fed634a13b772f27bdc244bbd.log",
+    "sha256": "47746795ebbaf1137652cf3ffd4d9c30de550564ca916b7b816e9b2ea3afa9e9"
+  },
+  "failure_scope": "diagnostic sampling-unit assumption, not hypothesis",
+  "reason": "Language chunks repeat scenes; index exclusion did not exclude old scenes. The old post-capture32unique-scene assertion failed; no completed result.",
+  "sample": "First language chunk of exactly4annotations for each of first32distinct TRAIN scenes in metadata order excluding all original8scene IDs. Metadata only, frozen before predictions; all7layers/Q128/batch2 unchanged.",
+  "disposition": "If zero exact copies, complete scoped diagnostic without claiming population impossibility, rejecting counterfactual algebra or implementing correction.",
+  "complete": true,
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "preregistered_at": "2026-10-20T20:56:17.310915+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_broader_unique_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "1bb7416bc3a7c9455acb550c383b16188b992813dc0ce077aafbeffc1c5c5356"
+  },
+  "result": "pending",
+  "no_admission_or_training": true
+}

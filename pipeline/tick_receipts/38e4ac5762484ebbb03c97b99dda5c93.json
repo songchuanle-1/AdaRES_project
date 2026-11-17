@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "token": "38e4ac5762484ebbb03c97b99dda5c93",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-20T20:42:59.458697+00:00",
+  "recorded_at": "2026-10-20T20:44:09.952453+00:00",
+  "status": "FINALIZED",
+  "postflight": "PASS",
+  "context_sha256": "7be822bc654dfe3a8816a1d9a22e59feb48a09880d293a8df1e66b1830e11ed0",
+  "state_sha256": "49a75c2b6263e1d91bb0a4c6af567f9a85dd39f45197abb52051b53cf08b5361",
+  "context_committed": true,
+  "lease_release": "released",
+  "usage": {
+    "status": "partial_window",
+    "calls": 2,
+    "input_tokens": 687315,
+    "cached_input_tokens": 678016,
+    "output_tokens": 2916,
+    "reasoning_output_tokens": 714,
+    "total_tokens": 690231,
+    "uncached_input_tokens": 9299,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 4,
+    "new_evidence_references": 4,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 2,
+      "rejected": 0,
+      "blocked": 2,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  },
+  "lease_released_at": "2026-10-20T20:44:09.997847+00:00"
+}

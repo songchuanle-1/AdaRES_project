@@ -1,0 +1,10 @@
+version = 1
+id = "adares-tick"
+kind = "heartbeat"
+name = "AdaRES 前台研究 tick"
+prompt = "仅处理 AdaRES_project，不是 AdaQ3D_project。PROJECT_ROOT=D:/project，PYTHONDONTWRITEBYTECODE=1，使用 python -B。读取 C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/SKILL.md 的前台规则及 references/experiment_first.md；核验实际会话归属。\n每轮先查进展、派发已有任务；按本轮快照在待跑不足时实现变体，以原生 YAML 做真实最小检查，通过后当轮入队，有授权空闲资源就启动。依据本会话2026-11-15最新指令，暂停 AdaRES 对 server-1 的全部GPU实验，包括原生检查、派发、训练和冻结后评/成本；恢复须用户明确重新授权，覆盖2026-10-25的server-1资源授权。server-2 GPU1继续按2026-11-04指令暂停全部使用，恢复也须单独明确重新授权。当前仅可用 server-2 GPU0，保持280W，每卡一个独立实验；保留server-1既有350W设置，不改功耗或硬件。保留现有原进程、原产物及原运行收据；已自然结束的实验仅做只读精确终态核验和归档，不重启、不把日志结束当作完整checkpoint校验。原要求server-1或GPU1的冻结后评/成本继续挂起，不擅自迁移或替换资源；Y57实验本身继续单独用户暂停，恢复须单独明确授权；禁止server-6。复用项目内操作授权，挂起候选不阻断其他获准工作；保留原数据协议、禁用项、现有运行及专用恢复要求，不跨项目，不改变调度频率。使用已验证的项目独立运行环境、精确原数据和部署路径映射。当前资源以最新AGENTS、SERVERS.yaml、pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json及pipeline/authorizations/server2_gpu1_pause_20261104.json为准，保留科学goal字节和原运行收据。\n按 foreground.md 收尾。仅实质进展、完成、失败或需用户处理时，用“运行、完成、新准备、需处理”简报；无变化且无可行动事项时静默。"
+status = "ACTIVE"
+rrule = "RRULE:FREQ=HOURLY;INTERVAL=2;BYMINUTE=47"
+target_thread_id = "01a07e32-78bf-7670-925b-370911ea48db"
+created_at = 1790446384920
+updated_at = 1794672717461

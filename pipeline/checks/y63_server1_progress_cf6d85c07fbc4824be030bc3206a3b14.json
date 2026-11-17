@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 3071037\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "before": {
+    "observed_at": "2026-10-27T02:49:57.032800+08:00",
+    "latest": [
+      3,
+      30,
+      1171,
+      4686
+    ],
+    "log_bytes": 3001763
+  },
+  "after": {
+    "observed_at": "2026-10-27T02:50:02.038682+08:00",
+    "latest": [
+      3,
+      30,
+      1179,
+      4686
+    ],
+    "log_bytes": 3003795
+  },
+  "pid": 3071037,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y63_peer_bilinear_res_20261027_005016.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "gpu": "69, 22750, 68, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "id": "AdaRES-Y63",
+  "token": "cf6d85c07fbc4824be030bc3206a3b14",
+  "observed_at": "2026-10-27T02:50:01.944965+08:00",
+  "source_files": {
+    "ipdn/model_paper5/adares_y63_peer_bilinear/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+    "ipdn/model_paper5/adares_y63_peer_bilinear/dec.py": "7191ec87328bce94a7d2554c970f1dbf14bd2eccc09c628d46d2959f14daf83e",
+    "ipdn/model_paper5/adares_y63_peer_bilinear/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+    "ipdn/model_paper5/adares_y63_peer_bilinear/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+    "ipdn/model_paper5/adares_y63_peer_bilinear/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+    "ipdn/model_paper5/adares_y63_peer_bilinear/__init__.py": "6bb173cc79207ddd68a2535de451109d738d9bf440db2ea1bef5b026da4143ea"
+  },
+  "command": "python -B scripts/reconcile_y62_y63_server1.py observe --token cf6d85c07fbc4824be030bc3206a3b14",
+  "evidence": [
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "pipeline/checks/y63_server1_progress_cf6d85c07fbc4824be030bc3206a3b14.log",
+      "sha256": "b38d6f1095930b26d6b90918e30f7ca8783d7217097db6042866b92c4bfdf7cd"
+    }
+  ]
+}

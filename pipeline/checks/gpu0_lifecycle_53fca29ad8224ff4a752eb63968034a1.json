@@ -1,0 +1,180 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-23T10:51:08.526714+08:00",
+  "resource_evidence": {
+    "path": "pipeline/checks/prepared_resources_53fca29ad8224ff4a752eb63968034a1.json",
+    "sha256": "b43f0a819a0be75244becc32d5a3f82caf8f2a0e6f007819fe966d5b1ac3261c"
+  },
+  "records": [
+    {
+      "id": "AdaRES-Y56",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/analyses/AdaRES-Y56_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "2aaed3181c54c66ee595a42453005e776f34fc70e6bd086251f61924c1f85a83"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y56_fixed30_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "27e9bdc6d8164b63763cb75b4f121cd0c065ee6c12483ebc264660ab2cdb8b6d"
+        },
+        "canonical_status": "done_complete",
+        "fixed30_checkpoint_verified": true
+      },
+      "before": {
+        "stage": "blocked",
+        "blocked_from_stage": "validation",
+        "scientific_status": "fixed30_complete_frozen_review_pending",
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T09:48:39.530106+08:00",
+        "next_action": "Preserve completed fixed30 best/last checkpoints, optimizer/scheduler and the immutable post_training_freeze. Execute only the registered full frozen evaluation and trained-cost comparison on exclusive authorized GPU0. Do not restart training, repeat training admission, tune validation or promote from the log best.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_cec2178586fa4588809f79c9d421cb63.json",
+          "sha256": "7d2925671fb2942ba0bf3921b89f7d7c05177d62914d8d49bbfa92cfc33b46fc"
+        }
+      },
+      "after": {
+        "stage": "blocked",
+        "blocked_from_stage": "validation",
+        "scientific_status": "fixed30_complete_frozen_review_pending",
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T11:51:08.145121+08:00",
+        "next_action": "Preserve completed fixed30 best/last checkpoints, optimizer/scheduler and the immutable post_training_freeze. Execute only the registered full frozen evaluation and trained-cost comparison on exclusive authorized GPU0. Do not restart training, repeat training admission, tune validation or promote from the log best.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_53fca29ad8224ff4a752eb63968034a1.json",
+          "sha256": "b43f0a819a0be75244becc32d5a3f82caf8f2a0e6f007819fe966d5b1ac3261c"
+        }
+      }
+    },
+    {
+      "id": "AdaRES-Y58",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y58_fixed30_handoff_a22787800208426cb33a87fdce0c6b81.json",
+          "sha256": "e44798d050d5807c65f2d4f5da83cfdd213f09f0da881be4a39881bb2d32142f"
+        },
+        "canonical_status": "done_complete",
+        "fixed30_checkpoint_verified": true
+      },
+      "before": {
+        "stage": "blocked",
+        "blocked_from_stage": "validation",
+        "scientific_status": "fixed30_complete_frozen_review_pending",
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T09:48:39.530106+08:00",
+        "next_action": "Preserve completed fixed30 best/last checkpoints, optimizer/scheduler and the immutable post_training_freeze. Execute only the registered full frozen evaluation and trained-cost comparison on exclusive authorized GPU0. Do not restart training, repeat training admission, tune validation or promote from the log best.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_cec2178586fa4588809f79c9d421cb63.json",
+          "sha256": "7d2925671fb2942ba0bf3921b89f7d7c05177d62914d8d49bbfa92cfc33b46fc"
+        }
+      },
+      "after": {
+        "stage": "blocked",
+        "blocked_from_stage": "validation",
+        "scientific_status": "fixed30_complete_frozen_review_pending",
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T11:51:08.145121+08:00",
+        "next_action": "Preserve completed fixed30 best/last checkpoints, optimizer/scheduler and the immutable post_training_freeze. Execute only the registered full frozen evaluation and trained-cost comparison on exclusive authorized GPU0. Do not restart training, repeat training admission, tune validation or promote from the log best.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_53fca29ad8224ff4a752eb63968034a1.json",
+          "sha256": "b43f0a819a0be75244becc32d5a3f82caf8f2a0e6f007819fe966d5b1ac3261c"
+        }
+      }
+    },
+    {
+      "id": "AdaRES-Y60",
+      "kind": "native_smoke",
+      "checks": {
+        "exact_files": 7,
+        "current_source_goal_commit_match": true
+      },
+      "before": {
+        "stage": "blocked",
+        "blocked_from_stage": "validation",
+        "scientific_status": null,
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Exact prepared source/YAML/commit/goal still match. The sole authorized GPU0 remains occupied or reserved by original Y56. GPU1 is excluded by the user's temporary single-card trial, even if physically idle.",
+        "retry_after": "2026-10-23T11:51:08.145121+08:00",
+        "next_action": "Keep this tested implementation and native_smoke_plan. With the current foreground lease, check actual exclusive free GPU0 and queue reservations, then execute native YAML/TRAIN two-step loss/backward, intended-path and peak checks. After actual PASS, admit and try existing gated dispatch in the same tick. No repeated routine approval or prior scientific-gain proof; preserve all running jobs.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_53fca29ad8224ff4a752eb63968034a1.json",
+          "sha256": "b43f0a819a0be75244becc32d5a3f82caf8f2a0e6f007819fe966d5b1ac3261c"
+        }
+      },
+      "after": {
+        "stage": "blocked",
+        "blocked_from_stage": "validation",
+        "scientific_status": null,
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T11:51:08.145121+08:00",
+        "next_action": "Prioritize the already committed Y60 and its unchanged native_smoke_plan. With a current lease and exclusive idle GPU0, execute native YAML/TRAIN two-step loss/backward, intended-path and peak checks. Only a real PASS permits admission and existing gated dispatch in that tick. No repeated routine authorization.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_53fca29ad8224ff4a752eb63968034a1.json",
+          "sha256": "b43f0a819a0be75244becc32d5a3f82caf8f2a0e6f007819fe966d5b1ac3261c"
+        }
+      }
+    },
+    {
+      "id": "AdaRES-Y61",
+      "kind": "version_then_native_smoke",
+      "checks": {
+        "exact_files": 7,
+        "original_cpu_payload": {
+          "path": "pipeline/checks/y61_cpu_3c92a71dd21447688bbadff8c0c10db5_program.py",
+          "sha256": "6425d256c12c5af0a4fbbc6d558cc52ab34f3ff143c05539224234938fe6695c"
+        },
+        "decoder_evidence": {
+          "path": "pipeline/analyses/y61_decoder_cpu_3d166dcb16cb4aa5a5bf6b03069cac7e.json",
+          "sha256": "db38457f508d2ca7c0d55b4334cab20d4d7e9f01abf059dbc2d7ffad70b5bd4e"
+        },
+        "native_smoke_passed": false
+      },
+      "before": {
+        "stage": "blocked",
+        "blocked_from_stage": "implementation",
+        "scientific_status": null,
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T09:48:39.530106+08:00",
+        "next_action": "Preserve the seven tested Y61 files and CPU evidence. Y59 is already running, not waiting. Prioritize committed Y60 and preserve its HEAD-bound plan; then save only the exact tested Y61 bundle, bind and execute native YAML/TRAIN two-step smoke with explicit --gpu-id 0 on an exclusive idle authorized slot. CPU evidence does not substitute for native backward or admission. Do not use GPU1.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_cec2178586fa4588809f79c9d421cb63.json",
+          "sha256": "7d2925671fb2942ba0bf3921b89f7d7c05177d62914d8d49bbfa92cfc33b46fc"
+        }
+      },
+      "after": {
+        "stage": "blocked",
+        "blocked_from_stage": "implementation",
+        "scientific_status": null,
+        "blocker_kind": "exclusive_gpu_slot",
+        "blocker": "Only authorized GPU0 is occupied or reserved; verified live task(s): AdaRES-Y59. GPU1 is excluded by the user single-card trial.",
+        "retry_after": "2026-10-23T11:51:08.145121+08:00",
+        "next_action": "Preserve the seven tested Y61 files and CPU evidence. Y59 is already running, not waiting. Prioritize committed Y60 and preserve its HEAD-bound plan; then save only the exact tested Y61 bundle, bind and execute native YAML/TRAIN two-step smoke with explicit --gpu-id 0 on an exclusive idle authorized slot. CPU evidence does not substitute for native backward or admission. Do not use GPU1.",
+        "occupation_evidence": {
+          "path": "pipeline/checks/prepared_resources_53fca29ad8224ff4a752eb63968034a1.json",
+          "sha256": "b43f0a819a0be75244becc32d5a3f82caf8f2a0e6f007819fe966d5b1ac3261c"
+        }
+      }
+    }
+  ],
+  "legacy_collector": {
+    "path": "scripts/check_prepared_resources_gpu0_trial.py",
+    "sha256": "69245b77b1acf1756c352884480b53cd6261e02f8f82a9abc35f3a9f2198cf55"
+  },
+  "preserved_legacy_observation": true,
+  "source_changed": false,
+  "queue_changed": false,
+  "hardware_changed": false,
+  "native_smoke_executed": false,
+  "command": "python -B scripts/recheck_gpu0_lifecycle.py --token 53fca29ad8224ff4a752eb63968034a1"
+}

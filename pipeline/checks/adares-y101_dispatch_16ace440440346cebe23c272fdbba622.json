@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "16ace440440346cebe23c272fdbba622",
+  "id": "AdaRES-Y101",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y101",
+    "label": "AdaRES-Y101 fixed30",
+    "config": "configs_song/model_paper5/adares_y101_query_ffn_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "6fb26984ae652efbba177ab20c39575c44a69517",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y101.json",
+    "scientific_candidate_id": "AdaRES-Y101",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 2263581,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y101_query_ffn_skip_res_20261112_200229.log",
+    "launched": "2026-11-12T20:03:08"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y101 fixed30] configs_song/model_paper5/adares_y101_query_ffn_skip_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y101.py",
+    "sha256": "4bb6ddc1fc296d7d6168b1eba152d9fbd775ee90ffd56dedf2c26ffc3ddc997e"
+  }
+}

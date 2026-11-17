@@ -1,0 +1,123 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y103",
+  "token": "473fa68cbdac4797ae9c836144db7e63",
+  "code_commit": "960babebd812098efde2eb1b188e612028ae571e",
+  "CPU_version": {
+    "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63.json",
+    "sha256": "af6c37c25551e6ce6373b3bbe3e2906b6437a4f12a2146f412dbf7fecb5fa5aa"
+  },
+  "current_owner_binding": {
+    "path": "pipeline/checks/y103_current_owner_binding_473fa68cbdac4797ae9c836144db7e63_v2.json",
+    "sha256": "33aa34890c18906a19d6682c1a90d61ff3714cf0b688bd4b19915dc59e9a3dee"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y103_cpu_473fa68cbdac4797ae9c836144db7e63.json",
+    "sha256": "fa59e46699f3e65ce575ae34e4ff6c0a7953204faee4139f6da529e71473702e"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y103_cpu_473fa68cbdac4797ae9c836144db7e63_program.py",
+    "sha256": "4d5b28b8f73e358ceadc7810bf060bf9b93d97671ce161dd1ea592f65908fca9"
+  },
+  "native_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server1_plan.json",
+      "sha256": "e1f3ed6f908bd8303b552db310fce6a0c51eb22a2c2770436d98365f0d949c17"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server2_plan.json",
+      "sha256": "5a02c0896f14336ae093543631945137cb3f6ce6108f9ec7ea8056ad207dfa6d"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y103_CPU_guards_473fa68cbdac4797ae9c836144db7e63.log",
+    "sha256": "34874515727cbcb6873d076b468cd578205022297e5b80f5176a404fa17e0a4e"
+  },
+  "guard_tests_passed": 10,
+  "runtime_guard_tests": {
+    "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_runtime_guards_v2.log",
+    "sha256": "3055e445ecd6b9d00fde51c06e5f9e05d737d1bc0a90257b9d3fa75677701786"
+  },
+  "runtime_guard_tests_passed": 8,
+  "native_observer_body": {
+    "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_body.py",
+    "sha256": "d0bc43404eea0105fe8c9bfb6389833e8da3d0d86428295abf396e1e03379548"
+  },
+  "native_observer_callbacks_executed_on_GPU": false,
+  "same_callbacks_actually_executed_on_CPU": true,
+  "original_Y101_Y100_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "scientific_replay": false,
+  "evidence": [
+    {
+      "path": "scripts/complete_y103_runtime_metadata_v2.py",
+      "sha256": "6e0114f0cf90fb0adfd7d4c23efb66f3bc8516d6139a83d44fda40a843c42224"
+    },
+    {
+      "path": "pipeline/checks/y103_current_owner_binding_473fa68cbdac4797ae9c836144db7e63_v2.json",
+      "sha256": "33aa34890c18906a19d6682c1a90d61ff3714cf0b688bd4b19915dc59e9a3dee"
+    },
+    {
+      "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63.json",
+      "sha256": "af6c37c25551e6ce6373b3bbe3e2906b6437a4f12a2146f412dbf7fecb5fa5aa"
+    },
+    {
+      "path": "pipeline/analyses/y103_cpu_473fa68cbdac4797ae9c836144db7e63.json",
+      "sha256": "fa59e46699f3e65ce575ae34e4ff6c0a7953204faee4139f6da529e71473702e"
+    },
+    {
+      "path": "pipeline/checks/y103_cpu_473fa68cbdac4797ae9c836144db7e63_program.py",
+      "sha256": "4d5b28b8f73e358ceadc7810bf060bf9b93d97671ce161dd1ea592f65908fca9"
+    },
+    {
+      "path": "pipeline/checks/y103_CPU_guards_473fa68cbdac4797ae9c836144db7e63.log",
+      "sha256": "34874515727cbcb6873d076b468cd578205022297e5b80f5176a404fa17e0a4e"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_runtime_guards_v2.log",
+      "sha256": "3055e445ecd6b9d00fde51c06e5f9e05d737d1bc0a90257b9d3fa75677701786"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_runtime_guards.log",
+      "sha256": "aede59e1316bfc0beed5ff60172ed9f74c15cfb591b9b0c48e2262bd35bd2b01"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_body.py",
+      "sha256": "d0bc43404eea0105fe8c9bfb6389833e8da3d0d86428295abf396e1e03379548"
+    },
+    {
+      "path": "scripts/y103_observer_core.py",
+      "sha256": "0317cd6cf2a3727dc7661c1410c0ce423518faad4b24946a0f4dba6fcffc95a0"
+    },
+    {
+      "path": "scripts/run_y103_native.py",
+      "sha256": "5559f81d3dc96ed6206f110c4a31d348a41062f01b40a66a00fb52483959a19e"
+    },
+    {
+      "path": "scripts/test_y103_runtime_plan.py",
+      "sha256": "fbfb9b96da881aef3d7913c4fc479d1b360ef8f115db5d92929a99a170fc88fc"
+    },
+    {
+      "path": "scripts/retain_y103_cpu_native.py",
+      "sha256": "7ce25ef830f4ffc194097ecda870b16b76a14ffbcd8e508b400254c58b4e1af6"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server1_plan.json",
+      "sha256": "e1f3ed6f908bd8303b552db310fce6a0c51eb22a2c2770436d98365f0d949c17"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server2_plan.json",
+      "sha256": "5a02c0896f14336ae093543631945137cb3f6ce6108f9ec7ea8056ad207dfa6d"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server1_program.py",
+      "sha256": "453e606b468cb5d2ee19eead7396a84f76f9ae9f72ceb0c184f56c7262ff7e1b"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server2_program.py",
+      "sha256": "9e175af5641cae646ebdd61e9676edd8969b713cbcf722830b2ee83dd37aa10b"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "token": "4030dbcec9c5437380f1cbd92d2c3ccc",
+  "execution_status": "INCOMPLETE: canonical abort and independent release check pending",
+  "snapshot_at": "2026-10-16T12:50:50.417452+00:00",
+  "resource_observed_start_local": "2026-10-16T20:58:33.515772+08:00",
+  "resource_observed_end_local": "2026-10-16T20:58:38.398877+08:00",
+  "resource": {
+    "path": "pipeline/analyses/y52_due_resources_4030_4030dbcec9c5437380f1cbd92d2c3ccc.json",
+    "sha256": "2e8028a39eca578d7f25e12f2b303d7808b64e35874dd0840de9cb9af33371cd"
+  },
+  "capture_schema_evidence_path": "pipeline/analyses/y52_capture_schema_check_4030dbcec9c5437380f1cbd92d2c3ccc.json",
+  "next_retry_after": "2026-10-16T21:58:38.398877+08:00",
+  "known_checker_sha256": "39ee52f17e3afdc15d0fde71bbf78e74bf58c218155709a25861044461cea0d2",
+  "known_queue_opening_rejecting_predicate": true,
+  "exact_prior_failed_check": "CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening",
+  "finish_invoked": false,
+  "Y50": {
+    "original_process_confirmed": true,
+    "native_training_progress_before": [
+      9,
+      30,
+      4686,
+      4686
+    ],
+    "native_training_progress_after": [
+      9,
+      30,
+      4686,
+      4686
+    ],
+    "native_training_steps_advanced": false,
+    "bounded_phase_observed_start_local": "2026-10-16T20:59:26.3537461+08:00",
+    "bounded_phase_observed_end_local": "2026-10-16T20:59:29.5846147+08:00",
+    "latest_native_validation_progress_before": [
+      9,
+      30,
+      363,
+      363
+    ],
+    "latest_native_validation_progress_after": [
+      9,
+      30,
+      363,
+      363
+    ],
+    "bounded_log_size_before_bytes": 11856001,
+    "bounded_log_size_after_bytes": 11856001,
+    "crash_marker_in_bounded_tail": false,
+    "current_progress_health": "not established from these short end-of-epoch samples; do not infer a hang or normal advancing training from PID/utilization alone"
+  },
+  "new_scientific_tests": 0,
+  "model_changes": 0,
+  "implementation_revisions": 0,
+  "new_candidates": 0,
+  "admissions": 0,
+  "launches": 0,
+  "native_full_model_forward_or_backward": false,
+  "science": "SAME frozen Y52 remains genuinely exclusive-GPU blocked; historical CPU controls not repeated. Current Y50 end-of-epoch native step increase unconfirmed, original process preserved.",
+  "recorded_at_local": "2026-10-16T21:02:48.967355+08:00",
+  "context_sha256_verified": "08afbf4960718f65fce4ac110a9c494b3bacdd595bc297366e91dd17a404c0cb",
+  "pending_sha256_verified": "3410ac525916e71f15b73abf6f6cda4d844a4dedf67f55c4d14902c0a4eb38c5",
+  "previous_retry_after": "2026-10-16T20:56:26.565402+08:00"
+}

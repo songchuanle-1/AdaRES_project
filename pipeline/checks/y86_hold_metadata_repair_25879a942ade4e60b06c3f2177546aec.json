@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "token": "25879a942ade4e60b06c3f2177546aec",
+  "id": "AdaRES-Y86",
+  "before": {
+    "retry_after": null,
+    "unblock_condition": null
+  },
+  "retry_after": "2026-11-06T07:37:06.399099+08:00",
+  "unblock_condition": "New evidence or a pre-registered bounded implementation revision that passes the original unchanged positive-response guard on an authorized exclusive idle GPU0; a timer is not permission to replay the unchanged failed smoke or relax the control.",
+  "reason": "Postflight explicitly required retry and unblock condition for the blocked record.",
+  "native_failure": {
+    "path": "pipeline/checks/y86_native_failure_25879a942ade4e60b06c3f2177546aec.json",
+    "sha256": "8382c924aa1297e5836d53af7c46517917336e269d8ff3656fbaeab547a84b6c"
+  },
+  "native_diagnosis": {
+    "path": "pipeline/checks/y87_independent_gpu0_25879a942ade4e60b06c3f2177546aec_y86_diagnosis.json",
+    "sha256": "ddd17f044a269e594de8c690affb751269651621fde65899fd39a87132062521"
+  },
+  "old_evidence_preserved": true,
+  "model_or_plan_changed": false,
+  "guard_changed": false,
+  "native_replayed": false,
+  "queue_changed": false,
+  "helper": {
+    "path": "scripts/repair_y86_hold_metadata.py",
+    "sha256": "d4c3b32e6d34e583bde8d62673acbf339da552f5a8ad90d3f65e215510c5a2be"
+  }
+}

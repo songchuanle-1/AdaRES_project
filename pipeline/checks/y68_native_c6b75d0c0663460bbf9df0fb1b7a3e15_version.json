@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y68",
+  "observed_at": "2026-10-29T18:59:48.764227+08:00",
+  "parent_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "code_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/__init__.py",
+      "sha256": "31a287691b9aa45907e4e2bbb3d3bb2181af80363a14b83940c1e781af421eab"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/dec.py",
+      "sha256": "dd9dabeb15b3cbb69e40cd7150df56763742836694bc167c0fb4a1c8d272d0fb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y68_language_mask_modulation_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "CPU_manifest": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_cpu_version.json",
+    "sha256": "5e09afb23f22aebba192c4f411a8f3c9daf2e96158a256a6efaf2d017262767c"
+  },
+  "cpu_test": {
+    "path": "pipeline/analyses/y68_cpu_c6b75d0c0663460bbf9df0fb1b7a3e15.json",
+    "sha256": "7845856ba1346f138353fd434b37732045d0d8b8e8c09704894cfdc8e80bba0a"
+  },
+  "cpu_program": {
+    "path": "pipeline/checks/y68_cpu_c6b75d0c0663460bbf9df0fb1b7a3e15_program.py",
+    "sha256": "c863824d28e9c513636f60c3e9406c26f875c267f0470876d810cdb2b26c2db2"
+  },
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu0_plan.json",
+      "sha256": "cddfb2dfaec88ba4d731175aec0a111b0cdf7994c29151ec860af52077d64aa5"
+    },
+    "1": {
+      "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu1_plan.json",
+      "sha256": "22e14e5cc770b6f28719dd93c06ac2757f7cf183cd769908ba10db865310431e"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_guards.log",
+    "sha256": "51e1530beefdb2cc77931c48e40bc398a4f5566353dda70029ca3964e46230a2"
+  },
+  "CPU_guard_tests_passed": 10,
+  "same_diagnostic_body_for_both_GPU_plans": true,
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "native_executed": false,
+  "admitted": false,
+  "pushed": false,
+  "production_sync": false,
+  "queue_and_running_preserved": true,
+  "all_original_admissions_valid": true,
+  "Y57_paused": true,
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  }
+}

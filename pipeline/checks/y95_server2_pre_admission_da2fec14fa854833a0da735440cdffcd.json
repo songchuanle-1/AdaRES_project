@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "token": "da2fec14fa854833a0da735440cdffcd",
+  "id": "AdaRES-Y95",
+  "prepared_at": "2026-11-09T14:49:06.831001+08:00",
+  "code_commit": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "working_HEAD": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "pending_operation_tests_passed": 17,
+  "scope": {
+    "server": "server-2",
+    "gpu": 0,
+    "power_limit_watts": 280.0
+  },
+  "original_candidate_activation_preserved": true,
+  "both_original_native_plans_preserved": true,
+  "original_Y93_Y94_and_all_other_candidates_preserved": true,
+  "scientific_files_and_native_programs_unchanged": true,
+  "CPU_scientific_tests_replayed": false,
+  "native_GPU_executed": false,
+  "native_admission_tests_using_actual_result_executed": false,
+  "native_result_fixture_created": false,
+  "parent_freeze": {
+    "path": "pipeline/checks/AdaRES-Y93_2683c4548e244340a4d06c50bec79b2e_post_training_freeze.json",
+    "sha256": "8563a67a55b91f7c72b2899d03917b28d322e2f5ac14130c016511c72b0c7ef8"
+  },
+  "full_original_training_and_review_in_memory_only": true,
+  "formal_freeze_registered": false,
+  "full_launch_toolchain_prepared": false,
+  "admitted": false,
+  "queued": false,
+  "source_selected": false,
+  "production_HEAD_index_queue_running_preserved": true,
+  "next_action": "Only at HEADY94 after matching original Y93/server2 natural30/full finite checkpoint verification/canonical archive and fresh exclusive idle/unreserved authorized GPU0 execute run_y95_bound_native_y94.py --server server-2. Actual native PASS then enables read-only y95_server2_pre_admission.py verification. Before source selection create a NEW tested Y94 additive terminal handoff bound to actual Y95 native evidence; complete exact source selection/full original freeze/receipt/admission/canonical dispatch/increasing native counters in that same authorized tick when feasible. This preparation is not native PASS, registered freeze, full launch toolchain or admission. The unchanged server1 alternative requires its own matching future execution chain.",
+  "evidence": [
+    {
+      "path": "scripts/y95_server2_pre_admission.py",
+      "sha256": "9bce569b2eb77e91b0cffd78a76d6de12f8aa70f388314bc6269e02e6ebec4f7"
+    },
+    {
+      "path": "scripts/test_y95_server2_pre_admission.py",
+      "sha256": "f806ee3505d0979d2a0590c0b427650c1f8786216acaa591faf3d49d170caf3f"
+    },
+    {
+      "path": "scripts/prepare_y95_server2_pre_admission.py",
+      "sha256": "f7eb96417837189551a0449b23dad17d5d5ecb9c4cb23f8541593e4e856bb26d"
+    },
+    {
+      "path": "pipeline/checks/y95_server2_pre_admission_da2fec14fa854833a0da735440cdffcd.log",
+      "sha256": "4b0d58289afef849fcceb9693502a7d8f54a0e45602a2e66d8a1e7da8df43a0a"
+    },
+    {
+      "path": "pipeline/checks/y95_y94_additive_binding_9510373f9f21442591b649640928a5e5.json",
+      "sha256": "e549256cea9e5efa9fde0a6d33189f124fbd63f1d9b651675edf71a36e75a71b"
+    },
+    {
+      "path": "pipeline/checks/y95_y94_additive_binding_9510373f9f21442591b649640928a5e5_server1_plan.json",
+      "sha256": "d434a2c84821a9388106b2ccd24765fa2c8adc12aa5b7b7a7f9d3b8a027d5a39"
+    },
+    {
+      "path": "pipeline/checks/y95_y94_additive_binding_9510373f9f21442591b649640928a5e5_server2_plan.json",
+      "sha256": "91f7558eea88ae9a10d120997387b0293fdea4504eb1fe4a220fe56e41faec48"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y93_2683c4548e244340a4d06c50bec79b2e_post_training_freeze.json",
+      "sha256": "8563a67a55b91f7c72b2899d03917b28d322e2f5ac14130c016511c72b0c7ef8"
+    },
+    {
+      "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+      "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+    }
+  ]
+}

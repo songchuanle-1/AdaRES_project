@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "快照2026-10-25T14:51:42.519143+00:00：确认实际会话属于AdaRES_project，后台调度保持Disabled；前轮412be收据已FINALIZED/PASS/context_committed=true/lease_release=released，旧审计修复已完成。",
+    "2026-10-25T14:52:19.965264+00:00使用canonical gpu_occupation.py只读核验server-2；GPU0仍被外来compute PID13813占用，100%利用率、24136/24576MiB，无授权空槽。证据pipeline/checks/gpu_occupation_server-2_cc0da7eddd07457196c6bce50bf476d7.json，SHA256 92f6c1a769e0a7497eed0c8b37d7c00bf28e73dce795c21e7dd1e0d13bdf9293；原始日志保留，已记录resource_check/blocked。",
+    "上海22:52:22至22:52:27独立确认Y62原PID2540376/server-1 GPU0，第2/30轮324到331/4686；六模型文件及原生YAML语义一致，源码marker82fbd9fb1fc56da6afee5b145f59cfa533464707，bounded尾部无错误。进度证据pipeline/checks/server1_training_progress_cc0da7eddd07457196c6bce50bf476d7.json，SHA256 b1b3d10b5fd4a76dcf116e19ad4d2724f8b3a74fa5385239eeee173c9853eb0c。",
+    "更新七段紧凑记忆，区分前轮完成的审计修复与本轮常规资源/进度观察；本轮未新增模型、训练检查、Git提交、准入或启动。"
+  ],
+  "resource_refresh": "收尾于2026-10-25T14:55:58.051546+00:00用新label finalize只读刷新，GPU0仍是PID13813/100%/24136MiB且无授权空槽。证据pipeline/checks/gpu_occupation_server-2_finalize_cc0da7eddd07457196c6bce50bf476d7.json，SHA256 d3f27508e6d0adfdb436f88abe05b6d9d412397a23962b7b0a0e873c3a018bba；初次证据未改。",
+  "decisions": [
+    "Y62继续server-1 GPU0现有训练；Y63已准入并等待同卡，不重复派发运行任务或推进HEAD使Y63现有收据失效。server-2 GPU0维持280W，Y57及GPU1保持用户暂停，禁止server-6并保留外来任务。",
+    "五项fixed30完成实验继续保留原检查点和不可变冻结后评协议，授权资源被占用时不启动后评、不重训、不重复准入；实测资源阻断按experiment-first规则收尾，不为填预算重复旧检查。",
+    "当前训练正常推进且队列、资源占用和暂停状态无实质变化；未提取验证主指标，不推断效益或第1轮是否已有验证。用户无需新增操作，本次心跳静默。",
+    "规范report/finish后核验本轮FINALIZED、postflight PASS、context_committed及lease_release；释放后不再写入项目状态。"
+  ]
+}

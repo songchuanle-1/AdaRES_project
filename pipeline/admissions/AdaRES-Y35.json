@@ -1,0 +1,108 @@
+{
+  "id": "AdaRES-Y35",
+  "config": "configs_song/model_paper5/adares_y35_language_evidence_res.yaml",
+  "code_commit": "b49b744dc2943a38ab4c3aeb788acc6a2cb90011",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261009-091126_next_batch.md",
+    "sha256": "44935968b1ca4d96774420832c89cfde4f19a015d7f3cc719e4f7eb48f0acf29"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y35_language_diagnosis_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "23ed697d3902ec0270e2688eb21584542d03a28f00865a037b96d514eeed5e76"
+        },
+        {
+          "path": "pipeline/analyses/Y35_diagnosis_prereg_a8d0c77d.md",
+          "sha256": "ac7bec655fa47bffa8526598d193635ba1b7b294121be8936f879fc909c9badc"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y35_native_controls_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "2992911addda75a1875c52a349eeb762bcffe696d123bc47ab3c7b31f5226184"
+        },
+        {
+          "path": "pipeline/analyses/y35_initial_loss_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "13153f737304bec16f52ddf4f39443d4936dbe9c8f8736cf87349e427b0c3b41"
+        },
+        {
+          "path": "pipeline/analyses/y35_structure_cpu_lf_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "d9cf3d94ff754cfa0c39c59e10ecfc1fc079892af850109a0c6f0a00f23b923d"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y35_physical_native_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "0c242262ce6b147569e59570b1bac824553b62ae2cbf215ba427aa39dfaf9598"
+        },
+        {
+          "path": "pipeline/analyses/y35_native_controls_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "2992911addda75a1875c52a349eeb762bcffe696d123bc47ab3c7b31f5226184"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y35_resources_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "38ec4e3dab0063fa044877875c024a344b50d73d378c71db08a52f44c5f23bc0"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y35_source_bundle_lf_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "7dc4bbfd4fbca46cbda803818c77b76e08b2b01b9201ed956bd7cabcffd3bc0a"
+        },
+        {
+          "path": "pipeline/analyses/y35_structure_cpu_lf_a8d0c77d45d142c0a6c46b163b956253.json",
+          "sha256": "d9cf3d94ff754cfa0c39c59e10ecfc1fc079892af850109a0c6f0a00f23b923d"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y35_admission_review_a8d0c77d.md",
+          "sha256": "2af5da43b8b671b7cc20f5f9c207e564d220983d551bec11ceee5ba01d0c829d"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y35_a8d0c77d.md",
+          "sha256": "732f30ca02a2deff7b837012908fe3ba7776c38db965a8445728614ecc583b03"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_Y35_a8d0c77d.md",
+          "sha256": "c5be86f3e7c811acddb44a03138517eb4f193b3f79a13ec9881f04578451efbe"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      0
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y35_a8d0c77d.md",
+      "sha256": "732f30ca02a2deff7b837012908fe3ba7776c38db965a8445728614ecc583b03"
+    }
+  },
+  "limitations": "Adverse/random initial losses, wrong-control learning, tiny gradients, resume numerical noise and cost increases retained. No efficacy, necessity, novelty or trained Pareto assertion."
+}

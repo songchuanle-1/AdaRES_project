@@ -1,0 +1,17 @@
+{
+  "tick_token": "bf900942292b41e09fda663f4736180a",
+  "tick_attempt": {
+    "tick_started_at": "2026-10-30T16:49:24.453239+00:00",
+    "candidate_id": "AdaRES-Y71",
+    "kind": "resource_check",
+    "result": "blocked",
+    "command": "python -B scripts/run_y71_gpu0_probe.py check --token bf900942292b41e09fda663f4736180a",
+    "observation": "Exact frozen Y71 plan/source verified. Actual GPU0 not ready: preserve original running/claiming/reserved task and wait for Y68 fixed30 canonical archive.",
+    "evidence": [
+      {
+        "path": "pipeline/checks/y71_gpu0_readiness_bf900942292b41e09fda663f4736180a_check.json",
+        "sha256": "7cd333be8de69d9f913febc3c19b9304795e5a87771a900ac6e12b498210b934"
+      }
+    ]
+  }
+}

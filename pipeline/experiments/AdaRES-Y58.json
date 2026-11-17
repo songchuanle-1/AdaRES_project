@@ -1,0 +1,54 @@
+{
+  "id": "AdaRES-Y58",
+  "config": "configs_song/model_paper5/adares_y58_fixed_backbone_statistics_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-22T01:07:11.495523",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-22T22:57:33.515122",
+      "status": "done_complete",
+      "best_miou": "0.5034",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 77094,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y58_fixed_backbone_statistics_res_20261022_010635.log",
+  "launched": "2026-10-22T01:07:11",
+  "final_best": "0.5034",
+  "finished_at": "2026-10-22T22:57:33.515122",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-2\\adares_y58_fixed_backbone_statistics_res\\a22787800208426cb33a87fdce0c6b81\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "26f35161b05b458c91bbabdc71106057",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y58.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y58_fixed30_handoff_a22787800208426cb33a87fdce0c6b81.json",
+    "sha256": "e44798d050d5807c65f2d4f5da83cfdd213f09f0da881be4a39881bb2d32142f"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y58_fixed_backbone_statistics_res/20261021_130636/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5034376382827759,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 30,
+      "sha256": "f9552c3f53abbad6635ea67b24fd79c8af447f38072ac031dcb4a56826ac3955"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y58_fixed_backbone_statistics_res/20261021_130636/best.pth",
+      "epoch": 24,
+      "best_miou": 0.5034376382827759,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 24,
+      "sha256": "ef639cd2f469e3cc79b286d8c69cf1b60f90e50ebfd12c88c0bf0365b99441f7"
+    }
+  ]
+}

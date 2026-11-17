@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "scope": "project_operational_bookkeeping",
+  "command": "python -B scripts/recheck_gpu0_lifecycle_v2.py --token 3e61cded0e934db5bb4f9abd4451c12c",
+  "observed_exit_code": 1,
+  "exception": "KeyError: 'retry_after'",
+  "location": "scripts/recheck_gpu0_lifecycle.py:115",
+  "observation": "The legacy collector saved a real GPU0-idle observation and moved Y60 to validation while removing retry_after. The subsequent lifecycle wrapper still indexed retry_after because occupation_evidence referenced the previous blocked observation.",
+  "preserved_original_resource": "pipeline/checks/prepared_resources_3e61cded0e934db5bb4f9abd4451c12c.json",
+  "original_scripts_unchanged": true,
+  "candidate_smoke_failure": false,
+  "model_revision": false,
+  "recovery": "Use actual idle GPU0 guarded native probe and existing admission/dispatch. The replacement lifecycle v3 handles validation without retry_after and excludes live admitted work. Original failure and v1/v2 files remain unchanged."
+}

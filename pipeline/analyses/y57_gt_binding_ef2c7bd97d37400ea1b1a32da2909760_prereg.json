@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "ef2c7bd97d37400ea1b1a32da2909760",
+  "preregistered_at": "2026-10-19T20:09:01.601981+08:00",
+  "capture": {
+    "path": "pipeline/analyses/y46_native_capture_d179_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89"
+  },
+  "body": {
+    "path": "scripts/probe_y57_gt_binding_cpu.py",
+    "sha256": "6d3690a3d606539680b156e80892b139acb7c9ae8961daa5b18a1c31cd1b853e"
+  },
+  "program": {
+    "path": "pipeline/analyses/y57_gt_binding_ef2c7bd97d37400ea1b1a32da2909760_program.py",
+    "sha256": "4654f4e702c530bc9d36d210529eedf762b66526fef02d716b741ec440fff564"
+  },
+  "frozen": {
+    "sources": [
+      {
+        "path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+        "lf_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac"
+      },
+      {
+        "path": "ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+        "lf_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97"
+      },
+      {
+        "path": "ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+        "lf_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+      },
+      {
+        "path": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+        "lf_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+      }
+    ],
+    "config_path": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+    "class_source": "class QueryCompetitionIndicator(nn.Module):\n    \"\"\"Predict confidence from a query and its overlapping competitors.\"\"\"\n\n    def __init__(self, d_model):\n        super().__init__()\n        self.query_norm = nn.LayerNorm(d_model)\n        self.evidence_norm = nn.LayerNorm(3 * d_model + 1)\n        self.head = nn.Sequential(\n            nn.Linear(3 * d_model + 1, d_model),\n            nn.GELU(),\n            nn.Linear(d_model, d_model),\n            nn.GELU(),\n            nn.Linear(d_model, 2),\n        )\n\n    def forward(self, query, pred_masks, batch_mask, point_mass):\n        valid = (~batch_mask).unsqueeze(1).to(pred_masks.dtype)\n        probabilities = pred_masks.sigmoid() * valid\n        weighted = probabilities * point_mass.unsqueeze(1)\n        areas = weighted.sum(-1)\n        intersection = torch.einsum(\n            'bim,bjm->bij', weighted, probabilities\n        )\n        union = areas.unsqueeze(-1) + areas.unsqueeze(1) - intersection\n        overlap = intersection / union.clamp_min(1e-6)\n        diagonal = torch.eye(\n            overlap.shape[-1], dtype=torch.bool, device=overlap.device\n        ).unsqueeze(0)\n        overlap = overlap.masked_fill(diagonal, 0.0)\n\n        competition = overlap / overlap.sum(-1, keepdim=True).clamp_min(1e-6)\n        normalized_query = self.query_norm(query)\n        context = torch.einsum('bij,bjd->bid', competition, normalized_query)\n        max_overlap = overlap.max(-1).values.unsqueeze(-1)\n        evidence = torch.cat(\n            [\n                normalized_query,\n                context,\n                normalized_query - context,\n                max_overlap,\n            ],\n            dim=-1,\n        )\n        return self.head(self.evidence_norm(evidence))",
+    "iou_source": "def get_iou(inputs: torch.Tensor, targets: torch.Tensor, pad_mask: Union[torch.Tensor, None]=None):\n    '''\n    padding modified\n    '''\n    if pad_mask is not None:\n        inputs = inputs.sigmoid()*pad_mask\n    else:\n        inputs = inputs.sigmoid()\n    # thresholding\n    binarized_inputs = (inputs >= 0.5)#.float()\n    targets = (targets > 0.5).float()\n    intersection = (binarized_inputs * targets).sum(-1)\n    union = targets.sum(-1) + binarized_inputs.sum(-1) - intersection\n    score = intersection / (union + 1e-6)\n    return score",
+    "capture_sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89",
+    "remote_cache": "/tmp/adares_y57_gt_cache_ef2c7bd97d37400ea1b1a32da2909760.json",
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+    "checkpoint_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52"
+  },
+  "fixed_sample": "SAME8TRAIN scenes indices0,44,60,101,115,126,137,171; all32annotations and all128queries; seed1999 per-scene. No new sample or focal selection.",
+  "binding": "Exact scan/ann/object identity, counts and point-GT totals, deterministic dataset/collate repeat; cached centroid error<=32eps*max(1,coordinate scale); exact native expanded-point IoU for first4queries. All32must bind before scene association summary.",
+  "descriptor": "All256channels diagonal variance under unchanged point-overlap competition; scalar L2 of the variance vector. Not trace alone, channel selection, an added model or fitted predictor.",
+  "analysis": "Within-expression Spearman dispersion vs absolute native foreground-probability/point-IoU error, and vs point-IoU. Expression means within each of8scenes; descriptive mean and10000/1999 scene-bootstrap95interval. Undefined correlations are unknown with denominators, never zero.",
+  "controls": "Joint reversed query/label permutation; fixed1-step rotated quality labels break correspondence without changing marginals. Record null result without forced direction or significance claim.",
+  "selector": "Exact existing RES foreground softmax argmax; no score-head multiplication or GT/oracle inference selection. Point quality is TRAIN diagnostic only.",
+  "limitations": "Old capture did not hash raw point-GT/checkpoint at capture time; reconstruction cannot retroactively create provenance. Correlation on8TRAIN scenes is not conditional incremental information, causal harm, reachable intervention, validation effect, native gate PASS or novelty.",
+  "cpu_only": true,
+  "training_launches": 0,
+  "admission": false
+}

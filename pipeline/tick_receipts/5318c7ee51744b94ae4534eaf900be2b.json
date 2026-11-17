@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "5318c7ee51744b94ae4534eaf900be2b",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-09-28T02:43:07.544264+00:00",
+  "recorded_at": "2026-09-28T03:04:13.837305+00:00",
+  "status": "INCOMPLETE",
+  "reason": "W2 terminal reconciled and launcher/sync repaired; capacity-gap design did not execute two independent new hypothesis tests, so old exhaustion cannot pass postflight",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 38,
+    "input_tokens": 8138319,
+    "cached_input_tokens": 8102528,
+    "output_tokens": 22275,
+    "reasoning_output_tokens": 12883,
+    "total_tokens": 8160594,
+    "uncached_input_tokens": 35791,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 2,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 1
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

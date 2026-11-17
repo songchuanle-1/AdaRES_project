@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "hostname": "dl01-MS-7C60",
+  "GPUs": [
+    {
+      "gpu": 0,
+      "utilization": 91,
+      "memory_MiB": 23946,
+      "total_MiB": 24576,
+      "pids": [
+        19723
+      ]
+    },
+    {
+      "gpu": 1,
+      "utilization": 47,
+      "memory_MiB": 17444,
+      "total_MiB": 24576,
+      "pids": [
+        78001
+      ]
+    }
+  ],
+  "observed_at_server": "2026-10-14T02:18:01.569762-04:00",
+  "observed_at_local": "2026-10-14T14:50:44.290884+08:00",
+  "scientific_status": "GPU0_external_job_preserved_GPU1_verified_Y45"
+}

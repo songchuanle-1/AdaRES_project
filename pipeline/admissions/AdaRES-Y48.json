@@ -1,0 +1,128 @@
+{
+  "id": "AdaRES-Y48",
+  "config": "configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml",
+  "code_commit": "d18c228fd3796b5a87dbe313075b6ee748b2d51b",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261015-113603_next_batch.md",
+    "sha256": "e646672a372b4a18e5ccfe1b2b1371c9fea3907822965957198f806c26482aae"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y48_joint_native_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "add87310d9f167148cfb1914bd94f7bd480d95ee15c080f8648b445f163c4762"
+        },
+        {
+          "path": "pipeline/analyses/Y48_target_closure_prereg_601b.md",
+          "sha256": "884449c15a379357b3c8c7beaef18eb0232a796ff294b8be1ddbaf328331558b"
+        },
+        {
+          "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+          "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y48_target_cpu_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "6089ed7bc8d5fea33b28f51241bee98d33d88fc559ed5a00006305a155c32bd8"
+        },
+        {
+          "path": "pipeline/analyses/y48_target_native_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "089d14c112a2b264e8160e2694644632ae1dc23da8f099d2fcebb7731116e821"
+        },
+        {
+          "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+        },
+        {
+          "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+          "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y48_target_native_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "089d14c112a2b264e8160e2694644632ae1dc23da8f099d2fcebb7731116e821"
+        },
+        {
+          "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+        },
+        {
+          "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+          "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+        },
+        {
+          "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+          "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y48_source_bundle_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "cb34c7247df27695f7e3d7c6c3ec8be7b6b71c4c5a69b4371a40450f81a9fda5"
+        },
+        {
+          "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+          "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+        },
+        {
+          "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+          "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y48_601b.md",
+          "sha256": "9d10671d6405a11ca101fef4163e2b83e6f74884c3712e6522695dd5e1db1943"
+        },
+        {
+          "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+          "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y48_601b.md",
+      "sha256": "9d10671d6405a11ca101fef4163e2b83e6f74884c3712e6522695dd5e1db1943"
+    }
+  },
+  "limitations": "Original one-to-many matching, uncertainty and all harness failures retained. Target closure is not efficacy/necessity/novelty/no-harm/Phase2 evidence; no diagnostic weights deployed."
+}

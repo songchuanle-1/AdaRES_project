@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "token": "4dc4c79601f6427b82195a7dac4bc90c",
+  "id": "AdaRES-Y90",
+  "code_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "prepared_at": "2026-11-07T07:05:07.072940+08:00",
+  "source_resource_protocol_guards": 13,
+  "evidence": [
+    {
+      "path": "scripts/advance_y90.py",
+      "sha256": "a51b83862f947a3e4be8df03c6ae0d6e6e8e65fef41e67bd74d70d0ecf01d010"
+    },
+    {
+      "path": "scripts/y90_deployment.py",
+      "sha256": "254b4573d7fca05984321e34f6d09bd002eb52619658f81c398d48ed25d30a52"
+    },
+    {
+      "path": "scripts/test_y90_execution_guards.py",
+      "sha256": "e697f18a18383a055cc9426abe1cfc1ac6e6afa6cbf5137443b5b087c0c09321"
+    },
+    {
+      "path": "scripts/test_y90_admission.py",
+      "sha256": "1f80d2db8ae71a3d388bea4066c913fd654aeae50916c4800a3132fa9fdc9a72"
+    },
+    {
+      "path": "scripts/prepare_y90_execution.py",
+      "sha256": "d1996531fc9c692e3536b971e38267a5b0ea33eb6e718fd450049da9c12c6541"
+    },
+    {
+      "path": "pipeline/checks/y90_execution_preparation_4dc4c79601f6427b82195a7dac4bc90c.log",
+      "sha256": "20abf1760b47dfb36f97dfc7e999adff3fdcf0e304238e22e44fa8cc44689b1c"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2.json",
+      "sha256": "1885883a0cc1cfd9ade699f3f0f29d8a9f8ed4b1a1e6dea4c22eba39b55e4449"
+    }
+  ],
+  "actual_native_executed": false,
+  "admitted": false,
+  "production_HEAD_preserved": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+  "index_queue_running_preserved": true,
+  "signed_originals_unchanged": true,
+  "next_action": "Only after exact original Y88 fixed30 checkpoint verification/archive and fresh exclusive idle server-1 GPU0, execute retained bound native plan. Actual native PASS then select, admit and canonical dispatch this tick if safe. No GPU1 or Y57 use."
+}

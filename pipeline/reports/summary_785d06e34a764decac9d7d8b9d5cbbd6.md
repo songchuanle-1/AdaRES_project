@@ -1,0 +1,79 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-10-18T07:49:51.242574+00:00；生成报告时快照年龄：221 秒；模式：design
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：0
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-10-18 15:49:50
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-Y36 — mIoU=0.5110 (gap to target: +0.0040)
+       Epochs: ?, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0090
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5110, target=0.5150, gap=+0.0040
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-2 | 0 | 未知 | 未知 | 未知 |
+| server-2 | 1 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-10-18 15:49 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  无训练进程
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2:
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| 无 | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | 快照内无运行任务 |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 0（运行 0 / 认领 0 / 等待 0）；目标 2；准入预算 2。
+- 研究储备 2 / 2；储备准备预算 0，不增加训练并发或启动授权。
+- 候选累计记录 107：complete=14 / rejected=79 / closed=12 / blocked=2。
+- 否决范围：unclassified=72 / implementation=4 / hypothesis=3；实现修订累计 3；收据文件 30（含修订或重试，不代表成功率）。
+
+## 4. This Tick's Actions
+- 快照为上海2026-10-18 15:49:51，design；begin各执行一次monitor/goal且返回0，active/running/claiming/waiting均0，无新终态。due0、blocked_not_due2、shown为空，储备2/2、准备预算0；未重复preflight或未到期授权复查。第0-3段仅代表该快照，GPU实时占用未知，不推断空闲。
+- 上海15:50:41独立核实当前线程/原token及context/pending绑定完整，账本仍3071b2f614906b8531c0631d95cda41afbbcd21a4eb755ca58319f4fc800619e，共享foreground/closure仍a78da0060b280300359adc58a20f6c325cabb487313492112e8fc0bf4535bee6 / 39ee52f17e3afdc15d0fde71bbf78e74bf58c218155709a25861044461cea0d2。快照仍required bootstrap，但两项储备均未到期；仅复用已记录的closed冷却故障，不重跑同义回归、源码路线审查或原生门禁。
+- 本轮只完成监控/目标及状态完整性检查，无新科学结论：新科学候选0、科学诊断0、候选证据/阶段变化0、模型修改0、Git提交0、准入0、训练启动0，账本/design_cycle/retry/wake不改。历史最佳Y36 0.5110、B1 0.5020，提升+0.0090，距目标0.515差0.0040，无新训练指标。Y52/Y54限定许可缺失分别只引用本日12:54:10/13:55:03缓存，当前授权文件变化未知，不冒充本轮实查；累计107项不是本轮产出。
+- 没有新候选进展支撑成功收尾，bootstrap要求未满足；未调用同证据已知无效的finish，不将旧失败写成本轮新校验结果。完整留档后拟直接abort，独立核实INCOMPLETE/context未提交及原租约/pending释放，不能称完成。收据用量仅覆盖begin上海15:49:49至实际receipt的本地可见窗口，不含更早读取、晚到记录或最终回复；计数当前未知。实际产出仅状态记录、七段记忆与六段报告；缓存已含input、reasoning已含output，不重复相加、不作账单，释放后不补写。
+
+## 5. Decisions Made
+- Y52/Y54均未到期，保持原blocked及retry2026-10-18T16:54:10.457479+08:00 / 2026-10-18T17:55:03.572119+08:00和wake_paths，两者均晚于本轮16:49:51 deadline。不提前重复授权检查，不改snapshot/helper、不重复preflight或等待凑截止。
+- 用户此前询问所需授权并非明确同意提交；已说明Y52/Y54各七个确切已测文件的限定提交范围，不把提问、心跳或GPU0/1权限当作Git许可或空闲证据。不自授、不外延Y50许可、不写授权文件、不启动训练，也不重复催问。
+- 沿用20261017-145336_question：不因共享closed冷却故障凑bootstrap候选，不改12条历史closed、共享运行时、目标门槛或调度。保留bootstrap未满足与INCOMPLETE，不宣称独立路线穷尽、科学进展或有效冷却已建立；此前到期复查校验通过不表示该故障已修复。
+- 按foreground故障收尾条款保存审计后abort并核实释放，不重复无信息增益探测或无进展finish。后续仅处理新绑定快照真正到期项、真实wake/明确授权变化或获准的限定共享修复；授权后仍须当前goal/源字节/六门禁/commit及实时授权GPU核验，不抢占其他人的作业。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

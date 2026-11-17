@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "observed_at": "2026-11-04T09:36:41.009009+08:00",
+  "authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "observation": {
+    "path": "pipeline/checks/server2_gpu1_pause_20261104_observation.json",
+    "sha256": "15f423a7ffcd3933c0baaa4d59eea9f2c0b06d074a6b6002a2839508e68b8352"
+  },
+  "before": {
+    "SERVERS.yaml": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_SERVERS.yaml",
+      "sha256": "ed15aeebb90638fcced4f0e57c4b76761cf2d7c04d201afeaf6e55ca025cbe7a"
+    },
+    "AGENTS.md": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_AGENTS.md",
+      "sha256": "244d3b1e89fd4102b9e48216ebb99d88186ce198c99865684367da88c0d87d80"
+    },
+    "pipeline/queue.json": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_pipeline_queue.json",
+      "sha256": "ad08c27a02410636bcfe170b805a724553fde056c301e9039102dbf1489c8a33"
+    },
+    "pipeline/running.json": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_pipeline_running.json",
+      "sha256": "27e9685e7cc4f96901fa944b70fefc53996bcee8160c4c404193eb3eba3a3701"
+    },
+    "pipeline/research_work.json": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_pipeline_research_work.json",
+      "sha256": "2cd33df93241b9c74d6e2ab573d3f1c919c82692eae6d20c31431c273770d290"
+    },
+    "pipeline/codex_memory.md": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_pipeline_codex_memory.md",
+      "sha256": "191074cea87e3b8f4f3658fe404740170c4ad133bf64b3ff0a9fffe8d4b4bab8"
+    },
+    "pipeline/goal.json": {
+      "path": "pipeline/snapshots/before_gpu1_pause_20261104_pipeline_goal.json",
+      "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+    }
+  },
+  "current_servers": {
+    "path": "SERVERS.yaml",
+    "sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74"
+  },
+  "current_agents": {
+    "path": "AGENTS.md",
+    "sha256": "d1b675bb2b3e0b1de8383cc38000631d9476e9e5271a16b728fb660f64c8c842"
+  },
+  "queue": {
+    "path": "pipeline/queue.json",
+    "sha256": "12e7c279248f7a8c7f4126ce1731e7b12799d0db2b8d6305380a2ea34521af26"
+  },
+  "memory": {
+    "path": "pipeline/codex_memory.md",
+    "sha256": "fd3ba595bface0fc70bee98967ee7b06d81ee349b7420656485375b14ba385a7"
+  },
+  "decision": {
+    "path": "pipeline/decisions/20261104-093641_manual.md",
+    "sha256": "69ed26f4bdb84631fdbd00321a6f4615aeda7302375c8215b689adff2e2fdecb"
+  },
+  "original_receipts_unchanged": true,
+  "scientific_goal_bytes_unchanged": true,
+  "running_map_unchanged": true,
+  "research_work_unchanged": true,
+  "remote_mutations": false,
+  "process_stop_required": false,
+  "terminal_archive_executed": false,
+  "automation_prompt_update_pending": true,
+  "retained_failed_helper": {
+    "path": "scripts/pause_server2_gpu1_20261104.py",
+    "sha256": "706acc95cd49d36d8adf1c650c8c2ef7e3351d23c5e9cde34a8e1b6d2f157e0f"
+  },
+  "first_attempt_failed_before_mutations": "Idle precondition rejected because GPU1 was taken by another user; second attempt verifies no AdaRES compute and preserves the foreign workload."
+}

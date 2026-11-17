@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y46",
+  "failure_evidence": [
+    {
+      "path": "pipeline/analyses/upload_y46_failed_guard_131e_131e82d16cb9437f968b1acd879766b7.py",
+      "sha256": "064d1b19aa38ae879606daa1a3518546ab079526e9c3c1fe320db29fc4af5203"
+    },
+    {
+      "path": "pipeline/analyses/y46_production_upload_131e_131e82d16cb9437f968b1acd879766b7.log",
+      "sha256": "947773621fec45f3ceed6c9cbaf8f0e853ecaa9ec24a1f8002e01464ea0698d5"
+    }
+  ],
+  "result": "Original guard failed before any upload because /proc initial environ lacks CUDA_VISIBLE_DEVICES.",
+  "repair": "Exact tools/train.py config and --gpu_ids=1 plus nvidia-smi PID/card mapping replace the invalid initial-environ assumption.",
+  "model_or_protocol_changed": false,
+  "pre_upload_failure": true,
+  "retained_failed_source_sha256": "064d1b19aa38ae879606daa1a3518546ab079526e9c3c1fe320db29fc4af5203",
+  "repaired_upload": {
+    "path": "pipeline/analyses/y46_production_upload_v2_131e_131e82d16cb9437f968b1acd879766b7.json",
+    "sha256": "c08dd2f81230cc864e12526efbef7103b558224da5abd6d0380ea94a204797ee"
+  },
+  "protected_files": 21,
+  "protected_sources_unchanged": true
+}

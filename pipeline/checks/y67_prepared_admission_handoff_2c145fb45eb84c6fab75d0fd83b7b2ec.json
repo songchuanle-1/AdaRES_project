@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "token": "2c145fb45eb84c6fab75d0fd83b7b2ec",
+  "observed_at": "2026-10-29T16:55:51.278585+08:00",
+  "preparation_only": true,
+  "actual_native_smoke_executed": false,
+  "admitted": false,
+  "queued": false,
+  "production_sync": false,
+  "current_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "native_plan": {
+    "path": "pipeline/checks/y67_native_5c23754c16ac4b16b8a37d6c57ba2dbc_plan.json",
+    "sha256": "712eed27e83aab8a4094b2943ac4c02cbc92039d6fbe6c1639341d6b1880077e"
+  },
+  "native_program": {
+    "path": "pipeline/checks/y67_native_5c23754c16ac4b16b8a37d6c57ba2dbc_program.py",
+    "sha256": "1ec1170b0bcbf301edf36b12a1cbbdd70cbdd6293666c42d358a29da0b8f70aa"
+  },
+  "exact_frozen_files_verified": 7,
+  "original_full_protocol_parent": {
+    "path": "pipeline/checks/AdaRES-Y64_server1_3cc27c56dedf451bbf778724f18a93e0_post_training_freeze.json",
+    "sha256": "a685d25898ee73f0b93de42f96eea4a5015ae998868342ef370e1559a8132f73"
+  },
+  "training_and_evaluation_protocol_prototype_preserved": true,
+  "prototype_is_not_an_admission_freeze": true,
+  "helper": {
+    "path": "scripts/admit_dispatch_y67_gpu0.py",
+    "sha256": "f84b63382df90ed62f3880141b1d9bc884fb161bd6529a92f81e010897ddc826"
+  },
+  "tests": {
+    "path": "scripts/test_y67_admission_handoff.py",
+    "sha256": "7977e993d7ff1df64a4a121fef7f6b5c05a31df5486d7bc7154678bdcb0c88fb"
+  },
+  "contract_loader": {
+    "path": "scripts/y67_native_contract.py",
+    "sha256": "da0bd5f1ac52207ad9d3d098f0ff89d5e99e7646374aa1e8303f062743eb7213"
+  },
+  "CPU_guard_tests_passed": 14,
+  "guard_log": {
+    "path": "pipeline/checks/y67_prepared_admission_guards_2c145fb45eb84c6fab75d0fd83b7b2ec.log",
+    "sha256": "478716ba949abb99a2feb014a5e094f91e42221cc12c80240089823ac5fd3143"
+  },
+  "guard_scope": "Identity-bound two actual steps, seven stage paths and native consumption, complete finite nonzero affine gradients and real optimizer updates, formula observations, TRAIN/data/scenes, resource bounds, exclusive idle/280W; fixtures are not actual native PASS.",
+  "prerequisite": "Canonical terminal archive and unreserved physically idle authorized server-2 GPU0, exact current goal/code/native plan, successful real native sparse TRAIN two-step result with this execution token.",
+  "after_native_success_commands": [
+    "python -B scripts/admit_dispatch_y67_gpu0.py admit --token <CURRENT_TOKEN>",
+    "python -B scripts/admit_dispatch_y67_gpu0.py dispatch --token <CURRENT_TOKEN>"
+  ],
+  "Y65_Y66_original_runs_and_receipts_preserved": true,
+  "Y57_still_paused": true,
+  "server2_power_limit_watts": 280,
+  "resource_evidence": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_2c145fb45eb84c6fab75d0fd83b7b2ec.json",
+      "sha256": "d4ea40bdc05bcf8549b2a50310ec7f67b4cb3b2a1f6a119c3499f68f95cb6a18"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_2c145fb45eb84c6fab75d0fd83b7b2ec.json",
+      "sha256": "e2b996bd36099943219d3f27592968ca9f9457782201400aa62fe79d47255c46"
+    }
+  ],
+  "limitation": "Preparation and negative guard tests only. No new native task steps, training launch or efficacy result."
+}

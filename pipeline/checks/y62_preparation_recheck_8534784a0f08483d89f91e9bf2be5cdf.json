@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y62",
+  "token": "8534784a0f08483d89f91e9bf2be5cdf",
+  "observed_at": "2026-10-25T00:48:11.514936+08:00",
+  "resource_observed_at": "2026-10-25T00:47:28.145234+08:00",
+  "exact_tested_files": 7,
+  "code_commit": "60466af4c1ade119b2a9f78687ad9d5e21358e2c",
+  "current_goal_source_commit_match": true,
+  "native_smoke_plan": {
+    "path": "pipeline/checks/y62_smoke_a8ec50e321474b429384cda38af2c33c_plan.json",
+    "sha256": "846a166b03e63735ee7f50aea7f92a711becd89d2571b27aa7f7c02d5d6995b0"
+  },
+  "frozen_program": {
+    "path": "pipeline/checks/y62_smoke_a8ec50e321474b429384cda38af2c33c_program.py",
+    "sha256": "dbd391f6b948f2ed8ce08e1036c3809c6f3b979051df8ad94e738ecb60b216ea"
+  },
+  "resource_check": {
+    "path": "pipeline/checks/gpu0_lifecycle_v3_8534784a0f08483d89f91e9bf2be5cdf.json",
+    "sha256": "0b69cca387711aa9bf6ad31a588398c0c536c19ed867b3568f7f18e1ed5da823"
+  },
+  "idle_authorized_gpus": [],
+  "current_occupant": "AdaRES-Y61",
+  "gpu0_power_limit_watts": 280,
+  "native_smoke_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "queue_changed": false,
+  "running_changed": false,
+  "remote_mutations": false
+}

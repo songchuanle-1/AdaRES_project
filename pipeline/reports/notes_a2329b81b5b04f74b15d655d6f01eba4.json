@@ -1,0 +1,21 @@
+{
+  "actions": [
+    "运行：AdaRES-Y99 Train17/30 step2484/4686；AdaRES-Y100 Train12/30 step4192/4686。两条原训练按原PID/源码/原生YAML/私有环境/功耗继续，原生步数递增。先检查已有合格队列，待跑0，无新终态或运行故障。",
+    "资源核验：两张授权GPU0均实测busy/reserved，恰由原Y99/Y100占用，无可执行的原生GPU空槽。已有两个独立Y101/Y102完成CPU实现、隔离版本和原生计划，原证据保留，Y101优先；本轮不重跑已通过的检查，也不为凑额度生成等价方案。",
+    "本轮新科学ID0、科学CPU重跑0、原生GPU检查0、准入0、新训练0、归档0、FIRST0、成本0。未加载活跃权重，训练效果仍待完整原协议后评。"
+  ],
+  "decisions": [
+    "保留原Y99/Y100固定30轮训练。Y101/Y102首次原生检查继续要求匹配原owner自然30轮、完整精确有限原检查点核验和规范归档，再验授权独占空闲GPU0；改变HEAD/owner须新测试绑定，不能复用旧parent。原生通过后同轮完整原设备协议/原运行兼容保护/准入/安全派发与原生步数核验。",
+    "仅AdaRES；server2GPU1全部使用与Y57单独暂停保持，不迁移冻结后评/成本、不重启受保护实验、不用server6、不改数据/功耗/调度、不干预外部任务。无新增用户处理事项。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y100_prepared_wait_a2329b81b5b04f74b15d655d6f01eba4.json",
+      "sha256": "e93844a678123e4659252f82169146caffe17cd59faf1dd788c63facd66d2755"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_a2329b81b5b04f74b15d655d6f01eba4.md",
+      "sha256": "99de63acb193d2fafc1150119d30303e38724165cde99ee54531f10f03a61c61"
+    }
+  ]
+}

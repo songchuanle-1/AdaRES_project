@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 2,
+  "preregistered_at": "2026-10-20T22:58:39.093037+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_margin_timing_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "6b751f3248a3adcb8ef86698a497dc954054a3c5efe9078fd8341b670cf6ed3b"
+  },
+  "body": {
+    "path": "scripts/probe_y56_margin_timing_dd8e.py",
+    "sha256": "f1feed2245159217c2530cc69bcf935c4d5b7ef819737dac0d92cc0ccd73357b"
+  },
+  "setup": {
+    "path": "scripts/setup_y56_rev2_dd8e.py",
+    "sha256": "efd87f8cb3f347a4c011ef0d85fd1be860501afca0f98e117feb8a14791b6339"
+  },
+  "bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+  },
+  "prediction": "Existing logit change should also affect binary class margin/confidence, rather than only common-mode logit shifts. Record actual native task gradient dot intervention and exact repeat.",
+  "diagnostic": "Fixed discovery pair4, released init and separate strict trained-W2; all7layers, no forced copies.",
+  "timing": "Same fixed10TRAIN scenes/common initial weights;2warmups/5measured alternating parent-candidate order within every scene/round. Two models resident in same single-GPU process, not production peak memory.",
+  "no_change_to_model_or_gates": true,
+  "no_efficacy_threshold": true,
+  "result": "pending"
+}

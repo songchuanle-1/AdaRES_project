@@ -1,0 +1,46 @@
+{
+  "actions": [
+    "收尾前一次实际身份/新鲜度保护断言失败，发生于诊断/内存/报告写入之前；随后新增外部GPU进程被确认，已保留旧证据并重新采集一致的不可变占用/身份快照。仅替换当前证据绑定，所有原科学、资源、零容差新鲜度及deadline检查保持，未盲重试同证据或覆盖原产物。",
+    "实际资源核验：原server1GPU0被其他项目计算进程[64587, 395614]占用，操作系统命令身份已只读确认；原server2GPU0仍为Y102 PID4747占用/保留。没有独占授权空槽，没有调用Y88续评启动器或干预其他项目进程/文件。",
+    "Y102原进程、源码6文件/原生YAML/环境已核验；实际计数{'phase': 'Train', 'epoch': 1, 'total': 30, 'step': 7, 'count': 4686}，native_progress_confirmed=False。保留原时间和现场，不重启、不加载检查点、不重复此前拒绝的栈附加或管理员请求。",
+    "复用原Y88已归集两遍9508/141预测、8项原产物身份/覆盖检查、剩余三种基线续评程序与入口，不重跑已完成CPU/native/终态/预测/成本检查。原失败工作及完整候选输出保持，完整四方法比较/成本/后审计仍待真实原GPU0独占窗口。"
+  ],
+  "decisions": [
+    "本轮19到期项按当前实际占用、原用户暂停或原数值失败保留；资源占用进程变化本身不是新研究结果。Y90有效全科学拒绝不重开，Y57单独暂停和GPU1六项后评暂停不变，Y86/Y97原负证据不重跑。",
+    "保持goal_rc4及零新创建/准入/训练额度、原数据/源码/权重/收据/资源/功耗/调度/上限/专用恢复要求。真实独占空槽出现后，继续已准备Y88缺失基线并核验原生计数；不迁移GPU1、不跨项目、不用server6、不驱逐任务。无实质变化且无可行动事项时静默。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y88_prepared_resource_wait_closeout_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "8f469ee33cff28db38716ca33a89490414c15a5a04e67b1f96cd23141aa23e79"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_7f0f4a5b1c1248a092d410ba49a3755e.md",
+      "sha256": "7a2911c54bbc6ba553455ca0f7d41d04cd03c6d6d054694df24cf7111cc44ac1"
+    },
+    {
+      "path": "pipeline/checks/y88_resource_wait_7f0f4a5b1c1248a092d410ba49a3755e_y102_diagnostic.json",
+      "sha256": "ef26f06e9dea16926f23903f3d307081fa3604712cf3ec4f45204d832a6681c0"
+    },
+    {
+      "path": "pipeline/checks/y88_wait_foreign_identity_7f0f4a5b1c1248a092d410ba49a3755e_reconciled.json",
+      "sha256": "ccf2d45fb5faadaf7005d95f3b700d0b9eb03a4c0fe7715fe90e5bfabfc2805e"
+    },
+    {
+      "path": "pipeline/checks/y88_remaining_review_06b91fd6ca5a450b984051bae07196cd.json",
+      "sha256": "4c70b935531e47a05b564173caf10d42521d1bff81adf8931cef2294fe640cd1"
+    },
+    {
+      "path": "pipeline/analyses/y88_interrupted_review_06b91fd6ca5a450b984051bae07196cd/partial_capture_disposition.json",
+      "sha256": "f5ad71873f86ce4a34e84b1c13a8ee4aa6520c8e5f6dc994862ee5a81ec629b6"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "30a4be70b6c03cddae6d42d5a2b38398df409bd30bf3b682c9a726ee41155527"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "91819f8d9e3861b698ec3bd828e440819260ef076b2328b441df75881cdaa22e"
+    }
+  ]
+}

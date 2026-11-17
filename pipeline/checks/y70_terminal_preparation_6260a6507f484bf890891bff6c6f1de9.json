@@ -1,0 +1,541 @@
+{
+  "complete": true,
+  "token": "6260a6507f484bf890891bff6c6f1de9",
+  "id": "AdaRES-Y70",
+  "observed_at": "2026-10-31T14:47:24.212304+08:00",
+  "payload": {
+    "id": "AdaRES-Y70",
+    "pid": 52561,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y70_query_scale_fusion_res_20261030_184633.log",
+    "config": "configs_song/model_paper5/adares_y70_query_scale_fusion_res.yaml",
+    "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+    "root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+    "work": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "basename": "adares_y70_query_scale_fusion_res",
+    "source_files": {
+      "ipdn/model_paper5/adares_y70_query_scale_fusion/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "ipdn/model_paper5/adares_y70_query_scale_fusion/dec.py": "0aae2ea003374919c697a07cab6ed43f87be214cda4336cf0374b9bebeb7f770",
+      "ipdn/model_paper5/adares_y70_query_scale_fusion/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "ipdn/model_paper5/adares_y70_query_scale_fusion/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "ipdn/model_paper5/adares_y70_query_scale_fusion/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "ipdn/model_paper5/adares_y70_query_scale_fusion/__init__.py": "faa8f08ee2bc4f070ef380d248aa99b76cf7a35b4539f7f1a048e064edece502"
+    },
+    "expected_config": {
+      "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "train": {
+        "seed": 1999,
+        "epochs": 30,
+        "interval": 1,
+        "pretrain": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/sp_unet_backbone.pth",
+        "save_epoch": 100,
+        "grad_clip": 0.1
+      },
+      "test": {
+        "seed": 1999,
+        "test_topk_per_scene": 100,
+        "test_score_thresh": 0.0,
+        "test_npoint_thresh": 100
+      },
+      "dataloader": {
+        "train": {
+          "batch_size": 2,
+          "num_workers": 4,
+          "persistent_workers": true
+        },
+        "val": {
+          "batch_size": 1,
+          "num_workers": 2,
+          "persistent_workers": true
+        },
+        "test": {
+          "batch_size": 1,
+          "num_workers": 1,
+          "persistent_workers": true
+        }
+      },
+      "data": {
+        "train": {
+          "type": "scannetv2_sample_graph_edge",
+          "dataset": "scanrefer",
+          "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+          "prefix": "train",
+          "suffix": ".pth",
+          "training": true,
+          "mode": 4,
+          "aug": true,
+          "with_elastic": true,
+          "use_xyz": true,
+          "voxel_cfg": {
+            "scale": 50,
+            "spatial_shape": [
+              128,
+              512
+            ],
+            "max_npoint": 2500000
+          },
+          "max_des_len": 78,
+          "lang_num_max": 4
+        },
+        "val": {
+          "type": "scannetv2_sample_graph_edge",
+          "dataset": "scanrefer",
+          "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+          "prefix": "val",
+          "suffix": ".pth",
+          "training": false,
+          "aug": false,
+          "with_elastic": false,
+          "use_xyz": true,
+          "voxel_cfg": {
+            "scale": 50,
+            "spatial_shape": [
+              128,
+              512
+            ],
+            "max_npoint": 2500000
+          },
+          "max_des_len": 78,
+          "lang_num_max": 32
+        }
+      },
+      "model": {
+        "input_channel": 6,
+        "blocks": 5,
+        "block_reps": 2,
+        "media": 32,
+        "normalize_before": true,
+        "return_blocks": true,
+        "pool": "mean",
+        "infer_mode": "sem",
+        "fps_num": 256,
+        "task_type": "res",
+        "sampling_module": {
+          "num_proposal": 128,
+          "pc_dim": 256,
+          "lang_dim": 256,
+          "d_model": 256
+        },
+        "dec": {
+          "num_layer": 6,
+          "d_model": 256,
+          "nhead": 8,
+          "hidden_dim": 1024,
+          "dropout": 0.0,
+          "activation_fn": "gelu",
+          "iter_pred": true,
+          "attn_mask": true,
+          "kernel": "top1",
+          "global_feat": "mean",
+          "lang_att": true,
+          "contrastive_align_loss": true,
+          "num_proposal_fine": 512,
+          "num_proposal_query": [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4
+          ],
+          "num_proposal_query_inst": [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4
+          ]
+        },
+        "criterion": {
+          "loss_weight": [
+            1.0,
+            1.0,
+            0.5,
+            5.0,
+            0.1,
+            0.1,
+            0.1,
+            1.0
+          ],
+          "cost_weight": [
+            1.0,
+            1.0,
+            0.1
+          ],
+          "loss_fun": "focal",
+          "match_last_layer": true,
+          "layer_differ_weight": true
+        },
+        "test_cfg": {
+          "topk_insts": 100,
+          "score_thr": 0.0,
+          "npoint_thr": 100
+        },
+        "norm_eval": false,
+        "fix_module": [
+          "text_encoder"
+        ]
+      },
+      "optimizer": {
+        "type": "AdamW",
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "paramwise_cfg": {
+          "text_encoder": {
+            "lr_mult": 0.001
+          },
+          "input_conv": {
+            "lr_mult": 0.01
+          },
+          "unet": {
+            "lr_mult": 0.01
+          },
+          "output_layer": {
+            "lr_mult": 0.01
+          },
+          "dec": {
+            "lr_mult": 1.0
+          }
+        }
+      },
+      "lr_scheduler": {
+        "type": "PolyLR",
+        "max_iters": 70,
+        "power": 4.0,
+        "constant_ending": 0.0
+      }
+    },
+    "allowed_markers": [
+      "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+      "87019e7c2f640f99cb82a3e5b396321fc5b54d25"
+    ],
+    "deployments": {
+      "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f": {
+        "source_files": {},
+        "configs": {}
+      },
+      "87019e7c2f640f99cb82a3e5b396321fc5b54d25": {
+        "source_files": {
+          "ipdn/model_paper5/adares_y71_visual_product_fusion/__init__.py": "4537650b90fe1614ec4c44eeb8c955a80cc98ca952866ce03b0155aeeb0e43f9",
+          "ipdn/model_paper5/adares_y71_visual_product_fusion/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+          "ipdn/model_paper5/adares_y71_visual_product_fusion/dec.py": "1cc47d44e5c9813ba537f3ca09a2181ed3b6fdf2fafefc441e6c74c6e6c36c7a",
+          "ipdn/model_paper5/adares_y71_visual_product_fusion/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+          "ipdn/model_paper5/adares_y71_visual_product_fusion/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+          "ipdn/model_paper5/adares_y71_visual_product_fusion/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+        },
+        "configs": {
+          "configs_song/model_paper5/adares_y71_visual_product_fusion_res.yaml": {
+            "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+            "train": {
+              "seed": 1999,
+              "epochs": 30,
+              "interval": 1,
+              "pretrain": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/sp_unet_backbone.pth",
+              "save_epoch": 100,
+              "grad_clip": 0.1
+            },
+            "test": {
+              "seed": 1999,
+              "test_topk_per_scene": 100,
+              "test_score_thresh": 0.0,
+              "test_npoint_thresh": 100
+            },
+            "dataloader": {
+              "train": {
+                "batch_size": 2,
+                "num_workers": 4,
+                "persistent_workers": true
+              },
+              "val": {
+                "batch_size": 1,
+                "num_workers": 2,
+                "persistent_workers": true
+              },
+              "test": {
+                "batch_size": 1,
+                "num_workers": 1,
+                "persistent_workers": true
+              }
+            },
+            "data": {
+              "train": {
+                "type": "scannetv2_sample_graph_edge",
+                "dataset": "scanrefer",
+                "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+                "prefix": "train",
+                "suffix": ".pth",
+                "training": true,
+                "mode": 4,
+                "aug": true,
+                "with_elastic": true,
+                "use_xyz": true,
+                "voxel_cfg": {
+                  "scale": 50,
+                  "spatial_shape": [
+                    128,
+                    512
+                  ],
+                  "max_npoint": 2500000
+                },
+                "max_des_len": 78,
+                "lang_num_max": 4
+              },
+              "val": {
+                "type": "scannetv2_sample_graph_edge",
+                "dataset": "scanrefer",
+                "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+                "prefix": "val",
+                "suffix": ".pth",
+                "training": false,
+                "aug": false,
+                "with_elastic": false,
+                "use_xyz": true,
+                "voxel_cfg": {
+                  "scale": 50,
+                  "spatial_shape": [
+                    128,
+                    512
+                  ],
+                  "max_npoint": 2500000
+                },
+                "max_des_len": 78,
+                "lang_num_max": 32
+              }
+            },
+            "model": {
+              "input_channel": 6,
+              "blocks": 5,
+              "block_reps": 2,
+              "media": 32,
+              "normalize_before": true,
+              "return_blocks": true,
+              "pool": "mean",
+              "infer_mode": "sem",
+              "fps_num": 256,
+              "task_type": "res",
+              "sampling_module": {
+                "num_proposal": 128,
+                "pc_dim": 256,
+                "lang_dim": 256,
+                "d_model": 256
+              },
+              "dec": {
+                "num_layer": 6,
+                "d_model": 256,
+                "nhead": 8,
+                "hidden_dim": 1024,
+                "dropout": 0.0,
+                "activation_fn": "gelu",
+                "iter_pred": true,
+                "attn_mask": true,
+                "kernel": "top1",
+                "global_feat": "mean",
+                "lang_att": true,
+                "contrastive_align_loss": true,
+                "num_proposal_fine": 512,
+                "num_proposal_query": [
+                  128,
+                  64,
+                  32,
+                  16,
+                  8,
+                  4
+                ],
+                "num_proposal_query_inst": [
+                  128,
+                  64,
+                  32,
+                  16,
+                  8,
+                  4
+                ]
+              },
+              "criterion": {
+                "loss_weight": [
+                  1.0,
+                  1.0,
+                  0.5,
+                  5.0,
+                  0.1,
+                  0.1,
+                  0.1,
+                  1.0
+                ],
+                "cost_weight": [
+                  1.0,
+                  1.0,
+                  0.1
+                ],
+                "loss_fun": "focal",
+                "match_last_layer": true,
+                "layer_differ_weight": true
+              },
+              "test_cfg": {
+                "topk_insts": 100,
+                "score_thr": 0.0,
+                "npoint_thr": 100
+              },
+              "norm_eval": false,
+              "fix_module": [
+                "text_encoder"
+              ]
+            },
+            "optimizer": {
+              "type": "AdamW",
+              "lr": 0.0001,
+              "weight_decay": 0.0005,
+              "paramwise_cfg": {
+                "text_encoder": {
+                  "lr_mult": 0.001
+                },
+                "input_conv": {
+                  "lr_mult": 0.01
+                },
+                "unet": {
+                  "lr_mult": 0.01
+                },
+                "output_layer": {
+                  "lr_mult": 0.01
+                },
+                "dec": {
+                  "lr_mult": 1.0
+                }
+              }
+            },
+            "lr_scheduler": {
+              "type": "PolyLR",
+              "max_iters": 70,
+              "power": 4.0,
+              "constant_ending": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "declared_location": {
+    "path": "pipeline/checks/y70_terminal_preparation_6260a6507f484bf890891bff6c6f1de9_location.json",
+    "sha256": "69cc7606fb5e90a57923933659e4e49480878c2d264348811327ead16e9ea192"
+  },
+  "CPU_guard_tests_passed": 20,
+  "dependencies": [
+    {
+      "path": "scripts/finalize_y70_fixed30_attempt2.py",
+      "sha256": "11255453b4bb6aa271a3e5c8788d4d9e07336e01e166d0ef512495ba29fcc6f8"
+    },
+    {
+      "path": "scripts/test_y70_terminal_handoff_attempt2.py",
+      "sha256": "3b2f0ed8854a2fa4ea68c92fa51c219488a64e524a33f0353c9835873e392590"
+    },
+    {
+      "path": "scripts/finalize_y69_fixed30.py",
+      "sha256": "e18bd7d4b4b0660107565f159e5d30c6fbb58bcf8e131923ffb4f65041ef6c18"
+    },
+    {
+      "path": "scripts/y70_terminal_contract.py",
+      "sha256": "d5d3f40359f5ddeb0582e5d33b44d0505f8e46b5a28e7c3814372b9f1f37081d"
+    },
+    {
+      "path": "scripts/observe_y70_y71_exact_deployment.py",
+      "sha256": "a5696c5dacf1d46463ea1cdfbe01af327c794d31b03d5a0887958c262e75c796"
+    },
+    {
+      "path": "scripts/admit_dispatch_y71_gpu0.py",
+      "sha256": "35456be23af711b7c389263f3c6f6ed37f0be0378ef51ac1923964f4d7c63428"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    }
+  ],
+  "post_training_freeze": {
+    "path": "pipeline/checks/AdaRES-Y70_post_training_freeze_330fe836434040e192c53860504f5045.json",
+    "sha256": "beef7088c11e04f6988a9f78f953b0b40db3961c3d13d87687529136698857b1"
+  },
+  "admission": {
+    "path": "pipeline/admissions/AdaRES-Y70.json",
+    "sha256": "151abc053594eaf38985e4454b9ad3c5791f430ad0dbd6f7fbecb98d55007f9b"
+  },
+  "full_terminal_verification_executed": false,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "training_stopped": false,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "required_before_archive": "Exact PID and same-config train process absent; native Train/Val1..30, stable finite last30/best/model/optimizer/scheduler, unchanged source/YAML/receipt/freeze. Use explicit server-2 GPU1 and390W; retain all original checkpoints and other queue entries.",
+  "next_command": "python -B scripts/finalize_y70_fixed30_attempt2.py --token <fresh-owned-token>",
+  "evidence": [
+    {
+      "path": "scripts/prepare_y70_terminal_handoff_attempt2.py",
+      "sha256": "6309b75582b8b924a545057b767b207c414e3193a8606007e2a750bf9f63a291"
+    },
+    {
+      "path": "pipeline/checks/y70_terminal_preparation_6260a6507f484bf890891bff6c6f1de9_tests.log",
+      "sha256": "52b917c6f3bb0bad2755ec6a95e61f016cb8cb7fdc3ef2e295bc7e463355b7da"
+    },
+    {
+      "path": "pipeline/checks/y70_terminal_preparation_6260a6507f484bf890891bff6c6f1de9_location_program.py",
+      "sha256": "64e1c5ba94d4a6f2161f0b03f70c18407fa410b001eb7020bb02958af0407fa8"
+    },
+    {
+      "path": "pipeline/checks/y70_terminal_preparation_6260a6507f484bf890891bff6c6f1de9_location.json",
+      "sha256": "69cc7606fb5e90a57923933659e4e49480878c2d264348811327ead16e9ea192"
+    },
+    {
+      "path": "pipeline/checks/y70_terminal_preparation_6260a6507f484bf890891bff6c6f1de9_location.log",
+      "sha256": "99abe6a0f8eb6f9975d7921ab9a16f1e1697db221dd59b217f62ab70e914d429"
+    },
+    {
+      "path": "scripts/finalize_y70_fixed30_attempt2.py",
+      "sha256": "11255453b4bb6aa271a3e5c8788d4d9e07336e01e166d0ef512495ba29fcc6f8"
+    },
+    {
+      "path": "scripts/test_y70_terminal_handoff_attempt2.py",
+      "sha256": "3b2f0ed8854a2fa4ea68c92fa51c219488a64e524a33f0353c9835873e392590"
+    },
+    {
+      "path": "scripts/finalize_y69_fixed30.py",
+      "sha256": "e18bd7d4b4b0660107565f159e5d30c6fbb58bcf8e131923ffb4f65041ef6c18"
+    },
+    {
+      "path": "scripts/y70_terminal_contract.py",
+      "sha256": "d5d3f40359f5ddeb0582e5d33b44d0505f8e46b5a28e7c3814372b9f1f37081d"
+    },
+    {
+      "path": "scripts/observe_y70_y71_exact_deployment.py",
+      "sha256": "a5696c5dacf1d46463ea1cdfbe01af327c794d31b03d5a0887958c262e75c796"
+    },
+    {
+      "path": "scripts/admit_dispatch_y71_gpu0.py",
+      "sha256": "35456be23af711b7c389263f3c6f6ed37f0be0378ef51ac1923964f4d7c63428"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    }
+  ]
+}

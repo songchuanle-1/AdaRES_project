@@ -1,0 +1,200 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-24T19:02:54.040331+08:00",
+  "id": "AdaRES-Y61",
+  "pid": 78290,
+  "observation": {
+    "hostname": "dl01-MS-7C60",
+    "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+    "samples": [
+      {
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y61_peer_value_gradient_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "starttime": "28321343",
+        "log_size_bytes": 105456,
+        "progress": [
+          "Train",
+          "1",
+          "30",
+          "440",
+          "4686"
+        ],
+        "device": {
+          "index": 0,
+          "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+          "power_limit_watts": 280.0,
+          "draw_watts": 243.17,
+          "temperature_c": 77.0,
+          "fan_percent": 65.0,
+          "utilization_percent": 79.0,
+          "memory_used_mib": 16896,
+          "memory_total_mib": 24576
+        },
+        "telemetry": {
+          "rc": 0,
+          "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 280.00, 243.17, 77, 65, 79, 16896, 24576\n",
+          "stderr": ""
+        },
+        "monotonic": 283463.364831949,
+        "tail_errors": []
+      },
+      {
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y61_peer_value_gradient_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "starttime": "28321343",
+        "log_size_bytes": 111406,
+        "progress": [
+          "Train",
+          "1",
+          "30",
+          "465",
+          "4686"
+        ],
+        "device": {
+          "index": 0,
+          "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+          "power_limit_watts": 280.0,
+          "draw_watts": 251.15,
+          "temperature_c": 77.0,
+          "fan_percent": 66.0,
+          "utilization_percent": 80.0,
+          "memory_used_mib": 16896,
+          "memory_total_mib": 24576
+        },
+        "telemetry": {
+          "rc": 0,
+          "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 280.00, 251.15, 77, 66, 80, 16896, 24576\n",
+          "stderr": ""
+        },
+        "monotonic": 283475.401126266,
+        "tail_errors": []
+      }
+    ],
+    "performance": {
+      "rc": 0,
+      "stdout": "\n==============NVSMI LOG==============\n\nTimestamp                                 : Sat Oct 24 07:02:38 2026\nDriver Version                            : 550.90.07\nCUDA Version                              : 12.4\n\nAttached GPUs                             : 2\nGPU 00000000:21:00.0\n    Performance State                     : P2\n    Clocks Event Reasons\n        Idle                              : Not Active\n        Applications Clocks Setting       : Not Active\n        SW Power Cap                      : Active\n        HW Slowdown                       : Not Active\n            HW Thermal Slowdown           : Not Active\n            HW Power Brake Slowdown       : Not Active\n        Sync Boost                        : Not Active\n        SW Thermal Slowdown               : Not Active\n        Display Clock Setting             : Not Active\n    Sparse Operation Mode                 : N/A\n\n",
+      "stderr": ""
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 78290, 16888\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 50448, 23718\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "assessment": {
+    "process_identity_verified": true,
+    "native_progress_verified": true,
+    "power_cap_preserved": true,
+    "gpu1_compute_empty": false,
+    "gpu0_compute_owner_verified": true,
+    "thermal_slowdown_active": false,
+    "kernel_xid_or_fallen_off_observed": false,
+    "tail_error_observed": false,
+    "sample_healthy": false,
+    "hardware_root_cause_resolved": false,
+    "efficacy_test": false
+  },
+  "completed_evaluations": [
+    {
+      "id": "AdaRES-Y56",
+      "terminal": {
+        "path": "pipeline/checks/y56_fixed30_8664855b3766455594b27408b18a8ce6.json",
+        "sha256": "27e9bdc6d8164b63763cb75b4f121cd0c065ee6c12483ebc264660ab2cdb8b6d"
+      },
+      "freeze": {
+        "path": "pipeline/analyses/AdaRES-Y56_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+        "sha256": "2aaed3181c54c66ee595a42453005e776f34fc70e6bd086251f61924c1f85a83"
+      }
+    },
+    {
+      "id": "AdaRES-Y58",
+      "terminal": {
+        "path": "pipeline/checks/y58_fixed30_handoff_a22787800208426cb33a87fdce0c6b81.json",
+        "sha256": "e44798d050d5807c65f2d4f5da83cfdd213f09f0da881be4a39881bb2d32142f"
+      },
+      "freeze": {
+        "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+        "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+      }
+    },
+    {
+      "id": "AdaRES-Y59",
+      "terminal": {
+        "path": "pipeline/checks/y59_fixed30_3e61cded0e934db5bb4f9abd4451c12c.json",
+        "sha256": "0c00de9a832602e02d42118a93e1b61554c4129c9fc13ebf3a90a00d676f3d23"
+      },
+      "freeze": {
+        "path": "pipeline/checks/AdaRES-Y59_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+        "sha256": "839d6aabab1ec30f739c80f7aa94bf90028b9583a9308aa7fefe74668b424e66"
+      }
+    },
+    {
+      "id": "AdaRES-Y60",
+      "terminal": {
+        "path": "pipeline/checks/y60_fixed30_fd874a5eafed4a5b84c6c77d939b6b3f.json",
+        "sha256": "67e0dfb0a3e56796bddb099a7b5620577581decb7d9a229e37f3ad792bfffe5e"
+      },
+      "freeze": {
+        "path": "pipeline/checks/AdaRES-Y60_post_training_freeze_3e61cded0e934db5bb4f9abd4451c12c.json",
+        "sha256": "5b8f075838ca9b0d23ac847c43777ab13add730854affa8623ae7ef541165efc"
+      }
+    }
+  ],
+  "dispatch": {
+    "path": "pipeline/checks/y61_gpu0_dispatch_fd874a5eafed4a5b84c6c77d939b6b3f.json",
+    "sha256": "8c4788ec55846cc45881381ce00720f6e2eb0da158e0e65d044e40c8521f3c50"
+  },
+  "CPU_guard_tests": 10,
+  "Y57_still_paused": true,
+  "remote_mutations": false,
+  "hardware_changed": false,
+  "queue_changed": false,
+  "scientific_promotion": false,
+  "previous_local_failure": {
+    "exit_code": 1,
+    "command": "python -B scripts/capture_y61_training_handoff.py --token fd874a5eafed4a5b84c6c77d939b6b3f",
+    "observation": "The initial guard rejected validation-stage evaluation records with retained exclusive_gpu_slot fields before any SSH observation or writes.",
+    "failure_scope": "local handoff schema; not native smoke or production training",
+    "repair": "Accept only validation/blocked with absent or exclusive_gpu_slot blocker. Refresh completed evaluation holds from actual occupied GPU0; clear only Y61 stale resource fields after verified live training progress."
+  },
+  "evidence": [
+    {
+      "path": "scripts/capture_y61_training_handoff.py",
+      "sha256": "838bb4e4b7afdf4cd0403797a8e6c7f2703976195b9012755b517e1b552a14d5"
+    },
+    {
+      "path": "scripts/test_y61_training_handoff.py",
+      "sha256": "12dec2f248a77fa1ce367d4b7a214ad6225527c16dbc06b0949746555b816ac1"
+    },
+    {
+      "path": "scripts/check_gpu0_single_card_trial.py",
+      "sha256": "e0ef22c9f492a9ff26d4fb749d7ef9e1d3a813000b92badf53fccef50ecb3163"
+    }
+  ],
+  "limitation": "Short samples only, not hardware repair, full-run stability or trained efficacy."
+}

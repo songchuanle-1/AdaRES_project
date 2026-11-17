@@ -1,0 +1,95 @@
+{
+  "profile": "experiment_first",
+  "id": "AdaRES-Y58",
+  "candidate_id": "AdaRES-Y58",
+  "config": "configs_song/model_paper5/adares_y58_fixed_backbone_statistics_res.yaml",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "native_smoke": {
+    "path": "pipeline/checks/AdaRES-Y58_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+    "sha256": "d70e9f90579963b8d4be9f6a571bbb2376299ecca86142bc9d924efd16e30ee8"
+  },
+  "post_training_plan": {
+    "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+    "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+  },
+  "admitted_at": "2026-10-22T01:05:28.137344+08:00",
+  "gates": {
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y58_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "d70e9f90579963b8d4be9f6a571bbb2376299ecca86142bc9d924efd16e30ee8"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+        },
+        {
+          "path": "pipeline/checks/adares_y58_head_smoke_8664855b3766455594b27408b18a8ce6_binding.json",
+          "sha256": "422168702fb6e2457fa742cf1938be012206fab049fa629e98e5cf6136f48458"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y58_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "d70e9f90579963b8d4be9f6a571bbb2376299ecca86142bc9d924efd16e30ee8"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+        },
+        {
+          "path": "pipeline/checks/adares_y58_head_smoke_8664855b3766455594b27408b18a8ce6_binding.json",
+          "sha256": "422168702fb6e2457fa742cf1938be012206fab049fa629e98e5cf6136f48458"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y58_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "d70e9f90579963b8d4be9f6a571bbb2376299ecca86142bc9d924efd16e30ee8"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+        },
+        {
+          "path": "pipeline/checks/adares_y58_head_smoke_8664855b3766455594b27408b18a8ce6_binding.json",
+          "sha256": "422168702fb6e2457fa742cf1938be012206fab049fa629e98e5cf6136f48458"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y58_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "d70e9f90579963b8d4be9f6a571bbb2376299ecca86142bc9d924efd16e30ee8"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+        },
+        {
+          "path": "pipeline/checks/adares_y58_head_smoke_8664855b3766455594b27408b18a8ce6_binding.json",
+          "sha256": "422168702fb6e2457fa742cf1938be012206fab049fa629e98e5cf6136f48458"
+        }
+      ]
+    }
+  },
+  "decision": {
+    "path": "pipeline/decisions/20261022-010528_next_batch.md",
+    "sha256": "6b5da8d545433c9cd457ab0bfe9eeae9c07f89ca5e1d14facae956c275c7e9e4"
+  }
+}

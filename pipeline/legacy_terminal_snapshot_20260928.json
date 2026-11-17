@@ -1,0 +1,780 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-28T02:43:08.319044+00:00",
+  "deadline_at": "2026-09-28T03:43:08.319044+00:00",
+  "project": "AdaRES_project",
+  "mode": "design",
+  "mode_reason": "resume unfinished candidate stages, then continue capacity-gap design in this tick; candidate_budget=1",
+  "rules": {
+    "steady": "Use snapshot plus targeted live evidence. Do not scan history.",
+    "event": "Inspect only files tied to listed changes.",
+    "design": "Use manifest first; expand older evidence only by explicit ID/reference.",
+    "never_read_normally": [
+      "pipeline/headless/tick_*.log",
+      "entire decisions/ directory",
+      "entire analyses/ directory",
+      "entire reports/ directory"
+    ]
+  },
+  "preflight": {
+    "monitor_rc": 0,
+    "goal_rc": 0,
+    "monitor_output": "================================================== 2026-09-28 10:43 : AdaRES_project ==================================================\n\n--- server-2 (192.168.1.163) ---\n  无训练进程\n  [adares_w2_pointmass_competition_res] 进程未见 (deathwatch 1/3) — 暂不处置\n\n--- server-6 (100.64.3.28) ---\n  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机\n\n--- 队列: AdaRES_project ---\n  server-2: running=1\n\n",
+    "goal_output": "================================================================================\n  Goal Check Report — 2026-09-28 10:43:08\n================================================================================\n  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.\n\n## Phase 1: Metric Target\n  Target: mIoU ≥ 0.5150\n  [✗] Champion: AdaRES-B4-E30 — mIoU=0.5094 (gap to target: +0.0056)\n       Epochs: ?, State: done_complete\n  Phase 1: NOT YET — continue exploring ✗\n\n## Baseline\n  Baseline: AdaRES-B1 — mIoU=0.5020\n  Champion vs Baseline: γ = +0.0074\n\n## Phase 2: Story Verification\n  (等待 Phase 1 达标后启动)\n\n## Overall\n  Phase 1: champion=0.5094, target=0.5150, gap=+0.0056\n================================================================================\n"
+  },
+  "goal": {
+    "description": "AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.",
+    "metric": {
+      "name": "mIoU",
+      "target": 0.515,
+      "dataset": "ScanRefer"
+    },
+    "baseline_experiment_id": "AdaRES-B1",
+    "constraint_count": 7,
+    "banned_count": 3,
+    "path": "D:/project/AdaRES_project/pipeline/goal.json"
+  },
+  "queue": {
+    "capacity": 2,
+    "target_active": 2,
+    "active_count": 1,
+    "candidate_budget": 1,
+    "waiting_count": 0,
+    "claiming_count": 0,
+    "running_count": 1,
+    "active_tasks": [
+      {
+        "id": "AdaRES-W2",
+        "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+        "status": "running",
+        "server": "server-2",
+        "gpu": 0,
+        "label": "AdaRES-W2 point-mass competition",
+        "launched": "2026-09-27T03:22:18"
+      }
+    ],
+    "monitored_active_tasks": [
+      {
+        "id": "AdaRES-W2",
+        "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+        "status": "running",
+        "server": "server-2",
+        "gpu": 0,
+        "label": "AdaRES-W2 point-mass competition",
+        "launched": "2026-09-27T03:22:18"
+      }
+    ],
+    "status_counts": {
+      "running": 1
+    },
+    "running_map": {
+      "server-2": {
+        "0": "AdaRES-W2"
+      }
+    },
+    "servers": [
+      {
+        "name": "server-2",
+        "allowed_gpus": [
+          0,
+          1
+        ],
+        "max_tasks_per_gpu": 1,
+        "max_tasks": null,
+        "capacity": 2
+      }
+    ]
+  },
+  "changes": {
+    "reasons": [
+      "previous_tick_unhealthy",
+      "active_queue_changed",
+      "research_artifact_changed",
+      "research_work_changed"
+    ],
+    "new_terminal_ids": [],
+    "steady_ticks": 0,
+    "shallow_queue": true,
+    "design_due": true,
+    "research_cooldown": false,
+    "force_design": false,
+    "design_interval_hours": 6.0,
+    "steady_ticks_before_design": 1,
+    "fill_to_capacity": true,
+    "design_buffer": 0,
+    "max_candidates_per_design_tick": 2
+  },
+  "research_gates": [],
+  "research_work": {
+    "path": "D:\\project\\AdaRES_project\\pipeline\\research_work.json",
+    "candidates": [
+      {
+        "id": "AdaRES-B4",
+        "stage": "closed",
+        "experiment_id": "AdaRES-B4",
+        "next_action": "Closed as improved at mIoU 0.5070 after 20 validations and promoted to champion. Do not launch a duplicate or tuning-only B4 successor; retain B5 as the independent token-grounding test.",
+        "evidence": [
+          {
+            "path": "pipeline/admissions/AdaRES-B4.json",
+            "sha256": "1d08a2a6c55ba872efada8e5216efa24112ff29ff41abca3e1260766362439c4"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-B4_admission_20260921.json",
+            "sha256": "a4d7ec2cc76546aa85e9978bfa5047568da0c09d3d971793d10ab07c1cfbf0c8"
+          },
+          {
+            "path": "pipeline/designs/exp_design_20260921-145043.md",
+            "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-B4.json",
+            "sha256": "c249cd776ecea33b740d445631eb9a02097946fbd743cd1bba4a22d45f852f56"
+          },
+          {
+            "path": "pipeline/queue.json",
+            "sha256": "a9c32a0bcaabd0bc471e5979d1791b93afbc6dc61673622ecf373168d73cf938"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-B4_done_complete_20260922-085300.md",
+            "sha256": "a7222f15124be706c41292e39d9095e71f3f5b2b24fd6727854d1dda961cfef"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-B5",
+        "stage": "closed",
+        "experiment_id": "AdaRES-B5",
+        "next_action": "Closed at mIoU 0.5030 after 20/20 validations. Do not relaunch this token-grounding route without new structural evidence.",
+        "evidence": [
+          {
+            "path": "pipeline/admissions/AdaRES-B5.json",
+            "sha256": "176b61d56f2f6791232468fedcd7fb68333ba7d6740e3b477bf52cb5e4eeb32d"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-B5_admission_20260921.json",
+            "sha256": "0e227e5aecfe10571a5a677f62a0ae27ff3ebe7d37b0fd900b13acc8bfb9a2ac"
+          },
+          {
+            "path": "pipeline/designs/exp_design_20260921-145043.md",
+            "sha256": "cdd6d051227f361085e241b7017df665e9ca6485386dd20fb137e62569e00a75"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-B5.json",
+            "sha256": "43acc70141802476a68407da770ee41f73b53d7e685703f626c7c06c2a5bf6e5"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-B4-E30",
+        "stage": "closed",
+        "experiment_id": "AdaRES-B4-E30",
+        "next_action": "Closed and promoted as the best completed result at mIoU 0.5094 after 30/30 validations. The Phase 1 target remains 0.0056 away; do not launch a duplicate or tuning-only successor.",
+        "evidence": [
+          {
+            "path": "pipeline/experiments/AdaRES-B4-E30.json",
+            "sha256": "690d1149e8bf3f000b21e4114481f7838d1b8513bcd0ad210121ec848216ed5a"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-B4-E30_done_complete_20260922-194858.md",
+            "sha256": "f3ade04a88af01a206045c12eafa98fc8f3483afad6d2917545fc7a3e136c89a"
+          },
+          {
+            "path": "pipeline/decisions/20260922-093000_manual.md"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-B2-E30",
+        "stage": "closed",
+        "experiment_id": "AdaRES-B2-E30",
+        "next_action": "Closed at mIoU 0.5058 after 30/30 validations and below the matched-budget B4-E30 result by 0.0036. Do not launch a duplicate, extension, or tuning-only successor.",
+        "evidence": [
+          {
+            "path": "pipeline/experiments/AdaRES-B2-E30.json",
+            "sha256": "aef186b7b6fc8ffb1178047f951c63ff58234cccb7dbda6d74b180fda40a5005"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-B2-E30_done_complete_20260922-194858.md",
+            "sha256": "30613b6ef5ebc3132536ad5c95a2dc36015557416040ffdba201c40e89683e51"
+          },
+          {
+            "path": "pipeline/decisions/20260922-093000_manual.md"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-C1",
+        "stage": "closed",
+        "experiment_id": "AdaRES-C1",
+        "next_action": "The initial 10/10 run completed at mIoU 0.4950. Follow its separate AdaRES-C1-E30 continuation for the user-requested fixed 30-epoch protocol.",
+        "evidence": [
+          {
+            "path": "pipeline/designs/exp_design_20260922-223000.md"
+          },
+          {
+            "path": "pipeline/admissions/AdaRES-C1.json"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-C1.json"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-C2",
+        "stage": "closed",
+        "experiment_id": "AdaRES-C2",
+        "next_action": "The initial 10/10 run completed at mIoU 0.4980. Follow its separate AdaRES-C2-E30 continuation for the user-requested fixed 30-epoch protocol.",
+        "evidence": [
+          {
+            "path": "pipeline/designs/exp_design_20260922-223000.md"
+          },
+          {
+            "path": "pipeline/admissions/AdaRES-C2.json"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-C2.json"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-C1-E30",
+        "stage": "closed",
+        "experiment_id": "AdaRES-C1-E30",
+        "next_action": "Closed after 30/30 at mIoU 0.5008, below B4-E30 by 0.0086. Do not relaunch, retune, or extend the listwise route.",
+        "evidence": [
+          {
+            "path": "pipeline/decisions/20260923-081618_manual_batch.md"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-C1-E30.json",
+            "sha256": "551cea563474076c09357bb7b704999e072c81a926849a9ad3dd0870f3531e5d"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-C1-E30_done_complete_20260924-055300.md",
+            "sha256": "979fdbc1835adc4bb5336cfde9e44a40a690e47ed4426255373584365b7ff910"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-C2-E30",
+        "stage": "closed",
+        "experiment_id": "AdaRES-C2-E30",
+        "next_action": "Closed after 30/30 at mIoU 0.5014, below B4-E30 by 0.0080. Do not relaunch or tune the hard-negative margin route; await a separately gated structural design.",
+        "evidence": [
+          {
+            "path": "pipeline/decisions/20260923-081618_manual_batch.md"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-C2-E30.json",
+            "sha256": "fc6ce513b89107b390b02698444b37ad50603d7dfddacfd726773ba04ec8e26c"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-C2-E30_done_complete_20260924-014900.md",
+            "sha256": "3bbdc9b2d3df286279017ab995a636b3ce079055e77780cee7cf49d1f5fbd5c0"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-D1",
+        "stage": "closed",
+        "experiment_id": "AdaRES-D1",
+        "next_action": "Closed after 30/30 at mIoU 0.5080, 0.0014 below B4-E30. Do not relaunch or tune the full-query pairwise route. The fixed terminal 16-scene learned-versus-uniform intervention and trained checkpoint profile are diagnostic only; a causal nonlocal claim needs an independently predeclared matched trained control. Future independent candidates require all six admission gates.",
+        "evidence": [
+          {
+            "path": "pipeline/decisions/20260924-104710_queue_push.md",
+            "sha256": "c0948c1ce9e644aa0b316e0b68f8d408eb22758b44dd9e7dc1481babac4734be"
+          },
+          {
+            "path": "pipeline/admissions/AdaRES-D1.json",
+            "sha256": "f0f3788a7772cae58a55334bb1da7a431ea16e484cb2f737e8d5ae4ff546baad"
+          },
+          {
+            "path": "AdaRES/tools/diagnose_adares_b4_selection.py",
+            "sha256": "f481ac6f66e6bbe0b5d9242b54864053da302e03a5ddc73337adbf0e754a3a40"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-B4-E30_selection_16scenes_20260924.json",
+            "sha256": "b686979d88681be3f772ab4a6ac199fb9d3b70188b55c45d04bdbfa645a599bb"
+          },
+          {
+            "path": "AdaRES/ipdn/model_paper5/adares_d1_full_query_comparison/dec.py",
+            "sha256": "9a6d4d2f9caf04396093c8b3f22dea5152efe692b807ab71c7159a5cd88b2ec4"
+          },
+          {
+            "path": "AdaRES/tools/test_adares_d1_full_query_comparison.py",
+            "sha256": "a9c38f31abcc9bd8496cb3200e29805e001b0e92c85652505041d711b8d0ad20"
+          },
+          {
+            "path": "AdaRES/configs_song/model_paper5/adares_d1_full_query_comparison_res.yaml",
+            "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+          },
+          {
+            "path": "AdaRES/tools/probe_adares_d1_real_batch.py",
+            "sha256": "e16ba18dfa42302f3793628528b37ebfa1f33d3e6b027c1f91b8a5f9a14c30ca"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-D1_real_batch_probe_20260924-055300.md",
+            "sha256": "a431ae83161d821c19359768f9a8e366980a19e9adb3991d152c0fbda8d360cf"
+          },
+          {
+            "path": "AdaRES/tools/profile_adares_checkpoint.py",
+            "sha256": "a9e500aa6c259c3e3a290fbb1dc30b395e38d9bde7fea98c2861e5de3194bb11"
+          },
+          {
+            "path": "AdaRES/tools/probe_adares_d1_real_batch.py",
+            "sha256": "77344ba8b78c2b300430edf51daeaa9cb5109dfa8e74f97c12f58de4e402a125"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-D1_inference_resource_probe_20260924-065100.md",
+            "sha256": "d0338baba211717558bee6134e7f89c5e004af16dd490d2fccb3c0d1e1dd49d0"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-D1_larger_batch_probe_20260924-075300.md",
+            "sha256": "101f7e1be8099af438158e0ddac5ed8750f53f67f2bdcd7e7ad9cf3bd2b59d90"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-D1_gate_review_20260924-085000.md",
+            "sha256": "245775788c6b785bae5ffd21c2d3f2bca6249ffbfeaae80566914b890a22984a"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-D1.json",
+            "sha256": "45f5db91cbb9982d8bb32518996f90955890c1cc560fe123764f0364b765bacb"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-D1_pair_mechanism_16scenes_epoch15_20260925.json",
+            "sha256": "57fbf36b440715f9185de735cd06ccdae93b18bbbe922819a034f8b6a185f082"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-D1_done_complete_20260925-145100.md",
+            "sha256": "c3bc305f6f7ad9b62dafd8e534566df762b5943b89ed00d2b2efa3e373e90647"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-F4",
+        "stage": "closed",
+        "experiment_id": "AdaRES-F4",
+        "next_action": "Closed after 30/30 at mIoU 0.5060, below B4-E30 by 0.0034. Do not relaunch, tune, or extend the mask-centroid reanchoring route. Active queries, latency, and full-run peak memory remain unmeasured; a future fixed-protocol profile may fill that reporting gap without changing admission.",
+        "evidence": [
+          {
+            "path": "pipeline/analyses/AdaRES-F4_reanchor_diagnosis_20260924-150200.md",
+            "sha256": "650778446c140085fb49ae260f9f561cb23b2ca537658ec97f014a79daf8b5d9"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-F4_native_gate_review_20260924-150700.md",
+            "sha256": "b05dd774cd7c7e9f2610ac8c2d04bd3ad0eb302a83ab1551ba463c503a74814b"
+          },
+          {
+            "path": "pipeline/admissions/AdaRES-F4.json",
+            "sha256": "28abc82fb23cee451f168f0728cc3c53bc6c2e708e5b18cac61d05e6badc7de8"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-F4_launch_verification_20260924-151200.md",
+            "sha256": "c35bc72c5c299a419774188d4c7fac1af2aec6261640e5615b5defd6117d4df1"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-F4.json",
+            "sha256": "6ad1ea2d10b7697464feca0da3e9bbe48d78285b8b37fc20fb3260858c22b6ab"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-F4_done_complete_20260925-135000.md",
+            "sha256": "74815614bae5603401d05f0479b1cced958c384107163c3cab50eee65d75340e"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-G1",
+        "stage": "closed",
+        "experiment_id": "AdaRES-G1",
+        "next_action": "Closed after 30/30 at best mIoU 0.4980, 0.0114 below B4-E30. Paired fixed-cohort selected and oracle mask quality both declined. Do not relaunch or tune metric-IoU targets; active queries, latency and full-run peak memory remain unmeasured.",
+        "evidence": [
+          {
+            "path": "pipeline/admissions/AdaRES-G1.json",
+            "sha256": "5de6b4715e2f602bce22a771518b26db138fcaadaa23c8b59fe3de7ea1b155d5"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-G1-H5_launch_verification_20260925-173300.md",
+            "sha256": "1d76b8a60764e8d0889a2c9bd4bdff5eb9790fd5dda9b0468825eec510bf575e"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-G1.json",
+            "sha256": "4433d14e8be4c8d0fd9a3f1790b8ccf7f93efaf3e7c873356b841089052d5999"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-G1_done_complete_20260926-183100.md",
+            "sha256": "99f572e1ab3b9cdbd8530d989cc8cc1309d2f19dee9e3fcdfd24449876755f33"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-G1_selection_16scenes_20260926.json",
+            "sha256": "1ba23c18c9e6fb7d3b23cae66b90d4c8cc18f9a3dea19f4c024e34c9938444a3"
+          }
+        ]
+      },
+      {
+        "id": "AdaRES-H5",
+        "stage": "closed",
+        "experiment_id": "AdaRES-H5",
+        "next_action": "Closed at best mIoU 0.5061 after 30 validations and protected early stop, 0.0033 below B4-E30. Do not tune or relaunch late all-query attention; auxiliary terminal metrics remain unavailable.",
+        "evidence": [
+          {
+            "path": "pipeline/admissions/AdaRES-H5.json",
+            "sha256": "2adbef0bb83e27bb7120ae19a56d67465f57f66f8e68d8c3800d02af9a67b0df"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-G1-H5_launch_verification_20260925-173300.md",
+            "sha256": "1d76b8a60764e8d0889a2c9bd4bdff5eb9790fd5dda9b0468825eec510bf575e"
+          },
+          {
+            "path": "pipeline/experiments/AdaRES-H5.json",
+            "sha256": "3be2b5ce3a9c438eaa0d7f27f5e5bdc56a2c91b50dee1c0539d64ea5d6b8ae7c"
+          },
+          {
+            "path": "pipeline/analyses/AdaRES-H5_done_earlystop_20260926-141100.md",
+            "sha256": "176783c51a26d09dd7f17a3f82eeed10b130ba4a140d5f3e3f8ff438681909fd"
+          }
+        ]
+      }
+    ],
+    "due_ids": [
+      "AdaRES-B4",
+      "AdaRES-B5",
+      "AdaRES-B4-E30",
+      "AdaRES-B2-E30",
+      "AdaRES-C1",
+      "AdaRES-C2",
+      "AdaRES-C1-E30",
+      "AdaRES-C2-E30",
+      "AdaRES-D1",
+      "AdaRES-F4",
+      "AdaRES-G1",
+      "AdaRES-H5"
+    ],
+    "instruction": "Resume due candidates at next_action; do not duplicate reviews. Goal phase and admission constraints still apply."
+  },
+  "recent_experiments": [
+    {
+      "id": "AdaRES-B4",
+      "status": "done_complete",
+      "server": "server-2",
+      "gpus": "0",
+      "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
+      "best_miou": "0.5070",
+      "best_acc_05": "0.556",
+      "best_acc_025": "0.607",
+      "best_spmiou": "0.472",
+      "best_epoch": "19",
+      "notes": "Improved B2 by 0.0020 mIoU; completed all 20 validations"
+    },
+    {
+      "id": "2026-09-22 09:18:09",
+      "status": "AdaRES-B5",
+      "server": "configs_song/model_paper5/adares_b5_token_grounding_res.yaml",
+      "gpus": "server-2",
+      "config": "1",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5030",
+      "best_acc_025": "20/20",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-22 19:47:05",
+      "status": "AdaRES-B4-E30",
+      "server": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
+      "gpus": "server-2",
+      "config": "0",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5094",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-22 19:47:07",
+      "status": "AdaRES-B2-E30",
+      "server": "configs_song/model_paper5/adares_b2_metric_indicator_res.yaml",
+      "gpus": "server-2",
+      "config": "1",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5058",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-23 06:51:00",
+      "status": "AdaRES-C2",
+      "server": "configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml",
+      "gpus": "server-2",
+      "config": "1",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.4980",
+      "best_acc_025": "10/10",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-23 08:10:22",
+      "status": "AdaRES-C1",
+      "server": "configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml",
+      "gpus": "server-2",
+      "config": "0",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.4950",
+      "best_acc_025": "10/10",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-24 01:47:05",
+      "status": "AdaRES-C2-E30",
+      "server": "configs_song/model_paper5/adares_c2_hard_negative_margin_e30_res.yaml",
+      "gpus": "server-2",
+      "config": "1",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5014",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-24 05:47:02",
+      "status": "AdaRES-C1-E30",
+      "server": "configs_song/model_paper5/adares_c1_listwise_expected_mask_e30_res.yaml",
+      "gpus": "server-2",
+      "config": "0",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5008",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-25 13:47:05",
+      "status": "AdaRES-F4",
+      "server": "configs_song/model_paper5/adares_f4_mask_reanchor_res.yaml",
+      "gpus": "server-2",
+      "config": "1",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5060",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-25 14:47:04",
+      "status": "AdaRES-D1",
+      "server": "configs_song/model_paper5/adares_d1_full_query_comparison_res.yaml",
+      "gpus": "server-2",
+      "config": "0",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.5080",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-26 13:47:23",
+      "status": "AdaRES-H5",
+      "server": "configs_song/model_paper5/adares_h5_late_global_query_res.yaml",
+      "gpus": "server-2",
+      "config": "1",
+      "best_miou": "done_earlystop",
+      "best_acc_05": "0.5061",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    },
+    {
+      "id": "2026-09-26 17:47:13",
+      "status": "AdaRES-G1",
+      "server": "configs_song/model_paper5/adares_g1_metric_targets_res.yaml",
+      "gpus": "server-2",
+      "config": "0",
+      "best_miou": "done_complete",
+      "best_acc_05": "0.4980",
+      "best_acc_025": "30/30",
+      "best_spmiou": "",
+      "best_epoch": null,
+      "notes": null
+    }
+  ],
+  "manifests": {
+    "decisions": [
+      {
+        "path": "D:/project/AdaRES_project/pipeline/decisions/20260927-031506_next_batch.md",
+        "mtime": "2026-09-26T19:15:06.868674+00:00",
+        "bytes": 735
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/decisions/20260927-020059_route_change.md",
+        "mtime": "2026-09-26T18:00:59.398065+00:00",
+        "bytes": 506
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/decisions/20260927-010053_route_change.md",
+        "mtime": "2026-09-26T17:00:53.335186+00:00",
+        "bytes": 520
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/decisions/20260926-235952_route_change.md",
+        "mtime": "2026-09-26T15:59:52.753527+00:00",
+        "bytes": 472
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/decisions/20260926-233033_route_change.md",
+        "mtime": "2026-09-26T15:30:34.762237+00:00",
+        "bytes": 507
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/decisions/20260926-220404_route_change.md",
+        "mtime": "2026-09-26T14:04:04.995405+00:00",
+        "bytes": 568
+      }
+    ],
+    "pending_questions_24h": [],
+    "analyses": [
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_launch_verification_20260927-032430.md",
+        "mtime": "2026-09-26T19:25:03.355245+00:00",
+        "bytes": 1330
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_native_batches_20260927.json",
+        "mtime": "2026-09-26T19:14:44.114485+00:00",
+        "bytes": 2060
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_native_gate_review_20260927-031200.md",
+        "mtime": "2026-09-26T19:12:30.902405+00:00",
+        "bytes": 4288
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W1-W3_diagnosis_20260927-031200.md",
+        "mtime": "2026-09-26T19:12:30.901406+00:00",
+        "bytes": 2473
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W3_factorized_train64_20260927.json",
+        "mtime": "2026-09-26T18:51:45.267834+00:00",
+        "bytes": 648865
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_point_weighted_train64_20260927.json",
+        "mtime": "2026-09-26T18:47:31.715281+00:00",
+        "bytes": 757777
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W1_layer_recovery_controls_train64_20260927.json",
+        "mtime": "2026-09-26T18:44:19.760220+00:00",
+        "bytes": 826668
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W1_layer_recovery_train64_20260927.json",
+        "mtime": "2026-09-26T18:39:58.495414+00:00",
+        "bytes": 603658
+      }
+    ],
+    "designs": [
+      {
+        "path": "D:/project/AdaRES_project/pipeline/designs/exp_design_20260927-031400.md",
+        "mtime": "2026-09-26T19:14:19.161923+00:00",
+        "bytes": 5162
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/designs/AdaRES-W3_prereg_20260927-025100.md",
+        "mtime": "2026-09-26T18:49:48.010685+00:00",
+        "bytes": 1075
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/designs/AdaRES-W2_prereg_20260927-024500.md",
+        "mtime": "2026-09-26T18:45:32.560877+00:00",
+        "bytes": 1644
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/designs/AdaRES-W1_prereg_20260927-023400.md",
+        "mtime": "2026-09-26T18:34:27.763319+00:00",
+        "bytes": 1664
+      }
+    ],
+    "reviews": [
+      {
+        "path": "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260927-031400.md",
+        "mtime": "2026-09-26T19:14:19.161923+00:00",
+        "bytes": 3609
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260927-020000.md",
+        "mtime": "2026-09-26T18:00:02.910583+00:00",
+        "bytes": 2012
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260927-010000.md",
+        "mtime": "2026-09-26T16:59:55.756535+00:00",
+        "bytes": 1700
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260926-235700.md",
+        "mtime": "2026-09-26T15:58:56.945775+00:00",
+        "bytes": 1758
+      }
+    ],
+    "bugfixes": [
+      {
+        "path": "D:/project/AdaRES_project/pipeline/bugfixes/bugfix_20260920-095000.md",
+        "mtime": "2026-09-20T02:18:57.140995+00:00",
+        "bytes": 1424
+      },
+      {
+        "path": "D:/project/AdaRES_project/pipeline/bugfixes/bugfix_20260920-091444.md",
+        "mtime": "2026-09-20T01:15:53.297722+00:00",
+        "bytes": 1151
+      }
+    ],
+    "terminal_experiments": [],
+    "latest_report": [
+      {
+        "path": "D:/project/AdaRES_project/pipeline/reports/summary_20260927-032711.md",
+        "mtime": "2026-09-26T19:30:37.113309+00:00",
+        "bytes": 2620
+      }
+    ],
+    "suggested_reads": [
+      "D:\\project\\AdaRES_project\\pipeline\\codex_memory.md",
+      "D:\\project\\AdaRES_project\\pipeline\\goal.json",
+      "D:\\project\\AdaRES_project\\pipeline\\experiments.csv",
+      "D:/project/AdaRES_project/pipeline/decisions/20260927-031506_next_batch.md",
+      "D:/project/AdaRES_project/pipeline/decisions/20260927-020059_route_change.md",
+      "D:/project/AdaRES_project/pipeline/decisions/20260927-010053_route_change.md",
+      "D:/project/AdaRES_project/pipeline/decisions/20260926-235952_route_change.md",
+      "D:/project/AdaRES_project/pipeline/decisions/20260926-233033_route_change.md",
+      "D:/project/AdaRES_project/pipeline/decisions/20260926-220404_route_change.md",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_launch_verification_20260927-032430.md",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_native_batches_20260927.json",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_native_gate_review_20260927-031200.md",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W1-W3_diagnosis_20260927-031200.md",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W3_factorized_train64_20260927.json",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W2_point_weighted_train64_20260927.json",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W1_layer_recovery_controls_train64_20260927.json",
+      "D:/project/AdaRES_project/pipeline/analyses/AdaRES-W1_layer_recovery_train64_20260927.json",
+      "D:/project/AdaRES_project/pipeline/designs/exp_design_20260927-031400.md",
+      "D:/project/AdaRES_project/pipeline/designs/AdaRES-W3_prereg_20260927-025100.md",
+      "D:/project/AdaRES_project/pipeline/designs/AdaRES-W2_prereg_20260927-024500.md",
+      "D:/project/AdaRES_project/pipeline/designs/AdaRES-W1_prereg_20260927-023400.md",
+      "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260927-031400.md",
+      "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260927-020000.md",
+      "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260927-010000.md",
+      "D:/project/AdaRES_project/pipeline/reviews/motivation_review_20260926-235700.md"
+    ]
+  }
+}

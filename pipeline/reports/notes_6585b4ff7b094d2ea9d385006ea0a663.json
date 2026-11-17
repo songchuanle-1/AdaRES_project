@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "本轮上海16:45:43取得实验优先design快照，实际会话归属匹配，后台Disabled。继续只用server-2 GPU0、保留280W上限；Y57用户暂停不重放、不重复索要恢复许可。",
+    "16:46:16两次实采核验Y58原PID77094/命令/cwd/starttime/GPU0归属，Train23/30 step481至504持续增长、尾部无报错。GPU0=280W/86至87C/22720MiB，本次热降频再次Active，无新Xid/fallen-off；GPU1仍有外部compute，未干预。证据pipeline/checks/ef_gpu0_runtime_6585b4ff7b094d2ea9d385006ea0a663.json；不将短期正常采样当成硬件已修复。",
+    "16:47:51到期复查Y60七文件/原生YAML/冻结payload/commit/当前goal一致，唯一授权GPU0仍由Y58占用，无空槽、未执行native smoke。Y58当次Train23 step588至686，前22轮日志best仍0.5026597380638123，来自epoch18，仅中途指标。资源证据pipeline/checks/prepared_resources_6585b4ff7b094d2ea9d385006ea0a663.json。",
+    "16:48:21复用已修复的v2等待核验入口，Y58/Y59现有准入收据、各7文件及当前HEAD一致；Y59仍waiting/gpu0，没有dispatch_hold/admission_error。Y61各7文件与原CPU不可变payload一致，stage未改，当前resource和attempt证据完整归入候选的断言通过。证据pipeline/checks/ef_waiting_recheck_v2_6585b4ff7b094d2ea9d385006ea0a663.json；tick_attempt=Y59/resource_check/blocked。",
+    "无新候选、CPU/GPU模型测试、模型/YAML或操作脚本修改、Git提交、同步、准入、队列新增、训练启动或新完成项。Y60/Y61既有CPU测试不重复执行，不冒充原生稀疏TRAIN两步或效益。记录和七段记忆已更新，接下来canonical report/finish，不预称校验成功。"
+  ],
+  "decisions": [
+    "沿用既有顺序：保护Y58固定30轮，唯一获准GPU0真正释放后门控派发已准入Y59；之后按原计划推进Y60/Y61的独占GPU0原生两步及Y56冻结后评。保持当前HEAD及有效收据，不把资源等待当缺授权。",
+    "本轮无新科学路线决策或额外用户确认；如实记录再次热降频，继续保持已授权280W，不擅改风扇、功耗、训练协议或调度，不转用GPU1/server-6，不干预外部任务。"
+  ]
+}

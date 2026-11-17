@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y75",
+  "token": "e04205f48d2f4f5eb7898ec10c1981d0",
+  "code_commit": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "exact_native_callback_source": {
+    "path": "scripts/probe_y75_native_smoke.py",
+    "sha256": "d3b5f47e22f87ff26df050b76cb3e40e5c7efdff6d1ab95c4ed63c571019a6ed"
+  },
+  "actual_CPU_result": {
+    "path": "pipeline/analyses/y75_native_observer_cpu_e04205f48d2f4f5eb7898ec10c1981d0.json",
+    "sha256": "31ee696b032b7b0c14b1b962b998a8dcaeb5c96589c5fb7cff3b9ec3ffe41568"
+  },
+  "synthetic_optimizer_steps": 2,
+  "native_response_validator_passed": true,
+  "same_generated_query_projected_language_padding_and_initial_prediction_callbacks": true,
+  "original_model_pretrain_TRAIN_loaded": true,
+  "GPU_executed": false,
+  "native_task_backward": false,
+  "admitted": false,
+  "efficacy_unknown": true,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y75_native_observer_cpu_e04205f48d2f4f5eb7898ec10c1981d0.json",
+      "sha256": "31ee696b032b7b0c14b1b962b998a8dcaeb5c96589c5fb7cff3b9ec3ffe41568"
+    },
+    {
+      "path": "pipeline/analyses/y75_native_observer_cpu_e04205f48d2f4f5eb7898ec10c1981d0.log",
+      "sha256": "7af017d91454031bd4b2ce73f4f1db7aa39ae3e8ff30159f72fcf5d86a63b0ff"
+    },
+    {
+      "path": "pipeline/checks/y75_native_observer_CPU_e04205f48d2f4f5eb7898ec10c1981d0_program.py",
+      "sha256": "d3fd56813cce924cd02f08f81ec7813caa4f273d4d78fc33d13b5e1b05098faa"
+    },
+    {
+      "path": "scripts/probe_y75_native_smoke.py",
+      "sha256": "d3b5f47e22f87ff26df050b76cb3e40e5c7efdff6d1ab95c4ed63c571019a6ed"
+    }
+  ]
+}

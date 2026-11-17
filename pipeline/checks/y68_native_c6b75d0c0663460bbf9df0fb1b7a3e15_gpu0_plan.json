@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y68",
+  "config": "configs_song/model_paper5/adares_y68_language_mask_modulation_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "required_resource": "Fresh exclusive authorized idle server-2 GPU0; canonical terminal archive/empty reservation; no compute PID; exact hostname/private runtime/original data; existing280.0W unchanged. Preserve all live Y65/Y66/Y67 and paused Y57.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y68_gpu0_smoke pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; one modulation/seven shared indicators and seven exact mask-feature consumption paths per step; native projected-language identity, original padding and expanded feature offset correspondence; independent valid-token formula on first/last expression rows; zero first-step and nonzero second-step response, finite nonzero W gradient and actual update, finite feature/language gradients, native modes and peak memory.",
+  "CPU_guard_tests_passed": 10,
+  "Python38_compile": true,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu0_program.py",
+    "sha256": "f70a7f729df99a31a2183666f14284e8fea430361bb4a25a8de67c9838d5f240"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "observed_at_local": "2026-10-02T11:25:58.693938+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y23 valid-token semantic support] configs_song/model_paper5/adares_y23_valid_token_support_res.yaml \u2192 server-2 gpu0"
+  ],
+  "task": {
+    "id": "AdaRES-Y23",
+    "label": "Y23 valid-token semantic support",
+    "config": "configs_song/model_paper5/adares_y23_valid_token_support_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "4a24410344b6ab6fe7f56d597013a4c13a9fa317",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y23.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 125903,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y23_valid_token_support_res_20261002_112523.log",
+    "server": "server-2",
+    "gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-02T11:25:58"
+  },
+  "receipt_sha256": "2dd91bd9ef65fc1e7c6d41dd4c515ec57e3ec4575417600553689ca0038d2357",
+  "scope": "Canonical gated dispatch only; no monitor/goal preflight repeated"
+}

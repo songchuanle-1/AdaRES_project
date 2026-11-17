@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "token": "2a7078533cd8470c9c2648b09bad94af",
+  "id": "AdaRES-Y96",
+  "spec": {
+    "id": "AdaRES-Y96",
+    "server": "server-1",
+    "pid": 3893460,
+    "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+    "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y96_seed_query_skip_res_20261110_165652.log",
+    "package": "adares_y96_seed_query_skip",
+    "admission_sha256": "5dcd15c8da9efca80c530a5c61767fc68f9976a2e0c70aedcef3f5807ea42b1c",
+    "freeze_sha256": "50213e2f1fda98e5e9477eaa5c030952d1d913d3d1aeff86d1fc6aa984dfc154",
+    "checkpoint_directory": "20261110_165702",
+    "location_evidence": {
+      "path": "pipeline/checks/y96_terminal_original_location_2a7078533cd8470c9c2648b09bad94af.json",
+      "sha256": "1e428c2fedc61d52d3947cbf51fd046aebae8650ba6bfd31b13bac703c41772a"
+    }
+  },
+  "prepared_at": "2026-11-10T19:02:57.809235+08:00",
+  "originals": [
+    {
+      "path": "scripts/finalize_y94_fixed30.py",
+      "sha256": "fe76fc1a6812a81a0e8653529477b0bcdaecfd290d5ff9fab0d418b12dc182ec"
+    },
+    {
+      "path": "scripts/test_y94_terminal_handoff.py",
+      "sha256": "14de8d14e63b59bc1244206d6a43b349ee63ed9087d92cc17316e67e44912199"
+    },
+    {
+      "path": "scripts/prepare_y94_terminal_handoff.py",
+      "sha256": "c1c4d4bdaccc95b43ae29532245043468698f4c041cf8f68e90144907f1343b8"
+    },
+    {
+      "path": "scripts/y94_terminal_contract.py",
+      "sha256": "80f9a37fecefccd145ac1c34e54085387204567afe7b5d29d4373703b19e381e"
+    }
+  ],
+  "source_specialization_only": true,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "evidence": [
+    {
+      "path": "scripts/create_y96_terminal_helpers.py",
+      "sha256": "466b55c3a55e3e4eef720045c90050f011bfdfa4d75ea83a5cc800832a3c898d"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_original_location_2a7078533cd8470c9c2648b09bad94af.py",
+      "sha256": "7f166800d51eef1467530fb4312e2df1298a7e20f507217321187bc62b404df7"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_original_location_2a7078533cd8470c9c2648b09bad94af.log",
+      "sha256": "c10807c5f9e8b054e006d4b80e267a425efbdcd42b89d89812a9fa73657eff7a"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_original_location_2a7078533cd8470c9c2648b09bad94af.json",
+      "sha256": "1e428c2fedc61d52d3947cbf51fd046aebae8650ba6bfd31b13bac703c41772a"
+    },
+    {
+      "path": "scripts/finalize_y96_fixed30.py",
+      "sha256": "e91c8d7eb2e01c46c70ae14cff1ccb3edce93b7e5195aec19d3944486a38e0f9"
+    },
+    {
+      "path": "scripts/test_y96_terminal_handoff.py",
+      "sha256": "8dafa16a350ba3bba926b6124a3f535f6791bbcc94865da32856aac673bee901"
+    },
+    {
+      "path": "scripts/prepare_y96_terminal_handoff.py",
+      "sha256": "bbf4aaabd53af6f70d66b5552359671af92a4f606ecbfc71a4fad264cd213728"
+    },
+    {
+      "path": "scripts/y96_terminal_contract.py",
+      "sha256": "194d0d03361f3eb6ab0961e113e1faf1a574429c17a6414b768aa3a0811ef210"
+    }
+  ]
+}

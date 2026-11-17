@@ -1,0 +1,31 @@
+{
+  "observed_at_local": "2026-10-06T19:30:50.195623+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y30 ordered query-mask trajectory confidence] configs_song/model_paper5/adares_y30_query_trajectory_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y30",
+    "label": "Y30 ordered query-mask trajectory confidence",
+    "config": "configs_song/model_paper5/adares_y30_query_trajectory_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "4f5c31f57994b8f9fb640d652c913863dc310a95",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y30.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 39709,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y30_query_trajectory_res_20261006_193015.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-06T19:30:50"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y30.json",
+    "sha256": "ab6d509b6c12ba3925583cbb13810ff70e38660b4123547a8b2e6e5d9a21571b"
+  },
+  "scope": "Canonical gated dispatcher; GPU inventory constrained to1, no monitor/goal preflight repeated."
+}

@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "pid": 20742,
+  "process_live": true,
+  "latest": {
+    "phase": "Train",
+    "epoch": 30,
+    "total": 30,
+    "step": 3942,
+    "count": 4686
+  },
+  "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "exact_source_and_YAML_verified": true,
+  "can_attempt_guarded_finalizer": false,
+  "gpu": "22800, 53, 280.00",
+  "compute": "20742",
+  "limitation": "Read-only readiness only; not fixed30 checkpoint/log proof, canonical archive, native GPU PASS or efficacy.",
+  "token": "fb6718a8dd684cdfbaa98d6678e7d3c5",
+  "id": "AdaRES-Y68",
+  "observed_start_local": "2026-10-31T06:59:55.516107+08:00",
+  "observed_end_local": "2026-10-31T06:59:55.828565+08:00",
+  "evidence": [
+    {
+      "path": "scripts/inspect_y68_terminal_readiness.py",
+      "sha256": "4bd195dc973545a30856e2776b2d46d911fdcf20ffb00600b8ebe7c62a616de3"
+    },
+    {
+      "path": "pipeline/checks/y68_terminal_readiness_fb6718a8dd684cdfbaa98d6678e7d3c5_after_y73.log",
+      "sha256": "f3ce421d02c31b46f71a9299f12ec0f186db8c8784e25649ff39ef2c3e2c13a3"
+    }
+  ]
+}

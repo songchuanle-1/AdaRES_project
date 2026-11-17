@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y84",
+  "config": "configs_song/model_paper5/adares_y84_visual_query_init_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "7bef2cd313b870583c970c56580be5a78097234d",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "5773768ffb87d7fea7432e85fd0da561556aa2fc",
+  "retained_branch": "refs/heads/adares-y84-visual-query-init",
+  "planned_command": "python -B scripts/y84_server1_alternative.py run --token <CURRENT_TOKEN>",
+  "required_resource": "Only after exact Y82 fixed30 canonical archival and fresh exclusive idle/unreserved server-1 GPU0; original private runtime/data, configured deterministic YAML mappings and existing350W. Preserve Y83 and GPU1/Y57 user pauses.",
+  "checks": "Native YAML/tools.train/TRAIN two finite task losses/backward/optimizer; original generated-query/full-scene visual-feature/padding/point-mass identities and undetached inputs, float64 weighted-visual-mean projection reference, initial prediction consumer and zero/next-step response, unchanged native hard-gate algorithm and static masks, seven shared confidence/query_norm calls, finite original/new/input gradients, real updates/native modes/peak memory.",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 8,
+  "Python38_compile": true,
+  "program": {
+    "path": "pipeline/checks/y84_server1_alternative_93549e78b8bb48fb86369a66f48e5249_program.py",
+    "sha256": "9968f53072745e0032393dabcdfe5282767b1cde8d6a5d4a7a5b5ee8788b14af"
+  },
+  "runtime_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data1/songcl/Project/AdaRES_project/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "previous_plan": {
+    "path": "pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d_gpu0_plan.json",
+    "sha256": "9a1d3d005b767f024ebcaf9e79e6ec5fa55d1ff2f99a4a182d6ab2a603e43750"
+  },
+  "activation_required": true,
+  "activated": false
+}

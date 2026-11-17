@@ -1,0 +1,18 @@
+{
+  "actions": [
+    "仅AdaRES_project。已读前台/experiment_first规则、项目目标和资源指令；实际CODEX_THREAD_ID与owner一致，Pipeline-AdaRES_project为Disabled。20:48:03取得design快照，deadline21:48:03未改；复用项目授权，实际仅GPU0/280W，Y57继续暂停，GPU1及server-6不使用，不改调度。begin已先监控及尝试派发，waiting为0。",
+    "20:49:00实核Y61原PID78290、cmdline/cwd/starttime和GPU0 compute归属，Train3/30 step2890至2913/4686增长；GPU0=85C/280W/22718MiB，本次无热降频/内核Xid/fallen-off/训练尾部错误。GPU1外部compute保留，不声称整机单卡隔离或硬件根因修复。证据pipeline/checks/ef_gpu0_runtime_a8ec50e321474b429384cda38af2c33c.json。begin训练记录best0.3520，仅训练过程指标，不晋升。",
+    "待跑不足且预算允许，新增稳定ID Y62独立包adares_y62_overlap_density及唯一原生YAML。保持W2原归一化竞争上下文、最大重叠、共享头及全部原生训练配置，只添加平均非对角point-mass IoU密度乘两logit权重；两参数零初始化，不消耗额外RNG，不扫描阈值/尺度/损失/特征子集。对照W2，不重开Y56/Y57/Y47/Y50等旧路线。",
+    "20:57:34至20:57:52真实CPU检查通过：原生YAML解析/完整CPU模型/发布SPFormer/实际TRAIN两场景162738点8表达/train-eval-train。float32/64零锚点输出及query/mask输入梯度逐位等W2、密度权重梯度有限非零、排列/padding/单query/空支持控制通过。互异掩码双臂保持focal最大重叠相同、W2输出在算术界内相同，密度差0.2682104，新路径能响应。",
+    "实际完整七阶段DEC在512/513超点、Q128合成CPU输入上执行，初始masks/scores/indis逐位等W2、七次置信调用、有限后向/密度权重非零梯度通过。参数164629639，仅增2。pipeline/analyses/y62_cpu_a8ec50e321474b429384cda38af2c33c.json及.log保存真实结果。合成组件/DEC和真实TRAIN collate不等于原生稀疏task criterion/optimizer两步、GPU资源检查或任务效益。",
+    "按精确测试payload只将Y62六个源码和一个YAML做本地提交60466af4c1ade119b2a9f78687ad9d5e21358e2c，父9bea；原staged为空、Git blob/七文件提交范围及源payload核验。冻结y62_smoke_a8ec50e321474b429384cda38af2c33c_plan.json及program，要求实际原生两步、七次/步、密度梯度和第二步分支响应、GPU0独占和版本goal一致。7项CPU schema/反例守卫通过，证据y62_guard_tests同token，不冒充GPU结果。",
+    "gpu0_lifecycle_v3同token复核Y56/Y58/Y59/Y60均canonical done_complete、完整30轮终态和原冻结后评计划，实际GPU0仍由Y61占用、85C/280W；没有重放Y60归档或执行全量后评。Y62 record另实核原Y61仍存活/compute、Y57仍paused、queue/running哈希不变。当前Y62 blocked/exclusive_gpu_slot/from validation；未GPU smoke/准入/入队/派发或生产同步，Y61远端9bea版本不变。",
+    "更新七段紧凑记忆，保存pipeline/decisions/20261024-210026_next_batch.md；tick_attempt=Y62/implementation_test/passed，证据已归候选。无新增模型修订、push、GPU1任务、硬件设置、跨项目或调度变更。本轮研究成果是已测准备，不是训练收益。"
+  ],
+  "decisions": [
+    "按本轮预算准备一条独立Y62密度信息路径；真实CPU检查支持其初始化兼容、可学习性和连接执行，不支持效益结论。保存已测七文件版本和原生检查计划，不为凑额度再造候选。",
+    "GPU0已有Y61，不能挤占、共享或借GPU1做native smoke；Y62只有真实原生YAML/TRAIN两步有限loss/backward/路径/资源检查通过后，才能生成准入收据并当轮尝试既有门控派发。现阶段保持资源等待，不把CPU检查冒充准入。",
+    "Y61继续原PID/原版本/seed1999固定30/280W；Y57保持用户暂停，不重复询问或自动恢复。四项完成实验只按原冻结方案等GPU0空槽后全量评估/成本比较，不从训练日志晋升、不调参。",
+    "本轮一次真实实现检查已有结果，后续GPU检查受实际占用约束，按experiment_first收尾。报告不预称postflight通过；finish后只读核验receipt/context/lease/pending，不补写共享状态。"
+  ]
+}

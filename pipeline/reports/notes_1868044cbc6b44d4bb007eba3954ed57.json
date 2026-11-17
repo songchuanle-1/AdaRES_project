@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "仅AdaRES_project。核验实际owner、Disabled后台调度、正式前台/experiment_first规则、AGENTS、原goal字节、SERVERS及最新GPU1暂停授权后，一次begin先查进展并尝试已有合格队列；ready waiting为0，无新增终态或操作故障。",
+    "运行：原Y94 PID218513/server-1 GPU0/350W，Train19/30 step497/4686；原Y95 PID34484/server-2 GPU0/280W，Train8/30 step3095/4686。当前token只读观察确认原source/YAML/marker/收据及原生训练步数递增，未停止、重启或迁移。",
+    "canonical gpu_occupation分别读取hostname、物理GPU和compute PIDs并绑定本轮快照/候选。两张授权GPU0仍由原Y94/Y95占用且canonically reserved，没有可独占空闲卡。保留collector真实resource_check；未执行GPU原生检查或将资源复查当科学PASS。",
+    "已有Y96/Y98/Y99三个CPU准备候选继续等原生GPU资源，优先当前HEADY95/当前owner已绑定的Y96。原Y94/Y95专用终态计划及Y97原始/修订1负证据保持；没有重放CPU、版本、绑定、数值控制或已准备原生计划测试，没有新增占位变体。",
+    "本轮新科学ID0、CPU科学尝试0、GPU原生0、准入0、启动0、归档0、正式评测0。精确备份七节记忆并更新当前训练和资源证据，随后官方report/finish，以实际收据和释放锁核验为准，不预签结果。"
+  ],
+  "decisions": [
+    "无新科学决策或用户行动项。优先保留已有准备，原训练占满授权GPU0时不凑额度重复设计/检查、不抢占或伪造waiting，健康推进保持静默。候选到期不等于GPU空闲、GPU1恢复或Y57恢复授权。",
+    "下一步先观察Y94/Y95并派发已准入任务。匹配运行自然fixed30结束后，按原专用工具完整验证原进程退出、Train/Val1..30和稳定有限last/best/model/optimizer/scheduler，再canonical归档；Y94精确目录20261109_111838、Y95精确目录20261109_081912，不以日志结束代替完整checkpoint校验，不重放Y93或其他已归档终态。",
+    "仅HEADY95及匹配原owner完整归档、现场独占空闲未保留的授权GPU0后执行run_y96_bound_native_y95.py；实际native通过再新建另一在跑任务的实际证据终态兼容绑定，并当轮完成设备匹配完整原freeze/receipt/准入/精确source/安全派发/递增计数。Y98/Y99仍需新测试绑定，保留旧CPU/版本/程序体。",
+    "全部server-2 GPU1使用和原GPU1冻结后评/成本继续暂停，不迁移替换；Y57独立暂停原epoch27状态。保留科学goal字节、旧签名收据、精确数据/私有runtime/部署映射/seed1999固定30轮/完整FIRST及有害子组/原设备成本协议。server1沿用350W、server2GPU0保持280W，每卡一实验；不跨项目、不用server6、不改调度或功耗、不干预外部任务。"
+  ]
+}

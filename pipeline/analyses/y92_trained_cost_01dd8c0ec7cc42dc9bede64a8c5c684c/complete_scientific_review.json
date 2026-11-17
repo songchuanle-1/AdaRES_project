@@ -1,0 +1,142 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y92",
+  "token": "01dd8c0ec7cc42dc9bede64a8c5c684c",
+  "observed_at": "2026-11-14T07:50:00.553257+08:00",
+  "disposition": "rejected_material_subgroup_harm",
+  "FIRST_miou": 0.5093426233066561,
+  "target": 0.515,
+  "target_reached": false,
+  "full_native_passes": 8,
+  "paired_scene_bootstrap_draws": 10000,
+  "seed": 1999,
+  "subgroup_material_harm": true,
+  "frozen_material_subgroup_harm": [
+    {
+      "reference": "AdaRES-Y36",
+      "group": "large",
+      "delta": -0.013095730186987491,
+      "ci95": [
+        -0.025226342002789295,
+        -0.0004629637591484981
+      ]
+    }
+  ],
+  "rejection_scope": "This fixed30/best20/seed1999 trained implementation; not a mechanism-wide claim",
+  "all_overall_comparison_CIs_include_zero": true,
+  "confirmed_improvement": false,
+  "mechanism_falsified": false,
+  "promotion": false,
+  "training_protocol": "Original released backbone/seed1999/fixed30; best20 original checkpoint, no restart or epoch tuning",
+  "cost_summary": {
+    "candidate": {
+      "train8": {
+        "median_seconds": 0.08249094965867698,
+        "descriptive_p95_seconds": 0.12571960589848458,
+        "peak_allocated_gib": 0.9609675407409668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "median_seconds": 0.2054194149095565,
+        "descriptive_p95_seconds": 0.23915590799879283,
+        "peak_allocated_gib": 1.2439332008361816,
+        "peak_reserved_gib": 1.7578125
+      },
+      "native_train_stress": {
+        "median_seconds": 0.9646664699539542,
+        "peak_allocated_gib": 12.907575607299805,
+        "peak_reserved_gib": 13.447265625
+      }
+    },
+    "parent": {
+      "train8": {
+        "median_seconds": 0.08795134467072785,
+        "descriptive_p95_seconds": 0.12560672387480737,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "median_seconds": 0.20021164696663618,
+        "descriptive_p95_seconds": 0.2434839663328603,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      },
+      "native_train_stress": {
+        "median_seconds": 0.9634371669963002,
+        "peak_allocated_gib": 12.850881576538086,
+        "peak_reserved_gib": 13.400390625
+      }
+    }
+  },
+  "parameters": {
+    "candidate": 164695173,
+    "parent": 164629637
+  },
+  "parameter_delta": 65536,
+  "serial_scene_pairs_verified": true,
+  "native_memory_only_stress_batches": 4,
+  "native_memory_only_updates_including_warmups": 20,
+  "full_cost_and_postaudit_complete": true,
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0
+  },
+  "source_and_original_checkpoint_bytes_preserved": true,
+  "limitations": [
+    "One trained seed/checkpoint per method; native repeats quantify observed prediction noise, not seed variance or a universal bound.",
+    "Point estimates below Y36/W2 and overall paired CIs cross zero. Large-target subgroup versus Y36 violates the original frozen CI-upper-below-zero harm criterion; reject this trained realization, not the whole mechanism.",
+    "Frozen TRAIN8 plus two largest-pair scenes; serial warm2/read3 and separate batch2 memory-only native stress; not a full-data memory bound.",
+    "Sequential candidate/parent order and descriptive p95 do not establish causal hardware effects or Pareto dominance."
+  ],
+  "evidence": [
+    {
+      "path": "scripts/complete_y92_scientific_review.py",
+      "sha256": "0ee827f870e3e793de1f95623984142b07ac87d8f8dd790830950f5bb8b24417"
+    },
+    {
+      "path": "pipeline/analyses/y92_full_review_01dd8c0ec7cc42dc9bede64a8c5c684c/formal_comparison.json",
+      "sha256": "a222272c4f629e9257582cf5d3d728e1fc5c7a0a6c0bfa5d01c71771fc6e32e5"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y92_06710ed9596b4721bb1aa67ca0fdaf97_post_training_freeze.json",
+      "sha256": "b866bf8a784b9b44ff63cb1dd7de74fd6288b0b84a1f2280a45c9eaa85a76f95"
+    },
+    {
+      "path": "pipeline/checks/y92_server1_fixed30_y93_ab9cf3f30d5a40d28b3c43f4b85083ab.json",
+      "sha256": "a8f0565fdfb6eebe64bbac699d1c48ddecf2e428f0790086542b446121004127"
+    },
+    {
+      "path": "pipeline/checks/y92_server1_fixed30_y93_ab9cf3f30d5a40d28b3c43f4b85083ab_archive_binding.json",
+      "sha256": "47c8008061b3fc5e2ea05a6b66fb91294cfe4977855211dfbb60aea60bf1f8b4"
+    },
+    {
+      "path": "pipeline/checks/y92_frozen_cost_01dd8c0ec7cc42dc9bede64a8c5c684c.json",
+      "sha256": "5e0d5705b429733611d06ff5b34da6220f42e45acdcc7fb84b5467ff92f308cd"
+    },
+    {
+      "path": "pipeline/checks/y92_frozen_cost_01dd8c0ec7cc42dc9bede64a8c5c684c.py",
+      "sha256": "41e42fac5b705f3e0bcaa7e426de0254c056f118771ba16a137b4a29d888cc69"
+    },
+    {
+      "path": "pipeline/checks/y92_cost_launch_01dd8c0ec7cc42dc9bede64a8c5c684c.json",
+      "sha256": "ab16a0f3b2f38221bca13ea57907aa6fafa0152bd545072c67e89a573bf48714"
+    },
+    {
+      "path": "pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/remote_manifest.json",
+      "sha256": "df8430ce8081137b56ec0045944f5c14422c57e47d0f5ff136512465038a95e8"
+    },
+    {
+      "path": "pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/trained_cost.json",
+      "sha256": "ffa05bf4d3066d38612ce41b2adc85bb539c9f878796169ada6b140a2ccd38dc"
+    },
+    {
+      "path": "pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/postaudit.json",
+      "sha256": "6e5a31f50d7a64c2e2964ae0946fdf480d4be2a44748935803715577f5d90ce0"
+    },
+    {
+      "path": "pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/worker.log",
+      "sha256": "b429dd56ff64887f40dc2786f4c0ac6d7fc7c68428a601faca8e2c25ca14e2af"
+    }
+  ]
+}

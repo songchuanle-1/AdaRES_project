@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y89",
+  "token": "6c44267f773e46f18bed69bb0934dd5e",
+  "recorded_at": "2026-11-06T07:08:22.958379+08:00",
+  "diagnosis": {
+    "path": "pipeline/analyses/y89_reference_diagnosis_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "2cc92d629c6a4b100f38c2efe4c4a5e470c33b34316ac90d79c8c0df3bddc7c9"
+  },
+  "original_CPU_program": {
+    "path": "pipeline/checks/y89_cpu_6c44267f773e46f18bed69bb0934dd5e_program.py",
+    "sha256": "2cd1bd97cf468ccb33464c8d56499cc80300dc6ab31a8808e66561dc6c1f26b1"
+  },
+  "original_CPU_failure": {
+    "path": "pipeline/analyses/y89_cpu_6c44267f773e46f18bed69bb0934dd5e.log",
+    "sha256": "187f197e90043fdca77d21c07cbec3b9d94460150a3cddca6fbbcbe39cf14219"
+  },
+  "original_core": {
+    "path": "scripts/y89_observer_core.py",
+    "sha256": "4e81f6204b894ad39adfcb4b287c7a0a0b98a3fd215e3fb9f9fb39465900692d"
+  },
+  "original_native_body": {
+    "path": "pipeline/checks/y89_native_6c44267f773e46f18bed69bb0934dd5e_body.py",
+    "sha256": "410ec7bde7a17462e18621c36e05fef51add9d0eb28f001a79371e29a237f8d4"
+  },
+  "updated_CPU_program": {
+    "path": "pipeline/checks/y89_cpu_reference2_6c44267f773e46f18bed69bb0934dd5e_program.py",
+    "sha256": "959d3761040589083178743949fbaa6e81941b4ca4af6c0588d8bc8888c3c9dc"
+  },
+  "updated_core": {
+    "path": "scripts/y89_observer_core_v2.py",
+    "sha256": "401a045f15d05370a64fab0feb03eafdb3517271649e75b2537038fd3b58bafd"
+  },
+  "updated_native_body": {
+    "path": "pipeline/checks/y89_native_reference2_6c44267f773e46f18bed69bb0934dd5e_body.py",
+    "sha256": "85f7978eec2960cacd5b81d1d4c50ac1042fee862cb1c03a667b4e47b3ec06ae"
+  },
+  "exact_reversible_reference_dtype_fix": true,
+  "tolerance_unchanged": {
+    "rtol": 1e-05,
+    "atol": 1e-06
+  },
+  "float64_LayerNorm_reference_unchanged": true,
+  "model_and_YAML_revision": false,
+  "original_failure_preserved": true,
+  "native_executed": false,
+  "implementation_test_passed": false,
+  "reason": "The original observer recomputed sigmoid/overlap in float64 before comparing float32 evidence. Actual same-dtype reference is bitwise equal. Reference now follows original float32 operator semantics before conversion for comparison; tolerance and every positive-response/gradient/consumer guard unchanged.",
+  "helper": {
+    "path": "scripts/repair_y89_typed_reference.py",
+    "sha256": "d38de344aaff660c668390be3c7ecf98512d7c26c5efd6d48b1d6643ee51956c"
+  }
+}

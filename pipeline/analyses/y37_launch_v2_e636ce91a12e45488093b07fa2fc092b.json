@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y37",
+  "pid": 20348,
+  "config": "configs_song/model_paper5/adares_y37_pair_distribution_res.yaml",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y37_pair_distribution_res_20261010_122625.log",
+  "code_commit": "67f4a1b2a4e7cac0eaa1a6074104cfc4193c2773",
+  "actual_gpu": 0,
+  "native_steps_increased": true,
+  "captures": [
+    {
+      "epoch": 1,
+      "epochs": 30,
+      "step": 108,
+      "total_steps": 4686,
+      "maximum_tail_bytes": 24000
+    },
+    {
+      "epoch": 1,
+      "epochs": 30,
+      "step": 117,
+      "total_steps": 4686,
+      "maximum_tail_bytes": 24000
+    }
+  ],
+  "gpu0_device_memory_mib": 17486,
+  "gpu0_device_utilization": 67,
+  "preserved_y36_pid": 100018,
+  "preserved_y36_gpu": 1,
+  "old_new_source_hashes_verified": true,
+  "limitations": [
+    "Two24KB tails only; not whole-log crash absence.",
+    "Device occupation is not isolated peak or efficacy.",
+    "Original Y36 source/PID/config/GPU1 preserved, not restarted.",
+    "Global marker advances additively; old code hashes unchanged."
+  ],
+  "observed_start_local": "2026-10-10T12:28:01.471450+08:00",
+  "observed_end_local": "2026-10-10T12:28:07.389287+08:00"
+}

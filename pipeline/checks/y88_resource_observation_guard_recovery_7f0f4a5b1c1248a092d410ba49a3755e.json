@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "token": "7f0f4a5b1c1248a092d410ba49a3755e",
+  "classification": "pre_state_operational_observation_guard_failure_not_scientific_or_approval_failure",
+  "failed_command": "python -B scripts/finish_y88_prepared_resource_wait.py --token 7f0f4a5b1c1248a092d410ba49a3755e",
+  "observed_error": "AssertionError at line38 fresh identity completeness/absence/timestamp/remote-mutation guard before diagnostic or report writes",
+  "original_helper": {
+    "path": "scripts/finish_y88_prepared_resource_wait.py",
+    "sha256": "6b7baadf58b73b7c873af5d7c7ef1e8e2406473ad78495d2760e9e00772c3fbb"
+  },
+  "original_identity": {
+    "path": "pipeline/checks/y88_wait_foreign_identity_7f0f4a5b1c1248a092d410ba49a3755e.json",
+    "sha256": "f80d2d4bd43a38ce9d2160f1fd611bead755b2b2647bb066205d849938cbba19"
+  },
+  "original_occupation": {
+    "path": "pipeline/checks/gpu_occupation_server-1_start_7f0f4a5b1c1248a092d410ba49a3755e.json",
+    "sha256": "41c9ebd818af2e2b2b9d18a45766111a3b1ba24631699b4ed1561fc8f47ace7d"
+  },
+  "verified_resource_change": "Original canonical occupation had PID64587; identity query then observed additional PID395614. Both are independently identified other-project compute. Fresh matching canonical and identity snapshots are now available.",
+  "reconciled_identity": {
+    "path": "pipeline/checks/y88_wait_foreign_identity_7f0f4a5b1c1248a092d410ba49a3755e_reconciled.json",
+    "sha256": "ccf2d45fb5faadaf7005d95f3b700d0b9eb03a4c0fe7715fe90e5bfabfc2805e"
+  },
+  "reconciled_occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "30a4be70b6c03cddae6d42d5a2b38398df409bd30bf3b682c9a726ee41155527"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "91819f8d9e3861b698ec3bd828e440819260ef076b2328b441df75881cdaa22e"
+    }
+  },
+  "all_original_checks_unchanged": true,
+  "resource_freshness_bound_seconds": 300,
+  "no_deadline_change": true,
+  "diagnostic_memory_report_not_written_by_failed_attempt": true,
+  "GPU_jobs_started": false,
+  "scientific_tests_replayed": false,
+  "approvals_rejected": false,
+  "evidence": [
+    {
+      "path": "scripts/finish_y88_prepared_resource_wait.py",
+      "sha256": "6b7baadf58b73b7c873af5d7c7ef1e8e2406473ad78495d2760e9e00772c3fbb"
+    },
+    {
+      "path": "pipeline/checks/y88_wait_foreign_identity_7f0f4a5b1c1248a092d410ba49a3755e_reconciled.json",
+      "sha256": "ccf2d45fb5faadaf7005d95f3b700d0b9eb03a4c0fe7715fe90e5bfabfc2805e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "30a4be70b6c03cddae6d42d5a2b38398df409bd30bf3b682c9a726ee41155527"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_7f0f4a5b1c1248a092d410ba49a3755e.json",
+      "sha256": "91819f8d9e3861b698ec3bd828e440819260ef076b2328b441df75881cdaa22e"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "bf900942292b41e09fda663f4736180a",
+  "snapshot_generated_at": "2026-10-30T16:49:24.453239+00:00",
+  "snapshot_sha256": "28997da0226f58f657c7a26d680bfd2f5e4944ed86bfb876c21b1410891344eb",
+  "servers_sha256": "ed15aeebb90638fcced4f0e57c4b76761cf2d7c04d201afeaf6e55ca025cbe7a",
+  "observed_at": "2026-10-30T16:56:39.009686+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y65",
+    "AdaRES-Y67",
+    "AdaRES-Y71"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0,
+      1
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 100, 22800, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 79, 22736, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token bf900942292b41e09fda663f4736180a --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_bf900942292b41e09fda663f4736180a.log",
+    "sha256": "19bfe134bc6c7332856bcae83bea86f848910b1d1ebc1d5d1c44801965209d18"
+  }
+}

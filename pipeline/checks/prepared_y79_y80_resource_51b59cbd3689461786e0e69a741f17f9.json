@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "token": "51b59cbd3689461786e0e69a741f17f9",
+  "snapshot": "2026-11-02T08:49:25.575379+00:00",
+  "observed_at": "2026-11-02T16:53:10.190658+08:00",
+  "original_live_training": {
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_51b59cbd3689461786e0e69a741f17f9_progress.json",
+      "sha256": "f6c05286842dcb7b130a455e4bd1a54665089e7da929d26ab402de8f72a143ed"
+    },
+    "AdaRES-Y77": {
+      "path": "pipeline/checks/production_adares-y77_51b59cbd3689461786e0e69a741f17f9_progress.json",
+      "sha256": "9c2e6837317e851b67302dcb8a3764593757a91c214596ff8740af5c6fac0c75"
+    },
+    "AdaRES-Y78": {
+      "path": "pipeline/checks/production_adares-y78_51b59cbd3689461786e0e69a741f17f9_progress.json",
+      "sha256": "2f4a3186b3ddcc8e2bacab864cd183246973633cef4ec36365d64c99ffe5cb30"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_51b59cbd3689461786e0e69a741f17f9.json",
+      "sha256": "a4d6dee78d4349afd64062227321cad8ed5f7d661a33316a5fcb63a6224608f1"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_51b59cbd3689461786e0e69a741f17f9.json",
+      "sha256": "9c61d1ee366e4a3d10e66c8ab63a831f0c2543b14a112fd91e82c12a5c1a29c3"
+    }
+  },
+  "retained_native_plans": {
+    "AdaRES-Y79": {
+      "native_smoke_plan_server2_gpu0": {
+        "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c_gpu0_plan.json",
+        "sha256": "837bba427c155dd2c81223d4c56a0048f3be3ba9d05929407e9ef51a6fb9e0f3"
+      },
+      "native_smoke_plan_server2_gpu1": {
+        "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c_gpu1_plan.json",
+        "sha256": "81fa6598715f4521889f8dd02394f5bcd0a53bcc84b40c13f510156464d8d8cc"
+      },
+      "native_smoke_plan_server1": {
+        "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_plan.json",
+        "sha256": "f73ed1199ec141d983d366d6091d656a887bf4cbe0473bb0f0cf8c4626daa44e"
+      }
+    },
+    "AdaRES-Y80": {
+      "native_smoke_plan_server2_gpu0": {
+        "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040_gpu0_plan.json",
+        "sha256": "3e4535d2374cf253978707089cedcd71629b13a18c2e18f79e23e0420740921c"
+      },
+      "native_smoke_plan_server2_gpu1": {
+        "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040_gpu1_plan.json",
+        "sha256": "024d941c9118e0e62e04dcd4e27754cda753e65f8eb71500342bc9f87eac7cd7"
+      }
+    }
+  },
+  "original_Y76_terminal_preparation": {
+    "path": "pipeline/checks/y76_terminal_preparation_d488959562e94ac492b5884cf430f679.json",
+    "sha256": "812dcbc64df330c1818ecc123198f4c47bb5ba4141ed5e9a935a3fad000364ef"
+  },
+  "original_Y79_server1_CPU": {
+    "path": "pipeline/analyses/y79_server1_CPU_runtime_d488959562e94ac492b5884cf430f679.json",
+    "sha256": "ad2a558a04f27cfbe510fdf53a659a3c55ce7b85dcf1a7ff2a48a483914ab4e8"
+  },
+  "original_Y79_server1_verification": {
+    "path": "pipeline/checks/y79_server1_verification_d488959562e94ac492b5884cf430f679.json",
+    "sha256": "99753a53a68b3699ebb977657ad97449b0eeaaee099a6bc23fc2e7526cbd69ea"
+  },
+  "unchanged_preparation_reused": true,
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_launches": 0,
+  "new_archives": 0,
+  "native_GPU_executed": false,
+  "formal_metrics_updated": false,
+  "Y57_pause_preserved": true,
+  "helper": {
+    "path": "scripts/record_prepared_y79_y80_wait.py",
+    "sha256": "15e5c268feaf80d6f77f20f6779f8a128aa257bcfe68c91c42060a9e65c49208"
+  },
+  "conclusion": "All three original native jobs advance. Both retained candidates require exclusive matching resources; all authorized cards remain busy/reserved. No replay of passed preparation and no new scientific conclusion."
+}

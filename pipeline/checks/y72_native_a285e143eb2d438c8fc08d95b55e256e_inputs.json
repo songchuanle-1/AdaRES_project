@@ -1,0 +1,73 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "parent_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "CPU_source_snapshot": {
+    "path": "pipeline/checks/y72_cpu_preparation_bf900942292b41e09fda663f4736180a_source_snapshot.json",
+    "sha256": "396f0bdc053ef2797b4205f94570cd44c4ddb3399e4cc7cdb6962c497afad8ff"
+  },
+  "CPU_test": {
+    "path": "pipeline/analyses/y72_cpu_bf900942292b41e09fda663f4736180a.json",
+    "sha256": "22b1f070a43f598b77cb5dee3a4228de5efc177cdf3c9a6bf540602138468112"
+  },
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/__init__.py",
+      "sha256": "0857cbfce46f7ed6d44e639d3d97eba6278358bd60607dcc5acc01cb14736a34"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/dec.py",
+      "sha256": "8426e969f04daf0b0b69891a7b346d12133b0807d9305feeb9b01e5ecff04ddb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "intended_branch": "refs/heads/adares-y72-visual-mask-refinement",
+  "main_index_sha256": "c5807c1dc50486e37c19b78110c8f6aac710431df1c5a76019867a1a0ba28647",
+  "queue_before": {
+    "path": "pipeline/queue.json",
+    "sha256": "3741dc8b56fa8c7c14119f4f6264a7a99828f3a5319d2311b801d460ccba744a"
+  },
+  "running_before": {
+    "path": "pipeline/running.json",
+    "sha256": "e60074619179435b4aa6413b87c5585708261f723d35ab69a8cff4e810f41ce7"
+  },
+  "prior_tick_attempt": {
+    "tick_started_at": "2026-10-30T18:50:40.449943+00:00",
+    "candidate_id": "AdaRES-Y71",
+    "kind": "resource_check",
+    "result": "blocked",
+    "command": "python -B scripts/run_y71_gpu0_probe.py check --token a285e143eb2d438c8fc08d95b55e256e",
+    "observation": "Exact frozen Y71 plan/source verified. Actual GPU0 not ready: preserve original running/claiming/reserved task and wait for Y68 fixed30 canonical archive.",
+    "evidence": [
+      {
+        "path": "pipeline/checks/y71_gpu0_readiness_a285e143eb2d438c8fc08d95b55e256e_check.json",
+        "sha256": "1caf363a1909de73a5163d344c0aa836bd7a1ed2eddf40a32dda103d4690be4c"
+      }
+    ]
+  },
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "native_executed": false,
+  "admitted": false
+}

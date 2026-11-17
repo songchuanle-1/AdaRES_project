@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y74",
+  "code_commit": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "parent_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "retained_branch": "refs/heads/adares-y74-language-update-gate",
+  "working_HEAD": "7da625ab750447eaad76e82309c89d887df93994",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y74_cpu_version_808558ef00a24c338c85891e0ac326af_source_snapshot.json",
+    "sha256": "466b26374d0edbc35a9ec373127fe71ff241e44a72a636335789957e6ba6ea1b"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y74_cpu_808558ef00a24c338c85891e0ac326af.json",
+    "sha256": "a1e6de48842de9fe5b869672fe683fa6b166c7351a99323587263753b2995c55"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y74_language_update_gate_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y74_cpu_version_808558ef00a24c338c85891e0ac326af.index",
+    "sha256": "4a10a1b6065229bd77ac454e1ba619afb2d948fdad9abdd973717fda680da51f"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y74_cpu_version.py",
+      "sha256": "3cfc1a91d84277f31606d0ce1296739a2712a8c415c0c73ededfa760d8bf9729"
+    },
+    {
+      "path": "scripts/probe_y74_cpu.py",
+      "sha256": "1689417969d61ae789ab5b77d6147eb93bdee2487fc3266eb292c131273fa0d1"
+    },
+    {
+      "path": "scripts/prepare_y74_language_update_gate.py",
+      "sha256": "0b8462d22e5666db05d5ebba6fb1499e15c913143ca082ec323573c83b134054"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "original": "scripts\\probe_y36_native_controls_v2.py",
+      "original_sha256": "272842d6adf8eccff3d414eb79c05614383fea16305fe18bbf8d8254b6373351",
+      "target": "scripts\\probe_y37_native_controls.py",
+      "sha256": "0b9f86d0755a2541f03739809664a53c44621ad5b50a9bcb5ee81b013d067250"
+    },
+    {
+      "original": "scripts\\probe_y36_physical_native.py",
+      "original_sha256": "828545cd22d2ff244613cf9a34d1d375fbf54782a1b90aed6d019a638bd1b779",
+      "target": "scripts\\probe_y37_physical_native.py",
+      "sha256": "60ad32254f6664e8c8b243e8423dd435c4f5cbfb02060beaa20f5465733b928f"
+    },
+    {
+      "original": "scripts\\probe_y36_resources.py",
+      "original_sha256": "f9bda6da48ae67fe2c5d22719fbd2bdc30e290bed16b0d54bc9dc08113e84a40",
+      "target": "scripts\\probe_y37_resources.py",
+      "sha256": "1dbd1c6ac8a94e578971028307a68e4abdb81a3c3d161e6cd8339fdd9eb863b4"
+    },
+    {
+      "original": "scripts\\probe_y36_initial_loss_investigation.py",
+      "original_sha256": "0a386735f8c536cc32cc71ebf0aa90a521ab609992918fe22041aaba53ae879e",
+      "target": "scripts\\probe_y37_initial_loss_investigation.py",
+      "sha256": "362c03ed4161196b71d84665bfca5776ecbf8f0a9c070ece2101c4a761afdacf"
+    }
+  ],
+  "preserved": "Native entry, TRAIN8/init4 controls, two steps, AdamW/PolyLR resume, resource manifest.",
+  "changed": "Only candidate identity, final-readout attribute and wrong-coordinate naming.",
+  "limitations": "Historical inherited prose is not a new semantic proof; actual new path has no visual feature gradient."
+}

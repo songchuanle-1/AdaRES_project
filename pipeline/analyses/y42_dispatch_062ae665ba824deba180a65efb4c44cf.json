@@ -1,0 +1,32 @@
+{
+  "observed_at_local": "2026-10-11T22:32:34.172562+08:00",
+  "task": {
+    "id": "AdaRES-Y42",
+    "label": "Y42 full-channel point covariance confidence",
+    "config": "configs_song/model_paper5/adares_y42_point_covariance_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "243e0b6827073831e0d68090857755d575efbf16",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y42.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 91215,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y42_point_covariance_res_20261011_223156.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-11T22:32:34"
+  },
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y42 full-channel point covariance confidence] configs_song/model_paper5/adares_y42_point_covariance_res.yaml \u2192 server-2 gpu1"
+  ],
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y42.json",
+    "sha256": "4f2aad03750faebe8b31db411c2eeb2a7db357382a8b577e577aecfb25e2d1de"
+  },
+  "preserved_y41_exact": true,
+  "scope": "Canonical GPU1-only dispatch, not preflight."
+}

@@ -1,0 +1,85 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y69",
+  "token": "48c537da3f22438bb4282909e459aa46",
+  "observed_at": "2026-10-30T10:50:33.035762+08:00",
+  "binding": {
+    "path": "pipeline/checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_binding.json",
+    "sha256": "63e703ecf0008444be4a99fb7d8990e066c3e2550848274e7902f8358b2790e8"
+  },
+  "inactive_server1_plan": {
+    "path": "pipeline/checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_plan.json",
+    "sha256": "b82a55d7c567e0181759807d7cc9edb81e384dc4c03b5a0411626040955a885d"
+  },
+  "active_server2_plan": {
+    "path": "pipeline/checks/y69_native_920e06975f7e4657a6186d382eb05ad9_gpu0_plan.json",
+    "sha256": "22184b6c965530e6afecb8f4fca9569a34f440fc045a776fa7561e64461ca3ef"
+  },
+  "same_exact_seven_model_and_YAML_files": true,
+  "reversible_exact_scientific_body": true,
+  "alternate_guard_tests": 8,
+  "historical_exact_dataset_verification": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "runner": {
+    "path": "scripts/run_y69_server1_native_probe.py",
+    "sha256": "b228815e74ad2b625563b45805134c78587a632bee55ccb9c8581c1e679d184a"
+  },
+  "runner_guard_dependency": {
+    "path": "scripts/prepare_refinement_server1_alternative.py",
+    "sha256": "c7bb5ab321ec20b621785245a1c9b9f8dc16fc0e26e58ea26662f5b0505a6eeb"
+  },
+  "current_Y66_preserved": {
+    "path": "pipeline/checks/y66_server1_phase_progress_48c537da3f22438bb4282909e459aa46.json",
+    "sha256": "1aa04349b87cb71599bef4f6bc02dc7d9febf619252185780eb6a381668019b1"
+  },
+  "other_running_observations": [
+    {
+      "path": "pipeline/checks/y68_server2_gpu0_phase_progress_48c537da3f22438bb4282909e459aa46.json",
+      "sha256": "79a7cfd061ba12839776e40f4338041f615c2a3b99837cf7d0be5f4b5e5d9ec5"
+    },
+    {
+      "path": "pipeline/checks/server2_y69_local_adares-y67_48c537da3f22438bb4282909e459aa46.json",
+      "sha256": "f460be9bc6fe73540ae580aea6fac512db4b9592e3edda850afce8825b19f7d0"
+    }
+  ],
+  "occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_48c537da3f22438bb4282909e459aa46.json",
+      "sha256": "beb58965ab416403a4f8493b996e965daaf57df43be88fc8d7659208595a6c1c"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_48c537da3f22438bb4282909e459aa46.json",
+      "sha256": "d84cb6f694a86967a9a5e3c4ca8d7ee957330b06074662123aaa28dfcc093192"
+    }
+  ],
+  "original_running_receipts": {
+    "AdaRES-Y68": {
+      "path": "pipeline/admissions/AdaRES-Y68.json",
+      "sha256": "bc141d239288ae515b74ccf6869018626a6fed7141a135708012b95027a0f327"
+    },
+    "AdaRES-Y67": {
+      "path": "pipeline/admissions/AdaRES-Y67.json",
+      "sha256": "39added73f460c15b16f21c31ea6d6ab8885fd83f8cb2a433f8668c437134d49"
+    },
+    "AdaRES-Y66": {
+      "path": "pipeline/admissions/AdaRES-Y66.json",
+      "sha256": "d78feba0b2628b5d198f899c7d563e1ae59f16cce0f7d8e081bce44652575435"
+    }
+  },
+  "actual_server1_idle": false,
+  "activated": false,
+  "native_sparse_GPU_steps_executed": false,
+  "admitted": false,
+  "queued": false,
+  "production_sync": false,
+  "hardware_changed": false,
+  "goal_and_model_commit_unchanged": true,
+  "Y57_paused": true,
+  "limitation": "Inactive resource/path alternative only; no GPU activation or native two-step result. Y66 canonical terminal archive and fresh empty reservation/compute/idle proof precede activation, and runner rechecks the physical GPU lease and idle state."
+}

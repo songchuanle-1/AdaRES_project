@@ -1,0 +1,181 @@
+{
+  "complete": true,
+  "token": "76f9c0ca61424281b30c4f491a33b37e",
+  "human_request": "\u7ee7\u7eed\u8bad\u7ec3",
+  "observed_local": "2026-10-21T12:43:51.514115+08:00",
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "task": {
+    "id": "AdaRES-Y56",
+    "label": "AdaRES-Y56 unique competitors fixed30",
+    "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "depends_on": [],
+    "code_commit": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y56.json",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "requires_exclusive_ownership": true,
+    "scientific_candidate_id": "AdaRES-Y56",
+    "dispatch_phase": "progress_pending",
+    "server": "server-2",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 83638,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y56_unique_competitors_res_20261020_231317.log",
+    "launched": "2026-10-20T23:13:51"
+  },
+  "original_experiment": {
+    "id": "AdaRES-Y56",
+    "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+    "server": "server-2",
+    "gpu": "0",
+    "status": "running",
+    "history": [
+      {
+        "ts": "2026-10-20T23:13:51.643822",
+        "action": "launched",
+        "gpu": "0"
+      }
+    ],
+    "pid": 83638,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y56_unique_competitors_res_20261020_231317.log",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-20T23:13:51"
+  },
+  "original_dispatch": {
+    "path": "pipeline/analyses/y56_dispatch_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "e6a98f0311ec4f5d1220d298ee8c96783d995b9a21d99bbeb1acc8ddb5296d0c"
+  },
+  "tested_review": {
+    "path": "pipeline/analyses/y56_gate_review_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "a66d3d2d4afb1a4dcdc8fda94aca4fe3925a1176e4b3fd67fb6bfa62a2a11678"
+  },
+  "source_manifest_verified": true,
+  "payload": {
+    "action": "inspect",
+    "server": {
+      "name": "server-2",
+      "host": "192.168.1.163",
+      "user": "songcl",
+      "remote_code_root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+      "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+      "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "conda_source": "/home/dl01/anaconda3/etc/profile.d/conda.sh",
+      "conda_env": "adares_project",
+      "python": "/home/songcl/.conda/envs/adares_project/bin/python",
+      "site_packages": "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages",
+      "pointnet_egg": "/home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg",
+      "allowed_gpus": [
+        0,
+        1
+      ],
+      "max_tasks_per_gpu": 1,
+      "max_tasks": null,
+      "dispatch_enabled": true,
+      "registered_pid_probe": false,
+      "allow_external_overlay": false,
+      "task_memory_mb": 20000,
+      "jumphost": null
+    },
+    "id": "AdaRES-Y56",
+    "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+    "gpu": "0",
+    "files": [
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/__init__.py",
+        "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/backbone.py",
+        "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/dec.py",
+        "sha256": "75542f5fafc3ff10b966ccedea54c8b4b9d39c520b3801cb80fa52b3af73d6eb"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/ipdn.py",
+        "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/loss.py",
+        "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/sample_model.py",
+        "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+      },
+      {
+        "path": "AdaRES/configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+        "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+      },
+      {
+        "path": "AdaRES/tools/train.py",
+        "sha256": "04afc00889dc58e439197a04be50457664a7906d42d7badfdc96033f9d99b41e"
+      }
+    ],
+    "original_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y56_unique_competitors_res_20261020_231317.log",
+    "original_pid": 83638,
+    "source_marker": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea"
+  },
+  "observation": {
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/last.pth",
+    "saved_epoch": 15,
+    "resume_epoch": 16,
+    "best_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/best.pth",
+    "meta": {
+      "epoch": 15,
+      "best_miou": 0.5023659467697144
+    },
+    "scheduler": {
+      "max_iters": 70,
+      "power": 4.0,
+      "constant_ending": 0.0,
+      "base_lrs": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "last_epoch": 15,
+      "_step_count": 16,
+      "verbose": false,
+      "_get_lr_called_within_step": false,
+      "_last_lr": [
+        3.8111724281549356e-05,
+        3.8111724281549356e-05,
+        3.8111724281549356e-05,
+        3.8111724281549356e-05,
+        3.8111724281549356e-05
+      ]
+    },
+    "optimizer_state_count": 543,
+    "optimizer_step_range": [
+      70265.0,
+      70290.0
+    ],
+    "learning_rates": [
+      3.8111724281549356e-05,
+      3.8111724281549356e-05,
+      3.8111724281549356e-05,
+      3.8111724281549356e-05,
+      3.8111724281549356e-05
+    ],
+    "original_last_progress": [
+      "16",
+      "4686"
+    ],
+    "gpu_before": {
+      "memory_mib": 1,
+      "util_percent": 0,
+      "compute_processes": []
+    },
+    "checkpoint_sha256": "d82f4205156abab656e1c779edbe0bff9db686712e47b56c3f472476d6799df5",
+    "best_sha256": "2d9ae3b209c3e40acfa064f801c1eb06978d46d5f908b5f1b7d0f6af139cb54e"
+  }
+}

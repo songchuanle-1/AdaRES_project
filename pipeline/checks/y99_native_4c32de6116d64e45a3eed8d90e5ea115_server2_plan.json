@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y99",
+  "config": "configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "e5151a722778af3eecb28d0d4f6ae75e18a60e0c",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "additive_parent": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "retained_branch": "refs/heads/adares-y99-spatial-mask-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y99_native.py",
+    "sha256": "1464cc9e2a4dee501111f718767fef0c2705b9a1c9a3f5d8242f3533b5a65fc9"
+  },
+  "planned_command": "python -B scripts/run_y99_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching AdaRES-Y93 natural30/full finite exact original checkpoint verification/canonical archive and fresh exclusive idle/unreserved GPU0; earlier Y95/Y96/Y98 precede Y99. No GPU1, power/runtime/data substitution. Changed HEAD/owner needs NEW tested binding.",
+  "checks": "Actual original YAML/sparse TRAIN two finite task backward/optimizer steps; full32 native spatial identity, entire original mask MLP and spatial/appearance projections, original batching/static seven mask consumers, float64 projection references, shared confidence/query norms/hard-gate algorithm, original/new/raw-spatial gradients, zero then learned skip/native modes/memory. Actual CPU result is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server2_program.py",
+    "sha256": "358c1e1f04a54dde6ef7434d4e4c92ce68a5b979faa4400e1e4778b9b0cc5061"
+  }
+}

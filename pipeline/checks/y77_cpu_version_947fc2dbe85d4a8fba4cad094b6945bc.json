@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y77",
+  "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "parent_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "retained_branch": "refs/heads/adares-y77-geometry-query-init",
+  "working_HEAD": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y77_cpu_version_947fc2dbe85d4a8fba4cad094b6945bc_source_snapshot.json",
+    "sha256": "0040740faad489c3f61bab16a9829ca84feb367ed0dd8b648ef994b1380ca34b"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y77_cpu_947fc2dbe85d4a8fba4cad094b6945bc.json",
+    "sha256": "8552483fba42b32f3fbd396611258b15c13309478dff6de965f421c7f8aa0454"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y77_geometry_query_init_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y77_cpu_version_947fc2dbe85d4a8fba4cad094b6945bc.index",
+    "sha256": "ac710e060262065fcce88c8211b7c82f4b9e8f1cb70bb83d705268583214f12a"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y77_cpu_version.py",
+      "sha256": "b068164f45dd0a169e4a6bcf97bbe65b5eae756ef9d1ce5df974cc5eddfddb9b"
+    },
+    {
+      "path": "scripts/probe_y77_cpu.py",
+      "sha256": "9c516a58cee967befe6340e2824833394185967aa5e7b965342db43d914e81fd"
+    },
+    {
+      "path": "scripts/prepare_y77_geometry_query_init.py",
+      "sha256": "ad4aab02d07f9e8f77996e64b726ca821ba03e8eb1dd5b7710d8c4c0fb6e2b32"
+    }
+  ]
+}

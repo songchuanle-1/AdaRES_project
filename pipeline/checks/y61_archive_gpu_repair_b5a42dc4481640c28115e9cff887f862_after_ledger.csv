@@ -1,0 +1,50 @@
+id,status,server,gpus,config,best_miou,best_acc_05,best_acc_025,best_spmiou,best_epoch,notes
+AdaRES-B0,closed_low_metric,server-2,"0,1",configs_song/model_paper5/adares_b0_res.yaml,0.333,0.260,0.490,0.311,20,Strong oracle masks but failed query ranking
+AdaRES-B1,done_complete,server-2,"0,1",configs_song/model_paper5/adares_b1_standard_res.yaml,0.502,0.553,0.610,0.467,18,Official faithful standard-indicator baseline
+AdaRES-B2,done_complete,server-2,"0,1",configs_song/model_paper5/adares_b2_metric_indicator_res.yaml,0.505,0.555,0.607,0.471,19,Improved B1 by 0.003 but remained 0.010 below target; completed all 20 validations
+AdaRES-B3,done_complete,server-2,"0,1",configs_song/model_paper5/adares_b3_mask_evidence_res.yaml,0.5014,0.554,0.609,0.464,20,Mask-evidence variant did not beat B1/B2; TensorBoardX EOFError occurred after final validation and checkpoint save
+AdaRES-B4,done_complete,server-2,0,configs_song/model_paper5/adares_b4_query_competition_res.yaml,0.5070,0.556,0.607,0.472,19,Improved B2 by 0.0020 mIoU; completed all 20 validations
+2026-09-22 09:18:09,AdaRES-B5,configs_song/model_paper5/adares_b5_token_grounding_res.yaml,server-2,1,done_complete,0.5030,20/20,
+2026-09-22 19:47:05,AdaRES-B4-E30,configs_song/model_paper5/adares_b4_query_competition_res.yaml,server-2,0,done_complete,0.5094,30/30,
+2026-09-22 19:47:07,AdaRES-B2-E30,configs_song/model_paper5/adares_b2_metric_indicator_res.yaml,server-2,1,done_complete,0.5058,30/30,
+2026-09-23 06:51:00,AdaRES-C2,configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml,server-2,1,done_complete,0.4980,10/10,
+2026-09-23 08:10:22,AdaRES-C1,configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml,server-2,0,done_complete,0.4950,10/10,
+2026-09-24 01:47:05,AdaRES-C2-E30,configs_song/model_paper5/adares_c2_hard_negative_margin_e30_res.yaml,server-2,1,done_complete,0.5014,30/30,
+2026-09-24 05:47:02,AdaRES-C1-E30,configs_song/model_paper5/adares_c1_listwise_expected_mask_e30_res.yaml,server-2,0,done_complete,0.5008,30/30,
+2026-09-25 13:47:05,AdaRES-F4,configs_song/model_paper5/adares_f4_mask_reanchor_res.yaml,server-2,1,done_complete,0.5060,30/30,
+2026-09-25 14:47:04,AdaRES-D1,configs_song/model_paper5/adares_d1_full_query_comparison_res.yaml,server-2,0,done_complete,0.5080,30/30,
+2026-09-26 13:47:23,AdaRES-H5,configs_song/model_paper5/adares_h5_late_global_query_res.yaml,server-2,1,done_earlystop,0.5061,30/30,
+2026-09-26 17:47:13,AdaRES-G1,configs_song/model_paper5/adares_g1_metric_targets_res.yaml,server-2,0,done_complete,0.4980,30/30,
+2026-09-28 10:46:26,AdaRES-W2,configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml,server-2,0,done_complete,0.5100,30/30,
+AdaRES-Y17,done_complete,server-2,1,configs_song/model_paper5/adares_y17_target_equivalent_pairing_res.yaml,0.5040,,,,30/30,reconciled 2026-10-01 22:49:30; log=
+AdaRES-Y15,done_complete,server-2,0,configs_song/model_paper5/adares_y15_query_completion_res.yaml,0.2300,,,,30/30,reconciled 2026-10-02 07:48:36; log=
+AdaRES-Y18,done_complete,server-2,1,configs_song/model_paper5/adares_y18_point_measure_res.yaml,0.5080,,,,30/30,reconciled 2026-10-02 23:47:49; log=
+AdaRES-Y23,done_complete,server-2,1,configs_song/model_paper5/adares_y23_valid_token_support_res.yaml,0.5076,,,,30/30,reconciled 2026-10-03 20:48:36; log=
+AdaRES-Y25,done_complete,server-2,1,configs_song/model_paper5/adares_y25_mask_feedback_res.yaml,0.4940,,,,30/30,reconciled 2026-10-04 18:57:30; log=
+AdaRES-Y27,done_complete,server-2,1,configs_song/model_paper5/adares_y27_relative_peer_res.yaml,0.5100,,,,30/30,reconciled 2026-10-05 19:49:05; log=
+AdaRES-Y28,done_complete,server-2,1,configs_song/model_paper5/adares_y28_mask_readback_res.yaml,0.5060,,,,30/30,reconciled 2026-10-06 18:51:40; log=
+AdaRES-Y30,done_complete,server-2,1,configs_song/model_paper5/adares_y30_query_trajectory_res.yaml,0.5040,,,,30/30,reconciled 2026-10-07 18:49:37; log=
+AdaRES-Y31,done_complete,server-2,1,configs_song/model_paper5/adares_y31_mask_shape_res.yaml,0.5060,,,,30/30,reconciled 2026-10-08 17:49:37; log=
+AdaRES-Y33,done_complete,server-2,1,configs_song/model_paper5/adares_y33_token_attention_res.yaml,0.5050,,,,30/30,reconciled 2026-10-09 17:47:55; log=
+AdaRES-Y35,done_complete,server-2,0,configs_song/model_paper5/adares_y35_language_evidence_res.yaml,0.5050,,,,30/30,reconciled 2026-10-10 11:48:56; log=
+AdaRES-Y36,done_complete,server-2,1,configs_song/model_paper5/adares_y36_local_adjacency_res.yaml,0.5110,,,,30/30,reconciled 2026-10-10 19:48:20; log=
+AdaRES-Y37,done_complete,server-2,0,configs_song/model_paper5/adares_y37_pair_distribution_res.yaml,0.5050,,,,30/30,reconciled 2026-10-11 15:49:43; log=
+AdaRES-Y39,done_complete,server-2,1,configs_song/model_paper5/adares_y39_point_distribution_res.yaml,0.5080,,,,30/30,reconciled 2026-10-11 21:49:58; log=
+AdaRES-Y41,done_complete,server-2,0,configs_song/model_paper5/adares_y41_boundary_probability_res.yaml,0.5090,,,,30/30,reconciled 2026-10-13 01:49:06; log=
+AdaRES-Y42,done_complete,server-2,1,configs_song/model_paper5/adares_y42_point_covariance_res.yaml,0.5050,,,,30/30,reconciled 2026-10-13 05:50:06; log=
+AdaRES-Y43,stopped_unknown,server-2,0,configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml,0.5010,,,,14/30,reconciled 2026-10-13 19:58:44; log=
+AdaRES-Y44,stopped_unknown,server-2,1,configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml,0.4790,,,,9/30,reconciled 2026-10-13 19:58:54; log=
+AdaRES-Y43,done_complete,server-2,0,configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml,0.5085,,,,30/30,reconciled 2026-10-14 11:48:34; log=
+AdaRES-Y44,done_complete,server-2,1,configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml,0.5103,,,,30/30,reconciled 2026-10-14 13:05:50; log=D:\project\AdaRES_project\Checkpoints\server_2\resume_adares_y44_coordinate_feature_res_364e34f425ad445c958c450ac8df9691.log
+AdaRES-Y45,done_complete,server-2,1,configs_song/model_paper5/adares_y45_metric_decomposition_res.yaml,0.5077,,,,30/30,reconciled 2026-10-15 10:53:22; log=D:\project\AdaRES_project\Checkpoints\server_2\train_adares_y45_metric_decomposition_res_20261014_142939.log
+AdaRES-Y48,done_complete,server-2,1,configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml,0.5034,,,,30/30,reconciled 2026-10-16 10:56:51; log=D:\project\AdaRES_project\Checkpoints\server_2\train_adares_y48_mask_equivalence_res_20261015_113625.log
+AdaRES-Y50,done_complete,server-2,1,configs_song/model_paper5/adares_y50_joint_incidence_res.yaml,0.5030,,,,30/30,reconciled 2026-10-17 13:50:50; log=
+AdaRES-Y52,stopped_unknown,server-2,1,configs_song/model_paper5/adares_y52_point_target_res.yaml,0.5090,,,,24/30,reconciled 2026-10-20 12:43:43.357545; log=
+AdaRES-Y54,stopped_unknown,server-2,0,configs_song/model_paper5/adares_y54_fine_support_res.yaml,0.5060,,,,25/30,reconciled 2026-10-20 12:43:53.922209; log=
+AdaRES-Y52,done_complete,server-2,1,configs_song/model_paper5/adares_y52_point_target_res.yaml,0.5090,,,,30/30,reconciled 2026-10-20 20:26:23.210079; log=
+AdaRES-Y54,done_complete,server-2,0,configs_song/model_paper5/adares_y54_fine_support_res.yaml,0.5015,,,,30/30,reconciled 2026-10-20 20:26:24.603074; log=
+AdaRES-Y56,done_complete,server-2,0,configs_song/model_paper5/adares_y56_unique_competitors_res.yaml,0.5110,,,,30/30,reconciled 2026-10-22 00:57:49.176752; log=D:\project\AdaRES_project\Checkpoints\server-2\adares_y56_unique_competitors_res\8664855b3766455594b27408b18a8ce6\fixed30.log
+AdaRES-Y58,done_complete,server-2,0,configs_song/model_paper5/adares_y58_fixed_backbone_statistics_res.yaml,0.5034,,,,30/30,reconciled 2026-10-22 22:57:33.515122; log=D:\project\AdaRES_project\Checkpoints\server-2\adares_y58_fixed_backbone_statistics_res\a22787800208426cb33a87fdce0c6b81\fixed30.log
+AdaRES-Y59,done_complete,server-2,0,configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml,0.4957,,,,30/30,reconciled 2026-10-23 20:49:31.638812; log=D:\project\AdaRES_project\Checkpoints\server-2\adares_y59_frozen_text_mode_res\3e61cded0e934db5bb4f9abd4451c12c\fixed30.log
+AdaRES-Y60,done_complete,server-2,14,configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml,0.5075,,,,30/30,reconciled 2026-10-24 18:50:43.577316; log=D:\project\AdaRES_project\Checkpoints\server-2\adares_y60_stage_specific_confidence_res\fd874a5eafed4a5b84c6c77d939b6b3f\fixed30.log
+AdaRES-Y61,done_complete,server-2,0,configs_song/model_paper5/adares_y61_peer_value_gradient_res.yaml,0.5036,,,,30/30,reconciled 2026-10-25 16:55:50.764176; log=D:\project\AdaRES_project\Checkpoints\server-2\adares_y61_peer_value_gradient_res\b5a42dc4481640c28115e9cff887f862\fixed30.log

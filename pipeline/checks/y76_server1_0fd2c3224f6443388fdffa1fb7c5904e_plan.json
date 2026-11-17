@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y76",
+  "config": "configs_song/model_paper5/adares_y76_stage_confidence_conditioning_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "retained_branch": "refs/heads/adares-y76-stage-confidence-conditioning",
+  "planned_command": "python -B scripts/y76_server1_alternative.py run --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved server-1 GPU0 after original Y72 canonical fixed30 archive; exact private runtime/data/path mapping and existing350W. Preserve current Y69 and all other jobs.",
+  "checks": "Native YAML/tools.train/TRAIN two finite losses/backward/optimizer; seven original head-query and integer stage identities and actual query-norm consumers, static mask/padding identities, seven shared confidence heads, independent scalar stage-offset formula, zero first/next-step response, native modes/finite original-query/new-offset gradients with all seven rows updated/real updates/peak memory.",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 11,
+  "Python38_compile": true,
+  "program": {
+    "path": "pipeline/checks/y76_server1_0fd2c3224f6443388fdffa1fb7c5904e_native_program.py",
+    "sha256": "58d4874cfc77fb8dff5a48fe3d399900c928893dbb697f74dd7e1841640b46ef"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y76_server1_0fd2c3224f6443388fdffa1fb7c5904e_cpu_program.py",
+    "sha256": "a9501498ead4905228b91b90b0d05dfb61c647e40e9ca164a139f0ecd5020b09"
+  },
+  "runtime_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data1/songcl/Project/AdaRES_project/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "previous_plan": {
+    "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu0_plan.json",
+    "sha256": "c32ec64c054cadffb9ea34d49a7a0b3e8e8ce9a1668695920c0db78c72fd366c"
+  },
+  "activation_required": true,
+  "activated": false
+}

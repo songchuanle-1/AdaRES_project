@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y53",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T12:58:36.114327+08:00",
+  "component_result": {
+    "path": "pipeline/analyses/y53_padding_components_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "165e9694bd436d45fbb203b2b64bb2e1c24be78eae05b9ad590836bd373d3435"
+  },
+  "body": {
+    "path": "scripts/probe_y53_padding_native_fde0.py",
+    "sha256": "9941d52da5487079cd5a2ba0058b1a99340766e7f55bb9838e099892bf68cdad"
+  },
+  "fixed_protocol": "SAME previously frozen8TRAIN scenes/32expressions, seed1999 per dataset access; actual sparse forward/FPS with fixed trained W2 checkpoint. Native predict batchsize1. Cache actual decoder inputs, freeze weights, compare unchanged repeat vs padding-only and valid-word feature sign flips at SAME input; all7layer indicators/masks/scores/sampler/argmax and gradient w.r.t.language.",
+  "prediction": "If padding is excluded, actual query-confidence outputs and gradients show no padding effect, while valid-word positive control is active. Preserve nonzero repeats if observed; no invented numeric tolerance or validation tuning.",
+  "limits": "No model/config changes, optimizer steps, weights saved, Git commit or admission. This does not reopen Y23 or retest blocked Y52; common fixed TRAIN data are reused for a distinct decoder-forward hypothesis.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y53_padding_native_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "3678e7b332444a9ef27ffef087774be93fbc8c3a099cb633c9df7d586188447f"
+  }
+}

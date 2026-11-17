@@ -1,0 +1,95 @@
+{
+  "source_marker": "4a24410344b6ab6fe7f56d597013a4c13a9fa317",
+  "remote_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/__init__.py",
+      "sha256": "e637db7670bf4e7ca1169190b65a5e5734f2f43e458e7b2b0366f2c97dd36566"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/loss.py",
+      "sha256": "f34b582c416395b5fd76a07043091f52fa124e4124f5f5f65f9949d62ab59c86"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y23_valid_token_support_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "AdaRES-Y18",
+      "pid": 7449,
+      "gpu": "1",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y18_point_measure_res_20261001_233715.log",
+      "captures": [
+        {
+          "epoch": 17,
+          "total": 30,
+          "step": 1274,
+          "batches": 4686,
+          "tail1200_sha256": "e6ca475b9fec7d1baab7be784f2428c56ab63ed4ee9a500d0f6ac95e7aab921e",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        },
+        {
+          "epoch": 17,
+          "total": 30,
+          "step": 1280,
+          "batches": 4686,
+          "tail1200_sha256": "2bcfa73bc5cdac22e27a578f82a8e2541136b4f4c87bd3cd5e63cb3ed321c3e7",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        }
+      ],
+      "launch_verified": true
+    },
+    {
+      "id": "AdaRES-Y23",
+      "pid": 125903,
+      "gpu": "0",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y23_valid_token_support_res_20261002_112523.log",
+      "captures": [
+        {
+          "epoch": 1,
+          "total": 30,
+          "step": 115,
+          "batches": 4686,
+          "tail1200_sha256": "457c22c669767b27bdbb4d46793cd534cbfde16ad6c9337260f4cce4f0595e7b",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        },
+        {
+          "epoch": 1,
+          "total": 30,
+          "step": 120,
+          "batches": 4686,
+          "tail1200_sha256": "ed5a2782c2f75ffd534c6e04f161bba9d22ec0d3d357b0b8e6ee4e7fca6d214a",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        }
+      ],
+      "launch_verified": true
+    }
+  ],
+  "diagnostic_flock_released": true,
+  "gpu_csv": "0, 16196, 55\n1, 22720, 71\n",
+  "observed_start_local": "2026-10-02T11:26:56.521895+08:00",
+  "observed_end_local": "2026-10-02T11:27:02.771611+08:00",
+  "scientific_status": "Y23/Y18 training verified, final efficacy unknown",
+  "scope": "Two bounded native observations; absence of errors only within read tails, not full-log proof"
+}

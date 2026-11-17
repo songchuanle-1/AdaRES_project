@@ -1,0 +1,82 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-10-15T19:49:07.315575+00:00；生成报告时快照年龄：315 秒；模式：design
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：0
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-10-16 03:49:06
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-Y36 — mIoU=0.5110 (gap to target: +0.0040)
+       Epochs: ?, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0090
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5110, target=0.5150, gap=+0.0040
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-2 | 0 | 未知 | 未知 | 未知 |
+| server-2 | 1 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-10-16 03:49 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  [adares_y48_mask_equivalence_res] Best=0.5034 22/30 no_improve=7/30 gpu=1 ? 序列: 0.4998, 0.4951, 0.4993, 0.4990, 0.5033
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2: running=1
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| AdaRES-Y48 | configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml | server-2 | 1 | 未知 | 未知 | 未知 | 未知 | 未知 | running |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 1（运行 1 / 认领 0 / 等待 0）；目标 2；准入预算 1。
+- 研究储备 2 / 2；储备准备预算 0，不增加训练并发或启动授权。
+- 候选累计记录 101：complete=14 / rejected=72 / closed=12 / blocked=2 / training=1。
+- 否决范围：unclassified=72；实现修订累计 1；收据文件 29（含修订或重试，不代表成功率）。
+
+## 4. This Tick's Actions
+- 执行状态：持有本轮前台租约，finish/postflight尚未执行；科学状态：Y48 training，Y46/Y49 blocked。快照为2026-10-16 03:49:07+08，0-3段保留脚本原始事实与未知字段；后续实时观测另行标时。
+- 03:52:49.198498–03:52:54.834636+08 单次共享资源观测：GPU0=他人PID19723，23346/24576MiB、100%；GPU1=本项目原Y48 PID8877，22720/24576MiB、71%。授权2、本项目占用1、他人占用1、空闲0。未创建诊断CUDA上下文，未重启/中止任何训练。
+- 原Y48 epoch22/30，原生步骤605→614/4686；进程cwd/config/argv/GPU与七项源码哈希均对应准入提交d18c228。begin监测best mIoU .5034、最新验证.5033、未刷新7；训练未结束，不是冻结终态指标或效果证明。
+- 紧凑快照due0早于固定03:52:48.138788+08重检点；仅在前台有界等待到既有资源重检时间，03:52:49才实际检查一次，不等待tick截止、不提前重复探测。两项既有ID此时均到期；储备2/2、准备预算0，续做原候选而不扩池。
+- 两项冻结manifest/program哈希及语法核验通过，但GPU分支仍UNRUN，不重复CPU对照。Y46生产原生训练/恢复和资源门仍待验证，原3.49–18.66s/缓存.627–8.277s对父.213–.297s风险保留；Y49同分量分区不同全局值的原生见证仍0个，CPU梯度不代表任务效用或资源PASS。
+- 已保存真实资源、到期边界和阻塞收尾证据并更新七段记忆；下次候选资源重检2026-10-16T04:52:54.834636+08:00，或真实解阻变化。新增候选/准入/训练/GPU诊断/修订均0；三条候选记录增加七条证据引用，计数不代表科学收益。
+- 收据窗口仅begin至receipt，当前最终用量未知，待finish后读取；排除前置阅读、较晚记录及最终回复。缓存已属于输入、推理已属于输出，不重复相加，不作账单。最终执行状态以finish及独立锁核验为准。
+
+## 5. Decisions Made
+- 03:52:54+08 根据真实两卡占用按external_resource_blocked收尾。Y46/Y49保留原假设、负证据、故障范围、冻结测试及解阻条件；不宣称路线穷尽、机制失败或准入PASS。仅新鲜空闲并获取独占租约后运行下一原生测试。
+- 保留原Y48固定30epoch/seed1999/原优化器调度与终态冻结比较方案；不依据中途验证挑阈值、温度、损失权重、epoch或重启。
+- 目标.515仍未达，历史台账Y36 .5110未变化。相同冻结评估Y36 .510716624292对B1 .502112417447提升0.8604个百分点；对W2 .510009849923仅0.0707个百分点且优势未证实。不同口径不混算。
+- 归属、closure启用与后台Pipeline-AdaRES_project Disabled均已核实；不跨项目、不改调度、不新建任务、不恢复后台或嵌套Codex。下一自动化准确时间未知，不把候选retry写成自动化时间。finish失败则保留证据并abort，不篡改快照、截止或门槛。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

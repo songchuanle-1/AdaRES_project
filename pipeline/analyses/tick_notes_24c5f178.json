@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "仅对AdaRES_project执行event tick；实际CODEX_THREAD_ID与绑定任务一致，后台Pipeline-AdaRES_project为Disabled；closure_policy已显式启用。仅授权server-2 GPU1，未查询/使用GPU0或server-6。预检快照北京时间2026-10-02 20:48:14，截止21:48:14；begin已执行监控和目标检查，不重复preflight。",
+    "20:48:54的有界只读核验确认原PID7449仍对应Y18配置和GPU1；日志Train30 steps508/4686。随后20:49:03.558822至20:49:08.793405现有脚本核验同一原进程，Train30/30 steps524→534/4686。第30轮正在训练，不是30轮训练完成，不满足Y23恢复条件。",
+    "20:49:08 GPU1显存22720MiB、利用率88%，为整卡占用而非隔离候选峰值。两次有界日志尾未见Traceback/OOM，只能支持观察窗口内的结论。",
+    "绑定新证据pipeline/analyses/y18_progress_24c5f1782c2d485ca19ce48c83234369.json，SHA256 f92de68b8b93748fa296edb15c6c4f660b735946e7fd7ba47bfec46d508cf5aa，原始.log已保存；更新同一Y18的next_action和七段短记忆，未改Y23冻结记录或历史科学证据。",
+    "预检Y18 best0.5076/latest0.5023仍低于W2历史0.5100与目标0.5150；固定30轮最终效力和冻结全量评估未知。执行状态待finish验证；科学状态Y18 training、Y23用户暂停/blocked_not_due。本轮没有新候选、准入、启动或新科学门禁通过。",
+    "收据将在finish生成，仅覆盖本地begin至收据可见记录，不含此前读取、晚到记录和最终回复；当前精确用量未知。缓存是输入的一部分、推理是输出的一部分，不重复累加、不视为账单。实际产出为一份新的训练进展证据及账本/短记忆更新。下次准确调度时间未知。"
+  ],
+  "decisions": [
+    "Y18继续原GPU1固定30轮，不提前停止腾卡，不改轮数、阈值、温度、损失权重或准入门禁。没有终态变化/到期候选，不重复Y23守卫测试、不凑新变体、不等待整轮训练来耗尽本tick。",
+    "保持用户指定的恢复顺序：Y18 canonical done_complete且epoch30检查点保存、GPU1实时独占空闲后，使用现有守卫脚本恢复同一Y23的epoch4模型/AdamW/PolyLR至epoch5，总轮数30；GPU0继续保留，不走会从头启动的通用waiting路径。",
+    "本轮无新的科学决策或效力结论；保留既有失败及不确定性，Y18冻结全量评估待资源允许。finish成功并核实释放才称COMPLETED；否则保留证据按原token abort，不修改快照/截止或放宽门禁。"
+  ]
+}

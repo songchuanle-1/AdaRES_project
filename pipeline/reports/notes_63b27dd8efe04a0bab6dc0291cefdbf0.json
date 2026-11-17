@@ -1,0 +1,17 @@
+{
+  "actions": [
+    "用户在本会话明确“继续推进训练  然后server1 的gpu也可以使用”。已核server-1=192.168.1.175/hostname dl02-MS-7B73、唯一GPU0独占空闲，并保存资源授权；AGENTS/SERVERS/goal仅更新资源范围，原数据/seed1999/固定30轮/损失优化器及禁用项不变。新goal SHA4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a，模型HEAD仍82fbd9fb1fc56da6afee5b145f59cfa533464707。",
+    "server-1建立项目私有代码和Python3.8/PyTorch1.12.1+cu113运行副本。修复新系统对旧libtorch_cpu.so可执行栈标志的加载拒绝，只改私有副本PT_GNU_STACK的4字节，其他字节一致；补充原CUDA11.3共享库和项目进程LD路径，不修改原环境、CUDA核或系统。Y62首次缺libcusparse及Y63首次继承280W守卫的失败保留，后者另存计划绑定server-1实际350W，未改硬件或模型数值门槛。",
+    "完整原数据checksum检查发现旧server-1副本7项差异，其中3个场景.pth。独立data目录链接100766个已匹配只读文件，7项均从原server-2私有复制并逐个SHA256一致；train1201/val312 *_refer.pth文件名/大小集合逐split一致，共享旧数据未改。证据pipeline/checks/server1_bootstrap_63b27dd8efe04a0bab6dc0291cefdbf0.json、server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json；通过canonical源码检查和安全同步，代码marker82f一致。运行适配6项控制/62项回归/库路径后3项专项通过，初次回归3项兼容失败已修复重测。",
+    "Y62在21:53:34至21:54:33完成真实原生YAML/TRAIN/tools.train两步，loss7.886719703674316/8.23161506652832，峰6606028800B；Y63在21:55:41至21:56:24两步loss7.886719703674316/8.118072509765625，峰6627000320B。每项540梯度张量有限、11头参数、每步七阶段调用、相应新权重非零梯度及第二步响应实核；两份真实结果分别拒绝旧goal/NaN/未执行分支，CPU证据未冒充原生检查。",
+    "两项在本轮预算2内签发admissions/AdaRES-Y62.json与AdaRES-Y63.json，固定后评FIRST/全量9508表达141场景/scene bootstrap10000/seed1999及预定伤害规则已保存。canonical门控将Y62部署到server-1 GPU0，PID2540376，launch_verified=true；22:00:28至22:00:33第1/30轮240→249/4686增长，六文件和原生YAML精确路径适配实核，尾部无错误。GPU67°C/16920MiB/350W是一次采样。Y63 waiting同卡，未同时占卡；尚无训练验证主指标。",
+    "Y57仍用户暂停、原epoch27恢复要求不变；server-2 GPU0外来PID13813仍占用、280W不变，GPU1外来任务不操作；五项固定30完成实验只复核终态/冻结文件，不重训或从训练best晋升。当前资源证据gpu0_lifecycle_v4_63b27dd8efe04a0bab6dc0291cefdbf0.json。通过应用工具更新现有heartbeat的资源提示为server-1 GPU0+server-2 GPU0，核对原ACTIVE、2小时频率、:47和所属会话不变。",
+    "完整六段报告复用begin的21:39:34事实表；上述21:53至22:00变化以实际观察时间单列。已知收尾校验仍把空server-2队列当作GPU空槽，与外来实时占用冲突。只读核验五项拒绝谓词仍为真，completion audit保存两份有效准入、预算2和训练证据；本轮不重放已知失败finish，不改该谓词/blocker类别/快照、不造队列。规范report后abort/INCOMPLETE并独立核释放，已启动训练继续运行。"
+  ],
+  "decisions": [
+    "按本会话新增资源授权继续训练，不重复请求常规操作许可；server-1仅GPU0、一卡一独立实验，server-2仅GPU0且280W，Y57/GPU1暂停和server-6禁用保留。资源路径适配只允许原数据/检查点根路径的确定性替换，不能改变训练参数。",
+    "本轮已完成两项真实检查和两项准入预算，Y62先运行、Y63排队接续同卡。后续只监控实际PID/原生步数并依既有门控派发，不凭PID称正常、不重复smoke/准入/启动；Y63等待期间保持其82f版本有效，不随意推进HEAD。",
+    "原生两步只证明当前数据加载、有限后向、目标路径与初始化资源可运行；不同batch loss不是收敛曲线，训练效益与全数据成本仍未知。Y62/Y63以及五项旧完成实验均依各自冻结后评，不验证集选参或重开旧拒绝。",
+    "共享运行适配改变仅为授权server-1的身份/路径/库支持，科学门槛和exclusive_gpu_slot校验未放宽。由于既有收尾谓词不接受真实外来占用，按foreground规则保留证据后abort/INCOMPLETE并核释放；这不撤销已签发准入或停止已验证Y62训练。需后续具体维护该旧校验不兼容问题。"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "token": "5bc11c5521364ee49fa130124b3ef7d3",
+  "observed_at": "2026-11-11T06:49:40.819309+08:00",
+  "observations": {
+    "AdaRES-Y96": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y96_5bc11c5521364ee49fa130124b3ef7d3_release.json",
+        "sha256": "f1c086ea803d6b8327facb599dee4de140aedd8726975aa1c5a6bee6fa3138a5"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 17,
+        "total": 30,
+        "step": 3052,
+        "count": 4686
+      },
+      "pid": 3893460
+    },
+    "AdaRES-Y98": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y98_5bc11c5521364ee49fa130124b3ef7d3_release.json",
+        "sha256": "5350c64e409ca67458a8ae0c4ac88a81ba987543c4d7c2e0a5f0871d425df05e"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 13,
+        "total": 30,
+        "step": 1019,
+        "count": 4686
+      },
+      "pid": 25962
+    }
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_5bc11c5521364ee49fa130124b3ef7d3.json",
+      "sha256": "ca395c451ad43615ad6c54f0a112cae05a57926e470c34c250ef84376f5fc8d3"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_5bc11c5521364ee49fa130124b3ef7d3.json",
+      "sha256": "8ba9031a99a69308680de551ea8b1fd4e6407f4f819c91addaff808170e9b8d3"
+    }
+  },
+  "original_runs_preserved": true,
+  "new_scientific_candidates": 0,
+  "scientific_CPU_replays": 0,
+  "native_GPU_tasks": 0,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "checkpoints_loaded": false,
+  "repeated_scientific_or_binding_tests": false,
+  "formal_FIRST_or_cost_executed": false,
+  "evidence": [
+    {
+      "path": "scripts/finish_y98_resource_wait.py",
+      "sha256": "75f8a4c7b109c6eb6286f44a5c654526c9f4363fddeb9e98f3d859035361decb"
+    },
+    {
+      "path": "pipeline/checks/y99_y98_additive_binding_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "862e1f15c6d2907a1b3a9236e29f38c9dcdc10e9aa2022e6bedbf2c02ff3f641"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y96_5bc11c5521364ee49fa130124b3ef7d3_release.json",
+      "sha256": "f1c086ea803d6b8327facb599dee4de140aedd8726975aa1c5a6bee6fa3138a5"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y98_5bc11c5521364ee49fa130124b3ef7d3_release.json",
+      "sha256": "5350c64e409ca67458a8ae0c4ac88a81ba987543c4d7c2e0a5f0871d425df05e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_5bc11c5521364ee49fa130124b3ef7d3.json",
+      "sha256": "ca395c451ad43615ad6c54f0a112cae05a57926e470c34c250ef84376f5fc8d3"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_5bc11c5521364ee49fa130124b3ef7d3.json",
+      "sha256": "8ba9031a99a69308680de551ea8b1fd4e6407f4f819c91addaff808170e9b8d3"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y102",
+  "config": "configs_song/model_paper5/adares_y102_geometry_mask_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "additive_parent": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "retained_branch": "refs/heads/adares-y102-geometry-mask-skip-on-y101",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y102_bound_native_y101.py",
+    "sha256": "5339cb5d8bb8fce648f73a3dc005de1dcdc51e18352144cea2b0f596f7e73271"
+  },
+  "planned_command": "python -B scripts/run_y102_bound_native_y101.py --server server-2 --token <CURRENT>",
+  "required_resource": "At HEADY101 only after exact matching AdaRES-Y100 natural fixed30/full finite original checkpoint archive and fresh exclusive authorized idle/unreserved GPU0. No GPU1, power or runtime substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite backward/optimizer steps; original full3 scene coordinates/point masses/centroid/padding/original mask batching/static seven consumers/shared heads/hard gates/full gradients/native modes/budget. CPU feasibility is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y102_y101_additive_binding_16ace440440346cebe23c272fdbba622_server2_program.py",
+    "sha256": "ecaca6951d63ac196dbeeab7bc75205f08ac34c154fc4c941449e032f1fb2796"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server2_plan.json",
+    "sha256": "7b856a03b5e17c70db365dbe4e40199fcf5751157d5010ada781c042ba577770"
+  }
+}

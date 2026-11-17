@@ -1,0 +1,84 @@
+{
+  "complete": true,
+  "token": "08e82df71e3743dcb86c0eec4d39460c",
+  "snapshot": "2026-11-02T00:45:58.953289+00:00",
+  "observed_at": "2026-11-02T09:08:00.498171+08:00",
+  "original_live_training": {
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_08e82df71e3743dcb86c0eec4d39460c_final.json",
+      "sha256": "dd4bd697363b1af92ab8cb57f3b861f13c5b6fc738f48e19799f2dfba9a7c7e9"
+    },
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_08e82df71e3743dcb86c0eec4d39460c_final.json",
+      "sha256": "fc6163e71d0a7529b710cda3a4f357f9b88fbf975cd2b3db62b5bbf0876a00cb"
+    },
+    "AdaRES-Y77": {
+      "path": "pipeline/checks/production_adares-y77_08e82df71e3743dcb86c0eec4d39460c_final.json",
+      "sha256": "dd5197af633b343e1cb25498cfc681230dde04e5a746f1314e7ed7c2b9730493"
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_08e82df71e3743dcb86c0eec4d39460c.json",
+      "sha256": "4e5dba44ef45aed667f9b90f56bb4c5522796bc7efa4d56ae1c0a93beb2872e6"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_08e82df71e3743dcb86c0eec4d39460c.json",
+      "sha256": "df98432647a6e8ee7484389fc4306afb5d84ef2642a8c0f9f005c4b3fa56c467"
+    }
+  },
+  "source_HEAD": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "new_candidates": 1,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "archived": [],
+  "prepared_native_pending": [
+    "AdaRES-Y78",
+    "AdaRES-Y79"
+  ],
+  "Y79_CPU_version": {
+    "path": "pipeline/checks/y79_cpu_version_08e82df71e3743dcb86c0eec4d39460c.json",
+    "sha256": "8662640505c5ef93a8159b95ee748ad1d6d1b00889fe14e652a590b2e7c46ac3"
+  },
+  "Y79_CPU_native_callback_verification": {
+    "path": "pipeline/checks/y79_native_observer_verification_08e82df71e3743dcb86c0eec4d39460c.json",
+    "sha256": "0ccbff4a3443fa955d02e28edbd55cee9bfefb00432455dacef3d524e9025a1d"
+  },
+  "Y79_native_preparation": {
+    "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c.json",
+    "sha256": "82a1676f0750c677bcbc9fc3713edf89deb6f0290b8fa1905f9068773215fa7d"
+  },
+  "Y75_original_terminal_preparation": {
+    "path": "pipeline/checks/y75_terminal_preparation_909e7705ed74484fbc9bb4d16c7dbb59.json",
+    "sha256": "1e2ec654157b569a6fda192170e42737b7f80e6b216e14424b9ee1e82b624b33"
+  },
+  "terminal_dependencies_unchanged": true,
+  "last_resource_tick_attempt": {
+    "tick_started_at": "2026-11-02T00:45:58.953289+00:00",
+    "candidate_id": "AdaRES-Y62",
+    "kind": "resource_check",
+    "result": "blocked",
+    "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 08e82df71e3743dcb86c0eec4d39460c --server server-1 --label finish",
+    "observation": "Fresh authorized GPU inventory and all compute PIDs observed; no task launch or efficacy claim.",
+    "evidence": [
+      {
+        "path": "pipeline/checks/gpu_occupation_server-1_finish_08e82df71e3743dcb86c0eec4d39460c.json",
+        "sha256": "df98432647a6e8ee7484389fc4306afb5d84ef2642a8c0f9f005c4b3fa56c467"
+      }
+    ]
+  },
+  "closeout_wrapper_repair": {
+    "path": "pipeline/checks/closeout_wrapper_repair_08e82df71e3743dcb86c0eec4d39460c.json",
+    "sha256": "364e230b88f573c54a5e62fdfece02640555d884a0ca09d93a1106b3a99d4d09"
+  },
+  "evidence": [
+    {
+      "path": "scripts/record_08e82df7_handoff_attempt2.py",
+      "sha256": "8f315f2b95a77ab38c512ca034df64b8aac6ddabf99b05fbd62cecc2fd8c7cbd"
+    }
+  ],
+  "Y57_pause_preserved": true,
+  "queue_and_running_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "conclusion": "Y79 CPU/full native model/TRAIN and exact callback preparation completed; no native GPU task, admission or training efficacy. All three original training jobs advance; Y78 then Y79 wait for exclusive resources."
+}

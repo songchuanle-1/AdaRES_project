@@ -1,0 +1,31 @@
+{
+  "scope": "two augmented batches, warmed optimizer, isolated process per arm",
+  "config": "configs_song/model_paper5/adares_y15_query_completion_res.yaml",
+  "module": "ipdn.model_paper5.adares_y15_query_completion",
+  "rows": [
+    {
+      "scans": [
+        "scene0000_00",
+        "scene0001_00"
+      ],
+      "finite_loss": true,
+      "seconds": 0.5566464029252529,
+      "peak_allocated_gib": 5.069992542266846,
+      "peak_reserved_gib": 5.2421875,
+      "student_parameters": 164959365,
+      "student_trainable_parameters": 40313733
+    },
+    {
+      "scans": [
+        "scene0002_00",
+        "scene0003_00"
+      ],
+      "finite_loss": true,
+      "seconds": 0.6303532775491476,
+      "peak_allocated_gib": 7.136504650115967,
+      "peak_reserved_gib": 7.611328125,
+      "student_parameters": 164959365,
+      "student_trainable_parameters": 40313733
+    }
+  ]
+}

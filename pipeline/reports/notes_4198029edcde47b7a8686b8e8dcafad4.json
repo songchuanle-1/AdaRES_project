@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "仅AdaRES_project，核验实际owner、Disabled后台调度和最新资源暂停后begin；先观察Y95并派发已有合格任务，无ready waiting。承接已完成Y94精确归档和Y96实际native结果，均未重放。",
+    "完成：Y95新版兼容绑定29项原生命周期及8项actual-native源码检查通过；Y96仅七个已测试新增文件进入HEAD，其他index/工作文件不动，仅向实际目标server1安全同步。",
+    "新准备：14项准入检查通过；完整继承Y94原server1GPU0/350W训练/FIRST/成本/有害子组协议，生成收据并当轮canonical派发Y96，已用递增原生训练步数确认运行。",
+    "运行：AdaRES-Y96 Train1/30 step2011/4686；AdaRES-Y95 Train27/30 step3751/4686。原PID/source/YAML/签名收据/私有runtime和350W/280W均核验，两张授权GPU0物理busy+reserved。",
+    "发现跨tick复用native的命令token被准入工具错标为当前tick，另存来源更正smoke和收据并验证；旧smoke/旧收据和所有实测字段字节保持，未重跑native、修改模型或干预训练。",
+    "本轮新科学ID/科学CPU尝试/nativeGPU任务/归档/FIRST/成本均0，准入1、启动1；精确备份七节记忆、保存真实证据并按官方report/finish收尾，以实际收据和释放结果为准。"
+  ],
+  "decisions": [
+    "已有Y98/Y99 CPU准备继续保留，不能用旧HEAD/旧owner直接执行，后续须NEW tested同字节绑定；Y97负证据和数值门槛保持，不凑额度新增或重测。",
+    "全部GPU1及原GPU1冻结后评/成本继续暂停，Y57独立暂停；禁止server6、跨项目、迁移替代、调度/功耗变更和干预外部任务。原goal、旧签名收据、原数据/私有runtime/部署映射、seed1999固定30轮和完整FIRST/成本协议不变。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y96_launch_closeout_4198029edcde47b7a8686b8e8dcafad4.json",
+      "sha256": "a47bf76ab5864df19a804b872d401d2b57a0f46a0e9de23329e3d464ec6b7e50"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_4198029edcde47b7a8686b8e8dcafad4.md",
+      "sha256": "88d1e663d81417e83b1c85d95889aba5146e1f40ea3b1c233eea8d8cb149a8d1"
+    },
+    {
+      "path": "pipeline/checks/y96_native_provenance_4198029edcde47b7a8686b8e8dcafad4.json",
+      "sha256": "77dde982eefe97185c8c7b2628272df6dd2aa6c139619f41de4d0a0b23b7d41c"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y73",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "native_preparation": {
+    "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_version.json",
+    "sha256": "9a066dbfe0b0922722f1772fe5c7c347be26eaf3309ff124b81715ac955e641c"
+  },
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu0_plan.json",
+      "sha256": "2082df489d0ca2c0fefd94f8d134c28899e276ae6dd8c84a825121472c350b92"
+    },
+    "1": {
+      "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_plan.json",
+      "sha256": "8000a6ecc7aa51bf49ea115b55d21d67f468290833a2ddebde2f8c602d9e139f"
+    }
+  },
+  "CPU_observer_verification": {
+    "path": "pipeline/checks/y73_native_observer_verification_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "d15058524685dd36b4cf73bf11b788baa01c19703fc0b321aaf45e740158911f"
+  },
+  "guard_tests_passed": 11,
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "original_model_and_YAML_unchanged": true,
+  "Y71_exact_handoff_preserved": true,
+  "Y72_retained_commit_preserved": true,
+  "Y57_paused": true,
+  "native_Y73_GPU_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_fb6718a8dd684cdfbaa98d6678e7d3c5.md",
+    "sha256": "9805139b2b0afc6a027226efcb3105e2b3c1f53fe3a69d3e5bf849d0480e4737"
+  },
+  "related_Y71_postdeployment_observer": {
+    "path": "pipeline/checks/y71_deployment_observation_preparation_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "4365f3d125c852b50497a9cf1c5b41ee72345671ad2830f30e7c72bbadede6b9"
+  },
+  "Y68_latest_readiness": {
+    "path": "pipeline/checks/y68_terminal_readiness_fb6718a8dd684cdfbaa98d6678e7d3c5_finish_check1.json",
+    "sha256": "4a6fe2cf6d4773629e026f30e9ef8e28905a7ba479f5743f45ff6330129e2211"
+  },
+  "limitation": "Y73 program/CPU callback preparation only; native sparse task backward/optimizer, GPU PASS and efficacy remain unobserved."
+}

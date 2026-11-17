@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "kind": "explicit_human_scoped_commit_authorization",
+  "recorded_at": "2026-10-19T12:45:58.422155+08:00",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_message_id": "01a15264-f969-74c2-9640-2edb5406a06e",
+  "human_message": "继续",
+  "context": "Direct owning-user continuation after the assistant identified Y52/Y54 as the two prepared candidates awaiting local commits of their seven tested files each. The earlier confirmation question linked these exact bundles. Only that existing local-commit scope is accepted.",
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/dec.py",
+      "sha256": "1081039d6797587f6e13cb180e26d66f1aaeb00dcbb3a1328e73c83ac58042a0"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+      "sha256": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6"
+    }
+  ],
+  "tested_bundle": {
+    "path": "pipeline/analyses/y54_prototype_bundle_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "5fe5b6d4b2d58ba2fe14cec37577ebed20b65f8ea5beaa6b3a7d4c6f9f3b40cf"
+  },
+  "starting_HEAD": "967faadc10a52b5ea7080ca796b71d33eafd0f97",
+  "permits": [
+    "Local Git add/commit of only the seven exact tested files."
+  ],
+  "excludes": [
+    "Unrelated files, other projects, remote Git push or scheduler changes.",
+    "Scientific PASS, admission or training permission inferred from this file.",
+    "Changed goals/gates/protocols, historical reopening or diagnostic weights."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "created_at_local": "2026-10-16T15:24:18.450441+08:00",
+  "token": "4567f5a09ecb4aa89df8f0c2932652df",
+  "hypothesis_id": "native_quality_target_point_mass_aliasing",
+  "hypothesis": "A confidence target computed over equal-weight superpoints may alias masks with different point-level IoU when superpoint occupancies differ. Determine whether the ACTUAL unchanged W2 quality target has this mismatch before proposing any correction.",
+  "matched_control": "Freeze identical superpoint predictions and object labels, vary only integer point masses, and compare native quality targets against exact expanded-point IoU. Include uniform masses, a nonuniform target-order reversal, empty masks, and a direct source audit of the real training target and evaluation path.",
+  "prediction_and_falsification": "The premise is falsified for the current implementation if native targets already use the same point masses as point evaluation. No-op or uniform-mass agreement alone cannot establish it.",
+  "sampling": "Source-level exact controls; no validation-based selection.",
+  "first_test": "Locate and execute the actual native target helper on CPU.",
+  "limits": "A diagnostic only: no model implementation, admission, Git commit or launch. Cannot infer population efficacy from synthetic controls."
+}

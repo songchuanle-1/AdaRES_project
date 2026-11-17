@@ -1,0 +1,57 @@
+Using backend: pytorch
+2026-10-14 00:22:19,873 - INFO - Load val scanrefer: 9508 samples
+2026-10-14 00:22:21,334 - INFO - set random seed: 1999
+2026-10-14 00:22:25,681 - INFO - set random seed: 1999
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+2026-10-14 00:24:02,119 - INFO - set random seed: 1999
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml", "config_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03", "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261013_072921/best.pth", "checkpoint_sha256": "5738e63c1180d3cedb7c467d6be901e3becd95cabb07815293580d8c81dd7c28", "checkpoint_meta": {"epoch": 17, "best_miou": 0.5085299611091614}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164901255, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 1, "utilization": 0}, "repeat_max_iou_difference": 1.0, "repeat_miou_difference": 0.00010034555414917268, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.33280880699749105, 0.3339333159965463, 0.3291550869907951, 0.3347320160100935, 0.3263471079990268], "peak_allocated_gib": 4.073186874389648, "peak_reserved_gib": 6.48828125, "elapsed_seconds": 197.72580827701313}
+{"expressions": 9508, "scenes": 141, "miou": 0.5083255213166099, "acc25": 0.6120109381573412, "acc50": 0.559002944888515, "spmiou": 0.4732247954032211}
+Using backend: pytorch
+2026-10-14 00:25:53,756 - INFO - Load val scanrefer: 9508 samples
+2026-10-14 00:25:55,167 - INFO - set random seed: 1999
+2026-10-14 00:25:59,562 - INFO - set random seed: 1999
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+2026-10-14 00:27:34,980 - INFO - set random seed: 1999
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml", "config_sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb", "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth", "checkpoint_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52", "checkpoint_meta": {"epoch": 22, "best_miou": 0.5100098848342896}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164629637, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 1, "utilization": 0}, "repeat_max_iou_difference": 0.000662397884298116, "repeat_miou_difference": 6.966742582825702e-08, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.3232539180025924, 0.324024768997333, 0.3263921869947808, 0.32279642899811734, 0.326060557999881], "peak_allocated_gib": 4.042351245880127, "peak_reserved_gib": 6.486328125, "elapsed_seconds": 195.81201232199965}
+{"expressions": 9508, "scenes": 141, "miou": 0.5101079951888933, "acc25": 0.6107488430795119, "acc50": 0.5629995793016407, "spmiou": 0.47371992215286546}
+Using backend: pytorch
+2026-10-14 00:29:25,293 - INFO - Load val scanrefer: 9508 samples
+2026-10-14 00:29:26,644 - INFO - set random seed: 1999
+2026-10-14 00:29:30,605 - INFO - set random seed: 1999
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+2026-10-14 00:31:01,965 - INFO - set random seed: 1999
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "configs_song/model_paper5/adares_b1_standard_res.yaml", "config_sha256": "04e3cc580751c72a6fc908b2ff93ad931ab4a3a7d07d1fc9b7ae30a9a993e1dc", "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth", "checkpoint_sha256": "cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b", "checkpoint_meta": {"epoch": 18, "best_miou": 0.5021216869354248}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164430473, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 1, "utilization": 0}, "repeat_max_iou_difference": 0.9738956093788147, "repeat_miou_difference": 0.00011025620863414076, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.26771858900610823, 0.27352099800191354, 0.2725156380038243, 0.2756268179946346, 0.27344871700915974], "peak_allocated_gib": 4.040676593780518, "peak_reserved_gib": 6.484375, "elapsed_seconds": 187.5675093440077}
+{"expressions": 9508, "scenes": 141, "miou": 0.5022218179581474, "acc25": 0.6104333193100547, "acc50": 0.5529028186790071, "spmiou": 0.4667822064768282}

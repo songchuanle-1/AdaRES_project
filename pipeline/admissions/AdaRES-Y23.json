@@ -1,0 +1,110 @@
+{
+  "id": "AdaRES-Y23",
+  "config": "configs_song/model_paper5/adares_y23_valid_token_support_res.yaml",
+  "code_commit": "4a24410344b6ab6fe7f56d597013a4c13a9fa317",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261002-112412_next_batch.md",
+    "sha256": "3d64a7236827f4694e8523098c1c2dccf31ac84956c60cc9699544feffce526d"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y23_population_d20c71e4.json",
+          "sha256": "7ed73b63580755d86db5c901eabac6dfa2e6d5a77e919dee32d2612b79b9768c"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y23_contracts_d20c71e4.json",
+          "sha256": "d65d893ec87ea04f161f5240bffc366439c34176a1ec547c50ccabca6e764278"
+        },
+        {
+          "path": "pipeline/analyses/y23_population_d20c71e4.json",
+          "sha256": "7ed73b63580755d86db5c901eabac6dfa2e6d5a77e919dee32d2612b79b9768c"
+        },
+        {
+          "path": "pipeline/analyses/y23_inference_d20c71e4.json",
+          "sha256": "f38bcea04cca86981e3535e95adad6f7aa2b6c6183610170279452f2519d2603"
+        },
+        {
+          "path": "pipeline/analyses/y23_repeat_audit_d20c71e4.json",
+          "sha256": "7908e853b73f82214f963cc344b202351a249c75c483eabef44649408d2c3f55"
+        },
+        {
+          "path": "pipeline/analyses/y23_scene_repeat_d20c71e4.json",
+          "sha256": "94e7101371c3e781764b1d6ef95235e68eba928d678d965bcecd92135de698d5"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y23_backward_d20c71e4.json",
+          "sha256": "e3eae229f2141fb7905ede3bd5b3c896695748b49f6bacb70e171056132f86cd"
+        },
+        {
+          "path": "pipeline/analyses/y23_integration_d20c71e4.json",
+          "sha256": "6a1ac95ffc8e8577e8c0af7664cfca7ae6cdcd1bc3c7d7555f5e7eed675d00d1"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y23_stress_d20c71e4.json",
+          "sha256": "e3bcd1925b5f84f15ad3da58b3b3dac916f36248b6a1c10f9edc7d0ac055aadf"
+        },
+        {
+          "path": "pipeline/analyses/y23_parent_stress_d20c71e4.json",
+          "sha256": "13e3423ae434a9d924109f35d2f1c3cdc473efcc6f717ae183c395b3b0e127e6"
+        },
+        {
+          "path": "pipeline/analyses/y23_inference_profile_d20c71e4.json",
+          "sha256": "a75ef2fee81cd3a2b11ae8edf3799ff4130c8a3a9434a3ebedf002fd712bb949"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y23_source_bundle_d20c71e4.json",
+          "sha256": "707771f3b309e0652a30779e756663783f93a182a68b91e0e71b8923602bf0bf"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y23_admission_review_d20c71e4.md",
+          "sha256": "4bb456dd7f03bfaa2d3a94218ada4c6b4a8d968d3f2731b0d27608b2389c499a"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y23_d20c71e4.md",
+          "sha256": "5a58151360849643d1b96dd00f04f866e624883b09dc6de127f1fe174bf29958"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_d20c71e4.md",
+          "sha256": "5aa413892a231ca1d0ca949efa5cab9ac9af24ec94dcf34b8b6fb9eae39b39ad"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "gpu": "0",
+    "server": "server-2"
+  },
+  "limitations": "Inherited native FPS/sample repeat instability and resume numerical noise retained; no efficacy, universal determinism, p95 latency, trained Pareto or novelty claim."
+}

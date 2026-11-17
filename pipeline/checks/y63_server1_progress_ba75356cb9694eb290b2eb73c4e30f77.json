@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 3071037\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "before": {
+    "observed_at": "2026-10-27T06:45:40.817074+08:00",
+    "latest": [
+      7,
+      30,
+      4526,
+      4686
+    ],
+    "log_bytes": 9224063
+  },
+  "after": {
+    "observed_at": "2026-10-27T06:45:45.822055+08:00",
+    "latest": [
+      7,
+      30,
+      4535,
+      4686
+    ],
+    "log_bytes": 9226853
+  },
+  "pid": 3071037,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y63_peer_bilinear_res_20261027_005016.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "gpu": "36, 22754, 65, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "id": "AdaRES-Y63",
+  "token": "ba75356cb9694eb290b2eb73c4e30f77",
+  "observed_at": "2026-10-27T06:45:45.636936+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y63_server1.py",
+      "sha256": "774a57f361fdbf2861fe0d62b058eb6183e48510187f517225c0f1ac6ef03b38"
+    },
+    {
+      "path": "scripts/capture_server1_training.py",
+      "sha256": "21e91d6a921308807f406f8e449c8e995941c02aebbbc302653e431fc32fef75"
+    },
+    {
+      "path": "pipeline/checks/y63_server1_progress_ba75356cb9694eb290b2eb73c4e30f77.log",
+      "sha256": "5bf5a77de18ea2f78d80086be3e86363f4d30d0e2430a728d7fd3f8e39e8e84b"
+    }
+  ]
+}

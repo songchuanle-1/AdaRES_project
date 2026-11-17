@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y95",
+  "token": "a7f1a4ec5ffc4c3a9837805bc45ce950",
+  "code_commit": "afc93861cf66b0da4835391597ee2d5ce90f6584",
+  "CPU_version": {
+    "path": "pipeline/checks/y95_cpu_version_a7f1a4ec5ffc4c3a9837805bc45ce950.json",
+    "sha256": "49091dda2a519022d63df8e4c3cee9b61b732bc08c75b08faa684f938eaee974"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y95_cpu_a7f1a4ec5ffc4c3a9837805bc45ce950.json",
+    "sha256": "9715bab5d6488d899152137a4b9cbeb47d1bea291a72aec1958f9163fd494ef9"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y95_cpu_a7f1a4ec5ffc4c3a9837805bc45ce950_program.py",
+    "sha256": "73c042f2ae5116a1e77d1af28469629aa739c4fca6dd5be1e25f0e2b473d6241"
+  },
+  "native_plans": {
+    "server-2": {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server2_plan.json",
+      "sha256": "30054d8b7b721dd2802d8d20ee484097c3999813a233446e1071d880c2cc7b67"
+    },
+    "server-1": {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server1_plan.json",
+      "sha256": "d9c5f349a046d505eab971ffb2bc297f8495d199e3afb4201c5beb38483af113"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_guards.log",
+    "sha256": "e9e42b1bc254ef6848e14270ef0b55e2dadb52a20aa12edcf9f70470eddc97ac"
+  },
+  "guard_tests_passed": 10,
+  "runtime_guard_tests": {
+    "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_runtime_guards.log",
+    "sha256": "13fdc9853e387f54d823f9364e50957d102ab7602bfd90f7e74ef4108a626f8d"
+  },
+  "runtime_guard_tests_passed": 8,
+  "native_observer_body": {
+    "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_body.py",
+    "sha256": "d626da526e790be7d7be14b2d2468d5baaf03c7f2b03586410a6578203b6cfa6"
+  },
+  "native_observer_callbacks_executed_on_GPU": false,
+  "same_callbacks_actually_executed_on_CPU": true,
+  "original_data_proof": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "original_Y92_Y93_and_earlier_Y94_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y95_cpu_native.py",
+    "sha256": "a0fdefd78fbd92228e359d796142913bdf3e4f66a717f7e4aeba7d1a73ebd64d"
+  },
+  "evidence": [
+    {
+      "path": "scripts/run_y94_bound_native_y93.py",
+      "sha256": "46fa3127ac8626d9050e31e41e297d423bceb199b091061c6c8a7e63a8c438db"
+    },
+    {
+      "path": "scripts/run_y94_native.py",
+      "sha256": "c07c51643e4fa37f08056add3a03ff65d5d4ee9f7b6aae3f4d6903208a2576dd"
+    },
+    {
+      "path": "scripts/run_y95_native.py",
+      "sha256": "d3fb2569d3661cda9f7bc7f9eb581120147ea9b86e44fe9e3d84bcec24ff549c"
+    },
+    {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server2_program.py",
+      "sha256": "d48f375ca9e727f7b38f224468207588ea33daa045ec6033ef0e4e2b226fd46b"
+    },
+    {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server1_program.py",
+      "sha256": "08b9b6c8f46ec0729905b15925e5d1c396e61d2878c4e5a420e84adae847d961"
+    },
+    {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server2_plan.json",
+      "sha256": "30054d8b7b721dd2802d8d20ee484097c3999813a233446e1071d880c2cc7b67"
+    },
+    {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server1_plan.json",
+      "sha256": "d9c5f349a046d505eab971ffb2bc297f8495d199e3afb4201c5beb38483af113"
+    },
+    {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_guards.log",
+      "sha256": "e9e42b1bc254ef6848e14270ef0b55e2dadb52a20aa12edcf9f70470eddc97ac"
+    },
+    {
+      "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_runtime_guards.log",
+      "sha256": "13fdc9853e387f54d823f9364e50957d102ab7602bfd90f7e74ef4108a626f8d"
+    }
+  ]
+}

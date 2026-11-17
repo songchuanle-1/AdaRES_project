@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "核验AdaRES_project实际会话、AGENTS/goal/SERVERS/execution_mode，Pipeline-AdaRES_project保持Disabled。canonical begin为design，running1/waiting0/ready0，无新终态或连接/部署故障。前975b轮收据已核FINALIZED/PASS/context_committed=true/lease_release=released。",
+    "上海2026-10-27 12:49:02至12:49:07核实Y63/server-1 GPU0同PID3071037，第14/30轮4534至4542/4686步增长。精确cwd/config、六模型源码、原生YAML确定性路径适配、marker82f与GPU0独占compute通过；单次GPU100%/22756MiB/68°C/350W。证据pipeline/checks/y63_server1_progress_3ac8220cdf5341ca96cbb688c52e270f.json。",
+    "canonical gpu_occupation.py生成本轮两服原始hostname/GPU/compute证据：server-1 GPU0仍独占Y63；server-2 GPU0仍外来PID13813、98%/24138MiB，无授权空槽。另次只读观测GPU0为100%/24138MiB/85°C/280W。保留Y57暂停、GPU1限制和外来任务。六项冻结后评与Y64/Y65原生GPU检查继续等待资源。",
+    "复核Y64已冻结原生计划：当前goal、七文件工作区及提交e278、原训练入口均一致，身份记录pipeline/checks/y64_plan_identity_3ac8220cdf5341ca96cbb688c52e270f.json绑定当前资源证明。未重复旧CPU控制、prepare helper或Git提交；没有原生GPU运行、生产同步、准入或入队。",
+    "本轮无新候选、源码修改、push、部署、训练启动/重训或效果结论，Y65既有CPU准备保留。已保存本轮resource_check/blocked证据并更新七节记忆；当前仅正常训练推进及未变资源阻塞，无新增异常或用户待办。"
+  ],
+  "decisions": [
+    "保留已准备的Y64/Y65，当前真实原生下一步依赖独占授权GPU空槽，不为填额度制造重复变体或重复CPU测试，不挤占Y63或外来任务。",
+    "server-2 GPU0空闲后先核当前goal/源/版本/训练入口/数据与资源，再用当前token及明确--gpu --gpu-id 0执行Y64冻结plan。至少两步真实native criterion/backward/optimizer、每步七调用、新梯度及第二步实际响应通过后，冻结原全量后评协议、准入并当轮门控派发。",
+    "保留原数据协议、seed1999/fixed30/发布SPFormer/禁用项；Y57/server-2 GPU1用户暂停，server-2 GPU0保持280W，禁止server-6、跨项目或改调度。按foreground执行report/finish并核释放，当前未变且无用户可行动事项，心跳静默，释放后不补写。"
+  ]
+}

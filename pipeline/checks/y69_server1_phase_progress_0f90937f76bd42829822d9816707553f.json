@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T13:18:56.922957+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 1,
+      "total": 30,
+      "step": 38,
+      "count": 4686
+    },
+    "log_bytes": 9475
+  },
+  "after": {
+    "observed_at": "2026-10-30T13:19:01.929755+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 1,
+      "total": 30,
+      "step": 46,
+      "count": 4686
+    },
+    "log_bytes": 11443
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T13:18:56.922957+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 38,
+        "count": 4686
+      },
+      "log_bytes": 9475
+    },
+    {
+      "observed_at": "2026-10-30T13:19:01.929755+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 46,
+        "count": 4686
+      },
+      "log_bytes": 11443
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 1135633,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y69_coarse_geometry_bias_res_20261030_131753.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "9acd73cdc1b96be003c8450a9e22057248a0f531",
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 1135633\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "gpu": "17, 16154, 58, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y69",
+  "token": "0f90937f76bd42829822d9816707553f",
+  "observed_start_local": "2026-10-30T13:18:55.721324+08:00",
+  "observed_end_local": "2026-10-30T13:19:01.303706+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y69_server1_phase.py",
+      "sha256": "40870aaf7cedad5d35dd97efb20eca8ed38aebc587af2aafa1b2f651259425d9"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_0f90937f76bd42829822d9816707553f.log",
+      "sha256": "e2c82f9894afc57e60f0e7ab719185c6ef2e044918a761994101691551707fbf"
+    }
+  ]
+}

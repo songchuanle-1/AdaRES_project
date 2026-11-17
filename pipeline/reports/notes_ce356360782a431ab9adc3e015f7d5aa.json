@@ -1,0 +1,50 @@
+{
+  "actions": [
+    "完成：本轮原server1GPU0释放后，复用Y88两遍原候选预测，仅补Y36/W2/B1各两遍。原观察器确认实际计数递增；用户暂停请求处理期间核验原工作已自然完成，现无本项目server1 GPU进程；八遍9508/141原预测、原日志/配对结果及精确暂停快照只读归档保留，没有训练重启或候选预测重跑。",
+    "完成：遵循用户最新原话“你暂停server1的实验”，已登记拥有者授权、将server1 allowed_gpus设为空并挂起12项未完成工作，覆盖旧server1授权与旧心跳文字；原AGENTS/SERVERS/待办已精确备份，科学goal及全部原准入收据、源码/权重、queue/running/实验账本保持。",
+    "完成：使用官方automation_update更新既有AdaRES提示词，并读取实际保存配置核对；原频率、启停、绑定会话和通知偏好不变。共享参考仅AdaRES代码块更新，其他项目字节保持。",
+    "运行保留：原server2GPU0 Y102 PID4747仍为原身份/源码6文件/YAML/私有环境，计数{'phase': 'Train', 'epoch': 1, 'total': 30, 'step': 7, 'count': 4686}；未重启或迁移。server2GPU1和Y57原单独暂停保持，未使用server6或干预其他项目。"
+  ],
+  "decisions": [
+    "server1所有GPU训练/派发/原生检查/冻结后评及成本暂停，恢复必须由拥有者再次明确授权；资源空闲、计时器、旧收据或旧心跳不构成恢复授权，不迁移到另一张卡。Y88原八遍后评已完成，旧“补基线”入口不应再次运行；原已准备成本入口未执行，完整正式比较/成本/后审计仍待后续合规处理，不宣称目标达成或自动提升。",
+    "本轮未新增科学ID、准入、训练或原生smoke，Y90已完成拒绝不重开，Y86/Y97原数值负证据及专用恢复要求均保留。不可变begin快照/deadline不修改；按最新暂停配置完成官方收尾，若旧快照校验不能接受中途资源变更，则保留证据并显式abort本轮，绝不恢复server1或削弱检查以通过。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/server1_user_pause_closeout_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "9db7fc563f8aff2ee093c433ea9296186d5578f2749d869887f0d57af55bcd17"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_ce356360782a431ab9adc3e015f7d5aa.md",
+      "sha256": "83de2ba9bc2b3c25382522441541f0f6e23621ab2f5cc75c8c29efa285c39b38"
+    },
+    {
+      "path": "pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "856914c2f463b590eb615c4de9cc7168b2328087462fa56756c55523970be3e0"
+    },
+    {
+      "path": "pipeline/checks/server1_user_pause_ce356360782a431ab9adc3e015f7d5aa_policy.json",
+      "sha256": "319994f31d122be3f5fa5f94e4a7a0f4fac8e18ed46a3e40df766d2b6bb59d4d"
+    },
+    {
+      "path": "pipeline/checks/server1_user_pause_ce356360782a431ab9adc3e015f7d5aa_stop.json",
+      "sha256": "3ba5195f8dfd4c86c9e20090909e694fcd5adca2e3f739dc738d7152aa40c2d5"
+    },
+    {
+      "path": "pipeline/checks/server1_pause_automation_verified_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "54f5fa643194bd7a5897a6b161be756f5876e62b8400cd287e93a78f2f86d2f8"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/user_pause_archive.json",
+      "sha256": "8c1ed94b12c62def5b153d74bcc45035d8003cf15dcd2f5785f325c5df43d37f"
+    },
+    {
+      "path": "pipeline/checks/server1_pause_y102_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "44b280032451c79aa0183a65b5a6fc76b915e52bf2ed1b0b10a1effc9d031a2d"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_pause_release_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "14fa8404a791ce685bddb03f8a75dbb7f4c2e89d109988b5aae2a95e840a9cc1"
+    }
+  ]
+}

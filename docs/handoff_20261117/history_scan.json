@@ -1,0 +1,2078 @@
+{
+  "checked_at": "2026-11-17T11:07:26.651891+00:00",
+  "original_refs": [
+    {
+      "ref": "refs/heads/adares-y100-appearance-input-skip",
+      "commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b"
+    },
+    {
+      "ref": "refs/heads/adares-y101-query-ffn-skip",
+      "commit": "6fb26984ae652efbba177ab20c39575c44a69517"
+    },
+    {
+      "ref": "refs/heads/adares-y102-geometry-mask-skip",
+      "commit": "e87aca94bc89ab107b2db887bc37c9d4fb4a3f73"
+    },
+    {
+      "ref": "refs/heads/adares-y102-geometry-mask-skip-on-y101",
+      "commit": "0c6c844719c8466ddd8888d054fe3b7ee658e643"
+    },
+    {
+      "ref": "refs/heads/adares-y103-spatial-input-skip",
+      "commit": "960babebd812098efde2eb1b188e612028ae571e"
+    },
+    {
+      "ref": "refs/heads/adares-y103-spatial-input-skip-on-y102",
+      "commit": "943ad702c59547aafd8b797f19c705f3661a8b9f"
+    },
+    {
+      "ref": "refs/heads/adares-y72-visual-mask-refinement",
+      "commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa"
+    },
+    {
+      "ref": "refs/heads/adares-y73-initial-query-anchor",
+      "commit": "7da625ab750447eaad76e82309c89d887df93994"
+    },
+    {
+      "ref": "refs/heads/adares-y74-language-update-gate",
+      "commit": "3c91105459f773326910b1eeaf16450e2d6b90ac"
+    },
+    {
+      "ref": "refs/heads/adares-y75-language-query-init",
+      "commit": "9bf15a255ed2c960429ecf57ab47de05c484b631"
+    },
+    {
+      "ref": "refs/heads/adares-y76-stage-confidence-conditioning",
+      "commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1"
+    },
+    {
+      "ref": "refs/heads/adares-y77-geometry-query-init",
+      "commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22"
+    },
+    {
+      "ref": "refs/heads/adares-y78-mask-logit-residual",
+      "commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821"
+    },
+    {
+      "ref": "refs/heads/adares-y79-query-language-feedback",
+      "commit": "e0c7dba199fcf1a009941450d04aeb799418a7e6"
+    },
+    {
+      "ref": "refs/heads/adares-y80-query-visual-feedback",
+      "commit": "4e68cd84d56d890222adc2bec8ab59cb0c8715b6"
+    },
+    {
+      "ref": "refs/heads/adares-y81-query-mask-refinement",
+      "commit": "4157937d0c3cf344a44394ce15c95349aa94d50f"
+    },
+    {
+      "ref": "refs/heads/adares-y82-scale-product",
+      "commit": "5773768ffb87d7fea7432e85fd0da561556aa2fc"
+    },
+    {
+      "ref": "refs/heads/adares-y83-stage-query-norm",
+      "commit": "2818322e6049b2541f1590a4fa9ad6854b3c598d"
+    },
+    {
+      "ref": "refs/heads/adares-y84-visual-query-init",
+      "commit": "7bef2cd313b870583c970c56580be5a78097234d"
+    },
+    {
+      "ref": "refs/heads/adares-y85-mask-feature-norm",
+      "commit": "aa9d8db3ea05432181ada752eaeeca27952aae27"
+    },
+    {
+      "ref": "refs/heads/adares-y86-overlap-readout-skip",
+      "commit": "2d2a0b98865977a6e2f37d316979344ffc56817c"
+    },
+    {
+      "ref": "refs/heads/adares-y87-independent-gpu0",
+      "commit": "47ec0813cb4131ddf3e0a08db4fa9ac877123685"
+    },
+    {
+      "ref": "refs/heads/adares-y87-self-language-product",
+      "commit": "053aea85a03be4244879c90362455c45327a7d64"
+    },
+    {
+      "ref": "refs/heads/adares-y88-mask-query-quadratic",
+      "commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b"
+    },
+    {
+      "ref": "refs/heads/adares-y89-stage-evidence-norm",
+      "commit": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71"
+    },
+    {
+      "ref": "refs/heads/adares-y90-query-peer-affinity",
+      "commit": "9a64d22c41bb8527ca7ca1abba4340546506b1b1"
+    },
+    {
+      "ref": "refs/heads/adares-y90-query-peer-affinity-on-y89",
+      "commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71"
+    },
+    {
+      "ref": "refs/heads/adares-y91-hidden-confidence-gate",
+      "commit": "a3bd19404f625bb1d9bc358a7e78ef0f86054692"
+    },
+    {
+      "ref": "refs/heads/adares-y91-hidden-confidence-gate-on-y90",
+      "commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae"
+    },
+    {
+      "ref": "refs/heads/adares-y92-mask-feature-quadratic",
+      "commit": "ec332f57dacc09459df8d6d52f21424c4d5ea3de"
+    },
+    {
+      "ref": "refs/heads/adares-y92-mask-feature-quadratic-on-y91",
+      "commit": "27d6f67e7121a5168bbfeca9db745377e0bd49e5"
+    },
+    {
+      "ref": "refs/heads/adares-y93-evidence-hidden-skip",
+      "commit": "7a9f1aa67e054d79b28c6af3160a5b1cc11a51c9"
+    },
+    {
+      "ref": "refs/heads/adares-y93-evidence-hidden-skip-on-y92",
+      "commit": "daa93b4375f144f0e79da92f85fe1fe27e877e18"
+    },
+    {
+      "ref": "refs/heads/adares-y94-query-geometry-bias",
+      "commit": "8faef574e01ae29bf5504380ed317dcc33420720"
+    },
+    {
+      "ref": "refs/heads/adares-y94-query-geometry-bias-on-y93",
+      "commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1"
+    },
+    {
+      "ref": "refs/heads/adares-y95-query-set-mean",
+      "commit": "afc93861cf66b0da4835391597ee2d5ce90f6584"
+    },
+    {
+      "ref": "refs/heads/adares-y95-query-set-mean-on-y94",
+      "commit": "968112d44c506dcdd8dcf7709af997fb731e73b0"
+    },
+    {
+      "ref": "refs/heads/adares-y96-seed-query-skip",
+      "commit": "994db457a3b00444b6ace4f0c9b7f3b6e047c83e"
+    },
+    {
+      "ref": "refs/heads/adares-y96-seed-query-skip-on-y95",
+      "commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0"
+    },
+    {
+      "ref": "refs/heads/adares-y98-appearance-mask-skip",
+      "commit": "03799b0b2cacca31987a604c539a4457498175a1"
+    },
+    {
+      "ref": "refs/heads/adares-y98-appearance-mask-skip-on-y96",
+      "commit": "15c3481ff32456160b5a94588565f68f0d2d2c5b"
+    },
+    {
+      "ref": "refs/heads/adares-y99-spatial-mask-skip",
+      "commit": "e5151a722778af3eecb28d0d4f6ae75e18a60e0c"
+    },
+    {
+      "ref": "refs/heads/adares-y99-spatial-mask-skip-on-y98",
+      "commit": "53f5b028bdf24e8b41dd934931d1fedc99843d8d"
+    },
+    {
+      "ref": "refs/heads/master",
+      "commit": "0c6c844719c8466ddd8888d054fe3b7ee658e643"
+    }
+  ],
+  "blobs_scanned": 378,
+  "blob_bytes": 2946033,
+  "largest_blob": 32098,
+  "secret_scan_passed": true,
+  "blobs": [
+    {
+      "oid": "43ae0e2a6c6d8fca34872506ca0f2e64194fec7c",
+      "bytes": 23,
+      "representative_path": ".gitignore"
+    },
+    {
+      "oid": "b2a6ff903d1eb50113eb300e1f4e9d87f1278c12",
+      "bytes": 2707,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_b0_res.yaml"
+    },
+    {
+      "oid": "e0f787fa9660bd705ba36bb40fdbbc80e26609e7",
+      "bytes": 2623,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_b1_standard_res.yaml"
+    },
+    {
+      "oid": "3d81fcdf1291568131ebed36556aa0fe6c3abb0c",
+      "bytes": 2647,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_b2_metric_indicator_res.yaml"
+    },
+    {
+      "oid": "64bdbeb6b417c8b9589560bf0cb81a230b6f382c",
+      "bytes": 2623,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_b4_query_competition_res.yaml"
+    },
+    {
+      "oid": "473109419dd8f26c3733015de541d98bcd2d6acc",
+      "bytes": 2768,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_c1_listwise_expected_mask_e30_res.yaml"
+    },
+    {
+      "oid": "5af785c0ed5dacb06442c39e6d6ced07587a8516",
+      "bytes": 2768,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml"
+    },
+    {
+      "oid": "e1706e373f211bf8265b254d366a008bfbce03c1",
+      "bytes": 2787,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_c2_hard_negative_margin_e30_res.yaml"
+    },
+    {
+      "oid": "4790c814e04bf1f535d7f06417c085c3ca207294",
+      "bytes": 2787,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml"
+    },
+    {
+      "oid": "9fbff1f1297fb2200111845783dbc92f7e111051",
+      "bytes": 2702,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y15_query_completion_gt_res.yaml"
+    },
+    {
+      "oid": "c0989277835a0cbd27d69656d62b949803bd4fef",
+      "bytes": 2944,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y15_query_completion_res.yaml"
+    },
+    {
+      "oid": "0aafbdc5b744c784037cb285e17c79e02711347e",
+      "bytes": 2753,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml"
+    },
+    {
+      "oid": "45eac556285c39a05ffbca1961ef96eb56102264",
+      "bytes": 2764,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y52_point_target_res.yaml"
+    },
+    {
+      "oid": "3aec347230b47b8e5d72acad13ebf0f6fbf1bdac",
+      "bytes": 2702,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y58_fixed_backbone_statistics_res.yaml"
+    },
+    {
+      "oid": "a31aa0045d4f058e221462068aa94c25d1a8e356",
+      "bytes": 2703,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml"
+    },
+    {
+      "oid": "ea27b86a4b9afbc5f018267bfc64a8fd05ca5da9",
+      "bytes": 2702,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml"
+    },
+    {
+      "oid": "241cb8d5334cc401f45ed429bf8b2ea5a8ee7c60",
+      "bytes": 96,
+      "representative_path": "AdaRES/ipdn/__init__.py"
+    },
+    {
+      "oid": "e0800aac7b9b067d26c9d5cff56886702775860e",
+      "bytes": 95,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b0/__init__.py"
+    },
+    {
+      "oid": "f66f5bb121db9ed500301dc7cd58515a92dc2ecc",
+      "bytes": 6872,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b0/backbone.py"
+    },
+    {
+      "oid": "2419de15756bb49fff6ba338305bfbc352c15509",
+      "bytes": 22225,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b0/dec.py"
+    },
+    {
+      "oid": "cf18257e87730dbafd860676aafdf0772486e181",
+      "bytes": 11391,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b0/ipdn.py"
+    },
+    {
+      "oid": "79be1d9d5f309b3fb469be91b29b5e2690514325",
+      "bytes": 31774,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b0/loss.py"
+    },
+    {
+      "oid": "44bf86d1619aab059bcceb6bbef8b508e24ead25",
+      "bytes": 3374,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b0/sample_model.py"
+    },
+    {
+      "oid": "9d4019a8474eb8e92c0d3c58b5d86c1037b29790",
+      "bytes": 74,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b1_standard/__init__.py"
+    },
+    {
+      "oid": "7ba17a0c2306fef0c566d3677c6219b6d7759657",
+      "bytes": 19949,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b1_standard/dec.py"
+    },
+    {
+      "oid": "6de5691473f63ef3ceacf0e72f15d59c287d60f2",
+      "bytes": 27775,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b1_standard/loss.py"
+    },
+    {
+      "oid": "a5d2a73419e492d928d936f2f688c91f7aed6278",
+      "bytes": 29738,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b2_metric_indicator/loss.py"
+    },
+    {
+      "oid": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "bytes": 19,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/.gitignore"
+    },
+    {
+      "oid": "2dea2dad057c7f5994ae9f5384a70e4b8ff3ca62",
+      "bytes": 61,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/__init__.py"
+    },
+    {
+      "oid": "afcd9521d7868aa7a1f545f3a90fc3a0df3da89d",
+      "bytes": 21300,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/dec.py"
+    },
+    {
+      "oid": "8243944a100b4b091958a04b3309ee34f853009b",
+      "bytes": 27786,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/loss.py"
+    },
+    {
+      "oid": "5791dfb49bb1c9234776063ee5fba77efac95da6",
+      "bytes": 65,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b4_query_competition/__init__.py"
+    },
+    {
+      "oid": "c78c08f2a75257113cd4a4ccecb9ccf24c14ad17",
+      "bytes": 21603,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b4_query_competition/dec.py"
+    },
+    {
+      "oid": "6632326ed97db46f6d10220b003dde7bc00b6a0b",
+      "bytes": 63,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b5_token_grounding/__init__.py"
+    },
+    {
+      "oid": "a31fbf7049c9fad81cc25679685c823cdb0ec02e",
+      "bytes": 21699,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b5_token_grounding/dec.py"
+    },
+    {
+      "oid": "8dca34bebd6d4494a383cf9d79d1e8fa9ce0650a",
+      "bytes": 68,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_c1_listwise_expected_mask/__init__.py"
+    },
+    {
+      "oid": "0a34fda8fe460010269c27cd5f63c63b049c763e",
+      "bytes": 32008,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_c1_listwise_expected_mask/loss.py"
+    },
+    {
+      "oid": "1c53a404abfa38345d46fa1084c71e10cfd55e4e",
+      "bytes": 88,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_c1_listwise_expected_mask_e30/__init__.py"
+    },
+    {
+      "oid": "c8e777cd910c38f67e998c32dba2f01d6649506d",
+      "bytes": 66,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_c2_hard_negative_margin/__init__.py"
+    },
+    {
+      "oid": "ff18aba47497b5d04b77bfc991fcee1dd335dd24",
+      "bytes": 30732,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_c2_hard_negative_margin/loss.py"
+    },
+    {
+      "oid": "443dc255b80615c698afc394c28a54097ca592c6",
+      "bytes": 86,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_c2_hard_negative_margin_e30/__init__.py"
+    },
+    {
+      "oid": "a43f531e08b1a785af792905ad390dc09480d8ce",
+      "bytes": 78,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_d1_full_query_comparison/__init__.py"
+    },
+    {
+      "oid": "f7bfda077e7aaf4d4047dd6e0dabbff6dd75bcdf",
+      "bytes": 22366,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_d1_full_query_comparison/dec.py"
+    },
+    {
+      "oid": "afb5cd527afe00059ac3c937baf2ea9ab62ce27a",
+      "bytes": 91,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_f4_mask_reanchor/__init__.py"
+    },
+    {
+      "oid": "5c09cdc2434192b577bccaf3464ee3527da8fcf9",
+      "bytes": 22276,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_f4_mask_reanchor/dec.py"
+    },
+    {
+      "oid": "68f737229e027939841c9597ad995d6422f07c7c",
+      "bytes": 70,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_g1_metric_targets/__init__.py"
+    },
+    {
+      "oid": "99018e48a45f6d4e2672d5e00d37cbbfa23f53d1",
+      "bytes": 28082,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_g1_metric_targets/loss.py"
+    },
+    {
+      "oid": "1ca991bf4cd4329836b1646b031a151d7b0e7d0d",
+      "bytes": 69,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_h5_late_global_query/__init__.py"
+    },
+    {
+      "oid": "e7f72f926b0aeb2e4a964a05bb6aaa40aeba7d3b",
+      "bytes": 21915,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_h5_late_global_query/dec.py"
+    },
+    {
+      "oid": "c2a86e02089f5ee68b257fe78bd5e3a3ced54676",
+      "bytes": 72,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py"
+    },
+    {
+      "oid": "ce8f975f43cb08d4e63d193ffdc90f1ee9cf8fe1",
+      "bytes": 22018,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py"
+    },
+    {
+      "oid": "ca62252466ee1a5f038501378fadda9c42661dd4",
+      "bytes": 12109,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py"
+    },
+    {
+      "oid": "8c09d4b448e69df2388ac677051dad1a0677c743",
+      "bytes": 104,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/__init__.py"
+    },
+    {
+      "oid": "5300913794e746795c34345e66daa2881c39528e",
+      "bytes": 7043,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/backbone.py"
+    },
+    {
+      "oid": "901ad027c0373b57b843f043edb16a96c1309d55",
+      "bytes": 22523,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/dec.py"
+    },
+    {
+      "oid": "4bdafdca99c7fc1edb5f8ae62530a87d4c0dc71d",
+      "bytes": 12349,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/ipdn.py"
+    },
+    {
+      "oid": "e2944706fcb893b5627eecf4ae8157011d3b59ce",
+      "bytes": 28408,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/loss.py"
+    },
+    {
+      "oid": "dcf2fff01a55f7abc1ce45f19d459024bd668247",
+      "bytes": 3464,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/sample_model.py"
+    },
+    {
+      "oid": "553824cfeba8501820b12ea6560669b167c59cc1",
+      "bytes": 103,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y101_query_ffn_skip/__init__.py"
+    },
+    {
+      "oid": "48802a889d59a39d05397ddf37625ff7b5cecc2d",
+      "bytes": 22450,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y101_query_ffn_skip/dec.py"
+    },
+    {
+      "oid": "a8ccc57762d0c5fbd81d2b6bda6aba53495efdb6",
+      "bytes": 104,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y102_geometry_mask_skip/__init__.py"
+    },
+    {
+      "oid": "433685699a81dbf9478bf858a98dd55cdc8b3738",
+      "bytes": 22863,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y102_geometry_mask_skip/dec.py"
+    },
+    {
+      "oid": "ec2f067a2f36750a7ce5fb722bf3ff94e287e462",
+      "bytes": 22482,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/dec.py"
+    },
+    {
+      "oid": "729c09225a28a5b8d1d0756a705b8a7fdbf55433",
+      "bytes": 80,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/__init__.py"
+    },
+    {
+      "oid": "91df15c8201991d2d8cb77a02819cdd06872f8ee",
+      "bytes": 25529,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/dec.py"
+    },
+    {
+      "oid": "16231c324b58496d3109526af71807424021a845",
+      "bytes": 19299,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/ipdn.py"
+    },
+    {
+      "oid": "57438597802fda7d5e6d5a6e0722c41500a88bdd",
+      "bytes": 32098,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/loss.py"
+    },
+    {
+      "oid": "b24a100acbe3649d188fdc66c5df0ecd940e818f",
+      "bytes": 22056,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/dec.py"
+    },
+    {
+      "oid": "6a1e10bc726a207dc69883c9beb03351456391a2",
+      "bytes": 11640,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/ipdn.py"
+    },
+    {
+      "oid": "f72ce1ce25ce34ffca176943dfa1436ef199ed40",
+      "bytes": 12485,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/ipdn.py"
+    },
+    {
+      "oid": "e69054cd5e9453a240b09d92497224548a3c6f1b",
+      "bytes": 120,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/__init__.py"
+    },
+    {
+      "oid": "7386394c2baea19397b72b0686aa5d267b9cd45d",
+      "bytes": 12653,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/ipdn.py"
+    },
+    {
+      "oid": "1757367496aa01ddb6af580595973088a61d40e2",
+      "bytes": 1005,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/paired_dataset.py"
+    },
+    {
+      "oid": "f3ff45eac7788e4e5cb324029803166fa6f0713d",
+      "bytes": 2357,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/paired_objective.py"
+    },
+    {
+      "oid": "fafc98680992ba8231eab08a8b13bc3554c81851",
+      "bytes": 2536,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/pairing.py"
+    },
+    {
+      "oid": "fa1180b8b29bcbd8aacab72dbda8faf9a958ec73",
+      "bytes": 83,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y18_point_measure/__init__.py"
+    },
+    {
+      "oid": "2c187b939ac9cad4e6906e00fb2328611942c8b5",
+      "bytes": 22466,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y18_point_measure/dec.py"
+    },
+    {
+      "oid": "09aca4cd8cbda192a59cc7bdfc5b8fd577d1d726",
+      "bytes": 12637,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y18_point_measure/ipdn.py"
+    },
+    {
+      "oid": "89894c8dbfbd6bb77dc8e97ca6f97259ed148a18",
+      "bytes": 29003,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y18_point_measure/loss.py"
+    },
+    {
+      "oid": "4ccd6fd74b90a419ed14ef055ea837a1200f7d59",
+      "bytes": 2209,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y18_point_measure/point_measure.py"
+    },
+    {
+      "oid": "83adf7890d92cae10c95601263b86a6eb59e69ff",
+      "bytes": 85,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/__init__.py"
+    },
+    {
+      "oid": "0a64cada278a774fa31d6eee35c4431a47d128c4",
+      "bytes": 29157,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/loss.py"
+    },
+    {
+      "oid": "3633aed8d55a19ec5a3b581fef6bdb8f8b1a8be6",
+      "bytes": 22788,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y25_mask_feedback/dec.py"
+    },
+    {
+      "oid": "0338795b6747f6f23d5c269a2f00fa204be91dc0",
+      "bytes": 24316,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y27_relative_peer/dec.py"
+    },
+    {
+      "oid": "ad8a5aecac5dcbbd8e749ad46ae1ff2934ad29b9",
+      "bytes": 23532,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y28_mask_readback/dec.py"
+    },
+    {
+      "oid": "d4bcd775dc29b9cc8ebc9d395ae3418c3ab9cf89",
+      "bytes": 24665,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y30_query_trajectory/dec.py"
+    },
+    {
+      "oid": "bf86e303ba0869168524b3fac18c35a21918272f",
+      "bytes": 24037,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y31_mask_shape/dec.py"
+    },
+    {
+      "oid": "ca9c4335690dad5a20c24020cf0f0d1b3672e284",
+      "bytes": 23921,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/dec.py"
+    },
+    {
+      "oid": "9ee82ae109eeaf9c93c5fa4ec1a86f3de838a62b",
+      "bytes": 24406,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y35_language_evidence/dec.py"
+    },
+    {
+      "oid": "0fe7fa4f8572ad2676c91496ab8eb783da2ac70f",
+      "bytes": 24568,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y36_local_adjacency/dec.py"
+    },
+    {
+      "oid": "3e3dd31b511c400a3b21ff6f68a74d5c2150d947",
+      "bytes": 24640,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y37_pair_distribution/dec.py"
+    },
+    {
+      "oid": "3d4fc82b90852e3967f6cfc41dafc845d46e85a2",
+      "bytes": 23724,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/dec.py"
+    },
+    {
+      "oid": "59a241b730a98d18937e2f10e09ddf48388772bd",
+      "bytes": 12739,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/ipdn.py"
+    },
+    {
+      "oid": "6dd5057b46d14f38500f4b8691848d291516cad0",
+      "bytes": 24473,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y41_boundary_probability/dec.py"
+    },
+    {
+      "oid": "9e1b8fe2b03bcb60cc5cf3a342a84ceee2a91602",
+      "bytes": 23821,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/dec.py"
+    },
+    {
+      "oid": "854c646ed2e2c2bcfd02ba004cb4ff3b5b03b960",
+      "bytes": 12997,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/ipdn.py"
+    },
+    {
+      "oid": "52922c2fbee742fbe752b1235e1298dd0ab2b8af",
+      "bytes": 21458,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/dec.py"
+    },
+    {
+      "oid": "219bf4b89a051deb5da44cc777cb54acbc811a59",
+      "bytes": 11738,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/ipdn.py"
+    },
+    {
+      "oid": "b9570df890dfe875d1e2186aea9b7b92c4097d06",
+      "bytes": 21390,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/dec.py"
+    },
+    {
+      "oid": "e63cad30451eafb79e6845ad4e33af0312d6755c",
+      "bytes": 11928,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/ipdn.py"
+    },
+    {
+      "oid": "ffaf7eb584a977fb51e110745c6e9f6519ab3e6b",
+      "bytes": 21088,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/dec.py"
+    },
+    {
+      "oid": "c472101ce9804896c2a376613459f27197bd159b",
+      "bytes": 12341,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/ipdn.py"
+    },
+    {
+      "oid": "85d70ee3c5ec5bcc20cb24317861550f3a8a9411",
+      "bytes": 24961,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/loss.py"
+    },
+    {
+      "oid": "3d87df001d6d9617b60d2e6f56c30d36414149ca",
+      "bytes": 74,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/__init__.py"
+    },
+    {
+      "oid": "f9864149e6ac125313cf15666d237247452ba5b6",
+      "bytes": 22531,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/dec.py"
+    },
+    {
+      "oid": "240ab657da3c2a91f77706def6c45b5860f95d51",
+      "bytes": 12372,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/ipdn.py"
+    },
+    {
+      "oid": "fa0730afc9be37af9b309ce93fe4d04ba5b74cd1",
+      "bytes": 25095,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/loss.py"
+    },
+    {
+      "oid": "86886a71db91b1547a3f100226ab3cd601442e33",
+      "bytes": 22579,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/dec.py"
+    },
+    {
+      "oid": "9f43064fb92b650e6244534febf55f077aaf1b43",
+      "bytes": 28411,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/loss.py"
+    },
+    {
+      "oid": "a6bde8a68ef6dd72715df362637375591cf2b181",
+      "bytes": 12296,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/ipdn.py"
+    },
+    {
+      "oid": "2e7529fa34cc6a52d0069494333e942ac2e3296a",
+      "bytes": 24944,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/loss.py"
+    },
+    {
+      "oid": "c71bde195c091bba739e54f97682d8855e9f50cb",
+      "bytes": 19929,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/dec.py"
+    },
+    {
+      "oid": "884b4eee869676b7eba2cf15d657406628d2faa0",
+      "bytes": 24451,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/dec.py"
+    },
+    {
+      "oid": "0ed8043cb3f84044a403e59bbe1b2bc5335c2f39",
+      "bytes": 22348,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/dec.py"
+    },
+    {
+      "oid": "18cc0b25cd7488c5db74d2d791f0a436f17d06df",
+      "bytes": 85,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y58_fixed_backbone_statistics/__init__.py"
+    },
+    {
+      "oid": "fb3eb68fefe19fad8eceff8e65573892eb1acc6f",
+      "bytes": 12589,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y58_fixed_backbone_statistics/ipdn.py"
+    },
+    {
+      "oid": "27a115a7d11bcf9a300d0bd974c654f330eda7ce",
+      "bytes": 91,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/__init__.py"
+    },
+    {
+      "oid": "5405badd4dc1bdefb18785d40172ce43008d69e2",
+      "bytes": 12490,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/ipdn.py"
+    },
+    {
+      "oid": "874cc4d61a402b79815e98cc9280223042b80700",
+      "bytes": 93,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/__init__.py"
+    },
+    {
+      "oid": "741be63ba0c23fcfab40433cd746a93240cf6706",
+      "bytes": 22715,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/dec.py"
+    },
+    {
+      "oid": "2933c1b2c6fd26033f58911ec7c2b121bba52b8f",
+      "bytes": 88,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y61_peer_value_gradient/__init__.py"
+    },
+    {
+      "oid": "8f8205820e4eaebdbf07237766fe288736021cfb",
+      "bytes": 22611,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y61_peer_value_gradient/dec.py"
+    },
+    {
+      "oid": "75f6bb99e2e6b3e460f00bb461490cbfecec5e61",
+      "bytes": 74,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y62_overlap_density/__init__.py"
+    },
+    {
+      "oid": "d57a90b3aec45cdbee6bdd62176d161e945e5a65",
+      "bytes": 22263,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y62_overlap_density/dec.py"
+    },
+    {
+      "oid": "17ab6cd8019a5a229b2d3ea647010732f7f2d3f7",
+      "bytes": 12099,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y62_overlap_density/ipdn.py"
+    },
+    {
+      "oid": "d98cfdc4ab4a43b842b4fb757d86ae9d6450151d",
+      "bytes": 3375,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y62_overlap_density/sample_model.py"
+    },
+    {
+      "oid": "b84e38f2bc501cad5d3e207e7a3e66f765dee37e",
+      "bytes": 95,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/__init__.py"
+    },
+    {
+      "oid": "d209b25849a9cc5acb322179e8d005d863ba3c98",
+      "bytes": 22800,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/dec.py"
+    },
+    {
+      "oid": "6045e164ac3aa00fabea5bfa8d50cd0e13c0e316",
+      "bytes": 75,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y64_directed_containment/__init__.py"
+    },
+    {
+      "oid": "ac8fdea3b295b669b9e58a5d33e33fc9bcdf4e83",
+      "bytes": 22564,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y64_directed_containment/dec.py"
+    },
+    {
+      "oid": "f9a31d6ae9dc25e30fb81ada490e3e16b2f10fdf",
+      "bytes": 80,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y65_confidence_feedback/__init__.py"
+    },
+    {
+      "oid": "77dce26d40fff008f5933810a1617098fc5a1e33",
+      "bytes": 22606,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y65_confidence_feedback/dec.py"
+    },
+    {
+      "oid": "f76b1d08f6746b43b9fc59c617601a27f88342bf",
+      "bytes": 80,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/__init__.py"
+    },
+    {
+      "oid": "f39c857fee1091b8e2f7eb911721ece702f85f59",
+      "bytes": 23248,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/dec.py"
+    },
+    {
+      "oid": "2abc9784db4b57953380c7c7dcfbd79992ce0346",
+      "bytes": 88,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/__init__.py"
+    },
+    {
+      "oid": "d132554c7ba25d4696e7567691820b16ff88168b",
+      "bytes": 22398,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/dec.py"
+    },
+    {
+      "oid": "8f1a7d1c25d445f21a8d1dcf40252e3fdb35da18",
+      "bytes": 89,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/__init__.py"
+    },
+    {
+      "oid": "fea4182a9af25c0e099c5280382fb8822d536e64",
+      "bytes": 22805,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y68_language_mask_modulation/dec.py"
+    },
+    {
+      "oid": "a01076649ffeb6d451c235d5d9e76abf541bac24",
+      "bytes": 81,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y69_coarse_geometry_bias/__init__.py"
+    },
+    {
+      "oid": "a26c87eb8660f8fa17ff3cf9c785fd7c1f48275d",
+      "bytes": 23899,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y69_coarse_geometry_bias/dec.py"
+    },
+    {
+      "oid": "4ee33b8caeef2fd1f9374a75f5d9ca59fe76555d",
+      "bytes": 75,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y70_query_scale_fusion/__init__.py"
+    },
+    {
+      "oid": "1863e6f3f403b89bd888c96c463c33a6d5c8e012",
+      "bytes": 22521,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y70_query_scale_fusion/dec.py"
+    },
+    {
+      "oid": "cfc533ce0c64059b0e3a0a001eff9f66ac5dc847",
+      "bytes": 97,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y71_visual_product_fusion/__init__.py"
+    },
+    {
+      "oid": "0cf3e32d23d56ff9ff231e2f89c30df6c40c9484",
+      "bytes": 22489,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y71_visual_product_fusion/dec.py"
+    },
+    {
+      "oid": "8dd05e02d22288b8036e22f24622be8744c198b4",
+      "bytes": 99,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/__init__.py"
+    },
+    {
+      "oid": "ac47c43e1a29ad19e12e522dadbd8fdd77f54e29",
+      "bytes": 22636,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/dec.py"
+    },
+    {
+      "oid": "fdf3646ee4aa3a170f29153c6ccefc932cc28203",
+      "bytes": 92,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/__init__.py"
+    },
+    {
+      "oid": "135bc039cf42540c7c021d4820e0f7dca33dc9e6",
+      "bytes": 22528,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/dec.py"
+    },
+    {
+      "oid": "c8f321ea64f48003c85f0881e07ae06038365b6f",
+      "bytes": 86,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/__init__.py"
+    },
+    {
+      "oid": "efb5a79b8934bf4208481e7e775b90943d29e7a1",
+      "bytes": 22580,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y74_language_update_gate/dec.py"
+    },
+    {
+      "oid": "2e45f3115d679621dbec151dc8b08587df05e76b",
+      "bytes": 100,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/__init__.py"
+    },
+    {
+      "oid": "3a828f275c8b6030a13e7c0e9a8e3b9b8d636df5",
+      "bytes": 22719,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/dec.py"
+    },
+    {
+      "oid": "37d2a78ec4dec767216daa6f0876c0de782bab6e",
+      "bytes": 89,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/__init__.py"
+    },
+    {
+      "oid": "3a3be491823f11516d354d97f0ad9d4f765a8e1b",
+      "bytes": 22587,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/dec.py"
+    },
+    {
+      "oid": "8fc0d1b0e10f728af1b36c6f29aa21c16e1f1e6b",
+      "bytes": 106,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/__init__.py"
+    },
+    {
+      "oid": "698817772fa3c7017ba6f4c7ff176d6201ebf3db",
+      "bytes": 22933,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/dec.py"
+    },
+    {
+      "oid": "be7191d95ad96d06714f74a84f5773dddc0de2d9",
+      "bytes": 111,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/__init__.py"
+    },
+    {
+      "oid": "b23efa270520361b7c52a2e329a32d6afc370288",
+      "bytes": 23265,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/dec.py"
+    },
+    {
+      "oid": "e3542ef329813ca255f51aa2fa5c3158877dc7c7",
+      "bytes": 107,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/__init__.py"
+    },
+    {
+      "oid": "e07989533a943104a4e39e8aec53440a6bdbb7ad",
+      "bytes": 22730,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/dec.py"
+    },
+    {
+      "oid": "5f0dd7c60d1837326f946785d2f7eece154ecdd4",
+      "bytes": 105,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y80_query_visual_feedback/__init__.py"
+    },
+    {
+      "oid": "fc26faf4e8c7e8ffe3a3067c72937ca2b057b071",
+      "bytes": 22714,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y80_query_visual_feedback/dec.py"
+    },
+    {
+      "oid": "2296ca351752b12fdaa1ae2cb63231707b3c7300",
+      "bytes": 110,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y81_query_mask_refinement/__init__.py"
+    },
+    {
+      "oid": "42626ab2615c12b8cc8c29970138fdee905fc2d3",
+      "bytes": 22727,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y81_query_mask_refinement/dec.py"
+    },
+    {
+      "oid": "b0c8d6e8aeb01e6124fc824fd24b98f9f4cf93b1",
+      "bytes": 102,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y82_scale_product/__init__.py"
+    },
+    {
+      "oid": "fd3666643d81c772761bdbb45866432c82c4321f",
+      "bytes": 22441,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y82_scale_product/dec.py"
+    },
+    {
+      "oid": "c08d93de217d455225756c1c9a61936fbfd154fa",
+      "bytes": 114,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y83_stage_query_norm/__init__.py"
+    },
+    {
+      "oid": "cb6eccf40c4e9c802cf18e243fc62b505d2d5969",
+      "bytes": 22197,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y83_stage_query_norm/dec.py"
+    },
+    {
+      "oid": "f071fdd59e6936b4b3d4b94594d6da7140475983",
+      "bytes": 108,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/__init__.py"
+    },
+    {
+      "oid": "487604930ac9dae69d869c811c1dbbaa5bad8f8b",
+      "bytes": 22868,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/dec.py"
+    },
+    {
+      "oid": "3094951c68c5099b76b4de66940565828305a8fc",
+      "bytes": 106,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/__init__.py"
+    },
+    {
+      "oid": "5aa96382ba26c6a32f73a5c0e2c379fabe38fc1b",
+      "bytes": 22097,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/dec.py"
+    },
+    {
+      "oid": "a3ebd2025be432422e57ea681a44b21928d0b0a4",
+      "bytes": 95,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/__init__.py"
+    },
+    {
+      "oid": "929624436bf97a612856cebad3737b9d1b8deb0c",
+      "bytes": 22517,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/dec.py"
+    },
+    {
+      "oid": "9961313c26d30137f56480eaa664da9a1ae76ddb",
+      "bytes": 83,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/__init__.py"
+    },
+    {
+      "oid": "1d0cd5885992cfa82fd75212ae03c8e387a64c4c",
+      "bytes": 22451,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/dec.py"
+    },
+    {
+      "oid": "56b0ecd3ea0a5b8a7a280c883889c0ffa4b1a429",
+      "bytes": 105,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y89_stage_evidence_norm/__init__.py"
+    },
+    {
+      "oid": "b7b79f3f03618db980fdf8b8f1c055a7d5a47340",
+      "bytes": 22316,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y89_stage_evidence_norm/dec.py"
+    },
+    {
+      "oid": "318cab4c2b721437105c51b049a325caed10b7d3",
+      "bytes": 109,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/__init__.py"
+    },
+    {
+      "oid": "870d56a79f731448d0fa93160b07eac8af2e9803",
+      "bytes": 22583,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/dec.py"
+    },
+    {
+      "oid": "5115afc5eaf32b2cb8503b69249509561b109719",
+      "bytes": 100,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/__init__.py"
+    },
+    {
+      "oid": "80b5fb4e5d5c9f6f271bbcb1a08baaa60b7eae07",
+      "bytes": 22621,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/dec.py"
+    },
+    {
+      "oid": "3c1f9e092ab41a3ef5170696d60854c793c09c36",
+      "bytes": 92,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y92_mask_feature_quadratic/__init__.py"
+    },
+    {
+      "oid": "272d7909b306b80a81323a8cd5f09f0e8c59bd04",
+      "bytes": 22460,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y92_mask_feature_quadratic/dec.py"
+    },
+    {
+      "oid": "919716be5f212afc51bc89fb964d02eb5e15e8b9",
+      "bytes": 112,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y93_evidence_hidden_skip/__init__.py"
+    },
+    {
+      "oid": "fdcb7d3d3473802c0dd81079bb4827ffe01ffbc7",
+      "bytes": 22615,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y93_evidence_hidden_skip/dec.py"
+    },
+    {
+      "oid": "9ea1d9654848f923f95e00bd1e4c7e82e1a9ca69",
+      "bytes": 81,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/__init__.py"
+    },
+    {
+      "oid": "7e0f52866075e0bad3a5c1f2ec0f5fafdec00a86",
+      "bytes": 24000,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/dec.py"
+    },
+    {
+      "oid": "8fe8c5924bf9e973a7ef291790707ea9db5235db",
+      "bytes": 100,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y95_query_set_mean/__init__.py"
+    },
+    {
+      "oid": "7cfde9637b40164f876e7d349bb84b30f0cac9a1",
+      "bytes": 22517,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y95_query_set_mean/dec.py"
+    },
+    {
+      "oid": "ef8c1043f4de29a8e4759049625e1f12e9cc8f88",
+      "bytes": 101,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/__init__.py"
+    },
+    {
+      "oid": "c9099d2c2843fb1cc1c5133f8b8516236049db96",
+      "bytes": 22494,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/dec.py"
+    },
+    {
+      "oid": "8eb6ea2e98900796f5c713b16e04a9b7a4f97a24",
+      "bytes": 101,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y98_appearance_mask_skip/__init__.py"
+    },
+    {
+      "oid": "03241f2d9cac95c2a1e0e1cf6f473df648ddc74d",
+      "bytes": 22513,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y98_appearance_mask_skip/dec.py"
+    },
+    {
+      "oid": "5115a33984ded09b809cd574742c2892a17c0e8d",
+      "bytes": 99,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/__init__.py"
+    },
+    {
+      "oid": "23058bcd74f09cf3392fcb22b6b4f1a25c6dfaa8",
+      "bytes": 22469,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/dec.py"
+    },
+    {
+      "oid": "c9b2aa699b33031b30bb395f090319236813fb9b",
+      "bytes": 5947,
+      "representative_path": "AdaRES/tools/diagnose_adares_b0_oracle.py"
+    },
+    {
+      "oid": "5a159963a09cff5429f4162a76efe98c243a7793",
+      "bytes": 5392,
+      "representative_path": "AdaRES/tools/diagnose_adares_g1_label_alignment.py"
+    },
+    {
+      "oid": "36809be4e778e128652cebe33afc94b960ae9dbd",
+      "bytes": 3013,
+      "representative_path": "AdaRES/tools/probe_adares_f4_real_batch.py"
+    },
+    {
+      "oid": "b0bd0bbff31939d70f3173af3a1e7a331393c979",
+      "bytes": 2723,
+      "representative_path": "AdaRES/tools/probe_adares_h5_real_batch.py"
+    },
+    {
+      "oid": "9e512ebabd21d3a1cbec647a04e013c29357a3b1",
+      "bytes": 7927,
+      "representative_path": "AdaRES/tools/probe_adares_y17_contracts.py"
+    },
+    {
+      "oid": "f6571ceb48759cff1b5a0fbfa12b0a928b43724f",
+      "bytes": 3849,
+      "representative_path": "AdaRES/tools/probe_adares_y17_entry.py"
+    },
+    {
+      "oid": "b6404c306846a9e5bc3fba8ce06b5959df33d2e2",
+      "bytes": 7887,
+      "representative_path": "AdaRES/tools/probe_adares_y17_inference_resume.py"
+    },
+    {
+      "oid": "c14334a337f78cee296495c6df897ff8e4134ec3",
+      "bytes": 5351,
+      "representative_path": "AdaRES/tools/probe_adares_y17_native.py"
+    },
+    {
+      "oid": "641b3b52eeee1b0149565456ef8334a73dbc9504",
+      "bytes": 11290,
+      "representative_path": "AdaRES/tools/probe_adares_y18_integration.py"
+    },
+    {
+      "oid": "08e7287d85527bfd57b5c578864f57eca1b03584",
+      "bytes": 13826,
+      "representative_path": "AdaRES/tools/probe_adares_y18_point_measure.py"
+    },
+    {
+      "oid": "405d1917b87d09b0cf3db2f67e1d4b8a28b96ac0",
+      "bytes": 4949,
+      "representative_path": "AdaRES/tools/profile_adares_checkpoint.py"
+    },
+    {
+      "oid": "b197c1acdb2eea31a95fbf0a332065bc17a76d18",
+      "bytes": 3734,
+      "representative_path": "AdaRES/tools/smoke_adares_b0.py"
+    },
+    {
+      "oid": "de5fef17c549d79dd944f013a2a5b5a76336e638",
+      "bytes": 1568,
+      "representative_path": "AdaRES/tools/test_adares_b3_mask_evidence.py"
+    },
+    {
+      "oid": "08cceb4d3aa73cfb9fab7a4819bbfe62b2d22266",
+      "bytes": 1671,
+      "representative_path": "AdaRES/tools/test_adares_b4_query_competition.py"
+    },
+    {
+      "oid": "f220c98f410719f0710a1b45e324cb7064ff9097",
+      "bytes": 1634,
+      "representative_path": "AdaRES/tools/test_adares_b5_token_grounding.py"
+    },
+    {
+      "oid": "7babf61dd93a154ff8896949a183d224b5430c91",
+      "bytes": 1849,
+      "representative_path": "AdaRES/tools/test_adares_c1_listwise_expected_mask.py"
+    },
+    {
+      "oid": "6a3a2f1a6824b73931c6ef19bf29f318b087be8b",
+      "bytes": 1836,
+      "representative_path": "AdaRES/tools/test_adares_c2_hard_negative_margin.py"
+    },
+    {
+      "oid": "35fc09a1cf87795ceddc7ed1f297c73a851e3f89",
+      "bytes": 1627,
+      "representative_path": "AdaRES/tools/test_adares_d1_full_query_comparison.py"
+    },
+    {
+      "oid": "85ec1bb6b68018ff48df86b35cdb1982ddbace89",
+      "bytes": 1097,
+      "representative_path": "AdaRES/tools/test_adares_g1_metric_targets.py"
+    },
+    {
+      "oid": "bf3e4a09238af1d4699643d7b529a7400b85c804",
+      "bytes": 982,
+      "representative_path": "AdaRES/tools/test_adares_h5_global_query.py"
+    },
+    {
+      "oid": "c2afe78ce2755458bcaf2eb0860267e461c958c2",
+      "bytes": 3429,
+      "representative_path": "AdaRES/tools/test_adares_y17_pairing.py"
+    },
+    {
+      "oid": "41c95e6b253d2f2528b103a6ecf81e00d732dc69",
+      "bytes": 20002,
+      "representative_path": "AdaRES/tools/train.py"
+    },
+    {
+      "oid": "1bcece102d8ae3281d9ef39079d6c9cc4ae428cf",
+      "bytes": 1364,
+      "representative_path": "SERVERS.yaml"
+    },
+    {
+      "oid": "df625939580fae33c392cad885cf569aa4913531",
+      "bytes": 1482,
+      "representative_path": "environment.md"
+    },
+    {
+      "oid": "89d7be4924b8e8314cec38765b28c42575cc3d10",
+      "bytes": 3556,
+      "representative_path": "pipeline/admissions/AdaRES-B4.json"
+    },
+    {
+      "oid": "a772d5c5c68872d89aa0ae648ec055abafaa66d8",
+      "bytes": 3546,
+      "representative_path": "pipeline/admissions/AdaRES-B5.json"
+    },
+    {
+      "oid": "ce14325eb5c6c66068e00b3145c9b0805dd6e2d7",
+      "bytes": 801,
+      "representative_path": "pipeline/admissions/AdaRES-C1.json"
+    },
+    {
+      "oid": "b40673360413893c0ad78c2e618a1a2ffaafd973",
+      "bytes": 756,
+      "representative_path": "pipeline/admissions/AdaRES-C2.json"
+    },
+    {
+      "oid": "823de98ead1aa9498c507f3dcc105ab18345681c",
+      "bytes": 1416,
+      "representative_path": "pipeline/analyses/AdaRES-B0_baseline_low_metric_20260918-011500.md"
+    },
+    {
+      "oid": "4641aa0197c7f10e3fa0b6df95103b739c25826e",
+      "bytes": 1429,
+      "representative_path": "pipeline/analyses/AdaRES-B1_done_complete_20260920-091444.md"
+    },
+    {
+      "oid": "6404ae91829ec6f38d99fdb6d05a83db28f052e0",
+      "bytes": 807,
+      "representative_path": "pipeline/analyses/AdaRES-B1_profile_pilot_20260920-095000.json"
+    },
+    {
+      "oid": "5e487caadec0807a5b477f7c6f0d8b40db91c4bb",
+      "bytes": 1818,
+      "representative_path": "pipeline/analyses/AdaRES-B2_done_complete_20260920-215543.md"
+    },
+    {
+      "oid": "fa7d5770d7c3475657909eeec63470714fc2befb",
+      "bytes": 1430,
+      "representative_path": "pipeline/analyses/AdaRES-B4_admission_20260921.json"
+    },
+    {
+      "oid": "e4c6391bacd0715793d0393ab4104e757ac2a666",
+      "bytes": 1424,
+      "representative_path": "pipeline/analyses/AdaRES-B5_admission_20260921.json"
+    },
+    {
+      "oid": "ea659c58789bb72600da5a057ef08fa66ac209af",
+      "bytes": 1151,
+      "representative_path": "pipeline/bugfixes/bugfix_20260920-091444.md"
+    },
+    {
+      "oid": "4fbca77fa59ba3ed31543f8539c007c306c587d5",
+      "bytes": 1424,
+      "representative_path": "pipeline/bugfixes/bugfix_20260920-095000.md"
+    },
+    {
+      "oid": "5c6e57f57acbb47c5901b0b08e762e05714f4ce4",
+      "bytes": 4143,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "59b6d5a7a6a70be72020692e1952eb45237a3eee",
+      "bytes": 607,
+      "representative_path": "pipeline/decisions/20260918-011500_route_change.md"
+    },
+    {
+      "oid": "aa615816283a4835fadb21065f94e26dd31bdf12",
+      "bytes": 607,
+      "representative_path": "pipeline/decisions/20260918-012000_route_change.md"
+    },
+    {
+      "oid": "9895e07c387cca98f2f244646b24026bb8d40a47",
+      "bytes": 657,
+      "representative_path": "pipeline/decisions/20260920-091444_other.md"
+    },
+    {
+      "oid": "54e852f79164cda22716d63374a8a35aed97775e",
+      "bytes": 791,
+      "representative_path": "pipeline/decisions/20260920-092000_manual.md"
+    },
+    {
+      "oid": "95781bc7c62b843b063c79c2ed892d98f592e5d0",
+      "bytes": 795,
+      "representative_path": "pipeline/decisions/20260920-093708_next_batch.md"
+    },
+    {
+      "oid": "49b7a7ba6330e0c9194d7a4221e9e1fdcd691ac2",
+      "bytes": 854,
+      "representative_path": "pipeline/decisions/20260920-224025_manual.md"
+    },
+    {
+      "oid": "4e4b5609be26cbc02c007b1993563c5e98793f6e",
+      "bytes": 900,
+      "representative_path": "pipeline/decisions/20260921-145043_next_batch.md"
+    },
+    {
+      "oid": "55245cb75cbd96227e638c90f80f89664f57a821",
+      "bytes": 1753,
+      "representative_path": "pipeline/decisions/20260922-093000_manual.md"
+    },
+    {
+      "oid": "e92ba3c7b5d0cbb0e2131546e1d1fcf449783ab0",
+      "bytes": 2479,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "6ba965a59f80317ae11d633780fe33a1abe14c1c",
+      "bytes": 4788,
+      "representative_path": "pipeline/designs/exp_design_20260920-093708.md"
+    },
+    {
+      "oid": "3877837805e9c29890f52776678de84cf2ad145d",
+      "bytes": 4433,
+      "representative_path": "pipeline/designs/exp_design_20260921-145043.md"
+    },
+    {
+      "oid": "73a100df1223aba4f0b93e271b29751136cdd94e",
+      "bytes": 3972,
+      "representative_path": "pipeline/designs/exp_design_20260922-223000.md"
+    },
+    {
+      "oid": "0d3c2f4671064081e03fee3158bda6e502918e78",
+      "bytes": 789,
+      "representative_path": "pipeline/experiments.csv"
+    },
+    {
+      "oid": "a14b15208208a9d78f2239b1d64c2199414ed0a0",
+      "bytes": 2407,
+      "representative_path": "pipeline/experiments/AdaRES-B0.json"
+    },
+    {
+      "oid": "af0b07945c87ea237515c7ff2eac05ca6b512acd",
+      "bytes": 2082,
+      "representative_path": "pipeline/experiments/AdaRES-B1.json"
+    },
+    {
+      "oid": "351a18a3f80142f49d766743cb2862a61fac96f8",
+      "bytes": 836,
+      "representative_path": "pipeline/experiments/AdaRES-B2-E30.json"
+    },
+    {
+      "oid": "4950042b41ddd27b287038526b0d7a40c5ae53d1",
+      "bytes": 2706,
+      "representative_path": "pipeline/experiments/AdaRES-B2.json"
+    },
+    {
+      "oid": "b959a1cbbbde55879ff1cf352f4bda2128ca7208",
+      "bytes": 1701,
+      "representative_path": "pipeline/experiments/AdaRES-B3.json"
+    },
+    {
+      "oid": "4cf24cf9037f5f2d306f9f37fb110314b82dc938",
+      "bytes": 858,
+      "representative_path": "pipeline/experiments/AdaRES-B4-E30.json"
+    },
+    {
+      "oid": "b7eebd8f37a150b676e70e3a7f294151461ddb8b",
+      "bytes": 983,
+      "representative_path": "pipeline/experiments/AdaRES-C1.json"
+    },
+    {
+      "oid": "722a8f43df89f29e297e804074a59add2f154205",
+      "bytes": 973,
+      "representative_path": "pipeline/experiments/AdaRES-C2.json"
+    },
+    {
+      "oid": "34b591625c15a2f7045e1c22bd296d8dc7924a82",
+      "bytes": 1619,
+      "representative_path": "pipeline/goal.json"
+    },
+    {
+      "oid": "f86a80672d6b78732e5ca9a48f94e2d6ef50b575",
+      "bytes": 1247,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "c263740be57ed00b3f67b642a9c65b8411539c9f",
+      "bytes": 1989,
+      "representative_path": "pipeline/reports/summary_20260920-091444_manual.md"
+    },
+    {
+      "oid": "13734da55d72c8aa41c52b913d0d69ef7bd20d4d",
+      "bytes": 2815,
+      "representative_path": "pipeline/reports/summary_20260920-215910_manual.md"
+    },
+    {
+      "oid": "df54ef166448686612ba3339f8cf1881b68d0e82",
+      "bytes": 1990,
+      "representative_path": "pipeline/reports/summary_20260921-145043.md"
+    },
+    {
+      "oid": "ad032b244b82569ec229719255df0bdffb4ad7a5",
+      "bytes": 5121,
+      "representative_path": "pipeline/research_work.json"
+    },
+    {
+      "oid": "4072bbdbeffb615deabe8614fab3f1b9110bacf2",
+      "bytes": 2965,
+      "representative_path": "pipeline/reviews/motivation_review_20260920-093708.md"
+    },
+    {
+      "oid": "ce9ce74055ef3de3daca6215faddbd292e730c96",
+      "bytes": 2897,
+      "representative_path": "pipeline/reviews/motivation_review_20260921-145043.md"
+    },
+    {
+      "oid": "49a7911ec1268b7d4cb64e820b2120e4076a7a76",
+      "bytes": 67,
+      "representative_path": "pipeline/running.json"
+    },
+    {
+      "oid": "023addcd12e02041b9d989860b7fb87cdd609bde",
+      "bytes": 3052,
+      "representative_path": "scripts/audit_y17_admission.py"
+    },
+    {
+      "oid": "0cbcc3649adb9682ac1d399b6c70bbf239ac15b2",
+      "bytes": 3034,
+      "representative_path": "scripts/normalize_y17_tested_bytes.py"
+    },
+    {
+      "oid": "6ca3e5882e791a36361acbb08ce3d5fe2b12c64a",
+      "bytes": 3743,
+      "representative_path": "scripts/remote_resume.sh"
+    },
+    {
+      "oid": "cbdf79b5cdcd2f43bc7e46c224d63ba440480ccf",
+      "bytes": 3518,
+      "representative_path": "scripts/remote_train.sh"
+    },
+    {
+      "oid": "f669db0729c500cecea7d0cf5dc3f639aab32aea",
+      "bytes": 1113,
+      "representative_path": "scripts/run_y17_contracts_20260930.sh"
+    },
+    {
+      "oid": "f4d115b5495dde0af5dfbde6f6678d05e5350911",
+      "bytes": 885,
+      "representative_path": "scripts/run_y17_entry_20260930.sh"
+    },
+    {
+      "oid": "1ea77e729fdaf3c6756c164c9b46d8f461c4e48e",
+      "bytes": 986,
+      "representative_path": "scripts/run_y17_inference_resume_20260930.sh"
+    },
+    {
+      "oid": "4ec21cdf73c94304023e3be35dccecec1977b0eb",
+      "bytes": 1015,
+      "representative_path": "scripts/run_y17_physical_native_20260930.sh"
+    },
+    {
+      "oid": "e553a258ddb6046eb6e8c3a35957777dbc4a801b",
+      "bytes": 3318,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "1ce5c8881d5c016cd05c54da188622be5308dc2d",
+      "bytes": 3119,
+      "representative_path": "scripts/sync_y17_train_entry.py"
+    },
+    {
+      "oid": "26ea201956fa367dc0db818f73796210aed8caef",
+      "bytes": 1931,
+      "representative_path": "scripts/test_sync_y17_train_entry.py"
+    },
+    {
+      "oid": "ffa914b412afa5a3b1a0dda64e6ad3051212a98e",
+      "bytes": 2266,
+      "representative_path": "scripts/watch_b1_then_b2.sh"
+    },
+    {
+      "oid": "314c6b388c00b6ce781206d7d848659a13007257",
+      "bytes": 3224,
+      "representative_path": "scripts/watch_b2_then_b3.sh"
+    },
+    {
+      "oid": "e378662623c1b9673a8ce98f3b7d5ad51fcfefcf",
+      "bytes": 86,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/__init__.py"
+    },
+    {
+      "oid": "8334f7b942323e5c52ecf64e031b73c401f32b09",
+      "bytes": 22423,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/dec.py"
+    },
+    {
+      "oid": "8e71e4e95c9d0d66319c2217a57ab023df44c185",
+      "bytes": 3225,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "4dae6cb5b4d42466613865cc469fb42c06f7000a",
+      "bytes": 3209,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "f1e10be72d3fcb0b15ebed51f446f3139d0a238e",
+      "bytes": 3174,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "b1596baa0a64cf091a2f43e5c4d3180042b7a248",
+      "bytes": 2770,
+      "representative_path": "scripts/sync_y17_train_entry.py"
+    },
+    {
+      "oid": "a5a8c89f88f4cbbd655d3c1b914d420ba4da40e7",
+      "bytes": 1658,
+      "representative_path": "scripts/test_sync_y17_train_entry.py"
+    },
+    {
+      "oid": "2b3144cc14e2b6f803f924b259e238b3fe15ead4",
+      "bytes": 19687,
+      "representative_path": "AdaRES/tools/train.py"
+    },
+    {
+      "oid": "298c91f7d259a6590e18b494b3a07f445c716240",
+      "bytes": 2801,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "1cf0d559e5a85f25dde397d09f5cb0ac034429ee",
+      "bytes": 2732,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "39cefcb595ac2d41bc7e67f526a5f65bc879b816",
+      "bytes": 3420,
+      "representative_path": "scripts/remote_train.sh"
+    },
+    {
+      "oid": "d7e079eec9f43416047b0f96777a107c0280868b",
+      "bytes": 2619,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "66a33c71afd1b183870abf488c0b4beb2154cc85",
+      "bytes": 2207,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "4a6f6f6f447a7af7be9d828b9ae82e32e54a5ab6",
+      "bytes": 2162,
+      "representative_path": "scripts/sync.sh"
+    },
+    {
+      "oid": "0547ecbd25c11a25c84f7d09e56d89c5c3762bb7",
+      "bytes": 3357,
+      "representative_path": "scripts/remote_train.sh"
+    },
+    {
+      "oid": "d3b13cee0dd481b38860dcc1811c940445f66890",
+      "bytes": 608,
+      "representative_path": "pipeline/experiments/AdaRES-C1.json"
+    },
+    {
+      "oid": "a7b73f7de89aeed72564a74c714dce6eb9844e6e",
+      "bytes": 600,
+      "representative_path": "pipeline/experiments/AdaRES-C2.json"
+    },
+    {
+      "oid": "b995bff6e96f82b0f87983ce6d6269bf636663e9",
+      "bytes": 829,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "2233ac213a67175f348a2aa80cb074b75e5257b9",
+      "bytes": 5119,
+      "representative_path": "pipeline/research_work.json"
+    },
+    {
+      "oid": "d8a1058b398857be63e14e6d84d941776657c2d8",
+      "bytes": 1344,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "caca515dee7c82e160a98dd1c62048f05e66ebdd",
+      "bytes": 3542,
+      "representative_path": "pipeline/research_work.json"
+    },
+    {
+      "oid": "7b2b10ca83bb7622cba45b432066ba69c9990262",
+      "bytes": 75,
+      "representative_path": "pipeline/running.json"
+    },
+    {
+      "oid": "4235682d0bb6059d2b3d9d8c99ed64557ec69bcc",
+      "bytes": 1757,
+      "representative_path": "AdaRES/tools/test_adares_c2_hard_negative_margin.py"
+    },
+    {
+      "oid": "f6c2ee92d40fd25f65c86f05eac807731c16b2a1",
+      "bytes": 1851,
+      "representative_path": "AdaRES/tools/test_adares_c1_listwise_expected_mask.py"
+    },
+    {
+      "oid": "eab644b0fadedc034465c07f4a552ae63e5f30c0",
+      "bytes": 1759,
+      "representative_path": "AdaRES/tools/test_adares_c2_hard_negative_margin.py"
+    },
+    {
+      "oid": "2aec4781712bb826702b0425cbb17bd557dfa2e0",
+      "bytes": 1808,
+      "representative_path": "AdaRES/tools/test_adares_c1_listwise_expected_mask.py"
+    },
+    {
+      "oid": "803e082bb6ef4aca0686c2c55a781b3fa837bb56",
+      "bytes": 1749,
+      "representative_path": "AdaRES/tools/test_adares_c2_hard_negative_margin.py"
+    },
+    {
+      "oid": "1c281d353b65f9b4dc483fed22652dc777ee372a",
+      "bytes": 3969,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "4b031b9e58cc565e2c8cbc7b0fb8e825f1f62790",
+      "bytes": 1078,
+      "representative_path": "pipeline/decisions/20260922-093000_manual.md"
+    },
+    {
+      "oid": "82c360cc23712c262fe7b59b4809dc430eb83af7",
+      "bytes": 877,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "5e191d8a0272ef689867fee93f6421c1adb7d8ef",
+      "bytes": 2078,
+      "representative_path": "pipeline/research_work.json"
+    },
+    {
+      "oid": "ca9be1194e74ad7fa3c5414e7f59a1791b305dbb",
+      "bytes": 67,
+      "representative_path": "pipeline/running.json"
+    },
+    {
+      "oid": "a07816358713dce7f6ecbb22de879605d8b18dc9",
+      "bytes": 29728,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b2_metric_indicator/loss.py"
+    },
+    {
+      "oid": "5049a166c1c3d1fe59622a029d9e2cad918efb16",
+      "bytes": 2647,
+      "representative_path": "AdaRES/configs_song/model_paper5/adares_b2_metric_indicator_res.yaml"
+    },
+    {
+      "oid": "3dcb251dc55d7a3f3becc9e906bca2c2b2b8cd5c",
+      "bytes": 3899,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "65d4cf10a57095328ff25fb04e125ac793ff5123",
+      "bytes": 1638,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "e66d248095d2b1d36a197ce951d6a036f2c55f59",
+      "bytes": 1400,
+      "representative_path": "pipeline/goal.json"
+    },
+    {
+      "oid": "3f38ad31eb21981917ee21aea1e2cd6619c05416",
+      "bytes": 4624,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "3993c3daba39816b18dc9448de6b82ac29bb5abf",
+      "bytes": 1239,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "4f7e752bfb6dc358d95ae79e6f0c179543daeec0",
+      "bytes": 628,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "e127ee326e1022e561275ed132bdf86445e27ee2",
+      "bytes": 19333,
+      "representative_path": "AdaRES/tools/train.py"
+    },
+    {
+      "oid": "9cbc4e82cd8972585e055abb5ce395d7761e2dd2",
+      "bytes": 1332,
+      "representative_path": "SERVERS.yaml"
+    },
+    {
+      "oid": "44422f50fdddfedbc86772116fd2ec48815622ea",
+      "bytes": 4180,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "41cc626665a9f5d293c2750daa1e66bdf950adba",
+      "bytes": 1035,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "6df381b06899ff9e4437563836298211a1f89f9c",
+      "bytes": 1089,
+      "representative_path": "pipeline/goal.json"
+    },
+    {
+      "oid": "335bc03799aa437b7fb6023521e88501436e0032",
+      "bytes": 2154,
+      "representative_path": "scripts/watch_b1_then_b2.sh"
+    },
+    {
+      "oid": "a2954b96d65d471172c308c0aa13672be4d3dd70",
+      "bytes": 3103,
+      "representative_path": "scripts/watch_b2_then_b3.sh"
+    },
+    {
+      "oid": "43d5c2e0a7f0bd95b73854fa503e37012d5d1d2f",
+      "bytes": 1335,
+      "representative_path": "SERVERS.yaml"
+    },
+    {
+      "oid": "fc1284e689d7720d2c462eda1b8d5fec34827c27",
+      "bytes": 2156,
+      "representative_path": "scripts/watch_b1_then_b2.sh"
+    },
+    {
+      "oid": "32388e60d1c47076a73b5b1b2000f834d8e94f85",
+      "bytes": 3105,
+      "representative_path": "scripts/watch_b2_then_b3.sh"
+    },
+    {
+      "oid": "9de8e2cb8e48efe2c4219741d6d80088fcc967f1",
+      "bytes": 91,
+      "representative_path": "AdaRES/ipdn/__init__.py"
+    },
+    {
+      "oid": "8b045049af32350a1aab7e99d0fd5ea3de939397",
+      "bytes": 5072,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "64429f2997b11dc4ae9365ec1f45cafb9c203d26",
+      "bytes": 803,
+      "representative_path": "pipeline/experiments.csv"
+    },
+    {
+      "oid": "233a85105e1d1ef34632a445195047f9d35d4905",
+      "bytes": 1958,
+      "representative_path": "pipeline/experiments/AdaRES-B2.json"
+    },
+    {
+      "oid": "16505368cf50146b8a48f30f4bee046348e4297a",
+      "bytes": 1383,
+      "representative_path": "pipeline/experiments/AdaRES-B3.json"
+    },
+    {
+      "oid": "958219837c2248bbad56fd72f9105c856decbedf",
+      "bytes": 812,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "448e3f7e61509e8aed8a12eb43436c19a96f527e",
+      "bytes": 67,
+      "representative_path": "pipeline/running.json"
+    },
+    {
+      "oid": "8c4a7856ec9b242f1d2e84465212dc562b117065",
+      "bytes": 3510,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "4acd869b184fa39da77e86d805e41b67738b3931",
+      "bytes": 786,
+      "representative_path": "pipeline/experiments.csv"
+    },
+    {
+      "oid": "8820957dd2b2ede3a6fb09696793ab9d56883d84",
+      "bytes": 1791,
+      "representative_path": "pipeline/experiments/AdaRES-B2.json"
+    },
+    {
+      "oid": "d1d24be245cc10361a8562337bbd601b76c7f620",
+      "bytes": 408,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "2b4b81cc901103f5cfd24b105f074b76edf5750e",
+      "bytes": 3361,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "d3c1615f5336e5a49ef2dc095798acb29412464e",
+      "bytes": 754,
+      "representative_path": "pipeline/experiments.csv"
+    },
+    {
+      "oid": "b74b093e8976e6dbb84cedd5d4a5d1831ed871e8",
+      "bytes": 1624,
+      "representative_path": "pipeline/experiments/AdaRES-B2.json"
+    },
+    {
+      "oid": "d40b0774b5c3fdb8c363667b8cadcd5fbe6edd94",
+      "bytes": 1036,
+      "representative_path": "pipeline/bugfixes/bugfix_20260920-095000.md"
+    },
+    {
+      "oid": "4b4314d6430371dfec87ce5c47e4f4dfa1f0cc43",
+      "bytes": 3011,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "c94b49015e57fcb04d31e1769801e748879b0578",
+      "bytes": 1534,
+      "representative_path": "pipeline/experiments/AdaRES-B1.json"
+    },
+    {
+      "oid": "6d89be37c3d958c211df16763ea15a59970f0663",
+      "bytes": 4763,
+      "representative_path": "AdaRES/tools/profile_adares_checkpoint.py"
+    },
+    {
+      "oid": "b1f315bc3f918af906ace0ff57e02527fb3c454d",
+      "bytes": 666,
+      "representative_path": "pipeline/bugfixes/bugfix_20260920-095000.md"
+    },
+    {
+      "oid": "5ee69b385b13e472c149e6d621778654502cc5dd",
+      "bytes": 4735,
+      "representative_path": "AdaRES/tools/profile_adares_checkpoint.py"
+    },
+    {
+      "oid": "eca6465a21272e7db7e6c60028108a8046daba6b",
+      "bytes": 2490,
+      "representative_path": "scripts/watch_b2_then_b3.sh"
+    },
+    {
+      "oid": "7ca7da89eded0cd26a400ae527a85ba7395c1396",
+      "bytes": 2930,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "b2ec1e8b5571e5455299191024573c9a9d22f7b3",
+      "bytes": 1353,
+      "representative_path": "pipeline/experiments/AdaRES-B3.json"
+    },
+    {
+      "oid": "4a7fe596634f3044861c50d65f6f4bb3f0f619dc",
+      "bytes": 379,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "9dcf937c8446bd7b340012af1b4864637a0655fe",
+      "bytes": 2252,
+      "representative_path": "scripts/watch_b2_then_b3.sh"
+    },
+    {
+      "oid": "5b6fa1ebf9243f93ddf1837d9593677bcf4baa26",
+      "bytes": 2800,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "bf60f1144b91cf1ef277683dc19f4ef174d561d7",
+      "bytes": 740,
+      "representative_path": "pipeline/experiments.csv"
+    },
+    {
+      "oid": "883c9bd5f66e9d07d56e4f8d1caa38a660e25a80",
+      "bytes": 1399,
+      "representative_path": "pipeline/experiments/AdaRES-B2.json"
+    },
+    {
+      "oid": "5a9ad3d0ce4204a15247c5d69a49b697d9763f52",
+      "bytes": 2418,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "52e749a83e1ff9d39a85ceb591ff7e05efdf5b61",
+      "bytes": 839,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "2ec8d3ecc5dc27f4d7d5820de16575e16315029b",
+      "bytes": 573,
+      "representative_path": "pipeline/experiments.csv"
+    },
+    {
+      "oid": "45892e29045c5122c4c6129fb068c91fee1e7089",
+      "bytes": 83,
+      "representative_path": "pipeline/queue.json"
+    },
+    {
+      "oid": "14d045bb6515ca0fb97f8c323b814e515d01e190",
+      "bytes": 30393,
+      "representative_path": "AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/__pycache__/dec.cpython-313.pyc"
+    },
+    {
+      "oid": "aed0941f04271ddc5777c586f078b351099495f0",
+      "bytes": 3493,
+      "representative_path": "AdaRES/tools/smoke_adares_b0.py"
+    },
+    {
+      "oid": "aeee2e513a2671e34d2b830925024884c59dd225",
+      "bytes": 2425,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "3153de3a4980176cd785e8d7a1d924a35bdc8ef8",
+      "bytes": 779,
+      "representative_path": "pipeline/decisions/20260920-092000_manual.md"
+    },
+    {
+      "oid": "811569eddeaa985946de299c7477e2ea5b352bb1",
+      "bytes": 851,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "a640545cd200889bd4443706872ac1aa2751ae37",
+      "bytes": 2124,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "6675b2f0b66355dd029e678bb48e5c53220124b1",
+      "bytes": 660,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "ca47e1c86051094341cc71312629664add9915c3",
+      "bytes": 1090,
+      "representative_path": "pipeline/goal.json"
+    },
+    {
+      "oid": "1f45035f08ceacf9e85c2e13d6fb691f6b4b1207",
+      "bytes": 1860,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "1c5d5541e7ba00006c24f3638cfdc3b94bd9d03c",
+      "bytes": 486,
+      "representative_path": "pipeline/decisions/_index.md"
+    },
+    {
+      "oid": "519d93e219cc6fb2a4cea9edfc3192569ac451af",
+      "bytes": 1044,
+      "representative_path": "pipeline/experiments/AdaRES-B1.json"
+    },
+    {
+      "oid": "684e6b446e4f9856c8497b2774a1ba3564b628f1",
+      "bytes": 933,
+      "representative_path": "pipeline/experiments/AdaRES-B2.json"
+    },
+    {
+      "oid": "fad5e38bafae3f27eab48c70323b3b74ffa8f6aa",
+      "bytes": 1167,
+      "representative_path": "pipeline/goal.json"
+    },
+    {
+      "oid": "c9c6275c4277df38751d89ae447f9ed16687034f",
+      "bytes": 67,
+      "representative_path": "pipeline/running.json"
+    },
+    {
+      "oid": "039b280c343d6bb9cb704d870221889fe0a482eb",
+      "bytes": 3650,
+      "representative_path": "AdaRES/tools/smoke_adares_b0.py"
+    },
+    {
+      "oid": "356a45526403a71dc551cadb2287437ab3ba0ac6",
+      "bytes": 1562,
+      "representative_path": "pipeline/codex_memory.md"
+    },
+    {
+      "oid": "a9206ca34833c70552c27e8d3870622441b81994",
+      "bytes": 1567,
+      "representative_path": "pipeline/experiments/AdaRES-B0.json"
+    },
+    {
+      "oid": "db5b702044aa845d3897e1cee1a24dbc4e424074",
+      "bytes": 67,
+      "representative_path": "pipeline/running.json"
+    },
+    {
+      "oid": "4c90e5e538b766ddc50a363e8f142484a5ca777d",
+      "bytes": 1149,
+      "representative_path": "pipeline/experiments/AdaRES-B0.json"
+    },
+    {
+      "oid": "0967ef424bce6791893e9a57bb952f80fd536e93",
+      "bytes": 3,
+      "representative_path": "pipeline/running.json"
+    }
+  ],
+  "limitation": "Pattern-based scan is not a proof of absence of all possible secrets."
+}

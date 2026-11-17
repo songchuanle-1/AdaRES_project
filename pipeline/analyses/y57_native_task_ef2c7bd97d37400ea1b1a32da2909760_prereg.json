@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "preregistered_at": "2026-10-19T20:25:48.792300+08:00",
+  "program": {
+    "path": "pipeline/analyses/y57_native_task_ef2c7bd97d37400ea1b1a32da2909760_program.py",
+    "sha256": "a1b06194514a22fb2da6cbd81a56bb579e6bbd41efb45e69ee3ae60b9c00b1a4"
+  },
+  "source_manager": {
+    "path": "scripts/prepare_y57_native_task.py",
+    "sha256": "ea899378f11cd04080294264204989db77e40699326c09d7be3d442247227588"
+  },
+  "inherited_native_safety": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_program.py",
+    "sha256": "ed5045122eeb6939310a9d8f3e096da9511e9ae149d184aee7ef29c1374b8fbc"
+  },
+  "CPU_pair_binding": {
+    "path": "pipeline/analyses/y57_pair_binding_ef2c7bd97d37400ea1b1a32da2909760_result.json",
+    "sha256": "cfa007ae2d47657833483acd69a862a6242b6454138b1f60861fb2296871d693"
+  },
+  "observation": "Same8TRAIN scenes/32expressions/Q128;4native batch2 forwards,all7indicator layers/224records. Source/checkpoint/GT/count/raw geometry bindings, BN buffers restored and parameters unchanged; no optimizer or saved weights.",
+  "primary": "Final layer6 descriptor/confidence/actual point-quality associations; layers0-5 exhaustive exploratory. No layer, query, direction or threshold selection.",
+  "limitation": "Observational provenance/task-association capture only; does not establish conditional incremental evidence, reachable counterfactuals, harm, trained benefit, native backward/resource gate or novelty.",
+  "syntax_python38": true,
+  "compile_pass": true,
+  "missing_or_unauthorized_GPU_entry_rejected": true,
+  "actual_GPU_execution": false,
+  "full_native_backward": false,
+  "training_launches": 0,
+  "admission": false
+}

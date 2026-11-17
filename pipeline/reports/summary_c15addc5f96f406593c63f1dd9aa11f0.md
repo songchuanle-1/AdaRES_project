@@ -1,0 +1,83 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-10-17T06:50:09.161507+00:00；生成报告时快照年龄：409 秒；模式：design
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：0
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-10-17 14:50:08
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-Y36 — mIoU=0.5110 (gap to target: +0.0040)
+       Epochs: ?, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0090
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5110, target=0.5150, gap=+0.0040
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-2 | 0 | 未知 | 未知 | 未知 |
+| server-2 | 1 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-10-17 14:50 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  无训练进程
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2:
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| 无 | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | 快照内无运行任务 |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 0（运行 0 / 认领 0 / 等待 0）；目标 2；准入预算 2。
+- 研究储备 2 / 2；储备准备预算 0，不增加训练并发或启动授权。
+- 候选累计记录 107：complete=14 / rejected=79 / closed=12 / blocked=2。
+- 否决范围：unclassified=72 / implementation=4 / hypothesis=3；实现修订累计 3；收据文件 30（含修订或重试，不代表成功率）。
+
+## 4. This Tick's Actions
+- 本轮快照为2026-10-17 14:50:09上海时间，design；所有权、foreground模式、目标、白名单和禁用后台调度核对通过，begin仅执行一次monitor/goal。当前项目无训练进程，运行/认领/排队均0，无新终态。GPU实时利用率、显存及外来进程未知，不据此分配。
+- 紧凑视图显示储备2/2、储备准备预算0、due0、两个未到期授权阻塞。未提前重跑Y52/Y54门禁或更改其retry/wake，未把上轮Y55反证或Y50归档重复算成本轮研究。
+- 14:52:55上海时间执行项目内隔离源码AST回归：实际前台脚本第233行把12条历史closed计入pending，得到14项且第234行冷却分支false；保持同一谓词并仅在内存去除closed后得到2项blocked且分支true。blocked-only正控制true、closed-only控制false。源脚本与原研究账本前后哈希一致，没有写实际冷却文件。证据为pipeline/analyses/closed_stage_cooldown_regression_c15addc5f96f406593c63f1dd9aa11f0.json，SHA256 6203b9d508bae2b43f391a3b0d9b981a2553289eeb9bf3ebb56ca3d076060aff。
+- 这项运维反例解释了上轮外部授权阻塞未建立新冷却、当前无新到期工作却再触发design的问题，不是模型假设或mIoU提升。没有新增科学候选、模型/配置、修订、提交、准入或训练启动；研究账本107项及所有历史closed冻结原样保留。
+- 已通过规范决策入口记录20261017-145336_question.md，并更新七节记忆。共享canonical程序可能影响其它项目，不在本次仅AdaRES研究授权下改它，也不更改目标、准入、历史、deadline或调度。
+- 科学状态无变化：历史CSV最佳Y36 mIoU 0.5110、基线B1 0.5020，目标0.515、差0.0040；本轮没有新训练/评估结论。Y52和Y54训练收益仍未知。规范finish只执行一次，返回1，精确校验错误为CLOSURE_INCOMPLETE: Capacity-gap design made no durable candidate progress; create a stable diagnosis candidate and run its next test before stopping。
+- 14:55:58上海时间只读核实收据INCOMPLETE/closure_rc1/context_committed=false、当前token租约仍在。失败已保存在pipeline/analyses/closed_stage_postflight_failure_c15addc5f96f406593c63f1dd9aa11f0.json。本轮未完成，不再重复finish；完成本次留档后执行abort并独立核实释放，abort实际结果以命令和最终收据为准。
+- 收据用量只覆盖本轮begin至收据的本地可见响应窗口，实际token值当前未知；不含更早阅读、迟到记录和最终答复，不是账单，缓存已含input、推理已含output，不重复相加。实际产出为一次本地运维谓词回归和故障证据，科学实验产出0。
+
+## 5. Decisions Made
+- 不将运维故障包装成新的科学diagnosis候选，不重复等价对账、不凑第三个储备或改名重开旧路线；本轮不宣称路线穷尽、无信息增益早停或deadline接近，也不复用上轮candidate progress冒充新证据。
+- 保留原research_work/design_cycle及历史证据；本轮全部科学候选均无阶段或证据变化。规范postflight若不能接受这一真实阻塞状态，保存精确错误并abort核实释放，不改门槛、不反复finish或硬撑截止。
+- 运维修复需另获限定授权：只修正共享foreground_tick.py对历史closed的冷却pending筛选并补回归，不改调度、资源、训练许可、目标或准入。Y52/Y54原限定提交许可仍分别需要，不能沿用Y50许可或把运维修复许可当成训练提交许可。
+- 本轮finish已失败，保持INCOMPLETE，不借用上轮科学进展或修改历史通过检查。立即按已保存精确失败执行本token abort并核实释放；abort结果不在执行前伪称成功，释放后不写任何项目文件。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

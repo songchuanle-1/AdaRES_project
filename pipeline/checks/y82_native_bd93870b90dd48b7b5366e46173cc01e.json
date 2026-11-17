@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y82",
+  "token": "bd93870b90dd48b7b5366e46173cc01e",
+  "code_commit": "5773768ffb87d7fea7432e85fd0da561556aa2fc",
+  "CPU_version": {
+    "path": "pipeline/checks/y82_cpu_version_bd93870b90dd48b7b5366e46173cc01e.json",
+    "sha256": "ab5ffaea3e6c89d9a5b159d17156ff1993bb2a5c4f2cc77e5e54935340f194bb"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y82_cpu_bd93870b90dd48b7b5366e46173cc01e.json",
+    "sha256": "2837d258176dcd7e2a3bd744237eee38b501343e09ba0b77904f0bdb6cf39fb7"
+  },
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu0_plan.json",
+      "sha256": "916e12be835642a2bbfe857e71ce44b9055da6c34fabc313c3581c51975faa1f"
+    },
+    "1": {
+      "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu1_plan.json",
+      "sha256": "a3b5f3d051de446c7db38eddc07f2b6253ea84219f2a5d18b61cb0838b3c93d7"
+    }
+  },
+  "native_body": {
+    "path": "scripts/probe_y82_native_smoke.py",
+    "sha256": "ae9a270cd04568a7e29ffea17f60a1995efe0ab42d495c47b6da661294f7a37c"
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_guards.log",
+    "sha256": "8fc7326cec88ea2d2094e80dd58a341acfbce9cda952d1e628fe7e222fb46f75"
+  },
+  "guard_tests_passed": 11,
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "same_scientific_body": true,
+  "exact_callback_functions_and_classes": 12,
+  "CPU_native_callbacks_actually_executed": true,
+  "CPU_program": {
+    "path": "pipeline/checks/y82_cpu_bd93870b90dd48b7b5366e46173cc01e_program.py",
+    "sha256": "63abd4a4d68e108ae21a6d82a640bfca92e6fbe77d364125bdc3f98bd9faae7a"
+  },
+  "observer_core": {
+    "path": "scripts/y82_observer_core.py",
+    "sha256": "c08c0c08910c879879c603088c26f14dfb67e3f11d88fcb502be6f6e989c544f"
+  },
+  "working_HEAD": "4e68cd84d56d890222adc2bec8ab59cb0c8715b6",
+  "queue_and_running_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y82_native_plans.py",
+      "sha256": "d0dd3eae4835fd299243ada16aac7fb92a73c07f4bb23b6cd538c2382303e3e8"
+    },
+    {
+      "path": "scripts/test_y82_native_smoke_plan.py",
+      "sha256": "878d39bce57a3da954d964e3e385fe944def29ba1df4511cc68b92a5843d6a61"
+    }
+  ]
+}

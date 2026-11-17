@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y62",
+  "observed_at": "2026-10-24T20:59:05.043412+08:00",
+  "command": "python -B -m unittest discover -s scripts -p test_y62_preparation.py -v",
+  "returncode": 0,
+  "output": "test_CPU_not_native_smoke (test_y62_preparation.PreparationTests.test_CPU_not_native_smoke) ... ok\ntest_fixture_schema (test_y62_preparation.PreparationTests.test_fixture_schema) ... ok\ntest_missing_dtype (test_y62_preparation.PreparationTests.test_missing_dtype) ... ok\ntest_native_call_guard (test_y62_preparation.PreparationTests.test_native_call_guard) ... ok\ntest_no_decoder_path (test_y62_preparation.PreparationTests.test_no_decoder_path) ... ok\ntest_no_new_information_witness (test_y62_preparation.PreparationTests.test_no_new_information_witness) ... ok\ntest_wrong_parameter_budget (test_y62_preparation.PreparationTests.test_wrong_parameter_budget) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK\n",
+  "fixture_tests_only": true,
+  "native_smoke_executed": false,
+  "evidence": [
+    {
+      "path": "scripts/test_y62_preparation.py",
+      "sha256": "5e5c98bfadba88fab7403e3e17dde97df206a7ffa23a2c09ef42ccea66572924"
+    },
+    {
+      "path": "scripts/prepare_y62_overlap_density.py",
+      "sha256": "551ae3ed4212f17c2d5bce43d195eb300d880f7d2f5c895e971895b523535dd0"
+    },
+    {
+      "path": "scripts/probe_y62_native_smoke.py",
+      "sha256": "0f620174066054c45a69d94ffc2b6e5e6d38738f8f3739d98282f1186146d88c"
+    }
+  ]
+}

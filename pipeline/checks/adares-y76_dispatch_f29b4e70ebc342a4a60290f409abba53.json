@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "f29b4e70ebc342a4a60290f409abba53",
+  "id": "AdaRES-Y76",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y76",
+    "label": "AdaRES-Y76 fixed30",
+    "config": "configs_song/model_paper5/adares_y76_stage_confidence_conditioning_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y76.json",
+    "scientific_candidate_id": "AdaRES-Y76",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 3489002,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y76_stage_confidence_conditioning_res_20261101_210049.log",
+    "launched": "2026-11-01T21:01:25"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y76 fixed30] configs_song/model_paper5/adares_y76_stage_confidence_conditioning_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y76.py",
+    "sha256": "ecd306d32dc058dab56784f1f15f94e1155be2f8cd2a4e7fed0640b1bd36f367"
+  }
+}

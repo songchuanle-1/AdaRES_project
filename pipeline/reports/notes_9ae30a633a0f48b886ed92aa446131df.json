@@ -1,0 +1,22 @@
+{
+  "actions": [
+    "依用户继续训练指令，仅处理AdaRES_project；已核验实际owner、后台Disabled和当前授权后begin，先查进展并尝试派发已有合格任务，ready waiting0。",
+    "运行：AdaRES-Y96 Train21/30 step1263/4686；AdaRES-Y98 Train16/30 step3481/4686。原PID、源码、YAML、签名收据、私有运行环境、350W/280W和原生步数递增已核验；无新终态或操作故障。",
+    "两张授权GPU0当前物理busy且保留给原运行；canonical只读资源检查已留档，保留collector真实resource_check。本轮无新原生检查、准入、启动、归档或正式评测。",
+    "已有Y99当前HEAD/原运行资源绑定和Y96/Y98精确终态工具保持，不重跑CPU/版本/绑定/原生计划测试，不新增占位候选或重试已冻结失败路线。"
+  ],
+  "decisions": [
+    "保留Y96/Y98原训练继续至固定30轮。匹配原运行自然结束、精确完整稳定有限last/best/model/optimizer/scheduler及Train/Val1..30核验和规范归档后，再以新鲜独占空闲未保留的授权GPU0推进Y99真实原生YAML检查；通过后同轮执行完整原设备协议冻结、准入、安全部署和步数验证。",
+    "全部server2GPU1使用和Y57单独暂停继续保留；不迁移冻结后评或成本、不重启、不使用server6、不跨项目、不改调度或功耗、不干预外部任务。科学goal字节、旧收据、原数据/运行环境/映射/seed1999固定30轮/禁用项/专用恢复要求保持，无新增用户处理事项。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y98_resource_wait_9ae30a633a0f48b886ed92aa446131df.json",
+      "sha256": "f50acfa6628637e758850b867ffe63a9d4bacfed7b296d61ad36512ba5a888ca"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_9ae30a633a0f48b886ed92aa446131df.md",
+      "sha256": "dc9e2ee19c8bb2eed744de6a71feacff71f04d49842029865002160f11a30b37"
+    }
+  ]
+}

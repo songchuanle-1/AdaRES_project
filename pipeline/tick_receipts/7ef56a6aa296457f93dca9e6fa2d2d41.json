@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "7ef56a6aa296457f93dca9e6fa2d2d41",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T14:49:15.769856+00:00",
+  "recorded_at": "2026-10-16T14:54:28.310127+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: due live client22:50:59-22:51:04+08 observation found GPU0 foreign PID19723 and GPU1 own Y50 PID31539; no idle authorized exclusive GPU or diagnostic lease. Y50 exact original process and actual Train12/30 steps3758->3762/4686 confirmed; begin process best0.4918 remains below historical B1 and is not final efficacy. SAME frozen Y52 remains inconclusive GPU-blocked; native sparse TRAIN matching/backward/resources/restore unrun. No repeated CPU control, new scientific test/model revision/candidate/admission/launch or route-exhaustion claim. All47 Y52 evidence hashes,7 prototype files, immutable context/pending hashes, six-section report and seven-section memory verified. Unchanged checker queue-opening rejecting predicate remains true; prior exact failed check CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. Do not replay known-failing finish or change checker/blocker/queue/gates. Retry23:51:04+08 derives from real resource observation, not schedule. Abort this tick only, preserve both jobs and all evidence, independently verify release.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 8,
+    "input_tokens": 2233627,
+    "cached_input_tokens": 2217728,
+    "output_tokens": 6653,
+    "reasoning_output_tokens": 3216,
+    "total_tokens": 2240280,
+    "uncached_input_tokens": 15899,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 2,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

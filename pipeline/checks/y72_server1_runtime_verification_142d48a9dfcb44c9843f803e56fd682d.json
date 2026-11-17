@@ -1,0 +1,100 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "inactive_plan": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_plan.json",
+    "sha256": "abff97619f2b925d39761b26b7bb5a5cec24d74190cc77df90a93a4041d6f75e"
+  },
+  "original_active_server2_plan": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_plan.json",
+    "sha256": "a3a875a2992f0a43ef4eb50849f9312115959a71134456b2dc64d0535f0efa1c"
+  },
+  "result": {
+    "path": "pipeline/analyses/y72_server1_CPU_runtime_142d48a9dfcb44c9843f803e56fd682d.json",
+    "sha256": "e3cb0db304615c8b4fd4d1fa19e992ad2816a68a2080bc888d53b30381179fe7"
+  },
+  "raw_log": {
+    "path": "pipeline/analyses/y72_server1_CPU_runtime_142d48a9dfcb44c9843f803e56fd682d.log",
+    "sha256": "7e134e596e144c5e80e9d9b3e9b26a26b3dbffa15c4253eed8a5eaba97ca2964"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_cpu_program.py",
+    "sha256": "60137b6cf3c9733eb55ff6b9eb8d707ea8e84d9b581d509a23572459e937a103"
+  },
+  "native_program": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_native_program.py",
+    "sha256": "a496bf32fc9f6e1e6296284cbc01a5d78f7a7286559b2aaa6999245db14d257d"
+  },
+  "baseline_YAML_comparison": {
+    "path": "pipeline/checks/y72_server1_baseline_yaml_142d48a9dfcb44c9843f803e56fd682d.json",
+    "sha256": "aa465d03936b9f60a4b9fce0dea29bbadf990c170a514af57edd61eefe678dc6"
+  },
+  "configured_private_python": "/data1/songcl/Project/AdaRES_project/runtime/adares_project/bin/python",
+  "configured_private_library_path": "/data1/songcl/Project/AdaRES_project/runtime/cuda113lib64",
+  "configured_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data1/songcl/Project/AdaRES_project/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "configured_runtime_executed_successfully": true,
+  "exact_original_data_proof": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "scalar_reference_max_error": 1.4953504157144692e-08,
+  "first_six_zero": true,
+  "second_six_nonzero": true,
+  "actual_gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 387,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "refinement_calls": 6,
+      "prediction_consumption_calls": 6,
+      "current_visual_and_static_mask_gradients_finite": true,
+      "refinement_weight_gradient_max": 91.35334014892578,
+      "parameter_update_max": 0.00010000001930166036
+    },
+    {
+      "all_finite": true,
+      "tensors": 387,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "refinement_calls": 6,
+      "prediction_consumption_calls": 6,
+      "current_visual_and_static_mask_gradients_finite": true,
+      "refinement_weight_gradient_max": 519.8917846679688,
+      "parameter_update_max": 0.00010013578139478341
+    }
+  ],
+  "guard_tests_passed": 8,
+  "active_server_unchanged": true,
+  "activated": false,
+  "native_GPU_executed": false,
+  "production_sync": false,
+  "admitted": false,
+  "Y69_preserved": true,
+  "Y57_paused": true,
+  "limitation": "Real CPU full-model/pretrain/TRAIN collation plus synthetic decoder loss and two optimizer steps exercising exact frozen native observation callbacks; not native sparse task loss/backward/optimizer, GPU PASS or trained efficacy.",
+  "evidence": [
+    {
+      "path": "scripts/y72_server1_alternative.py",
+      "sha256": "8cbe740bc8e766be87770b5add92d59c0633355d2d05b3db4a5ea084a0d454e6"
+    },
+    {
+      "path": "scripts/test_y72_server1_alternative.py",
+      "sha256": "cb3e48edf87637be4b4329ee8e6039570f709d4d570269748ec47b0c2a9b8272"
+    },
+    {
+      "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_guards.log",
+      "sha256": "b3c99c8d840acff2afaa562951bc7bd1dfbf4b6dce836bc28853c8345f8ecad3"
+    }
+  ]
+}

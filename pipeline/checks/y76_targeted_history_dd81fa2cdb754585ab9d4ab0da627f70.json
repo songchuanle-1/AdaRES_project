@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "scope": "Targeted comparison with completed Y60 and Y67 only; no exhaustive novelty claim.",
+  "matches": [
+    {
+      "id": "AdaRES-Y60",
+      "stage": "blocked",
+      "hypothesis": "One indicator shared across all seven decoder stages couples confidence fitting for different refinement states. Independent stage-specific indicator heads may let the final head fit its own mask/query distribution without intermediate-stage head-gradient interference. This is a structural training comparison, not an efficacy claim.",
+      "matched_control": "Unchanged AdaRES-W2 native YAML and all seven confidence losses. Clone the initial head for every refinement stage without consuming RNG; keep point-mass competition, masks, selector, targets, optimizer, seed1999 and fixed30."
+    },
+    {
+      "id": "AdaRES-Y67",
+      "stage": "blocked",
+      "hypothesis": "One output LayerNorm affine transform is reused for initial and six refined mask/score readouts although their query distributions differ. Independent per-stage affine readout normalization may reduce shared mask/score-gradient interference. This is an architectural allocation test; existing stage layers can implicitly compensate and benefit is unknown.",
+      "matched_control": "Unchanged W2 native YAML, seven shared confidence-indicator calls and all native losses. Copy the existing out_norm into six private refinement LayerNorms without RNG, retaining stage0 out_norm. Only prediction_head affine sharing changes; Q128/seed1999/fixed30/released SPFormer/selector/Boolean attention gate remain unchanged. +3072 parameters."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

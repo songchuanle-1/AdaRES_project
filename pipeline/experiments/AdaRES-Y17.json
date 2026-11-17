@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-Y17",
+  "config": "configs_song/model_paper5/adares_y17_target_equivalent_pairing_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-09-30T23:04:19.682026",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-01T22:49:30.746515",
+      "status": "done_complete",
+      "best_miou": "0.5040",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 109632,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y17_target_equivalent_pairing_res_20260930_230343.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-09-30T23:04:19",
+  "final_best": "0.5040",
+  "finished_at": "2026-10-01T22:49:30",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

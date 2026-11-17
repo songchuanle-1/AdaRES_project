@@ -1,0 +1,17 @@
+Using backend: pytorch
+2026-11-01 09:53:54,228 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=787 unexpected=0
+2026-11-01 09:53:54,525 - INFO - Load train scanrefer: 36665 samples
+2026-11-01 09:53:58,747 - INFO - set random seed: 1999
+{"component": "query_permutation", "dtype": "torch.float32", "max_absolute_error": 0.0, "dtype_epsilon": 1.1920928955078125e-07, "rtol_atol": 1.52587890625e-05, "model_unchanged": true}
+{"component": "query_permutation", "dtype": "torch.float64", "max_absolute_error": 1.1102230246251565e-16, "dtype_epsilon": 2.220446049250313e-16, "rtol_atol": 2.842170943040401e-14, "model_unchanged": true}
+/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.
+  warnings.warn(msg, FutureWarning)
+Traceback (most recent call last):
+  File "<stdin>", line 153, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/gorilla/solver/build.py", line 68, in build_optimizer
+    return build_single_optimizer(model, _optimizer_cfg)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/gorilla/solver/build.py", line 39, in build_single_optimizer
+    getattr(model, key).parameters()),
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1207, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'DEC' object has no attribute 'text_encoder'

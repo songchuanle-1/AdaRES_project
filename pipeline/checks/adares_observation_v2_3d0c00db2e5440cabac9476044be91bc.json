@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "token": "3d0c00db2e5440cabac9476044be91bc",
+  "original_helper": {
+    "path": "scripts/finish_adares_zero_budget_observation.py",
+    "sha256": "0be589142e1df2670bf8e02ac2e2accbbff389a8d2f549b9efd5b4b76297f66e"
+  },
+  "successor": {
+    "path": "scripts/finish_adares_zero_budget_observation_v2.py",
+    "sha256": "547efc15fc7922a8d7dc7a34ce9fb0c4bad6b09fe85632f8500f8a1457b8399d"
+  },
+  "only_scope": "Handle repeated memory prefix and exact unchanged Y57/Y97 due holds; retain zero-budget, original-source and resource checks.",
+  "original_helper_preserved": true,
+  "scientific_or_numeric_guards_unchanged": true,
+  "tests_or_permission_requests_replayed": false,
+  "evidence": [
+    {
+      "path": "scripts/prepare_adares_observation_v2.py",
+      "sha256": "ae22f33ebd065af1b0722e05db2eb8ac4a68d2c26a691b4ad0c1a1c594b38970"
+    },
+    {
+      "path": "scripts/finish_adares_zero_budget_observation.py",
+      "sha256": "0be589142e1df2670bf8e02ac2e2accbbff389a8d2f549b9efd5b4b76297f66e"
+    },
+    {
+      "path": "scripts/finish_adares_zero_budget_observation_v2.py",
+      "sha256": "547efc15fc7922a8d7dc7a34ce9fb0c4bad6b09fe85632f8500f8a1457b8399d"
+    }
+  ]
+}

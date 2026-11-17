@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T06:49:18.975733+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 23,
+      "total": 30,
+      "step": 3208,
+      "count": 4686
+    },
+    "log_bytes": 29974057
+  },
+  "after": {
+    "observed_at": "2026-10-30T06:49:23.981796+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 23,
+      "total": 30,
+      "step": 3217,
+      "count": 4686
+    },
+    "log_bytes": 29976667
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T06:49:18.975733+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 23,
+        "total": 30,
+        "step": 3208,
+        "count": 4686
+      },
+      "log_bytes": 29974057
+    },
+    {
+      "observed_at": "2026-10-30T06:49:23.981796+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 23,
+        "total": 30,
+        "step": 3217,
+        "count": 4686
+      },
+      "log_bytes": 29976667
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 1973300,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y66_peer_state_feedback_res_20261029_105447.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 1973300\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "gpu": "59, 22836, 66, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y66",
+  "token": "93403cd7a53d4f96b28607c9174e46b3",
+  "observed_start_local": "2026-10-30T06:49:17.730395+08:00",
+  "observed_end_local": "2026-10-30T06:49:23.510319+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y66_server1_phase.py",
+      "sha256": "84801a33003498aad5b660c1fbd3a866ebe74d090e38770bb9b0cdb21de4649c"
+    },
+    {
+      "path": "pipeline/checks/y66_server1_phase_progress_93403cd7a53d4f96b28607c9174e46b3.log",
+      "sha256": "b73730140295d029399577378e6c3b2a793fe66a62df8164151c1912f2334cba"
+    }
+  ]
+}

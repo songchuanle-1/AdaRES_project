@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y102",
+  "frozen_at": "2026-11-12T23:53:20.718352+08:00",
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "code_commit": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+  "parent_protocol": {
+    "path": "pipeline/checks/AdaRES-Y100_cddfc53edaf54529ba87a49cb65ec8bd_post_training_freeze.json",
+    "sha256": "cb9b9a80fb6f9f9b116f9e9a35a515b3c4fb542eb6f4128cbee0ed5d389eff01"
+  },
+  "training": "Released SPFormer; seed1999; fixed30; native YAML losses/optimizer/scheduler; Q128; single argmax; no validation tuning.",
+  "evaluation": {
+    "split": "Full frozen ScanRefer val9508 expressions/141 scenes",
+    "methods": [
+      "AdaRES-Y102",
+      "AdaRES-Y36",
+      "AdaRES-W2",
+      "AdaRES-B1"
+    ],
+    "repeats": 2,
+    "primary": "FIRST",
+    "metrics": [
+      "mIoU",
+      "Acc@0.25",
+      "Acc@0.5",
+      "active_queries",
+      "latency",
+      "peak_memory"
+    ],
+    "scene_cluster_bootstrap": 10000,
+    "bootstrap_seed": 1999,
+    "TRAIN_size_cuts": [
+      1487,
+      3325
+    ],
+    "material_harm": "Prespecified target-size subgroup difference CI upper<0 versus Y36/W2; retain negatives.",
+    "uncertainty": "Crossing intervals remain inconclusive; repeats do not measure training-seed uncertainty."
+  },
+  "resource_condition": {
+    "server": "server-2",
+    "gpu": 0,
+    "power_limit_watts": 280.0,
+    "note": "Existing power preserved; full paired evaluation/cost on this device; two batches are not a full-dataset memory bound."
+  },
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "scientific_efficacy": "Unknown until original full frozen evaluation."
+}

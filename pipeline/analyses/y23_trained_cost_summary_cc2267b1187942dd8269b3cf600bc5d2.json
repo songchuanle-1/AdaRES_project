@@ -1,0 +1,339 @@
+{
+  "source": {
+    "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y23_trained_cost_serial_cc2267b1187942dd8269b3cf600bc5d2.json",
+    "sha256": "5f99b9adb3245f86aebedfb40b1e55509564d228eb6b1c8a09c1c7d2ebaa4fbf"
+  },
+  "observed_local": "2026-10-03T20:05:35.810257+08:00",
+  "manifest_indices": [
+    0,
+    44,
+    60,
+    101,
+    115,
+    126,
+    137,
+    171,
+    728,
+    6780
+  ],
+  "rows": {
+    "candidate": [
+      {
+        "scan_ids": [
+          "scene0000_00"
+        ],
+        "points": 81369,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.07856717519462109,
+        "descriptive_p95_seconds": 0.07883972115814686,
+        "peak_allocated_gib": 0.8377842903137207,
+        "peak_reserved_gib": 0.951171875
+      },
+      {
+        "scan_ids": [
+          "scene0001_00"
+        ],
+        "points": 125526,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.0717578362673521,
+        "descriptive_p95_seconds": 0.07358368299901485,
+        "peak_allocated_gib": 0.7653470039367676,
+        "peak_reserved_gib": 0.90625
+      },
+      {
+        "scan_ids": [
+          "scene0002_00"
+        ],
+        "points": 297362,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.10754815861582756,
+        "descriptive_p95_seconds": 0.10784854423254728,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      {
+        "scan_ids": [
+          "scene0003_00"
+        ],
+        "points": 82063,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.06755107641220093,
+        "descriptive_p95_seconds": 0.06761231124401093,
+        "peak_allocated_gib": 0.7143969535827637,
+        "peak_reserved_gib": 0.830078125
+      },
+      {
+        "scan_ids": [
+          "scene0004_00"
+        ],
+        "points": 173649,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.12083444744348526,
+        "descriptive_p95_seconds": 0.12204770278185606,
+        "peak_allocated_gib": 0.8131904602050781,
+        "peak_reserved_gib": 0.994140625
+      },
+      {
+        "scan_ids": [
+          "scene0005_00"
+        ],
+        "points": 119502,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.07101017609238625,
+        "descriptive_p95_seconds": 0.08034873772412539,
+        "peak_allocated_gib": 0.7571930885314941,
+        "peak_reserved_gib": 0.900390625
+      },
+      {
+        "scan_ids": [
+          "scene0006_00"
+        ],
+        "points": 203795,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.10229644179344177,
+        "descriptive_p95_seconds": 0.1056386971846223,
+        "peak_allocated_gib": 0.8556184768676758,
+        "peak_reserved_gib": 1.08203125
+      },
+      {
+        "scan_ids": [
+          "scene0007_00"
+        ],
+        "points": 85905,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.06780645810067654,
+        "descriptive_p95_seconds": 0.0691660949960351,
+        "peak_allocated_gib": 0.7136416435241699,
+        "peak_reserved_gib": 0.81640625
+      },
+      {
+        "scan_ids": [
+          "scene0054_00"
+        ],
+        "points": 537406,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.159763989970088,
+        "descriptive_p95_seconds": 0.16007173657417298,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      },
+      {
+        "scan_ids": [
+          "scene0497_00"
+        ],
+        "points": 518097,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.21774871461093426,
+        "descriptive_p95_seconds": 0.21850010696798564,
+        "peak_allocated_gib": 1.2135405540466309,
+        "peak_reserved_gib": 1.693359375
+      }
+    ],
+    "parent": [
+      {
+        "scan_ids": [
+          "scene0000_00"
+        ],
+        "points": 81369,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.0783975962549448,
+        "descriptive_p95_seconds": 0.07897645719349385,
+        "peak_allocated_gib": 0.8377842903137207,
+        "peak_reserved_gib": 0.951171875
+      },
+      {
+        "scan_ids": [
+          "scene0001_00"
+        ],
+        "points": 125526,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.07254684716463089,
+        "descriptive_p95_seconds": 0.07270370777696371,
+        "peak_allocated_gib": 0.7653470039367676,
+        "peak_reserved_gib": 0.90625
+      },
+      {
+        "scan_ids": [
+          "scene0002_00"
+        ],
+        "points": 297362,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.1064195316284895,
+        "descriptive_p95_seconds": 0.10883695632219315,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      {
+        "scan_ids": [
+          "scene0003_00"
+        ],
+        "points": 82063,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.06996135599911213,
+        "descriptive_p95_seconds": 0.06999137997627258,
+        "peak_allocated_gib": 0.7143969535827637,
+        "peak_reserved_gib": 0.830078125
+      },
+      {
+        "scan_ids": [
+          "scene0004_00"
+        ],
+        "points": 173649,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.11897839605808258,
+        "descriptive_p95_seconds": 0.12336149271577597,
+        "peak_allocated_gib": 0.8131904602050781,
+        "peak_reserved_gib": 0.994140625
+      },
+      {
+        "scan_ids": [
+          "scene0005_00"
+        ],
+        "points": 119502,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.07350827567279339,
+        "descriptive_p95_seconds": 0.09613445047289133,
+        "peak_allocated_gib": 0.7571930885314941,
+        "peak_reserved_gib": 0.900390625
+      },
+      {
+        "scan_ids": [
+          "scene0006_00"
+        ],
+        "points": 203795,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.1028200127184391,
+        "descriptive_p95_seconds": 0.11006338018923997,
+        "peak_allocated_gib": 0.8556184768676758,
+        "peak_reserved_gib": 1.08203125
+      },
+      {
+        "scan_ids": [
+          "scene0007_00"
+        ],
+        "points": 85905,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.06903336755931377,
+        "descriptive_p95_seconds": 0.07733255475759507,
+        "peak_allocated_gib": 0.7136416435241699,
+        "peak_reserved_gib": 0.81640625
+      },
+      {
+        "scan_ids": [
+          "scene0054_00"
+        ],
+        "points": 537406,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.15932109951972961,
+        "descriptive_p95_seconds": 0.1598428377881646,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      },
+      {
+        "scan_ids": [
+          "scene0497_00"
+        ],
+        "points": 518097,
+        "expressions": 4,
+        "readings": 3,
+        "median_seconds": 0.22418630868196487,
+        "descriptive_p95_seconds": 0.22650043983012438,
+        "peak_allocated_gib": 1.2135405540466309,
+        "peak_reserved_gib": 1.693359375
+      }
+    ]
+  },
+  "aggregate": {
+    "candidate": {
+      "train8": {
+        "readings": 24,
+        "median_seconds": 0.0785422446206212,
+        "descriptive_p95_seconds": 0.12019053930416702,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "readings": 6,
+        "median_seconds": 0.18851709458976984,
+        "descriptive_p95_seconds": 0.21837487490847707,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      }
+    },
+    "parent": {
+      "train8": {
+        "readings": 24,
+        "median_seconds": 0.07838366087526083,
+        "descriptive_p95_seconds": 0.11881510484963655,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "readings": 6,
+        "median_seconds": 0.1902416218072176,
+        "descriptive_p95_seconds": 0.22611475130543113,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      }
+    }
+  },
+  "checkpoints": {
+    "candidate": {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261002_111726/best.pth",
+      "bytes": 955396040,
+      "sha256": "39a3e6595f15b493b928ff1674ea50addef88c5c3d893690b2de441be0200fcf",
+      "epoch": 16,
+      "best_miou": 0.5075805187225342,
+      "state_keys": {
+        "model": true,
+        "optimizer": true,
+        "scheduler": true
+      },
+      "unchanged_during_read": true
+    },
+    "parent": {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52"
+    }
+  },
+  "parameters": 164629637,
+  "limitations": [
+    "Three readings per batch give a descriptive percentile, not reliable tail-latency precision.",
+    "Train8/largest-pair pooled readings mix scenes and sizes; they are not independent scenes for a significance claim. Largest-pair scenes run serially at native predict batch=1.",
+    "Serial fixed candidate-then-parent order; transient hardware effects are not isolated.",
+    "Cost readings do not establish causal efficacy, equivalence, or Pareto dominance."
+  ],
+  "candidate_vs_parent": {
+    "train8": {
+      "median_seconds": 0.0020231734980169502,
+      "descriptive_p95_seconds": 0.01157625923295802,
+      "peak_allocated_gib": 0.0,
+      "peak_reserved_gib": 0.0
+    },
+    "largest_pair": {
+      "median_seconds": -0.009064931223070172,
+      "descriptive_p95_seconds": -0.03422986051228116,
+      "peak_allocated_gib": 0.0,
+      "peak_reserved_gib": 0.0
+    }
+  }
+}

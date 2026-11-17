@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y69",
+  "config": "configs_song/model_paper5/adares_y69_coarse_geometry_bias_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "9acd73cdc1b96be003c8450a9e22057248a0f531",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "required_resource": "Fresh exclusive idle authorized server-1 GPU0, no queue/running reservation or compute PID, exact hostname and approved private runtime/data/path mappings; keep default350W.",
+  "planned_command": "python -B scripts/run_y69_server1_native_probe.py AdaRES-Y69 --token <CURRENT_TOKEN>",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; one shared geometry bias consumed by six ordered coarse visual attention stages, seven shared indicators, actual combined attention masks equal learned bias with original Boolean hard exclusions and key padding preserved; exact expression-expanded source positions/FPS/sampling query-position correspondence; independent head0/head7/query0/query127/first-last-expression displacement formula; zero first-step/nonzero second-step response, new weight[8,3] finite nonzero gradient/actual update and finite source/query gradients; native modes and peak memory.",
+  "CPU_guard_tests_passed": 10,
+  "Python38_compile": true,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_program.py",
+    "sha256": "bbc720820eb9945629559a34a326374f2fbc8470b96625856d906cb6f2de804c"
+  },
+  "previous_plan": {
+    "path": "pipeline/checks/y69_native_920e06975f7e4657a6186d382eb05ad9_gpu0_plan.json",
+    "sha256": "22184b6c965530e6afecb8f4fca9569a34f440fc045a776fa7561e64461ca3ef"
+  },
+  "activation_required": true
+}

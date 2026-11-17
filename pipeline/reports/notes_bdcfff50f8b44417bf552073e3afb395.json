@@ -1,0 +1,17 @@
+{
+  "actions": [
+    "实际CODEX_THREAD_ID核验归属，后台Pipeline-AdaRES_project保持Disabled；14:43:58快照experiment_first启用，预算2，仅server-2 GPU0/1，无跨项目或改调度。",
+    "14:49实核原Y56 PID13738/Train18 step3361至3442、Y57 PID16317/Train20 step3917至3996；均命令/cwd匹配、原生步数增长且无尾部报错。授权卡无独占空槽，三项已实现候选尚无可执行GPU smoke。",
+    "当前续训片段读取Y56验证.5038473010/.4996519685，Y57 .4984684885/.5009573102；这些是训练日志验证，不是冻结双遍完整评估或方法有效性结论。Y57片段best低于恢复前.5017439，不覆盖旧best。",
+    "Y60保持七个源码/YAML及提交6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3、既有原生两步计划不变。新增完整原生DEC图CPU fixture集成：父W2生产源LF实核、共同初始state/七阶段masks/scores/indis逐位相同，各七头实际执行，全部有限后向且最终loss不向六兄弟头传梯度。共享头与私有梯度和max差1.862645149e-9，仅最终私有头与共享头梯度范数差.126597是fixture描述，不证明共享有害。",
+    "集成结果pipeline/analyses/y60_decoder_cpu_bdcfff50f8b44417bf552073e3afb395.json及.log；native_data_loaded/native_task_backward/native_smoke_passed均false。CPU合成fixture不能代替稀疏骨干、真实TRAIN criterion、optimizer两步或GPU显存。tick_attempt=Y60 implementation_test/passed已绑定新证据；未新增候选、修订、提交、准入、队列或训练启动，不强凑额度。",
+    "GPU0在14:49为91C且热降频。用户在所属会话明确批准仅GPU0临时降至280W，已记录哈希绑定操作授权。首次sudo免密被拒，逐卡确认仍390W并完整留档；核验受保护账号引用后，仅在内存认证，实际sudo命令成功和逐卡回读确认权限，不假定SSH凭据自带管理权限，不输出/保存密码。",
+    "15:01:53确认仅GPU0运行时390W降至280W，GPU1仍390W；hostname/boot/GPU UUID/原Y56进程归属检查通过。原Y56实验和候选追加runtime_hardware_history；无训练重启、模型/数据/优化器/seed1999/fixed30、风扇、持久启动配置或调度变更。失败/成功证据分别为pipeline/checks/gpu0_runtime_power_bdcfff50f8b44417bf552073e3afb395.json、gpu0_runtime_power_authenticated_bdcfff50f8b44417bf552073e3afb395.json。",
+    "15:04:25降功耗后实核原PID13738/Y56 Train19 step0至66，原PID16317/Y57 Train21 step643至741，均增长无报错。GPU0 280W/89C/风扇85%/util88%/22682of24576MiB，GPU1 390W/68C/util68%/17098of24576MiB。GPU0热降频仍Active，内核读取成功且无新Xid/fallen-off；短期温度读数不是稳态改善或永久修复。证据pipeline/checks/gpu0_post_power_verify_bdcfff50f8b44417bf552073e3afb395.json。"
+  ],
+  "decisions": [
+    "保持原两项独立单GPU续训，三项候选等待真实独占原生检查，不挤占、共跑或重启。下一空卡优先Y58/Y59再Y60；重核当前租约、精确版本/goal和实际资源，真实原生两步通过即同轮入队和尝试既有门控派发。",
+    "已执行用户批准的GPU0临时280W，不重复索权或盲目重施390W前提脚本；GPU1保持原限制，不自动回升、进一步降功耗或改风扇。当前散热风险和掉卡根因仍未解决，后续成本比较须注明Y56硬件条件已改变。",
+    "原生GPU smoke尚未执行，不把CPU图集成和本轮校验完成当科学成功。两项新决策记录pipeline/decisions/20261021-150256_manual.md、20261021-150602_other.md；随后canonical finish，以真实收据为准。"
+  ]
+}

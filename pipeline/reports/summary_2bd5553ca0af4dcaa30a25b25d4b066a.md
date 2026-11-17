@@ -1,0 +1,78 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-10-04T15:48:07.077674+00:00；生成报告时快照年龄：437 秒；模式：event
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：0
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-10-04 23:48:06
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-W2 — mIoU=0.5100 (gap to target: +0.0050)
+       Epochs: 30/30, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0080
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5100, target=0.5150, gap=+0.0050
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-2 | 1 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-10-04 23:48 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  [adares_y27_relative_peer_res] Best=0.4540 6/30 no_improve=0/30 gpu=1 ? 序列: 0.3291, 0.3658, 0.4339, 0.4430, 0.4540
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2: running=1
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| AdaRES-Y27 | configs_song/model_paper5/adares_y27_relative_peer_res.yaml | server-2 | 1 | 未知 | 未知 | 未知 | 未知 | 未知 | running |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 1（运行 1 / 认领 0 / 等待 0）；目标 1；准入预算 0。
+
+## 4. This Tick's Actions
+- 本轮event快照为北京时间2026-10-04 23:48:07.077674，真实截止为2026-10-05 00:48:07.077674；归属/closure/授权GPU1及后台Disabled均已核实。begin仅一次，容量1/目标1/活跃1/运行1/等待0/预算0，到期候选0、新终态0。表0-3保留脚本快照，未知值不填零。
+- 首次只读探针失败在remote stdin第38行，对应原程序第30行的两次TRAIN计数严格递增断言。失败日志SHA256=8d0dd58704be381924c71afb29af73317b801f704a898588472f11102a2c9886，原程序b590ad3f保持不变；没有成功JSON，也不能把测量断言失败当原生训练崩溃。失败日志未保存两个计数，验证切换是可能原因但确切原因未知。
+- 依据原生tools/train.py的独立Train/Val进度条，只新增阶段感知观察脚本capture_y27_progress_phase.py，SHA256=2e3bd7ff6d7d4c056a32e8c36c03f29bddb030f595f5bc1aa0731b6d8cf77671。实际本地五组解析控制通过：同阶段、Train到Val、Val到下一轮、未变化不算推进、缺失或非法记录拒绝。阶段推进与训练步推进分别输出；Val不替代训练启动门槛，不改原探针、模型、门槛或协议。
+- 唯一新输出名的实际复测于23:51:47.977759至23:51:53.381482核实同一Y27/PID9901/配置/日志/源标记359a89d/GPU1；两次均Train7/30，288增至298/4686，真正训练步推进通过。新JSON路径pipeline/analyses/y27_progress_phase_2bd5553ca0af4dcaa30a25b25d4b066a.json、SHA256=c30f10e9e3f9db828890cc8db0829f206a5ff898a80814176e94055da6319dd5。GPU1设备22610MiB/66%，不是孤立峰值；仅两段24KB尾日志无崩溃标记。远端时钟约慢32分钟，统一明确使用本地观察时间。
+- 原始监控早期Best=0.4540、当前6/30、no_improve=0/30，后续独立观察为Train7；不是固定30轮终态、目标达到或科学效果证明。追加失败日志/新脚本/复测证据，更新119行七段记忆并保留修复说明；实际新增候选/准入/部署/恢复训练均0，新增真实复测证据1及测量修复1。
+- 第4段报告生成时本轮收据尚未产生，实际用量窗口与数值未知，finish后以真实收据为准；缓存包括在输入、推理包括在输出，不重复相加或当账单。唯一授权卡已被同一训练占用且无到期动作，不重复preflight、不查询使用GPU0、不操作其他项目/调度/后台。写报告时postflight待执行，完成仅以当前token的finish成功及独立释放核实为准。
+
+## 5. Decisions Made
+- Y27维持training，同一固定30轮/seed1999及释放SPFormer骨干不变。测量工具已恢复并得到真实Train7递增，无需重启或恢复训练；原失败的确切阶段原因仍未知，保留所有证据，不改写历史失败。
+- 后续只读进度观察使用已绑定哈希的阶段感知助手，明确区分Val和Train；未推进窗口报NO_BOUNDED_PROGRESS而非伪造PASS或直接判停滞。原有真实训练启动验证和科学准入门槛保持不变。
+- 最终收益/伤害/创新性/Pareto未知，早期Best=0.4540不决定成败；终态按冻结9508表达/141场景、三模型各两遍、10000场景bootstrap及TRAIN尺寸切分1487/3325评估，既有成本增长和不利对照保留。
+- 容量已满、预算0、无到期候选，本轮不新增准入、不宣称路线耗尽。GPU0用户保留/server-6禁用、Y26结构拒绝/Y25科学拒绝均不变；正常训练已验证，无需用户动作，通知保持安静。
+- 本轮须finish返回CLOSURE_POSTFLIGHT_PASS/COMPLETE并独立确认锁目录不存在，失败保留证据并abort原token。下一次调度时间未知，释放后不写项目报告。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

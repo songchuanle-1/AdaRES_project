@@ -1,0 +1,104 @@
+{
+  "complete": true,
+  "token": "e5ca4e47b09f466ea2a1dc215c0acf3c",
+  "observed_at": "2026-10-31T17:17:30.720492+08:00",
+  "completed_original_fixed30": {
+    "AdaRES-Y69": {
+      "path": "pipeline/checks/y69_server1_fixed30_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "c095b779b960c6cd652c7697440f6177841e669914e08756128a8cdcc6389487"
+    },
+    "AdaRES-Y70": {
+      "path": "pipeline/checks/y70_server2_fixed30_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "ead75cfa081f12868e54454e287bf458beb510e42638e6a0a10998a994845c80"
+    }
+  },
+  "native_two_step_passed": {
+    "AdaRES-Y72": {
+      "path": "pipeline/analyses/y72_server1_smoke_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "44d862b6b3d91f812a030bb3a2d3997c6755710f4ceb9a9d8fa011cc42f49f2f"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/analyses/y73_gpu1_smoke_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "3659fde87beaa37a91df04c8fb50ce4a3d0ad32c6a3c0e95940c2f09cff66f67"
+    }
+  },
+  "new_admissions": {
+    "AdaRES-Y72": {
+      "path": "pipeline/admissions/AdaRES-Y72.json",
+      "sha256": "e8722b6580739855cf638714de51ecd73bfb0f624bbc7ef6d7cce3db1f09445e"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/admissions/AdaRES-Y73.json",
+      "sha256": "929e1b3b563dec7ce3dfa52b9e3371d238ca9656f7d341344aee845e7784d761"
+    }
+  },
+  "original_and_new_training_confirmed": {
+    "AdaRES-Y71": {
+      "path": "pipeline/checks/production_adares-y71_e5ca4e47b09f466ea2a1dc215c0acf3c_after_y73_deployment.json",
+      "sha256": "eeff998938902879262516c16640ea88b90f7bcde7534f9972aea39fceea0c36"
+    },
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_e5ca4e47b09f466ea2a1dc215c0acf3c_final.json",
+      "sha256": "15d851b5fdf6d8bb145618d1dde296bc35b27a3db1459296f9b2b23bd76e674d"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_e5ca4e47b09f466ea2a1dc215c0acf3c_after_dispatch.json",
+      "sha256": "96312f822ec3dde5d044e440f8ba3bdaa34f366afd06fa56c571ffd3cb0bcec5"
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_final_evaluations_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "7629c099eb92823341bf809e9286c87f824df431c5999d492a5b518ef1a2f7f9"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_final_evaluations_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "5a7cad7b5ffedb4208553c1d79a02483562e7ce4462e2577c6f2b6ac0703705f"
+    }
+  },
+  "source_selections": [
+    {
+      "path": "pipeline/checks/adares-y72_source_selection_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "f058dbfd4fed8c1d1196e806530b49380aca0f2c7e689f3032c025ab8e9f8af2"
+    },
+    {
+      "path": "pipeline/checks/adares-y73_source_selection_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "f1e393fa19f88f93ce79cc38fc5491ff0c8bab4a7f30966dc49187fae3204fb0"
+    }
+  ],
+  "dispatches": [
+    {
+      "path": "pipeline/checks/adares-y72_dispatch_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "23dd36761de5b61c8c0f04566cff478ebac12b373aa0a4398401fed0030ffc40"
+    },
+    {
+      "path": "pipeline/checks/adares-y73_dispatch_e5ca4e47b09f466ea2a1dc215c0acf3c.json",
+      "sha256": "c6264bb4d741d66a31becbc0b1554affd311e933729080100abd23c474a0816b"
+    }
+  ],
+  "local_HEAD": "7da625ab750447eaad76e82309c89d887df93994",
+  "server1_marker": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "server2_marker": "7da625ab750447eaad76e82309c89d887df93994",
+  "original_Y71_PID_preserved": 53714,
+  "Y57_remains_paused": true,
+  "scientific_goal_unchanged": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "full_frozen_evaluation_executed": false,
+  "training_best_not_formal_FIRST": true,
+  "helpers": [
+    {
+      "path": "scripts/y72_y73_deployment.py",
+      "sha256": "5ef585e9e3bb52b12ba16f1ce7a727d5bc499e5420cb940dd18d271ac339ea54"
+    },
+    {
+      "path": "scripts/advance_y72_y73.py",
+      "sha256": "ed120baa38ef2a8b0da18842a0517e9b72b01250802d121a5b44d7a8586312f1"
+    },
+    {
+      "path": "scripts/test_y72_y73_admission.py",
+      "sha256": "0ace32c96aca2cf12344e6fb4028f397d48d9160d2c494d63ca666e1e980bdf7"
+    }
+  ]
+}

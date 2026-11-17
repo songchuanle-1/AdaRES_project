@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y71",
+  "config": "configs_song/model_paper5/adares_y71_visual_product_fusion_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "required_resource": "Fresh exclusive authorized idle server-2 GPU0; canonical terminal archive/empty reservation; no compute PID; exact hostname/private runtime/original data; existing280.0W unchanged. Preserve all live Y68/Y69/Y70 and paused Y57.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y71_gpu0_smoke pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; one visual product fusion before original sum_norm and seven shared confidence calls per step, original native projected3D/projected2D tensor and expression-expanded feature identities; independent scalar product formula on first/middle/last feature rows and channel0/127/255; zero first-step/nonzero second-step response, finite nonzero new gradient and actual optimizer update, both projected branch gradients finite, native modes and peak memory.",
+  "CPU_guard_tests_passed": 10,
+  "Python38_compile": true,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_program.py",
+    "sha256": "7db1ccf03e2ea5c993e7141c875ce56ff75bab74e1d2c340745fb3997df24492"
+  }
+}

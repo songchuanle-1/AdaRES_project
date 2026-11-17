@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y53",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "reviewed_at": "2026-10-17T13:04:41.996561+08:00",
+  "component": {
+    "path": "pipeline/analyses/y53_padding_components_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "165e9694bd436d45fbb203b2b64bb2e1c24be78eae05b9ad590836bd373d3435"
+  },
+  "native": {
+    "path": "pipeline/analyses/y53_padding_native_eval_compat_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "a348ffd1d035b925eb57b90f2c1f9e7340c5757f304fab77a1371184e6e0a648"
+  },
+  "result": "Forward padding-leakage premise falsified in the byte-bound native decoder source and8actual TRAIN scenes/32expressions: all7layer padding/repeat output deltas0 and padding gradient0; valid-word controls/gradients active in every scene.",
+  "causal_source_trace": [
+    "SamplingModule normalizes over queries then removes padded-word contributions before summation.",
+    "Native language self attention, instance-to-language, query-to-language attention exclude language padding as keys; padding query rows are never consumed as unmasked keys by the indicator path.",
+    "Contrastive projected token outputs are a separate loss path, already historical Y23; not reopened here."
+  ],
+  "failure_scope": "hypothesis",
+  "model_files_changed": 0,
+  "limitation": "Not a claim that every possible padding bug is absent, nor a trained efficacy result. Eval invocation failure is preserved; the compatibility repair changed no model bytes."
+}

@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "scope": "Targeted candidate text and known related controls only; not exhaustive novelty or literature evidence.",
+  "phrases": [
+    "language update",
+    "language gate",
+    "language gating",
+    "gated language",
+    "qla",
+    "query-language"
+  ],
+  "matches": [
+    {
+      "id": "AdaRES-Y26",
+      "stage": "rejected",
+      "hypothesis": "Native query-language cross-attention computes a LayerNorm result but discards it before query self-attention. Its affine parameters therefore cannot learn language-conditioned query calibration. Reconnecting only the existing qla postnorm may remove residual common-mode/scale nuisance and restore a task-loss gradient path; this is a falsifiable implementation mechanism, not a promised accuracy improvement."
+    },
+    {
+      "id": "AdaRES-Y53",
+      "stage": "rejected",
+      "hypothesis": "Masked language-padding feature values may leak through the native decoder into query confidence, although they represent no words. Test actual decoder attention/aggregation, not the semantic-alignment loss denominator addressed by historical Y23. If all native confidence paths mask these positions and matched interventions have no effect beyond repeat noise, reject THIS leakage premise without creating a model variant."
+    },
+    {
+      "id": "AdaRES-Y67",
+      "stage": "blocked",
+      "hypothesis": "One output LayerNorm affine transform is reused for initial and six refined mask/score readouts although their query distributions differ. Independent per-stage affine readout normalization may reduce shared mask/score-gradient interference. This is an architectural allocation test; existing stage layers can implicitly compensate and benefit is unknown."
+    },
+    {
+      "id": "AdaRES-Y68",
+      "stage": "blocked",
+      "hypothesis": "Native mask features x_mask(x) are expression-independent before their dot product with language-conditioned queries. A direct valid-language-conditioned channel modulation of the shared mask features may make conditional mask fitting easier. Existing query cross-attention can represent language interactions; this is an architectural comparison, not a missing-information, novelty or efficacy claim."
+    },
+    {
+      "id": "AdaRES-Y70",
+      "stage": "blocked",
+      "hypothesis": "Native W2 averages coarse and fine visual query updates equally in all six refinement stages. A shared query-conditioned channel-wise bounded mixture may make the two spatial scales easier to combine. This changes representation fusion, not confidence targets or inference selection; neither missing information, novelty nor efficacy is presumed."
+    },
+    {
+      "id": "AdaRES-Y73",
+      "stage": "training",
+      "hypothesis": "The original sampled query state is successively transformed by six contextual refinement stages. A shared zero-initialized residual from that same query slot original state may ease fitting a balance between initial anchor identity and later contextual updates. Existing residual paths already retain information; information loss, novelty and efficacy are not presumed."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

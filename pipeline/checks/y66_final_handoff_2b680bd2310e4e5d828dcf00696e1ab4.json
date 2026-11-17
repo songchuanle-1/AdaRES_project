@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "token": "2b680bd2310e4e5d828dcf00696e1ab4",
+  "observed_at": "2026-10-29T10:57:28.254492+08:00",
+  "Y64_terminal": {
+    "path": "pipeline/checks/y64_server1_fixed30_2b680bd2310e4e5d828dcf00696e1ab4.json",
+    "sha256": "386f03f40095c60405956a565e4f632f08669fb53619fc42be425a86970e50e4"
+  },
+  "Y64_archive_binding": {
+    "path": "pipeline/checks/y64_server1_fixed30_2b680bd2310e4e5d828dcf00696e1ab4_archive_binding.json",
+    "sha256": "859cac8aac9f7e1f6c0f742276884e9fd2f2399383e465732ce440c6f17af28f"
+  },
+  "Y64_old_observer_failure": {
+    "path": "pipeline/checks/y64_server1_phase_progress_2b680bd2310e4e5d828dcf00696e1ab4.log",
+    "sha256": "1536c6f7c7a68154ca2dd6f373c4979ae5a9a0ce41c490414fcaa290daa9e67f"
+  },
+  "observer_failure_resolved_by": "Exact original PID absent after native fixed30 completion; finalizer verified all30 Train/Val epochs and stable finite checkpoints. Not a native training failure.",
+  "Y66_actual_native_result": {
+    "path": "pipeline/analyses/adares_y66_server1_smoke_2b680bd2310e4e5d828dcf00696e1ab4.json",
+    "sha256": "30ebfb38626f09cdd407b60b2c27bcb90e3259d3763bd1296c7db42043be94d7"
+  },
+  "Y66_admission": {
+    "path": "pipeline/admissions/AdaRES-Y66.json",
+    "sha256": "d78feba0b2628b5d198f899c7d563e1ae59f16cce0f7d8e081bce44652575435"
+  },
+  "Y66_frozen_protocol": {
+    "path": "pipeline/checks/AdaRES-Y66_server1_2b680bd2310e4e5d828dcf00696e1ab4_post_training_freeze.json",
+    "sha256": "3e8d61bc0819d099311f39d75c4226d684ea23c2dec7fc0943d35197a37da822"
+  },
+  "original_full_protocol_preserved": true,
+  "Y66_production_dispatch": {
+    "path": "pipeline/checks/y66_server1_dispatch_2b680bd2310e4e5d828dcf00696e1ab4.json",
+    "sha256": "ab8c093e730a7cd5dd120c1ff4cee339c860687093f60f04155a894ab6de673e"
+  },
+  "Y66_production_progress": {
+    "path": "pipeline/checks/y66_server1_phase_progress_2b680bd2310e4e5d828dcf00696e1ab4.json",
+    "sha256": "e5ce1d973aa33392a3bb67383fa167969272cdedf3a9f0cdf4fcea82999f45f3"
+  },
+  "Y65_production_progress": {
+    "path": "pipeline/checks/y65_server2_phase_progress_2b680bd2310e4e5d828dcf00696e1ab4.json",
+    "sha256": "56e0a8574181b993484954722577b1e6b3f542986b281bf3e8202a2078b40ae8"
+  },
+  "Y66_losses": [
+    7.886719703674316,
+    8.248939514160156
+  ],
+  "Y66_peak_reserved_bytes": 6836715520,
+  "CPU_lifecycle_guard_tests_passed": 12,
+  "CPU_admission_guard_tests_passed": 14,
+  "phase_functions_equal_to_tested_Y64": true,
+  "Y57_and_GPU1_still_paused": true,
+  "server2_power_limit_watts": 280,
+  "server1_default_power_limit_watts": 350,
+  "checkpoints_retained_remote": true,
+  "full_frozen_evaluation_executed": false,
+  "training_efficacy_unknown": true,
+  "source_commit": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+  "helper_evidence": [
+    {
+      "path": "scripts/admit_dispatch_y66_server1.py",
+      "sha256": "3e5eb6e529b8e1561578c4d3a096128b765d0d85229758a62c6e70b57e24631c"
+    },
+    {
+      "path": "scripts/test_y66_server1_admission.py",
+      "sha256": "524c591e2fb31f43062c70b0a871a9c2f2234a6e3da0444aec0238283e6e8d00"
+    },
+    {
+      "path": "scripts/observe_y66_server1_phase.py",
+      "sha256": "84801a33003498aad5b660c1fbd3a866ebe74d090e38770bb9b0cdb21de4649c"
+    }
+  ]
+}

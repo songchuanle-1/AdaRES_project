@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "ab9cf3f30d5a40d28b3c43f4b85083ab",
+  "id": "AdaRES-Y94",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y94",
+    "label": "AdaRES-Y94 fixed30",
+    "config": "configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y94.json",
+    "scientific_candidate_id": "AdaRES-Y94",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 218513,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y94_query_geometry_bias_res_20261109_111829.log",
+    "launched": "2026-11-09T11:19:08"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y94 fixed30] configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y94.py",
+    "sha256": "36ca775be3cb9ae73240d12cfe24807b2466f888c3f99cea959551836dcf1b6b"
+  }
+}

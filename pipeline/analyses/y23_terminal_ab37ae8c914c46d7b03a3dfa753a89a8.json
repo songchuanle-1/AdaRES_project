@@ -1,0 +1,40 @@
+{
+  "id": "AdaRES-Y23",
+  "pid": 129584,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y23_valid_token_support_res_20261002_234917.log",
+  "processes_before": {
+    "original_cmd": "/home/songcl/.conda/envs/adares_project/bin/python -S tools/train.py configs_song/model_paper5/adares_y23_valid_token_support_res.yaml --num_gpus 1 --gpu_ids 1 --resume /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth ",
+    "matching_y23_pids": [
+      24613,
+      24620,
+      129584,
+      130003,
+      130051,
+      130099,
+      130147
+    ]
+  },
+  "processes_after": {
+    "original_cmd": "/home/songcl/.conda/envs/adares_project/bin/python -S tools/train.py configs_song/model_paper5/adares_y23_valid_token_support_res.yaml --num_gpus 1 --gpu_ids 1 --resume /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth ",
+    "matching_y23_pids": [
+      24613,
+      24620,
+      129584,
+      130003,
+      130051,
+      130099,
+      130147
+    ]
+  },
+  "checkpoints": [],
+  "tail_sha256": "2ae029aa0ffed52c9e8deca64cf5ea393ea574b72911668669fa4aceaa933940",
+  "tail_last2400": "6<14:56,  2.03it/s, lr=1.2e-05, eta=0:14:58, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2867/4686 [23:36<14:56,  2.03it/s, lr=1.2e-05, eta=0:14:58, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2868/4686 [23:36<15:05,  2.01it/s, lr=1.2e-05, eta=0:14:58, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2868/4686 [23:37<15:05,  2.01it/s, lr=1.2e-05, eta=0:14:57, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2869/4686 [23:37<14:17,  2.12it/s, lr=1.2e-05, eta=0:14:57, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2869/4686 [23:37<14:17,  2.12it/s, lr=1.2e-05, eta=0:14:57, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2870/4686 [23:37<13:53,  2.18it/s, lr=1.2e-05, eta=0:14:57, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f       | 2870/4686 [23:38<13:53,  2.18it/s, lr=1.2e-05, eta=0:14:56, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2871/4686 [23:38<14:02,  2.15it/s, lr=1.2e-05, eta=0:14:56, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2871/4686 [23:38<14:02,  2.15it/s, lr=1.2e-05, eta=0:14:56, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2872/4686 [23:38<15:01,  2.01it/s, lr=1.2e-05, eta=0:14:56, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2872/4686 [23:39<15:01,  2.01it/s, lr=1.2e-05, eta=0:14:55, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2873/4686 [23:39<15:30,  1.95it/s, lr=1.2e-05, eta=0:14:55, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2873/4686 [23:39<15:30,  1.95it/s, lr=1.2e-05, eta=0:14:55, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2874/4686 [23:39<16:29,  1.83it/s, lr=1.2e-05, eta=0:14:55, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2874/4686 [23:40<16:29,  1.83it/s, lr=1.2e-05, eta=0:14:54, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2875/4686 [23:40<14:57,  2.02it/s, lr=1.2e-05, eta=0:14:54, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2875/4686 [23:40<14:57,  2.02it/s, lr=1.2e-05, eta=0:14:54, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2876/4686 [23:40<14:28,  2.08it/s, lr=1.2e-05, eta=0:14:54, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2876/4686 [23:41<14:28,  2.08it/s, lr=1.2e-05, eta=0:14:53, iter_time=0.49]\rTrain[30/30]:  61%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e       | 2877/4686 [23:41<14:39,  2.06it/s, lr=1.2e-05, eta=0:14:53, iter_time=0.49]",
+  "bounded_traceback": false,
+  "bounded_oom": false,
+  "gpu1_csv": "1, 22776, 45\n",
+  "gpu1_compute_pids": "129584\n",
+  "token": "ab37ae8c914c46d7b03a3dfa753a89a8",
+  "observed_start_local": "2026-10-03T16:49:57.033426+08:00",
+  "observed_end_local": "2026-10-03T16:49:57.310070+08:00",
+  "scope": "Bounded original log/CPU checkpoint read; GPU1 only. Canonical lifecycle unchanged; no full-log crash or efficacy proof."
+}

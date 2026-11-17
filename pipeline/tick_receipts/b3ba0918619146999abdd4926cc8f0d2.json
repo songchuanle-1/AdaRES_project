@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "b3ba0918619146999abdd4926cc8f0d2",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-18T01:50:02.636697+00:00",
+  "recorded_at": "2026-10-18T02:00:01.819776+00:00",
+  "status": "INCOMPLETE",
+  "reason": "No due candidates; two prepared candidates remain deferred and reserve_budget=0. Current bootstrap requirement is unmet without fabricated progress; unchanged shared closed-stage cooldown defect was already evidenced and its repair is not authorized. Full audit saved; no ineffective repeated finish. User asks which submission authorization is needed, not permission to commit.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 8,
+    "input_tokens": 1323557,
+    "cached_input_tokens": 1284480,
+    "output_tokens": 14054,
+    "reasoning_output_tokens": 5457,
+    "total_tokens": 1337611,
+    "uncached_input_tokens": 39077,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

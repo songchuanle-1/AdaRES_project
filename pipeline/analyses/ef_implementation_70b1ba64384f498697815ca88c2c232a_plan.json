@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "created_at": "2026-10-21T01:53:18.629534+08:00",
+  "ids": [
+    "AdaRES-Y58",
+    "AdaRES-Y59"
+  ],
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "program": {
+    "path": "pipeline/analyses/ef_cpu_70b1ba64384f498697815ca88c2c232a_program.py",
+    "sha256": "1179778b5fd539944be46e3cb7ec88ba571b0eaac3fa1cf1452cd97081554c83"
+  },
+  "body": {
+    "path": "scripts/probe_ef_cpu_70b1.py",
+    "sha256": "162e61dca3fb39e6c6374a4fd379c2638b0f48933bbb949339413c2c2b19ab52"
+  },
+  "implementation": {
+    "Y58": "Keep only sparse-backbone BN running statistics fixed; affine stays trainable; decoder BN and frozen-text baseline mode unchanged.",
+    "Y59": "Keep the fully frozen text encoder in eval during outer train; leave a trainable encoder and all backbone/decoder normalization unchanged."
+  },
+  "parent": "AdaRES-W2",
+  "protocol": "Native YAML values identical to W2: seed1999/fixed30/releasedSPFormer/Q128/singleGPU, no validation tuning.",
+  "preserve": "All original diagnosis plans/results retained. This approved prospective workflow no longer requires task-benefit diagnosis before implementation.",
+  "native_smoke": "Pending actual two-step TRAIN loss/backward via native YAML/class/dataset/train function on a genuinely free authorized exclusive GPU; no admission before this.",
+  "no_training_or_queue_change": true
+}

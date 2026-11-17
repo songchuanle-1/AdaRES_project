@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 2,
+  "preregistered_at": "2026-10-20T22:56:03.848360+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_gradient_properties_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "fb7350d3a72c67b44201815d5dba25ff9d63f44f88e1b4d1cdbfbd322e9ef240"
+  },
+  "body": {
+    "path": "scripts/probe_y56_gradient_properties_dd8e.py",
+    "sha256": "01be339f8485c366f905493bcf08de95f7234debd0ae8d88e226d0779a88d3ae"
+  },
+  "setup": {
+    "path": "scripts/setup_y56_rev2_dd8e.py",
+    "sha256": "efd87f8cb3f347a4c011ef0d85fd1be860501afca0f98e117feb8a14791b6339"
+  },
+  "bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+  },
+  "prediction": "All outputs and query/mask/every-parameter gradients bitwise equal immutable initial Y56 on18cases.",
+  "controls": "float32/64, singleton/three_classes/query-only/mask-only/partial-joint/padding/empty/zero-mass/mixed.",
+  "new_production_revision": false,
+  "thresholds_changed": false,
+  "result": "pending"
+}

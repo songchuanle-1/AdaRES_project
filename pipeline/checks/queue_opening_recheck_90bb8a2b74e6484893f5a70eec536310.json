@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "token": "90bb8a2b74e6484893f5a70eec536310",
+  "observed_at": "2026-10-25T20:44:18.653062+08:00",
+  "snapshot_at": "2026-10-25T12:43:37.634615+00:00",
+  "deadline_at": "2026-10-25T13:43:37.634615+00:00",
+  "execution_status": "INCOMPLETE: canonical abort and independent release check pending",
+  "resource": {
+    "path": "pipeline/checks/gpu0_lifecycle_v4_90bb8a2b74e6484893f5a70eec536310.json",
+    "sha256": "2a2342406c606258ec60450cafd5413de98d46a70cc59ffb858a7991f13bd606"
+  },
+  "resource_observed_at": "2026-10-25T20:43:49.114872+08:00",
+  "prior_failure": {
+    "path": "pipeline/checks/postflight_queue_opening_b7604b2dee644a2f901a3c6401794b1e.json",
+    "sha256": "60c0e31d3dae2bd08e3485bbaa86c6551a4370ff1d46666b01e4bc1303759905"
+  },
+  "checker": {
+    "path": "C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/closure.py",
+    "sha256": "472bd2f6d317f9d1b81a40c7d108e76d5e9560da4d4950114c148428f06b8576",
+    "unchanged": true
+  },
+  "snapshot_integrity": true,
+  "known_queue_opening_rejecting_predicate": true,
+  "exact_prior_failed_check": "CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening",
+  "finish_invoked": false,
+  "previous_tick_status": "INCOMPLETE",
+  "previous_lease_release": "released",
+  "idle_authorized_gpus": [],
+  "unregistered_gpu0_pids": [
+    "13813"
+  ],
+  "disposition": "Keep stable blocked/exclusive_gpu_slot candidates and foreign compute. Do not replay the same failed finish, change blocker kind, fabricate a queue entry, or modify checker/context/goal. Report then canonical abort only this tick and verify release.",
+  "new_candidates": 0,
+  "model_changes": 0,
+  "new_native_tests": 0,
+  "admissions": 0,
+  "launches": 0,
+  "hardware_changed": false,
+  "scheduler_changed": false,
+  "notification_policy_changed": false,
+  "limitation": "Resource and immutable artifact consistency recheck only. No new scientific result; old CPU tests are not repeated or counted as current progress."
+}

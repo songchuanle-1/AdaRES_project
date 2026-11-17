@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "4198029edcde47b7a8686b8e8dcafad4",
+  "id": "AdaRES-Y96",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y96",
+    "label": "AdaRES-Y96 fixed30",
+    "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y96.json",
+    "scientific_candidate_id": "AdaRES-Y96",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 3893460,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y96_seed_query_skip_res_20261110_165652.log",
+    "launched": "2026-11-10T16:57:33"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y96 fixed30] configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y96.py",
+    "sha256": "715f713622cb67205fdd724e9b15f515686d94117109c9d8eb743d7d7dab054d"
+  }
+}

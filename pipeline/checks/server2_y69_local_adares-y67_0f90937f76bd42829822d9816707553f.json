@@ -1,0 +1,89 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T00:49:13.056706-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 24,
+      "total": 30,
+      "step": 2801,
+      "count": 4686
+    },
+    "log_bytes": 31104283
+  },
+  "after": {
+    "observed_at": "2026-10-30T00:49:18.060970-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 24,
+      "total": 30,
+      "step": 2810,
+      "count": 4686
+    },
+    "log_bytes": 31106785
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T00:49:13.056706-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 24,
+        "total": 30,
+        "step": 2801,
+        "count": 4686
+      },
+      "log_bytes": 31104283
+    },
+    {
+      "observed_at": "2026-10-30T00:49:18.060970-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 24,
+        "total": 30,
+        "step": 2810,
+        "count": 4686
+      },
+      "log_bytes": 31106785
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 100811,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y67_stage_readout_norm_res_20261029_174244.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "production_marker": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "exact_additive_deployment_verified": true,
+  "additional_source_files_verified": 12,
+  "additional_configurations_verified": 2,
+  "physical_gpu": 1,
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100811\n",
+  "authorized_gpu_uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+  "gpu": "58, 22720, 64, 390.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A phase observation never authorizes a restart. A future production marker is not observed until actually deployed.",
+  "id": "AdaRES-Y67",
+  "token": "0f90937f76bd42829822d9816707553f",
+  "observed_start_local": "2026-10-30T12:49:49.663652+08:00",
+  "observed_end_local": "2026-10-30T12:49:55.069748+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_server2_with_local_y69.py",
+      "sha256": "91f5fa48b9748c4de4133958b566e8d9d542366c21b0ab0a81cdb25e4ed8e82b"
+    },
+    {
+      "path": "scripts/observe_server2_y68_additive_phase.py",
+      "sha256": "1821806d44ca1309b02fe5aa970be9597d1190bf7cd3281d6849076965433bd2"
+    },
+    {
+      "path": "scripts/observe_y67_server2_gpu1_phase.py",
+      "sha256": "8356b93dc346c07ab62b435ca39892cb733816607abd833a6cfdc922ee3a6dc4"
+    },
+    {
+      "path": "pipeline/checks/server2_y69_local_adares-y67_0f90937f76bd42829822d9816707553f.log",
+      "sha256": "63d1f5c31da4d9f6e975405b8b5856fe75dc4a68e7a141c5987c0a86d01c897f"
+    }
+  ]
+}

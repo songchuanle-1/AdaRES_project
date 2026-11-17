@@ -1,0 +1,203 @@
+{
+  "complete": true,
+  "observed_at": "2026-11-13T15:59:51.776463+08:00",
+  "hostname": "dl02-MS-7B73",
+  "references": [
+    {
+      "id": "AdaRES-Y36",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "expected_sha256": "f504f6ed548affa54eb7292cf5a7d930158be5dfaac291417f4852ad0f0698d1",
+      "config": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    },
+    {
+      "id": "AdaRES-W2",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "expected_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52",
+      "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    },
+    {
+      "id": "AdaRES-B1",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "expected_sha256": "cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b",
+      "config": "configs_song/model_paper5/adares_b1_standard_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    }
+  ],
+  "configs_verified": [
+    {
+      "path": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml",
+      "present": true,
+      "semantic_match": false
+    },
+    {
+      "path": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+      "present": true,
+      "semantic_match": false
+    },
+    {
+      "path": "configs_song/model_paper5/adares_b1_standard_res.yaml",
+      "present": true,
+      "semantic_match": false
+    },
+    {
+      "path": "configs_song/model_paper5/adares_y101_query_ffn_skip_res.yaml",
+      "present": true,
+      "semantic_match": true
+    }
+  ],
+  "source_files_verified": [
+    {
+      "path": "ipdn/model_paper5/adares_y36_local_adjacency/__init__.py",
+      "present": true,
+      "expected_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "actual_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "matched": true
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y36_local_adjacency/backbone.py",
+      "present": true,
+      "expected_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd",
+      "actual_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd",
+      "matched": true
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y36_local_adjacency/dec.py",
+      "present": true,
+      "expected_sha256": "e1096d36e7dec68d5dc50ba600f3588d0c654bbf644c9d0b6da54db695c3f43a",
+      "actual_sha256": "e1096d36e7dec68d5dc50ba600f3588d0c654bbf644c9d0b6da54db695c3f43a",
+      "matched": true
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y36_local_adjacency/ipdn.py",
+      "present": true,
+      "expected_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97",
+      "actual_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97",
+      "matched": true
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y36_local_adjacency/loss.py",
+      "present": true,
+      "expected_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084",
+      "actual_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084",
+      "matched": true
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y36_local_adjacency/sample_model.py",
+      "present": true,
+      "expected_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b",
+      "actual_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b",
+      "matched": true
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py",
+      "present": true,
+      "expected_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "actual_sha256": "c540732d6e3334c85008035cc37b8537b0f85383d5f5a6bf663359fbf2b134bb",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "present": true,
+      "expected_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd",
+      "actual_sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "present": true,
+      "expected_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac",
+      "actual_sha256": "6362d882662b0e51594cd4af994359b93f99497affc93600322a34ca6c349b01",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "present": true,
+      "expected_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97",
+      "actual_sha256": "7cb4b1c5490d0839fcdaf18553983b4c991f69e50474d07e83af9f0f8c937a5a",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "present": true,
+      "expected_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084",
+      "actual_sha256": "836ff790a0a8b9c55cf465a472c9462699f0753a7e87d0ef74a8946edf31565a",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py",
+      "present": true,
+      "expected_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b",
+      "actual_sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_b1_standard/__init__.py",
+      "present": true,
+      "expected_sha256": "a53d119ec051c707f63b7a91bcca47985932f4f82c85e0f7dbcc99eace051eac",
+      "actual_sha256": "a543eb40dd59235359c98459baf91fa1508cd494a95af64d27ebff73fc72b991",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_b1_standard/backbone.py",
+      "present": true,
+      "expected_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd",
+      "actual_sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_b1_standard/dec.py",
+      "present": true,
+      "expected_sha256": "616428fab3580ae4aaaeab887296fa8d899d5d96691cb34b7c8b4edcf5470082",
+      "actual_sha256": "82b62d9a3d6104f580e0158637e36aaf382e293fd2af55a704cfb9f0399d119a",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_b1_standard/ipdn.py",
+      "present": true,
+      "expected_sha256": "6d32175ce879c32c8ec4cff31106a9cf99b50f8444d70159d4dd8b89ea60bdf6",
+      "actual_sha256": "0c405390d60f78c7a25d9ce1dab61d7b2e6fbba88758b83621a8fe037b19b8f4",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_b1_standard/loss.py",
+      "present": true,
+      "expected_sha256": "86561df2af1664c8bca29b7673c4ea86c400bf169f69c1a32a3ff35eda399d86",
+      "actual_sha256": "914f0c4467cf295485568a59605bc8dca74fce265dd02b94148fb330de336b36",
+      "matched": false
+    },
+    {
+      "path": "ipdn/model_paper5/adares_b1_standard/sample_model.py",
+      "present": true,
+      "expected_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b",
+      "actual_sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "matched": false
+    }
+  ],
+  "all_baseline_sources_match": false,
+  "all_native_YAML_semantics_match": false,
+  "evaluator_present": true,
+  "evaluator_sha256": "7824e7807b44c6344b158570626d7ad90fb5fc44eb6852dbd475d34440b1dc13",
+  "evaluator_matches": true,
+  "original_data_root": "/data1/songcl/Project/AdaRES_project/data/",
+  "free_bytes": 2855318233088,
+  "torch_imported": false,
+  "checkpoint_loaded": false,
+  "CUDA_used": false,
+  "remote_mutations": false,
+  "active_training_preserved": true,
+  "source_guard_passed": false
+}

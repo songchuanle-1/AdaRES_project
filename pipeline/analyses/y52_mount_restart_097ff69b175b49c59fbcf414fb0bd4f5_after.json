@@ -1,0 +1,84 @@
+{
+  "complete": true,
+  "observed_local": "2026-10-19T16:16:17.135339+08:00",
+  "token": "097ff69b175b49c59fbcf414fb0bd4f5",
+  "original": {
+    "path": "pipeline/analyses/y52_mount_restart_097ff69b175b49c59fbcf414fb0bd4f5_before.json",
+    "sha256": "8055a19c5dac5dd31116fe0204a67f61f4ca1b1071509e130c1dde0b97780833"
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y52",
+      "label": "AdaRES-Y52 fixed30",
+      "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+      "status": "waiting",
+      "gpu": "1",
+      "depends_on": [],
+      "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "scientific_candidate_id": "AdaRES-Y52",
+      "server": "server-2",
+      "attempt_history": [
+        {
+          "recorded_at": "2026-10-19T16:16:16.116034+08:00",
+          "reason": "Original mount/storage interruption; no checkpoint exists",
+          "original": {
+            "id": "AdaRES-Y52",
+            "label": "AdaRES-Y52 fixed30",
+            "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+            "status": "running",
+            "gpu": "0",
+            "depends_on": [],
+            "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+            "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+            "patience": 30,
+            "min_epochs": 30,
+            "fixed_epochs": 30,
+            "requires_exclusive_ownership": true,
+            "scientific_candidate_id": "AdaRES-Y52",
+            "pid": 15934,
+            "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_135853.log",
+            "server": "server-2",
+            "launch_verified": true,
+            "launch_verification": "training_progress",
+            "launched": "2026-10-19T13:59:35"
+          },
+          "evidence": {
+            "path": "pipeline/analyses/y52_mount_restart_097ff69b175b49c59fbcf414fb0bd4f5_before.json",
+            "sha256": "8055a19c5dac5dd31116fe0204a67f61f4ca1b1071509e130c1dde0b97780833"
+          }
+        }
+      ],
+      "restart_attempt_token": "097ff69b175b49c59fbcf414fb0bd4f5",
+      "dispatch_phase": "syncing",
+      "claimed_gpu": "1"
+    },
+    {
+      "id": "AdaRES-Y54",
+      "label": "AdaRES-Y54 fixed30",
+      "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+      "status": "running",
+      "gpu": "0",
+      "depends_on": [],
+      "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y54.json",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "scientific_candidate_id": "AdaRES-Y54",
+      "pid": 47332,
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y54_fine_support_res_20261019_154936.log",
+      "server": "server-2",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "launched": "2026-10-19T15:50:18"
+    }
+  ],
+  "events": [],
+  "attempt": "Fresh fixed30 from admitted released initialization; prior partial attempt preserved"
+}

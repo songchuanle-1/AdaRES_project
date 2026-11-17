@@ -1,0 +1,101 @@
+{
+  "complete": true,
+  "token": "fedad03ae838499fafb71397c992731c",
+  "id": "AdaRES-Y101",
+  "observed_at": "2026-11-13T15:59:51.396764+08:00",
+  "freeze": {
+    "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+    "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+  },
+  "original_comparator_manifest": {
+    "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+  },
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0
+  },
+  "references": [
+    {
+      "id": "AdaRES-Y36",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "expected_sha256": "f504f6ed548affa54eb7292cf5a7d930158be5dfaac291417f4852ad0f0698d1",
+      "config": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    },
+    {
+      "id": "AdaRES-W2",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "expected_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52",
+      "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    },
+    {
+      "id": "AdaRES-B1",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "expected_sha256": "cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b",
+      "config": "configs_song/model_paper5/adares_b1_standard_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    }
+  ],
+  "missing_reference_weights": [
+    "AdaRES-Y36",
+    "AdaRES-W2",
+    "AdaRES-B1"
+  ],
+  "baseline_source_and_native_YAML_verified": false,
+  "evaluator_present": true,
+  "old_evaluator_requires_resource_adapter": true,
+  "legacy_lock_path": "/bak_home/songcl/Project/AdaRES_project/.y15_gpu1_diagnostic.lock",
+  "future_resource_adapter_must_preserve_evaluator_science": true,
+  "readiness": "blocked_missing_or_different_assets",
+  "candidate_checkpoint_verified": false,
+  "wait_for_original_Y101_full_finite_terminal_archive": true,
+  "formal_FIRST_or_cost_executed": false,
+  "CUDA_used": false,
+  "checkpoint_loaded": false,
+  "remote_mutations": false,
+  "evidence": [
+    {
+      "path": "scripts/diagnose_y101_frozen_review_assets.py",
+      "sha256": "4b9d71b57438894f1eea59033c468a316d69e38a9580bea0b8e834403a278b5b"
+    },
+    {
+      "path": "pipeline/checks/y101_review_assets_diagnostic_fedad03ae838499fafb71397c992731c_remote.json",
+      "sha256": "530729bbc905e3c81f405d30ee589e4afe7562fad44e04dd90b3f81f5972f9b6"
+    },
+    {
+      "path": "pipeline/checks/y101_review_assets_diagnostic_fedad03ae838499fafb71397c992731c_remote.log",
+      "sha256": "a991063ed139208a1f800dfc001e338273d7a1a1abbb44380a6e7a752fc5c709"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+      "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+    },
+    {
+      "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+      "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+    },
+    {
+      "path": "AdaRES/tools/evaluate_adares_frozen_full.py",
+      "sha256": "7824e7807b44c6344b158570626d7ad90fb5fc44eb6852dbd475d34440b1dc13"
+    },
+    {
+      "path": "scripts/prepare_terminal_eval_6deb.py",
+      "sha256": "01969fcd4e3d5080c9c901c2768cff886fe70c4de1f393deade0f30ba8362e75"
+    }
+  ]
+}

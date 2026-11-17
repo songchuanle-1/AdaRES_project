@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "prepared_at": "2026-10-19T17:31:47.247334+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_program.py",
+    "sha256": "ed5045122eeb6939310a9d8f3e096da9511e9ae149d184aee7ef29c1374b8fbc"
+  },
+  "body": {
+    "path": "scripts/probe_y56_native_batch2_incidence.py",
+    "sha256": "7eda751a7f70fd2ed7027de2e0e73de64db6716b373f3456f3fa76408df16261"
+  },
+  "cache_result": {
+    "path": "pipeline/analyses/y56_cached_train_222ed2a6e80c43f6b1de2d050be97fa0_metadata_v2_result.json",
+    "sha256": "983348fbaf9f22840f72f5087cfe8cade02ac874c11e7c6f929fd6d88d4e80e3"
+  },
+  "frozen_scenes": [
+    {
+      "dataset_index": 0,
+      "scan_id": "scene0000_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 44,
+      "scan_id": "scene0001_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 60,
+      "scan_id": "scene0002_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 101,
+      "scan_id": "scene0003_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 115,
+      "scan_id": "scene0004_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 126,
+      "scan_id": "scene0005_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 137,
+      "scan_id": "scene0006_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 171,
+      "scan_id": "scene0007_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py",
+      "lf_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "lf_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "lf_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "lf_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "lf_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py",
+      "lf_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b"
+    }
+  ],
+  "checkpoint_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52",
+  "fixed_test": "Same8TRAIN scenes/32expressions/4nativebatch2 pairs/7indicator calls each; actual sparse forward/FPS. Exact feature+softmask and separate native hardmask>0 equivalence incidence. No case selection, threshold search, optimizer or model correction. Preserve and restore all diagnostic model BN/buffers, no weight file updates.",
+  "build_tests": {
+    "python38_parse": true,
+    "compile": true,
+    "entry_guards": [
+      {
+        "physical_gpu": null,
+        "rejected": true
+      },
+      {
+        "physical_gpu": 2,
+        "rejected": true
+      }
+    ]
+  },
+  "native_gpu_executed": false,
+  "native_backward_passed": false,
+  "resource_gate_passed": false,
+  "admission": false,
+  "runner": "scripts/run_adares_authorized_probe.py",
+  "runner_sha256": "b1f4e6b818cacbae148abef2d5ac0d605f6ace5e13e80dba48003539581dcd50",
+  "next_command": "python -B scripts/run_adares_authorized_probe.py y56_native_batch2 <this-program> --token <new-current-owner-token> --seconds 600 --gpu --gpu-id <fresh-idle-authorized-card>",
+  "limitation": "Program prepared and entry/compile tests only; actual sparse/GPU execution is untested. Raw224 expression-layer records are correlated, not224independent samples. No efficacy or diagnosis PASS."
+}

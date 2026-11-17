@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "automation_id": "adares-tick",
+  "prompt_matches_current_user_pause": true,
+  "status": "ACTIVE",
+  "target_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "same_frequency_and_notification_preferences": true,
+  "original_config": {
+    "path": "pipeline/snapshots/adares_tick_automation_before_server1_pause_ce356360782a431ab9adc3e015f7d5aa.toml",
+    "sha256": "3b946a01ef190407e3f19c156fcfad1d861e372ce9f6dff95a54eeff116e807e"
+  },
+  "updated_config": {
+    "path": "pipeline/snapshots/adares_tick_automation_after_server1_pause_ce356360782a431ab9adc3e015f7d5aa.toml",
+    "sha256": "d802c0ad24c16261c1292bac8bf4551f18a6e589795e00c9b13cfcebc1988c45"
+  },
+  "payload": {
+    "path": "pipeline/checks/server1_pause_automation_payload_ce356360782a431ab9adc3e015f7d5aa.json",
+    "sha256": "263debb9b112cb03c85cf1665d42f6105beaed828a1535f227bc633a0b3d4a5c"
+  },
+  "canonical_AdaRES_prompt_synced_copy": {
+    "path": "pipeline/snapshots/heartbeat_prompts_after_server1_pause_ce356360782a431ab9adc3e015f7d5aa.md",
+    "sha256": "084442463151570dc0ae7c05069b12b7e2cfafa75b2c584ab227c14fec042850"
+  },
+  "canonical_reference_path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\references\\heartbeat_prompts.md",
+  "canonical_reference_sha256": "084442463151570dc0ae7c05069b12b7e2cfafa75b2c584ab227c14fec042850",
+  "canonical_reference_backup": {
+    "path": "pipeline/snapshots/heartbeat_prompts_before_server1_pause_ce356360782a431ab9adc3e015f7d5aa.md",
+    "sha256": "4841fcb069820eaea6eb6f1a767917a8e3b435d67fc75c74064eb086a18f84ca"
+  },
+  "other_project_prompt_bytes_unchanged": true,
+  "automatic_resume_not_authorized": true,
+  "operational_adapter_failure_preserved": {
+    "path": "pipeline/checks/server1_pause_prompt_reference_adapter_ce356360782a431ab9adc3e015f7d5aa.json",
+    "sha256": "e91488f658430149f7e97b5e1442d870716543df5815e1f64e194ad4c44faa43"
+  }
+}

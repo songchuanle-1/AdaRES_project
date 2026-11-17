@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "code_commit": "9a64d22c41bb8527ca7ca1abba4340546506b1b1",
+  "parent_commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "retained_branch": "refs/heads/adares-y90-query-peer-affinity",
+  "working_HEAD": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86_source_snapshot.json",
+    "sha256": "e56bd6ee8d0b25a4013ac17d0bc54bf5ce963a935118af6a0818867ab1251091"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y90_cpu_1c6bba9b68404903951324169dd02d86.json",
+    "sha256": "9b5220fee05f562320d5512d7eac070c57cd83c2bafb003220e95ad23964e77d"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y90_cpu_1c6bba9b68404903951324169dd02d86_program.py",
+    "sha256": "08b38303087f420049a463ea3790a356a3261dbf7a5231c37355b177af06d94f"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86.index",
+    "sha256": "602253d8e8d145940d8b480da9a440d62402bf42b80059dee65b30a8b5dc10fd"
+  },
+  "earlier_Y89_preserved": true,
+  "no_untested_parent_candidate_included": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y90_cpu_native.py",
+    "sha256": "8c4c55a40a2d22fa9e986df1fb6189828db4a6dee98655bb0eb89ec27c9d38fd"
+  }
+}

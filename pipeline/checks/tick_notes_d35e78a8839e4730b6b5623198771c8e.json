@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "已核实际会话归属/Disabled调度和前轮已释放，canonical begin无新终态或operational issue。旧Y64观察器远端第20行只比较Train计数，在正常Val24阶段触发失败；原失败日志和只读诊断保留。",
+    "新增只读Train/Val phase观察器，8项保护测试实际通过，覆盖验证期、阶段/轮切换、静止、计数倒退、日志截断和错分母/轮数；静止只记unconfirmed，不授权重启。",
+    "实际上海10月29日04:45:08至04:45:13确认Y64原PID2752219 Train25/30从23至31/4686，六源码/原生YAML/marker9706/原准入和GPU0独占通过。训练没有失败或重启；新证据和旧失败归Y64。",
+    "两服canonical物理证明仍无空槽：server-1为Y64/2752219并预留，server-2为未登记13813/24138MiB。Y65/Y66待原生两步，原七项冻结后评待资源；无准入/入队/部署/硬件调度变更。"
+  ],
+  "decisions": [
+    "后续例行观察改用observe_y64_server1_phase.py，不修改旧hash-bound观察器或失败证据，不把验证期Train计数不变当训练故障。原身份、源码/YAML、准入和独占校验保留，步数不当效益。",
+    "已有两项CPU候选及原生计划/server-1未激活备选足够；无GPU空槽不凑重复变体或伪造native PASS。空槽先Y65再Y66，server-1先Y64完整终态和真实idle后activate及native两步，PASS才冻结原后评/准入/当轮派发。",
+    "保留Y57/GPU1暂停、server-2 GPU0 280W、外部任务和所有数据/禁用/恢复边界，无需新用户处理。"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "task": {
+    "id": "AdaRES-Y48",
+    "label": "Y48 final-mask equivalent targets",
+    "config": "configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "gpu": "1",
+    "code_commit": "d18c228fd3796b5a87dbe313075b6ee748b2d51b",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y48.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 8877,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y48_mask_equivalence_res_20261015_113625.log",
+    "server": "server-2",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-15T11:37:01"
+  },
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y48 final-mask equivalent targets] configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml \u2192 server-2 gpu1"
+  ],
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y48.json",
+    "sha256": "219f6b741c0567567b1fb73045b3dbbbc4048aef5eb45b0d2cfaf19a3ce633a3"
+  },
+  "observed_at_local": "2026-10-15T11:37:01.154729+08:00",
+  "scope": "Canonical GPU1-only dispatcher; no repeated preflight or GPU0 operation."
+}

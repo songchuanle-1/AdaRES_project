@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-29T10:55:27.022023+08:00",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "after": {
+    "gpu": "97, 8046, 350.00",
+    "compute": "1973300"
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y66",
+      "label": "AdaRES-Y66 fixed30",
+      "config": "configs_song/model_paper5/adares_y66_peer_state_feedback_res.yaml",
+      "status": "running",
+      "gpu": "0",
+      "server": "server-1",
+      "depends_on": [],
+      "code_commit": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y66.json",
+      "scientific_candidate_id": "AdaRES-Y66",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "dispatch_phase": "progress_pending",
+      "claimed_gpu": "0",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "pid": 1973300,
+      "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y66_peer_state_feedback_res_20261029_105447.log",
+      "launched": "2026-10-29T10:55:26"
+    }
+  ],
+  "events": [
+    "队列推送 [AdaRES-Y66 fixed30] configs_song/model_paper5/adares_y66_peer_state_feedback_res.yaml → server-1 gpu0"
+  ],
+  "Y57_still_paused": true
+}

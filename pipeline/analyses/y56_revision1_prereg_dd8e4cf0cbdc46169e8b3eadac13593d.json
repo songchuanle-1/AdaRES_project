@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 1,
+  "preregistered_at": "2026-10-20T22:42:52.559287+08:00",
+  "reason": "Avoid high-dimensional exact uniqueness on a provably injective raw-query projection.",
+  "change": "First exact-unique raw query rows; if all distinct return original row graph without reading mask class keys; otherwise run unchanged full joint equivalence implementation.",
+  "prediction": "Identical class membership/output and gradients for all former tests and exact CPU original-implementation reference; paired native latency falls toward parent.",
+  "tests": "Repeat frozen CPU/native/resources and structural suite, same actual10TRAIN scenes. Add bitwise CPU comparison with initial implementation, for both copy and no-copy inputs.",
+  "failed_bundle": {
+    "path": "pipeline/analyses/y56_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "9952cc0c5cda9ade97a3fe16de16f826451c779e00acf459d6844693b6c241c3"
+  },
+  "failure": {
+    "path": "pipeline/analyses/y56_resource_review_initial_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "58088787d203349af6c8586a40b11ef410fa5bc2397c7b284de0cddcf6088317"
+  },
+  "no_new_hyperparameters": true,
+  "no_threshold_change": true,
+  "result": "pending"
+}

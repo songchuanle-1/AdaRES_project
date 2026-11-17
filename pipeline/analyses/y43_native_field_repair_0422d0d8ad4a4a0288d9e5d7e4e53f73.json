@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "scope": "Result keyword fields only; no model/control/gate/tolerance changes.",
+  "failure": {
+    "path": "pipeline/analyses/y43_native_controls_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.log",
+    "sha256": "3b49bbcdd2149f1e6d123727cf8ef4b8ff0f201807a76632f531308dfba5f4c5",
+    "reason": "Dict keyword labels retained covariance names while indexing expected third-moment names."
+  },
+  "old_program_sha256": "e2d816fe0d4ea0eb97ab150bcbae56baa0bd1d901fe44c693d97045bb09bab04",
+  "retry_program": {
+    "path": "scripts/probe_y43_native_controls_0422_v2.py",
+    "sha256": "493e1464cfc838b6e8df49e2f4a78ca2702a56bef9405b3b71acda5af8d4069d"
+  },
+  "changes": [
+    [
+      "wrong_covariance_min",
+      "wrong_third_min"
+    ],
+    [
+      "reflected_covariance_min",
+      "reflected_third_min"
+    ],
+    [
+      "y41_source_unchanged",
+      "y42_source_unchanged"
+    ],
+    [
+      "native_covariance",
+      "native_third"
+    ],
+    [
+      "wrong_covariance_max",
+      "wrong_third_max"
+    ],
+    [
+      "diagonal_only_max",
+      "zero_third_max"
+    ],
+    [
+      "reflected_covariance_max",
+      "reflected_third_max"
+    ],
+    [
+      "covariance_gradient_norm",
+      "third_gradient_norm"
+    ],
+    [
+      "covariance",
+      "third"
+    ]
+  ]
+}

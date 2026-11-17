@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "5b882c0928b14a3bab6799e9d15a5bf4",
+  "prepared_at": "2026-10-17T01:57:17.102848+08:00",
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "body": {
+    "path": "scripts/probe_y52_native_matched_capture.py",
+    "sha256": "245a708b74597c05aef960fb9015835158c9880865fa406579edf1beab3cdbe0"
+  },
+  "preparer": {
+    "path": "scripts/prepare_y52_native_matched_capture.py",
+    "sha256": "6fd5c46ec8c93ccf1b0aca590652657fc2fd67d2f777f7911b4a2638179eb61d"
+  },
+  "production_train_source": {
+    "path": "AdaRES/tools/train.py",
+    "sha256": "04afc00889dc58e439197a04be50457664a7906d42d7badfdc96033f9d99b41e"
+  },
+  "frozen_test": "SAME eight TRAIN scenes/32 expressions, actual batch_size2, seed1999 per dataset access; load released backbone with exact production loader. Observe actual final/auxiliary loss_masks matching inputs without changing them. Compare actual matched hard-superpoint IoU to exact expanded-point IoU and the frozen point-count target; report existing >0.5 support disagreements without selecting masks or thresholds.",
+  "controls": "Full packaged source compiles for Python3.8 grammar; missing exclusive GPU is rejected before framework import. No candidate model file modified, no substitute sample/FPS/match indices, no checkpoint or learned tensors saved.",
+  "compilation_passed": true,
+  "no_GPU_guard_rejected": true,
+  "native_forward_executed": false,
+  "native_backward_executed": false,
+  "resources_or_restore_passed": false,
+  "scientific_gate_passed": false,
+  "scope": "Executable diagnostic preparation only, not a new scientific test, implementation revision, candidate, native gate PASS, commit permission or training admission.",
+  "next_action": "Use existing run_adares_authorized_probe.py --gpu --gpu-id <fresh-idle-authorized-card> --seconds 600 with this frozen program ONLY after live idleness and exclusive lease checks. No execution if occupied.",
+  "limitation": "An initial native match capture is only the first GPU diagnostic. Full paired backward/shared-query, real optimizer steps, complete restoration and resource controls still remain pending even if it runs."
+}

@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-B4-E30",
   "label": "B4 30-epoch extension",
-  "status": "running",
+  "status": "done_complete",
   "server": "server-2",
   "gpu": "0",
   "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
@@ -19,6 +19,16 @@
       "start_epoch": 21,
       "epochs": 30,
       "evidence": "Log reports resume start_epoch:21,best_miou:0.5072171688079834 and sustained Train[21/30] progress."
+    },
+    {
+      "ts": "2026-09-22T19:47:05.510329",
+      "status": "done_complete",
+      "best_miou": "0.5094",
+      "epochs": "30/30"
     }
-  ]
+  ],
+  "final_best": "0.5094",
+  "finished_at": "2026-09-22T19:47:05",
+  "log_local": "",
+  "epochs_final": "30/30"
 }

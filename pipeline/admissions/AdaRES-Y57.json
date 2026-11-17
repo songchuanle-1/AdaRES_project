@@ -1,0 +1,113 @@
+{
+  "id": "AdaRES-Y57",
+  "candidate_id": "AdaRES-Y57",
+  "config": "configs_song/model_paper5/adares_y57_peer_second_moment_res.yaml",
+  "code_commit": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261020-232749_manual_adares-y57.md",
+    "sha256": "651c21bda9b1d4c8284404031a5d0019e1e5879874e2a8389ce870f45560c190"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y57_anchor_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "617efb8adfc344464afe331abc8f224153915069128d456e0d39a4c4cbfc8927"
+        }
+      ],
+      "scope": "Actual layerwise contrast collapse; original4failures retained."
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y57_anchor_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "617efb8adfc344464afe331abc8f224153915069128d456e0d39a4c4cbfc8927"
+        },
+        {
+          "path": "pipeline/analyses/y57_anchor_cpu_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "562db3861810151514b32c0cc307daddcaa96a816d946283c10e272c66ffa165"
+        },
+        {
+          "path": "pipeline/analyses/y57_anchor_physical_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "06d67da12ee4ccd170598ecfc612d4aaf34ba0a1d379b95d0f8a6e61d7f49b96"
+        }
+      ],
+      "scope": "Same width/full256/same shift1 and original128eps bound; full joint permutation/repeat."
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y57_anchor_physical_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "06d67da12ee4ccd170598ecfc612d4aaf34ba0a1d379b95d0f8a6e61d7f49b96"
+        }
+      ],
+      "scope": "Physical revised package/all7sites/every head tensor/initial anchor finite nonzero native task gradients."
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y57_anchor_physical_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "06d67da12ee4ccd170598ecfc612d4aaf34ba0a1d379b95d0f8a6e61d7f49b96"
+        }
+      ],
+      "scope": "Delta66048 unchanged vs original Y57;5bounded largest-input runs below24GiB,8scene paired timing; not global Pareto."
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y57_anchor_structure_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "6c522301248c2bf3d2a7ac94e303a5931d4d69c4474b65f670637dabe104c9ab"
+        },
+        {
+          "path": "pipeline/analyses/y57_anchor_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "2d6319cd3291e9a6181a862a97636785543fabd7c755a18304c59846b2371041"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y57_commit_binding_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "0dd3622a958c045610049879c92bac7bc191e289bd760cee1ab25f4f9c622461"
+        }
+      ],
+      "scope": "Independent six-file package/unique YAML; only indicator and two local DEC connections change."
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y57_anchor_structure_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "6c522301248c2bf3d2a7ac94e303a5931d4d69c4474b65f670637dabe104c9ab"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y56_Y57_6debf88fed634a13b772f27bdc244bbd.md",
+          "sha256": "80b3eb21bc09136dee4c80edb5ec8a85d8ac882d4c09ab865331106f214d886a"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y57_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "b3ba0e43bee42a7da6c0ad2091f0a5e20ce18d589936a52a8f394b4ca13155b7"
+        },
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        }
+      ],
+      "scope": "All769parent inputs/full256moments, original loss, seed1999/fixed30/SPFormer/Q128/argmax; no tuning/new scale."
+    }
+  },
+  "implementation_revision_sha256": "14d702517a3e5950d28a39313f685cd5a5ba1e4093230256378b7fb9ac8077cb",
+  "admitted_at": "2026-10-20T23:27:49.125457+08:00",
+  "post_training_plan": {
+    "path": "pipeline/analyses/AdaRES-Y57_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "b3ba0e43bee42a7da6c0ad2091f0a5e20ce18d589936a52a8f394b4ca13155b7"
+  },
+  "limitations": [
+    "8TRAIN scene clusters only; layers/queries not independent samples.",
+    "Connection effect/native gradients are not trained efficacy, harm, or novelty.",
+    "Paired timing is bounded and has background hardware variation; final Pareto not established.",
+    "No commit permission for Y57 inferred from the seven-file Y56 answer."
+  ]
+}

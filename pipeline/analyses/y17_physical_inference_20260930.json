@@ -1,0 +1,376 @@
+{
+  "scope": "train8 unaugmented identical state, label counterfactual",
+  "rows": [
+    {
+      "scan_id": "scene0000_00",
+      "repeat": {
+        "probability_max": 9.5367431640625e-07,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.341104507446289e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 8.046627044677734e-07,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.07992905750870705,
+            0.08650311455130577,
+            0.07845382578670979,
+            0.0791391059756279,
+            0.07651905715465546
+          ],
+          "allocated_gib_process": 1.4560513496398926,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.0761508047580719,
+            0.07654989324510098,
+            0.07598607614636421,
+            0.07766078598797321,
+            0.0836380161345005
+          ],
+          "allocated_gib_process": 1.4560513496398926,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0001_00",
+      "repeat": {
+        "probability_max": 1.2814998626708984e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.1622905731201172e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 1.2516975402832031e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.07653988525271416,
+            0.07063751667737961,
+            0.071553785353899,
+            0.07089928351342678,
+            0.07049556635320187
+          ],
+          "allocated_gib_process": 1.3803768157958984,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.0698618870228529,
+            0.07046201638877392,
+            0.07162819616496563,
+            0.07119111530482769,
+            0.07035793550312519
+          ],
+          "allocated_gib_process": 1.3803768157958984,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0002_00",
+      "repeat": {
+        "probability_max": 1.4007091522216797e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.2814998626708984e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 1.1920928955078125e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.10604308173060417,
+            0.10653712786734104,
+            0.10567370988428593,
+            0.10793323069810867,
+            0.1064820010215044
+          ],
+          "allocated_gib_process": 1.5785303115844727,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.1103956289589405,
+            0.10648653097450733,
+            0.10666464827954769,
+            0.10707824863493443,
+            0.1070962194353342
+          ],
+          "allocated_gib_process": 1.5785303115844727,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0003_00",
+      "repeat": {
+        "probability_max": 7.152557373046875e-07,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.0728836059570312e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 8.940696716308594e-07,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.06375248730182648,
+            0.06406192854046822,
+            0.06404026784002781,
+            0.06405286677181721,
+            0.06407077610492706
+          ],
+          "allocated_gib_process": 1.3327269554138184,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.06758193671703339,
+            0.0648420974612236,
+            0.06482656672596931,
+            0.06635329499840736,
+            0.06432745605707169
+          ],
+          "allocated_gib_process": 1.3327269554138184,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0004_00",
+      "repeat": {
+        "probability_max": 1.1920928955078125e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.430511474609375e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 1.5497207641601562e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.11348623782396317,
+            0.11690262518823147,
+            0.11418477818369865,
+            0.11808321811258793,
+            0.12156711705029011
+          ],
+          "allocated_gib_process": 1.428837776184082,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.1167970672249794,
+            0.1149494294077158,
+            0.12342468462884426,
+            0.1269268151372671,
+            0.11726748012006283
+          ],
+          "allocated_gib_process": 1.428837776184082,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0005_00",
+      "repeat": {
+        "probability_max": 1.0132789611816406e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.1622905731201172e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 1.043081283569336e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.06870064698159695,
+            0.06872855499386787,
+            0.06872258521616459,
+            0.06841190531849861,
+            0.06852186657488346
+          ],
+          "allocated_gib_process": 1.3747124671936035,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.07257500477135181,
+            0.06973433680832386,
+            0.0696570985019207,
+            0.06993633694946766,
+            0.06932178698480129
+          ],
+          "allocated_gib_process": 1.3747124671936035,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0006_00",
+      "repeat": {
+        "probability_max": 1.1622905731201172e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.2814998626708984e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 1.1473894119262695e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.09782179072499275,
+            0.09621727280318737,
+            0.09692421928048134,
+            0.09732268191874027,
+            0.09871425107121468
+          ],
+          "allocated_gib_process": 1.4730558395385742,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.0975089818239212,
+            0.09604531340301037,
+            0.09689914993941784,
+            0.09635268151760101,
+            0.09543527290225029
+          ],
+          "allocated_gib_process": 1.4730558395385742,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    },
+    {
+      "scan_id": "scene0007_00",
+      "repeat": {
+        "probability_max": 1.043081283569336e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "label_change": {
+        "probability_max": 1.0132789611816406e-06,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "parent": {
+        "probability_max": 9.5367431640625e-07,
+        "binary_flips": 0,
+        "selection_flips": 0,
+        "seed_flips": 0
+      },
+      "queries": 128,
+      "timing": {
+        "y17": {
+          "seconds": [
+            0.06547419540584087,
+            0.06507754698395729,
+            0.06465592794120312,
+            0.06433218717575073,
+            0.06467644684016705
+          ],
+          "allocated_gib_process": 1.3323750495910645,
+          "note": "both models resident; not standalone peak"
+        },
+        "w2": {
+          "seconds": [
+            0.06454951874911785,
+            0.06668300926685333,
+            0.06549322791397572,
+            0.0657922588288784,
+            0.06564418785274029
+          ],
+          "allocated_gib_process": 1.3323750495910645,
+          "note": "both models resident; not standalone peak"
+        }
+      }
+    }
+  ],
+  "parameters": 164629637,
+  "same_state_keys": true,
+  "complete": true
+}

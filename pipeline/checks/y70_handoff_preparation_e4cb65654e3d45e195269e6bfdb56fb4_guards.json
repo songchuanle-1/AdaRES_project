@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "token": "e4cb65654e3d45e195269e6bfdb56fb4",
+  "CPU_tests_passed": 34,
+  "tests": [
+    {
+      "test": "test_y67_terminal_handoff",
+      "tests_passed": 12,
+      "log": {
+        "path": "pipeline/checks/y70_handoff_preparation_e4cb65654e3d45e195269e6bfdb56fb4_test_y67_terminal_handoff.log",
+        "sha256": "20dd4a5920995b067fd3cf156d395d1cc01aa63a6106f0137746d8feefbd61a6"
+      }
+    },
+    {
+      "test": "test_y70_readiness_handoff",
+      "tests_passed": 8,
+      "log": {
+        "path": "pipeline/checks/y70_handoff_preparation_e4cb65654e3d45e195269e6bfdb56fb4_test_y70_readiness_handoff.log",
+        "sha256": "d41a8ce560a6a72263fe45ff023e1ec75dd9846d7869e507661b88d5e084f4f7"
+      }
+    },
+    {
+      "test": "test_y70_gpu1_admission",
+      "tests_passed": 14,
+      "log": {
+        "path": "pipeline/checks/y70_handoff_preparation_e4cb65654e3d45e195269e6bfdb56fb4_test_y70_gpu1_admission.log",
+        "sha256": "bed3cc86502fdad5756bc79411df1b60467f809d6090db8858d846035be38536"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/finalize_y67_fixed30.py",
+      "sha256": "05b2516229427e52a080eda06f309a24527e4e0c0d8e08554b266a95d1270157"
+    },
+    {
+      "path": "scripts/test_y67_terminal_handoff.py",
+      "sha256": "4a64841a72b827941514a7d39983f8964979db64adb286ee040c65cfc245bb99"
+    },
+    {
+      "path": "scripts/run_y70_gpu1_probe.py",
+      "sha256": "b8489deacb15377b4634a33b8b70b2ae3aea1491600bae325a51620c61888072"
+    },
+    {
+      "path": "scripts/test_y70_readiness_handoff.py",
+      "sha256": "c554905854d7b4444f90f57ed11dc08496e0cab72aa3ac8333f79bb8b90f6120"
+    },
+    {
+      "path": "scripts/admit_dispatch_y70_gpu1.py",
+      "sha256": "d6fdd08d477cbc6e16d88a94ccadd9ccf8c32e7e8b38cbbc69ee061d86d4cc05"
+    },
+    {
+      "path": "scripts/test_y70_gpu1_admission.py",
+      "sha256": "be20760edca5ea586ff5685bc97375c25c9cd6858125acd5734b46d9c6f10437"
+    }
+  ],
+  "Python38_syntax_passed": true,
+  "native_GPU_executed": false,
+  "terminal_archive_executed": false,
+  "admitted": false,
+  "limitation": "Lifecycle/resource/native-result rejection fixtures only; actual original fixed30 checkpoint proof and live native TRAIN result remain mandatory."
+}

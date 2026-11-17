@@ -1,0 +1,25 @@
+{
+  "id": "AdaRES-B5",
+  "config": "configs_song/model_paper5/adares_b5_token_grounding_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-09-21T19:32:33.699579",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-09-22T09:18:09.526734",
+      "status": "done_complete",
+      "best_miou": "0.5030",
+      "epochs": "20/20"
+    }
+  ],
+  "launched": "2026-09-21T19:32:33",
+  "final_best": "0.5030",
+  "finished_at": "2026-09-22T09:18:09",
+  "log_local": "",
+  "epochs_final": "20/20"
+}

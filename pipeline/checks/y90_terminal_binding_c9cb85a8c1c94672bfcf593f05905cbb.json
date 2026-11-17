@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "token": "c9cb85a8c1c94672bfcf593f05905cbb",
+  "id": "AdaRES-Y90",
+  "observed_at": "2026-11-07T16:56:32.906618+08:00",
+  "lifecycle_tests_passed": 25,
+  "binding_tests_passed": 6,
+  "terminal_handoff_plan": {
+    "path": "pipeline/checks/y90_terminal_preparation_c9cb85a8c1c94672bfcf593f05905cbb.json",
+    "sha256": "99a45aa9cb484cdb56f4e0b00b3dd57d8231d75782ddd4471917932c413d601a"
+  },
+  "helpers": {
+    "path": "pipeline/checks/y90_terminal_helpers_c9cb85a8c1c94672bfcf593f05905cbb.json",
+    "sha256": "b2f8908a13ddd29752c378ae1de7ed04fc7ac6143dc828beb895328e950e3329"
+  },
+  "checkpoint_directory": "20261107_071428",
+  "original_helpers_unchanged": true,
+  "main_index_unchanged": true,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "full_frozen_evaluation_executed": false,
+  "future_HEAD_requires_new_binding": true,
+  "evidence": [
+    {
+      "path": "scripts/check_y90_terminal_binding.py",
+      "sha256": "be7e6fc60adc4c30ef85c87f1617704ab2332450d3130ea39729ea4352e4f792"
+    },
+    {
+      "path": "pipeline/checks/y90_terminal_binding_c9cb85a8c1c94672bfcf593f05905cbb.log",
+      "sha256": "7f3be2129582cc9c41f5ce6ab9d355af3c19d2cb1ad48b3bbea88e9bd33f2d41"
+    },
+    {
+      "path": "pipeline/checks/y90_terminal_preparation_c9cb85a8c1c94672bfcf593f05905cbb.json",
+      "sha256": "99a45aa9cb484cdb56f4e0b00b3dd57d8231d75782ddd4471917932c413d601a"
+    },
+    {
+      "path": "pipeline/checks/y90_terminal_helpers_c9cb85a8c1c94672bfcf593f05905cbb.json",
+      "sha256": "b2f8908a13ddd29752c378ae1de7ed04fc7ac6143dc828beb895328e950e3329"
+    }
+  ]
+}

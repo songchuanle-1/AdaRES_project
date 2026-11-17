@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y74",
+  "token": "808558ef00a24c338c85891e0ac326af",
+  "code_commit": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "exact_native_callback_source": {
+    "path": "scripts/probe_y74_native_smoke.py",
+    "sha256": "6893ac65c5dc0012f1ed3303b33979a32fe038d05ce854ff366fb6d1db61698c"
+  },
+  "actual_CPU_result": {
+    "path": "pipeline/analyses/y74_native_observer_cpu_808558ef00a24c338c85891e0ac326af.json",
+    "sha256": "a7efd67084c8ec50604a45ef33b8e43f28334f46594ea1bb4c735b0108c1c88f"
+  },
+  "synthetic_optimizer_steps": 2,
+  "native_response_validator_passed": true,
+  "same_qla_incoming_query_and_qqa_consumption_callbacks": true,
+  "original_model_pretrain_TRAIN_loaded": true,
+  "GPU_executed": false,
+  "native_task_backward": false,
+  "admitted": false,
+  "efficacy_unknown": true,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y74_native_observer_cpu_808558ef00a24c338c85891e0ac326af.json",
+      "sha256": "a7efd67084c8ec50604a45ef33b8e43f28334f46594ea1bb4c735b0108c1c88f"
+    },
+    {
+      "path": "pipeline/analyses/y74_native_observer_cpu_808558ef00a24c338c85891e0ac326af.log",
+      "sha256": "03ac42f2ac501b52d5a3f8684c250f54b662eb1af39e0e4e5242ca743d24e034"
+    },
+    {
+      "path": "pipeline/checks/y74_native_observer_CPU_808558ef00a24c338c85891e0ac326af_program.py",
+      "sha256": "4237e329412cc272cee472112632c04b82c511c8b2bcdacc520ef8611d9f55b4"
+    },
+    {
+      "path": "scripts/probe_y74_native_smoke.py",
+      "sha256": "6893ac65c5dc0012f1ed3303b33979a32fe038d05ce854ff366fb6d1db61698c"
+    }
+  ]
+}

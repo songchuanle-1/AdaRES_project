@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "db27cce488c647259f7c74216a0a18ef",
+  "snapshot_generated_at": "2026-11-08T10:49:35.429964+00:00",
+  "snapshot_sha256": "613250dbc6c266a6056845550b9ce11c0e531a5dfed71d40655ed3983968a492",
+  "servers_sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74",
+  "observed_at": "2026-11-08T10:59:23.738223+00:00",
+  "candidate_ids": [
+    "AdaRES-Y62",
+    "AdaRES-Y63",
+    "AdaRES-Y64",
+    "AdaRES-Y66",
+    "AdaRES-Y69",
+    "AdaRES-Y72",
+    "AdaRES-Y76",
+    "AdaRES-Y79",
+    "AdaRES-Y82",
+    "AdaRES-Y84",
+    "AdaRES-Y88",
+    "AdaRES-Y90"
+  ],
+  "scope": {
+    "server": "server-1",
+    "host": "192.168.1.175",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl02-MS-7B73\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 55, 22794, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 1305468\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token db27cce488c647259f7c74216a0a18ef --server server-1 --label release",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-1_release_db27cce488c647259f7c74216a0a18ef.log",
+    "sha256": "52c3648292bdbf3b6b92d023eb6bd512cf95fa6250a6f7d57b477188770f48de"
+  }
+}

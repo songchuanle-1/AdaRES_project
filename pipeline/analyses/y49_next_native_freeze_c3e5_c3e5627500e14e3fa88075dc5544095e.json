@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "frozen_at": "2026-10-15T13:04:58.533582+08:00",
+  "source_controls": {
+    "path": "pipeline/analyses/y49_source_controls_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+    "sha256": "ba37cbd04e702d2af8e971be8444262cfc9eab0cfa703a5a0360d18bcd11c6ab"
+  },
+  "native_input_CPU": {
+    "path": "pipeline/analyses/y49_native_capture_cpu_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+    "sha256": "94109910562bfd72978d54248db1ba636e26acadf11ec66e3abdeda24e34f221"
+  },
+  "CPU_hook": {
+    "path": "pipeline/analyses/y49_hook_cpu_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+    "sha256": "3c4acc3aa090699ce7fed544ffb4eae7641b8275c30a2f737efd35a0c77e4b09"
+  },
+  "program": {
+    "path": "pipeline/analyses/y49_instrumentation_program_c3e5_c3e5627500e14e3fa88075dc5544095e.py",
+    "sha256": "5d762fe9267264a4d8889f4787957c635fab3996ff897cd4fc3329b590db7d54"
+  },
+  "program_native_branch_compiled": true,
+  "native_branch_executed": false,
+  "next_test": "Under an actually idle/exclusively leased authorized server2 GPU, execute the SAME program native branch on fixed TRAIN8: actual W2 model/native full loss/backward, four finite/nonzero new gradients, exact cached-indicator repeat/wrong/query-only controls and paired time/memory.",
+  "runner": "scripts/run_adares_authorized_probe.py y49_native_c3e5 <frozen-program-path> --token <fresh-owned-token> --seconds 900 --gpu --gpu-id <live-idle-authorized-card>",
+  "later_gates": "Independent physical package/config, released-SPFormer initialization, actual tools.train updates and complete model/optimizer/scheduler restore, full resources and substantive six-gate review before any admission.",
+  "retained_limitations": [
+    "Zero native equal-component-mass/different-global-value witness expressions.",
+    "Physical constructed pair differs in degree; equal-degree witness is abstract.",
+    "CPU surrogate gradients and descriptor runtime are not native utility or resources PASS.",
+    "No production package, code commit, receipt or queue entry."
+  ]
+}

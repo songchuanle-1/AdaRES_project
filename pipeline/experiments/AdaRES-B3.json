@@ -1,15 +1,20 @@
 {
   "id": "AdaRES-B3",
   "label": "Mask-evidence indicator",
-  "status": "training",
+  "status": "done_complete",
   "date": "2026-09-20",
   "server": "server-2",
-  "gpus": [0, 1],
+  "gpus": [
+    0,
+    1
+  ],
   "config": "configs_song/model_paper5/adares_b3_mask_evidence_res.yaml",
   "code_package": "ipdn/model_paper5/adares_b3_mask_evidence",
   "epochs": 20,
   "seed": 1999,
-  "depends_on": ["AdaRES-B2"],
+  "depends_on": [
+    "AdaRES-B2"
+  ],
   "launch_condition": "Launch only when AdaRES-B2 has 20 validation results and best mIoU is below 0.515.",
   "design": {
     "parent": "AdaRES-B1",
@@ -39,9 +44,46 @@
     "launcher_pid": 122629,
     "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b3_20260920_091819.log",
     "started_at": "2026-09-20 09:18:19 -0400",
-    "gpus": [0, 1],
-    "current_epoch": 1
+    "gpus": [
+      0,
+      1
+    ],
+    "current_epoch": 20,
+    "finished_at": "2026-09-21T11:47:03+08:00"
   },
-  "validation": {},
-  "pending": "first validation and final trajectory"
+  "validation": {
+    "epoch_20": {
+      "miou": 0.5014,
+      "acc_025": 0.609,
+      "acc_05": 0.554,
+      "spmiou": 0.464,
+      "sp_acc_025": 0.601,
+      "sp_acc_05": 0.509
+    }
+  },
+  "pending": null,
+  "final": {
+    "best_epoch": 20,
+    "best_miou": 0.5014,
+    "best_acc_025": 0.609,
+    "best_acc_05": 0.554,
+    "best_spmiou": 0.464,
+    "best_sp_acc_025": 0.601,
+    "best_sp_acc_05": 0.509,
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b3_mask_evidence_res/20260920_091833/best.pth",
+    "last_epoch_miou": 0.5014
+  },
+  "conclusion": "Mask-conditioned scene evidence did not improve over the standard or metric-calibrated indicator. B3 completed all 20 validations, peaked at epoch 20, and was closed below both B1 and B2. The terminal TensorBoardX EOFError occurred after final validation and checkpoint save.",
+  "final_best": "0.5014",
+  "finished_at": "2026-09-21T11:47:03",
+  "log_local": "",
+  "epochs_final": "20/20",
+  "history": [
+    {
+      "ts": "2026-09-21T11:47:03.864891",
+      "status": "done_complete",
+      "best_miou": "0.5014",
+      "epochs": "20/20"
+    }
+  ]
 }

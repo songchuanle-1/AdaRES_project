@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T08:48:01.986212-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 17,
+      "total": 30,
+      "step": 2418,
+      "count": 4686
+    },
+    "log_bytes": 21791730
+  },
+  "after": {
+    "observed_at": "2026-10-30T08:48:06.994189-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 17,
+      "total": 30,
+      "step": 2427,
+      "count": 4686
+    },
+    "log_bytes": 21794232
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T08:48:01.986212-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 17,
+        "total": 30,
+        "step": 2418,
+        "count": 4686
+      },
+      "log_bytes": 21791730
+    },
+    {
+      "observed_at": "2026-10-30T08:48:06.994189-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 17,
+        "total": 30,
+        "step": 2427,
+        "count": 4686
+      },
+      "log_bytes": 21794232
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 20742,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y68_language_mask_modulation_res_20261030_065415.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "additional_sources_verified": 12,
+  "additional_YAMLs_verified": 2,
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561\n",
+  "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+  "gpu": "27, 22800, 83, 280.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y68",
+  "token": "a785bf5276374d54baef74df31928b84",
+  "observed_start_local": "2026-10-30T20:48:39.688438+08:00",
+  "observed_end_local": "2026-10-30T20:48:45.047020+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y68_with_local_y71.py",
+      "sha256": "a17e1cd6d7bd679b24643c2e0eb8c77fdf5d947922e82a9e0cbf99bf0acc4d27"
+    },
+    {
+      "path": "pipeline/checks/y68_server2_local_y71_phase_a785bf5276374d54baef74df31928b84.log",
+      "sha256": "070ca5bcebfe2e15d3a6b2c86c61fc1774edcaedab73fcae3bdc2448ce7bb8c3"
+    }
+  ]
+}

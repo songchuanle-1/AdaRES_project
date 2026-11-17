@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "token": "2683c4548e244340a4d06c50bec79b2e",
+  "id": "AdaRES-Y93",
+  "server": "server-2",
+  "original_terminal": {
+    "path": "pipeline/checks/y91_server2_fixed30_y92_2683c4548e244340a4d06c50bec79b2e.json",
+    "sha256": "6b8df052be43d2ff03f46ab483bdf14892728c92e83788082877342a4770d916"
+  },
+  "native_plan": {
+    "path": "pipeline/checks/y93_additive_binding_06710ed9596b4721bb1aa67ca0fdaf97_server2_plan.json",
+    "sha256": "510b5cf016f2598dff4a2c697b596d412d8c40cdb8f72254183a1dd6f550f978"
+  },
+  "observation": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "additive_binding": {
+    "path": "pipeline/checks/y93_additive_binding_06710ed9596b4721bb1aa67ca0fdaf97.json",
+    "sha256": "f69a5c34cff643399f9aff92e69ba97aa73444262c51c9fb3c3cef8945ed1f61"
+  },
+  "native_executed": false,
+  "GPU1_use_authorized": false,
+  "helper": {
+    "path": "scripts/run_y93_bound_native_v2.py",
+    "sha256": "d921a9acc4adfe4ac3dd189aea6f016a09cddee52496757a0309ee92454b6298"
+  }
+}

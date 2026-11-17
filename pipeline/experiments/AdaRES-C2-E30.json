@@ -1,0 +1,34 @@
+{
+  "id": "AdaRES-C2-E30",
+  "label": "C2 fixed 30-epoch continuation",
+  "status": "done_complete",
+  "server": "server-2",
+  "gpu": "1",
+  "config": "configs_song/model_paper5/adares_c2_hard_negative_margin_e30_res.yaml",
+  "epochs": 30,
+  "extension_of": "AdaRES-C2",
+  "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_c2_hard_negative_margin_res/20260922_100039/last.pth",
+  "pid": 97059,
+  "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_c2_hard_negative_margin_e30_res_20260923_081742.log",
+  "launched": "2026-09-23T08:17:42+08:00",
+  "history": [
+    {
+      "ts": "2026-09-23T08:17:42+08:00",
+      "action": "resumed",
+      "gpu": "1",
+      "start_epoch": 11,
+      "epochs": 30,
+      "evidence": "Loaded model, optimizer, and scheduler from epoch-10 last.pth; Train[11/30] started."
+    },
+    {
+      "ts": "2026-09-24T01:47:04.368119",
+      "status": "done_complete",
+      "best_miou": "0.5014",
+      "epochs": "30/30"
+    }
+  ],
+  "final_best": "0.5014",
+  "finished_at": "2026-09-24T01:47:04",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

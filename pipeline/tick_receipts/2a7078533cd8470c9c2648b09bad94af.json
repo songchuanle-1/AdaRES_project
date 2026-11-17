@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "token": "2a7078533cd8470c9c2648b09bad94af",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-11-10T10:44:19.550217+00:00",
+  "recorded_at": "2026-11-10T12:51:05.607800+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Interrupted previous tick after exact Y96 read-only location discovery and helper generation. Last helper returned success and no matching Python writer remains; deadline expired. Preserve generated tools, no tests/terminal plan/archive/native replay occurred. Release only this original lease before fresh tick.",
+  "context_committed": false,
+  "lease_release": "released",
+  "usage": {
+    "status": "partial_window",
+    "calls": 10,
+    "input_tokens": 3417622,
+    "cached_input_tokens": 3033472,
+    "output_tokens": 7509,
+    "reasoning_output_tokens": 2813,
+    "total_tokens": 3425131,
+    "uncached_input_tokens": 384150,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 2,
+    "new_evidence_references": 3,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 2,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  },
+  "lease_released_at": "2026-11-10T12:51:05.782313+00:00"
+}

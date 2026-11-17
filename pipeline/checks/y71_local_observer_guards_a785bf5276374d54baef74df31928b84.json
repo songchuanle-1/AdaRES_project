@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "tests_passed": 3,
+  "log": {
+    "path": "pipeline/checks/y71_local_observer_guards_a785bf5276374d54baef74df31928b84.log",
+    "sha256": "c710d060cc36cbf4e9dd07036dff8496bd66a17adf9ae9aa8ea5fd3486f3561d"
+  },
+  "sources": [
+    {
+      "path": "scripts/observe_y68_with_local_y71.py",
+      "sha256": "a17e1cd6d7bd679b24643c2e0eb8c77fdf5d947922e82a9e0cbf99bf0acc4d27"
+    },
+    {
+      "path": "scripts/test_y71_local_observer.py",
+      "sha256": "adcf34af878ce0760c3a766f60364d0f74e18029f82055e84797799963a235ef"
+    }
+  ],
+  "production_scope": "Only exact old9af/39b production accepted;87019 local-only exact sevenA files checked.",
+  "native_GPU_executed": false
+}

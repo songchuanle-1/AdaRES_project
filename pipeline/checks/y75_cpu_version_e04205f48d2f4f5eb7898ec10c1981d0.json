@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y75",
+  "code_commit": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "parent_commit": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "retained_branch": "refs/heads/adares-y75-language-query-init",
+  "working_HEAD": "7da625ab750447eaad76e82309c89d887df93994",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y75_cpu_version_e04205f48d2f4f5eb7898ec10c1981d0_source_snapshot.json",
+    "sha256": "663c1debf9413e4c5b8b6d37571b5bbf6a1e7f0ee35b32668a0b16cc3861adb0"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y75_cpu_e04205f48d2f4f5eb7898ec10c1981d0.json",
+    "sha256": "1b35ff3a447fc673103d2a44a193548e58502c213dcd3493fd74e8c550200561"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y75_language_query_init_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y75_language_query_init/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y75_cpu_version_e04205f48d2f4f5eb7898ec10c1981d0.index",
+    "sha256": "330c97037f6b0cd6563b2fb3456f2b5fb57535d6121e41b19c6d20e2926c00ca"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y75_cpu_version.py",
+      "sha256": "f9105cb492bf3366ad16cf8280adf926ecd68ae216ed037ed7ba88d66f5a7a51"
+    },
+    {
+      "path": "scripts/probe_y75_cpu.py",
+      "sha256": "5b48f1f42f25e3790ac95f65c79b14c5c42b8b8dca7b1a69a00192968548613d"
+    },
+    {
+      "path": "scripts/prepare_y75_language_query_init.py",
+      "sha256": "8fa8e35d3bfe2ab2fa57971eec3fa4d52fe1d2afb2e607a6385d2603d5618aed"
+    }
+  ]
+}

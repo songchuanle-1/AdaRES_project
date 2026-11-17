@@ -1,0 +1,18 @@
+{
+  "actions": [
+    "用户明确要求连接恢复后继续训练，并两次通知恢复挂载。本轮只AdaRES_project/server-2 GPU0/1；实际任务owner已核实、旧后台Disabled。此前13:36的自动稳态tick已COMPLETE并释放；新手动续做13:40:25 begin不启用自动释放，初始steady/due0/waiting2的原模式、context/pending/deadline不改，未复用已结束token。",
+    "13:36/13:40规范预检已连通，但读取不到源码marker，派发如实停止。13:46只读核实当前及PID1挂载未显示/bak_home，源码目录缺失，证据prepared_mount_status_b5a843848cd34b83bf362acf98c88634.json保留为历史。用户随后再次恢复，13:53:24实测/bak_home已挂/dev/sda1，AdaRES源码、数据、检查点均可见，marker仍原26ee1cec57c53ee2f94d6969d0bb637565b6ed59；没有自行挂载磁盘或伪造marker。",
+    "当前真实nvidia-smi只枚举一张3090 GPU0，UUID GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79，派发前1MiB/0%且无compute行；未枚举GPU1，成因未知，不说别人占用或永久损坏。Y54原GPU1仅为软偏好，改为null允许任一授权GPU0/1空闲时派发，授权集合/单GPU/一卡一任务上限不变。",
+    "复核两个现有回执、当前goal/HEAD及六门禁证据，local/Git中14个已测文件原字节一致；不重跑科学门禁、不重建准入或提交。只读启动采集首次用旧系统Python返回空输出，在派发前失败；只改为项目配置Python3.8，模型/协议不变，随后正常采集。",
+    "沿规范_process_queue/safe_sync/safe_launch/verify_progress执行，不另跑monitor/goal preflight。safe_sync仅把两个限定提交的14项新增文件同步到8943c8c460501b200a8dea958964579ffea65f76，远端14文件hash和marker均核实一致。13:59:36派发证据prepared_dispatch_b5a843848cd34b83bf362acf98c88634_135936.json，SHA ff4b3d2473d69607bc84c45c65ae8f069d45fc2b1d0eddec5da16dc37ddd9852，记录Y52 PID15934/GPU0/running/launch_verified及原生递增步数。Y54仍waiting，无进程、无额外占卡。",
+    "14:01:33独立只读复核Y52精确PID/配置/cwd，Train第1/30轮步数连续223到228，所读有界tail未见Traceback/CUDA OOM/RuntimeError；prepared_progress_b5a843848cd34b83bf362acf98c88634_140133.json留档。整卡52%/16890MiB、进程16882MiB只是当前占用，不作峰值/隔离算法成本。GPU1未枚举前不叠加第二实验，不盲重启或碰外来作业。",
+    "研究账本Y52已training、Y54保持资源blocked并已准入waiting；107候选/模型修订0不变，显式closure.validate_work通过。旧缺许可/网络/挂载及负面证据全部保留，不把Y52原indicator前提否定或released-init辅助零活动改成有效。当前尚无新的验证mIoU，历史CSV最佳Y36 0.5110/B1 0.5020、目标0.5150差0.0040不变。",
+    "完整六段0-3复用13:40预检表，不假称已包含后续真实启动；后续时间和变化只写本段。收据用量只涵盖13:40:25 begin至receipt本地窗口，具体值待收据/未知；13:36单独已收尾不重复相加，不含更早读取、晚到记录和最终回复。缓存属输入、推理属输出，不重复相加或当账单。实际产出是部署/一次正式启动及进度证据、软偏好/状态对账、notes/记忆/报告，不是新指标或模型收益。"
+  ],
+  "decisions": [
+    "继续同一Y52 fixed30单GPU训练，保持released SPFormer、seed1999、128query及冻结训练/评估规则；不把启动成功当训练完成或方法有效，不调参、不重启、不用诊断权重。",
+    "Y54保留同一已准入队列项，解除不存在卡的软绑定，等待任一当前可见且真正空闲的授权GPU0/1；GPU0正由Y52使用时不叠加，GPU1恢复时也须实时占用/租约/源码/进度检查。不要求用户重复提交或实验授权。",
+    "旧13:46挂载缺失只作历史，当前已恢复；未运行的旧挂载阻塞helper已删除，避免写入过时依赖。公网备用连接host-key未知未放宽；已核实的内网路径足以安全续做，不操作其他服务器或项目。",
+    "本轮预算不新造候选或重复准入；规范report/finish并独立核实context提交、收据及租约释放后才称本轮检查完成。失败则保留证据按契约abort。下一步由现有前台监控继续看同一训练/等待队列，不新增任务、调度或后台。"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "original": "scripts\\probe_y33_physical_native.py",
+      "original_sha256": "9c3b6f1a70f79dc974965abed3672d695e7f89d3d94ab4704e00d20d6884e612",
+      "target": "scripts\\probe_y36_physical_native.py",
+      "sha256": "828545cd22d2ff244613cf9a34d1d375fbf54782a1b90aed6d019a638bd1b779"
+    },
+    {
+      "original": "scripts\\probe_y33_resources.py",
+      "original_sha256": "a4172d9486467ea8708d5ffa37e515468367b7ed0533ff616aa813f512b8168d",
+      "target": "scripts\\probe_y36_resources.py",
+      "sha256": "f9bda6da48ae67fe2c5d22719fbd2bdc30e290bed16b0d54bc9dc08113e84a40"
+    },
+    {
+      "original": "scripts\\probe_y33_native_controls.py",
+      "original_sha256": "b1d536a9a76ac3f493592eae9957ef4b8558617eb3417abfec18cafd9432212d",
+      "target": "scripts\\probe_y36_native_controls.py",
+      "sha256": "10729a346206fb3db802167dbadf2954de21a884d1a00fa064bac96109c3973d"
+    },
+    {
+      "original": "scripts\\probe_y33_token_diagnosis.py",
+      "original_sha256": "c5a22e696e828884254498db29882a2a4951295eb1169e5a6da8833cbb6abba0",
+      "target": "scripts\\probe_y36_edge_diagnosis.py",
+      "sha256": "5368505d969da2fed39224838e59e384d36f667fd848954cefda561ff437b70a"
+    }
+  ],
+  "preserved": "native entry/2steps/modelAdamWPolyLR restoration/TRAIN sampling/resource protocol",
+  "changed": "candidate identity/new8tensors/6-input edge path/coordinate interventions only",
+  "cpu_fixture_fix": "Exact equal-feature-marginal fixture now uses dyadic integers; no gate tolerance relaxation."
+}

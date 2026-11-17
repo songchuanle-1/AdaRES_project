@@ -1,0 +1,100 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0
+  },
+  "server1_user_pause": true,
+  "stop_receipt": {
+    "path": "pipeline/checks/server1_user_pause_ce356360782a431ab9adc3e015f7d5aa_stop.json",
+    "sha256": "3ba5195f8dfd4c86c9e20090909e694fcd5adca2e3f739dc738d7152aa40c2d5"
+  },
+  "authorization": {
+    "path": "pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json",
+    "sha256": "856914c2f463b590eb615c4de9cc7168b2328087462fa56756c55523970be3e0"
+  },
+  "native_captures_preserved": 8,
+  "methods": [
+    "AdaRES-Y88",
+    "AdaRES-Y36",
+    "AdaRES-W2",
+    "AdaRES-B1"
+  ],
+  "each_expressions": 9508,
+  "each_scenes": 141,
+  "captures": {
+    "AdaRES-Y88": {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-y88.json",
+      "sha256": "e2a5d7f9f6aad986c141a357557b73200e15bcc0d87c8a5bd01b2ef5ee5aa0f9"
+    },
+    "AdaRES-Y36": {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-y36.json",
+      "sha256": "f8878963c39c1ad16d2bd94c678b44fb234b8a025306e1a8d6629d38ea637ca6"
+    },
+    "AdaRES-W2": {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-w2.json",
+      "sha256": "ede01d8f0fd3795ade702bb17bccbfb33e9781f4db5debc0d9a48224d60d1467"
+    },
+    "AdaRES-B1": {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-b1.json",
+      "sha256": "87100d8d0fa36dc3d93c91350fabf7ea13de63520718901780c6fb02eb29be83"
+    }
+  },
+  "worker_paired_result_preserved": {
+    "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/paired_result.json",
+    "sha256": "34ed97c23c551cc6403444dc516a06a3bb9cc5a437976217fb466eef316baba9"
+  },
+  "original_candidate_capture_bytes_identical": true,
+  "formal_comparison_not_accepted": true,
+  "cost_not_started": true,
+  "scientific_disposition_pending": true,
+  "checkpoint_loaded": false,
+  "GPU_used": false,
+  "remote_mutations": false,
+  "original_products_unchanged": true,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/remote_manifest.json",
+      "sha256": "57f5bd9c0c24139c88da943e45535343ede7cdf049cec9194f4086abebab07ca"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/state.json",
+      "sha256": "4eda5f1c018e470770047bc71c91a4584c6ae055e910d09a96b17eadc4dd20bf"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/worker.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pipeline/checks/y88_remaining_launch_program_ce356360782a431ab9adc3e015f7d5aa.py",
+      "sha256": "1ce6f24e845a42dcce91fcf107c5aacb7cf6d26aac71aa90792441290bd86aa5"
+    },
+    {
+      "path": "pipeline/checks/y88_remaining_launch_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "c884ced0701788da6dfe55b58d73432661fc6a3f771535b8e19ea487fba0e064"
+    },
+    {
+      "path": "pipeline/checks/server1_user_pause_ce356360782a431ab9adc3e015f7d5aa_stop.json",
+      "sha256": "3ba5195f8dfd4c86c9e20090909e694fcd5adca2e3f739dc738d7152aa40c2d5"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-y88.json",
+      "sha256": "e2a5d7f9f6aad986c141a357557b73200e15bcc0d87c8a5bd01b2ef5ee5aa0f9"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-y36.json",
+      "sha256": "f8878963c39c1ad16d2bd94c678b44fb234b8a025306e1a8d6629d38ea637ca6"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-w2.json",
+      "sha256": "ede01d8f0fd3795ade702bb17bccbfb33e9781f4db5debc0d9a48224d60d1467"
+    },
+    {
+      "path": "pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/adares-b1.json",
+      "sha256": "87100d8d0fa36dc3d93c91350fabf7ea13de63520718901780c6fb02eb29be83"
+    }
+  ]
+}

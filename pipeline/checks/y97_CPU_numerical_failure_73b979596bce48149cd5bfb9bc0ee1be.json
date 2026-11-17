@@ -1,0 +1,159 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y97",
+  "token": "73b979596bce48149cd5bfb9bc0ee1be",
+  "observed_at": "2026-11-09T03:22:14.434239+08:00",
+  "failure_scope": "implementation",
+  "failed_guard": "torch.equal(layer(projected.flip(0), raw.flip(0)), value.flip(0))",
+  "original_CPU_attempt": {
+    "program": {
+      "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+      "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+    },
+    "raw_log": {
+      "path": "pipeline/analyses/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be.log",
+      "sha256": "68da9bd9fd9bb9368e452fe0403e1146f3dbcdd724d8819c5eb52a79fc0358db"
+    },
+    "full_model_constructed_before_failure": true,
+    "released_backbone_loaded_before_failure": true,
+    "TRAIN_data_loading_started_before_failure": true,
+    "full_CPU_control_suite_passed": false,
+    "decoder_backward_executed": false
+  },
+  "exact_component_reproduction": {
+    "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.json",
+    "sha256": "a5f850ca02cc7e4c1aa64558bdcc7d06d8da906a4716969457c0cb2a646b6ec1"
+  },
+  "measured_rows": [
+    {
+      "dtype": "torch.float32",
+      "original_bitwise_guard_executed": true,
+      "original_bitwise_guard_failed": true,
+      "exact_elements": 64,
+      "elements": 70,
+      "max_absolute_difference": 1.1920928955078125e-07,
+      "max_error_index": [
+        0,
+        1,
+        1
+      ],
+      "actual_at_max": -1.193293809890747,
+      "expected_at_max": -1.1932936906814575,
+      "epsilon": 1.1920928955078125e-07,
+      "existing_scalar_control_rtol": 1.52587890625e-05,
+      "existing_scalar_control_atol": 1.52587890625e-05,
+      "existing_scalar_limit_at_max": 3.346700395923108e-05,
+      "within_existing_scalar_tolerance": true,
+      "independent_scalar_reference_max_error": 2.990010316561431e-07,
+      "raw_shape": [
+        2,
+        5,
+        11
+      ],
+      "projected_shape": [
+        2,
+        5,
+        7
+      ]
+    },
+    {
+      "dtype": "torch.float64",
+      "original_bitwise_guard_executed": true,
+      "original_bitwise_guard_failed": true,
+      "exact_elements": 69,
+      "elements": 70,
+      "max_absolute_difference": 2.220446049250313e-16,
+      "max_error_index": [
+        1,
+        2,
+        0
+      ],
+      "actual_at_max": -1.3268243470950072,
+      "expected_at_max": -1.326824347095007,
+      "epsilon": 2.220446049250313e-16,
+      "existing_scalar_control_rtol": 2.842170943040401e-14,
+      "existing_scalar_control_atol": 2.842170943040401e-14,
+      "existing_scalar_limit_at_max": 6.613232548872381e-14,
+      "within_existing_scalar_tolerance": true,
+      "independent_scalar_reference_max_error": 0.0,
+      "raw_shape": [
+        2,
+        5,
+        11
+      ],
+      "projected_shape": [
+        2,
+        5,
+        7
+      ]
+    }
+  ],
+  "existing_scalar_tolerance_observation_is_NOT_a_replacement_PASS": true,
+  "original_guard_unchanged": true,
+  "original_model_and_YAML_unchanged": true,
+  "no_repair_or_scientific_revision_executed": true,
+  "mechanism_falsified": false,
+  "native_executed": false,
+  "admitted": false,
+  "synchronized": false,
+  "training_launched": false,
+  "efficacy_measured": false,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+      "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+    },
+    {
+      "path": "pipeline/analyses/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be.log",
+      "sha256": "68da9bd9fd9bb9368e452fe0403e1146f3dbcdd724d8819c5eb52a79fc0358db"
+    },
+    {
+      "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.json",
+      "sha256": "a5f850ca02cc7e4c1aa64558bdcc7d06d8da906a4716969457c0cb2a646b6ec1"
+    },
+    {
+      "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pipeline/checks/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+      "sha256": "259e0b2758cf66ebd69d9806a6fcfabeba04b07a772b91f783378213698d764a"
+    },
+    {
+      "path": "scripts/record_y97_numerical_hold.py",
+      "sha256": "bff68b3946e9154585c820cfb607707a9197ecce2b5ea5eae7fba9ca258aeec7"
+    },
+    {
+      "path": "scripts/diagnose_y97_batch_permutation.py",
+      "sha256": "3f1a8d4c8dcfcbad88d0537daae9d4b691643dab6ee6692601e90cb28bda184f"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/__init__.py",
+      "sha256": "82e013e616abb0b5446cf83709c703c7752e33763df1106c8b0dbd1c43042ff1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/dec.py",
+      "sha256": "c25405e499bb2f88575b2bcdd298e9f8f69fd63741c03560a07adc7530410dee"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y97_language_quadratic_input_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "preregistered_at": "2026-10-17T12:35:55.370649+08:00",
+  "original_program": {
+    "path": "pipeline/analyses/y52_native_resources_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "cc01699750bb16f88b83082bd56ed89a8a1815262296253a8388c99acf3d9702"
+  },
+  "failure_evidence": {
+    "path": "pipeline/analyses/y52_native_resources_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.log",
+    "sha256": "54214c94cfed9bc27d179f02af7dfaadf65a7050bb2909f719ef3dc41f12d260"
+  },
+  "scope": "inference_batch_compatibility_not_model",
+  "change": "Only predict uses eight single-scene batches, as native deployment requires. The SAME eight TRAIN scenes/32 expressions, exact initial states, two warmups/three measurements, all parity checks, and four original batchsize2 train pairs/largest-pair stress remain unchanged.",
+  "prediction": "Parent native predict accepts supported batchsize1; parent/candidate outputs match within independently observed repeats. Native train batchsize2 remains finite and below the unchanged24GiB reserved-memory limit.",
+  "limitations": "Original parent batchsize2 predict failure is preserved. No sample/model/threshold change, trained efficacy, global worst-case resource claim, model revision, commit, admission or training.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y52_resources_batch_compat_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "949822f0785f568381cc30a3cbdb1fcbdfacf1b94ea7a6a0acaeb2a4500f2096"
+  }
+}

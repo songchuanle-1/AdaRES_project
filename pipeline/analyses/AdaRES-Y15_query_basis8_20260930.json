@@ -1,0 +1,1033 @@
+{
+  "rows": [
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        2
+      ],
+      "ann_id": "31",
+      "material": true,
+      "student_oracle_iou": 0.8650895357131958,
+      "teacher_oracle_iou": 0.924496054649353,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.7816495895385742,
+          "relative_weighted_residual": 0.0005370309799892655,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.1871378868818283,
+          "relative_weighted_residual": 0.023268869545506065,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8650895357131958,
+          "relative_weighted_residual": 2.5499019017627932e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9258626699447632,
+          "relative_weighted_residual": 0.017047080814086943,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        39
+      ],
+      "ann_id": "0",
+      "material": false,
+      "student_oracle_iou": 0.9118329286575317,
+      "teacher_oracle_iou": 0.8817465305328369,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8556700944900513,
+          "relative_weighted_residual": 0.00033698404040606757,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.42058271169662476,
+          "relative_weighted_residual": 0.025391123973366375,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.9118329286575317,
+          "relative_weighted_residual": 2.5574592189234385e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9957550168037415,
+          "relative_weighted_residual": 0.004774590271753344,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        16
+      ],
+      "ann_id": "7",
+      "material": true,
+      "student_oracle_iou": 0.8372881412506104,
+      "teacher_oracle_iou": 0.9068825840950012,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.9068825840950012,
+          "relative_weighted_residual": 0.001472935581922518,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.043735655623026864,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8372881412506104,
+          "relative_weighted_residual": 4.8154460532812345e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.7408906817436218,
+          "relative_weighted_residual": 0.002474336438192488,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        25
+      ],
+      "ann_id": "10",
+      "material": true,
+      "student_oracle_iou": 0.8825065493583679,
+      "teacher_oracle_iou": 1.0,
+      "projection": {
+        "teacher": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0012572974843177442,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.03659361932843867,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8825065493583679,
+          "relative_weighted_residual": 4.725363522362612e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0008667135854502995,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        28
+      ],
+      "ann_id": "18",
+      "material": true,
+      "student_oracle_iou": 0.8848167657852173,
+      "teacher_oracle_iou": 1.0,
+      "projection": {
+        "teacher": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0016708830990051948,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.05525682805270398,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8848167657852173,
+          "relative_weighted_residual": 5.1248803671417676e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.8224852085113525,
+          "relative_weighted_residual": 0.0029337934440106426,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        17
+      ],
+      "ann_id": "0",
+      "material": false,
+      "student_oracle_iou": 0.9193015098571777,
+      "teacher_oracle_iou": 0.9193015098571777,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8810701370239258,
+          "relative_weighted_residual": 0.0014601610981717457,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.25754407048225403,
+          "relative_weighted_residual": 0.05712502514439101,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.9193015098571777,
+          "relative_weighted_residual": 4.237633872790256e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9251746535301208,
+          "relative_weighted_residual": 0.00876187430364344,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        10
+      ],
+      "ann_id": "0",
+      "material": true,
+      "student_oracle_iou": 0.7301204800605774,
+      "teacher_oracle_iou": 0.8648905754089355,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8648905754089355,
+          "relative_weighted_residual": 0.0009086693077896638,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.029389328005327488,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.7301204800605774,
+          "relative_weighted_residual": 3.480452128440022e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0021008317377810277,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        11
+      ],
+      "ann_id": "1",
+      "material": true,
+      "student_oracle_iou": 0.2698795199394226,
+      "teacher_oracle_iou": 0.5025906562805176,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.0011445484437840917,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.04706287816633661,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.2698795199394226,
+          "relative_weighted_residual": 3.342337616274856e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.0034759483824774776,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        17
+      ],
+      "ann_id": "5",
+      "material": true,
+      "student_oracle_iou": 0.9057337045669556,
+      "teacher_oracle_iou": 0.975704550743103,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.9282868504524231,
+          "relative_weighted_residual": 0.0008837981789845494,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.031906029184604924,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.9057337045669556,
+          "relative_weighted_residual": 3.5290244771689695e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9282868504524231,
+          "relative_weighted_residual": 0.0023485412978093436,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        6
+      ],
+      "ann_id": "2",
+      "material": false,
+      "student_oracle_iou": 0.890201210975647,
+      "teacher_oracle_iou": 0.9275296330451965,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.9275296330451965,
+          "relative_weighted_residual": 0.0010411583022612231,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.03691683877416742,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.890201210975647,
+          "relative_weighted_residual": 3.256412286012802e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9275296330451965,
+          "relative_weighted_residual": 0.00531068682738464,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        12
+      ],
+      "ann_id": "19",
+      "material": true,
+      "student_oracle_iou": 0.446540892124176,
+      "teacher_oracle_iou": 0.5017668008804321,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.3837837874889374,
+          "relative_weighted_residual": 0.001512630421764766,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.036804631955661374,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.446540892124176,
+          "relative_weighted_residual": 4.341863346455477e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.0011198769456099169,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        12
+      ],
+      "ann_id": "21",
+      "material": true,
+      "student_oracle_iou": 0.5017668008804321,
+      "teacher_oracle_iou": 1.0,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.6200873255729675,
+          "relative_weighted_residual": 0.001513865466252758,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.037272129595233065,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.5017668008804321,
+          "relative_weighted_residual": 3.694240175303722e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.0011198769456099169,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        0
+      ],
+      "ann_id": "0",
+      "material": false,
+      "student_oracle_iou": 0.9768633246421814,
+      "teacher_oracle_iou": 0.9865591526031494,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.9865591526031494,
+          "relative_weighted_residual": 0.0014432611244486263,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.4984104633331299,
+          "relative_weighted_residual": 0.03616228081038128,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.9768633246421814,
+          "relative_weighted_residual": 2.6224279405872095e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9855175018310547,
+          "relative_weighted_residual": 0.002818658983057711,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        24
+      ],
+      "ann_id": "2",
+      "material": true,
+      "student_oracle_iou": 0.5786979794502258,
+      "teacher_oracle_iou": 0.6691300868988037,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.5712025165557861,
+          "relative_weighted_residual": 0.0012368323835236805,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.07884615659713745,
+          "relative_weighted_residual": 0.0701367632385612,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.5786979794502258,
+          "relative_weighted_residual": 3.143594102400934e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9482158422470093,
+          "relative_weighted_residual": 0.019889339774774764,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        53
+      ],
+      "ann_id": "9",
+      "material": true,
+      "student_oracle_iou": 0.7720385789871216,
+      "teacher_oracle_iou": 0.8316026329994202,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8174108862876892,
+          "relative_weighted_residual": 0.0017588405388626594,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.09817547375691642,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.7720385789871216,
+          "relative_weighted_residual": 3.056445519479297e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.911861777305603,
+          "relative_weighted_residual": 0.017644905612684114,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        41
+      ],
+      "ann_id": "17",
+      "material": true,
+      "student_oracle_iou": 0.7377865314483643,
+      "teacher_oracle_iou": 0.8022042512893677,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8122054934501648,
+          "relative_weighted_residual": 0.0018013753209280814,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.18936997652053833,
+          "relative_weighted_residual": 0.08354040791989126,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.7377865314483643,
+          "relative_weighted_residual": 3.2562609544474655e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.920824408531189,
+          "relative_weighted_residual": 0.023387843436821085,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        18
+      ],
+      "ann_id": "20",
+      "material": true,
+      "student_oracle_iou": 0.4945155382156372,
+      "teacher_oracle_iou": 0.5848648548126221,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.08368200808763504,
+          "relative_weighted_residual": 0.001120635782263426,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.056398713983203896,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.4945155382156372,
+          "relative_weighted_residual": 2.7483326099111923e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.8521257042884827,
+          "relative_weighted_residual": 0.006596936707199891,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        51
+      ],
+      "ann_id": "0",
+      "material": false,
+      "student_oracle_iou": 1.0,
+      "teacher_oracle_iou": 1.0,
+      "projection": {
+        "teacher": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0010771242250428082,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.03823147437112275,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 2.5637382965054563e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0017318776874870444,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "1",
+      "material": true,
+      "student_oracle_iou": 0.778268039226532,
+      "teacher_oracle_iou": 0.913397490978241,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8530730605125427,
+          "relative_weighted_residual": 0.001259654678755013,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.5487198233604431,
+          "relative_weighted_residual": 0.0722292823898606,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.778268039226532,
+          "relative_weighted_residual": 2.0135252701024184e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9086036682128906,
+          "relative_weighted_residual": 0.017642466954972843,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "2",
+      "material": true,
+      "student_oracle_iou": 0.8363760113716125,
+      "teacher_oracle_iou": 0.8972057700157166,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8581086993217468,
+          "relative_weighted_residual": 0.0012090322869561605,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.5103893280029297,
+          "relative_weighted_residual": 0.07425383631914113,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8363760113716125,
+          "relative_weighted_residual": 2.783010790997106e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9086036682128906,
+          "relative_weighted_residual": 0.017642466954972843,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "10",
+      "material": true,
+      "student_oracle_iou": 0.782366931438446,
+      "teacher_oracle_iou": 0.8934613466262817,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8636404275894165,
+          "relative_weighted_residual": 0.0011501890869818176,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.49686941504478455,
+          "relative_weighted_residual": 0.06890166630197499,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.782366931438446,
+          "relative_weighted_residual": 2.2980479792614346e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9086036682128906,
+          "relative_weighted_residual": 0.017642466954972843,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "24",
+      "material": true,
+      "student_oracle_iou": 0.7943469882011414,
+      "teacher_oracle_iou": 0.8888888955116272,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8106722831726074,
+          "relative_weighted_residual": 0.0011600104722550057,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.5370507836341858,
+          "relative_weighted_residual": 0.0712683338757471,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.7943469882011414,
+          "relative_weighted_residual": 2.6618896393864137e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9086036682128906,
+          "relative_weighted_residual": 0.017642466954972843,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        3
+      ],
+      "ann_id": "0",
+      "material": false,
+      "student_oracle_iou": 0.8826658725738525,
+      "teacher_oracle_iou": 0.855327308177948,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.855327308177948,
+          "relative_weighted_residual": 0.0011999800302044661,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.10216361284255981,
+          "relative_weighted_residual": 0.06100698339171014,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8826658725738525,
+          "relative_weighted_residual": 2.5807014800897876e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9690272808074951,
+          "relative_weighted_residual": 0.005170292314260613,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        19
+      ],
+      "ann_id": "9",
+      "material": true,
+      "student_oracle_iou": 0.9357210993766785,
+      "teacher_oracle_iou": 0.9918677806854248,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.9918677806854248,
+          "relative_weighted_residual": 0.0005646135148738845,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.5389049053192139,
+          "relative_weighted_residual": 0.049542939732487905,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.9357210993766785,
+          "relative_weighted_residual": 1.2070831086152345e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9978371858596802,
+          "relative_weighted_residual": 0.003790308510205242,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        29
+      ],
+      "ann_id": "13",
+      "material": true,
+      "student_oracle_iou": 0.8781954646110535,
+      "teacher_oracle_iou": 1.0,
+      "projection": {
+        "teacher": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0004579507959161201,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.305970162153244,
+          "relative_weighted_residual": 0.022347274270540056,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8781954646110535,
+          "relative_weighted_residual": 1.4371084904763688e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.0011773757770275188,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "1",
+      "material": false,
+      "student_oracle_iou": 0.9596853256225586,
+      "teacher_oracle_iou": 0.9596853256225586,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.9596853256225586,
+          "relative_weighted_residual": 0.0003701289730773339,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.759861171245575,
+          "relative_weighted_residual": 0.04118755256442606,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.9596853256225586,
+          "relative_weighted_residual": 2.189846851219467e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.9733288288116455,
+          "relative_weighted_residual": 0.003454420355818291,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        38
+      ],
+      "ann_id": "2",
+      "material": true,
+      "student_oracle_iou": 0.7180851101875305,
+      "teacher_oracle_iou": 0.8484042286872864,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.8484042286872864,
+          "relative_weighted_residual": 0.0012195750153216067,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.05666138409770308,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.7180851101875305,
+          "relative_weighted_residual": 3.7009970932996866e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.006450785256565385,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        38
+      ],
+      "ann_id": "8",
+      "material": true,
+      "student_oracle_iou": 0.2635561227798462,
+      "teacher_oracle_iou": 0.3398374021053314,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.3398374021053314,
+          "relative_weighted_residual": 0.0010333264639057283,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.04197327602824095,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.2635561227798462,
+          "relative_weighted_residual": 2.66427554547342e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.006450785256565385,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        4
+      ],
+      "ann_id": "12",
+      "material": true,
+      "student_oracle_iou": 0.579804539680481,
+      "teacher_oracle_iou": 1.0,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.4198988080024719,
+          "relative_weighted_residual": 0.0009390806629927956,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.03614081709941958,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.579804539680481,
+          "relative_weighted_residual": 2.9244734495535394e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.00401996106276272,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        51
+      ],
+      "ann_id": "13",
+      "material": true,
+      "student_oracle_iou": 0.7025986313819885,
+      "teacher_oracle_iou": 0.7561643719673157,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.7561643719673157,
+          "relative_weighted_residual": 0.0007953176282178686,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.026159789572264724,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.7025986313819885,
+          "relative_weighted_residual": 3.031969947010841e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 1.0,
+          "relative_weighted_residual": 0.004173692066170849,
+          "feature_rank": 256
+        }
+      }
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        8
+      ],
+      "ann_id": "0",
+      "material": false,
+      "student_oracle_iou": 0.8626609444618225,
+      "teacher_oracle_iou": 0.7089946866035461,
+      "projection": {
+        "teacher": {
+          "point_iou": 0.7805825471878052,
+          "relative_weighted_residual": 0.0008593662044135185,
+          "feature_rank": 256
+        },
+        "shifted_teacher": {
+          "point_iou": 0.0,
+          "relative_weighted_residual": 0.03255480380358533,
+          "feature_rank": 256
+        },
+        "student_oracle": {
+          "point_iou": 0.8626609444618225,
+          "relative_weighted_residual": 2.8361319939932957e-14,
+          "feature_rank": 256
+        },
+        "gt_only": {
+          "point_iou": 0.8392484188079834,
+          "relative_weighted_residual": 0.00841396063070052,
+          "feature_rank": 256
+        }
+      }
+    }
+  ],
+  "scans": [
+    {
+      "scan_id": "scene0000_00",
+      "expressions": 2
+    },
+    {
+      "scan_id": "scene0002_00",
+      "expressions": 4
+    },
+    {
+      "scan_id": "scene0006_00",
+      "expressions": 4
+    },
+    {
+      "scan_id": "scene0008_00",
+      "expressions": 3
+    },
+    {
+      "scan_id": "scene0010_00",
+      "expressions": 5
+    },
+    {
+      "scan_id": "scene0012_00",
+      "expressions": 5
+    },
+    {
+      "scan_id": "scene0014_00",
+      "expressions": 3
+    },
+    {
+      "scan_id": "scene0016_00",
+      "expressions": 5
+    }
+  ],
+  "elapsed_s": 5.9963629972189665,
+  "peak_reserved_gib": 4.97265625,
+  "scope": "oracle query-basis representability; no inference claim"
+}

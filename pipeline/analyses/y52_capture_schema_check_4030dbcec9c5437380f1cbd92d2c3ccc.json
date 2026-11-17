@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "token": "4030dbcec9c5437380f1cbd92d2c3ccc",
+  "id": "AdaRES-Y52",
+  "kind": "read_only_existing_capture_input_availability_audit",
+  "observation_window_shanghai": [
+    "2026-10-16T20:50:50.417452+08:00",
+    "2026-10-16T20:54:25.560938+08:00"
+  ],
+  "exact_observation_time": null,
+  "method": "SSH read-only JSON schema inspection after verifying dl01-MS-7C60 and the immutable capture SHA256; no new data capture or model execution.",
+  "historical_capture_path": "/tmp/adares_y46_native_capture_d179_d179d824a64943e0b06bfa90de0caf52.json",
+  "historical_capture_sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89",
+  "scene_count": 8,
+  "packed_native_input_fields_observed": [
+    "coordinates", "graph_edges", "masks", "masses", "query", "tokens"
+  ],
+  "expression_field_names_observed": [
+    "GT_superpoint_component_masses", "ann_id", "component_mass_permutation_error",
+    "foreground_component_masses", "graph_edges", "graph_nodes", "graph_support_density",
+    "object_ids", "packed_native_inputs", "selected_mass_error"
+  ],
+  "matching_source_reference": "AdaRES/ipdn/model_paper5/adares_y52_point_target/loss.py",
+  "frozen_prototype_manifest": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "missing_actual_matching_inputs": ["fps_seed_sp", "pred.sample_inds", "recorded_native_matching_indices"],
+  "inference": "The frozen Criterion.forward explicitly indexes native FPS seeds and predicted sample_inds to build matched supervision. The existing historical packed capture lacks these actual indices, so its all-query masks cannot establish native matched-query quality-target incidence. Do not invent substitute indices or call a replay a new Y52 native forward.",
+  "no_GPU": true,
+  "new_scientific_tests": 0,
+  "native_forward_or_backward_executed": false,
+  "model_changes": 0,
+  "admissions": 0,
+  "decision": "Retain SAME frozen Y52 and existing negative evidence. Do not repeat completed CPU controls; obtain actual native TRAIN matching/backward/resource/restore evidence only after current authorization, genuine idleness and exclusive diagnostic lease checks."
+}

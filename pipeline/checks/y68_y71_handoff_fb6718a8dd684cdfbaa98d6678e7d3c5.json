@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "tick_token": "fb6718a8dd684cdfbaa98d6678e7d3c5",
+  "snapshot_at": "2026-10-30T22:52:26.355188+00:00",
+  "observed_at": "2026-10-31T07:16:37.345483+08:00",
+  "Y68_terminal_proof": {
+    "path": "pipeline/checks/y68_server2_fixed30_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "456d145556511856729508d55b41c17f8e291decdcd0c08fc86b107232661212"
+  },
+  "Y68_canonical_archive": {
+    "path": "pipeline/checks/y68_server2_fixed30_fb6718a8dd684cdfbaa98d6678e7d3c5_archive_binding.json",
+    "sha256": "56e0bab53b55dd16cedf089b84187e826fa708bf2265b257b5c1044fbd317c18"
+  },
+  "Y68_resource_alignment": {
+    "path": "pipeline/checks/y68_terminal_resource_alignment_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "629da3981939f536d6c142289c77a18022d248bf3a5c39f2062ed6bba03f382c"
+  },
+  "Y71_native_smoke": {
+    "path": "pipeline/analyses/y71_gpu0_smoke_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "6e93a5609e8c61663384653db464b62e8f7fcfb29484fc2cc33d2759c43893c9"
+  },
+  "Y71_admission": {
+    "path": "pipeline/admissions/AdaRES-Y71.json",
+    "sha256": "e6a440c4154b488bda5801c1a93e4b02f4dd936b1c165e13f42acf0925ab0d7b"
+  },
+  "Y71_post_training_freeze": {
+    "path": "pipeline/checks/AdaRES-Y71_post_training_freeze_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "228b01210defa46176986457ae7cf0b0792512a508a55856304d42c19034cb76"
+  },
+  "Y71_gated_dispatch": {
+    "path": "pipeline/checks/y71_gpu0_dispatch_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "20c8e3ecc402b998a7b381dec15ee6e1da81e9987cbd9da08fb807e9a581323d"
+  },
+  "actual_final_training_progress": [
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y71_fb6718a8dd684cdfbaa98d6678e7d3c5_after_dispatch.json",
+      "sha256": "402c8685bdee0d02905df1e605d224d4023824e618a9cfc3c7b3571325e3d8e7"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y70_fb6718a8dd684cdfbaa98d6678e7d3c5_after_dispatch.json",
+      "sha256": "9df57ca21bcdba84fe34640a5853cdeb0264730143d08fb4649877fc4f5d282f"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+      "sha256": "0910c97ec5183c9c30779621bfd9d506f63bf8b423e6ef0039f88bff3712de13"
+    }
+  ],
+  "current_occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+      "sha256": "adaa02fdfae527b99cdfe77c9ae73221434849e3d6853d922bf1c5aba821cc35"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+      "sha256": "7ea79d122c09e0ede8b349dd1ba16262481e209e6221b1515b2967287318952a"
+    }
+  ],
+  "new_admissions": 1,
+  "new_dispatches": 1,
+  "new_candidate_ids": [],
+  "Y71_pid": 53714,
+  "Y71_native_GPU_executed": true,
+  "Y73_native_preparation": {
+    "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_version.json",
+    "sha256": "9a066dbfe0b0922722f1772fe5c7c347be26eaf3309ff124b81715ac955e641c"
+  },
+  "Y73_actual_CPU_observer": {
+    "path": "pipeline/checks/y73_native_observer_verification_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "d15058524685dd36b4cf73bf11b788baa01c19703fc0b321aaf45e740158911f"
+  },
+  "Y73_native_GPU_executed": false,
+  "Y57_paused": true,
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "Y72_retained_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "Y73_retained_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "original_admissions_valid": true,
+  "all_existing_power_limits_preserved": true,
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_fb6718a8dd684cdfbaa98d6678e7d3c5.md",
+    "sha256": "9805139b2b0afc6a027226efcb3105e2b3c1f53fe3a69d3e5bf849d0480e4737"
+  },
+  "full_frozen_evaluation_executed": false,
+  "next_action": "Observe actual Y71/PID53714 and original Y70/PID52561 with scripts/observe_y70_y71_exact_deployment.py and Y69/PID1135633 with original server1 observer. Do not replay Y68 finalizer/Y71 smoke/admit/dispatch. Y68 joins original complete frozen evaluations at original GPU0/280W; Y72/Y73 native checks wait for exclusive resources and exact stored plans. Preserve retained branches and live source/observer/deployment contracts before future production selections. Y57 stays independently paused."
+}

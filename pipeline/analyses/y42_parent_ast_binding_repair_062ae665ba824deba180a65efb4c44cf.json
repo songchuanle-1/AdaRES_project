@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "original_program": {
+    "path": "scripts/probe_y42_parent_semantics_v2.py",
+    "sha256": "688918441c98d82181feee778a62c9f7a56eef22935ba683570461f971f03c17"
+  },
+  "failed_log": {
+    "path": "pipeline/analyses/y42_parent_semantics_v2_062ae665ba824deba180a65efb4c44cf.log",
+    "sha256": "8bd24323205e06dbfdd719ff04430b96db831291c6dfe5c05221bf85c5c8fc71"
+  },
+  "new_program": {
+    "path": "scripts/probe_y42_parent_semantics_v3.py",
+    "sha256": "39cfd7e3050a564b7b0b2c3afe8848ef6094aa5268bfa58ebf639f148fd00779"
+  },
+  "reason": "Actual DEC method is forward_iter_pred, not the guessed res.",
+  "scope": "Exact call-name binding only; whole-module equality and removal counts unchanged; no model edit or weakened assertion."
+}

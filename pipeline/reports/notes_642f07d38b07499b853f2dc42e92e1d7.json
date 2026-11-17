@@ -1,0 +1,22 @@
+{
+  "actions": [
+    "运行：AdaRES-Y99 Train8/30 step662/4686；AdaRES-Y100 Train3/30 step3308/4686。原Y99/Y100进程、源码、原生YAML、私有环境与350W/280W不变，原生步数递增。快照列出的Y98为上轮完整核验归档，不重放终态工具。",
+    "完成准备：Y100实际保存目录20261111_085241只读确认，29项精确终态保护检查通过；未加载活跃检查点、未归档、不停止训练。",
+    "新准备：Y101独立W2在完整原查询FFN后加入同一当前查询的共享全通道线性旁路，保留全部原FFN/残差/归一化/六阶段/原初始读出。首次原生YAML/完整CPU模型/发布backbone/原TRAIN加载通过，162738点8表达；标量float32/64/置换/slot-locality/无RNG/七阶段基线与输入梯度对齐、初始输出精确/后续mask因果干预和旁路恢复、两次有限synthetic decoder更新通过。六个原FFN和36个原参数梯度、十二次旁路/原静态mask/共享head/hard-gates逐次核验。CPU不是GPU原生检查或效果证明。",
+    "七个已测试科学文件保存隔离版本，生产HEAD/主索引/原运行及负证据保留；10项实际证据和8项运行计划检查通过。新科学ID1/CPU科学尝试1/GPU原生0/准入0/新训练0/归档0/FIRST0/成本0。"
+  ],
+  "decisions": [
+    "两张授权GPU0均实测busy/reserved，Y101等待匹配原Y99或Y100自然固定30轮、完整精确有限原检查点核验及规范归档，再核验空闲独占GPU0后做首次原生检查；通过后同轮保存完整原设备协议/准入/派发，不重跑已通过CPU或绕开资源保护。",
+    "仅AdaRES；server2GPU1全部使用和Y57单独暂停保持；不迁移后评/成本、不重启受保护实验、不用server6、不改数据/功耗/调度、不干预外部任务。无新增用户处理事项。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y101_preparation_closeout_642f07d38b07499b853f2dc42e92e1d7.json",
+      "sha256": "e03623ba741f14c40f745e48aabbac6c2a8169aca838dbc84980eb3d1cab7bc6"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_642f07d38b07499b853f2dc42e92e1d7.md",
+      "sha256": "43ad231182b54459c908f9f9535bfb790fde89927596fd0d8d82294ccf5d01fb"
+    }
+  ]
+}

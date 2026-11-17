@@ -1,0 +1,86 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y94",
+  "code_commit": "8faef574e01ae29bf5504380ed317dcc33420720",
+  "parent_commit": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "retained_branch": "refs/heads/adares-y94-query-geometry-bias",
+  "working_HEAD": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y94_cpu_version_9cbbb7d004b84132a4129c4f75781a62_source_snapshot.json",
+    "sha256": "e477956d97c4d59afb0686b5a5aabfb68a5e164590a42edcbea6b5981f5c9e0a"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y94_cpu_9cbbb7d004b84132a4129c4f75781a62.json",
+    "sha256": "7ff680b592377374d41a93b6e4d1d5dc7f0d5136f18115ffb89a87979639fad2"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y94_cpu_9cbbb7d004b84132a4129c4f75781a62_program.py",
+    "sha256": "7d4ec881156e8e65872d842c14303d965525873377886b451ba0958653bfb773"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y94_cpu_version_9cbbb7d004b84132a4129c4f75781a62.index",
+    "sha256": "37f6e283c4990d4f8691b430cd8a67b741d9717b74bc80b1640ae86bf41f6bdc"
+  },
+  "earlier_Y93_preserved": true,
+  "no_untested_Y93_parent_included": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y94_cpu_native.py",
+    "sha256": "4b0dc04f6bdafd99917019f9c7fba6c9b107d4cd8ca1df563e55884bd05541e8"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y94_cpu_version_9cbbb7d004b84132a4129c4f75781a62_source_snapshot.json",
+      "sha256": "e477956d97c4d59afb0686b5a5aabfb68a5e164590a42edcbea6b5981f5c9e0a"
+    },
+    {
+      "path": "pipeline/analyses/y94_cpu_9cbbb7d004b84132a4129c4f75781a62.json",
+      "sha256": "7ff680b592377374d41a93b6e4d1d5dc7f0d5136f18115ffb89a87979639fad2"
+    },
+    {
+      "path": "pipeline/checks/y94_cpu_9cbbb7d004b84132a4129c4f75781a62_program.py",
+      "sha256": "7d4ec881156e8e65872d842c14303d965525873377886b451ba0958653bfb773"
+    },
+    {
+      "path": "pipeline/checks/y94_cpu_version_9cbbb7d004b84132a4129c4f75781a62.index",
+      "sha256": "37f6e283c4990d4f8691b430cd8a67b741d9717b74bc80b1640ae86bf41f6bdc"
+    },
+    {
+      "path": "scripts/retain_y94_cpu_native.py",
+      "sha256": "4b0dc04f6bdafd99917019f9c7fba6c9b107d4cd8ca1df563e55884bd05541e8"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "preregistered_at": "2026-10-16T13:46:31.306353+08:00",
+  "programs": [
+    {
+      "kind": "native",
+      "path": "pipeline/analyses/y50_production_native_program_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.py",
+      "sha256": "b6f415333c3d32b660b8ae9017358f0df47b7c7fd7fd0b7f38d010a61c8d94bc",
+      "template_sha256": "1e1affbd1d690cdb2d30039865fd0cf6dac2dc4a0c74f543ce6ce40fbc66e648"
+    },
+    {
+      "kind": "controls",
+      "path": "pipeline/analyses/y50_production_controls_program_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.py",
+      "sha256": "0c5582df6e4ab1db05e5c3644291833c0cf6ee747942f7acfc5dcff2af652b72",
+      "template_sha256": "d6914d9f758013dbff4f46796d0e02acc07585478f1f54cd2b76cd32125b252f"
+    },
+    {
+      "kind": "stress",
+      "path": "pipeline/analyses/y50_production_stress_program_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.py",
+      "sha256": "fe1a0491014e0651cc49bc067d6df05568b727569da97d0267da6fc1bf972c57",
+      "template_sha256": "53ae02afcea018ebd95ba78af3dcda1ae8008697a77ed746ad37a9457168ddc9"
+    }
+  ],
+  "recipe": "SAME fixed TRAIN8/serial2warmup3readings/largepair728,6780 stress plus released-init actual tools.train2steps and full exact restore.",
+  "controls": "Actual parent AST/config/initialization/RNG; only final foreground score changes; cached-repeat exact and wrong descriptor correspondence; all4 native gradients/updates.",
+  "no_validation_selection": true,
+  "no_admission": true
+}

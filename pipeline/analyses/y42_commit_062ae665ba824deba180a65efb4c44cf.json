@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y42",
+  "previous_head": "79ce2de9582c369422facb27c3cbe85559bf227c",
+  "code_commit": "243e0b6827073831e0d68090857755d575efbf16",
+  "changed_paths": [
+    "AdaRES/configs_song/model_paper5/adares_y42_point_covariance_res.yaml",
+    "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/__init__.py",
+    "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/backbone.py",
+    "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/dec.py",
+    "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/ipdn.py",
+    "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/loss.py",
+    "AdaRES/ipdn/model_paper5/adares_y42_point_covariance/sample_model.py"
+  ],
+  "output": "[master 243e0b6] Add Y42 point-covariance confidence experiment\n 7 files changed, 1849 insertions(+)\n create mode 100644 AdaRES/configs_song/model_paper5/adares_y42_point_covariance_res.yaml\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y42_point_covariance/__init__.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y42_point_covariance/backbone.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y42_point_covariance/dec.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y42_point_covariance/ipdn.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y42_point_covariance/loss.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y42_point_covariance/sample_model.py",
+  "origin_push": false,
+  "observed_at_local": "2026-10-11T22:31:11.014008+08:00"
+}

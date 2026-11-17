@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y51",
+  "preregistered_at": "2026-10-16T14:28:02.885191+08:00",
+  "program": {
+    "path": "scripts/probe_y51_gauge_controls_fbd1.py",
+    "sha256": "a06b227cd6a8d9697ccf8a01a3358168cb811ef0a0c47e03e749ccefbe6beb8a"
+  },
+  "source": {
+    "path": "pipeline/analyses/y51_source_fbd1_fbd16ee677ad4d3aa2bbc403acdc2a67.json",
+    "sha256": "856135f2177705f6f08c58edf6e945337314cedf0c0a7ebebc56752f74a808ce"
+  },
+  "actual_functions": "Unmodified native IPDN.predict_by_feat and permutation helper AST; res task checked from native configuration. Literal Criterion.loss_indi stays untouched and is bitwise tested in native float32 on the exact half-integer fixture. For float64 fixtures ONLY, the single hardcoded float32 one-hot-buffer dtype leaf is explicitly adapted to logits.dtype, with all0/1values/formula/labels/weights unchanged.",
+  "supplementary_controls": "Exact half-integer fixture: q0=[0,1],q1=[1.5,1.5],others=[0,-4], same fixed alternating +/-1 common shifts. Raw foreground top must flip1to0 while native softmax top stays0. Run32frozen native TRAIN expressions using same trained W2 indicator checkpoint.",
+  "uncertainty": "Report top gaps and original8eps*nodes*Q bound; an order change near a numerical tie is uncertainty, not causal gauge dependence. Never relax the bound or silently discard a case.",
+  "dtype_instrumentation_preregistered": true,
+  "no_model_or_decision_rule_change": true
+}

@@ -1,0 +1,112 @@
+{
+  "id": "AdaRES-Y37",
+  "config": "configs_song/model_paper5/adares_y37_pair_distribution_res.yaml",
+  "code_commit": "67f4a1b2a4e7cac0eaa1a6074104cfc4193c2773",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261010-122544_next_batch.md",
+    "sha256": "4e2ff67d47caa1c4648c56c2f86c5363d2dd3308a9c3870bdef71ef6ac38e693"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y37_pair_diagnosis_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "32e61fee51ff631e005388667e650fa20fc369f185a4d8c5d3bd4048b450958d"
+        },
+        {
+          "path": "pipeline/analyses/Y37_diagnosis_prereg_e636ce91.md",
+          "sha256": "aa523ac2ad9e0d5cc44b19a68d7b083ab27f5eb9598cc3bcff6890f029031584"
+        },
+        {
+          "path": "pipeline/analyses/Y37_realization_freeze_e636ce91.md",
+          "sha256": "3ac60470f66681a7a08c161c737a253613a4962af8d04baab6d4ad9f5c737971"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y37_native_controls_v3_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "44460f17c72a2c4e2a7bd97cbdfb1cc741415a83be779e056259572f275fed89"
+        },
+        {
+          "path": "pipeline/analyses/y37_initial_loss_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "2b9aae3f2f949885fa8c3d6a45689a9a3041ae409a20c0347805d860bbf4b866"
+        },
+        {
+          "path": "pipeline/analyses/y37_structure_cpu_lf_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "15d24e25aa0db77da7a885a9d7c794231fd12e6f930e0e8211cbadc356258648"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y37_physical_native_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "c8b73d8dbfe74de10971264d0d7c1fe221bc4359760987d90465fd1b803791f5"
+        },
+        {
+          "path": "pipeline/analyses/y37_native_controls_v3_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "44460f17c72a2c4e2a7bd97cbdfb1cc741415a83be779e056259572f275fed89"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y37_resources_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "0408640908bbd8aaa731386e9bac3aeace2c2387d9e917e276777d84aad6c987"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y37_source_bundle_lf_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "b7706f769091980c07769f988a9bd7312071c6c48163c220a805f80c4a2ea282"
+        },
+        {
+          "path": "pipeline/analyses/y37_structure_cpu_lf_e636ce91a12e45488093b07fa2fc092b.json",
+          "sha256": "15d24e25aa0db77da7a885a9d7c794231fd12e6f930e0e8211cbadc356258648"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y37_admission_review_e636ce91.md",
+          "sha256": "ee61165ed47f8b86ca3064e366178ab9d4b666b941967a9e753bb1c1897d8536"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y37_e636ce91.md",
+          "sha256": "61d086ffc4e4420488305f2f8d812c64d6c2acae465b6e360023f7f108ef59d6"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_Y37_e636ce91.md",
+          "sha256": "6ada68b8e79634d92c158bc36dad910b953e1f4ea923f656b83f67b336d34c48"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      0
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y37_e636ce91.md",
+      "sha256": "61d086ffc4e4420488305f2f8d812c64d6c2acae465b6e360023f7f108ef59d6"
+    }
+  },
+  "limitations": "Fixed kernel orders not a uniquely derived optimum; adverse/wrong-control losses, numerical continuation and resource costs retained. No trained efficacy, novelty, semantic necessity, Pareto or human-approval assertion."
+}

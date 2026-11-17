@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "本轮仅执行用户当前“挂载了 提交训练吧”的手动恢复请求。0-3段为2026-10-20上海12:43:54.778330规范preflight快照；当时Y52/Y54已按stopped_unknown归档且active0，不代表下列恢复后的队列。",
+    "核对server-2身份、恢复挂载、冻结准入和源码、原训练身份、last/best断点、模型/优化器/调度器状态及各自独占空闲卡后，受限脚本只恢复同两项既有训练，未提交新候选。",
+    "Y52恢复自保存epoch23的last.pth，在GPU1/PID35832继续epoch24/30；上海13:04:51.069718至13:04:57.288393原生步数127至138且restored=true，确认不是只有PID。Y54恢复自保存epoch24的last.pth，在GPU0/PID36864继续epoch25/30；上海13:05:38.537049至13:05:44.789083原生步数125至138且restored=true。",
+    "两项模型/优化器/调度器均恢复，总30轮和seed1999不变，未完成epoch局部重放，不是从头重训。原last/best哈希均未改，原best复制到各新native目录；历史best分别为Y52 .5094767808914185、Y54 .5062541365623474，不是本轮新增评估；当前epoch新best、Acc@50、spmIOU未知。",
+    "恢复后的实际队列running2/waiting0/claiming0，running.json和实验history均登记，launch_verified=true。各三份inspect/launch/verify共六份证据已哈希绑定；汇总pipeline/reports/mount_resume_summary_81e295aec4c1457c9689d4b62dd21b62.json。",
+    "受限恢复脚本四项本地CPU单元测试通过，覆盖冻结卡位/协议、原attempt不匹配拒绝、运行/完成状态禁止重启、多GPU证据拒绝。未使用GPU、未执行新科研诊断。更新七段紧凑记忆，保留Y56/Y57负证据和冻结下一项；快照与pending哈希均未改。"
+  ],
+  "decisions": [
+    "依当前所属会话明确授权恢复同一Y52/Y54训练，已有准入/source commit 8943c8c460501b200a8dea958964579ffea65f76不变；两项manual决策已记录。不新增授权要求，不Git提交/推送、不跨项目或改调度。",
+    "等待同一fixed30训练自然继续；完成后仍按冻结全9508表达/141scene双FIRST及子组伤害规则评估。本轮没有新科学收益结论，历史冠军Y36 .5110、目标.5150不变。Y56/Y57保持inconclusive/exclusive_gpu_slot及原retry、冻结测试，不停止Y52/Y54腾卡。",
+    "规范finish已执行一次并实际失败：CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening，随后POSTFLIGHT FAILED且保留租约。closure.validate_work仍读取不可变preflight active_tasks=0，但当前实际队列running2，证实资源校验快照不一致。失败记录pipeline/reports/mount_resume_closure_failure_81e295aec4c1457c9689d4b62dd21b62.json。不改快照、期限、阻塞类别或检查器，不重复同样finish；按原token执行abort并独立核实释放。训练已恢复与本轮审计收尾失败分开报告，远端训练继续，最终释放结果以收据及核验为准。",
+    "收据用量仅是begin至receipt本地可见窗口而非账单；未知不是零，缓存含input、推理含output，不重复相加。下一次具体调度时间未核查，不承诺精确时间；释放后不补写项目。"
+  ]
+}

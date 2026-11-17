@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "快照2026-10-25T20:46:31.006317+00:00，核实际会话所属与Disabled后台后canonical begin先查询进展/派发既有队列，无新增终态或运行故障；前轮4c8595收据已核FINALIZED/PASS/committed/released。",
+    "上海04:46:57至04:47:02核Y62同PID2540376/server-1 GPU0，第8/30轮3401至3409/4686增长，六文件/原生YAML/marker一致，bounded尾部无错误。证据pipeline/checks/server1_training_progress_cd04807f14ea44bfbb964406caec3beb.json，SHAb3a5bb6cbf85d007869aed800e1263d0290748edf078385aee01e7c5d4c8586e。",
+    "为待跑缺口实现Y64有向包含置信度：I_ij/A_j-I_ij/A_i聚合peer query，零初始化256x2投影，新增512参数，原生YAML逐字节与W2相同、独立七文件/唯一basename。靶向历史机制核查保留所有拒绝路线；本轮HEAD不变，未提交或生产同步。",
+    "上海04:49:52至04:50:13完成Y64真实CPU程序：完整模型/发布SPFormer/原生YAML/真实TRAIN collate（162738点、8表达）；float32/64精确锚点/RNG/输入梯度、字面公式与方向负对照、非均匀点质量、置换/空/零质量、质量缩放/超点拆分以及七阶段合成DEC后向均通过。证据pipeline/analyses/y64_cpu_cd04807f14ea44bfbb964406caec3beb.json，SHA42ad108f530737999ee728429fa895a140c571333039e377eb3ea46cadaedb9e；精确源manifest checks/y64_cpu_version_cd04807f14ea44bfbb964406caec3beb.json，SHAe768af8f5567fb86cdd561d5224f4b201e8d7cb23d3ede98d319eac11f168b1b。",
+    "于2026-10-25T20:50:52.797214+00:00用新label y64_finalize实测server-2 GPU0仍被外来PID13813占用，100%/24136MiB，无授权空槽。证据pipeline/checks/gpu_occupation_server-2_y64_finalize_cd04807f14ea44bfbb964406caec3beb.json，SHA326b213cfefa9770449ca526b39502ff488f8320daf28c8be5e255932b77b562，原始日志与六项候选绑定；旧采集证据保留。"
+  ],
+  "decisions": [
+    "Y62现有训练继续，Y63同卡waiting；Y64 CPU准备通过后挂起等待原生GPU检查。保留Y63准入版本和HEAD，不将CPU结果代签真实稀疏task两步loss/backward/optimizer或训练效果，无新准入/启动。",
+    "Y64未使用validation，也没有调整阈值、温度、损失、特征子集、seed或fixed30；q可能已隐式编码尺寸，结构能否改善置信度和性能仍未知。其方向边不同于Y50高阶覆盖或Y62密度，不重开历史拒绝路线。",
+    "资源空闲后核精确源manifest，保留Y63版本再保存限定提交/冻结原生计划，执行至少两步原生YAML/TRAIN及每步七次分支/有限非零梯度检查，并冻结与Y62/Y63一致的完整后评协议，通过才准入及门控派发。server-2 GPU0维持280W，Y57/GPU1暂停，不用server-6或干扰外来任务。",
+    "本轮有一项实际新准备成果，向用户简报Y62运行、Y64 CPU检查通过及GPU检查等待；没有需要新增用户确认的事项。生成完整六段报告后finish并核收据/释放，释放后不写项目状态。"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "actions": [
+    "本轮仅AdaRES_project。规范begin快照为2026-10-19上海14:51:04，design/reserve_only；绑定due Y54、准入预算0、储备准备预算1，原context/pending/deadline未改。0-3事实表保留预检时间，后验变化在本段注明；未重复monitor/goal或恢复后台。",
+    "部署故障核实：14:51:58 server-2密钥SSH及hostname验证恢复，但/bak_home落在根盘/dev/nvme0n1p4而非原数据卷，配置source/data/checkpoints及source marker不可用。14:53:17原Y52 PID15934明确不存在、无GPU compute rows；两张3090均1MiB/0%，这是该时刻观测，不沿用旧单卡占用或不可达理由。挂载消失原因、是否重启及可恢复checkpoint/optimizer/scheduler状态未知。证据pipeline/analyses/storage_regression_f1530bdf58584643a61863e448871a72.json。",
+    "未盲重启Y52或手动置终态：规范registry仍running/deathwatch1/3，Y54仍waiting且source_marker前置门禁未通过。研究stage据新证据记录为blocked/external_resource，保留既有许可、准入receipt、全部历史blocker和旧训练证据。缓存14:01:33的Y52第1/30轮223至228步仅说明当时在训练；本轮没有新mIoU。",
+    "先登记稳定Y56及哈希预注册，再于15:11:49至15:11:51在server-2既有项目Python执行原生QueryCompetitionIndicator的CPU对照，CUDA隐藏、单线程、固定seed1999/d256/Q128。不改模型、训练目标、selector、配置、checkpoint、GPU任务或远端文件。固定focal及唯一原型集合，仅交换[1,63,64]/[1,64,63]的竞争表示重复数；float32/64各主fixture及阴性fixture，共四组case，不是四个独立实验。",
+    "Y56实测：主fixture focal logit差float32=.0011455714702606201、float64=.0009693179842363703，均高于冻结算术误差界；float64同竞争特征阴性差2.498001805406602e-16、重复误差0，排列/identity-reference/逆计数对唯一三原型的focal对账均在界内，组件梯度有限且参数state不变。结果pipeline/analyses/y56_density_result_f1530bdf58584643a61863e448871a72.json；execution/prereg/program均保留。",
+    "科学状态仍不确定：Y56只显示随机初始化原生头在合成输入下的重复度敏感性，不是实际TRAIN incidence、全模型原生反向、泛化收益、新颖性或资源门禁PASS。实际数据/训练态依赖原卷，故同一稳定Y56保留blocked及具体补测条件；不重开Y48 ownership标签或其他旧拒绝路线。Y52/Y54收益也仍未知。",
+    "本轮实际产出：新增稳定候选1、固定CPU组件实验1（四组case）、资源退化证据1、动机审查/设计/冻结程序/预注册/执行结果及决策1；模型修订0、新准入0、新队列0、训练启动0。累计候选108不是本轮实验数或成功率。七段memory及本报告已留档；收尾仍待规范finish校验，不预写PASS。",
+    "收据用量窗口仅本轮14:51:04 begin至receipt写出时的本地记录，当前具体用量待收据/未知，排除更早读取、晚到记录及最终回复；缓存属于input、推理属于output，均不重复相加，也不把用量当账单。实际产出以本轮冻结证据及收据变化量为准。"
+  ],
+  "decisions": [
+    "2026-10-19 15:11 other：先保留Y52/Y54现有队列与已获准范围，不把SSH恢复当作数据卷恢复，不从released权重盲重开；挂载/PID/资源变化与Y56实测依据见pipeline/decisions/20261019-151153_other.md。",
+    "本轮一项储备准备预算已用于独立Y56组件诊断，训练准入预算仍为0。以真实external_resource_blocked有界收尾，不伪称无信息增益、独立路线耗尽、到期或训练成功，不放宽任何门禁。",
+    "Y52/Y54/Y56复查retry为2026-10-19T16:11:51.433949+08:00，条件是恢复并验证server-2原/bak_home卷；该时间不是调度承诺或已获空闲资源证明。先检查Y52原log/checkpoint及optimizer/scheduler可恢复状态，再由规范路径对账/恢复；Y54保持已准入等待，Y56先补实际TRAIN重复度与trained-parent对照。",
+    "需要用户/管理员恢复经过核实的原数据挂载并排查再次掉挂；已有Y52/Y54提交/训练授权不重复索取。未挂盘、写fstab、sudo、伪造marker、建空数据目录、推送Git、改调度/自动化或跨项目。训练中断风险为重要状态变化，本轮可见简报明确通知。"
+  ]
+}

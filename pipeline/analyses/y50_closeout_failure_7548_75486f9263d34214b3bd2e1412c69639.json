@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "recorded_at_local": "2026-10-16T15:07:37.420526+08:00",
+  "tick_execution_status": "INCOMPLETE",
+  "scientific_status": "training",
+  "actual_finish_exit": 1,
+  "actual_finish_output": "CLOSURE_INCOMPLETE: External resource stop lacks blocked candidate\nPOSTFLIGHT FAILED: lease retained; continue this tick or explicitly abort",
+  "unchanged_verified_task": {
+    "id": "AdaRES-Y50",
+    "label": "Y50 joint-incidence confidence fixed30",
+    "config": "configs_song/model_paper5/adares_y50_joint_incidence_res.yaml",
+    "status": "running",
+    "gpu": "1",
+    "depends_on": [],
+    "code_commit": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y50.json",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "requires_exclusive_ownership": true,
+    "scientific_candidate_id": "AdaRES-Y50",
+    "pid": 31539,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y50_joint_incidence_res_20261016_145628.log",
+    "server": "server-2",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-16T14:57:04"
+  },
+  "interpretation": "User-scoped tested commit, admission and actual training launch succeeded. Generic capacity=2 closeout cannot accept observed foreign-occupied second card without a separate durable blocked scientific candidate; no such candidate was invented.",
+  "response": "Preserve all evidence; canonical abort releases the control lease only, never stops the already authorized PID31539 training. Do not repeat finish with unchanged evidence or weaken the checker.",
+  "prior_authorization": {
+    "path": "pipeline/authorizations/AdaRES-Y50_commit.json",
+    "sha256": "98ca31a33d1905e61ad0c61ce8994fd5f8a5cf3ea3e0ede12e7afdb75690906b"
+  },
+  "actual_training": {
+    "path": "pipeline/analyses/y50_started_7548_75486f9263d34214b3bd2e1412c69639.json",
+    "sha256": "36840a258268d19d6e2d64736cb10dec2966274a6170b1320afa0083622c92c8"
+  }
+}

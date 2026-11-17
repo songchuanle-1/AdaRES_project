@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "e5ca4e47b09f466ea2a1dc215c0acf3c",
+  "id": "AdaRES-Y72",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y72",
+    "label": "AdaRES-Y72 fixed30",
+    "config": "configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y72.json",
+    "scientific_candidate_id": "AdaRES-Y72",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 311445,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y72_visual_mask_refinement_res_20261031_170821.log",
+    "launched": "2026-10-31T17:09:16"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y72 fixed30] configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y72_y73.py",
+    "sha256": "ed120baa38ef2a8b0da18842a0517e9b72b01250802d121a5b44d7a8586312f1"
+  }
+}

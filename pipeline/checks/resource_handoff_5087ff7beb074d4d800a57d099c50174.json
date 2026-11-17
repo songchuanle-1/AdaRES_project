@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "token": "5087ff7beb074d4d800a57d099c50174",
+  "observed_at": "2026-11-01T02:55:18.226579+08:00",
+  "original_live_training": {
+    "AdaRES-Y71": {
+      "path": "pipeline/checks/production_adares-y71_5087ff7beb074d4d800a57d099c50174_progress.json",
+      "sha256": "a24132d35e5f9ea4c09ed9d90a0b3a0fd3bc953321cc28292bf63c6293571991"
+    },
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_5087ff7beb074d4d800a57d099c50174_progress.json",
+      "sha256": "6214d828b12c25b76c6354784f167b4422eae2bcee893c2017bb17c9d91f32a7"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_5087ff7beb074d4d800a57d099c50174_progress.json",
+      "sha256": "6c572fb88b54e893aa29c27d2a24fc0ec3eb003ad3d971d30c0de0c62982dedf"
+    }
+  },
+  "original_native_and_Y71_terminal_preparation_integrity": {
+    "path": "pipeline/checks/prepared_integrity_5087ff7beb074d4d800a57d099c50174.json",
+    "sha256": "184ba88288034d6193ca689dc6f6e15792d2f21db6f4ebc546af24b7558d236a"
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_5087ff7beb074d4d800a57d099c50174.json",
+      "sha256": "f6e946fc67823d0f523ddfdb59b8f7507daa22b746863d3691a47c25d04b2437"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_5087ff7beb074d4d800a57d099c50174.json",
+      "sha256": "a7bddec4ee8137e6ad8cb450c564d01b08378f9bedb08f5271cb4d9b38b11748"
+    }
+  },
+  "new_candidates": 0,
+  "new_tests": false,
+  "native_GPU_executed": false,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "source_HEAD_unchanged": "7da625ab750447eaad76e82309c89d887df93994",
+  "Y57_pause_preserved": true,
+  "conclusion": "All original native counters advance. Two candidates and Y71 completion-preparation dependencies remain intact. No authorized idle unreserved GPU; preserve runs and original protocols. No formal metric or efficacy change."
+}

@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "token": "73fa7b70b98747e8b6daab312536c11c",
+  "scope": "terminal helper identity metadata only",
+  "first_attempt_command": "python -B scripts/prepare_y81_terminal_handoff.py --token 73fa7b70b98747e8b6daab312536c11c",
+  "first_attempt_observation": "Exact-config guard rejected copied query_visual_feedback literal before checkpoint discovery, tests, loading or archival. Correct query_mask_refinement package and config; original model/YAML unchanged.",
+  "retained_initial_helpers": [
+    {
+      "path": "pipeline/snapshots/initial_generation_73fa7b70_finalize_y81_fixed30.py",
+      "sha256": "7ff98880d25cfcf082d61ddf7108c12a5c1b8429adfc6a6cc8ae396dbe463d04"
+    },
+    {
+      "path": "pipeline/snapshots/initial_generation_73fa7b70_prepare_y81_terminal_handoff.py",
+      "sha256": "29baea469720a061878a2a3ffffd03e88938e102ff197102a0e5928a4550e163"
+    }
+  ],
+  "corrected_tests_passed": 25,
+  "verified_terminal": {
+    "path": "pipeline/checks/y81_server2_fixed30_73fa7b70b98747e8b6daab312536c11c.json",
+    "sha256": "39a93acd9ab3e58692c5093f6e17bc303203997099485ed856a4b5b08c448a12"
+  },
+  "scientific_model_modified": false
+}

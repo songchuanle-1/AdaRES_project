@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "ef2c7bd97d37400ea1b1a32da2909760",
+  "recorded_at": "2026-10-19T20:31:51.409781+08:00",
+  "GT_reconstruction": {
+    "path": "pipeline/analyses/y57_gt_binding_result_ef2c7bd97d37400ea1b1a32da2909760.json",
+    "sha256": "1bae3c4ec035aaf8806b64e31e337689f91b5d245643ea82b06fc285db2655e0"
+  },
+  "CPU_batch2_binding": {
+    "path": "pipeline/analyses/y57_pair_binding_ef2c7bd97d37400ea1b1a32da2909760_result.json",
+    "sha256": "cfa007ae2d47657833483acd69a862a6242b6454138b1f60861fb2296871d693"
+  },
+  "frozen_next_native_capture": {
+    "path": "pipeline/analyses/y57_native_task_ef2c7bd97d37400ea1b1a32da2909760_prereg.json",
+    "sha256": "5ef47baed47502a08fc039b5a3ca4084589f91b46c2b71e4709a1eb3a8c2a180"
+  },
+  "earlier_bounded_progress_window": {
+    "path": "pipeline/analyses/adares_live_progress_ef2c7bd97d37400ea1b1a32da2909760.json",
+    "sha256": "8cd2d7ddd8968c4c3d1b1f5fd72fdf26bd1af97a493dc39a255e540c1a9833a5"
+  },
+  "current_occupation": {
+    "path": "pipeline/analyses/adares_live_posteval_ef2c7bd97d37400ea1b1a32da2909760.json",
+    "sha256": "e7051b1dcf2aebd7ee054e00184dcb9845c188d87730fefa9dc94b9951699ba3"
+  },
+  "occupation_observed_from": "2026-10-19T20:29:26.423557+08:00",
+  "occupation_observed_until": "2026-10-19T20:29:31.981135+08:00",
+  "actual_associations": {
+    "dispersion_vs_abs_confidence_error": {
+      "valid_scenes": 8,
+      "mean": 0.30105664026735024,
+      "descriptive_scene_bootstrap95": [
+        0.14109906467451017,
+        0.4615757258858267
+      ]
+    },
+    "dispersion_vs_point_quality": {
+      "valid_scenes": 8,
+      "mean": 0.3674618726543737,
+      "descriptive_scene_bootstrap95": [
+        0.2620024454868058,
+        0.4576979208286245
+      ]
+    },
+    "rotated_label_error": {
+      "valid_scenes": 8,
+      "mean": 0.23386061245220124,
+      "descriptive_scene_bootstrap95": [
+        0.10347425387120032,
+        0.34666136008312964
+      ]
+    }
+  },
+  "all32_GT_bindings_passed": true,
+  "single_vs_pair_labels_counts_geometry_exact": true,
+  "query_permutation_correlation_error": 0,
+  "scientific_status": "Inconclusive task-causal relevance; descriptive association partly persists under rotated-label control",
+  "interpretation": "Positive cache correlation is not independent incremental information or a task-defect proof. No fitted predictor, feature selection, changed selector, native correction or admission.",
+  "provenance_limit": "Current reconstruction is source/GT/count/geometry bound; original capture did not hash raw point-GT/checkpoint at capture time. Future fresh capture cannot retroactively certify old provenance.",
+  "pending": "Fresh native batch2/all7layer observational capture only after an idle authorized exclusive GPU, then review task-relevance before any formal model.",
+  "non_GPU_alternatives_completed": [
+    "Current same32expression GT/geometry/count replay and exact point-IoU references",
+    "Pre-registered all-query descriptor/error/quality correlation with joint permutation and fixed rotated-label control",
+    "Current four native batch2 CPU collates matched exactly to single-scene labels/membership/counts/raw geometry",
+    "Source-bound frozen native program, Python3.8 parse/compile and missing/unauthorized GPU entry rejection"
+  ],
+  "no_model_or_training_changes": true,
+  "GPU_tests": 0,
+  "new_candidate_ids": 0,
+  "implementation_revisions": 0,
+  "admissions": 0,
+  "training_launches": 0,
+  "retry_after": "2026-10-19T21:29:31.981135+08:00"
+}

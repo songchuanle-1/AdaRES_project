@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y89",
+  "token": "6c44267f773e46f18bed69bb0934dd5e",
+  "code_commit": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+  "CPU_version": {
+    "path": "pipeline/checks/y89_cpu_version_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "a940610d90398b1f877d1439bd0fc4999d1d17d44e48df4e9a605b1cece91f65"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y89_cpu_reference2_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "451be2fafa27e3c52c3d231308d39ec831f4c2307a4d2e5ad48d81dcc9af0dcf"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y89_cpu_reference2_6c44267f773e46f18bed69bb0934dd5e_program.py",
+    "sha256": "959d3761040589083178743949fbaa6e81941b4ca4af6c0588d8bc8888c3c9dc"
+  },
+  "native_plans": {
+    "server-2": {
+      "path": "pipeline/checks/y89_native_6c44267f773e46f18bed69bb0934dd5e_server2_plan.json",
+      "sha256": "a0063b12c9aed705043b041c8e3f652bf1ca27b6a2417630d5a38e9b4d1dc78f"
+    },
+    "server-1": {
+      "path": "pipeline/checks/y89_native_6c44267f773e46f18bed69bb0934dd5e_server1_plan.json",
+      "sha256": "d98a6d30a8122d00f7540d027fbf63d1fdf4a10c346d527d7ee2f730e207b6dc"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y89_native_6c44267f773e46f18bed69bb0934dd5e_guards.log",
+    "sha256": "806ca52b2905148dd7b773a97d8e17aff35950715f3631de32fc1155f9a9083e"
+  },
+  "guard_tests_passed": 10,
+  "exact_callback_functions_and_classes": 10,
+  "CPU_native_callbacks_actually_executed": true,
+  "observer_core": {
+    "path": "scripts/y89_observer_core_v2.py",
+    "sha256": "401a045f15d05370a64fab0feb03eafdb3517271649e75b2537038fd3b58bafd"
+  },
+  "observer_reference_repair": {
+    "path": "pipeline/checks/y89_reference_repair_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "850ae76f479f9167dc942aff857aeb8150e78a68a9c2b8db22e7ee2c78d0a191"
+  },
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "original_data_proof": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y89_cpu_native.py",
+    "sha256": "ac3caa40d333c606d2eb2a5c68ec588db5406c3b0d49cdebf41cac7dbe21ec5f"
+  }
+}

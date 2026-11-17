@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "token": "94a52159379646488ec9b38c645f5b1a",
+  "id": "AdaRES-Y88",
+  "observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "98, 0, 350.00",
+    "compute": ""
+  },
+  "original_Y84_terminal": {
+    "path": "pipeline/checks/y84_server1_fixed30_94a52159379646488ec9b38c645f5b1a.json",
+    "sha256": "13f1ab6de24e49ffb19f1af3754d764a4f2c80b4855858e78b9c4359f6a9abc1"
+  },
+  "native_plan": {
+    "path": "pipeline/checks/y88_native_94a52159379646488ec9b38c645f5b1a_server1_plan.json",
+    "sha256": "e396e2238655a1673de7af3f65c461b9fcdbd3f743fe68cf7c3f5b9e402b6d36"
+  },
+  "native_executed": false,
+  "GPU1_use_authorized": false,
+  "helper": {
+    "path": "scripts/run_y88_server1_native.py",
+    "sha256": "ac2b4f4caa41153635420b9cafdf41bd832bcf9b9a16f92a256d48e8e4a69acc"
+  }
+}

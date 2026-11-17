@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y58",
+  "preregistered_at": "2026-10-21T00:01:01.422899+08:00",
+  "program": {
+    "path": "pipeline/analyses/y58_data_b7801e9894f742b09038e89d033a8945_program.py",
+    "sha256": "929620623696b56573cd9cdaacc7283f3259a01c4a5171855622af957da85ef0"
+  },
+  "body": {
+    "path": "scripts/probe_y58_data_b780.py",
+    "sha256": "0a98964927c80a670c38ad96f5bcba3b1511b5eec5b22d9432e7216229d98627"
+  },
+  "sample": "First3 of original fixed8TRAIN scenes: focal0, mates1/2, repeatmate1; seed1999 native augmentation.",
+  "prediction": "Raw focal points/features/GT/annotation and language tensors remain bitwise identical across batch mates.",
+  "source_binding": "Record actual installed dataset class/file hash and collate hash for the future native test.",
+  "native_model_executed": false,
+  "result": "pending"
+}

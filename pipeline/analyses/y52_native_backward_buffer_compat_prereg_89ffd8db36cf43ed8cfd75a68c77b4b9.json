@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "preregistered_at": "2026-10-17T12:12:44.586922+08:00",
+  "original_plan": {
+    "path": "pipeline/analyses/y52_native_backward_prereg_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "78e7eefb7611e3be1ca3cf7f1dc96b291e4f728f1ffe9cd6d54fffa5faa406ee"
+  },
+  "original_program": {
+    "path": "pipeline/analyses/y52_native_backward_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "602f98ae43bf8cc75933113526b9314cc91314d6e571f60bd070da494b4099a9"
+  },
+  "preserved_failure": {
+    "path": "pipeline/analyses/y52_native_backward_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.log",
+    "sha256": "b9c7f4a083d32cbf1a7776d74340dfcde0811808ca1bbb045399747cb4e4a236"
+  },
+  "failure_scope": "implementation: fixed-checkpoint serialization compatibility, not model mechanism",
+  "change": "Only permit the two named legacy nonpersistent BERT buffers after exact equality to current runtime buffers, then retain strict=True for every actual model state entry. Add per-batch partial scalar/gradient summaries to the raw log to preserve evidence on later failures.",
+  "prediction": "If the legacy keys are exactly regenerated static buffers, strict real-parameter loading succeeds and the unchanged paired native/optimizer/restore protocol can finish. Any different or unknown state remains a failure.",
+  "fixed_protocol": "All original samples, states, native matches, repeats, optimizer settings and complete-restore checks unchanged. No model/config changes, checkpoint writes, threshold selection, commit or admission.",
+  "candidate_model_revisions": 0,
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y52_native_backward_buffer_compat_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "6dfa9bf4cfdd0f3995566fc33c8ef4fd9fa4f0cf35a4f5e42f5edc994b52dbfb"
+  }
+}

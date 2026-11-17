@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-10-21T20:59:45.510934+08:00",
+  "source": "Key-only SSH to the configured server-2; hostname verified before reading /proc/50448 metadata. No other project file was opened or modified.",
+  "hostname": "dl01-MS-7C60",
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "pid": 50448,
+  "owner": "zhoujh",
+  "uid": 1012,
+  "script": "/bak_home/zhoujh/mtla-speech-linergy/setup/train_tf32.py",
+  "starttime_ticks": "2955116",
+  "cwd": null,
+  "cwd_query_error": "AttributeError: pathlib.Path.readlink is unavailable in remote Python 3.8; cwd was not determined and is not required to identify this external script/UID.",
+  "compute_observation": {
+    "source": "pipeline/checks/gpu0_single_card_a5aa453f92f2440594bda2d66fb1dc4b.json",
+    "source_sha256": "c54ae1924bbc5d26824d58603e46e1e69534af4f8ab6260546663efe6bfeb461",
+    "gpu_uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+    "memory_used_mib": 24158
+  },
+  "interpretation": "GPU1 is now occupied by a verified different-user/non-AdaRES training process, not Y57. AdaRES is GPU0-only, but the host is not a single-loaded-GPU isolation trial. Do not stop, reset, migrate or modify the foreign task.",
+  "remote_mutations": false,
+  "other_project_files_accessed": false,
+  "external_task_interrupted": false,
+  "checker_CPU_tests": {
+    "command": "python -B -m unittest test_gpu0_single_card_trial -v",
+    "cwd": "D:/project/AdaRES_project/scripts",
+    "passed": 8,
+    "total": 8,
+    "scientific_or_native_GPU_test": false
+  }
+}

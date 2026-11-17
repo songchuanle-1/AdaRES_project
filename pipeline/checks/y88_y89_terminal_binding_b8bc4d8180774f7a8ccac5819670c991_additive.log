@@ -1,0 +1,26 @@
+test_actual_current_additive_contract (test_y88_y89_binding.AdditiveBinding.test_actual_current_additive_contract) ... ok
+test_only_explicit_original_and_tested_additive_markers (test_y88_y89_binding.AdditiveBinding.test_only_explicit_original_and_tested_additive_markers) ... ok
+test_original_run_and_checkpoint_directory (test_y88_y89_binding.AdditiveBinding.test_original_run_and_checkpoint_directory) ... ok
+test_original_run_identity_cannot_change (test_y88_y89_binding.AdditiveBinding.test_original_run_identity_cannot_change) ... ok
+test_original_runtime_and_mappings_cannot_change (test_y88_y89_binding.AdditiveBinding.test_original_runtime_and_mappings_cannot_change) ... 
+  test_original_runtime_and_mappings_cannot_change (test_y88_y89_binding.AdditiveBinding.test_original_runtime_and_mappings_cannot_change) (key='allowed_gpus') ... ERROR
+test_unchanged_original_source_and_exact_new_additions (test_y88_y89_binding.AdditiveBinding.test_unchanged_original_source_and_exact_new_additions) ... ok
+
+======================================================================
+ERROR: test_original_runtime_and_mappings_cannot_change (test_y88_y89_binding.AdditiveBinding.test_original_runtime_and_mappings_cannot_change) (key='allowed_gpus')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\project\AdaRES_project\scripts\test_y88_y89_binding.py", line 58, in test_original_runtime_and_mappings_cannot_change
+    binding.build_contract(task, changed)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y88_y89_terminal_contract.py", line 22, in build_contract
+    closure.validate_adares_server(ROOT, server)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users/chuanle song/.codex/skills/songcl_research_pipeline\closure.py", line 312, in validate_adares_server
+    raise ValueError('AdaRES server-1 requires its exact scoped resource grant')
+ValueError: AdaRES server-1 requires its exact scoped resource grant
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.213s
+
+FAILED (errors=1)

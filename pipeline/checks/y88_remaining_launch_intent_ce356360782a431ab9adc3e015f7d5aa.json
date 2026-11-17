@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "status": "intent_before_remote_creation",
+  "prepared_plan": {
+    "path": "pipeline/checks/y88_remaining_review_06b91fd6ca5a450b984051bae07196cd.json",
+    "sha256": "4c70b935531e47a05b564173caf10d42521d1bff81adf8931cef2294fe640cd1"
+  },
+  "current_binding": {
+    "path": "pipeline/checks/y88_remaining_launch_program_ce356360782a431ab9adc3e015f7d5aa.json",
+    "sha256": "90d59de68be04b0f04f058dfd65f39b8b2069266f80f8784f79e9a79df8316ad"
+  },
+  "program": {
+    "path": "pipeline/checks/y88_remaining_launch_program_ce356360782a431ab9adc3e015f7d5aa.py",
+    "sha256": "1ce6f24e845a42dcce91fcf107c5aacb7cf6d26aac71aa90792441290bd86aa5"
+  },
+  "folder": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining",
+  "original_failed_job": {
+    "folder": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/5a320b25043948e2bae2ffdef63da17a",
+    "token": "5a320b25043948e2bae2ffdef63da17a",
+    "pid": 3891354,
+    "launch": {
+      "path": "pipeline/checks/y88_review_launch_5a320b25043948e2bae2ffdef63da17a.json",
+      "sha256": "df906b8f8ceaf32ab887dbb447978984b044d6ffbb06dc59986159b6e10a7398"
+    },
+    "program": {
+      "path": "pipeline/checks/y88_review_current_launch_5a320b25043948e2bae2ffdef63da17a.py",
+      "sha256": "a6e55cc87409f9582daf2d6778e30ecd25cdf7253a9f74d891d3de427f31c22b"
+    },
+    "native_progress_confirmed": true,
+    "latest_observation": {
+      "path": "pipeline/checks/y88_review_progress_5a320b25043948e2bae2ffdef63da17a_verified.json",
+      "sha256": "8dfb0fc6f0cde72f8e15f26bbd102acc25ef39ec084ae79d1f686901eac1fec5"
+    },
+    "complete": false,
+    "failed": true,
+    "worker_absent": true,
+    "resource_guard_failure": true,
+    "completed_methods": [
+      "AdaRES-Y88"
+    ]
+  },
+  "attempt": 2
+}

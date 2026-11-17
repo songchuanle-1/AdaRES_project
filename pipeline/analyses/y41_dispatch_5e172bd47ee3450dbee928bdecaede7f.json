@@ -1,0 +1,32 @@
+{
+  "observed_at_local": "2026-10-11T16:29:47.029800+08:00",
+  "task": {
+    "id": "AdaRES-Y41",
+    "label": "Y41 final boundary-probability confidence",
+    "config": "configs_song/model_paper5/adares_y41_boundary_probability_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "79ce2de9582c369422facb27c3cbe85559bf227c",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y41.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 116906,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y41_boundary_probability_res_20261011_162911.log",
+    "server": "server-2",
+    "gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-11T16:29:47"
+  },
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y41 final boundary-probability confidence] configs_song/model_paper5/adares_y41_boundary_probability_res.yaml \u2192 server-2 gpu0"
+  ],
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y41.json",
+    "sha256": "5aa99fdb8ed5e909f87e38de87cd074830964010b08d52d9b9fb87dfa28a705d"
+  },
+  "preserved_y39_exact": true,
+  "scope": "Canonical GPU0-only dispatch, not preflight."
+}

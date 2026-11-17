@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "token": "cc4e062184264231b13212a60ffcd196",
+  "id": "AdaRES-Y85",
+  "observation": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "active_plan": {
+    "path": "pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu0_plan.json",
+    "sha256": "7b96d7584a5093a17277b93035d13b0dcaf98c88f45d8b809b6482d1bd573d9d"
+  },
+  "Y83_terminal": {
+    "path": "pipeline/checks/y83_server2_fixed30_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "3a89b0b5584c50fdc1152356131f9b9a40c7cec639d9dd235d5e6097d43bdd25"
+  },
+  "latest_resource_authority": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "retained_plan_grant": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "GPU1_use_authorized": false,
+  "native_executed": false,
+  "helper": {
+    "path": "scripts/advance_y85.py",
+    "sha256": "6eec184f6ee0bb60a0f2e745590239d739d3cd290fb08512954f80dfafaada7c"
+  }
+}

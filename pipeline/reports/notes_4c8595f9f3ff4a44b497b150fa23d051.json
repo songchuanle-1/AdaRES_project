@@ -1,0 +1,12 @@
+{
+  "actions": [
+    "已核验实际CODEX_THREAD_ID属于AdaRES_project，后台Pipeline-AdaRES_project Disabled。快照2026-10-25T18:49:15.350811+00:00，canonical begin已查询进展并检查既有派发，running1/waiting1/ready1，无新终态或运行故障；前轮02f32c收据FINALIZED/PASS/committed/released。",
+    "于2026-10-25T18:49:27.060872+00:00实测server-2 GPU0仍被外来PID13813占用，98%利用率、24136/24576MiB，无授权空槽。canonical证据pipeline/checks/gpu_occupation_server-2_4c8595f9f3ff4a44b497b150fa23d051.json，SHA256 3b6554577546de05335d4e78172c75d342209a5640807dca166282dfcd86b77d；原始GPU/compute日志绑定本轮候选和快照，resource_check/blocked已记录。",
+    "上海10月26日02:49:28至02:49:33确认Y62同PID2540376/server-1 GPU0，第6/30轮2591至2597/4686。六模型文件、原生YAML语义及marker82fbd9fb1fc56da6afee5b145f59cfa533464707一致，bounded尾部无错误。证据pipeline/checks/server1_training_progress_4c8595f9f3ff4a44b497b150fa23d051.json，SHA256 9bfb8bfaab0c90b8ae1d2fe8c0e216eb1190e6f1f3d9829170515f14fbca190f；紧凑记忆已更新。"
+  ],
+  "decisions": [
+    "Y62继续现有训练，Y63已准入等待server-1 GPU0，不重复启动或推进HEAD使Y63收据失效。server-2 GPU0保持280W；Y57/GPU1继续用户暂停，禁止server-6并保留外来进程。",
+    "五项已完成fixed30实验继续等待授权独占资源再按冻结协议做全量后评/成本比较；不重训、不重复准入。本轮实测资源阻断后按experiment-first收尾，无新增变体/原生训练检查/提交/准入/启动，不填预算或重复旧检查。",
+    "正常训练步数增长、资源占用和队列/暂停状态未构成实质变化，无需新增用户处理。本轮未提取验证主指标，不推断收益或此前轮次没有验证结果。规范report/finish并核收据与释放后静默，释放后不补写。"
+  ]
+}

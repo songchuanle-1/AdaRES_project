@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y62",
+  "profile": "experiment_first",
+  "config": "configs_song/model_paper5/adares_y62_overlap_density_res.yaml",
+  "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_executed": false,
+  "required_resource": "Exclusive idle authorized server-2 GPU0; current lease/live compute/280W; preserve Y61 and Y57.",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps, seven shared calls per step, finite nonzero density-weight gradients, zero first-step anchor and second-step nonzero branch response, resource budget and frozen version.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y62_smoke pipeline/checks/y62_smoke_rebound_10ecd3bb7a2b4b78a7382ea479609ebc_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "program": {
+    "path": "pipeline/checks/adares_y62_server1_63b27dd8efe04a0bab6dc0291cefdbf0_program.py",
+    "sha256": "7e9d70e69b9b16be9adaa389289dca87039e9de967049924d1edc462b9443b20"
+  },
+  "origin_plan": {
+    "path": "pipeline/checks/y62_smoke_a8ec50e321474b429384cda38af2c33c_plan.json",
+    "sha256": "846a166b03e63735ee7f50aea7f92a711becd89d2571b27aa7f7c02d5d6995b0"
+  },
+  "rebind_reason": "Only seven independent Y63 files were added; exact Y62 tested bytes and goal are unchanged.",
+  "original_tested_commit": "60466af4c1ade119b2a9f78687ad9d5e21358e2c",
+  "server": "server-1",
+  "gpu": 0,
+  "previous_plan": {
+    "path": "pipeline/checks/y62_smoke_rebound_10ecd3bb7a2b4b78a7382ea479609ebc_plan.json",
+    "sha256": "3a08d3f568056fa5dccb7e30e367d75798d555a7cee4865e6ba6e301374e61a8"
+  },
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  }
+}

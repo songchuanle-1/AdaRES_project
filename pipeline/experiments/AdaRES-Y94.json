@@ -1,0 +1,76 @@
+{
+  "id": "AdaRES-Y94",
+  "config": "configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml",
+  "server": "server-1",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-11-09T11:19:08.467150",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-11-10T14:58:58.476089",
+      "status": "done_complete",
+      "best_miou": "0.5076",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 218513,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y94_query_geometry_bias_res_20261109_111829.log",
+  "launched": "2026-11-09T11:19:08",
+  "final_best": "0.5076",
+  "finished_at": "2026-11-10T14:58:58.476089",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-1\\adares_y94_query_geometry_bias_res\\411304d6e92840b8844bb9ed860554fb\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "9a501b739db54e2b8cf97e7e817b9aba",
+  "code_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y94.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y94_server1_fixed30_y95_411304d6e92840b8844bb9ed860554fb.json",
+    "sha256": "88d83fded3c676030e2a5ac1ef99c549fbbfe9687919102f9c9f8018cead4bf9"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y94_query_geometry_bias_res/20261109_111838/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5075652599334717,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "f5845e708b034005d5befc2d6211f7cf975b96783aee5fc0c09e8a5d07f8b0bb"
+    },
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y94_query_geometry_bias_res/20261109_111838/best.pth",
+      "epoch": 21,
+      "best_miou": 0.5075652599334717,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 21,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "bdfa75e26bf4f37e5b36c3328f53a49fbd7c1448ae9443c41d4ad690d5d605cf"
+    }
+  ],
+  "formal_FIRST_miou": 0.5075611062753286,
+  "complete_scientific_review": {
+    "path": "pipeline/analyses/y94_trained_cost_cb9af7d40b9c460fa7ca330bd7ae9a8e/complete_scientific_review.json",
+    "sha256": "cc89d0393c421b1aff2aedfc4e3f66079f99a09a8aba44cd2f72615a0f2331a8"
+  },
+  "full_frozen_evaluation_result": {
+    "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/formal_comparison.json",
+    "sha256": "834d7a6e52f54a5e7cac1822931943f9c0701a225e35bba9049706f7265e81ca"
+  },
+  "full_trained_cost_result": {
+    "path": "pipeline/analyses/y94_trained_cost_cb9af7d40b9c460fa7ca330bd7ae9a8e/trained_cost.json",
+    "sha256": "4be6f32eb94bc6589164e424062e3c3fdc652a93b6b5f4ea06cd3f06552239ac"
+  },
+  "post_measurement_audit": {
+    "path": "pipeline/analyses/y94_trained_cost_cb9af7d40b9c460fa7ca330bd7ae9a8e/postaudit.json",
+    "sha256": "7e8a9089cc4346c9011535c7fbb0a6bcabb90d6857d0cbba0454b90d123069b5"
+  },
+  "scientific_disposition": "rejected_material_subgroup_harm"
+}

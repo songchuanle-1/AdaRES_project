@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y69",
+  "token": "0f90937f76bd42829822d9816707553f",
+  "observed_at": "2026-10-30T13:04:25.866974+08:00",
+  "admission_fixture_guards": {
+    "path": "pipeline/checks/y69_server1_admission_guards_0f90937f76bd42829822d9816707553f.json",
+    "sha256": "493e715664030c9a617088fff044d113a0cce92dea694768d7ae1ecf91242f04"
+  },
+  "server1_CPU_runtime_preflight": {
+    "path": "pipeline/checks/y69_server1_cpu_runtime_preflight_0f90937f76bd42829822d9816707553f_attempt2.json",
+    "sha256": "676bf4f21258f2e2f6af4f0c65feb4b3d010d5f9b9a79e84ad882783ec8fd6c6"
+  },
+  "prepared_helpers": [
+    {
+      "path": "scripts/finalize_y66_fixed30.py",
+      "sha256": "8dc1830d39bdcdb263373eacbdc69c9d2bfc2f13b53d1ff02dcb0892b4a9391a"
+    },
+    {
+      "path": "scripts/test_y66_terminal_handoff.py",
+      "sha256": "c83621b41f7a61fdcbf0dbe4159a9837b2865d2731257a6c7a5564065391a081"
+    },
+    {
+      "path": "scripts/admit_dispatch_y69_server1.py",
+      "sha256": "21fb047e6e8acbb56402b1312b6108bbdf203177509f8d2a35925a2dc7372994"
+    },
+    {
+      "path": "scripts/test_y69_server1_admission.py",
+      "sha256": "ef45493a06d6ee99cd071823be9496d90c3167c0015e29eb6d18d77926ed9c5d"
+    },
+    {
+      "path": "scripts/observe_y69_server1_phase.py",
+      "sha256": "40870aaf7cedad5d35dd97efb20eca8ed38aebc587af2aafa1b2f651259425d9"
+    }
+  ],
+  "Y66_lifecycle_fixture_tests_executed": false,
+  "Y66_finalizer_executed": false,
+  "Y66_original_pid": 1973300,
+  "Y66_still_registered_running": true,
+  "server1_plan": {
+    "path": "pipeline/checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_plan.json",
+    "sha256": "b82a55d7c567e0181759807d7cc9edb81e384dc4c03b5a0411626040955a885d"
+  },
+  "activated": false,
+  "native_GPU_steps_executed": false,
+  "admitted": false,
+  "training_started": false,
+  "production_sync": false,
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "original_Y66_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y66.json",
+    "sha256": "d78feba0b2628b5d198f899c7d563e1ae59f16cce0f7d8e081bce44652575435"
+  },
+  "limitation": "Preparation only. Bounded read-only readiness observation is ongoing; authoritative full fixed30 last/best/log/model/optimizer/scheduler validation and canonical archive still precede any GPU activation. Cached local fixture guards cannot substitute for actual native evidence."
+}

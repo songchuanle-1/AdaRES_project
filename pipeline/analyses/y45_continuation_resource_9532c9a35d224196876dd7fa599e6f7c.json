@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "pid": 78001,
+  "config": "configs_song/model_paper5/adares_y45_metric_decomposition_res.yaml",
+  "gpu": 1,
+  "source_hashes_verified": true,
+  "captures": [
+    {
+      "epoch": 7,
+      "epochs": 30,
+      "step": 2303,
+      "total_steps": 4686
+    },
+    {
+      "epoch": 7,
+      "epochs": 30,
+      "step": 2313,
+      "total_steps": 4686
+    }
+  ],
+  "native_steps_increased": true,
+  "GPUs": [
+    {
+      "gpu": 0,
+      "utilization": 100,
+      "memory_MiB": 24126,
+      "total_MiB": 24576,
+      "pids": [
+        19723
+      ]
+    },
+    {
+      "gpu": 1,
+      "utilization": 84,
+      "memory_MiB": 22750,
+      "total_MiB": 24576,
+      "pids": [
+        78001
+      ]
+    }
+  ],
+  "limitations": [
+    "Bounded log and native steps, not whole-log crash absence or trained efficacy.",
+    "Server wall-clock not used for deadline/retry/observation timing."
+  ],
+  "observed_start_local": "2026-10-14T18:51:08.958198+08:00",
+  "observed_end_local": "2026-10-14T18:51:14.290647+08:00"
+}

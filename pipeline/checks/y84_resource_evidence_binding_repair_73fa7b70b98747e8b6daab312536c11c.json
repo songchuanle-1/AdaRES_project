@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "token": "73fa7b70b98747e8b6daab312536c11c",
+  "failed_postflight": "Current test evidence is not bound to its candidate",
+  "correction": "Bind existing resource authority directly to Y84/Y85; current tick test evidence contains only newly collected resource results. Old authority remains immutable and referenced by current results, never presented as a newly run test.",
+  "current_test_evidence": [
+    {
+      "path": "pipeline/checks/gpu1_pause_y81_archive_73fa7b70b98747e8b6daab312536c11c.json",
+      "sha256": "84d170da4fe1db602e1788b5dc4ac5c8992bd66857a93c57541a2fd03e751b97"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_73fa7b70b98747e8b6daab312536c11c.json",
+      "sha256": "f507f647cda374762c76b8c497b767ec10218648416c82d2281a249c79228c56"
+    }
+  ],
+  "authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "native_test_or_scientific_result_changed": false
+}

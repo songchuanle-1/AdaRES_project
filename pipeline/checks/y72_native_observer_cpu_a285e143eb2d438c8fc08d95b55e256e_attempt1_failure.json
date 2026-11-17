@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "failure_scope": "CPU_observer_fixture_implementation",
+  "program": {
+    "path": "pipeline/checks/y72_native_observer_cpu_a285e143eb2d438c8fc08d95b55e256e_program.py",
+    "sha256": "7c5a44067fd34794e642ae152831501f09da8b34e97770e856a62bcea8366698"
+  },
+  "raw_log": {
+    "path": "pipeline/analyses/y72_native_observer_cpu_a285e143eb2d438c8fc08d95b55e256e.log",
+    "sha256": "46b01051f369bda6083745c42d5c2aff9f0caac2aae0cee3dfb1a13108681f7e"
+  },
+  "observed_error": "before_decoder asserted len(args)==8: fixture called decoder(**inputs), so the ordinary PyTorch pre-hook saw zero positional args.",
+  "original_native_ipdn_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/ipdn.py",
+    "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+  },
+  "original_native_call": "self.dec(sp_feats, fps_seed_sp, batch_offsets, lang_feats, lang_masks, sp_coords_float, feats_2d, point_mass)",
+  "repair": "Separate attempt2 calls the decoder with exactly the native eight positional arguments. Model/YAML/commit/native observer body/plans/guards are unchanged.",
+  "repair_program": {
+    "path": "pipeline/checks/y72_native_observer_cpu_a285e143eb2d438c8fc08d95b55e256e_attempt2_program.py",
+    "sha256": "20ec5c6bfd2c894b09c2465d297319079a8c3573bc08d8f3dcb955127cb52b04"
+  },
+  "native_task_failed": false,
+  "hypothesis_rejected": false,
+  "original_evidence_preserved": true
+}

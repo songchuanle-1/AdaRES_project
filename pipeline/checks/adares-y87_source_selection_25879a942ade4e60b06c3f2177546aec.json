@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "token": "25879a942ade4e60b06c3f2177546aec",
+  "id": "AdaRES-Y87",
+  "parent": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "target": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+  "only_added_files": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y87_self_language_product_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/sample_model.py"
+    ]
+  ],
+  "previous_index": {
+    "path": "pipeline/checks/adares-y87_source_selection_25879a942ade4e60b06c3f2177546aec.index",
+    "sha256": "67806f82866f5f94647e46958a1d131faeaf445dcbbc804a4998c65006b8b9c5"
+  },
+  "previous_binary_index": {
+    "path": "pipeline/checks/adares-y87_source_selection_25879a942ade4e60b06c3f2177546aec.index.bin",
+    "sha256": "3c29f96e80cdd3682df833f9a7913143fa5b76dc6df5f642b02aeb8b12115f8a"
+  },
+  "other_index_entries_preserved": true,
+  "working_files_modified": false,
+  "helper": {
+    "path": "scripts/y87_deployment.py",
+    "sha256": "b28605e76ff57a5129bb7262168f6029040d1cd5a2a14ab44cd6414f7e11472a"
+  }
+}

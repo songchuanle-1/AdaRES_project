@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "kind": "manual_reboot_and_recovery_observation_not_admission",
+  "source": "Live key-authenticated SSH observations in the owning task; no credentials recorded.",
+  "human_resume_request": "继续训练",
+  "historical_fault": {
+    "observed_before_reboot": true,
+    "shanghai_time": "2026-10-21T11:17:02.588048+08:00",
+    "gpu": 0,
+    "pci_address": "0000:21:00.0",
+    "xid": 79,
+    "message": "GPU has fallen off the bus",
+    "original_boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0",
+    "Y56_original_failure": "Validation epoch16 step184; subsequent setStorage RuntimeError remains in original log."
+  },
+  "recovered_boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "mount": {"target": "/bak_home", "uuid": "459a8db5-5b91-446b-a501-eed399c6a45d", "fstype": "ext4", "restored_read_write": true, "fstab_modified": false},
+  "basic_cuda_checks_before_resume": {"observed_at_shanghai": "2026-10-21T12:24:07.677411+08:00", "gpu0_passed": true, "gpu1_passed": true, "test": "256x256 matrix multiplication with exact expected result"},
+  "health_after_resume": {
+    "observed_at_shanghai": "2026-10-21T12:48:53.610331+08:00",
+    "bak_home_mounted": true,
+    "gpu0": {"model": "RTX3090", "temperature_c": 82, "util_percent": 37, "memory_mib": 16862, "total_memory_mib": 24576, "compute_pid": 13738},
+    "gpu1": {"model": "RTX3090", "temperature_c": 59, "util_percent": 74, "memory_mib": 17036, "total_memory_mib": 24576, "compute_pid": 16317},
+    "new_boot_xid_or_fallen_off_bus_messages": []
+  },
+  "limitations": ["A reboot and basic CUDA test do not identify or permanently repair the hardware cause.", "GPU0 at82C merits observation; no power, fan, clock, driver, source or training protocol was changed.", "Current resumed segments have no completed validation yet; restored best metrics come from original checkpoints."]
+}

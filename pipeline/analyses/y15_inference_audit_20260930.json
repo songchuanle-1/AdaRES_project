@@ -1,0 +1,502 @@
+{
+  "scope": "released-init train8, alternating GT counterfactual",
+  "rows": [
+    {
+      "scan_id": "scene0000_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 8.046627044677734e-07,
+          "probability_mean": 5.845673545223917e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 8.046627044677734e-07,
+          "probability_mean": 6.591894496921213e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 9.238719940185547e-07,
+          "probability_mean": 6.510579897422986e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 9.5367431640625e-07,
+          "probability_mean": 6.679179254120982e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 8.046627044677734e-07,
+          "probability_mean": 5.093482524642923e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.07559928484261036,
+          0.07760685682296753,
+          0.07763749733567238,
+          0.0775880478322506,
+          0.0773683674633503
+        ],
+        "True": [
+          0.0785546749830246,
+          0.07852672412991524,
+          0.0774523951113224,
+          0.0768793448805809,
+          0.07662823610007763
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0001_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 8.940696716308594e-07,
+          "probability_mean": 4.984142076835951e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 8.940696716308594e-07,
+          "probability_mean": 5.629917243510363e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 6.556510925292969e-07,
+          "probability_mean": 4.5095818634877105e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 6.556510925292969e-07,
+          "probability_mean": 4.631793615317292e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 6.556510925292969e-07,
+          "probability_mean": 4.731598934881731e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.06992169469594955,
+          0.0698992945253849,
+          0.07020548731088638,
+          0.06967846862971783,
+          0.06959700584411621
+        ],
+        "True": [
+          0.07043108902871609,
+          0.07061696797609329,
+          0.07045108824968338,
+          0.07042530551552773,
+          0.07031671516597271
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0002_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 1.0132789611816406e-06,
+          "probability_mean": 4.808017450841362e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 8.344650268554688e-07,
+          "probability_mean": 4.605547099245655e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 8.940696716308594e-07,
+          "probability_mean": 4.447218238112782e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 9.5367431640625e-07,
+          "probability_mean": 4.702762712582853e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 7.748603820800781e-07,
+          "probability_mean": 4.658359253895128e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.11185698956251144,
+          0.10622692666947842,
+          0.10565303824841976,
+          0.10563207045197487,
+          0.10464690066874027
+        ],
+        "True": [
+          0.10664444044232368,
+          0.10708727687597275,
+          0.10678295232355595,
+          0.1058035809546709,
+          0.1056231502443552
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0003_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 1.0132789611816406e-06,
+          "probability_mean": 8.381524096989779e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 9.5367431640625e-07,
+          "probability_mean": 8.408216523037026e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.0728836059570312e-06,
+          "probability_mean": 9.07906212432863e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 1.0728836059570312e-06,
+          "probability_mean": 1.001117695409448e-07,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.0728836059570312e-06,
+          "probability_mean": 6.64722570320464e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.06397500820457935,
+          0.0638892762362957,
+          0.06360140070319176,
+          0.06394256837666035,
+          0.06398995593190193
+        ],
+        "True": [
+          0.06493112817406654,
+          0.06526502035558224,
+          0.0651813168078661,
+          0.06520243734121323,
+          0.06522161886096
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0004_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 1.0728836059570312e-06,
+          "probability_mean": 3.635091250231426e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 1.1920928955078125e-06,
+          "probability_mean": 3.817278582118888e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.2516975402832031e-06,
+          "probability_mean": 4.758880400856924e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 1.2516975402832031e-06,
+          "probability_mean": 4.759753480243489e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.8477439880371094e-06,
+          "probability_mean": 4.497735250907908e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.11775264702737331,
+          0.11708618141710758,
+          0.12246715649962425,
+          0.11941217817366123,
+          0.11915992572903633
+        ],
+        "True": [
+          0.12277024425566196,
+          0.11935140565037727,
+          0.1191874872893095,
+          0.11884194798767567,
+          0.12014339864253998
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0005_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 1.0728836059570312e-06,
+          "probability_mean": 6.542616315385885e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 9.5367431640625e-07,
+          "probability_mean": 6.594139811966215e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 7.748603820800781e-07,
+          "probability_mean": 8.078763080732188e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 1.1920928955078125e-06,
+          "probability_mean": 5.4547811600969e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.0132789611816406e-06,
+          "probability_mean": 6.619945125407867e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.06880008801817894,
+          0.06872283853590488,
+          0.06855763494968414,
+          0.06861311756074429,
+          0.06865046732127666
+        ],
+        "True": [
+          0.07007826864719391,
+          0.07005502842366695,
+          0.070051996037364,
+          0.07004846818745136,
+          0.0699730571359396
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0006_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 9.5367431640625e-07,
+          "probability_mean": 7.643742883089999e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 7.748603820800781e-07,
+          "probability_mean": 6.681673170305658e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.0728836059570312e-06,
+          "probability_mean": 8.492323644304633e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 7.748603820800781e-07,
+          "probability_mean": 6.060982205013943e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 8.344650268554688e-07,
+          "probability_mean": 6.095972970854291e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.09814566932618618,
+          0.09818078577518463,
+          0.09877436049282551,
+          0.09771827049553394,
+          0.0976533442735672
+        ],
+        "True": [
+          0.09930136054754257,
+          0.09937769174575806,
+          0.0985251497477293,
+          0.09879850223660469,
+          0.09905711375176907
+        ]
+      },
+      "teacher_absent": true
+    },
+    {
+      "scan_id": "scene0007_00",
+      "comparisons": [
+        {
+          "changed_labels": true,
+          "probability_max": 1.1920928955078125e-06,
+          "probability_mean": 1.0948264073107339e-07,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 9.5367431640625e-07,
+          "probability_mean": 1.0334923850052746e-07,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 1.0132789611816406e-06,
+          "probability_mean": 1.0457118193585302e-07,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": false,
+          "probability_max": 1.1920928955078125e-06,
+          "probability_mean": 1.1689480228227467e-07,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        },
+        {
+          "changed_labels": true,
+          "probability_max": 7.152557373046875e-07,
+          "probability_mean": 7.45665182932953e-08,
+          "binary_flips": 0,
+          "selection_flips": 0,
+          "seed_flips": 0
+        }
+      ],
+      "inference_seconds": {
+        "False": [
+          0.0640521477907896,
+          0.06399248540401459,
+          0.0638435073196888,
+          0.06385066732764244,
+          0.06393982842564583
+        ],
+        "True": [
+          0.0654581468552351,
+          0.06563305668532848,
+          0.06564105860888958,
+          0.06550472788512707,
+          0.06529797427356243
+        ]
+      },
+      "teacher_absent": true
+    }
+  ],
+  "complete": true
+}

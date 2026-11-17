@@ -1,0 +1,19 @@
+{
+  "actions": [
+    "00:53:02上海begin核验实际所属CODEX会话、前台owner及后台Disabled；初始预算2，只有server-2 GPU0获准，Y57用户暂停保持。preflight仍将已消失Y56登记running/deathwatch1，冻结表不倒改。",
+    "本轮资源实查显示GPU0无compute/仅1MiB，但旧Y56登记预留仍阻止检查。新增项目内finalize_y56_fixed30.py，核验原PID消失、原日志完整Val30/363及save last、完整CPU加载last epoch30/543项optimizer/scheduler30和best epoch24、best mIoU0.5109891295433044，两检查点/日志SHA固定，拉取完整日志后调用canonical finalize_task归档done_complete。没有伪造三次deathwatch、重启训练或修改全局规则。证据pipeline/checks/y56_fixed30_8664855b3766455594b27408b18a8ce6.json。",
+    "Y56固定30轮训练完成，科学收益仍待原注册全量冻结评估和成本比较；其best24/last30及原后评计划保留。候选保留为资源阻塞/from validation，当前GPU0被已准入Y58/Y59占用或预留，不将日志best当新冠军。",
+    "先执行原a834冻结Y58程序，真实两步smoke通过。因规范派发要求当前HEAD，新增prepare_ef_head_smokes.py逐字节核对Y58/Y59各7文件在旧提交及当前6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3完全一致，保存新HEAD binding/冻结程序及原计划历史，只更新提交身份、测试程序主体不变，未改模型、YAML或Git提交。随后两项均在当前HEAD绑定下重新真实执行原生YAML/TRAIN/tools.train两步，未改旧结果。",
+    "Y58当前HEAD实测loss7.7922711372/7.5399518013，峰6490685440B；Y59 loss7.7152066231/8.4597358704，峰6488588288B。各两批实际4scene/16表达，539个梯度张量全有限、10项indicator梯度检查及真实模式路径通过。原始数据/后向/路径/峰值为实际观察，仅初始化可运行性，不证明训练上涨或全数据峰值上界。证据pipeline/analyses/adares_y58_head_smoke_8664855b3766455594b27408b18a8ce6.json及y59同式。",
+    "新增项目内admit_dispatch_ef_gpu0.py，按原生检查、精确独立源码、当前goal和项目级授权生成experiment_first收据及冻结后评计划，实际准入Y58/Y59两项，未超本轮预算。使用既有安全同步/源码核验/门控派发，仅GPU0启动Y58，Y59 FIFO waiting；普通训练未加诊断独占生命周期要求。收据pipeline/admissions/AdaRES-Y58.json及AdaRES-Y59.json，派发证据pipeline/checks/ef_gpu0_dispatch_8664855b3766455594b27408b18a8ce6.json。",
+    "01:07:48复用原只读观察器实核Y58新PID77094命令/cwd/starttime/GPU0归属及Train1/30 step57到83递增；GPU0仍280W、60C、16196MiB，当次无热降频/尾部异常/新Xid。GPU1外部任务仍在，sample_healthy=false仅因并非整机单卡负载，不能误报Y58训练失败。runtime证据pipeline/checks/ef_gpu0_runtime_8664855b3766455594b27408b18a8ce6.json。",
+    "Y57仍用户暂停/dispatch_hold，epoch27完整检查点与须另获恢复指令条件不变，不重复索权或自动恢复。Y60仍待独占GPU0原生smoke且未准入。无新候选、模型实现修订、Git提交、目标/数据/固定30轮/调度/功耗/风扇/驱动设置改动；全部远端持久产物均在AdaRES项目内，未干预外部负载。一条本地语法读取命令因默认GBK解码失败，显式UTF8后通过，未执行准入副作用或改变科学门槛。"
+  ],
+  "decisions": [
+    "本轮已用满2项实际准入预算：Y58训练、Y59等待，不再新增准入或占位候选。优先利用Y56完成后真实空闲的授权GPU0推进已有实现；不等下轮逐阶段放行，不以PID或CPU检查替代原生步数/后向证据。",
+    "继续仅server-2 GPU0、一卡一独立实验及280W；不恢复GPU1或Y57，不迁移外部任务，不因旧heartbeat双卡字样扩大授权。已有项目级常规操作许可已复用，无需重复逐变体审批。",
+    "Y56日志best0.510989不是完整冻结比较；保留历史失败、恢复及资源条件，后续按原计划进行全量重复评估、场景聚类不确定性/伤害和训练成本比较，不调验证集或重训。Y58/Y59两步smoke只能证明最小可训练性，效益和完整数据成本均待实际训练后检验。",
+    "新Y58启动期60C/无热降频不代表散热或历史掉卡根因解决，GPU1外部负载仍干扰严格整机单卡对照。继续监测原生进度与温度，不擅自改硬件设置。",
+    "Y60和Y56冻结后评在现有GPU0 FIFO释放后按各自原计划及当前租约续做，不借GPU1或抢占Y58。当前报告不预称收尾成功，随后canonical finish并核验收据/context提交及租约释放，释放后不补写。"
+  ]
+}

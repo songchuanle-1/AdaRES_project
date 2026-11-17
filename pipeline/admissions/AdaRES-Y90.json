@@ -1,0 +1,99 @@
+{
+  "profile": "experiment_first",
+  "id": "AdaRES-Y90",
+  "candidate_id": "AdaRES-Y90",
+  "config": "configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml",
+  "code_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "native_smoke": {
+    "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_native_smoke.json",
+    "sha256": "e5ca962a1bf58a73311fb976daa8d9559d83581fe2a3ee2a82b42a9143ad6cba"
+  },
+  "post_training_plan": {
+    "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_post_training_freeze.json",
+    "sha256": "ad60ab5a94db03b12405a043be738aae978786d560d3b707357150994ec95395"
+  },
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "admitted_at": "2026-11-07T07:12:53.945637+08:00",
+  "gates": {
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_native_smoke.json",
+          "sha256": "e5ca962a1bf58a73311fb976daa8d9559d83581fe2a3ee2a82b42a9143ad6cba"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_post_training_freeze.json",
+          "sha256": "ad60ab5a94db03b12405a043be738aae978786d560d3b707357150994ec95395"
+        },
+        {
+          "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+          "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_native_smoke.json",
+          "sha256": "e5ca962a1bf58a73311fb976daa8d9559d83581fe2a3ee2a82b42a9143ad6cba"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_post_training_freeze.json",
+          "sha256": "ad60ab5a94db03b12405a043be738aae978786d560d3b707357150994ec95395"
+        },
+        {
+          "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+          "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_native_smoke.json",
+          "sha256": "e5ca962a1bf58a73311fb976daa8d9559d83581fe2a3ee2a82b42a9143ad6cba"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_post_training_freeze.json",
+          "sha256": "ad60ab5a94db03b12405a043be738aae978786d560d3b707357150994ec95395"
+        },
+        {
+          "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+          "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_native_smoke.json",
+          "sha256": "e5ca962a1bf58a73311fb976daa8d9559d83581fe2a3ee2a82b42a9143ad6cba"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_post_training_freeze.json",
+          "sha256": "ad60ab5a94db03b12405a043be738aae978786d560d3b707357150994ec95395"
+        },
+        {
+          "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+          "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+        }
+      ]
+    }
+  },
+  "decision": {
+    "path": "pipeline/decisions/20261107-071253_next_batch.md",
+    "sha256": "e1f76417fbec1c2095ff76b863ebb0365aecb91d47c0d59c94c3062a13da9cd5"
+  }
+}

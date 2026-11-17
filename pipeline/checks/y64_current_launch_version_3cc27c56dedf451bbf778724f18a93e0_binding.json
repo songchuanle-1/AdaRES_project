@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y64",
+  "token": "3cc27c56dedf451bbf778724f18a93e0",
+  "observed_at": "2026-10-28T06:51:57.704614+08:00",
+  "previous_plan": {
+    "path": "pipeline/checks/y64_server1_alternative_8c74d05a949b46a993804c557680694c_plan.json",
+    "sha256": "76dc3b7ae533775e072cdf4db021034c8fe065d256688e874fd2767a8b25924d"
+  },
+  "previous_native_result": {
+    "path": "pipeline/analyses/adares_y64_server1_smoke_3cc27c56dedf451bbf778724f18a93e0.json",
+    "sha256": "9f6fc1dc0961e2571570a8b60e619869f3c278ccd0c16baed5cc6a2a837f8b42"
+  },
+  "previous_commit": "e27895f45b6f172454c50d40d1c0184c6aa8dfcb",
+  "code_commit": "9706a8c36bead4459668ab66a3d1abc39344ef8b",
+  "exact_files_unchanged": 7,
+  "variant_and_native_YAML_identical": true,
+  "current_HEAD_files_match_original_tested_payload": true,
+  "previous_smoke_unchanged": true,
+  "execution_body_sha256": "0d4019c79f87f9c528c094fa42b24aaddcac8565ac8b66ebaf4429bb8f7cf6c0",
+  "active_plan": {
+    "path": "pipeline/checks/y64_current_launch_version_3cc27c56dedf451bbf778724f18a93e0_plan.json",
+    "sha256": "81a59ef68af5c4290e2c16191d067b86f93a003919ca3a39ecf37df818bb20c1"
+  },
+  "native_result_reused_for_admission": false,
+  "fresh_native_steps_required": true,
+  "hardware_changed": false,
+  "queue_changed": false,
+  "production_sync": false,
+  "admitted": false
+}

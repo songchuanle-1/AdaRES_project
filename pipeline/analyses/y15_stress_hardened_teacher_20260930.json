@@ -1,0 +1,91 @@
+{
+  "scope": "native augmented stress, isolated process per arm",
+  "module": "ipdn.model_paper5.adares_y15_query_completion",
+  "manifest": "y15_stress_manifest_20260930.json",
+  "rows": [
+    {
+      "selection": [
+        {
+          "scan_id": "scene0054_00",
+          "item": 728,
+          "points": 537406,
+          "superpoints": 4413
+        },
+        {
+          "scan_id": "scene0497_00",
+          "item": 6780,
+          "points": 518097,
+          "superpoints": 3205
+        }
+      ],
+      "actual_points": 1055503,
+      "actual_superpoints": 7618,
+      "scans": [
+        "scene0054_00",
+        "scene0497_00"
+      ],
+      "expressions": 8,
+      "step_seconds": [
+        1.3086853008717299,
+        1.3227541279047728,
+        1.3292456362396479
+      ],
+      "peaks": [
+        {
+          "allocated_gib": 14.198979377746582,
+          "reserved_gib": 14.708984375
+        },
+        {
+          "allocated_gib": 14.198979377746582,
+          "reserved_gib": 14.708984375
+        },
+        {
+          "allocated_gib": 14.198979377746582,
+          "reserved_gib": 14.708984375
+        }
+      ],
+      "finite_loss": true,
+      "parameters": 164959365,
+      "trainable": 40313733
+    },
+    {
+      "selection": [
+        {
+          "scan_id": "scene0465_00",
+          "item": 6271,
+          "points": 387654,
+          "superpoints": 3259
+        }
+      ],
+      "actual_points": 387654,
+      "actual_superpoints": 3259,
+      "scans": [
+        "scene0465_00"
+      ],
+      "expressions": 4,
+      "step_seconds": [
+        0.5642791613936424,
+        0.5640861913561821,
+        0.5684487707912922
+      ],
+      "peaks": [
+        {
+          "allocated_gib": 5.913811683654785,
+          "reserved_gib": 6.15625
+        },
+        {
+          "allocated_gib": 5.913811683654785,
+          "reserved_gib": 6.15625
+        },
+        {
+          "allocated_gib": 5.913811683654785,
+          "reserved_gib": 6.15625
+        }
+      ],
+      "finite_loss": true,
+      "parameters": 164959365,
+      "trainable": 40313733
+    }
+  ],
+  "complete": true
+}

@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "本轮为用户明确继续授权的 design，快照 2026-09-29 21:22:26 北京时间，真实截止 22:22:26；begin 已完成一次监控与目标检查，未重复 preflight。",
+    "Y9 在运行前冻结七层 decoder confidence 等权 consensus、final-only 和八组层内错位置换对照，在 server-2 GPU0 对 W2 原最佳权重执行固定 val32 双次推理。851 条表达的 final/consensus/control 平均 IoU 为 0.38231/0.38482/0.33485；consensus 减 final 的场景配对差 +0.00205，9 正、5 负、18 平，双侧符号检验 p=0.42395，未过 p<0.05；身份重复不一致为 0。",
+    "Y10 独立冻结 top-1、固定 top-2 概率 union 和八组同排名随机第二 query 对照。851 条表达的 top1/top2/control 平均 IoU 为 0.52963/0.52891/0.48641；top2 减 top1 的场景配对差 +0.00193，19 正、13 负，p=0.37709，未过 p<0.05；身份重复不一致为 0。",
+    "Y11 独立冻结场景内 true-disjoint expression pair collision、八组 target-instance 置换对照和 oracle selection。32 个场景、11,305 个 true-disjoint pair 中，W2/control overlap 为 0.03661/0.06777，场景配对差 -0.03117，0 正、30 负、2 平，p=1.86e-9，预注册假设的 excess-collision 方向被反证；oracle overlap 0.00185 显著降低 collision（p=9.31e-10），但第一冻结条件已失败。身份重复不一致为 0。",
+    "Y9/Y10/Y11 的预注册、原生脚本、远端 JSON 已拉回本地并逐项计算 SHA-256；写入 research_work.json 和综合分析 AdaRES-Y9-Y11_diagnosis_20260929.md，并更新 codex_memory.md 与 route_change 决策。没有实现训练模块、没有通过六项准入门槛、没有写队列，也没有启动训练。",
+    "Y12 双模型标准化 confidence committee 已在截止前完成预注册，但由于本轮真实 lease deadline 已到，未实现、未运行、未产生科学结论；只登记为下一研究窗口的原样执行候选。"
+  ],
+  "decisions": [
+    "拒绝 Y9 的 decoder-layer confidence consensus：相对 final 的方向为正，但未达到预注册的场景层显著性；不得扫描层权重或 temperature 翻案。",
+    "拒绝 Y10 的 top-2 complementary mask union：相对 top-1 的平均差为正，但未达到预注册的场景层显著性；不得扫描 K、union 权重或阈值。",
+    "拒绝 Y11 的 cross-expression collision 训练动机：W2 的真实 disjoint pair overlap 显著低于 permutation control，与原假设相反；不得把 oracle 可降低 overlap 的单侧证据包装成 W2 冲突缺陷。",
+    "本轮没有可准入的新结构候选，server-2 两个名额保持空缺。记录到 23:22 北京时间的短期研究冷却；目标、冻结协议、服务器约束和六项门槛均未放宽。"
+  ]
+}

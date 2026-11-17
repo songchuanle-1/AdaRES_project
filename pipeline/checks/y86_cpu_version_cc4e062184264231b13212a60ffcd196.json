@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y86",
+  "code_commit": "2d2a0b98865977a6e2f37d316979344ffc56817c",
+  "parent_commit": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "retained_branch": "refs/heads/adares-y86-overlap-readout-skip",
+  "working_HEAD": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y86_cpu_version_cc4e062184264231b13212a60ffcd196_source_snapshot.json",
+    "sha256": "4f5865918019ff8f86e1e84dee080bd65c3cb3138f5817d34757c5ae252fbb29"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y86_cpu_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "2064d49c49ddc97d28052d516eb7108446cbd414c22516e89b04d50e552f173f"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y86_cpu_cc4e062184264231b13212a60ffcd196_program.py",
+    "sha256": "bdbb3d6bab714f63129622f6c5cb0f2a37deca7f5f0bd9582e15ef7628bbab76"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y86_overlap_readout_skip_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y86_overlap_readout_skip/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y86_cpu_version_cc4e062184264231b13212a60ffcd196.index",
+    "sha256": "35b999e6e1debd6eece32fe88cdb99e118b57eb5aaf251d67027e9c0a6622683"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y86_cpu_native.py",
+    "sha256": "78e4728e384bb72ee0b19aea22e25ec698e0dc0359bdfd5aef86cefc68b33a1b"
+  }
+}

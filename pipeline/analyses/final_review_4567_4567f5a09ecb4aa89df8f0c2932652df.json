@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "token": "4567f5a09ecb4aa89df8f0c2932652df",
+  "observed_at_local": "2026-10-16T16:10:31.428737+08:00",
+  "execution_status": "POSTFLIGHT_PENDING",
+  "science": "Y50 training; Y52 CPU-prepared/exclusive-GPU blocked",
+  "sources": {
+    "diagnosis": {
+      "path": "pipeline/analyses/y52_mass_target_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+      "sha256": "5b7bdfc21c0c3dc9313de00be0d07115d3231a6476f025441b052a40aa8ecd27"
+    },
+    "train": {
+      "path": "pipeline/analyses/y52_train_cpu_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+      "sha256": "8f83685d839b62fcddf56994fac7a5fe494088c0ddb4ad7fb6ef1ca1040a8ede"
+    },
+    "bundle": {
+      "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+      "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+    },
+    "physical": {
+      "path": "pipeline/analyses/y52_physical_cpu_v2_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+      "sha256": "1f0b407048ead2565f79223fb930bc70b4f1245fb65cd492b158906573a996ea"
+    },
+    "resource": {
+      "path": "pipeline/analyses/y52_final_status_v2_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+      "sha256": "f6a0fc1ae3c8b2416c52220ed236422bdc354d80ab2fc72ba2b2609f3c442757"
+    }
+  },
+  "review": {
+    "path": "pipeline/reviews/motivation_review_Y52_4567.md",
+    "sha256": "3a35145d786fad1b4d6307bff41b7a82dc5297eaf1a47768002bf6119ee6103d"
+  },
+  "design": {
+    "path": "pipeline/designs/exp_design_Y52_4567.md",
+    "sha256": "8392aab75c96305ac00ea2d16170bc59b62de5247a71dffa9041e88a9a2b6303"
+  },
+  "local_prototype_files": 7,
+  "admitted": 0,
+  "launched": 0,
+  "no_other_project_or_scheduler_change": true,
+  "failures_retained": [
+    "Builder initial SyntaxError before any model writes; corrected.",
+    "Physical CPU v1 strict-gradient assertion; v2 quantified repeat-level2.27e-13, no model change.",
+    "Narrow ps command matching failed; -ww full command verification passed."
+  ],
+  "previous_tick": "75486f9263d34214b3bd2e1412c69639 was INCOMPLETE and already aborted/released; do not resume its token."
+}

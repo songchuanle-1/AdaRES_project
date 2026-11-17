@@ -1,0 +1,241 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "analyzed_at": "2026-10-17T12:42:22.776646+08:00",
+  "sources": {
+    "y50": {
+      "path": "pipeline/analyses/y50_frozen_y50_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+      "sha256": "131437df77fcd764f0be8bcb8beff926faadaea7b4edfc97790f615f3ee3bf85"
+    },
+    "w2": {
+      "path": "pipeline/analyses/y50_frozen_w2_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+      "sha256": "122ff29b6a82d761a4c649b9a95f050d7c9e4f0bf528954d40651435d54f81ce"
+    },
+    "b1": {
+      "path": "pipeline/analyses/y50_frozen_b1_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+      "sha256": "d21c9bf610c4dfbfc4d6738d8b1efd66401ffb8b11578d179e4922df0b233fa5"
+    }
+  },
+  "analysis_implementation": {
+    "path": "scripts/analyze_frozen_full.py",
+    "sha256": "cc9e50470844c5658062e6337658950fdbc75195c6702f9f1f79a50db5ae441f"
+  },
+  "seed": 1999,
+  "bootstrap_draws": 10000,
+  "protocol": "Full9508expressions/141scenes twice EACH; FIRST primary; scene-clustered expression-weighted bootstrap; frozen TRAIN cuts1487/3325; subgroup CI upper<0 triggers harm review.",
+  "summary": {
+    "y50": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5031587787728745,
+      "acc25": 0.6073832562053008,
+      "acc50": 0.5510096760622634,
+      "spmiou": 0.4687615852463051
+    },
+    "w2": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5101051604388791,
+      "acc25": 0.6107488430795119,
+      "acc50": 0.5629995793016407,
+      "spmiou": 0.47371852911683954
+    },
+    "b1": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5021216786662852,
+      "acc25": 0.6103281447202356,
+      "acc50": 0.5527976440891881,
+      "spmiou": 0.4666861818605669
+    }
+  },
+  "comparisons": {
+    "w2": {
+      "all": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": -0.006946381666004629,
+        "scene_clustered_ci95": [
+          -0.015228659544115262,
+          0.0012473910936991114
+        ],
+        "observed_group_mean_repeat_noise": 0.00010049682256299807,
+        "max_expression_repeat_iou_difference": 0.9763062000274658,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      },
+      "small": {
+        "expressions": 2816,
+        "scenes": 124,
+        "paired_miou_difference": -0.01613643965009198,
+        "scene_clustered_ci95": [
+          -0.033003372756311836,
+          0.0009320527771110197
+        ],
+        "observed_group_mean_repeat_noise": 0.0,
+        "max_expression_repeat_iou_difference": 0.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      },
+      "medium": {
+        "expressions": 3304,
+        "scenes": 136,
+        "paired_miou_difference": -0.01809714871870814,
+        "scene_clustered_ci95": [
+          -0.032430321197220904,
+          -0.0030292705680468024
+        ],
+        "observed_group_mean_repeat_noise": 0.0002954921912916059,
+        "max_expression_repeat_iou_difference": 0.9763062000274658,
+        "material_harm_within_observed_noise": true,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "negative interval",
+        "frozen_harm_trigger_ci_upper_lt_zero": true
+      },
+      "large": {
+        "expressions": 3388,
+        "scenes": 135,
+        "paired_miou_difference": 0.011566409840879189,
+        "scene_clustered_ci95": [
+          -0.0010374750520620983,
+          0.024177152547540593
+        ],
+        "observed_group_mean_repeat_noise": 6.134123700850126e-06,
+        "max_expression_repeat_iou_difference": 0.018619537353515625,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      }
+    },
+    "b1": {
+      "all": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": 0.0010371001065892797,
+        "scene_clustered_ci95": [
+          -0.00817041092854848,
+          0.010234637374277291
+        ],
+        "observed_group_mean_repeat_noise": 0.00010008568968349612,
+        "max_expression_repeat_iou_difference": 0.9738956093788147,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      },
+      "small": {
+        "expressions": 2816,
+        "scenes": 124,
+        "paired_miou_difference": 0.006157287334479572,
+        "scene_clustered_ci95": [
+          -0.012340456995017887,
+          0.025240580697339778
+        ],
+        "observed_group_mean_repeat_noise": 0.0,
+        "max_expression_repeat_iou_difference": 0.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      },
+      "medium": {
+        "expressions": 3304,
+        "scenes": 136,
+        "paired_miou_difference": -0.005109152604135759,
+        "scene_clustered_ci95": [
+          -0.020343068234059253,
+          0.010645369922532621
+        ],
+        "observed_group_mean_repeat_noise": 0.0,
+        "max_expression_repeat_iou_difference": 0.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      },
+      "large": {
+        "expressions": 3388,
+        "scenes": 135,
+        "paired_miou_difference": 0.0027752263528987445,
+        "scene_clustered_ci95": [
+          -0.011966019237382136,
+          0.0174480890289205
+        ],
+        "observed_group_mean_repeat_noise": 0.0002808780216973675,
+        "max_expression_repeat_iou_difference": 0.9738956093788147,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "frozen_harm_trigger_ci_upper_lt_zero": false
+      }
+    }
+  },
+  "material_harm_review": [
+    {
+      "reference": "w2",
+      "group": "medium",
+      "result": {
+        "expressions": 3304,
+        "scenes": 136,
+        "paired_miou_difference": -0.01809714871870814,
+        "scene_clustered_ci95": [
+          -0.032430321197220904,
+          -0.0030292705680468024
+        ],
+        "observed_group_mean_repeat_noise": 0.0002954921912916059,
+        "max_expression_repeat_iou_difference": 0.9763062000274658,
+        "material_harm_within_observed_noise": true,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "negative interval",
+        "frozen_harm_trigger_ci_upper_lt_zero": true
+      }
+    }
+  ],
+  "target": 0.515,
+  "target_reached": false,
+  "cost": {
+    "y50": {
+      "parameters": 164696198,
+      "warm_first_chunk_median_seconds": 0.32378881803015247,
+      "peak_allocated_gib": 4.042599678039551,
+      "peak_reserved_gib": 6.48828125,
+      "active_queries": [
+        128
+      ],
+      "selected_queries": 1
+    },
+    "w2": {
+      "parameters": 164629637,
+      "warm_first_chunk_median_seconds": 0.321308279002551,
+      "peak_allocated_gib": 4.042351245880127,
+      "peak_reserved_gib": 6.486328125,
+      "active_queries": [
+        128
+      ],
+      "selected_queries": 1
+    },
+    "b1": {
+      "parameters": 164430473,
+      "warm_first_chunk_median_seconds": 0.2590310210362077,
+      "peak_allocated_gib": 4.040676593780518,
+      "peak_reserved_gib": 6.484375,
+      "active_queries": [
+        128
+      ],
+      "selected_queries": 1
+    }
+  },
+  "decision": "Do not promote or requeue this fixed30 realization: medium-size harm versus W2 triggers the frozen review. Overall intervals cross zero; no robust baseline gain and no universal mechanism falsification.",
+  "limitations": [
+    "One training seed/checkpoint per method; bootstrap does not estimate seed uncertainty.",
+    "Repeats retain large individual-expression changes; group-mean repeat noise is not a universal bound.",
+    "Timing is five warm first-chunk forwards, not full-dataset latency.",
+    "Historical Y36 champion metrics belong to a separate evaluation and are not recomputed here."
+  ]
+}

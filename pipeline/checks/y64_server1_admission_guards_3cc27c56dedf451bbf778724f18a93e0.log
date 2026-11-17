@@ -1,0 +1,18 @@
+test_actual_idle_schema_only (test_y64_server1_admission.AdmissionGuards.test_actual_idle_schema_only) ... ok
+test_busy_gpu_memory_or_utilization_refused (test_y64_server1_admission.AdmissionGuards.test_busy_gpu_memory_or_utilization_refused) ... ok
+test_compute_pid_refused (test_y64_server1_admission.AdmissionGuards.test_compute_pid_refused) ... ok
+test_fixture_schema_only (test_y64_server1_admission.AdmissionGuards.test_fixture_schema_only) ... ok
+test_initial_or_second_response_refused (test_y64_server1_admission.AdmissionGuards.test_initial_or_second_response_refused) ... ok
+test_missing_second_step_refused (test_y64_server1_admission.AdmissionGuards.test_missing_second_step_refused) ... ok
+test_nonfinite_loss_refused (test_y64_server1_admission.AdmissionGuards.test_nonfinite_loss_refused) ... ok
+test_unexecuted_native_path_refused (test_y64_server1_admission.AdmissionGuards.test_unexecuted_native_path_refused) ... ok
+test_validation_or_saved_weights_refused (test_y64_server1_admission.AdmissionGuards.test_validation_or_saved_weights_refused) ... ok
+test_wrong_data_or_memory_bound_refused (test_y64_server1_admission.AdmissionGuards.test_wrong_data_or_memory_bound_refused) ... ok
+test_wrong_id_config_commit_goal_yaml_refused (test_y64_server1_admission.AdmissionGuards.test_wrong_id_config_commit_goal_yaml_refused) ... ok
+test_wrong_power_nonfinite_or_negative_refused (test_y64_server1_admission.AdmissionGuards.test_wrong_power_nonfinite_or_negative_refused) ... ok
+test_zero_nonfinite_or_missing_containment_gradient_refused (test_y64_server1_admission.AdmissionGuards.test_zero_nonfinite_or_missing_containment_gradient_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.068s
+
+OK

@@ -1,0 +1,140 @@
+{
+  "complete": true,
+  "operation": "dispatch",
+  "token": "b5a843848cd34b83bf362acf98c88634",
+  "observed_from": "2026-10-19T13:58:39.714549+08:00",
+  "observed_until": "2026-10-19T13:59:36.074382+08:00",
+  "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "before": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y52": {
+        "pid": null,
+        "log": null,
+        "process_live": false,
+        "cmdline": [],
+        "cwd": null,
+        "tail": ""
+      },
+      "AdaRES-Y54": {
+        "pid": null,
+        "log": null,
+        "process_live": false,
+        "cmdline": [],
+        "cwd": null,
+        "tail": ""
+      }
+    }
+  },
+  "after": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "8943c8c460501b200a8dea958964579ffea65f76",
+    "source_hashes": {
+      "ipdn/model_paper5/adares_y52_point_target/__init__.py": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "ipdn/model_paper5/adares_y52_point_target/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "ipdn/model_paper5/adares_y52_point_target/dec.py": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "ipdn/model_paper5/adares_y52_point_target/ipdn.py": "81c1a4751f6c2a8f66bc1f9b62680d5521542fa687e10bcca2b780b65295b52a",
+      "ipdn/model_paper5/adares_y52_point_target/loss.py": "dea6f16d23b2800dcd6040b1cd1512affde5a73d685eb26052aeac0c2c8b1f59",
+      "ipdn/model_paper5/adares_y52_point_target/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "configs_song/model_paper5/adares_y52_point_target_res.yaml": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6",
+      "ipdn/model_paper5/adares_y54_fine_support/__init__.py": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "ipdn/model_paper5/adares_y54_fine_support/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "ipdn/model_paper5/adares_y54_fine_support/dec.py": "1081039d6797587f6e13cb180e26d66f1aaeb00dcbb3a1328e73c83ac58042a0",
+      "ipdn/model_paper5/adares_y54_fine_support/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "ipdn/model_paper5/adares_y54_fine_support/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "ipdn/model_paper5/adares_y54_fine_support/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "configs_song/model_paper5/adares_y54_fine_support_res.yaml": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6"
+    },
+    "authorized_device_inventory": "0, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 16, 7572, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 15934, 7564\n",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y52": {
+        "pid": 15934,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_135853.log",
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "tail": "Using backend: pytorch\n2026-10-19 01:26:28,611 - INFO - set random seed: 1999\nset CUDA_VISIBLE_DEVICES as 0\n\rTrain[1/30]:   0%|                    | 0/4686 [00:00<?, ?it/s]\rTrain[1/30]:   0%|                    | 0/4686 [00:21<?, ?it/s, lr=0.0001, eta=34 days, 7:15:45, iter_time=21.08]\rTrain[1/30]:   0%|                    | 1/4686 [00:21<27:26:09, 21.08s/it, lr=0.0001, eta=34 days, 7:15:45, iter_time=21.08]\rTrain[1/30]:   0%|                    | 1/4686 [00:21<27:26:09, 21.08s/it, lr=0.0001, eta=17 days, 13:43:40, iter_time=10.80]\rTrain[1/30]:   0%|                    | 2/4686 [00:21<11:41:25,  8.99s/it, lr=0.0001, eta=17 days, 13:43:40, iter_time=10.80]"
+      },
+      "AdaRES-Y54": {
+        "pid": null,
+        "log": null,
+        "process_live": false,
+        "cmdline": [],
+        "cwd": null,
+        "tail": ""
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y52",
+      "label": "AdaRES-Y52 fixed30",
+      "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+      "status": "running",
+      "gpu": "0",
+      "depends_on": [],
+      "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "scientific_candidate_id": "AdaRES-Y52",
+      "pid": 15934,
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_135853.log",
+      "server": "server-2",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "launched": "2026-10-19T13:59:35"
+    },
+    {
+      "id": "AdaRES-Y54",
+      "label": "AdaRES-Y54 fixed30",
+      "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+      "status": "waiting",
+      "gpu": null,
+      "depends_on": [],
+      "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y54.json",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "scientific_candidate_id": "AdaRES-Y54"
+    }
+  ],
+  "events": [
+    "队列推送 [AdaRES-Y52 fixed30] configs_song/model_paper5/adares_y52_point_target_res.yaml → server-2 gpu0"
+  ],
+  "affinity_changes": [
+    {
+      "id": "AdaRES-Y54",
+      "previous": "1",
+      "current": null,
+      "reason": "Soft preference absent from live device inventory; retain authorized pool only"
+    }
+  ],
+  "exact_deployed_candidate_bytes": true,
+  "limitations": [
+    "Native steps verify execution, not trained benefit.",
+    "Device indices/occupation are current observations, not permanent reservations."
+  ]
+}

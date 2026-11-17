@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "config": "configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+  "retained_branch": "refs/heads/adares-y90-query-peer-affinity-on-y89",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_y90_bound_native.py --server server-1 --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved authorized GPU0, after exact original Y88/server1 fixed30 checkpoint verification/canonical archive. No GPU1 or power/data/runtime substitution.",
+  "checks": "Original native TRAIN two finite task losses/backward/updates; fourteen exact query/overlap/bounded affinity/weighted-context/shared-head consumers, original gates/max-overlap, zero then learned gate and aggregate context response, finite original/new/input gradients, native modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+    "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server1_plan.json",
+    "sha256": "5af2197e8bb025e454447441796d5d6cb31cbd2cc832de4707d8cb6f4444b3cb"
+  },
+  "additive_parent": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+  "execution_helper": {
+    "path": "scripts/run_y90_bound_native.py",
+    "sha256": "38e6df9b791b3142967879f5862cbaa87d18b76ae710b4253a75bf2ac8ec6ee4"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/backbone.py",
+      "sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/dec.py",
+      "sha256": "b035da11511099dc0f764540b825bf129ac747a5c7c42f8aaf991b299dce7849"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/ipdn.py",
+      "sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/loss.py",
+      "sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/sample_model.py",
+      "sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y33_token_attention_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "original_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/dec.py",
+      "sha256": "4c09aba1c99faff2fbba1bcd5a910a843dd6296a26002f98d187f7b4a1cfb9cb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y33_token_attention/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y33_token_attention_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "normalized_only_files": [
+    "AdaRES/ipdn/model_paper5/adares_y33_token_attention/backbone.py",
+    "AdaRES/ipdn/model_paper5/adares_y33_token_attention/dec.py",
+    "AdaRES/ipdn/model_paper5/adares_y33_token_attention/ipdn.py",
+    "AdaRES/ipdn/model_paper5/adares_y33_token_attention/loss.py",
+    "AdaRES/ipdn/model_paper5/adares_y33_token_attention/sample_model.py"
+  ],
+  "all_normalized_bytes_match_git": true,
+  "ast_equivalent": true,
+  "remote_byte_identity": true,
+  "physical_independence": true,
+  "config_exact_parent_normalized": true,
+  "code_commit": "eaf330166aed361ffc2532a52e352b70cba4e2fd",
+  "gpu_precheck": {
+    "memory_mib": 1,
+    "utilization": 0
+  },
+  "failed_admission_precheck": "Prospective strict git/blob/local/deployed LF alignment before admission, not a failed admission.",
+  "admission_exists_before": false,
+  "original_evidence_unchanged": true,
+  "limitations": [
+    "Only Y33 files aligned to committed LF; parent/old evidence/goal/gates unchanged.",
+    "Prior native tests executed original CRLF-equivalent AST; no native gate was fabricated or retrospectively rerun.",
+    "No production launch; fresh CPU source controls follow."
+  ]
+}

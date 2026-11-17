@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "candidate_ids": [
+    "AdaRES-Y46",
+    "AdaRES-Y49"
+  ],
+  "snapshot_time": "2026-10-15T16:48:18.175046+00:00",
+  "compact_due_count": 0,
+  "compact_bootstrap_required": true,
+  "reserve_count": 2,
+  "reserve_budget": 0,
+  "canonical_blocked_recheck_fields": {
+    "AdaRES-Y46": {
+      "last_check_at": "2026-10-15T15:48:50.704714+00:00",
+      "next_check_at": "2026-10-15T16:48:50.704714+00:00"
+    },
+    "AdaRES-Y49": {
+      "last_check_at": "2026-10-15T15:48:50.704714+00:00",
+      "next_check_at": "2026-10-15T16:48:50.704714+00:00"
+    }
+  },
+  "effective_recheck_local": "2026-10-16T00:48:50.704714+08:00",
+  "actual_resource_start_local": "2026-10-16T00:50:45.418762+08:00",
+  "resource_evidence": {
+    "path": "pipeline/analyses/due_resources_14ca_14ca93d7d4ab40b986f65bf4d9d40219.json",
+    "sha256": "81eb99a6f1665dabe861028c20a897303ee1566999cfa07f7ad244cec32ec3d4"
+  },
+  "interpretation": "Snapshot precedes effective max(candidate retry,last context check+1h) boundary by32.529668seconds. Actual action follows boundary, so existing IDs are now due and resumed without adding candidates to full reserve. Not a timezone failure or free-GPU claim.",
+  "canonical_logic_source": {
+    "path": "C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/build_tick_context.py",
+    "sha256": "13d3f1866c341ad210434ba3386cc4fb29b208d9638c123b025e290373cce300",
+    "function": "blocked_recheck"
+  },
+  "immutable_context_and_pending_state_not_modified": true
+}

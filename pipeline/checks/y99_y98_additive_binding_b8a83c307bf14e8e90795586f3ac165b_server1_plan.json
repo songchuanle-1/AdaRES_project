@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y99",
+  "config": "configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "15c3481ff32456160b5a94588565f68f0d2d2c5b",
+  "additive_parent": "15c3481ff32456160b5a94588565f68f0d2d2c5b",
+  "retained_branch": "refs/heads/adares-y99-spatial-mask-skip-on-y98",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y99_bound_native_y98.py",
+    "sha256": "06f88dcc8c73fe833435335ceee4a8605c7985c469b808221d221766bd4d17e9"
+  },
+  "planned_command": "python -B scripts/run_y99_bound_native_y98.py --server server-1 --token <CURRENT>",
+  "required_resource": "At HEADY98 only after exact matching AdaRES-Y96 natural fixed30/full finite original checkpoint archive and fresh exclusive authorized idle/unreserved GPU0. No GPU1, power or runtime substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite task backward/optimizer steps; full32 native spatial identity, entire original mask MLP and spatial/appearance projections, original batching/static seven mask consumers, float64 projection references, shared confidence/query norms/hard-gate algorithm, original/new/raw-spatial gradients, zero then learned skip/native modes/memory. Actual CPU result is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y99_y98_additive_binding_b8a83c307bf14e8e90795586f3ac165b_server1_program.py",
+    "sha256": "b97e3ef232df1fc54084a59f196199c01579488930ae416f3567b57dff9a5991"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server1_plan.json",
+    "sha256": "1429b688e615cce60b1409e5c2609a68e119955eef5c45c41794df629d755c58"
+  }
+}

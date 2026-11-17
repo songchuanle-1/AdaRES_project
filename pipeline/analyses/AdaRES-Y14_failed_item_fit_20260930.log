@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "tools/diagnose_adares_y14_reliability.py", line 419, in <module>
+    main()
+  File "tools/diagnose_adares_y14_reliability.py", line 414, in main
+    {"capture": capture, "fit": fit, "validate": validate,
+  File "tools/diagnose_adares_y14_reliability.py", line 298, in fit
+    raise ValueError("Fit requires exactly train64")
+ValueError: Fit requires exactly train64

@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y77",
+  "token": "947fc2dbe85d4a8fba4cad094b6945bc",
+  "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "CPU_callback_result": {
+    "path": "pipeline/analyses/y77_native_observer_cpu_947fc2dbe85d4a8fba4cad094b6945bc.json",
+    "sha256": "d8c2433ed80a0e4d9aa8aece9c9b8945b907eb422e915623e3d6cd1e5489b71f"
+  },
+  "CPU_callback_log": {
+    "path": "pipeline/analyses/y77_native_observer_cpu_947fc2dbe85d4a8fba4cad094b6945bc.log",
+    "sha256": "d992275c47a1e298d1be8d2c91011a978079fb6d9b1de65a4f1ccbe2c33bd917"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y77_native_observer_CPU_947fc2dbe85d4a8fba4cad094b6945bc_program.py",
+    "sha256": "769f672ffa6d44264460932d525423d0ee4eeb7191966c0051f83a3b93eff00b"
+  },
+  "source_body": {
+    "path": "scripts/probe_y77_native_smoke.py",
+    "sha256": "255c868d9882805b01cab1e8ba5bbbec51e0391c815917f30e39d8197c0b2cc6"
+  },
+  "two_synthetic_CPU_decoder_optimizer_steps": true,
+  "original_query_scene_padding_mass_and_sampled_coordinates_verified": true,
+  "original_SCG_position_consumption_calls_per_step": 12,
+  "initial_prediction_consumer_and_seven_shared_heads": true,
+  "finite_new_weight_and_query_gradients_and_updates": true,
+  "native_GPU_executed": false,
+  "native_GPU_PASS": false,
+  "admitted": false,
+  "scientific_efficacy": "Unknown; actual native sparse TRAIN task/GPU check and original full frozen evaluation remain pending."
+}

@@ -1,0 +1,12 @@
+{
+  "actions": [
+    "上海2026-10-24 00:45:28取得design快照，实际CODEX_THREAD_ID与owner一致、后台调度Disabled、experiment_first启用。只用server-2 GPU0/280W，保留Y57暂停、外部GPU1任务、数据及恢复限制。预检已查询进展和尝试派发，running1/waiting0，无新增终态或操作故障。",
+    "00:45:58通过capture_ef_gpu0_runtime_v2.py实核Y60原PID17186/命令/cwd/starttime/GPU0归属，Train6/30步2023至2045增长。两次采样GPU0均85C/280W/22744MiB，当次未见热降频、训练尾部错误或新kernel Xid/fallen-off。GPU1外部compute仍在，未干预；不将本次无降频解释为历史硬件问题解决。证据pipeline/checks/ef_gpu0_runtime_6af64b772d2445f1bb9a90263e9143c6.json。",
+    "本轮到期生命周期v3复查实际GPU0仍由Y60占用，85C/280W，无独占空闲授权卡。Y56/Y58/Y59的done_complete终态和不可变冻结后评证据一致；Y61七文件与原CPU payload、9bea5e906be3a478be50442db521e766c446a1ec提交、原生smoke冻结计划及current goal一致。tick_attempt为Y56/resource_check/blocked，证据同时归入对应候选。证据pipeline/checks/gpu0_lifecycle_v3_6af64b772d2445f1bb9a90263e9143c6.json。",
+    "没有执行GPU原生检查、CPU重测、模型/YAML修改、Git提交、同步、准入、入队、训练启动或重复终态归档；没有新的科学效益结论。保留已有Y61计划等待独占GPU0，Y56/Y58/Y59仅保留冻结后评，不重训或晋升。",
+    "更新七段紧凑记忆。首次finish因决策数组为空，报告仍留待补标记而未通过；租约仍保留。补充明确的本轮无新增决策说明后重新生成报告，不修改校验器、不虚构决策；最终收尾以实际命令和收据为准，不在释放后补写。"
+  ],
+  "decisions": [
+    "本轮无新增研究或操作决策。继续执行既有GPU0-only/280W、Y57暂停、固定30轮/seed1999和不可变后评/原生检查计划；没有修改任何资源授权、模型、队列、调度或历史结论。"
+  ]
+}

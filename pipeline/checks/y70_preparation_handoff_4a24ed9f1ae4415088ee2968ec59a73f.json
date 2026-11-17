@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "token": "4a24ed9f1ae4415088ee2968ec59a73f",
+  "observed_at_local": "2026-10-30T15:04:51.801010+08:00",
+  "tick_started_at": "2026-10-30T06:51:30.666703+00:00",
+  "deadline_at": "2026-10-30T07:51:30.666703+00:00",
+  "id": "AdaRES-Y70",
+  "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "scoped_model_YAML_files": 7,
+  "additional_parameters": 65536,
+  "total_parameters": 164695173,
+  "actual_CPU_model_pretrain_TRAIN_collation_passed": true,
+  "actual_CPU_decoder_controls_passed": true,
+  "original_parent_source_restored_exact": true,
+  "native_guard_tests_passed": 10,
+  "observer_extension_guards_passed": 3,
+  "observer_guard_command": "python -B -m unittest discover -s scripts -p test_y70_local_observer.py -v",
+  "same_scientific_body_for_both_GPU_plans": true,
+  "active_required_resource": "server-2 GPU1 after exact Y67 fixed30 canonical archive and fresh idle/unreserved check",
+  "native_GPU_steps_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "all_three_original_running_tasks_preserved": true,
+  "Y57_still_user_paused": true,
+  "queue_and_running_byte_identical": true,
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "memory_before": {
+    "path": "pipeline/snapshots/codex_memory_before_4a24ed9f1ae4415088ee2968ec59a73f.md",
+    "sha256": "4ec5b837c00fb987e485445a023e63e930dadf586b17e10dad90f592fcbf6db1"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y70_cpu_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "655f0caadf0b1d59d2a4c056cbf305fc66d702921b9c107fa46f703333f95c84"
+    },
+    {
+      "path": "pipeline/analyses/y70_cpu_4a24ed9f1ae4415088ee2968ec59a73f.log",
+      "sha256": "48a23cceefecfe9f42ebef835e3dc0e6b84c9febfa9d26a108338612ff1e662d"
+    },
+    {
+      "path": "pipeline/checks/y70_targeted_history_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "7f3fa75a3c0fa464c56bd2673d74c5e93fafd3c11dd2c2a2a7684fc8cd965d70"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_version.json",
+      "sha256": "0f9a5dbef007e9a88d79aaa1d746c383a5d798d25e631b712263e93e43588b38"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_guards.log",
+      "sha256": "53779c0ae91faab43c84b641877de4f3bcd433d10aef519a716d9eee9179d592"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu0_plan.json",
+      "sha256": "6e87c0ade2394e13fee112f72b0331cf03e6552f90b72e010ecb777bc9012640"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_plan.json",
+      "sha256": "7d99e9d76ba3d25f1cff637cf1406951f9a4d350431b279f6dc2c891c8739813"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "df232cca922e9b135aa559a8881f2f61e41efdae27f5bde4042d953e2f925866"
+    },
+    {
+      "path": "pipeline/checks/y68_server2_gpu0_phase_progress_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "c2d055ddb43746945f88e25dd34b57288ce50c22d1bbe37448e14960d28290cc"
+    },
+    {
+      "path": "pipeline/checks/server2_y70_local_adares-y67_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "4aeebb2c4f6387a5dbea6ce70cc8469f723d5ff68bcf5e4072ff49cd912b259e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "a214f0adeee76f2ee5a6f79d51aba99e86a0175c8a4bed20839b061c60b3dd3b"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_4a24ed9f1ae4415088ee2968ec59a73f.json",
+      "sha256": "c502c1789237aaff5d0b7f751e7744107073c4e1314a4d069d041c11597b2c1b"
+    },
+    {
+      "path": "scripts/observe_server2_with_local_y70.py",
+      "sha256": "1f639a1461942a62874192989e3adc55720d379af4b183b5630b995f4dc5baa4"
+    },
+    {
+      "path": "scripts/test_y70_local_observer.py",
+      "sha256": "9b20a3862fe0653710bb6c9f5362425374cdb8161cd1dc33f40fa5b8ee071f5e"
+    }
+  ],
+  "limitations": [
+    "CPU decoder fixture backward is not actual sparse TRAIN task backward.",
+    "No trained efficacy or new frozen FIRST result.",
+    "Full original evaluations and Y70 native check await exclusive authorized GPU."
+  ],
+  "postflight": "Pending canonical report/finish."
+}

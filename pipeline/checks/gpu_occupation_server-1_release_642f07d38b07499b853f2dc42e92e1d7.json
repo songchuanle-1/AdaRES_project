@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "642f07d38b07499b853f2dc42e92e1d7",
+  "snapshot_generated_at": "2026-11-11T15:48:45.161708+00:00",
+  "snapshot_sha256": "940f5b88c9d587ef21075995e8de5bbf6cb403f4d4c5ee84d4edaefad2e265fd",
+  "servers_sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74",
+  "observed_at": "2026-11-11T16:03:21.800873+00:00",
+  "candidate_ids": [
+    "AdaRES-Y62",
+    "AdaRES-Y63",
+    "AdaRES-Y64",
+    "AdaRES-Y66",
+    "AdaRES-Y69",
+    "AdaRES-Y72",
+    "AdaRES-Y76",
+    "AdaRES-Y79",
+    "AdaRES-Y82",
+    "AdaRES-Y84",
+    "AdaRES-Y88",
+    "AdaRES-Y90",
+    "AdaRES-Y92",
+    "AdaRES-Y94",
+    "AdaRES-Y96",
+    "AdaRES-Y101"
+  ],
+  "scope": {
+    "server": "server-1",
+    "host": "192.168.1.175",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl02-MS-7B73\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 41, 22768, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 2980836\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 642f07d38b07499b853f2dc42e92e1d7 --server server-1 --label release",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-1_release_642f07d38b07499b853f2dc42e92e1d7.log",
+    "sha256": "fd234fab5d1ac38dbb2fc6e0e167e9727fd27ac3084771097d7dc73c79a1afc1"
+  }
+}

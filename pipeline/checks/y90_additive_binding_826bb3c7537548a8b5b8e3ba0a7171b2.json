@@ -1,0 +1,205 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "token": "826bb3c7537548a8b5b8e3ba0a7171b2",
+  "observed_at": "2026-11-07T02:53:04.168959+08:00",
+  "code_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "parent_commit": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+  "working_HEAD": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+  "retained_branch": "refs/heads/adares-y90-query-peer-affinity-on-y89",
+  "original_commit": "9a64d22c41bb8527ca7ca1abba4340546506b1b1",
+  "original_branch": "refs/heads/adares-y90-query-peer-affinity",
+  "original_version": {
+    "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86.json",
+    "sha256": "d490dd81a7d83b2b3f0d41e4ca168ee0a6466e8d4a8737b53bd1fc760e77e62b"
+  },
+  "original_CPU_result": {
+    "path": "pipeline/analyses/y90_cpu_1c6bba9b68404903951324169dd02d86.json",
+    "sha256": "9b5220fee05f562320d5512d7eac070c57cd83c2bafb003220e95ad23964e77d"
+  },
+  "original_CPU_program": {
+    "path": "pipeline/checks/y90_cpu_1c6bba9b68404903951324169dd02d86_program.py",
+    "sha256": "08b38303087f420049a463ea3790a356a3261dbf7a5231c37355b177af06d94f"
+  },
+  "original_native_preparation": {
+    "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86.json",
+    "sha256": "6a9147cbee5491bec5715e73cd33321d79fec0330fd1e9b565e7032acbe04943"
+  },
+  "original_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server1_plan.json",
+      "sha256": "5af2197e8bb025e454447441796d5d6cb31cbd2cc832de4707d8cb6f4444b3cb"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server2_plan.json",
+      "sha256": "c0101d7d884351e355b94e5b1c04d3b5ab89e841b257be821547a4fce8e982c9"
+    }
+  },
+  "native_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_plan.json",
+      "sha256": "1955673b2063fe118250160dfd8716efeb14280b80ff6306a2f36314ede38c61"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server2_plan.json",
+      "sha256": "6ea2e3957191ec6bf511a4f86637b4c24428528d61c4dc37135c31fa2f8c7491"
+    }
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/sample_model.py"
+    ]
+  ],
+  "scientific_files_identical": true,
+  "native_program_bodies_identical": true,
+  "only_frozen_code_commit_metadata_changed": true,
+  "original_evidence_retained": true,
+  "main_index_unchanged": true,
+  "other_candidates_unchanged": true,
+  "queue_unchanged": true,
+  "native_executed": false,
+  "CPU_scientific_experiments_replayed": false,
+  "admitted": false,
+  "production_sync": false,
+  "scientific_revision": false,
+  "guard_tests_passed": 12,
+  "evidence": [
+    {
+      "path": "scripts/rebind_y90_on_y89.py",
+      "sha256": "d40986247f490e481e050223890a8cd20149948a1c576c84f06506fc38150e2c"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_proposal.json",
+      "sha256": "9994f5416c93c6825e075881a01476f9c9d300f97f34e564b4569d86a3e05f45"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2.log",
+      "sha256": "b511e032572bd809cd1f57240e528dbb9d367aab0341f173a84fc18532ac9bc5"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2.index",
+      "sha256": "ad39a4bebff5aa211d416b4e0f096718e70a0c3c7fadf1ef568bc20eaade112c"
+    },
+    {
+      "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86.json",
+      "sha256": "d490dd81a7d83b2b3f0d41e4ca168ee0a6466e8d4a8737b53bd1fc760e77e62b"
+    },
+    {
+      "path": "pipeline/analyses/y90_cpu_1c6bba9b68404903951324169dd02d86.json",
+      "sha256": "9b5220fee05f562320d5512d7eac070c57cd83c2bafb003220e95ad23964e77d"
+    },
+    {
+      "path": "pipeline/checks/y90_cpu_1c6bba9b68404903951324169dd02d86_program.py",
+      "sha256": "08b38303087f420049a463ea3790a356a3261dbf7a5231c37355b177af06d94f"
+    },
+    {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86.json",
+      "sha256": "6a9147cbee5491bec5715e73cd33321d79fec0330fd1e9b565e7032acbe04943"
+    },
+    {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_body.py",
+      "sha256": "9824adca4c19ed5bc39c8a02f8b5561e40b20e94d09354e06df458fbb9d565a0"
+    },
+    {
+      "path": "scripts/y90_observer_core.py",
+      "sha256": "e999b6f55c0790e7714b86443b8fa4184d6ee6d3238843251ca7945665e88ecb"
+    },
+    {
+      "path": "pipeline/goal.json",
+      "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/__init__.py",
+      "sha256": "7563862071441915085c1fe21ba6997a0b877893a8f3941574b18f74f8f5863a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/dec.py",
+      "sha256": "e1f8e505bd16fb09c20825e55e13df75347b80582f13e9e27743a0bf6dbc1447"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y90_query_peer_affinity/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    },
+    {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server1_plan.json",
+      "sha256": "5af2197e8bb025e454447441796d5d6cb31cbd2cc832de4707d8cb6f4444b3cb"
+    },
+    {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server1_program.py",
+      "sha256": "dbd444782d71c4114c20e85c297d1b1810b5789f62a7fcb96a3ec2ee3d834f70"
+    },
+    {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server2_plan.json",
+      "sha256": "c0101d7d884351e355b94e5b1c04d3b5ab89e841b257be821547a4fce8e982c9"
+    },
+    {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server2_program.py",
+      "sha256": "01ed179781b47336857ad207803feff09e1ca4cd2abaec9fa6d703633c24fe6a"
+    },
+    {
+      "path": "scripts/run_y90_native.py",
+      "sha256": "32dce30999687e2b401b4f975d1456b497137394efb609b30cf998bbb7895dc5"
+    },
+    {
+      "path": "scripts/run_y90_bound_native.py",
+      "sha256": "38e6df9b791b3142967879f5862cbaa87d18b76ae710b4253a75bf2ac8ec6ee4"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_plan.json",
+      "sha256": "1955673b2063fe118250160dfd8716efeb14280b80ff6306a2f36314ede38c61"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server2_plan.json",
+      "sha256": "6ea2e3957191ec6bf511a4f86637b4c24428528d61c4dc37135c31fa2f8c7491"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+      "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server2_program.py",
+      "sha256": "b450235e4ce74fcd83134ce4985f68b400475ebc881f53c712ef086a0d1ff115"
+    }
+  ]
+}

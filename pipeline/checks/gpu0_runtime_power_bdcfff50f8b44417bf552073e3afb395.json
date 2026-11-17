@@ -1,0 +1,69 @@
+{
+  "complete": false,
+  "observed_at_utc": "2026-10-21T06:56:40.656039+00:00",
+  "hostname": "dl01-MS-7C60",
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "before": {
+    "0": {
+      "index": 0,
+      "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 91.0
+    },
+    "1": {
+      "index": 1,
+      "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 66.0
+    }
+  },
+  "after": {
+    "0": {
+      "index": 0,
+      "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 90.0
+    },
+    "1": {
+      "index": 1,
+      "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 65.0
+    }
+  },
+  "command": [
+    "sudo",
+    "-n",
+    "--",
+    "/usr/bin/nvidia-smi",
+    "-i",
+    "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+    "-pl",
+    "280"
+  ],
+  "change_returncode": 1,
+  "change_stdout": "",
+  "change_stderr": "sudo: a password is required\n",
+  "gpu0_limit_verified": false,
+  "gpu1_limit_unchanged": true,
+  "runtime_only": true,
+  "training_restarted": false,
+  "persistent_config_changed": false,
+  "authorization": {
+    "path": "pipeline/authorizations/GPU0_runtime_power_280W_bdcfff50f8b44417bf552073e3afb395.json",
+    "sha256": "c90a6d51a211f7938bd6a7bd29ae816585fb39eacee9f6d76687953ed2ddb49e"
+  },
+  "helper": {
+    "path": "scripts/apply_gpu0_runtime_power.py",
+    "sha256": "98da45273c2e05adb04347fcf32d59b493bc31edc96f206cc1196180fc5120aa"
+  },
+  "recorded_at": "2026-10-21T14:56:43.143604+08:00"
+}

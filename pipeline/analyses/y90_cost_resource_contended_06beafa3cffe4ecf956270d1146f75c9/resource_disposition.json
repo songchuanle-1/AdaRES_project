@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "token": "06beafa3cffe4ecf956270d1146f75c9",
+  "scientifically_valid_cost": false,
+  "reason": "Extra GPU0 compute PID3294544 observed concurrently with original cost worker3294283; extra identity could not be established after it disappeared. Preserve all raw measurements and successful source/checkpoint audit; no causal or isolated timing claim.",
+  "original_job": {
+    "folder": "/data1/songcl/Project/AdaRES_project/pipeline/cost_jobs/AdaRES-Y90/06beafa3cffe4ecf956270d1146f75c9",
+    "token": "06beafa3cffe4ecf956270d1146f75c9",
+    "pid": 3294283,
+    "launch": {
+      "path": "pipeline/checks/y90_cost_launch_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "c9e232e325c25b187ca84a1bae0fd163e3ac1453daf392a283a187f728ae63cc"
+    },
+    "program": {
+      "path": "pipeline/checks/y90_frozen_cost_06beafa3cffe4ecf956270d1146f75c9.py",
+      "sha256": "a1986eb65f81eb9270ae93963b84462ba2f007b05ba525b2c1fbfdf1a452c973"
+    },
+    "native_progress_confirmed": true,
+    "latest_observation": {
+      "path": "pipeline/checks/y90_cost_progress_06beafa3cffe4ecf956270d1146f75c9_audit.json",
+      "sha256": "95461234bbe8f4e79b51b0770dd073743f00f642cbf9c97b1102acb6788bd4c0"
+    }
+  },
+  "original_plan": {
+    "path": "pipeline/checks/y90_frozen_cost_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "b20729644c430c113b731062fcf1c37a2583fdc1cd129f39b6b4c71b367fe313"
+  },
+  "original_intent": {
+    "path": "pipeline/checks/y90_cost_launch_intent_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "6ccd026c7e730cc9a3971950c183881bfecdd83c256191352ccd33e236a28292"
+  },
+  "raw_archive": "pipeline/analyses/y90_cost_resource_contended_06beafa3cffe4ecf956270d1146f75c9",
+  "formal_predictions_affected": false,
+  "original_weights_unchanged": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y90_cost_progress_06beafa3cffe4ecf956270d1146f75c9_start.json",
+      "sha256": "2454828032054163d5aab3bdd974e2ae5da784a50bee691e171451983c35db80"
+    },
+    {
+      "path": "pipeline/analyses/y90_cost_resource_contended_06beafa3cffe4ecf956270d1146f75c9/remote_manifest.json",
+      "sha256": "ea4f8bb93b159d77fe08c2cf3169c8ed00ddbc6b1bd625735065d5ce0dd7bbca"
+    },
+    {
+      "path": "pipeline/analyses/y90_cost_resource_contended_06beafa3cffe4ecf956270d1146f75c9/trained_cost.json",
+      "sha256": "ce01d2556c96769d13dc8cf6f8baf6de5369377d10090975f1948ee3ee4a376f"
+    },
+    {
+      "path": "pipeline/analyses/y90_cost_resource_contended_06beafa3cffe4ecf956270d1146f75c9/postaudit.json",
+      "sha256": "5ffc7b5e3e5e03f9a1d83cd64afbd87a5af9fb4e4fcf8e4b0a8f209ead588209"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_extra_compute_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "7d2df0548e7627de810f315dc21dfe9255f5f3ed82696b34874a4cd67b2bdeeb"
+    },
+    {
+      "path": "pipeline/checks/server1_new_compute_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "2e338c3d786d6ca405a74c6bbc49c7c3bf09c059990eb8034ea5389e1b49c3e4"
+    },
+    {
+      "path": "scripts/y90_cost_resource_recovery.py",
+      "sha256": "db56589b664c8ac5841e9188b5d4dea7160c4deeafcc5028b8464568578446a3"
+    }
+  ]
+}

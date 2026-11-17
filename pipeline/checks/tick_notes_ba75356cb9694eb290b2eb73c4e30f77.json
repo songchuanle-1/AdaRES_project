@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "读取前台/实验优先规则及AdaRES项目当前AGENTS/goal/SERVERS/execution_mode，实际CODEX_THREAD_ID匹配owner，Pipeline-AdaRES_project保持Disabled；canonical begin获得design快照，running1/waiting0/ready0，无新终态或连接/部署问题。前0b轮收据已核FINALIZED/PASS/context_committed=true/lease_release=released。",
+    "上海2026-10-27 06:45:40至06:45:45核实Y63在server-1 GPU0同PID3071037，第7/30轮4526至4535/4686步增长。精确cwd/config、六模型源码、原生YAML路径适配、marker82f及GPU0独占compute均通过；单次GPU36%、22754MiB、65°C、350W。观察证据pipeline/checks/y63_server1_progress_ba75356cb9694eb290b2eb73c4e30f77.json。",
+    "使用canonical gpu_occupation.py生成当前token/snapshot绑定的两服原始hostname/GPU/compute证据：server-1 GPU0仍为Y63 PID3071037独占；server-2 GPU0仍外来PID13813、100%/24138MiB。无授权空槽；另次只读观测server-2 GPU0上限280W、87°C。保留Y57暂停与外来任务，未使用GPU1。",
+    "逐项核对Y64与Y65的既有七文件manifest，共14文件SHA均未变；CPU准备结果保留，未重复CPU测试冒充原生检查。两项真实native YAML/TRAIN至少两步criterion/backward/optimizer尚待空闲授权GPU。Y56/Y58/Y59/Y60/Y61/Y62冻结全量后评同样等待资源。",
+    "本轮无新候选、源码修改、提交、部署、准入或训练启动。已保存本轮实际resource_check/blocked证据并更新七节记忆；当前只有正常训练推进和未变资源阻塞，没有新的研究效果结论或用户待办。"
+  ],
+  "decisions": [
+    "保留已CPU准备的Y64/Y65，当前原生下一步被真实GPU占用阻塞；不为填额度增加重复变体或重跑既有CPU测试，不驱逐Y63或外来作业。",
+    "资源空闲后优先推进Y64再Y65：核验源/数据/原生YAML/版本，执行真实TRAIN至少两步loss/backward/optimizer及分支执行/新参数非零梯度，通过后冻结原全量后评协议并按现有准入/门控派发流程当轮推进。",
+    "继续固定30轮、seed1999、发布SPFormer和原数据协议；不改阈值/温度/loss/特征子集/轮数，不重开禁用路线。Y57/server-2 GPU1保持用户暂停，server-2 GPU0保持280W，禁止server-6、跨项目或改调度。",
+    "按foreground执行report/finish并核验释放。本轮未变且无用户可行动事项，心跳静默；不提前宣称postflight或释放后补写报告。"
+  ]
+}

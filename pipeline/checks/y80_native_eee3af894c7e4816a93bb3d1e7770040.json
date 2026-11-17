@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y80",
+  "token": "eee3af894c7e4816a93bb3d1e7770040",
+  "code_commit": "4e68cd84d56d890222adc2bec8ab59cb0c8715b6",
+  "CPU_version": {
+    "path": "pipeline/checks/y80_cpu_version_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "1e45253fc2a01b1add1235692acad03de8ba9d1e090a4da8f41772506c383635"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y80_cpu_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "747068a9bf8f2f5ab8d6080fdc618326d92494da7b905deeb5597c05faf43acf"
+  },
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040_gpu0_plan.json",
+      "sha256": "3e4535d2374cf253978707089cedcd71629b13a18c2e18f79e23e0420740921c"
+    },
+    "1": {
+      "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040_gpu1_plan.json",
+      "sha256": "024d941c9118e0e62e04dcd4e27754cda753e65f8eb71500342bc9f87eac7cd7"
+    }
+  },
+  "native_body": {
+    "path": "scripts/probe_y80_native_smoke.py",
+    "sha256": "d4405cd8a3c4f93313b82e36ff894f16032be6f688ec66736898a2a801ff94ea"
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040_guards.log",
+    "sha256": "e1f854d86732814fe424ba08ece815013aa7dc5eadd8387324c764ab86c1cbb3"
+  },
+  "guard_tests_passed": 11,
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "same_scientific_body": true,
+  "working_HEAD": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "queue_and_running_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y80_native_plans.py",
+      "sha256": "626cdd4e0cc12b19185518aa6b8b956c04a9786a321fcca7fe3dea39b676e50a"
+    },
+    {
+      "path": "scripts/test_y80_native_smoke_plan.py",
+      "sha256": "d4298c0eb61e117ee17ce0c8d8808b1d5d55f5b16c6efb203732a5ca52f05866"
+    }
+  ]
+}

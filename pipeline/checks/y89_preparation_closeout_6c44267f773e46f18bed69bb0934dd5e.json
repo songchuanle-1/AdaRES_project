@@ -1,0 +1,87 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y89",
+  "token": "6c44267f773e46f18bed69bb0934dd5e",
+  "observed_at": "2026-11-05T23:32:39.637917+00:00",
+  "CPU_result": {
+    "path": "pipeline/analyses/y89_cpu_reference2_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "451be2fafa27e3c52c3d231308d39ec831f4c2307a4d2e5ad48d81dcc9af0dcf"
+  },
+  "CPU_version": {
+    "path": "pipeline/checks/y89_cpu_version_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "a940610d90398b1f877d1439bd0fc4999d1d17d44e48df4e9a605b1cece91f65"
+  },
+  "native_preparation": {
+    "path": "pipeline/checks/y89_native_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "236cd4a058f6722c66d94e3006f134430cd6a3b3d35c32c94f4c22dcde5e56a4"
+  },
+  "observer_reference_repair": {
+    "path": "pipeline/checks/y89_reference_repair_6c44267f773e46f18bed69bb0934dd5e.json",
+    "sha256": "850ae76f479f9167dc942aff857aeb8150e78a68a9c2b8db22e7ee2c78d0a191"
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y89_final_preparation_guards_6c44267f773e46f18bed69bb0934dd5e.log",
+    "sha256": "6bc66c739c7e31fca99e6d74942582bad55a972ec035eb9cb65acbeb67ea8ed3"
+  },
+  "guard_tests_passed": 16,
+  "active": {
+    "AdaRES-Y88": {
+      "server": "server-1",
+      "pid": 3527278,
+      "phase": {
+        "phase": "Train",
+        "epoch": 3,
+        "total": 30,
+        "step": 624,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y88_6c44267f773e46f18bed69bb0934dd5e_latest.json",
+        "sha256": "11780371d62a6393d67a5b204d92134f89b2f48b56e97f91b2b88dcb376d8181"
+      }
+    },
+    "AdaRES-Y87": {
+      "server": "server-2",
+      "pid": 26281,
+      "phase": {
+        "phase": "Train",
+        "epoch": 6,
+        "total": 30,
+        "step": 2519,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y87_6c44267f773e46f18bed69bb0934dd5e_latest.json",
+        "sha256": "36505bd9b4e89ae0a776de5648a61cde20524316baccdbad1e21bf07dfe60eb2"
+      }
+    }
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_6c44267f773e46f18bed69bb0934dd5e.json",
+      "sha256": "d67da784ca0f5ae3ad5bab0f4b25d4e381092a02fb4fd4dcf180af7b09863834"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_6c44267f773e46f18bed69bb0934dd5e.json",
+      "sha256": "686ac1a7833c2e138e742287f4750f2c79f64562bac31842e9f3b4580e693af9"
+    }
+  },
+  "new_candidates": 1,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "native_GPU_executed": false,
+  "formal_frozen_FIRST_updated": false,
+  "original_negative_evidence_preserved": true,
+  "production_HEAD_preserved": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "GPU1_paused": true,
+  "Y57_separately_paused": true,
+  "previous_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_6c44267f773e46f18bed69bb0934dd5e.md",
+    "sha256": "956b4ef62cf8762b437239a4291c1fdc6e542759f1870b5c4fc464b58695b76d"
+  },
+  "helper": {
+    "path": "scripts/record_y89_wait.py",
+    "sha256": "66377b9aadd2ef6a56737b740d64d7a8251f269f097ae1baf6b436f9d0452993"
+  }
+}

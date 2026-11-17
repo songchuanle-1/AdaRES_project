@@ -1,0 +1,25 @@
+{
+  "id": "AdaRES-W2",
+  "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-09-27T03:22:18.028095",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-09-28T10:46:26.460288",
+      "status": "done_complete",
+      "best_miou": "0.5100",
+      "epochs": "30/30"
+    }
+  ],
+  "launched": "2026-09-27T03:22:18",
+  "final_best": "0.5100",
+  "finished_at": "2026-09-28T10:46:26",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

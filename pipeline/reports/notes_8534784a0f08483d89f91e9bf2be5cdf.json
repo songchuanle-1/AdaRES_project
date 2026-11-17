@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "本轮核验实际会话与前台owner一致，后台Pipeline-AdaRES_project为Disabled；begin完成监控、目标检查与既有队列派发检查，waiting为0，无可直接启动的任务。按项目最新临时指令仅使用server-2 GPU0，继续保护Y57暂停及280W。",
+    "上海2026-10-25 00:45:25实核Y61原PID78290及GPU0归属，Train9/30步数650至673/4686递增，温度84至85°C、显存22718MiB、功耗上限280W；采样未见热降频、Xid/fallen-off或尾部错误。证据pipeline/checks/ef_gpu0_runtime_8534784a0f08483d89f91e9bf2be5cdf.json，SHA256 294ca8a885493cb056100d6cf9f873581a9e594ee2e55630a0fd9d535924cfa7。GPU1仍有外部计算，sample_healthy为false不等于Y61进度失败，不据短采样声称硬件根因已解决。",
+    "00:47:28以生命周期入口复核Y56/Y58/Y59/Y60的完整终态及冻结后评文件，真实GPU0仍忙84°C、280W；四项冻结全量后评及成本比较未执行。证据pipeline/checks/gpu0_lifecycle_v3_8534784a0f08483d89f91e9bf2be5cdf.json，SHA256 0b69cca387711aa9bf6ad31a588398c0c536c19ed867b3568f7f18e1ed5da823；已归入相关候选。",
+    "因旧v3选择器不含Y62，本轮保存并实际执行独立检查，00:48:11确认Y62原生计划和冻结程序哈希、当前goal、七文件工作区与60466af提交一致，并绑定本轮实际Y61占卡证据；queue与running文件哈希未变。结果pipeline/checks/y62_preparation_recheck_8534784a0f08483d89f91e9bf2be5cdf.json，SHA256 13eaecf7b81eb4fc4f673ea1bdad31964e1d8e3b9995a27eff3abef8c9b6fb28。tick_attempt为Y62/resource_check/blocked，证据及脚本已归Y62；更新资源重试时间，未执行原生smoke、准入、同步或训练启动。",
+    "在定向排查候选重复时读到F1已有mask-entropy否决及禁止在val扫描entropy变体的明确记录，保留该边界。本轮未新增实验变体、重做前轮CPU检查或提交模型版本。已更新七段紧凑记忆，完整六段报告交由canonical report生成；本报告不预告postflight结果。"
+  ],
+  "decisions": [
+    "维持Y61在GPU0独占训练及280W，Y57继续用户暂停；无新的硬件处置或人工审批事项。begin日志best 0.4753只是训练过程记录，未做冻结后评或晋升。",
+    "优先保留最近可准入Y62的已测版本和原生两步计划；当前占卡是真实资源阻塞。GPU0独占空槽后才运行原生YAML/TRAIN两步loss/backward/path/resource检查，真实PASS后才生成准入收据并尝试既有门控派发。四项完成实验保持各自冻结后评要求，不重训。",
+    "本轮有实际资源及版本检查结果后收尾；不为凑预算重开历史拒绝方向或重复合成测试，不触碰GPU1外部任务、server-6、项目外任务、调度或硬件设置。下轮先查Y61进度与终态；终态需匹配Y61自己的核验入口，不重放Y60 finalizer。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "token": "03d64fcf5ccd4b2e8e0e1bd1d5a43985",
+  "observed_failure": "KeyError: required_gpu in the authored due-record report audit after fresh physical occupation; official report/finish and memory write not reached",
+  "original_helper": {
+    "path": "scripts/finish_y101_complete_y99_tick.py",
+    "sha256": "74f658068652ae893a40d39066b4e5c1b27267435b0d618ff3500effa1d38263"
+  },
+  "legacy_ids": [
+    "AdaRES-Y62",
+    "AdaRES-Y63",
+    "AdaRES-Y64"
+  ],
+  "strict_resolution": "Read GPU0/350W from each unchanged original hashed freeze, require same candidate/server identity and current whitelist [0]. No record, receipt, resource authorization, scientific gate or canonical validator edits.",
+  "freezes": [
+    {
+      "path": "pipeline/checks/AdaRES-Y62_server1_63b27dd8efe04a0bab6dc0291cefdbf0_post_training_freeze.json",
+      "sha256": "fedb7acae79feb82023ef5d65e06184deb0303fbee7ef466c9a7f9519feec734"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y63_server1_63b27dd8efe04a0bab6dc0291cefdbf0_post_training_freeze.json",
+      "sha256": "e0ba0017024d85249ab08003acc9c294c5f04a777a8098d1314335d02ef0a53d"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y64_server1_3cc27c56dedf451bbf778724f18a93e0_post_training_freeze.json",
+      "sha256": "a685d25898ee73f0b93de42f96eea4a5015ae998868342ef370e1559a8132f73"
+    }
+  ],
+  "original_observations": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_03d64fcf5ccd4b2e8e0e1bd1d5a43985.json",
+      "sha256": "82f001239d322ff59dbcc4729bb40069a92824b9ce486f3536ed055300cb8763"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_03d64fcf5ccd4b2e8e0e1bd1d5a43985.json",
+      "sha256": "57601eeaf0e0a7bddceaac7e63c4824c4b0c892828d275b84c3aeb2a83866bc5"
+    }
+  ],
+  "new_observations_use_new_immutable_labels": true,
+  "evidence": [
+    {
+      "path": "scripts/finish_y101_complete_y99_tick_v2.py",
+      "sha256": "eec3dd0cad813843848ab51e669d92085cf555a2fd0b5c9a7b1158915b092dfe"
+    },
+    {
+      "path": "scripts/finish_y101_complete_y99_tick.py",
+      "sha256": "74f658068652ae893a40d39066b4e5c1b27267435b0d618ff3500effa1d38263"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y62_server1_63b27dd8efe04a0bab6dc0291cefdbf0_post_training_freeze.json",
+      "sha256": "fedb7acae79feb82023ef5d65e06184deb0303fbee7ef466c9a7f9519feec734"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y63_server1_63b27dd8efe04a0bab6dc0291cefdbf0_post_training_freeze.json",
+      "sha256": "e0ba0017024d85249ab08003acc9c294c5f04a777a8098d1314335d02ef0a53d"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y64_server1_3cc27c56dedf451bbf778724f18a93e0_post_training_freeze.json",
+      "sha256": "a685d25898ee73f0b93de42f96eea4a5015ae998868342ef370e1559a8132f73"
+    }
+  ]
+}

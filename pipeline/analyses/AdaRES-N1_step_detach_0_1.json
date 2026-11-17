@@ -1,0 +1,20 @@
+{
+  "model": "adares_b4_query_competition",
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_210214/best.pth",
+  "detach_mask_evidence": true,
+  "indices": [
+    0,
+    1
+  ],
+  "total_loss": 1.9053410291671753,
+  "indicator_loss": 0.1595054417848587,
+  "mask_loss": 0.08509480953216553,
+  "indicator_gradient_norm": 0.0,
+  "mask_gradient_norm": 0.7616374492645264,
+  "gradient_cosine": null,
+  "opposed_element_fraction": 0.0,
+  "peak_reserved_gib": 4.5078125,
+  "one_step_mask_before": 0.08509480953216553,
+  "one_step_mask_after": 0.08518246561288834,
+  "one_step_mask_delta": 8.765608072280884e-05
+}

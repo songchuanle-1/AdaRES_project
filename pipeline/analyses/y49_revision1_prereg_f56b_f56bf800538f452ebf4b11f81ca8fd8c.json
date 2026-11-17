@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "revision": {
+    "revision": 1,
+    "failure_scope": "implementation",
+    "reason": "Actual warmed TRAIN8 native loss/backward costs .396-11.854s candidate versus .213-.304s disabled parent; repeated sparse inverse-diagonal solves are a concrete implementation cost risk.",
+    "change": "For undirected unweighted forest induced graphs compute the SAME inverse diagonal by exact leaf Schur elimination and reverse messages. Any cyclic graph retains original sparse-LU block64 solver. No graph/mask/mass/head/target/scale change.",
+    "prediction": "All32 frozen TRAIN expressions preserve descriptor values within the EXISTING8float64eps*nodes bound and component partitions exactly; first4 joint permutation and ring4/8 fallback controls pass. All4 proxy and then native loss gradients stay finite/nonzero. Measure paired CPU/native costs without fitting a success threshold.",
+    "preregistered_at": "2026-10-16T12:36:38.437582+08:00",
+    "failure_evidence": [
+      {
+        "path": "pipeline/analyses/y49_native_12be_12be943f16874034808ff67e741653ad.json",
+        "sha256": "adb47f37b38ff9d343b8f8145f0268e6cdcad3a5539982efbebc0d16387f5cbc"
+      }
+    ],
+    "result": "pending",
+    "evidence": []
+  },
+  "original_program": {
+    "path": "pipeline/analyses/y49_instrumentation_program_c3e5_c3e5627500e14e3fa88075dc5544095e.py",
+    "sha256": "5d762fe9267264a4d8889f4787957c635fab3996ff897cd4fc3329b590db7d54"
+  },
+  "CPU_program": {
+    "path": "scripts/probe_y49_forest_revision_f56b.py",
+    "sha256": "0d3c8a0e0b1c8519be2a09184c712c2b343f5782b53b96a48cdbf5faed171687"
+  },
+  "native_program": {
+    "path": "pipeline/analyses/y49_revision1_native_program_f56b_f56bf800538f452ebf4b11f81ca8fd8c.py",
+    "sha256": "8ae82051f11ab3956d2fb355fe3ffd12a4640fd750f94df41fa0aeb251cd665f"
+  },
+  "unchanged_native_diagnosis_limit": "Zero native equal-component-mass/different-global-value witnesses; revision does not repair or erase this limitation.",
+  "no_training_or_admission": true
+}

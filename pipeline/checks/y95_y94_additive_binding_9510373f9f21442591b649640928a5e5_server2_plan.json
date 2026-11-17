@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y95",
+  "config": "configs_song/model_paper5/adares_y95_query_set_mean_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "additive_parent": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "retained_branch": "refs/heads/adares-y95-query-set-mean-on-y94",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y95_bound_native_y94.py",
+    "sha256": "62d0783cdc88e8f665cfc0764fa1d06ac58b13fca8f361967c24be1cf36375a9"
+  },
+  "planned_command": "python -B scripts/run_y95_bound_native_y94.py --server server-2 --token <CURRENT>",
+  "required_resource": "At HEADY94 only after exact matching AdaRES-Y93 natural fixed30/full finite original checkpoint archive and fresh exclusive authorized idle/unreserved GPU0. No GPU1, power or runtime substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite task losses/backward/updates; six original self/language tensors, full all-query means, float64 projection references, same original norm and FFN consumers, hard coarse gates, shared heads, finite new/original/both-input gradients, zero then learned skip, native modes and memory. CPU is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y95_y94_additive_binding_9510373f9f21442591b649640928a5e5_server2_program.py",
+    "sha256": "37fc28fab89729dea70d5104090d4ed847a1d20bc125cf3a42e1ae1b7c46f797"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y95_native_a7f1a4ec5ffc4c3a9837805bc45ce950_server2_plan.json",
+    "sha256": "30054d8b7b721dd2802d8d20ee484097c3999813a233446e1071d880c2cc7b67"
+  }
+}

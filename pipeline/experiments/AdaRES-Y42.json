@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-Y42",
+  "config": "configs_song/model_paper5/adares_y42_point_covariance_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-11T22:32:34.168711",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-13T05:50:05.916241",
+      "status": "done_complete",
+      "best_miou": "0.5050",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 91215,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y42_point_covariance_res_20261011_223156.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-11T22:32:34",
+  "final_best": "0.5050",
+  "finished_at": "2026-10-13T05:50:05",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

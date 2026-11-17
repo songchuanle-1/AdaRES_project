@@ -1,0 +1,317 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 2,
+  "observed_at": "2026-10-20T23:04:26.675392+08:00",
+  "tested_bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+  },
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/dec.py",
+      "sha256": "75542f5fafc3ff10b966ccedea54c8b4b9d39c520b3801cb80fa52b3af73d6eb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_margin_timing_v2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5a4c890fa2ce92d0925cda3ac0081e49d32aecf1f9e785173a2d46c365f56f38"
+        },
+        {
+          "path": "pipeline/analyses/y56_actual_transfer_6debf88fed634a13b772f27bdc244bbd.json",
+          "sha256": "14fb074170fd9720333ea6ee6277089a6c5d9be32aef023d91eacb8662611746"
+        }
+      ],
+      "scope": "Real exact-copy TRAIN mechanism; conditioned discovery, not population harm."
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_cpu_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "070a8aba1e7603bc43645c2cc4340f34d0a2522860426aebfc86dcf2c33affd1"
+        },
+        {
+          "path": "pipeline/analyses/y56_native_rev2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "cedae80d9c51f695e2c9abaa73311bfdd53d8f83ff784205867c43d742954cda"
+        },
+        {
+          "path": "pipeline/analyses/y56_gradient_properties_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "45da3d3b57282d9297d9383c520e84c46b7e51d04f1318a36ab974455ed78fe2"
+        }
+      ],
+      "scope": "Focal-copy/unique-set invariance; raw equality negatives; no-copy W2 bitwise equality;18edge gradient properties."
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_native_rev2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "cedae80d9c51f695e2c9abaa73311bfdd53d8f83ff784205867c43d742954cda"
+        },
+        {
+          "path": "pipeline/analyses/y56_margin_timing_v2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5a4c890fa2ce92d0925cda3ac0081e49d32aecf1f9e785173a2d46c365f56f38"
+        }
+      ],
+      "scope": "Actual released-init loss/all7sites/every indicator tensor; natural initial copy affects confidence and task gradient."
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_resources_rev2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5763a349b3bcfce72f8ad11392189f83458dcd7457222b05afac233c83db13f7"
+        },
+        {
+          "path": "pipeline/analyses/y56_margin_timing_v2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5a4c890fa2ce92d0925cda3ac0081e49d32aecf1f9e785173a2d46c365f56f38"
+        }
+      ],
+      "scope": "Bounded pre-training feasibility/compatible cost, not proven post-training global Pareto. One conditioned duplicate scene remains slower; no cost or efficacy threshold relaxed."
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_structure_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "da22040d73bdeea498ef1c6a63b7dcc16d071e94623312545ce3608af0b7b625"
+        },
+        {
+          "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+        }
+      ],
+      "scope": "Physical six-file package, unique YAML, no cross-variant imports; all non-indicator AST unchanged."
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_structure_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "da22040d73bdeea498ef1c6a63b7dcc16d071e94623312545ce3608af0b7b625"
+        },
+        {
+          "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y56_dd8e.md",
+          "sha256": "67a3c59b52b710a9cbee0dbfade485bb7fe486088efce8cd88c17b636ce76501"
+        }
+      ],
+      "scope": "Same SPFormer/30epochs/1999/Q128/loss/optimizer/singleargmax; server2GPU0/1 only. No commit/queue/launch."
+    }
+  },
+  "structural": {
+    "path": "pipeline/analyses/y56_structure_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "da22040d73bdeea498ef1c6a63b7dcc16d071e94623312545ce3608af0b7b625"
+  },
+  "formal_margin_readout": {
+    "regime": "released_SPFormer_formal_init",
+    "pair": 4,
+    "loss": 7.305423736572266,
+    "layers": [
+      {
+        "layer": 0,
+        "maximum_logit_delta": 0.0005745962262153625,
+        "maximum_class_margin_delta": 0.0008734315633773804,
+        "maximum_confidence_delta": 0.00021830201148986816,
+        "native_task_first_order_delta": -6.355682558023545e-08,
+        "native_loss_logit_gradient_max": 0.00018012916552834213,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      },
+      {
+        "layer": 1,
+        "maximum_logit_delta": 0.0,
+        "maximum_class_margin_delta": 0.0,
+        "maximum_confidence_delta": 0.0,
+        "native_task_first_order_delta": 0.0,
+        "native_loss_logit_gradient_max": 0.00033800958772189915,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      },
+      {
+        "layer": 2,
+        "maximum_logit_delta": 0.0,
+        "maximum_class_margin_delta": 0.0,
+        "maximum_confidence_delta": 0.0,
+        "native_task_first_order_delta": 0.0,
+        "native_loss_logit_gradient_max": 0.0005130575154908001,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      },
+      {
+        "layer": 3,
+        "maximum_logit_delta": 0.0,
+        "maximum_class_margin_delta": 0.0,
+        "maximum_confidence_delta": 0.0,
+        "native_task_first_order_delta": 0.0,
+        "native_loss_logit_gradient_max": 0.0006728694424964488,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      },
+      {
+        "layer": 4,
+        "maximum_logit_delta": 0.0,
+        "maximum_class_margin_delta": 0.0,
+        "maximum_confidence_delta": 0.0,
+        "native_task_first_order_delta": 0.0,
+        "native_loss_logit_gradient_max": 0.0008255832362920046,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      },
+      {
+        "layer": 5,
+        "maximum_logit_delta": 0.0,
+        "maximum_class_margin_delta": 0.0,
+        "maximum_confidence_delta": 0.0,
+        "native_task_first_order_delta": 0.0,
+        "native_loss_logit_gradient_max": 0.0010259414557367563,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      },
+      {
+        "layer": 6,
+        "maximum_logit_delta": 0.0,
+        "maximum_class_margin_delta": 0.0,
+        "maximum_confidence_delta": 0.0,
+        "native_task_first_order_delta": 0.0,
+        "native_loss_logit_gradient_max": 0.001156918820925057,
+        "logit_arithmetic_bound": 1.52587890625e-05,
+        "probability_arithmetic_bound": 1.52587890625e-05,
+        "repeat_error": 0
+      }
+    ]
+  },
+  "order_balanced_timing": [
+    {
+      "scene": "scene0000_00",
+      "parent": 0.07788196099863853,
+      "candidate": 0.07926601000144728,
+      "ratio": 1.0177711113724133
+    },
+    {
+      "scene": "scene0001_00",
+      "parent": 0.07248168899968732,
+      "candidate": 0.073711450000701,
+      "ratio": 1.016966505858038
+    },
+    {
+      "scene": "scene0002_00",
+      "parent": 0.10610449799787602,
+      "candidate": 0.10848052800065489,
+      "ratio": 1.0223933013926179
+    },
+    {
+      "scene": "scene0003_00",
+      "parent": 0.06757920699965325,
+      "candidate": 0.06904712799951085,
+      "ratio": 1.0217214889761155
+    },
+    {
+      "scene": "scene0004_00",
+      "parent": 0.12058449199685128,
+      "candidate": 0.12220914200224797,
+      "ratio": 1.0134731255942855
+    },
+    {
+      "scene": "scene0005_00",
+      "parent": 0.07121512799858465,
+      "candidate": 0.07256971900278586,
+      "ratio": 1.0190211131015328
+    },
+    {
+      "scene": "scene0006_00",
+      "parent": 0.10054869600207894,
+      "candidate": 0.1027497270006279,
+      "ratio": 1.021890199336881
+    },
+    {
+      "scene": "scene0007_00",
+      "parent": 0.06678075799936778,
+      "candidate": 0.06823835800241795,
+      "ratio": 1.0218266465778056
+    },
+    {
+      "scene": "scene0028_00",
+      "parent": 0.11134177900021314,
+      "candidate": 0.11284706000151346,
+      "ratio": 1.0135194624588981
+    },
+    {
+      "scene": "scene0029_00",
+      "parent": 0.06269892700220225,
+      "candidate": 0.08921802399709122,
+      "ratio": 1.4229593433705414
+    }
+  ],
+  "median_paired_latency_ratio": 1.020371301038824,
+  "maximum_paired_latency_ratio": 1.4229593433705414,
+  "stress_median_seconds": {
+    "parent": 0.43201433300055214,
+    "candidate": 0.4294327429997793
+  },
+  "largest_stress_peak_reserved_bytes": 7293894656,
+  "native_audit_peak_reserved_bytes": 7423918080,
+  "frozen_post_training_evaluation": {
+    "path": "pipeline/designs/exp_design_Y56_dd8e.md",
+    "sha256": "67a3c59b52b710a9cbee0dbfade485bb7fe486088efce8cd88c17b636ce76501"
+  },
+  "local_HEAD": "8943c8c460501b200a8dea958964579ffea65f76",
+  "existing_commit_scopes": [
+    "AdaRES-Y50",
+    "AdaRES-Y52",
+    "AdaRES-Y54"
+  ],
+  "missing_operation": "Only local git add/commit of the exact seven files in files; no push or unrelated changes.",
+  "scientific_prechecks_ready": true,
+  "admission_receipt_issued": false,
+  "local_commit_done": false,
+  "training_started": false,
+  "optimizer_steps": 0,
+  "trained_efficacy": "unknown",
+  "novelty": "unverified",
+  "limitations": [
+    "Natural copies found only in one of40TRAIN scenes, initial layer; final selector changes not observed.",
+    "Formal native total loss delta below reported float32 loss resolution; nonzero directional readout is not benefit.",
+    "Single conditioned duplicate scene has higher latency; fixed10TRAIN timing is not a worst-case bound.",
+    "Default two implementation revisions consumed; original overcost and failed drivers preserved."
+  ]
+}

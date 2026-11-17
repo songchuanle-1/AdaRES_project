@@ -1,0 +1,141 @@
+{
+  "complete": true,
+  "created_at_local": "2026-10-16T13:20:17.273223+08:00",
+  "token": "f56bf800538f452ebf4b11f81ca8fd8c",
+  "seconds_remaining": 139.97711,
+  "Y46": {
+    "measured": {
+      "inference": {
+        "parent": {
+          "median_seconds": 0.07911107999098022,
+          "largest_pair_median_seconds": 0.18842103952192701
+        },
+        "candidate": {
+          "median_seconds": 1.7043086199992104,
+          "largest_pair_median_seconds": 13.71756095350429
+        }
+      },
+      "stress": {
+        "parent": {
+          "median_seconds": 0.9588466470013373,
+          "peak_reserved_gib": 14.109375
+        },
+        "candidate": {
+          "median_seconds": 17.642870084993774,
+          "peak_reserved_gib": 17.8671875
+        }
+      }
+    },
+    "CPU_controls": true,
+    "native_cached_controls": 32,
+    "native_exact_repeat": true,
+    "actual_tools_train_steps": 2,
+    "exact_model_optimizer_scheduler_restore": true,
+    "scope": "Current realization only; global-component mechanism not universally falsified.",
+    "resource_decision": "Reject this two-revision realization for the measured severe time cost against the project lightweight Pareto objective. No new numerical cutoff or efficacy threshold fitted; memory feasibility alone is not Pareto approval.",
+    "evidence": [
+      {
+        "path": "pipeline/analyses/y46_revision2_compat_cpu_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "dd489ee69897f96e5dd2bcc89aa5982149c223954737bc8e50796d78fff04c5e"
+      },
+      {
+        "path": "pipeline/analyses/y46_revision2_compat_native_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "0b3d8b592aca57584e301aef8c1c3c215512c339ad279c851c34a599b2e65e5e"
+      },
+      {
+        "path": "pipeline/analyses/y46_revision2_compat_controls_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "aeb8cccd525b5a4162ada84f4f14aac86360e9a178af20032df43b95e6541f07"
+      },
+      {
+        "path": "pipeline/analyses/y46_revision2_stress_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "c335c6902dddd48ef3b7ea40e59a6036186a92ee8bc383f81844e24fe431ced2"
+      }
+    ]
+  },
+  "Y49": {
+    "measured": {
+      "inference": {
+        "parent": {
+          "median_seconds": 0.07557644050393719,
+          "largest_pair_median_seconds": 0.19078167849511374
+        },
+        "candidate": {
+          "median_seconds": 0.6757172209909186,
+          "largest_pair_median_seconds": 5.310947792517254
+        }
+      },
+      "stress": {
+        "parent": {
+          "median_seconds": 0.9698239949939307,
+          "peak_reserved_gib": 14.080078125
+        },
+        "candidate": {
+          "median_seconds": 6.592758352984674,
+          "peak_reserved_gib": 14.08203125
+        }
+      }
+    },
+    "production_CPU_controls": true,
+    "actual_tools_train_steps": 2,
+    "exact_model_optimizer_scheduler_restore": true,
+    "diagnosis": "INCONCLUSIVE: zero observed equal-component-partition/different-global-value witnesses in the original TRAIN8/32 expressions; constructed degree-confounded and abstract controls do not establish native task deficiency.",
+    "next_test": "Prediction-blind extension of the SAME W2 native capture to the first24 previously unseen TRAIN scene IDs beyond the original first8, first4 expressions each, seed1999; preserve original zero count and frozen8eps*nodes definition. Check actual source component-mass and global-descriptor witnesses without validation selection. Preregister exact cohort/program before capture.",
+    "evidence": [
+      {
+        "path": "pipeline/analyses/y49_production_cpu_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "5bdfb509c2007783938393afc940e54bab8466506d0811642ffd77b2e532c518"
+      },
+      {
+        "path": "pipeline/analyses/y49_production_native_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "46e9b18085c9636bb70689c396652f8acdc77760938db578ebcf77ab1d5676f4"
+      },
+      {
+        "path": "pipeline/analyses/y49_production_inference_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "f6a57e6dc32bfd2c811920b11930ee52c4c8c5eec9d3784ac9afe11ec32ecafd"
+      },
+      {
+        "path": "pipeline/analyses/y49_production_stress_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+        "sha256": "4bc4124101345b89ed709c983f2566b0cfe44b42649ddf827a53b7cc9f2a3bef"
+      }
+    ]
+  },
+  "resources": {
+    "complete": true,
+    "project": "AdaRES_project",
+    "rows": [
+      {
+        "gpu": 0,
+        "memory_MiB": 24186,
+        "total_MiB": 24576,
+        "utilization": 100,
+        "pids": [
+          19723
+        ]
+      },
+      {
+        "gpu": 1,
+        "memory_MiB": 1,
+        "total_MiB": 24576,
+        "utilization": 0,
+        "pids": []
+      }
+    ],
+    "no_GPU_allocation": true,
+    "no_process_interference": true,
+    "server_clock_not_used": true,
+    "diagnostic_GPU1_lease_released": true
+  },
+  "resource_evidence": {
+    "path": "pipeline/analyses/tick_resources_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+    "sha256": "c0e086009bca06b994a0625cbb72598d86a20e0e92d10136036c6ee25ee19354"
+  },
+  "no_admissions": true,
+  "new_training": 0,
+  "new_candidate_IDs": 0,
+  "deadline_unchanged": true,
+  "limitations": [
+    "All native updates/stress were temporary diagnostics, not full training.",
+    "No trained efficacy for Y46/Y49; no novelty, necessity, no-harm or Phase2 approval.",
+    "Y48 realized subgroup harm rejected; no validation retuning or restarts."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "token": "bd93870b90dd48b7b5366e46173cc01e",
+  "id": "AdaRES-Y80",
+  "observation": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "active_plan": {
+    "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040_gpu0_plan.json",
+    "sha256": "3e4535d2374cf253978707089cedcd71629b13a18c2e18f79e23e0420740921c"
+  },
+  "Y77_done_complete": true,
+  "terminal": {
+    "path": "pipeline/checks/y77_server2_fixed30_bd93870b90dd48b7b5366e46173cc01e.json",
+    "sha256": "fc13e7e847de5946762f7afe3df68c9cf33acf6dd2e651308633f0e0edbb6dca"
+  },
+  "unreserved": true,
+  "native_executed": false,
+  "helper": {
+    "path": "scripts/advance_y80.py",
+    "sha256": "3bf90dada7c1cd0693eb74414951ca71aeaaeade53c02283a99d50ba381ebf1e"
+  }
+}

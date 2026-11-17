@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "kind": "independent_read_only_training_progress_verification",
+  "token": "b5a843848cd34b83bf362acf98c88634",
+  "observed_client_shanghai": "2026-10-19T14:01:33.465253+08:00",
+  "source_marker": "8943c8c460501b200a8dea958964579ffea65f76",
+  "Y52": {
+    "id": "AdaRES-Y52",
+    "pid": 15934,
+    "gpu_index": "0",
+    "gpu_uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+    "exact_process_config_cwd_verified": true,
+    "native_steps": [[1, 223], [1, 224], [1, 224], [1, 225], [1, 225], [1, 226], [1, 226], [1, 227], [1, 227], [1, 228]],
+    "latest_epoch": 1,
+    "latest_step": 228,
+    "fixed_total_epochs": 30,
+    "launch_verified": true,
+    "no_observed_crash_marker_in_bounded_tail": true,
+    "device_utilization_percent": 52,
+    "current_device_memory_mib": 16890,
+    "current_compute_process_memory_mib": 16882,
+    "best_trained_miou": null
+  },
+  "Y54": {"id": "AdaRES-Y54", "status": "waiting", "process_live": false},
+  "visible_gpu_count": 1,
+  "limitations": [
+    "The device inventory is current observation, not a diagnosis of missing hardware or a permanent reservation.",
+    "Memory readings are current occupation, not peak model memory or isolated algorithm cost.",
+    "Native training progress establishes execution, not a trained accuracy gain.",
+    "Only a bounded log tail was inspected; no claim of whole-log crash absence.",
+    "This separate probe did not start, restart or mutate any remote process."
+  ]
+}

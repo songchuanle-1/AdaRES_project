@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "上海18:45:21实核原Y59 PID28712/命令/cwd/starttime/GPU0归属一致，Train29/30 step646至668；后续资源尾部586至684增长，未见尾部错误。前二十八轮训练日志best .4956555963、最新完整验证.4829963148，连续十五轮未刷新。第29轮仍在训练，不宣称完成；日志指标不是冻结全量评估或科学结论。",
+    "GPU0保持280W，observer两次85至84C，后续资源采样86C/22720MiB，热降频Active；kernel读取成功未见新Xid/fallen-off。GPU1仍有外部负载，未干预，硬件根因未知。sample_healthy=false不等于原生训练停滞。",
+    "实际执行recheck_gpu0_lifecycle_v2.py，Y60七文件/原生YAML/冻结程序/current goal/commit及Y61七文件/原CPU payload/decoder goal一致。Y56/Y58固定30完成后的冻结评估引用保留，不重复归档或重训。唯一授权GPU0忙、空槽为空，Y60/Y61原生两步GPU检查未执行。",
+    "本轮无新候选、模型/YAML修改、Git提交/同步、CPU重测、原生GPU smoke、准入/排队或训练启动。Y57继续用户暂停，不恢复、不迁移、不重复问授权；tick_attempt=Y60/resource_check/blocked，引用同时归入候选。"
+  ],
+  "decisions": [
+    "保护Y59 fixed30/seed1999原训练及280W限制，不因十五轮未刷新更改固定30协议，不按验证轨迹调参或选机制；热降频仍记录为硬件风险，不擅改功耗/风扇、重启或驱逐外部任务。",
+    "Y59目前未完成，不抢占或等待整段训练来收尾。后续若进程消失，先核原生Val30/最后保存公告、CPU完整读取并核验last epoch30/model/optimizer/scheduler及best哈希，按canonical终态归档，不能用PID消失直接当完成或伪造deathwatch次数；不要重放Y58专用finalizer。",
+    "实际GPU0独占空槽出现后优先已提交Y60按原native_smoke_plan完成真实YAML/TRAIN至少两步有限loss/backward、路径及资源检查，通过即当轮准入/尝试既有门控派发；保留Y56/Y58与后续Y59冻结全量后评和成本比较，再推进Y61版本/原生检查。现成Y60/Y61实现保留，不为配额新增候选。",
+    "无新科学结论或授权需求。继续用v2 observer和生命周期资源入口，不改快照/预算/数据协议/禁区/调度；canonical report/finish后核验context提交和锁释放，当前不预称通过。"
+  ]
+}

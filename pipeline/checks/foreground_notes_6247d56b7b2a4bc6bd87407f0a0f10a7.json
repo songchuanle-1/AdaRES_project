@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "运行：AdaRES-Y80 Train29/30 step967/4686；AdaRES-Y81 Train25/30 step127/4686；AdaRES-Y82 Train5/30 step2189/4686，source/YAML/receipt/marker/compute归属/原功耗及native递增核验通过。",
+    "原Y79归档证据保留，不重放终态。",
+    "Y83/Y84原准备完整性与fresh三卡busy+reserved复核，不重放CPU/prepare。",
+    "无正式FIRST/cost更新；记忆和精确前版备份保存。",
+    "新准备：Y80原server-2 GPU0/280W自然fixed30终态契约已准备；25项生命周期守卫通过，实核原source/YAML/receipt/freeze/原目录20261102_175917和Y81/Y82精确追加版本链。未加载checkpoint、未停止或归档训练；仍须自然退出、完整Train-Val1..30和稳定finite last30/best/model/optimizer/scheduler实核后才允许显式GPU0归档。"
+  ],
+  "decisions": [
+    "三卡均原独立实验，无额外可用授权空槽；Y83优先Y84原native检查，实测PASS后才准入/派发并验证递增。",
+    "保留原完整9508表达/141场景及候选+Y36/W2/B1各两次/FIRST/bootstrap10000-seed1999/TRAIN cuts1487-3325/原subgroup harm与同卡cost，训练best不替代FIRST。",
+    "Y57单独暂停；原科学goal/数据/私有运行环境/mapping/禁用/350W-280W-390W/调度不变，无新增用户操作。",
+    "Y80自然完成后用scripts/finalize_y80_fixed30.py及其绑定计划；保留其他运行和Y57暂停。Y83/Y84仍无server-1原生计划，不得只改server字段启动。"
+  ]
+}

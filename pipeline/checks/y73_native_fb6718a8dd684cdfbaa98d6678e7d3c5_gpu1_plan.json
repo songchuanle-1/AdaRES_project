@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y73",
+  "config": "configs_song/model_paper5/adares_y73_initial_query_anchor_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 1,
+  "runtime_power_limit_watts": 390.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "working_HEAD_preserved": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "retained_branch": "refs/heads/adares-y73-initial-query-anchor",
+  "required_resource": "Fresh exclusive idle/unreserved authorized server-2 GPU1; canonical terminal archive/no compute PID/exact host/private runtime/original data/current power. Preserve all live original tasks, Y57 pause and nearer Y71/Y72 native work.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y73_gpu1_smoke pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 1",
+  "checks": "Original native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; six current qqa_ffn identities and same undetached initial query, six actual prediction consumers/static mask features/padding identities, seven shared indicators, first/last expressions/query0/127/channel0/127/255 independent formula, zero first-step/next-step response, finite new gradient/actual update and current/initial query gradients, native modes/peak memory.",
+  "guard_tests_passed": 11,
+  "Python38_compile": true,
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "program": {
+    "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_program.py",
+    "sha256": "61e417a581773313d903140d07a1b883d9224c4dac403664afc4066d3577c325"
+  }
+}

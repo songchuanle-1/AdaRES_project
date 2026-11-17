@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y65",
+  "config": "configs_song/model_paper5/adares_y65_confidence_feedback_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "9706a8c36bead4459668ab66a3d1abc39344ef8b",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "required_resource": "Fresh exclusive authorized idle server-2 GPU0, exact hostname/current lease, no compute PID, memory<1024MiB/util<10, keep approved 280W. Preserve running Y63 and paused Y57.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y65_smoke pipeline/checks/y65_native_67b0bd14ecf4457ea74a11ce44533fe9_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; seven shared indicators and six feedback calls each step; independent binary-logistic feedback formula; actual feedback tensor consumed by subsequent coarse attention; zero first-step anchor and nonzero second-step response; finite nonzero feedback direction gradients, input gradients, native layer modes and peak memory.",
+  "Python38_compile": true,
+  "CPU_guard_tests_passed": 8,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y65_native_67b0bd14ecf4457ea74a11ce44533fe9_program.py",
+    "sha256": "3acc60e38fc8cd82d4e0d905e680c41c534eef9a45d52f6494db057cbced68cc"
+  }
+}

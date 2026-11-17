@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "aa5e111ee522442cbaceab76bb155db3",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-18T17:54:37.084074+00:00",
+  "recorded_at": "2026-10-18T18:03:54.513661+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: bound snapshot has due=0, reserve=2/2, reserve_budget=0 and required bootstrap; known unchanged closed-stage cooldown defect prevents honest no-progress closure. No candidate was advanced, no finish/postflight rerun, no new authorization or scientific result. Preserved six-section audit, seven-section memory and original candidate evidence; do not fabricate candidates, extend deadlines or rewrite history.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 8,
+    "input_tokens": 730499,
+    "cached_input_tokens": 700416,
+    "output_tokens": 8265,
+    "reasoning_output_tokens": 1413,
+    "total_tokens": 738764,
+    "uncached_input_tokens": 30083,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

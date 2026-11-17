@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "b8a83c307bf14e8e90795586f3ac165b",
+  "snapshot_generated_at": "2026-11-10T14:55:30.288265+00:00",
+  "snapshot_sha256": "ad756dc0c07862d7937856eb4d36c59faeeb5c4e55a21960113dc80b240a91f9",
+  "servers_sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74",
+  "observed_at": "2026-11-10T15:15:03.373616+00:00",
+  "candidate_ids": [
+    "AdaRES-Y62",
+    "AdaRES-Y63",
+    "AdaRES-Y64",
+    "AdaRES-Y66",
+    "AdaRES-Y69",
+    "AdaRES-Y72",
+    "AdaRES-Y76",
+    "AdaRES-Y79",
+    "AdaRES-Y82",
+    "AdaRES-Y84",
+    "AdaRES-Y88",
+    "AdaRES-Y90",
+    "AdaRES-Y92",
+    "AdaRES-Y94"
+  ],
+  "scope": {
+    "server": "server-1",
+    "host": "192.168.1.175",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl02-MS-7B73\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 48, 22742, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 3893460\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token b8a83c307bf14e8e90795586f3ac165b --server server-1 --label release",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-1_release_b8a83c307bf14e8e90795586f3ac165b.log",
+    "sha256": "708c2aebd20c68fb01d6a2120b73cd58475ca38fad7f3a1b5bb35ba032a73282"
+  }
+}

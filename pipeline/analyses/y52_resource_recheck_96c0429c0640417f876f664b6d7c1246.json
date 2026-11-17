@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "token": "96c0429c0640417f876f664b6d7c1246",
+  "observed_start_local": "2026-10-16T19:56:21.721972+08:00",
+  "observed_end_local": "2026-10-16T19:56:26.565402+08:00",
+  "snapshot_at": "2026-10-16T11:48:52.517621+00:00",
+  "execution_status": "INCOMPLETE: canonical abort and independent release check pending",
+  "science": "Y50 live training; SAME frozen Y52 remains exclusive-GPU blocked",
+  "resource": {
+    "path": "pipeline/analyses/y52_due_resources_96c0_96c0429c0640417f876f664b6d7c1246.json",
+    "sha256": "db50148d5a8025e85ba4af4d0f5a6bfb193cab5a1ccb99a6066828cc98597158"
+  },
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "checker_unchanged": "39ee52f17e3afdc15d0fde71bbf78e74bf58c218155709a25861044461cea0d2",
+  "known_queue_opening_rejecting_predicate": true,
+  "exact_prior_failed_check": "CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening",
+  "finish_invoked": false,
+  "previous_retry_after": "2026-10-16T19:55:38.853756+08:00",
+  "next_retry_after": "2026-10-16T20:56:26.565402+08:00",
+  "native_forward_or_backward": false,
+  "new_candidates": 0,
+  "new_CPU_integration_tests": 0,
+  "model_changes": 0,
+  "admissions": 0,
+  "launches": 0,
+  "limitation": "Resource recheck only; previous CPU controls not repeated or counted as new science; native TRAIN/backward/resource/restore gates remain unrun."
+}

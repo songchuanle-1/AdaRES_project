@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "tick_token": "142d48a9dfcb44c9843f803e56fd682d",
+  "snapshot_at": "2026-10-31T00:51:08.081643+00:00",
+  "observed_at": "2026-10-31T09:02:33.421778+08:00",
+  "id": "AdaRES-Y72",
+  "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "inactive_server1_plan": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_plan.json",
+    "sha256": "abff97619f2b925d39761b26b7bb5a5cec24d74190cc77df90a93a4041d6f75e"
+  },
+  "CPU_runtime_result": {
+    "path": "pipeline/analyses/y72_server1_CPU_runtime_142d48a9dfcb44c9843f803e56fd682d.json",
+    "sha256": "e3cb0db304615c8b4fd4d1fa19e992ad2816a68a2080bc888d53b30381179fe7"
+  },
+  "runtime_verification": {
+    "path": "pipeline/checks/y72_server1_runtime_verification_142d48a9dfcb44c9843f803e56fd682d.json",
+    "sha256": "70e0037ced011402a5b7d57c3e6fd0ca76d3e77ce84f4dda93f7e739592c71cc"
+  },
+  "alternative_binding": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_binding.json",
+    "sha256": "354e6db6d4df20156c39eedbe0d611c43bc26d34683cf3864b44a164e661964d"
+  },
+  "baseline_YAML_comparison": {
+    "path": "pipeline/checks/y72_server1_baseline_yaml_142d48a9dfcb44c9843f803e56fd682d.json",
+    "sha256": "aa465d03936b9f60a4b9fce0dea29bbadf990c170a514af57edd61eefe678dc6"
+  },
+  "guard_tests_passed": 8,
+  "original_server2_active_plan": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_plan.json",
+    "sha256": "a3a875a2992f0a43ef4eb50849f9312115959a71134456b2dc64d0535f0efa1c"
+  },
+  "server1_activated": false,
+  "native_GPU_executed": false,
+  "production_sync": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_candidate_ids": [],
+  "actual_original_training_progress": [
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y71_142d48a9dfcb44c9843f803e56fd682d_progress.json",
+      "sha256": "dec91121eb5e90ceb94149b048b7ed6259b33170a9ae0f40fdfe40b84a37d064"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y70_142d48a9dfcb44c9843f803e56fd682d_progress.json",
+      "sha256": "4b5f0e55dd7c20cc99dc433dba3296f3b1d02b94d0b5a3cd575473ac3d9c7097"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_142d48a9dfcb44c9843f803e56fd682d.json",
+      "sha256": "c165dbe0a4b1dfac851efd7bf8526f9c228a08e4a8ce33edad96ae5e0e7b0b78"
+    }
+  ],
+  "occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_142d48a9dfcb44c9843f803e56fd682d.json",
+      "sha256": "6de12a3f2a85d20d0528f3f3398f04cebb8c336287f1a24346e7e7b1038b29f6"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_142d48a9dfcb44c9843f803e56fd682d.json",
+      "sha256": "99a19b1907d6501d1838438a34f4b58f74723960c36a1467160aa76a33c245e6"
+    }
+  ],
+  "Y57_paused": true,
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "original_admissions_valid": true,
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_142d48a9dfcb44c9843f803e56fd682d.md",
+    "sha256": "18e06da0e553e719dc7882a6c6d1c44c2428901be5aae6bff55e78e07300652f"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "next_action": "Observe original Y71/Y70 with exact-deployment observer and Y69 with original server1 observer. Preserve all three running jobs and current power. The Y72 server1 alternative is inactive despite successful CPU preflight. Only after full original Y69 fixed30 checkpoint/log/source/receipt checks and canonical archive, fresh idle/no reservation/no compute GPU0 at350W permits guarded activate then real native two-step. Actual native PASS plus original full evaluation/cost freeze/admission is mandatory before safe production selection/gated dispatch; rebind live source/observer/deployment contracts first. Original server2 plans remain intact; no completed operation replay."
+}

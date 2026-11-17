@@ -1,0 +1,107 @@
+{
+  "complete": true,
+  "token": "9a94dd03b9774a71a10001ed4fd7fc5b",
+  "recorded_at": "2026-11-08T04:57:54.733263+08:00",
+  "observations": {
+    "AdaRES-Y90": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y90_9a94dd03b9774a71a10001ed4fd7fc5b_final.json",
+        "sha256": "5786621cc6bde9b2aaa3dd2b99e0bfcd38a51bc0ff743a835b49de553b8c9408"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 26,
+        "total": 30,
+        "step": 1959,
+        "count": 4686
+      },
+      "pid": 2442962
+    },
+    "AdaRES-Y91": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y91_9a94dd03b9774a71a10001ed4fd7fc5b_final.json",
+        "sha256": "5b57be7f0201cd373a44ee943cc0d2bebb891cc99671d7d050875ac351622a0a"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 8,
+        "total": 30,
+        "step": 3936,
+        "count": 4686
+      },
+      "pid": 83827
+    }
+  },
+  "actual_occupation": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_final_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+      "sha256": "96214b181edb0d03a4457eb75b98fcd0ce62f4cb025bcbb3d63fb41d740e0892"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_final_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+      "sha256": "4fe5d6fcf461447c0e34ae610b661f4cc3a77b4492d106e5e2a16a420a0505f5"
+    }
+  },
+  "execution_preparation": {
+    "path": "pipeline/checks/y92_execution_preparation_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+    "sha256": "2a6e328e74e8daf7e547c7547f60b5b5fbfb5eda058ab6a4688dda8b542abb92"
+  },
+  "source_protocol_runtime_guards": 17,
+  "original_Y92_scientific_bytes_and_native_bodies_preserved": true,
+  "Y93_original_CPU_and_native_plans_preserved": true,
+  "original_Y90_Y91_and_existing_frozen_protocols_preserved": true,
+  "original_GPU1_and_Y57_pause_preserved": true,
+  "new_scientific_candidates": 0,
+  "new_admissions": 0,
+  "new_training_launches": 0,
+  "exact_original_archives": 0,
+  "actual_GPU_native_tasks": 0,
+  "CPU_scientific_replays": 0,
+  "original_training_checkpoints_loaded": false,
+  "efficacy_measured": false,
+  "production_HEAD_index_queue_preserved": true,
+  "pending_native_admission_suite_not_executed": true,
+  "next_action": "After exact original Y90 full30 checkpoint verification/archive and fresh exclusive idle server-1 GPU0, run retained Y92 bound native server1 plan. On actual native PASS, prepare a NEW explicitly tested Y91 terminal binding for additive Y92 using that real native evidence before selecting Y92; then select, admit and canonical dispatch/observe same tick. Full original Y90 server1/350W review/training protocol is inherited with method-ID only. Server2 original native alternative remains immutable and needs its own matching execution binding if selected. No GPU1/Y57 use, source selection, receipt or launch now.",
+  "evidence": [
+    {
+      "path": "scripts/finish_y92_execution_tick.py",
+      "sha256": "3a430e76fcf072a402ebf3155f0118f989f0d2a5eaea31c098aa0ceafe410362"
+    },
+    {
+      "path": "pipeline/checks/y92_execution_preparation_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+      "sha256": "2a6e328e74e8daf7e547c7547f60b5b5fbfb5eda058ab6a4688dda8b542abb92"
+    },
+    {
+      "path": "pipeline/checks/y92_additive_binding_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "e4ea1d2aaff391f2ccea086e1c56fdb391445557145d6ef5994fc2d89362884b"
+    },
+    {
+      "path": "pipeline/checks/y93_cpu_version_c13001fa6abe4bc18cd4dfc36e588ed5.json",
+      "sha256": "05211cdee2a14b3a192e75e64f9f8091489cd00ecdae727b004d70f37159fd6e"
+    },
+    {
+      "path": "pipeline/checks/y93_native_c13001fa6abe4bc18cd4dfc36e588ed5.json",
+      "sha256": "5f19bcf06b8d271951e78c7f70c5aa4e519caf385fd5be64e781490eeec58032"
+    },
+    {
+      "path": "pipeline/checks/y92_execution_preparation_9a94dd03b9774a71a10001ed4fd7fc5b.log",
+      "sha256": "bcc018211e95f080236ea3ae11d94292ac57eeb0f1ccf59f7dddd5a7a55b924a"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y90_9a94dd03b9774a71a10001ed4fd7fc5b_final.json",
+      "sha256": "5786621cc6bde9b2aaa3dd2b99e0bfcd38a51bc0ff743a835b49de553b8c9408"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y91_9a94dd03b9774a71a10001ed4fd7fc5b_final.json",
+      "sha256": "5b57be7f0201cd373a44ee943cc0d2bebb891cc99671d7d050875ac351622a0a"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_final_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+      "sha256": "96214b181edb0d03a4457eb75b98fcd0ce62f4cb025bcbb3d63fb41d740e0892"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_final_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+      "sha256": "4fe5d6fcf461447c0e34ae610b661f4cc3a77b4492d106e5e2a16a420a0505f5"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-30T18:47:09.151425+08:00",
+  "before": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 62, 22800, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742, 22790\n",
+    "compute_query_rc": 0,
+    "tasks": {}
+  },
+  "after": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 55, 22800, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 88, 7930, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742, 22790\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561, 8114\n",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y70": {
+        "pid": 52561,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y70_query_scale_fusion_res_20261030_184633.log",
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-B",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y70_query_scale_fusion_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "1"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "tail": "Using backend: pytorch\n2026-10-30 06:46:01,697 - INFO - set random seed: 1999\nset CUDA_VISIBLE_DEVICES as 1\n\rTrain[1/30]:   0%|                    | 0/4686 [00:00<?, ?it/s]\rTrain[1/30]:   0%|                    | 0/4686 [00:20<?, ?it/s, lr=0.0001, eta=32 days, 15:13:07, iter_time=20.06]\rTrain[1/30]:   0%|                    | 1/4686 [00:20<26:06:06, 20.06s/it, lr=0.0001, eta=32 days, 15:13:07, iter_time=20.06]\rTrain[1/30]:   0%|                    | 1/4686 [00:20<26:06:06, 20.06s/it, lr=0.0001, eta=16 days, 18:29:50, iter_time=10.31]\rTrain[1/30]:   0%|                    | 2/4686 [00:20<11:10:20,  8.59s/it, lr=0.0001, eta=16 days, 18:29:50, iter_time=10.31]\rTrain[1/30]:   0%|                    | 2/4686 [00:21<11:10:20,  8.59s/it, lr=0.0001, eta=11 days, 10:39:15, iter_time=7.03] \rTrain[1/30]:   0%|                    | 3/4686 [00:21<6:21:29,  4.89s/it, lr=0.0001, eta=11 days, 10:39:15, iter_time=7.03] \rTrain[1/30]:   0%|                    | 3/4686 [00:21<6:21:29,  4.89s/it, lr=0.0001, eta=8 days, 18:51:15, iter_time=5.40] \rTrain[1/30]:   0%|                    | 4/4686 [00:21<4:06:10,  3.15s/it, lr=0.0001, eta=8 days, 18:51:15, iter_time=5.40]"
+      }
+    }
+  },
+  "task": {
+    "id": "AdaRES-Y70",
+    "label": "AdaRES-Y70 fixed30",
+    "config": "configs_song/model_paper5/adares_y70_query_scale_fusion_res.yaml",
+    "status": "running",
+    "gpu": "1",
+    "depends_on": [],
+    "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y70.json",
+    "scientific_candidate_id": "AdaRES-Y70",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "server": "server-2",
+    "claimed_gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 52561,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y70_query_scale_fusion_res_20261030_184633.log",
+    "launched": "2026-10-30T18:47:08"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y70 fixed30] configs_song/model_paper5/adares_y70_query_scale_fusion_res.yaml → server-2 gpu1"
+  ],
+  "Y57_still_paused": true,
+  "GPU0_Y68_preserved": true,
+  "keeper_source_contract": {
+    "verified": true,
+    "kept_pid": 20742,
+    "old_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+    "target_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+    "only_new_candidate_files": 14,
+    "original_Y67_completed": true
+  },
+  "hardware_settings_changed": false
+}

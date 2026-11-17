@@ -1,0 +1,12 @@
+{
+  "id": "AdaRES-Y61",
+  "token": "b5a42dc4481640c28115e9cff887f862",
+  "command": "python -B scripts/finalize_y61_fixed30.py check --token b5a42dc4481640c28115e9cff887f862",
+  "exit_code": 1,
+  "observed_error": "ModuleNotFoundError: No module named 'prepare_y61_stage_heads'",
+  "failure_scope": "Local terminal helper import, before main/lease/SSH/archive; not training or checkpoint failure.",
+  "failed_source": "pipeline/checks/y61_terminal_import_failure_b5a42dc4481640c28115e9cff887f862_program.py",
+  "repair": "Import the existing prepare_y60_stage_heads shared runtime; do not modify that hash-bound shared module.",
+  "archive_invoked": false,
+  "remote_contacted": false
+}

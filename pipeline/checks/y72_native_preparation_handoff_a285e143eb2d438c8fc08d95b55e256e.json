@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "tick_token": "a285e143eb2d438c8fc08d95b55e256e",
+  "snapshot_at": "2026-10-30T18:50:40.449943+00:00",
+  "observed_at": "2026-10-31T02:59:59.898648+08:00",
+  "Y72_version": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_version.json",
+    "sha256": "d990a918ffd02d381bd588199419ad2ff5bb4611a9f74c9a9b84a425ee753fc1"
+  },
+  "Y72_code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "retained_branch": "refs/heads/adares-y72-visual-mask-refinement",
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_plan.json",
+      "sha256": "a3a875a2992f0a43ef4eb50849f9312115959a71134456b2dc64d0535f0efa1c"
+    },
+    "1": {
+      "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu1_plan.json",
+      "sha256": "1fded5fd2c82600a9db4005247f1d2430bdeb5b9c4f92057eea92c612a604a18"
+    }
+  },
+  "actual_CPU_observer_verification": {
+    "path": "pipeline/checks/y72_native_observer_verification_a285e143eb2d438c8fc08d95b55e256e.json",
+    "sha256": "84457f6a1afec37056c84ffa95fedb2dc0c44875746269c134b786b820ccddb0"
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_guards.log",
+    "sha256": "914e88a534d0e80ecd8762212fa24283ccdf99259b8f501c14e9b06427edc6fa"
+  },
+  "guard_tests_passed": 11,
+  "Y71_exact_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "Y71_plan": {
+    "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_plan.json",
+    "sha256": "2efeb8013ae810e2381b2edb5c0d2b3e4ab7a70a96dc400e968a9f5a71e70779"
+  },
+  "Y71_frozen_sources_and_plan_verified": true,
+  "Y68_terminal_local_source_contract_preserved": true,
+  "main_index_unchanged": true,
+  "working_HEAD_unchanged": true,
+  "original_native_progress": [
+    {
+      "path": "pipeline/checks/y68_server2_local_y71_phase_a285e143eb2d438c8fc08d95b55e256e.json",
+      "sha256": "d6d61e52032ec236f4dd79cfae48d84279ebf681a5e21a64f48b44c98dac1b13"
+    },
+    {
+      "path": "pipeline/checks/y70_server2_gpu1_phase_progress_a285e143eb2d438c8fc08d95b55e256e.json",
+      "sha256": "49059d58f8198928a9d933b2bd945511ab86a76136cdc2bf5388c45dad5a3551"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_a285e143eb2d438c8fc08d95b55e256e.json",
+      "sha256": "69078f1e3ca9c22c8d2d441364525d177aa180d402e659c7a38e8d29527e837f"
+    }
+  ],
+  "current_occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_a285e143eb2d438c8fc08d95b55e256e.json",
+      "sha256": "f5e6f086d88c92a78d3ad2c8811c4fb5935bc64c93abb380506aae2ce19b6568"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_a285e143eb2d438c8fc08d95b55e256e.json",
+      "sha256": "4da2eb34cb5c5e6e36a53f74203ddab9b448e466a865801858560d98d651155d"
+    }
+  ],
+  "Y71_GPU0_readiness": {
+    "path": "pipeline/checks/y71_gpu0_readiness_a285e143eb2d438c8fc08d95b55e256e_check.json",
+    "sha256": "1caf363a1909de73a5163d344c0aa836bd7a1ed2eddf40a32dda103d4690be4c"
+  },
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_a285e143eb2d438c8fc08d95b55e256e.md",
+    "sha256": "5766ee40c131a8c9c54390e2088147a9251473064280d4a6ed0d6dfc23adbfd6"
+  },
+  "Y57_paused": true,
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "new_candidate_ids": [],
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "native_GPU_executed": false,
+  "training_efficacy": "unknown",
+  "next_action": "Observe original Y68/Y69/Y70. On Y68 actual fixed30 verify original full checkpoints/log/source/receipt and canonical archive; only fresh idle/unreserved GPU0 permits exact Y71 run then actual PASS/full protocol/admit/gated dispatch with progress verification. Y72 scoped branch/native plans/CPU observer checks are ready for a later exclusive GPU; do not replay completed preparation. Before production selecting Y72 branch commit, preserve/rebind live exact source/observer/deployment contracts without altering old evidence. No CPU-based admission or protected restarts."
+}

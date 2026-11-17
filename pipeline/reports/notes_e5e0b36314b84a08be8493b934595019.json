@@ -1,0 +1,67 @@
+{
+  "actions": [
+    "完成：Y96原四组八遍全9508表达式/141场景和修正的原配对10000/1999/重复噪声结果已归集校验；首次原冻结串行/原生压力成本与源码和原检查点后审计均完成，原训练、预测、终态检查无重跑。",
+    "科学处置：正式FIRST mIoU0.5082609879；原同设备Y36 0.5107204852/W2 0.5100091053/B1 0.5021153088。整体配对区间均跨零，无预设尺寸伤害，未达0.515，complete_inconclusive，不宣称增益、等效、机制证伪或晋升。",
+    "成本：参数+65536，TRAIN8串行中位87.00ms vs83.70ms，大场景205.59ms vs208.56ms，原生压力峰值保留13.40234GiB vs13.40039GiB。冻结样本/顺序描述，不代表全数据上界或Pareto；原权重/源码字节不变。",
+    "运行：已归档Y94原26文件/原YAML/私有环境导入及11身份边界通过，在自己原server1GPU0/350W首次启动四组全量后评，实测原生计数递增；原模型commit与当前加法marker独立绑定。无新训练、准入、资源迁移或重启。",
+    "Y102本轮原PID4747/server2GPU0/280W仍Train1step7，原现场保留；不重复此前拒绝的栈附加、管理员索权或重启。Y96成本包装器一次共享导入名误替换发生在计划/GPU/远端前，原失败保留；仅恢复共享运输导入后首次实际成本通过。"
+  ],
+  "decisions": [
+    "保持本轮零新候选/准入/新训练及Phase2限制；仅推进既有已训练归档且原设备匹配的冻结后评。Y101/Y99/Y96科学结果关闭不重测；Y94完整原配对/成本/后审计后再处置。",
+    "23项到期工作已按原证据核验：Y96完成、Y94实际后评、14项原GPU0等待真实占用、GPU1六项仍用户暂停、Y86原数值失败不重跑。Y57单独暂停和Y97失败继续保留；不跨项目、不用server6、不改goal/数据/收据/功耗/调度/上限或外部任务。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y96_complete_y94_closeout_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "84b6f345e4399d0df36600f4bf534f6b249dd5eddd8b76ff556c48e9e4b62cb7"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_e5e0b36314b84a08be8493b934595019.md",
+      "sha256": "8fcf8553c4561ec14acaeb50adb290af6b73ba807eeec541da3ec2980abe30e3"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/complete_scientific_review.json",
+      "sha256": "a9c2024c78085d06b3d8fbf994a86868aa864eac5bb2704efa16698f53563573"
+    },
+    {
+      "path": "pipeline/analyses/y96_full_review_e5e0b36314b84a08be8493b934595019/formal_comparison.json",
+      "sha256": "a1bc87eaa9e677dcf8c2e49875db5a9b9546e4c7b9b435ac9204f2ac2ea4e007"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/trained_cost.json",
+      "sha256": "92679041f439ab1a76180e2863bd5d499c2b5a9aa85a5855bed2e2e090495ddf"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/postaudit.json",
+      "sha256": "2f8a22416c03882c444af4563c59262d17ec9b6e231047090c23b7cfb687215c"
+    },
+    {
+      "path": "pipeline/checks/y94_review_binding_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "9ff208d5cf865f02d246f72222405992d6ae4149911337c7d70527e1a2c90b78"
+    },
+    {
+      "path": "pipeline/checks/y94_review_launch_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "6bda9d8131045c12bad4a23e4a7274a3a1e1a4a8acc14483e1c39c7c7ee2b239"
+    },
+    {
+      "path": "pipeline/checks/y94_review_progress_e5e0b36314b84a08be8493b934595019_start.json",
+      "sha256": "4ccea13751d4f42334915ca73775e618c94731aa57c5ee6f0885fddf2baa8630"
+    },
+    {
+      "path": "pipeline/checks/y96_complete_e5e0b36314b84a08be8493b934595019_y102_diagnostic.json",
+      "sha256": "27cd9bfb5447ea9ae6a28bd22543291a6f203d684cf4cefbc2c7036a9c5b8ebf"
+    },
+    {
+      "path": "pipeline/checks/y96_cost_shared_import_failure_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "085f2527d8b02902bc8eb2d73fc78fec5f5e35e948a50401da2b48a7e82be884"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "cf86cf916ee9053e0abc7bedf5da1682a4ff2bbbc6f89edf214226542b257989"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "67669887c677452ce7c43cf19482a57e2a484c64110c7ad218fb377f1c293896"
+    }
+  ]
+}

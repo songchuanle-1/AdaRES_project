@@ -1,0 +1,32 @@
+{
+  "observed_at_local": "2026-10-09T09:13:03.360781+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y35 final mask-evidence language attention confidence] configs_song/model_paper5/adares_y35_language_evidence_res.yaml \u2192 server-2 gpu0"
+  ],
+  "task": {
+    "id": "AdaRES-Y35",
+    "label": "Y35 final mask-evidence language attention confidence",
+    "config": "configs_song/model_paper5/adares_y35_language_evidence_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "b49b744dc2943a38ab4c3aeb788acc6a2cb90011",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y35.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 108331,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y35_language_evidence_res_20261009_091225.log",
+    "server": "server-2",
+    "gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-09T09:13:03"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y35.json",
+    "sha256": "6487b1efed7fb632ac2508e4d8a7e16c14d258c9a271a300a2ba0c87d6660fb5"
+  },
+  "preserved_y33_exact": true,
+  "scope": "Canonical gated dispatcher, GPU0-only inventory, existing Y33GPU1 preserved; no repeated preflight."
+}

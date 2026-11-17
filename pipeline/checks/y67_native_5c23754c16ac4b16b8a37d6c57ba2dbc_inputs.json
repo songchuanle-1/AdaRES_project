@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "parent_commit": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/__init__.py",
+      "sha256": "b9971196c2ed263360c82ec69b3a06aedd6bff59ea31cd70f0772a0584f743ba"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/dec.py",
+      "sha256": "86325a20e90d1a87ff5c8960a6f231e8bbc5a23041d8b5f4110d0da62b49cf15"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y67_stage_readout_norm/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y67_stage_readout_norm_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "CPU_manifest": {
+    "path": "pipeline/checks/y67_cpu_version_5c23754c16ac4b16b8a37d6c57ba2dbc.json",
+    "sha256": "e529259c03080771e9ea0435b1e6f4901c6c32815251317134039c17dfcf9ed6"
+  },
+  "cpu_test": {
+    "path": "pipeline/analyses/y67_cpu_attempt2_5c23754c16ac4b16b8a37d6c57ba2dbc.json",
+    "sha256": "80258d1fd9a11f4124b052885146b793e98ec296e784529ae62dd1778bc35a64"
+  },
+  "queue_before": {
+    "path": "pipeline/queue.json",
+    "sha256": "97c26fdb495ff03dbaae6ac8a242847a77b61fe690963575e120b8655ab99dc0"
+  },
+  "running_before": {
+    "path": "pipeline/running.json",
+    "sha256": "ced787d343c00116db8a5fc538420403a79d6be81d119890a0d90fe8b41466a8"
+  },
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "native_executed": false,
+  "admitted": false
+}

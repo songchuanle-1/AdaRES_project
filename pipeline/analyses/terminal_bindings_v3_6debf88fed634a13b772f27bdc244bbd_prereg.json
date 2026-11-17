@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "preregistered_at": "2026-10-20T21:00:36.033186+08:00",
+  "previous_program": {
+    "path": "pipeline/analyses/terminal_bindings_v2_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "667e52682155693fb5482e3ce8ba1a4890e4c88df157726e78e00ccf966da6c9"
+  },
+  "previous_failed_log": {
+    "path": "pipeline/analyses/terminal_bindings_v2_6debf88fed634a13b772f27bdc244bbd.log",
+    "sha256": "57e9f597397104c4e4fbd8255d065f589fdc42af40ef08bd4b83e15f2dd30ca7"
+  },
+  "program": {
+    "path": "pipeline/analyses/terminal_bindings_v3_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "29d9a73495ee976eb6be086459df70772b1c230135121ce170e6573b09beae61"
+  },
+  "scope": "Config binding serialization compatibility only, no scientific or runtime edits.",
+  "change": "Require ALL parsed YAML values equal the original local bound config, then record full actual remote config SHA for unchanged evaluator binding. No path/config semantic exceptions and no overwriting runtime files.",
+  "reason": "Local and deployed YAML byte hashes differ; equal parsed values must be demonstrated rather than asserted or copying one over the other.",
+  "result": "pending"
+}

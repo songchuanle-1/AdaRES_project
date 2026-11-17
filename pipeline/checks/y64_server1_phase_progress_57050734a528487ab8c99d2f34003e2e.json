@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-29T06:45:05.646361+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 27,
+      "total": 30,
+      "step": 1570,
+      "count": 4686
+    },
+    "log_bytes": 34808818
+  },
+  "after": {
+    "observed_at": "2026-10-29T06:45:10.654688+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 27,
+      "total": 30,
+      "step": 1576,
+      "count": 4686
+    },
+    "log_bytes": 34810390
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-29T06:45:05.646361+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 27,
+        "total": 30,
+        "step": 1570,
+        "count": 4686
+      },
+      "log_bytes": 34808818
+    },
+    {
+      "observed_at": "2026-10-29T06:45:10.654688+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 27,
+        "total": 30,
+        "step": 1576,
+        "count": 4686
+      },
+      "log_bytes": 34810390
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 2752219,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y64_directed_containment_res_20261028_065511.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "9706a8c36bead4459668ab66a3d1abc39344ef8b",
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 2752219\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "gpu": "10, 22756, 60, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y64",
+  "token": "57050734a528487ab8c99d2f34003e2e",
+  "observed_start_local": "2026-10-29T06:45:04.892893+08:00",
+  "observed_end_local": "2026-10-29T06:45:10.799094+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y64_server1_phase.py",
+      "sha256": "ab029e0bde5b2092690ad210e16108a54757f9b6900581e72ff5e07bfb3d223e"
+    },
+    {
+      "path": "pipeline/checks/y64_server1_phase_progress_57050734a528487ab8c99d2f34003e2e.log",
+      "sha256": "bb7073638668dc9070e00ca6ffad92ec174aa5655a5f5f75e38a0e9b1f0408e0"
+    }
+  ]
+}

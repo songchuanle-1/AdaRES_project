@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "token": "c6dcbcb322604baea08b7a7c16adeac9",
+  "snapshot": "2026-11-05T10:46:40.097135+00:00",
+  "live_training": {
+    "AdaRES-Y84": {
+      "path": "pipeline/checks/production_adares-y84_c6dcbcb322604baea08b7a7c16adeac9_progress.json",
+      "sha256": "c883f48a8ec3b6dde4a67fcd7c9adc9ec9514bfbb7fc4f954d404b6b1943dd89"
+    },
+    "AdaRES-Y85": {
+      "path": "pipeline/checks/production_adares-y85_c6dcbcb322604baea08b7a7c16adeac9_progress.json",
+      "sha256": "e8e98eea424c30f7366ad63d90c4b49b39334c9eaec195abde2cd97f29d1b0a8"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_c6dcbcb322604baea08b7a7c16adeac9.json",
+      "sha256": "a4400a8dd0c77763fe1bb9179ab886b4aeab0fa63c14bec09b846174a61938cd"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_c6dcbcb322604baea08b7a7c16adeac9.json",
+      "sha256": "e52efc86ebe89640b7ce1b1d5a7f0a23911f3a2c24c7d8ed2f553d6ee80765a9"
+    }
+  },
+  "retained_preparations": {
+    "AdaRES-Y86": {
+      "CPU_result": {
+        "path": "pipeline/analyses/y86_cpu_cc4e062184264231b13212a60ffcd196.json",
+        "sha256": "2064d49c49ddc97d28052d516eb7108446cbd414c22516e89b04d50e552f173f"
+      },
+      "version": {
+        "path": "pipeline/checks/y86_cpu_version_cc4e062184264231b13212a60ffcd196.json",
+        "sha256": "c105aee1d4bc68431b0db6e4f36a7ce21be78ff4e8e31f27fe2046bdd7f46b0e"
+      },
+      "native_preparation": {
+        "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196.json",
+        "sha256": "97b666ff7cf4d5e7024f5046c7ee60f901543e2b4bc370a19200ba1479145f7e"
+      },
+      "GPU0_plan": {
+        "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_gpu0_plan.json",
+        "sha256": "d0e99f1fcd0ad0521d3327f2a3915df319c692ca777084fb6e6b0f307b141213"
+      },
+      "code_commit": "2d2a0b98865977a6e2f37d316979344ffc56817c",
+      "exact_executed_callbacks": 7,
+      "guards": 9
+    },
+    "AdaRES-Y87": {
+      "CPU_result": {
+        "path": "pipeline/analyses/y87_cpu_dc60f363ea8740af9a89542fb35f0c99.json",
+        "sha256": "4266523f6fa843b638644338da2c13ee9b94f51234bf97d5db83ead2c677c909"
+      },
+      "version": {
+        "path": "pipeline/checks/y87_cpu_version_dc60f363ea8740af9a89542fb35f0c99.json",
+        "sha256": "13912d59fbe558bd8566813b4b038204ce86aac3a238abe08cd4149660d129dc"
+      },
+      "native_preparation": {
+        "path": "pipeline/checks/y87_native_dc60f363ea8740af9a89542fb35f0c99.json",
+        "sha256": "99b311671de6d56c31af3c6e86ec990b8b0cbee43d946c15e8fc048f8c6a0a18"
+      },
+      "GPU0_plan": {
+        "path": "pipeline/checks/y87_native_dc60f363ea8740af9a89542fb35f0c99_gpu0_plan.json",
+        "sha256": "225e9353d6c6c5387827c79d9fc9645616fa7146eab793efd70bd66be2511ad6"
+      },
+      "code_commit": "053aea85a03be4244879c90362455c45327a7d64",
+      "exact_executed_callbacks": 14,
+      "guards": 9
+    }
+  },
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_launches": 0,
+  "new_archives": 0,
+  "repeated_CPU_preparation": false,
+  "repeated_terminal_verification": false,
+  "native_GPU_executed": false,
+  "formal_metrics_updated": false,
+  "GPU1_pause_preserved": true,
+  "Y57_pause_preserved": true,
+  "helper": {
+    "path": "scripts/record_prepared_y86_y87_wait.py",
+    "sha256": "383a5d34b5c4d8665c9622d9d4ef3f7e5fbfd790f7d8ae95a76a3d53cfa561b5"
+  }
+}

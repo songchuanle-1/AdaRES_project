@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y58",
+  "preregistered_at": "2026-10-20T23:52:27.318506+08:00",
+  "hypothesis_id": "cross_scene_normalization_mixture_confidence_drift",
+  "hypothesis": "Pooling normalization moments over unrelated TRAIN scenes may alter the fixed focal scene representation/confidence when only its batch mate changes. This is a task-relevance diagnosis, not an assumption that BatchNorm is harmful.",
+  "first_test": "Actual source-derived BatchNorm configuration/learned affine, float32/64 exact focal feature rows with matched-count independent mates; pooled vs separate-scene training moments. Repeat/within-scene row permutation/eval-stat negatives. Actual trained W2 confidence head must remain batch-separable for fixed inputs.",
+  "required_native": "Fixed native focal TRAIN item with two prespecified mates, dropout disabled in every arm, BN train vs fixed-stat-only control, same frozen weights/RNG/GT and restored buffers. Preserve upstream sampling and point correspondences; confidence/IoU direction and repeat error must be reported, not inferred from CPU.",
+  "sampling": "Scene cluster is independent unit; component rows are not task samples.",
+  "limits": "No validation tuning, new model package, queue admission, GPU use or normalization replacement until native mechanism evidence. Do not reopen an existing rejected route.",
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+  },
+  "source": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    }
+  ],
+  "result": "pending"
+}

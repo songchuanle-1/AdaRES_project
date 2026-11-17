@@ -1,0 +1,288 @@
+{
+  "scope": "released SPFormer init, current augmented teacher integration only",
+  "native": [
+    {
+      "batch": 0,
+      "scans": [
+        "scene0000_00",
+        "scene0001_00"
+      ],
+      "loss": 9.471267700195312,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.27983713150024414,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 4.061171531677246,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.27983713150024414,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 0.4420033097267151,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.1499919444322586,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 0.5615273118019104,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.2798384428024292,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.14087076485157013,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.15247569978237152,
+          "finite_nonzero": true
+        }
+      },
+      "teacher_targets": [
+        {
+          "scan_id": "scene0000_00",
+          "ann_id": "0",
+          "material": true,
+          "superpoints": 667,
+          "teacher_iou": 0.732915997505188,
+          "student_iou": 0.0423428937792778,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0000_00",
+          "ann_id": "1",
+          "material": true,
+          "superpoints": 667,
+          "teacher_iou": 1.0,
+          "student_iou": 0.0,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0000_00",
+          "ann_id": "2",
+          "material": true,
+          "superpoints": 667,
+          "teacher_iou": 0.718812882900238,
+          "student_iou": 0.10696705430746078,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0000_00",
+          "ann_id": "3",
+          "material": true,
+          "superpoints": 667,
+          "teacher_iou": 1.0,
+          "student_iou": 0.00947418250143528,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0001_00",
+          "ann_id": "0",
+          "material": true,
+          "superpoints": 710,
+          "teacher_iou": 0.9642857313156128,
+          "student_iou": 0.0,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0001_00",
+          "ann_id": "1",
+          "material": true,
+          "superpoints": 710,
+          "teacher_iou": 0.9342105388641357,
+          "student_iou": 0.0,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0001_00",
+          "ann_id": "2",
+          "material": true,
+          "superpoints": 710,
+          "teacher_iou": 0.9342105388641357,
+          "student_iou": 0.0,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0001_00",
+          "ann_id": "3",
+          "material": true,
+          "superpoints": 710,
+          "teacher_iou": 1.0,
+          "student_iou": 0.0,
+          "target_detached": true
+        }
+      ],
+      "teacher_resident": true,
+      "teacher_excluded_from_state": true,
+      "query_count": 129,
+      "seconds": 19.43647650256753,
+      "peak_allocated_gib": 4.784602165222168,
+      "peak_reserved_gib": 5.048828125
+    },
+    {
+      "batch": 1,
+      "scans": [
+        "scene0002_00",
+        "scene0003_00"
+      ],
+      "loss": 12.5133695602417,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.48453375697135925,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 7.038795471191406,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.48453375697135925,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 0.7683415412902832,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.26001572608947754,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 0.9809277057647705,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.4845264256000519,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.24534893035888672,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.2640971839427948,
+          "finite_nonzero": true
+        }
+      },
+      "teacher_targets": [
+        {
+          "scan_id": "scene0002_00",
+          "ann_id": "0",
+          "material": true,
+          "superpoints": 2329,
+          "teacher_iou": 0.8951436281204224,
+          "student_iou": 0.025065714493393898,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0002_00",
+          "ann_id": "1",
+          "material": true,
+          "superpoints": 2329,
+          "teacher_iou": 0.6201872229576111,
+          "student_iou": 0.0,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0002_00",
+          "ann_id": "2",
+          "material": true,
+          "superpoints": 2329,
+          "teacher_iou": 0.5142450332641602,
+          "student_iou": 0.0043416148982942104,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0002_00",
+          "ann_id": "3",
+          "material": true,
+          "superpoints": 2329,
+          "teacher_iou": 0.7983651161193848,
+          "student_iou": 0.012598628178238869,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0003_00",
+          "ann_id": "0",
+          "material": true,
+          "superpoints": 406,
+          "teacher_iou": 1.0,
+          "student_iou": 0.016638819128274918,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0003_00",
+          "ann_id": "1",
+          "material": true,
+          "superpoints": 406,
+          "teacher_iou": 0.7162891030311584,
+          "student_iou": 0.08137139678001404,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0003_00",
+          "ann_id": "2",
+          "material": true,
+          "superpoints": 406,
+          "teacher_iou": 0.8785676956176758,
+          "student_iou": 0.1395711451768875,
+          "target_detached": true
+        },
+        {
+          "scan_id": "scene0003_00",
+          "ann_id": "3",
+          "material": true,
+          "superpoints": 406,
+          "teacher_iou": 1.0,
+          "student_iou": 0.039956092834472656,
+          "target_detached": true
+        }
+      ],
+      "teacher_resident": true,
+      "teacher_excluded_from_state": true,
+      "query_count": 129,
+      "seconds": 1.0943508315831423,
+      "peak_allocated_gib": 6.848508834838867,
+      "peak_reserved_gib": 7.40625
+    }
+  ],
+  "new_tensor_optimizer_updates": {
+    "dec.completion_query.slot": 0.00019934121519327164,
+    "dec.completion_query.lang_proj.weight": 0.0001997724175453186,
+    "dec.completion_query.lang_proj.bias": 0.0001993514597415924,
+    "dec.completion_query.attn.in_proj_weight": 0.00019827485084533691,
+    "dec.completion_query.attn.in_proj_bias": 0.0001990825403481722,
+    "dec.completion_query.attn.out_proj.weight": 0.00019831955432891846,
+    "dec.completion_query.attn.out_proj.bias": 0.00019934400916099548,
+    "dec.completion_query.norm.weight": 0.0001989603042602539,
+    "dec.completion_query.norm.bias": 0.00019848898227792233
+  },
+  "dense_fixed_input_checks": [
+    {
+      "expression": 0,
+      "repeat_mask_max_diff": 0.0,
+      "repeat_indicator_max_diff": 0.0,
+      "extra_max_duplicate_iou": 0.0,
+      "selected_query": 128
+    },
+    {
+      "expression": 1,
+      "repeat_mask_max_diff": 0.0,
+      "repeat_indicator_max_diff": 0.0,
+      "extra_max_duplicate_iou": 0.0,
+      "selected_query": 128
+    }
+  ],
+  "fixed_decoder_output_label_invariance": true,
+  "fresh_inference_does_not_construct_teacher": true,
+  "teacher_checkpoint_sha256": "56f49e7c580ddfb67896e77432a922fafed98f7ed58ae6d957703bd2cf062616",
+  "source_sha256": "d948adefdc3921e12097f42a0a739067ad94665159e7846b90ab7aa2110cea05"
+}

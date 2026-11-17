@@ -1,0 +1,124 @@
+{
+  "id": "AdaRES-Y43",
+  "config": "configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml",
+  "code_commit": "6fc7d4e46b6c26a11fede7f12d4e79b3471cc1cc",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261013-023233_next_batch.md",
+    "sha256": "59fb2c204b59c0894c50fe94072962afd7283942fb48d9ca87fea2b833dc5a0a"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y43_diagnosis_prereg_0422d0d8.md",
+          "sha256": "0a1580ee26ca737e79bdfd212dfabeb009a27a2b3464eb05d22934188b9268c8"
+        },
+        {
+          "path": "pipeline/analyses/y43_reflection_cpu_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "36499784aac1544074e25f391c0c486aea6321cc06938c2fd25def200a90fed2"
+        },
+        {
+          "path": "pipeline/analyses/y43_extract_readout_cpu_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "4a879feb8e3d8793bfa983a5b3486b4bca5cb6dbea78d225749b627d78b488fd"
+        },
+        {
+          "path": "pipeline/analyses/y43_native_controls_0422_v2_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "2d67801e18032898ba14adbcc36f073134941db733301cb8e434abc85a130314"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y43_extract_readout_cpu_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "4a879feb8e3d8793bfa983a5b3486b4bca5cb6dbea78d225749b627d78b488fd"
+        },
+        {
+          "path": "pipeline/analyses/y43_native_controls_0422_v2_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "2d67801e18032898ba14adbcc36f073134941db733301cb8e434abc85a130314"
+        },
+        {
+          "path": "pipeline/analyses/y43_initial_loss_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "3155db93a5e3501884f4348d92adacda202ccb98dbb4f74ceb753227a47c15ba"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y43_native_controls_0422_v2_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "2d67801e18032898ba14adbcc36f073134941db733301cb8e434abc85a130314"
+        },
+        {
+          "path": "pipeline/analyses/y43_physical_native_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "cbf37fa0afabd735d267748d95df8fca04323dff5068af7ebe7352deb39db779"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y43_resources_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "8bf47e5f38e8fb18a560a698911cbb16d08002986381eddcd9ff45f32b99c217"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y43_0422d0d8.md",
+          "sha256": "5aa28772c05db50667b8e0baa5fa8d05d7a0f4f1fb89188d046a7aba016151a8"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y43_source_bundle_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "378ee31f97d3847a7c142d61442222110c23f335a5cb1307b5b5e8c403fa6cc3"
+        },
+        {
+          "path": "pipeline/analyses/y43_parent_semantics_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "4cf2c82c5cc08b242c3f16587d41062348893586f97a1f8c45568bd93b02a68e"
+        },
+        {
+          "path": "pipeline/analyses/y43_physical_native_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+          "sha256": "cbf37fa0afabd735d267748d95df8fca04323dff5068af7ebe7352deb39db779"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/reviews/motivation_review_Y43_0422d0d8.md",
+          "sha256": "1f532bfefa4cc60313302c9d88e400481107a1f8ede43f8f7049370b44d5a666"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y43_0422d0d8.md",
+          "sha256": "5aa28772c05db50667b8e0baa5fa8d05d7a0f4f1fb89188d046a7aba016151a8"
+        },
+        {
+          "path": "pipeline/analyses/Y43_six_gate_review_0422d0d8.md",
+          "sha256": "2df9470cfbf58e962678103b7acfcf114335aaa177894da8691846f9a8903d77"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      0
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y43_0422d0d8.md",
+      "sha256": "5aa28772c05db50667b8e0baa5fa8d05d7a0f4f1fb89188d046a7aba016151a8"
+    }
+  },
+  "limitations": "All adverse initial and wrong-control learning retained; no benefit/necessity/novelty/human approval. Diagnostic weights never deployed."
+}

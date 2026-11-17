@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "token": "16ace440440346cebe23c272fdbba622",
+  "actual_native": {
+    "path": "pipeline/analyses/y101_server1_smoke_16ace440440346cebe23c272fdbba622.json",
+    "sha256": "754b0002f7197e527006a65aa1af706dfb5a13780ee754bc15fa33c1ac13ce8d"
+  },
+  "generated": [
+    {
+      "path": "scripts/advance_y101.py",
+      "sha256": "4bb6ddc1fc296d7d6168b1eba152d9fbd775ee90ffd56dedf2c26ffc3ddc997e"
+    },
+    {
+      "path": "scripts/y101_deployment.py",
+      "sha256": "5a0ccd128fe88c9140b82083877459a25e3d819df03643cd4797ef68dd22939d"
+    },
+    {
+      "path": "scripts/y100_y101_terminal_contract.py",
+      "sha256": "5d210a149aca841f9d8c64eb8f82e2b5577f733a545e7707c7dcbdc515bb52c8"
+    },
+    {
+      "path": "scripts/test_y100_y101_terminal_binding.py",
+      "sha256": "db84225f509e1907ab9312d110ff7115e143c9b05873d0bf6993cede6607fede"
+    }
+  ],
+  "original_inputs": [
+    {
+      "path": "scripts/advance_y99_v2.py",
+      "sha256": "4aaf4fa78692f5359b6061b545f0f069cd553dde94998f03144db0d9d625e3e8"
+    },
+    {
+      "path": "scripts/y100_deployment.py",
+      "sha256": "9b9f6d5f8c716afbeba610d14c174f82bb568edc1aaaf496bd3cb0079734303c"
+    },
+    {
+      "path": "scripts/y99_y100_terminal_contract.py",
+      "sha256": "6457d5d5b1979db7ff447cad74fd12d17818fb4cc42fec66a57624783a038dbc"
+    },
+    {
+      "path": "scripts/test_y99_y100_terminal_binding.py",
+      "sha256": "bc435662d3294558bf2c3f5fc7bb0230874953490b8bd7377f18508a1d4b8cf1"
+    }
+  ],
+  "main_index_and_scientific_files_unchanged": true,
+  "guard_tests_pending": true
+}

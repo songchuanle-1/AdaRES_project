@@ -1,0 +1,101 @@
+{
+  "complete": true,
+  "recorded_at": "2026-10-25T22:06:09.517826+08:00",
+  "token": "63b27dd8efe04a0bab6dc0291cefdbf0",
+  "failures_preserved": [
+    {
+      "id": "AdaRES-Y62",
+      "scope": "runtime dependency before native training",
+      "error": "DGL libcusparse.so.11 unavailable",
+      "subsequent_real_smoke_passed": true
+    },
+    {
+      "id": "AdaRES-Y63",
+      "scope": "inherited host power guard before torch/model/data",
+      "error": "Old server-2 280W check rejected actual server-1 350W",
+      "subsequent_real_smoke_passed": true
+    }
+  ],
+  "model_revision_count_changed": false,
+  "model_source_and_native_yaml_unchanged": true,
+  "split_inventory_observation": {
+    "observed_during_current_tick": true,
+    "train_refer_files": 1201,
+    "val_refer_files": 312,
+    "source_and_target_names_and_sizes_identical": true,
+    "observation": "Independent read-only per-split find filenames+sizes on original server-2 versus new server-1 project data."
+  },
+  "tests": [
+    {
+      "command": "python -B -m unittest test_source_integrity test_closure -q",
+      "passed": 62,
+      "initial_compatibility_failures": 3,
+      "corrected_and_rerun": true
+    },
+    {
+      "command": "python -B -m unittest discover -s scripts -p test_server1_runtime_handoff.py -q",
+      "passed": 6
+    },
+    {
+      "command": "Three targeted original AdaRES sync/launch tests after LD path adaptation",
+      "passed": 3
+    },
+    {
+      "command": "Actual Y62/Y63 smoke admission positive and stale-goal/NaN/unobserved-path negative controls",
+      "negative_controls_rejected": 6
+    }
+  ],
+  "shared_runtime_files": [
+    {
+      "path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\closure.py",
+      "sha256": "ae17a1ca1c2312c73ec875440e84020c870f6c7b74378444095c7b522a220836"
+    },
+    {
+      "path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\source_integrity.py",
+      "sha256": "89e4039d37b0ec23ad99054d892edcc9039b640e2d1978848442ee1e1253c8fe"
+    },
+    {
+      "path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\pipeline_monitor.py",
+      "sha256": "b8886763e21bfec3eab09c0afdc53be3ed87ab5f4a9f285cc26cfdf5cec14f47"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/server1_bootstrap_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "163b0503a312fd713a1ddbc7c2b97d5e6e12086936edc4bf000ecadfb3c80648"
+    },
+    {
+      "path": "pipeline/checks/server1_loader_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "5a07a0a4f379d413ef37bf1b0f81ec520c58746a5b70707d860c8b3c727d8321"
+    },
+    {
+      "path": "pipeline/checks/server1_cuda_runtime_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "638420f6592e6d83ab1f999570b87e3197a7bd00192c934db8f81adf3e740a37"
+    },
+    {
+      "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+    },
+    {
+      "path": "pipeline/checks/server1_source_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "d0f7beaf7040f5b41004b91eb0259b54ef7ae139effa3c26705d18a809902ff5"
+    },
+    {
+      "path": "pipeline/checks/server1_admission_controls_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "ddb2bc2ae21a77a4c7aadf807c49a5e13970c587c4468ca3aabf98a1b65bb384"
+    },
+    {
+      "path": "pipeline/analyses/adares_y62_server1_smoke_63b27dd8efe04a0bab6dc0291cefdbf0.log",
+      "sha256": "e3b2df3a1e033a8dc8abafb769e5192dc41503a3c42f2e749a2e6fb4d299fb83"
+    },
+    {
+      "path": "pipeline/analyses/adares_y63_server1_smoke_63b27dd8efe04a0bab6dc0291cefdbf0.log",
+      "sha256": "f944c60dad89251f722d1c2acc20a40e8a8eb997e159292d1b032139f62e1b50"
+    },
+    {
+      "path": "pipeline/checks/adares_y63_server1_power350_63b27dd8efe04a0bab6dc0291cefdbf0_binding.json",
+      "sha256": "405c0344621fc1d2a17385d754e4d48410de72685e1517dd8fa41b5a184ce480"
+    }
+  ],
+  "scientific_efficacy": "Unknown; runtime preparation and real initial optimizer steps only."
+}

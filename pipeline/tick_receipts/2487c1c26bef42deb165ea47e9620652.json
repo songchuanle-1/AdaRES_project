@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "2487c1c26bef42deb165ea47e9620652",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T22:51:52.579505+00:00",
+  "recorded_at": "2026-10-16T22:55:59.426366+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Known unchanged closure mismatch: CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. Fresh authorized resource observation 2026-10-17T06:53:43.177122+08:00 to 2026-10-17T06:53:47.448142+08:00 confirms GPU0 foreign PID19723 and GPU1 own Y50 PID31539, no idle eligible diagnostic GPU. Y50 native Train[24/30] steps 3656 to 3661/4686. Same frozen Y52 retained with hashed evidence and retry. Six-section report and memory verified. No repeated known-failing finish, no checker or goal changes, no new tests, admissions or launches. Honest INCOMPLETE; release only owned lease.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 13,
+    "input_tokens": 1128375,
+    "cached_input_tokens": 1099008,
+    "output_tokens": 5183,
+    "reasoning_output_tokens": 1565,
+    "total_tokens": 1133558,
+    "uncached_input_tokens": 29367,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 2,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

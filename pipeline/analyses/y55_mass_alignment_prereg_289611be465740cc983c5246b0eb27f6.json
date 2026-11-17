@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y55",
+  "token": "289611be465740cc983c5246b0eb27f6",
+  "preregistered_at": "2026-10-17T14:02:58.398106+08:00",
+  "hypothesis_id": "sentence_expansion_pointmass_alignment",
+  "hypothesis": "Sentence expansion may misalign W2's point-count mass with the scene/superpoint represented by each expanded feature row, corrupting metric-aligned query competition. The suspected defect is cross-module ordering, not changing the point-mass formula or score target.",
+  "matched_control": "Execute unchanged IPDN.point_masses and expand_and_fps bodies, DEC.get_batches and the exact native indicator on CPU. Independently count original point memberships with Counter and index the reference by expanded original-superpoint identity. Use three frozen unequal replication fixtures and the existing eight TRAIN scenes/four pairs/32 expressions, same seed1999. Identical-repeat/independent-reference controls must agree exactly; deliberately shifted valid masses are a sensitivity control. Substitute only FPS with deterministic CPU indices, explicitly not a full native/FPS test; FPS indices never change feature expansion order.",
+  "source_bindings": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "remote_path": "ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "lf_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "remote_path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "lf_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+      "remote_path": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+      "lf_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "body": {
+    "path": "scripts/probe_y55_mass_alignment_2896.py",
+    "sha256": "e7b3fd51fb1d95bc7c62dccbe0485d9e7b6f2d91b74ac3fd5b309a833b897f95"
+  },
+  "helper": {
+    "path": "scripts/diagnose_y55_mass_alignment_2896.py",
+    "sha256": "67f59af70434404cfc1e460baed294eb55a4be90739b0b09a0e66dee8af1d394"
+  },
+  "first_test": "Run the fixed CPU bookkeeping/packing and native indicator reference/shift controls; no new model or pending reserve.",
+  "falsification": "Exact point-mass alignment across frozen actual inputs and adversarial unequal-copy fixtures, with active shift controls and matching source-order identity, rejects THIS expansion-mapping defect. Any mismatch stays diagnosis; do not relabel an unrun test.",
+  "boundaries": "Diagnosis only, no model/config edits, Git commit, admission, weights, CUDA work or extra pending model reserve. No efficacy or novelty claim. This is distinct from Y52's score target and Y54's fine spatial support.",
+  "reserve_state": "Two existing blocked prototypes retained; no additional prototype preparation is authorized or claimed.",
+  "program": {
+    "path": "pipeline/analyses/y55_mass_alignment_program_289611be465740cc983c5246b0eb27f6.py",
+    "sha256": "e7be7da800b65c434a49bac5a46601f38232a1ac009c3e1661c4305b4751124b"
+  },
+  "result": "pending"
+}

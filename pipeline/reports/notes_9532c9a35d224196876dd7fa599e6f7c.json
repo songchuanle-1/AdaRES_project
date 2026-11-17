@@ -1,0 +1,18 @@
+{
+  "actions": [
+    "本轮仅AdaRES_project；实际任务ID与foreground归属一致，closure已启用，后台Pipeline-AdaRES_project保持Disabled。快照为北京时间2026-10-14 18:48:48，design；截止19:48:48未改动，begin监控和目标检查各一次，0-3节沿用脚本快照事实。",
+    "按ID续查两个到期稳定候选Y46/Y48，未倾倒完整快照或历史。核对各自冻结原生脚本和冻结清单SHA256与账本证据一致；不改生产模型、配置、选择器、训练协议或门槛。",
+    "18:51:08-18:51:14同一Y45原生训练7/30，步数2303→2313/4686；PID78001、GPU1、目录、配置、提交338a3d7和七个源文件哈希一致。训练确实继续推进，没有重新启动。begin原始监控best0.4620仅为途中记录，不是最终冻结比较或科学晋升。",
+    "18:51:14实测授权GPU0 100% /24126/24576MiB、外部PID19723；GPU1 84% /22750/24576MiB、Y45 PID78001。两卡均有真实计算进程，没有空闲独占诊断资源；保留所有既有进程，未在占用卡上执行CUDA诊断。",
+    "科学状态：Y45 training；Y46 blocked，CPU原型/接入对照已完成，但native_backward/resources/independence/constraints仍pending；Y48 blocked，原生联合掩码/匹配索引捕获仍未执行，实际非空同掩码组混合标签数量未知，六项门槛均pending。已完成的CPU/源码/重复与置换对照未重跑，不能把资源观测算作科学验证。",
+    "新增连续性观测及原始输出pipeline/analyses/y45_continuation_resource_9532c9a35d224196876dd7fa599e6f7c.json/.log；新增资源收据pipeline/analyses/candidate_resource_retry_9532c9a35d224196876dd7fa599e6f7c.json。真实哈希证据补充到Y45/Y46/Y48；本轮新候选0、准入0、新训练0、新原生诊断0，记忆及六段报告更新。",
+    "执行状态在finish前为待验证；只有明确CLOSURE_POSTFLIGHT_PASS和COMPLETE且核实当前租约消失后才称COMPLETED。上轮1c73已FINALIZED/PASS并释放，旧记忆的finish待验证措辞不代表旧租约仍被持有。",
+    "用量窗口仅begin到本轮收据生成的可见本地记录，部分窗口，不含之前读取、晚到记录和最终答复；finish前用量数值未知。缓存属于input子集，reasoning属于output子集，不重复相加，不作为账单；释放后仅只读收据，不再写项目。"
+  ],
+  "decisions": [
+    "无新科学决策或重复评审。依真实两卡占用以external_resource_blocked收尾，不声称路线耗尽，不等待耗尽截止，不新增凑数变体，不放宽准入或重写历史失败证据。目标0.515仍未达，W2仍为科学比较基准。",
+    "Y46下一步仍是同一冻结TRAIN8完整原生损失/反传/配对成本分支，再补真实tools.train更新、released-init与独立性验证；Y48下一步仍是同一冻结TRAIN8前向联合捕获最终掩码和criterion匹配索引，检验实际混合标签及字面点TP/FP/FN，不跨次捕获拼接。",
+    "Y46和Y48重试更新为北京时间2026-10-14 19:21:14，或授权GPU0/1实测空闲且取得独占诊断租约时解除阻塞；科学状态、冻结内容和原门槛不变。当前仅Y45在训，两诊断候选不能计作已启动实验。",
+    "不操作AdaQ3D_project、server-6、其他项目或调度，不新建任务、嵌套codex exec或恢复后台。下一次已保存自动化实际触发时间未知，没有改动或推算调度。"
+  ]
+}

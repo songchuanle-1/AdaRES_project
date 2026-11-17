@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "recorded_at": "2026-10-19T12:55:47.112333+08:00",
+  "kind": "actual_foreground_tool_observations",
+  "canonical_preflight": {
+    "path": "pipeline/headless/.foreground_monitor.txt",
+    "sha256": "cd56b1026e65c1f7ab90d3e03720aa9750fdf7e9e388add6c76937517a0b2469"
+  },
+  "observations": [
+    {
+      "target": "server-2 / 192.168.1.163:22",
+      "result": "connection_timeout",
+      "wrapper_exit_code": 1
+    },
+    {
+      "target": "configured server-02-songcl-gongwang / 222.200.181.37:22",
+      "result": "connection_timeout",
+      "wrapper_exit_code": 1
+    }
+  ],
+  "live_GPU_state": null,
+  "identity_confirmed": false,
+  "remote_mutations": 0,
+  "interpretation": "Connectivity blocks deployment, not measured feasibility. No GPU is inferred free; no training started."
+}

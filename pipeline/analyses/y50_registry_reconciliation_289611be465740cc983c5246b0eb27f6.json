@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "tick_token": "289611be465740cc983c5246b0eb27f6",
+  "preflight_at": "2026-10-17T13:50:50.652798+08:00",
+  "verification_at": "2026-10-17T14:05:34.3375806+08:00",
+  "source": "This tick's single canonical begin preflight and subsequent read-only filtered queue/CSV query; monitor not repeated.",
+  "monitor_observation": "server-2: no matching project training processes; Y50 process absence confirmed three times, terminal done_complete. This is not proof that both authorized GPUs are physically idle.",
+  "canonical_queue_entry_present": false,
+  "canonical_experiment_row": {
+    "id": "AdaRES-Y50",
+    "status": "done_complete",
+    "server": "server-2",
+    "gpus": "1",
+    "config": "configs_song/model_paper5/adares_y50_joint_incidence_res.yaml",
+    "best_miou": "0.5030",
+    "best_acc_05": "",
+    "best_acc_025": "",
+    "best_spmiou": "",
+    "best_epoch": "30/30",
+    "notes": "reconciled 2026-10-17 13:50:50; log="
+  },
+  "active_at_preflight": {"running": 0, "claiming": 0, "waiting": 0},
+  "unchanged_scientific_evidence": [
+    {"path": "pipeline/analyses/y52_source_y50_exit_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json", "sha256": "3017a4a2abcecb29f2459de1f40574abeb8eecf07c52d88d45b420f43411106f"},
+    {"path": "pipeline/analyses/y50_frozen_comparison_89ffd8db36cf43ed8cfd75a68c77b4b9.json", "sha256": "c6ded42527efe94af71d78f2fa47b5aca9022d72635cd09499808fa6fd516d60"}
+  ],
+  "interpretation": "Operational terminal reconciliation only. The CSV's rounded log metric is not a new evaluation and does not replace the frozen full FIRST mIoU 0.5031587787728745 or medium-target harm rejection. Preserve current realization rejection and implementation failure scope; no rerun, promotion or model change.",
+  "gpu_utilization": "unknown_this_tick",
+  "new_training_metric": false,
+  "manual_queue_or_csv_edit": false
+}

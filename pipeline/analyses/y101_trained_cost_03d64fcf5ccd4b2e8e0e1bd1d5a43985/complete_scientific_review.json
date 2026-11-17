@@ -1,0 +1,130 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y101",
+  "token": "03d64fcf5ccd4b2e8e0e1bd1d5a43985",
+  "observed_at": "2026-11-14T00:03:54.800627+08:00",
+  "disposition": "complete_inconclusive",
+  "FIRST_miou": 0.5062989703031004,
+  "target": 0.515,
+  "target_reached": false,
+  "full_native_passes": 8,
+  "paired_scene_bootstrap_draws": 10000,
+  "seed": 1999,
+  "subgroup_material_harm": false,
+  "all_overall_comparison_CIs_include_zero": true,
+  "confirmed_improvement": false,
+  "mechanism_falsified": false,
+  "promotion": false,
+  "training_protocol": "Original released backbone/seed1999/fixed30; best24 original checkpoint, no restart or epoch tuning",
+  "cost_summary": {
+    "candidate": {
+      "train8": {
+        "median_seconds": 0.0851214260328561,
+        "descriptive_p95_seconds": 0.12227256351616234,
+        "peak_allocated_gib": 0.9609675407409668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "median_seconds": 0.21793825505301356,
+        "descriptive_p95_seconds": 0.2469788519665599,
+        "peak_allocated_gib": 1.2439332008361816,
+        "peak_reserved_gib": 1.7578125
+      },
+      "native_train_stress": {
+        "median_seconds": 0.9610323691740632,
+        "peak_allocated_gib": 12.851613998413086,
+        "peak_reserved_gib": 13.400390625
+      }
+    },
+    "parent": {
+      "train8": {
+        "median_seconds": 0.08431070973165333,
+        "descriptive_p95_seconds": 0.12454201632644982,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "median_seconds": 0.2083003839943558,
+        "descriptive_p95_seconds": 0.23520802683196962,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      },
+      "native_train_stress": {
+        "median_seconds": 0.9693956961855292,
+        "peak_allocated_gib": 12.850881576538086,
+        "peak_reserved_gib": 13.400390625
+      }
+    }
+  },
+  "parameters": {
+    "candidate": 164695173,
+    "parent": 164629637
+  },
+  "parameter_delta": 65536,
+  "serial_scene_pairs_verified": true,
+  "native_memory_only_stress_batches": 4,
+  "native_memory_only_updates_including_warmups": 20,
+  "full_cost_and_postaudit_complete": true,
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0
+  },
+  "source_and_original_checkpoint_bytes_preserved": true,
+  "limitations": [
+    "One trained seed/checkpoint per method; native repeats quantify observed prediction noise, not seed variance or a universal bound.",
+    "Point estimates below Y36/W2 and all overall paired CIs cross zero; no demonstrated improvement or equivalence, and no prespecified subgroup harm.",
+    "Frozen TRAIN8 plus two largest-pair scenes; serial warm2/read3 and separate batch2 memory-only native stress; not a full-data memory bound.",
+    "Sequential candidate/parent order and descriptive p95 do not establish causal hardware effects or Pareto dominance."
+  ],
+  "evidence": [
+    {
+      "path": "scripts/complete_y101_scientific_review.py",
+      "sha256": "cb0066d023adc83c13da21570371c429f1efeb71a937d3b89a2c3032d82949ca"
+    },
+    {
+      "path": "pipeline/analyses/y101_full_review_03d64fcf5ccd4b2e8e0e1bd1d5a43985/formal_comparison.json",
+      "sha256": "11e506e866677bf25fed5da0597350e23c088f14020964769a92b16dd1cade60"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+      "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+    },
+    {
+      "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "f634f9945f01d373390431462c43d64a22c43b92cd76b9c690d8aa75630546cf"
+    },
+    {
+      "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490_archive_binding.json",
+      "sha256": "eb90beeaff3add4f2d8668be2795e5a635e303e3d8ac90af3f6921fd846dc5b7"
+    },
+    {
+      "path": "pipeline/checks/y101_frozen_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985.json",
+      "sha256": "8e127ebba19a0ee81c75c985f4b61af30223adbc5acdd2e0202e175fca01a7a1"
+    },
+    {
+      "path": "pipeline/checks/y101_frozen_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985.py",
+      "sha256": "cdabba68f6eebf92c5f4f2c1e36f0a9c99087e2d320a0d63514bc7ea6cd6fac6"
+    },
+    {
+      "path": "pipeline/checks/y101_cost_launch_03d64fcf5ccd4b2e8e0e1bd1d5a43985.json",
+      "sha256": "1b77aebd11a018fef14a47f54b5169d78a58ec65c233cc0535ec8df6978843ed"
+    },
+    {
+      "path": "pipeline/analyses/y101_trained_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985/remote_manifest.json",
+      "sha256": "249f2bf35f0d0f53670e3a0ae6f2f3e89a502a3fb7f060a4cbaf704aa6126f6e"
+    },
+    {
+      "path": "pipeline/analyses/y101_trained_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985/trained_cost.json",
+      "sha256": "8069cfcbffc63e5f2663bc88405459212a36a41e92114c5855152eca09c37119"
+    },
+    {
+      "path": "pipeline/analyses/y101_trained_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985/postaudit.json",
+      "sha256": "9214bd0dd8a820c52d9998975f39e9a3ab4f3bf03bc339cbbeecb7bcd58648a9"
+    },
+    {
+      "path": "pipeline/analyses/y101_trained_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985/worker.log",
+      "sha256": "946194d0be4b2d0713b62b839b66a9ae421c4e46b301f3ec977aae098a3af927"
+    }
+  ]
+}

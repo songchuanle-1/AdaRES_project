@@ -1,0 +1,122 @@
+{
+  "complete": true,
+  "token": "4fd7a3f3cee740aea068c3f9ab8044ac",
+  "snapshot_generated_at": "2026-11-01T10:45:55.275483+00:00",
+  "observed_at": "2026-11-01T10:51:11.270800+00:00",
+  "original_live_training": {
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_4fd7a3f3cee740aea068c3f9ab8044ac_progress.json",
+      "sha256": "3a35c7c607885bc558f4fc87cfe7e930df87cd010d01ecf0708deb6a7de16c24"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_4fd7a3f3cee740aea068c3f9ab8044ac_progress.json",
+      "sha256": "3fba8e988e824353b106c7d0412cb9905a35af2514dcec1a7b4b8d10ad4b7635"
+    },
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_4fd7a3f3cee740aea068c3f9ab8044ac_progress.json",
+      "sha256": "d187896c6df4ee46a80aedea8c57bde61a918a5d25722b8ad7a03add7ca2695f"
+    }
+  },
+  "phases": {
+    "AdaRES-Y72": {
+      "phase": "Train",
+      "epoch": 30,
+      "total": 30,
+      "step": 2666,
+      "count": 4686
+    },
+    "AdaRES-Y74": {
+      "phase": "Train",
+      "epoch": 16,
+      "total": 30,
+      "step": 2086,
+      "count": 4686
+    },
+    "AdaRES-Y75": {
+      "phase": "Val",
+      "epoch": 5,
+      "total": 30,
+      "step": 76,
+      "count": 363
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_4fd7a3f3cee740aea068c3f9ab8044ac.json",
+      "sha256": "6abdf5ddf418ec9acb8ffee826d56f7d12fe91884ca7f42737e2f9010b6efb77"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_4fd7a3f3cee740aea068c3f9ab8044ac.json",
+      "sha256": "bd188334667d088474579ebcc7da8f7edf65f53d8db27799297b3bc50e89647b"
+    }
+  },
+  "prepared_integrity": [
+    {
+      "id": "AdaRES-Y76",
+      "code_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+      "source_manifest": {
+        "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "37485b9b3a404188d2df8a71d47b6888c7d27656f2421d1e385f1e4f41caf304"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y76_native_observer_verification_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "a30fe2ab6341033539d5a6dc9ac18d0048471a59c85b14ed22c49c81e5c4abf1"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu0_plan.json",
+          "sha256": "c32ec64c054cadffb9ea34d49a7a0b3e8e8ce9a1668695920c0db78c72fd366c"
+        },
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu1_plan.json",
+          "sha256": "c87bf5936d869793e8710d6674fef4b4e1b42f8726936ccdebeb121d975580c9"
+        },
+        {
+          "path": "pipeline/checks/y76_server1_0fd2c3224f6443388fdffa1fb7c5904e_plan.json",
+          "sha256": "a7d4863a649c9a25be197629da1ec9fa9b362e8f88813fe93ffc2a567be0e791"
+        }
+      ],
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y77",
+      "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+      "source_manifest": {
+        "path": "pipeline/checks/y77_cpu_version_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "7a4dc912137beb6c4f8a1a561acdc889d8efcdaa488bc4b1d540a95877e0d2b3"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y77_native_observer_verification_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "611f75018189b74ba22f4a6fdddc5a646ed303435758468e5e3211bb54697650"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu0_plan.json",
+          "sha256": "dc7f8ee061c1d8ec8a66a992c4df6cef4a458a8c9b076dcac3f5427f2016c5f9"
+        },
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu1_plan.json",
+          "sha256": "dd25b99b22513509496c740cabc6f25787c5a40a295703f1cb46166d345a5455"
+        }
+      ],
+      "native_GPU_executed": false
+    }
+  ],
+  "Y72_terminal_preparation": {
+    "path": "pipeline/checks/y72_terminal_preparation_0fd2c3224f6443388fdffa1fb7c5904e.json",
+    "sha256": "e08b47302a29301fadb1fcdd79e88827e305a40519a706b06c088d20f51617d4"
+  },
+  "Y72_terminal_dependencies_verified": true,
+  "Y72_still_training": true,
+  "Y72_archived": false,
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_archives": [],
+  "native_GPU_executed": false,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "HEAD_unchanged": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "observer_lock_retry": "Two simultaneous observers could not acquire the project writer lock; both retried sequentially and verified original training. No queue/source/launch mutations occurred.",
+  "conclusion": "All three original native counters advance with original PIDs/source/YAML/receipts/power. Y72 remains in Train30, not terminal. Y76/Y77 exact prepared native plans remain intact. All authorized GPUs physically busy and canonically reserved; actual native tasks await matching exclusive release."
+}

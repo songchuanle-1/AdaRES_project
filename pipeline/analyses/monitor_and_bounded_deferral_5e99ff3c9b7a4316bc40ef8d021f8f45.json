@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "token": "5e99ff3c9b7a4316bc40ef8d021f8f45",
+  "generated_at": "2026-10-15T23:50:50.692462+08:00",
+  "snapshot_time": "2026-10-15T15:48:50.704714+00:00",
+  "snapshot": {
+    "path": "pipeline/headless/.tick_model_view.json",
+    "sha256": "5547523df2b3b45d9b1dba51cdfa9c36f24883461abf7d7f7c6790f630f4bc85"
+  },
+  "actual_new_observation": {
+    "source": "Canonical begin native-log monitor only; no repeated preflight or remote probe",
+    "native_monitor_text": "================================================== 2026-10-15 23:48 : AdaRES_project ==================================================\n\n--- server-2 (192.168.1.163) ---\n  [adares_y48_mask_equivalence_res] Best=0.5034 16/30 no_improve=1/30 gpu=1 ? 序列: 0.4944, 0.4936, 0.4976, 0.5034, 0.5027\n\n--- server-6 (100.64.3.28) ---\n  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机\n\n--- 队列: AdaRES_project ---\n  server-2: running=1",
+    "experiment_id": "AdaRES-Y48",
+    "observed_epoch": 16,
+    "fixed_total_epochs": 30,
+    "interim_best_mIoU": 0.5034,
+    "latest_validation_mIoU": 0.5027,
+    "status": "running",
+    "terminal": false,
+    "limitation": "Not new step-pair/source-hash/physical GPU-occupation evidence or frozen final baseline comparison."
+  },
+  "deferred_candidates": [
+    {
+      "id": "AdaRES-Y46",
+      "stage": "blocked",
+      "retry_after": "2026-10-15T23:52:44.904536+08:00",
+      "next_action": "Run SAME hash-frozen production native program on first genuinely idle authorized card, then matched TRAIN8/inference/stress and six-gate review. Do not repeat unchanged CPU tests or admit from prototype.",
+      "pending_gates": [
+        "production_native_backward",
+        "production_tools_train_and_restore",
+        "resources",
+        "final_six_gate_review"
+      ]
+    },
+    {
+      "id": "AdaRES-Y49",
+      "stage": "blocked",
+      "retry_after": "2026-10-15T23:52:44.904536+08:00",
+      "next_action": "Run SAME hash-frozen actual W2 TRAIN8 native full loss/backward/cached controls/paired costs on a genuinely idle authorized GPU. Preserve zero native component-collision witnesses and all other limits; do not admit or produce variants from CPU gains.",
+      "pending_gates": [
+        "native_task_diagnosis",
+        "native_backward",
+        "resources",
+        "independent_production",
+        "released_init_tools_train_restore",
+        "six_gate_review"
+      ]
+    }
+  ],
+  "deferral_reason": "Artifact-triggered compact context and disposition precede original resource retry; no changed goal/server/resource queue or new unblock evidence. Preserve bounded retry and candidates unchanged.",
+  "previous_disposition": {
+    "path": "pipeline/analyses/due_block_disposition_8a3e752f90ae4dd8921a28b5ef9ffb3b.json",
+    "sha256": "8a6405e23ddcaf7995eb9dc21fc086dd826c3c7f0029855ecf8d807a5cfac22c"
+  },
+  "previous_resource_evidence": {
+    "path": "pipeline/analyses/due_resources_8a3e_8a3e752f90ae4dd8921a28b5ef9ffb3b.json",
+    "sha256": "c0df31914e936e82eec74c438769c5251c8ddd7b08749b8c91659a563f93f689"
+  },
+  "previous_resource_observed_start_local": "2026-10-15T22:52:38.982807+08:00",
+  "previous_resource_observed_end_local": "2026-10-15T22:52:44.904536+08:00",
+  "previous_resource_age_seconds": 3485.787926,
+  "current_GPU_occupation": "unknown; historical observation is not current telemetry",
+  "new_candidates": 0,
+  "admissions": 0,
+  "new_training": 0,
+  "resource_rechecks": 0,
+  "GPU_diagnostics": 0,
+  "scientific_status": "Y48 training_not_efficacy; Y46/Y49 blocked with original retry, gates and freezes",
+  "blocked_candidate_records_and_queue_unchanged": true
+}

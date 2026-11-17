@@ -1,0 +1,13 @@
+{"mode": "integration", "complete": true, "gpu_precheck": {"memory_mib": 1, "util": 0}, "parameters_added": 0, "limitations": ["TRAIN diagnostics and bounded execution tests, not trained efficacy or full-dataloader replay."], "parameters": 164629637, "native_train": {"losses": [8.905091285705566, 9.122164726257324], "model_change": {"equal": false, "max": 12.138916015625}}, "before_continuation": {"model": {"equal": true, "max": 0.0}, "optimizer": {"equal": true, "max": 0.0}, "scheduler": {"equal": true, "max": 0}, "meta_epoch": 1}, "continuation": {"loss_difference": 0.0, "model": {"equal": false, "max": 2.2992491722106934e-05}, "optimizer": {"equal": false, "max": 1.7418301467841957e-08}, "gradients": {"loss": 5.985752105712891, "decoder_gradient_tensors": 400, "decoder_gradient_nonzero": 400}}}
+
+STDERR:
+Using backend: pytorch
+2026-10-01 22:35:27,941 - INFO - Load train scanrefer: 36665 samples
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:17<?, ?it/s, lr=0.0001, eta=0:17:28, iter_time=17.77]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.77s/it, lr=0.0001, eta=0:17:28, iter_time=17.77]Train[1/30]:  50%|██████████          | 1/2 [00:18<00:17, 17.77s/it, lr=0.0001, eta=0:08:49, iter_time=9.12] Train[1/30]: 100%|████████████████████| 2/2 [00:18<00:00,  7.60s/it, lr=0.0001, eta=0:08:49, iter_time=9.12]Train[1/30]: 100%|████████████████████| 2/2 [00:18<00:00,  9.12s/it, lr=0.0001, eta=0:08:49, iter_time=9.12]
+2026-10-01 22:35:59,240 - WARNING - The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: text_encoder.embeddings.position_ids, text_encoder.embeddings.token_type_ids
+
+2026-10-01 22:35:59,240 - INFO - Loading checkpoint from /tmp/y23_native_checkpoint_d20c71e4.pth
+2026-10-01 22:35:59,385 - INFO - Loading optimizer from /tmp/y23_native_checkpoint_d20c71e4.pth
+2026-10-01 22:35:59,385 - INFO - Loading scheduler from /tmp/y23_native_checkpoint_d20c71e4.pth

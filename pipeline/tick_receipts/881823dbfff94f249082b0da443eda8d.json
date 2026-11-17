@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "881823dbfff94f249082b0da443eda8d",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T13:50:03.696617+00:00",
+  "recorded_at": "2026-10-16T13:58:32.848865+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: resource retry21:58:38+08 still not due at independent audit21:57:29+08; no early GPU resource query or deadline wait. Last actual resource observation remains20:58:38+08, explicitly cached, current GPU0 idleness/utilization/memory unknown; no diagnostic allocation or false currently-busy claim. SAME Y52 stage,all45 evidence references and retry unchanged, no new scientific tests/candidates/revisions/admissions/launches or exhaustion claim. Y50 original process confirmed21:52:41-21:52:43+08 with native Train11/30 steps1574->1578/4686, begin process best0.4917 not efficacy. Six-section report/seven-section memory and immutable context/pending hashes verified. Unchanged checker exact queue-opening rejecting predicate remains true; prior failed check CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. No known-failing finish replay or checker/blocker/queue bypass. Save incomplete operational audit and release this tick only, preserve training and existing evidence, independently verify release.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 8,
+    "input_tokens": 2012695,
+    "cached_input_tokens": 1992576,
+    "output_tokens": 11366,
+    "reasoning_output_tokens": 3955,
+    "total_tokens": 2024061,
+    "uncached_input_tokens": 20119,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

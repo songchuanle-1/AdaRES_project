@@ -1,0 +1,58 @@
+{
+  "id": "AdaRES-H5",
+  "config": "configs_song/model_paper5/adares_h5_late_global_query_res.yaml",
+  "code_commit": "dafa28c03e6d13d68d2a572d9e725f4ed40227dc",
+  "goal_sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba",
+  "decision": {
+    "path": "pipeline/decisions/20260925-172913_next_batch.md",
+    "sha256": "81001a88c16e3ac3b0bf23fc16f46be4a53cdd4d366672c10c53fa1a5f6edb31"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-H5_access_16scenes_20260925.json", "sha256": "ca6735f3c94afa6314bed8ea1bdd52bac7c430382648334ecc53d6b422f05fb9"},
+        {"path": "pipeline/analyses/AdaRES-H5_native_gate_review_20260925-172800.md", "sha256": "8db5ccbf8df5af2af0b8e9e6857be688da4f397970858d160562347d20ddf4ad"}
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/configs_song/model_paper5/adares_h5_late_global_query_res.yaml", "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"},
+        {"path": "pipeline/analyses/AdaRES-H5_native_gate_review_20260925-172800.md", "sha256": "8db5ccbf8df5af2af0b8e9e6857be688da4f397970858d160562347d20ddf4ad"}
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/tools/test_adares_h5_global_query.py", "sha256": "b945cd8b64b18b06bc1bed1c6e9085e14a2fd9d8035c7e28372c50b3b0b0bfd1"},
+        {"path": "pipeline/analyses/AdaRES-H5_native_gate_review_20260925-172800.md", "sha256": "8db5ccbf8df5af2af0b8e9e6857be688da4f397970858d160562347d20ddf4ad"}
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-H5_native_gate_review_20260925-172800.md", "sha256": "8db5ccbf8df5af2af0b8e9e6857be688da4f397970858d160562347d20ddf4ad"}
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/ipdn/model_paper5/adares_h5_late_global_query/dec.py", "sha256": "dc4939defca5c458720ee209b58429d8cf07558df2b62930947fd5478ae531b5"},
+        {"path": "pipeline/designs/exp_design_20260925-172800.md", "sha256": "fa2fda3ca74d5696797fb6e06bca2a10ba5caf77354f3db7926c570241805a0d"}
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/goal.json", "sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba"},
+        {"path": "pipeline/analyses/AdaRES-H5_native_gate_review_20260925-172800.md", "sha256": "8db5ccbf8df5af2af0b8e9e6857be688da4f397970858d160562347d20ddf4ad"}
+      ]
+    }
+  },
+  "limitations": [
+    "Fixed-subset neighbor access is observational; earlier decoder attention is broader.",
+    "B4-E30 is an optimizer-preserving continuation, not a separate fresh matched control.",
+    "Worst-case memory, final accuracy, subgroup harm and evaluation noise remain unmeasured."
+  ]
+}

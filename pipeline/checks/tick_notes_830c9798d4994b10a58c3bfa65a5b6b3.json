@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "核验AdaRES_project实际会话、当前AGENTS/goal/SERVERS/execution_mode及Disabled后台后canonical begin；design快照running1/waiting0/ready0，无新终态或连接/部署问题。前3ac轮收据已核FINALIZED/PASS/context_committed=true/lease_release=released。",
+    "上海2026-10-27 14:50:21至14:50:26实测Y63/server-1 GPU0同PID3071037，第17/30轮1461至1469/4686步增长。精确cwd/config、六模型源码、原生YAML确定性路径适配、marker82f与GPU0独占compute核验通过，单次21%/22756MiB/67°C/350W。证据pipeline/checks/y63_server1_progress_830c9798d4994b10a58c3bfa65a5b6b3.json。",
+    "canonical gpu_occupation.py采集本轮两服原始hostname/GPU/compute：server-1 GPU0仍Y63独占，server-2 GPU0仍外来PID13813、100%/24138MiB，无授权空槽。另次只读观测GPU0为100%/24138MiB/85°C/280W，未更改硬件或干扰外来作业。",
+    "当前队列仅Y63运行及Y57暂停；Y57 dispatch_hold/resume_requires_user_authorization均保持。Y64既有e278版本/原生计划及旧CPU守卫证据、Y65既有CPU准备保留，六项冻结后评及两项原生GPU检查等待资源。本轮无新候选/源码修改/提交/部署/准入/训练启动或科学结论，已保存resource_check/blocked并更新七节记忆。"
+  ],
+  "decisions": [
+    "正常训练进度与未变资源占用不产生新效果结论或用户待办。保留两项既有准备，不以重复CPU控制替代真正原生任务检查，不为填额度新增重复变体，不挤占Y63或外来作业。",
+    "授权空槽出现后优先推进Y64；server-2按冻结plan校验后执行真实两步，若server-1先空须先沿已验证项目独立运行环境与精确路径映射合法重绑定方案，禁止直接跨用server-2 hostname/280W硬守卫脚本。真实native loss/backward/optimizer及新路径响应通过后，冻结原全量后评协议、准入并当轮门控派发。",
+    "保持原数据、seed1999/fixed30、发布SPFormer和全部禁用项；Y57/server-2 GPU1继续用户暂停，server-2 GPU0保持280W，禁止server-6、跨项目和调度更改。按foreground执行report/finish核收据与释放，当前未变且无用户可行动事项，静默，释放后不补写。"
+  ]
+}

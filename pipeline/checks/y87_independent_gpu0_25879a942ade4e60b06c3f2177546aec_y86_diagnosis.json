@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "token": "25879a942ade4e60b06c3f2177546aec",
+  "id": "AdaRES-Y86",
+  "failed_native": "pipeline/checks/y86_native_failure_25879a942ade4e60b06c3f2177546aec.json",
+  "raw_log": {
+    "path": "pipeline/analyses/y86_gpu0_diagnosis_25879a942ade4e60b06c3f2177546aec.log",
+    "sha256": "5779a9163eb27e28591ff32766e820568c5c49986fb35824ecd3c3726457415b"
+  },
+  "observation": {
+    "step": 1,
+    "stage": 4,
+    "weight_nonzero": true,
+    "weight": [
+      9.998925816034898e-05,
+      -9.998925816034898e-05
+    ],
+    "overlap_min": 3.4242677884321893e-06,
+    "overlap_max": 1.3414648492471315e-05,
+    "logit_min": -0.13454684615135193,
+    "logit_max": -0.030427347868680954,
+    "confidence_delta_max": 0.0,
+    "original_assertion_unchanged": true
+  },
+  "original_assertion_preserved": true,
+  "result": "failed",
+  "failure_scope": "implementation",
+  "native_PASS": false,
+  "admitted": false,
+  "interpretation": "The nonzero learned coefficient times tiny overlap is below float32 readout resolution at the observed stage. Frozen positive-response guard remains failed; no hypothesis or trained-efficacy rejection.",
+  "helper": {
+    "path": "scripts/activate_y87_independent_gpu0.py",
+    "sha256": "2226c8e386618c31c1d6e8bb6e910abee507ec726b745578ee6121005f3c0e69"
+  }
+}

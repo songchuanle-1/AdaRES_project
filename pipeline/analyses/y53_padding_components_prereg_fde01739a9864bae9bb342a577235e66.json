@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y53",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T12:54:49.622401+08:00",
+  "source_binding_intake": {
+    "path": "pipeline/analyses/y52_native_matched_capture_binding_v2_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "73b942321bcb2d745b31c9573c17fdfe4a1c0a59f8749efffcb4dcbe8e48b791"
+  },
+  "parent_files": [
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py",
+      "sha256": "c540732d6e3334c85008035cc37b8537b0f85383d5f5a6bf663359fbf2b134bb"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "6362d882662b0e51594cd4af994359b93f99497affc93600322a34ca6c349b01"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "7cb4b1c5490d0839fcdaf18553983b4c991f69e50474d07e83af9f0f8c937a5a"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "sha256": "836ff790a0a8b9c55cf465a472c9462699f0753a7e87d0ef74a8946edf31565a"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    }
+  ],
+  "body": {
+    "path": "scripts/probe_y53_padding_components_fde0.py",
+    "sha256": "236e9f80a322066b0c5ae26e0a97f4058204eac393e03abca71e75fc61bb70d8"
+  },
+  "test": "Exact unchanged W2 DEC/native config on CPU fixtures. Freeze all parameters and all valid/3D/query inputs; change only padding features, compare independent unchanged repeat, and separately sign-flip valid words as positive control. Measure final/aux indicator/mask/score, sampler/topquery and autograd of all indicator logits w.r.t. valid vs padding language features.",
+  "prediction": "Properly excluded padding gives no confidence/query gradient or output effect; valid-word control must have a nonzero effect. A forward leakage claim is not established by unused padding key arguments or by historical contrastive losses.",
+  "limits": "Component fixtures are not actual native sparse TRAIN/FPS evidence or an admission gate. No model/config changes, tuning, Git commits, weight persistence or training.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y53_padding_components_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "61f853fdb1b2cee8e495c1b97ba0692716cf1da187162d1bf33c70673741020e"
+  }
+}

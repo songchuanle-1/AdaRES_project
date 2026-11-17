@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "token": "909e7705ed74484fbc9bb4d16c7dbb59",
+  "id": "AdaRES-Y77",
+  "parent": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "target": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "only_added_files": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y77_geometry_query_init_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y77_geometry_query_init/sample_model.py"
+    ]
+  ],
+  "previous_index": {
+    "path": "pipeline/checks/adares-y77_source_selection_909e7705ed74484fbc9bb4d16c7dbb59.index",
+    "sha256": "a57461ecc30c7263a7fd3f79e2492534ce47f9cc0fd11323d4541388ec0cca90"
+  },
+  "previous_binary_index": {
+    "path": "pipeline/checks/adares-y77_source_selection_909e7705ed74484fbc9bb4d16c7dbb59.index.bin",
+    "sha256": "fd8b93109e29028b14180417549d6dfd18ae2244de3ffb97d52bf160756e14e7"
+  },
+  "other_index_entries_preserved": true,
+  "working_files_modified": false,
+  "helper": {
+    "path": "scripts/y77_deployment.py",
+    "sha256": "d5b0915b7849294cc5aa58469eb94c8c6cf89c1fdbacee03e69db8c78f1864c0"
+  }
+}

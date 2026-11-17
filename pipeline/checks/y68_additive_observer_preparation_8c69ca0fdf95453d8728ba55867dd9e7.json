@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y68",
+  "token": "8c69ca0fdf95453d8728ba55867dd9e7",
+  "observed_at": "2026-10-30T00:52:30.393745+08:00",
+  "kind": "operational_preparation",
+  "code_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "observer": {
+    "path": "scripts/observe_server2_y68_additive_phase.py",
+    "sha256": "1821806d44ca1309b02fe5aa970be9597d1190bf7cd3281d6849076965433bd2"
+  },
+  "guard_source": {
+    "path": "scripts/test_y68_additive_observer.py",
+    "sha256": "d8a57f52c371d5aa7d6a13e1fa5c93cc77b524416b9933ced5ffd682fd37ffd2"
+  },
+  "guard_log": {
+    "path": "pipeline/checks/y68_additive_observer_guards_8c69ca0fdf95453d8728ba55867dd9e7.log",
+    "sha256": "aa6d656b12c184a2a436d591ffc29b620bd7a210821d3621bbd0ddc74887984c"
+  },
+  "guard_tests_passed": 12,
+  "original_keeper_observations": {
+    "AdaRES-Y65": {
+      "path": "pipeline/checks/server2_y68_additive_adares-y65_8c69ca0fdf95453d8728ba55867dd9e7.json",
+      "sha256": "d4ed1fd9dfd39b8c09f656fe1875c49cc401e29c361903c7322bfdd425b4690b"
+    },
+    "AdaRES-Y67": {
+      "path": "pipeline/checks/server2_y68_additive_adares-y67_8c69ca0fdf95453d8728ba55867dd9e7.json",
+      "sha256": "3104b2fa9095ea90129e633257bc6303422e53060e0fb9fe43a21f25aea979b1"
+    }
+  },
+  "current_production_marker": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "future_marker": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "future_marker_runtime_observed": false,
+  "strict_local_chain_verified": "882d -> db35 exact seven added Y67 files; db35 -> 9af exact seven added Y68 files; no other status/path or descendant accepted.",
+  "exact_Y68_model_files_verified": 7,
+  "existing_native_plans_and_programs_unchanged": true,
+  "original_receipts": {
+    "AdaRES-Y65": {
+      "path": "pipeline/admissions/AdaRES-Y65.json",
+      "sha256": "989dbc53870334632996a142e0f53b4de993c79c03ffbe02d09fe0033f9ab1ce"
+    },
+    "AdaRES-Y67": {
+      "path": "pipeline/admissions/AdaRES-Y67.json",
+      "sha256": "39added73f460c15b16f21c31ea6d6ab8885fd83f8cb2a433f8668c437134d49"
+    }
+  },
+  "occupation_evidence": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_8c69ca0fdf95453d8728ba55867dd9e7.json",
+      "sha256": "66fd7c57279f72367affcd122f8b55df2aafd3a2055004c0fa07644924ba17d4"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_8c69ca0fdf95453d8728ba55867dd9e7.json",
+      "sha256": "d2a48a939b6fce8c47c067584046628c737f1b5534b1c7c45a67ebdaa9c90bb8"
+    }
+  ],
+  "native_sparse_GPU_steps_executed": false,
+  "production_sync": false,
+  "admitted": false,
+  "queued": false,
+  "training_started": false,
+  "Y57_still_paused": true,
+  "limitation": "Observer guard tests and current db35 runtime verification only. Future9af runtime must be verified after authorized deployment; no native backward or efficacy substitution."
+}

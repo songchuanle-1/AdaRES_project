@@ -1,0 +1,188 @@
+{
+  "complete": true,
+  "summary": [
+    {
+      "scans": 64,
+      "expressions": 256,
+      "mixed_expressions": 29,
+      "gradient_separated": 256,
+      "old_alignment": {
+        "scene_mean": 0.7780662301956909,
+        "minimum": 0.46532764844596386,
+        "maximum": 0.9555967003107071,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_alignment": {
+        "scene_mean": 0.91432820972841,
+        "minimum": 0.5562595911324024,
+        "maximum": 0.9999023079872131,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_old_alignment": {
+        "scene_mean": 0.13626197953271912,
+        "minimum": -0.15189523668959737,
+        "maximum": 0.36677706614136696,
+        "positive_scenes": 60,
+        "negative_scenes": 4
+      },
+      "adverse_expressions": 12,
+      "mass_only_alignment": {
+        "scene_mean": 0.9182336154335644,
+        "minimum": 0.5562595911324024,
+        "maximum": 0.9999023079872131,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_mass_only": {
+        "scene_mean": -0.0039054057051544078,
+        "minimum": -0.24484884412959218,
+        "maximum": 0.0015418380498886108,
+        "positive_scenes": 10,
+        "negative_scenes": 14
+      },
+      "occupancy_only_alignment": {
+        "scene_mean": 0.7748336028234917,
+        "minimum": 0.46532765217125416,
+        "maximum": 0.9555967003107071,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_occupancy_only": {
+        "scene_mean": 0.13949460690491833,
+        "minimum": -0.12241796404123306,
+        "maximum": 0.36677708849310875,
+        "positive_scenes": 61,
+        "negative_scenes": 3
+      },
+      "equal_size_alignment": {
+        "scene_mean": 0.7760604376162519,
+        "minimum": 0.46556871570646763,
+        "maximum": 0.956233412027359,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_equal_size": {
+        "scene_mean": 0.13826777211215813,
+        "minimum": -0.12251097708940506,
+        "maximum": 0.3644184395670891,
+        "positive_scenes": 61,
+        "negative_scenes": 3
+      }
+    },
+    {
+      "scans": 64,
+      "expressions": 256,
+      "mixed_expressions": 29,
+      "gradient_separated": 256,
+      "old_alignment": {
+        "scene_mean": 0.7780473797902232,
+        "minimum": 0.46532760001719,
+        "maximum": 0.9555968046188354,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_alignment": {
+        "scene_mean": 0.9143288124105311,
+        "minimum": 0.5562595594674349,
+        "maximum": 0.9999022483825684,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_old_alignment": {
+        "scene_mean": 0.1362814326203079,
+        "minimum": -0.15189537638798356,
+        "maximum": 0.3667771816253662,
+        "positive_scenes": 60,
+        "negative_scenes": 4
+      },
+      "adverse_expressions": 12,
+      "mass_only_alignment": {
+        "scene_mean": 0.9182342184358276,
+        "minimum": 0.5562595594674349,
+        "maximum": 0.9999022483825684,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_mass_only": {
+        "scene_mean": -0.003905406025296543,
+        "minimum": -0.2448489391244948,
+        "maximum": 0.0015418678522109985,
+        "positive_scenes": 10,
+        "negative_scenes": 14
+      },
+      "occupancy_only_alignment": {
+        "scene_mean": 0.7748148392274743,
+        "minimum": 0.46532757580280304,
+        "maximum": 0.9555968344211578,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_occupancy_only": {
+        "scene_mean": 0.1395139731830568,
+        "minimum": -0.1224178895354271,
+        "maximum": 0.3667772263288498,
+        "positive_scenes": 61,
+        "negative_scenes": 3
+      },
+      "equal_size_alignment": {
+        "scene_mean": 0.7760416264791274,
+        "minimum": 0.46556864120066166,
+        "maximum": 0.9562335163354874,
+        "positive_scenes": 64,
+        "negative_scenes": 0
+      },
+      "point_minus_equal_size": {
+        "scene_mean": 0.13828718593140366,
+        "minimum": -0.1225108876824379,
+        "maximum": 0.3644186183810234,
+        "positive_scenes": 61,
+        "negative_scenes": 3
+      }
+    }
+  ],
+  "repeat_noise": {
+    "old_bce": {
+      "mean_absolute": 1.3571224144470762e-08,
+      "maximum_absolute": 1.257285475730896e-06
+    },
+    "point_bce": {
+      "mean_absolute": 6.597503969703322e-08,
+      "maximum_absolute": 1.5154480934143066e-05
+    },
+    "old_dice": {
+      "mean_absolute": 8.54701056596241e-07,
+      "maximum_absolute": 0.00017559528350830078
+    },
+    "point_dice": {
+      "mean_absolute": 7.2350076152361e-07,
+      "maximum_absolute": 0.00014312565326690674
+    },
+    "gradient_change_norm": {
+      "mean_absolute": 6.299128643694196e-08,
+      "maximum_absolute": 9.326337021775544e-06
+    },
+    "old_vs_negative_point_iou_cos": {
+      "mean_absolute": 1.9206927390769124e-05,
+      "maximum_absolute": 0.00478971004486084
+    },
+    "point_vs_negative_point_iou_cos": {
+      "mean_absolute": 7.387716323137283e-07,
+      "maximum_absolute": 0.00015491247177124023
+    }
+  },
+  "sources": [
+    {
+      "path": "D:/project/AdaRES_project/pipeline/analyses/y18_diagnosis64_3efff5f3.json",
+      "sha256": "3bea84787ec46c879165c57dbeeaea4953e3a56f552d00dcc92ef07b97e05092"
+    },
+    {
+      "path": "D:/project/AdaRES_project/pipeline/analyses/y18_repeat64_3efff5f3.json",
+      "sha256": "1d39fcbe7f090a5020f6e13b5995636111585e2fe4ef954d301be99f14acb175"
+    }
+  ],
+  "unit": "Final-layer scene means; auxiliary layers not independent repeats",
+  "scope": "Train-only local derivative diagnosis, not trained efficacy",
+  "limitation": "Mass/occupancy/smoothing confounds reported; two repeats are not a universal numerical bound or multi-seed evidence"
+}

@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y64",
+  "token": "d35e78a8839e4730b6b5623198771c8e",
+  "failure_scope": "monitoring",
+  "original_failure_preserved": true,
+  "original_remote_line20": "assert (after['latest'][0],after['latest'][2])>(before['latest'][0],before['latest'][2])",
+  "actual_diagnostic_latest": {
+    "phase": "Val",
+    "epoch": 24,
+    "total": 30,
+    "step": 173,
+    "count": 363
+  },
+  "real_phase_progress": {
+    "path": "pipeline/checks/y64_server1_phase_progress_d35e78a8839e4730b6b5623198771c8e.json",
+    "sha256": "7a70dd55ba27a4a929c076c269ef500632b6922a161cbb0f7e0b91fb6485c821"
+  },
+  "guard_tests_passed": 8,
+  "native_Train_or_Val_progress_confirmed": true,
+  "source_YAML_admission_GPU_identity_preserved": true,
+  "actual_training_failure": false,
+  "training_restarted": false,
+  "queue_changed": false,
+  "running_changed": false,
+  "native_smoke_or_training_efficacy_proven": false,
+  "evidence": [
+    {
+      "path": "scripts/observe_y64_server1_phase.py",
+      "sha256": "ab029e0bde5b2092690ad210e16108a54757f9b6900581e72ff5e07bfb3d223e"
+    },
+    {
+      "path": "scripts/test_y64_phase_observer.py",
+      "sha256": "2c40e3852470f35435e4360edb418a587403947914a573c7694916fbecb39c18"
+    },
+    {
+      "path": "pipeline/checks/y64_phase_guard_tests_d35e78a8839e4730b6b5623198771c8e.log",
+      "sha256": "2056ec3aa655961ec8f156e9e2183a2b5126205ed2ef046b4ded8a17a82339d1"
+    },
+    {
+      "path": "pipeline/checks/y64_phase_diagnostic_d35e78a8839e4730b6b5623198771c8e.json",
+      "sha256": "76eddddb13edf333403e33759ea95eb0178951db92f49debda5652c538883c13"
+    },
+    {
+      "path": "pipeline/checks/y64_phase_diagnostic_d35e78a8839e4730b6b5623198771c8e.log",
+      "sha256": "356dd4b9215b6fbec06cc1a57c845eeced288607a30597e8847be2a5d590b0a1"
+    },
+    {
+      "path": "pipeline/checks/y64_server1_progress_d35e78a8839e4730b6b5623198771c8e.log",
+      "sha256": "86206729f418acb8d5edc84a0878fbc0dbf6a00d2e4744952e10fdf28298730b"
+    },
+    {
+      "path": "pipeline/checks/y64_server1_phase_progress_d35e78a8839e4730b6b5623198771c8e.json",
+      "sha256": "7a70dd55ba27a4a929c076c269ef500632b6922a161cbb0f7e0b91fb6485c821"
+    },
+    {
+      "path": "pipeline/bugfixes/bugfix_20261029_y64_phase_observer.md",
+      "sha256": "36b7e9f5db07036e77d5374c000bb8efb779931cd3f5062030a427da9c8b090e"
+    },
+    {
+      "path": "pipeline/decisions/20261029-044614_other.md",
+      "sha256": "bc414254407f5cc5445d6e2ec9686395b080c40df5a02e8e79f6cfd456a0a8ff"
+    }
+  ]
+}

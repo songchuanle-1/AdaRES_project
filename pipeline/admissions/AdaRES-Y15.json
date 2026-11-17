@@ -1,0 +1,80 @@
+{
+  "id": "AdaRES-Y15",
+  "config": "configs_song/model_paper5/adares_y15_query_completion_res.yaml",
+  "code_commit": "2bb1c107b27fbfdbdf2d6ffd25b43bb5bf4f3e6c",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20260930-194327_other.md",
+    "sha256": "7cee7f9ec4c210c0d8d58f51f7caf29617666bf71bc6707a4810df1e380c2ae3"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-Y15_train64_diagnosis_20260930.json", "sha256": "a788edc1c7792b26720b3519565433aa6e9efaae766e4e6f855f7a9b7d465988"},
+        {"path": "pipeline/analyses/AdaRES-Y15_admission_review_20260930.md", "sha256": "75689ee9f2496e35d14ea0d9cdc003a3ca634fc81264bba31bba7a4d083ace1a"}
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-Y15_augmented_matched_controls_20260930.json", "sha256": "81b7f91d326b02b831cd329c51168a1cc4d3f1a089b9643e3ddb149dee768522"},
+        {"path": "pipeline/analyses/y15_specificity_20260930.json", "sha256": "ff79ea625dd58ddb83eb10c01850e5663ba898d28dbc091c6ea5b883c532e2dc"}
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/y15_hardened_native_20260930.json", "sha256": "a508591e099d1bf809880796bceea150fb99ddea315a85788ccc9fffe120127d"},
+        {"path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/ipdn.py", "sha256": "4f96c6e74fbe2892913674d6d883e4e6428887ec5bfa59b29f8ec5fff34112e8"}
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/y15_stress_hardened_teacher_20260930.json", "sha256": "61301b3e17617b66523fe54e32358087d1dbdbd31ee25b0ec2fe12b7f78faf9c"},
+        {"path": "pipeline/analyses/y15_stress_adares_w2_pointmass_competition_20260930.json", "sha256": "2871aeaf10d94046f24c565ad0fa7c1b5c0e88d6ea53189579571aeb82ceb080"},
+        {"path": "pipeline/designs/AdaRES-Y15_stress_resume_prereg_20260930.md", "sha256": "aa6c9cf6a3ee2c6b4e40c38162e5549c9ed3605af6a5a553dd15b5793ddc042c"}
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-Y15_source_audit_20260930.json", "sha256": "0f04f534b803ca0ada8eb36e898dabd2a2bd232f8cb0a53e8acc6a0a39aed574"},
+        {"path": "AdaRES/configs_song/model_paper5/adares_y15_query_completion_res.yaml", "sha256": "b2a0e59b48067cd1335c20da31ec1c0e35766e78231aa011fe8b86a231effa99"}
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/goal.json", "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"},
+        {"path": "pipeline/designs/AdaRES-Y15_launch_plan_20260930.md", "sha256": "1a491ed264fd3dc4d885933f1654b91127211533ad44e420a6fd97efff2b691e"},
+        {"path": "pipeline/analyses/y15_inference_audit_20260930.json", "sha256": "34b71cf1d60e544f6a3878e801a2d334d6c66b671b5838699447ccd04c07f4c9"}
+      ]
+    }
+  },
+  "training_protocol": {
+    "epochs": 30,
+    "min_epochs": 30,
+    "seed": 1999,
+    "initialization": "released SPFormer sparse-UNet only, project decoder",
+    "server": "server-2",
+    "allowed_gpus": [0, 1],
+    "num_gpus": 1,
+    "teacher_checkpoint_sha256": "56f49e7c580ddfb67896e77432a922fafed98f7ed58ae6d957703bd2cf062616"
+  },
+  "post_training_evaluation": {
+    "primary": "official full ScanRefer val mIoU; target0.515, W2 .5100 and B1 .5020",
+    "secondary": "Acc25/50, spmIoU, available/selected queries, warm student-only latency and peak memory",
+    "sampling_unit": "actual scan_id, expression identity(scan_id,object_ids,ann_id)",
+    "uncertainty": "repeated paired evaluation noise plus scene-clustered intervals; unknown/inconclusive without adequate evidence",
+    "harm_and_pareto": "frozen Y15_stress_resume_prereg_20260930.md and launch_plan; no subgroup or protocol tuning"
+  },
+  "limitations": [
+    "Teacher necessity and trained efficacy unproved; five of32 material teacher masks were exactly GT.",
+    "Teacher training about43% slower than physical GT control on stress batch; hardware fit is not trained Pareto superiority.",
+    "Sparse continuation/probability outputs not bitwise deterministic; full val noise unknown.",
+    "Historical champion/baseline are not freshly matched30-epoch causal controls.",
+    "Literature novelty unverified; GT package is a causal control, not a second independent admission."
+  ]
+}

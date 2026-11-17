@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "frozen_at": "2026-10-20T23:11:23.942677+08:00",
+  "code_commit": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+  "preregistered_design": {
+    "path": "pipeline/designs/exp_design_Y56_dd8e.md",
+    "sha256": "67a3c59b52b710a9cbee0dbfade485bb7fe486088efce8cd88c17b636ce76501"
+  },
+  "train": {
+    "initialization": "Released SPFormer sparse-UNet only; not trained-W2 diagnostic weights",
+    "seed": 1999,
+    "epochs": 30,
+    "batch_size": 2,
+    "queries": 128,
+    "selected_queries": 1,
+    "optimizer_loss_scheduler": "Unchanged W2 YAML",
+    "single_gpu": true,
+    "no_validation_tuning": true
+  },
+  "evaluation": {
+    "split": "Complete frozen ScanRefer val9508expressions/141scenes",
+    "methods": [
+      "AdaRES-Y56",
+      "AdaRES-Y36",
+      "AdaRES-W2",
+      "AdaRES-B1"
+    ],
+    "repeats": 2,
+    "primary": "FIRST",
+    "metrics": [
+      "mIoU",
+      "Acc@0.25",
+      "Acc@0.5",
+      "active_queries",
+      "latency",
+      "peak_memory"
+    ],
+    "scene_cluster_bootstrap": 10000,
+    "bootstrap_seed": 1999,
+    "TRAIN_size_cuts": [
+      1487,
+      3325
+    ],
+    "material_harm": "Prespecified target-size subgroup difference CI upper<0 vs Y36/W2; retain all negatives.",
+    "noise": "Independent inference repeat; not training-seed uncertainty.",
+    "lightweight_Pareto": "Compare matched full-evaluation latency/peak memory/parameters, no metric-free promotion.",
+    "uncertainty": "Crossing intervals or inadequate independent scenes are inconclusive; official unique/multiple unknown."
+  },
+  "limitations": [
+    "Natural copies found only in one of40TRAIN scenes, initial layer; final selector changes not observed.",
+    "Formal native total loss delta below reported float32 loss resolution; nonzero directional readout is not benefit.",
+    "Single conditioned duplicate scene has higher latency; fixed10TRAIN timing is not a worst-case bound.",
+    "Default two implementation revisions consumed; original overcost and failed drivers preserved."
+  ]
+}

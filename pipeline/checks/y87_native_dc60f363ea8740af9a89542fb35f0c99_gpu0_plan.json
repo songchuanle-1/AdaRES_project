@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y87",
+  "config": "configs_song/model_paper5/adares_y87_self_language_product_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "053aea85a03be4244879c90362455c45327a7d64",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "retained_branch": "refs/heads/adares-y87-self-language-product",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 9,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y87_gpu0_smoke pipeline/checks/y87_native_dc60f363ea8740af9a89542fb35f0c99_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "required_resource": "Fresh exclusive idle/unreserved server-2 GPU0/280W after exact Y85 terminal verification/archive; preserve Y84 and both user pauses.",
+  "checks": "Original YAML/TRAIN two finite losses/backward/optimizer, twelve exact original self/language sum-product paths and original norm/FFN consumers, zero then nonzero response, original/new/input gradients and updates, original masks/gates/head/norms/native modes and memory.",
+  "program": {
+    "path": "pipeline/checks/y87_native_dc60f363ea8740af9a89542fb35f0c99_gpu0_program.py",
+    "sha256": "d99896e5d0cd8ba434d4f73f73dae19d08c7d8abf2a016290ae665bd29522f95"
+  }
+}

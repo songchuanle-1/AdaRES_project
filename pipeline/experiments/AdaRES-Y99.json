@@ -1,0 +1,76 @@
+{
+  "id": "AdaRES-Y99",
+  "config": "configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml",
+  "server": "server-1",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-11-11T18:07:07.755839",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-11-12T19:53:07.339050",
+      "status": "done_complete",
+      "best_miou": "0.5109",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 2980836,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y99_spatial_mask_skip_res_20261111_180628.log",
+  "launched": "2026-11-11T18:07:07",
+  "final_best": "0.5109",
+  "finished_at": "2026-11-12T19:53:07.339050",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-1\\adares_y99_spatial_mask_skip_res\\16ace440440346cebe23c272fdbba622\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "63e6520ea3304a1cba2fa9c6864b7fbb",
+  "code_commit": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y99.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y99_server1_fixed30_y100_16ace440440346cebe23c272fdbba622.json",
+    "sha256": "68b925d75e27cb0dfb232f0e8eb1909d08a41d2616d75d2034392a41a32add5f"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y99_spatial_mask_skip_res/20261111_180638/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5109262466430664,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "23fce7113c165d7093a1a1ce90afae856a9c9f6ef0bd497b81a01262eebcaf1b"
+    },
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y99_spatial_mask_skip_res/20261111_180638/best.pth",
+      "epoch": 23,
+      "best_miou": 0.5109262466430664,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 23,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "158ab322d6113a6de4c797b5f8379f5d34a19f302204d0db2f9255b55c8f6dd5"
+    }
+  ],
+  "formal_FIRST_miou": 0.5109262480516882,
+  "complete_scientific_review": {
+    "path": "pipeline/analyses/y99_trained_cost_c9234c1d7d7141c8a1b69e2e9749490e/complete_scientific_review.json",
+    "sha256": "42c6d2d21e0c784de53148909da3864229c46c4e293e48483af84a3f3a496e6e"
+  },
+  "full_frozen_evaluation_result": {
+    "path": "pipeline/analyses/y99_full_review_c9234c1d7d7141c8a1b69e2e9749490e/formal_comparison.json",
+    "sha256": "da9ef5808398b1e7d7e7da6e675af8ff00fa3c2fea0bdab4d355980616b4d886"
+  },
+  "full_trained_cost_result": {
+    "path": "pipeline/analyses/y99_trained_cost_c9234c1d7d7141c8a1b69e2e9749490e/trained_cost.json",
+    "sha256": "65f853a38bb0aeb5734095d5cf43a367b67a0aae6209260fc720551bf7f1225f"
+  },
+  "post_measurement_audit": {
+    "path": "pipeline/analyses/y99_trained_cost_c9234c1d7d7141c8a1b69e2e9749490e/postaudit.json",
+    "sha256": "be3a7804d031679a3dd515e9045b053ca0eb9ef247928d6de5da064875f91372"
+  },
+  "scientific_disposition": "complete_inconclusive"
+}

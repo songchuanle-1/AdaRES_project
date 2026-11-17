@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y44",
+  "pid": 30175,
+  "config": "configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y44_coordinate_feature_res_20261013_062953.log",
+  "code_commit": "c65ad2fcba4ef10b71ea6ae58ed01109568bd0cd",
+  "actual_gpu": 1,
+  "native_steps_increased": true,
+  "captures": [
+    {
+      "epoch": 1,
+      "epochs": 30,
+      "step": 309,
+      "total_steps": 4686
+    },
+    {
+      "epoch": 1,
+      "epochs": 30,
+      "step": 319,
+      "total_steps": 4686
+    }
+  ],
+  "gpu1_device_memory_mib": 17140,
+  "gpu1_device_utilization": 96,
+  "preserved_y43_pid": 13155,
+  "preserved_y43_gpu": 0,
+  "source_hashes_verified": true,
+  "limitations": [
+    "Bounded log, not whole-log crash absence; device occupation is not isolated peak/efficacy."
+  ],
+  "observed_start_local": "2026-10-13T06:33:12.557502+08:00",
+  "observed_end_local": "2026-10-13T06:33:18.413449+08:00"
+}

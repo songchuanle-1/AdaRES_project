@@ -1,0 +1,85 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "token": "c9234c1d7d7141c8a1b69e2e9749490e",
+  "original_candidate_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+  "current_runtime_marker": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "source_files_verified": 26,
+  "own_model_files": 6,
+  "CPU_identity_and_launch_guards_passed": 11,
+  "private_runtime_config_and_class_import_passed": true,
+  "original_native_scientific_tests_not_replayed": true,
+  "checkpoint_loaded": false,
+  "GPU_used": false,
+  "program": {
+    "path": "pipeline/checks/y96_review_binding_c9234c1d7d7141c8a1b69e2e9749490e_execution.py",
+    "sha256": "561c042d98fa638deaa09dde60576f650dd40b3585583afddc7edba522ae96e2"
+  },
+  "own_CPU_import": {
+    "path": "pipeline/checks/y96_review_binding_c9234c1d7d7141c8a1b69e2e9749490e_import.json",
+    "sha256": "c059c3f5bcf6d72d9112c58249ef00c1e058ebc70cce19de151efcf6d4b62628"
+  },
+  "baseline_config_weight_bindings_reused_byte_identically": true,
+  "corrected_original_repeat_noise_analysis_reused": true,
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0,
+    "note": "Existing power preserved; full paired evaluation/cost on this device; two batches are not a full-dataset memory bound."
+  },
+  "native_evaluation_not_started": true,
+  "evidence": [
+    {
+      "path": "scripts/prepare_y96_frozen_review.py",
+      "sha256": "fa18e6b4334e2d8ce72c7c9274e51ff97dc0ec6041a906c9a70eab372e1adf53"
+    },
+    {
+      "path": "pipeline/checks/y96_review_binding_c9234c1d7d7141c8a1b69e2e9749490e_import.py",
+      "sha256": "0838cd1f180308809652c299624dbb4a74f9f4aa6d3bee33eff143bf3ee99c44"
+    },
+    {
+      "path": "pipeline/checks/y96_review_binding_c9234c1d7d7141c8a1b69e2e9749490e_import.json",
+      "sha256": "c059c3f5bcf6d72d9112c58249ef00c1e058ebc70cce19de151efcf6d4b62628"
+    },
+    {
+      "path": "pipeline/checks/y96_review_binding_c9234c1d7d7141c8a1b69e2e9749490e_import.log",
+      "sha256": "c5d6e3835681e3c730e8e1d8487bdfa7c2524e2fe8e1f6def3d6e18933f6052c"
+    },
+    {
+      "path": "pipeline/checks/y96_review_binding_c9234c1d7d7141c8a1b69e2e9749490e_execution.py",
+      "sha256": "561c042d98fa638deaa09dde60576f650dd40b3585583afddc7edba522ae96e2"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y96_4198029edcde47b7a8686b8e8dcafad4_post_training_freeze.json",
+      "sha256": "50213e2f1fda98e5e9477eaa5c030952d1d913d3d1aeff86d1fc6aa984dfc154"
+    },
+    {
+      "path": "pipeline/checks/y96_server1_fixed30_y98_cc7e16a3523147a4be1fa5774e4888ce.json",
+      "sha256": "3999d2d4a3db05cb969797a23fc2a6527b2772771d2c41b00e84eb1eab61c6c0"
+    },
+    {
+      "path": "pipeline/checks/y96_server1_fixed30_y98_cc7e16a3523147a4be1fa5774e4888ce_archive_binding.json",
+      "sha256": "985a7afda4fad77a73d5962743ee72b50b1a89422f553ccf7a5a44c9168e7dfc"
+    },
+    {
+      "path": "pipeline/analyses/y101_trained_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985/complete_scientific_review.json",
+      "sha256": "5a696ae66ce8815b774b67933edc1a8bd066fffe1a5d3b4cdc682dea37536636"
+    },
+    {
+      "path": "pipeline/checks/y101_review_adapter_afe999d0f7ff4ff1aba5d54d5485fa8d.json",
+      "sha256": "043a23373ae32bf1b7d42a61dea9f7fe5bce1528cb6bc2619a2505e74196834f"
+    },
+    {
+      "path": "pipeline/checks/y101_review_bootstrap_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "e0ea7545df4344daeeb7a758e3bc006bc67f669462bfe424ff651f126e20b270"
+    },
+    {
+      "path": "scripts/analyze_frozen_full.py",
+      "sha256": "cc9e50470844c5658062e6337658950fdbc75195c6702f9f1f79a50db5ae441f"
+    },
+    {
+      "path": "scripts/analyze_y23_frozen_terminal.py",
+      "sha256": "20fa7e30532e05ad528360368a1734bd872121b2c5591536c26d8eea057917a0"
+    }
+  ]
+}

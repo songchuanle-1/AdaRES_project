@@ -1,0 +1,82 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-23T20:50:02.048570+08:00",
+  "command": "python -B scripts/check_prepared_resources_gpu0_trial.py --token 3e61cded0e934db5bb4f9abd4451c12c",
+  "candidate_identity_checks": [
+    {
+      "id": "AdaRES-Y60",
+      "exact_files": 7,
+      "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+      "config": "configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+      "frozen_program": {
+        "path": "pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_program.py",
+        "sha256": "e3f3aa26cc24043f94a7a11e65284718356dfc79d15dd35c4791e2ec9947f861"
+      },
+      "current_version_and_goal_match": true
+    }
+  ],
+  "live": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 92, 23726, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 50448, 23718\n",
+    "compute_query_rc": 0,
+    "tasks": {}
+  },
+  "training": [],
+  "health": {
+    "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+    "devices": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 280.00, 31.12, 36, 0, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 390.00, 368.08, 71, 60, 92, 23726, 24576\n",
+      "stderr": ""
+    },
+    "performance": {
+      "rc": 0,
+      "stdout": "\n==============NVSMI LOG==============\n\nTimestamp                                 : Fri Oct 23 08:49:49 2026\nDriver Version                            : 550.90.07\nCUDA Version                              : 12.4\n\nAttached GPUs                             : 2\nGPU 00000000:21:00.0\n    Performance State                     : P8\n    Clocks Event Reasons\n        Idle                              : Active\n        Applications Clocks Setting       : Not Active\n        SW Power Cap                      : Not Active\n        HW Slowdown                       : Not Active\n            HW Thermal Slowdown           : Not Active\n            HW Power Brake Slowdown       : Not Active\n        Sync Boost                        : Not Active\n        SW Thermal Slowdown               : Not Active\n        Display Clock Setting             : Not Active\n    Sparse Operation Mode                 : N/A\n\nGPU 00000000:4A:00.0\n    Performance State                     : P2\n    Clocks Event Reasons\n        Idle                              : Not Active\n        Applications Clocks Setting       : Not Active\n        SW Power Cap                      : Active\n        HW Slowdown                       : Not Active\n            HW Thermal Slowdown           : Not Active\n            HW Power Brake Slowdown       : Not Active\n        Sync Boost                        : Not Active\n        SW Thermal Slowdown               : Not Active\n        Display Clock Setting             : Not Active\n    Sparse Operation Mode                 : N/A\n\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "disk": {
+      "rc": 0,
+      "stdout": "Filesystem         1B-blocks          Used    Available Use% Mounted on\n/dev/sda1      3936818806784 3616650305536 120112472064  97% /bak_home\n",
+      "stderr": ""
+    }
+  },
+  "devices": {
+    "0": {
+      "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "power_limit_watts": 280.0,
+      "draw_watts": 31.12,
+      "temperature_c": 36.0,
+      "fan_percent": 0.0,
+      "utilization_percent": 0.0,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24576
+    },
+    "1": {
+      "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      "power_limit_watts": 390.0,
+      "draw_watts": 368.08,
+      "temperature_c": 71.0,
+      "fan_percent": 60.0,
+      "utilization_percent": 92.0,
+      "memory_used_mib": 23726,
+      "memory_total_mib": 24576
+    }
+  },
+  "idle_authorized_gpus": [
+    0
+  ],
+  "result": "ready_for_native_smoke",
+  "native_smoke_executed": false,
+  "queue_changed": false,
+  "hardware_settings_changed": false,
+  "limitation": "Source/goal/commit identity and live resources only. No new CPU diagnostic, native sparse backward, admission or efficacy result. Slot opening requires a fresh native GPU check and verified launch, not just this observation."
+}

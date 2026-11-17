@@ -1,0 +1,49 @@
+{
+  "id": "AdaRES-Y23",
+  "config": "configs_song/model_paper5/adares_y23_valid_token_support_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-02T11:25:58.690182",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-02T14:36:47.101605+08:00",
+      "action": "user_paused",
+      "gpu": "0",
+      "pid": 125903,
+      "resume_after": "AdaRES-Y18",
+      "resume_gpu": "1"
+    },
+    {
+      "ts": "2026-10-02T23:49:53.091150+08:00",
+      "action": "resumed_after_y18",
+      "gpu": "1",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth",
+      "pid": 129584
+    },
+    {
+      "ts": "2026-10-03T20:48:36.256490",
+      "status": "done_complete",
+      "best_miou": "0.5076",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 129584,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y23_valid_token_support_res_20261002_234917.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-02T11:25:58",
+  "paused_at": "2026-10-02T14:36:47.101605+08:00",
+  "resume_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth",
+  "resume_gpu": "1",
+  "dispatch_hold": "User pause: resume only on GPU1 after AdaRES-Y18 completes",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth",
+  "final_best": "0.5076",
+  "finished_at": "2026-10-03T20:48:36",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

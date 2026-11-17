@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "e5ca4e47b09f466ea2a1dc215c0acf3c",
+  "id": "AdaRES-Y73",
+  "before": {
+    "gpu": "0, 1, 390.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y73",
+    "label": "AdaRES-Y73 fixed30",
+    "config": "configs_song/model_paper5/adares_y73_initial_query_anchor_res.yaml",
+    "status": "running",
+    "gpu": "1",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y73.json",
+    "scientific_candidate_id": "AdaRES-Y73",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 62829,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y73_initial_query_anchor_res_20261031_171158.log",
+    "launched": "2026-10-31T17:12:34"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y73 fixed30] configs_song/model_paper5/adares_y73_initial_query_anchor_res.yaml → server-2 gpu1"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y72_y73.py",
+    "sha256": "ed120baa38ef2a8b0da18842a0517e9b72b01250802d121a5b44d7a8586312f1"
+  }
+}

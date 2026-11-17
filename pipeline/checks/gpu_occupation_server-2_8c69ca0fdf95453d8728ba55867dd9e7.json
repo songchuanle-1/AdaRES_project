@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "8c69ca0fdf95453d8728ba55867dd9e7",
+  "snapshot_generated_at": "2026-10-29T16:47:24.389529+00:00",
+  "snapshot_sha256": "2862de1be6b29aea3c53a8a344404791607161d17691e94f24256a15d16a8f25",
+  "servers_sha256": "ed15aeebb90638fcced4f0e57c4b76761cf2d7c04d201afeaf6e55ca025cbe7a",
+  "observed_at": "2026-10-29T16:51:21.881416+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y68"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0,
+      1
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 49, 22720, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 72, 22716, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 112356\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100811\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 8c69ca0fdf95453d8728ba55867dd9e7 --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_8c69ca0fdf95453d8728ba55867dd9e7.log",
+    "sha256": "00e684a9ecbaeceda9a767b5f8b0a3ffee34d8dd7c73cf96aa305dc5056a061c"
+  }
+}

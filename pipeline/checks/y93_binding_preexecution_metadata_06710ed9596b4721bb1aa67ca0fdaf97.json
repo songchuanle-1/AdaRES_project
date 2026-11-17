@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "token": "06710ed9596b4721bb1aa67ca0fdaf97",
+  "recorded_at": "2026-11-08T09:08:11.026152+08:00",
+  "diagnosis": "Inspection found stale parent prose, a colliding historical metadata key and old test/doc names.",
+  "originals_preserved": [
+    {
+      "path": "scripts/run_y93_bound_native.py",
+      "sha256": "186fc3418d799fdd7d1a1d816c8c611d04211c3db528e35a5de5361b19c132b4"
+    },
+    {
+      "path": "scripts/rebind_y93_on_y92.py",
+      "sha256": "d88cc5863f56c8fbb288f7c77ab9248ab222e3d832846cbc2acdd4ef5fb05b87"
+    }
+  ],
+  "corrected_v2": [
+    {
+      "path": "scripts/run_y93_bound_native_v2.py",
+      "sha256": "d921a9acc4adfe4ac3dd189aea6f016a09cddee52496757a0309ee92454b6298"
+    },
+    {
+      "path": "scripts/rebind_y93_on_y92_v2.py",
+      "sha256": "bd27918d1980c5f659ef8a8ff507935cf54d7a690d87fb2ce418afbe8509c54a"
+    }
+  ],
+  "helper": {
+    "path": "scripts/fix_y93_binding_helper_metadata.py",
+    "sha256": "f168258f9f20dedc4dd147b42b396ac6b33d441a081a3bf20baa18db12edddd0"
+  },
+  "original_helpers_executed": false,
+  "original_guards_executed": false,
+  "scientific_files_changed": false,
+  "native_bodies_changed": false,
+  "original_guard_logic_changed": false,
+  "scientific_revision": false
+}

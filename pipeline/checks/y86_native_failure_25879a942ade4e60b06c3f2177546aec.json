@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y86",
+  "token": "25879a942ade4e60b06c3f2177546aec",
+  "observed_at": "2026-11-06T03:08:04.188702+08:00",
+  "kind": "native_smoke",
+  "result": "failed",
+  "failure_scope": "implementation",
+  "original_guard_preserved": true,
+  "native_smoke_passed": false,
+  "scientific_efficacy": "Unknown; the failed response witness is not a trained efficacy result.",
+  "source_manifest": {
+    "path": "pipeline/checks/y86_cpu_version_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "c105aee1d4bc68431b0db6e4f36a7ce21be78ff4e8e31f27fe2046bdd7f46b0e"
+  },
+  "original_plan": {
+    "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_gpu0_plan.json",
+    "sha256": "d0e99f1fcd0ad0521d3327f2a3915df319c692ca777084fb6e6b0f307b141213"
+  },
+  "raw_log": {
+    "path": "pipeline/analyses/y86_gpu0_smoke_25879a942ade4e60b06c3f2177546aec.log",
+    "sha256": "a80f888aab3a2eab7c2addffc5d8fa937d2f3eff1e5332a9764c53b216f267c8"
+  },
+  "diagnostic_program": {
+    "path": "pipeline/checks/y86_gpu0_diagnostic_25879a942ade4e60b06c3f2177546aec_program.py",
+    "sha256": "ec33eb87bf6d18b8dcef2337f46a71e6c6e7815f6cdab2be04ae94f109697208"
+  },
+  "idle_resource": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "command": "python -B scripts/run_experiment_first_probe.py y86_gpu0_smoke pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_gpu0_program.py --token 25879a942ade4e60b06c3f2177546aec --seconds 600 --gpu --gpu-id 0",
+  "next_action": "Capture actual values at the unchanged guard; preserve failure, do not admit, then advance independent prepared work.",
+  "helper": {
+    "path": "scripts/record_y86_native_failure.py",
+    "sha256": "611585c92fb295ce8b3f10cf04caacdec607163a526d62d6b7b29d246a3f3996"
+  }
+}

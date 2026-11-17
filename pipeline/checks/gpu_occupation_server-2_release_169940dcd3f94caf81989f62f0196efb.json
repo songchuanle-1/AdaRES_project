@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "169940dcd3f94caf81989f62f0196efb",
+  "snapshot_generated_at": "2026-11-08T06:55:09.047830+00:00",
+  "snapshot_sha256": "8bada6259388b7c97a9f22ab0358a5f84a241c89391877956824dd654dd80f58",
+  "servers_sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74",
+  "observed_at": "2026-11-08T07:33:23.491741+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y65",
+    "AdaRES-Y68",
+    "AdaRES-Y71",
+    "AdaRES-Y74",
+    "AdaRES-Y77",
+    "AdaRES-Y80",
+    "AdaRES-Y83",
+    "AdaRES-Y85",
+    "AdaRES-Y87",
+    "AdaRES-Y89",
+    "AdaRES-Y93",
+    "AdaRES-Y94"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 68, 22742, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100, 24042, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 83827\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 7560\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 169940dcd3f94caf81989f62f0196efb --server server-2 --label release",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_release_169940dcd3f94caf81989f62f0196efb.log",
+    "sha256": "ff81a13f40b00f1c6ea61ff43b7272ee2480618373f9acf53d9bd4196b60445a"
+  }
+}

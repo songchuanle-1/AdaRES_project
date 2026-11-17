@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y81",
+  "token": "b5d4f7646f114f71b5f59d796e2b1858",
+  "code_commit": "4157937d0c3cf344a44394ce15c95349aa94d50f",
+  "CPU_native_callbacks_actually_executed": true,
+  "native_body": {
+    "path": "scripts/probe_y81_native_smoke.py",
+    "sha256": "120cdf08362f3b971d4121e1bbde3943a3d138881b4deeda2a523eb5a453ce94"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y81_native_observer_CPU_b5d4f7646f114f71b5f59d796e2b1858_program.py",
+    "sha256": "41cf87bedfddf7602c89a4395451361502eefaa480f94963f7587489c90e1f75"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y81_native_observer_cpu_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "e30af7acbee416808560b1ddf343773dbb79c740b53ec2e8faa667d0deec5c76"
+  },
+  "exact_callback_functions_and_classes": 13,
+  "original_full_model_pretrain_TRAIN_loaded": true,
+  "two_synthetic_CPU_decoder_optimizer_steps": true,
+  "exact_static_mask_query_padding_and_prediction_consumption": true,
+  "original_hard_gate_coarse_consumers_and_shared_heads": true,
+  "finite_both_input_and_new_weight_gradients_and_updates": true,
+  "zero_then_nonzero_response": true,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y81_native_observer_cpu_b5d4f7646f114f71b5f59d796e2b1858.json",
+      "sha256": "e30af7acbee416808560b1ddf343773dbb79c740b53ec2e8faa667d0deec5c76"
+    },
+    {
+      "path": "pipeline/analyses/y81_native_observer_cpu_b5d4f7646f114f71b5f59d796e2b1858.log",
+      "sha256": "1f1ea8b34eb88cd9cd8d92e6d2704112607710fbb7bd14e8f07181a9b36ae5e6"
+    },
+    {
+      "path": "pipeline/checks/y81_native_observer_CPU_b5d4f7646f114f71b5f59d796e2b1858_program.py",
+      "sha256": "41cf87bedfddf7602c89a4395451361502eefaa480f94963f7587489c90e1f75"
+    },
+    {
+      "path": "scripts/probe_y81_native_smoke.py",
+      "sha256": "120cdf08362f3b971d4121e1bbde3943a3d138881b4deeda2a523eb5a453ce94"
+    },
+    {
+      "path": "scripts/save_y81_native_observer_verification.py",
+      "sha256": "dbc49083932eb40b23c717292b56a47fb993db68742525df5cddc92abe766051"
+    },
+    {
+      "path": "scripts/prepare_y81_native_observer_cpu.py",
+      "sha256": "0161c7f61f05f45eaab7d9140b7c77cd8997b1aec43fc39bc05c82ec0210ef17"
+    }
+  ],
+  "CUDA_initialized": false,
+  "native_sparse_task": false,
+  "native_smoke_passed": false,
+  "admission": false,
+  "efficacy_unknown": true
+}

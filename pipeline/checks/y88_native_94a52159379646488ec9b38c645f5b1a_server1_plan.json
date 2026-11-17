@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "config": "configs_song/model_paper5/adares_y88_mask_query_quadratic_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "runtime_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data1/songcl/Project/AdaRES_project/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "working_HEAD_preserved": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+  "retained_branch": "refs/heads/adares-y88-mask-query-quadratic",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 8,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_y88_server1_native.py --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved server1GPU0/350W after exact Y84 fixed30 canonical archive. No GPU1.",
+  "checks": "Original native TRAIN two finite losses/backward/updates, fourteen exact quadratic projections and mask consumers, original score/indicator/query_norm/coarse gates, original/new/input finite gradients, native modes/memory. No efficacy from smoke.",
+  "program": {
+    "path": "pipeline/checks/y88_native_94a52159379646488ec9b38c645f5b1a_server1_program.py",
+    "sha256": "4b6ef8d5469da6548dbbf0522dff099244cbad5ac57c5c371d362d5eea443ea4"
+  }
+}

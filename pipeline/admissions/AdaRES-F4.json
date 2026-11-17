@@ -1,0 +1,58 @@
+{
+  "id": "AdaRES-F4",
+  "config": "configs_song/model_paper5/adares_f4_mask_reanchor_res.yaml",
+  "code_commit": "597e56a852f1039bc44e72ffcdba6f1a363e07bd",
+  "goal_sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba",
+  "decision": {
+    "path": "pipeline/decisions/20260924-150915_next_batch.md",
+    "sha256": "ca3ec5a0ff960b2333722f1d3e68622ad0d443860782a944a1ebb41aa50958df"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-F4_reanchor_diagnosis_20260924-150200.md", "sha256": "650778446c140085fb49ae260f9f561cb23b2ca537658ec97f014a79daf8b5d9"},
+        {"path": "pipeline/analyses/AdaRES-F4_reanchor_16scenes_20260924.json", "sha256": "a7f334fec506630ac0147f830a365566398b318ca7937b58499ccb84a43f9218"}
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/configs_song/model_paper5/adares_f4_mask_reanchor_res.yaml", "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"},
+        {"path": "pipeline/analyses/AdaRES-F4_native_gate_review_20260924-150700.md", "sha256": "b05dd774cd7c7e9f2610ac8c2d04bd3ad0eb302a83ab1551ba463c503a74814b"}
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/tools/probe_adares_f4_real_batch.py", "sha256": "04b791243332bdbaee8de740927a9664a74bff16de49aed9871f806378ce7455"},
+        {"path": "pipeline/analyses/AdaRES-F4_native_gate_review_20260924-150700.md", "sha256": "b05dd774cd7c7e9f2610ac8c2d04bd3ad0eb302a83ab1551ba463c503a74814b"}
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-F4_native_gate_review_20260924-150700.md", "sha256": "b05dd774cd7c7e9f2610ac8c2d04bd3ad0eb302a83ab1551ba463c503a74814b"}
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/ipdn/model_paper5/adares_f4_mask_reanchor/dec.py", "sha256": "0d21bad71642cb415c5eeb323dd878f148f5c915d36cd58be1506428cc752994"},
+        {"path": "pipeline/designs/exp_design_20260924-150200.md", "sha256": "015d1a639d8dfe8e4f86ed789327b87c6b05b4ff91aff1b39a3aad1b62daf6c5"}
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/goal.json", "sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba"},
+        {"path": "pipeline/analyses/AdaRES-F4_native_gate_review_20260924-150700.md", "sha256": "b05dd774cd7c7e9f2610ac8c2d04bd3ad0eb302a83ab1551ba463c503a74814b"}
+      ]
+    }
+  },
+  "limitations": [
+    "Diagnostic coverage compares previous-layer neighborhood to final predicted foreground, not ground-truth foreground or causal training improvement.",
+    "B4-E30 is a fixed-protocol but optimizer-continuation control.",
+    "Worst-case resource usage and trained accuracy are not yet known."
+  ]
+}

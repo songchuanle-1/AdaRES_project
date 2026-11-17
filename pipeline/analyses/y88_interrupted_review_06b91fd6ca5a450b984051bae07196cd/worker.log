@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/5a320b25043948e2bae2ffdef63da17a/worker.py", line 73, in main
+    preserved();idle();assert sha(row['config'])==row['config_sha256'] and sha(row['checkpoint'])==row['checkpoint_sha256']
+  File "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/5a320b25043948e2bae2ffdef63da17a/worker.py", line 64, in idle
+    assert not subprocess.check_output(['nvidia-smi','-i','0','--query-compute-apps=pid','--format=csv,noheader,nounits']).decode().strip()
+AssertionError
+Traceback (most recent call last):
+  File "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/5a320b25043948e2bae2ffdef63da17a/worker.py", line 96, in <module>
+    if __name__=='__main__':main()
+  File "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/5a320b25043948e2bae2ffdef63da17a/worker.py", line 73, in main
+    preserved();idle();assert sha(row['config'])==row['config_sha256'] and sha(row['checkpoint'])==row['checkpoint_sha256']
+  File "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/5a320b25043948e2bae2ffdef63da17a/worker.py", line 64, in idle
+    assert not subprocess.check_output(['nvidia-smi','-i','0','--query-compute-apps=pid','--format=csv,noheader,nounits']).decode().strip()
+AssertionError

@@ -1,0 +1,25 @@
+test_GPU1_power_host_and_runtime_changes_refused (test_y103_runtime_plan.RuntimePlan.test_GPU1_power_host_and_runtime_changes_refused) ... ok
+test_actual_helper_and_GPU1_pause_bound (test_y103_runtime_plan.RuntimePlan.test_actual_helper_and_GPU1_pause_bound) ... ok
+test_actual_retained_current_HEAD_owner_binding (test_y103_runtime_plan.RuntimePlan.test_actual_retained_current_HEAD_owner_binding) ... ERROR
+test_matching_current_owner_full_completion_required (test_y103_runtime_plan.RuntimePlan.test_matching_current_owner_full_completion_required) ... ok
+test_only_existing_path_and_hostname_adaptation (test_y103_runtime_plan.RuntimePlan.test_only_existing_path_and_hostname_adaptation) ... ok
+test_scientific_payload_identical (test_y103_runtime_plan.RuntimePlan.test_scientific_payload_identical) ... ok
+test_seven_tested_files_and_runtimes (test_y103_runtime_plan.RuntimePlan.test_seven_tested_files_and_runtimes) ... ok
+test_stale_goal_tampered_source_and_wrong_commit_refused (test_y103_runtime_plan.RuntimePlan.test_stale_goal_tampered_source_and_wrong_commit_refused) ... ok
+
+======================================================================
+ERROR: test_actual_retained_current_HEAD_owner_binding (test_y103_runtime_plan.RuntimePlan.test_actual_retained_current_HEAD_owner_binding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\project\AdaRES_project\scripts\test_y103_runtime_plan.py", line 71, in test_actual_retained_current_HEAD_owner_binding
+    validate_binding(binding, self.c, PARENT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\run_y103_native.py", line 22, in validate_binding
+    assert binding['main_index_unchanged'] is True and binding['original_Y101_Y100_preserved'] is True
+                                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'original_Y101_Y100_preserved'
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.300s
+
+FAILED (errors=1)

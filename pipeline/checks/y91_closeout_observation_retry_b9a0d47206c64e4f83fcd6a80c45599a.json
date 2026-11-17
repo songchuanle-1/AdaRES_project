@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "token": "b9a0d47206c64e4f83fcd6a80c45599a",
+  "original_helper": {
+    "path": "scripts/record_y91_wait.py",
+    "sha256": "ebbcd63c1264ac27467308805a95dcc0638bf540d858a1dd0b225e5a5edf9ffc"
+  },
+  "original_guard_log": {
+    "path": "pipeline/checks/y91_final_preparation_guards_b9a0d47206c64e4f83fcd6a80c45599a.log",
+    "sha256": "25ea797bc91a5d4a7cfe4a5bf599e09b313d752492a90041734bb275d22b5e0f"
+  },
+  "retry_helper": {
+    "path": "scripts/record_y91_wait_v2.py",
+    "sha256": "9884903de05df348b869975e9ad815d26eb991e82c3f1f76a4ec3141b0cd6831"
+  },
+  "original_failure": "record_y91_wait.py:68 rejected latest_training_observation older than300s before any closeout/memory/notes write.",
+  "diagnosis": "Measured at2026-11-06T03:29:18.840502+00:00: Y87 observation age491.28088s and Y88 age271.73874s. This is stale closeout evidence, not a training or model failure.",
+  "correction": "Collect fresh native progress and occupation for both servers; use new immutable guard-log and occupation labels. All300s checks, scientific tests, models, YAML and original failed helper/log remain unchanged.",
+  "scientific_control_changed": false,
+  "model_changed": false,
+  "original_evidence_preserved": true
+}

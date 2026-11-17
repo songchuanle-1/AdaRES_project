@@ -1,0 +1,20 @@
+test_fresh_foreign_compute_allows_empty_project_queue (test_gpu_occupation.ExternalOccupationTests.test_fresh_foreign_compute_allows_empty_project_queue) ... ERROR
+
+======================================================================
+ERROR: test_fresh_foreign_compute_allows_empty_project_queue (test_gpu_occupation.ExternalOccupationTests.test_fresh_foreign_compute_allows_empty_project_queue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chuanle song\.codex\skills\songcl_research_pipeline\test_gpu_occupation.py", line 68, in test_fresh_foreign_compute_allows_empty_project_queue
+    self.validate()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\chuanle song\.codex\skills\songcl_research_pipeline\test_gpu_occupation.py", line 62, in validate
+    closure.validate_work(self.root,self.context,[self.candidate],self.queue)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuanle song\.codex\skills\songcl_research_pipeline\closure.py", line 972, in validate_work
+    raise ValueError("Blocked GPU candidate has a queue opening")
+ValueError: Blocked GPU candidate has a queue opening
+
+----------------------------------------------------------------------
+Ran 1 test in 0.016s
+
+FAILED (errors=1)

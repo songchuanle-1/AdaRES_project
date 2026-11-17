@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "token": "2e7b003bc6fb41f8860361b04fe0f513",
+  "original_helper": {
+    "path": "scripts/finish_adares_zero_budget_observation_v2.py",
+    "sha256": "547efc15fc7922a8d7dc7a34ce9fb0c4bad6b09fe85632f8500f8a1457b8399d"
+  },
+  "successor": {
+    "path": "scripts/finish_adares_zero_budget_observation_v3.py",
+    "sha256": "6296d158f24de33c2f403424c97cde885fa0ed1410c1d44bc097024e8be19c3b"
+  },
+  "scope": "Read exact frozen due IDs, preserve separate Y57 pause, Y97 failures, Y86 native failure, and original six GPU1/390W frozen reviews. No original checkpoint loading, replay or resource migration.",
+  "original_helpers_preserved": true,
+  "scientific_or_numeric_guards_unchanged": true,
+  "evidence": [
+    {
+      "path": "scripts/prepare_adares_observation_v3.py",
+      "sha256": "4d3ee428dd087c45dd3f9b2baf567c49cee3b9468871a2cd0572fc587593d7ad"
+    },
+    {
+      "path": "scripts/finish_adares_zero_budget_observation_v2.py",
+      "sha256": "547efc15fc7922a8d7dc7a34ce9fb0c4bad6b09fe85632f8500f8a1457b8399d"
+    },
+    {
+      "path": "scripts/finish_adares_zero_budget_observation_v3.py",
+      "sha256": "6296d158f24de33c2f403424c97cde885fa0ed1410c1d44bc097024e8be19c3b"
+    }
+  ]
+}

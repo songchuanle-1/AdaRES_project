@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "token": "7028f6c0716640409c3d7b232be8cbbf",
+  "observed_at": "2026-10-29T14:45:10.592580+08:00",
+  "current_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "native_plan": {
+    "path": "pipeline/checks/y67_native_5c23754c16ac4b16b8a37d6c57ba2dbc_plan.json",
+    "sha256": "712eed27e83aab8a4094b2943ac4c02cbc92039d6fbe6c1639341d6b1880077e"
+  },
+  "exact_frozen_files_verified": 7,
+  "current_goal_verified": true,
+  "registered_running": {
+    "server-2": {
+      "0": "AdaRES-Y65"
+    },
+    "server-1": {
+      "0": "AdaRES-Y66"
+    }
+  },
+  "original_running_admissions_verified": true,
+  "next_missing_test": "Actual native sparse TRAIN/tools.train two optimizer steps on exclusive authorized GPU0.",
+  "native_executed": false,
+  "admitted": false,
+  "queue_changed": false,
+  "production_sync": false,
+  "Y57_still_paused": true,
+  "limitation": "Input integrity only; physical availability must be observed separately. CPU results do not replace native task execution or efficacy."
+}

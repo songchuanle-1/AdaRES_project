@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y103",
+  "config": "configs_song/model_paper5/adares_y103_spatial_input_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "943ad702c59547aafd8b797f19c705f3661a8b9f",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+  "additive_parent": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+  "retained_branch": "refs/heads/adares-y103-spatial-input-skip-on-y102",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y103_bound_native_y102.py",
+    "sha256": "7253aaf43691f4da189d3d342218718b1bcb70e58378e14824c4c6ecfa2ee0e6"
+  },
+  "planned_command": "python -B scripts/run_y103_bound_native_y102.py --server server-1 --token <CURRENT>",
+  "required_resource": "At HEADY102 only after exact matching AdaRES-Y101 natural fixed30/full finite original checkpoint archive and fresh exclusive authorized idle/unreserved GPU0. No GPU1, power or runtime substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite backward/optimizer steps; complete original spatial and appearance projections/full32 raw spatial bypass/sum_norm/visual memory/static7/shared heads/hard gates/full gradients/native modes/budget. CPU feasibility is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y103_y102_additive_binding_e400166950804bdc890d260e8efe3077_server1_program.py",
+    "sha256": "3a66ef97accf595c4324423d48f1ab75ca19951daac01c033d1c1b8b3471de5d"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server1_plan.json",
+    "sha256": "e1f3ed6f908bd8303b552db310fce6a0c51eb22a2c2770436d98365f0d949c17"
+  }
+}

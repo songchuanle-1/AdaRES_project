@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "token": "93549e78b8bb48fb86369a66f48e5249",
+  "snapshot": "2026-11-04T12:54:14.934526+00:00",
+  "Y82_terminal_preparation": {
+    "path": "pipeline/checks/y82_terminal_preparation_93549e78b8bb48fb86369a66f48e5249.json",
+    "sha256": "c69e3698698cb709242e814371b69d4b49571d77ce15aca381f2e3f12eadb907"
+  },
+  "original_checkpoint_directory": "20261104_010148",
+  "lifecycle_guards": 25,
+  "full_checkpoint_verification_executed": false,
+  "original_Y82_training_preserved": true,
+  "Y84_inactive_server1_binding": {
+    "path": "pipeline/checks/y84_server1_alternative_93549e78b8bb48fb86369a66f48e5249_binding.json",
+    "sha256": "9f92fb73676ad7def55ef51084a559d7cfae602800a2d38d6b4d6d925472a2d8"
+  },
+  "inactive_plan": {
+    "path": "pipeline/checks/y84_server1_alternative_93549e78b8bb48fb86369a66f48e5249_plan.json",
+    "sha256": "766d676d647c4093972aad7303bfda7f415e5b61daaae798eb9cb91b1d72ce67"
+  },
+  "resource_guards": 8,
+  "exact_previously_executed_callbacks": 6,
+  "current_resource_wait": {
+    "path": "pipeline/checks/y82_y83_prepared_wait_93549e78b8bb48fb86369a66f48e5249.json",
+    "sha256": "0e6c8db64edb405a3842c2a2dbfd98361a5d86f1160431e0cd1fa16325096186"
+  },
+  "native_GPU_executed": false,
+  "production_source_changed": false,
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_launches": 0,
+  "new_archives": 0,
+  "GPU1_pause_preserved": true,
+  "original_scientific_goal_and_receipts_preserved": true,
+  "helpers": [
+    {
+      "path": "scripts/create_y82_terminal_helpers.py",
+      "sha256": "679172d593e4277ff49ce8ed0123ac327fde226b9d1c2313228d36dd2f22422a"
+    },
+    {
+      "path": "scripts/y82_terminal_contract.py",
+      "sha256": "da2946eb166114f634d09329c152c8f82a68a8e998109886fda7f20057e0ff0e"
+    },
+    {
+      "path": "scripts/finalize_y82_fixed30.py",
+      "sha256": "4f691c755eb5d2b365e2de5cecdfaabcd9be344248020ab3497db8e9e7ff855e"
+    },
+    {
+      "path": "scripts/prepare_y82_terminal_handoff.py",
+      "sha256": "c55adad4ba5c827beb711f52a7b151d694fbb852cab787572e59a801329ea18a"
+    },
+    {
+      "path": "scripts/test_y82_terminal_handoff.py",
+      "sha256": "f364b6d480de8c370482fd202e6aa90a0433af4ecbb48ad638bd41d38743903a"
+    },
+    {
+      "path": "scripts/y84_server1_alternative.py",
+      "sha256": "7d6f84b3af26a767163d73b0b5d02d8afdae843e29f92b24ee68ad8076ae465e"
+    },
+    {
+      "path": "scripts/test_y84_server1_alternative.py",
+      "sha256": "761add0751f6473d2bf17a28c476026c3e47d6b1fe141a5fe978be4fe1238388"
+    },
+    {
+      "path": "scripts/record_y84_server1_preparation.py",
+      "sha256": "0de6d497f5218531ab087acfe7c5b9ddc43785c0492192f3bc88dc78f5e243be"
+    }
+  ]
+}

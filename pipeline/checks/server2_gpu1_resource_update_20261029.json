@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-29T17:37:05.114445+08:00",
+  "authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "original_server_configuration": {
+    "path": "pipeline/snapshots/SERVERS_280bbd05106a77ece1cfad9382a0dd18a7d208ffd733d85bd6e1ebe221bb43f2.yaml",
+    "sha256": "280bbd05106a77ece1cfad9382a0dd18a7d208ffd733d85bd6e1ebe221bb43f2"
+  },
+  "current_server_configuration": {
+    "path": "SERVERS.yaml",
+    "sha256": "ed15aeebb90638fcced4f0e57c4b76761cf2d7c04d201afeaf6e55ca025cbe7a"
+  },
+  "goal": {
+    "path": "pipeline/snapshots/goal_4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "scientific_goal_bytes_unchanged": true,
+  "current_agents": {
+    "path": "AGENTS.md",
+    "sha256": "244d3b1e89fd4102b9e48216ebb99d88186ce198c99865684367da88c0d87d80"
+  },
+  "decision": {
+    "path": "pipeline/decisions/20261029-173705_manual.md",
+    "sha256": "7c34ef7a8ac23d2803fdb37ebbd1b662b2a84701632f8be54b17b3b4229df28c"
+  },
+  "queue_changed": false,
+  "running_changed": false,
+  "remote_mutations": false,
+  "Y57_still_paused": true
+}

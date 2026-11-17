@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "revision": 1,
+  "preregistered_at": "2026-10-20T23:19:10.513244+08:00",
+  "program": {
+    "path": "pipeline/analyses/y57_anchor_v2_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "893471825965d9af149f48713fb2c642d06e4f7873e8094f9235cf2a74bb727f"
+  },
+  "body": {
+    "path": "scripts/probe_y57_anchor_v2_dd8e.py",
+    "sha256": "308397a065f557d67f41642183bf3224e6d97ac5c734a7eb695324ee5d8b3f97"
+  },
+  "driver_only": "Remove intervention hook before isolated shifted-feature replay; otherwise hook would undo the shift. Corrected by static inspection before ANY diagnostic execution; v1unrun kept.",
+  "scientific_control_or_production_change": false,
+  "result": "pending"
+}

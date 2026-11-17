@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y61",
+  "profile": "experiment_first",
+  "config": "configs_song/model_paper5/adares_y61_peer_value_gradient_res.yaml",
+  "code_commit": "9bea5e906be3a478be50442db521e766c446a1ec",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "required_resource": "Exclusive idle authorized server-2 GPU0, current foreground lease, reconciled queue and live compute checks; keep 280W.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y61_smoke pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; shared head seven calls per step; live focal/detached peer query_norm inputs, trainable affine and mask input gradients, GPU memory.",
+  "Python38_compile": true,
+  "CPU_guard_tests_passed": 8,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_program.py",
+    "sha256": "e440f4ff0df60672bf96b0c4210725c8757486bb1a176fafe8147de62e5b26b0"
+  }
+}

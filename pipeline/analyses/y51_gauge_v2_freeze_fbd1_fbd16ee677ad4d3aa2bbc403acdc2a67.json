@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y51",
+  "preregistered_at": "2026-10-16T14:31:50.958211+08:00",
+  "original": {
+    "path": "scripts/probe_y51_gauge_controls_fbd1.py",
+    "sha256": "a06b227cd6a8d9697ccf8a01a3358168cb811ef0a0c47e03e749ccefbe6beb8a"
+  },
+  "failure": {
+    "path": "pipeline/analyses/y51_gauge_controls_fbd1_fbd16ee677ad4d3aa2bbc403acdc2a67.log",
+    "sha256": "5cbe42f91368b4f798c070905bc42f4c234f9a310c9268302adcf80f0f249777"
+  },
+  "program": {
+    "path": "pipeline/analyses/y51_gauge_controls_v2_program_fbd1_fbd16ee677ad4d3aa2bbc403acdc2a67.py",
+    "sha256": "2997f82d854be43f77c46d2b5a73846a142204d4e95b373db6aebfe7688c2c5f"
+  },
+  "correction": "Native IPDN imports get_iou from its loss.py, not ipdn.utils. Extract that exact native get_iou AST and import typing.Union for its unchanged annotations. Original failure precedes all numeric tests; preserve it. No scientific criterion, model, fixture, dtype adaptation or tolerance change."
+}

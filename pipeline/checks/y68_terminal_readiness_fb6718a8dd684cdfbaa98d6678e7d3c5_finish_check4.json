@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "pid": 20742,
+  "process_live": false,
+  "latest": {
+    "phase": "Val",
+    "epoch": 30,
+    "total": 30,
+    "step": 363,
+    "count": 363
+  },
+  "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "exact_source_and_YAML_verified": true,
+  "can_attempt_guarded_finalizer": true,
+  "gpu": "1, 0, 280.00",
+  "compute": "",
+  "limitation": "Read-only readiness only; not fixed30 checkpoint/log proof, canonical archive, native GPU PASS or efficacy.",
+  "token": "fb6718a8dd684cdfbaa98d6678e7d3c5",
+  "id": "AdaRES-Y68",
+  "observed_start_local": "2026-10-31T07:08:58.685169+08:00",
+  "observed_end_local": "2026-10-31T07:08:58.955070+08:00",
+  "evidence": [
+    {
+      "path": "scripts/inspect_y68_terminal_readiness.py",
+      "sha256": "4bd195dc973545a30856e2776b2d46d911fdcf20ffb00600b8ebe7c62a616de3"
+    },
+    {
+      "path": "pipeline/checks/y68_terminal_readiness_fb6718a8dd684cdfbaa98d6678e7d3c5_finish_check4.log",
+      "sha256": "8b1bbd15aa1e1cf354601c7bed6bffbab50117a64223ecc76f4bf792ce4c0338"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "AdaRES-Y45",
+  "config": "configs_song/model_paper5/adares_y45_metric_decomposition_res.yaml",
+  "code_commit": "338a3d7a5b21fa463d116e566b482f0733fde9c2",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261014-142914_next_batch.md",
+    "sha256": "9ec49a4112d0b31b3665afb0cabd0d15300b407359e00c8f6af32e18b9d096c0"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y45_native_targets_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "92cbad820e33ef6a007126a220d217f556b9ecc5c278514c2f6117b972bfafde"
+        },
+        {
+          "path": "pipeline/analyses/y45_decomposition_controls_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "5f2398a5c018949732bc696d1203a44657be1cef949f8c978b3c911180e5bf59"
+        },
+        {
+          "path": "pipeline/analyses/Y45_six_gate_review_d179.md",
+          "sha256": "06c8e89398b2f7c91b0d0397d06b6acf5d5c226e15d01977b2a57c9fa6d15851"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y45_package_cpu_392a_v2_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "0762b7586788142e164418e56e1f74fdacee8f25403c4836279aa748386a6bcf"
+        },
+        {
+          "path": "pipeline/analyses/y45_native_path_392a_v2_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "52a0320b1033bfa2010f462d6719d319d777a130b55ffc70ba0001e0034ae5ef"
+        },
+        {
+          "path": "pipeline/analyses/y45_initial_learning_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "1a80a3d38485243081ac8384c855bf110de8f23b3bae31cbec9b2543edf33006"
+        },
+        {
+          "path": "pipeline/analyses/y45_gradient_d179_d179d824a64943e0b06bfa90de0caf52.json",
+          "sha256": "fc1329daea59a18ec4728d3508278257ff010f391d1fadfd62c77303a225ef29"
+        },
+        {
+          "path": "pipeline/analyses/Y45_six_gate_review_d179.md",
+          "sha256": "06c8e89398b2f7c91b0d0397d06b6acf5d5c226e15d01977b2a57c9fa6d15851"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y45_native_path_392a_v2_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "52a0320b1033bfa2010f462d6719d319d777a130b55ffc70ba0001e0034ae5ef"
+        },
+        {
+          "path": "pipeline/analyses/y45_physical_native_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "014d21496628e815c9aec147ba166dcce5183a58e3881c8879ce4c3ae815ef96"
+        },
+        {
+          "path": "pipeline/analyses/Y45_six_gate_review_d179.md",
+          "sha256": "06c8e89398b2f7c91b0d0397d06b6acf5d5c226e15d01977b2a57c9fa6d15851"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y45_resources_binding_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "9bc92151199a07923f37976b5cc572b20d6a9567548baffa057be674b33953c4"
+        },
+        {
+          "path": "pipeline/analyses/Y45_six_gate_review_d179.md",
+          "sha256": "06c8e89398b2f7c91b0d0397d06b6acf5d5c226e15d01977b2a57c9fa6d15851"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y45_source_bundle_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "f7c19cb4f02714bf52a90618d3169388dc4430587b6eb0dc76a56ccbddc4674a"
+        },
+        {
+          "path": "pipeline/analyses/y45_package_cpu_392a_v2_392a5a9f5fe242d7a3109a50e6060fda.json",
+          "sha256": "0762b7586788142e164418e56e1f74fdacee8f25403c4836279aa748386a6bcf"
+        },
+        {
+          "path": "pipeline/analyses/Y45_six_gate_review_d179.md",
+          "sha256": "06c8e89398b2f7c91b0d0397d06b6acf5d5c226e15d01977b2a57c9fa6d15851"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y45_392a.md",
+          "sha256": "517cab16a1242a44a00a55b8f0866e08bfdf4a4293c7ffee643cc61f6dfeb247"
+        },
+        {
+          "path": "pipeline/analyses/Y45_six_gate_review_d179.md",
+          "sha256": "06c8e89398b2f7c91b0d0397d06b6acf5d5c226e15d01977b2a57c9fa6d15851"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y45_392a.md",
+      "sha256": "517cab16a1242a44a00a55b8f0866e08bfdf4a4293c7ffee643cc61f6dfeb247"
+    }
+  },
+  "limitations": "Native local objective conflicts, wrong-control learnability, initial losses and v1 failures retained. No efficacy/necessity/novelty/Pareto/global bitwise/Phase2 claim; no diagnostic weights deployed."
+}

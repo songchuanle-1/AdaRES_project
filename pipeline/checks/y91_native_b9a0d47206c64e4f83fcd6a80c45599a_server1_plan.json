@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y91",
+  "config": "configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "a3bd19404f625bb1d9bc358a7e78ef0f86054692",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "retained_branch": "refs/heads/adares-y91-hidden-confidence-gate",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_y91_native.py --server server-1 --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved matching authorized GPU0 after original owner exact fixed30 canonical archive; no GPU1 or power/data/runtime substitution.",
+  "checks": "Original native TRAIN two finite task losses/backward/updates; fourteen exact original query/mask/mass/evidence, first/second hidden gate and final linear consumers; all70 original MLP layer calls, original gates, zero then learned hidden response, finite original/new/input gradients, modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server1_program.py",
+    "sha256": "e4851c37c355a185e561a9dbeb02cb688060047bd632f1d0a152ebb230e1d3f2"
+  }
+}

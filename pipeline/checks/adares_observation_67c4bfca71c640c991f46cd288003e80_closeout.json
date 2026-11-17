@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "token": "67c4bfca71c640c991f46cd288003e80",
+  "observed_at": "2026-11-13T13:52:20.032285+08:00",
+  "Y101_observation": {
+    "path": "pipeline/checks/production_adares-y101_67c4bfca71c640c991f46cd288003e80_start.json",
+    "sha256": "c849446e7568caabeba607d30d00c514d3727d94640de8231f0dc1048c24f600"
+  },
+  "Y102_diagnostic": {
+    "path": "pipeline/checks/adares_observation_67c4bfca71c640c991f46cd288003e80_y102_diagnostic.json",
+    "sha256": "599acb30b80d023f94e8714462882ec8c2c21fb6cf5603c549d8ae6f1077a36d"
+  },
+  "Y102_current_progress_confirmed": false,
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_67c4bfca71c640c991f46cd288003e80.json",
+      "sha256": "b1fe0336c621ffbcb9ddc81d4ca2f513445ab8eb4dc3eda21cecd0cfa0fd19bf"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_67c4bfca71c640c991f46cd288003e80.json",
+      "sha256": "c6a2f2898cfd01827934e21248d34fd13a19012d69c0f8e74e2d2931277cb707"
+    }
+  },
+  "snapshot_goal_rc": 4,
+  "due_hold_verification": [],
+  "admission_budget": 0,
+  "creation_budget": 0,
+  "new_scientific_candidates": 0,
+  "scientific_CPU_replays": 0,
+  "native_GPU_tasks": 0,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "checkpoint_loads": 0,
+  "training_restarts": 0,
+  "failed_terminal_discovery_not_replayed": true,
+  "denied_stack_attachment_not_retried": true,
+  "old_archives_and_receipts_preserved": true,
+  "formal_FIRST_or_cost_executed": false,
+  "formal_goal_achievement_claimed": false,
+  "evidence": [
+    {
+      "path": "scripts/finish_adares_zero_budget_observation_v3.py",
+      "sha256": "6296d158f24de33c2f403424c97cde885fa0ed1410c1d44bc097024e8be19c3b"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y101_67c4bfca71c640c991f46cd288003e80_start.json",
+      "sha256": "c849446e7568caabeba607d30d00c514d3727d94640de8231f0dc1048c24f600"
+    },
+    {
+      "path": "pipeline/checks/adares_observation_67c4bfca71c640c991f46cd288003e80_y102_diagnostic.json",
+      "sha256": "599acb30b80d023f94e8714462882ec8c2c21fb6cf5603c549d8ae6f1077a36d"
+    },
+    {
+      "path": "pipeline/checks/adares_observation_67c4bfca71c640c991f46cd288003e80_y102_worker.json",
+      "sha256": "59cd6f9c2984263d365c42bfa9ef5003c81146d43549fd45b346c13c7faaf690"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y102_67c4bfca71c640c991f46cd288003e80_release.log",
+      "sha256": "f7e6f675529d1ac7d864829532406d8ded953fa51899f741042fc90a8c9a5474"
+    },
+    {
+      "path": "pipeline/checks/adares_observation_67c4bfca71c640c991f46cd288003e80_y102_command.log",
+      "sha256": "1c707920cd99e0c3f9d78e1d5c3da484353c1b9ffafac8d6858a289f2e7f198d"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_67c4bfca71c640c991f46cd288003e80.json",
+      "sha256": "b1fe0336c621ffbcb9ddc81d4ca2f513445ab8eb4dc3eda21cecd0cfa0fd19bf"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_67c4bfca71c640c991f46cd288003e80.json",
+      "sha256": "c6a2f2898cfd01827934e21248d34fd13a19012d69c0f8e74e2d2931277cb707"
+    }
+  ]
+}

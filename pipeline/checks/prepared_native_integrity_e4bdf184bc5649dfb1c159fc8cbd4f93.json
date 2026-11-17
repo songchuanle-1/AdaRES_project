@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "token": "e4bdf184bc5649dfb1c159fc8cbd4f93",
+  "checks": [
+    {
+      "id": "AdaRES-Y72",
+      "plan": {
+        "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_plan.json",
+        "sha256": "a3a875a2992f0a43ef4eb50849f9312115959a71134456b2dc64d0535f0efa1c"
+      },
+      "program": {
+        "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_program.py",
+        "sha256": "ff2feef2a03b754eef3af96fe819b7645000ce95fa2cbef8563bdf1b854a9e4e"
+      },
+      "scientific_files_matched": 7,
+      "server": "server-2",
+      "gpu": 0,
+      "power_watts": 280.0,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y72",
+      "plan": {
+        "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu1_plan.json",
+        "sha256": "1fded5fd2c82600a9db4005247f1d2430bdeb5b9c4f92057eea92c612a604a18"
+      },
+      "program": {
+        "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu1_program.py",
+        "sha256": "4a84bfa89fbd12fe666a3c793f40474546df97600fdc58d96c5a3f049c800dd8"
+      },
+      "scientific_files_matched": 7,
+      "server": "server-2",
+      "gpu": 1,
+      "power_watts": 390.0,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y72",
+      "plan": {
+        "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_plan.json",
+        "sha256": "abff97619f2b925d39761b26b7bb5a5cec24d74190cc77df90a93a4041d6f75e"
+      },
+      "program": {
+        "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_native_program.py",
+        "sha256": "a496bf32fc9f6e1e6296284cbc01a5d78f7a7286559b2aaa6999245db14d257d"
+      },
+      "scientific_files_matched": 7,
+      "server": "server-1",
+      "gpu": 0,
+      "power_watts": 350.0,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y73",
+      "plan": {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu0_plan.json",
+        "sha256": "2082df489d0ca2c0fefd94f8d134c28899e276ae6dd8c84a825121472c350b92"
+      },
+      "program": {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu0_program.py",
+        "sha256": "9ed748aa8ea1a98eb8a9b4a333c52df77a3c772321d4f3d489a3d465e1afe679"
+      },
+      "scientific_files_matched": 7,
+      "server": "server-2",
+      "gpu": 0,
+      "power_watts": 280.0,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y73",
+      "plan": {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_plan.json",
+        "sha256": "8000a6ecc7aa51bf49ea115b55d21d67f468290833a2ddebde2f8c602d9e139f"
+      },
+      "program": {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_program.py",
+        "sha256": "61e417a581773313d903140d07a1b883d9224c4dac403664afc4066d3577c325"
+      },
+      "scientific_files_matched": 7,
+      "server": "server-2",
+      "gpu": 1,
+      "power_watts": 390.0,
+      "native_GPU_executed": false
+    }
+  ],
+  "current_goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "original_running_admissions_valid": true,
+  "Y72_server1_still_inactive": true,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_model_changes": 0,
+  "native_GPU_executed": false,
+  "efficacy": "No new formal evaluation result; integrity checks only."
+}

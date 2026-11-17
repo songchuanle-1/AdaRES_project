@@ -1,0 +1,37 @@
+{"mode": "repeat_audit", "complete": true, "gpu_precheck": {"memory_mib": 1, "util": 0}, "parameters_added": 0, "limitations": ["TRAIN diagnostics and bounded execution tests, not trained efficacy or full-dataloader replay."], "scans": 8, "cached_parent_mask_max": 0.0, "cached_parent_indicator_max": 0.0, "cached_parent_sample_mismatches": 0, "candidate_native_repeat_binary_flips": 0, "parent_native_repeat_binary_flips": 0, "limitation": "Identical cached decoder input audit separates local inference source identity from inherited full-model repeat instability; initial inference failure remains preserved."}
+
+STDERR:
+Using backend: pytorch
+2026-10-01 22:45:13,427 - INFO - Load train scanrefer: 36665 samples
+2026-10-01 22:45:21,371 - INFO - set random seed: 1999
+2026-10-01 22:45:22,419 - INFO - set random seed: 1999
+2026-10-01 22:45:22,499 - INFO - set random seed: 1999
+2026-10-01 22:45:22,641 - INFO - set random seed: 1999
+2026-10-01 22:45:22,713 - INFO - set random seed: 1999
+2026-10-01 22:45:22,925 - INFO - set random seed: 1999
+2026-10-01 22:45:23,040 - INFO - set random seed: 1999
+2026-10-01 22:45:23,181 - INFO - set random seed: 1999
+2026-10-01 22:45:23,251 - INFO - set random seed: 1999
+2026-10-01 22:45:23,454 - INFO - set random seed: 1999
+2026-10-01 22:45:23,578 - INFO - set random seed: 1999
+2026-10-01 22:45:23,722 - INFO - set random seed: 1999
+2026-10-01 22:45:23,794 - INFO - set random seed: 1999
+2026-10-01 22:45:23,984 - INFO - set random seed: 1999
+2026-10-01 22:45:24,091 - INFO - set random seed: 1999
+2026-10-01 22:45:24,227 - INFO - set random seed: 1999
+2026-10-01 22:45:26,532 - INFO - set random seed: 1999
+2026-10-01 22:45:26,616 - INFO - set random seed: 1999
+2026-10-01 22:45:26,739 - INFO - set random seed: 1999
+2026-10-01 22:45:26,817 - INFO - set random seed: 1999
+2026-10-01 22:45:26,939 - INFO - set random seed: 1999
+2026-10-01 22:45:27,052 - INFO - set random seed: 1999
+2026-10-01 22:45:27,205 - INFO - set random seed: 1999
+2026-10-01 22:45:27,273 - INFO - set random seed: 1999
+2026-10-01 22:45:27,379 - INFO - set random seed: 1999
+2026-10-01 22:45:27,505 - INFO - set random seed: 1999
+2026-10-01 22:45:27,670 - INFO - set random seed: 1999
+2026-10-01 22:45:27,741 - INFO - set random seed: 1999
+2026-10-01 22:45:27,854 - INFO - set random seed: 1999
+2026-10-01 22:45:27,957 - INFO - set random seed: 1999
+2026-10-01 22:45:28,099 - INFO - set random seed: 1999
+2026-10-01 22:45:28,173 - INFO - set random seed: 1999

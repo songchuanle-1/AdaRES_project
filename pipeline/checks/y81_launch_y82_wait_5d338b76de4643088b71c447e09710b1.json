@@ -1,0 +1,73 @@
+{
+  "complete": true,
+  "token": "5d338b76de4643088b71c447e09710b1",
+  "snapshot": "2026-11-03T02:51:37.547167+00:00",
+  "original_live_training": {
+    "AdaRES-Y79": {
+      "path": "pipeline/checks/production_adares-y79_5d338b76de4643088b71c447e09710b1_launch.json",
+      "sha256": "d9dea27937871d12f72d21569e1283cbd956309e8cacd600566aec4e9457cc8c"
+    },
+    "AdaRES-Y80": {
+      "path": "pipeline/checks/production_adares-y80_5d338b76de4643088b71c447e09710b1_launch.json",
+      "sha256": "da17efa6597697ee638bfd37ebbbd828d3f0464f19e8c5ae1b9038949bcf3f63"
+    },
+    "AdaRES-Y81": {
+      "path": "pipeline/checks/production_adares-y81_5d338b76de4643088b71c447e09710b1_launch.json",
+      "sha256": "91e82429914fbadd529bec220b7cc627bba8171407c0909f126c6986f7d082ec"
+    }
+  },
+  "Y78_terminal": {
+    "path": "pipeline/checks/y78_server2_fixed30_5d338b76de4643088b71c447e09710b1.json",
+    "sha256": "7105bf1c928444d2c3743b89b3b2df6b31cc70200428dd331bf7e7cfeaa5209f"
+  },
+  "Y78_archive": {
+    "path": "pipeline/checks/y78_server2_fixed30_5d338b76de4643088b71c447e09710b1_archive_binding.json",
+    "sha256": "388448a3efb4f5fd35305b27ed6f6c1518f1b1165dfd6763c9c271945eb612b7"
+  },
+  "Y81_native": {
+    "path": "pipeline/checks/AdaRES-Y81_5d338b76de4643088b71c447e09710b1_native_smoke.json",
+    "sha256": "993c1610fc11c6bb48fb042e2613fdbeb11b8a5065792410139710fdd3c72d8e"
+  },
+  "Y81_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y81.json",
+    "sha256": "76f21c9d98991ae8bc7f41cb6e3ad41bfc96301f2caf4be222161bbe7c8f2648"
+  },
+  "Y81_freeze": {
+    "path": "pipeline/checks/AdaRES-Y81_5d338b76de4643088b71c447e09710b1_post_training_freeze.json",
+    "sha256": "b7e6407383e14330fff75b3fcc66f553510df9b479794084dde6cffde1c31ed4"
+  },
+  "Y81_lifecycle": {
+    "path": "pipeline/checks/y81_gpu1_lifecycle_preparation_5d338b76de4643088b71c447e09710b1.json",
+    "sha256": "a1734fb52669735ffd96ffefac9815e0e3c3feb3a4be19ff083dd18edbaec64b"
+  },
+  "retained_Y82_plans": {
+    "native_smoke_plan_server2_gpu0": {
+      "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu0_plan.json",
+      "sha256": "916e12be835642a2bbfe857e71ce44b9055da6c34fabc313c3581c51975faa1f"
+    },
+    "native_smoke_plan_server2_gpu1": {
+      "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu1_plan.json",
+      "sha256": "a3b5f3d051de446c7db38eddc07f2b6253ea84219f2a5d18b61cb0838b3c93d7"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_closeout_5d338b76de4643088b71c447e09710b1.json",
+      "sha256": "fc11c57b2c217a163217a943ea109620391760dbe49d076c9066fde1055a455d"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_closeout_5d338b76de4643088b71c447e09710b1.json",
+      "sha256": "6b0c9359bc82564fc16c435fd0ee9dc5f4adbd471a4e246c97b59bf09e6bf685"
+    }
+  },
+  "new_candidates": 0,
+  "new_admissions": 1,
+  "new_launches": 1,
+  "new_archives": 1,
+  "formal_metrics_updated": false,
+  "Y57_pause_preserved": true,
+  "helper": {
+    "path": "scripts/record_y81_launch_closeout.py",
+    "sha256": "afcb8dd6b5cfa88ff2fad1906bbfdc0dc7ffe3ad4e8dcb5720658acaf9da695e"
+  }
+}

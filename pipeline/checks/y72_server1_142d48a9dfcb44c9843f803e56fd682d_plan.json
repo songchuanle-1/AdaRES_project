@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "config": "configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "parent_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "retained_branch": "refs/heads/adares-y72-visual-mask-refinement",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "required_resource": "Fresh exclusive idle/unreserved server-1 GPU0 after original Y69 canonical fixed30 archive; exact private runtime/data/path mapping and existing350W. Preserve current Y69 and all other jobs.",
+  "planned_command": "python -B scripts/y72_server1_alternative.py run --token <CURRENT_TOKEN>",
+  "checks": "Original native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; six current ila_ffn identities and original static mask/padding identities, six actual refined prediction consumers, seven shared indicators, independent scalar formula at first/last expressions and first/middle/last valid feature rows/channel0/127/255, initial zero/next-step response, padding unchanged, finite new gradient/actual weight update and source-feature gradients, native modes/peak memory.",
+  "guard_tests_passed": 11,
+  "Python38_compile": true,
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "working_HEAD_preserved": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "program": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_native_program.py",
+    "sha256": "a496bf32fc9f6e1e6296284cbc01a5d78f7a7286559b2aaa6999245db14d257d"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y72_server1_142d48a9dfcb44c9843f803e56fd682d_cpu_program.py",
+    "sha256": "60137b6cf3c9733eb55ff6b9eb8d707ea8e84d9b581d509a23572459e937a103"
+  },
+  "runtime_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data1/songcl/Project/AdaRES_project/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "previous_plan": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_plan.json",
+    "sha256": "a3a875a2992f0a43ef4eb50849f9312115959a71134456b2dc64d0535f0efa1c"
+  },
+  "activation_required": true,
+  "activated": false
+}

@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "token": "6fb151dc55354c0f995b544bd00e0bfd",
+  "observed_at": "2026-10-29T17:39:13.872005+08:00",
+  "previous_plan": {
+    "path": "pipeline/checks/y67_native_5c23754c16ac4b16b8a37d6c57ba2dbc_plan.json",
+    "sha256": "712eed27e83aab8a4094b2943ac4c02cbc92039d6fbe6c1639341d6b1880077e"
+  },
+  "active_plan": {
+    "path": "pipeline/checks/y67_gpu1_native_6fb151dc55354c0f995b544bd00e0bfd_plan.json",
+    "sha256": "5918ffe122885cb87501f2f6e3f4ebab80afc002a523148add91d1684928fe22"
+  },
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "exclusive_idle_observation": {
+    "gpu": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 1, 0, 390.00",
+    "compute": "",
+    "gpu0_power": "280.00"
+  },
+  "seven_model_and_YAML_files_exact": true,
+  "scientific_diagnostic_body_reversibly_exact": true,
+  "goal_unchanged": true,
+  "code_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "original_Y65_Y66_preserved": true,
+  "Y57_still_paused": true,
+  "hardware_settings_changed": false,
+  "native_executed": false
+}

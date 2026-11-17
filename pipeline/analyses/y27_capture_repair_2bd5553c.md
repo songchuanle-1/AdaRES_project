@@ -1,0 +1,13 @@
+# Y27 Progress Capture Repair
+
+- Tick: `2bd5553ca0af4dcaa30a25b25d4b066a`; observation only, no model or training changes.
+- The original capture failed at remote stdin line38, corresponding to source line30's strict increase assertion on two TRAIN-only tuples. The original source remains unchanged, SHA256 `b590ad3fba8bdd886a06c68b9eae6ba361652db7c53c2571fa916b56d51eba5d`.
+- Raw failure is retained at `pipeline/analyses/y27_progress_2bd5553ca0af4dcaa30a25b25d4b066a.log`, SHA256 `8d0dd58704be381924c71afb29af73317b801f704a898588472f11102a2c9886`. No successful JSON was produced by that attempt.
+- The failure log does not include the two captured tuples. A validation transition is a possible cause of unchanged TRAIN counters, not a proven reconstruction of that five-second window. The assertion alone is not evidence of a native training crash.
+- Native `tools/train.py` defines separate Train and Val progress bars at lines132 and223. The new helper parses the last native phase and orders epoch/phase/step. It reports native phase progress separately from native training-step progress; validation is never substituted for the training launch-verification gate.
+- New helper: `scripts/capture_y27_progress_phase.py`, SHA256 `2e3bd7ff6d7d4c056a32e8c36c03f29bddb030f595f5bc1aa0731b6d8cf77671`. Its actual local `--self-test` returned PASS for same-phase advance, Train-to-Val, Val-to-next-epoch, unchanged-not-progress, and missing/invalid records. Synthetic controls validate the parser, not training efficacy.
+- A successful observation always saves the actual progress-check result. An unchanged window is explicitly `NO_BOUNDED_PROGRESS`, not silently converted to PASS or a stalled-process diagnosis.
+- Actual lease-bound remote recovery observed locally on 2026-10-04 at23:51:47.977759 to23:51:53.381482+08: the SAME PID9901/config/log/GPU1/source marker was verified twice. Both captures were TRAIN7/30, steps288 to298/4686, so both native phase progress and native training-step progress genuinely passed.
+- Recovery JSON: `pipeline/analyses/y27_progress_phase_2bd5553ca0af4dcaa30a25b25d4b066a.json`, SHA256 `c30f10e9e3f9db828890cc8db0829f206a5ff898a80814176e94055da6319dd5`. GPU1 device occupation22610MiB/util66%, not isolated candidate peak; two bounded24KB tails lacked crash markers, not whole-log proof.
+- Remote capture timestamps are about32minutes behind local observations. Use the explicit local start/end times, not silently synchronized clock assumptions.
+- No restart, resume, candidate admission, protocol change, gate weakening, GPU0 query, or other-project/scheduler operation occurred. Y27 remains training; trained benefit/harm/Pareto and the exact original assertion's phase cause remain unknown.

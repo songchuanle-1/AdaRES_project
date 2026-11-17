@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "9be8b1f99c154401844f5152bc1be782",
+  "preregistered_at": "2026-10-17T02:54:32.275199+08:00",
+  "frozen_native_plan": {
+    "path": "pipeline/analyses/y52_native_matched_capture_prereg_5b882c0928b14a3bab6799e9d15a5bf4.json",
+    "sha256": "f2f4680c6ffa6d9cd4fce2d469254f2cd60ab810fff122caa1e209bb20800440"
+  },
+  "frozen_observer": {
+    "path": "scripts/probe_y52_native_matched_capture.py",
+    "sha256": "245a708b74597c05aef960fb9015835158c9880865fa406579edf1beab3cdbe0"
+  },
+  "body": {
+    "path": "scripts/probe_y52_capture_observer_cpu.py",
+    "sha256": "30b8c8e828d177d1eb5d94581d764eaf23024b6b266e682efde00e67f3b7df41"
+  },
+  "preparer": {
+    "path": "scripts/prepare_y52_capture_observer_cpu.py",
+    "sha256": "1aaf43f896c565bffd0514e5e2e2a2409ce47d87c2235505e8049f5a6e11cd5a"
+  },
+  "test": "Execute ONLY the exact observer AST on two ragged synthetic expressions over final/aux calls, an empty-match case and an intentionally inconsistent expanded reference. Spy original delegate must receive the identical objects and its return must be passed through unchanged. Preserve actual supplied index order; reject bad reference before delegation. CUDA hidden.",
+  "purpose": "New instrumentation reliability test for the newly prepared native capture; not repetition of model-construction or TRAIN-count controls, and not scientific mechanism evidence.",
+  "native_model_or_TRAIN_execution": false,
+  "scientific_gate_passed": false,
+  "limitation": "A spy delegate cannot certify full Criterion behavior, real FPS/matching, backward, GPU resources or efficacy."
+}

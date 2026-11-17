@@ -1,0 +1,106 @@
+{
+  "complete": true,
+  "token": "910bf6ab43fe4a3881bb680cc7fa8a08",
+  "recorded_at": "2026-11-07T23:25:57.903272+08:00",
+  "original_Y89_fixed30_verified_and_archived": true,
+  "training_best_not_FIRST": true,
+  "actual_Y91_native_pass": true,
+  "Y91_admitted": true,
+  "Y91_native_progress_verified": true,
+  "original_Y90_process_preserved": true,
+  "Y90_explicit_additive_terminal_binding": true,
+  "Y92_prepared_only": true,
+  "Y92_needs_new_tested_same_byte_binding_on_Y91": true,
+  "GPU1_and_Y57_still_user_paused": true,
+  "full_frozen_FIRST_and_cost_preserved": true,
+  "new_scientific_candidates": 0,
+  "new_admissions": 1,
+  "new_training_launches": 1,
+  "exact_original_archives": 1,
+  "actual_GPU_native_tasks": 1,
+  "observations": {
+    "AdaRES-Y90": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y90_910bf6ab43fe4a3881bb680cc7fa8a08_final.json",
+        "sha256": "9bacd21bb224e867a8b4c886878effe3269a9fda3eeae84c95e6f5c1c94e2bc3"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 19,
+        "total": 30,
+        "step": 4615,
+        "count": 4686
+      },
+      "pid": 2442962
+    },
+    "AdaRES-Y91": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y91_910bf6ab43fe4a3881bb680cc7fa8a08_final.json",
+        "sha256": "d11c2bcd907d80e60a9e3904754f86942ca42599d864ec6381bb985b1fb3d4ed"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 336,
+        "count": 4686
+      },
+      "pid": 83827
+    }
+  },
+  "efficacy_measured": false,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y89_server2_fixed30_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "f609eab93f621de3704b73a9b633e8349d9ccd18ae40d6666e143c5c4e5da160"
+    },
+    {
+      "path": "pipeline/checks/y89_server2_fixed30_910bf6ab43fe4a3881bb680cc7fa8a08_archive_binding.json",
+      "sha256": "006939902f332e870b617fe677d9bac693a8d12d0dc69ac92b398d5a8c687cc6"
+    },
+    {
+      "path": "pipeline/admissions/AdaRES-Y91.json",
+      "sha256": "4d59825df7e4d0cfe428fc47c3ff6102749f2b1e5f12d84b71aaf5238aa96eaf"
+    },
+    {
+      "path": "pipeline/analyses/y91_server2_smoke_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "dec1dc1b9764199d586651dbb3c10013f83b409c60cf8d4b6f339ea514fc7bf2"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y91_910bf6ab43fe4a3881bb680cc7fa8a08_native_smoke.json",
+      "sha256": "22ca00589ebd1d929678c87597e3e6354ead2d3e6eba73604d0e9120dcfdb882"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y91_910bf6ab43fe4a3881bb680cc7fa8a08_post_training_freeze.json",
+      "sha256": "e5e6eef716ac892e827fe9131907ec44add8fdad1f619da8a568dacfc6935ca1"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y91_910bf6ab43fe4a3881bb680cc7fa8a08_final.json",
+      "sha256": "d11c2bcd907d80e60a9e3904754f86942ca42599d864ec6381bb985b1fb3d4ed"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y90_910bf6ab43fe4a3881bb680cc7fa8a08_final.json",
+      "sha256": "9bacd21bb224e867a8b4c886878effe3269a9fda3eeae84c95e6f5c1c94e2bc3"
+    },
+    {
+      "path": "pipeline/checks/y90_y91_terminal_binding_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "c502241965171cebcc733f29ca002a0ddc3966348191620ac304c56964c60cc7"
+    },
+    {
+      "path": "pipeline/checks/adares-y91_source_selection_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "e86f50c74386ecfe0baf8b8ec79cee1e93fc21a43439c6d2571adb524e7daba5"
+    },
+    {
+      "path": "pipeline/checks/adares-y91_dispatch_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "1dc040839e37adc5a622549037d6882e1b55427456822de68a77d7208945758e"
+    },
+    {
+      "path": "pipeline/checks/adares-y91_admission_guards_910bf6ab43fe4a3881bb680cc7fa8a08.log",
+      "sha256": "e15b677b721149f7d3103ba17fc71cde115589685aa288dc9e1db0570ef47167"
+    },
+    {
+      "path": "scripts/record_y91_execution_closeout.py",
+      "sha256": "7ed3faff98b9bca02ee95b3aec5657a183ddc01a32fa4f5374ec03f3582ee4dd"
+    }
+  ]
+}

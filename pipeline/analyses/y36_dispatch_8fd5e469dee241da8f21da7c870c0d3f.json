@@ -1,0 +1,32 @@
+{
+  "observed_at_local": "2026-10-09T18:33:37.207600+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y36 final mask local-adjacency confidence] configs_song/model_paper5/adares_y36_local_adjacency_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y36",
+    "label": "Y36 final mask local-adjacency confidence",
+    "config": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "6725f9bd6a8f9b47addae6a4b8336d004f73f1ae",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y36.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 100018,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y36_local_adjacency_res_20261009_183300.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-09T18:33:37"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y36.json",
+    "sha256": "bfdbe6d8276f59ecc8cf5bddee8275e625bad0c2e2f67c87fd5c99015fbe356b"
+  },
+  "preserved_y35_exact": true,
+  "scope": "Canonical gated GPU1-only dispatcher; no repeated preflight."
+}

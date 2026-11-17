@@ -1,0 +1,90 @@
+{
+  "complete": true,
+  "token": "2f4d997bb3814d8582041ab2e8fb4f37",
+  "observed_at": "2026-11-01T10:48:35.422885+08:00",
+  "original_live_training": {
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_2f4d997bb3814d8582041ab2e8fb4f37_progress.json",
+      "sha256": "89f34386fe665f652ad4763d4ca82d88691f635f1b0513edd82202ff94e7c589"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_2f4d997bb3814d8582041ab2e8fb4f37_progress.json",
+      "sha256": "29f35857e79a4d3914704c8f196f3c9071b050ba28fd8624035df6b6ece6b4a1"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_2f4d997bb3814d8582041ab2e8fb4f37_progress.json",
+      "sha256": "2c2599dc08d8ac844292df54e0cf9fd210b56d6c443b2455e253475c394cc0e7"
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_2f4d997bb3814d8582041ab2e8fb4f37.json",
+      "sha256": "036ddfafe60adc5b232aaa67ef06a60859805190a2bc29a245fb3b9c2a850e5e"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_2f4d997bb3814d8582041ab2e8fb4f37.json",
+      "sha256": "0d6376a2be1760e0c62eeb189e17ed40c493e67f6d416b2d5ad933d82b4ea3c0"
+    }
+  },
+  "prepared_identity_recheck": [
+    {
+      "id": "AdaRES-Y75",
+      "code_commit": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+      "source_manifest": {
+        "path": "pipeline/checks/y75_cpu_version_e04205f48d2f4f5eb7898ec10c1981d0.json",
+        "sha256": "991c3a7dd9eeb9b555abf3d2918bec9049ff747c2a6df166e80c11218301fbe2"
+      },
+      "CPU_callback": {
+        "path": "pipeline/checks/y75_native_observer_verification_e04205f48d2f4f5eb7898ec10c1981d0.json",
+        "sha256": "9f925fd3590fe7a9d4d878bc39d00d3c4474e62f65f16b7ee5e4dba54daf00c6"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu0_plan.json",
+          "sha256": "bea4b3e680f0fbf9d824d47a7982f068fdf2734d6703e54dbf946c1392f7b355"
+        },
+        {
+          "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu1_plan.json",
+          "sha256": "a8d84f0117b10a97d5eed5f2d95b9b4b9f0b37945e32d6138783f86533b27e45"
+        }
+      ],
+      "exact_integrity": true,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y76",
+      "code_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+      "source_manifest": {
+        "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "37485b9b3a404188d2df8a71d47b6888c7d27656f2421d1e385f1e4f41caf304"
+      },
+      "CPU_callback": {
+        "path": "pipeline/checks/y76_native_observer_verification_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "a30fe2ab6341033539d5a6dc9ac18d0048471a59c85b14ed22c49c81e5c4abf1"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu0_plan.json",
+          "sha256": "c32ec64c054cadffb9ea34d49a7a0b3e8e8ce9a1668695920c0db78c72fd366c"
+        },
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu1_plan.json",
+          "sha256": "c87bf5936d869793e8710d6674fef4b4e1b42f8726936ccdebeb121d975580c9"
+        }
+      ],
+      "exact_integrity": true,
+      "native_GPU_executed": false
+    }
+  ],
+  "new_candidates": 0,
+  "new_tests": false,
+  "native_GPU_executed": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_terminal_archives": 0,
+  "checkpoint_loaded": false,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "source_HEAD_unchanged": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "conclusion": "Original Y72/Y73/Y74 native progress continues. All authorized devices busy and reserved; two exact prepared candidates and fifteen frozen full evaluations wait for exclusive matching GPU."
+}

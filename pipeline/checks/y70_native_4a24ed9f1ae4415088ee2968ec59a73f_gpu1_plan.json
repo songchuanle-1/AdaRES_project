@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y70",
+  "config": "configs_song/model_paper5/adares_y70_query_scale_fusion_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 1,
+  "runtime_power_limit_watts": 390.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "required_resource": "Fresh exclusive authorized idle server-2 GPU1; canonical terminal archive/empty reservation; no compute PID; exact hostname/private runtime/original data; existing390.0W unchanged. Preserve all live Y68/Y69/Y67 and paused Y57.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y70_gpu1_smoke pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 1",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; six ordered fusion calls and six actual query-language attention consumers per step, seven shared confidence calls, exact original previous query/coarse/fine object identities and original Boolean mask consumption; independent scalar convex formula on first/last expressions, query0/127 and channel0/127/255; zero first-step/nonzero second-step response, finite nonzero new gradient and actual optimizer update, all three input branch gradients finite, native modes and peak memory.",
+  "CPU_guard_tests_passed": 10,
+  "Python38_compile": true,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_program.py",
+    "sha256": "bff4eead628ee0d465be42cc4eaf4da2b5bc3c86f995bb629e4d6342a82210f4"
+  }
+}

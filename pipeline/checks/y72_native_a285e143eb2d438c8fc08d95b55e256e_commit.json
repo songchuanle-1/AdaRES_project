@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "parent_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "tree": "13457e59f99c42d484a5580739327c4f771b3860",
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/sample_model.py"
+    ]
+  ],
+  "intended_branch": "refs/heads/adares-y72-visual-mask-refinement",
+  "working_HEAD_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y72_cpu_preparation_bf900942292b41e09fda663f4736180a_source_snapshot.json",
+    "sha256": "396f0bdc053ef2797b4205f94570cd44c4ddb3399e4cc7cdb6962c497afad8ff"
+  },
+  "note": "Scoped seven-file commit object; no working checkout or production deployment."
+}

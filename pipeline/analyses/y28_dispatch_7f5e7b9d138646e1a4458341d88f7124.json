@@ -1,0 +1,31 @@
+{
+  "observed_at_local": "2026-10-05T20:23:04.828128+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y28 predicted-mask visual-content readback] configs_song/model_paper5/adares_y28_mask_readback_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y28",
+    "label": "Y28 predicted-mask visual-content readback",
+    "config": "configs_song/model_paper5/adares_y28_mask_readback_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "ce2dc75ee9e706da68c5768d9b3c855f33bda7fb",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y28.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 19745,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y28_mask_readback_res_20261005_202229.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-05T20:23:04"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y28.json",
+    "sha256": "0fe5153b99ce1001db3c8b352ccc8829d1dbd9fa0a760baeb6440d3857379d4e"
+  },
+  "scope": "Canonical gated dispatcher; GPU inventory constrained to1, no monitor/goal preflight repeated."
+}

@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "token": "910bf6ab43fe4a3881bb680cc7fa8a08",
+  "id": "AdaRES-Y91",
+  "code_commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "prepared_at": "2026-11-07T23:00:44.074207+08:00",
+  "server": "server-2",
+  "physical_gpu": 0,
+  "power_limit_watts": 280.0,
+  "originals": [
+    {
+      "path": "scripts/advance_y90.py",
+      "sha256": "a51b83862f947a3e4be8df03c6ae0d6e6e8e65fef41e67bd74d70d0ecf01d010"
+    },
+    {
+      "path": "scripts/y90_deployment.py",
+      "sha256": "254b4573d7fca05984321e34f6d09bd002eb52619658f81c398d48ed25d30a52"
+    },
+    {
+      "path": "scripts/test_y90_execution_guards.py",
+      "sha256": "e697f18a18383a055cc9426abe1cfc1ac6e6afa6cbf5137443b5b087c0c09321"
+    },
+    {
+      "path": "scripts/prepare_y90_execution.py",
+      "sha256": "d1996531fc9c692e3536b971e38267a5b0ea33eb6e718fd450049da9c12c6541"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "scripts/create_y91_execution_helpers.py",
+      "sha256": "4c0091137651dbcd8ee35615a9b7780ec3bdadbb95cbe5367fa82c6e5d8d9478"
+    },
+    {
+      "path": "scripts/advance_y91.py",
+      "sha256": "f6eafda99fd4c5c4aa1cbe96dcbc2fb9cfe23966627360b40bcb8afa90b84b53"
+    },
+    {
+      "path": "scripts/y91_deployment.py",
+      "sha256": "027498d0b26023193453cf6eb461bc3869e98790575b7fd40d7f77d01d300a27"
+    },
+    {
+      "path": "scripts/test_y91_execution_guards.py",
+      "sha256": "302b199c3ccd55b1d79cef87a7ec66cb49d4cba61cb87ac1bac89c92212dcedd"
+    },
+    {
+      "path": "scripts/prepare_y91_execution.py",
+      "sha256": "2c4c097ca52697bd41fe1da578f5fc4686aa88b0a060fed283e1971083a76014"
+    }
+  ],
+  "original_helpers_unchanged": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_HEAD_preserved": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "index_queue_running_preserved": true
+}

@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "preregistered_at": "2026-10-17T12:25:47.868261+08:00",
+  "backward_restore": {
+    "path": "pipeline/analyses/y52_backward_scalar_compat_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "6a874c23e808e4470a2b0a31599e72e6e3dcb1a5b350fdc1eb9b69ed500181e9"
+  },
+  "bound_setup": {
+    "path": "pipeline/analyses/y52_native_matched_capture_binding_v2_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "73b942321bcb2d745b31c9573c17fdfe4a1c0a59f8749efffcb4dcbe8e48b791"
+  },
+  "body": {
+    "path": "scripts/probe_y52_native_resources_89ff.py",
+    "sha256": "5a12b45e05a62302b9fdb20d359783f596fdc8d3f9fc48dd47280f08573a152c"
+  },
+  "fixed_test": "SAME frozen eight TRAIN scenes and32 expressions, four actual production batchsize2 pairs. Exact same parent/candidate initial state, queries128/singleargmax. Native predict2warmups/3measurements EACH model/pair; preserve repeat mask/IoU differences. Input-largest pair chosen only by point count for native training stress2warmups/3measures, finite backward and reserved<24GiB.",
+  "prediction": "No added parameters; inference implementation is unchanged and should preserve paired outputs within observed repeat noise. Actual resource feasibility is measured, not accuracy/Pareto superiority.",
+  "limits": "No validation or hyperparameter/sample selection, weight persistence, optimizer training, Git commit or admission. Largest means only among the frozen inputs, not global worst case.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y52_native_resources_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "cc01699750bb16f88b83082bd56ed89a8a1815262296253a8388c99acf3d9702"
+  }
+}

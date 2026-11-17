@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "token": "5a320b25043948e2bae2ffdef63da17a",
+  "classification": "operational_adapter_prelaunch_failure_not_scientific_failure",
+  "actual_failed_command": "python -B scripts/y90_cost_recovery_relaunch.py --token 5a320b25043948e2bae2ffdef63da17a",
+  "failed_nested_operation": "gpu_occupation.py AdaRES_project --token 5a320b25043948e2bae2ffdef63da17a --server server-1 --label recovery_idle",
+  "observed_error": "ValueError: No matching blocked exclusive GPU work to observe",
+  "reason": "Initial canonical idle observation had already unblocked all matching server1 holds; a second canonical collector had no matching blocked candidates.",
+  "phase": "before reconciliation, plan, intent or remote folder creation",
+  "repair": "Reuse initial canonical observation and perform new direct read-only hostname/no-compute/350W/absent-folder reconciliation before the unchanged guarded launch.",
+  "repaired_launcher": {
+    "path": "scripts/y90_cost_recovery_relaunch.py",
+    "sha256": "30a42b231aad0569e54fb530d989a0705c3931a174729a43145af36b27f3e81e"
+  },
+  "successful_fresh_reconciliation": {
+    "path": "pipeline/checks/y90_cost_relaunch_reconciliation_5a320b25043948e2bae2ffdef63da17a.json",
+    "sha256": "8cd5cd59252cf4bca883504a17c213c8e9ca071d58a3276b5baa2bca089caed8"
+  },
+  "failed_scientific_tests": 0,
+  "approvals_rejected": false
+}

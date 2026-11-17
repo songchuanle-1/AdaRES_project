@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "token": "94a52159379646488ec9b38c645f5b1a",
+  "code_commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "CPU_version": {
+    "path": "pipeline/checks/y88_cpu_version_94a52159379646488ec9b38c645f5b1a.json",
+    "sha256": "d8b8a82a66d20f466ba406573dbd0dcf01450624b1a0c2b40bc258be0dccefac"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y88_cpu_94a52159379646488ec9b38c645f5b1a.json",
+    "sha256": "3a79252554dc91c3a4f62aa690e9ddad1dea9c3106ddfa5dec82bc7df31a587b"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y88_cpu_94a52159379646488ec9b38c645f5b1a_program.py",
+    "sha256": "4af44eb573a00297a210a3969d6a84a57aef74769d74c34d3bd4f78ab426bd83"
+  },
+  "native_plans": {
+    "server-1:0": {
+      "path": "pipeline/checks/y88_native_94a52159379646488ec9b38c645f5b1a_server1_plan.json",
+      "sha256": "e396e2238655a1673de7af3f65c461b9fcdbd3f743fe68cf7c3f5b9e402b6d36"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y88_native_94a52159379646488ec9b38c645f5b1a_guards.log",
+    "sha256": "34e47fdf0a3d99bf16236e1541fbeeb4217c455833036c1303e7d23e94a71d81"
+  },
+  "guard_tests_passed": 8,
+  "exact_callback_functions_and_classes": 11,
+  "CPU_native_callbacks_actually_executed": true,
+  "observer_core": {
+    "path": "scripts/y88_observer_core.py",
+    "sha256": "de7d97a2c05f0abae16b29b1384a5a35f8e96d986d929176b9a41ac2c865eeb1"
+  },
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y88_cpu_native.py",
+    "sha256": "fcf6898be771de76e6ef968b9a7b81c4235546db0a1224d79fb177cfcb450f37"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "20:52:43上海begin核验实际CODEX会话与项目owner一致、后台调度Disabled；按当前SERVERS.yaml仅GPU0执行。监控确认1项Y56 running、1项Y57 paused、0 waiting，无新终态或派发错误。最新单卡用户指令继续优先，未恢复GPU1。",
+    "本轮围绕刚开始的单卡试运行执行实际负载观察，而非重复未到期的准备候选资源检查。新增scripts/check_gpu0_single_card_trial.py，复用当前租约与项目锁、仅只读SSH/proc/nvidia-smi；8项CPU控制通过，涵盖进程身份、PID复用、步数未增、GPU1外部占用、未知内核、热降频及功耗变化，Python3.8远端语法也通过。它不是模型或原生训练smoke。",
+    "20:58:13两次间隔约12秒实测原Y56 PID13738命令/cwd/starttime及GPU0 UUID一致，Train26/30 step3286到3308且日志长度增加，尾部无异常。GPU0原280W保持，温度83至84C、功耗254.45至243.89W；当次SW/HW热降频未激活，内核读取成功且无Xid/fallen-off。证据pipeline/checks/gpu0_single_card_a5aa453f92f2440594bda2d66fb1dc4b.json已绑定Y56及本轮resource_check。训练未重启、迁移或改参。",
+    "同次实际compute发现GPU1出现PID50448、占用24158MiB，因此检查器的gpu1_compute_empty=false/sample_healthy=false，原记录完整保留；这不是Y56崩溃或新的科学失败，而是不满足整机单卡隔离条件。随后20:59:45仅核验该PID元数据，确认其owner为另一用户、入口是非AdaRES语音训练程序，不是已暂停的Y57；没有读写其他项目文件或干预外部任务。记录pipeline/checks/gpu1_external_occupant_a5aa453f92f2440594bda2d66fb1dc4b.json。",
+    "Y57保持paused/dispatch_hold，完整epoch27检查点、原日志及后续恢复须另获用户指令的条件均未改。Y58/Y59/Y60的原生两步检查仍待独占GPU0；三项20:28资源证据的复查尚未到期，未重复执行、改stage或延长retry。本轮没有新模型、候选、Git提交、准入、入队、生产同步、训练启动、功耗/风扇或调度改动。"
+  ],
+  "decisions": [
+    "继续保护Y56/GPU0原进程及280W限制，保持项目allowed_gpus=[0]、Y57用户暂停。其他用户在GPU1的任务不属于本项目授权，不停止、迁移、重置或调整它；本项目没有自动补回GPU1。",
+    "本轮实测可确认AdaRES仅使用GPU0且原生步数继续增长；不能称整机单GPU负载试验，也不能把温度变化归因于停Y57或宣称掉卡根因已修复。sample_healthy=false的具体原因是GPU1外部占用，而不是内核/GPU0热降频故障。",
+    "如需严格检验整机仅GPU0负载下的散热/掉卡稳定性，需要协调GPU1外部任务的空闲窗口；不默认有驱逐授权。当前Y56可继续，用户不必再次授权普通训练或重复批准Y57暂停。",
+    "后续GPU0真实空闲时，优先推进已实现Y58/Y59再Y60的原生YAML/TRAIN两步loss/backward及路径/峰值检查，通过才准入/入队并尝试现有门控派发。未把硬件观察或CPU单元测试冒充这些训练检查；不为填满额度制造新候选，不改目标/数据/固定30轮及禁用项。当前报告不预称收尾通过，随后canonical finish并核验收据、context及租约释放。"
+  ]
+}

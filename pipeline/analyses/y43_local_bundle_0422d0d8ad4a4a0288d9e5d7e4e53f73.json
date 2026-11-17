@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y43",
+  "final_only": true,
+  "channels": 32,
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/dec.py",
+      "sha256": "ad764621524428bf92e70e40506d73a575e949947ae58414a7214a3bb983c27f"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/ipdn.py",
+      "sha256": "5eb62b420362cac6003cdf58e5a1fce2be1c8019867e45cbc17f0ae29e355d29"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "intervention": "All32 within-SP third central moments, stable signed cube root, point-mass FG/BG and query final-indicator only.",
+  "limits": [
+    "Local independent implementation, not remote identity or native admission.",
+    "No numeric sweep or diagnostic weight deployment."
+  ]
+}

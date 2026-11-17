@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "preregistered_at": "2026-10-16T13:39:04.832708+08:00",
+  "hypothesis": "The W2 indicator explicitly retains weighted pairwise mask overlap, but need not retain higher-order joint spatial incidence of three or more candidate masks. A per-query conditional second moment of centered competitor coverage may expose that information without changing masks, selector or target.",
+  "matched_control": "Full128 parity fixtures: first3 rows use even {000,011,101,110} versus odd {111,100,010,001}, probabilities .25/.75, remaining125rows .5, same point masses, SAME query features/head/seed. Areas and full weighted pairwise Gram/IoU exactly match. Compare actual W2 indicator, not an invented parent.",
+  "descriptor": "For each q, centered competitor coverage h_q(x)=sum_{r!=q}(p_r(x)-weighted_mean(p_r))/(Q-1). Return E_{mass*p_q}[h_q^2] and E_{mass*(1-p_q)}[h_q^2]. Soft sigmoid probabilities, no threshold/temperature/weight sweep.",
+  "controls": [
+    "32fixed seeds1999..2030, actual W2 indicator float64 on full128fixtures; original8eps*nodes*Q envelope, no fitted tolerance.",
+    "Joint point permutation invariant; query permutation equivariant; padded points ignored; empty denominator clamp matches parent.",
+    "Frozen native TRAIN8/32 plus newTRAIN24/96 inputs, all expressions, no result-based subset selection. Diagnose ranges and point-mass IoU associations descriptively, not efficacy or parent blindness.",
+    "If physical implementation follows: independent copied native W2 parent, released init, same loss/config/seed/fixed30/128queries/single selector; exact disabled-parent and RNG controls; native loss gradients and resource tests before admission."
+  ],
+  "failure_rules": [
+    "If actual W2 distinguishes area/Gram-matched fixtures above original numerical envelope, reject the missing-indicator-information premise for this realization.",
+    "If proposed statistic does not distinguish matched fixtures above same envelope, reject proposed statistic, not all higher-order mechanisms.",
+    "Native constancy or unexplained harmful/reversed task-relevant evidence is not PASS; investigate before admission."
+  ],
+  "independence": "Not Y47 pairwise missing-overlap; not Y29 ranking loss, Y40 word/support alignment or Y49 single-mask topology. All historical closures retained.",
+  "reserve_budget_used": 1,
+  "no_validation_selection": true,
+  "no_admission": true
+}

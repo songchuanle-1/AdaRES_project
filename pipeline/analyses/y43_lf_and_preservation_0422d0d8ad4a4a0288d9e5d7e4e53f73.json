@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/backbone.py",
+      "sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/dec.py",
+      "sha256": "ad764621524428bf92e70e40506d73a575e949947ae58414a7214a3bb983c27f"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/ipdn.py",
+      "sha256": "5eb62b420362cac6003cdf58e5a1fce2be1c8019867e45cbc17f0ae29e355d29"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/loss.py",
+      "sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y43_point_asymmetry/sample_model.py",
+      "sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y43_point_asymmetry_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "guarded_probes": [
+    {
+      "path": "scripts/probe_y43_native_controls_0422.py",
+      "sha256": "005fe4885ec85c70bbe22931db2363f8dd1f5e46f38cf6c07522c6bd69c38ad8",
+      "previous_sha256": "a2842032dda2a776837daeb841eded2c72879950d06c055a9fcf6975fc124fce"
+    },
+    {
+      "path": "scripts/probe_y43_initial_loss_0422.py",
+      "sha256": "e68a550260cf2882ca141cdfc3a22e360e3164c6fc13c6033cd33bc5eff4b47d",
+      "previous_sha256": "224ba8363b1a65faab6bbe500068859f97c03b15a0d59447e08bb5b2d601c6ea"
+    },
+    {
+      "path": "scripts/probe_y43_physical_native_0422.py",
+      "sha256": "0b4f845794c07395102b94c8a7fcabe2ae08fd89718053bf6b8ae614ac2f4418",
+      "previous_sha256": "7135d735603730112d6e03c422ef8ccdb7bcfcd9eef082ab1b99fbe3375a94da"
+    },
+    {
+      "path": "scripts/probe_y43_resources_0422.py",
+      "sha256": "f109d42749bfa43597b28c8220a3ba50f0478350eb2474ac4f4c43a4c3fb192a",
+      "previous_sha256": "6cc278b3156ce2f34217b423f045297f9d764528eaf268511e217ba7d0f4241a"
+    }
+  ],
+  "only_new_seven_lf_format": true,
+  "native_tests_not_yet_run": true
+}

@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T08:43:14.406349-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 17,
+      "total": 30,
+      "step": 1901,
+      "count": 4686
+    },
+    "log_bytes": 21650846
+  },
+  "after": {
+    "observed_at": "2026-10-30T08:43:19.413344-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 17,
+      "total": 30,
+      "step": 1909,
+      "count": 4686
+    },
+    "log_bytes": 21652996
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T08:43:14.406349-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 17,
+        "total": 30,
+        "step": 1901,
+        "count": 4686
+      },
+      "log_bytes": 21650846
+    },
+    {
+      "observed_at": "2026-10-30T08:43:19.413344-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 17,
+        "total": 30,
+        "step": 1909,
+        "count": 4686
+      },
+      "log_bytes": 21652996
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 20742,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y68_language_mask_modulation_res_20261030_065415.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "additional_sources_verified": 12,
+  "additional_YAMLs_verified": 2,
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561\n",
+  "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+  "gpu": "52, 22800, 83, 280.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y68",
+  "token": "a785bf5276374d54baef74df31928b84",
+  "observed_start_local": "2026-10-30T20:43:52.098008+08:00",
+  "observed_end_local": "2026-10-30T20:43:57.451348+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y68_after_y70_deployment.py",
+      "sha256": "73503721e345349f0545c78bc7074e7f3046e190b27c9de574038c789bab57f2"
+    },
+    {
+      "path": "pipeline/checks/y68_server2_y70_deployment_phase_a785bf5276374d54baef74df31928b84.log",
+      "sha256": "985c3f2440527085df1fd7a403c039283d4d92515d39f49c9c8ca2b6cea42b35"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "token": "eee3af894c7e4816a93bb3d1e7770040",
+  "id": "AdaRES-Y75",
+  "original_terminal": {
+    "path": "pipeline/checks/y75_server2_fixed30_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "fc67defebeffeece9c7b52d7aa13aa884ac6065c8a7338c8874d93456ff5343e"
+  },
+  "original_freeze": {
+    "path": "pipeline/checks/AdaRES-Y75_0fd2c3224f6443388fdffa1fb7c5904e_post_training_freeze.json",
+    "sha256": "68cf414c7716b4681172c02185c4d1fe070cf82858fcc1587734ee34e5fafc57"
+  },
+  "frozen_resource": {
+    "server": "server-2",
+    "gpu": 1,
+    "power_limit_watts": 390.0,
+    "note": "Existing power preserved; paired evaluation/cost on same device; two native batches are not a full-dataset memory bound."
+  },
+  "slot_owner": "AdaRES-Y78",
+  "owner_progress": {
+    "path": "pipeline/checks/production_adares-y78_eee3af894c7e4816a93bb3d1e7770040_final.json",
+    "sha256": "88f6b7ce027834f300c11e2bc24b80c9f48f4b8bd64cd7b6b3ceb2a42f14f478"
+  },
+  "correction": "Bind required_gpu metadata to original immutable GPU1/390W evaluation condition; terminal helper left0 while its next_action and original freeze require1.",
+  "frozen_bytes_changed": false,
+  "evaluation_executed": false,
+  "helper": {
+    "path": "scripts/record_eee3af89_handoff.py",
+    "sha256": "68a659c838b04a8fca58a7c5351531e88a4d386b43e72b0a3a51de76f8330607"
+  }
+}

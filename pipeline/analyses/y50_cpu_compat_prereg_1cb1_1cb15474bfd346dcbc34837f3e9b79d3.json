@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "preregistered_at": "2026-10-16T13:51:45.876944+08:00",
+  "failure": {
+    "path": "pipeline/analyses/y50_production_cpu_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.log",
+    "sha256": "4ede483deb751528722173fc4cc4164ad5cc4b6772f0be1a4101bfc388c9e2ad"
+  },
+  "original": {
+    "path": "scripts/probe_y50_production_cpu_1cb1.py",
+    "sha256": "d5221edbf6987ecd96a401442e6357e2ea95a4fda184a3641a4f653fc1179cf6"
+  },
+  "program": {
+    "path": "scripts/probe_y50_production_cpu_1cb1_v2.py",
+    "sha256": "9b74a9be984a41ee78c03060e868a724437f862ce79e84ec9710b6bd324c67de"
+  },
+  "change": "Only ast.unparse statement assertion becomes exact ast.dump equality; remotePython3.8 lacks ast.unparse. Original preserved. No model or tolerance change.",
+  "no_implementation_revision": true
+}

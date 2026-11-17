@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "token": "ab9cf3f30d5a40d28b3c43f4b85083ab",
+  "id": "AdaRES-Y94",
+  "parent": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "target": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "only_added_files": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y94_query_geometry_bias/sample_model.py"
+    ]
+  ],
+  "previous_index": {
+    "path": "pipeline/checks/adares-y94_source_selection_ab9cf3f30d5a40d28b3c43f4b85083ab.index",
+    "sha256": "2dcccd23d73bd5ef616194f259bf29f6fcb23fd44c1554573543472b0a6038c4"
+  },
+  "previous_binary_index": {
+    "path": "pipeline/checks/adares-y94_source_selection_ab9cf3f30d5a40d28b3c43f4b85083ab.index.bin",
+    "sha256": "0d0163d1a94b5e77434d50c8150cfc077910610c3d276e30b73d2eec57954206"
+  },
+  "other_index_entries_preserved": true,
+  "working_files_modified": false,
+  "helper": {
+    "path": "scripts/y94_deployment.py",
+    "sha256": "49e4d737c47fd850703577486ba79425ce771518721682351f751a0906d604db"
+  }
+}

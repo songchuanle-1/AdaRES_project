@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y79",
+  "token": "d488959562e94ac492b5884cf430f679",
+  "original_plan": {
+    "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c_gpu0_plan.json",
+    "sha256": "837bba427c155dd2c81223d4c56a0048f3be3ba9d05929407e9ef51a6fb9e0f3"
+  },
+  "alternative_plan": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_plan.json",
+    "sha256": "f73ed1199ec141d983d366d6091d656a887bf4cbe0473bb0f0cf8c4626daa44e"
+  },
+  "original_model_and_YAML_payload_identical": true,
+  "code_commit_and_goal_unchanged": true,
+  "diagnostic_scientific_body_reversible_exact": true,
+  "CPU_observer_core_reversible_exact": true,
+  "CPU_runtime_receipt_metadata_added": true,
+  "CPU_baseline_YAML": {
+    "path": "pipeline/checks/y79_server1_baseline_yaml_d488959562e94ac492b5884cf430f679.json",
+    "sha256": "58622a168ccd42ab04bb2a2cbda54e13f9fe849362ba72495785a8a2f8dffbc7"
+  },
+  "exact_original_data": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "runtime_library_path": "/data1/songcl/Project/AdaRES_project/runtime/cuda113lib64",
+  "actual_server1_observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "22752, 14, 350.00",
+    "compute": "3489002"
+  },
+  "actual_idle": false,
+  "canonical_reservations": [
+    "AdaRES-Y76"
+  ],
+  "guard_tests_passed": 8,
+  "guard_log": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_guards.log",
+    "sha256": "e3768d8f2bfa8ea9ae2ea03fd7e0cc92f7deefa2ecd9237cb8cb4f88c9d01d56"
+  },
+  "inactive": true,
+  "activated": false,
+  "native_executed": false,
+  "hardware_changed": false,
+  "production_sync": false,
+  "queue_changed": false,
+  "evidence": [
+    {
+      "path": "scripts/y79_server1_alternative.py",
+      "sha256": "4b1a68741f128686d71cfdc79d8c9d4ad89c9fc2b0e162d68baeb60f6725e825"
+    },
+    {
+      "path": "scripts/test_y79_server1_alternative.py",
+      "sha256": "24a9a70fd574c558e39a0483592990a1358d121c58c3a6653b0244ec02acc13b"
+    },
+    {
+      "path": "pipeline/checks/y79_native_observer_CPU_08e82df71e3743dcb86c0eec4d39460c_program.py",
+      "sha256": "12437e39c09c614782dd3ea2b74f1eec5f0e93ae5bd19491e4bcd0861bbb82c3"
+    }
+  ]
+}

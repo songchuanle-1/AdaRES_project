@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "kind": "recovery_helper_cpu_regression_not_scientific_admission",
+  "command": "python -B -m unittest test_resume_y56_y57_after_reboot -v",
+  "working_directory": "D:/project/AdaRES_project/scripts",
+  "tests_run": 4,
+  "passed": true,
+  "tested_files": [
+    {"path": "scripts/resume_y56_y57_after_reboot.py", "sha256": "3d84cc2dacb199d0be6f883d370f393cc29ab59883d4a1dc192878f3f6d1fa9e"},
+    {"path": "scripts/test_resume_y56_y57_after_reboot.py", "sha256": "14c4adab959650759528879118fb56904d5a0da8f0cdac4e985799df79890e56"}
+  ],
+  "controls": ["exact admitted original attempts", "changed protocol, GPU, PID, commit, terminal or repeated launch refused", "foreign GPU proof refused", "older checkpoint, empty optimizer or mismatched scheduler refused"]
+}

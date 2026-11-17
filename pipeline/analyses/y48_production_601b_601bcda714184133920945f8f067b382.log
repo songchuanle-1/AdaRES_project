@@ -1,0 +1,22 @@
+Using backend: pytorch
+2026-10-14 22:54:07,534 - INFO - set random seed: 1999
+2026-10-14 22:54:07,771 - INFO - Load train scanrefer: 36665 samples
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:17<?, ?it/s, lr=0.0001, eta=0:16:47, iter_time=17.08]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.08s/it, lr=0.0001, eta=0:16:47, iter_time=17.08]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.08s/it, lr=0.0001, eta=0:08:31, iter_time=8.83] Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  7.37s/it, lr=0.0001, eta=0:08:31, iter_time=8.83]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  8.83s/it, lr=0.0001, eta=0:08:31, iter_time=8.83]
+2026-10-14 22:54:33,951 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 202, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/ipdn.py", line 111, in forward
+    return self.predict(**batch)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/utils/utils.py", line 20, in wrapper
+    return func(*new_args, **new_kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/ipdn.py", line 157, in predict
+    ret = self.predict_by_feat(scan_ids, object_idss, ann_ids, out, superpoints, gt_pmasks, gt_spmasks, fps_seed_sp)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/ipdn.py", line 206, in predict_by_feat
+    spiou = get_iou(pred_spmask, gt_spmask)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y48_mask_equivalence/loss.py", line 30, in get_iou
+    intersection = (binarized_inputs * targets).sum(-1)
+RuntimeError: The size of tensor a (710) must match the size of tensor b (667) at non-singleton dimension 0

@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "上海12:48:08取得本轮实验优先design快照，实际会话归属与owner相符，后台Disabled；继续只用server-2 GPU0、保留280W上限及Y57暂停。没有新终态；Y58运行、Y59已准入FIFO waiting。",
+    "12:49:22两次实采确认Y58原PID77094/命令/cwd/starttime/GPU0归属不变，Train17/30原生步2699至2723增长，尾部无报错。GPU0=280W/84至85C，短采样无热降频、新Xid/fallen-off；GPU1仍有外部compute，未干预。这不抹去前轮热降频历史或证明硬件修复。证据pipeline/checks/ef_gpu0_runtime_3d166dcb16cb4aa5a5bf6b03069cac7e.json。",
+    "实际复查Y60冻结源码/YAML/提交/当前goal匹配，唯一授权GPU0仍由Y58占用，无独占空槽、未执行native smoke；此时Y58 Train17 step2733至2818，日志前16轮best仍0.4992775022983551，仅中途指标。资源证据pipeline/checks/prepared_resources_3d166dcb16cb4aa5a5bf6b03069cac7e.json绑定Y60及Y61。实际另核验Y58/Y59各7文件/准入收据与当前HEAD一致，Y59无版本阻塞、保持waiting。",
+    "12:53:28完成原Y61的完整解码器CPU集成：相同初始state、原生YAML六层加初始预测、512/513超点及Q128；七阶段eval/train masks/scores/indis逐位等W2，实测共享头调用7次、query_norm输入requires_grad交替True/False。全部后向有限，七阶段mask输出梯度差均0，最终查询梯度max差1.92245e-6，头参数梯度在预定算术界内相同。证据pipeline/analyses/y61_decoder_cpu_3d166dcb16cb4aa5a5bf6b03069cac7e.json及.log。",
+    "本轮Y61模型/YAML和原CPU payload未改，新增的是集成程序及测试证据，不是新候选或模型修订。合成CPU输入和CE+mask-square替代损失不等于稀疏TRAIN原生criterion/optimizer两步；native_data_loaded/native_task_backward/native_smoke_passed均false。Y61保持实际资源阻塞，tick_attempt绑定本轮implementation_test/passed仅CPU范围。没有Git提交、生产同步、准入、入队、训练启动或新完成项。"
+  ],
+  "decisions": [
+    "继续保护Y58固定30轮，GPU0释放后由既有门控按FIFO派发已准入Y59；不占GPU1、不共卡、不驱逐外部任务、不恢复Y57、不改硬件或调度。",
+    "优先续做原Y61未测的七阶段连接而非堆积新ID。本轮测试只验证计算图控制，未证明训练收益；Y60原生检查和Y56冻结后评按原计划等待独占GPU0。保留当前HEAD及Y59收据，后续再保存Y61精确版本、绑定并实际执行原生两步后申请准入，常规操作无需重复用户授权。决策pipeline/decisions/20261022-125559_other.md。"
+  ]
+}

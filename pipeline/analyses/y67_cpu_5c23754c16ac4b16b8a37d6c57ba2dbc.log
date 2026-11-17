@@ -1,0 +1,13 @@
+Using backend: pytorch
+2026-10-29 00:55:39,308 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=798 unexpected=0
+2026-10-29 00:55:39,559 - INFO - Load train scanrefer: 36665 samples
+2026-10-29 00:55:43,580 - INFO - set random seed: 1999
+/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.
+  warnings.warn(msg, FutureWarning)
+Traceback (most recent call last):
+  File "<stdin>", line 106, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256]] is at version 2; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).

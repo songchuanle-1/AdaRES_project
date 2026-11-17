@@ -1,0 +1,11 @@
+{
+  "actions": [
+    "运行：AdaRES-Y84 Train25/30 step3465/4686; AdaRES-Y85 Train28/30 step1659/4686，原source/YAML/receipt/marker/功耗及训练步数递增核实。",
+    "Y86/Y87精确版本与GPU0-only原生计划保留，两授权GPU0均busy+reserved；无GPU检查/准入/启动/归档/正式FIRST或cost。"
+  ],
+  "decisions": [
+    "Y86优先Y87，等原匹配GPU0自然空闲并解除canonical reservation后才做真实native两步；CPU不代替原生准入。",
+    "GPU1全部使用继续暂停，原GPU1冻结后评/cost不迁移替换，Y57单独暂停；不重复索取常规操作授权。",
+    "保持原goal字节/receipt/数据/私有环境/mapping/seed1999-fixed30/禁用/现有功耗及调度，无需用户处理。"
+  ]
+}

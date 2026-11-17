@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "token": "446fcb81558c4fad8ea5c22797f80490",
+  "id": "AdaRES-Y101",
+  "status": "launch_intent_no_PID_yet",
+  "program": {
+    "path": "pipeline/checks/y101_review_execution_446fcb81558c4fad8ea5c22797f80490.py",
+    "sha256": "a3102390fe90e9320d82804f3d493be2423690504dba32407cde5284640985f5"
+  },
+  "terminal": {
+    "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490.json",
+    "sha256": "f634f9945f01d373390431462c43d64a22c43b92cd76b9c690d8aa75630546cf"
+  },
+  "archive": {
+    "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490_archive_binding.json",
+    "sha256": "eb90beeaff3add4f2d8668be2795e5a635e303e3d8ac90af3f6921fd846dc5b7"
+  },
+  "freeze": {
+    "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+    "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+  },
+  "remote_folder": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y101/446fcb81558c4fad8ea5c22797f80490",
+  "scope": "Fixed original four-method evaluation, not a scheduler/decision loop; no automatic retry/restart/promotion.",
+  "evidence": [
+    {
+      "path": "scripts/launch_y101_frozen_review_job_v2.py",
+      "sha256": "93393fafeea930b27459f4218fb8c3ea77e415745909bf6b2451fbf5f7faf340"
+    },
+    {
+      "path": "pipeline/checks/y101_review_execution_446fcb81558c4fad8ea5c22797f80490.py",
+      "sha256": "a3102390fe90e9320d82804f3d493be2423690504dba32407cde5284640985f5"
+    },
+    {
+      "path": "pipeline/checks/y101_review_worker_plan_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "d3ab831a95cd7269ba0a3bdfafdce293352f5e730ca222f42e5731afce1f196a"
+    },
+    {
+      "path": "pipeline/checks/y101_review_bootstrap_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "e0ea7545df4344daeeb7a758e3bc006bc67f669462bfe424ff651f126e20b270"
+    },
+    {
+      "path": "pipeline/checks/y101_review_adapter_afe999d0f7ff4ff1aba5d54d5485fa8d.json",
+      "sha256": "043a23373ae32bf1b7d42a61dea9f7fe5bce1528cb6bc2619a2505e74196834f"
+    },
+    {
+      "path": "pipeline/checks/y101_review_runtime_v2_037ef8a032b64a4db7849e6bd58df591.json",
+      "sha256": "b519686927a95336265e360b371a49a25b9da426520b66522aeed3a52d287952"
+    },
+    {
+      "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "f634f9945f01d373390431462c43d64a22c43b92cd76b9c690d8aa75630546cf"
+    },
+    {
+      "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490_archive_binding.json",
+      "sha256": "eb90beeaff3add4f2d8668be2795e5a635e303e3d8ac90af3f6921fd846dc5b7"
+    }
+  ]
+}

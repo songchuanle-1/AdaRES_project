@@ -1,0 +1,227 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y78",
+  "config": "configs_song/model_paper5/adares_y78_mask_logit_residual_res.yaml",
+  "code_commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615510940551758,
+    6.302280902862549
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "residual_calls": 6,
+      "hard_gate_consumption_calls": 6,
+      "query_norm_consumption_calls": 7,
+      "previous_mask_gradients_finite": true,
+      "residual_weight_gradient_max": 0.003641639370471239,
+      "parameter_update_max": 9.999972098739818e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "residual_calls": 6,
+      "hard_gate_consumption_calls": 6,
+      "query_norm_consumption_calls": 7,
+      "previous_mask_gradients_finite": true,
+      "residual_weight_gradient_max": 0.01202345546334982,
+      "parameter_update_max": 0.00010012120037572458
+    }
+  ],
+  "residual_paths": [
+    {
+      "step": 0,
+      "stage": 1,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": false,
+      "residual_delta_max": 0.0
+    },
+    {
+      "step": 0,
+      "stage": 2,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": false,
+      "residual_delta_max": 0.0
+    },
+    {
+      "step": 0,
+      "stage": 3,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": false,
+      "residual_delta_max": 0.0
+    },
+    {
+      "step": 0,
+      "stage": 4,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": false,
+      "residual_delta_max": 0.0
+    },
+    {
+      "step": 0,
+      "stage": 5,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": false,
+      "residual_delta_max": 0.0
+    },
+    {
+      "step": 0,
+      "stage": 6,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": false,
+      "residual_delta_max": 0.0
+    },
+    {
+      "step": 1,
+      "stage": 1,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": true,
+      "residual_delta_max": 0.11914634704589844
+    },
+    {
+      "step": 1,
+      "stage": 2,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": true,
+      "residual_delta_max": 0.22259044647216797
+    },
+    {
+      "step": 1,
+      "stage": 3,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": true,
+      "residual_delta_max": 0.28022003173828125
+    },
+    {
+      "step": 1,
+      "stage": 4,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": true,
+      "residual_delta_max": 0.5569953918457031
+    },
+    {
+      "step": 1,
+      "stage": 5,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": true,
+      "residual_delta_max": 0.6021690368652344
+    },
+    {
+      "step": 1,
+      "stage": 6,
+      "raw_query_previous_padding_identities": true,
+      "previous_undetached": true,
+      "static_mask_features_preserved": true,
+      "independent_formula_checked": true,
+      "weight_nonzero": true,
+      "residual_delta_max": 0.44567108154296875
+    }
+  ],
+  "residual_calls": 12,
+  "hard_gate_consumption_calls": 12,
+  "query_norm_consumption_calls": 14,
+  "shared_head_calls": 14,
+  "static_mask_features_preserved": true,
+  "original_hard_attention_algorithm_preserved": true,
+  "original_initial_prediction_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6855589888,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native two-step TRAIN only; no efficacy or full-dataset memory guarantee.",
+  "command": "python -B scripts/run_experiment_first_probe.py y78_gpu1_smoke pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_program.py --token eee3af894c7e4816a93bb3d1e7770040 --seconds 600 --gpu --gpu-id 1",
+  "server": "server-2",
+  "physical_gpu": 1,
+  "admission_resource_check": {
+    "gpu": "0, 1, 390.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y78_gpu1_smoke_eee3af894c7e4816a93bb3d1e7770040.json",
+      "sha256": "744c8fe8732141ea12bc20d1170237188e64f9e8e3ea5aee2d7ace0797a135d7"
+    },
+    {
+      "path": "pipeline/analyses/y78_gpu1_smoke_eee3af894c7e4816a93bb3d1e7770040.log",
+      "sha256": "c8fd77cb897fa19cbfde54289c401d39c8a890f25faff9cab2e7faeef9bed418"
+    },
+    {
+      "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_program.py",
+      "sha256": "70f9067ec2383092412c75ba116489b5b45e3121f643d4ac4bbe7f8a5fd65f0c"
+    },
+    {
+      "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_plan.json",
+      "sha256": "3d558538aa54441398ee92cf77839e1df295df781b96b7a493d19f1668faebd9"
+    }
+  ]
+}

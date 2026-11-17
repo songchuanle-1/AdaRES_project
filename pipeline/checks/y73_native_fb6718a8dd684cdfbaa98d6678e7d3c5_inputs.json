@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y73",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "CPU_version": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_version.json",
+    "sha256": "0c9dfe397a5ab365f8e4ea1117e6dbc2b9fd4104468ed0907d88874f053dadca"
+  },
+  "source_snapshot": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_source_snapshot.json",
+    "sha256": "9384ea8c23525cb6441212ba9320a968aed43e45d1dac549a67148daeb171be0"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y73_cpu_e3df20ab451547c8942b3966cb88e01a.json",
+    "sha256": "0732d29888ec8e69b1f4d53c649ef9a3e1cf492363ca55cf6b8b59c9a4e9bea1"
+  },
+  "native_body": {
+    "path": "scripts/probe_y73_native_smoke.py",
+    "sha256": "7e0815fe80c896e6780a8bca7afb40648849a3ba765cb66935e2d567b10093a6"
+  },
+  "prior_tick_attempt": {
+    "tick_started_at": "2026-10-30T20:45:01.750047+00:00",
+    "candidate_id": "AdaRES-Y62",
+    "kind": "resource_check",
+    "result": "blocked",
+    "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token e3df20ab451547c8942b3966cb88e01a --server server-1",
+    "observation": "Fresh authorized GPU inventory and all compute PIDs observed; no task launch or efficacy claim.",
+    "evidence": [
+      {
+        "path": "pipeline/checks/gpu_occupation_server-1_e3df20ab451547c8942b3966cb88e01a.json",
+        "sha256": "f2bdd4a58dee867ea5371c1253e9580a9f3ced6be0770135ec10aae07fc0685a"
+      }
+    ]
+  },
+  "queue_before": {
+    "path": "pipeline/queue.json",
+    "sha256": "3741dc8b56fa8c7c14119f4f6264a7a99828f3a5319d2311b801d460ccba744a"
+  },
+  "running_before": {
+    "path": "pipeline/running.json",
+    "sha256": "e60074619179435b4aa6413b87c5585708261f723d35ab69a8cff4e810f41ce7"
+  }
+}

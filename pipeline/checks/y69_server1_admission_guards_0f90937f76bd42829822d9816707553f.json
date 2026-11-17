@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "tests_passed": 14,
+  "sources": [
+    {
+      "path": "scripts/admit_dispatch_y69_server1.py",
+      "sha256": "21fb047e6e8acbb56402b1312b6108bbdf203177509f8d2a35925a2dc7372994"
+    },
+    {
+      "path": "scripts/test_y69_server1_admission.py",
+      "sha256": "ef45493a06d6ee99cd071823be9496d90c3167c0015e29eb6d18d77926ed9c5d"
+    },
+    {
+      "path": "scripts/test_y69_native_smoke_plan.py",
+      "sha256": "edd5c5d95e53e2dc9eab2c5c4f2ae7ebbfd4bcc99016372231402ce5632938a9"
+    },
+    {
+      "path": "scripts/probe_y69_native_smoke.py",
+      "sha256": "3847442ee7dfa91fe6a08533a551b9c18c76939c31f463d9455f1eb04ca14b60"
+    }
+  ],
+  "log": {
+    "path": "pipeline/checks/y69_server1_admission_guards_0f90937f76bd42829822d9816707553f.log",
+    "sha256": "28862de4d50d1fde869e4f59bbbae8945abe212c69fb8f08a7683c249055f814"
+  },
+  "native_result_substitution": false,
+  "purpose": "Unit fixtures verify rejection logic only; actual native result remains mandatory before admission."
+}

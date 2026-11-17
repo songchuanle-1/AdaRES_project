@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "token": "2683c4548e244340a4d06c50bec79b2e",
+  "id": "AdaRES-Y93",
+  "code_commit": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "observed_at": "2026-11-08T21:06:15.846690+08:00",
+  "source_resource_protocol_guards": 13,
+  "actual_native_admission_guards": 22,
+  "actual_native_evidence": {
+    "path": "pipeline/analyses/y93_server2_smoke_2683c4548e244340a4d06c50bec79b2e.json",
+    "sha256": "c66b751dc5697a1c2d23485a44bb51a4c3147d931a35a405385e8ab4e9cee4d0"
+  },
+  "evidence": [
+    {
+      "path": "scripts/create_y93_execution_helpers.py",
+      "sha256": "e3cb1c3cd00b3fde30dc13f978dcce40e57c01fdee34ee2bffa7952d7c66e911"
+    },
+    {
+      "path": "scripts/advance_y91.py",
+      "sha256": "f6eafda99fd4c5c4aa1cbe96dcbc2fb9cfe23966627360b40bcb8afa90b84b53"
+    },
+    {
+      "path": "scripts/y92_deployment.py",
+      "sha256": "42141a488431f81454001f549b816ec57227e751eda90f498b56c75ee4caf9b9"
+    },
+    {
+      "path": "scripts/test_y91_execution_guards.py",
+      "sha256": "302b199c3ccd55b1d79cef87a7ec66cb49d4cba61cb87ac1bac89c92212dcedd"
+    },
+    {
+      "path": "scripts/test_y91_admission.py",
+      "sha256": "8a3f5a1209a8035bbfee50a7a5ff60cc0d9456a7cdf28db3feb5b61b82df4b6f"
+    },
+    {
+      "path": "scripts/advance_y93.py",
+      "sha256": "56e6cd3d4b072ae7e2b6b0d61923429ecbde9b8133ba5b20733b2c0ed3fba7a3"
+    },
+    {
+      "path": "scripts/y93_deployment.py",
+      "sha256": "84597020a76fd8452c1608bff35ee88db44b59885ddc3872b03d48b70baf0c38"
+    },
+    {
+      "path": "scripts/test_y93_execution_guards.py",
+      "sha256": "55d4e0c394f4fcc224b24c73e9fe4a72f5c3696077f19a4cb2cde0169facbea4"
+    },
+    {
+      "path": "scripts/test_y93_admission.py",
+      "sha256": "7532b7c7c43f7a06da38afc593069732d46ff0482afd138b9429f893bd142fb5"
+    },
+    {
+      "path": "pipeline/checks/y93_execution_preparation_2683c4548e244340a4d06c50bec79b2e_test_y93_execution_guards.log",
+      "sha256": "bbd6ed409675749d2d679ff765ffac83d16680934737e7059a7d3ebe24e9fb8a"
+    },
+    {
+      "path": "pipeline/checks/y93_execution_preparation_2683c4548e244340a4d06c50bec79b2e_test_y93_admission.log",
+      "sha256": "5839292fe309e3eb953398b7692a1d6ad8d81e25ce2d2d181476bd29898983fe"
+    }
+  ],
+  "only_operational_helpers_prepared": true,
+  "originals_unchanged": true,
+  "production_HEAD_preserved": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "index_queue_running_preserved": true,
+  "admitted": false,
+  "source_selected": false,
+  "training_launched": false
+}

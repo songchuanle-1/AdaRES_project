@@ -1,0 +1,19 @@
+Using backend: pytorch
+2026-10-16 23:59:37,703 - INFO - Load val scanrefer: 9508 samples
+2026-10-16 23:59:39,084 - INFO - set random seed: 1999
+2026-10-16 23:59:43,020 - INFO - set random seed: 1999
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+2026-10-17 00:01:14,980 - INFO - set random seed: 1999
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "configs_song/model_paper5/adares_b1_standard_res.yaml", "config_sha256": "04e3cc580751c72a6fc908b2ff93ad931ab4a3a7d07d1fc9b7ae30a9a993e1dc", "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth", "checkpoint_sha256": "cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b", "checkpoint_meta": {"epoch": 18, "best_miou": 0.5021216869354248}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164430473, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 1, "utilization": 0}, "repeat_max_iou_difference": 0.9738956093788147, "repeat_miou_difference": 0.000100085689683449, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.2590310210362077, 0.25843504001386464, 0.2585386410355568, 0.25920740101719275, 0.259039259981364], "peak_allocated_gib": 4.040676593780518, "peak_reserved_gib": 6.484375, "elapsed_seconds": 188.52172463200986}
+{"expressions": 9508, "scenes": 141, "miou": 0.5021216786662852, "acc25": 0.6103281447202356, "acc50": 0.5527976440891881, "spmiou": 0.4666861818605669}

@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y91",
+  "config": "configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "retained_branch": "refs/heads/adares-y91-hidden-confidence-gate-on-y90",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_y91_bound_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved authorized GPU0, after exact matching AdaRES-Y89 fixed30 checkpoint verification/canonical archive. No GPU1 or power/data/runtime substitution.",
+  "checks": "Original native TRAIN two finite task losses/backward/updates; fourteen exact original query/mask/mass/evidence, first/second hidden gate and final linear consumers; all70 original MLP layer calls, original gates, zero then learned hidden response, finite original/new/input gradients, modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server2_program.py",
+    "sha256": "d3573676afd1dde8f8f7e4324a723f9d4f7d1c32551c43f76e1e7f4da9a52723"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server2_plan.json",
+    "sha256": "399403aeb492aba51a4ae219fae16ff62ea5a0100a848089e7770fba707908d2"
+  },
+  "additive_parent": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "execution_helper": {
+    "path": "scripts/run_y91_bound_native.py",
+    "sha256": "2999bbd63faf96953d3d78ec0973b3a7a6f5ddd21bd4c6dec0f2c7d3f508e810"
+  }
+}

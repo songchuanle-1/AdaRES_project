@@ -1,0 +1,72 @@
+{
+  "id": "AdaRES-B4",
+  "label": "Query-competition indicator",
+  "status": "done_complete",
+  "date": "2026-09-21",
+  "server": "server-2",
+  "gpus": [
+    0
+  ],
+  "config": "configs_song/model_paper5/adares_b4_query_competition_res.yaml",
+  "code_package": "ipdn/model_paper5/adares_b4_query_competition",
+  "epochs": 20,
+  "seed": 1999,
+  "depends_on": [
+    "AdaRES-B3"
+  ],
+  "launch_condition": "B3 completed 20 validations at mIoU 0.5014 below the 0.515 target; B4 admission and smoke gates passed.",
+  "run": {
+    "launcher_pid": 107676,
+    "worker_pids": [
+      12367,
+      12368,
+      107994,
+      108042,
+      108090,
+      108138
+    ],
+    "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_b4_query_competition_res_20260921_155700.log",
+    "started_at": "2026-09-21 15:57:00 +08:00",
+    "gpu": 0,
+    "current_epoch": 20,
+    "current_iteration": 4686,
+    "total_iterations": 4686,
+    "observed_at": "2026-09-21T17:50:00+08:00",
+    "terminal_observed_at": "2026-09-22T08:48:24+08:00",
+    "gpu_memory_used_mib": 22700,
+    "gpu_utilization_pct": 44
+  },
+  "pending": null,
+  "history": [
+    {
+      "ts": "2026-09-21T17:53:58+08:00",
+      "action": "reconciled_running",
+      "evidence": "Remote B4 process is active and the training log shows epoch 3 iteration 4071/4686; local queue and running map had missed the launch."
+    },
+    {
+      "ts": "2026-09-22T08:48:23.852517",
+      "status": "done_complete",
+      "best_miou": "0.5070",
+      "epochs": "20/20"
+    },
+    {
+      "ts": "2026-09-22T08:53:00+08:00",
+      "action": "terminal_analysis",
+      "evidence": "The remote log contains 20 validation records. B4 peaked at epoch 19 with mIoU 0.5070, Acc@0.50 0.556, Acc@0.25 0.607, spmIoU 0.472, spAcc@0.50 0.524, and spAcc@0.25 0.600; the epoch-20 result was mIoU 0.506."
+    }
+  ],
+  "final_best": "0.5070",
+  "best_metrics": {
+    "mIoU": 0.507,
+    "acc_05": 0.556,
+    "acc_025": 0.607,
+    "spmIoU": 0.472,
+    "spacc_05": 0.524,
+    "spacc_025": 0.6,
+    "epoch": 19
+  },
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_032553/best.pth",
+  "finished_at": "2026-09-22T08:48:23",
+  "log_local": "",
+  "epochs_final": "20/20"
+}

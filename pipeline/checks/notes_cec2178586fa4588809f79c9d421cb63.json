@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "上海08:48:11实核原Y59 PID28712/命令/cwd/starttime/GPU0归属一致，Train15/30 step697至722；资源尾部step677至773持续增长，未见尾部错误。前十四轮训练日志best .4956555963，最新完整验证.4911347330，一轮未刷新；仅训练过程指标，不是冻结全量评估或科学晋升。",
+    "GPU0保持280W，实测83至84C/22720MiB，observer再次记录热降频Active；kernel读取成功未见新Xid/fallen-off。前轮未降频只是短采样，不代表硬件恢复。GPU1仍有外部负载，未干预，当前许可仍仅GPU0。",
+    "实际执行recheck_gpu0_lifecycle_v2.py，Y60七文件/原生YAML/冻结程序/current goal/commit一致，Y61七文件与原CPU payload及decoder goal一致；Y56/Y58 canonical固定30完成状态和冻结后评引用保留，不重复归档、重训或重新准入。实际授权空槽为空，Y60/Y61原生两步GPU检查未执行。",
+    "本轮无新候选、模型/YAML改动、Git提交/同步、CPU重测、原生GPU smoke、准入/排队或训练启动。Y57继续用户暂停，不恢复、不迁移、不重复问授权。tick_attempt=Y60/resource_check/blocked，引用均同时归入候选。"
+  ],
+  "decisions": [
+    "保护Y59固定30轮/seed1999原训练及280W限制，以真实原生步数增长确认运行；一轮验证未刷新不改固定30协议。再次热降频继续作为硬件风险记录，不擅改功耗/风扇、重启或驱逐外部任务。",
+    "现成Y60/Y61实现保留，下一步均需独占GPU0；真实资源检查后收尾，不为配额新增候选。GPU0空槽出现时优先已提交Y60按未改native_smoke_plan完成真实YAML/TRAIN至少两步有限loss/backward与资源检查，通过即当轮准入并尝试现有门控派发；保留Y56/Y58冻结全量后评和成本比较，再推进Y61精确版本及原生检查。",
+    "没有新的科学结论或授权需求。继续用v2 observer/生命周期资源入口，不重放旧finalizer，不改快照/预算/数据协议/禁区/调度；按canonical report/finish收尾并核验context提交和锁释放，当前不预称通过。"
+  ]
+}

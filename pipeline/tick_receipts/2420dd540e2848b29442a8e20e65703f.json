@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "2420dd540e2848b29442a8e20e65703f",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-17T17:49:06.223469+00:00",
+  "recorded_at": "2026-10-17T17:53:23.049335+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Unchanged known closure/cooldown conflict; no candidate progress. Bound snapshot at 2026-10-18 01:49:07 Shanghai has due=0 and reserve preparation budget=0. Later wall-clock Y52 retry does not change immutable shown IDs required by frozen helper; no repeated preflight, modified snapshot/helper or fabricated diagnosis. Ledger and retries unchanged. No new finish attempted; cached CLOSURE_INCOMPLETE retained. Full six-section audit saved; release owned tick as INCOMPLETE.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 5,
+    "input_tokens": 1151706,
+    "cached_input_tokens": 1133056,
+    "output_tokens": 8477,
+    "reasoning_output_tokens": 2394,
+    "total_tokens": 1160183,
+    "uncached_input_tokens": 18650,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

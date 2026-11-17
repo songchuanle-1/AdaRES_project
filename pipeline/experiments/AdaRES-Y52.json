@@ -1,0 +1,178 @@
+{
+  "id": "AdaRES-Y52",
+  "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-19T13:59:35.343050",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-19T16:16:16.116034+08:00",
+      "action": "interrupted_before_first_checkpoint_user_requested_restart",
+      "original": {
+        "id": "AdaRES-Y52",
+        "label": "AdaRES-Y52 fixed30",
+        "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+        "status": "running",
+        "gpu": "0",
+        "depends_on": [],
+        "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+        "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+        "patience": 30,
+        "min_epochs": 30,
+        "fixed_epochs": 30,
+        "requires_exclusive_ownership": true,
+        "scientific_candidate_id": "AdaRES-Y52",
+        "pid": 15934,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_135853.log",
+        "server": "server-2",
+        "launch_verified": true,
+        "launch_verification": "training_progress",
+        "launched": "2026-10-19T13:59:35"
+      },
+      "evidence": {
+        "path": "pipeline/analyses/y52_mount_restart_097ff69b175b49c59fbcf414fb0bd4f5_before.json",
+        "sha256": "8055a19c5dac5dd31116fe0204a67f61f4ca1b1071509e130c1dde0b97780833"
+      },
+      "human_request": "挂载了 提交训练吧"
+    },
+    {
+      "ts": "2026-10-19T16:41:54.049369",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-20T12:43:43.357545",
+      "status": "stopped_unknown",
+      "best_miou": "0.5090",
+      "epochs": "24/30"
+    },
+    {
+      "ts": "2026-10-20T13:05:00.325851+08:00",
+      "action": "resumed_after_mount_recovery",
+      "interruption": {
+        "id": "AdaRES-Y52",
+        "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+        "server": "server-2",
+        "gpu": "1",
+        "status": "stopped_unknown",
+        "history": [
+          {
+            "ts": "2026-10-19T13:59:35.343050",
+            "action": "launched",
+            "gpu": "0"
+          },
+          {
+            "ts": "2026-10-19T16:16:16.116034+08:00",
+            "action": "interrupted_before_first_checkpoint_user_requested_restart",
+            "original": {
+              "id": "AdaRES-Y52",
+              "label": "AdaRES-Y52 fixed30",
+              "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+              "status": "running",
+              "gpu": "0",
+              "depends_on": [],
+              "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+              "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+              "patience": 30,
+              "min_epochs": 30,
+              "fixed_epochs": 30,
+              "requires_exclusive_ownership": true,
+              "scientific_candidate_id": "AdaRES-Y52",
+              "pid": 15934,
+              "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_135853.log",
+              "server": "server-2",
+              "launch_verified": true,
+              "launch_verification": "training_progress",
+              "launched": "2026-10-19T13:59:35"
+            },
+            "evidence": {
+              "path": "pipeline/analyses/y52_mount_restart_097ff69b175b49c59fbcf414fb0bd4f5_before.json",
+              "sha256": "8055a19c5dac5dd31116fe0204a67f61f4ca1b1071509e130c1dde0b97780833"
+            },
+            "human_request": "挂载了 提交训练吧"
+          },
+          {
+            "ts": "2026-10-19T16:41:54.049369",
+            "action": "launched",
+            "gpu": "1"
+          },
+          {
+            "ts": "2026-10-20T12:43:43.357545",
+            "status": "stopped_unknown",
+            "best_miou": "0.5090",
+            "epochs": "24/30"
+          }
+        ],
+        "pid": 69064,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_164118.log",
+        "launch_verified": true,
+        "launch_verification": "training_progress",
+        "launched": "2026-10-19T16:41:54",
+        "final_best": "0.5090",
+        "finished_at": "2026-10-20T12:43:43.357545",
+        "log_local": "",
+        "epochs_final": "24/30",
+        "archive_id": "9efc2d1e65a04c72a74ef68737b3c7d4"
+      },
+      "human_request": "挂载了 提交训练吧",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261019_040852/last.pth",
+      "pid": 35832,
+      "gpu": "1",
+      "evidence": "pipeline/reports/mount_resume_AdaRES-Y52_81e295aec4c1457c9689d4b62dd21b62_verify.json"
+    },
+    {
+      "ts": "2026-10-20T15:50:36.456309+08:00",
+      "action": "resumed_after_user_reboot",
+      "interruption": {
+        "status": "running",
+        "pid": 35832,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y52_point_target_res_81e295aec4c1457c9689d4b62dd21b62.log",
+        "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261019_040852/last.pth",
+        "resume_epoch": 24,
+        "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_010311"
+      },
+      "human_request": "不小心重启机器了 你重新resume吧",
+      "boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_010311/last.pth",
+      "evidence": "pipeline/reports/reboot_resume_AdaRES-Y52_dffd6386dde74b9397580292d8b5035b_verify.json"
+    },
+    {
+      "ts": "2026-10-20T20:26:23.210079",
+      "status": "done_complete",
+      "best_miou": "0.5090",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 5442,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/reboot_resume_adares_y52_point_target_res_dffd6386dde74b9397580292d8b5035b.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-19T16:41:54",
+  "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+  "patience": 30,
+  "min_epochs": 30,
+  "fixed_epochs": 30,
+  "total_epochs": 30,
+  "scientific_candidate_id": "AdaRES-Y52",
+  "requires_exclusive_ownership": true,
+  "resume_attempt_token": "dffd6386dde74b9397580292d8b5035b",
+  "dispatch_phase": "progress_verified",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_010311/last.pth",
+  "resume_checkpoint_sha256": "85fcc6bdcfd9885f45f3057577776da9af4e2128a966d03e6ec4fe4a570aa6c8",
+  "resumed_at": "2026-10-20T15:50:36.456309+08:00",
+  "resume_epoch": 27,
+  "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_034958",
+  "carried_best": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_034958/best.pth",
+  "reboot_boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0",
+  "final_best": "0.5090",
+  "finished_at": "2026-10-20T20:26:23.210079",
+  "log_local": "",
+  "epochs_final": "30/30",
+  "archive_id": "5c7126ffbb854b21af506a89c07a4287"
+}

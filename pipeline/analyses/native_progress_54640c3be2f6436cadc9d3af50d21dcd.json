@@ -1,0 +1,71 @@
+{
+  "hostname": "dl01-MS-7C60",
+  "tasks": [
+    {
+      "id": "AdaRES-Y18",
+      "pid": 7449,
+      "gpu": "1",
+      "config": "configs_song/model_paper5/adares_y18_point_measure_res.yaml",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y18_point_measure_res_20261001_233715.log",
+      "captures": [
+        {
+          "epoch": 20,
+          "total": 30,
+          "step": 1695,
+          "batches": 4686,
+          "remote_time": "2026-10-02T01:16:09.503055-04:00",
+          "tail1200_sha256": "f992094a7b8dd530feeb2c90c297fa61888fcb3f459ed63e5e5609b001096427",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        },
+        {
+          "epoch": 20,
+          "total": 30,
+          "step": 1705,
+          "batches": 4686,
+          "remote_time": "2026-10-02T01:16:14.506638-04:00",
+          "tail1200_sha256": "53cd373df5593d41e54847ac7d33d798adaadcc304af891aeaea28f73f897460",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        }
+      ],
+      "launch_verified": true
+    },
+    {
+      "id": "AdaRES-Y23",
+      "pid": 125903,
+      "gpu": "0",
+      "config": "configs_song/model_paper5/adares_y23_valid_token_support_res.yaml",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y23_valid_token_support_res_20261002_112523.log",
+      "captures": [
+        {
+          "epoch": 4,
+          "total": 30,
+          "step": 131,
+          "batches": 4686,
+          "remote_time": "2026-10-02T01:16:14.507115-04:00",
+          "tail1200_sha256": "4f31b7e504efa7448d60f3596ada52c1a4c89f2e6b40c5cc55df16f7783700d6",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        },
+        {
+          "epoch": 4,
+          "total": 30,
+          "step": 139,
+          "batches": 4686,
+          "remote_time": "2026-10-02T01:16:19.512539-04:00",
+          "tail1200_sha256": "03b3c1020c22d29e415598563850af2138f9e860e11e398729dd8367e92f2b03",
+          "bounded_traceback": false,
+          "bounded_oom": false
+        }
+      ],
+      "launch_verified": true
+    }
+  ],
+  "gpu_csv": "0, 22718, 57\n1, 22720, 62\n",
+  "token": "54640c3be2f6436cadc9d3af50d21dcd",
+  "observed_start_local": "2026-10-02T13:48:06.817082+08:00",
+  "observed_end_local": "2026-10-02T13:48:17.079238+08:00",
+  "scientific_status": "Y18/Y23 training; final efficacy unknown",
+  "scope": "Two bounded native observations per original PID/log; not full-log crash proof. Device memory is not isolated candidate peak."
+}

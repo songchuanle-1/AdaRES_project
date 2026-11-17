@@ -1,0 +1,3541 @@
+{
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_d1_full_query_comparison_res/20260923_221543/best.pth",
+  "scenes": 16,
+  "expressions": 441,
+  "top1_miou": 0.4111392775327685,
+  "oracle_miou": 0.8389359269113768,
+  "material_error_count": 293,
+  "error_pair_overlap_mean": 0.21187298635891783,
+  "error_pair_overlap_ge_half": 69,
+  "error_oracle_rank_le_three": 22,
+  "rows": [
+    {
+      "selected_iou": 0.009235578589141369,
+      "oracle_iou": 0.9489414691925049,
+      "selected_oracle_overlap": 0.012658228166401386,
+      "oracle_score_rank": 5,
+      "selected_query": 11,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.805432915687561,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 53,
+      "selected_query": 35,
+      "oracle_query": 73
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9135876297950745,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 24,
+      "selected_query": 11,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.5657545328140259,
+      "oracle_iou": 0.7241547107696533,
+      "selected_oracle_overlap": 0.5540540814399719,
+      "oracle_score_rank": 13,
+      "selected_query": 0,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.9052303433418274,
+      "oracle_iou": 0.9612884521484375,
+      "selected_oracle_overlap": 0.9305555820465088,
+      "oracle_score_rank": 8,
+      "selected_query": 2,
+      "oracle_query": 33
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.18294306099414825,
+      "selected_oracle_overlap": 0.046875,
+      "oracle_score_rank": 26,
+      "selected_query": 8,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.6845120191574097,
+      "oracle_iou": 0.8120120167732239,
+      "selected_oracle_overlap": 0.6785714030265808,
+      "oracle_score_rank": 3,
+      "selected_query": 0,
+      "oracle_query": 103
+    },
+    {
+      "selected_iou": 0.0965886116027832,
+      "oracle_iou": 0.9622090458869934,
+      "selected_oracle_overlap": 0.1428571492433548,
+      "oracle_score_rank": 6,
+      "selected_query": 1,
+      "oracle_query": 26
+    },
+    {
+      "selected_iou": 0.734760046005249,
+      "oracle_iou": 0.7616564035415649,
+      "selected_oracle_overlap": 0.800000011920929,
+      "oracle_score_rank": 9,
+      "selected_query": 0,
+      "oracle_query": 22
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9793559312820435,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 40,
+      "selected_query": 64,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.6659321784973145,
+      "oracle_iou": 0.7958884239196777,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 4,
+      "selected_query": 5,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.5955961346626282,
+      "oracle_iou": 0.9433026313781738,
+      "selected_oracle_overlap": 0.5454545617103577,
+      "oracle_score_rank": 15,
+      "selected_query": 33,
+      "oracle_query": 71
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.892200767993927,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 17,
+      "selected_query": 10,
+      "oracle_query": 17
+    },
+    {
+      "selected_iou": 0.5526315569877625,
+      "oracle_iou": 0.7902197241783142,
+      "selected_oracle_overlap": 0.75,
+      "oracle_score_rank": 6,
+      "selected_query": 4,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.8295269012451172,
+      "oracle_iou": 0.8611332774162292,
+      "selected_oracle_overlap": 0.8648648858070374,
+      "oracle_score_rank": 41,
+      "selected_query": 18,
+      "oracle_query": 52
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7856906056404114,
+      "selected_oracle_overlap": 0.07692307978868484,
+      "oracle_score_rank": 26,
+      "selected_query": 7,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8611332774162292,
+      "selected_oracle_overlap": 0.027397260069847107,
+      "oracle_score_rank": 43,
+      "selected_query": 21,
+      "oracle_query": 45
+    },
+    {
+      "selected_iou": 0.7252042293548584,
+      "oracle_iou": 0.8512251973152161,
+      "selected_oracle_overlap": 0.8837209343910217,
+      "oracle_score_rank": 6,
+      "selected_query": 3,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.539779543876648,
+      "oracle_iou": 0.6758161187171936,
+      "selected_oracle_overlap": 0.3692307770252228,
+      "oracle_score_rank": 20,
+      "selected_query": 0,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7683202028274536,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 0,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7855907678604126,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 16,
+      "selected_query": 21,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.5356081128120422,
+      "oracle_iou": 0.6972121596336365,
+      "selected_oracle_overlap": 0.375,
+      "oracle_score_rank": 20,
+      "selected_query": 0,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.6417830586433411,
+      "oracle_iou": 0.7577873468399048,
+      "selected_oracle_overlap": 0.8181818127632141,
+      "oracle_score_rank": 14,
+      "selected_query": 6,
+      "oracle_query": 32
+    },
+    {
+      "selected_iou": 0.7002869844436646,
+      "oracle_iou": 0.7675897479057312,
+      "selected_oracle_overlap": 0.8679245114326477,
+      "oracle_score_rank": 5,
+      "selected_query": 1,
+      "oracle_query": 99
+    },
+    {
+      "selected_iou": 0.7787441611289978,
+      "oracle_iou": 0.7787441611289978,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.7382310032844543,
+      "oracle_iou": 0.7744523286819458,
+      "selected_oracle_overlap": 0.7599999904632568,
+      "oracle_score_rank": 16,
+      "selected_query": 1,
+      "oracle_query": 46
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8772968649864197,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 20,
+      "selected_query": 11,
+      "oracle_query": 24
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8772968649864197,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 14,
+      "selected_query": 43,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.7349953651428223,
+      "oracle_iou": 0.7927054762840271,
+      "selected_oracle_overlap": 0.3333333432674408,
+      "oracle_score_rank": 2,
+      "selected_query": 3,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.8378062844276428,
+      "oracle_iou": 0.8378062844276428,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 7,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.6367538571357727,
+      "oracle_iou": 0.8192601799964905,
+      "selected_oracle_overlap": 0.837837815284729,
+      "oracle_score_rank": 10,
+      "selected_query": 31,
+      "oracle_query": 28
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 5,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 20,
+      "selected_query": 26,
+      "oracle_query": 17
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8800978660583496,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 43,
+      "selected_query": 9,
+      "oracle_query": 49
+    },
+    {
+      "selected_iou": 0.7917163372039795,
+      "oracle_iou": 0.9135876297950745,
+      "selected_oracle_overlap": 0.8888888955116272,
+      "oracle_score_rank": 47,
+      "selected_query": 62,
+      "oracle_query": 36
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8535585999488831,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 3,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9135876297950745,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 52,
+      "selected_query": 13,
+      "oracle_query": 25
+    },
+    {
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 5,
+      "selected_query": 9,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.06146548315882683,
+      "oracle_iou": 0.9612884521484375,
+      "selected_oracle_overlap": 0.0972222238779068,
+      "oracle_score_rank": 8,
+      "selected_query": 2,
+      "oracle_query": 71
+    },
+    {
+      "selected_iou": 0.6045688986778259,
+      "oracle_iou": 0.6471952795982361,
+      "selected_oracle_overlap": 0.7558139562606812,
+      "oracle_score_rank": 14,
+      "selected_query": 3,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9135876297950745,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 52,
+      "selected_query": 32,
+      "oracle_query": 35
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8824415802955627,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 8,
+      "selected_query": 20,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8772968649864197,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 16,
+      "selected_query": 13,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.7622649073600769,
+      "oracle_iou": 0.8422424793243408,
+      "selected_oracle_overlap": 0.7291666865348816,
+      "oracle_score_rank": 17,
+      "selected_query": 12,
+      "oracle_query": 109
+    },
+    {
+      "selected_iou": 0.7382310032844543,
+      "oracle_iou": 0.7429507970809937,
+      "selected_oracle_overlap": 0.9473684430122375,
+      "oracle_score_rank": 3,
+      "selected_query": 1,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7499209642410278,
+      "selected_oracle_overlap": 0.10769230872392654,
+      "oracle_score_rank": 16,
+      "selected_query": 5,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.532263457775116,
+      "oracle_iou": 0.532263457775116,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 13,
+      "oracle_query": 13
+    },
+    {
+      "selected_iou": 0.6217970848083496,
+      "oracle_iou": 0.6573092937469482,
+      "selected_oracle_overlap": 0.6708074808120728,
+      "oracle_score_rank": 67,
+      "selected_query": 3,
+      "oracle_query": 54
+    },
+    {
+      "selected_iou": 0.15861102938652039,
+      "oracle_iou": 0.9416691064834595,
+      "selected_oracle_overlap": 0.23188406229019165,
+      "oracle_score_rank": 3,
+      "selected_query": 0,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 20,
+      "selected_query": 15,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 12,
+      "selected_query": 8,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.8590808510780334,
+      "oracle_iou": 0.868493914604187,
+      "selected_oracle_overlap": 0.9696969985961914,
+      "oracle_score_rank": 25,
+      "selected_query": 13,
+      "oracle_query": 46
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8873527646064758,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 15,
+      "selected_query": 15,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.586568295955658,
+      "oracle_iou": 0.6753458380699158,
+      "selected_oracle_overlap": 0.4035087823867798,
+      "oracle_score_rank": 15,
+      "selected_query": 0,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.5526315569877625,
+      "oracle_iou": 0.9433026313781738,
+      "selected_oracle_overlap": 0.6000000238418579,
+      "oracle_score_rank": 15,
+      "selected_query": 7,
+      "oracle_query": 93
+    },
+    {
+      "selected_iou": 0.601693332195282,
+      "oracle_iou": 0.6674578785896301,
+      "selected_oracle_overlap": 0.6481481194496155,
+      "oracle_score_rank": 68,
+      "selected_query": 0,
+      "oracle_query": 22
+    },
+    {
+      "selected_iou": 0.5921716094017029,
+      "oracle_iou": 0.653825581073761,
+      "selected_oracle_overlap": 0.790123462677002,
+      "oracle_score_rank": 12,
+      "selected_query": 0,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7855907678604126,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 21,
+      "selected_query": 18,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.5526315569877625,
+      "oracle_iou": 0.6911922693252563,
+      "selected_oracle_overlap": 0.7777777910232544,
+      "oracle_score_rank": 9,
+      "selected_query": 30,
+      "oracle_query": 126
+    },
+    {
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 9,
+      "selected_query": 11,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.7368496060371399,
+      "oracle_iou": 0.8653385043144226,
+      "selected_oracle_overlap": 0.7555555701255798,
+      "oracle_score_rank": 12,
+      "selected_query": 7,
+      "oracle_query": 13
+    },
+    {
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 3,
+      "selected_query": 11,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7683202028274536,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 25,
+      "selected_query": 16,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.33180493116378784,
+      "oracle_iou": 0.5699394941329956,
+      "selected_oracle_overlap": 0.25925925374031067,
+      "oracle_score_rank": 48,
+      "selected_query": 5,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5980945825576782,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 4,
+      "selected_query": 11,
+      "oracle_query": 25
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6578628420829773,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 23,
+      "selected_query": 14,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9121500253677368,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 50,
+      "selected_query": 38,
+      "oracle_query": 69
+    },
+    {
+      "selected_iou": 0.9612884521484375,
+      "oracle_iou": 0.9612884521484375,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 2,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.6694719195365906,
+      "oracle_iou": 0.7478154301643372,
+      "selected_oracle_overlap": 0.4615384638309479,
+      "oracle_score_rank": 3,
+      "selected_query": 6,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9025610685348511,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 78,
+      "selected_query": 16,
+      "oracle_query": 84
+    },
+    {
+      "selected_iou": 0.7225329875946045,
+      "oracle_iou": 0.8057834506034851,
+      "selected_oracle_overlap": 0.7169811129570007,
+      "oracle_score_rank": 5,
+      "selected_query": 0,
+      "oracle_query": 119
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8269878029823303,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 60,
+      "selected_query": 12,
+      "oracle_query": 35
+    },
+    {
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 15,
+      "selected_query": 10,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 9,
+      "selected_query": 6,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8224688172340393,
+      "selected_oracle_overlap": 0.03076923079788685,
+      "oracle_score_rank": 21,
+      "selected_query": 13,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.5476072430610657,
+      "oracle_iou": 0.6538508534431458,
+      "selected_oracle_overlap": 0.6603773832321167,
+      "oracle_score_rank": 41,
+      "selected_query": 3,
+      "oracle_query": 124
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8883429169654846,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 34,
+      "selected_query": 0,
+      "oracle_query": 117
+    },
+    {
+      "selected_iou": 0.9759119153022766,
+      "oracle_iou": 0.9759119153022766,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7157190442085266,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 40,
+      "selected_query": 0,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 27,
+      "selected_query": 22,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.8257696628570557,
+      "oracle_iou": 0.8778181672096252,
+      "selected_oracle_overlap": 0.8571428656578064,
+      "oracle_score_rank": 2,
+      "selected_query": 9,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9759119153022766,
+      "oracle_iou": 0.9759119153022766,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 34,
+      "selected_query": 35,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9742187261581421,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 96,
+      "selected_query": 1,
+      "oracle_query": 123
+    },
+    {
+      "selected_iou": 0.9759119153022766,
+      "oracle_iou": 0.9759119153022766,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 8,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9407378435134888,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 44,
+      "selected_query": 0,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.8778181672096252,
+      "oracle_iou": 0.8778181672096252,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 3,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8680738806724548,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 43,
+      "selected_query": 0,
+      "oracle_query": 114
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 19,
+      "selected_query": 37,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9513343572616577,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 19,
+      "selected_query": 3,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8778181672096252,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 2,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 21,
+      "selected_query": 42,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5552353262901306,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 79,
+      "selected_query": 0,
+      "oracle_query": 71
+    },
+    {
+      "selected_iou": 0.8366793394088745,
+      "oracle_iou": 0.8781321048736572,
+      "selected_oracle_overlap": 0.9259259104728699,
+      "oracle_score_rank": 43,
+      "selected_query": 11,
+      "oracle_query": 61
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 19,
+      "selected_query": 37,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 61,
+      "selected_query": 51,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8778181672096252,
+      "oracle_iou": 0.8778181672096252,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 3,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9742187261581421,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 57,
+      "selected_query": 3,
+      "oracle_query": 114
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9742187261581421,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 58,
+      "selected_query": 1,
+      "oracle_query": 109
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 3,
+      "selected_query": 3,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 34,
+      "selected_query": 29,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9742187261581421,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 82,
+      "selected_query": 1,
+      "oracle_query": 110
+    },
+    {
+      "selected_iou": 0.03526348993182182,
+      "oracle_iou": 0.8039624691009521,
+      "selected_oracle_overlap": 0.08602150529623032,
+      "oracle_score_rank": 51,
+      "selected_query": 1,
+      "oracle_query": 52
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 32,
+      "selected_query": 30,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 3,
+      "oracle_query": 25
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9655571579933167,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 5,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 15,
+      "selected_query": 0,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9411320686340332,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 3,
+      "selected_query": 1,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.8366793394088745,
+      "oracle_iou": 0.8604910969734192,
+      "selected_oracle_overlap": 0.9629629850387573,
+      "oracle_score_rank": 9,
+      "selected_query": 13,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 21,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.780012309551239,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 106,
+      "selected_query": 2,
+      "oracle_query": 95
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 39,
+      "oracle_query": 34
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 20,
+      "selected_query": 9,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9655571579933167,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 14,
+      "selected_query": 8,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.46880677342414856,
+      "oracle_iou": 0.4822568893432617,
+      "selected_oracle_overlap": 0.9178082346916199,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9754385948181152,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 28,
+      "selected_query": 26,
+      "oracle_query": 40
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 25,
+      "selected_query": 40,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.4706120789051056,
+      "oracle_iou": 0.4870493710041046,
+      "selected_oracle_overlap": 0.9041095972061157,
+      "oracle_score_rank": 17,
+      "selected_query": 2,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9407378435134888,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 12,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 46,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 15,
+      "selected_query": 4,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8778181672096252,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 9,
+      "selected_query": 8,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9513343572616577,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 2,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 5,
+      "selected_query": 18,
+      "oracle_query": 33
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9759119153022766,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 31,
+      "selected_query": 12,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 9,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 17,
+      "selected_query": 9,
+      "oracle_query": 26
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.46976611018180847,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 39,
+      "selected_query": 13,
+      "oracle_query": 49
+    },
+    {
+      "selected_iou": 0.4810655415058136,
+      "oracle_iou": 0.7257683277130127,
+      "selected_oracle_overlap": 0.699999988079071,
+      "oracle_score_rank": 52,
+      "selected_query": 25,
+      "oracle_query": 58
+    },
+    {
+      "selected_iou": 0.4810655415058136,
+      "oracle_iou": 0.8872628808021545,
+      "selected_oracle_overlap": 0.4000000059604645,
+      "oracle_score_rank": 53,
+      "selected_query": 11,
+      "oracle_query": 54
+    },
+    {
+      "selected_iou": 0.4036199152469635,
+      "oracle_iou": 0.4368266463279724,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 3,
+      "selected_query": 0,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.48816224932670593,
+      "oracle_iou": 0.6310194134712219,
+      "selected_oracle_overlap": 0.7162162065505981,
+      "oracle_score_rank": 11,
+      "selected_query": 7,
+      "oracle_query": 34
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9771658778190613,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 126,
+      "selected_query": 30,
+      "oracle_query": 86
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.449872761964798,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 16,
+      "selected_query": 2,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.2879905700683594,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 26,
+      "selected_query": 41,
+      "oracle_query": 38
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.394585520029068,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 39,
+      "selected_query": 19,
+      "oracle_query": 40
+    },
+    {
+      "selected_iou": 0.8441501259803772,
+      "oracle_iou": 0.8893023133277893,
+      "selected_oracle_overlap": 0.8823529481887817,
+      "oracle_score_rank": 2,
+      "selected_query": 22,
+      "oracle_query": 17
+    },
+    {
+      "selected_iou": 0.14833183586597443,
+      "oracle_iou": 0.14833183586597443,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.6435766220092773,
+      "oracle_iou": 0.6853497624397278,
+      "selected_oracle_overlap": 0.8636363744735718,
+      "oracle_score_rank": 7,
+      "selected_query": 23,
+      "oracle_query": 80
+    },
+    {
+      "selected_iou": 0.05073462054133415,
+      "oracle_iou": 0.25922420620918274,
+      "selected_oracle_overlap": 0.3414634168148041,
+      "oracle_score_rank": 32,
+      "selected_query": 0,
+      "oracle_query": 58
+    },
+    {
+      "selected_iou": 0.8585008978843689,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 5,
+      "selected_query": 0,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 3,
+      "selected_query": 3,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5014973878860474,
+      "selected_oracle_overlap": 0.01666666753590107,
+      "oracle_score_rank": 31,
+      "selected_query": 6,
+      "oracle_query": 49
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.4786703586578369,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 33,
+      "selected_query": 1,
+      "oracle_query": 46
+    },
+    {
+      "selected_iou": 0.8585008978843689,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 5,
+      "selected_query": 0,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.4735218584537506,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 32,
+      "selected_query": 8,
+      "oracle_query": 35
+    },
+    {
+      "selected_iou": 0.9420267343521118,
+      "oracle_iou": 0.9420267343521118,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 6,
+      "selected_query": 6,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.6598145365715027,
+      "oracle_iou": 0.7293972969055176,
+      "selected_oracle_overlap": 0.7777777910232544,
+      "oracle_score_rank": 5,
+      "selected_query": 4,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.5352790951728821,
+      "oracle_iou": 0.9227907061576843,
+      "selected_oracle_overlap": 0.4117647111415863,
+      "oracle_score_rank": 5,
+      "selected_query": 0,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.8759381771087646,
+      "oracle_iou": 0.8893023133277893,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 7,
+      "selected_query": 20,
+      "oracle_query": 13
+    },
+    {
+      "selected_iou": 0.5634564757347107,
+      "oracle_iou": 0.7332302927970886,
+      "selected_oracle_overlap": 0.7647058963775635,
+      "oracle_score_rank": 8,
+      "selected_query": 4,
+      "oracle_query": 13
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.47082096338272095,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 29,
+      "selected_query": 45,
+      "oracle_query": 20
+    },
+    {
+      "selected_iou": 0.5132349133491516,
+      "oracle_iou": 0.8872628808021545,
+      "selected_oracle_overlap": 0.4444444477558136,
+      "oracle_score_rank": 61,
+      "selected_query": 19,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.4036199152469635,
+      "oracle_iou": 0.4368266463279724,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 21,
+      "selected_query": 0,
+      "oracle_query": 70
+    },
+    {
+      "selected_iou": 0.15678046643733978,
+      "oracle_iou": 0.3991338014602661,
+      "selected_oracle_overlap": 0.5882353186607361,
+      "oracle_score_rank": 29,
+      "selected_query": 0,
+      "oracle_query": 55
+    },
+    {
+      "selected_iou": 0.02583150379359722,
+      "oracle_iou": 0.46963217854499817,
+      "selected_oracle_overlap": 0.08474576473236084,
+      "oracle_score_rank": 32,
+      "selected_query": 0,
+      "oracle_query": 39
+    },
+    {
+      "selected_iou": 0.09146341681480408,
+      "oracle_iou": 0.5091190338134766,
+      "selected_oracle_overlap": 0.15000000596046448,
+      "oracle_score_rank": 52,
+      "selected_query": 2,
+      "oracle_query": 105
+    },
+    {
+      "selected_iou": 0.15920975804328918,
+      "oracle_iou": 0.24617087841033936,
+      "selected_oracle_overlap": 0.6734693646430969,
+      "oracle_score_rank": 8,
+      "selected_query": 0,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5468490719795227,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 26,
+      "selected_query": 9,
+      "oracle_query": 32
+    },
+    {
+      "selected_iou": 0.8451162576675415,
+      "oracle_iou": 0.8893023133277893,
+      "selected_oracle_overlap": 0.9333333373069763,
+      "oracle_score_rank": 4,
+      "selected_query": 7,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.4036199152469635,
+      "oracle_iou": 0.4368266463279724,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 4,
+      "selected_query": 0,
+      "oracle_query": 40
+    },
+    {
+      "selected_iou": 0.9386436939239502,
+      "oracle_iou": 0.9420267343521118,
+      "selected_oracle_overlap": 0.96875,
+      "oracle_score_rank": 5,
+      "selected_query": 22,
+      "oracle_query": 19
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.4355400800704956,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 23,
+      "selected_query": 1,
+      "oracle_query": 34
+    },
+    {
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9771658778190613,
+      "selected_oracle_overlap": 0.9090909361839294,
+      "oracle_score_rank": 111,
+      "selected_query": 0,
+      "oracle_query": 68
+    },
+    {
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9771658778190613,
+      "selected_oracle_overlap": 0.9090909361839294,
+      "oracle_score_rank": 18,
+      "selected_query": 5,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7332302927970886,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 9,
+      "selected_query": 0,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.9612431526184082,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 3,
+      "selected_query": 0,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7332302927970886,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 0,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.5080665946006775,
+      "oracle_iou": 0.8893023133277893,
+      "selected_oracle_overlap": 0.5,
+      "oracle_score_rank": 8,
+      "selected_query": 10,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.5154114365577698,
+      "oracle_iou": 0.6788564324378967,
+      "selected_oracle_overlap": 0.6704545617103577,
+      "oracle_score_rank": 7,
+      "selected_query": 14,
+      "oracle_query": 31
+    },
+    {
+      "selected_iou": 0.9420267343521118,
+      "oracle_iou": 0.9420267343521118,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 6,
+      "selected_query": 7,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.5687122941017151,
+      "oracle_iou": 0.7332302927970886,
+      "selected_oracle_overlap": 0.7647058963775635,
+      "oracle_score_rank": 15,
+      "selected_query": 10,
+      "oracle_query": 25
+    },
+    {
+      "selected_iou": 0.11739479750394821,
+      "oracle_iou": 0.6443312764167786,
+      "selected_oracle_overlap": 0.2368421107530594,
+      "oracle_score_rank": 20,
+      "selected_query": 34,
+      "oracle_query": 20
+    },
+    {
+      "selected_iou": 0.9386436939239502,
+      "oracle_iou": 0.9472962617874146,
+      "selected_oracle_overlap": 0.9117646813392639,
+      "oracle_score_rank": 32,
+      "selected_query": 13,
+      "oracle_query": 96
+    },
+    {
+      "selected_iou": 0.4036199152469635,
+      "oracle_iou": 0.48583877086639404,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 19,
+      "selected_query": 0,
+      "oracle_query": 97
+    },
+    {
+      "selected_iou": 0.4036199152469635,
+      "oracle_iou": 0.514161229133606,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 68,
+      "selected_query": 0,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.287294864654541,
+      "oracle_iou": 0.287294864654541,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 7,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8345081210136414,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 48,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 39,
+      "selected_query": 4,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.647961437702179,
+      "oracle_iou": 0.7004739046096802,
+      "selected_oracle_overlap": 0.9333333373069763,
+      "oracle_score_rank": 7,
+      "selected_query": 94,
+      "oracle_query": 65
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 36,
+      "selected_query": 9,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.7959219813346863,
+      "oracle_iou": 0.9514377117156982,
+      "selected_oracle_overlap": 0.7666666507720947,
+      "oracle_score_rank": 33,
+      "selected_query": 43,
+      "oracle_query": 68
+    },
+    {
+      "selected_iou": 0.0257292240858078,
+      "oracle_iou": 0.9797743558883667,
+      "selected_oracle_overlap": 0.20000000298023224,
+      "oracle_score_rank": 16,
+      "selected_query": 0,
+      "oracle_query": 55
+    },
+    {
+      "selected_iou": 0.8781852126121521,
+      "oracle_iou": 0.9272840023040771,
+      "selected_oracle_overlap": 0.9090909361839294,
+      "oracle_score_rank": 31,
+      "selected_query": 38,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9037695527076721,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 13,
+      "oracle_query": 19
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9776432514190674,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 8,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 2,
+      "selected_query": 0,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.6459143757820129,
+      "oracle_iou": 0.7004739046096802,
+      "selected_oracle_overlap": 0.7857142686843872,
+      "oracle_score_rank": 4,
+      "selected_query": 35,
+      "oracle_query": 101
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7076923251152039,
+      "selected_oracle_overlap": 0.020408162847161293,
+      "oracle_score_rank": 59,
+      "selected_query": 16,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9037695527076721,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 24,
+      "oracle_query": 41
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 9,
+      "selected_query": 8,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.975576639175415,
+      "oracle_iou": 0.975576639175415,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 3,
+      "selected_query": 42,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.9886401295661926,
+      "oracle_iou": 0.9886401295661926,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 8,
+      "selected_query": 3,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7731958627700806,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 29,
+      "selected_query": 41,
+      "oracle_query": 80
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5932203531265259,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 8,
+      "selected_query": 0,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.9857252836227417,
+      "oracle_iou": 0.9857252836227417,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 11,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9068467617034912,
+      "oracle_iou": 0.9776432514190674,
+      "selected_oracle_overlap": 0.8125,
+      "oracle_score_rank": 6,
+      "selected_query": 4,
+      "oracle_query": 35
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5932203531265259,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 90,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.48682910203933716,
+      "oracle_iou": 0.6922321915626526,
+      "selected_oracle_overlap": 0.4878048896789551,
+      "oracle_score_rank": 17,
+      "selected_query": 0,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8945081233978271,
+      "oracle_iou": 0.9262080788612366,
+      "selected_oracle_overlap": 0.6785714030265808,
+      "oracle_score_rank": 38,
+      "selected_query": 8,
+      "oracle_query": 107
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6750540733337402,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 0,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9886401295661926,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 4,
+      "selected_query": 18,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.9492137432098389,
+      "oracle_iou": 0.9627155065536499,
+      "selected_oracle_overlap": 0.95652174949646,
+      "oracle_score_rank": 2,
+      "selected_query": 9,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 1,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.9857252836227417,
+      "oracle_iou": 0.9857252836227417,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 8,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5932203531265259,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 6,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9776432514190674,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 9,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9776432514190674,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 43,
+      "selected_query": 15,
+      "oracle_query": 38
+    },
+    {
+      "selected_iou": 0.382846474647522,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.3333333432674408,
+      "oracle_score_rank": 13,
+      "selected_query": 48,
+      "oracle_query": 22
+    },
+    {
+      "selected_iou": 0.8048477172851562,
+      "oracle_iou": 0.9142045378684998,
+      "selected_oracle_overlap": 0.6428571343421936,
+      "oracle_score_rank": 89,
+      "selected_query": 7,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.9857252836227417,
+      "oracle_iou": 0.9857252836227417,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 7,
+      "selected_query": 5,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9886401295661926,
+      "oracle_iou": 0.9886401295661926,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 6,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.7957480549812317,
+      "oracle_iou": 0.8244689106941223,
+      "selected_oracle_overlap": 0.800000011920929,
+      "oracle_score_rank": 4,
+      "selected_query": 0,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6860625147819519,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 2,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7993372678756714,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 32,
+      "selected_query": 12,
+      "oracle_query": 35
+    },
+    {
+      "selected_iou": 0.9886401295661926,
+      "oracle_iou": 0.9886401295661926,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 3,
+      "selected_query": 11,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 0,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.8048477172851562,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.75,
+      "oracle_score_rank": 13,
+      "selected_query": 10,
+      "oracle_query": 50
+    },
+    {
+      "selected_iou": 0.6279621124267578,
+      "oracle_iou": 0.6957474946975708,
+      "selected_oracle_overlap": 0.75,
+      "oracle_score_rank": 3,
+      "selected_query": 1,
+      "oracle_query": 65
+    },
+    {
+      "selected_iou": 0.9024242162704468,
+      "oracle_iou": 0.9237046241760254,
+      "selected_oracle_overlap": 0.8928571343421936,
+      "oracle_score_rank": 2,
+      "selected_query": 6,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.382846474647522,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.3333333432674408,
+      "oracle_score_rank": 16,
+      "selected_query": 24,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.9911942481994629,
+      "oracle_iou": 0.9911942481994629,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.6768377423286438,
+      "oracle_iou": 0.8855421543121338,
+      "selected_oracle_overlap": 0.7142857313156128,
+      "oracle_score_rank": 14,
+      "selected_query": 50,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 3,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.08732660859823227,
+      "oracle_iou": 0.7064777612686157,
+      "selected_oracle_overlap": 0.12068965286016464,
+      "oracle_score_rank": 17,
+      "selected_query": 10,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.7894487977027893,
+      "oracle_iou": 0.801417350769043,
+      "selected_oracle_overlap": 0.9655172228813171,
+      "oracle_score_rank": 5,
+      "selected_query": 2,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8847352266311646,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 20,
+      "selected_query": 20,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.7545520663261414,
+      "oracle_iou": 0.8408594131469727,
+      "selected_oracle_overlap": 0.8648648858070374,
+      "oracle_score_rank": 39,
+      "selected_query": 41,
+      "oracle_query": 91
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8829436898231506,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 12,
+      "selected_query": 62,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5932203531265259,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 12,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.6551554203033447,
+      "oracle_iou": 0.7184833884239197,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 4,
+      "selected_query": 20,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.9857252836227417,
+      "oracle_iou": 0.9857252836227417,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 9,
+      "selected_query": 14,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.7484477162361145,
+      "oracle_iou": 0.7803149819374084,
+      "selected_oracle_overlap": 0.8518518805503845,
+      "oracle_score_rank": 18,
+      "selected_query": 0,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8740706443786621,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 17,
+      "selected_query": 2,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.6559241414070129,
+      "oracle_iou": 0.6559241414070129,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 2,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.9719317555427551,
+      "oracle_iou": 0.9911942481994629,
+      "selected_oracle_overlap": 0.8181818127632141,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6974629759788513,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 17,
+      "selected_query": 0,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 41,
+      "oracle_query": 47
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.908695638179779,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 15,
+      "selected_query": 1,
+      "oracle_query": 19
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9037695527076721,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 37,
+      "oracle_query": 48
+    },
+    {
+      "selected_iou": 0.9797743558883667,
+      "oracle_iou": 0.9911942481994629,
+      "selected_oracle_overlap": 0.9090909361839294,
+      "oracle_score_rank": 3,
+      "selected_query": 2,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8847352266311646,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 69,
+      "oracle_query": 51
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8214136362075806,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 0,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.8077203035354614,
+      "oracle_iou": 0.8383652567863464,
+      "selected_oracle_overlap": 0.9166666865348816,
+      "oracle_score_rank": 2,
+      "selected_query": 43,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 8,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.7867001295089722,
+      "oracle_iou": 0.8214136362075806,
+      "selected_oracle_overlap": 0.9523809552192688,
+      "oracle_score_rank": 5,
+      "selected_query": 7,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 5,
+      "selected_query": 27,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 32,
+      "selected_query": 5,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9042253494262695,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 46,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.07258866727352142,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 46,
+      "oracle_query": 26
+    },
+    {
+      "selected_iou": 0.26228269934654236,
+      "oracle_iou": 0.828428328037262,
+      "selected_oracle_overlap": 0.125,
+      "oracle_score_rank": 36,
+      "selected_query": 5,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6969048380851746,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 3,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.9797743558883667,
+      "oracle_iou": 0.9911942481994629,
+      "selected_oracle_overlap": 0.9090909361839294,
+      "oracle_score_rank": 3,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9886401295661926,
+      "oracle_iou": 0.9886401295661926,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 7,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.7867001295089722,
+      "oracle_iou": 0.8214136362075806,
+      "selected_oracle_overlap": 0.9523809552192688,
+      "oracle_score_rank": 3,
+      "selected_query": 6,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 31,
+      "selected_query": 23,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.8914388418197632,
+      "oracle_iou": 0.9164127111434937,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 36,
+      "selected_query": 9,
+      "oracle_query": 70
+    },
+    {
+      "selected_iou": 0.9500385522842407,
+      "oracle_iou": 0.9857252836227417,
+      "selected_oracle_overlap": 0.9925925731658936,
+      "oracle_score_rank": 7,
+      "selected_query": 4,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 39,
+      "selected_query": 7,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 3,
+      "selected_query": 10,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9037695527076721,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 56,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.6768377423286438,
+      "oracle_iou": 0.917475700378418,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 19,
+      "selected_query": 53,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.5653495192527771,
+      "oracle_iou": 0.945716142654419,
+      "selected_oracle_overlap": 0.32758620381355286,
+      "oracle_score_rank": 38,
+      "selected_query": 8,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 4,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7910875082015991,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 40,
+      "selected_query": 23,
+      "oracle_query": 34
+    },
+    {
+      "selected_iou": 0.9591132998466492,
+      "oracle_iou": 0.9591132998466492,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 15,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.6989133954048157,
+      "oracle_iou": 0.6989133954048157,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 9,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.9496183395385742,
+      "oracle_iou": 0.9496183395385742,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8257249593734741,
+      "oracle_iou": 0.8644161820411682,
+      "selected_oracle_overlap": 0.7222222089767456,
+      "oracle_score_rank": 42,
+      "selected_query": 10,
+      "oracle_query": 89
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.043800488114356995,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 14,
+      "selected_query": 13,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.02800707519054413,
+      "oracle_iou": 0.6647003889083862,
+      "selected_oracle_overlap": 0.049504950642585754,
+      "oracle_score_rank": 38,
+      "selected_query": 28,
+      "oracle_query": 65
+    },
+    {
+      "selected_iou": 0.799501895904541,
+      "oracle_iou": 0.8870808482170105,
+      "selected_oracle_overlap": 0.8205128312110901,
+      "oracle_score_rank": 2,
+      "selected_query": 9,
+      "oracle_query": 36
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5934979915618896,
+      "selected_oracle_overlap": 0.18518517911434174,
+      "oracle_score_rank": 3,
+      "selected_query": 43,
+      "oracle_query": 81
+    },
+    {
+      "selected_iou": 0.9000399708747864,
+      "oracle_iou": 0.9306277632713318,
+      "selected_oracle_overlap": 0.8913043737411499,
+      "oracle_score_rank": 4,
+      "selected_query": 5,
+      "oracle_query": 19
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9387351870536804,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 16,
+      "selected_query": 44,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729596972465515,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 5,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.9591132998466492,
+      "oracle_iou": 0.9591132998466492,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9036954045295715,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 79,
+      "selected_query": 6,
+      "oracle_query": 95
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 21,
+      "selected_query": 11,
+      "oracle_query": 17
+    },
+    {
+      "selected_iou": 0.01603008061647415,
+      "oracle_iou": 0.7218582630157471,
+      "selected_oracle_overlap": 0.017045455053448677,
+      "oracle_score_rank": 40,
+      "selected_query": 1,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.7525626420974731,
+      "oracle_iou": 0.8063370585441589,
+      "selected_oracle_overlap": 0.6521739363670349,
+      "oracle_score_rank": 16,
+      "selected_query": 3,
+      "oracle_query": 27
+    },
+    {
+      "selected_iou": 0.7680927515029907,
+      "oracle_iou": 0.9066373705863953,
+      "selected_oracle_overlap": 0.8571428656578064,
+      "oracle_score_rank": 3,
+      "selected_query": 7,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9473946690559387,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 15,
+      "selected_query": 22,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.501275360584259,
+      "oracle_iou": 0.5806618928909302,
+      "selected_oracle_overlap": 0.682539701461792,
+      "oracle_score_rank": 53,
+      "selected_query": 6,
+      "oracle_query": 49
+    },
+    {
+      "selected_iou": 0.008677497506141663,
+      "oracle_iou": 0.869303822517395,
+      "selected_oracle_overlap": 0.12643678486347198,
+      "oracle_score_rank": 37,
+      "selected_query": 0,
+      "oracle_query": 39
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.805982232093811,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 2,
+      "selected_query": 5,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 22,
+      "selected_query": 32,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8945965766906738,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 5,
+      "oracle_query": 34
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 47,
+      "selected_query": 32,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.9591132998466492,
+      "oracle_iou": 0.9591132998466492,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.748710036277771,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 31,
+      "selected_query": 15,
+      "oracle_query": 51
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 44,
+      "selected_query": 7,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5254281759262085,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 35,
+      "selected_query": 16,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.9591132998466492,
+      "oracle_iou": 0.9591132998466492,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 2,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.5655655860900879,
+      "oracle_iou": 0.8141495585441589,
+      "selected_oracle_overlap": 0.8297872543334961,
+      "oracle_score_rank": 45,
+      "selected_query": 1,
+      "oracle_query": 48
+    },
+    {
+      "selected_iou": 0.8863261938095093,
+      "oracle_iou": 0.8863261938095093,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 31,
+      "oracle_query": 31
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7451419830322266,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 28,
+      "selected_query": 46,
+      "oracle_query": 5
+    },
+    {
+      "selected_iou": 0.7065173983573914,
+      "oracle_iou": 0.9306277632713318,
+      "selected_oracle_overlap": 0.7954545617103577,
+      "oracle_score_rank": 4,
+      "selected_query": 7,
+      "oracle_query": 38
+    },
+    {
+      "selected_iou": 0.9591132998466492,
+      "oracle_iou": 0.9782280921936035,
+      "selected_oracle_overlap": 0.9756097793579102,
+      "oracle_score_rank": 22,
+      "selected_query": 0,
+      "oracle_query": 88
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.836469292640686,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 6,
+      "selected_query": 14,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9455327391624451,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 23,
+      "selected_query": 37,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 2,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 20,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.8474610447883606,
+      "oracle_iou": 0.9422231316566467,
+      "selected_oracle_overlap": 0.8888888955116272,
+      "oracle_score_rank": 2,
+      "selected_query": 3,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6923848986625671,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 4,
+      "selected_query": 10,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 12,
+      "selected_query": 11,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.043233394622802734,
+      "oracle_iou": 0.919571042060852,
+      "selected_oracle_overlap": 0.11764705926179886,
+      "oracle_score_rank": 4,
+      "selected_query": 5,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7178300023078918,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 49,
+      "selected_query": 3,
+      "oracle_query": 49
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7859463691711426,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 1,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.5347031950950623,
+      "oracle_iou": 0.9051076769828796,
+      "selected_oracle_overlap": 0.5,
+      "oracle_score_rank": 28,
+      "selected_query": 2,
+      "oracle_query": 37
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 13,
+      "selected_query": 4,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6527149677276611,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 16,
+      "selected_query": 21,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 14,
+      "selected_query": 22,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6631091237068176,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 13,
+      "selected_query": 7,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 3,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.5358881950378418,
+      "oracle_iou": 0.7577535510063171,
+      "selected_oracle_overlap": 0.5833333134651184,
+      "oracle_score_rank": 21,
+      "selected_query": 16,
+      "oracle_query": 39
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8489294052124023,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 45,
+      "selected_query": 5,
+      "oracle_query": 81
+    },
+    {
+      "selected_iou": 0.22114460170269012,
+      "oracle_iou": 0.7739367485046387,
+      "selected_oracle_overlap": 0.46341463923454285,
+      "oracle_score_rank": 28,
+      "selected_query": 8,
+      "oracle_query": 78
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 3,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.6749279499053955,
+      "oracle_iou": 0.8947631120681763,
+      "selected_oracle_overlap": 0.6896551847457886,
+      "oracle_score_rank": 42,
+      "selected_query": 3,
+      "oracle_query": 52
+    },
+    {
+      "selected_iou": 0.22110596299171448,
+      "oracle_iou": 0.7921146750450134,
+      "selected_oracle_overlap": 0.3720930218696594,
+      "oracle_score_rank": 14,
+      "selected_query": 8,
+      "oracle_query": 100
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9496183395385742,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 9,
+      "selected_query": 7,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 3,
+      "selected_query": 7,
+      "oracle_query": 24
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9496183395385742,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 26,
+      "selected_query": 5,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729596972465515,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 11,
+      "selected_query": 2,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729596972465515,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 14,
+      "selected_query": 13,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.1944202333688736,
+      "oracle_iou": 0.8142942786216736,
+      "selected_oracle_overlap": 0.023255813866853714,
+      "oracle_score_rank": 57,
+      "selected_query": 23,
+      "oracle_query": 38
+    },
+    {
+      "selected_iou": 0.03428855538368225,
+      "oracle_iou": 0.9338904023170471,
+      "selected_oracle_overlap": 0.056603774428367615,
+      "oracle_score_rank": 10,
+      "selected_query": 4,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8658068180084229,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 58,
+      "selected_query": 17,
+      "oracle_query": 99
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.748710036277771,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 48,
+      "selected_query": 30,
+      "oracle_query": 53
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8755655884742737,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 43,
+      "selected_query": 34,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8957298994064331,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 40,
+      "selected_query": 3,
+      "oracle_query": 38
+    },
+    {
+      "selected_iou": 0.3671582341194153,
+      "oracle_iou": 0.8557766079902649,
+      "selected_oracle_overlap": 0.2678571343421936,
+      "oracle_score_rank": 52,
+      "selected_query": 0,
+      "oracle_query": 120
+    },
+    {
+      "selected_iou": 0.5744858384132385,
+      "oracle_iou": 0.8454512357711792,
+      "selected_oracle_overlap": 0.739130437374115,
+      "oracle_score_rank": 39,
+      "selected_query": 37,
+      "oracle_query": 81
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 10,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8945965766906738,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 14,
+      "selected_query": 3,
+      "oracle_query": 50
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 7,
+      "selected_query": 78,
+      "oracle_query": 34
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8074255585670471,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 8,
+      "selected_query": 46,
+      "oracle_query": 32
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8372005820274353,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 4,
+      "selected_query": 31,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 10,
+      "selected_query": 5,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9496183395385742,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 25,
+      "selected_query": 4,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.9130604267120361,
+      "oracle_iou": 0.935051441192627,
+      "selected_oracle_overlap": 0.8717948794364929,
+      "oracle_score_rank": 8,
+      "selected_query": 5,
+      "oracle_query": 8
+    },
+    {
+      "selected_iou": 0.8756388425827026,
+      "oracle_iou": 0.9010769128799438,
+      "selected_oracle_overlap": 0.925000011920929,
+      "oracle_score_rank": 3,
+      "selected_query": 15,
+      "oracle_query": 25
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7917290329933167,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 59,
+      "selected_query": 24,
+      "oracle_query": 73
+    },
+    {
+      "selected_iou": 0.0027880205307155848,
+      "oracle_iou": 0.788242518901825,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 58,
+      "selected_query": 23,
+      "oracle_query": 37
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 21,
+      "selected_query": 4,
+      "oracle_query": 14
+    },
+    {
+      "selected_iou": 0.7680927515029907,
+      "oracle_iou": 0.9066373705863953,
+      "selected_oracle_overlap": 0.8571428656578064,
+      "oracle_score_rank": 3,
+      "selected_query": 3,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7525626420974731,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 30,
+      "selected_query": 13,
+      "oracle_query": 39
+    },
+    {
+      "selected_iou": 0.1973181515932083,
+      "oracle_iou": 0.769361674785614,
+      "selected_oracle_overlap": 0.3166666626930237,
+      "oracle_score_rank": 30,
+      "selected_query": 5,
+      "oracle_query": 80
+    },
+    {
+      "selected_iou": 0.043233394622802734,
+      "oracle_iou": 0.9338904023170471,
+      "selected_oracle_overlap": 0.07547169923782349,
+      "oracle_score_rank": 11,
+      "selected_query": 4,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 20,
+      "selected_query": 9,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7611047625541687,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 41,
+      "selected_query": 13,
+      "oracle_query": 80
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5949074029922485,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 4,
+      "selected_query": 85,
+      "oracle_query": 15
+    },
+    {
+      "selected_iou": 0.9731354117393494,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.9836065769195557,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 26,
+      "selected_query": 7,
+      "oracle_query": 19
+    },
+    {
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8986232876777649,
+      "oracle_iou": 0.8986232876777649,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 67,
+      "oracle_query": 67
+    },
+    {
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 1,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8539928197860718,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 17,
+      "selected_query": 2,
+      "oracle_query": 87
+    },
+    {
+      "selected_iou": 0.6851193308830261,
+      "oracle_iou": 0.8446145057678223,
+      "selected_oracle_overlap": 0.7916666865348816,
+      "oracle_score_rank": 7,
+      "selected_query": 0,
+      "oracle_query": 92
+    },
+    {
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 2,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9065148830413818,
+      "oracle_iou": 0.919163703918457,
+      "selected_oracle_overlap": 0.920634925365448,
+      "oracle_score_rank": 2,
+      "selected_query": 2,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.916806697845459,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 12,
+      "selected_query": 8,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.8846715092658997,
+      "oracle_iou": 0.8846715092658997,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 10,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 30,
+      "selected_query": 29,
+      "oracle_query": 66
+    },
+    {
+      "selected_iou": 0.7674418687820435,
+      "oracle_iou": 0.7830508351325989,
+      "selected_oracle_overlap": 0.9166666865348816,
+      "oracle_score_rank": 3,
+      "selected_query": 0,
+      "oracle_query": 2
+    },
+    {
+      "selected_iou": 0.9769498705863953,
+      "oracle_iou": 0.9769498705863953,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.573369562625885,
+      "oracle_iou": 0.7814815044403076,
+      "selected_oracle_overlap": 0.4000000059604645,
+      "oracle_score_rank": 14,
+      "selected_query": 10,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.693216860294342,
+      "oracle_iou": 0.784030020236969,
+      "selected_oracle_overlap": 0.9130434989929199,
+      "oracle_score_rank": 5,
+      "selected_query": 0,
+      "oracle_query": 103
+    },
+    {
+      "selected_iou": 0.8460575938224792,
+      "oracle_iou": 0.8460575938224792,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 3,
+      "oracle_query": 3
+    },
+    {
+      "selected_iou": 0.8756938576698303,
+      "oracle_iou": 0.8756938576698303,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8605809211730957,
+      "oracle_iou": 0.8605809211730957,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.6708989143371582,
+      "oracle_iou": 0.784030020236969,
+      "selected_oracle_overlap": 0.8333333134651184,
+      "oracle_score_rank": 4,
+      "selected_query": 0,
+      "oracle_query": 77
+    },
+    {
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.916806697845459,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8846715092658997,
+      "oracle_iou": 0.9583941698074341,
+      "selected_oracle_overlap": 0.8888888955116272,
+      "oracle_score_rank": 18,
+      "selected_query": 13,
+      "oracle_query": 62
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9089009761810303,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 105,
+      "selected_query": 0,
+      "oracle_query": 121
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 55,
+      "selected_query": 5,
+      "oracle_query": 68
+    },
+    {
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 4,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8539928197860718,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 18,
+      "selected_query": 2,
+      "oracle_query": 80
+    },
+    {
+      "selected_iou": 0.8756938576698303,
+      "oracle_iou": 0.8756938576698303,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 1,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.8605809211730957,
+      "oracle_iou": 0.882553219795227,
+      "selected_oracle_overlap": 0.9230769276618958,
+      "oracle_score_rank": 12,
+      "selected_query": 1,
+      "oracle_query": 46
+    },
+    {
+      "selected_iou": 0.8605809211730957,
+      "oracle_iou": 0.8605809211730957,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.899328887462616,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 26,
+      "selected_query": 1,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.9731354117393494,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.9836065769195557,
+      "oracle_score_rank": 6,
+      "selected_query": 0,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.916806697845459,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 4,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.9769498705863953,
+      "oracle_iou": 0.9843370318412781,
+      "selected_oracle_overlap": 0.9583333134651184,
+      "oracle_score_rank": 13,
+      "selected_query": 0,
+      "oracle_query": 121
+    },
+    {
+      "selected_iou": 0.6788283586502075,
+      "oracle_iou": 0.74301677942276,
+      "selected_oracle_overlap": 0.875,
+      "oracle_score_rank": 4,
+      "selected_query": 0,
+      "oracle_query": 58
+    },
+    {
+      "selected_iou": 0.9769498705863953,
+      "oracle_iou": 0.9769498705863953,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 1,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9769498705863953,
+      "oracle_iou": 0.9769498705863953,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.8605809211730957,
+      "oracle_iou": 0.8605809211730957,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.6832116842269897,
+      "oracle_iou": 0.9583941698074341,
+      "selected_oracle_overlap": 0.7777777910232544,
+      "oracle_score_rank": 3,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.7230046987533569,
+      "oracle_iou": 0.7830508351325989,
+      "selected_oracle_overlap": 0.8461538553237915,
+      "oracle_score_rank": 9,
+      "selected_query": 2,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.9023599624633789,
+      "oracle_iou": 0.9065148830413818,
+      "selected_oracle_overlap": 0.9841269850730896,
+      "oracle_score_rank": 6,
+      "selected_query": 0,
+      "oracle_query": 10
+    },
+    {
+      "selected_iou": 0.9378019571304321,
+      "oracle_iou": 0.9378019571304321,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 23,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.9362253546714783,
+      "oracle_iou": 0.9426200985908508,
+      "selected_oracle_overlap": 0.9722222089767456,
+      "oracle_score_rank": 3,
+      "selected_query": 6,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.916806697845459,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6828479170799255,
+      "selected_oracle_overlap": 0.20000000298023224,
+      "oracle_score_rank": 10,
+      "selected_query": 6,
+      "oracle_query": 7
+    },
+    {
+      "selected_iou": 0.9105866551399231,
+      "oracle_iou": 0.9105866551399231,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.4757609963417053,
+      "oracle_iou": 0.7164685726165771,
+      "selected_oracle_overlap": 0.2857142984867096,
+      "oracle_score_rank": 12,
+      "selected_query": 10,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.9362253546714783,
+      "oracle_iou": 0.9426200985908508,
+      "selected_oracle_overlap": 0.9722222089767456,
+      "oracle_score_rank": 4,
+      "selected_query": 7,
+      "oracle_query": 18
+    },
+    {
+      "selected_iou": 0.8846715092658997,
+      "oracle_iou": 0.9583941698074341,
+      "selected_oracle_overlap": 0.8888888955116272,
+      "oracle_score_rank": 3,
+      "selected_query": 6,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.6851193308830261,
+      "oracle_iou": 0.784030020236969,
+      "selected_oracle_overlap": 0.875,
+      "oracle_score_rank": 5,
+      "selected_query": 0,
+      "oracle_query": 106
+    },
+    {
+      "selected_iou": 0.7674418687820435,
+      "oracle_iou": 0.7830508351325989,
+      "selected_oracle_overlap": 0.9166666865348816,
+      "oracle_score_rank": 5,
+      "selected_query": 1,
+      "oracle_query": 24
+    },
+    {
+      "selected_iou": 0.8756938576698303,
+      "oracle_iou": 0.8756938576698303,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 1,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.7830508351325989,
+      "oracle_iou": 0.7830508351325989,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 4,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.5949074029922485,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.6666666865348816,
+      "oracle_score_rank": 2,
+      "selected_query": 8,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.8867263793945312,
+      "oracle_iou": 0.888706386089325,
+      "selected_oracle_overlap": 0.692307710647583,
+      "oracle_score_rank": 19,
+      "selected_query": 1,
+      "oracle_query": 114
+    },
+    {
+      "selected_iou": 0.867377519607544,
+      "oracle_iou": 0.8756938576698303,
+      "selected_oracle_overlap": 0.982758641242981,
+      "oracle_score_rank": 2,
+      "selected_query": 0,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.8756938576698303,
+      "oracle_iou": 0.8756938576698303,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 1,
+      "oracle_query": 1
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.899328887462616,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 29,
+      "selected_query": 7,
+      "oracle_query": 19
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.780036985874176,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 58,
+      "selected_query": 4,
+      "oracle_query": 88
+    },
+    {
+      "selected_iou": 0.9239130616188049,
+      "oracle_iou": 0.9239130616188049,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 6,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8539928197860718,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 19,
+      "selected_query": 0,
+      "oracle_query": 21
+    },
+    {
+      "selected_iou": 0.7674418687820435,
+      "oracle_iou": 0.8230897188186646,
+      "selected_oracle_overlap": 0.9230769276618958,
+      "oracle_score_rank": 3,
+      "selected_query": 1,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.906796932220459,
+      "oracle_iou": 0.9271469116210938,
+      "selected_oracle_overlap": 0.9090909361839294,
+      "oracle_score_rank": 44,
+      "selected_query": 8,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 50,
+      "selected_query": 6,
+      "oracle_query": 112
+    },
+    {
+      "selected_iou": 0.5089108943939209,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.5,
+      "oracle_score_rank": 17,
+      "selected_query": 14,
+      "oracle_query": 23
+    },
+    {
+      "selected_iou": 0.9362253546714783,
+      "oracle_iou": 0.9426200985908508,
+      "selected_oracle_overlap": 0.9722222089767456,
+      "oracle_score_rank": 5,
+      "selected_query": 4,
+      "oracle_query": 12
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9424147605895996,
+      "selected_oracle_overlap": 0.0,
+      "oracle_score_rank": 42,
+      "selected_query": 0,
+      "oracle_query": 4
+    },
+    {
+      "selected_iou": 0.9769498705863953,
+      "oracle_iou": 0.9769498705863953,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 1,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.0,
+      "oracle_iou": 0.08157461136579514,
+      "selected_oracle_overlap": 0.8285714387893677,
+      "oracle_score_rank": 16,
+      "selected_query": 5,
+      "oracle_query": 55
+    },
+    {
+      "selected_iou": 0.9239130616188049,
+      "oracle_iou": 0.9239130616188049,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 9,
+      "oracle_query": 9
+    },
+    {
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.916806697845459,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 13,
+      "selected_query": 15,
+      "oracle_query": 6
+    },
+    {
+      "selected_iou": 0.9105866551399231,
+      "oracle_iou": 0.9105866551399231,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 1,
+      "selected_query": 0,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9424147605895996,
+      "oracle_iou": 0.9488517642021179,
+      "selected_oracle_overlap": 0.9714285731315613,
+      "oracle_score_rank": 3,
+      "selected_query": 8,
+      "oracle_query": 16
+    },
+    {
+      "selected_iou": 0.9597030878067017,
+      "oracle_iou": 1.0,
+      "selected_oracle_overlap": 0.9508196711540222,
+      "oracle_score_rank": 18,
+      "selected_query": 0,
+      "oracle_query": 50
+    },
+    {
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "selected_oracle_overlap": 1.0,
+      "oracle_score_rank": 2,
+      "selected_query": 15,
+      "oracle_query": 11
+    },
+    {
+      "selected_iou": 0.8846715092658997,
+      "oracle_iou": 0.9583941698074341,
+      "selected_oracle_overlap": 0.8888888955116272,
+      "oracle_score_rank": 2,
+      "selected_query": 18,
+      "oracle_query": 0
+    },
+    {
+      "selected_iou": 0.9023599624633789,
+      "oracle_iou": 0.9161783456802368,
+      "selected_oracle_overlap": 0.9047619104385376,
+      "oracle_score_rank": 29,
+      "selected_query": 3,
+      "oracle_query": 108
+    }
+  ]
+}

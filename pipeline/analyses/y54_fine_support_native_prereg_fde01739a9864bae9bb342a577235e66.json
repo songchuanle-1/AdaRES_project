@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T13:07:05.251253+08:00",
+  "reused_setup": {
+    "path": "pipeline/analyses/y53_padding_native_eval_compat_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "5903f2bf7753e833b7d986a4081b528583a8b24d095722b557cb211f11429752"
+  },
+  "body": {
+    "path": "scripts/probe_y54_fine_support_native_fde0.py",
+    "sha256": "c395abdacd8bd4c51f3c35fc9d21ad71c519f6ab2de45c64923be4ae41d37d3a"
+  },
+  "fixed_test": "SAME8frozenTRAIN scenes/original4two-scene batches/32expressions/seed1999; fixed trained W2 diagnostic. Observe actual sparse forward/FPS/decoder input. Recompute exact coarse-derived gathered support positions and assert equality. Measure actual missing-mask fine supports, unmasked edges and attention mass. SAME fine source/query paired original/repeat/padding-only/corrected-padding/valid positive controls; original-vs-corrected full decoder all7layer confidence and all-valid negative controls.",
+  "intervention": "Only diagnostic fine attention key validity and spatial neighbor k_mask. No model files, source samples, weights, native512fine/128queries, loss weights, thresholds or epochs changed.",
+  "prediction": "True invalid support contamination produces positive native attention mass and a control-separated output effect, removed by validity masks; all-valid expressions should be unaffected within measured repeats. No trained gain or automatic PASS from a shape condition.",
+  "limits": "Diagnostic forward only, hooks restored. No independent implementation, optimizer steps, commits, admission or launch. Layer/support counts are correlated.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y54_fine_support_native_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "a377d744ba46065c1b507edf6e82e69c0b1a56c331b1a4d10e62e49516fce00c"
+  }
+}

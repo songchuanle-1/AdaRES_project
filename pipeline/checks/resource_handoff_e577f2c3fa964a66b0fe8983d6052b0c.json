@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "token": "e577f2c3fa964a66b0fe8983d6052b0c",
+  "observed_at": "2026-11-01T08:46:06.041122+08:00",
+  "original_live_training": {
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_e577f2c3fa964a66b0fe8983d6052b0c_progress.json",
+      "sha256": "404d96cf825a4d0f77375b703548ea297bd555851b94aff40581fc15c00288d6"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_e577f2c3fa964a66b0fe8983d6052b0c_progress.json",
+      "sha256": "f1bb2ea067b0828fdf940a073f02171d9e396effe60bab55fcc6712ada511830"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_e577f2c3fa964a66b0fe8983d6052b0c_progress.json",
+      "sha256": "a5c1389614b8ffee3a9fce8ed66b941de5c1e47adc62ed9c2b6a6daa04010a10"
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_e577f2c3fa964a66b0fe8983d6052b0c.json",
+      "sha256": "b141db44621c4130b8f1049524641a054e94c33badb3729911119c2a63969a00"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_e577f2c3fa964a66b0fe8983d6052b0c.json",
+      "sha256": "34477442ae2cbef36f9122b400cc5ba9a5848e2584d984d8d9ba35fbf3c5b244"
+    }
+  },
+  "prepared_identity_recheck": [
+    {
+      "id": "AdaRES-Y75",
+      "code_commit": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+      "source_manifest": {
+        "path": "pipeline/checks/y75_cpu_version_e04205f48d2f4f5eb7898ec10c1981d0.json",
+        "sha256": "991c3a7dd9eeb9b555abf3d2918bec9049ff747c2a6df166e80c11218301fbe2"
+      },
+      "CPU_callback_verification": {
+        "path": "pipeline/checks/y75_native_observer_verification_e04205f48d2f4f5eb7898ec10c1981d0.json",
+        "sha256": "9f925fd3590fe7a9d4d878bc39d00d3c4474e62f65f16b7ee5e4dba54daf00c6"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu0_plan.json",
+          "sha256": "bea4b3e680f0fbf9d824d47a7982f068fdf2734d6703e54dbf946c1392f7b355"
+        },
+        {
+          "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu1_plan.json",
+          "sha256": "a8d84f0117b10a97d5eed5f2d95b9b4b9f0b37945e32d6138783f86533b27e45"
+        }
+      ],
+      "original_source_goal_and_program_hashes_checked": true,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y76",
+      "code_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+      "source_manifest": {
+        "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "37485b9b3a404188d2df8a71d47b6888c7d27656f2421d1e385f1e4f41caf304"
+      },
+      "CPU_callback_verification": {
+        "path": "pipeline/checks/y76_native_observer_verification_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "a30fe2ab6341033539d5a6dc9ac18d0048471a59c85b14ed22c49c81e5c4abf1"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu0_plan.json",
+          "sha256": "c32ec64c054cadffb9ea34d49a7a0b3e8e8ce9a1668695920c0db78c72fd366c"
+        },
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu1_plan.json",
+          "sha256": "c87bf5936d869793e8710d6674fef4b4e1b42f8726936ccdebeb121d975580c9"
+        }
+      ],
+      "original_source_goal_and_program_hashes_checked": true,
+      "native_GPU_executed": false
+    }
+  ],
+  "Y71_previously_archived_terminal": {
+    "path": "pipeline/checks/y71_server2_fixed30_dd81fa2cdb754585ab9d4ab0da627f70.json",
+    "sha256": "218542bf4228ba324a34ec651cda3463a164d32d73e71eb8b88b87ed2f6b594b"
+  },
+  "Y71_rearchived": false,
+  "current_HEAD": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "new_candidates": 0,
+  "new_tests": false,
+  "native_GPU_executed": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_terminal_archives": 0,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "conclusion": "All three original native counters advance; all authorized devices busy and reserved. Existing two prepared candidates and fifteen full frozen evaluations wait. No completed operation replayed or efficacy update."
+}

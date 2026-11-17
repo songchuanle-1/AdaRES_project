@@ -1,0 +1,113 @@
+{
+  "id": "AdaRES-Y54",
+  "candidate_id": "AdaRES-Y54",
+  "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+  "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261019-125547_manual_adares-y54.md",
+    "sha256": "eed5b70c0376e72fd920701761a66da5b8a4c0119fc44262646e483f5167cf15"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y54_fine_support_native_fde0_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "e6293fc4fdf76c14967e08b6ae5ffb1aa53f3e44b6557b27ca80990b0e0384c3"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "2d812b5fa93ec234e5bb9ada06800b27711375b24d1b1bc656646d3c4c6ab3b7"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y54_fine_support_native_fde0_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "e6293fc4fdf76c14967e08b6ae5ffb1aa53f3e44b6557b27ca80990b0e0384c3"
+        },
+        {
+          "path": "pipeline/analyses/y54_native_gate_review_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "2b9c71f25116369eb94195abbab89030952ab4c5ec57c913afaafb21bd4d5a21"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "2d812b5fa93ec234e5bb9ada06800b27711375b24d1b1bc656646d3c4c6ab3b7"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y54_native_gates_fde0_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "94696fcfdbf44cc25a5efa416e9d0dcc1ad4eaeb9821d16c7dc730993f1db1b3"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "2d812b5fa93ec234e5bb9ada06800b27711375b24d1b1bc656646d3c4c6ab3b7"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y54_native_gates_fde0_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "94696fcfdbf44cc25a5efa416e9d0dcc1ad4eaeb9821d16c7dc730993f1db1b3"
+        },
+        {
+          "path": "pipeline/analyses/prepared_candidates_connectivity_e4e47d5857d44da683b1d9fed03bfe66.json",
+          "sha256": "19c162e1a9398171987f0403ebc9203608eef2bd2a825f4af6179c981d475a60"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "2d812b5fa93ec234e5bb9ada06800b27711375b24d1b1bc656646d3c4c6ab3b7"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y54_prototype_bundle_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "5fe5b6d4b2d58ba2fe14cec37577ebed20b65f8ea5beaa6b3a7d4c6f9f3b40cf"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_commit_binding_e4e47d5857d44da683b1d9fed03bfe66.json",
+          "sha256": "7cfd21b7155cfd357a175fbca91abd9a95720c0e57fa46ed4a9434c761c202b5"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "2d812b5fa93ec234e5bb9ada06800b27711375b24d1b1bc656646d3c4c6ab3b7"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        },
+        {
+          "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+          "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y54_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "2d812b5fa93ec234e5bb9ada06800b27711375b24d1b1bc656646d3c4c6ab3b7"
+        }
+      ]
+    }
+  },
+  "admitted_at": "2026-10-19T12:55:47.112333+08:00",
+  "post_training_plan": {
+    "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+  },
+  "limitations": "Native fine-support validity defect has separated padding/positive/negative controls; six fine layers have finite valid gradients and zero invalid-source gradients. Trained efficacy and novelty unknown; deployment awaits live checks."
+}

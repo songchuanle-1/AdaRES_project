@@ -1,0 +1,137 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y85",
+  "config": "configs_song/model_paper5/adares_y85_mask_feature_norm_res.yaml",
+  "code_commit": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    7.163978576660156,
+    9.00000286102295
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "step": 0,
+      "all_finite": true,
+      "tensors": 541,
+      "indicator_tensors": 10,
+      "new_gradient_maxima": [
+        0.00029953409102745354,
+        0.00031223284895531833
+      ],
+      "parameter_updates": [
+        0.00010007619857788086,
+        9.999678877647966e-05
+      ],
+      "prediction_calls": 7,
+      "indicator_calls": 7,
+      "query_norm_calls": 7,
+      "coarse_gate_calls": 6,
+      "raw_and_normalized_gradients_finite": true
+    },
+    {
+      "step": 1,
+      "all_finite": true,
+      "tensors": 541,
+      "indicator_tensors": 10,
+      "new_gradient_maxima": [
+        0.0006398838595487177,
+        0.0002793630410451442
+      ],
+      "parameter_updates": [
+        0.00010019540786743164,
+        0.00010009745165007189
+      ],
+      "prediction_calls": 7,
+      "indicator_calls": 7,
+      "query_norm_calls": 7,
+      "coarse_gate_calls": 6,
+      "raw_and_normalized_gradients_finite": true
+    }
+  ],
+  "norm_paths": [
+    {
+      "step": 0,
+      "original_x_mask_output_identity": true,
+      "all_channels_and_original_epsilon": true,
+      "input_undetached": true,
+      "float64_LayerNorm_reference": true,
+      "shared_module_identity": true
+    },
+    {
+      "step": 1,
+      "original_x_mask_output_identity": true,
+      "all_channels_and_original_epsilon": true,
+      "input_undetached": true,
+      "float64_LayerNorm_reference": true,
+      "shared_module_identity": true
+    }
+  ],
+  "mask_feature_norm_calls": 2,
+  "query_norm_consumption_calls": 14,
+  "shared_head_calls": 14,
+  "original_coarse_gate_consumption_calls": 12,
+  "static_mask_feature_reuse_preserved": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "normalization_before_batching": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6712983552,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native two-step TRAIN only. Active mask-feature normalization changes masks by design; no W2 output anchor, efficacy or full-dataset memory guarantee is claimed.",
+  "command": "python -B scripts/run_experiment_first_probe.py y85_gpu0_smoke pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu0_program.py --token cc4e062184264231b13212a60ffcd196 --seconds 600 --gpu --gpu-id 0",
+  "server": "server-2",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y85_gpu0_smoke_cc4e062184264231b13212a60ffcd196.json",
+      "sha256": "9b8cc9e1f2fd82f0db2fec00d2f717fa8b697748e68b8d12c1202d048fbe8caa"
+    },
+    {
+      "path": "pipeline/analyses/y85_gpu0_smoke_cc4e062184264231b13212a60ffcd196.log",
+      "sha256": "b1a72a5c1d5b3040e2a94f4da66411f5c015d11d4404845e134309cc4f00c36f"
+    },
+    {
+      "path": "pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu0_program.py",
+      "sha256": "a7825f769a0abd34cfb41031efd8266fa7f8b363869595a83b00493fa0b712e9"
+    },
+    {
+      "path": "pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu0_plan.json",
+      "sha256": "7b96d7584a5093a17277b93035d13b0dcaf98c88f45d8b809b6482d1bd573d9d"
+    }
+  ]
+}

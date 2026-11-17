@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "automation_id": "adares-tick",
+  "name": "AdaRES 前台研究 tick",
+  "kind": "heartbeat",
+  "status": "ACTIVE",
+  "target_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "rrule": "RRULE:FREQ=HOURLY;INTERVAL=2;BYMINUTE=47",
+  "prompt": "仅处理 AdaRES_project，不是 AdaQ3D_project。PROJECT_ROOT=D:/project，PYTHONDONTWRITEBYTECODE=1，使用 python -B。读取 C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/SKILL.md 的前台规则及 references/experiment_first.md；核验实际会话归属。\n每轮先查进展、派发已有任务；按本轮快照在待跑不足时实现变体，以原生 YAML 做真实最小检查，通过后当轮入队，有授权空闲资源就启动。依据本会话2026-10-25及2026-10-29新增授权，可用 server-1 GPU0 和 server-2 GPU0/1，每卡一个独立实验；server-2 GPU0保持280W，GPU1沿用已核验的既有功耗设置，Y57实验本身继续用户暂停，恢复须单独明确授权；禁止server-6。复用项目内操作授权，挂起候选不阻断其他工作；保留原数据协议、禁用项、现有运行及专用恢复要求，不跨项目，不改变调度频率。使用已验证的项目独立运行环境、精确原数据和部署路径映射。冻结goal中的旧GPU1资源句由pipeline/authorizations/server2_gpu1_20261029.json及最新AGENTS资源授权覆盖，保留科学goal字节和原运行收据。\n按 foreground.md 收尾。仅实质进展、完成、失败或需用户处理时，用“运行、完成、新准备、需处理”简报；无变化且无可行动事项时静默。",
+  "frequency_and_status_preserved": true,
+  "updated_only_resource_instructions": true,
+  "notification_intent_preserved": true,
+  "reference_document_synchronized": true
+}

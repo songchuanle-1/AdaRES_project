@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "revision": 1,
+  "preregistered_at": "2026-10-20T23:18:32.173199+08:00",
+  "failure": {
+    "path": "pipeline/analyses/y57_activity_audit_5103a354430e47b3b7a04162dcaae8af.json",
+    "sha256": "a65bbcd942be3c95d9f4f65e6c70dee8629a36ac18922409798b0357114bb5ee"
+  },
+  "defect": "Actual released-init early-layer shift2.3e-3 but final4.7e-6..6.2e-6: late peer moments lose query-specific contrast while all tensor gradients remain finite; numerical failure is retained.",
+  "change": "Keep original769inputs and full256second moment vector. Bind it at the initial query layer before subsequent mixing; use that SAME position-aligned vector at all7indicator sites. No layer search, new scale/temperature, feature-channel selection, width or loss change.",
+  "prediction": "Same final-layer query-shift control exceeds UNCHANGED128*eps bound for the anchored vector; all native head tensors and initial anchor receive finite nonzero task gradients.",
+  "controls": "Same4original TRAIN batch2 pairs/32expressions: original/current-moment failure retained, anchor and independent repeat. Final same-width shift1/full256, original bound unchanged.",
+  "program": {
+    "path": "pipeline/analyses/y57_anchor_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "c2b0c4f07b97c12bda8b500168b2ad2a779d1cc9e008a0c7138aa3f0f6a75562"
+  },
+  "body": {
+    "path": "scripts/probe_y57_anchor_dd8e.py",
+    "sha256": "b2f82e09f793a4179231e5273dcff00224b9babc4e704556c268624c1baf7759"
+  },
+  "setup": {
+    "path": "scripts/setup_y57_prototype_5103.py",
+    "sha256": "63ed04a38fc55a4aa3e07affdc24cab41b6365561a2b3ba2ea85d05597608855"
+  },
+  "pending_physical_realization_and_resources": true,
+  "result": "pending"
+}

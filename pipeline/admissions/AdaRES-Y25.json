@@ -1,0 +1,100 @@
+{
+  "id": "AdaRES-Y25",
+  "config": "configs_song/model_paper5/adares_y25_mask_feedback_res.yaml",
+  "code_commit": "94918c1a008e21c72b9478c28f934e8b329e0c97",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261003-212646_next_batch.md",
+    "sha256": "dace85601815d47130a29bf894e685f83b605c717e5e10cf0b34a1503913f215"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y25_native_support_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "7d649609862a9849276ca703c2dabe2037815728f482bcb496e77af26f1720bc"
+        },
+        {
+          "path": "pipeline/designs/Y25_support_prereg_ed4dc965.md",
+          "sha256": "b70c01f36d89c9880f1a9027db6b17560fdadfe6b7d9608ffd5d9af9e7aac56f"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y25_attention_controls_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "ed41ad76542ba6f7553f1965e3a4cf7ec1cc50bbe7c7e019109ee4b82e9e1fb7"
+        },
+        {
+          "path": "pipeline/analyses/y25_native_controls_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "931021396666c36dfccd487581077ea37b1dc27117484e560c29b44ee613f7e6"
+        },
+        {
+          "path": "pipeline/analyses/y25_physical_native_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "4b4fd089ef5d0fb42c172fe7cf9be7f37f9bf5d0c94c4ae35dde3f6be1e61e2a"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y25_physical_native_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "4b4fd089ef5d0fb42c172fe7cf9be7f37f9bf5d0c94c4ae35dde3f6be1e61e2a"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y25_resources_v2_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "c1232a12e0c5b9990ac88eac2d716f7aa052eb72efa4c56b5fa07a328c9d8d90"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y25_source_bundle_ed4dc9656e8f4556a57c17cb369279c6.json",
+          "sha256": "4f6ede035b3a23198638ccafb4fa0621d2f249e2f4574e49af0391c9be4a9a3e"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y25_admission_review_ed4dc965.md",
+          "sha256": "f59f258f096c3b291ed51451cd0d61a07e39b353e521007603ffa4b7335db729"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y25_ed4dc965.md",
+          "sha256": "fff00e71c95db86f5d9cc4220ac7c87848905753461e278cd7ee34eb875f173a"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_ed4dc965.md",
+          "sha256": "52f3b1c59a113ed19de6ccacae80a36088b6d14b51e223b04447e8b786091456"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y25_ed4dc965.md",
+      "sha256": "fff00e71c95db86f5d9cc4220ac7c87848905753461e278cd7ee34eb875f173a"
+    }
+  },
+  "limitations": "Initial native TRAIN loss increases, repeat and resume noise preserved. No trained benefit/harm/Pareto/novelty claim."
+}

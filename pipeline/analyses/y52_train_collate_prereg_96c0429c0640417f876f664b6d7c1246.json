@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "96c0429c0640417f876f664b6d7c1246",
+  "preregistered_at": "2026-10-16T19:55:07.994576+08:00",
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "body": {
+    "path": "scripts/probe_y52_train_collate_cpu.py",
+    "sha256": "7ccbe355f08f4e4c957184841368875b59b9f158344a257e3a37f3236aceacbe"
+  },
+  "test": "Use the SAME frozen eight TRAIN scenes/32 expressions, seed1999 per dataset access. Collate adjacent pairs with the ACTUAL production training collate (batch_size2). Compare frozen candidate expression point counts exactly with independent single-scene collates, repeat batch metadata, and native expanded-point IoU on three fixed empty/full/parity masks.",
+  "purpose": "New actual cross-scene offset/annotation/count plumbing integration, beyond prior single-scene TRAIN replay and synthetic ragged-component controls. SAME frozen candidate, no implementation revision.",
+  "prediction": "Single-scene and merged counts/annotation identity agree exactly, including mixed-label superpoints; point-IoU equals exact expanded reference. Failures preserved as implementation/instrumentation evidence, not automatic hypothesis falsification.",
+  "scope": "CUDA hidden, CPU threads2; no model construction/weights/forward/backward, no validation selection. Native learned predictions, matcher, shared-query backward and resource/restore gates remain unrun.",
+  "timeout_seconds": 300
+}

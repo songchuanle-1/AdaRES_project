@@ -1,0 +1,73 @@
+{
+  "complete": true,
+  "tick_token": "e3df20ab451547c8942b3966cb88e01a",
+  "snapshot_at": "2026-10-30T20:45:01.750047+00:00",
+  "observed_at": "2026-10-31T04:51:13.091367+08:00",
+  "candidate_id": "AdaRES-Y73",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "retained_branch": "refs/heads/adares-y73-initial-query-anchor",
+  "CPU_version": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_version.json",
+    "sha256": "0c9dfe397a5ab365f8e4ea1117e6dbc2b9fd4104468ed0907d88874f053dadca"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y73_cpu_e3df20ab451547c8942b3966cb88e01a.json",
+    "sha256": "0732d29888ec8e69b1f4d53c649ef9a3e1cf492363ca55cf6b8b59c9a4e9bea1"
+  },
+  "CPU_log": {
+    "path": "pipeline/analyses/y73_cpu_e3df20ab451547c8942b3966cb88e01a.log",
+    "sha256": "66f2ab8f4dc8530f17bda71cd2ecb9a5723f60a4442b9d422d8641971f4ec069"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y73_cpu_e3df20ab451547c8942b3966cb88e01a_program.py",
+    "sha256": "c953bc51b16c906941a8281b00013d36c90b6898655227442b3bb96c74730665"
+  },
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "main_index_unchanged": true,
+  "Y72_parent_branch_preserved": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "original_progress": [
+    {
+      "path": "pipeline/checks/y68_server2_local_y71_phase_e3df20ab451547c8942b3966cb88e01a.json",
+      "sha256": "c7f6e1936789901dd252b47e7387e16608484999a7f33fc106303f8ecb69e3c0"
+    },
+    {
+      "path": "pipeline/checks/y70_server2_gpu1_phase_progress_e3df20ab451547c8942b3966cb88e01a.json",
+      "sha256": "6b121f83d00aca349a73585174c125e71823a5a48e770f44867ae2a31fbf0f8d"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_e3df20ab451547c8942b3966cb88e01a.json",
+      "sha256": "f0c26b5667c8cd0917d4e3f16db1a5d96317f783647990b86183acb5d833454c"
+    }
+  ],
+  "occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_e3df20ab451547c8942b3966cb88e01a.json",
+      "sha256": "6ef57fe3d57a61a12955608aed164b3cab305daecfcf5efdc26f8c339b92b344"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_e3df20ab451547c8942b3966cb88e01a.json",
+      "sha256": "f2bdd4a58dee867ea5371c1253e9580a9f3ced6be0770135ec10aae07fc0685a"
+    }
+  ],
+  "Y71_GPU0_readiness": {
+    "path": "pipeline/checks/y71_gpu0_readiness_e3df20ab451547c8942b3966cb88e01a_check.json",
+    "sha256": "8b674898b26e0215ae0d2bbf7f408da31b81560de45500320e557c39d642f5cc"
+  },
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_e3df20ab451547c8942b3966cb88e01a.md",
+    "sha256": "d25dc1f24f2cfbb15578ae17ffc424ac56f6a9e13f7e0b849ec6def98816b2cb"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "new_candidate_ids": [
+    "AdaRES-Y73"
+  ],
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "native_GPU_program_prepared": false,
+  "native_GPU_executed": false,
+  "Y57_paused": true,
+  "next_action": "Observe original Y68/Y69/Y70. Actual Y68 fixed30 requires original full checkpoint/log/source/receipt verification and canonical archive, then fresh exclusive idle/unreserved GPU0 and exact Y71 native run; only PASS permits original full evaluation freeze/admit/gated dispatch and progress proof. Keep Y72 bound plans as next prepared GPU work. Y73 needs exact-commit native two-step program preparation and actual native sparse task checks before admission. Preserve live source/observer/deployment contracts before any production commit selection; no protected restart, CPU-based admission or evidence overwrite."
+}

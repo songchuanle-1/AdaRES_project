@@ -1,0 +1,228 @@
+{
+  "token": "dffd6386dde74b9397580292d8b5035b",
+  "payload": {
+    "action": "launch",
+    "server": {
+      "name": "server-2",
+      "host": "192.168.1.163",
+      "user": "songcl",
+      "remote_code_root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+      "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+      "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "conda_source": "/home/dl01/anaconda3/etc/profile.d/conda.sh",
+      "conda_env": "adares_project",
+      "python": "/home/songcl/.conda/envs/adares_project/bin/python",
+      "site_packages": "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages",
+      "pointnet_egg": "/home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg",
+      "allowed_gpus": [
+        0,
+        1
+      ],
+      "max_tasks_per_gpu": 1,
+      "max_tasks": null,
+      "dispatch_enabled": true,
+      "registered_pid_probe": false,
+      "allow_external_overlay": false,
+      "task_memory_mb": 20000,
+      "jumphost": null
+    },
+    "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+    "id": "AdaRES-Y54",
+    "gpu": "0",
+    "files": [
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/__init__.py",
+        "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/backbone.py",
+        "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/dec.py",
+        "sha256": "1081039d6797587f6e13cb180e26d66f1aaeb00dcbb3a1328e73c83ac58042a0"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/ipdn.py",
+        "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/loss.py",
+        "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/sample_model.py",
+        "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+      },
+      {
+        "path": "AdaRES/configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+        "sha256": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6"
+      },
+      {
+        "path": "AdaRES/tools/train.py",
+        "sha256": "04afc00889dc58e439197a04be50457664a7906d42d7badfdc96033f9d99b41e"
+      }
+    ],
+    "original_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y54_fine_support_res_81e295aec4c1457c9689d4b62dd21b62.log",
+    "original_pid": 36864,
+    "source_marker": "8943c8c460501b200a8dea958964579ffea65f76",
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404/last.pth",
+    "saved_epoch": 27,
+    "resume_epoch": 28,
+    "best_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404/best.pth",
+    "meta": {
+      "epoch": 27,
+      "best_miou": 0.5063441395759583
+    },
+    "scheduler": {
+      "max_iters": 70,
+      "power": 4.0,
+      "constant_ending": 0.0,
+      "base_lrs": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "last_epoch": 27,
+      "_step_count": 28,
+      "verbose": false,
+      "_get_lr_called_within_step": false,
+      "_last_lr": [
+        1.4239071220324868e-05,
+        1.4239071220324868e-05,
+        1.4239071220324868e-05,
+        1.4239071220324868e-05,
+        1.4239071220324868e-05
+      ]
+    },
+    "optimizer_state_count": 543,
+    "optimizer_step_range": [
+      126501.0,
+      126522.0
+    ],
+    "learning_rates": [
+      1.4239071220324868e-05,
+      1.4239071220324868e-05,
+      1.4239071220324868e-05,
+      1.4239071220324868e-05,
+      1.4239071220324868e-05
+    ],
+    "original_last_progress": [
+      "28",
+      "2050"
+    ],
+    "gpu_before": {
+      "memory_mib": 1,
+      "util_percent": 0,
+      "compute_processes": []
+    },
+    "checkpoint_sha256": "70906ef152a9a44e30194b401ca4f94d6327960585f8a443bb55d05dbfc2fd62",
+    "best_sha256": "b603db6c031ea6aaaa3d08f6191097262761f987bd12188b57e518397424cf47",
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/reboot_resume_adares_y54_fine_support_res_dffd6386dde74b9397580292d8b5035b.log"
+  },
+  "result": {
+    "pid": 5702,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/reboot_resume_adares_y54_fine_support_res_dffd6386dde74b9397580292d8b5035b.log",
+    "gpu_before": {
+      "memory_mib": 1,
+      "util_percent": 0,
+      "compute_processes": []
+    },
+    "result": "launched_pending_progress"
+  },
+  "reboot_observation": {
+    "hostname": "dl01-MS-7C60",
+    "mount": {
+      "uuid": "459a8db5-5b91-446b-a501-eed399c6a45d",
+      "fstype": "ext4",
+      "target": "/bak_home",
+      "source": "/dev/sda1"
+    },
+    "previous_pid": 36864,
+    "previous_pid_absent": true,
+    "boot_id": "830d73c5-f75a-4da9-ae89-5c34057618d0"
+  },
+  "previous": {
+    "id": "AdaRES-Y54",
+    "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+    "server": "server-2",
+    "gpu": "0",
+    "status": "running",
+    "history": [
+      {
+        "ts": "2026-10-19T15:50:18.445394",
+        "action": "launched",
+        "gpu": "0"
+      },
+      {
+        "ts": "2026-10-20T12:43:53.922209",
+        "status": "stopped_unknown",
+        "best_miou": "0.5060",
+        "epochs": "25/30"
+      },
+      {
+        "ts": "2026-10-20T13:05:47.537742+08:00",
+        "action": "resumed_after_mount_recovery",
+        "interruption": {
+          "id": "AdaRES-Y54",
+          "config": "configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+          "server": "server-2",
+          "gpu": "0",
+          "status": "stopped_unknown",
+          "history": [
+            {
+              "ts": "2026-10-19T15:50:18.445394",
+              "action": "launched",
+              "gpu": "0"
+            },
+            {
+              "ts": "2026-10-20T12:43:53.922209",
+              "status": "stopped_unknown",
+              "best_miou": "0.5060",
+              "epochs": "25/30"
+            }
+          ],
+          "pid": 47332,
+          "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y54_fine_support_res_20261019_154936.log",
+          "launch_verified": true,
+          "launch_verification": "training_progress",
+          "launched": "2026-10-19T15:50:18",
+          "final_best": "0.5060",
+          "finished_at": "2026-10-20T12:43:53.922209",
+          "log_local": "",
+          "epochs_final": "25/30",
+          "archive_id": "36f8d01305bb4c539d2a25272a62b86e"
+        },
+        "human_request": "\u6302\u8f7d\u4e86 \u63d0\u4ea4\u8bad\u7ec3\u5427",
+        "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261019_031710/last.pth",
+        "pid": 36864,
+        "gpu": "0",
+        "evidence": "pipeline/reports/mount_resume_AdaRES-Y54_81e295aec4c1457c9689d4b62dd21b62_verify.json"
+      }
+    ],
+    "pid": 36864,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y54_fine_support_res_81e295aec4c1457c9689d4b62dd21b62.log",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-19T15:50:18",
+    "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y54.json",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "total_epochs": 30,
+    "scientific_candidate_id": "AdaRES-Y54",
+    "requires_exclusive_ownership": true,
+    "resume_attempt_token": "81e295aec4c1457c9689d4b62dd21b62",
+    "dispatch_phase": "progress_verified",
+    "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261019_031710/last.pth",
+    "resume_checkpoint_sha256": "da3924a087f58654671a573197e0f01c30a033934830ff688a78aa0765741182",
+    "resumed_at": "2026-10-20T13:05:47.537742+08:00",
+    "resume_epoch": 25,
+    "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404",
+    "carried_best": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_010404/best.pth"
+  },
+  "observed_local": "2026-10-20T15:50:03.754700+08:00"
+}

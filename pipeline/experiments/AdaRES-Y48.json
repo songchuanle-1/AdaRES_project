@@ -1,0 +1,51 @@
+{
+  "id": "AdaRES-Y48",
+  "config": "configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-15T11:37:01.150938",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-16T10:56:51.585661",
+      "status": "done_complete",
+      "best_miou": "0.5034",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 8877,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y48_mask_equivalence_res_20261015_113625.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-15T11:37:01",
+  "final_best": "0.5034",
+  "finished_at": "2026-10-16T10:56:51",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server_2\\train_adares_y48_mask_equivalence_res_20261015_113625.log",
+  "epochs_final": "30/30",
+  "terminal_evidence": {
+    "path": "pipeline/analyses/y48_terminal_12be_12be943f16874034808ff67e741653ad.json",
+    "sha256": "c3550654264b90eb17ecc977bf02b7a2ca502ad6d90ae51bf73fbfa41860e0a1"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y48_mask_equivalence_res/20261014_230345/last.pth",
+      "sha256": "3b095efc1b02a5863ebdb8cee1a801f1e76c41ab609d3201d736af0d0c8afea5",
+      "bytes": 955396040,
+      "epoch": 30,
+      "best_miou": 0.5034010410308838,
+      "scheduler_epoch": 30
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y48_mask_equivalence_res/20261014_230345/best.pth",
+      "sha256": "c9c2ecbc7a010ecbff58c37f461c3bca4250d5bd1fd2f31beeeb2b1882687973",
+      "bytes": 955396040,
+      "epoch": 14,
+      "best_miou": 0.5034010410308838,
+      "scheduler_epoch": 14
+    }
+  ]
+}

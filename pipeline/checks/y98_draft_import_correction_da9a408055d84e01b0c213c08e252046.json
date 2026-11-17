@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "token": "da9a408055d84e01b0c213c08e252046",
+  "entries": [
+    {
+      "original": {
+        "path": "scripts/y96_y98_terminal_contract.py",
+        "sha256": "c922cc5ee31dd35d26c0882ab0a0efe9cf565e5413bbb96b2db74def95451b3d"
+      },
+      "corrected": {
+        "path": "scripts/y96_y98_terminal_contract_v2.py",
+        "sha256": "8c09067ee817064686dd2e4e44f47366475c41efff5c40cfb0689aa9b7754c34"
+      }
+    },
+    {
+      "original": {
+        "path": "scripts/test_y96_y98_terminal_binding.py",
+        "sha256": "d1ac23c17c866644f06935304c2378010bc9a4d93731be4168a153b106486126"
+      },
+      "corrected": {
+        "path": "scripts/test_y96_y98_terminal_binding_v2.py",
+        "sha256": "d1ac23c17c866644f06935304c2378010bc9a4d93731be4168a153b106486126"
+      }
+    },
+    {
+      "original": {
+        "path": "scripts/prepare_y96_y98_terminal_binding.py",
+        "sha256": "b2a481ca3661d04d01c84d83c1ba6d1a8ca71ff50b06acb02f303d7410678fbd"
+      },
+      "corrected": {
+        "path": "scripts/prepare_y96_y98_terminal_binding_v2.py",
+        "sha256": "e2574e2c220f690484d207b8f381e5c9499fc022be48f5a9c17be6256241e8b9"
+      }
+    }
+  ],
+  "reason": "Pre-test review found inherited y95_contract import instead of y98_contract. Original untested drafts remain unchanged; v2 specialization uses the actual Y98 contract and runner.",
+  "scientific_files_changed": false,
+  "native_replayed": false,
+  "tests_executed": false,
+  "evidence": [
+    {
+      "path": "scripts/repair_y98_draft_imports.py",
+      "sha256": "9f0bac0389e53bd65b9f64d69fc1ccf0cbfd25e954aaacc3899a6355d53e9285"
+    }
+  ]
+}

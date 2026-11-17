@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "required_inputs_equal": true,
+  "data_root": "/data1/songcl/Project/AdaRES_project/data/",
+  "full_original_checksum_comparison": {
+    "command": [
+      "rsync",
+      "-rcni",
+      "--out-format=%i:%n",
+      "songcl@192.168.1.163:/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+      "/data-controller/songcl/IPDN/data/"
+    ],
+    "seconds": 513.0188436508179,
+    "stdout": ">f+++++++++:download_sacnnet.py\n>f+++++++++:ScanRefer/scene_graphs_new_train.json\n>f+++++++++:ScanRefer/scene_graphs_new_val.json\n>f+++++++++:scannetv2/sum.py\n>fcsT......:scannetv2/train/scene0420_00_refer.pth\n>fcsT......:scannetv2/val/scene0307_00_refer.pth\n>fcsT......:scannetv2/val/scene0426_00_refer.pth\n",
+    "stderr": ""
+  },
+  "matched_existing_files_linked": 100766,
+  "original_replacements": [
+    {
+      "path": "ScanRefer/scene_graphs_new_train.json",
+      "source_sha256": "e058fdd5bee5acd4fce7e78516d88b07581131e9fe83afd226cb835e80942e08",
+      "local_sha256": "e058fdd5bee5acd4fce7e78516d88b07581131e9fe83afd226cb835e80942e08",
+      "bytes": 77743218
+    },
+    {
+      "path": "ScanRefer/scene_graphs_new_val.json",
+      "source_sha256": "f56bb74441024a7f4209d12c4c3280239405d57440bad72810cd29e703bed2bc",
+      "local_sha256": "f56bb74441024a7f4209d12c4c3280239405d57440bad72810cd29e703bed2bc",
+      "bytes": 20253531
+    },
+    {
+      "path": "download_sacnnet.py",
+      "source_sha256": "de90a74d91e0bf361101d836854861d09a51b02d38c183cb5fd0d27d86218947",
+      "local_sha256": "de90a74d91e0bf361101d836854861d09a51b02d38c183cb5fd0d27d86218947",
+      "bytes": 12829
+    },
+    {
+      "path": "scannetv2/sum.py",
+      "source_sha256": "11af94514ae8fa1f3a81ffce43d021e5fc597a0c1f47d958e6d1440c561105a8",
+      "local_sha256": "11af94514ae8fa1f3a81ffce43d021e5fc597a0c1f47d958e6d1440c561105a8",
+      "bytes": 346
+    },
+    {
+      "path": "scannetv2/train/scene0420_00_refer.pth",
+      "source_sha256": "2aacaacde6da878df1ec31ea997ec123fc72d6ef7fd759a7096033573aaaa451",
+      "local_sha256": "2aacaacde6da878df1ec31ea997ec123fc72d6ef7fd759a7096033573aaaa451",
+      "bytes": 17234223
+    },
+    {
+      "path": "scannetv2/val/scene0307_00_refer.pth",
+      "source_sha256": "710706b08f335239477723aebecdc3ec38b09225849c6bbb22907d2ada74a1fe",
+      "local_sha256": "710706b08f335239477723aebecdc3ec38b09225849c6bbb22907d2ada74a1fe",
+      "bytes": 24720879
+    },
+    {
+      "path": "scannetv2/val/scene0426_00_refer.pth",
+      "source_sha256": "f39f069070ac9a9fb8d6f37951e5e3cfe6292d4aa59d3056520446dea7d5f831",
+      "local_sha256": "f39f069070ac9a9fb8d6f37951e5e3cfe6292d4aa59d3056520446dea7d5f831",
+      "bytes": 8830447
+    }
+  ],
+  "shared_dataset_modified": false,
+  "note": "The complete original-to-existing rsync checksum comparison found exactly these seven differences. All seven are replaced privately with source-SHA256 verified bytes; other input files refer to the unchanged matched read-only originals. Extra unused shared files are not used for protocol selection.",
+  "evidence": [
+    {
+      "path": "scripts/verify_server1_dataset_overlay.py",
+      "sha256": "7ce204c8e2aa876a3c66f2a2261da3513a300793d1dbed7fd8b18a97e03dce49"
+    },
+    {
+      "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.log",
+      "sha256": "3824c8761417fc34804d0a8dc634edfaaeb1f0f63facca593531941f57ba3cd0"
+    },
+    {
+      "path": "pipeline/checks/server1_bootstrap_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+      "sha256": "163b0503a312fd713a1ddbc7c2b97d5e6e12086936edc4bf000ecadfb3c80648"
+    }
+  ]
+}

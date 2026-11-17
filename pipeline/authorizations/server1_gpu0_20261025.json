@@ -1,0 +1,15 @@
+{
+  "project": "AdaRES_project",
+  "authorization_granted": true,
+  "recorded_on": "2026-10-25",
+  "source_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_reply": "继续推进训练  然后server1 的gpu也可以使用",
+  "server": "server-1",
+  "host": "192.168.1.175",
+  "expected_hostname": "dl02-MS-7B73",
+  "allowed_gpus": [0],
+  "max_tasks_per_gpu": 1,
+  "operations": ["project_runtime_deployment", "native_checks", "admission_queue_and_training"],
+  "preserve": ["Y57_user_pause", "server_2_gpu0_only_280W", "foreign_jobs", "original_dataset_and_released_backbone", "seed1999_fixed30", "no_server6", "no_scheduler_changes", "source_integrity_and_native_training_progress"],
+  "note": "New explicit server-1 resource authorization. It does not authorize other GPU expansion, historical retraining or resuming Y57."
+}

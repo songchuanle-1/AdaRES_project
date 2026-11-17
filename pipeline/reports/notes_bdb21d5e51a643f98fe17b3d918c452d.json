@@ -1,0 +1,12 @@
+{
+  "actions": [
+    "已读取当前前台/实验优先规则并核实际会话所属、资源和Disabled后台。快照2026-10-26T04:44:54.030818+00:00，canonical begin先查进展及检查既有派发，running1/waiting1/ready1，无新终态或运行故障；前86eb轮收据FINALIZED/PASS/committed/released。",
+    "上海12:45:06至12:45:11确认Y62原PID2540376/server-1 GPU0，第17/30轮4328至4336/4686增长，六文件/原生YAML/marker一致，bounded尾部无错误。证据pipeline/checks/server1_training_progress_bdb21d5e51a643f98fe17b3d918c452d.json，SHA256 0cad3bc5f83482b8e6ea4e5d019e61b876f9f6776908bb2a0ab5b442208b9be7。",
+    "于2026-10-26T04:45:04.230762+00:00canonical实测server-2 GPU0被外来PID13813占用，100%/24138MiB，无授权空槽。证据pipeline/checks/gpu_occupation_server-2_bdb21d5e51a643f98fe17b3d918c452d.json，SHA256 0f70a4bf1e2708fa5c6bbb9cc55e831a6b7b5fe5219deedf7d36ee10855f8a67，绑定五项后评及Y64并保存resource_check/blocked；更新七段记忆。"
+  ],
+  "decisions": [
+    "继续Y62现有训练和Y63同卡waiting；保留Y64已完成CPU准备，授权独占空槽出现后再完成源manifest/限定版本/原生计划及真实两步TRAIN检查，通过才准入与门控派发。本轮无新增变体、重复CPU测试、提交、同步、准入或启动。",
+    "server-2 GPU0保持280W，Y57/GPU1保持用户暂停，禁止server-6和干扰外来任务，不改调度。五项fixed30完成实验按既有冻结后评协议等待资源；未提取验证指标，不把正常步数增长当成训练收益。",
+    "当前状态仍为正常训练与资源等待，无需新增用户操作，心跳静默。完整六段报告生成后finish并核FINALIZED/PASS/committed/released及锁/pending缺失，释放后不补写。"
+  ]
+}

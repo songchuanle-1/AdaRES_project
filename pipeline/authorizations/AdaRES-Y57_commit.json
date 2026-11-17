@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "kind": "explicit_human_scoped_commit_authorization",
+  "recorded_at": "2026-10-20T23:27:45.939284+08:00",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_message_id": "[\"request_user_input_async\",\"call_66c334fb17c945d68c7e2cee5ce6063d\",0]",
+  "human_message": "授权 Y57 这 7 个文件的本地提交",
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/dec.py",
+      "sha256": "1e758b40c303c1fde5492998529076b86ff7789220fca7d0f3e8ba0608beed2f"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y57_peer_second_moment/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y57_peer_second_moment_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "tested_bundle": {
+    "path": "pipeline/analyses/y57_anchor_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "2d6319cd3291e9a6181a862a97636785543fabd7c755a18304c59846b2371041"
+  },
+  "starting_HEAD": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+  "context": "Separate direct owning-user answer to exact7revisedY57files; not inferred from Y56 permission.",
+  "permits": [
+    "Local Git add/commit only exact seven tested Y57 revision1 files."
+  ],
+  "excludes": [
+    "Push, unrelated files/projects, altered goal/protocol/gates, diagnostic weights or inferred training permission."
+  ]
+}

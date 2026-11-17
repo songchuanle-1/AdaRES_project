@@ -1,0 +1,108 @@
+{
+  "complete": true,
+  "token": "257d36d33c904645876d022a0fb35769",
+  "recorded_at": "2026-11-08T01:19:36.918290+08:00",
+  "observations": {
+    "AdaRES-Y90": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y90_257d36d33c904645876d022a0fb35769_closeout_retry.json",
+        "sha256": "d22341ba0798438a1503a0d4c2a75d7574bd936e1fe618d32a2ceeac901742c9"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 22,
+        "total": 30,
+        "step": 697,
+        "count": 4686
+      },
+      "pid": 2442962
+    },
+    "AdaRES-Y91": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y91_257d36d33c904645876d022a0fb35769_closeout_retry.json",
+        "sha256": "0a11cea2862b56c68d7cbd30090e4fe747d364bfc06ca0288c014cda988b8f71"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 3,
+        "total": 30,
+        "step": 3565,
+        "count": 4686
+      },
+      "pid": 83827
+    }
+  },
+  "actual_current_occupation": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_closeout_retry_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "4cfe1086646305c99f02a72197a7a80901d50643f508e09f00a3a3d3773027fc"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_closeout_retry_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "ffbbe9b1f45ac0d3af329826c0dbc4a407b56d78062dfa9ab388610d6c666d0e"
+    }
+  },
+  "Y92_additive_binding": {
+    "path": "pipeline/checks/y92_additive_binding_257d36d33c904645876d022a0fb35769.json",
+    "sha256": "e4ea1d2aaff391f2ccea086e1c56fdb391445557145d6ef5994fc2d89362884b"
+  },
+  "Y92_binding_guards_passed": 15,
+  "Y91_terminal_handoff": {
+    "path": "pipeline/checks/y91_terminal_preparation_257d36d33c904645876d022a0fb35769.json",
+    "sha256": "0444095a44cc778fda7b6284988c64a3084b9f7946ec5df3a1c55db5bce58a99"
+  },
+  "Y91_terminal_guards_passed": 29,
+  "exact_Y91_declared_directory": "20261107_102124",
+  "production_HEAD_and_index_unchanged": true,
+  "queue_and_original_training_preserved": true,
+  "original_scientific_inputs_and_native_bodies_identical": true,
+  "original_CPU_scientific_experiments_not_replayed": true,
+  "GPU1_and_Y57_still_user_paused": true,
+  "original_full_frozen_FIRST_and_cost_preserved": true,
+  "new_scientific_candidates": 0,
+  "new_admissions": 0,
+  "new_training_launches": 0,
+  "actual_GPU_native_tasks": 0,
+  "exact_original_archives": 0,
+  "checkpoint_loaded": false,
+  "efficacy_measured": false,
+  "scientific_revision": false,
+  "evidence": [
+    {
+      "path": "scripts/record_y92_binding_closeout_v2.py",
+      "sha256": "b7e0a1149da2f7f629d62f1ea0643213920142d91909b7ef49de3b28b73a3f25"
+    },
+    {
+      "path": "pipeline/checks/y92_additive_binding_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "e4ea1d2aaff391f2ccea086e1c56fdb391445557145d6ef5994fc2d89362884b"
+    },
+    {
+      "path": "pipeline/checks/y91_terminal_preparation_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "0444095a44cc778fda7b6284988c64a3084b9f7946ec5df3a1c55db5bce58a99"
+    },
+    {
+      "path": "pipeline/checks/y90_y91_terminal_binding_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "c502241965171cebcc733f29ca002a0ddc3966348191620ac304c56964c60cc7"
+    },
+    {
+      "path": "pipeline/checks/y91_terminal_preparation_257d36d33c904645876d022a0fb35769_location.json",
+      "sha256": "87bf859d01ae86de3e5b4e7945ff18f1d04777f77bb03d53e7120a809bfe68ac"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y90_257d36d33c904645876d022a0fb35769_closeout_retry.json",
+      "sha256": "d22341ba0798438a1503a0d4c2a75d7574bd936e1fe618d32a2ceeac901742c9"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y91_257d36d33c904645876d022a0fb35769_closeout_retry.json",
+      "sha256": "0a11cea2862b56c68d7cbd30090e4fe747d364bfc06ca0288c014cda988b8f71"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_closeout_retry_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "4cfe1086646305c99f02a72197a7a80901d50643f508e09f00a3a3d3773027fc"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_closeout_retry_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "ffbbe9b1f45ac0d3af329826c0dbc4a407b56d78062dfa9ab388610d6c666d0e"
+    }
+  ]
+}

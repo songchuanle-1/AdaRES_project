@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y94",
+  "config": "configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "retained_branch": "refs/heads/adares-y94-query-geometry-bias-on-y93",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y94_bound_native_y93.py",
+    "sha256": "46fa3127ac8626d9050e31e41e297d423bceb199b091061c6c8a7e63a8c438db"
+  },
+  "planned_command": "python -B scripts/run_y94_bound_native_y93.py --server server-1 --token <CURRENT>",
+  "required_resource": "At HEADY93 only, after exact matching AdaRES-Y92 natural fixed30/full checkpoint archive and fresh idle/unreserved GPU0.",
+  "checks": "Actual original sparse TRAIN two finite task losses/backward/updates; original sampled query positions, one shared bounded geometry bias consumed by six ordered original self attentions, exact original SCG hard-neighborhood exclusions, fourteen shared indicators, independent head/query/expression formula rows, zero then learned bias, finite new/original/query gradients, native modes and memory. Native callbacks remain unexecuted; CPU is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y94_y93_additive_binding_2683c4548e244340a4d06c50bec79b2e_server1_program.py",
+    "sha256": "add4f5631cc3ee2d63e41151ee10aba019ffd23e928f6b894cae6348318c0260"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y94_native_9cbbb7d004b84132a4129c4f75781a62_server1_plan.json",
+    "sha256": "f01a9f4827e5d12fe808beb6c7a47356fef66838671430761153b2fb73ac010e"
+  },
+  "additive_parent": "daa93b4375f144f0e79da92f85fe1fe27e877e18"
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<stdin>", line 65, in <module>
+  File "ipdn/model_paper5/adares_w2_pointmass_competition/loss.py", line 192, in loss_indi
+    target_mask[src_idx] = pos_mask
+RuntimeError: Index put requires the source and destination dtypes match, got Double for the destination and Float for the source.

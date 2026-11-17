@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "token": "dd81fa2cdb754585ab9d4ab0da627f70",
+  "observed_at": "2026-11-01T07:13:38.986227+08:00",
+  "original_live_training": {
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_dd81fa2cdb754585ab9d4ab0da627f70_final.json",
+      "sha256": "ee85bf7c6f61d94c980887265c0ee65e250af46c4d5b76b5adb850904d6f5f89"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_dd81fa2cdb754585ab9d4ab0da627f70_final.json",
+      "sha256": "a3f36a7f843872760f9c00b58c87dd21d2800b968aa18829eb8b516fdf016f84"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_dd81fa2cdb754585ab9d4ab0da627f70_final.json",
+      "sha256": "2a8892af3fc135eef24e18dda79af3e85d5ef876dd4b17965a682bc9d6552bb4"
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_dd81fa2cdb754585ab9d4ab0da627f70.json",
+      "sha256": "5b19ee70ea75bbbca22931726baa5cae87d0fb7b51feba63555f0e352889056e"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_dd81fa2cdb754585ab9d4ab0da627f70.json",
+      "sha256": "6c2f9cb868b97f516908b134ba6efd19f589a5d58dcc13ae792f2cbbed767af6"
+    }
+  },
+  "Y71_terminal": {
+    "path": "pipeline/checks/y71_server2_fixed30_dd81fa2cdb754585ab9d4ab0da627f70.json",
+    "sha256": "218542bf4228ba324a34ec651cda3463a164d32d73e71eb8b88b87ed2f6b594b"
+  },
+  "Y71_original_freeze": {
+    "path": "pipeline/checks/AdaRES-Y71_post_training_freeze_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "228b01210defa46176986457ae7cf0b0792512a508a55856304d42c19034cb76"
+  },
+  "Y74_smoke": {
+    "path": "pipeline/checks/AdaRES-Y74_dd81fa2cdb754585ab9d4ab0da627f70_native_smoke.json",
+    "sha256": "3b892c4e5356b0b469394768fd548ab52b71ebb5d717f5e8aa19b6566e2caf20"
+  },
+  "Y74_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y74.json",
+    "sha256": "b0ae7d93e6bc85d360a9e08d2e738a1f85281863e4e13d2392f0cbd88e8dae80"
+  },
+  "Y74_original_full_protocol_preserved": true,
+  "Y76_CPU_version": {
+    "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70.json",
+    "sha256": "37485b9b3a404188d2df8a71d47b6888c7d27656f2421d1e385f1e4f41caf304"
+  },
+  "Y76_CPU_native_callback_verification": {
+    "path": "pipeline/checks/y76_native_observer_verification_dd81fa2cdb754585ab9d4ab0da627f70.json",
+    "sha256": "a30fe2ab6341033539d5a6dc9ac18d0048471a59c85b14ed22c49c81e5c4abf1"
+  },
+  "source_HEAD": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "new_candidates": 1,
+  "new_admissions": 1,
+  "new_dispatches": 1,
+  "archived": [
+    "AdaRES-Y71"
+  ],
+  "prepared_native_pending": [
+    "AdaRES-Y75",
+    "AdaRES-Y76"
+  ],
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "conclusion": "Y71 original fixed30 fully verified/archived; actual Y74 native two-step PASS/admission/gated launch/progress; Y76 CPU implementation/exact callback preparation complete. All authorized cards remain busy."
+}

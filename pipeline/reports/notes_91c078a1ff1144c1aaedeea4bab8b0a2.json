@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "本轮快照2026-09-30 22:48:15+08，event，deadline23:48:15；归属及server-2GPU0/1授权已核实，Windows旧后台保持Disabled。继续已准入Y17部署，没有新候选准入。",
+    "修复远端默认Python3.5/JSONbytes/Windows命令长度：两处helper用项目Python3.8、明确UTF8、stdin传payload。5项隔离安全测试通过；15文件哈希核对、5处仅CRLF转LF，未降低保护。",
+    "随后门控推送暴露MSYS把远端POSIX路径转成本地路径，再暴露关闭转换后的本地/d脚本路径。分别修复并实际验证argv/文件存在/bash语法；最终helper-only提交42ffd58，模型/YAML/nativeobjective均不变。",
+    "门控同步验证16个AdaRES文件及train.py旧新哈希，源标记匹配42ffd589bfb5c27fa18d735866ddefa3a543e2ee；23:04:19启动Y17 GPU1 PID109632，queue/experiment launch_verified=true。23:06:54独立capture确认Train[1/30]313->314->315/4686且日志尾无Traceback。",
+    "23:06:54 Y15GPU0PID18796继续Train[4/30]780->781->782/4686；GPU0/1为15928/17030MiB、47/72%。Y15早期bestmIoU0.1239非完整30epoch结果。两卡各一个任务，Y17尚无val结果。",
+    "本轮执行待finish验证；科学状态Y17training，只证明启动与原生进展，不证明收益/新颖性。收据窗口用量/实际产出在final读取；未知不记0，缓存计入输入非账单。"
+  ],
+  "decisions": [
+    "Y17部署故障已恢复，保留稳定ID及历史失败证据，正式单卡训练固定30epoch/seed1999，不调阈值温度权重或验证集特征。",
+    "两授权卡均已占用，停止本轮部署工作，不追加容量填充或未准入对照；后续监测进度/故障/终态并使用冻结的完整ScanRefer/W2/B1、场景聚类/噪声/实质伤害/Pareto评估。",
+    "初始化generic smoothing、微小JS、重组上下文混杂及nativeargmax差异仍在；因果收益需要相同重组pair-off对照。保持每小时:47前台自动化，不恢复Windows后台。"
+  ]
+}

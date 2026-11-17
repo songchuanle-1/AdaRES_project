@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "本轮沿用7f57844555214fce956a357de0494af8前台租约及22:53快照。上海22:55三项只读原生阶段观察通过：Y65/server-2 GPU0同PID112356 Train22/30的2496→2503/4686；Y66/server-1 GPU0同PID1973300 Train14/30的2436→2445/4686；Y67/server-2 GPU1同PID100811 Train7/30的1425→1431/4686。原六源码/YAML/cwd/config/准入/marker/独占及既有功耗均核实。检查记录为pipeline/checks/*_phase_progress_7f57844555214fce956a357de0494af8.json。",
+    "Y68既存HEAD9af、七源码及原生YAML、科学goal、GPU0/GPU1冻结计划与程序哈希静态检查仍匹配；未重跑CPU、prepare或save，未执行真实稀疏GPU原生两步，未准入或同步。原始CPU通过不能替代原生后向。",
+    "canonical gpu_occupation.py先server-2再server-1真实查询并更新匹配候选：server-2 GPU0 PID112356/22720MiB/89%、GPU1 PID100811/22716MiB/55%；server-1 GPU0 PID1973300/22836MiB/70%，全部预约且无授权空槽。证据pipeline/checks/gpu_occupation_server-2_7f57844555214fce956a357de0494af8.json SHA3324389be6c5132e9ce898ca5d5aa8009770df8d8c8bfaf9b3233115163dd5fb；pipeline/checks/gpu_occupation_server-1_7f57844555214fce956a357de0494af8.json SHA6f8b6cdf6e2fcefbf52b6a4c679892d0c7ef72767e8c802685446f8e2301a37c。本轮tick_attempt为有真实证据的resource_check/blocked。",
+    "七标题记忆已更新至本轮实际阶段/占用/后续动作，原科学goal字节和运行收据保留；无新增终态、故障、新训练或用户待办。"
+  ],
+  "decisions": [
+    "保留三项原运行，不把单次util0%当空闲。server-2 GPU0维持280W，GPU1既有390W及server-1既有350W未变；Y57实验继续独立暂停及原epoch27恢复限制，禁止server-6。",
+    "Y68与八项原固定30后评/成本继续等待真实授权空槽。下轮先终态归档/释放预留，再推进已有Y68精确计划的真实TRAIN两步，实测通过后同轮冻结完整协议、准入、入队并尝试派发，不凑候选额度或声称效果。",
+    "未来9af同步需先准备严格Y68七文件增量观察器，维持Y65/Y67原源码/YAML/收据完整性；本轮未变更生产marker，不放宽旧观察器。",
+    "本轮为健康训练/资源等待，无实质需通知事项；报告生成后执行finish并核FINALIZED/PASS/context committed/lease released，释放后不再写项目。"
+  ]
+}

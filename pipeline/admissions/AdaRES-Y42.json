@@ -1,0 +1,124 @@
+{
+  "id": "AdaRES-Y42",
+  "config": "configs_song/model_paper5/adares_y42_point_covariance_res.yaml",
+  "code_commit": "243e0b6827073831e0d68090857755d575efbf16",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261011-223124_next_batch.md",
+    "sha256": "1455c3182b85a002ca24510a6ccef599c9f268659714da0007d9090ae8f94377"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y42_diagnosis_prereg_062ae665.md",
+          "sha256": "7a9247a632542e843107ec283026f6b454a4e32bbe5247b14fb73998ff9c6ac2"
+        },
+        {
+          "path": "pipeline/analyses/y42_covariance_cpu_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "e32e720862c378c61cc99d87cb3fe806c3488827740413417147e10115da1795"
+        },
+        {
+          "path": "pipeline/analyses/y42_extract_readout_cpu_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "71635dc8aaa7b7af36debf1581e77f7354b2c9fbb3fa866ffa2abec53aa50e52"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y42_extract_readout_cpu_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "71635dc8aaa7b7af36debf1581e77f7354b2c9fbb3fa866ffa2abec53aa50e52"
+        },
+        {
+          "path": "pipeline/analyses/y42_native_controls_v2_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "8b117c62491207d40e6a7439fd478d92cdcd5b38836bebe3f4ba7bb42ec1a34f"
+        },
+        {
+          "path": "pipeline/analyses/y42_initial_loss_v2_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "a2f85db05440a5d028a32ec88c8e83a6370a557d6bb5edd93ecaa1e0a95d590c"
+        },
+        {
+          "path": "pipeline/analyses/Y42_native_control_amendment_062ae665.md",
+          "sha256": "85506647a976519721417c072e4212b599f3b2fd8dab69fc4c631a5bd0102609"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y42_physical_native_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "c369a9578579f552265fb84132ec86cd4cf6963616f99371e7c548c2fdc381c3"
+        },
+        {
+          "path": "pipeline/analyses/y42_native_controls_v2_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "8b117c62491207d40e6a7439fd478d92cdcd5b38836bebe3f4ba7bb42ec1a34f"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y42_resources_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "35b4444fac2f9f7c8c6c72e130cd60a97d4c376453645b5e00dd73073e9e610a"
+        },
+        {
+          "path": "pipeline/analyses/Y42_resource_freeze_062ae665.md",
+          "sha256": "d95188b3d0eb8848a947e8d5de83b4a4d71db2ff8c5722db8166004b48746d72"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y42_source_bundle_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "12c73cd834f5b45a5e3fe7eb111f093b77c2d1b6821a6fff1b8c4ac8dc8abfdd"
+        },
+        {
+          "path": "pipeline/analyses/y42_physical_native_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "c369a9578579f552265fb84132ec86cd4cf6963616f99371e7c548c2fdc381c3"
+        },
+        {
+          "path": "pipeline/analyses/y42_parent_semantics_v3_062ae665ba824deba180a65efb4c44cf.json",
+          "sha256": "2f00e85079fc0e51691e5651c4889e9b2b72b80ae5cf583f6b800d66ddeac545"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/reviews/motivation_review_Y42_062ae665.md",
+          "sha256": "7ccc1f349d42f2144631ef36aa66c54c2524cf333f1889ca0a37caa83c3ad914"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y42_062ae665.md",
+          "sha256": "34193812987971af8813a43967d07ee16e03eea1a8c702e2782bc1ff27863bce"
+        },
+        {
+          "path": "pipeline/analyses/Y42_admission_review_062ae665.md",
+          "sha256": "3aed1ee0aa2468c8ef387b2bec9a8eef80c64dc046226bdc015b30096cde28a9"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y42_062ae665.md",
+      "sha256": "34193812987971af8813a43967d07ee16e03eea1a8c702e2782bc1ff27863bce"
+    }
+  },
+  "limitations": "All adapter failures, adverse released-init loss, wrong-control learning and numerical continuation differences retained. No efficacy, necessity, novelty, no-harm, Pareto or human approval claim."
+}

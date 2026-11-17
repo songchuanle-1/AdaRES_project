@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y59",
+  "observed_at": "2026-10-22T01:01:32.128911+08:00",
+  "old_commit": "a83449f145644745f6d007d7319ec4221623e81c",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "original_plan": {
+    "path": "pipeline/analyses/adares_y59_smoke_70b1ba64384f498697815ca88c2c232a_plan.json",
+    "sha256": "89a528f2b55851611c196b8bf2f7bfdfed91efb0a313fc0b3ade51ad28d74b51"
+  },
+  "original_program": {
+    "path": "pipeline/analyses/adares_y59_smoke_70b1ba64384f498697815ca88c2c232a_program.py",
+    "sha256": "2546f1986e963ccb683093cf7659345ee0476b50daeadee1e2d0cbf659999955"
+  },
+  "candidate_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/__init__.py",
+      "sha256": "83c3a3c3e7be2c48fd8e26f79fe47e733e88832e021cf8d71eae3233cb8d3da5"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/ipdn.py",
+      "sha256": "1a46eb005a9249f39f3bb54d8e4bb6a086d2122bf434295af606f28320e501e8"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y59_frozen_text_mode/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml",
+      "sha256": "3065969e73e463a47a0eefd876350332ccb84a0994864f736b864c8c9570d2d0"
+    }
+  ],
+  "exact_seven_files_unchanged": true,
+  "native_program_body_unchanged": true,
+  "only_frozen_commit_identity_changed": true,
+  "implementation_changed": false,
+  "tests_not_yet_executed": true
+}

@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y61",
+  "before": {
+    "server-2": {
+      "0": "AdaRES-Y61"
+    }
+  },
+  "after": {
+    "server-2": {}
+  },
+  "stale_slot_removed": true,
+  "canonical_archive_replayed": false,
+  "terminal_evidence": {
+    "path": "pipeline/checks/y61_fixed30_b5a42dc4481640c28115e9cff887f862.json",
+    "sha256": "df67e93c62c76a39928d829e2151dd081ef8d0848e765da05a0ef791af999219"
+  },
+  "queue_others_preserved": true,
+  "remote_mutations": false,
+  "helper": {
+    "path": "scripts/finalize_y61_fixed30.py",
+    "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+  }
+}

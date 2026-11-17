@@ -1,0 +1,137 @@
+{
+  "rows": [
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        2
+      ],
+      "ann_id": "31",
+      "teacher_query": 98,
+      "student_query": 62,
+      "material": true,
+      "logit_gradient_cosine": 0.9391009211540222,
+      "mask_head_gradient_cosine": 0.9510948061943054,
+      "teacher_gradient_orthogonal_fraction": 0.3088991253309349,
+      "wrong_mask_head_gradient_cosine": 0.6337521076202393,
+      "correct_minus_wrong_cosine": 0.31734269857406616,
+      "teacher_grad_norm": 0.41904816031455994,
+      "teacher_grad_finite_nonzero": true,
+      "repeat_logit_gradient_max_diff": 0.0,
+      "target_loss": 0.029600519686937332,
+      "teacher_loss": 0.012481615878641605
+    },
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        39
+      ],
+      "ann_id": "0",
+      "teacher_query": 45,
+      "student_query": 21,
+      "material": false,
+      "logit_gradient_cosine": 0.33200064301490784,
+      "mask_head_gradient_cosine": 0.5690805912017822,
+      "teacher_gradient_orthogonal_fraction": 0.8222817526355732,
+      "wrong_mask_head_gradient_cosine": 0.2610316872596741,
+      "correct_minus_wrong_cosine": 0.30804890394210815,
+      "teacher_grad_norm": 0.31664276123046875,
+      "teacher_grad_finite_nonzero": true,
+      "repeat_logit_gradient_max_diff": 0.0,
+      "target_loss": 0.008934492245316505,
+      "teacher_loss": 0.01255081221461296
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        16
+      ],
+      "ann_id": "7",
+      "teacher_query": 19,
+      "student_query": 52,
+      "material": true,
+      "logit_gradient_cosine": 0.6887449026107788,
+      "mask_head_gradient_cosine": 0.3794172406196594,
+      "teacher_gradient_orthogonal_fraction": 0.925225679237538,
+      "wrong_mask_head_gradient_cosine": 0.6119821071624756,
+      "correct_minus_wrong_cosine": -0.23256486654281616,
+      "teacher_grad_norm": 0.02396276406943798,
+      "teacher_grad_finite_nonzero": true,
+      "repeat_logit_gradient_max_diff": 0.0,
+      "target_loss": 0.0007434215513058007,
+      "teacher_loss": 0.0005475470679812133
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        25
+      ],
+      "ann_id": "10",
+      "teacher_query": 2,
+      "student_query": 1,
+      "material": true,
+      "logit_gradient_cosine": 0.9999999403953552,
+      "mask_head_gradient_cosine": 1.0,
+      "teacher_gradient_orthogonal_fraction": 0.0,
+      "wrong_mask_head_gradient_cosine": 0.4529048800468445,
+      "correct_minus_wrong_cosine": 0.5470951199531555,
+      "teacher_grad_norm": 0.02551652304828167,
+      "teacher_grad_finite_nonzero": true,
+      "repeat_logit_gradient_max_diff": 0.0,
+      "target_loss": 0.00021860020933672786,
+      "teacher_loss": 0.00021860020933672786
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        28
+      ],
+      "ann_id": "18",
+      "teacher_query": 2,
+      "student_query": 18,
+      "material": true,
+      "logit_gradient_cosine": 1.0000001192092896,
+      "mask_head_gradient_cosine": 1.0,
+      "teacher_gradient_orthogonal_fraction": 0.0,
+      "wrong_mask_head_gradient_cosine": -0.33396267890930176,
+      "correct_minus_wrong_cosine": 1.3339626789093018,
+      "teacher_grad_norm": 0.028900958597660065,
+      "teacher_grad_finite_nonzero": true,
+      "repeat_logit_gradient_max_diff": 0.0,
+      "target_loss": 0.0007642822456546128,
+      "teacher_loss": 0.0007642822456546128
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        17
+      ],
+      "ann_id": "0",
+      "teacher_query": 5,
+      "student_query": 3,
+      "material": false,
+      "logit_gradient_cosine": 0.21731974184513092,
+      "mask_head_gradient_cosine": 0.9184943437576294,
+      "teacher_gradient_orthogonal_fraction": 0.3954341164912832,
+      "wrong_mask_head_gradient_cosine": 0.25813230872154236,
+      "correct_minus_wrong_cosine": 0.660362035036087,
+      "teacher_grad_norm": 0.05996835231781006,
+      "teacher_grad_finite_nonzero": true,
+      "repeat_logit_gradient_max_diff": 0.0,
+      "target_loss": 0.015236306935548782,
+      "teacher_loss": 0.0006058723083697259
+    }
+  ],
+  "scans": [
+    {
+      "scan_id": "scene0000_00",
+      "expressions": 2
+    },
+    {
+      "scan_id": "scene0002_00",
+      "expressions": 4
+    }
+  ],
+  "elapsed_s": 1.8348733205348253,
+  "peak_reserved_gib": 4.001953125,
+  "scope": "native decoder autograd probe; no optimizer or tools/train.py"
+}

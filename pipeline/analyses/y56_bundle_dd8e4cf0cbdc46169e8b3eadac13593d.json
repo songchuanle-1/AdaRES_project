@@ -1,0 +1,254 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "created_at": "2026-10-20T22:37:37.541841+08:00",
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/dec.py",
+      "sha256": "6adbab9a87057462f9071bbb1b793cb7cf7ce2fcc7c42bbb8353134bc6a7ace5"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "parent_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    }
+  ],
+  "config_values": {
+    "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "train": {
+      "seed": 1999,
+      "epochs": 30,
+      "interval": 1,
+      "pretrain": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/sp_unet_backbone.pth",
+      "save_epoch": 100,
+      "grad_clip": 0.1
+    },
+    "test": {
+      "seed": 1999,
+      "test_topk_per_scene": 100,
+      "test_score_thresh": 0.0,
+      "test_npoint_thresh": 100
+    },
+    "dataloader": {
+      "train": {
+        "batch_size": 2,
+        "num_workers": 4,
+        "persistent_workers": true
+      },
+      "val": {
+        "batch_size": 1,
+        "num_workers": 2,
+        "persistent_workers": true
+      },
+      "test": {
+        "batch_size": 1,
+        "num_workers": 1,
+        "persistent_workers": true
+      }
+    },
+    "data": {
+      "train": {
+        "type": "scannetv2_sample_graph_edge",
+        "dataset": "scanrefer",
+        "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+        "prefix": "train",
+        "suffix": ".pth",
+        "training": true,
+        "mode": 4,
+        "aug": true,
+        "with_elastic": true,
+        "use_xyz": true,
+        "voxel_cfg": {
+          "scale": 50,
+          "spatial_shape": [
+            128,
+            512
+          ],
+          "max_npoint": 2500000
+        },
+        "max_des_len": 78,
+        "lang_num_max": 4
+      },
+      "val": {
+        "type": "scannetv2_sample_graph_edge",
+        "dataset": "scanrefer",
+        "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+        "prefix": "val",
+        "suffix": ".pth",
+        "training": false,
+        "aug": false,
+        "with_elastic": false,
+        "use_xyz": true,
+        "voxel_cfg": {
+          "scale": 50,
+          "spatial_shape": [
+            128,
+            512
+          ],
+          "max_npoint": 2500000
+        },
+        "max_des_len": 78,
+        "lang_num_max": 32
+      }
+    },
+    "model": {
+      "input_channel": 6,
+      "blocks": 5,
+      "block_reps": 2,
+      "media": 32,
+      "normalize_before": true,
+      "return_blocks": true,
+      "pool": "mean",
+      "infer_mode": "sem",
+      "fps_num": 256,
+      "task_type": "res",
+      "sampling_module": {
+        "num_proposal": 128,
+        "pc_dim": 256,
+        "lang_dim": 256,
+        "d_model": 256
+      },
+      "dec": {
+        "num_layer": 6,
+        "d_model": 256,
+        "nhead": 8,
+        "hidden_dim": 1024,
+        "dropout": 0.0,
+        "activation_fn": "gelu",
+        "iter_pred": true,
+        "attn_mask": true,
+        "kernel": "top1",
+        "global_feat": "mean",
+        "lang_att": true,
+        "contrastive_align_loss": true,
+        "num_proposal_fine": 512,
+        "num_proposal_query": [
+          128,
+          64,
+          32,
+          16,
+          8,
+          4
+        ],
+        "num_proposal_query_inst": [
+          128,
+          64,
+          32,
+          16,
+          8,
+          4
+        ]
+      },
+      "criterion": {
+        "loss_weight": [
+          1.0,
+          1.0,
+          0.5,
+          5.0,
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "cost_weight": [
+          1.0,
+          1.0,
+          0.1
+        ],
+        "loss_fun": "focal",
+        "match_last_layer": true,
+        "layer_differ_weight": true
+      },
+      "test_cfg": {
+        "topk_insts": 100,
+        "score_thr": 0.0,
+        "npoint_thr": 100
+      },
+      "norm_eval": false,
+      "fix_module": [
+        "text_encoder"
+      ]
+    },
+    "optimizer": {
+      "type": "AdamW",
+      "lr": 0.0001,
+      "weight_decay": 0.0005,
+      "paramwise_cfg": {
+        "text_encoder": {
+          "lr_mult": 0.001
+        },
+        "input_conv": {
+          "lr_mult": 0.01
+        },
+        "unet": {
+          "lr_mult": 0.01
+        },
+        "output_layer": {
+          "lr_mult": 0.01
+        },
+        "dec": {
+          "lr_mult": 1.0
+        }
+      }
+    },
+    "lr_scheduler": {
+      "type": "PolyLR",
+      "max_iters": 70,
+      "power": 4.0,
+      "constant_ending": 0.0
+    }
+  },
+  "parameter_delta_expected": 0,
+  "formal_uncommitted": true,
+  "source_marker": "8943c8c460501b200a8dea958964579ffea65f76",
+  "semantics": "Exact query+valid raw mask classes; exclude full focal class; inverse peer counts.",
+  "design": {
+    "path": "pipeline/designs/exp_design_Y56_dd8e.md",
+    "sha256": "67a3c59b52b710a9cbee0dbfade485bb7fe486088efce8cd88c17b636ce76501"
+  }
+}

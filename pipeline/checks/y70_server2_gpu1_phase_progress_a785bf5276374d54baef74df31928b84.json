@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T08:43:07.379639-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 3,
+      "total": 30,
+      "step": 3345,
+      "count": 4686
+    },
+    "log_bytes": 3515653
+  },
+  "after": {
+    "observed_at": "2026-10-30T08:43:12.384967-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 3,
+      "total": 30,
+      "step": 3353,
+      "count": 4686
+    },
+    "log_bytes": 3518005
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T08:43:07.379639-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 3,
+        "total": 30,
+        "step": 3345,
+        "count": 4686
+      },
+      "log_bytes": 3515653
+    },
+    {
+      "observed_at": "2026-10-30T08:43:12.384967-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 3,
+        "total": 30,
+        "step": 3353,
+        "count": 4686
+      },
+      "log_bytes": 3518005
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 52561,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y70_query_scale_fusion_res_20261030_184633.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561\n",
+  "authorized_gpu_uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+  "gpu": "74, 22736, 65, 390.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y70",
+  "token": "a785bf5276374d54baef74df31928b84",
+  "observed_start_local": "2026-10-30T20:43:45.081111+08:00",
+  "observed_end_local": "2026-10-30T20:43:50.410890+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y70_server2_gpu1_phase.py",
+      "sha256": "bf4162f6a25ea2905e2d75ce41186c9aa781307c55d6e085bd9058b9e1d04eb1"
+    },
+    {
+      "path": "pipeline/checks/y70_server2_gpu1_phase_progress_a785bf5276374d54baef74df31928b84.log",
+      "sha256": "be619c7b3c0f9df8900b34e7581786ce1f08326e9354478f49623f43f09b4adb"
+    }
+  ]
+}

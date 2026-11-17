@@ -1,0 +1,71 @@
+{
+  "scope": "isolated process stress; native batch2, paired sampler",
+  "module": "ipdn.model_paper5.adares_y17_target_equivalent_pairing",
+  "rows": [
+    {
+      "scans": [
+        "scene0054_00",
+        "scene0497_00"
+      ],
+      "actual_points": 1055503,
+      "actual_superpoints": 7618,
+      "expressions": 8,
+      "measurements": [
+        {
+          "seconds": 0.9105693064630032,
+          "reserved_gib": 14.08203125,
+          "allocated_gib": 13.508984565734863,
+          "pair_js": 4.1777681314414394e-10,
+          "pair_count": 4
+        },
+        {
+          "seconds": 0.9229020439088345,
+          "reserved_gib": 14.08203125,
+          "allocated_gib": 13.508984565734863,
+          "pair_js": 7.328245787974197e-10,
+          "pair_count": 4
+        },
+        {
+          "seconds": 0.9227927941828966,
+          "reserved_gib": 14.08203125,
+          "allocated_gib": 13.508984565734863,
+          "pair_js": 4.757557459100781e-09,
+          "pair_count": 4
+        }
+      ]
+    },
+    {
+      "scans": [
+        "scene0465_00"
+      ],
+      "actual_points": 387654,
+      "actual_superpoints": 3259,
+      "expressions": 4,
+      "measurements": [
+        {
+          "seconds": 0.39329060539603233,
+          "reserved_gib": 5.501953125,
+          "allocated_gib": 5.263304233551025,
+          "pair_js": 1.6078997759905178e-06,
+          "pair_count": 2
+        },
+        {
+          "seconds": 0.39692557603120804,
+          "reserved_gib": 5.501953125,
+          "allocated_gib": 5.263304233551025,
+          "pair_js": 2.1319303868949646e-06,
+          "pair_count": 2
+        },
+        {
+          "seconds": 0.3962473049759865,
+          "reserved_gib": 5.501953125,
+          "allocated_gib": 5.263304233551025,
+          "pair_js": 7.273910796357086e-06,
+          "pair_count": 2
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "parameters": 164629637
+}

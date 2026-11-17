@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T13:22:01.392849+08:00",
+  "native_gates": {
+    "path": "pipeline/analyses/y54_native_gates_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "94696fcfdbf44cc25a5efa416e9d0dcc1ad4eaeb9821d16c7dc730993f1db1b3"
+  },
+  "body": {
+    "path": "scripts/probe_y54_small_support_cpu_fde0.py",
+    "sha256": "927948acafdddf2b1150f17aa376514204f20fe2ad6e753c34f35ec8219d8bae"
+  },
+  "cases": "Exactly five adversarial component fixtures: valid3D supports[1,512],[8,512],[128,512],[406,512],[512,512]. Preserve native512fine/128queries/256fixed fixture seed indices/6layers and fixed seed1999. No real FPS claimed. Exact isolated decoder; every corrected neighborhood nonempty, all outputs/backward finite and invalid-source gradients0; all-valid exact parent same-state indicator control.",
+  "prediction": "Validity propagates even when padded supports outnumber native neighborhood size, without all-masked attention. Full-valid support should leave original forward unchanged. Failure is implementation evidence, never tuned away.",
+  "limits": "Component edge controls only, not a new candidate/model revision or trained task result; same immutable seven-file bundle, no weights saved/commit/admission.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y54_small_support_cpu_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "0201257edbef176edaf9a30b2e8646aa510086575aa652b200a91dad3d923e29"
+  }
+}

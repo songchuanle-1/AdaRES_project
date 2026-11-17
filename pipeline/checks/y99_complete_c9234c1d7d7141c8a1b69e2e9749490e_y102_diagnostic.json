@@ -1,0 +1,109 @@
+{
+  "complete": true,
+  "token": "c9234c1d7d7141c8a1b69e2e9749490e",
+  "id": "AdaRES-Y102",
+  "observed_at": "2026-11-13T18:01:51.096563+00:00",
+  "pid": 4747,
+  "current_native_progress_confirmed": false,
+  "observation": {
+    "complete": true,
+    "before": {
+      "observed_at": "2026-11-13T13:00:03.351765-05:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 7,
+        "count": 4686
+      },
+      "log_bytes": 1892
+    },
+    "after": {
+      "observed_at": "2026-11-13T13:00:18.368717-05:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 7,
+        "count": 4686
+      },
+      "log_bytes": 1892
+    },
+    "samples": [
+      {
+        "observed_at": "2026-11-13T13:00:03.351765-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      },
+      {
+        "observed_at": "2026-11-13T13:00:08.357758-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      },
+      {
+        "observed_at": "2026-11-13T13:00:13.363226-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      },
+      {
+        "observed_at": "2026-11-13T13:00:18.368717-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      }
+    ],
+    "native_progress_confirmed": false,
+    "process_identity_verified": true,
+    "pid": 4747,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y102_geometry_mask_skip_res_20261112_235503.log",
+    "source_files_verified": 6,
+    "native_YAML_semantics_verified": true,
+    "source_marker": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+    "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 4747\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 3050\n",
+    "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+    "gpu": "0, 16186, 32, 280.00",
+    "no_bounded_tail_error": true,
+    "training_efficacy": "Unknown; full frozen evaluation not executed.",
+    "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization."
+  },
+  "no_restart": true,
+  "no_checkpoint_loaded": true,
+  "no_denied_stack_attachment_retried": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/production_adares-y102_c9234c1d7d7141c8a1b69e2e9749490e_release.log",
+      "sha256": "64e22be3718a537076935e130a427741a60a5082e660f31dbdbe46c516bd8d88"
+    },
+    {
+      "path": "pipeline/checks/y99_complete_c9234c1d7d7141c8a1b69e2e9749490e_y102_command.log",
+      "sha256": "1c707920cd99e0c3f9d78e1d5c3da484353c1b9ffafac8d6858a289f2e7f198d"
+    },
+    {
+      "path": "scripts/finish_y99_complete_tick.py",
+      "sha256": "35eadb502f7fb95716b5902fbfb57048b8e043ae2792422ef4a244596ddc8ff5"
+    }
+  ]
+}

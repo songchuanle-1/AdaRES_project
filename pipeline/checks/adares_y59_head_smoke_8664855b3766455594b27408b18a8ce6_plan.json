@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y59",
+  "profile": "experiment_first",
+  "program": {
+    "path": "pipeline/checks/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6_program.py",
+    "sha256": "31a168d2551fe92c039c07787bde9c923522a241422589ddc41a10f0c7836436"
+  },
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "config": "configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py adares_y59_smoke pipeline/analyses/adares_y59_smoke_70b1ba64384f498697815ca88c2c232a_program.py --token <NEW_CURRENT_TOKEN> --seconds 600 --gpu --gpu-id <IDLE_AUTHORIZED_GPU>",
+  "required_resource": "One genuinely idle authorized server-2 GPU0/1, exclusive lease and no compute process.",
+  "checks": "Native YAML resolver, released backbone, actual native TRAIN dataloader and tools/train.py::train for exactly two optimizer steps; finite loss/gradients, exercised mode path and GPU peak.",
+  "Python38_compile": true,
+  "missing_GPU_entry_refused": true,
+  "native_executed": false,
+  "note": "No smoke PASS or admission yet. Use a new current lease and verify all frozen bytes and goal before execution.",
+  "original_plan": {
+    "path": "pipeline/analyses/adares_y59_smoke_70b1ba64384f498697815ca88c2c232a_plan.json",
+    "sha256": "89a528f2b55851611c196b8bf2f7bfdfed91efb0a313fc0b3ade51ad28d74b51"
+  },
+  "deployment_binding": {
+    "path": "pipeline/checks/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6_binding.json",
+    "sha256": "f0e66113d2c594bb7ee44cd1a4bf6090200bf6054d0f5122528bc3d58275633c"
+  }
+}

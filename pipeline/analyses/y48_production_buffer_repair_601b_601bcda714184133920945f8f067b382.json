@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "preregistered_at": "2026-10-15T11:33:14.574635+08:00",
+  "failed_source": {
+    "path": "scripts/probe_y48_production_601b_v2.py",
+    "sha256": "2a70c15fb9c02f787b800d45b7f98145ec98d6353e09538c956f0ba0b396abf2"
+  },
+  "failed_log": {
+    "path": "pipeline/analyses/y48_production_v2_601b_601bcda714184133920945f8f067b382.log",
+    "sha256": "50645950592f49ce7750c1387cce2491827259734acd6beeec338f3f85e34a96"
+  },
+  "source": {
+    "path": "scripts/probe_y48_production_601b_v3.py",
+    "sha256": "5af61097267f54828132ffcb19d616e72f623c8d2a9e16c870f9ea8ae4bca82d"
+  },
+  "change": "Only diagnostic restore compatibility for the exact two known HF metadata buffers; compare their actual tensor values and require full augmented model state, optimizer and scheduler equality.",
+  "prediction": "No missing model keys or other unexpected keys; physical metadata buffers numerically equal saved values; all original controls/stress rerun.",
+  "model_changes": 0,
+  "result": "pending"
+}

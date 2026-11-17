@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T13:04:42.001269+08:00",
+  "hypothesis_id": "fine_3d_support_validity_batch_nuisance",
+  "hypothesis": "In native two-scene TRAIN batches, fine 3D attention may include nonexistent padded superpoints when a scene has fewer than the fixed512fine supports. Fine-source gathering loses the scene validity mask and spatial nearest-neighbor selection can treat padded coordinates as real. This could contaminate query confidence with batch-composition nuisance; diagnose actual native attention/support incidence before proposing a correction.",
+  "matched_control": "Use the SAME eight frozen TRAIN scenes in their original four batchsize2 pairs, fixed trained W2 diagnostic weights and seed1999. Preserve actual sparse forward/FPS/coarse ranking. Derive and verify exact gathered support validity from actual coarse attention and native positions. Compare parent/repeat, padding-only source intervention and valid-source control; compare native fine block against correctly masked support plus nearest-neighbor masking. All-valid expressions are negative controls. No task-gain threshold or validation selection.",
+  "source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "shape_intake": {
+    "path": "pipeline/analyses/y53_padding_native_eval_compat_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "a348ffd1d035b925eb57b90f2c1f9e7340c5757f304fab77a1371184e6e0a648"
+  },
+  "native_short_scene_shapes": [
+    {
+      "scene": "scene0003_00",
+      "superpoints": 406
+    },
+    {
+      "scene": "scene0007_00",
+      "superpoints": 468
+    }
+  ],
+  "first_test": "Instrument actual four native batchsize2 sparse/FPS forwards and replay SAME cached decoder inputs; verify gathered indices/positions, count padded fine supports and unmasked/positive attention mass, execute matched original/repeat/corrected support controls and report final/aux confidence changes.",
+  "expected_direction": "A real missing-support mechanism requires actual padded supports to be eligible/attended and a matched control-separated fine/query effect, with corrected padding interventions inert. Zero incidence or no separated effect remains inconclusive/negative, never an admission PASS.",
+  "independence": "Different variable/path from Y53 and Y23: nonexistent 3D fine supports under ragged scene batching, not language features or contrastive-token normalization. Historical Y26 discarded-postnorm and all other rejected directions remain untouched.",
+  "limits": "Diagnostic only; no model implementation, novel claim, accuracy benefit, optimizer steps, commit, admission or launch yet. Preserve512fine/128query/256FPS, current weights/loss/epochs and all source hashes.",
+  "result": "pending"
+}

@@ -1,0 +1,30 @@
+{
+  "project": "AdaRES_project",
+  "token": "81e295aec4c1457c9689d4b62dd21b62",
+  "command": "python -B C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/foreground_tick.py AdaRES_project finish --token 81e295aec4c1457c9689d4b62dd21b62",
+  "exit_code": 1,
+  "output": [
+    "CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening",
+    "POSTFLIGHT FAILED: lease retained; continue this tick or explicitly abort"
+  ],
+  "confirmed_mismatch": {
+    "checker": "closure.validate_work, exclusive_gpu_slot branch, lines 657-667",
+    "checked_active_tasks_source": "immutable context.queue.active_tasks",
+    "preflight_active_count": 0,
+    "actual_queue_running_count": 2,
+    "actual_queue_waiting_count": 0,
+    "actual_queue_claiming_count": 0,
+    "affected_blocked_candidates": ["AdaRES-Y56", "AdaRES-Y57"],
+    "verified_training": [
+      {"id": "AdaRES-Y52", "gpu": 1, "pid": 35832, "resume_epoch": 24, "launch_verified": true},
+      {"id": "AdaRES-Y54", "gpu": 0, "pid": 36864, "resume_epoch": 25, "launch_verified": true}
+    ]
+  },
+  "snapshot_integrity_verified_before_finish": true,
+  "checker_modified": false,
+  "deadline_modified": false,
+  "scientific_or_blocker_disposition_modified": false,
+  "finish_repeated": false,
+  "next_action": "Canonical abort with original token; independently verify release. Keep both remote training processes running.",
+  "abort_result": "not_yet_observed_at_artifact_write"
+}

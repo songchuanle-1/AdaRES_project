@@ -1,0 +1,41 @@
+{
+  "project": "AdaRES_project",
+  "source_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_reply": "server2-gpu1 先暂停使用吧",
+  "recorded_at": "2026-11-04T09:36:41.009009+08:00",
+  "server": "server-2",
+  "host": "192.168.1.163",
+  "expected_hostname": "dl01-MS-7C60",
+  "resource_use_paused": true,
+  "paused_gpu": 1,
+  "allowed_gpus": [
+    0
+  ],
+  "supersedes_resource_grant": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "prohibited_until_explicit_user_reauthorization": [
+    "GPU1_native_checks",
+    "GPU1_training_and_dispatch",
+    "GPU1_frozen_evaluation_and_cost"
+  ],
+  "preserve": [
+    "server1_GPU0_350W",
+    "server2_GPU0_280W",
+    "Y82",
+    "Y83",
+    "Y57_separate_pause",
+    "all_checkpoints_and_receipts",
+    "original_frozen_protocol",
+    "owning_thread_and_schedule"
+  ],
+  "resource_resume_requires_user_authorization": true,
+  "Y57_resume_authorized": false,
+  "observation": {
+    "path": "pipeline/checks/server2_gpu1_pause_20261104_observation.json",
+    "sha256": "15f423a7ffcd3933c0baaa4d59eea9f2c0b06d074a6b6002a2839508e68b8352"
+  },
+  "hardware_changes": false,
+  "scientific_goal_bytes_unchanged": true
+}

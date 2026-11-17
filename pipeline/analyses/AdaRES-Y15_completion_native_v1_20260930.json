@@ -1,0 +1,772 @@
+{
+  "scope": "native real-batch integration, no full training or admission",
+  "local_registration": "pipeline/designs/AdaRES-Y15_native_prereg_20260930.md",
+  "scans": [
+    "scene0000_00",
+    "scene0002_00",
+    "scene0006_00",
+    "scene0008_00"
+  ],
+  "new_parameters": 329728,
+  "rows": [
+    {
+      "arm": "gt",
+      "batch": 0,
+      "scans": [
+        "scene0000_00",
+        "scene0002_00"
+      ],
+      "loss": 1.0626925230026245,
+      "mask_bce": 0.04770953580737114,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.3087010979652405,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 1.8043893575668335,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.3087010979652405,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 1.0780298709869385,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.16313758492469788,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 1.3525750637054443,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.30870237946510315,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.0860300064086914,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.09642308950424194,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 22.983394104987383,
+      "peak_allocated_gib": 5.076981067657471,
+      "peak_reserved_gib": 5.4375,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "gt",
+      "batch": 1,
+      "scans": [
+        "scene0006_00",
+        "scene0008_00"
+      ],
+      "loss": 2.063598155975342,
+      "mask_bce": 0.07869532704353333,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.5792453289031982,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 3.9229602813720703,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.5792453289031982,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 1.9425945281982422,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.29935041069984436,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 2.4943089485168457,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.5794663429260254,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.16255034506320953,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.18143318593502045,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.3888068553060293,
+      "peak_allocated_gib": 4.361865043640137,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "teacher",
+      "batch": 0,
+      "scans": [
+        "scene0000_00",
+        "scene0002_00"
+      ],
+      "loss": 1.0626883506774902,
+      "mask_bce": 0.04770529270172119,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.30893054604530334,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 1.8056840896606445,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.30893054604530334,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 1.0789331197738647,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.16326837241649628,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 1.3536182641983032,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.30893194675445557,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.08609022200107574,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.0964977890253067,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.38077482767403126,
+      "peak_allocated_gib": 5.072308540344238,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "teacher",
+      "batch": 1,
+      "scans": [
+        "scene0006_00",
+        "scene0008_00"
+      ],
+      "loss": 2.0635950565338135,
+      "mask_bce": 0.07869233936071396,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.5789886116981506,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 3.92114520072937,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.5789886116981506,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 1.9416162967681885,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.29920077323913574,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 2.493192672729492,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.5792093276977539,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.16247069835662842,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.18134957551956177,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.3560888431966305,
+      "peak_allocated_gib": 4.360029220581055,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "language_shuffled",
+      "batch": 0,
+      "scans": [
+        "scene0000_00",
+        "scene0002_00"
+      ],
+      "loss": 1.0627720355987549,
+      "mask_bce": 0.04009979963302612,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.3000987768173218,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 1.6698869466781616,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.3000987768173218,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 1.077658772468567,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.15855494141578674,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 1.3468046188354492,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.3001072406768799,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.08129557222127914,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.09511853009462357,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.3797281067818403,
+      "peak_allocated_gib": 5.072308540344238,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "language_shuffled",
+      "batch": 1,
+      "scans": [
+        "scene0006_00",
+        "scene0008_00"
+      ],
+      "loss": 2.0827176570892334,
+      "mask_bce": 0.09492047876119614,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.6646133065223694,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 4.506218433380127,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.6646133065223694,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 2.245274305343628,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.34693828225135803,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 2.8537819385528564,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.6648390889167786,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.18636132776737213,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.20596519112586975,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.3562724217772484,
+      "peak_allocated_gib": 4.360029220581055,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "slot_only",
+      "batch": 0,
+      "scans": [
+        "scene0000_00",
+        "scene0002_00"
+      ],
+      "loss": 1.0560187101364136,
+      "mask_bce": 0.05742739513516426,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 0.5372373461723328,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 0.14386264979839325,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 0.46811985969543457,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 1.6140941381454468,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.24783821403980255,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 2.029054641723633,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 0.4681636095046997,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.07862323522567749,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.08405140042304993,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.37983461655676365,
+      "peak_allocated_gib": 5.072303295135498,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "slot_only",
+      "batch": 1,
+      "scans": [
+        "scene0006_00",
+        "scene0008_00"
+      ],
+      "loss": 2.1172289848327637,
+      "mask_bce": 0.12284109741449356,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": 1.2651699781417847,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": 0.3399059772491455,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": 1.106032371520996,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": 3.832242012023926,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": 0.5903700590133667,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": 4.757166862487793,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": 1.106326937675476,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": 0.1812984198331833,
+          "finite_nonzero": true
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": 0.19714580476284027,
+          "finite_nonzero": true
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.3586335927248001,
+      "peak_allocated_gib": 4.360024452209473,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 129,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "disabled",
+      "batch": 0,
+      "scans": [
+        "scene0000_00",
+        "scene0002_00"
+      ],
+      "loss": 0.9658240079879761,
+      "mask_bce": 0.007474748883396387,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": null,
+          "finite_nonzero": false
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.37574086152017117,
+      "peak_allocated_gib": 5.036731243133545,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 128,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "arm": "disabled",
+      "batch": 1,
+      "scans": [
+        "scene0006_00",
+        "scene0008_00"
+      ],
+      "loss": 2.0200321674346924,
+      "mask_bce": 0.008151108399033546,
+      "gradients": {
+        "dec.completion_query.slot": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.lang_proj.weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.lang_proj.bias": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.in_proj_weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.in_proj_bias": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.out_proj.weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.attn.out_proj.bias": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.norm.weight": {
+          "norm": null,
+          "finite_nonzero": false
+        },
+        "dec.completion_query.norm.bias": {
+          "norm": null,
+          "finite_nonzero": false
+        }
+      },
+      "finite_loss": true,
+      "seconds": 0.3472431506961584,
+      "peak_allocated_gib": 4.316464900970459,
+      "peak_reserved_gib": 6.2890625,
+      "query_count": 128,
+      "seed_query_count": 128,
+      "aux_query_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "batch": 0,
+      "teacher": {
+        "native_mask_max_diff": 0.000125885009765625,
+        "seed_identity": true,
+        "extra_mask_max_diff": 2.47955322265625e-05
+      },
+      "language_shuffled": {
+        "native_mask_max_diff": 0.00012969970703125,
+        "seed_identity": true,
+        "extra_mask_max_diff": 33.41861343383789
+      },
+      "slot_only": {
+        "native_mask_max_diff": 0.0001068115234375,
+        "seed_identity": true,
+        "extra_mask_max_diff": 29.303178787231445
+      },
+      "disabled": {
+        "native_mask_max_diff": 0.0002593994140625,
+        "seed_identity": true
+      }
+    },
+    {
+      "batch": 1,
+      "teacher": {
+        "native_mask_max_diff": 0.00014495849609375,
+        "seed_identity": true,
+        "extra_mask_max_diff": 2.288818359375e-05
+      },
+      "language_shuffled": {
+        "native_mask_max_diff": 0.0001983642578125,
+        "seed_identity": true,
+        "extra_mask_max_diff": 16.11811637878418
+      },
+      "slot_only": {
+        "native_mask_max_diff": 0.0001373291015625,
+        "seed_identity": true,
+        "extra_mask_max_diff": 38.761016845703125
+      },
+      "disabled": {
+        "native_mask_max_diff": 0.000141143798828125,
+        "seed_identity": true
+      }
+    }
+  ],
+  "teacher_targets": [
+    {
+      "identity": [
+        "scene0000_00",
+        [
+          2
+        ],
+        "31"
+      ],
+      "material": true,
+      "target_sha256": "7e6c143f400fff5e1756756b90c8abb4632fe2fc63ace0d6f0d5fa59a9bfc575"
+    },
+    {
+      "identity": [
+        "scene0000_00",
+        [
+          39
+        ],
+        "0"
+      ],
+      "material": false,
+      "target_sha256": "71b5574d60c29a854f54cee3f9473c55e7e7307dfdfae5123798cede4044de53"
+    },
+    {
+      "identity": [
+        "scene0002_00",
+        [
+          16
+        ],
+        "7"
+      ],
+      "material": true,
+      "target_sha256": "5fe41565c6c26fee3df0ddbe80d1368e070305723269beb376ebcc7d11f1a74c"
+    },
+    {
+      "identity": [
+        "scene0002_00",
+        [
+          17
+        ],
+        "0"
+      ],
+      "material": false,
+      "target_sha256": "7c445ee05c7d1425b8a99d7256754c4234626586413ceaf46af5f08ac790abae"
+    },
+    {
+      "identity": [
+        "scene0006_00",
+        [
+          10
+        ],
+        "0"
+      ],
+      "material": true,
+      "target_sha256": "3eeaa78ff75cff93e16f0608bf1239ac0e58c80d5ee27eb433aa53099ef96e1f"
+    },
+    {
+      "identity": [
+        "scene0006_00",
+        [
+          11
+        ],
+        "1"
+      ],
+      "material": true,
+      "target_sha256": "8fc79f009680ffa4249843975a6d3dc24883d929a009b91088b473dac80c68cd"
+    },
+    {
+      "identity": [
+        "scene0008_00",
+        [
+          12
+        ],
+        "19"
+      ],
+      "material": true,
+      "target_sha256": "d5487e7d173183822ac008d576723263f91dcdd226045dd1a30bf49b517c4153"
+    },
+    {
+      "identity": [
+        "scene0008_00",
+        [
+          0
+        ],
+        "0"
+      ],
+      "material": false,
+      "target_sha256": "f9a43fed25f8bf6e74dd12c0b5b040e07d47b9cbe28c6543d012450d70c70b25"
+    }
+  ],
+  "teacher_missing_fails_closed": true,
+  "student_inference_label_blind": false,
+  "source_sha256": "696c4a477142b0d30027b2f4ab864162377796f9fd7bf9ce0bfc18b08d65b4f9"
+}

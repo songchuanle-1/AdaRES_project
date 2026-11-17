@@ -1,0 +1,161 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-21T22:44:47.421153+08:00",
+  "command": "python -B scripts/check_prepared_resources_gpu0_trial.py --token 5fea2958a0334c44a6dfc19d82916cf6",
+  "candidate_identity_checks": [
+    {
+      "id": "AdaRES-Y58",
+      "exact_files": 7,
+      "code_commit": "a83449f145644745f6d007d7319ec4221623e81c",
+      "config": "configs_song/model_paper5/adares_y58_fixed_backbone_statistics_res.yaml",
+      "frozen_program": {
+        "path": "pipeline/analyses/adares_y58_smoke_70b1ba64384f498697815ca88c2c232a_program.py",
+        "sha256": "4c1fe6a52c41ecbb26bff236806b4938c5785b5686022c53cbedd21289f1dfec"
+      },
+      "current_version_and_goal_match": true
+    },
+    {
+      "id": "AdaRES-Y59",
+      "exact_files": 7,
+      "code_commit": "a83449f145644745f6d007d7319ec4221623e81c",
+      "config": "configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml",
+      "frozen_program": {
+        "path": "pipeline/analyses/adares_y59_smoke_70b1ba64384f498697815ca88c2c232a_program.py",
+        "sha256": "2546f1986e963ccb683093cf7659345ee0476b50daeadee1e2d0cbf659999955"
+      },
+      "current_version_and_goal_match": true
+    },
+    {
+      "id": "AdaRES-Y60",
+      "exact_files": 7,
+      "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+      "config": "configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+      "frozen_program": {
+        "path": "pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_program.py",
+        "sha256": "e3f3aa26cc24043f94a7a11e65284718356dfc79d15dd35c4791e2ec9947f861"
+      },
+      "current_version_and_goal_match": true
+    }
+  ],
+  "live": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 72, 22684, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 100, 23526, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13738, 22674\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 50448, 23518\n",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y56": {
+        "pid": 13738,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/gpu_reboot_resume_adares_y56_unique_competitors_res_76f9c0ca61424281b30c4f491a33b37e.log",
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0",
+          "--resume",
+          "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/last.pth"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "tail": "\rTrain[29/30]:   8%|█▌                  | 378/4686 [03:20<36:56,  1.94it/s, lr=1.3e-05, eta=1:19:21, iter_time=0.53]\rTrain[29/30]:   8%|█▌                  | 379/4686 [03:20<37:18,  1.92it/s, lr=1.3e-05, eta=1:19:21, iter_time=0.53]\rTrain[29/30]:   8%|█▌                  | 379/4686 [03:21<37:18,  1.92it/s, lr=1.3e-05, eta=1:19:23, iter_time=0.53]\rTrain[29/30]:   8%|█▌                  | 380/4686 [03:21<39:46,  1.80it/s, lr=1.3e-05, eta=1:19:23, iter_time=0.53]\rTrain[29/30]:   8%|█▌                  | 380/4686 [03:21<39:46,  1.80it/s, lr=1.3e-05, eta=1:19:20, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 381/4686 [03:21<37:31,  1.91it/s, lr=1.3e-05, eta=1:19:20, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 381/4686 [03:22<37:31,  1.91it/s, lr=1.3e-05, eta=1:19:17, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 382/4686 [03:22<35:07,  2.04it/s, lr=1.3e-05, eta=1:19:17, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 382/4686 [03:22<35:07,  2.04it/s, lr=1.3e-05, eta=1:19:24, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 383/4686 [03:22<42:31,  1.69it/s, lr=1.3e-05, eta=1:19:24, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 383/4686 [03:23<42:31,  1.69it/s, lr=1.3e-05, eta=1:19:20, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 384/4686 [03:23<38:47,  1.85it/s, lr=1.3e-05, eta=1:19:20, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 384/4686 [03:23<38:47,  1.85it/s, lr=1.3e-05, eta=1:19:18, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 385/4686 [03:23<36:34,  1.96it/s, lr=1.3e-05, eta=1:19:18, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 385/4686 [03:24<36:34,  1.96it/s, lr=1.3e-05, eta=1:19:16, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 386/4686 [03:24<35:22,  2.03it/s, lr=1.3e-05, eta=1:19:16, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 386/4686 [03:24<35:22,  2.03it/s, lr=1.3e-05, eta=1:19:13, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 387/4686 [03:24<34:21,  2.09it/s, lr=1.3e-05, eta=1:19:13, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 387/4686 [03:25<34:21,  2.09it/s, lr=1.3e-05, eta=1:19:15, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 388/4686 [03:25<38:06,  1.88it/s, lr=1.3e-05, eta=1:19:15, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 388/4686 [03:25<38:06,  1.88it/s, lr=1.3e-05, eta=1:19:14, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 389/4686 [03:25<36:51,  1.94it/s, lr=1.3e-05, eta=1:19:14, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 389/4686 [03:26<36:51,  1.94it/s, lr=1.3e-05, eta=1:19:12, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 390/4686 [03:26<36:17,  1.97it/s, lr=1.3e-05, eta=1:19:12, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 390/4686 [03:26<36:17,  1.97it/s, lr=1.3e-05, eta=1:19:09, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 391/4686 [03:26<34:18,  2.09it/s, lr=1.3e-05, eta=1:19:09, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 391/4686 [03:27<34:18,  2.09it/s, lr=1.3e-05, eta=1:19:05, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 392/4686 [03:27<32:03,  2.23it/s, lr=1.3e-05, eta=1:19:05, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 392/4686 [03:27<32:03,  2.23it/s, lr=1.3e-05, eta=1:19:04, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 393/4686 [03:27<33:15,  2.15it/s, lr=1.3e-05, eta=1:19:04, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 393/4686 [03:28<33:15,  2.15it/s, lr=1.3e-05, eta=1:19:03, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 394/4686 [03:28<33:50,  2.11it/s, lr=1.3e-05, eta=1:19:03, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 394/4686 [03:28<33:50,  2.11it/s, lr=1.3e-05, eta=1:19:04, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 395/4686 [03:28<36:57,  1.93it/s, lr=1.3e-05, eta=1:19:04, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 395/4686 [03:29<36:57,  1.93it/s, lr=1.3e-05, eta=1:19:01, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 396/4686 [03:29<34:59,  2.04it/s, lr=1.3e-05, eta=1:19:01, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 396/4686 [03:29<34:59,  2.04it/s, lr=1.3e-05, eta=1:19:00, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 397/4686 [03:29<35:27,  2.02it/s, lr=1.3e-05, eta=1:19:00, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 397/4686 [03:30<35:27,  2.02it/s, lr=1.3e-05, eta=1:19:01, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 398/4686 [03:30<37:34,  1.90it/s, lr=1.3e-05, eta=1:19:01, iter_time=0.53]\rTrain[29/30]:   8%|█▋                  | 398/4686 [03:30<37:34,  1.90it/s, lr=1.3e-05, eta=1:18:59, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 399/4686 [03:30<35:29,  2.01it/s, lr=1.3e-05, eta=1:18:59, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 399/4686 [03:31<35:29,  2.01it/s, lr=1.3e-05, eta=1:18:59, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 400/4686 [03:31<37:15,  1.92it/s, lr=1.3e-05, eta=1:18:59, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 400/4686 [03:31<37:15,  1.92it/s, lr=1.3e-05, eta=1:18:58, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 401/4686 [03:31<36:37,  1.95it/s, lr=1.3e-05, eta=1:18:58, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 401/4686 [03:32<36:37,  1.95it/s, lr=1.3e-05, eta=1:18:58, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 402/4686 [03:32<37:46,  1.89it/s, lr=1.3e-05, eta=1:18:58, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 402/4686 [03:32<37:46,  1.89it/s, lr=1.3e-05, eta=1:18:56, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 403/4686 [03:32<36:29,  1.96it/s, lr=1.3e-05, eta=1:18:56, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 403/4686 [03:33<36:29,  1.96it/s, lr=1.3e-05, eta=1:18:55, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 404/4686 [03:33<36:01,  1.98it/s, lr=1.3e-05, eta=1:18:55, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 404/4686 [03:33<36:01,  1.98it/s, lr=1.3e-05, eta=1:18:52, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 405/4686 [03:33<33:58,  2.10it/s, lr=1.3e-05, eta=1:18:52, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 405/4686 [03:34<33:58,  2.10it/s, lr=1.3e-05, eta=1:18:54, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 406/4686 [03:34<37:18,  1.91it/s, lr=1.3e-05, eta=1:18:54, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 406/4686 [03:34<37:18,  1.91it/s, lr=1.3e-05, eta=1:18:54, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 407/4686 [03:34<38:06,  1.87it/s, lr=1.3e-05, eta=1:18:54, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 407/4686 [03:35<38:06,  1.87it/s, lr=1.3e-05, eta=1:18:53, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 408/4686 [03:35<37:38,  1.89it/s, lr=1.3e-05, eta=1:18:53, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 408/4686 [03:35<37:38,  1.89it/s, lr=1.3e-05, eta=1:18:52, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 409/4686 [03:35<37:29,  1.90it/s, lr=1.3e-05, eta=1:18:52, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 409/4686 [03:36<37:29,  1.90it/s, lr=1.3e-05, eta=1:18:51, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 410/4686 [03:36<37:10,  1.92it/s, lr=1.3e-05, eta=1:18:51, iter_time=0.53]\rTrain[29/30]:   9%|█▋                  | 410/4686 [03:36<37:10,  1.92it/s, lr=1.3e-05, eta=1:18:50, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 411/4686 [03:36<36:49,  1.93it/s, lr=1.3e-05, eta=1:18:50, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 411/4686 [03:37<36:49,  1.93it/s, lr=1.3e-05, eta=1:18:49, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 412/4686 [03:37<35:55,  1.98it/s, lr=1.3e-05, eta=1:18:49, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 412/4686 [03:37<35:55,  1.98it/s, lr=1.3e-05, eta=1:18:46, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 413/4686 [03:37<34:22,  2.07it/s, lr=1.3e-05, eta=1:18:46, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 413/4686 [03:38<34:22,  2.07it/s, lr=1.3e-05, eta=1:18:45, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 414/4686 [03:38<35:05,  2.03it/s, lr=1.3e-05, eta=1:18:45, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 414/4686 [03:38<35:05,  2.03it/s, lr=1.3e-05, eta=1:18:45, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 415/4686 [03:38<35:40,  1.99it/s, lr=1.3e-05, eta=1:18:45, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 415/4686 [03:39<35:40,  1.99it/s, lr=1.3e-05, eta=1:18:42, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 416/4686 [03:39<34:29,  2.06it/s, lr=1.3e-05, eta=1:18:42, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 416/4686 [03:39<34:29,  2.06it/s, lr=1.3e-05, eta=1:18:43, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 417/4686 [03:39<37:04,  1.92it/s, lr=1.3e-05, eta=1:18:43, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 417/4686 [03:40<37:04,  1.92it/s, lr=1.3e-05, eta=1:18:41, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 418/4686 [03:40<35:45,  1.99it/s, lr=1.3e-05, eta=1:18:41, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 418/4686 [03:40<35:45,  1.99it/s, lr=1.3e-05, eta=1:18:39, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 419/4686 [03:40<34:01,  2.09it/s, lr=1.3e-05, eta=1:18:39, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 419/4686 [03:41<34:01,  2.09it/s, lr=1.3e-05, eta=1:18:37, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 420/4686 [03:41<33:33,  2.12it/s, lr=1.3e-05, eta=1:18:37, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 420/4686 [03:41<33:33,  2.12it/s, lr=1.3e-05, eta=1:18:35, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 421/4686 [03:41<33:21,  2.13it/s, lr=1.3e-05, eta=1:18:35, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 421/4686 [03:42<33:21,  2.13it/s, lr=1.3e-05, eta=1:18:34, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 422/4686 [03:42<34:30,  2.06it/s, lr=1.3e-05, eta=1:18:34, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 422/4686 [03:42<34:30,  2.06it/s, lr=1.3e-05, eta=1:18:33, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 423/4686 [03:42<34:38,  2.05it/s, lr=1.3e-05, eta=1:18:33, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 423/4686 [03:43<34:38,  2.05it/s, lr=1.3e-05, eta=1:18:31, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 424/4686 [03:43<33:44,  2.11it/s, lr=1.3e-05, eta=1:18:31, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 424/4686 [03:43<33:44,  2.11it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 425/4686 [03:43<35:00,  2.03it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 425/4686 [03:44<35:00,  2.03it/s, lr=1.3e-05, eta=1:18:29, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 426/4686 [03:44<34:59,  2.03it/s, lr=1.3e-05, eta=1:18:29, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 426/4686 [03:44<34:59,  2.03it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 427/4686 [03:44<36:44,  1.93it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 427/4686 [03:45<36:44,  1.93it/s, lr=1.3e-05, eta=1:18:32, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 428/4686 [03:45<40:17,  1.76it/s, lr=1.3e-05, eta=1:18:32, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 428/4686 [03:45<40:17,  1.76it/s, lr=1.3e-05, eta=1:18:29, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 429/4686 [03:45<36:18,  1.95it/s, lr=1.3e-05, eta=1:18:29, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 429/4686 [03:46<36:18,  1.95it/s, lr=1.3e-05, eta=1:18:31, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 430/4686 [03:46<38:58,  1.82it/s, lr=1.3e-05, eta=1:18:31, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 430/4686 [03:46<38:58,  1.82it/s, lr=1.3e-05, eta=1:18:27, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 431/4686 [03:46<35:09,  2.02it/s, lr=1.3e-05, eta=1:18:27, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 431/4686 [03:47<35:09,  2.02it/s, lr=1.3e-05, eta=1:18:25, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 432/4686 [03:47<33:59,  2.09it/s, lr=1.3e-05, eta=1:18:25, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 432/4686 [03:48<33:59,  2.09it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 433/4686 [03:48<40:56,  1.73it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 433/4686 [03:48<40:56,  1.73it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 434/4686 [03:48<40:26,  1.75it/s, lr=1.3e-05, eta=1:18:30, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 434/4686 [03:49<40:26,  1.75it/s, lr=1.3e-05, eta=1:18:27, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 435/4686 [03:49<36:47,  1.93it/s, lr=1.3e-05, eta=1:18:27, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 435/4686 [03:49<36:47,  1.93it/s, lr=1.3e-05, eta=1:18:25, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 436/4686 [03:49<35:59,  1.97it/s, lr=1.3e-05, eta=1:18:25, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 436/4686 [03:50<35:59,  1.97it/s, lr=1.3e-05, eta=1:18:26, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 437/4686 [03:50<37:57,  1.87it/s, lr=1.3e-05, eta=1:18:26, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 437/4686 [03:50<37:57,  1.87it/s, lr=1.3e-05, eta=1:18:24, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 438/4686 [03:50<35:45,  1.98it/s, lr=1.3e-05, eta=1:18:24, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 438/4686 [03:51<35:45,  1.98it/s, lr=1.3e-05, eta=1:18:22, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 439/4686 [03:51<35:21,  2.00it/s, lr=1.3e-05, eta=1:18:22, iter_time=0.53]\rTrain[29/30]:   9%|█▊                  | 439/4686 [03:51<35:21,  2.00it/s, lr=1.3e-05, eta=1:18:24, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 440/4686 [03:51<38:25,  1.84it/s, lr=1.3e-05, eta=1:18:24, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 440/4686 [03:52<38:25,  1.84it/s, lr=1.3e-05, eta=1:18:22, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 441/4686 [03:52<36:04,  1.96it/s, lr=1.3e-05, eta=1:18:22, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 441/4686 [03:52<36:04,  1.96it/s, lr=1.3e-05, eta=1:18:19, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 442/4686 [03:52<34:04,  2.08it/s, lr=1.3e-05, eta=1:18:19, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 442/4686 [03:53<34:04,  2.08it/s, lr=1.3e-05, eta=1:18:18, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 443/4686 [03:53<33:55,  2.08it/s, lr=1.3e-05, eta=1:18:18, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 443/4686 [03:53<33:55,  2.08it/s, lr=1.3e-05, eta=1:18:17, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 444/4686 [03:53<35:08,  2.01it/s, lr=1.3e-05, eta=1:18:17, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 444/4686 [03:54<35:08,  2.01it/s, lr=1.3e-05, eta=1:18:15, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 445/4686 [03:54<33:24,  2.12it/s, lr=1.3e-05, eta=1:18:15, iter_time=0.53]\rTrain[29/30]:   9%|█▉                  | 445/4686 [03:54<33:24,  2.12it/s, lr=1.3e-05, eta=1:18:12, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 446/4686 [03:54<32:49,  2.15it/s, lr=1.3e-05, eta=1:18:12, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 446/4686 [03:54<32:49,  2.15it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 447/4686 [03:54<32:26,  2.18it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 447/4686 [03:55<32:26,  2.18it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 448/4686 [03:55<34:24,  2.05it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 448/4686 [03:56<34:24,  2.05it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 449/4686 [03:56<35:51,  1.97it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 449/4686 [03:56<35:51,  1.97it/s, lr=1.3e-05, eta=1:18:09, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 450/4686 [03:56<35:27,  1.99it/s, lr=1.3e-05, eta=1:18:09, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 450/4686 [03:57<35:27,  1.99it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 451/4686 [03:57<34:47,  2.03it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 451/4686 [03:57<34:47,  2.03it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 452/4686 [03:57<38:08,  1.85it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 452/4686 [03:58<38:08,  1.85it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 453/4686 [03:58<38:51,  1.82it/s, lr=1.3e-05, eta=1:18:10, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 453/4686 [03:58<38:51,  1.82it/s, lr=1.3e-05, eta=1:18:09, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 454/4686 [03:58<37:58,  1.86it/s, lr=1.3e-05, eta=1:18:09, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 454/4686 [03:59<37:58,  1.86it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 455/4686 [03:59<37:31,  1.88it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 455/4686 [03:59<37:31,  1.88it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 456/4686 [03:59<37:39,  1.87it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 456/4686 [04:00<37:39,  1.87it/s, lr=1.3e-05, eta=1:18:07, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 457/4686 [04:00<36:35,  1.93it/s, lr=1.3e-05, eta=1:18:07, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 457/4686 [04:00<36:35,  1.93it/s, lr=1.3e-05, eta=1:18:07, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 458/4686 [04:00<37:56,  1.86it/s, lr=1.3e-05, eta=1:18:07, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 458/4686 [04:01<37:56,  1.86it/s, lr=1.3e-05, eta=1:18:07, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 459/4686 [04:01<37:35,  1.87it/s, lr=1.3e-05, eta=1:18:07, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 459/4686 [04:02<37:35,  1.87it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 460/4686 [04:02<39:25,  1.79it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 460/4686 [04:02<39:25,  1.79it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 461/4686 [04:02<39:35,  1.78it/s, lr=1.3e-05, eta=1:18:08, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 461/4686 [04:03<39:35,  1.78it/s, lr=1.3e-05, eta=1:18:06, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 462/4686 [04:03<36:47,  1.91it/s, lr=1.3e-05, eta=1:18:06, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 462/4686 [04:03<36:47,  1.91it/s, lr=1.3e-05, eta=1:18:06, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 463/4686 [04:03<37:54,  1.86it/s, lr=1.3e-05, eta=1:18:06, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 463/4686 [04:04<37:54,  1.86it/s, lr=1.3e-05, eta=1:18:05, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 464/4686 [04:04<36:49,  1.91it/s, lr=1.3e-05, eta=1:18:05, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 464/4686 [04:04<36:49,  1.91it/s, lr=1.3e-05, eta=1:18:03, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 465/4686 [04:04<35:24,  1.99it/s, lr=1.3e-05, eta=1:18:03, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 465/4686 [04:05<35:24,  1.99it/s, lr=1.3e-05, eta=1:18:02, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 466/4686 [04:05<35:28,  1.98it/s, lr=1.3e-05, eta=1:18:02, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 466/4686 [04:05<35:28,  1.98it/s, lr=1.3e-05, eta=1:18:02, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 467/4686 [04:05<36:14,  1.94it/s, lr=1.3e-05, eta=1:18:02, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 467/4686 [04:05<36:14,  1.94it/s, lr=1.3e-05, eta=1:18:00, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 468/4686 [04:05<34:18,  2.05it/s, lr=1.3e-05, eta=1:18:00, iter_time=0.53]\rTrain[29/30]:  10%|█▉                  | 468/4686 [04:06<34:18,  2.05it/s, lr=1.3e-05, eta=1:17:57, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 469/4686 [04:06<33:01,  2.13it/s, lr=1.3e-05, eta=1:17:57, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 469/4686 [04:07<33:01,  2.13it/s, lr=1.3e-05, eta=1:18:01, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 470/4686 [04:07<39:21,  1.79it/s, lr=1.3e-05, eta=1:18:01, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 470/4686 [04:07<39:21,  1.79it/s, lr=1.3e-05, eta=1:18:00, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 471/4686 [04:07<37:31,  1.87it/s, lr=1.3e-05, eta=1:18:00, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 471/4686 [04:08<37:31,  1.87it/s, lr=1.3e-05, eta=1:17:58, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 472/4686 [04:08<36:06,  1.94it/s, lr=1.3e-05, eta=1:17:58, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 472/4686 [04:08<36:06,  1.94it/s, lr=1.3e-05, eta=1:17:57, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 473/4686 [04:08<35:58,  1.95it/s, lr=1.3e-05, eta=1:17:57, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 473/4686 [04:09<35:58,  1.95it/s, lr=1.3e-05, eta=1:17:56, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 474/4686 [04:09<34:44,  2.02it/s, lr=1.3e-05, eta=1:17:56, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 474/4686 [04:09<34:44,  2.02it/s, lr=1.3e-05, eta=1:17:54, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 475/4686 [04:09<34:25,  2.04it/s, lr=1.3e-05, eta=1:17:54, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 475/4686 [04:10<34:25,  2.04it/s, lr=1.3e-05, eta=1:17:55, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 476/4686 [04:10<36:19,  1.93it/s, lr=1.3e-05, eta=1:17:55, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 476/4686 [04:10<36:19,  1.93it/s, lr=1.3e-05, eta=1:17:54, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 477/4686 [04:10<36:04,  1.94it/s, lr=1.3e-05, eta=1:17:54, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 477/4686 [04:11<36:04,  1.94it/s, lr=1.3e-05, eta=1:17:54, iter_time=0.53]\rTrain[29/30]:  10%|██                  | 478/4686 [04:11<37:12,  1.89it/s, lr=1.3e-05, eta=1:17:54, iter_time=0.53]"
+      }
+    }
+  },
+  "training": [
+    {
+      "id": "AdaRES-Y56",
+      "gpu": "0",
+      "pid": 13738,
+      "process_verified": true,
+      "native_progress_verified": true,
+      "phase": "Train",
+      "epoch": 29,
+      "total_epochs": 30,
+      "first_step": [
+        29,
+        378
+      ],
+      "last_step": [
+        29,
+        478
+      ],
+      "parsed_current_segment_metric": [
+        [
+          0.5038473010063171,
+          0.4996519684791565,
+          0.5021383762359619,
+          0.5080499649047852,
+          0.5043911337852478,
+          0.5048328042030334,
+          0.5084453821182251,
+          0.5074434876441956,
+          0.5109891295433044,
+          0.5058001279830933,
+          0.5032233595848083,
+          0.5023688673973083,
+          0.4993094801902771
+        ],
+        0.5109891295433044,
+        4
+      ],
+      "observed_error": false
+    }
+  ],
+  "health": {
+    "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+    "devices": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 280.00, 245.44, 83, 79, 57, 22684, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 390.00, 385.70, 73, 62, 100, 23526, 24576\n",
+      "stderr": ""
+    },
+    "performance": {
+      "rc": 0,
+      "stdout": "\n==============NVSMI LOG==============\n\nTimestamp                                 : Wed Oct 21 10:44:42 2026\nDriver Version                            : 550.90.07\nCUDA Version                              : 12.4\n\nAttached GPUs                             : 2\nGPU 00000000:21:00.0\n    Performance State                     : P2\n    Clocks Event Reasons\n        Idle                              : Not Active\n        Applications Clocks Setting       : Not Active\n        SW Power Cap                      : Not Active\n        HW Slowdown                       : Not Active\n            HW Thermal Slowdown           : Not Active\n            HW Power Brake Slowdown       : Not Active\n        Sync Boost                        : Not Active\n        SW Thermal Slowdown               : Active\n        Display Clock Setting             : Not Active\n    Sparse Operation Mode                 : N/A\n\nGPU 00000000:4A:00.0\n    Performance State                     : P2\n    Clocks Event Reasons\n        Idle                              : Not Active\n        Applications Clocks Setting       : Not Active\n        SW Power Cap                      : Active\n        HW Slowdown                       : Not Active\n            HW Thermal Slowdown           : Not Active\n            HW Power Brake Slowdown       : Not Active\n        Sync Boost                        : Not Active\n        SW Thermal Slowdown               : Not Active\n        Display Clock Setting             : Not Active\n    Sparse Operation Mode                 : N/A\n\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "disk": {
+      "rc": 0,
+      "stdout": "Filesystem         1B-blocks          Used    Available Use% Mounted on\n/dev/sda1      3936818806784 3600175853568 136586924032  97% /bak_home\n",
+      "stderr": ""
+    }
+  },
+  "devices": {
+    "0": {
+      "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "power_limit_watts": 280.0,
+      "draw_watts": 245.44,
+      "temperature_c": 83.0,
+      "fan_percent": 79.0,
+      "utilization_percent": 57.0,
+      "memory_used_mib": 22684,
+      "memory_total_mib": 24576
+    },
+    "1": {
+      "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      "power_limit_watts": 390.0,
+      "draw_watts": 385.7,
+      "temperature_c": 73.0,
+      "fan_percent": 62.0,
+      "utilization_percent": 100.0,
+      "memory_used_mib": 23526,
+      "memory_total_mib": 24576
+    }
+  },
+  "idle_authorized_gpus": [],
+  "result": "blocked_no_exclusive_GPU",
+  "native_smoke_executed": false,
+  "queue_changed": false,
+  "hardware_settings_changed": false,
+  "limitation": "Source/goal/commit identity and live resources only. No new CPU diagnostic, native sparse backward, admission or efficacy result. Slot opening requires a fresh native GPU check and verified launch, not just this observation."
+}

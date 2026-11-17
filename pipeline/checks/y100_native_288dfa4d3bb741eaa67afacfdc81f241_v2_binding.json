@@ -1,0 +1,153 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y100",
+  "code_commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+  "parent_commit": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "retained_branch": "refs/heads/adares-y100-appearance-input-skip",
+  "working_HEAD": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "main_index_unchanged": true,
+  "CPU_tested_scientific_files_exact": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y100_cpu_version_288dfa4d3bb741eaa67afacfdc81f241_source_snapshot.json",
+    "sha256": "faf6d6ed0c67ded83f5f9c5d91c3db4778d9159878341338dc400d55e6c5cc5d"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y100_cpu_288dfa4d3bb741eaa67afacfdc81f241.json",
+    "sha256": "3687fb579adc75ad62971b2b3500044c04d77379503fe1efa15cedb5f049c31b"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y100_cpu_288dfa4d3bb741eaa67afacfdc81f241_program.py",
+    "sha256": "a072e1c0526f43c07e80b61cfad5af05fbae52a7bdabea9725087877df66175a"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y100_cpu_version_288dfa4d3bb741eaa67afacfdc81f241.index",
+    "sha256": "06136f597f5559b40bd3860b6a1f860d04c922a796bb58221d8bc5a161335f19"
+  },
+  "matching_current_owners": {
+    "server-1": "AdaRES-Y99",
+    "server-2": "AdaRES-Y98"
+  },
+  "actual_parent_native": {
+    "path": "pipeline/analyses/y99_server1_smoke_cc7e16a3523147a4be1fa5774e4888ce.json",
+    "sha256": "4fbf60662e5e97785da94519caa975ba1efc92e89f868c80ae8fb9cc8aa51ffd"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y100_cpu_native.py",
+    "sha256": "b7b6e7c00d6be75a0c0b210d38fccb256d5053c7d1a2b09ecae732cbf080c7e1"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y100_cpu_version_288dfa4d3bb741eaa67afacfdc81f241_source_snapshot.json",
+      "sha256": "faf6d6ed0c67ded83f5f9c5d91c3db4778d9159878341338dc400d55e6c5cc5d"
+    },
+    {
+      "path": "pipeline/analyses/y100_cpu_288dfa4d3bb741eaa67afacfdc81f241.json",
+      "sha256": "3687fb579adc75ad62971b2b3500044c04d77379503fe1efa15cedb5f049c31b"
+    },
+    {
+      "path": "pipeline/analyses/y100_cpu_288dfa4d3bb741eaa67afacfdc81f241.log",
+      "sha256": "ddb57b1de1e90f65bf00723f76c493c4afe90d9e26585b1a63a5ddae3e1497a8"
+    },
+    {
+      "path": "pipeline/checks/y100_cpu_288dfa4d3bb741eaa67afacfdc81f241_program.py",
+      "sha256": "a072e1c0526f43c07e80b61cfad5af05fbae52a7bdabea9725087877df66175a"
+    },
+    {
+      "path": "pipeline/checks/y100_cpu_version_288dfa4d3bb741eaa67afacfdc81f241.index",
+      "sha256": "06136f597f5559b40bd3860b6a1f860d04c922a796bb58221d8bc5a161335f19"
+    },
+    {
+      "path": "pipeline/checks/y100_CPU_guards_288dfa4d3bb741eaa67afacfdc81f241.log",
+      "sha256": "e567eaf9e3de26643791c307f9952af2c267e5262586dce3df895e4bf277c401"
+    },
+    {
+      "path": "scripts/retain_y100_cpu_native.py",
+      "sha256": "b7b6e7c00d6be75a0c0b210d38fccb256d5053c7d1a2b09ecae732cbf080c7e1"
+    },
+    {
+      "path": "pipeline/analyses/y99_server1_smoke_cc7e16a3523147a4be1fa5774e4888ce.json",
+      "sha256": "4fbf60662e5e97785da94519caa975ba1efc92e89f868c80ae8fb9cc8aa51ffd"
+    },
+    {
+      "path": "scripts/run_y100_native.py",
+      "sha256": "ff6fac236934691bd58c063b040da0200bdc53857c696ead2081955a169c1104"
+    },
+    {
+      "path": "scripts/test_y100_runtime_plan.py",
+      "sha256": "208845226ecf7b95d2e01eaca7faa7d4774f8379694632f2666558d113134dde"
+    },
+    {
+      "path": "pipeline/checks/y100_native_288dfa4d3bb741eaa67afacfdc81f241_runtime_guards.log",
+      "sha256": "ce7b1903985afb85a842462312d5f386102767fc48aa8dbfc4c5e9d7c0307a63"
+    },
+    {
+      "path": "scripts/repair_y100_native_binding.py",
+      "sha256": "62338b9d34297f06d67cffa454a01dd111756598d6e6bbeab7b2ce08645ebbd8"
+    }
+  ],
+  "token": "288dfa4d3bb741eaa67afacfdc81f241",
+  "observed_at": "2026-11-11T20:05:03.401165+08:00",
+  "preserved_original_CPU_version": {
+    "path": "pipeline/checks/y100_cpu_version_288dfa4d3bb741eaa67afacfdc81f241.json",
+    "sha256": "d1aa0aaf35461e04d689624a1d73e85d54d9f459ab7c52cbf052dd2691a970a8"
+  },
+  "original_Y98_Y99_preserved": true,
+  "original_owner_rows": [
+    {
+      "id": "AdaRES-Y99",
+      "server": "server-1",
+      "gpu": "0",
+      "pid": 2980836,
+      "code_commit": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+      "config": "configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml",
+      "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y99_spatial_mask_skip_res_20261111_180628.log",
+      "status": "running",
+      "launch_verified": true
+    },
+    {
+      "id": "AdaRES-Y98",
+      "server": "server-2",
+      "gpu": "0",
+      "pid": 25962,
+      "code_commit": "15c3481ff32456160b5a94588565f68f0d2d2c5b",
+      "config": "configs_song/model_paper5/adares_y98_appearance_mask_skip_res.yaml",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y98_appearance_mask_skip_res_20261110_210741.log",
+      "status": "running",
+      "launch_verified": true
+    }
+  ],
+  "metadata_correction": "Replace stale template-only earlier_Y94_preserved with explicitly verified original_Y98_Y99_preserved. Original draft/failure/CPU evidence/seven scientific files/native program bodies remain unchanged; no scientific or GPU replay."
+}

@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "token": "f1530bdf58584643a61863e448871a72",
+  "preregistered_at": "2026-10-19T15:11:26.721369+08:00",
+  "hypothesis_id": "competitor_representation_multiplicity_context_nuisance",
+  "hypothesis": "For a fixed focal query and a fixed unique set of mask/query competitors, changing only how many exact copies represent each non-focal competitor may change native confidence through overlap-row-normalized context. Diagnose counterfactual multiplicity nuisance before proposing a model correction.",
+  "matched_control": "Replay the exact committed native256-d indicator class on CPU with128 queries, fixed seed1999 and fixed masks/point masses. Compare counts[1,63,64] versus[1,64,63], keeping the focal query and unique competitor set identical. Use repeat/row-permutation/identical-competitor-feature negative controls; an inverse-multiplicity fixture reference must reproduce the singleton focal output of the same native head on three unique prototypes. Use float32 and float64 and dtype-derived arithmetic bounds, never a task-gain threshold.",
+  "source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "class_sha256": "f3be3936a68148101a864a0ad5680e29451193fdbb1b76a88de67755305273c1",
+  "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+  },
+  "program": {
+    "path": "pipeline/analyses/y56_density_program_f1530bdf58584643a61863e448871a72.py",
+    "sha256": "1221e1a4da41ff214a37a12af8bb2dba9227e68597a7dee44a5e1c8e74739158"
+  },
+  "body": {
+    "path": "scripts/probe_y56_competitor_density_cpu.py",
+    "sha256": "d4a08e0408ac945be440d2d4168e1dd0ec8a2be9525a8554bf52a4fad2682515"
+  },
+  "expected": "Focal context/logit differences above fixed arithmetic/repeat controls under multiplicity-only change, absent with identical competitor features; inverse-count focal reference agrees with unique prototypes. No efficacy claim.",
+  "native_full_gates": "not executed",
+  "actual_train_incidence": "unknown",
+  "status": "pending"
+}

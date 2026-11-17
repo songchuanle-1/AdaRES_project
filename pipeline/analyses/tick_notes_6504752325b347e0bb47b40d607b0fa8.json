@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "核实实际任务ID与execution_mode绑定一致、closure启用、Windows后台调度Disabled。仅执行一次AdaRES_project canonical begin --auto-steady并首先读compact view；快照2026-10-11 14:48:34.520351+08，deadline15:48:34.520351+08，monitor_rc=0、goal_rc=0。",
+    "复用脚本事实表：Y37进程未见，deathwatch从1/3变为2/3，canonical明确暂不处置且仍为running，无新终态。当前epoch/最佳值/进程/GPU占用未知；12:48:12日志30/30及0.5052仅为历史，不能宣称正常完成、崩溃或腾卡。",
+    "Y39/GPU1原始日志25/30，四舍五入最佳mIoU 0.5078、no_improve=1/30，科学状态仍为TRAINING/training_not_efficacy。结构化指标、利用率和显存仍未知，日志提高不替代训练后冻结评审。",
+    "活跃2/运行2/目标2/准入预算0/到期候选0/新终态0，唯一事件原因research_artifact_changed。复用上轮Y37按ID查询结果，不重复监控、引用读取、已关闭实验评审或等价诊断；新增候选/证据/准入/训练均未发生。已在租约内更新七段记忆与六段报告notes。执行状态在写报告时等待finish，须实际PASS/COMPLETE及独立锁消失才能称完成。",
+    "本轮收据用量窗口和计数在finish前未知，最终产出以收据为准；finish后只补任务回复，不在租约释放后写项目。用量只覆盖begin至recorded的部分本地窗口，缓存含于输入、推理含于输出，不重复相加、不代表账单。"
+  ],
+  "decisions": [
+    "Y37 deathwatch 2/3仍是待确认状态，按后续正常canonical监控核验；不重复preflight加速计数、不盲目重启、不写done_complete/crashed、不据此使用GPU0。原日志、代码与checkpoint保留，暂无需用户操作。",
+    "准入目标已满足且无到期候选，按真实停止条件收尾本轮event；不制造路线耗尽、资源阻塞、冷却或无信息增益实验，不撑满deadline。",
+    "Y39继续原固定30 epochs/seed1999，保留门控，不早停或验证集调参。目标0.515未达，Y36数值champion 0.5110非科学晋升；保留W2，Phase2仍未授权。",
+    "后续Y37 canonical终态后执行既有冻结9508表达式/141场景、Y37/W2/B1各两次/FIRST主结果、场景bootstrap10000/seed1999、TRAIN切点1487/3325、伤害门控/重复噪声/训练后成本；确认崩溃才按真实原因诊断。未执行评估保持待执行，不记PASS。",
+    "仅操作AdaRES_project，不操作其他项目或调度，不新建任务、不嵌套codex exec、不恢复后台；下次触发时间未知，以既有自动化为准。"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-25T21:58:03.027186+08:00",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "after": {
+    "gpu": "100, 16200, 350.00",
+    "compute": "2540376"
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y62",
+      "label": "AdaRES-Y62 fixed30",
+      "config": "configs_song/model_paper5/adares_y62_overlap_density_res.yaml",
+      "status": "running",
+      "gpu": "0",
+      "server": "server-1",
+      "depends_on": [],
+      "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y62.json",
+      "scientific_candidate_id": "AdaRES-Y62",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "dispatch_phase": "progress_pending",
+      "claimed_gpu": "0",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "pid": 2540376,
+      "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y62_overlap_density_res_20261025_215723.log",
+      "launched": "2026-10-25T21:58:02"
+    },
+    {
+      "id": "AdaRES-Y63",
+      "label": "AdaRES-Y63 fixed30",
+      "config": "configs_song/model_paper5/adares_y63_peer_bilinear_res.yaml",
+      "status": "waiting",
+      "gpu": 0,
+      "server": "server-1",
+      "depends_on": [],
+      "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y63.json",
+      "scientific_candidate_id": "AdaRES-Y63",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true
+    }
+  ],
+  "events": [
+    "队列推送 [AdaRES-Y62 fixed30] configs_song/model_paper5/adares_y62_overlap_density_res.yaml → server-1 gpu0"
+  ],
+  "Y57_still_paused": true
+}

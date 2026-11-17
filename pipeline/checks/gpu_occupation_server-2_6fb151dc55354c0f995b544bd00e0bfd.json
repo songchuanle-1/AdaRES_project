@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "6fb151dc55354c0f995b544bd00e0bfd",
+  "snapshot_generated_at": "2026-10-29T09:37:21.720153+00:00",
+  "snapshot_sha256": "789cbd6a4d458472b415b7b2565050dbbfd2db23217743510972300377cc1b5f",
+  "servers_sha256": "ed15aeebb90638fcced4f0e57c4b76761cf2d7c04d201afeaf6e55ca025cbe7a",
+  "observed_at": "2026-10-29T09:45:40.462729+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0,
+      1
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 90, 22720, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 74, 16898, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 112356\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100811\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 6fb151dc55354c0f995b544bd00e0bfd --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_6fb151dc55354c0f995b544bd00e0bfd.log",
+    "sha256": "3c831f8bca1a00278629fdfe422350fde8877e7d581823c0e77128256a288ef3"
+  }
+}

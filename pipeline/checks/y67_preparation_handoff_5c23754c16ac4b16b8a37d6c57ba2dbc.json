@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "token": "5c23754c16ac4b16b8a37d6c57ba2dbc",
+  "observed_at": "2026-10-29T13:03:23.279026+08:00",
+  "CPU_result": {
+    "path": "pipeline/analyses/y67_cpu_attempt2_5c23754c16ac4b16b8a37d6c57ba2dbc.json",
+    "sha256": "80258d1fd9a11f4124b052885146b793e98ec296e784529ae62dd1778bc35a64"
+  },
+  "CPU_first_failure_log": {
+    "path": "pipeline/analyses/y67_cpu_5c23754c16ac4b16b8a37d6c57ba2dbc.log",
+    "sha256": "1c39899ac93434dce8d356106b5fca0285c6aaca132b34cbd8b6c40807d20682"
+  },
+  "diagnostic_repair": {
+    "path": "pipeline/checks/y67_cpu_diagnostic_repair_5c23754c16ac4b16b8a37d6c57ba2dbc.json",
+    "sha256": "94f4c08b2f8c3a7bd62b2cdfcfa03fffd59bd128356da3639c96e1183bc40f67"
+  },
+  "CPU_recheck_passed": true,
+  "model_and_YAML_unchanged_during_diagnostic_repair": true,
+  "committed_seven_files_match_CPU_payload": true,
+  "code_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "native_plan": {
+    "path": "pipeline/checks/y67_native_5c23754c16ac4b16b8a37d6c57ba2dbc_plan.json",
+    "sha256": "712eed27e83aab8a4094b2943ac4c02cbc92039d6fbe6c1639341d6b1880077e"
+  },
+  "native_plan_guard_tests_passed": 8,
+  "native_sparse_GPU_steps_executed": false,
+  "admitted": false,
+  "queued": false,
+  "production_sync": false,
+  "hardware_changed": false,
+  "Y65_Y66_original_receipts_preserved": true,
+  "Y57_paused": true,
+  "server2_occupation": {
+    "path": "pipeline/checks/gpu_occupation_server-2_5c23754c16ac4b16b8a37d6c57ba2dbc.json",
+    "sha256": "65c7051fffa5ca691499a58fef8ea689efb60ee2c527f0df7709b735ba164219"
+  },
+  "server1_occupation": {
+    "path": "pipeline/checks/gpu_occupation_server-1_5c23754c16ac4b16b8a37d6c57ba2dbc.json",
+    "sha256": "e77fd56d5cf8b7aecdc14458a6da7947a6567fe8b9ef4224b6c8304c3b12c776"
+  },
+  "efficacy": "Unmeasured. CPU formula/decoder controls do not establish trained utility or native task PASS."
+}

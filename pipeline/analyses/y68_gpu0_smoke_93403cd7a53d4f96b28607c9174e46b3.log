@@ -1,0 +1,6 @@
+Using backend: pytorch
+2026-10-29 18:51:01,501 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=787 unexpected=0
+2026-10-29 18:51:02,315 - INFO - Load train scanrefer: 36665 samples
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:20<?, ?it/s, lr=0.0001, eta=0:20:29, iter_time=20.84]Train[1/30]:  50%|██████████          | 1/2 [00:20<00:20, 20.84s/it, lr=0.0001, eta=0:20:29, iter_time=20.84]Train[1/30]:  50%|██████████          | 1/2 [00:21<00:20, 20.84s/it, lr=0.0001, eta=0:10:21, iter_time=10.71]Train[1/30]: 100%|████████████████████| 2/2 [00:21<00:00,  8.93s/it, lr=0.0001, eta=0:10:21, iter_time=10.71]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:21<00:00, 10.71s/it, lr=0.0001, eta=0:10:21, iter_time=10.71]

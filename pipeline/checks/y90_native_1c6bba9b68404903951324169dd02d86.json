@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "token": "1c6bba9b68404903951324169dd02d86",
+  "code_commit": "9a64d22c41bb8527ca7ca1abba4340546506b1b1",
+  "CPU_version": {
+    "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86.json",
+    "sha256": "d490dd81a7d83b2b3f0d41e4ca168ee0a6466e8d4a8737b53bd1fc760e77e62b"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y90_cpu_1c6bba9b68404903951324169dd02d86.json",
+    "sha256": "9b5220fee05f562320d5512d7eac070c57cd83c2bafb003220e95ad23964e77d"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y90_cpu_1c6bba9b68404903951324169dd02d86_program.py",
+    "sha256": "08b38303087f420049a463ea3790a356a3261dbf7a5231c37355b177af06d94f"
+  },
+  "native_plans": {
+    "server-2": {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server2_plan.json",
+      "sha256": "c0101d7d884351e355b94e5b1c04d3b5ab89e841b257be821547a4fce8e982c9"
+    },
+    "server-1": {
+      "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server1_plan.json",
+      "sha256": "5af2197e8bb025e454447441796d5d6cb31cbd2cc832de4707d8cb6f4444b3cb"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_guards.log",
+    "sha256": "ec9cec1d74f824b8095591fc99248462d0d545edd68ae6209329cf86637ab0b0"
+  },
+  "guard_tests_passed": 10,
+  "exact_callback_functions_and_classes": 11,
+  "CPU_native_callbacks_actually_executed": true,
+  "observer_core": {
+    "path": "scripts/y90_observer_core.py",
+    "sha256": "e999b6f55c0790e7714b86443b8fa4184d6ee6d3238843251ca7945665e88ecb"
+  },
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "original_data_proof": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "earlier_Y89_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y90_cpu_native.py",
+    "sha256": "8c4c55a40a2d22fa9e986df1fb6189828db4a6dee98655bb0eb89ec27c9d38fd"
+  }
+}

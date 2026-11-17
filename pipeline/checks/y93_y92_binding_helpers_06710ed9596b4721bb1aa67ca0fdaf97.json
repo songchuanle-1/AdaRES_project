@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "token": "06710ed9596b4721bb1aa67ca0fdaf97",
+  "observed_at": "2026-11-08T09:06:15.900562+08:00",
+  "original_templates": [
+    {
+      "path": "scripts/run_y92_bound_native.py",
+      "sha256": "54d4f072758764ca6bfb9eb9fefb863e2269b9e61cef7dba9287a15887d64497"
+    },
+    {
+      "path": "scripts/rebind_y92_on_y91.py",
+      "sha256": "a4126b878275a4d15559fc28a3c86b3e143b68a9bafc2a78d6c1ece8548e7ad5"
+    }
+  ],
+  "generated": [
+    {
+      "path": "scripts/run_y93_bound_native.py",
+      "sha256": "186fc3418d799fdd7d1a1d816c8c611d04211c3db528e35a5de5361b19c132b4"
+    },
+    {
+      "path": "scripts/rebind_y93_on_y92.py",
+      "sha256": "d88cc5863f56c8fbb288f7c77ab9248ab222e3d832846cbc2acdd4ef5fb05b87"
+    }
+  ],
+  "helper": {
+    "path": "scripts/create_y93_y92_binding_helpers.py",
+    "sha256": "698655d85e900ee9fe82d458ac086e6d0e74f533f52ecf93672c9a85dbe35827"
+  },
+  "generation_only": true,
+  "guards_executed": false,
+  "native_executed": false,
+  "production_HEAD_index_queue_and_work_unchanged": true
+}

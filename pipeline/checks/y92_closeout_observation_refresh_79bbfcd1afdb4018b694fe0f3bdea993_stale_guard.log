@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\project\AdaRES_project\scripts\record_y92_wait.py", line 123, in <module>
+    record(parser.parse_args().token)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\record_y92_wait.py", line 83, in record
+    assert 0 <= age.total_seconds() < 300, 'Refresh actual native observation under a new label'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Refresh actual native observation under a new label

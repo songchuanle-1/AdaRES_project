@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y86",
+  "config": "configs_song/model_paper5/adares_y86_overlap_readout_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "2d2a0b98865977a6e2f37d316979344ffc56817c",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "retained_branch": "refs/heads/adares-y86-overlap-readout-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 9,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y86_gpu0_smoke pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "required_resource": "Fresh exclusive idle/unreserved server-2 GPU0/280W after exact Y85 terminal verification/archive; preserve Y84 and both user pauses.",
+  "checks": "Original YAML/TRAIN two finite losses/backward/optimizer, fourteen exact all-stage original confidence/max-overlap consumers and scalar projection references, zero then nonzero response, original/new/input gradients and updates, original masks/gates/head/norms/native modes and memory.",
+  "program": {
+    "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_gpu0_program.py",
+    "sha256": "4941294b7d6158a36fbda95a1cc0491822fdeb6ab20245d9464a79274f9d1aac"
+  }
+}

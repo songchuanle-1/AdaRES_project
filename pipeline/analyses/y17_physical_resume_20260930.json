@@ -1,0 +1,46 @@
+{
+  "scope": "paired native gorilla save/resume, RNG diagnostic replay",
+  "before_continuation": {
+    "model": {
+      "equal": true,
+      "max": 0.0
+    },
+    "optimizer": {
+      "equal": true,
+      "max": 0.0
+    },
+    "scheduler": {
+      "equal": true,
+      "max": 0
+    },
+    "epoch": 1
+  },
+  "first": {
+    "loss": 4.574512004852295,
+    "pair_js": 0.0008883089758455753,
+    "finite": true,
+    "pair_count": 4
+  },
+  "uninterrupted": {
+    "loss": 3.874269485473633,
+    "pair_js": 6.674644392745677e-09,
+    "finite": true,
+    "pair_count": 4
+  },
+  "resumed": {
+    "loss": 3.8742709159851074,
+    "pair_js": 6.674632402337011e-09,
+    "finite": true,
+    "pair_count": 4
+  },
+  "continuation_model": {
+    "equal": false,
+    "max": 5.868077278137207e-05
+  },
+  "continuation_optimizer": {
+    "equal": false,
+    "max": 4.382600309327245e-07
+  },
+  "complete": true,
+  "whole_dataloader_rng_resume_claim": false
+}

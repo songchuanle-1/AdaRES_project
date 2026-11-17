@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "token": "c6d79f26e64942afa2d8fc1b134a7dfa",
+  "observed_at": "2026-11-13T01:53:00.727845+08:00",
+  "Y101_observation": {
+    "path": "pipeline/checks/production_adares-y101_c6d79f26e64942afa2d8fc1b134a7dfa_release.json",
+    "sha256": "524000f5a10978949a59879df6c0c4ca631a976338ce28b79243cb66c117ded7"
+  },
+  "Y102_diagnostic": {
+    "path": "pipeline/checks/y102_phase_hold_c6d79f26e64942afa2d8fc1b134a7dfa_diagnostic.json",
+    "sha256": "f5e15059524473bb73beb631ddcee2b44015a329e95e78b855fd88b7fd3f0378"
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_c6d79f26e64942afa2d8fc1b134a7dfa.json",
+      "sha256": "21bb5412a04e55524253fd2d3c224a61e8263820afdf7ead3224ab5e75b753df"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_c6d79f26e64942afa2d8fc1b134a7dfa.json",
+      "sha256": "ca4df2e846d98443312d57c59aa10a8e2a72bcae1c9180b28660f269f89a1578"
+    }
+  },
+  "snapshot_goal_rc": 4,
+  "admission_budget": 0,
+  "creation_budget": 0,
+  "ledger_training_best_triggered_phase_gate": true,
+  "formal_FIRST_evaluated": false,
+  "formal_goal_achievement_claimed": false,
+  "terminal_preparation_passed": false,
+  "checkpoint_directory_unknown": true,
+  "new_scientific_candidates": 0,
+  "scientific_CPU_replays": 0,
+  "native_GPU_tasks": 0,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "checkpoint_loaded": false,
+  "training_restarted": false,
+  "original_Y100_archive_not_replayed": true,
+  "existing_stack_help_request_not_retried": true,
+  "evidence": [
+    {
+      "path": "scripts/finish_y102_phase_hold_tick.py",
+      "sha256": "760e121e31a653a46487f5b31959531fcb8a0a348201c32a81fd46d29d00360f"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y101_c6d79f26e64942afa2d8fc1b134a7dfa_release.json",
+      "sha256": "524000f5a10978949a59879df6c0c4ca631a976338ce28b79243cb66c117ded7"
+    },
+    {
+      "path": "pipeline/checks/y102_phase_hold_c6d79f26e64942afa2d8fc1b134a7dfa_diagnostic.json",
+      "sha256": "f5e15059524473bb73beb631ddcee2b44015a329e95e78b855fd88b7fd3f0378"
+    },
+    {
+      "path": "pipeline/checks/y102_terminal_generation_c6d79f26e64942afa2d8fc1b134a7dfa.py",
+      "sha256": "c4d5e87b818cca66f8c5fe72b9c1134af187517872397a5c0364311dfb4bc4a4"
+    },
+    {
+      "path": "pipeline/checks/y102_terminal_wrapper_c6d79f26e64942afa2d8fc1b134a7dfa.py",
+      "sha256": "9713c4a39baff742e6380af86e4b35d13d02ea8fc983422765675eae7e40ffd1"
+    },
+    {
+      "path": "pipeline/checks/y102_terminal_original_location_c6d79f26e64942afa2d8fc1b134a7dfa.py",
+      "sha256": "f27f0774ab1467ccd38d3d40f84f865438ee3fe32b19e6f9fa551daab0269a22"
+    },
+    {
+      "path": "pipeline/checks/y102_terminal_original_location_c6d79f26e64942afa2d8fc1b134a7dfa.log",
+      "sha256": "141265a0438938b6c1cf6d3743c5259d5cd16b6e31d45d5e7174fb05d9e98943"
+    },
+    {
+      "path": "scripts/create_y102_terminal_helpers.py",
+      "sha256": "ea90b23caf4862440ee3ce09172bc8af1a68538c6bccdb5ce70fa4b0fedc8bbd"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_c6d79f26e64942afa2d8fc1b134a7dfa.json",
+      "sha256": "21bb5412a04e55524253fd2d3c224a61e8263820afdf7ead3224ab5e75b753df"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_c6d79f26e64942afa2d8fc1b134a7dfa.json",
+      "sha256": "ca4df2e846d98443312d57c59aa10a8e2a72bcae1c9180b28660f269f89a1578"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "final_only": true,
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/dec.py",
+      "sha256": "38415a5d107b3c626cf7f972ea5121ecf940e64874bd68d408b57d192ede9480"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/ipdn.py",
+      "sha256": "a7ffbf5dc2625331b7d69224d6f76bf63f615f5a4d6419333b0a7a407979dfb9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/loss.py",
+      "sha256": "f0219ccc4f46af3586baef9b211716a69f5649d681c571313053018619e4905c"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y45_metric_decomposition/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y45_metric_decomposition_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "intervention": "Query/FG/BG point-mass readout predicts TP/FP/FN fractions; final positive odds get metric odds residual; TRAIN-only categorical likelihood targets.",
+  "limitations": [
+    "Independent local implementation, not admission or efficacy.",
+    "Equal unit coefficient is joint categorical likelihood, not a searched loss weight.",
+    "Multiplicative matching/quality odds assumes complementary evidence; usefulness remains falsifiable."
+  ]
+}

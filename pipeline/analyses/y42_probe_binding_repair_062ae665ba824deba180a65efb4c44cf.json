@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y42",
+  "original_programs_preserved": [
+    {
+      "original": "scripts/probe_y42_parent_semantics.py",
+      "original_sha256": "aa4b97d0067c5efe308c6602a81b2a6fc4f88a18397bb6294e5e51b6bf854294",
+      "repaired": "scripts/probe_y42_parent_semantics_v2.py",
+      "repaired_sha256": "688918441c98d82181feee778a62c9f7a56eef22935ba683570461f971f03c17"
+    },
+    {
+      "original": "scripts/probe_y42_native_controls.py",
+      "original_sha256": "41bea85e1a329cf6c5793e389a8b0d6f1be7ab206973295538e8a977ea9b17de",
+      "repaired": "scripts/probe_y42_native_controls_v2.py",
+      "repaired_sha256": "9efff60b390ae4085b9f4a279c565a1ed4cae883b255f11470c743e4f13fe444"
+    },
+    {
+      "original": "scripts/probe_y42_initial_loss_investigation.py",
+      "original_sha256": "7ae3600cf766d1685e78dfc484d0b514157f5ef0583cc16eaaacf5d5173dadda",
+      "repaired": "scripts/probe_y42_initial_loss_investigation_v2.py",
+      "repaired_sha256": "aa8a1484ff6f4c836533e88935db768bde6c033e7d1e9a6436b217e2d633f348"
+    }
+  ],
+  "failed_logs": [
+    {
+      "path": "pipeline/analyses/y42_parent_semantics_062ae665ba824deba180a65efb4c44cf.log",
+      "sha256": "dc6c64d9c1adccc20ae733004196e1ec1e8ea6b0199bb6975834724df8073033"
+    },
+    {
+      "path": "pipeline/analyses/y42_native_controls_062ae665ba824deba180a65efb4c44cf.log",
+      "sha256": "99d41265a3403bf0651f76b890dd68b87bb8fa099c07eeb1d1cb30a420af6723"
+    }
+  ],
+  "model_source_or_protocol_changed": false,
+  "reason": "Config name doubled by mechanical variance rename; AST adapter mistakenly asserted on unchanged expand_and_fps tuple return.",
+  "scope": "Test-binding repair only. No failed gate relabeled or tolerance relaxed."
+}

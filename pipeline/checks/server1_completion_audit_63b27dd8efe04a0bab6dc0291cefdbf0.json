@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "execution_status": "INCOMPLETE: known postflight mismatch; canonical abort pending, training continues",
+  "finish_invoked": false,
+  "known_rejecting_predicate": [
+    {
+      "id": "AdaRES-Y56",
+      "required_server": "server-2",
+      "stage": "blocked",
+      "queue_opening_in_snapshot": true
+    },
+    {
+      "id": "AdaRES-Y58",
+      "required_server": "server-2",
+      "stage": "blocked",
+      "queue_opening_in_snapshot": true
+    },
+    {
+      "id": "AdaRES-Y59",
+      "required_server": "server-2",
+      "stage": "blocked",
+      "queue_opening_in_snapshot": true
+    },
+    {
+      "id": "AdaRES-Y60",
+      "required_server": "server-2",
+      "stage": "blocked",
+      "queue_opening_in_snapshot": true
+    },
+    {
+      "id": "AdaRES-Y61",
+      "required_server": "server-2",
+      "stage": "blocked",
+      "queue_opening_in_snapshot": true
+    }
+  ],
+  "admissions_this_tick": 2,
+  "admission_budget": 2,
+  "current_source_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "resource_evidence": {
+    "path": "pipeline/checks/gpu0_lifecycle_v4_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "bff69f1315a795873c5bd4c1af4c89acb2c83f1c2abe13f22946651453d18de6"
+  },
+  "training_evidence": {
+    "path": "pipeline/checks/server1_training_progress_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "c4729a22561acf55f08024bd986b05d3f16cedcc3186e191815a3b2dbf41adfa"
+  },
+  "shared_runtime_adapters": [
+    {
+      "path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\closure.py",
+      "sha256": "ae17a1ca1c2312c73ec875440e84020c870f6c7b74378444095c7b522a220836"
+    }
+  ],
+  "queue_opening_function_sha256": "f58c6ba2fbb477a4ff34653897e71d2e04d548ff4fccd7f1683d39313f38d4be",
+  "scope": "Only resource-authorized server-1 runtime/sync/launcher/path support changed; no exclusive-GPU closure predicate was relaxed. Original blocked server-2 jobs and measured foreign occupation are retained."
+}

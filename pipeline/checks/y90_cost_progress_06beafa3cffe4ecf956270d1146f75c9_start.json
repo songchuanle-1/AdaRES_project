@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "before": {
+    "status": "loading_original_TRAIN_cost_data",
+    "id": "AdaRES-Y90",
+    "token": "06beafa3cffe4ecf956270d1146f75c9",
+    "pid": 3294283,
+    "native_cost_batches_done": 0,
+    "observed_at": "2026-11-14T09:53:50.385335+08:00"
+  },
+  "after": {
+    "status": "measuring",
+    "phase": "serial",
+    "method": "candidate",
+    "dataset_index": 0,
+    "id": "AdaRES-Y90",
+    "token": "06beafa3cffe4ecf956270d1146f75c9",
+    "pid": 3294283,
+    "native_cost_batches_done": 1,
+    "observed_at": "2026-11-14T09:55:22.568636+08:00"
+  },
+  "compute_pids": [
+    3294544,
+    3294283
+  ],
+  "native_progress_confirmed": true,
+  "log_tail": "Using backend: pytorch\n2026-11-14 09:53:50,851 - INFO - Load train scanrefer: 36665 samples\n2026-11-14 09:54:18,815 - INFO - set random seed: 1999\n2026-11-14 09:54:54,788 - INFO - set random seed: 1999\n2026-11-14 09:55:21,007 - INFO - set random seed: 1999\n2026-11-14 09:55:21,530 - INFO - set random seed: 1999\n2026-11-14 09:55:22,008 - INFO - set random seed: 1999\n2026-11-14 09:55:22,478 - INFO - set random seed: 1999\n{\"phase\": \"serial\", \"method\": \"candidate\", \"dataset_index\": 0, \"native_cost_batches_done\": 1}\n2026-11-14 09:55:22,596 - INFO - set random seed: 1999\n2026-11-14 09:55:22,677 - INFO - set random seed: 1999\n2026-11-14 09:55:23,196 - INFO - set random seed: 1999\n2026-11-14 09:55:23,914 - INFO - set random seed: 1999\n",
+  "original_training_absent": true,
+  "remote_mutations": false
+}

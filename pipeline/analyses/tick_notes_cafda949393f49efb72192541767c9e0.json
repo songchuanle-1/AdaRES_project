@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "核实实际任务ID与execution_mode绑定一致，closure已启用，Windows后台调度Disabled；仅对AdaRES_project执行一次canonical begin --auto-steady，首先读compact model view。快照2026-10-11 12:48:12.246246+08，deadline为13:48:12.246246+08；monitor_rc=0、goal_rc=0，未重复preflight。",
+    "复用脚本事实表：原始监控显示Y37/GPU0日志30/30，四舍五入最佳mIoU 0.5052、no_improve=10/30；Y39/GPU1日志22/30，最佳0.5069、no_improve=1/30。Y37和Y39的canonical状态仍为running，new_terminal_ids为空；Y37日志30/30不能替代终态确认，不据此宣称GPU空闲或启动训练后评估。",
+    "唯一事件原因为research_artifact_changed，活跃2/运行2/认领0/等待0/目标2/准入预算0/到期候选0/新终态0。没有新的到期诊断、终态或崩溃事项；未新增实验、证据、准入或训练，不重复已关闭方向评审或等价探针。",
+    "结构化表内训练指标及当前GPU利用率、显存和进程均未知；历史PID/旧占用仅为历史，不用于本轮资源分配。科学状态为TRAINING/training_not_efficacy，冻结比较与伤害门控尚未执行，效力仍未知。",
+    "在本轮租约内更新七段研究记忆并保存notes和完整六段报告。本报告生成时执行状态为等待finish校验，只有实际CLOSURE_POSTFLIGHT_PASS/COMPLETE及独立锁消失后才能称本轮COMPLETED。收据用量窗口、调用/token计数在finish前未知；新增候选/证据/训练预计均0，最终以收据为准。finish后只在任务回复补充，不释放后写项目；缓存包含于输入、推理包含于输出，不重复相加、不作为账单。"
+  ],
+  "decisions": [
+    "准入目标已满足且无到期候选，按实际停止条件收尾本轮event；不是科学路线耗尽或新资源故障，不伪造冷却或空转决策，不等待完整训练结束以撑满deadline。",
+    "保留Y37/Y39原训练、代码和checkpoint，固定30 epochs/seed1999，不重启、不早停、不调验证集阈值/温度/权重/特征子集/epoch，也不额外占用GPU。Y37日志30/30仍需后续canonical终态及新鲜占用确认，不能提前腾卡。",
+    "目标0.515未达，自动CSV数值champion Y36 0.5110不代表科学晋升；保留冻结比较对象W2，Phase2仍未授权，不以运行中日志最佳值证明方法有效或无伤害。",
+    "后续确认终态后，按既有冻结协议处理：完整9508表达式/141场景，候选/W2/B1各两次、FIRST主结果、场景bootstrap10000/seed1999、TRAIN切点1487/3325、分组伤害门控、重复噪声和训练后成本。未执行评估保持待执行，不能记为PASS。",
+    "不操作其他项目或调度、不新建任务、不嵌套codex exec、不恢复后台；继续使用现有绑定任务。下次触发时间未知，以已有自动化为准。"
+  ]
+}

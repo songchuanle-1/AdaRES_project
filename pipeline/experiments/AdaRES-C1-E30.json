@@ -1,0 +1,34 @@
+{
+  "id": "AdaRES-C1-E30",
+  "label": "C1 fixed 30-epoch continuation",
+  "status": "done_complete",
+  "server": "server-2",
+  "gpu": "0",
+  "config": "configs_song/model_paper5/adares_c1_listwise_expected_mask_e30_res.yaml",
+  "epochs": 30,
+  "extension_of": "AdaRES-C1",
+  "resume_from": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_c1_listwise_expected_mask_res/20260922_100038/last.pth",
+  "pid": 95294,
+  "remote_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_c1_listwise_expected_mask_e30_res_20260923_081641.log",
+  "launched": "2026-09-23T08:16:41+08:00",
+  "history": [
+    {
+      "ts": "2026-09-23T08:16:41+08:00",
+      "action": "resumed",
+      "gpu": "0",
+      "start_epoch": 11,
+      "epochs": 30,
+      "evidence": "Loaded model, optimizer, and scheduler from epoch-10 last.pth; Train[11/30] has progressed."
+    },
+    {
+      "ts": "2026-09-24T05:47:02.711540",
+      "status": "done_complete",
+      "best_miou": "0.5008",
+      "epochs": "30/30"
+    }
+  ],
+  "final_best": "0.5008",
+  "finished_at": "2026-09-24T05:47:02",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

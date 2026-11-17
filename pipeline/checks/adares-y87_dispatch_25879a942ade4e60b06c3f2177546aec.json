@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "25879a942ade4e60b06c3f2177546aec",
+  "id": "AdaRES-Y87",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y87",
+    "label": "AdaRES-Y87 fixed30",
+    "config": "configs_song/model_paper5/adares_y87_self_language_product_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y87.json",
+    "scientific_candidate_id": "AdaRES-Y87",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 26281,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y87_self_language_product_res_20261106_032555.log",
+    "launched": "2026-11-06T03:26:31"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y87 fixed30] configs_song/model_paper5/adares_y87_self_language_product_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y87.py",
+    "sha256": "5544f3fb7dcd8a509c3562066a41f93024bb912e060231f7005d5cd3f622eaaa"
+  }
+}

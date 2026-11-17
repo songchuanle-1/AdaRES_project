@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y87",
+  "code_commit": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+  "parent_commit": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "retained_branch": "refs/heads/adares-y87-independent-gpu0",
+  "working_HEAD": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y87_cpu_version_dc60f363ea8740af9a89542fb35f0c99_source_snapshot.json",
+    "sha256": "703be6c630017ff141fadc29f65a27914dafad9b958e8d57187b1d511af617bb"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y87_cpu_dc60f363ea8740af9a89542fb35f0c99.json",
+    "sha256": "4266523f6fa843b638644338da2c13ee9b94f51234bf97d5db83ead2c677c909"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y87_cpu_dc60f363ea8740af9a89542fb35f0c99_program.py",
+    "sha256": "bba485d473eb2f213c4928800429edcbdce9eeee88c27f7ff3279c3a072dd0d7"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y87_self_language_product_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y87_independent_gpu0_25879a942ade4e60b06c3f2177546aec.index",
+    "sha256": "386d80016ef67289e5afb862f14b67f755794eb6edd3259e08f79dfb85f251c5"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/activate_y87_independent_gpu0.py",
+    "sha256": "2226c8e386618c31c1d6e8bb6e910abee507ec726b745578ee6121005f3c0e69"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y87_cpu_version_dc60f363ea8740af9a89542fb35f0c99.json",
+    "sha256": "13912d59fbe558bd8566813b4b038204ce86aac3a238abe08cd4149660d129dc"
+  },
+  "model_and_YAML_bytes_unchanged": true,
+  "metadata_only_independent_parent": true,
+  "scientific_revision": false
+}

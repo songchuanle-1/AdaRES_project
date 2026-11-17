@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "9be8b1f99c154401844f5152bc1be782",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T18:50:14.647169+00:00",
+  "recorded_at": "2026-10-16T19:02:06.351728+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: preserved six-section report, one new CPU-only synthetic unit check of the exact frozen native observer, and one due live resource check. No native GPU/model/matching/backward/resource-restore gate executed. GPU0 foreign job remains occupied; GPU1 Y50 native steps advanced. Unchanged canonical checker still predicts CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. Did not replay known-failing finish or alter gates. Canonical abort; independently verify lease release and preserve training.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 15,
+    "input_tokens": 2872099,
+    "cached_input_tokens": 2663680,
+    "output_tokens": 25387,
+    "reasoning_output_tokens": 10372,
+    "total_tokens": 2897486,
+    "uncached_input_tokens": 208419,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 8,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

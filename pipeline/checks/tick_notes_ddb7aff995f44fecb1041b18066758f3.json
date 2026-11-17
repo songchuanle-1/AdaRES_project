@@ -1,0 +1,12 @@
+{
+  "actions": [
+    "已核实际会话归属、Disabled旧调度和前轮FINALIZED/PASS/已释放，canonical begin先监控/目标/已有任务派发；本轮无新终态、waiting或operational issue。",
+    "上海12:46:24至12:46:29确认Y64在server-1 GPU0原PID2752219第7/30轮3475至3483/4686，六源码/原生YAML/marker9706/原准入与GPU独占正常。",
+    "本轮canonical物理占用证明：server-1 GPU0为Y64/2752219且已预留，server-2 GPU0为未登记13813/24138MiB，无授权空槽；已绑定资源阻塞与当前snapshot/token，不干预外部任务。"
+  ],
+  "decisions": [
+    "Y65/Y66两项CPU已测试并保存当前HEAD882d原生检查计划，下一缺项均需真实GPU。两项准备已足够，本轮不凑重复候选、不重复等价CPU检查；如实保留resource_check/blocked。",
+    "空槽后优先Y65再Y66原生YAML/TRAIN两步；实际PASS才冻原后评/准入/入队并当轮派发。当前server-2计划不可直接跨用server-1，须按已验证runtime/路径/350W合法绑定。",
+    "保留Y64同一运行、七项冻结后评、Y57/GPU1暂停、server-2 GPU0 280W和全部禁用项；本轮没有新的科研结论、启动或用户待办。"
+  ]
+}

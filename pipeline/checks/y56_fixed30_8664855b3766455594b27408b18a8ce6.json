@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "process_absent": true,
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/gpu_reboot_resume_adares_y56_unique_competitors_res_76f9c0ca61424281b30c4f491a33b37e.log",
+  "log_sha256": "5300eb86d306ee724f9b3b2465eb742f1d146f6a665a2bf530dd7bee6ef04295",
+  "checkpoints": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5109891295433044,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 30,
+      "sha256": "41a173c705df049d30a9a4fddfb4f765da3dbe5bb180776305b09f0073a84c86"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/best.pth",
+      "epoch": 24,
+      "best_miou": 0.5109891295433044,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 24,
+      "sha256": "ec339d21a17c1df36a8e0c17bb262cbb58fe3153c6a5ddd6f1cb165d02dede65"
+    }
+  ],
+  "final_logged_metrics": [
+    "0.503",
+    "0.553",
+    "0.599"
+  ],
+  "CUDA_initialized": false,
+  "full_frozen_evaluation_executed": false,
+  "hardware_settings_changed": false,
+  "observed_at": "2026-10-22T00:57:47.239241+08:00",
+  "live": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 93, 24026, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 50448, 24018\n",
+    "compute_query_rc": 0,
+    "tasks": {}
+  },
+  "command": "python -B scripts/finalize_y56_fixed30.py --token 8664855b3766455594b27408b18a8ce6"
+}

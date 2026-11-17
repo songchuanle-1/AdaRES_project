@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-Y35",
+  "config": "configs_song/model_paper5/adares_y35_language_evidence_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-09T09:13:03.356907",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-10T11:48:56.077953",
+      "status": "done_complete",
+      "best_miou": "0.5050",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 108331,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y35_language_evidence_res_20261009_091225.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-09T09:13:03",
+  "final_best": "0.5050",
+  "finished_at": "2026-10-10T11:48:56",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

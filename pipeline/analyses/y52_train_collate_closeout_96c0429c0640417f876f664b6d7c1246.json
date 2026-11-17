@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "token": "96c0429c0640417f876f664b6d7c1246",
+  "recorded_at_local": "2026-10-16T19:58:44.384188+08:00",
+  "execution_status": "INCOMPLETE: canonical abort/release check pending",
+  "science": "New real batchsize2 CPU dataflow control passed; SAME Y52 still GPU-blocked, native gates unrun",
+  "references": [
+    {
+      "path": "pipeline/analyses/y52_train_collate_cpu_96c0_96c0429c0640417f876f664b6d7c1246.json",
+      "sha256": "9817f43ec0e59c885478830fc5ecddd11e38942fa8851ff1dfb3dfff8e07ecc5"
+    },
+    {
+      "path": "pipeline/analyses/y52_train_collate_program_96c0429c0640417f876f664b6d7c1246.py",
+      "sha256": "3a70706b6a5e13a310ff8c12c60b7164937476988733ce15d83b4f4dc7eae173"
+    },
+    {
+      "path": "pipeline/analyses/y52_train_collate_prereg_96c0429c0640417f876f664b6d7c1246.json",
+      "sha256": "e2f7bfc941eb744f8c04b827f51dfaf5a53bd2f04f434415aeb239bf6793ff7e"
+    },
+    {
+      "path": "scripts/probe_y52_train_collate_cpu.py",
+      "sha256": "7ccbe355f08f4e4c957184841368875b59b9f158344a257e3a37f3236aceacbe"
+    },
+    {
+      "path": "scripts/prepare_y52_train_collate_cpu.py",
+      "sha256": "c9bfb1410354620c23ab02775f87cd1c3317c00cebee7acd8efce6e27f6f4d22"
+    },
+    {
+      "path": "scripts/record_y52_train_collate_cpu.py",
+      "sha256": "5ea22c32ece6c37f97bc7f7968673babecb569a22edfc0bcb942013dc358d513"
+    }
+  ],
+  "resource_disposition": {
+    "path": "pipeline/analyses/y52_resource_recheck_96c0429c0640417f876f664b6d7c1246.json",
+    "sha256": "8e8b5ab3eb02dc25c27ac8c8593c36c721ec28185f9b8cda3342d7846911cabe"
+  },
+  "new_CPU_dataflow_integration_tests": 1,
+  "model_changes": 0,
+  "implementation_revisions": 0,
+  "admissions": 0,
+  "launches": 0,
+  "new_candidates": 0,
+  "native_full_model_backward": false,
+  "limitation": "Fixed synthetic mask controls on real collated TRAIN inputs test count/annotation/offset plumbing; not learned native predictions, matching frequency, shared-query gradients, GPU resources, restore, admission or trained efficacy."
+}

@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "before": {
+    "state": {
+      "status": "evaluating",
+      "method": "AdaRES-B1",
+      "child_pid": 799819,
+      "completed_methods": [
+        "AdaRES-Y88",
+        "AdaRES-Y36",
+        "AdaRES-W2"
+      ],
+      "log": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-b1.log",
+      "output": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-b1.json",
+      "id": "AdaRES-Y88",
+      "token": "ce356360782a431ab9adc3e015f7d5aa",
+      "worker_pid": 780639,
+      "observed_at": 1794671993.5081677
+    },
+    "latest": {
+      "pass": 0,
+      "chunks": 180,
+      "total_chunks": 363
+    },
+    "worker_alive": true
+  },
+  "after": {
+    "state": {
+      "status": "evaluating",
+      "method": "AdaRES-B1",
+      "child_pid": 799819,
+      "completed_methods": [
+        "AdaRES-Y88",
+        "AdaRES-Y36",
+        "AdaRES-W2"
+      ],
+      "log": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-b1.log",
+      "output": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-b1.json",
+      "id": "AdaRES-Y88",
+      "token": "ce356360782a431ab9adc3e015f7d5aa",
+      "worker_pid": 780639,
+      "observed_at": 1794671993.5081677
+    },
+    "latest": {
+      "pass": 0,
+      "chunks": 240,
+      "total_chunks": 363
+    },
+    "worker_alive": true
+  },
+  "compute_pids": [
+    799819
+  ],
+  "native_progress_confirmed": true,
+  "original_training_absent": true,
+  "remote_mutations": false
+}

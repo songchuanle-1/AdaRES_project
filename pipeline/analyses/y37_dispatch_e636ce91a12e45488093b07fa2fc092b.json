@@ -1,0 +1,32 @@
+{
+  "observed_at_local": "2026-10-10T12:27:02.465504+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y37 final mask global-pair-distribution confidence] configs_song/model_paper5/adares_y37_pair_distribution_res.yaml \u2192 server-2 gpu0"
+  ],
+  "task": {
+    "id": "AdaRES-Y37",
+    "label": "Y37 final mask global-pair-distribution confidence",
+    "config": "configs_song/model_paper5/adares_y37_pair_distribution_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "67f4a1b2a4e7cac0eaa1a6074104cfc4193c2773",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y37.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 20348,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y37_pair_distribution_res_20261010_122625.log",
+    "server": "server-2",
+    "gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-10T12:27:02"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y37.json",
+    "sha256": "5ea6f33b0c06fe97f761c8c0cd451277132e31c330663123482f9a580c24902d"
+  },
+  "preserved_y36_exact": true,
+  "scope": "Canonical gated GPU0-only dispatcher, not a repeated preflight."
+}

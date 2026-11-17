@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "本轮begin预检仍登记Y59 running，是完成后旧登记，不是实际仍训练。随后实查原PID28712及同配置训练均不存在，日志Train30/4686与Val30/363及最后保存公告完整；CPU完整读取并哈希last epoch30/model/optimizer543项/scheduler30与best epoch13/.4956555963。按canonical finalize_task归档Y59=done_complete并拉取完整日志，保留远端检查点/原后评，不伪造deathwatch次数、不重复训练或宣布科学晋升。",
+    "归档后唯一授权GPU0实际空闲：0%/1MiB/36C，280W保持；GPU1外部任务未干预。资源v2包装器在旧采集器清除retry_after后报KeyError，发生在真实空卡结果已保存之后。原脚本及prepared_resources原始输出/失败记录保留；这是操作记录缺陷，不是Y60模型失败或修订，未阻断后续真实检查。",
+    "20:50:37至20:51:12上海，在实时独占GPU0与当前租约守卫下，原Y60冻结程序/同commit6ac/原生YAML/真实TRAIN/tools.train两步optimizer实测通过。两loss7.8867197/8.2183971，599个梯度张量全有限，各七头每步10个梯度张量且末层非零、各调用2次；两批4场景/16表达，峰6515851264bytes。只是初始化最小检查，不是完整数据资源上界或效益。",
+    "仅准入Y60一项，保存experiment_first授权/四门收据和训练后冻结比较计划，当前源/YAML/commit/goal一致；按既有安全同步与门控队列在GPU0启动，PID17186。20:54:25确认命令/cwd/starttime/GPU归属和Train1/30 step20至44；后续v3资源记录step239至340增长。不是只凭PID声称启动。无模型/YAML修改或新Git提交，未使用GPU1/server-6、未改调度。",
+    "Y60启动期GPU0=280W/56至59C，后续74C；短采样未见热降频、新Xid或训练报错，不证明历史硬件问题解决。Y57保持用户暂停及原epoch27/model/optimizer/scheduler检查点，不恢复不迁移。Y56/Y58/Y59后评待独占资源，Y61精确七文件/原CPU payload/decoder goal一致，原生GPU两步仍未执行。",
+    "新增生命周期v3按实际stage与可选retry识别待办，排除在训已准入Y60，分别处理三项完成后评与Y61版本准备。8项CPU回归通过，真实忙卡资源复查通过；旧v1/v2/错误证据不改。当前唯一运行Y60、无waiting；tick_attempt=Y60/native_smoke/passed，所有引用同时归入候选。"
+  ],
+  "decisions": [
+    "保护Y60固定30轮/seed1999原训练和280W限制，效益待完成训练后的原冻结全量对照，不按Y59验证轨迹调参或选择新机制。Y59训练完成只是执行完成，非科学晋升；保留best13/last30及原负结果。",
+    "后续观察使用capture_ef_gpu0_runtime_v2.py --id AdaRES-Y60；资源复查改用recheck_gpu0_lifecycle_v3.py --token CURRENT_TOKEN。不要对已完成Y59使用运行observer，不重放Y59/Y58 finalizer，也不再运行依赖Y60必须待检的旧v2入口。v3为当前已完成/在训/待版本阶段分别留待办，不把空卡或CPU测试当native PASS。",
+    "唯一授权GPU0被已验证Y60占用，Y56/Y58/Y59冻结全量后评与成本比较继续等待；Y61后续保存精确版本、冻结并运行真实原生两步后才准入。当前不新增候选或更改HEAD6ac，不为额度强行占资源。保持GPU0-only/Y57暂停/数据协议/禁用项/调度不变，无重复常规授权需求。",
+    "完整六段报告和七标题记忆留档后执行canonical finish，核验receipt/context提交/锁和pending释放；当前尚不预称postflight通过，释放后不补写。"
+  ]
+}

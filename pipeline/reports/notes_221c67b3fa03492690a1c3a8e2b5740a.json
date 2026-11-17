@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "本轮核验实际会话与前台owner一致、后台调度Disabled；begin完成监控、目标及既有队列派发检查，waiting为0。按最新项目约束仅server-2 GPU0，继续保护Y57暂停、280W和既有训练。",
+    "上海02:48:39实核Y61原PID78290及GPU0归属，Train12/30步数114至136/4686递增，81°C、显存22720MiB、功耗上限280W；采样未见热降频、内核Xid/fallen-off或尾部错误。证据pipeline/checks/ef_gpu0_runtime_221c67b3fa03492690a1c3a8e2b5740a.json，SHA256 7be144b2f0cdade2938acf9d0807509e8baf62fb5a2c43288d36749693c31d0e。GPU1仍有外部计算，未实现整机单卡隔离，硬件根因仍未确定。",
+    "通过生命周期入口核验Y56/Y58/Y59/Y60的完整终态及冻结后评文件，并实测授权GPU0继续被Y61占用，80°C、280W、22720MiB，无独占空槽。证据pipeline/checks/gpu0_lifecycle_v3_221c67b3fa03492690a1c3a8e2b5740a.json，SHA256 b2cdcf38a5224ee1030fe1d2ff5fb879d9fa54b190ade7c3c40df14188fb65cb。tick_attempt为Y56/resource_check/blocked，证据归入相关候选。四项冻结全量后评及成本比较未执行。",
+    "保留Y62已测七文件版本、原生YAML、冻结两步检查计划，以及前853轮的精确版本核验；本轮没有重做CPU检查、新增变体、提交、准入、同步或启动。Y62未通过GPU原生smoke。已更新七段紧凑记忆；完整六段报告由canonical report生成，postflight状态以后续finish和收据为准。"
+  ],
+  "decisions": [
+    "Y61继续在GPU0独占训练并保持280W，Y57继续用户暂停。begin训练日志best 0.4959仅是过程记录，不代表冻结后评或晋升；本轮没有新故障或需用户处理的事项。",
+    "Y62及四项已完成实验等待真实独占GPU0；不挤占训练、不使用GPU1或server-6、不改硬件和调度。空槽出现后，Y62先做原生YAML/TRAIN两步loss/backward/path/resource检查，真实PASS才准入并尝试既有派发；完成实验严格沿用原冻结后评。",
+    "本轮实际资源检查已证实阻塞，按实验优先规则收尾，不为凑满预算重开历史拒绝方向或重复合成测试。下轮先查Y61进展及终态，终态需匹配Y61自己的核验入口，保留模型/optimizer/scheduler和完整日志，不使用Y60专用finalizer。"
+  ]
+}

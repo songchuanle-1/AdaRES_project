@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "token": "eaa6e00eba9249fa86a1f63da10440cb",
+  "observed_at_local": "2026-10-16T16:24:11.815446+08:00",
+  "scientific_status": "Y50 training; SAME Y52 CPU-prepared and genuinely exclusive-GPU blocked",
+  "execution_status": "INCOMPLETE: abort pending",
+  "current_resource": {
+    "path": "pipeline/analyses/y52_resume_status_eaa6_eaa6e00eba9249fa86a1f63da10440cb.json",
+    "sha256": "0cbcca5e9749bfcb234017a8a43b3c3e2ecb0b32021e21245925b2039845862f"
+  },
+  "previous_failure": {
+    "path": "pipeline/analyses/postflight_failure_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "40bf099d83d02ce246072523f272be4c68bf899ab7c21158a71240346fd0abb4"
+  },
+  "unchanged_checker_sha256": "39ee52f17e3afdc15d0fde71bbf78e74bf58c218155709a25861044461cea0d2",
+  "current_queue_opening_predicate": true,
+  "scope": "Read-only evaluation of the exact known rejecting predicate, not a new finish invocation or native scientific test.",
+  "reason": "The checker still sees an opening in own-project queue, while GPU0 is occupied by foreign PID19723 and GPU1 by Y50 PID31539. No authorized idle exclusive slot exists.",
+  "preserved_retry_after": "2026-10-16T17:10:31.428737+08:00",
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "actions_not_taken": [
+    "No repeated CPU experiment, equivalent route review or invented reserve candidate.",
+    "No full GPU diagnostic, code change, admission, Git commit, dispatch, scheduler change or other-project operation.",
+    "No repeated known-failing finish or blocker recategorization to bypass checks."
+  ],
+  "new_candidates": 0,
+  "new_scientific_tests": 0,
+  "model_changes": 0,
+  "admissions": 0,
+  "launches": 0
+}

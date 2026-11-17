@@ -1,0 +1,133 @@
+{
+  "id": "AdaRES-Y56",
+  "candidate_id": "AdaRES-Y56",
+  "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+  "code_commit": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261020-231123_manual_adares-y56.md",
+    "sha256": "2414cf93ed486b1d333a9742945be94c49af596a9f2dae681bddef4318c07393"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_margin_timing_v2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5a4c890fa2ce92d0925cda3ac0081e49d32aecf1f9e785173a2d46c365f56f38"
+        },
+        {
+          "path": "pipeline/analyses/y56_actual_transfer_6debf88fed634a13b772f27bdc244bbd.json",
+          "sha256": "14fb074170fd9720333ea6ee6277089a6c5d9be32aef023d91eacb8662611746"
+        }
+      ],
+      "scope": "Real exact-copy TRAIN mechanism; conditioned discovery, not population harm."
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_cpu_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "070a8aba1e7603bc43645c2cc4340f34d0a2522860426aebfc86dcf2c33affd1"
+        },
+        {
+          "path": "pipeline/analyses/y56_native_rev2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "cedae80d9c51f695e2c9abaa73311bfdd53d8f83ff784205867c43d742954cda"
+        },
+        {
+          "path": "pipeline/analyses/y56_gradient_properties_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "45da3d3b57282d9297d9383c520e84c46b7e51d04f1318a36ab974455ed78fe2"
+        }
+      ],
+      "scope": "Focal-copy/unique-set invariance; raw equality negatives; no-copy W2 bitwise equality;18edge gradient properties."
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_native_rev2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "cedae80d9c51f695e2c9abaa73311bfdd53d8f83ff784205867c43d742954cda"
+        },
+        {
+          "path": "pipeline/analyses/y56_margin_timing_v2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5a4c890fa2ce92d0925cda3ac0081e49d32aecf1f9e785173a2d46c365f56f38"
+        }
+      ],
+      "scope": "Actual released-init loss/all7sites/every indicator tensor; natural initial copy affects confidence and task gradient."
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_resources_rev2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5763a349b3bcfce72f8ad11392189f83458dcd7457222b05afac233c83db13f7"
+        },
+        {
+          "path": "pipeline/analyses/y56_margin_timing_v2_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "5a4c890fa2ce92d0925cda3ac0081e49d32aecf1f9e785173a2d46c365f56f38"
+        }
+      ],
+      "scope": "Bounded pre-training feasibility/compatible cost, not proven post-training global Pareto. One conditioned duplicate scene remains slower; no cost or efficacy threshold relaxed."
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_structure_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "da22040d73bdeea498ef1c6a63b7dcc16d071e94623312545ce3608af0b7b625"
+        },
+        {
+          "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y56_commit_binding_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "14abc4d99539edd9b4703c35bd3ba33ec509ec192299df1b4433d5d01b111ca2"
+        }
+      ],
+      "scope": "Physical six-file package, unique YAML, no cross-variant imports; all non-indicator AST unchanged."
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y56_structure_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "da22040d73bdeea498ef1c6a63b7dcc16d071e94623312545ce3608af0b7b625"
+        },
+        {
+          "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y56_dd8e.md",
+          "sha256": "67a3c59b52b710a9cbee0dbfade485bb7fe486088efce8cd88c17b636ce76501"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y56_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "2aaed3181c54c66ee595a42453005e776f34fc70e6bd086251f61924c1f85a83"
+        },
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        }
+      ],
+      "scope": "Same SPFormer/30epochs/1999/Q128/loss/optimizer/singleargmax; server2GPU0/1 only. No commit/queue/launch."
+    }
+  },
+  "implementation_revision_sha256": "7631ef3098f4ffb0fdcf51a9f7f9c6ee6308a8552542f598c2913e58fa7ba8c4",
+  "admitted_at": "2026-10-20T23:11:23.950152+08:00",
+  "post_training_plan": {
+    "path": "pipeline/analyses/AdaRES-Y56_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "2aaed3181c54c66ee595a42453005e776f34fc70e6bd086251f61924c1f85a83"
+  },
+  "local_commit_authorization": {
+    "path": "pipeline/authorizations/AdaRES-Y56_commit.json",
+    "sha256": "47eede4815c6d8c613050c16b023491829388a5e422ab0b5ef82c6f47010c887"
+  },
+  "limitations": [
+    "Natural copies found only in one of40TRAIN scenes, initial layer; final selector changes not observed.",
+    "Formal native total loss delta below reported float32 loss resolution; nonzero directional readout is not benefit.",
+    "Single conditioned duplicate scene has higher latency; fixed10TRAIN timing is not a worst-case bound.",
+    "Default two implementation revisions consumed; original overcost and failed drivers preserved."
+  ]
+}

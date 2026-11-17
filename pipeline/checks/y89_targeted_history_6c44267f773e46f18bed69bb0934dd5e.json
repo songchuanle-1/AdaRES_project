@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "scope": "Targeted partial-sharing and consumer comparison, not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y26",
+      "stage": "rejected",
+      "hypothesis": "Native query-language cross-attention computes a LayerNorm result but discards it before query self-attention. Its affine parameters therefore cannot learn language-conditioned query calibration. Reconnecting only the existing qla postnorm may remove residual common-mode/scale nuisance and restore a task-loss gradient path; this is a falsifiable implementation mechanism, not a promised accuracy improvement.",
+      "matched_control": "Frozen first64 distinct TRAIN scenes in dataset order, at most4 descriptions, seed1999, identical cached native decoder inputs and W2 checkpoint. Compare native/repeat/identity-return hook, existing qla LayerNorm reconnected, and unit-RMS-only normalization. First8 trained and first4 released-initialization native backward batches compare connected versus detached affine parameters at identical forward values. No padding/token subset, threshold, temperature, loss-weight or validation scan."
+    },
+    {
+      "id": "AdaRES-Y53",
+      "stage": "rejected",
+      "hypothesis": "Masked language-padding feature values may leak through the native decoder into query confidence, although they represent no words. Test actual decoder attention/aggregation, not the semantic-alignment loss denominator addressed by historical Y23. If all native confidence paths mask these positions and matched interventions have no effect beyond repeat noise, reject THIS leakage premise without creating a model variant.",
+      "matched_control": "Keep actual class, parameters, valid-language positions, 3D/query inputs and RNG fixed; compare padding-only feature replacement, an unchanged independent repeat, and a valid-token positive-control replacement. Audit every native path consuming lang_masks. Run exact native module controls first and a frozen TRAIN native-model/decoder-input capture if a task-relevant uncertainty remains. Do not tune mask thresholds, weights, temperature, sample or training epochs."
+    },
+    {
+      "id": "AdaRES-Y55",
+      "stage": "rejected",
+      "hypothesis": "Sentence expansion may misalign W2's point-count mass with the scene/superpoint represented by each expanded feature row, corrupting metric-aligned query competition. The suspected defect is cross-module ordering, not changing the point-mass formula or score target.",
+      "matched_control": "Execute unchanged IPDN.point_masses and expand_and_fps bodies, DEC.get_batches and the exact native indicator on CPU. Independently count original point memberships with Counter and index the reference by expanded original-superpoint identity. Use three frozen unequal replication fixtures and the existing eight TRAIN scenes/four pairs/32 expressions, same seed1999. Identical-repeat/independent-reference controls must agree exactly; deliberately shifted valid masses are a sensitivity control. Substitute only FPS with deterministic CPU indices, explicitly not a full native/FPS test; FPS indices never change feature expansion order."
+    },
+    {
+      "id": "AdaRES-Y60",
+      "stage": "blocked",
+      "hypothesis": "One indicator shared across all seven decoder stages couples confidence fitting for different refinement states. Independent stage-specific indicator heads may let the final head fit its own mask/query distribution without intermediate-stage head-gradient interference. This is a structural training comparison, not an efficacy claim.",
+      "matched_control": "Unchanged AdaRES-W2 native YAML and all seven confidence losses. Clone the initial head for every refinement stage without consuming RNG; keep point-mass competition, masks, selector, targets, optimizer, seed1999 and fixed30."
+    },
+    {
+      "id": "AdaRES-Y67",
+      "stage": "blocked",
+      "hypothesis": "One output LayerNorm affine transform is reused for initial and six refined mask/score readouts although their query distributions differ. Independent per-stage affine readout normalization may reduce shared mask/score-gradient interference. This is an architectural allocation test; existing stage layers can implicitly compensate and benefit is unknown.",
+      "matched_control": "Unchanged W2 native YAML, seven shared confidence-indicator calls and all native losses. Copy the existing out_norm into six private refinement LayerNorms without RNG, retaining stage0 out_norm. Only prediction_head affine sharing changes; Q128/seed1999/fixed30/released SPFormer/selector/Boolean attention gate remain unchanged. +3072 parameters."
+    },
+    {
+      "id": "AdaRES-Y76",
+      "stage": "blocked",
+      "hypothesis": "W2 applies one shared confidence head to initial and six refined queries without an explicit stage input. A learned stage-specific additive query offset may condition that same function on refinement stage while retaining head sharing. Queries may already encode stage; no missing information, novelty or efficacy is presumed.",
+      "matched_control": "Unchanged W2 plus query_for_confidence=query+offset[stage], stage0..6, offset[7,256] exactly zero/no RNG (+1792). Only the shared QueryCompetitionIndicator query normalization receives the offset. Masks, scores, sampling, six refinement paths, point-mass overlap, all channels, one shared confidence MLP and targets/losses, selector, original2D/released backbone/Q128/seed1999/fixed30/native YAML remain unchanged. No stage-count, loss-weight or validation-based sweep."
+    },
+    {
+      "id": "AdaRES-Y83",
+      "stage": "blocked",
+      "hypothesis": "The active norm_qqa affine transform is shared across six recurrent self/language query fusion updates. Independent per-stage copies with identical LayerNorm statistics/epsilon may ease stage-specific representation fitting. Existing stage FFNs can compensate; trained efficacy, missing information and novelty are not presumed.",
+      "matched_control": "Independent unchanged W2. Keep original norm_qqa at refinement stage0 and copy it without RNG into five private refinement_query_norms for stages1..5 (+2560). Only affine parameter sharing in LayerNorm(query_self+query_qla) changes. Initial state and all seven mask/score/confidence predictions match W2; native eps/dtype/full query channels/Q128, shared out_norm/confidence MLP, static mask, initial prediction, hard attention algorithm/sampling/SCG/k/gamma/geometry, original full input/existing2D/released backbone/targets/loss/selector/seed1999/fixed30/native YAML remain. No scans of parameters or validation-selected schedules/features/thresholds/losses."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

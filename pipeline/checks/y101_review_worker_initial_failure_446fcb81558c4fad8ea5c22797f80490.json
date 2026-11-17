@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "token": "446fcb81558c4fad8ea5c22797f80490",
+  "id": "AdaRES-Y101",
+  "failed_command": "python -B scripts/y101_frozen_review_job.py prepare --token 446fcb81558c4fad8ea5c22797f80490",
+  "failure": "ModuleNotFoundError: fcntl on Windows during local guard-only preparation before outputs or remote execution",
+  "original_source": {
+    "path": "pipeline/checks/y101_review_worker_initial_446fcb81558c4fad8ea5c22797f80490.py",
+    "sha256": "169a1f850184b62073e99bbb46198738d58581384a36b5838732156e7701af6d"
+  },
+  "correction": "Move Linux fcntl import into remote worker main; guard logic/scientific evaluator unchanged.",
+  "remote_execution": false,
+  "GPU_used": false,
+  "checkpoint_loaded": false
+}

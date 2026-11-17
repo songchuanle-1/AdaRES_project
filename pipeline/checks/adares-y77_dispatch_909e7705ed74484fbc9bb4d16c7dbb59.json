@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "909e7705ed74484fbc9bb4d16c7dbb59",
+  "id": "AdaRES-Y77",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y77",
+    "label": "AdaRES-Y77 fixed30",
+    "config": "configs_song/model_paper5/adares_y77_geometry_query_init_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y77.json",
+    "scientific_candidate_id": "AdaRES-Y77",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 111334,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y77_geometry_query_init_res_20261102_065901.log",
+    "launched": "2026-11-02T06:59:37"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y77 fixed30] configs_song/model_paper5/adares_y77_geometry_query_init_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y77.py",
+    "sha256": "79f44b9d7ba4c5224d5b8d4f0603785166466b6f2fda440327ffc31a5a822b2f"
+  }
+}

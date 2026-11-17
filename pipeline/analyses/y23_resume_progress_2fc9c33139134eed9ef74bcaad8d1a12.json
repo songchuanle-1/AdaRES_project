@@ -1,0 +1,35 @@
+{
+  "id": "AdaRES-Y23",
+  "pid": 129584,
+  "gpu": "1",
+  "cmdline": "/home/songcl/.conda/envs/adares_project/bin/python -S tools/train.py configs_song/model_paper5/adares_y23_valid_token_support_res.yaml --num_gpus 1 --gpu_ids 1 --resume /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth ",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/resume_adares_y23_valid_token_support_res_20261002_234917.log",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth",
+  "captures": [
+    {
+      "epoch": 5,
+      "total": 30,
+      "step": 167,
+      "batches": 4686,
+      "tail_sha256": "c753db6e01dc4789ae7002d5f22b0a8aa084c9247dd2253a436209da9fef5bc3",
+      "bounded_traceback": false,
+      "bounded_oom": false
+    },
+    {
+      "epoch": 5,
+      "total": 30,
+      "step": 177,
+      "batches": 4686,
+      "tail_sha256": "d61eb6fe0c6aea50d27a922d7f8c12b675625a07afe00260b3267930d9b3f16b",
+      "bounded_traceback": false,
+      "bounded_oom": false
+    }
+  ],
+  "launch_verified": true,
+  "gpu1_csv": "1, 16444, 89\n",
+  "token": "2fc9c33139134eed9ef74bcaad8d1a12",
+  "observed_start_local": "2026-10-02T23:51:12.173796+08:00",
+  "observed_end_local": "2026-10-02T23:51:17.512477+08:00",
+  "scientific_status": "Y23 resumed training; efficacy unknown",
+  "scope": "Two bounded native observations; GPU1 device occupancy, not isolated candidate peak; no bitwise/whole-loader resume equivalence claim. GPU0 not queried."
+}

@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y79",
+  "code_commit": "e0c7dba199fcf1a009941450d04aeb799418a7e6",
+  "parent_commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "retained_branch": "refs/heads/adares-y79-query-language-feedback",
+  "working_HEAD": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y79_cpu_version_08e82df71e3743dcb86c0eec4d39460c_source_snapshot.json",
+    "sha256": "63c88a461e15c989f777cecbb37119cda0bf2be83a7874fbf39095c0766ebe70"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y79_cpu_08e82df71e3743dcb86c0eec4d39460c.json",
+    "sha256": "1f1724a6d4dc9a060525f671e741a25b98ec42c8a6e92c10327f868d96e2a280"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y79_query_language_feedback_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y79_query_language_feedback/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y79_cpu_version_08e82df71e3743dcb86c0eec4d39460c.index",
+    "sha256": "0f04419a7167d6befbaeb0580fd47d6eb17f93cdadf5912e1c8e871e3d681a00"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y79_cpu_version.py",
+      "sha256": "5cdcdbb4974a39ec2d455ba6a9a5b217b35970a31aefc7834bc7f5628f448be7"
+    },
+    {
+      "path": "scripts/probe_y79_cpu.py",
+      "sha256": "981b16cc7f132feedf03b4267ddb5d5129b4d3a6ea5776d285fd263694a36373"
+    },
+    {
+      "path": "scripts/prepare_y79_query_language_feedback.py",
+      "sha256": "aa96c3ee091911af17d9c7e446c6f70fb803e78ad9997660e957b2440b38c6d1"
+    }
+  ]
+}

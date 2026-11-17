@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "ac152ab56dde4aa09b02724bda42c733",
+  "preregistered_at": "2026-10-19T19:01:36.054652+08:00",
+  "hypothesis_id": "competitor_feature_scatter_mean_aliasing",
+  "capture": {
+    "path": "pipeline/analyses/y46_native_capture_d179_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89"
+  },
+  "source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "body": {
+    "path": "scripts/probe_y57_peer_scatter_cpu.py",
+    "sha256": "fabd0b0331a331658a4d3144bcb7e1d8bac4b4a7c1b9fa536e4c12db03cbf840"
+  },
+  "program": {
+    "path": "pipeline/analyses/y57_peer_scatter_ac152ab56dde4aa09b02724bda42c733_program.py",
+    "sha256": "95c837c7d79f72c833018d5a4fc39dbb9f6cdc8780391408035bc787b920e68c"
+  },
+  "frozen": {
+    "source_path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "class_source": "class QueryCompetitionIndicator(nn.Module):\n    \"\"\"Predict confidence from a query and its overlapping competitors.\"\"\"\n\n    def __init__(self, d_model):\n        super().__init__()\n        self.query_norm = nn.LayerNorm(d_model)\n        self.evidence_norm = nn.LayerNorm(3 * d_model + 1)\n        self.head = nn.Sequential(\n            nn.Linear(3 * d_model + 1, d_model),\n            nn.GELU(),\n            nn.Linear(d_model, d_model),\n            nn.GELU(),\n            nn.Linear(d_model, 2),\n        )\n\n    def forward(self, query, pred_masks, batch_mask, point_mass):\n        valid = (~batch_mask).unsqueeze(1).to(pred_masks.dtype)\n        probabilities = pred_masks.sigmoid() * valid\n        weighted = probabilities * point_mass.unsqueeze(1)\n        areas = weighted.sum(-1)\n        intersection = torch.einsum(\n            'bim,bjm->bij', weighted, probabilities\n        )\n        union = areas.unsqueeze(-1) + areas.unsqueeze(1) - intersection\n        overlap = intersection / union.clamp_min(1e-6)\n        diagonal = torch.eye(\n            overlap.shape[-1], dtype=torch.bool, device=overlap.device\n        ).unsqueeze(0)\n        overlap = overlap.masked_fill(diagonal, 0.0)\n\n        competition = overlap / overlap.sum(-1, keepdim=True).clamp_min(1e-6)\n        normalized_query = self.query_norm(query)\n        context = torch.einsum('bij,bjd->bid', competition, normalized_query)\n        max_overlap = overlap.max(-1).values.unsqueeze(-1)\n        evidence = torch.cat(\n            [\n                normalized_query,\n                context,\n                normalized_query - context,\n                max_overlap,\n            ],\n            dim=-1,\n        )\n        return self.head(self.evidence_norm(evidence))",
+    "source_lf_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac",
+    "capture_sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89",
+    "remote_cache": "/tmp/adares_y57_cache_ac152ab56dde4aa09b02724bda42c733.json",
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+    "checkpoint_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52"
+  },
+  "fixed_test": "All inherited8TRAIN scenes/32expressions/Q128, focal index0 fixed before predictions, both float32/64. Per-row centered Householder reflection, coordinate0 projected orthogonal to constant vector and weighted standardized peer mean; no direction search.",
+  "prediction": "Fixed focal query/masks/masses/overlap/counts and peer normalized weighted mean can hide changed peer feature second moments. Test representational capacity, not model harm or validation gain.",
+  "matched_controls": [
+    "Native trained strict W2 head",
+    "Repeat and reverse permutation",
+    "Per-query mean/variance invariance",
+    "Identical-peer feature negative, seed1999",
+    "Source/cache/checkpoint hashes unchanged before and after"
+  ],
+  "arithmetic_rule": "Per-dtype128eps*(1+observed output/context or moment scale); numerical tolerance only, not an efficacy threshold",
+  "distinction": "Feature-value distribution at fixed masks/counts, not Y56 duplicate multiplicity, rejected Y50 joint mask incidence, or within-superpoint feature covariance.",
+  "limitations": [
+    "Algebraic input intervention, native/data reachability and label relevance unproved",
+    "Original capture did not bind checkpoint blob SHA",
+    "No formal model, GPU use, native backward/resources, mIoU evaluation or novelty claim"
+  ],
+  "cpu_only": true,
+  "training_launches": 0,
+  "admission": false
+}

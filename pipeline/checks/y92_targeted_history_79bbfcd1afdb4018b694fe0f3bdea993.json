@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "scope": "Targeted consumer comparison, not novelty or efficacy proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y63",
+      "stage": "blocked",
+      "hypothesis": "The W2 confidence MLP receives focal and overlap-weighted peer vectors through concatenated normalized evidence. An explicit dense bilinear residual may make focal/peer cross-channel interactions easier to fit. The original MLP can represent interactions implicitly; this is an architectural optimization comparison, not a missing-information or efficacy claim.",
+      "historical_scope": "Not Y42 within-superpoint covariance, Y57 peer second moments, Y60 stage-specific heads, Y61 peer-value detach or Y62 overlap-density input. No rejected route is reopened; all original W2 evidence paths remain."
+    },
+    {
+      "id": "AdaRES-Y68",
+      "stage": "blocked",
+      "hypothesis": "Native mask features x_mask(x) are expression-independent before their dot product with language-conditioned queries. A direct valid-language-conditioned channel modulation of the shared mask features may make conditional mask fitting easier. Existing query cross-attention can represent language interactions; this is an architectural comparison, not a missing-information, novelty or efficacy claim.",
+      "historical_scope": "Targeted ledger scan found no FiLM/modulation or language-to-mask-feature path. Y28/Y33/Y40 rejected final-confidence readbacks/alignment; this changes the mask feature formation before all prediction stages and adds no confidence-only readback. Y53 rejected a padding-leak premise; no such premise is reused, and the new mean explicitly excludes padding. Y25 soft gate and Y26 discarded norm reconnect are unchanged. Y65/Y66 query feedback and Y67 stage normalization are absent. No rejected ID is reopened."
+    },
+    {
+      "id": "AdaRES-Y72",
+      "stage": "blocked",
+      "hypothesis": "W2 refines visual instance states with language at every decoder stage but predicts all masks against the same static x_mask features. A shared zero-initialized residual from the current refined visual state into each later mask feature tensor may ease conditional mask fitting. Queries already carry contextual information; missing information, novelty and efficacy are not presumed.",
+      "historical_scope": "This updates per-stage mask features from current refined visual states; not Y68 one static language modulation, Y71 early3D/2D fusion, Y70 coarse/fine query mixing, Y65/Y66 confidence/peer query feedback, Y69 geometry logits or Y67 readout norms. Not Y28/Y33/Y40 final-confidence visual readbacks and not Y25 continuous mask attention gate: original hard-gate rule remains. No rejected ID is reopened and targeted history text is not an exhaustive novelty claim."
+    },
+    {
+      "id": "AdaRES-Y81",
+      "stage": "blocked",
+      "hypothesis": "Native W2 predicts refined masks from each current query against expression-independent static mask features. A shared attention residual from the full current refined query set into each later mask feature tensor may ease instance-conditioned mask fitting. Existing language/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "historical_scope": "Y72 maps current visual states into mask features; Y81 conditions mask features on the full current refined query set via attention. Y68 performs one pooled-language multiplication of static mask features, Y79 changes the language stream, Y80 changes visual states before coarse/fine attention, and Y78 adds previous mask logits. These remain separate frozen experiments, not combined or reopened. This is not a rejected final confidence/history/visual readout, soft training-only attention gate, discarded-normalization reconnection or padding-leakage route. Targeted source/history comparison is not exhaustive novelty evidence."
+    },
+    {
+      "id": "AdaRES-Y85",
+      "stage": "blocked",
+      "hypothesis": "Original query readouts use LayerNorm while x_mask visual embeddings retain per-superpoint mean and magnitude. A single learned affine LayerNorm of all visual mask-feature channels before batching may change mask-fitting geometry. Removing magnitude/mean may also harm fitting; no native defect, missing information, novelty or efficacy is presumed.",
+      "historical_scope": "Y67 unties existing query out_norm across readouts; Y83 unties existing recurrent norm_qqa; this adds one shared normalization to visual x_mask outputs before batching. Rejected Y26 reconnected a discarded query-language norm, which remains untouched here. Y41 changes boundary/interior message normalization, not visual mask-feature channel statistics. No reopening or combination with those routes."
+    },
+    {
+      "id": "AdaRES-Y88",
+      "stage": "blocked",
+      "hypothesis": "Original masks are a dot product between a normalized query and static visual features. A shared zero-initialized projection of squared normalized-query channels before only that dot product may ease nonlinear mask fitting. The query generator already represents nonlinear functions; no defect, missing information, novelty or benefit is presumed.",
+      "historical_scope": "Y63 is a bilinear confidence readout; Y82 and Y87 change recurrent fusion. Y85 normalizes visual mask features. This is a mask-only nonlinear transform after the existing shared out_norm, not those consumers or a combination. No previously rejected mechanism reopened."
+    },
+    {
+      "id": "AdaRES-Y89",
+      "stage": "training",
+      "hypothesis": "The same evidence LayerNorm affine transform calibrates focal query, peer context, difference and maximum overlap at all seven confidence readouts. Independent stage affine copies with the SAME shared confidence MLP and query_norm may ease stage-specific evidence fitting. Existing queries/head can compensate; no missing information, defect, novelty or trained benefit is presumed.",
+      "historical_scope": "Y60 unties the entire indicator including MLP/query_norm; Y89 changes only evidence-normalization affine sharing, retaining the exact original shared MLP/query_norm. Y67 changes mask/score out_norm; Y83 changes recurrent query fusion norm. None is combined, validation-selected or reopened. Rejected Y26 discarded qla norm and Y53/Y55 data premises remain untouched."
+    },
+    {
+      "id": "AdaRES-Y90",
+      "stage": "training",
+      "hypothesis": "Original confidence peers are pooled using only row-normalized soft mask overlap. A shared bounded learned compatibility of the existing normalized focal/peer query pair may ease fitting which overlapping peers influence confidence. Existing query and shared MLP can implicitly encode interactions; no defect, missing information, novelty or trained benefit is presumed.",
+      "historical_scope": "Y63 adds focal/context bilinear logits after aggregation; Y90 changes only pair weighting before the SAME existing peer mean. Y64 adds directional containment context; Y66 feeds peer context into recurrence. Y36/Y37 spatial boundary/pair-distance summaries remain separate. User-paused Y57 peer-second-moment route and all banned/rejected routes are not resumed or combined. Y89 private-normalization preparation remains separate."
+    },
+    {
+      "id": "AdaRES-Y91",
+      "stage": "blocked",
+      "hypothesis": "The original shared confidence MLP maps normalized evidence through two GELU hidden states. Conditioning the second state channel-wise on the first may ease fitting nonlinear evidence interactions. The original MLP can represent such interactions implicitly; no defect, missing information, novelty or trained benefit is presumed.",
+      "historical_scope": "Y63 adds focal-peer bilinear logits outside the MLP; Y91 gates an internal learned hidden representation with the first hidden representation. Y89 changes evidence-norm sharing and Y90 changes peer aggregation; neither is combined. No new mask statistic, visual-readback route, paused Y57 mechanism, Y86 scalar shortcut or rejected qla normalization is reopened."
+    }
+  ],
+  "parent": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

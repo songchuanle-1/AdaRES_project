@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "token": "43918606f4664f7cbf0ec847ee66feff",
+  "observed_at": "2026-11-01T12:58:41.191922+08:00",
+  "original_live_training": {
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_43918606f4664f7cbf0ec847ee66feff_progress.json",
+      "sha256": "3f09d379d796922454b761929c681623fd68402c1dfa1e54d4e95f87bbf624b1"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_43918606f4664f7cbf0ec847ee66feff_progress.json",
+      "sha256": "892ace3c5e38e8dd06b9a1f4d6346f37c76ca170a4383a4abf6841e4733c9d88"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_43918606f4664f7cbf0ec847ee66feff_progress.json",
+      "sha256": "c61b15ff28a6b404cb5e6753cb5d44757dc19646aa2cda1b55331a987d781066"
+    }
+  },
+  "Y73_terminal_preparation": {
+    "path": "pipeline/checks/y73_terminal_preparation_43918606f4664f7cbf0ec847ee66feff.json",
+    "sha256": "a837a121d19c7bacdfc2d10c5bad2f9c18b776be50e6180798203c90902db7cf"
+  },
+  "Y73_terminal_guards_passed": 20,
+  "Y73_declared_checkpoint_directory": "20261031_051122",
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_43918606f4664f7cbf0ec847ee66feff.json",
+      "sha256": "c4914050a60538a2df203c051ebf1a527755bad1cb878215c415891a7ce386a1"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_43918606f4664f7cbf0ec847ee66feff.json",
+      "sha256": "bf18ed6e9d81d9a7d9ee26717e05ac22dc76a984756b028d4a2567d00bf2c9b1"
+    }
+  },
+  "prepared_integrity": [
+    {
+      "id": "AdaRES-Y75",
+      "source_manifest": {
+        "path": "pipeline/checks/y75_cpu_version_e04205f48d2f4f5eb7898ec10c1981d0.json",
+        "sha256": "991c3a7dd9eeb9b555abf3d2918bec9049ff747c2a6df166e80c11218301fbe2"
+      },
+      "CPU_callback": {
+        "path": "pipeline/checks/y75_native_observer_verification_e04205f48d2f4f5eb7898ec10c1981d0.json",
+        "sha256": "9f925fd3590fe7a9d4d878bc39d00d3c4474e62f65f16b7ee5e4dba54daf00c6"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu0_plan.json",
+          "sha256": "bea4b3e680f0fbf9d824d47a7982f068fdf2734d6703e54dbf946c1392f7b355"
+        },
+        {
+          "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu1_plan.json",
+          "sha256": "a8d84f0117b10a97d5eed5f2d95b9b4b9f0b37945e32d6138783f86533b27e45"
+        }
+      ],
+      "integrity_verified": true,
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y76",
+      "source_manifest": {
+        "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "37485b9b3a404188d2df8a71d47b6888c7d27656f2421d1e385f1e4f41caf304"
+      },
+      "CPU_callback": {
+        "path": "pipeline/checks/y76_native_observer_verification_dd81fa2cdb754585ab9d4ab0da627f70.json",
+        "sha256": "a30fe2ab6341033539d5a6dc9ac18d0048471a59c85b14ed22c49c81e5c4abf1"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu0_plan.json",
+          "sha256": "c32ec64c054cadffb9ea34d49a7a0b3e8e8ce9a1668695920c0db78c72fd366c"
+        },
+        {
+          "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu1_plan.json",
+          "sha256": "c87bf5936d869793e8710d6674fef4b4e1b42f8726936ccdebeb121d975580c9"
+        }
+      ],
+      "integrity_verified": true,
+      "native_GPU_executed": false
+    }
+  ],
+  "new_candidates": 0,
+  "new_model_tests": false,
+  "new_terminal_guard_tests": 20,
+  "native_GPU_executed": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_terminal_archives": 0,
+  "checkpoint_loaded": false,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "HEAD_unchanged": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "conclusion": "Y73 Train28 remains live; exact original fixed30 handoff prepared and actual read-only identity/location checks passed. All authorized cards busy; no actual terminal/full checkpoint verification/archive or new GPU task executed."
+}

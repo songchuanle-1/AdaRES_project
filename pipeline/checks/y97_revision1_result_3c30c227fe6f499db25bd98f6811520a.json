@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "token": "3c30c227fe6f499db25bd98f6811520a",
+  "id": "AdaRES-Y97",
+  "revision": 1,
+  "original_failure_preserved": true,
+  "original_files_unchanged": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/__init__.py",
+      "sha256": "82e013e616abb0b5446cf83709c703c7752e33763df1106c8b0dbd1c43042ff1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/dec.py",
+      "sha256": "c25405e499bb2f88575b2bcdd298e9f8f69fd63741c03560a07adc7530410dee"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y97_language_quadratic_input_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "registration": {
+    "path": "pipeline/checks/y97_revision1_registration_3c30c227fe6f499db25bd98f6811520a.json",
+    "sha256": "c5acd218b87fc8ac32dc2179645966f1309ee27f5b963cdf77a3ef87d44e3614"
+  },
+  "revised_program": {
+    "path": "pipeline/checks/y97_rev1_cpu_3c30c227fe6f499db25bd98f6811520a_program.py",
+    "sha256": "5f4dfa99030969e04e243202ff5ad55afce2ad817b78b8909240b22885b04d36"
+  },
+  "result": "failed",
+  "observation": "The preregistered tokenwise execution revision failed the unchanged full CPU program. Preserve the exact assertion and full raw log; no CPU/native PASS or mechanism rejection.",
+  "actual_result": null,
+  "original_CPU_guards_unchanged": true,
+  "original_native_guards_unchanged": true,
+  "error_tail": "Using backend: pytorch\n2026-11-08 15:58:38,257 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=787 unexpected=0\n2026-11-08 15:58:39,692 - INFO - Load train scanrefer: 36665 samples\n2026-11-08 15:58:44,136 - INFO - set random seed: 1999\n/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.\n  warnings.warn(msg, FutureWarning)\nTraceback (most recent call last):\n  File \"<stdin>\", line 349, in <module>\n  File \"/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py\", line 1130, in _call_impl\n    return forward_call(*input, **kwargs)\n  File \"/bak_home/songcl/Project/AdaRES_project/pipeline/probes/3c30c227fe6f499db25bd98f6811520a/y97_rev1_cpu/adares_y97_language_quadratic_input_rev1/dec.py\", line 528, in forward\n    return self.forward_iter_pred(x, fps_seed_sp, batch_offsets, lang_feats, lang_masks, sp_pos, feats_2d, point_mass)\n  File \"/bak_home/songcl/Project/AdaRES_project/pipeline/probes/3c30c227fe6f499db25bd98f6811520a/y97_rev1_cpu/adares_y97_language_quadratic_input_rev1/dec.py\", line 324, in forward_iter_pred\n    lang_feats = self.language_quadratic(self.lang_proj(lang_feats), lang_feats) \n  File \"/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py\", line 1151, in _call_impl\n    hook_result = hook(self, input, result)\n  File \"<stdin>\", line 205, in capture_adapter\nAssertionError",
+  "CPU_only": true,
+  "native_GPU_executed": false,
+  "admission": false,
+  "efficacy_measured": false,
+  "recorded_at": "2026-11-09T05:03:51.421442+08:00",
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y97_rev1_cpu_3c30c227fe6f499db25bd98f6811520a.log",
+      "sha256": "5c7993dd799e185077a11ee2388ae15599a3b22b906a0f924abce6eb7b04087a"
+    },
+    {
+      "path": "scripts/revise_y97_tokenwise_projection.py",
+      "sha256": "019d53560dabe17dd4e55380e581b822afdb97654eb2c18829057829dd89d87d"
+    }
+  ]
+}

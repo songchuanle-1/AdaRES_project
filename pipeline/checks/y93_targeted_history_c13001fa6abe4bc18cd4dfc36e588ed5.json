@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "scope": "Targeted full-evidence/hidden connection comparison, not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y26",
+      "stage": "rejected",
+      "hypothesis": "Native query-language cross-attention computes a LayerNorm result but discards it before query self-attention. Its affine parameters therefore cannot learn language-conditioned query calibration. Reconnecting only the existing qla postnorm may remove residual common-mode/scale nuisance and restore a task-loss gradient path; this is a falsifiable implementation mechanism, not a promised accuracy improvement.",
+      "matched_control": "Frozen first64 distinct TRAIN scenes in dataset order, at most4 descriptions, seed1999, identical cached native decoder inputs and W2 checkpoint. Compare native/repeat/identity-return hook, existing qla LayerNorm reconnected, and unit-RMS-only normalization. First8 trained and first4 released-initialization native backward batches compare connected versus detached affine parameters at identical forward values. No padding/token subset, threshold, temperature, loss-weight or validation scan."
+    },
+    {
+      "id": "AdaRES-Y60",
+      "stage": "blocked",
+      "hypothesis": "One indicator shared across all seven decoder stages couples confidence fitting for different refinement states. Independent stage-specific indicator heads may let the final head fit its own mask/query distribution without intermediate-stage head-gradient interference. This is a structural training comparison, not an efficacy claim.",
+      "matched_control": "Unchanged AdaRES-W2 native YAML and all seven confidence losses. Clone the initial head for every refinement stage without consuming RNG; keep point-mass competition, masks, selector, targets, optimizer, seed1999 and fixed30."
+    },
+    {
+      "id": "AdaRES-Y63",
+      "stage": "blocked",
+      "hypothesis": "The W2 confidence MLP receives focal and overlap-weighted peer vectors through concatenated normalized evidence. An explicit dense bilinear residual may make focal/peer cross-channel interactions easier to fit. The original MLP can represent interactions implicitly; this is an architectural optimization comparison, not a missing-information or efficacy claim.",
+      "matched_control": "Unchanged W2 plus zero-initialized two-channel dense bilinear weights on normalized focal query and its existing overlap-weighted context, divided by sqrt(d_model). No extra RNG, new evidence statistics, thresholds, loss, selector, schedule, feature selection or numerical search. Keep all seven shared-head losses, released SPFormer, seed1999 and fixed30."
+    },
+    {
+      "id": "AdaRES-Y76",
+      "stage": "blocked",
+      "hypothesis": "W2 applies one shared confidence head to initial and six refined queries without an explicit stage input. A learned stage-specific additive query offset may condition that same function on refinement stage while retaining head sharing. Queries may already encode stage; no missing information, novelty or efficacy is presumed.",
+      "matched_control": "Unchanged W2 plus query_for_confidence=query+offset[stage], stage0..6, offset[7,256] exactly zero/no RNG (+1792). Only the shared QueryCompetitionIndicator query normalization receives the offset. Masks, scores, sampling, six refinement paths, point-mass overlap, all channels, one shared confidence MLP and targets/losses, selector, original2D/released backbone/Q128/seed1999/fixed30/native YAML remain unchanged. No stage-count, loss-weight or validation-based sweep."
+    },
+    {
+      "id": "AdaRES-Y86",
+      "stage": "blocked",
+      "hypothesis": "The existing maximum peer-overlap scalar enters a joint evidence LayerNorm and nonlinear confidence head. A separate zero-initialized two-output linear shortcut of that SAME scalar at all seven readouts may ease confidence fitting. The head already receives this information; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2 except shared confidence logits += existing_max_overlap * learned_zero_vector2. Exactly two new parameters, no RNG; no new mask statistic, graph, data or selector. Keep original all128 queries/all channels, overlap formula/diagonal/padding/mass, full inputs/2D/backbone/coordinates/sampling/SCG/k/gamma, original shared head/norms/masks/gates/targets/loss/seed1999/fixed30/native YAML. Initial all-stage outputs and input gradients must match W2. Nonzero intervention changes only confidence and restores exactly."
+    },
+    {
+      "id": "AdaRES-Y89",
+      "stage": "blocked",
+      "hypothesis": "The same evidence LayerNorm affine transform calibrates focal query, peer context, difference and maximum overlap at all seven confidence readouts. Independent stage affine copies with the SAME shared confidence MLP and query_norm may ease stage-specific evidence fitting. Existing queries/head can compensate; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2. Original evidence_norm for initial confidence; six no-RNG deep copies for refinement readouts, +9228/total164638865. Keep original LayerNorm statistics/epsilon/dtype/full769 evidence dimensions, one shared MLP and query_norm, all point-mass competition, all original queries/masks/scores, seven targets/losses/selector, data/fullinputs/2D/releasedbackbone/sampling/SCG/hardgate algorithm/seed1999/fixed30/native YAML. All original outputs and input/aggregate norm gradients anchor; final private intervention changes only final confidence and restores."
+    },
+    {
+      "id": "AdaRES-Y90",
+      "stage": "training",
+      "hypothesis": "Original confidence peers are pooled using only row-normalized soft mask overlap. A shared bounded learned compatibility of the existing normalized focal/peer query pair may ease fitting which overlapping peers influence confidence. Existing query and shared MLP can implicitly encode interactions; no defect, missing information, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2, Aij=1+tanh(qnorm_i @ zeroW256x256 @ qnorm_j /sqrt(256)); context row-normalizes original off-diagonal overlap*A. Shared W/no RNG/+65536. Retain original overlap/max-overlap, masks/scores/queries, all Q128 peers/full channels/point masses/shared head and norms, original data/2D/releasedbackbone/sampling/SCG/gates/targets-loss-selector/seed1999/fixed30/native YAML. Initial all-output/input-gradient anchors exact; nonzero affinity/bypass controls, exact input/consumer/gradient/two updates required. Individual-stage row-constant gates may cancel; require aggregate nonzero learned context response over seven readouts, not fabricated per-stage efficacy. No temperature/threshold/degree/weight/validation scan."
+    },
+    {
+      "id": "AdaRES-Y91",
+      "stage": "training",
+      "hypothesis": "The original shared confidence MLP maps normalized evidence through two GELU hidden states. Conditioning the second state channel-wise on the first may ease fitting nonlinear evidence interactions. The original MLP can represent such interactions implicitly; no defect, missing information, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2. h1=GELU(L1(evidence_norm(original_evidence))), h2=GELU(L2(h1)); final logits=L3(h2*(1+tanh(h1@W/sqrt256))). Shared zeroW256x256/no RNG/+65536. Original five MLP layers and both norms retain initial weights and seven-stage sharing; all original query/mask/mass/overlap/context/evidence, masks/scores/Boolean gates, full inputs/existing2D/releasedbackbone/sampling/SCG/targets-loss-selector/seed1999/fixed30/native YAML unchanged. Exact zero output/RNG and close input-gradient anchors; confidence-only intervention/bypass and original hidden consumers/finite new gradients/two updates required. No numerical/feature/validation scan."
+    },
+    {
+      "id": "AdaRES-Y92",
+      "stage": "blocked",
+      "hypothesis": "Original static visual mask embeddings are used by a dot product with normalized queries. A shared zero-initialized projection of squared visual channels before original batching may ease visual-side nonlinear mask fitting. The original x_mask MLP already has nonlinear capacity; no defect, missing information, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2; features_mask=x_mask+x_mask.square()@zeroW256x256 once before the SAME original batching and seven mask dots. One W/no RNG/+65536. Query normalization, score and shared confidence consumers stay original. Original all channels/points/data/2D/backbone/sampling/SCG/refinement/point masses/gate algorithm/targets/loss/selector/seed1999/fixed30 and native YAML unchanged. Exact zero output/RNG/weight/seven-stage anchors and input gradients; nonzero initial mask response/unchanged initial scores and exact bypass required."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

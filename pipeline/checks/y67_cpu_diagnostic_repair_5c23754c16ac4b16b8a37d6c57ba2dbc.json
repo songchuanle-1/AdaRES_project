@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "observed_at": "2026-10-29T12:57:44.266764+08:00",
+  "original_probe": {
+    "path": "scripts/probe_y67_cpu.py",
+    "sha256": "960d5f61b73475401b2ebe677c37846c1112e3d50d141f946ba0dfcf4e2dc461"
+  },
+  "original_program": {
+    "path": "pipeline/checks/y67_cpu_5c23754c16ac4b16b8a37d6c57ba2dbc_program.py",
+    "sha256": "419e02c64f0ecf21a826c175e307a08594060586d8692328e7364b785a23d174"
+  },
+  "failure_log": {
+    "path": "pipeline/analyses/y67_cpu_5c23754c16ac4b16b8a37d6c57ba2dbc.log",
+    "sha256": "1c39899ac93434dce8d356106b5fca0285c6aaca132b34cbd8b6c40807d20682"
+  },
+  "failed_test": "CPU diagnostic backwards through outputs computed before deliberate bias intervention/restoration; autograd parameter version mismatch.",
+  "failure_scope": "implementation",
+  "diagnostic_harness_only": true,
+  "model_and_YAML_bytes_changed": false,
+  "repair": "Recompute the private-gradient-test forward after restoring the deliberate bias intervention. No change to model, outputs or gradient requirement.",
+  "repaired_probe": {
+    "path": "scripts/probe_y67_cpu_attempt2.py",
+    "sha256": "da529db995ab5e40485994ce702fc7ef8647ddd20e695045ca0d35ddb1bf4762"
+  },
+  "repaired_program": {
+    "path": "pipeline/checks/y67_cpu_5c23754c16ac4b16b8a37d6c57ba2dbc_attempt2_program.py",
+    "sha256": "f54c5f0fd501cbfde9f4a39514ac288b69673cbc657cd6a5a1ab4bd2d5460470"
+  },
+  "recheck_executed": false,
+  "admitted": false
+}

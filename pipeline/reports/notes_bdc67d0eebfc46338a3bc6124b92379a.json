@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "快照2026-10-25T22:51:17.395123+00:00：核验实际会话属于AdaRES_project，后台Pipeline-AdaRES_project Disabled，canonical begin已查询进展和检查既有派发；running1/waiting1/ready1，无新增终态或运行故障。前cd048轮收据已核FINALIZED/PASS/committed/released。",
+    "上海10月26日06:51:36至06:51:41核Y62同PID2540376/server-1 GPU0，第11/30轮596到605/4686增长，六文件/原生YAML/源码marker一致，bounded尾部无错误。证据pipeline/checks/server1_training_progress_bdc67d0eebfc46338a3bc6124b92379a.json，SHA256 150a3af32bdf3b2badfecbf26934185f12dc4df972f3ea1141907d9142f30d42。",
+    "于2026-10-25T22:51:34.806066+00:00实测server-2 GPU0被外来PID13813占用，100%利用率、24138/24576MiB，无授权空槽。canonical证据pipeline/checks/gpu_occupation_server-2_bdc67d0eebfc46338a3bc6124b92379a.json，SHA256 d13fb4a389beadaa968e5b19d4892c0588b2159014151dc5d1f71469fb330396；原始日志绑定Y56/Y58/Y59/Y60/Y61/Y64，真实resource_check/blocked已保存。",
+    "核Y64既有CPU源manifest的7文件哈希逐项一致，HEAD仍82fbd9fb1fc56da6afee5b145f59cfa533464707。更新七段紧凑记忆，将前轮Y64 CPU准备明确标为历史，不重复执行其prepare/record或CPU测试。"
+  ],
+  "decisions": [
+    "Y62现有训练继续，Y63已准入并等候server-1 GPU0；Y64保持CPU准备完成、原生GPU两步检查待跑，无新增候选/提交/生产同步/准入/启动。保留Y63版本，空槽后再推进Y64限定版本/原生计划及真实检查。",
+    "五项fixed30完成实验的全量冻结后评/成本比较继续等待授权独占资源；server-2 GPU0保持280W，Y57/GPU1用户暂停，禁止server-6及干扰外来任务。不把CPU后向、正常训练步数或静态Unknown描述当作训练效益证据。",
+    "当前是正常训练推进与原有资源等待，未出现需新增用户操作的实质变化；本轮心跳静默。保存完整六段报告，finish后核FINALIZED/PASS/committed/released和锁/pending缺失，释放后不补写。"
+  ]
+}

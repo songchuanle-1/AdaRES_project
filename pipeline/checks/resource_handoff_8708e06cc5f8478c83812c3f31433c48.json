@@ -1,0 +1,118 @@
+{
+  "complete": true,
+  "token": "8708e06cc5f8478c83812c3f31433c48",
+  "snapshot_generated_at": "2026-11-01T20:46:50.635102+00:00",
+  "observed_at": "2026-11-01T20:49:55.208857+00:00",
+  "original_live_training": {
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_8708e06cc5f8478c83812c3f31433c48_progress.json",
+      "sha256": "86211a9097e5a16d8f66f03d8e9ab8070a59f8f1985cc5a676028170516fdc04"
+    },
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_8708e06cc5f8478c83812c3f31433c48_progress.json",
+      "sha256": "bdeb02cc6a8d660214930b118e293734867c9105fa2f2fd3a238a277b754bbf5"
+    },
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_8708e06cc5f8478c83812c3f31433c48_progress.json",
+      "sha256": "8795bb0f7cb2f7659ce9c6dda7527207f24ae750f528bb2535fc9949e68e65e8"
+    }
+  },
+  "phases": {
+    "AdaRES-Y74": {
+      "phase": "Train",
+      "epoch": 29,
+      "total": 30,
+      "step": 2425,
+      "count": 4686
+    },
+    "AdaRES-Y75": {
+      "phase": "Train",
+      "epoch": 19,
+      "total": 30,
+      "step": 3397,
+      "count": 4686
+    },
+    "AdaRES-Y76": {
+      "phase": "Train",
+      "epoch": 10,
+      "total": 30,
+      "step": 1059,
+      "count": 4686
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_8708e06cc5f8478c83812c3f31433c48.json",
+      "sha256": "fce41445c8a1f3c90c3aabc96aa52f90ce6c29c7b69ded44823128a27e6f8711"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_8708e06cc5f8478c83812c3f31433c48.json",
+      "sha256": "a455f9d3f2f3de26c012c8d20c931846207ba1a624d4f65c0a2a0f6fb5cd89be"
+    }
+  },
+  "prepared_integrity": [
+    {
+      "id": "AdaRES-Y77",
+      "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+      "source_manifest": {
+        "path": "pipeline/checks/y77_cpu_version_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "7a4dc912137beb6c4f8a1a561acdc889d8efcdaa488bc4b1d540a95877e0d2b3"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y77_native_observer_verification_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "611f75018189b74ba22f4a6fdddc5a646ed303435758468e5e3211bb54697650"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu0_plan.json",
+          "sha256": "dc7f8ee061c1d8ec8a66a992c4df6cef4a458a8c9b076dcac3f5427f2016c5f9"
+        },
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu1_plan.json",
+          "sha256": "dd25b99b22513509496c740cabc6f25787c5a40a295703f1cb46166d345a5455"
+        }
+      ],
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y78",
+      "code_commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+      "source_manifest": {
+        "path": "pipeline/checks/y78_cpu_version_ff905b6425914adf9fad62756595f48b.json",
+        "sha256": "a0c3b80389a7cb81cccb3369deb83751a3967da920c289bc80a75b3867bfcbb0"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y78_native_observer_verification_ff905b6425914adf9fad62756595f48b.json",
+        "sha256": "906686be15350422cb87c763fe0e5f56d901810c722495ce91750e0ca73201ce"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu0_plan.json",
+          "sha256": "eb2dca6e779963893c9ea94c9a112db71379e71a4423dfa7add352d5f7e2e0b7"
+        },
+        {
+          "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_plan.json",
+          "sha256": "3d558538aa54441398ee92cf77839e1df295df781b96b7a493d19f1668faebd9"
+        }
+      ],
+      "native_GPU_executed": false
+    }
+  ],
+  "Y74_terminal_preparation": {
+    "path": "pipeline/checks/y74_terminal_preparation_a9374849fe11427daad7364d4bbdedba.json",
+    "sha256": "c07cb67ec23d83d4924e8399ae90ebae7c74f976dfe5028f61ff27cf996e5f2a"
+  },
+  "Y74_terminal_dependencies_intact": true,
+  "Y74_still_training": true,
+  "Y74_checkpoints_loaded": false,
+  "Y74_archived": false,
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_archives": [],
+  "native_GPU_executed": false,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "HEAD_unchanged": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "conclusion": "Original Y74/Y75/Y76 native counters advance under unchanged PIDs/source/YAML/receipts/power. All three GPUs busy with original compute owners and canonical reservations. Y74 is still in Train29; original terminal plan remains intact but unexecuted. Y77/Y78 exact native preparations intact; no new terminal, task/admission/dispatch or formal metric."
+}

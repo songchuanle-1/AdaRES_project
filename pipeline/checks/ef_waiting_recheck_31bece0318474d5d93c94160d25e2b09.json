@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-22T14:49:26.587635+08:00",
+  "resource_observed_at": "2026-10-22T14:47:31.197919+08:00",
+  "resource_evidence": {
+    "path": "pipeline/checks/prepared_resources_31bece0318474d5d93c94160d25e2b09.json",
+    "sha256": "5d1393aec6e8dbeefdeaf69c94ddd28ad4a61654b6997781c6ad7134c97f1391"
+  },
+  "command": "python -B scripts/recheck_ef_waiting_gpu0.py --token 31bece0318474d5d93c94160d25e2b09",
+  "checks": [
+    {
+      "id": "AdaRES-Y58",
+      "status": "running",
+      "receipt_verified": true,
+      "exact_files": 7,
+      "HEAD_matches_receipt": true
+    },
+    {
+      "id": "AdaRES-Y59",
+      "status": "waiting",
+      "receipt_verified": true,
+      "exact_files": 7,
+      "HEAD_matches_receipt": true
+    },
+    {
+      "id": "AdaRES-Y61",
+      "exact_files": 7,
+      "immutable_CPU_payload": {
+        "path": "pipeline/checks/y61_cpu_3c92a71dd21447688bbadff8c0c10db5_program.py",
+        "sha256": "6425d256c12c5af0a4fbbc6d558cc52ab34f3ff143c05539224234938fe6695c"
+      },
+      "source_identity_verified": true,
+      "native_smoke_passed": false,
+      "source_committed": false
+    }
+  ],
+  "current_HEAD": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "result": "blocked_GPU0_occupied",
+  "waiting_id": "AdaRES-Y59",
+  "waiting_order_preserved": true,
+  "native_smoke_executed": false,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "new_candidates": 0,
+  "limitation": "Current receipts/source/payload/resource checks only; no new CPU/GPU model test, admission, launch or trained-efficacy result."
+}

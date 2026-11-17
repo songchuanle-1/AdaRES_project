@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "上海12:52核Y65原Train9/30从3029至3039、Y66原Train3/30从1583至1591；六源码/YAML/cwd/config/marker/原准入/GPU0独占通过，server-2保持280W。上轮Y64终态已完整归档，不重放。",
+    "按快照待跑0/creation2新增独立Y67：七阶段mask/score读出各自学习LayerNorm仿射参数，保留原七次共享confidence头/损失及数据/seed1999/fixed30/Q128/selector/Boolean gate，+3072参数；不预证收益。",
+    "Y67首轮CPU检查因诊断脚本在参数干预/恢复后复用旧前向图后向导致autograd版本错误，原失败log及程序保留。仅新脚本重新计算私有梯度前向，模型/YAML七文件未改；上海12:57:44至12:58:08实际重检通过。",
+    "实际CPU原生YAML/完整模型/发布骨干/真实TRAIN collate162738点8表达，以及float32/64独立norm/初值输出/独立公式/私有梯度隔离、合成完整DEC七阶段输出与输入梯度/RNG锚点、各stage非零梯度和末阶段干预/恢复负对照全部通过。尚无实际稀疏criterion/optimizer或GPU检查。",
+    "仅提交Y67七文件至db35并保存待执行原生计划，8项native路径/梯度/优化器更新守卫、旧goal和源码篡改负对照通过。Y65/Y66原882d准入/队列/运行保留，无push或生产同步。",
+    "两服canonical占用证明显示Y65/server-2 GPU0和Y66/server-1 GPU0均有原compute PID/预约，无授权空槽。Y67原生两步及八项原冻结全量后评/成本等待，Y57/GPU1暂停保留。"
+  ],
+  "decisions": [
+    "准备1项结构候选，不强行凑满预算，不使用CPU结果签原生PASS或准入。优先保留两项正常原训练；资源释放后用已保存计划做真实原生YAML/TRAIN两步并在通过后当轮准入/派发。",
+    "Y67只解除已消费的预测读出仿射参数共享；与Y60独立confidence头、Y26旧norm重连、Y25 soft gate和Y65/Y66反馈不同，不重开历史拒绝、不改验证边界或扫参。",
+    "保持原冻结全量评估/配对成本和不确定性协议，CPU机制检查及训练日志不替代效益证据。只用server-1 GPU0/server-2 GPU0，保持280W/默认350W；Y57/GPU1暂停，server-6/跨项目/驱逐/重启/改调度禁止，无用户待办。"
+  ]
+}

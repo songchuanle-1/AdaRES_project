@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y65",
+  "token": "57050734a528487ab8c99d2f34003e2e",
+  "native_check": {
+    "path": "pipeline/analyses/y65_smoke_57050734a528487ab8c99d2f34003e2e.json",
+    "sha256": "336c0b5dc7a736a626841d673939ba8b3b8f18bad1abd1ec0034bc43b4ef9982"
+  },
+  "admission": {
+    "path": "pipeline/admissions/AdaRES-Y65.json",
+    "sha256": "989dbc53870334632996a142e0f53b4de993c79c03ffbe02d09fe0033f9ab1ce"
+  },
+  "frozen_protocol": {
+    "path": "pipeline/checks/AdaRES-Y65_post_training_freeze_57050734a528487ab8c99d2f34003e2e.json",
+    "sha256": "279bd60da8ba1e0db3f3617e30f23ed22207dfa6c95ebd5f0b21890b9bd371ff"
+  },
+  "original_scientific_protocol_preserved": true,
+  "server2_runtime_power_watts": 280,
+  "dispatch": {
+    "path": "pipeline/checks/y65_gpu0_dispatch_57050734a528487ab8c99d2f34003e2e.json",
+    "sha256": "8812254c1b9a5f86d3a500a99e16d9871e6391e2923419be7a44df519fd6e035"
+  },
+  "actual_progress": {
+    "path": "pipeline/checks/y65_server2_phase_progress_57050734a528487ab8c99d2f34003e2e.json",
+    "sha256": "a8cbe07b5f1e7f3bdfeddf840277e13e0350272c0b2f179971c8fbc66f4fba6c"
+  },
+  "current_PID": 112356,
+  "Y64_original_admission_preserved": true,
+  "Y64_original_PID": 2752219,
+  "Y57_pause_preserved": true,
+  "GPU1_not_used": true,
+  "code_commit": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+  "phase_progress_functions_identical_to_tested_Y64": true,
+  "admission_guard_fixture_first_attempt_failed": true,
+  "guard_failure_scope": "Test fixture omitted mock server host/user/python; actual native result unchanged. Original failed log retained.",
+  "guard_tests_after_fixture_repair": 12,
+  "guard_first_log": {
+    "path": "pipeline/checks/y65_admission_guards_57050734a528487ab8c99d2f34003e2e.log",
+    "sha256": "fd78e73059867ea80296e6b01539f4df2a08003cf119a1010f729746df2420ae"
+  },
+  "guard_passed_log": {
+    "path": "pipeline/checks/y65_admission_guards_57050734a528487ab8c99d2f34003e2e_attempt2.log",
+    "sha256": "d46bf935e142c67c00b58965f84eeb24b6f2893131b1ac6aa5ed4b2c944908ca"
+  },
+  "initial_activation_guard_noop": "Canonical idle collector had already moved blocked candidates to validation; no duplicate activation was written.",
+  "training_efficacy": "Unknown; fixed30 and original full frozen evaluation remain required."
+}

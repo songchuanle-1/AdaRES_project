@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "token": "a9374849fe11427daad7364d4bbdedba",
+  "snapshot_generated_at": "2026-11-01T16:47:15.549575+00:00",
+  "observed_at": "2026-11-01T16:52:56.504949+00:00",
+  "original_live_training": {
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_a9374849fe11427daad7364d4bbdedba_final.json",
+      "sha256": "b7937c74cac21362f6db6b72d9969afc8fe40a93fe660f4a9bb55b57aadf2627"
+    },
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_a9374849fe11427daad7364d4bbdedba_final.json",
+      "sha256": "f17c37b6e83e0274183f6e93ff4418d371ad66dd6f88ee14bac3c0e083f29e4c"
+    },
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_a9374849fe11427daad7364d4bbdedba_final.json",
+      "sha256": "e3260c5efe426b272b5c38b3ee5f624db991585e5635837fd51d084b79924c3e"
+    }
+  },
+  "phases": {
+    "AdaRES-Y74": {
+      "phase": "Train",
+      "epoch": 24,
+      "total": 30,
+      "step": 1710,
+      "count": 4686
+    },
+    "AdaRES-Y75": {
+      "phase": "Train",
+      "epoch": 14,
+      "total": 30,
+      "step": 1369,
+      "count": 4686
+    },
+    "AdaRES-Y76": {
+      "phase": "Train",
+      "epoch": 5,
+      "total": 30,
+      "step": 2633,
+      "count": 4686
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_a9374849fe11427daad7364d4bbdedba.json",
+      "sha256": "cf49f6403dd81139f0a40133c886f6aa498ca80915e098b0492f48faf1067ad7"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_a9374849fe11427daad7364d4bbdedba.json",
+      "sha256": "50f1a14b038aeb32187e6428cf0bfa07e6249a701d39b5627c533e0b442be8bc"
+    }
+  },
+  "prepared_integrity": [
+    {
+      "id": "AdaRES-Y77",
+      "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+      "source_manifest": {
+        "path": "pipeline/checks/y77_cpu_version_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "7a4dc912137beb6c4f8a1a561acdc889d8efcdaa488bc4b1d540a95877e0d2b3"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y77_native_observer_verification_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "611f75018189b74ba22f4a6fdddc5a646ed303435758468e5e3211bb54697650"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu0_plan.json",
+          "sha256": "dc7f8ee061c1d8ec8a66a992c4df6cef4a458a8c9b076dcac3f5427f2016c5f9"
+        },
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu1_plan.json",
+          "sha256": "dd25b99b22513509496c740cabc6f25787c5a40a295703f1cb46166d345a5455"
+        }
+      ],
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y78",
+      "code_commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+      "source_manifest": {
+        "path": "pipeline/checks/y78_cpu_version_ff905b6425914adf9fad62756595f48b.json",
+        "sha256": "a0c3b80389a7cb81cccb3369deb83751a3967da920c289bc80a75b3867bfcbb0"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y78_native_observer_verification_ff905b6425914adf9fad62756595f48b.json",
+        "sha256": "906686be15350422cb87c763fe0e5f56d901810c722495ce91750e0ca73201ce"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu0_plan.json",
+          "sha256": "eb2dca6e779963893c9ea94c9a112db71379e71a4423dfa7add352d5f7e2e0b7"
+        },
+        {
+          "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_plan.json",
+          "sha256": "3d558538aa54441398ee92cf77839e1df295df781b96b7a493d19f1668faebd9"
+        }
+      ],
+      "native_GPU_executed": false
+    }
+  ],
+  "Y74_terminal_preparation": {
+    "path": "pipeline/checks/y74_terminal_preparation_a9374849fe11427daad7364d4bbdedba.json",
+    "sha256": "c07cb67ec23d83d4924e8399ae90ebae7c74f976dfe5028f61ff27cf996e5f2a"
+  },
+  "Y74_terminal_guard_tests": 20,
+  "Y74_declared_checkpoint_directory": "20261031_185748",
+  "Y74_still_training": true,
+  "Y74_checkpoints_loaded": false,
+  "Y74_archived": false,
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_archives": [],
+  "native_GPU_executed": false,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "HEAD_unchanged": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "conclusion": "Original Y74/Y75/Y76 native counters advance under unchanged PIDs/source/YAML/receipts/power. All authorized GPUs physically busy and canonically reserved. Existing Y77/Y78 exact native preparations are intact. New isolated Y74 fixed30 lifecycle guards and read-only original source/YAML/declared-directory check passed; actual completion/checkpoint verification and archival have not been executed."
+}

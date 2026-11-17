@@ -1,0 +1,128 @@
+{
+  "id": "AdaRES-Y44",
+  "config": "configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml",
+  "code_commit": "c65ad2fcba4ef10b71ea6ae58ed01109568bd0cd",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261013-062921_next_batch.md",
+    "sha256": "d78d30bcb34fae39dffb64ff4b69a2c30363275bb7b4aac3c8b00aff39736b53"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y44_diagnosis_prereg_ff347697.md",
+          "sha256": "2aaf33520e28ebad8bc53dc88a6aa54bf0e1fe060323f91360896f8106c219d7"
+        },
+        {
+          "path": "pipeline/analyses/y44_pairing_cpu_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "5e67cbe9ee2ac7e25c7cfe59d5046859ac555acc0557eb4d527333e089226bdf"
+        },
+        {
+          "path": "pipeline/analyses/y44_parent_cpu_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "b25ef81e7798a7e67e41fc0d395f88b6d1dd49b8cf8c00f77fda1a48be8a2b4d"
+        },
+        {
+          "path": "pipeline/analyses/y44_native_controls_ff34_v3_ff3476973900467da752992f8195291b.json",
+          "sha256": "b69d039ee9f4262413860de9fbd93b81d8a13137f01c7ade89dccc553aa25af6"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y44_native_freeze_ff347697.md",
+          "sha256": "d1457ff1ecf399397982b9b2cd2e99f6911147145c986f3e0dbd2315f08b68a8"
+        },
+        {
+          "path": "pipeline/analyses/y44_native_controls_ff34_v3_ff3476973900467da752992f8195291b.json",
+          "sha256": "b69d039ee9f4262413860de9fbd93b81d8a13137f01c7ade89dccc553aa25af6"
+        },
+        {
+          "path": "pipeline/analyses/y44_initial_loss_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "87e252667094de7674e3ad56596974ef2fcb34e6aa0a522a28750c4cf898d723"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y44_native_controls_ff34_v3_ff3476973900467da752992f8195291b.json",
+          "sha256": "b69d039ee9f4262413860de9fbd93b81d8a13137f01c7ade89dccc553aa25af6"
+        },
+        {
+          "path": "pipeline/analyses/y44_physical_native_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "9cab799fb5b5b6dd6eef085eed8f323c307626d5146161708602eb6f3973ce70"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y44_resources_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "45fc9c895523f80f08758515d9b9bf762876f9de962e2da22fb581200480f93d"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y44_ff347697.md",
+          "sha256": "913810eb6da8eca27a560bead1b32d066a6e6ee2afc4cd60e81cf9b7c1829e67"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y44_source_bundle_ff3476973900467da752992f8195291b.json",
+          "sha256": "db57577e04aeaa0239aa4c486f90801417ee72894aff380e8d0e197b0d28d182"
+        },
+        {
+          "path": "pipeline/analyses/y44_parent_cpu_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "b25ef81e7798a7e67e41fc0d395f88b6d1dd49b8cf8c00f77fda1a48be8a2b4d"
+        },
+        {
+          "path": "pipeline/analyses/y44_physical_native_ff34_ff3476973900467da752992f8195291b.json",
+          "sha256": "9cab799fb5b5b6dd6eef085eed8f323c307626d5146161708602eb6f3973ce70"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/reviews/motivation_review_Y44_ff347697.md",
+          "sha256": "7301ba104f6bbe2cd1a938cfb982a8fb83ea431c6c34299bcbd08f14c4b55238"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y44_ff347697.md",
+          "sha256": "913810eb6da8eca27a560bead1b32d066a6e6ee2afc4cd60e81cf9b7c1829e67"
+        },
+        {
+          "path": "pipeline/analyses/Y44_six_gate_review_ff347697.md",
+          "sha256": "2e3c9cd32810fdb85f416717b26895f838094234d7122fa25b3df1d499c262fb"
+        },
+        {
+          "path": "pipeline/analyses/y44_gate_checks_ff3476973900467da752992f8195291b.json",
+          "sha256": "6556fbbbe56302fcc60482d95e7e8244e5c0410c9ebc2152cc1abbd629f4328e"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y44_ff347697.md",
+      "sha256": "913810eb6da8eca27a560bead1b32d066a6e6ee2afc4cd60e81cf9b7c1829e67"
+    }
+  },
+  "limitations": "Initial adverse loss/wrong-control learnability retained; no task benefit, necessity, novelty or human approval. No diagnostic weights deployed."
+}

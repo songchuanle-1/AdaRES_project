@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "5103a354430e47b3b7a04162dcaae8af",
+  "preregistered_at": "2026-10-20T21:49:50.900831+08:00",
+  "previous_program": {
+    "path": "pipeline/analyses/y57_resources_5103a354430e47b3b7a04162dcaae8af_program.py",
+    "sha256": "6f439408426bb5d19a36792d35edc0b36233404d6f8e8848eafd0b54c9068c92"
+  },
+  "failure_log": {
+    "path": "pipeline/analyses/y57_native_5103a354430e47b3b7a04162dcaae8af.log",
+    "sha256": "e0d2ee9c132f6bf2c12e51f7c09f672795b5c1020383495f499143c5608bea30"
+  },
+  "program": {
+    "path": "pipeline/analyses/y57_resources_v2_5103a354430e47b3b7a04162dcaae8af_program.py",
+    "sha256": "e0c71656fa357f5c63df3b7929fc1ada97f57a23e9cc90003beb30a6ea95556e"
+  },
+  "model_bundle": {
+    "path": "pipeline/analyses/y57_prototype_bundle_5103a354430e47b3b7a04162dcaae8af.json",
+    "sha256": "d2cfcd7dd68cace99d50e1008f420d31a15da44982a4fd45d589286cfb1c5bf8"
+  },
+  "model_unchanged": true,
+  "scope": "Diagnostic driver only: project IPDN.train returns None, so separate train() and zero_grad(). Resource output count accepts tensor/numpy via as_tensor; scientific controls/backward/stress/timings unchanged.",
+  "result": "pending"
+}

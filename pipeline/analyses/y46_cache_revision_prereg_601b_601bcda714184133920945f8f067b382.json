@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y46",
+  "implementation_revision": 1,
+  "preregistered_at": "2026-10-15T11:00:06.130319+08:00",
+  "failure_scope": "implementation",
+  "reason": "Native candidate costs 3.49-18.66 seconds on seven warmed scenes versus 0.21-0.31 seconds parent; mechanism remains unfalsified.",
+  "change": "Only memoize identical selected point sets within one component_inputs call; no cross-expression/forward cache.",
+  "prediction": "Rows/weights/group ordering exactly equal original on all frozen CPU controls; native new gradients remain finite/nonzero; measure cost without fitted success threshold.",
+  "failure_evidence": {
+    "path": "pipeline/analyses/y46_native_gate_601b_601bcda714184133920945f8f067b382.json",
+    "sha256": "92ec705ef4063d9b833eacc8a0c18dc447b9e3671b13028e31f686b8451604a0"
+  },
+  "outputs": [
+    {
+      "path": "scripts/probe_y46_cached_cpu_601b.py",
+      "sha256": "8a9abbc156344c38cc146ff9ebe9881ebb78ced646902144033760cebe542873",
+      "original_source": {
+        "path": "scripts/probe_y46_component_cpu_d179_v2.py",
+        "sha256": "713ad86a68f51142776be20a50295597aa07e06b7fff6d146797f91f6c5a5ecf"
+      },
+      "changed_AST_nodes": [
+        "capture_path_to_unchanged_hashed_fixture",
+        "component_inputs"
+      ]
+    },
+    {
+      "path": "scripts/probe_y46_cached_native_601b.py",
+      "sha256": "e253e1edcc9e54d6c33c0abc7559b12de09c9a5eb29cc734e689d4fe8cbc2772",
+      "original_source": {
+        "path": "scripts/probe_y46_native_gate_3c6a.py",
+        "sha256": "78a9a9dd13134f23c2062e997c02303b776d552f845068ea9a4998e1a11036ad"
+      },
+      "changed_AST_nodes": [
+        "component_inputs"
+      ]
+    }
+  ],
+  "result": "pending",
+  "limitations": "No model, graph, target, dimensions, thresholds, weights, training protocol or historical source changed; still no production admission."
+}

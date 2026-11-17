@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y59",
+  "preregistered_at": "2026-10-21T00:05:55.258420+08:00",
+  "hypothesis_id": "frozen_text_encoder_mode_contract",
+  "hypothesis": "The constructor explicitly puts fully frozen text_encoder into eval mode, but the exact outer train() override may reactivate frozen encoder dropout. Check actual trained language features and their native decoder projection, not assumed task benefit.",
+  "source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+    "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+  },
+  "program": {
+    "path": "pipeline/analyses/y59_cpu_b7801e9894f742b09038e89d033a8945_program.py",
+    "sha256": "761578c3b09c24dd0c702fa5e4f2ec9c9dda9faa8ddbd26b934345fe5d672689"
+  },
+  "body": {
+    "path": "scripts/probe_y59_cpu_b780.py",
+    "sha256": "adece5db65c742b0f2e713f78627541a7f296c56d6f991e611326eeceed80989"
+  },
+  "targeted_related_records": [],
+  "controls": "Actual frozen trained W2 Roberta, native TRAIN tokens/mask, exact original IPDN.train method in a CPU-only Module shim. Same-input uncontrolled-RNG repeat vs reset-RNG repeat; constructor eval vs outer train followed by restoring encoder eval. Parent stays training.",
+  "readouts": "Encoder mode/active dropout flags, frozen gradients, valid-token hidden and actual trained dec.lang_proj drift. Same128eps arithmetic bound; no validation or dropout-rate search.",
+  "future_native": "Original vs restored-frozen-mode independent package on same native TRAIN batches, full loss/every confidence tensor/native resource guards before considering admission.",
+  "no_model_or_scheduler_changes": true,
+  "trained_efficacy": "unknown",
+  "novelty": "not claimed; potential correctness repair",
+  "result": "pending"
+}

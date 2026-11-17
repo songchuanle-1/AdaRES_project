@@ -1,0 +1,215 @@
+{
+  "id": "AdaRES-Y23",
+  "method": "Expression-weighted paired delta; resample whole scan clusters",
+  "seed": 1999,
+  "bootstrap_draws": 10000,
+  "size_cuts_from_training": [
+    1487,
+    3325
+  ],
+  "sources": {
+    "y23": {
+      "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y23_y23_full_eval_cc2267b1187942dd8269b3cf600bc5d2.json",
+      "sha256": "de27e49be74b54c80a8f3b6fe6f773d2448488ef8309a8045c4cc34c7896812e"
+    },
+    "w2": {
+      "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y23_w2_full_eval_cc2267b1187942dd8269b3cf600bc5d2.json",
+      "sha256": "83e8cbef2ba78b0afb13117bfef23b1908f849dafb0ebd1bd4f98de0d0ff28b5"
+    },
+    "b1": {
+      "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y23_b1_full_eval_cc2267b1187942dd8269b3cf600bc5d2.json",
+      "sha256": "6afbc51608f5f4adbd6b63dcfcaa68ce8c700dc3296b727388b3576fcdbaa1ca"
+    }
+  },
+  "summary": {
+    "y23": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5074715347794949,
+      "acc25": 0.6100126209507782,
+      "acc50": 0.5581615481699621,
+      "spmiou": 0.47080100845075556
+    },
+    "w2": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5101048498778671,
+      "acc25": 0.6107488430795119,
+      "acc50": 0.5629995793016407,
+      "spmiou": 0.47371604064172684
+    },
+    "b1": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5022217643559687,
+      "acc25": 0.6104333193100547,
+      "acc50": 0.5529028186790071,
+      "spmiou": 0.466782141151034
+    }
+  },
+  "versus_w2": {
+    "all": {
+      "expressions": 9508,
+      "scenes": 141,
+      "paired_miou_difference": -0.002633315098372176,
+      "scene_clustered_ci95": [
+        -0.010861579854771574,
+        0.00547188506751807
+      ],
+      "max_expression_repeat_iou_difference": 0.04425060749053955,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 7.885635576179963e-06,
+      "observed_group_mean_absolute_repeat_difference": 9.8659792114919e-06
+    },
+    "small": {
+      "expressions": 2816,
+      "scenes": 124,
+      "paired_miou_difference": -0.01317853202945943,
+      "scene_clustered_ci95": [
+        -0.02914209359251917,
+        0.002993472614549919
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0
+    },
+    "medium": {
+      "expressions": 3304,
+      "scenes": 136,
+      "paired_miou_difference": -0.0014890978891080016,
+      "scene_clustered_ci95": [
+        -0.016796543626208492,
+        0.013494146746518554
+      ],
+      "max_expression_repeat_iou_difference": 0.029905617237091064,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 9.051336936165577e-06,
+      "observed_group_mean_absolute_repeat_difference": 9.051336936165577e-06
+    },
+    "large": {
+      "expressions": 3388,
+      "scenes": 135,
+      "paired_miou_difference": 0.005015692345114505,
+      "scene_clustered_ci95": [
+        -0.00772278301778779,
+        0.017098064378635862
+      ],
+      "max_expression_repeat_iou_difference": 0.04425060749053955,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 2.2130054031381077e-05,
+      "observed_group_mean_absolute_repeat_difference": 2.768764177770513e-05
+    }
+  },
+  "versus_b1": {
+    "all": {
+      "expressions": 9508,
+      "scenes": 141,
+      "paired_miou_difference": 0.005249770423526228,
+      "scene_clustered_ci95": [
+        -0.003244000839126794,
+        0.013465872388197239
+      ],
+      "max_expression_repeat_iou_difference": 0.9738956093788147,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.00010242907124303899,
+      "observed_group_mean_absolute_repeat_difference": 0.00010242907124303899
+    },
+    "small": {
+      "expressions": 2816,
+      "scenes": 124,
+      "paired_miou_difference": 0.00911519495511212,
+      "scene_clustered_ci95": [
+        -0.008555072779792026,
+        0.026995894475680866
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0
+    },
+    "medium": {
+      "expressions": 3304,
+      "scenes": 136,
+      "paired_miou_difference": 0.011489846888528213,
+      "scene_clustered_ci95": [
+        -0.0024103819016857734,
+        0.02566455531009924
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0
+    },
+    "large": {
+      "expressions": 3388,
+      "scenes": 135,
+      "paired_miou_difference": -0.004048413791737179,
+      "scene_clustered_ci95": [
+        -0.017518883719430445,
+        0.009436174791895471
+      ],
+      "max_expression_repeat_iou_difference": 0.9738956093788147,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.00028745443015903624,
+      "observed_group_mean_absolute_repeat_difference": 0.00028745443015903624
+    }
+  },
+  "target": 0.515,
+  "target_reached": false,
+  "cost": {
+    "y23": {
+      "parameters": 164629637,
+      "warm_first_chunk_median_seconds": 0.3258094359189272,
+      "peak_allocated_gib": 4.042351245880127,
+      "peak_reserved_gib": 6.486328125,
+      "available_queries": [
+        128
+      ],
+      "selected_queries": 1
+    },
+    "w2": {
+      "parameters": 164629637,
+      "warm_first_chunk_median_seconds": 0.3252007607370615,
+      "peak_allocated_gib": 4.042351245880127,
+      "peak_reserved_gib": 6.486328125,
+      "available_queries": [
+        128
+      ],
+      "selected_queries": 1
+    },
+    "b1": {
+      "parameters": 164430473,
+      "warm_first_chunk_median_seconds": 0.26338740065693855,
+      "peak_allocated_gib": 4.040676593780518,
+      "peak_reserved_gib": 6.484375,
+      "available_queries": [
+        128
+      ],
+      "selected_queries": 1
+    }
+  },
+  "limitations": [
+    "One training seed; best-checkpoint comparison is not causal mechanism proof.",
+    "Two native passes quantify observed repeat noise, not a universal bound.",
+    "Warm first-chunk timing is not a latency distribution or p95/Pareto proof.",
+    "Official unique/multiple metadata unavailable; no subgroup tuning."
+  ],
+  "observed_local": "2026-10-03T20:01:43.692260+08:00"
+}

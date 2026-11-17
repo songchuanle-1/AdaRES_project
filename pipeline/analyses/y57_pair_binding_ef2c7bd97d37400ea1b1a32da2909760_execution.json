@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-19T20:24:51.566286+08:00",
+  "program": {
+    "path": "pipeline/analyses/y57_pair_binding_ef2c7bd97d37400ea1b1a32da2909760_program.py",
+    "sha256": "fef31abf7d9f937e6a93b944f40985742045d3b794955a85b31d2b38e662ade5"
+  },
+  "returncode": 0,
+  "stdout": "{\n  \"path\": \"D:\\\\project\\\\AdaRES_project\\\\pipeline\\\\analyses\\\\y57_pair_binding_ef2c7bd97d37400ea1b1a32da2909760.json\",\n  \"sha256\": \"3b1d3eb2903b2b23fbbbb7c97d20211359630e4f664abf05af5bd280ddc48399\",\n  \"program_sha256\": \"fef31abf7d9f937e6a93b944f40985742045d3b794955a85b31d2b38e662ade5\",\n  \"observed_start_local\": \"2026-10-19T20:24:35.769084+08:00\",\n  \"observed_end_local\": \"2026-10-19T20:24:51.551826+08:00\",\n  \"summary\": {\n    \"complete\": true,\n    \"id\": \"AdaRES-Y57\",\n    \"CPU_native_batch2_dataflow\": true,\n    \"pairs\": 4,\n    \"expressions\": 32,\n    \"all_GT_mass_membership_geometry_bindings_exact\": true,\n    \"max_coordinate_error\": 5.0067901611328125e-06,\n    \"gpu_tests\": 0,\n    \"full_native_forward\": false,\n    \"full_native_backward\": false,\n    \"training_launches\": 0,\n    \"admission\": false,\n    \"limitation\": \"Exact current single-to-pair point-GT/count/membership/raw geometry binding only; no sparse forward, causal peer intervention, model benefit or retroactive old capture provenance.\"\n  }\n}\n",
+  "stderr": ""
+}

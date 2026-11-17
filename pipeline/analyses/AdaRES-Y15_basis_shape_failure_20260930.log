@@ -1,0 +1,9 @@
+Using backend: pytorch
+set CUDA_VISIBLE_DEVICES as 1
+2026-09-29 21:21:15,711 - INFO - Load train scanrefer: 36665 samples
+Traceback (most recent call last):
+  File "tools/probe_adares_y15_native_transfer.py", line 230, in <module>
+    main()
+  File "tools/probe_adares_y15_native_transfer.py", line 143, in main
+    intersection = binary @ target_mass
+RuntimeError: both arguments to matmul need to be at least 1D, but they are 0D and 1D

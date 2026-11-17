@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T19:12:34.269415-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 1,
+      "total": 30,
+      "step": 69,
+      "count": 4686
+    },
+    "log_bytes": 17083
+  },
+  "after": {
+    "observed_at": "2026-10-30T19:12:39.272989-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 1,
+      "total": 30,
+      "step": 79,
+      "count": 4686
+    },
+    "log_bytes": 19523
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T19:12:34.269415-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 69,
+        "count": 4686
+      },
+      "log_bytes": 17083
+    },
+    {
+      "observed_at": "2026-10-30T19:12:39.272989-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 79,
+        "count": 4686
+      },
+      "log_bytes": 19523
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 53714,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y71_visual_product_fusion_res_20261031_071201.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "additional_source_files_verified": 6,
+  "additional_YAMLs_verified": 1,
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 53714\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561\n",
+  "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+  "gpu": "44, 16206, 70, 280.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y71",
+  "token": "fb6718a8dd684cdfbaa98d6678e7d3c5",
+  "observed_start_local": "2026-10-31T07:13:13.388871+08:00",
+  "observed_end_local": "2026-10-31T07:13:18.716812+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y70_y71_exact_deployment.py",
+      "sha256": "a5696c5dacf1d46463ea1cdfbe01af327c794d31b03d5a0887958c262e75c796"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y71_fb6718a8dd684cdfbaa98d6678e7d3c5_after_dispatch.log",
+      "sha256": "102dbb81bc659606c5b5ee834243a55131a3d7d679025852fe5b3458c1bfdfe3"
+    }
+  ]
+}

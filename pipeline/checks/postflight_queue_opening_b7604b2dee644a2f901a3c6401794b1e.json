@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "token": "b7604b2dee644a2f901a3c6401794b1e",
+  "observed_at_local": "2026-10-25T18:56:07.473266+08:00",
+  "execution_status": "INCOMPLETE",
+  "finish_exit_code": 1,
+  "command": "python -B 'C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/foreground_tick.py' AdaRES_project finish --token b7604b2dee644a2f901a3c6401794b1e",
+  "failed_check": "CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening",
+  "command_result": "POSTFLIGHT FAILED: lease retained; continue this tick or explicitly abort",
+  "checker": {
+    "path": "C:/Users/chuanle song/.codex/skills/songcl_research_pipeline/closure.py",
+    "sha256": "472bd2f6d317f9d1b81a40c7d108e76d5e9560da4d4950114c148428f06b8576",
+    "lines": "75-87, 920-930",
+    "predicate": "exclusive_gpu_slot_available(candidate, context.queue.servers, context.queue.active_tasks)",
+    "semantics": "The function explicitly tests a queue opening only; it does not read the actual external GPU compute occupation."
+  },
+  "live_resource_evidence": {
+    "path": "pipeline/checks/gpu0_lifecycle_v4_b7604b2dee644a2f901a3c6401794b1e.json",
+    "sha256": "321b02fb2693a03192ba7a297ae04473380b0b97cd9041083ed0454c4e6af999",
+    "observed_at": "2026-10-25T18:52:10.694481+08:00",
+    "server": "server-2",
+    "authorized_gpus": [
+      0
+    ],
+    "unregistered_gpu0_pids": [
+      "13813"
+    ],
+    "idle_authorized_gpus": []
+  },
+  "discrepancy": "The project has zero active queue tasks, so the validator finds a queue opening. Real authorized GPU0 is occupied by unregistered compute PID13813. A queue opening does not establish a safe exclusive native GPU slot.",
+  "disposition": "Preserve the real blocked candidates and current tick snapshot. Do not change blocker_kind, add a fabricated task, modify the checker/goal/context, or repeat unchanged finish. Canonical report then abort this tick and verify release; do not stop or change external compute.",
+  "abort_status": "pending; must verify the canonical abort receipt and release independently",
+  "no_training_failure": true,
+  "hardware_changed": false,
+  "scheduler_changed": false,
+  "checker_changed": false
+}

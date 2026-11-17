@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "实际CODEX_THREAD_ID与配置owner一致，后台Pipeline-AdaRES_project保持Disabled；16:45:25新快照experiment_first启用，准入预算2，仅server-2 GPU0/1，一卡一独立实验。",
+    "执行一次到期的真实资源复查，Y58/Y59/Y60三项各7个已测源/YAML的冻结payload、当前工作区、Git blob/提交、goal及原生train入口LF SHA一致。原生检查程序保持原冻结版本。未重复CPU诊断或把这些身份检查当科学PASS。",
+    "16:47:40核验原Y56 PID13738/Train21of30 step1052至1146，原Y57 PID16317/Train23of30 step2514至2600；cmd/cwd一致、原生步数增长、尾部无异常。当前续训片段日志best mIoU分别.5080499649/.5028846860，均高于各自恢复前best；不是冻结双遍完整评估或显著性结果，不晋升冠军。",
+    "实时GPU/compute及running/claiming槽位确认无独占空卡；三项保存当前资源证据和1小时复查/队列开槽提前唤醒条件，tick_attempt=Y58 resource_check/blocked。未共跑、抢占、启动GPU smoke、准入或入队。",
+    "同次GPU0为280W/86C/风扇81%/util44%/22684of24576MiB，GPU1为390W/69C/风扇55%/util82%/17098of24576MiB；两卡SW Power Cap Active、SW Thermal Slowdown Not Active。内核读取成功且无新Xid/fallen-off，boot未变；数据盘96%/可用155331006464bytes。本轮仅回读，没有功耗、风扇或持久设置变更，也未读取私密凭据。",
+    "本轮证据pipeline/checks/prepared_resources_709c2cc96b9648cd96768cab2192eda5.json；可复用检查入口scripts/check_prepared_resources.py。没有新增候选、实现修订、模型/YAML编辑、Git提交、CPU诊断、原生训练检查、部署或训练启动。"
+  ],
+  "decisions": [
+    "保留现有两项固定30轮续训及GPU0已获批准的280W，GPU1保持390W；不把一次86C/无热降频采样说成稳态改善或永久修复，也不自行进一步调功耗或恢复390W。",
+    "三项已实现候选的下一步均为占用独占空卡的真实原生两步检查；当前资源条件不允许，保持具体同ID待办，不借显存共跑或以组件结果代签准入。空卡后优先Y58/Y59再Y60，检查通过即本轮入队并尝试既有门控派发；无需重复常规操作授权。",
+    "本轮没有新的路线决策，不重复写无变化other日志，不为额度创建重复候选；不建立全局研究冷却或改变调度。随后执行canonical finish，结果以真实收据为准。"
+  ]
+}

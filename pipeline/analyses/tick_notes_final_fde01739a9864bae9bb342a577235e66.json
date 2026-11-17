@@ -1,0 +1,20 @@
+{
+  "actions": [
+    "AdaRES本轮快照2026-10-17 12:48:24.791上海，design；实际thread与execution_mode owner一致，goal/SERVERS/项目指令及旧后台Disabled核对通过。0due、Y52提交授权阻塞未到期，不重复检查/索要。原deadline13:48:24.791与context/pending哈希不改，只一次begin预检。0-3事实表保持预检时刻，以下为后续实测。",
+    "先登记稳定Y53 decoder语言padding前向泄漏假设，再做实际原生decoder CPU对照和真实8TRAIN场景/32表达的稀疏前向/FPS输入捕获。七层padding和原样repeat输出差均0、padding梯度0，有效词扰动正控制及梯度均活跃；failure_scope=hypothesis，真实反证关闭Y53，不实现变体，也不把历史Y23语义损失归一化当本轮成果。",
+    "Y53首次原生探针在诊断脚本链式eval赋值处遇到None返回，尚未执行科学测试；失败日志保留，新预注册程序只拆分model赋值与eval调用，原模型/样本/权重/科学操作不改。定向发现历史Y26 discarded-postnorm已拒绝，不重开或改名实现。",
+    "Y53原生形状显示两个场景只有406/468超点，另登记独立Y54细粒度3D支持有效性假设。原4组TRAIN双场景真实稀疏/FPS及精确coarse-derived gather位置核验，观测3600跨层虚构fine支持槽、34172可见query-key边、正注意力质量152.2627；这些是相关层/槽计数而非独立样本。parent padding干预作用12.5120、repeat0、正确mask后0，full decoder置信度logit差2.2536且全有效表达负控制0；不是mIoU变化。",
+    "依据任务相关原生反证/对照，保存六段动机审查及实验设计，构造Y54独立六文件包+唯一basename YAML，仅DEC.forward_iter_pred连接native fine有效mask到gather/空间k_mask/fine attention。逆向去除3项AST连接后整个decoder与W2相等，其他五文件原字节、配置值和loss保持；不与Y52标签干预叠加，新增参数实测0、模型修订0。",
+    "Y54独立原型在同8TRAIN/32表达/4batch2完成真实原生前向/FPS/反向：六fine层有效支持、attention及indicator梯度有限非零，实际padding支持梯度严格0。原生AdamW/PolyLR两步539非空状态，model/optimizer/scheduler/Python/NumPy/Torch/CUDA RNG逐项精确恢复，未保存或部署诊断权重。",
+    "资源：parent/candidate各164629637参数；冻结四批中最大379425点批2warmup/3measure反向中位.449545s、峰值reserved7772045312bytes=7.23828125GiB，小于单卡24GiB。固定训练W2权重的8scene单场景推理各2warmup/3measure，32表达二值mask/argmax/IoU均一致，有约1e-6概率重复噪声；配对延迟比中位1.0056854、allocated显存一致，不声称速度提升、全局资源最坏情况或Pareto收益。",
+    "同一Y54原型另做五个CPU原生decoder极小支持fixture：[1,512]/[8,512]/[128,512]/[406,512]/[512,512]。六层邻域均非空、七层输出和反向均有限、padding梯度0，全有效parent置信度差0；不把fixture当真实FPS或新的训练实验。",
+    "读取唯一既有Y36 best归档绑定精确path/hash，冻结Y54/W2/B1/Y36四方全9508表达/141scene各双次FIRST，scene-bootstrap10000/1999、TRAIN cuts1487/3325、任一参照子组CI上界<0触发伤害审查；fixed30/released SPFormer/seed1999/单GPU/128/singleargmax和原loss不变，正式训练不能使用诊断W2权重。",
+    "本轮新稳定诊断ID2、真实关闭1、形成1个独立七文件原型；成功诊断命令5、调用兼容失败1保留，Git提交0、准入0、训练启动0、全验证集新评估0，最佳仍历史CSV Y36 .5110，目标.515差.0040。13:27客户端只读GPU0 24166MiB/100%、GPU1 1MiB/0%；所有短测已退出，不干扰原外来作业、不预约卡。收据用量仅begin到receipt局部可见窗口，当前计数待收据/未知；缓存已含input、推理已含output，不重复相加、不当账单。"
+  ],
+  "decisions": [
+    "Y53语言前向泄漏前提有实际原生反证，拒绝而非制造变体；Y54不同数据轴/图路径的真实3D支持缺失有匹配因果证据，允许有界独立准备，但未训练收益、新颖性及总体Pareto均未知。历史Y23/Y26及所有旧拒绝/失败不改，不把旧训练指标写成本轮成果。",
+    "Y54全部当前预定原生/边界/恢复/资源控制完成，仍未提交；明确人类旧授权只覆盖Y50七文件，不扩展到Y54或Y52。真实下一步需仅Y54已测七文件的限定提交许可或精确commit，再重验goal/源/六门禁/commit回执及canonical派发/正常Y50终态核对；不自动git add/commit、不开训练、不部署诊断权重。",
+    "Y52原blocked/human_authorization及retry保持，未到期不重问。当前准备储备为Y52与Y54两条，停止额外候选扩池；design_cycle使用真实外部人类提交依赖，不伪称GPU不足、研究穷尽、无信息增益或已到deadline。",
+    "本轮完整六段留档、七段记忆与标准决策20261017-132812_question.md已更新。当前执行状态待finish实际校验，不预称完成；若finish失败保留确切失败并规范abort核实释放，不改门槛/上下文/历史凑通过，释放后不再写项目。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "核验AdaRES_project实际会话、当前goal/SERVERS/AGENTS及Disabled后台后canonical begin；快照design、running1/waiting0/ready0，准入预算2、创建/准备预算2，无连接或部署问题。快照new_terminal Y62是前cf6轮已完成归档，本轮未重复收尾或启动。",
+    "上海2026-10-27 04:44:25至04:44:30核实Y63在server-1 GPU0同PID3071037、第5/30轮2500至2508/4686步增长。精确cwd/config、六模型源码、原生YAML确定性路径适配、marker82f与GPU独占compute均通过。证据pipeline/checks/y63_server1_progress_0b447c1b050949efa01cc5c34d3e9473.json；未重启或更改训练。",
+    "待跑不足且有准备预算，本轮实现AdaRES-Y65置信度反馈：每次下一轮细化前query加上相对前景置信度乘共享零初始化256维方向，共六次反馈、七次原indicator调用，新增256参数。原W2 indicator、四份支持源码、原生YAML、全部损失/选择器/seed1999/fixed30保持；未部署到生产。针对性历史核查区分Y30/Y38最终history读出与Y20/Y25/Y26/Y61已审路线，无重开rejected/banned。",
+    "上海04:48:00至04:48:22在项目隔离CPU探针实测Y65原生YAML/完整CPU模型/发布SPFormer/真实TRAIN首两项collate：162738点、8表达。float32/64零输出/输入梯度/RNG锚点、独立标量logistic公式、置换/共同logit平移/等置信度/singleton/类反转/错对应/极端logit控制全部通过。完整合成DEC七阶段输出与W2精确一致、输入梯度近似一致；六反馈七indicator执行、有限非零新参数梯度、非零反馈改变后续mask、等置信度负对照回到基线均通过。",
+    "Y65 CPU证据pipeline/analyses/y65_cpu_0b447c1b050949efa01cc5c34d3e9473.json及.log；冻结七文件manifest pipeline/checks/y65_cpu_version_0b447c1b050949efa01cc5c34d3e9473.json。总参数164629893。原Y64七文件SHA均未变。CPU测试不包含原生稀疏task criterion/optimizer两步，Y65未提交/生产同步/准入/入队，已保存具体GPU资源阻塞与下一动作。",
+    "使用canonical gpu_occupation.py记录本轮两服原始GPU/compute：server-1 GPU0为Y63独占；server-2 GPU0仍外来PID13813、100%/24138MiB。另次只读观测server-2 GPU0功耗上限280W、86°C，未改硬件。无授权空槽，冻结后评及Y64/Y65原生GPU两步等待资源。"
+  ],
+  "decisions": [
+    "Y65是显式置信度到后续query细化的结构假设，不能由CPU检查推断改善准确率、校准或创新性；原始query可能已隐含等价信息。保留全部既有阴性证据，不做验证集调参、阈值/温度/loss/feature/epoch搜索。",
+    "GPU空槽出现后优先完成Y64，再Y65的固定原生YAML真实TRAIN至少两步loss/backward/optimizer；核验版本、数据、分支实际执行、有限非零新梯度及后续步响应，通过后冻结原全量后评协议、保存版本/准入并在当轮尝试门控派发。CPU合成DEC不替代原生任务检查。",
+    "当前无可用授权GPU，不挤占Y63或外来作业。Y57/server-2 GPU1继续用户暂停，server-2 GPU0保持280W，禁止server-6、跨项目和调度更改。一次真实实现检查已完成，不为凑预算制造第二新候选。",
+    "已更新七节记忆并保存本轮证据；随后report/finish核验收据与释放状态。当前记录不提前宣称postflight通过，释放后不再写项目报告。"
+  ]
+}

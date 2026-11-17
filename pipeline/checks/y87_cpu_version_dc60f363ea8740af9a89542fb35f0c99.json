@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y87",
+  "code_commit": "053aea85a03be4244879c90362455c45327a7d64",
+  "parent_commit": "2d2a0b98865977a6e2f37d316979344ffc56817c",
+  "retained_branch": "refs/heads/adares-y87-self-language-product",
+  "working_HEAD": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y87_cpu_version_dc60f363ea8740af9a89542fb35f0c99_source_snapshot.json",
+    "sha256": "703be6c630017ff141fadc29f65a27914dafad9b958e8d57187b1d511af617bb"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y87_cpu_dc60f363ea8740af9a89542fb35f0c99.json",
+    "sha256": "4266523f6fa843b638644338da2c13ee9b94f51234bf97d5db83ead2c677c909"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y87_cpu_dc60f363ea8740af9a89542fb35f0c99_program.py",
+    "sha256": "bba485d473eb2f213c4928800429edcbdce9eeee88c27f7ff3279c3a072dd0d7"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y87_self_language_product_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y87_self_language_product/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y87_cpu_version_dc60f363ea8740af9a89542fb35f0c99.index",
+    "sha256": "22681fed526cd5e2ebbd4a34c2318cd7e1bf1d4916919296a16ac0d2dd9e2d22"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y87_cpu_native.py",
+    "sha256": "f6a573f3069df40802091f5283c7b2729fcca59ec50163cef3242591d91e0545"
+  }
+}

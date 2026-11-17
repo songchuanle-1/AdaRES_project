@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-11-04T01:35:45.627450+00:00",
+  "hostname": "dl01-MS-7C60",
+  "gpu_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 61, 22716, 280.00\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 79, 19028, 390.00\n",
+  "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20849\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 44354\n",
+  "gpu1_idle": false,
+  "other_user_compute": {
+    "44354": "zhoujh"
+  },
+  "AdaRES_GPU1_compute_present": false,
+  "Y81_process_absent": true,
+  "Y81_last_lines": [
+    "Val[30/30]: 100%|████████████████████| 363/363 [01:56<00:00,  3.59it/s]",
+    "Val[30/30]: 100%|████████████████████| 363/363 [01:56<00:00,  3.13it/s]",
+    "mIOU: 0.502. Acc_50: 0.552. Acc_25: 0.599",
+    "spmIOU: 0.468. spAcc_50: 0.521. spAcc_25: 0.590",
+    "save last pth to /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y81_query_mask_refinement_res/20261102_220631/last.pth"
+  ],
+  "Y81_checkpoint_stats": {
+    "last.pth": {
+      "size": 956183620,
+      "mtime_ns": 1793754381647641505
+    },
+    "best.pth": {
+      "size": 956183620,
+      "mtime_ns": 1793730743559662721
+    }
+  },
+  "checkpoint_contents_loaded": false,
+  "terminal_archive_executed": false,
+  "remote_mutations": false
+}

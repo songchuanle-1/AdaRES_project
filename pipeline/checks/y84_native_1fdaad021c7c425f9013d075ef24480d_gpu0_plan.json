@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y84",
+  "config": "configs_song/model_paper5/adares_y84_visual_query_init_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "7bef2cd313b870583c970c56580be5a78097234d",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "working_HEAD_preserved": "5773768ffb87d7fea7432e85fd0da561556aa2fc",
+  "retained_branch": "refs/heads/adares-y84-visual-query-init",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y84_gpu0_smoke pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "required_resource": "Fresh exclusive authorized idle/unreserved server-2 GPU0 after canonical terminal archive; exact host/private runtime/original data/unchanged power. Preserve live tasks, Y57 pause and original full evaluation protocol.",
+  "checks": "Native YAML/tools.train/TRAIN two finite task losses/backward/optimizer; original generated-query/full-scene visual-feature/padding/point-mass identities and undetached inputs, float64 weighted-visual-mean projection reference, initial prediction consumer and zero/next-step response, unchanged native hard-gate algorithm and static masks, seven shared confidence/query_norm calls, finite original/new/input gradients, real updates/native modes/peak memory.",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 8,
+  "Python38_compile": true,
+  "program": {
+    "path": "pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d_gpu0_program.py",
+    "sha256": "cc3ed3cd2c801cfe3270e9c6ce9dc1951e662b098e89426633273ac75b9fc4c1"
+  }
+}

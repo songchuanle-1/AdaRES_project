@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "token": "8c74d05a949b46a993804c557680694c",
+  "observed_at": "2026-10-27T22:56:47.178741+08:00",
+  "previous_plan": {
+    "path": "pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_plan.json",
+    "sha256": "bfcfa275ccc9d1f87f692761c50405bb4d4419e8bcb3fede50cd3b13ca057a11"
+  },
+  "inactive_server1_plan": {
+    "path": "pipeline/checks/y64_server1_alternative_8c74d05a949b46a993804c557680694c_plan.json",
+    "sha256": "76dc3b7ae533775e072cdf4db021034c8fe065d256688e874fd2767a8b25924d"
+  },
+  "actual_server1_observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "22756, 29, 350.00",
+    "compute": "3071037"
+  },
+  "actual_idle": false,
+  "preparation_only": true,
+  "activated": false,
+  "original_variant_and_YAML_identical": true,
+  "goal_and_code_commit_unchanged": true,
+  "original_guard_tests_preserved": true,
+  "alternate_guard_tests_passed": 8,
+  "test_log": {
+    "path": "pipeline/checks/y64_server1_alternative_8c74d05a949b46a993804c557680694c_tests.log",
+    "sha256": "73e554bddc35fdfb3d8a3c95a1df9a96c857936ec90571300a6dc06bfca93a98"
+  },
+  "source_and_path_changes": "Only explicit host/power guards and deterministic configured path adaptation.",
+  "native_executed": false,
+  "hardware_changed": false,
+  "production_sync": false,
+  "queue_changed": false,
+  "running_changed": false,
+  "Y63_admission_preserved": true
+}

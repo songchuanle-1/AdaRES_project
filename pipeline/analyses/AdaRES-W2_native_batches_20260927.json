@@ -1,0 +1,57 @@
+{
+  "server": "server-2",
+  "gpu": 0,
+  "environment": "adares_project",
+  "checkpoint": "random initialization, seed 1999",
+  "batch_0_1": {
+    "w2": {
+      "loss": 13.622518539428711,
+      "indicator_head_grad_norm": 2.476597547531128,
+      "out_norm_grad_norm": 0.6841498017311096,
+      "seconds": 20.377496160566807,
+      "allocated_gib": 4.435455799102783,
+      "reserved_gib": 4.7890625
+    },
+    "b4": {
+      "loss": 13.622512817382812,
+      "indicator_head_grad_norm": 2.476640462875366,
+      "out_norm_grad_norm": 0.6841470003128052,
+      "seconds": 20.425304723903537,
+      "allocated_gib": 4.412581920623779,
+      "reserved_gib": 4.75
+    },
+    "true_vs_rotated": {
+      "layer_logit_max_diff": [0.00021737068891525269, 0.000032007694244384766, 0.000020802021026611328, 0.00004819314926862717, 0.00008864700794219971, 0.00006130337715148926, 0.00004049763083457947],
+      "head_weight_grad_max_diff": 0.00028609391301870346
+    }
+  },
+  "batch_256_257": {
+    "w2": {
+      "loss": 11.087709426879883,
+      "indicator_head_grad_norm": 1.6582931280136108,
+      "out_norm_grad_norm": 0.9118339419364929,
+      "seconds": 24.85594405978918,
+      "allocated_gib": 5.913971424102783,
+      "reserved_gib": 6.43359375
+    },
+    "b4": {
+      "loss": 11.087667465209961,
+      "indicator_head_grad_norm": 1.6583987474441528,
+      "out_norm_grad_norm": 0.9118197560310364,
+      "seconds": 24.915644489228725,
+      "allocated_gib": 5.872741222381592,
+      "reserved_gib": 6.396484375
+    },
+    "true_vs_rotated": {
+      "layer_logit_max_diff": [0.032680362462997437, 0.02769848331809044, 0.020351208746433258, 0.01011928915977478, 0.006405077874660492, 0.005635455250740051, 0.004354570060968399],
+      "head_weight_grad_max_diff": 0.0006931787356734276
+    }
+  },
+  "native_predict": {
+    "tested_scenes": 2,
+    "manual_vs_native_score_max_difference": 0.0,
+    "point_count_alignment": true,
+    "padding_mass_zero": true
+  },
+  "limits": "Cold two-batch timing and memory, not full training maxima or a validation result."
+}

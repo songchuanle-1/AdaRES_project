@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "preregistered_at": "2026-10-16T13:55:40.196602+08:00",
+  "failure": {
+    "path": "pipeline/analyses/y50_production_controls_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.log",
+    "sha256": "81939db3d29915e7c64b7871c13a14f86cd89a85e153677df13d05825f2a126b"
+  },
+  "original": {
+    "path": "pipeline/analyses/y50_production_controls_program_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.py",
+    "sha256": "0c5582df6e4ab1db05e5c3644291833c0cf6ee747942f7acfc5dcff2af652b72"
+  },
+  "program": {
+    "path": "pipeline/analyses/y50_production_controls_v2_program_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.py",
+    "sha256": "2c5614d3fbd65600597c2ef08516164939ad8d104aa502e438f26580240ebbfa"
+  },
+  "change": "Only correctly unpack cached(query,descriptor) and require independently captured query exact equality. Native gradient checks preceded failure, but no complete native PASS is inferred. No production model, source fixture, sampling or tolerance change.",
+  "no_implementation_revision": true
+}

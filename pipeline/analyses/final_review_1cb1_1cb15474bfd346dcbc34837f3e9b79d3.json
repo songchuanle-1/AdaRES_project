@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "reviewed_at_local": "2026-10-16T14:08:33.053814+08:00",
+  "y49": {
+    "stage": "rejected",
+    "failure_scope": "implementation",
+    "additional_TRAIN_witnesses": 0,
+    "additional_expressions": 96,
+    "cyclic_calls": 0
+  },
+  "y50": {
+    "stage": "blocked",
+    "blocker_kind": "human_authorization",
+    "new_models": 1,
+    "new_parameters": 66561,
+    "source_fixtures": 32,
+    "native_TRAIN_scenes": 8,
+    "native_TRAIN_expressions": 32,
+    "native_gradient_min": 0.00016157400386873633,
+    "cached_controls": 32,
+    "tools_train_steps": 2,
+    "full_restore_exact": true,
+    "inference": {
+      "parent": {
+        "median_seconds": 0.09073787200031802,
+        "peak_reserved_gib": 1.759765625,
+        "peak_allocated_gib": 1.2445497512817383
+      },
+      "candidate": {
+        "median_seconds": 0.09089170749939512,
+        "peak_reserved_gib": 1.759765625,
+        "peak_allocated_gib": 1.245041847229004
+      }
+    },
+    "stress": {
+      "parent": {
+        "median_seconds": 0.6973970070102951,
+        "peak_reserved_gib": 14.080078125,
+        "peak_allocated_gib": 13.55035400390625
+      },
+      "candidate": {
+        "median_seconds": 0.7036613154923543,
+        "peak_reserved_gib": 14.3515625,
+        "peak_allocated_gib": 13.550850868225098
+      }
+    }
+  },
+  "authorization": {
+    "path": "pipeline/analyses/y50_commit_authorization_block_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+    "sha256": "1017346baaa6dcf0ffdbd1b7f5bf335c380b115c29a952131681aeea90017f25"
+  },
+  "science_review": {
+    "path": "pipeline/analyses/Y50_gate_review_1cb1.md",
+    "sha256": "9b5b33c23ed0661919284093afca7abbc362b4ca741cab70e1d10797d7ca1f31"
+  },
+  "prospective_comparison": {
+    "path": "pipeline/analyses/y50_post_training_freeze_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+    "sha256": "295cb04e409deb6994c7fa59b84caf6b19a13f644d6838fe657281caa0e970aa"
+  },
+  "fresh_resources": {
+    "path": "pipeline/analyses/final_resources_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+    "sha256": "1ffe40fbbeed2792c8b41ff27bb8de08033366d2457115c7f2e4012c9ada09ed"
+  },
+  "official_train_launches": 0,
+  "new_admissions": 0,
+  "note": "A real human commit authorization blocker, not no-information-gain, deadline padding, or a GPU availability claim."
+}

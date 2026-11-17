@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "12be943f16874034808ff67e741653ad",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T02:50:36.008540+00:00",
+  "recorded_at": "2026-10-16T04:21:33.129826+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Previous foreground turn was interrupted before reporting/postflight; original deadline elapsed. Its helper commands exited and no AdaRES Python/SSH/SCP writer remains at 2026-10-16T12:21+08:00. Preserve Y48 terminal reconciliation and Y46/Y49 raw evidence; recover with a fresh tick, not an expired finish.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 24,
+    "input_tokens": 6626421,
+    "cached_input_tokens": 5723392,
+    "output_tokens": 17942,
+    "reasoning_output_tokens": 4723,
+    "total_tokens": 6644363,
+    "uncached_input_tokens": 903029,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 3,
+    "new_evidence_references": 3,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

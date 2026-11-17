@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "token": "910bf6ab43fe4a3881bb680cc7fa8a08",
+  "id": "AdaRES-Y91",
+  "code_commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "prepared_at": "2026-11-07T23:08:19.862422+08:00",
+  "source_resource_protocol_guards": 13,
+  "evidence": [
+    {
+      "path": "scripts/advance_y91.py",
+      "sha256": "f6eafda99fd4c5c4aa1cbe96dcbc2fb9cfe23966627360b40bcb8afa90b84b53"
+    },
+    {
+      "path": "scripts/y91_deployment.py",
+      "sha256": "027498d0b26023193453cf6eb461bc3869e98790575b7fd40d7f77d01d300a27"
+    },
+    {
+      "path": "scripts/test_y91_execution_guards.py",
+      "sha256": "302b199c3ccd55b1d79cef87a7ec66cb49d4cba61cb87ac1bac89c92212dcedd"
+    },
+    {
+      "path": "scripts/test_y91_execution_guards_v2.py",
+      "sha256": "6c11497efdad11c3a9e3e8fd9faaaa68d4688eb1b6ed0c5ede1c054e871f2fe8"
+    },
+    {
+      "path": "scripts/test_y91_admission.py",
+      "sha256": "8a3f5a1209a8035bbfee50a7a5ff60cc0d9456a7cdf28db3feb5b61b82df4b6f"
+    },
+    {
+      "path": "scripts/prepare_y91_execution.py",
+      "sha256": "2c4c097ca52697bd41fe1da578f5fc4686aa88b0a060fed283e1971083a76014"
+    },
+    {
+      "path": "scripts/prepare_y91_execution_v2.py",
+      "sha256": "6f5b8e315c56c225f954979f872c9eaeef50e7bbe6a4b94899bc8a1e7351b617"
+    },
+    {
+      "path": "pipeline/checks/y91_execution_preparation_v2_910bf6ab43fe4a3881bb680cc7fa8a08.log",
+      "sha256": "788738ee60554cf76bd580d9beff3a2967dd370cde216b960efec5c246c1eff1"
+    },
+    {
+      "path": "pipeline/checks/y91_execution_helpers_910bf6ab43fe4a3881bb680cc7fa8a08.json",
+      "sha256": "201edb66e6ce643133a068e7261100760cd2994155f39c07f24eef99865d2766"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993.json",
+      "sha256": "ae2fbb52aa8b7b82827e65a679abc4a7b2b603cb1add99e173434e01d2b47003"
+    }
+  ],
+  "actual_native_executed": false,
+  "admitted": false,
+  "production_HEAD_preserved": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "index_queue_running_preserved": true,
+  "signed_originals_unchanged": true,
+  "fixture_correction": {
+    "found_by": "pre-execution source inspection",
+    "original_test_executed": false,
+    "original": {
+      "path": "scripts/test_y91_execution_guards.py",
+      "sha256": "302b199c3ccd55b1d79cef87a7ec66cb49d4cba61cb87ac1bac89c92212dcedd"
+    },
+    "replacement": {
+      "path": "scripts/test_y91_execution_guards_v2.py",
+      "sha256": "6c11497efdad11c3a9e3e8fd9faaaa68d4688eb1b6ed0c5ede1c054e871f2fe8"
+    },
+    "change": "The wrong-candidate negative case uses Y92 instead of the valid Y91 ID.",
+    "business_guards_and_scientific_files_unchanged": true
+  },
+  "next_action": "After exact original Y89 fixed30 checkpoint verification/archive and fresh exclusive idle server-2 GPU0, run the retained bound native plan. Actual native PASS then exact source selection, admission and canonical dispatch. No GPU1/Y57 use."
+}

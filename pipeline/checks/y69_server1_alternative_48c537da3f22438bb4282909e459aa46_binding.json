@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "token": "48c537da3f22438bb4282909e459aa46",
+  "observed_at": "2026-10-30T10:47:11.239998+08:00",
+  "previous_plan": {
+    "path": "pipeline/checks/y69_native_920e06975f7e4657a6186d382eb05ad9_gpu0_plan.json",
+    "sha256": "22184b6c965530e6afecb8f4fca9569a34f440fc045a776fa7561e64461ca3ef"
+  },
+  "inactive_server1_plan": {
+    "path": "pipeline/checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_plan.json",
+    "sha256": "b82a55d7c567e0181759807d7cc9edb81e384dc4c03b5a0411626040955a885d"
+  },
+  "actual_server1_observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "22836, 76, 350.00",
+    "compute": "1973300"
+  },
+  "actual_idle": false,
+  "preparation_only": true,
+  "activated": false,
+  "original_variant_and_YAML_identical": true,
+  "goal_and_code_commit_unchanged": true,
+  "original_diagnostic_body_reversible_exact": true,
+  "exact_original_data_verification": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "original_guard_tests_preserved": true,
+  "alternate_guard_tests_passed": 8,
+  "test_log": {
+    "path": "pipeline/checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_tests.log",
+    "sha256": "4762aa4df1bdc9feb9ee05100fcf21cc7e952ad0100d2da72b1d739585908d5f"
+  },
+  "source_and_path_changes": "Only explicit host/power guards and deterministic configured path adaptation.",
+  "native_executed": false,
+  "hardware_changed": false,
+  "production_sync": false,
+  "queue_changed": false,
+  "running_changed": false,
+  "Y66_admission_preserved": true
+}

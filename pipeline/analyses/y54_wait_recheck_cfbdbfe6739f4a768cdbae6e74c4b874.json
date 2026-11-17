@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "token": "cfbdbfe6739f4a768cdbae6e74c4b874",
+  "id": "AdaRES-Y54",
+  "observed_at": "2026-10-19T14:11:27.133430+08:00",
+  "recorded_at": "2026-10-19T14:23:22.731818+08:00",
+  "retry_after": "2026-10-19T15:11:27.133430+08:00",
+  "kind": "external_dependency_not_scientific_test",
+  "preflight": {
+    "monitor_rc": 0,
+    "goal_rc": 0
+  },
+  "server": "server-2",
+  "host": "192.168.1.163",
+  "monitor": {
+    "path": "pipeline/headless/.foreground_monitor.txt",
+    "sha256": "533084c61d33ee0db65b5741c09769dfb30c7f7d66544b824d13a1f9a89cfc3d"
+  },
+  "archived_monitor_text": "================================================== 2026-10-19 14:11 : AdaRES_project ==================================================\n\n--- server-2 (192.168.1.163) ---\n  [不可达]\n\n--- server-6 (100.64.3.28) ---\n  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机\n\n--- 队列: AdaRES_project ---\n  server-2: running=1 waiting=1\n    待推: [AdaRES-Y54] configs_song/model_paper5/adares_y54_fine_support_res.yaml gpu=None\n\n",
+  "current_live_gpu_state": "unknown",
+  "current_y52_progress": "unknown",
+  "registry": [
+    {
+      "id": "AdaRES-Y52",
+      "status": "running",
+      "gpu": "0",
+      "pid": 15934,
+      "launch_verified": true
+    },
+    {
+      "id": "AdaRES-Y54",
+      "status": "waiting",
+      "gpu": null,
+      "pid": null,
+      "launch_verified": null
+    }
+  ],
+  "last_verified_y52_evidence": {
+    "path": "pipeline/analyses/prepared_progress_b5a843848cd34b83bf362acf98c88634_140133.json",
+    "sha256": "79391346beb4607ca2915b14852eb66d11c3e01b0f2be70c5996bc6415afdbb0"
+  },
+  "local_capabilities": {
+    "python": "C:\\song_data\\app\\miniconda\\root\\python.exe",
+    "torch_available": false,
+    "numpy_available": true,
+    "scipy_available": true,
+    "source_directories": [
+      "model_paper5"
+    ],
+    "dataset_directory_exists": false
+  },
+  "budgets": {
+    "training_admission": 0,
+    "reserve_budget": 1,
+    "reserve_only": true
+  },
+  "new_candidates": 0,
+  "new_scientific_tests": 0,
+  "model_revisions": 0,
+  "new_admissions": 0,
+  "remote_mutations": 0,
+  "launches": 0,
+  "disposition": "Resume the admitted Y54 dependency only. One reserve slot is available but not filled by a placeholder. The inspected local mirror has model packages, not shared dataset/collation implementations, and the configured inspected local Python has no Torch. This does not claim every independent research direction is exhausted. No native test or novel mechanism is certified by source inspection."
+}

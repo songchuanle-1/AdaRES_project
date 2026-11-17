@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "本轮上海14:44:54取得实验优先design快照；实际CODEX_THREAD_ID匹配AdaRES owner，后台Pipeline-AdaRES_project保持Disabled。仅server-2 GPU0获准，GPU0临时280W及Y57用户暂停保留。",
+    "14:46:10两次实采确认原Y58 PID77094/命令/cwd/starttime/GPU0归属，Train20/30 step1407至1430持续增长、尾部无错误。GPU0=280W/86C/22720MiB，本次短采样无热降频、新内核Xid/fallen-off；GPU1外部compute仍在，不干预。此结果不证明硬件根因修复，不抹去前轮热降频历史。证据pipeline/checks/ef_gpu0_runtime_31bece0318474d5d93c94160d25e2b09.json。",
+    "14:47:31执行Y60到期资源复查，七文件/原生YAML/冻结payload/commit/当前goal仍一致，唯一获准GPU0仍忙，未执行native smoke。Y58当次Train20 step1493至1584，前19轮日志best更新为0.5026597380638123，来自epoch18，仅中途训练指标，不是冻结后评/科学晋升。证据pipeline/checks/prepared_resources_31bece0318474d5d93c94160d25e2b09.json。",
+    "14:49:26执行新增的项目内等待核验入口，实查Y58/Y59各7文件、准入收据及当前HEAD一致；Y59仍waiting/gpu0、没有dispatch_hold/admission_error。Y61各7文件与原CPU不可变测试payload一致，当前占用证据已绑定，stage未改。证据pipeline/checks/ef_waiting_recheck_31bece0318474d5d93c94160d25e2b09.json；tick_attempt=Y59/resource_check/blocked，仅资源/版本核验，不是新CPU/GPU模型测试。",
+    "首次finish发现tick_attempt引用的本轮prepared_resources未全部归入Y59.evidence，收尾被拒且租约保留。原INCOMPLETE收据另存pipeline/checks/ef_waiting_binding_failure_31bece0318474d5d93c94160d25e2b09.json；原v1脚本及输出未改。新增v2入口把资源引用一起绑定到候选，并实际通过所有attempt证据均归入Y59的断言及源码/准入/HEAD重核，新证据pipeline/checks/ef_waiting_recheck_v2_31bece0318474d5d93c94160d25e2b09.json。该记录工具问题未改模型、snapshot、deadline或任何准入门槛，不计模型修订。",
+    "无新候选、模型/YAML修改、Git提交、生产同步、准入、队列新增、训练启动或完成项。Y60/Y61既有CPU测试不重复执行，也不冒充原生稀疏TRAIN两步。记录和七段记忆已更新；修复后将重新生成报告并finish，尚未预称收尾校验成功。"
+  ],
+  "decisions": [
+    "继续保护Y58固定30轮，GPU0真实释放后由既有门控按FIFO派发已准入Y59；保持其当前HEAD/收据，不把资源等待当成缺授权。Y60/Y61的原生训练检查及Y56冻结后评继续等待独占GPU0，不共卡、不抢占外部任务、不转用GPU1/server-6。",
+    "本轮只记录实际训练进展及有界资源/源码重核，无新的科学路线决策、无额外用户确认。Y57继续用户暂停；不改调度、功耗、风扇或训练协议。"
+  ]
+}

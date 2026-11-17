@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "token": "9be8b1f99c154401844f5152bc1be782",
+  "observed_start_local": "2026-10-17T02:58:30.104579+08:00",
+  "observed_end_local": "2026-10-17T02:58:34.911842+08:00",
+  "snapshot_at": "2026-10-16T18:50:29.075819+00:00",
+  "execution_status": "INCOMPLETE; canonical abort and independent release check pending",
+  "resource": {
+    "path": "pipeline/analyses/y52_due_resources_9be8_9be8b1f99c154401844f5152bc1be782.json",
+    "sha256": "0a9173d01faa23a0d7b1a6511b11bc705eaadcd786138040d559aea08b5e121d"
+  },
+  "earlier_continuation": {
+    "path": "pipeline/analyses/y52_observer_continuation_9be8b1f99c154401844f5152bc1be782.json",
+    "sha256": "990fecbbd350053310885c413f1839916f3f18fabd166166eed7129b03fedb5c"
+  },
+  "earlier_record_was_before_retry": true,
+  "previous_retry_after": "2026-10-17T02:57:40.467824+08:00",
+  "next_retry_after": "2026-10-17T03:58:34.911842+08:00",
+  "scientific_gate_passed": false,
+  "new_CPU_instrumentation_unit_tests": 1,
+  "new_CPU_full_model_tests": 0,
+  "native_GPU_tests": 0,
+  "model_changes": 0,
+  "new_candidates": 0,
+  "admissions": 0,
+  "launches": 0,
+  "checker_sha256": "39ee52f17e3afdc15d0fde71bbf78e74bf58c218155709a25861044461cea0d2",
+  "known_queue_opening_predicate": true,
+  "finish_invoked": false,
+  "limitation": "CPU observer instrumentation reliability and current resource evidence only; frozen actual native capture/backward/shared-query/resource-restore gates remain unrun."
+}

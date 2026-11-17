@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y92",
+  "token": "cb9af7d40b9c460fa7ca330bd7ae9a8e",
+  "status": "intent_before_remote_creation",
+  "program": {
+    "path": "pipeline/checks/y92_review_binding_cb9af7d40b9c460fa7ca330bd7ae9a8e_execution.py",
+    "sha256": "a2a8343cf342f5802b7abafcba917311aa9e2b9c005119c2060146976780ea50"
+  },
+  "binding": {
+    "path": "pipeline/checks/y92_review_binding_cb9af7d40b9c460fa7ca330bd7ae9a8e.json",
+    "sha256": "167ee3b444e4c933419f0349b00fa9245a88c4e2e3f95cbe90b085b7e9f22c39"
+  },
+  "remote_folder": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y92/cb9af7d40b9c460fa7ca330bd7ae9a8e",
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0,
+    "note": "Existing power preserved; full paired evaluation/cost on this device; two batches are not a full-dataset memory bound."
+  }
+}

@@ -1,78 +1,43 @@
 # AdaRES_project Research Memory
-
 ## Goal And Phase
-- Phase 1: ScanRefer mIoU >= 0.515; not reached. Phase 2 awaits Phase 1.
-- Root: D:/project/AdaRES_project; model code: AdaRES/.
-- Remote code root: /bak_home/songcl/Project/AdaRES_project/AdaRES.
-- Use server-2 GPUs 0 and 1 only; never use server-6.
-- New experiments use one GPU per task, one task per allowed GPU.
-- The user-approved extension protocol is 30 total epochs. B2 and B4 resume
-  from their epoch-20 last checkpoints on separate GPUs; optimizer and PolyLR
-  state are preserved, and the epoch count must not be tuned.
-- Train from the released SPFormer sparse-UNet backbone with the project decoder.
-- Do not tune thresholds, temperatures, loss weights, feature subsets, epochs,
-  ranking margin, or occupancy loss weight.
-
+- Current token 3b4fd48f1e884a25989d44bdd8c64582; snapshot 2026-11-16T22:51:21.679146+00:00; deadline 2026-11-16T23:51:21.679146+00:00; never extend. Latest server1/GPU1/Y57 user pauses remain authoritative.
+- Actual CODEX_THREAD_ID=owner01a07e32-78bf-7670-925b-370911ea48db; Pipeline-AdaRES_project Disabled; experiment_first enabled; PROJECT_ROOT=D:/project; PYTHONDONTWRITEBYTECODE=1; PYTHONUTF8=1; python -B; SSH keys only.
+- LATEST USER PAUSE2026-11-15: owning user said "你暂停server1的实验". ALL AdaRES server1 GPU training/dispatch/native/evaluation/cost paused; server1allowed_gpus[]. Resume ONLY explicit new user authorization. pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json SHA856914c2f463b590eb615c4de9cc7168b2328087462fa56756c55523970be3e0. Only current usable resource is originalserver2GPU0/280W, one independent experiment/card. Preserve server1 existing350W hardware setting; server2GPU1 and Y57 separately paused; no server6/cross-project/power/scheduler/foreign-job changes.
+- Goal SHA4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a; pause SHA3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45; original science/receipts/data/runtime mappings/bans byte-preserved. Goal_rc4/admission-creation-reserve0 derives from Y100 trainingbest.516448557, NOT formal FIRST; no gate/goal/Phase2/seed/ablation/newtraining changes. Latest server1 user-pause authority supersedes the old server1 grant and stale heartbeat permissions; scientific goal bytes remain immutable.
+- Exact previous seven-section memory pipeline/snapshots/codex_memory_before_3b4fd48f1e884a25989d44bdd8c64582.md SHAbaaf40f1701273b43c2f55423ba6231f84a5914597691464a9c6169dfd638ba4; original science/receipts/negative evidence/terminal products/dedicated recovery/pause and automation history retained through exact-byte backup chain.
 ## Champion And Baseline
-- AdaRES-B1 baseline: mIoU 0.502, Acc@0.25 0.610, Acc@0.5 0.553, spmIoU 0.467.
-- AdaRES-B4 champion: mIoU 0.5070, Acc@0.25 0.607, Acc@0.5 0.556,
-  spmIoU 0.472, spAcc@0.5 0.524, spAcc@0.25 0.600; target gap 0.0080.
-- B4 checkpoint:
-  /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_032553/best.pth.
-- AdaRES-B2 former champion: mIoU 0.505.
-
+- Target.5150; historical formal FIRST Y36=.510725438294/W2=.510107995189/B1=.502221764356; CSV/trainingbest do not replace FIRST or prove goal. Y101/Y99/Y96 original full results remain complete_inconclusive; no promotion.
+- Frozen review each candidate+Y36/W2/B1 twice EACH9508 expressions/141scenes; FIRST primary, scene bootstrap10000/seed1999, TRAINcuts1487/3325. Prespecified subgroup CIupper<0 vsY36/W2 rejects trained realization; crossing intervals inconclusive. Repeats are not seed variance/universal bounds.
+- Original mIoU/Acc25/Acc50/activequeries/latency/peakmemory/original-device cost unchanged. Frozen TRAIN8+indices728/6780 serialwarm2/read3 and separate native batch2 stress20 memory-only fresh-optimizer updates including warmups; original weights never overwritten, limited scenes/order/descriptivep95 do not prove full-data memory/Pareto.
 ## Active Hypotheses
-- AdaRES-B5 token-grounding indicator: direct query-to-phrase token
-  compatibility should add semantic evidence missing from confidence scoring.
-- B5 preserves B1 indicator supervision and remains structurally independent
-  from B4 query competition.
-
+- Y90 FULL SCIENTIFIC REVIEW pipeline/analyses/y90_trained_cost_5a320b25043948e2bae2ffdef63da17a/complete_scientific_review.json SHA6aba6007b63c4a0281aa21915e49af7924ad14811627da7776e281b435582f33 disposition=rejected_material_subgroup_harm/failure_scope=implementation. FIRST.5038137203772663; eight full9508/141 captures, corrected original paired/noise analysis and valid guarded original-device cost/postaudit complete. Small-target vsW2 delta-.02314347910449173 CI[-.039904258255331115,-.006607452657511296], observed subgroup repeatnoise0 triggers ORIGINAL criterion; all overallCIs cross0/targetmiss/no promotion. Reject this fixed30/best14/seed1999 realization, not the mechanism; no automatic reopen.
+- Y90 first contended cost remains scientifically UNACCEPTED pipeline/analyses/y90_cost_resource_contended_06beafa3cffe4ecf956270d1146f75c9/resource_disposition.json SHA4289b3c984727b57b293b80d07c72b6ff51b812af3b6b9622f155805fc4cff77; old refused attempt2 intent/absent-folder evidence unchanged. Current attempt3 original-core/worker-body byte-identical recovery completed24 blocks; 107 original resource samples (96 owned), every sample empty/ownPID only. pipeline/analyses/y90_trained_cost_5a320b25043948e2bae2ffdef63da17a/resource_guard.jsonl SHAbcf0c551688edb6818c228be329d02e815230e700601678dc48c9825dcd8f8ca; current metadata-only plan pipeline/checks/y90_cost_guarded_relaunch_5a320b25043948e2bae2ffdef63da17a.json SHAe5fdff2e3fb9dc14d7a13757e8ed3ca0b18fc4a9a31b0ec1e07efdeb52563c34. No prediction/CPU/native/terminal/training replay.
+- Y88 original modelcommitcb4a5813755d38b3d1593bb803726aabd7d0a79b/configadares_y88_mask_query_quadratic_res.yaml; original20261106_053553 last30/best21/source26/YAML/private runtime and signed receipts preserved. First failed review is immutable. Candidate two original9508/141 passes were reused byte-for-byte; missingY36/W2/B1 each two passes naturally completed in continuation worker780639. All8 original native captures/worker paired result are now archived pipeline/analyses/y88_user_pause_ce356360782a431ab9adc3e015f7d5aa/user_pause_archive.json SHA8c1ed94b12c62def5b153d74bcc45035d8003cf15dcd2f5785f325c5df43d37f. Full formal comparison/cost/postaudit remain pending; COST NEVER STARTED, no scientific promotion/rejection for Y88.
+- Production HEADY102=0c6c844719c8466ddd8888d054fe3b7ee658e643; server1 additive source markerY101=6fb26984ae652efbba177ab20c39575c44a69517; original running/source/index/user files retained. Every frozen modelcommit is separately bound to current runtime marker.
+- AdaRES-Y90 original modelcommit2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71 config=configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml; Original confidence peers are pooled using only row-normalized soft mask overlap. A shared bounded learned compatibility of the existing normalized focal/peer query pair may ease fitting which overlapping peers influence confidence. Existing query and shared MLP can implicitly encode interactions; no defect, missing information, novelty or trained benefit is presumed. Independent W2, Aij=1+tanh(qnorm_i @ zeroW256x256 @ qnorm_j /sqrt(256)); context row-normalizes original off-diagonal overlap*A. Shared W/no RNG/+65536. Retain original overlap/max-overlap, masks/scores/queries, all Q128 peers/full channels/point masses/shared head and norms, original data/2D/releasedbackbone/sampling/SCG/gates/targets-loss-selector/seed1999/fixed30/native YAML. Initial all-output/input-gradient anchors exact; nonzero affinity/bypass controls, exact input/consumer/gradient/two updates required. Individual-stage row-constant gates may cancel; require aggregate nonzero learned context response over seven readouts, not fabricated per-stage efficacy. No temperature/threshold/degree/weight/validation scan.
+- Y90 complete review/cost/guard/postaudit source-and-checkpoint bytes verified; formal captures pipeline/analyses/y90_full_review_06beafa3cffe4ecf956270d1146f75c9/formal_comparison.json SHA9623036d0276194f0c59e679e1d11e18a61165a624f0b25702bde60497c8614c retained unchanged. All original modelcommit/runtime marker/goal/receipts preserved; no repeated predictions/cost/terminal tests after valid completion.
+- Y103 exact original CPU/version/native-body preparation remains unchanged, commit943ad702c59547aafd8b797f19c705f3661a8b9f onY102, binding pipeline/checks/y103_y102_additive_binding_e400166950804bdc890d260e8efe3077.json SHA7d43d87652f2a50b901f44cadc7fe36bf2758a6b6728eee803be3bc30b181942. Native unexecuted/no admission/phase-gated; no replay or renamed route.
 ## Closed Or Failed Directions
-- AdaRES-B0 closed at mIoU 0.333; oracle masks were strong but ranking failed.
-- AdaRES-B1 completed as the faithful baseline at mIoU 0.502.
-- AdaRES-B2 completed at mIoU 0.505.
-- AdaRES-B3 closed at mIoU 0.5014; do not repeat mask-evidence pooling.
-- AdaRES-B4 closed improved at mIoU 0.5070, best at epoch 19; it beat B2 by
-  0.0020 but missed the target by 0.0080. Do not launch a duplicate or
-  tuning-only B4 successor.
-- B3 and B5 remain closed at their historical 20-epoch protocols. Do not
-  compare a 30-epoch extension against them without labeling the mismatch.
-
-## 30-Epoch Extension
-- At 2026-09-22 the user approved training up to 30 epochs. B2 and B4 are the
-  first paired extensions because they are the top two variants and remain
-  below the target.
-- Resume sources:
-  B2 `20260919_204155/last.pth`;
-  B4 `20260921_032553/last.pth`.
-- Launch B2 on GPU1 and B4 on GPU0, one single-GPU process each. Do not modify
-  the running extension's epoch setting or restart it from pretrain.
-
+- Y92 FULL SCIENTIFIC REVIEW pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/complete_scientific_review.json SHA1ae9a5f2c3ea367cfaf763a4df7e6b1b229f323bf61dd2661ee1d2952aa7a97a disposition=rejected_material_subgroup_harm; FIRST.5093426233066561, targetmiss. Original large-target versusY36 delta-.013095730186987491 CI[-.025226342002789295,-.0004629637591484981], mean-absolute subgroup repeatnoise.000130663127797835. Reject fixed30/best20/seed1999 implementation, not mechanism-wide falsification; no promotion/reopen/retry.
+- Y92 eight full9508/141 captures verified pipeline/analyses/y92_full_review_01dd8c0ec7cc42dc9bede64a8c5c684c/formal_comparison.json SHAa222272c4f629e9257582cf5d3d728e1fc5c7a0a6c0bfa5d01c71771fc6e32e5; all overall CIs cross0. Same-device Y36.5107223221208791/W2.5101044157882976/B1.5022266193103812. Original cost pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/trained_cost.json SHAffa05bf4d3066d38612ce41b2adc85bb539c9f878796169ada6b140a2ccd38dc; source/checkpoint postaudit pipeline/analyses/y92_trained_cost_01dd8c0ec7cc42dc9bede64a8c5c684c/postaudit.json SHA6e5a31f50d7a64c2e2964ae0946fdf480d4be2a44748935803715577f5d90ce0. Parameters+65536; TRAIN8 median82.49ms vs87.95ms, largestpair205.42ms vs200.21ms; nativeReserved13.44727GiB vs13.40039GiB. Original source/weights preserved; frozen limited-scene/order/descriptivep95 only, no full-data/Pareto claim.
+- Y94 FULL SCIENTIFIC REVIEW pipeline/analyses/y94_trained_cost_cb9af7d40b9c460fa7ca330bd7ae9a8e/complete_scientific_review.json SHAcc89d0393c421b1aff2aedfc4e3f66079f99a09a8aba44cd2f72615a0f2331a8 disposition=rejected_material_subgroup_harm; FIRST.5075611062753286, targetmiss. Original small-target W2 difference-.01673754047576701 CI[-.03112226172233613,-.0024482440385502685], observed subgroup repeatnoise0. Reject this fixed30/best21/seed1999 implementation; failure_scope=implementation, not mechanism-wide falsification; no reopening without explicit authorization.
+- Y94 all overall CIs cross0; original same-device Y36.5107254382940857/W2.5099022211829254/B1.5022217643559687. Eight fullpasses verified pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/formal_comparison.json SHA834d7a6e52f54a5e7cac1822931943f9c0701a225e35bba9049706f7265e81ca. Original source/weights preserved; full cost pipeline/analyses/y94_trained_cost_cb9af7d40b9c460fa7ca330bd7ae9a8e/trained_cost.json SHA4be6f32eb94bc6589164e424062e3c3fdc652a93b6b5f4ea06cd3f06552239ac and postaudit pipeline/analyses/y94_trained_cost_cb9af7d40b9c460fa7ca330bd7ae9a8e/postaudit.json SHA7e8a9089cc4346c9011535c7fbb0a6bcabb90d6857d0cbba0454b90d123069b5. Parameters+24; TRAIN8 median84.95ms vs87.26ms; largestpair204.20ms vs204.60ms; nativeReserved13.41211GiB vs13.40039GiB; no Pareto/wholedata claim.
+- Y101 FIRST.5062989703031004, complete_inconclusive pipeline/analyses/y101_trained_cost_03d64fcf5ccd4b2e8e0e1bd1d5a43985/complete_scientific_review.json SHA5a696ae66ce8815b774b67933edc1a8bd066fffe1a5d3b4cdc682dea37536636. Y99 FIRST.5109262480516882, complete_inconclusive pipeline/analyses/y99_trained_cost_c9234c1d7d7141c8a1b69e2e9749490e/complete_scientific_review.json SHA42c6d2d21e0c784de53148909da3864229c46c4e293e48483af84a3f3a496e6e. Y96 FIRST.5082609879270078, complete_inconclusive pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/complete_scientific_review.json SHAa9c2024c78085d06b3d8fbf994a86868aa864eac5bb2704efa16698f53563573. All full8passes/cost/postaudit complete, raw evidence immutable; NEVER replay predictions/cost/terminal/CPU/native or promote.
+- Y54 large-object harmCI[-.02678985,-.00070265] and Y52 overallCI crossing0 remain original negatives; Y53/Y55/Y50/Y51/Y49rev1/Y46/Y48/F1 and all rejected/banned route evidence preserved. No thresholds/temperatures/margins/occupancy/loss/feature/epoch/validation scans or automatic reopening.
+- Y86 original native numerical failure SHA8382c924aa1297e5836d53af7c46517917336e269d8ff3656fbaeab547a84b6c and Y97 original/revision1 CPU numerical failures remain immutable implementation holds. No retry, renamed route, tolerance/guard relaxation or mechanism rejection; details in exact backup chain.
+- Y22/Y23 dedicated original continuation requirements and original paused/full checkpoint products preserved. Historical archives Y81/Y82/Y83/Y91/Y92/Y93/Y94/Y95/Y96/Y98/Y99/Y100/Y101 are products, never restart/rearchive/replay terminal helpers.
 ## Running And Queue
-- AdaRES-B4-E30 is running on server-2 GPU 0, PID 52617. Verified log:
-  `resume_adares_b4_query_competition_res_20260922_093323.log`; resume began
-  at epoch 21 with best mIoU 0.5072 and training is progressing.
-- AdaRES-B2-E30 is running on server-2 GPU 1, PID 56854. Verified log:
-  `resume_adares_b2_metric_indicator_res_20260922_093709.log`; resume began
-  at epoch 21 with best mIoU 0.5046 and `Train[21/30]` is active.
-- `queue.json` and `running.json` now model both extensions as the two active
-  slots, preventing duplicate dispatch or unrelated design while they run.
-- AdaRES-B5 is closed at mIoU 0.5030 after 20/20 validations.
-
+- Y90 full review/cost/postaudit completed rejection unchanged; no active Y90 GPU job. Y88 continuation attempt2 naturally completed during user-pause verification; all8 native passes preserved. Ownserver1 GPU compute absent pipeline/checks/server1_user_pause_ce356360782a431ab9adc3e015f7d5aa_stop.json SHA3ba5195f8dfd4c86c9e20090909e694fcd5adca2e3f739dc738d7152aa40c2d5. All12 unfinishedserver1 routes human-paused. OLD remaining-only prediction launcher is satisfied/obsolete, NEVER run it or any predictions again; original failed attempt1/intent and all raw outputs retained.
+- Original Y102 PID4747/server2GPU0/280W retained; all4 native samples remain Train1/30 step7/4686; current progress NOT confirmed. Exact source6/nativeYAML/private runtime/physical compute observed pipeline/checks/unchanged_paused_resource_observation_3b4fd48f1e884a25989d44bdd8c64582.json SHA35f06655ec4bd63e9d1e2e5f75896517f6960c179e4d470a897883c547f6e35b. Preserve actual remote times/logs/receipt/protocol; no restart/checkpoint load.
+- Y100 original20261111_085241 last30/best23 optimizer544/scheduler30-23 finite proof/canonical archive complete once; trainingbest.516448557 is NOT formal FIRST. Its full review must wait for original server2GPU0/280W behindY102; never move toserver1/substitute/restart/rearchive.
+- Current allowed resources: server1[]/server2[0]/server6[]. Latest server1/GPU1/Y57 pauses remain. Original GPU0 UUID/PID4747/280W observed pipeline/checks/production_adares-y102_3b4fd48f1e884a25989d44bdd8c64582_start.log SHA690e40d0129e8706efebd41666934b0e7d5abf18385577a38dbb8607ca762d3c. GPU1 foreign process untouched; no server1 connection or resource substitution.
+- Server1 songcl@192.168.1.175/dl02-MS-7B73: code /data1/songcl/Project/AdaRES_project/AdaRES; private runtime/adares_project/bin/python +cuda113lib64; exact ../data/. Server2 songcl@192.168.1.163/dl01-MS-7C60: /bak_home/songcl/Project/AdaRES_project/AdaRES; /home/songcl/.conda/envs/adares_project/bin/python; original /bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/. Only two original SERVERS path mappings; PointNet wrapper/privatebinary exact guards retained.
+- Y57 separately paused original epoch27/model+optimizer543+scheduler27, resume only explicit Y57 authorization. Six original GPU1/390W reviews Y67/Y70/Y73/Y75/Y78/Y81 still user-paused, no migration. GPU1/foreign compute untouched.
 ## Open Questions And Risks
-- Pending questions in the snapshot manifest: none.
-- B5 has not beaten the B4 champion through its latest validation.
-- B5 may be partly redundant with existing decoder language attention.
-- B4 active-query count, latency, and peak memory remain unmeasured.
-- `pipeline/closure_policy.json`, project-local `formats.md`,
-  `references/autonomous_design.md`, and project-local `log_decision.sh` are
-  absent; the shared skill provides the decision logger.
-
+- Y102 still stalled this tick; prior denied ptrace/no save announcement/administrator stack-help request retained. Do not repeat same permission question/attachment, assume sudo, restart, or guess a checkpoint directory. Genuine native save announcement required before terminal-tool binding.
+- Next owning tick obey latestAGENTS/SERVERS/new server1 pause auth; saved AdaRES heartbeat prompt was updated and frequency/target/status/notifications verified unchanged pipeline/checks/server1_pause_automation_verified_ce356360782a431ab9adc3e015f7d5aa.json SHA54f5fa643194bd7a5897a6b161be756f5876e62b8400cd287e93a78f2f86d2f8. Do not use oldserver1 occupation/launch/native/evaluation/cost helpers or resume on a timer. Monitor originalserver2GPU0 Y102 only. Preserve all8 Y88 captures; old remaining-baseline plan is completed and must never replay. Y88 full formal integrity/comparison and original-device cost/postaudit remain pending; GPU cost requires explicit newserver1 authorization. Y90/Y92/Y94 remain rejected, Y100 originalserver2GPU0 only, Y103 no native/admission and nowserver1 user-paused.
+- All results are single-trained-seed/checkpoint realizations. Preserve negative/uncertain outcomes, original data/seed/fixed30/selector/bans; no mechanism-wide conclusion from one implementation, automatic promotion, validation tuning, GPU1 substitution or new training under zero budget.
 ## Last Tick
-- 2026-09-22 09:30-09:42 +08:00 manual protocol correction.
-- Fixed B2 and B4 at 30 total epochs, resumed both from epoch-20 `last.pth`
-  without resetting optimizer or PolyLR state, and launched one per GPU.
-- Fixed B2's duplicate loss-registry error with `force=True` in commit
-  `f23036b`; verified both processes beyond PID existence.
-- Next: monitor validations 21-30, preserve the fixed protocol, and compare
-  B2-E30 versus B4-E30 on the same training budget.
+- 3b4fd48f1e884a25989d44bdd8c64582: event; 21 due holds rechecked against unchanged user pauses and original numerical failures. Creation/admission/reserve budgets0, no terminal or operational change. Original Y102 source6/YAML/private runtime/280W confirmed, counter still Train1step7; no new science.
+- Y88 original8 captures/cost-unstarted and device bindings preserved. No new candidates/admissions/training/GPUtests/reviews/cost or CPU/native/terminal/prediction replay. No source/data/seed/power/scheduler/goal/receipt/ledger changes, restart, checkpoint load, server1 access, repeated ptrace/admin request or foreign interference.
+- Actual observation pipeline/checks/unchanged_paused_resource_observation_3b4fd48f1e884a25989d44bdd8c64582.json SHA35f06655ec4bd63e9d1e2e5f75896517f6960c179e4d470a897883c547f6e35b. No material change or new user action; quiet heartbeat. Exact7-section memory backup retained; official report/finish/receipt/release authoritative.

@@ -1,0 +1,31 @@
+{
+  "actions": [
+    "只读核验原Y102 PID4747的源码6文件、原生YAML、私有环境及server2 GPU0/280W。四次原生样本仍停在Train1/30第7/4686步，持续推进未确认，无新增日志错误。",
+    "到期原挂起复查共21项；既有用户暂停及原数值失败证据保持。Y88八遍原预测保留、成本未启动。"
+  ],
+  "decisions": [
+    "创建/准备/准入预算为零，无新终态。保持server1全GPU暂停、GPU1暂停及Y57单独暂停，不迁移、不重启、不加载检查点、不回放科学检查或重复管理员问题。原goal、收据和候选账本保持字节不变；无新增可行动事项，按原频率静默收尾。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/unchanged_paused_resource_observation_3b4fd48f1e884a25989d44bdd8c64582.json",
+      "sha256": "35f06655ec4bd63e9d1e2e5f75896517f6960c179e4d470a897883c547f6e35b"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_3b4fd48f1e884a25989d44bdd8c64582.md",
+      "sha256": "baaf40f1701273b43c2f55423ba6231f84a5914597691464a9c6169dfd638ba4"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y102_3b4fd48f1e884a25989d44bdd8c64582_start.log",
+      "sha256": "690e40d0129e8706efebd41666934b0e7d5abf18385577a38dbb8607ca762d3c"
+    },
+    {
+      "path": "pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "856914c2f463b590eb615c4de9cc7168b2328087462fa56756c55523970be3e0"
+    },
+    {
+      "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+      "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-23T00:59:19.011943+08:00",
+  "command": [
+    "C:\\song_data\\app\\miniconda\\root\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "test_gpu0_lifecycle_v2"
+  ],
+  "returncode": 0,
+  "tests": 10,
+  "passed": true,
+  "log": {
+    "path": "pipeline/checks/gpu0_lifecycle_tests_4a61a71456b74eed919cefeb12056a8e.log",
+    "sha256": "7fa2c3f39772ba088198b95aa567e627f67c3902377d56005c27e26c62e660a9"
+  },
+  "sources": [
+    {
+      "path": "scripts/recheck_gpu0_lifecycle.py",
+      "sha256": "9dd77f989ee372052c905fbcff6f92e274cbde9323a07c3384868edd35172d77"
+    },
+    {
+      "path": "scripts/test_gpu0_lifecycle.py",
+      "sha256": "6ddd9807c42b22a1e96efb03a353deeeac7a1fab9bd41bd96f3bcce2d6eb6763"
+    },
+    {
+      "path": "scripts/recheck_gpu0_lifecycle_v2.py",
+      "sha256": "6f346c2b5b3725cb3605403c4695da778bc03474d88764ba4fafbf4cea4a1f6f"
+    },
+    {
+      "path": "scripts/test_gpu0_lifecycle_v2.py",
+      "sha256": "17b69540c11b18b7c4da5d82393be7288d4377f931f1c1e89277d127c5418a78"
+    }
+  ],
+  "executed_resource_reconciliation": {
+    "path": "pipeline/checks/gpu0_lifecycle_4a61a71456b74eed919cefeb12056a8e.json",
+    "sha256": "f092d214f5ebb5c35dcbc45d50894acfe50510fa2faa748c3df4e18c52d6aa45"
+  },
+  "limitation": "CPU lifecycle regressions and fresh recorded resources only. The v2 idle-slot transition is unit-tested, not an actual idle-GPU observation or native smoke.",
+  "git_head": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "model_changed": false,
+  "native_smoke_executed": false,
+  "admission_or_launch_performed": false,
+  "runtime_hardware_changed": false
+}

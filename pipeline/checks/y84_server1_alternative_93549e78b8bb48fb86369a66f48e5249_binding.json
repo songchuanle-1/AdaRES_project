@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y84",
+  "token": "93549e78b8bb48fb86369a66f48e5249",
+  "observed_at": "2026-11-04T21:14:59.092610+08:00",
+  "original_plan": {
+    "path": "pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d_gpu0_plan.json",
+    "sha256": "9a1d3d005b767f024ebcaf9e79e6ec5fa55d1ff2f99a4a182d6ab2a603e43750"
+  },
+  "inactive_server1_plan": {
+    "path": "pipeline/checks/y84_server1_alternative_93549e78b8bb48fb86369a66f48e5249_plan.json",
+    "sha256": "766d676d647c4093972aad7303bfda7f415e5b61daaae798eb9cb91b1d72ce67"
+  },
+  "original_model_and_YAML_payload_identical": true,
+  "code_commit_and_goal_unchanged": true,
+  "diagnostic_scientific_body_reversible_exact": true,
+  "exact_callback_functions": 6,
+  "CPU_callbacks_previously_executed": true,
+  "CPU_callback_evidence": {
+    "path": "pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d.json",
+    "sha256": "ef0610fd20b610c3b27841257dd008aa625280771693b0e287d2278e409471fb"
+  },
+  "exact_original_data": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "actual_server1_observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "22764, 64, 350.00",
+    "compute": "1121817"
+  },
+  "physical_idle": false,
+  "canonical_reservation": "AdaRES-Y82",
+  "activated": false,
+  "guard_tests_passed": 8,
+  "guard_log": {
+    "path": "pipeline/checks/y84_server1_alternative_93549e78b8bb48fb86369a66f48e5249_guards.log",
+    "sha256": "b0b43ae2c104c434fe2191ea9e508e8530646d89661f649b824f24236d4af39f"
+  },
+  "native_executed": false,
+  "hardware_changed": false,
+  "production_sync": false,
+  "queue_changed": false,
+  "evidence": [
+    {
+      "path": "scripts/y84_server1_alternative.py",
+      "sha256": "7d6f84b3af26a767163d73b0b5d02d8afdae843e29f92b24ee68ad8076ae465e"
+    },
+    {
+      "path": "scripts/test_y84_server1_alternative.py",
+      "sha256": "761add0751f6473d2bf17a28c476026c3e47d6b1fe141a5fe978be4fe1238388"
+    },
+    {
+      "path": "scripts/y84_observer_core.py",
+      "sha256": "e69b3b27e669c3a5ea8f910856ad4aaa6c48c81c0d603eae5eb7d54af7ba997c"
+    },
+    {
+      "path": "scripts/y82_server1_alternative.py",
+      "sha256": "75ffab5d0e1f6dc4b8c800ea122ae046eec5004bc9a65523cf60efc28198700c"
+    },
+    {
+      "path": "scripts/prepare_y69_server1_alternative.py",
+      "sha256": "9028bb58081ba090a3efe5fd6597c7585bb608c5ba6ad3b52348285abe2df910"
+    }
+  ]
+}

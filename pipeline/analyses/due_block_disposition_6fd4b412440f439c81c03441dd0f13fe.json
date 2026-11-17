@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "candidate_ids": [
+    "AdaRES-Y46",
+    "AdaRES-Y49"
+  ],
+  "resource_evidence": {
+    "path": "pipeline/analyses/due_resources_6fd4_6fd4b412440f439c81c03441dd0f13fe.json",
+    "sha256": "685a897dd56bd12b01b201e0bbce6c488668cf5b9421cee17e7e82e951f9057a"
+  },
+  "boundary_evidence": {
+    "path": "pipeline/analyses/recheck_boundary_6fd4b412440f439c81c03441dd0f13fe.json",
+    "sha256": "8fcd75fd59a486b3df5ce4b1adabbd72e757bc77f8bbb692b1b0f35902f9760b"
+  },
+  "observed_start_local": "2026-10-16T04:52:55.467212+08:00",
+  "observed_end_local": "2026-10-16T04:53:01.070891+08:00",
+  "unchanged_frozen_tests": {
+    "AdaRES-Y46": {
+      "manifest": {
+        "path": "pipeline/analyses/y46_next_production_native_131e_131e82d16cb9437f968b1acd879766b7.json",
+        "sha256": "0c9ba94c9cb7261e5ba8df59cbe6a1682658c505fb98fd71538f26ce1b69a1ac"
+      },
+      "program": {
+        "path": "scripts/probe_y46_production_native_131e.py",
+        "sha256": "1e1affbd1d690cdb2d30039865fd0cf6dac2dc4a0c74f543ce6ce40fbc66e648"
+      }
+    },
+    "AdaRES-Y49": {
+      "manifest": {
+        "path": "pipeline/analyses/y49_next_native_freeze_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+        "sha256": "512bed923d9ad27fa8bbbe4622d5bbbf591845f651d67b6597e43e2a3931a371"
+      },
+      "program": {
+        "path": "pipeline/analyses/y49_instrumentation_program_c3e5_c3e5627500e14e3fa88075dc5544095e.py",
+        "sha256": "5d762fe9267264a4d8889f4787957c635fab3996ff897cd4fc3329b590db7d54"
+      }
+    }
+  },
+  "pending_gates": {
+    "AdaRES-Y46": [
+      "production_native_backward",
+      "production_tools_train_and_restore",
+      "resources",
+      "final_six_gate_review"
+    ],
+    "AdaRES-Y49": [
+      "native_task_diagnosis",
+      "native_backward",
+      "resources",
+      "independent_production",
+      "released_init_tools_train_restore",
+      "six_gate_review"
+    ]
+  },
+  "scientific_status_unchanged": {
+    "AdaRES-Y46": "production_CPU_controls_passed_GPU_validation_blocked",
+    "AdaRES-Y49": "CPU_information_and_hook_supported_native_GPU_pending"
+  },
+  "retry_after": "2026-10-16T05:53:01.070891+08:00",
+  "retry_basis": "Actual client-local resource observation end plus1hour, or genuine unblock; not automation time",
+  "GPU0_owner": "foreign PID19723",
+  "GPU1_owner": "own Y48 PID8877",
+  "GPU_diagnostics": 0,
+  "repeated_CPU_controls": false,
+  "new_candidates": 0,
+  "admissions": 0,
+  "new_training": 0,
+  "current_task_code_commit": "d18c228fd3796b5a87dbe313075b6ee748b2d51b",
+  "current_task_exact_source_hashes_verified": true,
+  "scope": "Both authorized GPUs genuinely occupied; necessary non-GPU preparation complete. SAME frozen native tests remain blocked. Not scientific efficacy, native/resource PASS, admission or route exhaustion."
+}

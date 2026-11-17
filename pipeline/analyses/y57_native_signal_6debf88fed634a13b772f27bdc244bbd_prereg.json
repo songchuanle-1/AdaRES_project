@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "candidate_ids": ["AdaRES-Y56", "AdaRES-Y57"],
+  "planning_time_reference": "2026-10-20T20:33:18.6966867+08:00",
+  "preregistered_before_execution": true,
+  "preregistration_timestamp_source": "Filesystem mtime of this preregistration and its program, both persisted before the runner invocation.",
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "purpose": "Review completed native incidence and task-bound capture, without claiming causal or admission PASS.",
+  "inputs": [
+    {"path": "pipeline/analyses/y56_native_batch2_6debf88fed634a13b772f27bdc244bbd.json", "sha256": "dff483ac71a5353b509289aaab76b3b3893cedeed29bfad35ee7601f0915a08d"},
+    {"path": "pipeline/analyses/y57_native_task_6debf88fed634a13b772f27bdc244bbd.json", "sha256": "af0d796001a0b74174a103701a4f809d0605a5010955464a015d360ab5975846"}
+  ],
+  "primary_layer": 6,
+  "other_layers": "Report all0-5 as exploratory; no layer selection.",
+  "sample": "All fixed8TRAIN scenes/32expressions/128queries, no case or query selection.",
+  "readouts": [
+    "Per-expression Spearman dispersion versus absolute confidence error and point quality; fixed cyclic-shift1 label control.",
+    "Leave-one-whole-scene-out OLS point-quality prediction: confidence versus confidence+dispersion.",
+    "Matched same-parameter-count confidence+cyclic-shift1 dispersion control.",
+    "All Y56 per-layer exact joint-copy and separate hard-mask equivalence counts."
+  ],
+  "fitting": "Train-fold standardization only; intercept; numpy.linalg.lstsq rcond=None; no regularization or feature/hyperparameter scan; no clipping.",
+  "aggregation": "Whole-scene held-out MSE; descriptive scene bootstrap10000/1999 of paired gains. Eight scenes, not4096independent queries.",
+  "interpretation": "Any positive, null or reversed result is retained. This only conditions on confidence, not all head inputs; not causal, novelty, trained benefit or an admission requirement. No changed production model or selector."
+}

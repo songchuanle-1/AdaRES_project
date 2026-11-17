@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "token": "eee3af894c7e4816a93bb3d1e7770040",
+  "snapshot": "2026-11-02T04:53:33.427911+00:00",
+  "observed_at": "2026-11-02T13:18:05.410934+08:00",
+  "original_live_training": {
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_eee3af894c7e4816a93bb3d1e7770040_final.json",
+      "sha256": "70a8663c14c74478d2e4e194f8aba0e7a1baae3f223b5c28bb2584ded1f8395f"
+    },
+    "AdaRES-Y77": {
+      "path": "pipeline/checks/production_adares-y77_eee3af894c7e4816a93bb3d1e7770040_final.json",
+      "sha256": "57c7547aa332275779b873ffe68a04a055f54f4b4c3c9ddbf0853bf5e1f1a39f"
+    },
+    "AdaRES-Y78": {
+      "path": "pipeline/checks/production_adares-y78_eee3af894c7e4816a93bb3d1e7770040_final.json",
+      "sha256": "88f6b7ce027834f300c11e2bc24b80c9f48f4b8bd64cd7b6b3ceb2a42f14f478"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_eee3af894c7e4816a93bb3d1e7770040.json",
+      "sha256": "4f9978a94aec9487e0b9f423ea2aadb61ee634b920dadd862f59054f1ef83c48"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_eee3af894c7e4816a93bb3d1e7770040.json",
+      "sha256": "a11574bc6e4ec2008d4838875dea457979c57c2153822ee79e8782551bace0a6"
+    }
+  },
+  "Y75_terminal": {
+    "path": "pipeline/checks/y75_server2_fixed30_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "fc67defebeffeece9c7b52d7aa13aa884ac6065c8a7338c8874d93456ff5343e"
+  },
+  "Y75_archive": {
+    "path": "pipeline/checks/y75_server2_fixed30_eee3af894c7e4816a93bb3d1e7770040_archive_binding.json",
+    "sha256": "1453dd808e1a186355647de96d49b55544c5e498cbfd20931e6097d4df8c10f1"
+  },
+  "Y75_original_freeze": {
+    "path": "pipeline/checks/AdaRES-Y75_0fd2c3224f6443388fdffa1fb7c5904e_post_training_freeze.json",
+    "sha256": "68cf414c7716b4681172c02185c4d1fe070cf82858fcc1587734ee34e5fafc57"
+  },
+  "Y75_original_evaluation_resource": {
+    "path": "pipeline/checks/y75_frozen_evaluation_hold_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "7817f93ce4c1369c930c30e16b159b1eef5e07e6dbcc04e8122978ec77852c14"
+  },
+  "Y78_native_smoke": {
+    "path": "pipeline/checks/AdaRES-Y78_eee3af894c7e4816a93bb3d1e7770040_native_smoke.json",
+    "sha256": "56754f6ebb43d2bf37d4199ccbdc4dd7fa5351e2687bf4a71a2e24960aade170"
+  },
+  "Y78_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y78.json",
+    "sha256": "8a603b14c5c4cb58ffa46fc53bdebbcb06d578f83918a45138b7343ef81cf6e2"
+  },
+  "Y78_freeze": {
+    "path": "pipeline/checks/AdaRES-Y78_eee3af894c7e4816a93bb3d1e7770040_post_training_freeze.json",
+    "sha256": "a19eb052bdeb7097afe22f05e013be5ab530cf5d5098d2b44a2a732ac69fbda4"
+  },
+  "Y78_source_selection": {
+    "path": "pipeline/checks/adares-y78_source_selection_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "a7068ced4c48ec4698cca0bbde87aa7d5d6a8c31bd5a075f4aea90072d039c1e"
+  },
+  "Y78_dispatch": {
+    "path": "pipeline/checks/adares-y78_dispatch_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "fb61d0f6a7ea36f0b15af714979cc81c761bc483f918ddae38ad048e5143331c"
+  },
+  "Y80_CPU_version": {
+    "path": "pipeline/checks/y80_cpu_version_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "1e45253fc2a01b1add1235692acad03de8ba9d1e090a4da8f41772506c383635"
+  },
+  "Y80_CPU_callback_verification": {
+    "path": "pipeline/checks/y80_native_observer_verification_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "3eaf440f1c21e5f45d0387b3ccefb6c89838801e268699a2137f4dd8cb04b680"
+  },
+  "Y80_native_preparation": {
+    "path": "pipeline/checks/y80_native_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "1792f8859aed87450749586ccfd3589b8818faddd80ba2cf17dc0c0387a83719"
+  },
+  "source_HEAD": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "server2_source_marker": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "server1_source_marker": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "new_candidates": 1,
+  "new_admissions": 1,
+  "new_dispatches": 1,
+  "archived": [
+    "AdaRES-Y75"
+  ],
+  "prepared_native_pending": [
+    "AdaRES-Y79",
+    "AdaRES-Y80"
+  ],
+  "Y57_pause_preserved": true,
+  "original_complete_evaluation_preserved": true,
+  "formal_metrics_updated": false,
+  "helper": {
+    "path": "scripts/record_eee3af89_handoff.py",
+    "sha256": "68a659c838b04a8fca58a7c5351531e88a4d386b43e72b0a3a51de76f8330607"
+  }
+}

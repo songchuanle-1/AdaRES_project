@@ -1,0 +1,316 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "config": "configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml",
+  "code_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615510940551758,
+    6.31085729598999
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_calls": 7,
+      "shared_MLP_calls": 7,
+      "shared_query_norm_calls": 7,
+      "original_evidence_norm_calls": 7,
+      "peer_gate_calls": 7,
+      "original_overlap_consumers": 7,
+      "weighted_context_consumers": 7,
+      "coarse_gate_consumers": 6,
+      "original_head_parameter_tensors": 10,
+      "input_gradients_finite": true,
+      "new_gradient_max": 1.608016653165123e-08,
+      "step": 0,
+      "parameter_update_max": 6.1656697653234e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_calls": 7,
+      "shared_MLP_calls": 7,
+      "shared_query_norm_calls": 7,
+      "original_evidence_norm_calls": 7,
+      "peer_gate_calls": 7,
+      "original_overlap_consumers": 7,
+      "weighted_context_consumers": 7,
+      "coarse_gate_consumers": 6,
+      "original_head_parameter_tensors": 10,
+      "input_gradients_finite": true,
+      "new_gradient_max": 2.8165720777906245e-07,
+      "step": 1,
+      "parameter_update_max": 7.397783338092268e-05
+    }
+  ],
+  "affinity_paths": [
+    {
+      "step": 0,
+      "stage": 0,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 0,
+      "stage": 1,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 0,
+      "stage": 2,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 0,
+      "stage": 3,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 0,
+      "stage": 4,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 0,
+      "stage": 5,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 0,
+      "stage": 6,
+      "weight_nonzero": false,
+      "gate_delta_max": 0.0,
+      "context_delta_max": 0.0,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 0,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.010859251022338867,
+      "context_delta_max": 0.0023812949657440186,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 1,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.004056334495544434,
+      "context_delta_max": 0.000586390495300293,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 2,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.004308938980102539,
+      "context_delta_max": 0.0003173649311065674,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 3,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.0034810304641723633,
+      "context_delta_max": 0.00019180774688720703,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 4,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.0018669366836547852,
+      "context_delta_max": 7.915496826171875e-05,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 5,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.0012664794921875,
+      "context_delta_max": 2.0265579223632812e-05,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    },
+    {
+      "step": 1,
+      "stage": 6,
+      "weight_nonzero": true,
+      "gate_delta_max": 0.001513838768005371,
+      "context_delta_max": 8.463859558105469e-06,
+      "original_query_identity": true,
+      "original_mask_identity": true,
+      "original_mass_identity": true,
+      "normalized_query_input_undetached": true,
+      "float64_bilinear_gate_reference": true,
+      "original_overlap_and_max_preserved": true,
+      "weighted_peer_context_consumed": true
+    }
+  ],
+  "peer_gate_calls": 14,
+  "original_overlap_consumers": 14,
+  "weighted_context_consumers": 14,
+  "shared_MLP_calls": 14,
+  "shared_query_norm_calls": 14,
+  "original_evidence_norm_calls": 14,
+  "coarse_gate_consumers": 12,
+  "static_mask_features_preserved": true,
+  "original_competition_overlap_and_max_preserved": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6983516160,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/data1/songcl/Project/AdaRES_project/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native TRAIN two-step task only; efficacy and full-dataset resource bounds unmeasured.",
+  "command": "python -B scripts/run_y90_bound_native.py --server server-1 --token 4dc4c79601f6427b82195a7dac4bc90c",
+  "server": "server-1",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y90_server1_smoke_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "90b12aa0c75d90ed73a8b10a07eeabf9fde2d140bdc31e5d054d255fe1183a5c"
+    },
+    {
+      "path": "pipeline/analyses/y90_server1_smoke_4dc4c79601f6427b82195a7dac4bc90c.log",
+      "sha256": "f33a0f8a172ed6d0a67597e60ae0d4e315e45053f0fef1ff20c0a78c485cfe14"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_program.py",
+      "sha256": "1be2cbb5a33666cb3f28880f5b7e5e536a4bc683c8535dc374fd2520c182ea03"
+    },
+    {
+      "path": "pipeline/checks/y90_additive_binding_826bb3c7537548a8b5b8e3ba0a7171b2_server1_plan.json",
+      "sha256": "1955673b2063fe118250160dfd8716efeb14280b80ff6306a2f36314ede38c61"
+    }
+  ]
+}

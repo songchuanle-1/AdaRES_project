@@ -1,0 +1,104 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y60",
+  "config": "configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "steps": 2,
+  "losses": [
+    7.886719703674316,
+    8.21839714050293
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "split": "train",
+  "data_source": {
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge"
+  },
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0642_00",
+        "scene0429_00"
+      ],
+      "expressions": 8,
+      "points": 315246
+    },
+    {
+      "scan_ids": [
+        "scene0201_00",
+        "scene0475_00"
+      ],
+      "expressions": 8,
+      "points": 310979
+    }
+  ],
+  "gradient_checks": [
+    {
+      "tensors": 599,
+      "indicator_tensors_by_stage": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "all_finite": true
+    },
+    {
+      "tensors": 599,
+      "indicator_tensors_by_stage": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "all_finite": true
+    }
+  ],
+  "stage_head_forward_calls": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "peak_reserved_bytes": 6515851264,
+  "native_entry": "tools/train.py::train",
+  "native_YAML_sha256": "72c5bbb18139a5eea5d57c7aa26ebb2b22597ded41cd5693fec370eaa087138a",
+  "optimizer_steps": 2,
+  "model_weights_saved": false,
+  "validation_used": false,
+  "admission": false,
+  "limitation": "Two-step initialization smoke only, not trained efficacy or a full-dataset resource guarantee.",
+  "command": "python -B scripts/run_experiment_first_probe.py y60_smoke pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_program.py --token 3e61cded0e934db5bb4f9abd4451c12c --seconds 600 --gpu --gpu-id 0",
+  "physical_gpu": 0,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y60_smoke_3e61cded0e934db5bb4f9abd4451c12c.json",
+      "sha256": "de77c551d6d6c196626316b097763a83fdf96e93a2bac9c962f02aea7602b458"
+    },
+    {
+      "path": "pipeline/analyses/y60_smoke_3e61cded0e934db5bb4f9abd4451c12c.log",
+      "sha256": "11bb4972594db144a8d1eb3acb12a6a715cb3818313b43130e7793852dc62d8c"
+    },
+    {
+      "path": "pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_program.py",
+      "sha256": "e3f3aa26cc24043f94a7a11e65284718356dfc79d15dd35c4791e2ec9947f861"
+    },
+    {
+      "path": "pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_plan.json",
+      "sha256": "9d3ad11abee42f55c2f7203d7e4d52144ebe844bf4255aaf2ca07c041f2203d8"
+    }
+  ],
+  "note": "Real native observations plus invocation binding; immutable raw result retained."
+}

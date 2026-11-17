@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y69",
+  "config": "configs_song/model_paper5/adares_y69_coarse_geometry_bias_res.yaml",
+  "code_commit": "9acd73cdc1b96be003c8450a9e22057248a0f531",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "hostname": "dl02-MS-7B73",
+  "python": "3.8.13",
+  "torch_version": "1.12.1+cu113",
+  "parameters": 164629661,
+  "points": 162738,
+  "expressions": 8,
+  "scan_ids": [
+    "scene0000_00",
+    "scene0000_00"
+  ],
+  "mapped_paths": {
+    "pretrain": "/data1/songcl/Project/AdaRES_project/data/sp_unet_backbone.pth",
+    "work_dir": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "train_data_root": "/data1/songcl/Project/AdaRES_project/data/"
+  },
+  "private_runtime_loaded": true,
+  "full_model_CPU_constructed": true,
+  "released_backbone_loaded": true,
+  "actual_TRAIN_data_collated": true,
+  "original_YAML_payload_preserved": true,
+  "CUDA_initialized": false,
+  "native_sparse_forward": false,
+  "native_task_backward": false,
+  "optimizer_steps": 0,
+  "model_weights_saved": false,
+  "activation": false,
+  "admission": false,
+  "limitation": "CPU server-1 environment and deterministic original-data path binding only; not native GPU loss/backward or efficacy.",
+  "token": "0f90937f76bd42829822d9816707553f",
+  "observed_start_local": "2026-10-30T12:57:12.414111+08:00",
+  "observed_end_local": "2026-10-30T12:57:46.515269+08:00",
+  "evidence": [
+    {
+      "path": "pipeline/checks/y69_server1_cpu_runtime_preflight_0f90937f76bd42829822d9816707553f_attempt2_program.py",
+      "sha256": "646e4a41752dd13a5a6d043ecc4ad7d8b5d1d8398ba36f55f8de2e49c93b9d9a"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_cpu_runtime_preflight_0f90937f76bd42829822d9816707553f_attempt2.log",
+      "sha256": "fe719233bf86cc7d7aebe4a62db305c279f7b403f6342f90382e04abb4e4044a"
+    }
+  ],
+  "preceding_wrapper_failure": {
+    "path": "pipeline/checks/y69_server1_cpu_runtime_preflight_0f90937f76bd42829822d9816707553f.log",
+    "sha256": "ec84b68eeefe1a437b59585c82b0bb7d251b3d55c60e60a0050a5118a4da0e6a"
+  },
+  "wrapper_repair": "Create only the project-owned probe token parent directory before constructing the CPU staging directory; normalize scan IDs for JSON. Model/YAML/native body/goal/commit unchanged."
+}

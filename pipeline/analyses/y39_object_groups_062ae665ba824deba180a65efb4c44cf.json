@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y39",
+  "groups": {
+    "single_object": {
+      "w2": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": -0.0023038667572389342,
+        "scene_clustered_ci95": [
+          -0.011360390287967127,
+          0.006338310071024288
+        ],
+        "max_expression_repeat_iou_difference": 1.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.00010274264132419854,
+        "observed_group_mean_absolute_repeat_difference": 0.00010813185909890707,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "b1": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": 0.005481821825581824,
+        "scene_clustered_ci95": [
+          -0.0032655849737820318,
+          0.014512773945359362
+        ],
+        "max_expression_repeat_iou_difference": 1.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.00011254598801508138,
+        "observed_group_mean_absolute_repeat_difference": 0.00011254598801508138,
+        "frozen_material_harm_ci_upper_below_zero": false
+      }
+    },
+    "multi_object": {
+      "expressions": 0,
+      "scenes": 0,
+      "status": "insufficient population; no CI/harm/no-harm assertion"
+    }
+  },
+  "source": {
+    "path": "pipeline/analyses/y39_frozen_full_current_062ae665ba824deba180a65efb4c44cf.json",
+    "sha256": "cdb0188acbae92545e501549ce5102bcd78309f8dde0fc4126e6a1039cad44b7"
+  },
+  "limits": [
+    "Object-count strata are not official unique/multiple categories.",
+    "An absent multi-object population is not evidence of safety.",
+    "Original full-population and size-stratum comparison is unchanged."
+  ]
+}

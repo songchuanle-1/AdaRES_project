@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y73",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "parent_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y73_initial_query_anchor_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/sample_model.py"
+    ]
+  ],
+  "intended_branch": "refs/heads/adares-y73-initial-query-anchor",
+  "CPU_source_snapshot": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_source_snapshot.json",
+    "sha256": "9384ea8c23525cb6441212ba9320a968aed43e45d1dac549a67148daeb171be0"
+  },
+  "working_HEAD_unchanged": "87019e7c2f640f99cb82a3e5b396321fc5b54d25"
+}

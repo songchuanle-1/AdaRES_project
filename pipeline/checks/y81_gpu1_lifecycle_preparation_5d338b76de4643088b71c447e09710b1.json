@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "token": "5d338b76de4643088b71c447e09710b1",
+  "id": "AdaRES-Y81",
+  "active_HEAD": "4e68cd84d56d890222adc2bec8ab59cb0c8715b6",
+  "native_GPU1_plan": {
+    "path": "pipeline/checks/y81_native_b5d4f7646f114f71b5f59d796e2b1858_gpu1_plan.json",
+    "sha256": "45624842050d403b8302b668c3342e751c113417e09b6de4eecdb193934abd67"
+  },
+  "guard_tests_passed": 7,
+  "same_exact_retained_source_and_original_YAML": true,
+  "only_registered_Y81_additions_permitted": true,
+  "original_Y79_Y80_source_and_queue_preserved": true,
+  "original_Y78_completion_required": true,
+  "full_recorded_native_admission_tests_pending": true,
+  "native_smoke_executed": false,
+  "admitted": false,
+  "production_selection": false,
+  "evidence": [
+    {
+      "path": "scripts/advance_y81.py",
+      "sha256": "1b8bece1dffb8e52d1ee054733cc8ff5fc6172473b5f2e67314cd7dc51bc1e02"
+    },
+    {
+      "path": "scripts/y81_deployment.py",
+      "sha256": "862e20bc806add53f407f6ae1054be8267df8176ae4b61e8eaa9289deedfb7ea"
+    },
+    {
+      "path": "scripts/test_y81_admission.py",
+      "sha256": "024094011398cc7339eed461c260c2767a7e96786d1aaac9a17cf725e92574f2"
+    },
+    {
+      "path": "scripts/test_y81_lifecycle_controls.py",
+      "sha256": "4d2bc904a4338f569ac8f75e10e2c518b072b2b92228610f8b1947f5ef348ed1"
+    },
+    {
+      "path": "pipeline/checks/y81_lifecycle_controls_5d338b76de4643088b71c447e09710b1.log",
+      "sha256": "4ecaa4ddbc2c6ae3c6538760fba5132e533fd8aa8bccda8cf2f2a6f72f582c11"
+    }
+  ]
+}

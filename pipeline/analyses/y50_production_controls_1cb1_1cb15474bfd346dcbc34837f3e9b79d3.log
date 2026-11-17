@@ -1,0 +1,12 @@
+Using backend: pytorch
+2026-10-16 01:19:54,973 - INFO - Load train scanrefer: 36665 samples
+2026-10-16 01:19:58,229 - INFO - set random seed: 1999
+2026-10-16 01:19:58,443 - INFO - set random seed: 1999
+2026-10-16 01:20:09,731 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 96, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/dec.py", line 31, in forward
+    return self.head(torch.cat((normalized, descriptor), dim=-1)).squeeze(-1)
+TypeError: expected Tensor as element 1 in argument 0, but got tuple

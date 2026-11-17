@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "preregistered_at": "2026-10-16T13:26:51.977889+08:00",
+  "program": {
+    "path": "scripts/probe_y49_train24_capture_1cb1_v2.py",
+    "sha256": "924026034b8d38aaabaaad99bda49223a7c9788e0a27c5fb01aab53de50b338b"
+  },
+  "cohort": {
+    "path": "pipeline/analyses/y49_train_extension_freeze_f56b_f56bf800538f452ebf4b11f81ca8fd8c.json",
+    "sha256": "3cd2f322a628613b4156e55a33b60b26b35bb458801de713937989e3e3e15336"
+  },
+  "scope": "Exactly the previously frozen24 new TRAIN scenes/first4 expressions; capture functions AST from original hash2ba5bad4. No rerun original TRAIN8/CPU32 controls.",
+  "test": "Collect native inputs and passive TRAIN GT, then SAME fixed unit-resolvent/component-mass collision count under existing8eps*nodes bound. Preserve old0 and report any new0 without promotion.",
+  "no_revision_or_training": true
+}

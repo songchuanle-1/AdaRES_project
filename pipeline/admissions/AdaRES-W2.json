@@ -1,0 +1,56 @@
+{
+  "id": "AdaRES-W2",
+  "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+  "code_commit": "deb70191a7b16dffa624acb1fb32e9d45bd8d551",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20260927-031506_next_batch.md",
+    "sha256": "5d3fde91f7f9dee8e941219a9c2376f89f114f24d4311c47b9cbe96dea684940"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-W2_point_weighted_train64_20260927.json", "sha256": "4c7ec10815e4128aa942d88dccc3d440cbd8f91f7598558e87c74324df7ae3b4"}
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-W2_point_weighted_train64_20260927.json", "sha256": "4c7ec10815e4128aa942d88dccc3d440cbd8f91f7598558e87c74324df7ae3b4"},
+        {"path": "pipeline/analyses/AdaRES-W2_native_gate_review_20260927-031200.md", "sha256": "cb1ab818ffcdfaa83dfe8ae4d8d9be66fa4d5d802ddc24d43771bd09be4f6b8d"}
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-W2_native_batches_20260927.json", "sha256": "2372d34e303916dbb8fa175525c1064b149a8217e0de90cb77fe478702d7226d"}
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-W2_native_batches_20260927.json", "sha256": "2372d34e303916dbb8fa175525c1064b149a8217e0de90cb77fe478702d7226d"}
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py", "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"},
+        {"path": "AdaRES/configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml", "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"}
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/goal.json", "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"},
+        {"path": "pipeline/designs/exp_design_20260927-031400.md", "sha256": "bdb878623df2d91f27a6ce2be16e9f54aa4110cdb440c8767537ad140d2b6ae3"}
+      ]
+    }
+  },
+  "limitations": [
+    "Fixed train64 did not improve frozen top-1 mIoU; outcome is unknown until 30-epoch training.",
+    "Historical B4-E30 resumed from epoch 20, not a fresh seed-matched 30-epoch control.",
+    "Native peak memory and timing cover only two training batches; literature novelty unverified."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "code_commit": "994db457a3b00444b6ace4f0c9b7f3b6e047c83e",
+  "parent_commit": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "retained_branch": "refs/heads/adares-y96-seed-query-skip",
+  "working_HEAD": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497_source_snapshot.json",
+    "sha256": "18e540124fb25bdbb703b8bdbe4230e3e85615da328da90d67415a15a9a84048"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y96_cpu_78ad932adf5b4d47b935265cdd2a2497.json",
+    "sha256": "eed445c54522f2ad8a27863e6e779ab591e392087bde37e4c38d62230db034a7"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y96_cpu_78ad932adf5b4d47b935265cdd2a2497_program.py",
+    "sha256": "683171b195fa0c9373194943aef14b00d88f852b4941b9f9919d59f7bf9589e9"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y96_seed_query_skip/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497.index",
+    "sha256": "4dcf628e403e271584fe0cd99d84726a5c57da0903ceb9ba7f6a2f6d894c655c"
+  },
+  "matching_current_owners": {
+    "server-1": "AdaRES-Y92",
+    "server-2": "AdaRES-Y93"
+  },
+  "CPU_tested_scientific_files_exact": true,
+  "earlier_Y94_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y96_cpu_native.py",
+    "sha256": "2265a41d0cf25c3484e69bcbb7b46160956082ecfbfebbaf8b348bbf049f1967"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497_source_snapshot.json",
+      "sha256": "18e540124fb25bdbb703b8bdbe4230e3e85615da328da90d67415a15a9a84048"
+    },
+    {
+      "path": "pipeline/analyses/y96_cpu_78ad932adf5b4d47b935265cdd2a2497.json",
+      "sha256": "eed445c54522f2ad8a27863e6e779ab591e392087bde37e4c38d62230db034a7"
+    },
+    {
+      "path": "pipeline/checks/y96_cpu_78ad932adf5b4d47b935265cdd2a2497_program.py",
+      "sha256": "683171b195fa0c9373194943aef14b00d88f852b4941b9f9919d59f7bf9589e9"
+    },
+    {
+      "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497.index",
+      "sha256": "4dcf628e403e271584fe0cd99d84726a5c57da0903ceb9ba7f6a2f6d894c655c"
+    },
+    {
+      "path": "scripts/retain_y96_cpu_native.py",
+      "sha256": "2265a41d0cf25c3484e69bcbb7b46160956082ecfbfebbaf8b348bbf049f1967"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "observed_at_local": "2026-10-15T11:35:36.913474+08:00",
+  "gates": {
+    "diagnosis": true,
+    "controls": true,
+    "native_backward": true,
+    "resources": true,
+    "independence": true,
+    "constraints": true
+  },
+  "evidence": {
+    "diagnosis": [
+      {
+        "path": "pipeline/analyses/y48_joint_native_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "add87310d9f167148cfb1914bd94f7bd480d95ee15c080f8648b445f163c4762"
+      },
+      {
+        "path": "pipeline/analyses/Y48_target_closure_prereg_601b.md",
+        "sha256": "884449c15a379357b3c8c7beaef18eb0232a796ff294b8be1ddbaf328331558b"
+      }
+    ],
+    "controls": [
+      {
+        "path": "pipeline/analyses/y48_target_cpu_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "6089ed7bc8d5fea33b28f51241bee98d33d88fc559ed5a00006305a155c32bd8"
+      },
+      {
+        "path": "pipeline/analyses/y48_target_native_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "089d14c112a2b264e8160e2694644632ae1dc23da8f099d2fcebb7731116e821"
+      },
+      {
+        "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+      }
+    ],
+    "native_backward": [
+      {
+        "path": "pipeline/analyses/y48_target_native_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "089d14c112a2b264e8160e2694644632ae1dc23da8f099d2fcebb7731116e821"
+      },
+      {
+        "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+      }
+    ],
+    "resources": [
+      {
+        "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+      }
+    ],
+    "independence": [
+      {
+        "path": "pipeline/analyses/y48_source_bundle_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "cb34c7247df27695f7e3d7c6c3ec8be7b6b71c4c5a69b4371a40450f81a9fda5"
+      },
+      {
+        "path": "pipeline/analyses/y48_production_v3_601b_601bcda714184133920945f8f067b382.json",
+        "sha256": "7c1e6506c821185f46951d543b8492b4b50b0555f904c0768dee128f3ce2a6e6"
+      }
+    ],
+    "constraints": [
+      {
+        "path": "pipeline/goal.json",
+        "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+      },
+      {
+        "path": "pipeline/designs/exp_design_Y48_601b.md",
+        "sha256": "9d10671d6405a11ca101fef4163e2b83e6f74884c3712e6522695dd5e1db1943"
+      }
+    ]
+  },
+  "review": {
+    "path": "pipeline/analyses/Y48_six_gate_review_601b.md",
+    "sha256": "abc78680aca524b4342a37e687a2cf646750948ae701910fe58f55d594bda46d"
+  },
+  "preserved_failures": [
+    {
+      "path": "pipeline/analyses/y48_build_byte_identity_repair_601b_601bcda714184133920945f8f067b382.json",
+      "sha256": "9035f09124858d662e4c1a98d265c4bf9e16af10453c3de81d40a4f4d98fdd47"
+    },
+    {
+      "path": "pipeline/analyses/y48_production_harness_repair_601b_601bcda714184133920945f8f067b382.json",
+      "sha256": "00838c1deb5a1f5d6984414c3dd079e175ce7237778c76f99071f75a1600dfc9"
+    },
+    {
+      "path": "pipeline/analyses/y48_production_buffer_repair_601b_601bcda714184133920945f8f067b382.json",
+      "sha256": "f8e9e747ee021905e11f9ac982fe533a891647c76bce54e6e9d5b6b3a6937684"
+    }
+  ],
+  "scientific_status": "executable_for_falsifiable_training_not_efficacy"
+}

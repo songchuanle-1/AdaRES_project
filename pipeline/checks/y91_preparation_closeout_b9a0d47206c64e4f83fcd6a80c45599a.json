@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y91",
+  "token": "b9a0d47206c64e4f83fcd6a80c45599a",
+  "observed_at": "2026-11-06T03:32:09.455700+00:00",
+  "CPU_result": {
+    "path": "pipeline/analyses/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a.json",
+    "sha256": "a1df9ade614cd688a8151b3179d3958f62b8672b6bf1810bc3fb7c5cb1a149e7"
+  },
+  "CPU_version": {
+    "path": "pipeline/checks/y91_cpu_version_b9a0d47206c64e4f83fcd6a80c45599a.json",
+    "sha256": "b8b2639846ce988300e7b87c20b8563b423b3d0427de6b51d657e0bd1953b1e6"
+  },
+  "native_preparation": {
+    "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a.json",
+    "sha256": "ed8a29426963d8423a5ecf69d90afc10208489d650350d9bca332d1fe714df57"
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y91_final_preparation_guards_attempt2_b9a0d47206c64e4f83fcd6a80c45599a.log",
+    "sha256": "25ed17dba952be6a9f9db85ca47c04f5ba4f15cdaaac89352291e9d1e47a125b"
+  },
+  "guard_tests_passed": 16,
+  "active": {
+    "AdaRES-Y88": {
+      "server": "server-1",
+      "pid": 3527278,
+      "phase": {
+        "phase": "Train",
+        "epoch": 7,
+        "total": 30,
+        "step": 4516,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y88_b9a0d47206c64e4f83fcd6a80c45599a_fresh.json",
+        "sha256": "4de34dc1b525378acd65d0d8555467442a1ceb1c7e9eb1234fb79d3d7c7587aa"
+      }
+    },
+    "AdaRES-Y87": {
+      "server": "server-2",
+      "pid": 26281,
+      "phase": {
+        "phase": "Train",
+        "epoch": 12,
+        "total": 30,
+        "step": 1243,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y87_b9a0d47206c64e4f83fcd6a80c45599a_fresh.json",
+        "sha256": "96c5083e04ad4c0d1fd8f6f1b0b38d77317a254812a0dce07590d6a183fe3aed"
+      }
+    }
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish2_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "f4b99adb25e198a7dd76b9353e24ca182b4e7a556cc05605be2a7a65931caf1b"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish2_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "f19a62369d7261733b3aa1db269fab3043935e809d020967a5c1b930b34bb769"
+    }
+  },
+  "earlier_preparations": {
+    "AdaRES-Y89": {
+      "path": "pipeline/checks/y89_cpu_version_6c44267f773e46f18bed69bb0934dd5e.json",
+      "sha256": "a940610d90398b1f877d1439bd0fc4999d1d17d44e48df4e9a605b1cece91f65"
+    },
+    "AdaRES-Y90": {
+      "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86.json",
+      "sha256": "d490dd81a7d83b2b3f0d41e4ca168ee0a6466e8d4a8737b53bd1fc760e77e62b"
+    }
+  },
+  "earlier_Y89_Y90_preserved": true,
+  "new_candidates": 1,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "native_GPU_executed": false,
+  "formal_frozen_FIRST_updated": false,
+  "model_revision": false,
+  "production_HEAD_preserved": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "GPU1_paused": true,
+  "Y57_separately_paused": true,
+  "previous_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_b9a0d47206c64e4f83fcd6a80c45599a.md",
+    "sha256": "743953399542edacfc7f2599020cf2aea53941540af03b857ba0b435c6b143d3"
+  },
+  "helper": {
+    "path": "scripts/record_y91_wait_v2.py",
+    "sha256": "9884903de05df348b869975e9ad815d26eb991e82c3f1f76a4ec3141b0cd6831"
+  }
+}

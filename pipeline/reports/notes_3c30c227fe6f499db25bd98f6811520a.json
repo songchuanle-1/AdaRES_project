@@ -1,0 +1,29 @@
+{
+  "actions": [
+    "仅处理AdaRES_project；实际owner会话、Disabled后台调度、正式skill/experiment_first、AGENTS/goal/SERVERS及GPU1暂停记录核验后begin，先查进展并尝试已有合格派发；ready waiting为0，无新终态。",
+    "运行：AdaRES-Y92 Train24/30，步2595/4686；AdaRES-Y93 Train10/30，步4579/4686；原PID/source/YAML/receipt/私有runtime、350W/280W及原生步数递增核实；canonical物理占用确认两个授权GPU0均busy+reserved，未干扰GPU1或外部任务。",
+    "新准备：同一Y97下先登记一次局部执行修订，再以独立rev1包保留原模型/YAML字节；将相同全token二次投影改为逐token固定形状torch.mv。原CPU程序除冻结payload外逐字不变，全部数值守卫及原生观察器未改。",
+    "实际CPU检查失败：已越过组件批次置换和前面的W2锚点/输入梯度/因果旁路位置，在共享capture_adapter的原批量矩阵乘torch.equal守卫触发AssertionError。执行位置是fail-fast推断，不是完整CPU或两步更新PASS。保留完整raw日志、原失败和本次修订结果；没有native计划、留版commit、GPU测试、准入或派发。",
+    "较早Y94/Y95/Y96原CPU准备、独立版本及native计划保留且不重放；Y92/Y93终态计划只读核验，未加载训练checkpoint、停止或归档。新科学ID0、同编号实现修订1、CPU完整尝试1失败、GPU原生0、准入0、启动0、归档0。",
+    "七节记忆先精确备份；连续刷新训练和canonical占用并保留collector的实际resource_check，随后正式report/finish；不预先宣称收尾结果。"
+  ],
+  "decisions": [
+    "Y97修订1按numerical_control_failure/implementation挂起，原模型、原程序和所有原检查保持。不得计时重跑、改容差或守卫、重命名绕过或宣称假设被反证；进一步局部修订须新证据、同ID、预算内事前登记并保留全部控制。",
+    "原Y92/Y93继续；Y94、Y95、Y96按顺序等待匹配owner自然30轮、精确完整有限checkpoint核验归档及实时空闲GPU0，真实native通过后再按完整冻结协议准入/安全同步/递增计数器启动。挂起不阻断独立工作，无需新增用户操作。",
+    "科学goal字节、原收据、完整FIRST及同设备cost、数据/环境/mappings/seed1999-fixed30/有害子组/禁用/功耗/调度/恢复要求不变。GPU1全部使用和原GPU1冻结后评/cost继续暂停，Y57另行暂停，禁止迁移替代和server6。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y97_revision1_closeout_3c30c227fe6f499db25bd98f6811520a.json",
+      "sha256": "4bb523d9535f2f7fe5dd86dabcc0eeba2e8b863b2dc293e2696d7980a582715d"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_3c30c227fe6f499db25bd98f6811520a.md",
+      "sha256": "98e4a120311ebc55b209f896d90344223ed6114506d94bbdd6f52ea6a0ac7bf6"
+    },
+    {
+      "path": "pipeline/decisions/20261109-050646_other.md",
+      "sha256": "14bd029200743dde25a7dc2f91cb182cb9cc83bf963b4ddec32d629c18ebe71b"
+    }
+  ]
+}

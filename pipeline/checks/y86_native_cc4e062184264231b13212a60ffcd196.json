@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y86",
+  "token": "cc4e062184264231b13212a60ffcd196",
+  "code_commit": "2d2a0b98865977a6e2f37d316979344ffc56817c",
+  "CPU_version": {
+    "path": "pipeline/checks/y86_cpu_version_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "c105aee1d4bc68431b0db6e4f36a7ce21be78ff4e8e31f27fe2046bdd7f46b0e"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y86_cpu_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "2064d49c49ddc97d28052d516eb7108446cbd414c22516e89b04d50e552f173f"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y86_cpu_cc4e062184264231b13212a60ffcd196_program.py",
+    "sha256": "bdbb3d6bab714f63129622f6c5cb0f2a37deca7f5f0bd9582e15ef7628bbab76"
+  },
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_gpu0_plan.json",
+      "sha256": "d0e99f1fcd0ad0521d3327f2a3915df319c692ca777084fb6e6b0f307b141213"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196_guards.log",
+    "sha256": "dde52c83ca6a78bad38b66ad917921a40c8a54c72c37f76d84b184daed5e53ba"
+  },
+  "guard_tests_passed": 9,
+  "exact_callback_functions_and_classes": 7,
+  "CPU_native_callbacks_actually_executed": true,
+  "observer_core": {
+    "path": "scripts/y86_observer_core.py",
+    "sha256": "ea5f2e0863d615edabc85cb6973199eb5a8f4c47484b23bc8f3a88b6692fa983"
+  },
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y86_cpu_native.py",
+    "sha256": "78e4728e384bb72ee0b19aea22e25ec698e0dc0359bdfd5aef86cefc68b33a1b"
+  }
+}

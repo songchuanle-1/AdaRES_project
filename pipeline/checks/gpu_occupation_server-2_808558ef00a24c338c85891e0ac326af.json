@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "808558ef00a24c338c85891e0ac326af",
+  "snapshot_generated_at": "2026-10-31T10:46:41.667557+00:00",
+  "snapshot_sha256": "31fc02be6501250551ed0fac673c5ea466b50af6f2e387d69bec7eba84b17b8b",
+  "servers_sha256": "ed15aeebb90638fcced4f0e57c4b76761cf2d7c04d201afeaf6e55ca025cbe7a",
+  "observed_at": "2026-10-31T11:02:04.884362+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y65",
+    "AdaRES-Y67",
+    "AdaRES-Y68",
+    "AdaRES-Y70",
+    "AdaRES-Y74"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0,
+      1
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 39, 22730, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 94, 22724, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 53714\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 62829\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 808558ef00a24c338c85891e0ac326af --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_808558ef00a24c338c85891e0ac326af.log",
+    "sha256": "5ac66794f5f689d8884d1df60edf2c56ff42dec0df79255c1db4ae0bb4a4e7e1"
+  }
+}

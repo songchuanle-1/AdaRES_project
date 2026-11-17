@@ -1,0 +1,44 @@
+=== tick AdaRES_project start 2026-09-26 01:47:01 ===
+================================================== 2026-09-26 01:47 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  [adares_g1_metric_targets_res] Best=0.4765 12/30 no_improve=0/10 gpu=0 ? 序列: 0.4558, 0.4720, 0.4608, 0.4737, 0.4765
+  [adares_h5_late_global_query_res] Best=0.4909 12/30 no_improve=0/10 gpu=1 ? 序列: 0.4771, 0.4793, 0.4866, 0.4909, 0.4909
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2: running=2
+
+================================================================================
+  Goal Check Report — 2026-09-26 01:47:17
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-B4-E30 — mIoU=0.5094 (gap to target: +0.0056)
+       Epochs: ?, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0074
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5094, target=0.5150, gap=+0.0056
+================================================================================
+mode=steady
+reason=no structural state change; active=2/2; candidate_budget=0; steady_ticks=6
+context=D:/project/AdaRES_project/pipeline/headless/.tick_context.json
+pending_state=D:/project/AdaRES_project/pipeline/headless/.tick_context_state.next.json
+=== steady mode: generating deterministic report; codex skipped ===
+Tick # steady 20260926-014717
+steady_report=D:/project/AdaRES_project/pipeline/reports/summary_20260926-014717.md
+codex_skipped=true
+=== exit=0 2026-09-26 01:47:18 ===
+=== HEALTHY: tick completed (RC=0, mode=steady) ===

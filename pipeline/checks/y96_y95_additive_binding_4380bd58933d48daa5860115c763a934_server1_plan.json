@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "additive_parent": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "retained_branch": "refs/heads/adares-y96-seed-query-skip-on-y95",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y96_bound_native_y95.py",
+    "sha256": "209244defa705ae6e7c5bacaf51105659c20c7802d346768b7f98f5476f2e48c"
+  },
+  "planned_command": "python -B scripts/run_y96_bound_native_y95.py --server server-1 --token <CURRENT>",
+  "required_resource": "At HEADY95 only after exact matching AdaRES-Y94 natural fixed30/full finite original checkpoint archive and fresh exclusive authorized idle/unreserved GPU0. No GPU1, power or runtime substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite task losses/backward/updates; original generated query and undetached sampled seed, original sampled SCG seeds, five original generator layers, float64 projections, initial and first coarse consumers, hard coarse gates, shared heads, finite new/original/both-input gradients, zero then learned skip, native modes and memory. CPU is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server1_program.py",
+    "sha256": "8d224bdd63e0167f6014500839fe5f5b8e04f3bf0e08f8de4ebe88bc62854dc8"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_server1_plan.json",
+    "sha256": "311c4d4405bbf3bf000b5bcb9d34d0c7ba539b509087995faece1c0a3543a41d"
+  }
+}

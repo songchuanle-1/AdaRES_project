@@ -1,0 +1,143 @@
+{
+  "complete": true,
+  "token": "ff905b6425914adf9fad62756595f48b",
+  "snapshot_generated_at": "2026-11-01T14:44:25.912209+00:00",
+  "observed_at": "2026-11-01T15:10:45.456867+00:00",
+  "original_live_training": {
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_ff905b6425914adf9fad62756595f48b_final.json",
+      "sha256": "184055566ed10a15d6ab549553dccf4a835654254e6d1ccdd12a7f675a9a521d"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_ff905b6425914adf9fad62756595f48b_final.json",
+      "sha256": "0fea91c28cc4ef61348b54b12749b3d4d85a9730f58db877f649d536b2e65402"
+    },
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_ff905b6425914adf9fad62756595f48b_final.json",
+      "sha256": "0b025f3c571b3838a30dde01f06a7f3fea0d7a5a464a531e5e5ef5314bc5e4e7"
+    }
+  },
+  "phases": {
+    "AdaRES-Y76": {
+      "phase": "Train",
+      "epoch": 3,
+      "total": 30,
+      "step": 2511,
+      "count": 4686
+    },
+    "AdaRES-Y74": {
+      "phase": "Train",
+      "epoch": 22,
+      "total": 30,
+      "step": 535,
+      "count": 4686
+    },
+    "AdaRES-Y75": {
+      "phase": "Train",
+      "epoch": 11,
+      "total": 30,
+      "step": 4537,
+      "count": 4686
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_ff905b6425914adf9fad62756595f48b.json",
+      "sha256": "293fe070819e9d214ac1cb9ab0d3d67a0f0e78d703d08e929199641a7aaabd92"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_ff905b6425914adf9fad62756595f48b.json",
+      "sha256": "5f76a7496955c70338fa60f26781d584e15e3f812abe17f420f72b2c33337e5a"
+    }
+  },
+  "prepared_integrity": [
+    {
+      "id": "AdaRES-Y77",
+      "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+      "source_manifest": {
+        "path": "pipeline/checks/y77_cpu_version_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "7a4dc912137beb6c4f8a1a561acdc889d8efcdaa488bc4b1d540a95877e0d2b3"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y77_native_observer_verification_947fc2dbe85d4a8fba4cad094b6945bc.json",
+        "sha256": "611f75018189b74ba22f4a6fdddc5a646ed303435758468e5e3211bb54697650"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu0_plan.json",
+          "sha256": "dc7f8ee061c1d8ec8a66a992c4df6cef4a458a8c9b076dcac3f5427f2016c5f9"
+        },
+        {
+          "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu1_plan.json",
+          "sha256": "dd25b99b22513509496c740cabc6f25787c5a40a295703f1cb46166d345a5455"
+        }
+      ],
+      "native_GPU_executed": false
+    },
+    {
+      "id": "AdaRES-Y78",
+      "code_commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+      "source_manifest": {
+        "path": "pipeline/checks/y78_cpu_version_ff905b6425914adf9fad62756595f48b.json",
+        "sha256": "a0c3b80389a7cb81cccb3369deb83751a3967da920c289bc80a75b3867bfcbb0"
+      },
+      "CPU_callbacks": {
+        "path": "pipeline/checks/y78_native_observer_verification_ff905b6425914adf9fad62756595f48b.json",
+        "sha256": "906686be15350422cb87c763fe0e5f56d901810c722495ce91750e0ca73201ce"
+      },
+      "native_plans": [
+        {
+          "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu0_plan.json",
+          "sha256": "eb2dca6e779963893c9ea94c9a112db71379e71a4423dfa7add352d5f7e2e0b7"
+        },
+        {
+          "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_plan.json",
+          "sha256": "3d558538aa54441398ee92cf77839e1df295df781b96b7a493d19f1668faebd9"
+        }
+      ],
+      "native_GPU_executed": false
+    }
+  ],
+  "Y78_CPU_result": {
+    "path": "pipeline/analyses/y78_cpu_attempt3_ff905b6425914adf9fad62756595f48b.json",
+    "sha256": "8b479f8efbf89acc5d08bffbfe71cb67d5f8cc43b76627ebfa57d5d53eecdb54"
+  },
+  "Y78_CPU_callbacks": {
+    "path": "pipeline/checks/y78_native_observer_verification_ff905b6425914adf9fad62756595f48b.json",
+    "sha256": "906686be15350422cb87c763fe0e5f56d901810c722495ce91750e0ca73201ce"
+  },
+  "Y78_wrapper_failures_preserved": {
+    "failure_scope": "implementation",
+    "model_and_YAML_unchanged": true,
+    "model_revision_count": 0,
+    "attempt1": "Exact query-permutation equality rejected double GEMM rounding: measured1.1102230246251565e-16; unchanged independent scalar reference and predeclared128epsilon tolerance pass.",
+    "attempt2": "Original optimizer has text_encoder group; decoder-only wrapper lacks it. Attempt3 binds tested decoder into full original model and uses unchanged native optimizer groups.",
+    "failed_logs": [
+      {
+        "path": "pipeline/analyses/y78_cpu_ff905b6425914adf9fad62756595f48b.log",
+        "sha256": "52ab0e07a533e3e7816ea69c4a85ccb31609604ff17ffb8ec5bb2af011800609"
+      },
+      {
+        "path": "pipeline/analyses/y78_cpu_attempt2_ff905b6425914adf9fad62756595f48b.log",
+        "sha256": "edb7cec650a643b6f02c14a32dcc68dc1a1a93b93bfc05032d22e213d9656aff"
+      }
+    ],
+    "success": {
+      "path": "pipeline/analyses/y78_cpu_attempt3_ff905b6425914adf9fad62756595f48b.json",
+      "sha256": "8b479f8efbf89acc5d08bffbfe71cb67d5f8cc43b76627ebfa57d5d53eecdb54"
+    }
+  },
+  "Y78_parameters": 164629893,
+  "Y78_additional_parameters": 256,
+  "Y72_previously_archived": true,
+  "Y72_rearchived": false,
+  "new_candidates": 1,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "new_archives": [],
+  "native_GPU_executed": false,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "HEAD_unchanged": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "conclusion": "Original Y74/Y75/Y76 native counters advance, same PIDs/source/YAML/receipts/power. New independent Y78 learned immediate previous-mask residual passed actual CPU full native model/pretrain/TRAIN collation, independent formula and controls, full W2 anchors and two CPU decoder optimizer steps. Exact native callbacks and optimizer-step guard passed two CPU decoder steps; tested seven-file version and dual GPU plans retained. All cards busy; Y77/Y78 actual native sparse tasks remain pending."
+}

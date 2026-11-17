@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "reviewed_at": "2026-10-17T13:26:21.740407+08:00",
+  "bundle": {
+    "path": "pipeline/analyses/y54_prototype_bundle_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "5fe5b6d4b2d58ba2fe14cec37577ebed20b65f8ea5beaa6b3a7d4c6f9f3b40cf"
+  },
+  "diagnosis": {
+    "path": "pipeline/analyses/y54_fine_support_native_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "e6293fc4fdf76c14967e08b6ae5ffb1aa53f3e44b6557b27ca80990b0e0384c3"
+  },
+  "native_gates": {
+    "path": "pipeline/analyses/y54_native_gates_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "94696fcfdbf44cc25a5efa416e9d0dcc1ad4eaeb9821d16c7dc730993f1db1b3"
+  },
+  "small_support_controls": {
+    "path": "pipeline/analyses/y54_small_support_cpu_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "8ecb6662cd9eaf12853783f6140d2bdd32aaa825ee056803a4af72b448329e66"
+  },
+  "post_training_freeze": {
+    "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+  },
+  "gate_summary": {
+    "diagnosis": "supported_actual_native_fine_padding_attention_and_control_separated_intervention",
+    "controls": "native_same_input_corrected_padding_effect0/all_valid_negative0; exact_independent_small_support5cases",
+    "native_backward": "actual4nativebatch2/32expressions/all6fine_layers finite nonzero valid+attention+indicator gradients; invalid_source_grad0",
+    "resources": "parameters_delta0/native_reserved<24GiB/paired_predict_cost_recorded; bounded_scope_only",
+    "independence": "independent_six_file_package+unique_basename_config; inverse3edit_AST_exact; actual_state_schema_equal",
+    "constraints": "goal/bans/fixed30/no_validation_tuning respected; four_method_posttraining_plan_frozen; real_commit_and_receipt_pending"
+  },
+  "inference_parity": [
+    {
+      "scene": "scene0000_00",
+      "matched": {
+        "probability_max_abs": 1.341104507446289e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0001_00",
+      "matched": {
+        "probability_max_abs": 1.6391277313232422e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0002_00",
+      "matched": {
+        "probability_max_abs": 1.2516975402832031e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0003_00",
+      "matched": {
+        "probability_max_abs": 1.5348196029663086e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0004_00",
+      "matched": {
+        "probability_max_abs": 1.430511474609375e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0005_00",
+      "matched": {
+        "probability_max_abs": 2.2649765014648438e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0006_00",
+      "matched": {
+        "probability_max_abs": 1.9669532775878906e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "scene": "scene0007_00",
+      "matched": {
+        "probability_max_abs": 2.0563602447509766e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    }
+  ],
+  "cost": {
+    "parameters": {
+      "parent": 164629637,
+      "candidate": 164629637
+    },
+    "parameter_delta": 0,
+    "native_training_peak_reserved_bytes": 7772045312,
+    "native_training_peak_reserved_GiB": 7.23828125,
+    "stress_measured_median_seconds": 0.44954541395418346,
+    "paired_scene_latency_ratios": {
+      "scene0000_00": 1.003705240934759,
+      "scene0001_00": 1.0106416408941663,
+      "scene0002_00": 0.9997006828940633,
+      "scene0003_00": 1.0129284717093594,
+      "scene0004_00": 0.9733616303660734,
+      "scene0005_00": 1.0076655594315895,
+      "scene0006_00": 1.0016168116716433,
+      "scene0007_00": 1.0381990136590342
+    },
+    "median_scene_latency_ratio": 1.0056854001831743,
+    "inference_allocated_equal": true,
+    "limitation": "Timing covers frozen TRAIN scenes,2warmups/3measures each; not full latency distribution, reliable speedup or a global Pareto guarantee."
+  },
+  "model_revision_count": 0,
+  "scientific_state": "Supported actual implementation defect and bounded executable native controls; trained Y54 mIoU/benefit/novelty/Pareto unknown.",
+  "code_state": "Exact seven tested files remain uncommitted; no automatic Git add/commit.",
+  "existing_authorization_Y50_only": {
+    "path": "pipeline/authorizations/AdaRES-Y50_commit.json",
+    "sha256": "98ca31a33d1905e61ad0c61ce8994fd5f8a5cf3ea3e0ede12e7afdb75690906b"
+  },
+  "admission_receipt_created": false,
+  "training_launches": 0,
+  "required_human_action": "Explicit authorization ONLY for the seven exact Y54 files in tested_bundle, or supply their exact commit. Then revalidate current goal/source/gates/commit and use existing dispatcher with live idle checks and normal Y50 terminal reconciliation. Do not extend Y50 authorization, commit other files, or deploy diagnostic weights."
+}

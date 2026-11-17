@@ -1,0 +1,27 @@
+Using backend: pytorch
+2026-10-16 23:53:17,321 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=786 unexpected=0
+2026-10-16 23:53:17,730 - INFO - Load train scanrefer: 36665 samples
+2026-10-16 23:53:22,681 - INFO - set random seed: 1999
+2026-10-16 23:53:22,898 - INFO - set random seed: 1999
+2026-10-16 23:53:23,133 - INFO - set random seed: 1999
+2026-10-16 23:53:23,677 - INFO - set random seed: 1999
+2026-10-16 23:53:23,833 - INFO - set random seed: 1999
+2026-10-16 23:53:24,112 - INFO - set random seed: 1999
+2026-10-16 23:53:24,313 - INFO - set random seed: 1999
+2026-10-16 23:53:24,709 - INFO - set random seed: 1999
+2026-10-16 23:53:25,264 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 131, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py", line 111, in forward
+    return self.predict(**batch)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/utils/utils.py", line 20, in wrapper
+    return func(*new_args, **new_kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py", line 157, in predict
+    ret = self.predict_by_feat(scan_ids, object_idss, ann_ids, out, superpoints, gt_pmasks, gt_spmasks, fps_seed_sp)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py", line 206, in predict_by_feat
+    spiou = get_iou(pred_spmask, gt_spmask)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/loss.py", line 30, in get_iou
+    intersection = (binarized_inputs * targets).sum(-1)
+RuntimeError: The size of tensor a (710) must match the size of tensor b (667) at non-singleton dimension 0

@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y41",
+  "groups": {
+    "single_object": {
+      "w2": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": -0.0010580409735824786,
+        "scene_clustered_ci95": [
+          -0.009716837626550932,
+          0.007546362684877337
+        ],
+        "max_expression_repeat_iou_difference": 0.9763062000274658,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.0001958073389144018,
+        "observed_group_mean_absolute_repeat_difference": 0.00020584840206825086,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "b1": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": 0.006825355109327934,
+        "scene_clustered_ci95": [
+          -0.0030759390807791336,
+          0.016671534487291105
+        ],
+        "max_expression_repeat_iou_difference": 0.9738956093788147,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.00010242907124303899,
+        "observed_group_mean_absolute_repeat_difference": 0.00010242907124303899,
+        "frozen_material_harm_ci_upper_below_zero": false
+      }
+    },
+    "multi_object": {
+      "expressions": 0,
+      "scenes": 0,
+      "status": "insufficient population; no CI/harm/no-harm assertion"
+    }
+  },
+  "source": {
+    "path": "pipeline/analyses/y41_frozen_full_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.json",
+    "sha256": "f2a0706523b8ea2ec74cdc37af2046d7409cdd7a9a9378d83183117eb137b2bc"
+  },
+  "limits": [
+    "Object-count strata are not official unique/multiple categories.",
+    "An absent multi-object population is not evidence of safety.",
+    "Original full-population and size-stratum comparison is unchanged."
+  ]
+}

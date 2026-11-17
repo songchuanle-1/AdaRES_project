@@ -1,0 +1,36 @@
+Using backend: pytorch
+set CUDA_VISIBLE_DEVICES as 0
+2026-09-29 20:59:53,820 - INFO - Load val scanrefer: 9508 samples
+{"scene": 0, "expressions": 32, "elapsed_s": 2.908261574804783}
+{"scene": 1, "expressions": 64, "elapsed_s": 4.936358846724033}
+{"scene": 2, "expressions": 96, "elapsed_s": 6.218844063580036}
+{"scene": 3, "expressions": 128, "elapsed_s": 7.829273214563727}
+{"scene": 4, "expressions": 160, "elapsed_s": 10.914445146918297}
+{"scene": 5, "expressions": 192, "elapsed_s": 12.663449482992291}
+{"scene": 6, "expressions": 224, "elapsed_s": 14.589765466749668}
+{"scene": 7, "expressions": 256, "elapsed_s": 15.452279822900891}
+{"scene": 8, "expressions": 288, "elapsed_s": 17.693607663735747}
+{"scene": 9, "expressions": 320, "elapsed_s": 18.76460107974708}
+{"scene": 10, "expressions": 352, "elapsed_s": 19.517366027459502}
+{"scene": 11, "expressions": 384, "elapsed_s": 20.6824225243181}
+{"scene": 12, "expressions": 416, "elapsed_s": 21.81272592023015}
+{"scene": 13, "expressions": 448, "elapsed_s": 23.310468902811408}
+{"scene": 14, "expressions": 480, "elapsed_s": 25.2390167247504}
+{"scene": 15, "expressions": 512, "elapsed_s": 26.07028049789369}
+{"scene": 16, "expressions": 544, "elapsed_s": 27.875234263017774}
+{"scene": 17, "expressions": 576, "elapsed_s": 28.825529921799898}
+{"scene": 18, "expressions": 608, "elapsed_s": 30.251438749954104}
+{"scene": 19, "expressions": 638, "elapsed_s": 30.953189335763454}
+{"scene": 20, "expressions": 670, "elapsed_s": 32.424846194684505}
+{"scene": 21, "expressions": 702, "elapsed_s": 33.176439851522446}
+{"scene": 22, "expressions": 734, "elapsed_s": 34.45592761784792}
+{"scene": 23, "expressions": 766, "elapsed_s": 36.5989374499768}
+{"scene": 24, "expressions": 798, "elapsed_s": 37.93538288399577}
+{"scene": 25, "expressions": 828, "elapsed_s": 38.92463996633887}
+{"scene": 26, "expressions": 860, "elapsed_s": 40.35542393103242}
+{"scene": 27, "expressions": 892, "elapsed_s": 42.32076363824308}
+{"scene": 28, "expressions": 924, "elapsed_s": 45.16753794439137}
+{"scene": 29, "expressions": 956, "elapsed_s": 49.76394632831216}
+{"scene": 30, "expressions": 988, "elapsed_s": 51.491707507520914}
+{"scene": 31, "expressions": 1020, "elapsed_s": 53.62311218120158}
+{"split": "val", "elapsed_s": 53.62317056208849, "scenes": 32, "selected_dataset_indices": [0, 3, 5, 7, 10, 13, 16, 19, 21, 23, 25, 27, 30, 33, 36, 40, 42, 46, 48, 51, 52, 55, 57, 61, 64, 66, 67, 70, 73, 79, 81, 85], "peak_reserved_gib": 7.1171875, "dual_model_parameters": 329259274, "sources": {"w2_config": {"path": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml", "sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb"}, "b4_config": {"path": "configs_song/model_paper5/adares_b4_query_competition_res.yaml", "sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb"}, "w2_checkpoint": {"path": "../AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth", "sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52"}, "b4_checkpoint": {"path": "../AdaRES_checkpoints/adares_b4_query_competition_res/20260921_210214/best.pth", "sha256": "56f49e7c580ddfb67896e77432a922fafed98f7ed58ae6d957703bd2cf062616"}}}

@@ -1,0 +1,63 @@
+{
+  "complete": true,
+  "recorded_at_local": "2026-10-16T15:01:16.206017+08:00",
+  "user_scope": "Explicit direct-human authorization: ONLY tested Y50 seven-file commit and existing gated continuation.",
+  "authorization": {
+    "path": "pipeline/authorizations/AdaRES-Y50_commit.json",
+    "sha256": "98ca31a33d1905e61ad0c61ce8994fd5f8a5cf3ea3e0ede12e7afdb75690906b"
+  },
+  "commit_binding": {
+    "path": "pipeline/analyses/y50_commit_binding_7548_75486f9263d34214b3bd2e1412c69639.json",
+    "sha256": "31e0836db927d447ac5045862978d050b14a38587aba6041d76c1f704afea506"
+  },
+  "code_commit": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+  "admission": {
+    "path": "pipeline/admissions/AdaRES-Y50.json",
+    "sha256": "bd3970c8a0fefbf4e1ae62f386c48983292affcdb4e0a7cae5122fd57373ade5"
+  },
+  "dispatch": {
+    "path": "pipeline/analyses/y50_dispatch_7548_75486f9263d34214b3bd2e1412c69639.json",
+    "sha256": "e0b1733def12ef93be12236c4565ba7de666c15385badd1448c3f5490ca7bc1a"
+  },
+  "independent_observation": {
+    "path": "pipeline/analyses/y50_started_7548_75486f9263d34214b3bd2e1412c69639.json",
+    "sha256": "36840a258268d19d6e2d64736cb10dec2966274a6170b1320afa0083622c92c8"
+  },
+  "actual_native_progress": [
+    {
+      "epoch": 1,
+      "step": 158
+    },
+    {
+      "epoch": 1,
+      "step": 165
+    }
+  ],
+  "authorized_GPU_rows": [
+    {
+      "gpu": 0,
+      "memory_MiB": 22742,
+      "total_MiB": 24576,
+      "utilization": 91,
+      "pids": [
+        19723
+      ]
+    },
+    {
+      "gpu": 1,
+      "memory_MiB": 16370,
+      "total_MiB": 24576,
+      "utilization": 61,
+      "pids": [
+        31539
+      ]
+    }
+  ],
+  "new_candidates": 0,
+  "new_admissions": 1,
+  "new_training_launches": 1,
+  "unrelated_changes_preserved": true,
+  "source_protocol_unchanged": true,
+  "diagnostic_weights_not_deployed": true,
+  "scope_note": "Y50 is actually training, never label it blocked to satisfy a capacity checker. The other authorized GPU has foreign PID19723; no invented candidate, widened scope or altered target."
+}

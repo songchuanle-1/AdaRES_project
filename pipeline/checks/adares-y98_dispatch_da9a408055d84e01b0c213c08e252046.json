@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "da9a408055d84e01b0c213c08e252046",
+  "id": "AdaRES-Y98",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y98",
+    "label": "AdaRES-Y98 fixed30",
+    "config": "configs_song/model_paper5/adares_y98_appearance_mask_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "15c3481ff32456160b5a94588565f68f0d2d2c5b",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y98.json",
+    "scientific_candidate_id": "AdaRES-Y98",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 25962,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y98_appearance_mask_skip_res_20261110_210741.log",
+    "launched": "2026-11-10T21:08:19"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y98 fixed30] configs_song/model_paper5/adares_y98_appearance_mask_skip_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y98_v2.py",
+    "sha256": "bf3c8d9326b4367c8f0fc65fae85093a14a224114464fe4bb59c93083fb1fc46"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-21T20:58:13.244635+08:00",
+  "candidate_id": "AdaRES-Y56",
+  "command": "python -B scripts/check_gpu0_single_card_trial.py --token a5aa453f92f2440594bda2d66fb1dc4b",
+  "observation": {
+    "hostname": "dl01-MS-7C60",
+    "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+    "samples": [
+      {
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0",
+          "--resume",
+          "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/last.pth"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "starttime": "161192",
+        "log_size_bytes": 14052517,
+        "progress": [
+          "Train",
+          "26",
+          "30",
+          "3286",
+          "4686"
+        ],
+        "device": {
+          "index": 0,
+          "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+          "power_limit_watts": 280.0,
+          "draw_watts": 254.45,
+          "temperature_c": 83.0,
+          "fan_percent": 78.0,
+          "utilization_percent": 60.0,
+          "memory_used_mib": 22684,
+          "memory_total_mib": 24576
+        },
+        "telemetry": {
+          "rc": 0,
+          "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 280.00, 254.45, 83, 78, 60, 22684, 24576\n",
+          "stderr": ""
+        },
+        "monotonic": 31193.26529206,
+        "tail_errors": []
+      },
+      {
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0",
+          "--resume",
+          "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/last.pth"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "starttime": "161192",
+        "log_size_bytes": 14058897,
+        "progress": [
+          "Train",
+          "26",
+          "30",
+          "3308",
+          "4686"
+        ],
+        "device": {
+          "index": 0,
+          "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+          "power_limit_watts": 280.0,
+          "draw_watts": 243.89,
+          "temperature_c": 84.0,
+          "fan_percent": 79.0,
+          "utilization_percent": 97.0,
+          "memory_used_mib": 22684,
+          "memory_total_mib": 24576
+        },
+        "telemetry": {
+          "rc": 0,
+          "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 280.00, 243.89, 84, 79, 97, 22684, 24576\n",
+          "stderr": ""
+        },
+        "monotonic": 31205.31672134,
+        "tail_errors": []
+      }
+    ],
+    "performance": {
+      "rc": 0,
+      "stdout": "\n==============NVSMI LOG==============\n\nTimestamp                                 : Wed Oct 21 08:58:08 2026\nDriver Version                            : 550.90.07\nCUDA Version                              : 12.4\n\nAttached GPUs                             : 2\nGPU 00000000:21:00.0\n    Performance State                     : P2\n    Clocks Event Reasons\n        Idle                              : Not Active\n        Applications Clocks Setting       : Not Active\n        SW Power Cap                      : Active\n        HW Slowdown                       : Not Active\n            HW Thermal Slowdown           : Not Active\n            HW Power Brake Slowdown       : Not Active\n        Sync Boost                        : Not Active\n        SW Thermal Slowdown               : Not Active\n        Display Clock Setting             : Not Active\n    Sparse Operation Mode                 : N/A\n\n",
+      "stderr": ""
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13738, 22674\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 50448, 24158\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "assessment": {
+    "process_identity_verified": true,
+    "native_progress_verified": true,
+    "power_cap_preserved": true,
+    "gpu1_compute_empty": false,
+    "gpu0_compute_owner_verified": true,
+    "thermal_slowdown_active": false,
+    "kernel_xid_or_fallen_off_observed": false,
+    "tail_error_observed": false,
+    "sample_healthy": false,
+    "hardware_root_cause_resolved": false,
+    "efficacy_test": false
+  },
+  "y57_registered_paused": true,
+  "remote_mutations": false,
+  "hardware_settings_changed": false,
+  "queue_changed": false,
+  "limitation": "Two samples only. Not a sustained stress test, causal cooling attribution, native smoke for prepared candidates, hardware repair or trained efficacy result."
+}

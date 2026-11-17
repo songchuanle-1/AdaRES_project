@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "token": "1ed6af1e5b7c4fac8ca86bcd96edd3cc",
+  "observed_at": "2026-11-01T04:51:07.594503+08:00",
+  "original_live_training": {
+    "AdaRES-Y71": {
+      "path": "pipeline/checks/production_adares-y71_1ed6af1e5b7c4fac8ca86bcd96edd3cc_progress.json",
+      "sha256": "94e3740e788b718858fa1cf5ab10d38a38569d35c9449a214425e031411d83af"
+    },
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_1ed6af1e5b7c4fac8ca86bcd96edd3cc_progress.json",
+      "sha256": "8c46498ff30b5c0dbcdc14ab66789212a88e719c5cce31ac30471e7659092b2e"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_1ed6af1e5b7c4fac8ca86bcd96edd3cc_progress.json",
+      "sha256": "712fed8548f68464190c8a11a1b61360fb04f2d20782f39c3df1cfcb7b2aed59"
+    }
+  },
+  "original_native_and_Y71_terminal_preparation_integrity": {
+    "path": "pipeline/checks/prepared_integrity_1ed6af1e5b7c4fac8ca86bcd96edd3cc.json",
+    "sha256": "511a109413c24168515cbd54d150ebbc2572ce0bd626464a66d3e2fb57109a1a"
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_1ed6af1e5b7c4fac8ca86bcd96edd3cc.json",
+      "sha256": "cbefdea8c60c0d2adb8a41f10512ef774a98c18934e4dff1249d94f10b04108f"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_1ed6af1e5b7c4fac8ca86bcd96edd3cc.json",
+      "sha256": "c8d49fcc54b0b428b73d4ec8db7050bfbe1d81ff76d5dc52507c8197bfd2314d"
+    }
+  },
+  "new_candidates": 0,
+  "new_tests": false,
+  "native_GPU_executed": false,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "source_HEAD_unchanged": "7da625ab750447eaad76e82309c89d887df93994",
+  "Y57_pause_preserved": true,
+  "conclusion": "All original native counters advance; Y71 is Train29 and has not completed fixed30. Two exact candidates and Y71 completion-preparation dependencies remain intact. All authorized devices busy and reserved. No formal metric or efficacy change."
+}

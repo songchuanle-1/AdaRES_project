@@ -1,0 +1,151 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y71",
+  "config": "configs_song/model_paper5/adares_y71_visual_product_fusion_res.yaml",
+  "code_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.311269283294678
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "fusion_calls": 1,
+      "normalization_consumption_calls": 1,
+      "projected_branch_gradients_finite": true,
+      "fusion_weight_gradient_max": 0.00010860146721825004,
+      "parameter_update_max": 9.999080066336319e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "fusion_calls": 1,
+      "normalization_consumption_calls": 1,
+      "projected_branch_gradients_finite": true,
+      "fusion_weight_gradient_max": 9.05850829440169e-05,
+      "parameter_update_max": 0.00010008196113631129
+    }
+  ],
+  "fusion_paths": [
+    {
+      "weight_nonzero": false,
+      "feature_rows": 2748,
+      "reference_feature_rows": [
+        0,
+        1374,
+        2747
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 2.2351741790771484e-08,
+      "fusion_delta_max": 0.0,
+      "spatial_abs_max": 3.832592725753784,
+      "appearance_abs_max": 0.28113672137260437,
+      "native_projection_identity_verified": true,
+      "normalization_consumption_verified": true
+    },
+    {
+      "weight_nonzero": true,
+      "feature_rows": 8672,
+      "reference_feature_rows": [
+        0,
+        4336,
+        8671
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.3956634098422072e-08,
+      "fusion_delta_max": 0.0008240342140197754,
+      "spatial_abs_max": 3.984483242034912,
+      "appearance_abs_max": 0.34778401255607605,
+      "native_projection_identity_verified": true,
+      "normalization_consumption_verified": true
+    }
+  ],
+  "fusion_calls": 2,
+  "normalization_consumption_calls": 2,
+  "shared_head_calls": 14,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6729760768,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native two-step TRAIN execution only, not efficacy or a full-dataset memory bound.",
+  "command": "python -B scripts/run_experiment_first_probe.py y71_gpu0_smoke pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_program.py --token fb6718a8dd684cdfbaa98d6678e7d3c5 --seconds 600 --gpu --gpu-id 0",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "observed_at": "2026-10-31T07:10:53.651014+08:00",
+    "live": {
+      "hostname": "dl01-MS-7C60",
+      "source_marker": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+      "source_hashes": {},
+      "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 71, 22738, 24576\n",
+      "gpu_query_rc": 0,
+      "compute": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561, 22728\n",
+      "compute_query_rc": 0,
+      "tasks": {}
+    },
+    "power_limit_watts": 280,
+    "required_exclusive_gpu": 0
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y71_gpu0_smoke_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+      "sha256": "6e93a5609e8c61663384653db464b62e8f7fcfb29484fc2cc33d2759c43893c9"
+    },
+    {
+      "path": "pipeline/analyses/y71_gpu0_smoke_fb6718a8dd684cdfbaa98d6678e7d3c5.log",
+      "sha256": "ed6584b1e9b6f4a7ee0511559ed6eea65fc8a00a26f201afc72d7b53c03941c9"
+    },
+    {
+      "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_program.py",
+      "sha256": "7db1ccf03e2ea5c993e7141c875ce56ff75bab74e1d2c340745fb3997df24492"
+    },
+    {
+      "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_plan.json",
+      "sha256": "2efeb8013ae810e2381b2edb5c0d2b3e4ab7a70a96dc400e968a9f5a71e70779"
+    }
+  ]
+}

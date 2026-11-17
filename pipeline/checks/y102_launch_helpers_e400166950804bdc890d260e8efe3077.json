@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "token": "e400166950804bdc890d260e8efe3077",
+  "actual_native": {
+    "path": "pipeline/analyses/y102_server2_smoke_e400166950804bdc890d260e8efe3077.json",
+    "sha256": "001828e3afe3d23be53bdfea0bb1924c96b1919b1414618d1512d4b6902dbac2"
+  },
+  "generated": [
+    {
+      "path": "scripts/advance_y102.py",
+      "sha256": "859c658c3c651eeb6598b6dc68e2c3d50af97b7fc997987e4523bfd9b4af577c"
+    },
+    {
+      "path": "scripts/y102_deployment.py",
+      "sha256": "54eee2e78c101f89283ac3ddfc99af089f09182313e6c1e705c049497bcf6e3c"
+    },
+    {
+      "path": "scripts/y101_y102_terminal_contract.py",
+      "sha256": "77183f9a013d89c567e2f6bbc6ff26718dcdaefde977eb48c9719bcf2d2675d0"
+    },
+    {
+      "path": "scripts/test_y101_y102_terminal_binding.py",
+      "sha256": "e6d77aab5d5a2bb330109c9cf412da94a4985273723b5e252035ed76380af1c1"
+    },
+    {
+      "path": "scripts/prepare_y101_y102_terminal_binding.py",
+      "sha256": "e7116caf7a591caf44261095a610cf613bb70149443275f7ab121e8574b9ae3b"
+    },
+    {
+      "path": "scripts/test_y102_admission.py",
+      "sha256": "cc4f0efac9a818b3d5ed496420d02414252c754b5a0c6f00e71828b80dad230f"
+    }
+  ],
+  "original_inputs": [
+    {
+      "path": "scripts/advance_y100.py",
+      "sha256": "eea889ff5f10abaaaecf23980ef987cceb0adbd8d0ee34c7f85bc6c9aa46b367"
+    },
+    {
+      "path": "scripts/y101_deployment.py",
+      "sha256": "5a0ccd128fe88c9140b82083877459a25e3d819df03643cd4797ef68dd22939d"
+    },
+    {
+      "path": "scripts/y99_y100_terminal_contract.py",
+      "sha256": "6457d5d5b1979db7ff447cad74fd12d17818fb4cc42fec66a57624783a038dbc"
+    },
+    {
+      "path": "scripts/test_y99_y100_terminal_binding.py",
+      "sha256": "bc435662d3294558bf2c3f5fc7bb0230874953490b8bd7377f18508a1d4b8cf1"
+    },
+    {
+      "path": "scripts/prepare_y100_y101_terminal_binding.py",
+      "sha256": "2b566112a554ffa494be1e9e5bbf54e232dd30236db2c2890be18ad328044580"
+    }
+  ],
+  "scientific_files_and_main_index_unchanged": true,
+  "guard_tests_pending": true
+}

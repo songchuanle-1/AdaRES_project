@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "observed_at": "2026-11-13T03:16:00.591938-05:00",
+  "original_pid": 4747,
+  "processes": [
+    [
+      "4747",
+      "1",
+      "Ssl",
+      "16:22:26",
+      "0.1",
+      "futex_wait_queue_me",
+      "python"
+    ],
+    [
+      "5097",
+      "4747",
+      "Sl",
+      "16:22:13",
+      "0.0",
+      "poll_schedule_timeout",
+      "python"
+    ],
+    [
+      "5145",
+      "4747",
+      "Sl",
+      "16:22:13",
+      "0.0",
+      "poll_schedule_timeout",
+      "python"
+    ],
+    [
+      "5193",
+      "4747",
+      "Sl",
+      "16:22:13",
+      "0.0",
+      "poll_schedule_timeout",
+      "python"
+    ],
+    [
+      "5241",
+      "4747",
+      "Rl",
+      "16:22:13",
+      "99.9",
+      "-",
+      "python"
+    ]
+  ],
+  "remote_mutations": false,
+  "stack_attachment_attempted": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-Y18",
+  "config": "configs_song/model_paper5/adares_y18_point_measure_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-01T23:37:51.174218",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-02T23:47:49.420505",
+      "status": "done_complete",
+      "best_miou": "0.5080",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 7449,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y18_point_measure_res_20261001_233715.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-01T23:37:51",
+  "final_best": "0.5080",
+  "finished_at": "2026-10-02T23:47:49",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "token": "25879a942ade4e60b06c3f2177546aec",
+  "id": "AdaRES-Y85",
+  "original_server": "server-2",
+  "original_gpu": 0,
+  "power_limit_watts": 280.0,
+  "current_reserved_owner": "AdaRES-Y87",
+  "native_owner_observation": {
+    "path": "pipeline/checks/production_adares-y87_25879a942ade4e60b06c3f2177546aec_progress.json",
+    "sha256": "eabb4d1a3d0bdd4387e372ec836d7f20411dc8de0136c59e7c23cd01288106b9"
+  },
+  "terminal": {
+    "path": "pipeline/checks/y85_server2_fixed30_25879a942ade4e60b06c3f2177546aec.json",
+    "sha256": "3f26a371bea189fcec35e32d363d4841a303b149a49c592cdaecf29fc0323dc3"
+  },
+  "archive": {
+    "path": "pipeline/checks/y85_server2_fixed30_25879a942ade4e60b06c3f2177546aec_archive_binding.json",
+    "sha256": "9724293f33c9dc6b9ce8accbd9d3ce38cb2bd58f646dbbb6dcd4dde4c1b957d6"
+  },
+  "post_training_freeze": {
+    "path": "pipeline/checks/AdaRES-Y85_cc4e062184264231b13212a60ffcd196_post_training_freeze.json",
+    "sha256": "4380dc32199f13af68e88833726f19399f3556d57446c2b8d62532298b4117bf"
+  },
+  "full_frozen_evaluation_executed": false,
+  "helper": {
+    "path": "scripts/record_y85_archive_y87_launch.py",
+    "sha256": "23ef74279840c77cfcd28e2edd7087cbe02d1a66d4763dd64b2c92b6eaa99d90"
+  }
+}

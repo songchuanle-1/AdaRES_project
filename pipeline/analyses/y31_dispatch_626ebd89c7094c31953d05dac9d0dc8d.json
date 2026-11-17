@@ -1,0 +1,31 @@
+{
+  "observed_at_local": "2026-10-07T19:14:04.742745+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y31 mask-supported spatial shape confidence] configs_song/model_paper5/adares_y31_mask_shape_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y31",
+    "label": "Y31 mask-supported spatial shape confidence",
+    "config": "configs_song/model_paper5/adares_y31_mask_shape_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "5f2489de78196e8d89c004e452a665c0946f2a94",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y31.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 66677,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y31_mask_shape_res_20261007_191327.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-07T19:14:04"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y31.json",
+    "sha256": "3a02606cd6436ca9d4450ffdd257af9208091faa86cf96b913050d91c9214d10"
+  },
+  "scope": "Canonical gated dispatcher; GPU inventory constrained to1, no repeated preflight."
+}

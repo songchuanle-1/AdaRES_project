@@ -1,0 +1,141 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y77",
+  "process_absent": true,
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y77_geometry_query_init_res_20261102_065901.log",
+  "log_sha256": "71a57c9ab34e525292efdff8375c4305684ec20851d958d48df625984a816046",
+  "checkpoints": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y77_geometry_query_init_res/20261101_175820/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5108122825622559,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "51a06aa5ce73fd4f952a16e68dbd1cd221d61cdc3e43e5802bb86d600d113dd7"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y77_geometry_query_init_res/20261101_175820/best.pth",
+      "epoch": 21,
+      "best_miou": 0.5108122825622559,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 21,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "cf2cb6f5f99f7b430301dfe36397f45677277fa9805129a745dfb586f4156724"
+    }
+  ],
+  "completed_epochs": {
+    "Train": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "Val": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "final_logged_metrics": [
+    "0.505",
+    "0.556",
+    "0.603"
+  ],
+  "CUDA_initialized": false,
+  "full_frozen_evaluation_executed": false,
+  "hardware_settings_changed": false,
+  "observed_at": "2026-11-03T06:52:24.904399+08:00",
+  "token": "bd93870b90dd48b7b5366e46173cc01e",
+  "source_checks": {
+    "exact_model_files": 6,
+    "native_YAML_semantics_verified": true,
+    "source_marker_verified": true,
+    "admission_verified": true,
+    "freeze_preserved": true
+  },
+  "resource_after": {
+    "path": "pipeline/checks/y77_server2_fixed30_bd93870b90dd48b7b5366e46173cc01e_resource.json",
+    "sha256": "968580c36e13bbdc029ab1908733a9e30d604c6a480826d9c1272af86021b35f"
+  },
+  "CPU_guard_tests_passed": 20,
+  "command": "python -B scripts/finalize_y77_fixed30.py --token bd93870b90dd48b7b5366e46173cc01e",
+  "evidence": [
+    {
+      "path": "scripts/finalize_y77_fixed30.py",
+      "sha256": "3a041658af922902718ac177499e58af4a7f0109b7babc9f7bc2cc7de7baa578"
+    },
+    {
+      "path": "pipeline/checks/y77_server2_fixed30_bd93870b90dd48b7b5366e46173cc01e_location.json",
+      "sha256": "cfa6679d2ba9a0e1c19bc13aaefc9847bf64dfba70697beea9193c60f5e63826"
+    },
+    {
+      "path": "pipeline/checks/y77_server2_fixed30_bd93870b90dd48b7b5366e46173cc01e.log",
+      "sha256": "9476d962d95c559ad66be2f573bcc04386a8a319fbcd7b4f380cf162eb70b920"
+    },
+    {
+      "path": "pipeline/checks/y77_server2_fixed30_bd93870b90dd48b7b5366e46173cc01e_tests.log",
+      "sha256": "bf4abe89eabbdc052260764b82091b3ff3b1dfbff8ba07cf5d35a76d3eb1005f"
+    },
+    {
+      "path": "pipeline/checks/y77_server2_fixed30_bd93870b90dd48b7b5366e46173cc01e_before.json",
+      "sha256": "2b6aebf27982a01ba967d4f89353d7e174587b300fdc5a0465de143aeb5b8a97"
+    }
+  ]
+}

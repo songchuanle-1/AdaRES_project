@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y100",
+  "config": "configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "additive_parent": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "retained_branch": "refs/heads/adares-y100-appearance-input-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y100_native.py",
+    "sha256": "ff6fac236934691bd58c063b040da0200bdc53857c696ead2081955a169c1104"
+  },
+  "planned_command": "python -B scripts/run_y100_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching original AdaRES-Y98 natural fixed30/full finite exact original checkpoint verification/canonical archive, fresh exclusive idle/unreserved GPU0, exact HEAD/private runtime/data/mappings/350W280W. No GPU1 or resource substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite backward/optimizer steps, full1024 raw identity/original projection/sum_norm/first visual memory/static seven mask readouts/shared confidence and original gates/new+original gradients/native modes/budget. CPU feasibility is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y100_native_288dfa4d3bb741eaa67afacfdc81f241_server2_program.py",
+    "sha256": "462b267eb82a8d7ba4480fcb447201f37c4c805423a7a6e0df44542a6e87fbae"
+  }
+}

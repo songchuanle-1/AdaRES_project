@@ -1,0 +1,30 @@
+{
+  "actions": [
+    "仅处理AdaRES_project；owner实际会话、Disabled后台调度、正式skill/experiment_first、AGENTS/goal/SERVERS及最新GPU1暂停记录核验后begin，先查进展并尝试已有合格派发；ready waiting为0，无新终态。",
+    "运行：AdaRES-Y92 Train27/30，步966/4686；AdaRES-Y93 Train13/30，步3185/4686；原PID/source/YAML/receipt/私有runtime、350W/280W及原生步数递增核实。canonical物理占用确认两个授权GPU0均busy+reserved；GPU1和外部进程未干扰。",
+    "新准备：Y98独立全现有1024通道2D外观到静态mask特征的零初始化残差，一次接入原batching供七次mask读取；保留完整原x_mask和2D视觉融合、全部输入/SCG/采样/细粗融合/共享头/硬门算法/目标损失选择器/seed1999固定30轮及原YAML。不是已有Y71视觉融合乘积或Y72/Y81循环mask更新，不重开或组合旧路线。",
+    "首次真实CPU检查通过：原生YAML、完整模型、发布骨干和TRAIN162738点8表达加载；float32/64独立标量/无RNG/行通道置换/零输入/符号/行局部/双输入梯度，七阶段W2精确锚点/输入梯度、初始mask干预且初始score不变/精确旁路，完整原2D/base/batching/静态七次复用和两步有限合成decoder更新。CPU不是GPU稀疏task或训练收益。",
+    "仅七个已测A文件独立留版，生产HEAD和主index保持；10项实际证据检查和8项运行边界检查首次执行通过、无跳过。为当前Y92/server1和Y93/server2分别绑定GPU0原生检查计划，仅允许原数据、私有环境、既有路径映射和350W/280W。没有实际GPU原生、准入、同步、入队或启动。",
+    "Y94/Y95/Y96原CPU版本/原生计划保留不重放；Y97原始与修订1失败、完整原守卫和文件不变，不新增修订或重命名。两项当前训练终态计划只读核验，未读checkpoint、停止或归档，早期归档不重放。",
+    "本轮新科学ID1、完整CPU尝试1通过、GPU原生0、准入0、启动0、归档0；精确备份七节记忆、刷新训练和canonical占用、保留collector实际resource_check，再正式report/finish；不预先宣称收尾结果。"
+  ],
+  "decisions": [
+    "Y98当前仅完成CPU准备，不是原生检查PASS；保持blocked/exclusive_gpu_slot，不伪造waiting。先保留Y94、Y95、Y96顺序，再考虑Y98；匹配owner自然30轮、完整有限checkpoint精确终态核验归档及实时空闲GPU0后才做真实稀疏原生两步。",
+    "不得重放已完成CPU/version/plan或已归档终态检查；若生产HEAD或资源owner改变，须新测试绑定再执行候选。实际native通过后仍须完整原FIRST/同设备cost冻结、准入收据、精确源选择/安全同步和原生递增步数验证。无需新增用户授权。",
+    "科学goal字节、原签名收据、全部数据/私有环境/mappings/seed1999固定30轮/禁用/恢复/功耗和调度要求不变。GPU1全部使用与原GPU1冻结后评成本继续暂停，Y57另行暂停，不迁移替代，不用server6或跨项目。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y98_preparation_closeout_230ba062432c4ba0b20e125f5c913cc9.json",
+      "sha256": "4b264b043eae69578afa0ad71777e89adcb8f2e7fef8b4fd9f31035d756b7f6b"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_230ba062432c4ba0b20e125f5c913cc9.md",
+      "sha256": "e1c7ec10319f877cd066e7b793a73a1999f379206ff2b4f35281b232eb4cb2ee"
+    },
+    {
+      "path": "pipeline/decisions/20261109-072156_next_batch.md",
+      "sha256": "06fe6fe7fc4b090270de8d11ea6f4e30c991f9795af0b30d1c7f03e60c6466fc"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "token": "5103a354430e47b3b7a04162dcaae8af",
+  "reviewed_at": "2026-10-20T22:23:42.888931+08:00",
+  "evidence": {
+    "final_terminal_comparison": {
+      "path": "pipeline/analyses/final_terminal_comparison_5103a354430e47b3b7a04162dcaae8af.json",
+      "sha256": "ac83be9afc61fca0bb68e19351506888d9146c5f61696f9f7147dec900c1236e"
+    },
+    "y57_cpu": {
+      "path": "pipeline/analyses/y57_cpu_5103a354430e47b3b7a04162dcaae8af.json",
+      "sha256": "562db3861810151514b32c0cc307daddcaa96a816d946283c10e272c66ffa165"
+    },
+    "y57_activity_audit": {
+      "path": "pipeline/analyses/y57_activity_audit_5103a354430e47b3b7a04162dcaae8af.json",
+      "sha256": "a65bbcd942be3c95d9f4f65e6c70dee8629a36ac18922409798b0357114bb5ee"
+    },
+    "y57_resources_v2_gpu1": {
+      "path": "pipeline/analyses/y57_resources_v2_gpu1_5103a354430e47b3b7a04162dcaae8af.json",
+      "sha256": "c161315111b8fdc2c9312004a5774fa7fb8f097504e879ac981317c209f857fc"
+    },
+    "y56_native_loss": {
+      "path": "pipeline/analyses/y56_native_loss_gpu1_5103a354430e47b3b7a04162dcaae8af.json",
+      "sha256": "cceba9a845d7e16a19f035816bc568d5ab27a5f737cd667c6d90dde4bf988b9c"
+    }
+  },
+  "final_comparison": "Y52/Y54 fixed30+all frozen references complete. Y54 large subgroup versus Y36 triggers original harm rule; no automatic promotion/rerun.",
+  "Y56": [
+    {
+      "pair": 0,
+      "original_loss": 0.9146729707717896,
+      "repeat_loss": 0.9146730303764343,
+      "corrected_loss": 0.9146730303764343,
+      "repeat_loss_abs": 5.960464477539063e-08,
+      "corrected_minus_original": 5.960464477539063e-08,
+      "maximum_logit_change": 0.0,
+      "copies": 0
+    },
+    {
+      "pair": 8,
+      "original_loss": 0.6985950469970703,
+      "repeat_loss": 0.6985949873924255,
+      "corrected_loss": 0.6985433101654053,
+      "repeat_loss_abs": 5.960464477539063e-08,
+      "corrected_minus_original": -5.173683166503906e-05,
+      "maximum_logit_change": 0.02327430248260498,
+      "copies": 3
+    }
+  ],
+  "Y57": {
+    "released_final_control_passed": 0,
+    "released_batches": 4,
+    "diagnostic_trained_final_control_passed": 4,
+    "every_new_or_indicator_tensor_native_finite_nonzero": true,
+    "formal_initialization": "released_SPFormer_only",
+    "diagnosis": "Reachable gradients, but original released fixed final-layer control below numerical bound. Trained diagnostic separation does not erase failure.",
+    "released_final_signals": [
+      4.952773451805115e-06,
+      4.697591066360474e-06,
+      6.16908073425293e-06,
+      4.980713129043579e-06
+    ],
+    "released_final_bounds": [
+      1.52587890625e-05,
+      1.52587890625e-05,
+      1.52587890625e-05,
+      1.52587890625e-05
+    ],
+    "trained_final_signals": [
+      1.939363956451416,
+      1.088599681854248,
+      1.3540024757385254,
+      1.5339488983154297
+    ],
+    "resources": {
+      "parameter_delta": 66048,
+      "stress_peak_reserved_bytes": 7375683584,
+      "paired_median_seconds": {
+        "parent": 0.07515346000036516,
+        "candidate": 0.07534160499926656
+      }
+    }
+  },
+  "structural_tests": {
+    "tests": 5,
+    "passed": true,
+    "output": "test_all_other_decoder_nodes_identical (y57_structural_tests.PrototypeStructureTests.test_all_other_decoder_nodes_identical) ... ok\ntest_config_is_unchanged_and_unique (y57_structural_tests.PrototypeStructureTests.test_config_is_unchanged_and_unique) ... ok\ntest_full_channel_variance_path_without_channel_search (y57_structural_tests.PrototypeStructureTests.test_full_channel_variance_path_without_channel_search) ... ok\ntest_no_cross_variant_imports (y57_structural_tests.PrototypeStructureTests.test_no_cross_variant_imports) ... ok\ntest_other_five_files_are_byte_equal (y57_structural_tests.PrototypeStructureTests.test_other_five_files_are_byte_equal) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.103s\n\nOK\n",
+    "source": {
+      "path": "scripts/test_y57_prototype_5103.py",
+      "sha256": "71e946848ee60d5152b29ed4adc5dc7cc3b2b8ce8d0cbd926bec5d62254a3409"
+    }
+  },
+  "interruptions": "First native driver train() return mismatch retained. native_v2 interrupted with no output/live process; unchanged retry exposed numerical criterion failure. Resource GPU0 precheck transiently occupied, no GPU work launched; later GPU1 retry with live precheck completed. No foreign job stopped.",
+  "optimizer_steps": 0,
+  "weights_saved": false,
+  "new_training": 0,
+  "Git_commits": 0,
+  "limits": "No trained Y56/Y57 benefit, final-selector harm, population causality, seed robustness or novelty proof. No inherited numerical-control failure converted to PASS."
+}

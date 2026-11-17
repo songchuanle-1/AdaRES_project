@@ -1,0 +1,58 @@
+{
+  "id": "AdaRES-Y93",
+  "config": "configs_song/model_paper5/adares_y93_evidence_hidden_skip_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-11-08T21:27:03.531474",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-11-09T21:12:44.987562",
+      "status": "done_complete",
+      "best_miou": "0.5050",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 47380,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y93_evidence_hidden_skip_res_20261108_212628.log",
+  "launched": "2026-11-08T21:27:03",
+  "final_best": "0.5050",
+  "finished_at": "2026-11-09T21:12:44.987562",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-2\\adares_y93_evidence_hidden_skip_res\\60b5973bb7e64cd5acc81581a9b3d691\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "0c1b9a894b304e0b99f6f8685d4efcb2",
+  "code_commit": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y93.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y93_server2_fixed30_y94_60b5973bb7e64cd5acc81581a9b3d691.json",
+    "sha256": "276714bf8707aff9a8f49db15505d3a5b917dac26c091c488afed2e04d349b89"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y93_evidence_hidden_skip_res/20261108_082521/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5050445795059204,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "2bac2ea4e56494b6b125891355370e7658607dd8d92a1e032ccd66705fdf0119"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y93_evidence_hidden_skip_res/20261108_082521/best.pth",
+      "epoch": 20,
+      "best_miou": 0.5050445795059204,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 20,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "cfcd041e93530839c5c6a3e488423025d29f18e41b144e1b37cd9c36ad96ca91"
+    }
+  ]
+}

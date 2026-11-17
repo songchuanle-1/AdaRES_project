@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y94",
+  "config": "configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "retained_branch": "refs/heads/adares-y94-query-geometry-bias-on-y93",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y94_bound_native_y93.py",
+    "sha256": "46fa3127ac8626d9050e31e41e297d423bceb199b091061c6c8a7e63a8c438db"
+  },
+  "planned_command": "python -B scripts/run_y94_bound_native_y93.py --server server-2 --token <CURRENT>",
+  "required_resource": "At HEADY93 only, after exact matching AdaRES-Y93 natural fixed30/full checkpoint archive and fresh idle/unreserved GPU0.",
+  "checks": "Actual original sparse TRAIN two finite task losses/backward/updates; original sampled query positions, one shared bounded geometry bias consumed by six ordered original self attentions, exact original SCG hard-neighborhood exclusions, fourteen shared indicators, independent head/query/expression formula rows, zero then learned bias, finite new/original/query gradients, native modes and memory. Native callbacks remain unexecuted; CPU is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y94_y93_additive_binding_2683c4548e244340a4d06c50bec79b2e_server2_program.py",
+    "sha256": "3c151ed7edb81f7f8158c4e2b0fe3f600f0738021e39b6af9c1c6882b3af2f85"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y94_native_9cbbb7d004b84132a4129c4f75781a62_server2_plan.json",
+    "sha256": "b9acf6d2c766b41c3c9f010928fa15046d253b2b62805ed5e4c90b58e130169f"
+  },
+  "additive_parent": "daa93b4375f144f0e79da92f85fe1fe27e877e18"
+}

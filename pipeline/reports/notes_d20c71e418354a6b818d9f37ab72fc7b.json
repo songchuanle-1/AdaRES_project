@@ -1,0 +1,18 @@
+{
+  "actions": [
+    "design快照北京时间2026-10-02 10:49:03；monitor/goal仅一次，前置Y18 best0.5070/16/30、no-improve2/30。冷却到期，建立并实际检验Y22/Y23，不重复旧标定路线。",
+    "Y22原生缓存train8/32表达同步置换query及sample索引：完整loss差1.192e-7、项差4.768e-7、梯度差5.122e-9、重复0。源码实际为几何种子匹配，原匈牙利假设在执行前纠正并保留；拒绝所测对应关系修复理由，不宣称上游确定性。",
+    "Y23 train64/256表达：63个含padding扫描均有原生padding梯度；独立有效token支持集实现将padding梯度和padding替换影响归零，真实token/query梯度有限非零。32全有效对照loss/gradient差0，padding扩展差4.77e-7/5.96e-7；空/非前缀语言fail-closed。",
+    "Y23独立七文件包/config与W2完全同配置，只改语义训练支持集，0新增参数；released-init两批原生干预梯度验证、400decoder张量有效及tools.train两优化步完成。模型/AdamW/PolyLR恢复前完全一致，下一步权重差2.299e-5保留。",
+    "最大训练对1055503点/7618SP，Y23/W2步中位1.120/1.117秒、reserved14.076/14.078GiB；推理train8加最大场景串行同checkpoint共9场景显存逐场景相同，最大场景1.758GiB、0.178/0.181秒。不是训练后Pareto或稳定p95证明。",
+    "初始Y23 scene0002自重复16879二值翻转已保留；精确缓存decoder输入Y23/W2 mask/indicator差0、sample差0。追加同场景16次/model，W2 15/16发生同样翻转并伴4FPS seed/226sample索引/2选择变化，Y23此组0；底层原因未知，不宣称普遍稳定。",
+    "六门槛审查及冻结全ScanRefer/W2/B1重复、场景聚类、大小子组伤害和成本评估完成；仅提交Y23七生产文件4a24410344b6ab6fe7f56d597013a4c13a9fa317，未纳入其他dirty变更。",
+    "canonical dispatcher在11:25:58启动Y23 server-2 GPU0 PID125903，唯一日志112523。11:26:56至11:27:02独立验证Y23 Train1 115→120/4686，原Y18 GPU1 PID7449 Train17 1274→1280；远端marker和七文件哈希匹配。GPU0/1为16196/22720MiB、55/71%；诊断已结束且flock释放。",
+    "科学状态Y22 rejected，Y23/Y18 training，最终效果未知、目标仍未达；本报告生成时postflight待finish，最终执行状态及收据窗口在可见报告补充。"
+  ],
+  "decisions": [
+    "本轮准入预算1已满足，实际活跃变为2/2；继续原Y23/Y18固定30epoch训练，不再添加填充候选。Y23准入代表可证伪训练，不代表有效、新颖或普遍可复现。",
+    "保留初次推理重复异常、原生FPS/sample噪声、checkpoint数值差和GBK helper故障；终态按冻结计划评估，禁止验证集阈值/温度/权重/特征/epoch调参。",
+    "只操作AdaRES_project及server-2授权GPU，未改变其他项目、调度或后台状态。下次已保存自动化准确时间未读取，未知。"
+  ]
+}

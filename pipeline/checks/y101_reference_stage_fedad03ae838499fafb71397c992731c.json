@@ -1,0 +1,213 @@
+{
+  "complete": true,
+  "token": "fedad03ae838499fafb71397c992731c",
+  "id": "AdaRES-Y101",
+  "observed_at": "2026-11-13T16:16:33.702103+08:00",
+  "purpose": "Only the original AdaRES-Y101 full frozen server1GPU0/350W comparison with Y36/W2/B1; no old GPU1 review migration.",
+  "freeze": {
+    "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+    "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+  },
+  "references": [
+    {
+      "id": "AdaRES-Y36",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "expected_sha256": "f504f6ed548affa54eb7292cf5a7d930158be5dfaac291417f4852ad0f0698d1",
+      "config": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    },
+    {
+      "id": "AdaRES-W2",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "expected_sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52",
+      "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    },
+    {
+      "id": "AdaRES-B1",
+      "original_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "mapped_checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "expected_sha256": "cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b",
+      "config": "configs_song/model_paper5/adares_b1_standard_res.yaml",
+      "exists": false,
+      "bytes": null,
+      "checkpoint_loaded": false,
+      "weights_sha256_verified": false
+    }
+  ],
+  "source_hashes": {
+    "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_source.json",
+    "sha256": "76097e48449e7afe1f614104c0436ee70e6a973f0adc70778986be1f26c85669"
+  },
+  "destinations": {
+    "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_destination.json",
+    "sha256": "4c20aa1ebaccd41cc1d393185a1a4c06ecbf0aa6c9a32add565ace9bc647021b"
+  },
+  "published": [
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-y36_published.json",
+      "sha256": "ced15680c7f281ed50e64d4f5a4bc19a890a1b860efcedfdfa3b599777bea3f2"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-w2_published.json",
+      "sha256": "1321a77ad18b089d96dba14e6a7b76a902d3901b0906b46ebe96b4653d68846a"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-b1_published.json",
+      "sha256": "639d81a77af06575f6b97633f698a60c65f43588f1e83ac4f75ba7a9a6444208"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "AdaRES-Y36",
+      "command_argv": [
+        "scp",
+        "-3",
+        "-q",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "songcl@192.168.1.163:/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+        "songcl@192.168.1.175:/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth.fedad03ae838499fafb71397c992731c.part"
+      ],
+      "seconds": 104.33694789977744,
+      "log": {
+        "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-y36_transfer.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "id": "AdaRES-W2",
+      "command_argv": [
+        "scp",
+        "-3",
+        "-q",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "songcl@192.168.1.163:/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+        "songcl@192.168.1.175:/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth.fedad03ae838499fafb71397c992731c.part"
+      ],
+      "seconds": 122.0908784000203,
+      "log": {
+        "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-w2_transfer.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "id": "AdaRES-B1",
+      "command_argv": [
+        "scp",
+        "-3",
+        "-q",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "songcl@192.168.1.163:/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+        "songcl@192.168.1.175:/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth.fedad03ae838499fafb71397c992731c.part"
+      ],
+      "seconds": 227.83676830027252,
+      "log": {
+        "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-b1_transfer.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "adapted_native_YAML": [
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_configs/adares_y36_local_adjacency_res.yaml",
+      "sha256": "63389f06f14fc2bb7adeceefe1abcf1c8eac71a83ccc0c200ccbeff8872ce667"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_configs/adares_w2_pointmass_competition_res.yaml",
+      "sha256": "63389f06f14fc2bb7adeceefe1abcf1c8eac71a83ccc0c200ccbeff8872ce667"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_configs/adares_b1_standard_res.yaml",
+      "sha256": "a0ef16cdc3056b61fa03f14d08729e556d4797363d5b65a69aa40c7ff34482c8"
+    }
+  ],
+  "remote_adapted_config_root": "/data1/songcl/Project/AdaRES_project/pipeline/review_assets/AdaRES-Y101/fedad03ae838499fafb71397c992731c/configs",
+  "only_two_original_SERVERS_mappings_used": true,
+  "all_three_reference_bytes_match_frozen_SHA": true,
+  "checkpoint_loaded": false,
+  "CUDA_used": false,
+  "active_source_or_native_configs_modified": false,
+  "queue_or_running_modified": false,
+  "formal_FIRST_or_cost_executed": false,
+  "evaluation_ready": false,
+  "remaining": "Require natural original Y101 full finite exact terminal proof/canonical archive, exclusive server1GPU0/350W, tested resource-only evaluator lock adapter and complete prediction/paired bootstrap/subgroup/cost execution. No target achievement.",
+  "evidence": [
+    {
+      "path": "scripts/stage_y101_frozen_review_references.py",
+      "sha256": "37e80ed7ad98f1c2285f5f3c5afa3f0e9403b2834eb71c7a50381c5e5f9e2347"
+    },
+    {
+      "path": "pipeline/checks/y101_review_assets_diagnostic_fedad03ae838499fafb71397c992731c.json",
+      "sha256": "f9e2df82c232e2e2f6fef9f57e2bf55ff0e293a04e48218a3a908eeb0301a15f"
+    },
+    {
+      "path": "pipeline/checks/y101_review_asset_clarification_fedad03ae838499fafb71397c992731c.json",
+      "sha256": "253100539b0b2167c48c5240a6b39647fbef416e14768823abcab0f613eb329d"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+      "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_source.json",
+      "sha256": "76097e48449e7afe1f614104c0436ee70e6a973f0adc70778986be1f26c85669"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_destination.json",
+      "sha256": "4c20aa1ebaccd41cc1d393185a1a4c06ecbf0aa6c9a32add565ace9bc647021b"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-y36_published.json",
+      "sha256": "ced15680c7f281ed50e64d4f5a4bc19a890a1b860efcedfdfa3b599777bea3f2"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-w2_published.json",
+      "sha256": "1321a77ad18b089d96dba14e6a7b76a902d3901b0906b46ebe96b4653d68846a"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-b1_published.json",
+      "sha256": "639d81a77af06575f6b97633f698a60c65f43588f1e83ac4f75ba7a9a6444208"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_configs/adares_y36_local_adjacency_res.yaml",
+      "sha256": "63389f06f14fc2bb7adeceefe1abcf1c8eac71a83ccc0c200ccbeff8872ce667"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_configs/adares_w2_pointmass_competition_res.yaml",
+      "sha256": "63389f06f14fc2bb7adeceefe1abcf1c8eac71a83ccc0c200ccbeff8872ce667"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_configs/adares_b1_standard_res.yaml",
+      "sha256": "a0ef16cdc3056b61fa03f14d08729e556d4797363d5b65a69aa40c7ff34482c8"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-y36_transfer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-w2_transfer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c_adares-b1_transfer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

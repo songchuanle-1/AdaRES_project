@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "scope": "Adapter repair only, no scientific protocol/source change.",
+  "failure": {
+    "path": "pipeline/analyses/y41_trained_cost_0422_0422d0d8ad4a4a0288d9e5d7e4e53f73.log",
+    "sha256": "07da23c4a6cccb7133383751ad7e28863d8e7a8c9ed4eb4cf3ea3858f6da3fd2",
+    "reason": "Protected PID91215 is Y42/GPU1; first adapter expected Y41/GPU0 bytes."
+  },
+  "old_program_sha256": "03c5dce1dd58b9f082670e71878eff257f2eca2812edab606d04f37735fa0c16",
+  "retry_program": {
+    "path": "scripts/probe_y41_trained_cost_0422_v2.py",
+    "sha256": "2576d74312f78b79d262d1cf566112a4e6eaea34eadf78c190aecac2e7d00d0b"
+  }
+}

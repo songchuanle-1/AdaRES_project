@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y58",
+  "preregistered_at": "2026-10-21T00:13:53.992289+08:00",
+  "program": {
+    "path": "pipeline/analyses/y58_native_b7801e9894f742b09038e89d033a8945_program.py",
+    "sha256": "00879405ab52e4968ca0ee63601040dd4416470e7e3bcfedaadaa22678d33e71"
+  },
+  "body": {
+    "path": "scripts/probe_y58_native_b780.py",
+    "sha256": "77038146fd0ba7c0aac4e3ae7a739cd764e651bae72ff7a119b502693825a3d3"
+  },
+  "reused_readonly_setup": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_program.py",
+    "sha256": "ed5045122eeb6939310a9d8f3e096da9511e9ae149d184aee7ef29c1374b8fbc"
+  },
+  "dataset_source": {
+    "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/dataset/scannetv2_test.py",
+    "sha256": "1328bad8384392f6a8dac2a6a46126b82000132283706f9398030be1cf0f0cc8"
+  },
+  "protocol": "Fixed focal0/mate1/mate2/repeat, nativeBNtrain vs fixedrunningstats, dropout disabled both; canonical voxel coordinates, upstream activation and slot-confidence readouts; do not infer harm from combined losses.",
+  "test_scope": "Trained-parent diagnosis only, not candidate admission; no optimizer or saved weights.",
+  "source_commit": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea",
+  "physical_GPU_authorization_required": [
+    0,
+    1
+  ],
+  "before_any_execution": "Use canonical runner with NEW current foreground token, fresh idle/GPU process checks and exclusive lease. Rebind changed source only after exact immutable source/checkpoint/data validation.",
+  "Python38_parse_compile": true,
+  "missing_GPU_entry_guard_passed": true,
+  "native_executed": false,
+  "result": "pending"
+}

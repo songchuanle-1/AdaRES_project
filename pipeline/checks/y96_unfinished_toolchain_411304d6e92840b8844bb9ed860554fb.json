@@ -1,0 +1,47 @@
+{
+  "complete": false,
+  "token": "411304d6e92840b8844bb9ed860554fb",
+  "observed_at": "2026-11-10T15:52:31.050343+08:00",
+  "actual_native_result": {
+    "path": "pipeline/analyses/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb.json",
+    "sha256": "8ac136917c0e5210ab4058e0dda2019607f26284fa3417b911546b441bd40c4d"
+  },
+  "Y94_verified_canonical_archive": {
+    "path": "pipeline/checks/y94_server1_fixed30_y95_411304d6e92840b8844bb9ed860554fb.json",
+    "sha256": "88d83fded3c676030e2a5ac1ef99c549fbbfe9687919102f9c9f8018cead4bf9"
+  },
+  "draft_helpers": [
+    {
+      "path": "scripts/advance_y96.py",
+      "sha256": "715f713622cb67205fdd724e9b15f515686d94117109c9d8eb743d7d7dab054d"
+    },
+    {
+      "path": "scripts/y96_deployment.py",
+      "sha256": "9bac8c9daf17d4ac729b49f4fc62a39e16940d6f25be586aaf2255606c88596f"
+    },
+    {
+      "path": "scripts/y95_y96_terminal_contract.py",
+      "sha256": "f1e60b3d04767b872c0b02f0544685ec21661d9efc8dab94ab610a4ed818e5bd"
+    },
+    {
+      "path": "scripts/prepare_y95_y96_terminal_binding.py",
+      "sha256": "ed0cdf0cfe0ae350d06cdc7890a260d7c735b0231b4d614311b69aff338d7513"
+    },
+    {
+      "path": "scripts/test_y95_y96_terminal_binding.py",
+      "sha256": "b9b5e1bac83fa090304d3611b58e304881d66e187e77285da21ffcf3eaca7bfc"
+    },
+    {
+      "path": "scripts/test_y96_admission.py",
+      "sha256": "ac7e1448869f9ed880a9680049e2e733a636916288def5488ce38a58feaf3147"
+    }
+  ],
+  "draft_tests_executed": false,
+  "binding_created": false,
+  "source_selected": false,
+  "admitted": false,
+  "launched": false,
+  "attempted_command": "python -B scripts/prepare_y95_y96_terminal_binding.py --token 411304d6e92840b8844bb9ed860554fb",
+  "observed_failure": "lease(token,300) refused because less than300s remained; no helper tests or binding generation ran. The original deadline is now past; abort without further research.",
+  "next_action": "Do not replay native or Y94 terminal. In a fresh owned tick at HEADY95, inspect and test the draft Y96 server1 admission/source tools and actual-native Y95 terminal binding, then select exactly seven tested additions, inherit complete original Y94 server1 protocol, admit and canonical dispatch with fresh idle/unreserved350W GPU0 and increasing counters."
+}

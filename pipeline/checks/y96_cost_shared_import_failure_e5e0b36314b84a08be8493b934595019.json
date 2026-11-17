@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "token": "e5e0b36314b84a08be8493b934595019",
+  "observed_failure": "ModuleNotFoundError: No module named 'y96_frozen_review_job' during local binding module import, before cost build, plan, remote operation or launch",
+  "original_helper": {
+    "path": "scripts/y96_frozen_trained_cost.py",
+    "sha256": "b9d8a9e515991c304a68c6fbdf456d04345129f4abaae1308d7ebbe00559fc11"
+  },
+  "corrected_helper": {
+    "path": "scripts/y96_frozen_trained_cost_v2.py",
+    "sha256": "d126b4d4b6bbe843e886387bec12c7a30c182028334f522e713a83eabbe895d1"
+  },
+  "correction": "Restore only shared remote transport import from unchanged y101_frozen_review_job; keep Y96 original identity, parameters, runtime marker, frozen science AST and all guards.",
+  "GPU_used": false,
+  "checkpoint_loaded": false,
+  "remote_started": false,
+  "evidence": [
+    {
+      "path": "scripts/y96_frozen_trained_cost.py",
+      "sha256": "b9d8a9e515991c304a68c6fbdf456d04345129f4abaae1308d7ebbe00559fc11"
+    },
+    {
+      "path": "scripts/y96_frozen_trained_cost_v2.py",
+      "sha256": "d126b4d4b6bbe843e886387bec12c7a30c182028334f522e713a83eabbe895d1"
+    }
+  ]
+}

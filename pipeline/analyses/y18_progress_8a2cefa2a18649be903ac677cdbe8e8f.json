@@ -1,0 +1,34 @@
+{
+  "id": "AdaRES-Y18",
+  "pid": 7449,
+  "gpu": "1",
+  "config": "configs_song/model_paper5/adares_y18_point_measure_res.yaml",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y18_point_measure_res_20261001_233715.log",
+  "captures": [
+    {
+      "epoch": 21,
+      "total": 30,
+      "step": 3551,
+      "batches": 4686,
+      "tail1200_sha256": "e2bcbbb2342d78defa50d4f88f512dfc18cd5b40782b4e8d3a1d9c8d6a8dfd08",
+      "bounded_traceback": false,
+      "bounded_oom": false
+    },
+    {
+      "epoch": 21,
+      "total": 30,
+      "step": 3561,
+      "batches": 4686,
+      "tail1200_sha256": "3b20cd9fc30a90136b00b65efcee6d9af6e3709ea7adf618aedce1c29d76c61e",
+      "bounded_traceback": false,
+      "bounded_oom": false
+    }
+  ],
+  "launch_verified": true,
+  "gpu_csv": "1, 22720, 71\n",
+  "observed_start_local": "2026-10-02T14:50:11.862027+08:00",
+  "observed_end_local": "2026-10-02T14:50:17.362497+08:00",
+  "token": "8a2cefa2a18649be903ac677cdbe8e8f",
+  "scientific_status": "Y18 training; Y23 user-paused awaiting Y18 epoch30",
+  "scope": "Two bounded observations; no full-log crash proof or isolated candidate memory. GPU0 not queried."
+}

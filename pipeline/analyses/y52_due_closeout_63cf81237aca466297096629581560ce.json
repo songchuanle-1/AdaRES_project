@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "token": "63cf81237aca466297096629581560ce",
+  "observed_at_local": "2026-10-16T18:00:29.289137+08:00",
+  "execution_status": "INCOMPLETE: canonical abort pending",
+  "science": "Y50 live training; SAME Y52 CPU construction passed, exclusive-GPU blocked",
+  "resource": {
+    "path": "pipeline/analyses/y52_due_resources_63cf_63cf81237aca466297096629581560ce.json",
+    "sha256": "95bf5a7a3a3b6cd038c68599f2bef47f44a20dfa69800b470b2797f31e0ee2eb"
+  },
+  "construction": {
+    "path": "pipeline/analyses/y52_full_cpu_construct_63cf_63cf81237aca466297096629581560ce.json",
+    "sha256": "c48d6042a20228d5b9ccea59921c6e9ed236e2ef9c3f951d1e7fa45db6a78e2b"
+  },
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "previous_retry_after": "2026-10-16T17:10:31.428737+08:00",
+  "next_retry_after": "2026-10-16T18:52:56.087580+08:00",
+  "checker_unchanged": "39ee52f17e3afdc15d0fde71bbf78e74bf58c218155709a25861044461cea0d2",
+  "known_queue_opening_rejecting_predicate": true,
+  "finish_invoked": false,
+  "native_forward_or_backward": false,
+  "new_candidates": 0,
+  "new_CPU_integration_tests": 1,
+  "model_changes": 0,
+  "admissions": 0,
+  "launches": 0,
+  "limitation": "Fixed-seed full CPU initialization/control only, not native TRAIN gate, accuracy benefit, novelty, admission or resource Pareto evidence."
+}

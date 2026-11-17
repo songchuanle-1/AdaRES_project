@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "token": "e04205f48d2f4f5eb7898ec10c1981d0",
+  "id": "AdaRES-Y74",
+  "plans": [
+    {
+      "path": "pipeline/checks/y74_native_808558ef00a24c338c85891e0ac326af_gpu0_plan.json",
+      "sha256": "911040ebf6d1e1b4c94271c7389aacf3e0ac858b4519d209dd651f418911e66a"
+    },
+    {
+      "path": "pipeline/checks/y74_native_808558ef00a24c338c85891e0ac326af_gpu1_plan.json",
+      "sha256": "ccc68ab2af01b4c93b068d2aa7d4d859c2af8ed5d7b4d10f3092acd71a94f129"
+    }
+  ],
+  "seven_frozen_files_per_plan_verified": true,
+  "CPU_callback_verification": {
+    "path": "pipeline/checks/y74_native_observer_verification_808558ef00a24c338c85891e0ac326af.json",
+    "sha256": "fa3b8a082d85ab86b99b3aa1c7b1d43a901b8a535210155bad0609039c590f5d"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "native_executed": false,
+  "admitted": false
+}

@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "observed_error": "KeyError: 'state'",
+  "failure_scope": "local_closure_recording_only",
+  "explanation": "Inline recording attempt read display-only state key from canonical raw occupation JSON; stopped after creating exact old-memory backup. Source/model/result/queue/goal and memory remained unchanged. This attempt consumes canonical queries instead; no original evidence overwritten.",
+  "backup": {
+    "path": "pipeline/snapshots/codex_memory_before_bf900942292b41e09fda663f4736180a.md",
+    "sha256": "3243b597addd49e5a584976daf9c4e8d71b0d498392d48a7b2c7c86b733577e1"
+  }
+}

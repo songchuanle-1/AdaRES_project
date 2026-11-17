@@ -1,0 +1,14 @@
+Using backend: pytorch
+2026-10-20 09:48:12,853 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=786 unexpected=0
+2026-10-20 09:48:13,126 - INFO - Load train scanrefer: 36665 samples
+2026-10-20 09:48:16,441 - INFO - set random seed: 1999
+2026-10-20 09:48:16,645 - INFO - set random seed: 1999
+2026-10-20 09:48:16,866 - INFO - set random seed: 1999
+2026-10-20 09:48:17,510 - INFO - set random seed: 1999
+2026-10-20 09:48:17,659 - INFO - set random seed: 1999
+2026-10-20 09:48:17,936 - INFO - set random seed: 1999
+2026-10-20 09:48:18,136 - INFO - set random seed: 1999
+2026-10-20 09:48:18,526 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 125, in <module>
+AttributeError: 'NoneType' object has no attribute 'zero_grad'

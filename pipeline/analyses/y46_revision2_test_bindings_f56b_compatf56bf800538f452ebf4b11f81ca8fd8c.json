@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y46",
+  "implementation_revision": 2,
+  "created_at": "2026-10-16T12:52:17.370512+08:00",
+  "new_decoder_sha256": "363506506bf0e289d67dfe72c1a0041e66a67fd1962247a726c34d47b838c225",
+  "only_preregistered_pooling_AST_changed": true,
+  "programs": [
+    {
+      "kind": "cpu",
+      "path": "pipeline/analyses/y46_revision2_cpu_program_f56b_compatf56bf800538f452ebf4b11f81ca8fd8c.py",
+      "sha256": "850138579cd52c78dd7226d8cea5146e05ba0225229099fdb3963d4528f34ced",
+      "template": {
+        "path": "scripts/probe_y46_production_cpu_131e.py",
+        "sha256": "5fb68b091b1858949cb64f1812207ad041c46aee22113ae66a4ae4ea630cbd6c"
+      }
+    },
+    {
+      "kind": "native",
+      "path": "pipeline/analyses/y46_revision2_native_program_f56b_compatf56bf800538f452ebf4b11f81ca8fd8c.py",
+      "sha256": "23cb775eda93a60677ea180f3e7d579a6171e4972f6c4b4be9516f4ca9d885da",
+      "template": {
+        "path": "scripts/probe_y46_production_native_131e.py",
+        "sha256": "1e1affbd1d690cdb2d30039865fd0cf6dac2dc4a0c74f543ce6ce40fbc66e648"
+      }
+    },
+    {
+      "kind": "controls",
+      "path": "pipeline/analyses/y46_revision2_controls_program_f56b_compatf56bf800538f452ebf4b11f81ca8fd8c.py",
+      "sha256": "65017bfb85d905dbb501396da28d336b9b5e80dbe43387613d2d97d3bb3a4d7f",
+      "template": {
+        "path": "scripts/probe_y46_production_controls_f56b.py",
+        "sha256": "d6914d9f758013dbff4f46796d0e02acc07585478f1f54cd2b76cd32125b252f"
+      }
+    }
+  ],
+  "exact_native_repeat_assertion_unchanged": true
+}

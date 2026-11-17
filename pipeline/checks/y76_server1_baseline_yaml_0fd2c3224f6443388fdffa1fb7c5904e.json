@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "hostname": "dl02-MS-7B73",
+  "raw_sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb",
+  "LF_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "YAML_semantics_identical": true,
+  "local_raw": {
+    "path": "AdaRES/configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml",
+    "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+  },
+  "raw_byte_equality_required": false,
+  "reason": "Full YAML semantics and LF-normalized bytes verified; approved deterministic runtime path mappings remain separate.",
+  "evidence": [
+    {
+      "path": "pipeline/checks/y76_server1_baseline_yaml_0fd2c3224f6443388fdffa1fb7c5904e.log",
+      "sha256": "7d017cb80ef79fae32d2eb2ea41ab418deaf4d1352863d6e670a2275093a7a99"
+    }
+  ]
+}

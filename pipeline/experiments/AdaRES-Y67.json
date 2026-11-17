@@ -1,0 +1,58 @@
+{
+  "id": "AdaRES-Y67",
+  "config": "configs_song/model_paper5/adares_y67_stage_readout_norm_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-29T17:43:20.715127",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-30T18:44:05.823204",
+      "status": "done_complete",
+      "best_miou": "0.5064",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 100811,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y67_stage_readout_norm_res_20261029_174244.log",
+  "launched": "2026-10-29T17:43:20",
+  "final_best": "0.5064",
+  "finished_at": "2026-10-30T18:44:05.823204",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-2\\adares_y67_stage_readout_norm_res\\330fe836434040e192c53860504f5045\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "2c8c2129ec784f169212e3b0265923b1",
+  "code_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y67.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y67_server2_fixed30_330fe836434040e192c53860504f5045.json",
+    "sha256": "9e3c42ec6fdcaae41620207c924a6b2d63895b57d0b8faaf740052aa92260018"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y67_stage_readout_norm_res/20261029_054216/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5064281821250916,
+      "optimizer_state_count": 555,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "681080be715b637315face5f71f71fded4d1fadeac84d3ce4958d81487989cd5"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y67_stage_readout_norm_res/20261029_054216/best.pth",
+      "epoch": 21,
+      "best_miou": 0.5064281821250916,
+      "optimizer_state_count": 555,
+      "scheduler_last_epoch": 21,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "71bc6ab41e2dd7e928a775e13ac51e74f634650a1288a212922e25072668daa7"
+    }
+  ]
+}

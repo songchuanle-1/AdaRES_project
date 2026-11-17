@@ -1,0 +1,116 @@
+{
+  "complete": true,
+  "token": "4ed7c7328cd94b5aada4ff5595443ef4",
+  "observed_at_local": "2026-10-30T22:54:26.118326+08:00",
+  "tick_started_at": "2026-10-30T14:46:55.862548+00:00",
+  "deadline_at": "2026-10-30T15:46:55.862548+00:00",
+  "id": "AdaRES-Y71",
+  "code_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "native_plan": {
+    "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_plan.json",
+    "sha256": "2efeb8013ae810e2381b2edb5c0d2b3e4ab7a70a96dc400e968a9f5a71e70779"
+  },
+  "new_scientific_candidate": false,
+  "new_scientific_source": false,
+  "CPU_handoff_guards_passed": 34,
+  "terminal_source_contract_verified_locally": true,
+  "original_three_running_tasks_preserved": true,
+  "Y57_user_pause_preserved": true,
+  "Y68_fixed30_completion_not_claimed": true,
+  "native_GPU_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "memory_before": {
+    "path": "pipeline/snapshots/codex_memory_before_4ed7c7328cd94b5aada4ff5595443ef4.md",
+    "sha256": "3693232a9a392304a5f9fc0319a9b6c049b528963f70c6cec3a9de54b1802422"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_guards.json",
+      "sha256": "c39c052b70fdd952f999d17118c0972e5304f7c33695cb26e73970ca37b497f0"
+    },
+    {
+      "path": "scripts/finalize_y68_fixed30.py",
+      "sha256": "fe10392fbd02a355cb371e6218f99aea8d980df6e1e62d7e0b99743b84becc81"
+    },
+    {
+      "path": "scripts/y68_terminal_contract.py",
+      "sha256": "ba293f5a8dc02536788a15e2fcd663b53ce07796f5a558a9e37f6a2cebf867b0"
+    },
+    {
+      "path": "scripts/test_y68_terminal_handoff.py",
+      "sha256": "7f0c1b267501d3f062db6b5c2758fb35d1447e24db66f7796737f7de5a09c5c6"
+    },
+    {
+      "path": "scripts/run_y71_gpu0_probe.py",
+      "sha256": "9e048bc60ac3e7df402894514f5c7401b812b4860fb204d0e2f8125128e84664"
+    },
+    {
+      "path": "scripts/test_y71_readiness_handoff.py",
+      "sha256": "ece84d603c2de7d0b820981e6626b5794768fc44694272afe6fdc21b68e8dedb"
+    },
+    {
+      "path": "scripts/admit_dispatch_y71_gpu0.py",
+      "sha256": "35456be23af711b7c389263f3c6f6ed37f0be0378ef51ac1923964f4d7c63428"
+    },
+    {
+      "path": "scripts/test_y71_gpu0_admission.py",
+      "sha256": "5791e3e0e75fc8331f21fb545cb7010d9ab4dcd4fe821352fb70bcaaca2b11fa"
+    },
+    {
+      "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_test_y68_terminal_handoff.log",
+      "sha256": "9769029f8950df21a947cedff15d793cb5c41e57a294a0d3ee47a535b79e5168"
+    },
+    {
+      "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_test_y71_readiness_handoff.log",
+      "sha256": "81108b6cf362336cdfc8972edfd42410462f1e89d4b86d6735ece70a0abedb0a"
+    },
+    {
+      "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_test_y71_gpu0_admission.log",
+      "sha256": "a10bee868956fa487b702167ee69e70dea484fe85d37a1f93a209ed8fab842b1"
+    },
+    {
+      "path": "pipeline/checks/y68_server2_local_y71_phase_4ed7c7328cd94b5aada4ff5595443ef4.json",
+      "sha256": "2681233665f0970c7b9733eb65812f5393c895a425d8ac22b81cb5790276e2ea"
+    },
+    {
+      "path": "pipeline/checks/y70_server2_gpu1_phase_progress_4ed7c7328cd94b5aada4ff5595443ef4.json",
+      "sha256": "a1f2121fda1c52981bd65172b5c26479cf40002a08f86986e7d27f2f1efd1fc0"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_4ed7c7328cd94b5aada4ff5595443ef4.json",
+      "sha256": "ae5460df6f54fbb5a0cc766fbf1ca074abfb90896a2d3f4fe1c26269bf648097"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_4ed7c7328cd94b5aada4ff5595443ef4.json",
+      "sha256": "6a3137a939111a37b9619e3e38721403563a21b0a2652f9cfb9ac8db4293fef6"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_4ed7c7328cd94b5aada4ff5595443ef4.json",
+      "sha256": "6c7b1b255ed0f60e2d585525ef93a1378454172a37094035befa7c58167822bf"
+    },
+    {
+      "path": "pipeline/checks/y68_terminal_source_preparation_4ed7c7328cd94b5aada4ff5595443ef4.json",
+      "sha256": "4b0990953b2263cf66073852447b76e983b1427cb4b3e582841e6090c95c2414"
+    },
+    {
+      "path": "pipeline/checks/y71_gpu0_readiness_4ed7c7328cd94b5aada4ff5595443ef4_check.json",
+      "sha256": "9408418a1d8f05a2010a575e6d349683a24ba24153f49e87933f47323d722245"
+    },
+    {
+      "path": "pipeline/checks/y71_gpu0_readiness_4ed7c7328cd94b5aada4ff5595443ef4_check.log",
+      "sha256": "662176cd14726cdc41ed839e0b2453ad9bf0f41df613a71247096f68a22bb940"
+    }
+  ],
+  "next_sequence": [
+    "Observe original three jobs; preserve Y57 pause.",
+    "After exact original Y68 fixed30 process exit and full checkpoint/log/source/receipt proof, canonically archive with scripts/finalize_y68_fixed30.py.",
+    "Fresh exclusive authorized GPU0 idle/unreserved: python -B scripts/run_y71_gpu0_probe.py run --token NEW_TOKEN.",
+    "Only on actual native two-step PASS: scripts/admit_dispatch_y71_gpu0.py admit then dispatch in that tick; verify native step growth."
+  ],
+  "postflight": "Pending canonical report/finish."
+}

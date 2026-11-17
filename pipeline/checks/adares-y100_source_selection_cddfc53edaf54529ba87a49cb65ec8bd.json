@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "token": "cddfc53edaf54529ba87a49cb65ec8bd",
+  "id": "AdaRES-Y100",
+  "parent": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "target": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+  "only_added_files": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y100_appearance_input_skip/sample_model.py"
+    ]
+  ],
+  "previous_index": {
+    "path": "pipeline/checks/adares-y100_source_selection_cddfc53edaf54529ba87a49cb65ec8bd.index",
+    "sha256": "a755fa9aab99b135078b62abbd07d50fdd734f34a784934c3ff31fa15835cfa9"
+  },
+  "previous_binary_index": {
+    "path": "pipeline/checks/adares-y100_source_selection_cddfc53edaf54529ba87a49cb65ec8bd.index.bin",
+    "sha256": "827fd316ce1b960373f224fa5f45ed6018a7899e4d8cecaaaa8ff9e887096d3c"
+  },
+  "other_index_entries_preserved": true,
+  "working_files_modified": false,
+  "helper": {
+    "path": "scripts/y100_deployment.py",
+    "sha256": "9b9f6d5f8c716afbeba610d14c174f82bb568edc1aaaf496bd3cb0079734303c"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "c67ff449dbcc49d5a361b928a16ca7ec",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-17T07:49:20.812166+00:00",
+  "recorded_at": "2026-10-17T07:52:33.261064+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Unchanged previously reported blocker; no finish attempted this tick. Snapshot15:49 has due0, reserve2/2, preparation_budget0 and both human-authorization candidates not due. Canonical source and research ledger hashes match cached14:52 regression. Prior exact check: Capacity-gap design made no durable candidate progress; create a stable diagnosis candidate and run its next test before stopping. Do not repeat an equivalent probe/finish, fabricate candidates, change historical closed evidence, expand Y50 authorization, or modify shared runtime/scheduler without scoped permission. Current full report and memory saved; abort current owned lease as INCOMPLETE.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 5,
+    "input_tokens": 1103693,
+    "cached_input_tokens": 1090304,
+    "output_tokens": 6935,
+    "reasoning_output_tokens": 1664,
+    "total_tokens": 1110628,
+    "uncached_input_tokens": 13389,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

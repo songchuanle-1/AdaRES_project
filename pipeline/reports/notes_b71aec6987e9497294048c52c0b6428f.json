@@ -1,0 +1,36 @@
+{
+  "actions": [
+    "只读核验原server2 GPU0 Y102 PID4747、源码6文件、原生YAML和私有环境，原生计数仍为Train1/30第7/4686步，未确认持续推进；原观察时间及原进程保持，未重启、加载检查点或重复已拒绝的调用栈附加。",
+    "实际物理占用复查：唯一获准server2 GPU0仍由原Y102占用/保留，没有授权空槽。server1 allowed_gpus为空，未连接或使用；server2 GPU1外部进程只观察不干预。",
+    "9项到期证据复查保持Y57单独暂停、6项原GPU1后评暂停及Y86/Y97原数值失败；12项server1工作仍待明确重新授权。Y88八遍原预测和日志保留，未启动成本或重跑预测。"
+  ],
+  "decisions": [
+    "本轮预算为零创建/准入/准备；保持最新server1暂停、GPU1暂停和所有原设备协议，不迁移、不恢复、不改功耗或调度。Y102仍原计数停滞，既有管理员协助事项不重复询问；未发现新的可行动事项或科学结论，静默收尾。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/paused_resources_closeout_b71aec6987e9497294048c52c0b6428f.json",
+      "sha256": "d4d63b0787044dfcd2e9576c3d75640993e9c646dd7c0626d890a27ae610d21e"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_b71aec6987e9497294048c52c0b6428f.md",
+      "sha256": "43c546b7e03635adf228e2ae474ab682d238631262059bcbd115512f28eaa8c0"
+    },
+    {
+      "path": "pipeline/checks/paused_resources_b71aec6987e9497294048c52c0b6428f_y102_diagnostic.json",
+      "sha256": "2edac054877aecd89e824c565c44c340bbbc1997b2e2fb99d2d64d593d837ffa"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_b71aec6987e9497294048c52c0b6428f.json",
+      "sha256": "e4799fc11d5aaca9c9b71ef22249f504ebe1f696ce38ad1c9acdb5dadf9b09e8"
+    },
+    {
+      "path": "pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json",
+      "sha256": "856914c2f463b590eb615c4de9cc7168b2328087462fa56756c55523970be3e0"
+    },
+    {
+      "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+      "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+    }
+  ]
+}

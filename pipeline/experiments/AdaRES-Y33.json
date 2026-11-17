@@ -1,0 +1,29 @@
+{
+  "id": "AdaRES-Y33",
+  "config": "configs_song/model_paper5/adares_y33_token_attention_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-08T18:25:48.458363",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-09T17:47:55.299397",
+      "status": "done_complete",
+      "best_miou": "0.5050",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 64797,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y33_token_attention_res_20261008_182513.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-08T18:25:48",
+  "final_best": "0.5050",
+  "finished_at": "2026-10-09T17:47:55",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

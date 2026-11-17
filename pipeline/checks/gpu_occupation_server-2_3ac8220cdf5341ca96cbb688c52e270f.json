@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "3ac8220cdf5341ca96cbb688c52e270f",
+  "snapshot_generated_at": "2026-10-27T04:48:20.805476+00:00",
+  "snapshot_sha256": "9c06916fa1b066f2d2026a8393e05c97eead5b2007d4cfb2bb01526a068ba312",
+  "servers_sha256": "280bbd05106a77ece1cfad9382a0dd18a7d208ffd733d85bd6e1ebe221bb43f2",
+  "observed_at": "2026-10-27T04:49:12.808740+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y64",
+    "AdaRES-Y65"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 98, 24138, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100, 24156, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13813\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 13814\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 3ac8220cdf5341ca96cbb688c52e270f --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_3ac8220cdf5341ca96cbb688c52e270f.log",
+    "sha256": "096410b749af8f501c16b94fab9263426d96f324ae9abb511347f9c22eef7003"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "config": "configs_song/model_paper5/adares_y67_stage_readout_norm_res.yaml",
+  "code_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    7.886719703674316,
+    8.231637001037598
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "data_source": {
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge"
+  },
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0642_00",
+        "scene0429_00"
+      ],
+      "expressions": 8,
+      "points": 315246
+    },
+    {
+      "scan_ids": [
+        "scene0201_00",
+        "scene0475_00"
+      ],
+      "expressions": 8,
+      "points": 310979
+    }
+  ],
+  "gradient_checks": [
+    {
+      "tensors": 551,
+      "all_finite": true,
+      "normalization_stages": [
+        {
+          "stage": 0,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 1.0613513040880207e-05,
+          "parameter_update_max": 9.995698928833008e-05
+        },
+        {
+          "stage": 1,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 2.7356945793144405e-05,
+          "parameter_update_max": 0.00010001659393310547
+        },
+        {
+          "stage": 2,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 0.00010445762745803222,
+          "parameter_update_max": 0.00010001659393310547
+        },
+        {
+          "stage": 3,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 8.97723002708517e-05,
+          "parameter_update_max": 0.00010007619857788086
+        },
+        {
+          "stage": 4,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 0.00011806547263404354,
+          "parameter_update_max": 0.00010007619857788086
+        },
+        {
+          "stage": 5,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 0.00015717283531557769,
+          "parameter_update_max": 0.00010007619857788086
+        },
+        {
+          "stage": 6,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 8.304180664708838e-05,
+          "parameter_update_max": 0.00010001659393310547
+        }
+      ],
+      "native_mask_and_score_consumption": true,
+      "shared_indicator_calls": 7
+    },
+    {
+      "tensors": 551,
+      "all_finite": true,
+      "normalization_stages": [
+        {
+          "stage": 0,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 3.5895856854040176e-05,
+          "parameter_update_max": 9.980425238609314e-05
+        },
+        {
+          "stage": 1,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 1.4389944226422813e-05,
+          "parameter_update_max": 9.942054748535156e-05
+        },
+        {
+          "stage": 2,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 2.3556181986350566e-05,
+          "parameter_update_max": 9.965896606445312e-05
+        },
+        {
+          "stage": 3,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 3.3445994631620124e-05,
+          "parameter_update_max": 9.961465548258275e-05
+        },
+        {
+          "stage": 4,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 4.922670268570073e-05,
+          "parameter_update_max": 9.967296500690281e-05
+        },
+        {
+          "stage": 5,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 7.505249232053757e-05,
+          "parameter_update_max": 9.995698928833008e-05
+        },
+        {
+          "stage": 6,
+          "parameter_tensors": 2,
+          "all_finite": true,
+          "gradient_max": 0.00012220506323501468,
+          "parameter_update_max": 0.00010013580322265625
+        }
+      ],
+      "native_mask_and_score_consumption": true,
+      "shared_indicator_calls": 7
+    }
+  ],
+  "stage_norm_calls": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "native_mask_calls": 14,
+  "native_score_calls": 14,
+  "shared_indicator_calls": 14,
+  "formula_errors": [
+    4.5901267364811815e-07,
+    3.624214337527576e-07,
+    4.0231104270205265e-07,
+    4.274930121006548e-07,
+    3.758837068268406e-07,
+    4.603761203370027e-07,
+    3.9921732009062794e-07,
+    3.7707236044681736e-07,
+    5.379784826509137e-07,
+    5.252015680135003e-07,
+    5.204235185019002e-07,
+    4.561520570156574e-07,
+    4.349218447607939e-07,
+    5.686499737755923e-07
+  ],
+  "peak_reserved_bytes": 6593445888,
+  "model_weights_saved": false,
+  "validation_used": false,
+  "admission": false,
+  "limitation": "Native two-step initialization only; no trained efficacy or full-dataset resource guarantee.",
+  "command": "python -B scripts/run_experiment_first_probe.py y67_gpu1_smoke pipeline/checks/y67_gpu1_native_6fb151dc55354c0f995b544bd00e0bfd_program.py --token 6fb151dc55354c0f995b544bd00e0bfd --seconds 600 --gpu --gpu-id 1",
+  "physical_gpu": 1,
+  "admission_resource_check": {
+    "observed_at": "2026-10-29T17:41:31.578004+08:00",
+    "live": {
+      "hostname": "dl01-MS-7C60",
+      "source_marker": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+      "source_hashes": {},
+      "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 61, 22720, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+      "gpu_query_rc": 0,
+      "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 112356, 22710\n",
+      "compute_query_rc": 0,
+      "tasks": {}
+    },
+    "power_limit_watts": 390,
+    "required_exclusive_gpu": 1
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y67_gpu1_smoke_6fb151dc55354c0f995b544bd00e0bfd.json",
+      "sha256": "fdd139ba5bff277e8e9cc087840cb3bb32968c0ca6818dbbb68042264753d463"
+    },
+    {
+      "path": "pipeline/analyses/y67_gpu1_smoke_6fb151dc55354c0f995b544bd00e0bfd.log",
+      "sha256": "793ed92b4291c969f2b0dab3b99f48c1e2dcdb52ef8fcee045b1ea9c81bb4ddc"
+    },
+    {
+      "path": "pipeline/checks/y67_gpu1_native_6fb151dc55354c0f995b544bd00e0bfd_program.py",
+      "sha256": "c96984f812d0d951edfb9a94587cdc10ba4c6109d270466532fc1dfa22de6a06"
+    },
+    {
+      "path": "pipeline/checks/y67_gpu1_native_6fb151dc55354c0f995b544bd00e0bfd_plan.json",
+      "sha256": "5918ffe122885cb87501f2f6e3f4ebab80afc002a523148add91d1684928fe22"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "token": "494acca2c4884078a129c61f883c0657",
+  "observed_at": "2026-11-01T00:57:12.730028+08:00",
+  "original_live_training": {
+    "AdaRES-Y71": {
+      "path": "pipeline/checks/production_adares-y71_494acca2c4884078a129c61f883c0657_progress.json",
+      "sha256": "cd8ecd7c2f20fc3ec931b45392766999b47574163889b1caf78b4bec57b2a610"
+    },
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_494acca2c4884078a129c61f883c0657_progress.json",
+      "sha256": "dc13dd37c4611592262e1602de0ec22f3b515653c97c4b4e0cf6688c4d99f5e7"
+    },
+    "AdaRES-Y73": {
+      "path": "pipeline/checks/production_adares-y73_494acca2c4884078a129c61f883c0657_progress.json",
+      "sha256": "fa919c62b58bb4d43ab45933ded51b88305e07bb69075527c27180b2e2d788ad"
+    }
+  },
+  "original_native_preparation_integrity": {
+    "path": "pipeline/checks/prepared_native_integrity_494acca2c4884078a129c61f883c0657.json",
+    "sha256": "516c468459ade3b14e34c36f960c12e85a020a494b41fe7b44b09364b7c96f0a"
+  },
+  "prepared_candidates": [
+    "AdaRES-Y74",
+    "AdaRES-Y75"
+  ],
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_494acca2c4884078a129c61f883c0657.json",
+      "sha256": "587b17815d51fd321c91d75f327346be237232f5b6e5d5cb16c1282a0cb11b9c"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_494acca2c4884078a129c61f883c0657.json",
+      "sha256": "93c161226d5f2d452e1d035b2f7dbde3700d828c7c8e84133bf5b467ccd22483"
+    }
+  },
+  "Y71_terminal_preparation": {
+    "path": "pipeline/checks/y71_terminal_preparation_494acca2c4884078a129c61f883c0657.json",
+    "sha256": "efa6d438cd67886bae752aef8c7f532b8a4e089a13cc0f451f4276955765c7a9"
+  },
+  "Y71_terminal_guard_tests": 20,
+  "Y71_checkpoint_loaded": false,
+  "Y71_archived": false,
+  "new_candidates": 0,
+  "new_model_tests": false,
+  "native_GPU_executed": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "source_HEAD_unchanged": "7da625ab750447eaad76e82309c89d887df93994",
+  "Y57_pause_preserved": true,
+  "conclusion": "All three original native counters advance; all authorized devices busy and reserved. Y71 completion checks prepared only; actual completion/full checkpoint verification remains mandatory. Prepared Y74/Y75 wait for native GPU checks. No scientific or formal metric change."
+}

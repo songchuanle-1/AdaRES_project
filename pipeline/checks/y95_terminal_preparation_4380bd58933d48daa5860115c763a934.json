@@ -1,0 +1,343 @@
+{
+  "complete": true,
+  "token": "4380bd58933d48daa5860115c763a934",
+  "id": "AdaRES-Y95",
+  "observed_at": "2026-11-09T22:55:09.160546+08:00",
+  "payload": {
+    "id": "AdaRES-Y95",
+    "pid": 34484,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y95_query_set_mean_res_20261109_212023.log",
+    "config": "configs_song/model_paper5/adares_y95_query_set_mean_res.yaml",
+    "code_commit": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+    "root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+    "work": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "basename": "adares_y95_query_set_mean_res",
+    "source_files": {
+      "ipdn/model_paper5/adares_y95_query_set_mean/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "ipdn/model_paper5/adares_y95_query_set_mean/dec.py": "6ebe04d08e5c09bcfc2074d19dbf28a2d9c876924bde0d1446f734f704b32e54",
+      "ipdn/model_paper5/adares_y95_query_set_mean/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "ipdn/model_paper5/adares_y95_query_set_mean/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "ipdn/model_paper5/adares_y95_query_set_mean/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "ipdn/model_paper5/adares_y95_query_set_mean/__init__.py": "814776a30769c4b705988a26d562cccc54b2657c318a56b701d06247a7e49132"
+    },
+    "expected_config": {
+      "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "train": {
+        "seed": 1999,
+        "epochs": 30,
+        "interval": 1,
+        "pretrain": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/sp_unet_backbone.pth",
+        "save_epoch": 100,
+        "grad_clip": 0.1
+      },
+      "test": {
+        "seed": 1999,
+        "test_topk_per_scene": 100,
+        "test_score_thresh": 0.0,
+        "test_npoint_thresh": 100
+      },
+      "dataloader": {
+        "train": {
+          "batch_size": 2,
+          "num_workers": 4,
+          "persistent_workers": true
+        },
+        "val": {
+          "batch_size": 1,
+          "num_workers": 2,
+          "persistent_workers": true
+        },
+        "test": {
+          "batch_size": 1,
+          "num_workers": 1,
+          "persistent_workers": true
+        }
+      },
+      "data": {
+        "train": {
+          "type": "scannetv2_sample_graph_edge",
+          "dataset": "scanrefer",
+          "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+          "prefix": "train",
+          "suffix": ".pth",
+          "training": true,
+          "mode": 4,
+          "aug": true,
+          "with_elastic": true,
+          "use_xyz": true,
+          "voxel_cfg": {
+            "scale": 50,
+            "spatial_shape": [
+              128,
+              512
+            ],
+            "max_npoint": 2500000
+          },
+          "max_des_len": 78,
+          "lang_num_max": 4
+        },
+        "val": {
+          "type": "scannetv2_sample_graph_edge",
+          "dataset": "scanrefer",
+          "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+          "prefix": "val",
+          "suffix": ".pth",
+          "training": false,
+          "aug": false,
+          "with_elastic": false,
+          "use_xyz": true,
+          "voxel_cfg": {
+            "scale": 50,
+            "spatial_shape": [
+              128,
+              512
+            ],
+            "max_npoint": 2500000
+          },
+          "max_des_len": 78,
+          "lang_num_max": 32
+        }
+      },
+      "model": {
+        "input_channel": 6,
+        "blocks": 5,
+        "block_reps": 2,
+        "media": 32,
+        "normalize_before": true,
+        "return_blocks": true,
+        "pool": "mean",
+        "infer_mode": "sem",
+        "fps_num": 256,
+        "task_type": "res",
+        "sampling_module": {
+          "num_proposal": 128,
+          "pc_dim": 256,
+          "lang_dim": 256,
+          "d_model": 256
+        },
+        "dec": {
+          "num_layer": 6,
+          "d_model": 256,
+          "nhead": 8,
+          "hidden_dim": 1024,
+          "dropout": 0.0,
+          "activation_fn": "gelu",
+          "iter_pred": true,
+          "attn_mask": true,
+          "kernel": "top1",
+          "global_feat": "mean",
+          "lang_att": true,
+          "contrastive_align_loss": true,
+          "num_proposal_fine": 512,
+          "num_proposal_query": [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4
+          ],
+          "num_proposal_query_inst": [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4
+          ]
+        },
+        "criterion": {
+          "loss_weight": [
+            1.0,
+            1.0,
+            0.5,
+            5.0,
+            0.1,
+            0.1,
+            0.1,
+            1.0
+          ],
+          "cost_weight": [
+            1.0,
+            1.0,
+            0.1
+          ],
+          "loss_fun": "focal",
+          "match_last_layer": true,
+          "layer_differ_weight": true
+        },
+        "test_cfg": {
+          "topk_insts": 100,
+          "score_thr": 0.0,
+          "npoint_thr": 100
+        },
+        "norm_eval": false,
+        "fix_module": [
+          "text_encoder"
+        ]
+      },
+      "optimizer": {
+        "type": "AdamW",
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "paramwise_cfg": {
+          "text_encoder": {
+            "lr_mult": 0.001
+          },
+          "input_conv": {
+            "lr_mult": 0.01
+          },
+          "unet": {
+            "lr_mult": 0.01
+          },
+          "output_layer": {
+            "lr_mult": 0.01
+          },
+          "dec": {
+            "lr_mult": 1.0
+          }
+        }
+      },
+      "lr_scheduler": {
+        "type": "PolyLR",
+        "max_iters": 70,
+        "power": 4.0,
+        "constant_ending": 0.0
+      }
+    },
+    "allowed_markers": [
+      "968112d44c506dcdd8dcf7709af997fb731e73b0"
+    ],
+    "deployments": {
+      "968112d44c506dcdd8dcf7709af997fb731e73b0": {
+        "source_files": {},
+        "configs": {}
+      }
+    }
+  },
+  "declared_location": {
+    "path": "pipeline/checks/y95_terminal_preparation_4380bd58933d48daa5860115c763a934_location.json",
+    "sha256": "f27aa2ff9c872d94b5ef92147ea10e232dd6fde4263808ec26e29166a56fd7d5"
+  },
+  "CPU_guard_tests_passed": 29,
+  "dependencies": [
+    {
+      "path": "scripts/finalize_y95_fixed30.py",
+      "sha256": "ef9cd67a3e459d00f3258fad762e9d136beb922a0b6492310503788cad949fd7"
+    },
+    {
+      "path": "scripts/test_y95_terminal_handoff.py",
+      "sha256": "3cacb9576455530fa56f55955a284deeea1c099c715b784ca93e0859bda3af7d"
+    },
+    {
+      "path": "scripts/prepare_y95_terminal_handoff.py",
+      "sha256": "7a25ad7574c6758f9cd3036286928c620d6212e9ba103f6e34d923a5fd303dcc"
+    },
+    {
+      "path": "scripts/y95_terminal_contract.py",
+      "sha256": "4a698b6246e378590d8d9883185c696e549b095ae5cb14511054028e934d9f96"
+    },
+    {
+      "path": "scripts/y95_deployment.py",
+      "sha256": "1ae7740a749261d4e46a8cbba454c22f452d3fa02db8a0ef4d859385d9e5c61f"
+    },
+    {
+      "path": "scripts/create_y95_terminal_helpers.py",
+      "sha256": "0ce2677dfba83b437c747e11d07c37ccd00fc61047b658cc34ec3b4687c10fc9"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    }
+  ],
+  "post_training_freeze": {
+    "path": "pipeline/checks/AdaRES-Y95_60b5973bb7e64cd5acc81581a9b3d691_post_training_freeze.json",
+    "sha256": "2248202035aaa859a4cab6d5b1e4f2ffd947f4775725390562f36a944ceed6c9"
+  },
+  "admission": {
+    "path": "pipeline/admissions/AdaRES-Y95.json",
+    "sha256": "de4e2620341bcd651a6d2ad3d8bfa98dc7e2e8523a7da9f1ffaea8c11d7597c5"
+  },
+  "full_terminal_verification_executed": false,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "training_stopped": false,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "required_before_archive": "Exact PID and same-config train process absent; native Train/Val1..30, stable finite last30/best/model/optimizer/scheduler, unchanged source/YAML/receipt/freeze. Use explicit server-2 GPU0 and280W; retain all original checkpoints and other queue entries.",
+  "next_command": "python -B scripts/finalize_y95_fixed30.py --token <fresh-owned-token>",
+  "evidence": [
+    {
+      "path": "scripts/prepare_y95_terminal_handoff.py",
+      "sha256": "7a25ad7574c6758f9cd3036286928c620d6212e9ba103f6e34d923a5fd303dcc"
+    },
+    {
+      "path": "pipeline/checks/y95_terminal_preparation_4380bd58933d48daa5860115c763a934_tests.log",
+      "sha256": "ad814d2b6c7d575b1cf02dc8e4826c3c8329bbceb96b9824d5e9c975c1e0710c"
+    },
+    {
+      "path": "pipeline/checks/y95_terminal_preparation_4380bd58933d48daa5860115c763a934_location_program.py",
+      "sha256": "74f86280132e4c6e840d9dff789c569315cd61df0d7d14e703a11913a9aeb512"
+    },
+    {
+      "path": "pipeline/checks/y95_terminal_preparation_4380bd58933d48daa5860115c763a934_location.json",
+      "sha256": "f27aa2ff9c872d94b5ef92147ea10e232dd6fde4263808ec26e29166a56fd7d5"
+    },
+    {
+      "path": "pipeline/checks/y95_terminal_preparation_4380bd58933d48daa5860115c763a934_location.log",
+      "sha256": "8ddac1b2c105f0bff509decc80e7ea1de2e7d6feb4a41e02f35639e3bd2093aa"
+    },
+    {
+      "path": "scripts/finalize_y95_fixed30.py",
+      "sha256": "ef9cd67a3e459d00f3258fad762e9d136beb922a0b6492310503788cad949fd7"
+    },
+    {
+      "path": "scripts/test_y95_terminal_handoff.py",
+      "sha256": "3cacb9576455530fa56f55955a284deeea1c099c715b784ca93e0859bda3af7d"
+    },
+    {
+      "path": "scripts/prepare_y95_terminal_handoff.py",
+      "sha256": "7a25ad7574c6758f9cd3036286928c620d6212e9ba103f6e34d923a5fd303dcc"
+    },
+    {
+      "path": "scripts/y95_terminal_contract.py",
+      "sha256": "4a698b6246e378590d8d9883185c696e549b095ae5cb14511054028e934d9f96"
+    },
+    {
+      "path": "scripts/y95_deployment.py",
+      "sha256": "1ae7740a749261d4e46a8cbba454c22f452d3fa02db8a0ef4d859385d9e5c61f"
+    },
+    {
+      "path": "scripts/create_y95_terminal_helpers.py",
+      "sha256": "0ce2677dfba83b437c747e11d07c37ccd00fc61047b658cc34ec3b4687c10fc9"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    }
+  ]
+}

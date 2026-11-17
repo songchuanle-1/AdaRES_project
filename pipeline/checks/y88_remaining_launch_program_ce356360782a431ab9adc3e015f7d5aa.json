@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "original_preparation_token": "06b91fd6ca5a450b984051bae07196cd",
+  "prepared_plan": {
+    "path": "pipeline/checks/y88_remaining_review_06b91fd6ca5a450b984051bae07196cd.json",
+    "sha256": "4c70b935531e47a05b564173caf10d42521d1bff81adf8931cef2294fe640cd1"
+  },
+  "program": {
+    "path": "pipeline/checks/y88_remaining_launch_program_ce356360782a431ab9adc3e015f7d5aa.py",
+    "sha256": "1ce6f24e845a42dcce91fcf107c5aacb7cf6d26aac71aa90792441290bd86aa5"
+  },
+  "only_current_metadata_rebound": true,
+  "worker_body_byte_identical": true,
+  "scientific_payload_byte_identical": true,
+  "completed_candidate_capture_reused_not_replayed": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y88_remaining_review_06b91fd6ca5a450b984051bae07196cd.json",
+      "sha256": "4c70b935531e47a05b564173caf10d42521d1bff81adf8931cef2294fe640cd1"
+    },
+    {
+      "path": "pipeline/checks/y88_remaining_launch_program_ce356360782a431ab9adc3e015f7d5aa.py",
+      "sha256": "1ce6f24e845a42dcce91fcf107c5aacb7cf6d26aac71aa90792441290bd86aa5"
+    },
+    {
+      "path": "scripts/launch_y88_remaining_review.py",
+      "sha256": "bcacf08ca2fdf1dd0568b820d185f1f0e3a0ea3b3665fc6a5b2b26931d4f1579"
+    }
+  ]
+}

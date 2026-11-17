@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "cc7e16a3523147a4be1fa5774e4888ce",
+  "id": "AdaRES-Y99",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y99",
+    "label": "AdaRES-Y99 fixed30",
+    "config": "configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y99.json",
+    "scientific_candidate_id": "AdaRES-Y99",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 2980836,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y99_spatial_mask_skip_res_20261111_180628.log",
+    "launched": "2026-11-11T18:07:07"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y99 fixed30] configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y99_v2.py",
+    "sha256": "4aaf4fa78692f5359b6061b545f0f069cd553dde94998f03144db0d9d625e3e8"
+  }
+}

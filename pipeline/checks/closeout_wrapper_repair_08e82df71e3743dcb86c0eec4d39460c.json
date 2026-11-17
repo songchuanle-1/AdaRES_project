@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "failure_scope": "implementation_closeout_wrapper",
+  "failed_helper": {
+    "path": "scripts/record_08e82df7_handoff.py",
+    "sha256": "69dbc676da404fd2922fa75346aae6a7039d3c0aef6b446304110fbf04b4b200"
+  },
+  "observed_failure": "AssertionError at line64: expected tick_attempt.candidate_id Y79; canonical last server1 occupation correctly rebound it to Y62.",
+  "correction": "Preserve actual last resource attempt in handoff; explicitly bind current tick_attempt to already executed Y79 CPU result and candidate evidence. Scientific controls/source/plans/queue/goal unchanged.",
+  "repaired_helper": {
+    "path": "scripts/record_08e82df7_handoff_attempt2.py",
+    "sha256": "8f315f2b95a77ab38c512ca034df64b8aac6ddabf99b05fbd62cecc2fd8c7cbd"
+  },
+  "last_resource_attempt": {
+    "tick_started_at": "2026-11-02T00:45:58.953289+00:00",
+    "candidate_id": "AdaRES-Y62",
+    "kind": "resource_check",
+    "result": "blocked",
+    "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 08e82df71e3743dcb86c0eec4d39460c --server server-1 --label finish",
+    "observation": "Fresh authorized GPU inventory and all compute PIDs observed; no task launch or efficacy claim.",
+    "evidence": [
+      {
+        "path": "pipeline/checks/gpu_occupation_server-1_finish_08e82df71e3743dcb86c0eec4d39460c.json",
+        "sha256": "df98432647a6e8ee7484389fc4306afb5d84ef2642a8c0f9f005c4b3fa56c467"
+      }
+    ]
+  },
+  "scientific_or_native_probe_failure": false
+}

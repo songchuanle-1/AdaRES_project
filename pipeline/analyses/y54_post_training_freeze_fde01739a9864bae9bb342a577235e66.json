@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T13:26:21.740407+08:00",
+  "tested_bundle": {
+    "path": "pipeline/analyses/y54_prototype_bundle_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "5fe5b6d4b2d58ba2fe14cec37577ebed20b65f8ea5beaa6b3a7d4c6f9f3b40cf"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+  },
+  "design": {
+    "path": "pipeline/designs/exp_design_Y54_fde0.md",
+    "sha256": "70213e6570f7ecc23fd18d0fd9cfc644a9608d78660abc0eec28da98a5ae55d6"
+  },
+  "training": "Released SPFormer backbone/seed1999/fixed30/single authorizedGPU/128queries/singleargmax, unchanged native W2 loss and optimizer schedule. No diagnostic W2 weights used to initialize formal training. Canonical best from completed fixed30 run, not new epoch/model/threshold selection.",
+  "protocol": {
+    "dataset": "ScanRefer validation,9508expressions/141scenes",
+    "primary": "FIRST full evaluation mIoU",
+    "evaluation": "Y54/W2/B1/Y36 each twice; FIRST primary, preserve independent repeat noise",
+    "bootstrap": {
+      "unit": "whole scene clusters",
+      "expression_weighted": true,
+      "draws": 10000,
+      "seed": 1999
+    },
+    "size_cuts_from_TRAIN": [
+      1487,
+      3325
+    ],
+    "material_harm": "For any small/medium/large subgroup versus ANY reference, paired scene-bootstrap95%CI upper<0 triggers harm review; no posthoc threshold or cut selection",
+    "report": [
+      "mIoU",
+      "Acc25",
+      "Acc50",
+      "active_queries",
+      "warm_latency",
+      "peak_memory",
+      "parameters"
+    ],
+    "lightweight": "Require measured native feasibility with no added parameters; compare trained accuracy/cost versus parent/champion/baseline; do not claim global Pareto from bounded pretraining probes"
+  },
+  "comparators": {
+    "Y36": {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth",
+      "sha256": "f504f6ed548affa54eb7292cf5a7d930158be5dfaac291417f4852ad0f0698d1",
+      "bytes": 960925736,
+      "source_manifest": {
+        "path": "pipeline/analyses/y36_source_bundle_lf_8fd5e469dee241da8f21da7c870c0d3f.json",
+        "sha256": "96a2e9621d96847b8621438813dc3a1cbc07e3ac883a61f163a526db04cf5f39"
+      },
+      "config": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml"
+    },
+    "W2": {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth",
+      "sha256": "e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52",
+      "config": "configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml"
+    },
+    "B1": {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth",
+      "sha256": "cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b",
+      "config": "configs_song/model_paper5/adares_b1_standard_res.yaml"
+    }
+  },
+  "evaluator": {
+    "path": "AdaRES/tools/evaluate_adares_frozen_full.py",
+    "sha256": "7824e7807b44c6344b158570626d7ad90fb5fc44eb6852dbd475d34440b1dc13"
+  },
+  "limitations": "One training seed; clustered CI is not seed uncertainty. Recheck all source/checkpoint/goal/commit bindings before dispatch/evaluation; no receipt or training authorization created by this plan."
+}

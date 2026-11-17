@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y93",
+  "config": "configs_song/model_paper5/adares_y93_evidence_hidden_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "7a9f1aa67e054d79b28c6af3160a5b1cc11a51c9",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "retained_branch": "refs/heads/adares-y93-evidence-hidden-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y93_native.py",
+    "sha256": "972c60601a4a5cd70c7395b1d3baad88a44d89bc174cf88f93c46680dcbb5662"
+  },
+  "planned_command": "python -B scripts/run_y93_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching AdaRES-Y91 full30 checkpoint verification/canonical archive and fresh exclusive idle/unreserved authorized GPU0. Earlier Y92 precedes Y93. No GPU1 or power/data/runtime substitution; changed HEAD needs new tested binding.",
+  "checks": "Original TRAIN two finite task losses/backward/updates; fourteen exact original full769 evidence and second-hidden residual/final-linear consumers,70 original MLP-layer calls, native gates, zero then learned residual response, finite original/new/input gradients, modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y93_native_c13001fa6abe4bc18cd4dfc36e588ed5_server2_program.py",
+    "sha256": "3493f9d8a6989aa9d4062b68b5bd7ca2784e7f22e79e6f6ab5168b20be6f37ff"
+  }
+}

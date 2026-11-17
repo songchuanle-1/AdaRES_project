@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "本轮上海10:48:36获取实验优先design快照，实际会话归属匹配，后台Disabled；容量1、运行1、就绪排队1，新增预算1。只用server-2 GPU0，Y57用户暂停及GPU0临时280W保留。",
+    "10:50:19实核Y58原PID77094/命令/cwd/starttime/GPU0归属，Train14/30 step3733至3757递增、尾部无报错。GPU0=280W/85至86C，本次热降频Active；内核无新Xid/fallen-off。GPU1仍有外部负载，不干预，不宣称散热根因已修复。证据pipeline/checks/ef_gpu0_runtime_3c92a71dd21447688bbadff8c0c10db5.json。",
+    "执行Y60到期资源复查，精确源码/YAML/冻结payload/commit/goal匹配；唯一获准GPU0仍忙，Y60没有执行native GPU smoke。Y58当次Train14 step3718至3797递增，前13轮日志best mIoU=0.4992775022983551，只是中途指标。资源证据pipeline/checks/prepared_resources_3c92a71dd21447688bbadff8c0c10db5.json；额外实核Y58/Y59各7文件和现有准入收据均通过，Y59保持waiting/gpu0。",
+    "新增独立Y61 peer-value gradient对照及唯一原生YAML，仅竞争peer values使用相同可训练LayerNorm(query.detach())；focal输入/掩码重叠梯度/共享头/全部损失/selector/seed1999/fixed30不变，参数增量0。与旧Y20掩码分支截断和Y60阶段分头不同，不重开旧拒绝，不宣称训练收益。",
+    "10:56:59 Y61真实CPU测试通过：原生YAML完整模型/发布预训练/真实TRAIN两场景162738点及8表达；float32和float64中前向、focal查询梯度及mask梯度逐位等W2，仅peer值输入梯度从0.00060267/0.00064859变0，peer mask梯度仍非零；仿射/头参数梯度、排列、重复及padding控制通过。证据pipeline/analyses/y61_cpu_3c92a71dd21447688bbadff8c0c10db5.json及.log。该测试不含完整稀疏骨干/任务criterion/optimizer两步，不是native smoke PASS或效益。",
+    "Y61精确7文件/不可变payload/CPU结果/资源已留档，候选按实际GPU阻塞保留；没有Git提交、生产同步、准入、入队、启动或新完成项。当前tick_attempt为Y61 implementation_test/passed，仅CPU范围。已更新七段记忆和next_batch决策，尚未预称本轮收尾校验成功。"
+  ],
+  "decisions": [
+    "保护Y58固定30轮，GPU0释放后由既有门控按FIFO派发Y59；不共卡、不抢占其他任务、不恢复Y57或扩大GPU授权。热降频如实报告，继续保持已授权280W，不改风扇、功耗或调度。",
+    "派发器要求已准入任务code_commit等于当前HEAD；因此Y61目前保存精确测试包但不移动HEAD，避免使Y59失配。先保护现有Y59派发及已提交Y60，再保存Y61测试版本、绑定并执行原生YAML真实TRAIN两步检查；只有实际通过后才能准入/入队/尝试启动。资源等待不是缺用户授权，不重复索取常规许可。决策pipeline/decisions/20261022-110104_next_batch.md。"
+  ]
+}

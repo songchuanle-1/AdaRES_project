@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "81e295aec4c1457c9689d4b62dd21b62",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-20T04:43:31.849591+00:00",
+  "recorded_at": "2026-10-20T05:21:40.525920+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Y52/Y54 mount recovery succeeded with verified native progress. Canonical finish failed: Blocked GPU candidate has a queue opening; checker reads immutable preflight active0 while actual restored queue is running2. Failure preserved; snapshot/deadline/checker unchanged. Abort this tick only; leave remote training running.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 31,
+    "input_tokens": 9305947,
+    "cached_input_tokens": 8701312,
+    "output_tokens": 44032,
+    "reasoning_output_tokens": 12497,
+    "total_tokens": 9349979,
+    "uncached_input_tokens": 604635,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 2,
+    "new_evidence_references": 6,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 2,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

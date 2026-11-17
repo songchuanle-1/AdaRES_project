@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-C2",
   "label": "Hard-negative IoU margin",
-  "status": "running",
+  "status": "done_complete",
   "server": "server-2",
   "gpu": "1",
   "config": "configs_song/model_paper5/adares_c2_hard_negative_margin_res.yaml",
@@ -24,6 +24,16 @@
       "action": "launched",
       "gpu": "1",
       "evidence": "Native training log reports Train[1/10] and iteration 93/4686."
+    },
+    {
+      "ts": "2026-09-23T06:50:59.150370",
+      "status": "done_complete",
+      "best_miou": "0.4980",
+      "epochs": "10/10"
     }
-  ]
+  ],
+  "final_best": "0.4980",
+  "finished_at": "2026-09-23T06:50:59",
+  "log_local": "",
+  "epochs_final": "10/10"
 }

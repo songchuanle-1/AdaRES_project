@@ -1,0 +1,45 @@
+{
+  "actions": [
+    "运行：Y101 Train28/30 step4581/4686，原PID2263581/源码/原生YAML/精确数据/私有环境/350W与原生递增已核验。",
+    "Y102 仍Train1step7/4686，当前原生进度未恢复。原PID4747/server2GPU0/280W/源码/原数据加载子进程保留，当前只读诊断已存；没有停止或重启。",
+    "本轮event，due_count0项为已核验挂起候选、无可派发待跑任务，准入/创建/预备预算仍0。未重做缺保存声明的目录检查、未重试权限拒绝的调用栈读取、未重做旧归档或已通过科学测试；Y103旧绑定和未执行原生计划保持。",
+    "Y100训练best导致自动阶段门控，正式FIRST及完整原设备后评尚未执行，不宣布目标达成。本轮新变体/原生GPU检查/准入/新训练/归档/FIRST/成本均0。",
+    "新准备：Y101/Y36/W2/B1四个原冻结后评配置分别在server-1原私有Python中通过CPU导入、原生train模型解析、私有依赖与原YAML语义核验；资源适配副本仅导入定义，未调用main。全程CUDA屏蔽，权重加载与CUDA初始化禁用，未创建模型/数据集、未执行科学测试或正式后评。",
+    "初次导入预检的PointNet包装文件必须来自egg断言失败已保留；只读原PID映射确认实际为项目包装代码加私有egg扩展，修正为两者精确路径和SHA绑定后四配置通过。原失败脚本/程序/日志与来源诊断均保留，无环境或科学控制修改。一次本地内联诊断漏设scripts导入路径，失败于任何远端操作前；修正本地入口后执行只读诊断。"
+  ],
+  "decisions": [
+    "遵守本轮冻结阶段预算；保留两条原运行、Y102既有挂起条件及全部失败证据，不用反复等价测试制造进展。下一轮先查真实进度与预算，后续须满足完整原检查点/归档和独占授权资源。",
+    "仅AdaRES，GPU1全用途暂停和Y57单独暂停保持；不跨项目、不用server6、不迁移冻结后评/成本、不改科学goal/原收据/数据/功耗/调度。既有管理员调用栈协助事项没有新增授权，不重复提出相同确认。",
+    "保留零创建/准入预算、两条原运行与全部旧暂停。CPU导入和14项资源边界检查不能替代原训练自然30轮、精确有限检查点/优化器/调度器核验及归档、独占原GPU0/350W、最终受保护可执行启动和全量配对FIRST/置信区间/子组/成本；不宣布达标，不迁移原GPU1后评。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/adares_observation_037ef8a032b64a4db7849e6bd58df591_closeout.json",
+      "sha256": "14dc80ddd461fcae2c4eec3d251dffab4fa814414431150dd729800452a87cab"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_037ef8a032b64a4db7849e6bd58df591.md",
+      "sha256": "3b28542b63b2bad6f354a07197b5e5336861ae4136bf067984396ebbe30402a2"
+    },
+    {
+      "path": "pipeline/checks/y101_review_runtime_closeout_037ef8a032b64a4db7849e6bd58df591.json",
+      "sha256": "372c1efeccb2d607918bf2c38e288e71f3d2086b9c4529cdb3fed81edb7a2966"
+    },
+    {
+      "path": "pipeline/checks/y101_review_runtime_v2_037ef8a032b64a4db7849e6bd58df591.json",
+      "sha256": "b519686927a95336265e360b371a49a25b9da426520b66522aeed3a52d287952"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_037ef8a032b64a4db7849e6bd58df591_adares-y101.log",
+      "sha256": "732274235216e75361ddd5375836cdf164923884070ff5feb64ba2e6ef6fc2cd"
+    },
+    {
+      "path": "pipeline/checks/y101_pointnet_origin_037ef8a032b64a4db7849e6bd58df591.json",
+      "sha256": "a68b4eace5708d0c2b214f154458869ac5c6059a4eb83e5dceb2a96489622230"
+    },
+    {
+      "path": "scripts/finish_y101_review_runtime_tick.py",
+      "sha256": "ba0a47f963da2b9a78544313e7ffd21be6b662ad7a8a6b9c37aa91f9ff33aaa8"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "production_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/__init__.py",
+      "sha256": "d46f98da3a0cd8119f2dcf9ac7af2205a16631940f901cf4d897c172898b14b6"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/ipdn.py",
+      "sha256": "4e68c2a9805cf18e2f1a8cebc818deb04f388e01c83fffa365270e9354e4789d"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/paired_dataset.py",
+      "sha256": "b7962ca7dddae5483f46312b504fb3dd993fcda841448cec8a6939238997a88a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/paired_objective.py",
+      "sha256": "87164c60e73d01d204ce4634fd514f45a8eb4ad58038198e4a12f437293713cf"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/pairing.py",
+      "sha256": "a15fbd63607cfb9d583aa88b01d2dfa0c50adba483a50663f6670331a5afcf64"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y17_target_equivalent_pairing/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y17_target_equivalent_pairing_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "evidence": {
+    "pipeline/analyses/y17_unit_20260930.json": "1cd97d0e71d462845b088aa111a65f3ef3d692b6a0247fce1294c5ef20fbd23a",
+    "pipeline/analyses/y17_entry_20260930.json": "11f553b3b700c55c0275b279d8a415ee3fadf6bed2a96c75a3d0ca32000518a9",
+    "pipeline/analyses/y17_physical_controls_20260930.json": "8951c8f0a3f6382d28af4684f0112c927e4e8a95f47d36f6eba20fc142b010a9",
+    "pipeline/analyses/y17_physical_stress_20260930.json": "fae703cddd1ec95ee0ec4d57ba1e4badfe66bf31df3f4dfbe20674ed096f4093",
+    "pipeline/analyses/y17_physical_inference_20260930.json": "dbf16cc0f7403ce494d870167cdee1628a6c3fc834004a50a20164260e6b735e",
+    "pipeline/analyses/y17_physical_resume_20260930.json": "befc3ea0fff1d9a14e428c850dc7303080261f5732ebe67697ca6e02f169adde"
+  },
+  "no_cross_variant_production_imports": true,
+  "frozen_w2_config_equal": true,
+  "remote_byte_identity": true,
+  "extra_trainable_parameters": 0,
+  "passed": true,
+  "limitations": "Small-cohort feasibility, not trained efficacy or novelty."
+}

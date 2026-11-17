@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "af86fc8306f4443b826d4eef5fa63878",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-18T06:49:58.321225+00:00",
+  "recorded_at": "2026-10-18T06:57:07.539194+00:00",
+  "status": "INCOMPLETE",
+  "reason": "The bound 14:49 snapshot has no due candidates, reserve2/2 and preparation budget0; both human-authorization retries are after this tick deadline. Known unchanged closed-stage cooldown mismatch still requires unmet bootstrap without honest new candidate progress. Full audit saved; no repeated ineffective finish, fabricated candidate, automatic commit, or unauthorized shared-runtime repair. Earlier authorization question was not consent.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 5,
+    "input_tokens": 1618549,
+    "cached_input_tokens": 1599616,
+    "output_tokens": 8015,
+    "reasoning_output_tokens": 1172,
+    "total_tokens": 1626564,
+    "uncached_input_tokens": 18933,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

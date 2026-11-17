@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "token": "5a320b25043948e2bae2ffdef63da17a",
+  "attempt": 3,
+  "bounded_resource_recovery": true,
+  "original_preparation_token": "06beafa3cffe4ecf956270d1146f75c9",
+  "original_prepared_plan": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "9bee3f6a62632b87a2bf79a1dc0901f9f4f5719cbd152366389495786e31499e"
+  },
+  "original_guarded_program": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_06beafa3cffe4ecf956270d1146f75c9.py",
+    "sha256": "2186c9e58b87cb8e9697e187aef7756b4556682d01ea26264f7e5407f25d82e0"
+  },
+  "program": {
+    "path": "pipeline/checks/y90_cost_guarded_relaunch_5a320b25043948e2bae2ffdef63da17a.py",
+    "sha256": "e0cc77d96fe3e4571ea9ea8f57f62c0828eaaf0264ca74d8b01246b095c0bcd4"
+  },
+  "only_payload_metadata_changed": [
+    "token",
+    "folder",
+    "output"
+  ],
+  "worker_body_byte_identical": true,
+  "original_scientific_core_byte_identical": true,
+  "original_core_sha256": "c3e508aa9610f522663dc730204573275d46b03914955b1ade0e6bf749070cb6",
+  "original_imports_capture_checkpoint_source_bindings_identical": true,
+  "prior_guard_tests_reused_not_replayed": 8,
+  "original_refused_intent": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_intent_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "d8bdca66023f588497979ebbcddd5f1f20e7ef8adaae1ad4de242ae83a8bb1b9"
+  },
+  "resolved_previous_attempt": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_refusal_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "f88028c92324b470f971e29e55422cd3cd8810350d395a4f5e77aa245081e4e5"
+  },
+  "reconciliation": {
+    "path": "pipeline/checks/y90_cost_relaunch_reconciliation_5a320b25043948e2bae2ffdef63da17a.json",
+    "sha256": "8cd5cd59252cf4bca883504a17c213c8e9ca071d58a3276b5baa2bca089caed8"
+  },
+  "occupation": {
+    "path": "pipeline/checks/gpu_occupation_server-1_start_5a320b25043948e2bae2ffdef63da17a.json",
+    "sha256": "f3f8354538473b7e832b1d4450cf4d388b6cdab32061c228f232aac4c77274be"
+  },
+  "GPU_started": false,
+  "checkpoint_loaded": false,
+  "evidence": [
+    {
+      "path": "scripts/y90_cost_recovery_relaunch.py",
+      "sha256": "30a42b231aad0569e54fb530d989a0705c3931a174729a43145af36b27f3e81e"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_resource_recovery_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "9bee3f6a62632b87a2bf79a1dc0901f9f4f5719cbd152366389495786e31499e"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_relaunch_reconciliation_5a320b25043948e2bae2ffdef63da17a.json",
+      "sha256": "8cd5cd59252cf4bca883504a17c213c8e9ca071d58a3276b5baa2bca089caed8"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_start_5a320b25043948e2bae2ffdef63da17a.json",
+      "sha256": "f3f8354538473b7e832b1d4450cf4d388b6cdab32061c228f232aac4c77274be"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_guarded_relaunch_5a320b25043948e2bae2ffdef63da17a.py",
+      "sha256": "e0cc77d96fe3e4571ea9ea8f57f62c0828eaaf0264ca74d8b01246b095c0bcd4"
+    }
+  ]
+}

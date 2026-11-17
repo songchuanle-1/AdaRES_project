@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y44",
+  "final_only": true,
+  "coordinate_axes": 3,
+  "feature_channels": 32,
+  "cross_inputs": 96,
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/dec.py",
+      "sha256": "88d5c203c2bcbf57ad713b7488d34c03ddada1d3ee25825f4c5378d4a98015fe"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/ipdn.py",
+      "sha256": "98bef2d27e2a3008e291f48633ddce7556c6f085473564f6a9f71af023265819"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "intervention": "Raw all3x32 centered native coordinate-feature cross moments, point-mass FG/BG, query final-indicator only.",
+  "limits": [
+    "Local independent implementation, not native admission or efficacy.",
+    "No normalization, component selection, numeric sweep or diagnostic weight deployment."
+  ]
+}

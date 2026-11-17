@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-25T21:46:31.699669+08:00",
+  "records": [
+    {
+      "id": "AdaRES-Y62",
+      "previous_plan": {
+        "path": "pipeline/checks/y62_smoke_rebound_10ecd3bb7a2b4b78a7382ea479609ebc_plan.json",
+        "sha256": "3a08d3f568056fa5dccb7e30e367d75798d555a7cee4865e6ba6e301374e61a8"
+      },
+      "current_plan": {
+        "path": "pipeline/checks/adares_y62_server1_63b27dd8efe04a0bab6dc0291cefdbf0_plan.json",
+        "sha256": "3652b9fb2ab407a884e8e84c3ae249db5f8fc19c4cda6939105b9eba69bce619"
+      },
+      "previous_goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+      "current_goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+      "unchanged_tested_files": 7,
+      "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+      "scientific_protocol_changed": false,
+      "changes": "Resource grant/goal binding and deterministic deployment paths only; old artifacts retained."
+    },
+    {
+      "id": "AdaRES-Y63",
+      "previous_plan": {
+        "path": "pipeline/checks/y63_smoke_10ecd3bb7a2b4b78a7382ea479609ebc_plan.json",
+        "sha256": "98ec9124cbeab6225ddc10fdf4b526f4b6108fa56e615db90146da1d831feb94"
+      },
+      "current_plan": {
+        "path": "pipeline/checks/adares_y63_server1_63b27dd8efe04a0bab6dc0291cefdbf0_plan.json",
+        "sha256": "977c9dab4fe1b83ff8d361e86bebc6401e47c976693ab9e4fef7119f0c256b60"
+      },
+      "previous_goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+      "current_goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+      "unchanged_tested_files": 7,
+      "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+      "scientific_protocol_changed": false,
+      "changes": "Resource grant/goal binding and deterministic deployment paths only; old artifacts retained."
+    }
+  ],
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  }
+}

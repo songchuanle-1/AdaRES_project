@@ -1,0 +1,41 @@
+Using backend: pytorch
+2026-10-14 22:56:11,082 - INFO - set random seed: 1999
+2026-10-14 22:56:11,326 - INFO - Load train scanrefer: 36665 samples
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:16<?, ?it/s, lr=0.0001, eta=0:16:42, iter_time=17.00]Train[1/30]:  50%|██████████          | 1/2 [00:16<00:16, 17.00s/it, lr=0.0001, eta=0:16:42, iter_time=17.00]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:16, 17.00s/it, lr=0.0001, eta=0:08:29, iter_time=8.78] Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  7.33s/it, lr=0.0001, eta=0:08:29, iter_time=8.78]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  8.78s/it, lr=0.0001, eta=0:08:29, iter_time=8.78]
+2026-10-14 22:56:37,527 - INFO - Load train scanrefer: 36665 samples
+2026-10-14 22:56:41,112 - INFO - set random seed: 1999
+2026-10-14 22:56:41,221 - INFO - set random seed: 1999
+2026-10-14 22:56:41,327 - INFO - set random seed: 1999
+2026-10-14 22:56:41,659 - INFO - set random seed: 1999
+2026-10-14 22:56:41,730 - INFO - set random seed: 1999
+2026-10-14 22:56:41,812 - INFO - set random seed: 1999
+2026-10-14 22:56:41,894 - INFO - set random seed: 1999
+2026-10-14 22:56:41,975 - INFO - set random seed: 1999
+2026-10-14 22:56:42,054 - INFO - set random seed: 1999
+2026-10-14 22:56:42,134 - INFO - set random seed: 1999
+2026-10-14 22:56:42,248 - INFO - set random seed: 1999
+2026-10-14 22:56:42,320 - INFO - set random seed: 1999
+2026-10-14 22:56:42,393 - INFO - set random seed: 1999
+2026-10-14 22:56:42,466 - INFO - set random seed: 1999
+2026-10-14 22:56:42,538 - INFO - set random seed: 1999
+2026-10-14 22:56:42,611 - INFO - set random seed: 1999
+2026-10-14 22:56:42,719 - INFO - set random seed: 1999
+2026-10-14 22:56:42,826 - INFO - set random seed: 1999
+2026-10-14 22:56:42,933 - INFO - set random seed: 1999
+2026-10-14 22:56:43,040 - INFO - set random seed: 1999
+2026-10-14 22:56:43,148 - INFO - set random seed: 1999
+2026-10-14 22:56:43,255 - INFO - set random seed: 1999
+2026-10-14 22:56:43,413 - INFO - set random seed: 1999
+2026-10-14 22:56:43,482 - INFO - set random seed: 1999
+2026-10-14 22:56:43,551 - INFO - set random seed: 1999
+2026-10-14 22:56:43,619 - INFO - set random seed: 1999
+2026-10-14 22:56:43,687 - INFO - set random seed: 1999
+2026-10-14 22:56:43,755 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 203, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1604, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for IPDN:
+	Unexpected key(s) in state_dict: "text_encoder.embeddings.position_ids", "text_encoder.embeddings.token_type_ids". 

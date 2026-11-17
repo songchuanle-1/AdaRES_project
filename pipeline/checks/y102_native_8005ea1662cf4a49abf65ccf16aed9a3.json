@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y102",
+  "token": "8005ea1662cf4a49abf65ccf16aed9a3",
+  "code_commit": "e87aca94bc89ab107b2db887bc37c9d4fb4a3f73",
+  "CPU_version": {
+    "path": "pipeline/checks/y102_cpu_version_8005ea1662cf4a49abf65ccf16aed9a3.json",
+    "sha256": "021fb173174f07fbdf4c7275bcf5c32e05795c71da2394ac9e72f7e7290abc06"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y102_cpu_8005ea1662cf4a49abf65ccf16aed9a3.json",
+    "sha256": "e964cfc84037754731a2971670db90a6b005045c421e463edab755d66231c169"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y102_cpu_8005ea1662cf4a49abf65ccf16aed9a3_program.py",
+    "sha256": "0eb4698a00f0470ef71bf244dbb60512f7e7f86cc24813db9126ce2f52e59ef6"
+  },
+  "native_plans": {
+    "server-2": {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server2_plan.json",
+      "sha256": "7b856a03b5e17c70db365dbe4e40199fcf5751157d5010ada781c042ba577770"
+    },
+    "server-1": {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server1_plan.json",
+      "sha256": "7011d6303bea1c5b5525316103c6eec148774f1deb19018ce4377376741312e0"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y102_CPU_guards_8005ea1662cf4a49abf65ccf16aed9a3.log",
+    "sha256": "9f7cd9640b21aa021b562beb4e5263026425121728c66c6dacf8afe87a4c0944"
+  },
+  "guard_tests_passed": 10,
+  "runtime_guard_tests": {
+    "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_runtime_guards.log",
+    "sha256": "5f9cb50a88d52684e577b8b4b3725c462d7ba01e6611b5c13207b9df7ac75c9a"
+  },
+  "runtime_guard_tests_passed": 8,
+  "native_observer_body": {
+    "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_body.py",
+    "sha256": "17e21817afa2114d99db4f10b47d7de4693454edd1b2ff9faf840e947e734418"
+  },
+  "native_observer_callbacks_executed_on_GPU": false,
+  "same_callbacks_actually_executed_on_CPU": true,
+  "original_data_proof": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "original_Y99_Y100_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y102_cpu_native.py",
+    "sha256": "6f14f7b772ee3afb3affd49ddecdcbeb28011f530e76cf4704879e5154989824"
+  },
+  "evidence": [
+    {
+      "path": "scripts/run_y100_native_v2.py",
+      "sha256": "b2d7ad2ed1497bd8ff6492f3af98be57d47197d515d2d8007e74619af3cebae8"
+    },
+    {
+      "path": "scripts/run_y102_native.py",
+      "sha256": "f6fea0e008d0652c6567ed526c88d5e658d49fb0534acd195d1f3cc0fb2a356b"
+    },
+    {
+      "path": "scripts/test_y100_runtime_plan_v2.py",
+      "sha256": "9aaa4b883a394005069503ed1c01a849391e17c011fc5cfd2ef6d778dc119ef6"
+    },
+    {
+      "path": "scripts/test_y102_runtime_plan.py",
+      "sha256": "f7a0e6c9cc4ba7c67ead659304af85e338ccc0b02763e7e1fa0e8d63fb81ef0f"
+    },
+    {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server2_program.py",
+      "sha256": "7e2526eb4c74399d174267c0ea3625d2542479901c7952cc3fece9028e3dd1cf"
+    },
+    {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server1_program.py",
+      "sha256": "a2e6adac066bb67e63fc5fcbac7e5aad0b6a98466010cbbf46edb4da3d6d2cfa"
+    },
+    {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server2_plan.json",
+      "sha256": "7b856a03b5e17c70db365dbe4e40199fcf5751157d5010ada781c042ba577770"
+    },
+    {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_server1_plan.json",
+      "sha256": "7011d6303bea1c5b5525316103c6eec148774f1deb19018ce4377376741312e0"
+    },
+    {
+      "path": "pipeline/checks/y102_native_8005ea1662cf4a49abf65ccf16aed9a3_runtime_guards.log",
+      "sha256": "5f9cb50a88d52684e577b8b4b3725c462d7ba01e6611b5c13207b9df7ac75c9a"
+    },
+    {
+      "path": "pipeline/checks/y102_CPU_guards_8005ea1662cf4a49abf65ccf16aed9a3.log",
+      "sha256": "9f7cd9640b21aa021b562beb4e5263026425121728c66c6dacf8afe87a4c0944"
+    }
+  ]
+}

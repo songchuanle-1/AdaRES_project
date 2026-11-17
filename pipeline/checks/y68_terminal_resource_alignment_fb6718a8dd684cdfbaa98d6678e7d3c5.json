@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y68",
+  "original_frozen_plan": {
+    "path": "pipeline/checks/AdaRES-Y68_post_training_freeze_93403cd7a53d4f96b28607c9174e46b3.json",
+    "sha256": "51de3d7180355d338328b7a0cb79e74815e1546fb2d4b97472e83150009b6b14"
+  },
+  "frozen_resource_condition": {
+    "server": "server-2",
+    "gpu": 0,
+    "power_limit_watts": 280,
+    "note": "Keep approved280W; paired trained-cost comparisons on same device. Two batches are not a full-dataset memory guarantee."
+  },
+  "before": {
+    "stage": "validation",
+    "required_server": "server-2",
+    "required_gpu": 1,
+    "blocker_kind": null,
+    "resource_work_kind": "frozen_evaluation",
+    "next_action": "Preserve verified fixed30 last/best/model/optimizer/scheduler and immutable freeze. Only run the original full frozen evaluation/cost comparison on exclusive authorized GPU0. No restart or scientific promotion from training logs; advance prepared Y71 when physical resources permit."
+  },
+  "after": {
+    "stage": "blocked",
+    "required_server": "server-2",
+    "required_gpu": 0,
+    "blocker_kind": "exclusive_gpu_slot",
+    "resource_work_kind": "frozen_evaluation",
+    "next_action": "Do not rerun training/finalizer or promote from training best .5039549469947815/epoch21. Preserve exact original full last30/best21/model/optimizer/scheduler and receipts. Only execute the original complete frozen FIRST/repeats/scene-bootstrap/harm and same-device cost comparison on an exclusive original server-2 GPU0/280W; current Y71 training owns it."
+  },
+  "reason": "The preserved finalizer emitted required_gpu1 while its next_action and original immutable resource plan require GPU0/280W. Align mutable waiting metadata to that exact original freeze; no scientific protocol, finalizer source, checkpoint or receipt changed.",
+  "Y71_current_progress": {
+    "path": "pipeline/checks/y71_deployment_adares-y71_fb6718a8dd684cdfbaa98d6678e7d3c5_after_dispatch.json",
+    "sha256": "402c8685bdee0d02905df1e605d224d4023824e618a9cfc3c7b3571325e3d8e7"
+  },
+  "Y70_current_progress": {
+    "path": "pipeline/checks/y71_deployment_adares-y70_fb6718a8dd684cdfbaa98d6678e7d3c5_after_dispatch.json",
+    "sha256": "9df57ca21bcdba84fe34640a5853cdeb0264730143d08fb4649877fc4f5d282f"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  }
+}

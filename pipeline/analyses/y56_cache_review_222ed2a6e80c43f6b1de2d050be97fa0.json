@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "reviewed_at": "2026-10-19T17:31:53.002417+08:00",
+  "result": {
+    "path": "pipeline/analyses/y56_cached_train_222ed2a6e80c43f6b1de2d050be97fa0_metadata_v2_result.json",
+    "sha256": "983348fbaf9f22840f72f5087cfe8cade02ac874c11e7c6f929fd6d88d4e80e3"
+  },
+  "actual_cached_expressions": 32,
+  "actual_queries": 4096,
+  "exact_joint_duplicate_excess": 0,
+  "softmask_unique_per_expression": 128,
+  "query_unique_per_expression": 128,
+  "hard_mask_duplicate_excess": 3072,
+  "actual_multiplicity_counterfactuals": 0,
+  "trained_head_synthetic_signal": true,
+  "decision": "Exact-copy causal premise not observed in this fixed single-scene final-layer sample; do not implement or admit inverse-count correction from synthetic positives. Keep inconclusive pending native batch2/all-layer capture; not a population falsification.",
+  "provenance_limit": "Original capture source loads the W2 checkpoint path but did not record a checkpoint blob hash at capture time; current CPU replay binds the verified frozen W2 checkpoint SHA. No retroactive provenance claim.",
+  "native_preparation": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_prereg.json",
+    "sha256": "b7b5ee52f3b74fee076f913b1884db3910c30a8b358c87b6a49208999064f7e9"
+  },
+  "old_failure": {
+    "path": "pipeline/analyses/y56_cached_train_222ed2a6e80c43f6b1de2d050be97fa0_execution.json",
+    "sha256": "54ce01fa0e0f791ff7fcdbc3cab2eadad782c3e3d7c494e64e59ea6a2e8596b5"
+  },
+  "model_revision": 0,
+  "new_candidates": 0,
+  "training_launches": 0,
+  "native_GPU_tests": 0
+}

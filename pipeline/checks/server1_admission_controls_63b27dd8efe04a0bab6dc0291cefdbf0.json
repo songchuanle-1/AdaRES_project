@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "results": [
+    {
+      "id": "AdaRES-Y62",
+      "actual_result": {
+        "path": "pipeline/analyses/adares_y62_server1_smoke_63b27dd8efe04a0bab6dc0291cefdbf0_attempt2.json",
+        "sha256": "fa9879e17d5e338dbdab08076466dc66013fc61ee61b998452d64f60dcb84fa1"
+      },
+      "positive_pass": true,
+      "negative_controls_rejected": [
+        "wrong_goal",
+        "nonfinite_loss",
+        "unexercised_branch"
+      ]
+    },
+    {
+      "id": "AdaRES-Y63",
+      "actual_result": {
+        "path": "pipeline/analyses/adares_y63_server1_smoke_63b27dd8efe04a0bab6dc0291cefdbf0_attempt2.json",
+        "sha256": "07a4010508033f8a9bd6bcbbe664527855cb653b78df022c745449131508bd9d"
+      },
+      "positive_pass": true,
+      "negative_controls_rejected": [
+        "wrong_goal",
+        "nonfinite_loss",
+        "unexercised_branch"
+      ]
+    }
+  ],
+  "adapter": {
+    "path": "scripts/admit_server1_candidates.py",
+    "sha256": "bb002d01ae938d1a3046a7b0b18c5228158f65fc13f59e01ce6d91793ba5c3e9"
+  }
+}

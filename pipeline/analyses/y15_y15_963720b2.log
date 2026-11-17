@@ -1,0 +1,15 @@
+
+STDERR:
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+  File "tools/evaluate_adares_frozen_full.py", line 167, in <module>
+    main()
+  File "tools/evaluate_adares_frozen_full.py", line 49, in main
+    from ipdn.dataset import build_dataset, build_dataloader
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/__init__.py", line 2, in <module>
+    from ipdn.model_paper5.adares_b3_mask_evidence import IPDN
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/__init__.py", line 2, in <module>
+    from .ipdn import IPDN
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_b3_mask_evidence/ipdn.py", line 2, in <module>
+    import pointgroup_ops
+ModuleNotFoundError: No module named 'pointgroup_ops'

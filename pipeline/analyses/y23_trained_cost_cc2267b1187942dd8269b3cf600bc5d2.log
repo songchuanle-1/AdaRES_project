@@ -1,0 +1,58 @@
+Using backend: pytorch
+2026-10-03 07:29:56,884 - INFO - Load train scanrefer: 36665 samples
+2026-10-03 07:30:05,826 - INFO - set random seed: 1999
+2026-10-03 07:30:06,736 - INFO - set random seed: 1999
+2026-10-03 07:30:07,307 - INFO - set random seed: 1999
+2026-10-03 07:30:07,887 - INFO - set random seed: 1999
+2026-10-03 07:30:08,460 - INFO - set random seed: 1999
+2026-10-03 07:30:08,539 - INFO - set random seed: 1999
+2026-10-03 07:30:08,609 - INFO - set random seed: 1999
+2026-10-03 07:30:09,175 - INFO - set random seed: 1999
+2026-10-03 07:30:09,742 - INFO - set random seed: 1999
+2026-10-03 07:30:10,320 - INFO - set random seed: 1999
+2026-10-03 07:30:10,392 - INFO - set random seed: 1999
+2026-10-03 07:30:10,501 - INFO - set random seed: 1999
+2026-10-03 07:30:11,112 - INFO - set random seed: 1999
+2026-10-03 07:30:11,724 - INFO - set random seed: 1999
+2026-10-03 07:30:12,332 - INFO - set random seed: 1999
+2026-10-03 07:30:12,440 - INFO - set random seed: 1999
+2026-10-03 07:30:12,506 - INFO - set random seed: 1999
+2026-10-03 07:30:13,074 - INFO - set random seed: 1999
+2026-10-03 07:30:13,633 - INFO - set random seed: 1999
+2026-10-03 07:30:14,193 - INFO - set random seed: 1999
+2026-10-03 07:30:14,261 - INFO - set random seed: 1999
+2026-10-03 07:30:14,378 - INFO - set random seed: 1999
+2026-10-03 07:30:14,998 - INFO - set random seed: 1999
+2026-10-03 07:30:15,621 - INFO - set random seed: 1999
+2026-10-03 07:30:16,238 - INFO - set random seed: 1999
+2026-10-03 07:30:16,351 - INFO - set random seed: 1999
+2026-10-03 07:30:16,421 - INFO - set random seed: 1999
+2026-10-03 07:30:16,986 - INFO - set random seed: 1999
+2026-10-03 07:30:17,550 - INFO - set random seed: 1999
+2026-10-03 07:30:18,115 - INFO - set random seed: 1999
+2026-10-03 07:30:18,186 - INFO - set random seed: 1999
+2026-10-03 07:30:18,289 - INFO - set random seed: 1999
+2026-10-03 07:30:18,893 - INFO - set random seed: 1999
+2026-10-03 07:30:19,493 - INFO - set random seed: 1999
+2026-10-03 07:30:20,091 - INFO - set random seed: 1999
+2026-10-03 07:30:20,193 - INFO - set random seed: 1999
+2026-10-03 07:30:20,259 - INFO - set random seed: 1999
+2026-10-03 07:30:20,824 - INFO - set random seed: 1999
+2026-10-03 07:30:21,384 - INFO - set random seed: 1999
+2026-10-03 07:30:21,947 - INFO - set random seed: 1999
+2026-10-03 07:30:22,015 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 182, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/ipdn.py", line 111, in forward
+    return self.predict(**batch)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/utils/utils.py", line 20, in wrapper
+    return func(*new_args, **new_kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/ipdn.py", line 157, in predict
+    ret = self.predict_by_feat(scan_ids, object_idss, ann_ids, out, superpoints, gt_pmasks, gt_spmasks, fps_seed_sp)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/ipdn.py", line 208, in predict_by_feat
+    piou = get_iou(pred_pmask, gt_pmask)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y23_valid_token_support/loss.py", line 30, in get_iou
+    intersection = (binarized_inputs * targets).sum(-1)
+RuntimeError: The size of tensor a (1055503) must match the size of tensor b (537406) at non-singleton dimension 0

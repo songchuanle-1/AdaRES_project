@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "本轮快照上海20:43:37，canonical begin已查询进展并尝试派发；running0/claiming0/waiting0，仅Y57用户暂停。实际所属会话与owner一致，Windows后台Disabled。前轮b760收据INCOMPLETE/lease released已独立核实，未重开旧token。快照Y61终态来自前b5a轮已报告的历史完成，不重复归档。",
+    "20:43:49复用已测试v4做一次真实资源核验：server-2 GPU0仍由未登记于本项目的compute PID13813占用，显存24136MiB、86°C、上限280W/实际278.97W，无授权独占空槽。资源证据pipeline/checks/gpu0_lifecycle_v4_90bb8a2b74e6484893f5a70eec536310.json，SHA256 2a2342406c606258ec60450cafd5413de98d46a70cc59ffb858a7991f13bd606。五项done_complete/原冻结文件以及Y62/Y63各7文件/current goal/commit82fbd9f/冻结原生计划一致。",
+    "tick_attempt=Y56/resource_check/blocked，证据已归全部七项资源等待候选。没有GPU原生检查、冻结后评、准入、入队或新训练；保留两项既有CPU准备，不为凑额度制造候选或重做合成检查，不干预外来任务，不使用或更改GPU1。",
+    "20:44:18只读核实当前快照/pending哈希、checker字节与前轮故障相同，空项目队列仍触发已知queue-opening拒绝谓词。当前延续审计pipeline/checks/queue_opening_recheck_90bb8a2b74e6484893f5a70eec536310.json；本轮finish_invoked=false，不重放已知失败，不改检查器/goal/context/blocker类别，不伪造队列。执行状态INCOMPLETE，report后canonical abort并核实释放。已更新七段记忆，完整六段报告由canonical生成。"
+  ],
+  "decisions": [
+    "唯一当前授权GPU0仍由其他compute占用，Y62/Y63保持原代码、版本、冻结计划和资源等待；CPU证据不能替代真实原生稀疏YAML/TRAIN两步检查，未执行项不标PASS，不重复索问常规项目授权。",
+    "五项已完成固定30实验保留原冻结全量后评与成本比较，不重训或凭训练best晋升。Y57保持用户暂停，原epoch27的model/optimizer/scheduler不变，不恢复、迁移或从预训练重启。",
+    "已知收尾校验与外来GPU占用冲突未变；按foreground规则保存真实证据后abort/INCOMPLETE并核lease释放，不重复相同finish或绕过校验。该问题上轮已经通知，本轮没有新的实质状态变化或需用户新增操作，不重复提醒，也不改自动化。",
+    "下一步先核GPU0实时空槽及版本/goal/280W；空闲后优先Y62当前rebound原生计划，显式--gpu-id 0，真实PASS后才适配准入并既有门控派发、确认原生步数递增；资源不空闲则保留等待。"
+  ]
+}

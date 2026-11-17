@@ -1,0 +1,364 @@
+{
+  "at": "2026-09-30T11:34:21.949895+00:00",
+  "candidate": "AdaRES-Y15",
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/__init__.py",
+      "sha256": "3d62377f7ee3d13fb92f4cc006f24096f00cbedf1e26351f5d685e4f51408a06",
+      "imports": [
+        ".ipdn"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "imports": [
+        "functools",
+        "gorilla",
+        "spconv.pytorch",
+        "torch",
+        "collections",
+        "spconv.pytorch.modules",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/dec.py",
+      "sha256": "ccb6ecf1271d7b54ab3235175c6669a98e3b74782a6831c591a9d60f4de16bd4",
+      "imports": [
+        "torch",
+        "torch.nn",
+        ".sample_model",
+        "ipdn.torch.nn_new.functional",
+        "ipdn.torch.nn_new"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/ipdn.py",
+      "sha256": "4f96c6e74fbe2892913674d6d883e4e6428887ec5bfa59b29f8ec5fff34112e8",
+      "imports": [
+        "functools",
+        "pointgroup_ops",
+        "spconv.pytorch",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "torch_scatter",
+        "functools",
+        "numpy",
+        "copy",
+        "hashlib",
+        "random",
+        "contextlib",
+        "ipdn.utils",
+        ".backbone",
+        ".loss",
+        ".dec",
+        "transformers",
+        "pointnet2.pointnet2_utils",
+        ".teacher_reference.ipdn"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/loss.py",
+      "sha256": "6b78cd498b1cba013e0dfd8563f32636805a7705d03650ba76e08abc5c883d8b",
+      "imports": [
+        "gorilla",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "typing",
+        "torch.nn.utils.rnn",
+        "typing",
+        "scipy.optimize",
+        "torch.distributed",
+        "torch_scatter",
+        "numpy"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "imports": [
+        "torch",
+        "math",
+        "torch.nn",
+        "numpy",
+        "sys",
+        "os",
+        "torch.nn.functional",
+        "easydict"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/__init__.py",
+      "sha256": "411c2ec5bfca27b0711beb7cc4f0a267214e978b9c595b77c94423d095493859",
+      "imports": [
+        ".ipdn"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "imports": [
+        "functools",
+        "gorilla",
+        "spconv.pytorch",
+        "torch",
+        "collections",
+        "spconv.pytorch.modules",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/dec.py",
+      "sha256": "1714fa185b613ecf7289b425a813ef76b7ca3f4e6d7317f69dd2b21f1f0de468",
+      "imports": [
+        "torch",
+        "torch.nn",
+        ".sample_model",
+        "ipdn.torch.nn_new.functional",
+        "ipdn.torch.nn_new"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/ipdn.py",
+      "sha256": "0c405390d60f78c7a25d9ce1dab61d7b2e6fbba88758b83621a8fe037b19b8f4",
+      "imports": [
+        "functools",
+        "pointgroup_ops",
+        "spconv.pytorch",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "torch_scatter",
+        "functools",
+        "numpy",
+        "ipdn.utils",
+        ".backbone",
+        ".loss",
+        ".dec",
+        "transformers",
+        "pointnet2.pointnet2_utils"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "imports": [
+        "gorilla",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "typing",
+        "torch.nn.utils.rnn",
+        "typing",
+        "scipy.optimize",
+        "torch.distributed",
+        "torch_scatter",
+        "numpy"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion/teacher_reference/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "imports": [
+        "torch",
+        "math",
+        "torch.nn",
+        "numpy",
+        "sys",
+        "os",
+        "torch.nn.functional",
+        "easydict"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/__init__.py",
+      "sha256": "3d62377f7ee3d13fb92f4cc006f24096f00cbedf1e26351f5d685e4f51408a06",
+      "imports": [
+        ".ipdn"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "imports": [
+        "functools",
+        "gorilla",
+        "spconv.pytorch",
+        "torch",
+        "collections",
+        "spconv.pytorch.modules",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/dec.py",
+      "sha256": "ccb6ecf1271d7b54ab3235175c6669a98e3b74782a6831c591a9d60f4de16bd4",
+      "imports": [
+        "torch",
+        "torch.nn",
+        ".sample_model",
+        "ipdn.torch.nn_new.functional",
+        "ipdn.torch.nn_new"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/ipdn.py",
+      "sha256": "f533bfcffee6a70cd63c3e544e99fdc7f57f67dd6b42790723bccaa6d19bf0d1",
+      "imports": [
+        "functools",
+        "pointgroup_ops",
+        "spconv.pytorch",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "torch_scatter",
+        "functools",
+        "numpy",
+        "ipdn.utils",
+        ".backbone",
+        ".loss",
+        ".dec",
+        "transformers",
+        "pointnet2.pointnet2_utils"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/loss.py",
+      "sha256": "6b78cd498b1cba013e0dfd8563f32636805a7705d03650ba76e08abc5c883d8b",
+      "imports": [
+        "gorilla",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "typing",
+        "torch.nn.utils.rnn",
+        "typing",
+        "scipy.optimize",
+        "torch.distributed",
+        "torch_scatter",
+        "numpy"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "imports": [
+        "torch",
+        "math",
+        "torch.nn",
+        "numpy",
+        "sys",
+        "os",
+        "torch.nn.functional",
+        "easydict"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/teacher_reference/__init__.py",
+      "sha256": "411c2ec5bfca27b0711beb7cc4f0a267214e978b9c595b77c94423d095493859",
+      "imports": [
+        ".ipdn"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/teacher_reference/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "imports": [
+        "functools",
+        "gorilla",
+        "spconv.pytorch",
+        "torch",
+        "collections",
+        "spconv.pytorch.modules",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/teacher_reference/dec.py",
+      "sha256": "1714fa185b613ecf7289b425a813ef76b7ca3f4e6d7317f69dd2b21f1f0de468",
+      "imports": [
+        "torch",
+        "torch.nn",
+        ".sample_model",
+        "ipdn.torch.nn_new.functional",
+        "ipdn.torch.nn_new"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/teacher_reference/ipdn.py",
+      "sha256": "0c405390d60f78c7a25d9ce1dab61d7b2e6fbba88758b83621a8fe037b19b8f4",
+      "imports": [
+        "functools",
+        "pointgroup_ops",
+        "spconv.pytorch",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "torch_scatter",
+        "functools",
+        "numpy",
+        "ipdn.utils",
+        ".backbone",
+        ".loss",
+        ".dec",
+        "transformers",
+        "pointnet2.pointnet2_utils"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/teacher_reference/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "imports": [
+        "gorilla",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "typing",
+        "torch.nn.utils.rnn",
+        "typing",
+        "scipy.optimize",
+        "torch.distributed",
+        "torch_scatter",
+        "numpy"
+      ]
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y15_query_completion_gt/teacher_reference/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "imports": [
+        "torch",
+        "math",
+        "torch.nn",
+        "numpy",
+        "sys",
+        "os",
+        "torch.nn.functional",
+        "easydict"
+      ]
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y15_query_completion_res.yaml",
+      "sha256": "b2a0e59b48067cd1335c20da31ec1c0e35766e78231aa011fe8b86a231effa99"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y15_query_completion_gt_res.yaml",
+      "sha256": "e2c0d7f4f159fcad2a94ec04d7884c2af8e8a22dac8cc64dfc340b1ce61866f9"
+    }
+  ],
+  "python_source_count": 24,
+  "config_count": 2,
+  "ast_compile_pass": true,
+  "no_cross_variant_imports": true,
+  "teacher_physical_b4_identity": true,
+  "frozen_parent_config_except_registered_intervention": true,
+  "candidate_evidence_hashes_verified": 63,
+  "remote_byte_identity": true,
+  "limitations": "Shared dataset/native ops/utilities remain dependencies; this source audit is not a performance or novelty test."
+}

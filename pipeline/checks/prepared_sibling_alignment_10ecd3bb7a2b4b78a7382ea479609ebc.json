@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-25T04:58:06.640046+08:00",
+  "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "original_y62_commit": "60466af4c1ade119b2a9f78687ad9d5e21358e2c",
+  "exact_changed_files": [
+    "AdaRES/configs_song/model_paper5/adares_y63_peer_bilinear_res.yaml",
+    "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/__init__.py",
+    "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/backbone.py",
+    "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/dec.py",
+    "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/ipdn.py",
+    "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/loss.py",
+    "AdaRES/ipdn/model_paper5/adares_y63_peer_bilinear/sample_model.py"
+  ],
+  "Y62_tested_files_unchanged": 7,
+  "Y63_tested_files_verified": 7,
+  "current_goal_matches": true,
+  "y62_original_plan": {
+    "path": "pipeline/checks/y62_smoke_a8ec50e321474b429384cda38af2c33c_plan.json",
+    "sha256": "846a166b03e63735ee7f50aea7f92a711becd89d2571b27aa7f7c02d5d6995b0"
+  },
+  "y62_rebound_plan": {
+    "path": "pipeline/checks/y62_smoke_rebound_10ecd3bb7a2b4b78a7382ea479609ebc_plan.json",
+    "sha256": "3a08d3f568056fa5dccb7e30e367d75798d555a7cee4865e6ba6e301374e61a8"
+  },
+  "y63_native_plan": {
+    "path": "pipeline/checks/y63_smoke_10ecd3bb7a2b4b78a7382ea479609ebc_plan.json",
+    "sha256": "98ec9124cbeab6225ddc10fdf4b526f4b6108fa56e615db90146da1d831feb94"
+  },
+  "negative_controls": {
+    "candidate_id_refused": true,
+    "old_commit_refused": true
+  },
+  "native_smoke_executed": false,
+  "queue_changed": false,
+  "running_changed": false,
+  "production_sync": false,
+  "authorization_changed": false,
+  "model_revision": false
+}

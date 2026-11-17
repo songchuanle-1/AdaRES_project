@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "b8bc4d8180774f7a8ccac5819670c991",
+  "id": "AdaRES-Y89",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y89",
+    "label": "AdaRES-Y89 fixed30",
+    "config": "configs_song/model_paper5/adares_y89_stage_evidence_norm_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "5f1c4bde4b682fabd84fdc84a4341ba2c845fe71",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y89.json",
+    "scientific_candidate_id": "AdaRES-Y89",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 60578,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y89_stage_evidence_norm_res_20261107_012457.log",
+    "launched": "2026-11-07T01:25:33"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y89 fixed30] configs_song/model_paper5/adares_y89_stage_evidence_norm_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y89.py",
+    "sha256": "0d604513ed6b191007127d76a0efcc88db2e8f7b18841f4df7682de512cd3795"
+  }
+}

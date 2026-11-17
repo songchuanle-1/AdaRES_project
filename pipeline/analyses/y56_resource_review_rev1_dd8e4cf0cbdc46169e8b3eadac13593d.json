@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "revision": 1,
+  "CPU_equivalence_passed": true,
+  "native_backward_passed": true,
+  "native_predict_latency_ratios": [
+    1.2484760492725224,
+    1.2516074468320282,
+    1.1879763879485374,
+    1.286308424665578,
+    1.129782464428182,
+    1.2654123183298456,
+    1.2107463801883227,
+    1.2821987498164076,
+    1.1654159171614766,
+    1.680390460801416
+  ],
+  "median_ratio": 1.2500417480522752,
+  "resource_gate_passed": false,
+  "failure_scope": "implementation",
+  "reason": "Per-expression raw-query unique still sorts, and any duplicate raw query triggers full high-dimensional grouping of all128 rows. A semantics-equivalent sparse check is available.",
+  "source_bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "ce2b2f75d08f7ba3dda77d922fe83e1c2d0dc7f0fba9e8331b31c9b6cd1338db"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y56_cpu_rev1_v2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+      "sha256": "070a8aba1e7603bc43645c2cc4340f34d0a2522860426aebfc86dcf2c33affd1"
+    },
+    {
+      "path": "pipeline/analyses/y56_native_rev1_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+      "sha256": "69f4798dbc539decec22aea0a9988e948bba76f1cc0a70bc921a7bd305c37288"
+    },
+    {
+      "path": "pipeline/analyses/y56_resources_rev1_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+      "sha256": "3caf28fb4ece3d6e610a21e2a5e2006de6e63fe9c1d21d21444ced1b41d8e726"
+    }
+  ],
+  "interpretation": "Revision1 improved runtime without resolving cost concern. Not a failed hypothesis or numerical gate relaxation."
+}

@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-25T21:48:08.463760+08:00",
+  "before": {
+    "backbones": "/data-controller/songcl/IPDN/data",
+    "source_marker": "9bea5e906be3a478be50442db521e766c446a1ec"
+  },
+  "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "actual_source_integrity_verified": true,
+  "source_model_changed": false,
+  "runtime_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data-controller/songcl/IPDN/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "scripts/prepare_server1_source.py",
+      "sha256": "8432cecfc1acc0574c4d690fccf55c7f16108f67424f6a1b5a81f540e087fdad"
+    },
+    {
+      "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+      "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+    }
+  ]
+}

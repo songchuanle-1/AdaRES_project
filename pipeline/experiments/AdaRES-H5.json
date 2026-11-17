@@ -1,0 +1,25 @@
+{
+  "id": "AdaRES-H5",
+  "config": "configs_song/model_paper5/adares_h5_late_global_query_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_earlystop",
+  "history": [
+    {
+      "ts": "2026-09-25T17:31:16.844789",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-09-26T13:47:22.534177",
+      "status": "done_earlystop",
+      "best_miou": "0.5061",
+      "epochs": "30/30"
+    }
+  ],
+  "launched": "2026-09-25T17:31:16",
+  "final_best": "0.5061",
+  "finished_at": "2026-09-26T13:47:22",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

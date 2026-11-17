@@ -1,0 +1,21 @@
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "configs_song/model_paper5/adares_y30_query_trajectory_res.yaml", "config_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03", "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y30_query_trajectory_res/20261006_065807/best.pth", "checkpoint_sha256": "6b510ae91d1fb8d914d1304b199142e20b1c2a022a287f0077fb802bcef5bde0", "checkpoint_meta": {"epoch": 20, "best_miou": 0.5043142437934875}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 165026951, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 1, "utilization": 0}, "repeat_max_iou_difference": 0.7983501553535461, "repeat_miou_difference": 8.487606755713806e-05, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.3321022782474756, 0.32289816811680794, 0.33028880693018436, 0.328788286074996, 0.3256935980170965], "peak_allocated_gib": 4.063660144805908, "peak_reserved_gib": 6.486328125, "elapsed_seconds": 197.22643255256116}
+{"expressions": 9508, "scenes": 141, "miou": 0.5042293936346574, "acc25": 0.6052797644089188, "acc50": 0.5575305006310476, "spmiou": 0.4701502926409739}
+
+STDERR:
+Using backend: pytorch
+2026-10-07 03:22:15,416 - INFO - Load val scanrefer: 9508 samples
+2026-10-07 03:22:17,090 - INFO - set random seed: 1999
+2026-10-07 03:22:21,182 - INFO - set random seed: 1999
+2026-10-07 03:23:57,233 - INFO - set random seed: 1999

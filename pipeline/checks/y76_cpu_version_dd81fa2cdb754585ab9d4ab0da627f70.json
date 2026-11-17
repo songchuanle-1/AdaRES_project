@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y76",
+  "code_commit": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "parent_commit": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "retained_branch": "refs/heads/adares-y76-stage-confidence-conditioning",
+  "working_HEAD": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70_source_snapshot.json",
+    "sha256": "cd9983fee5cfaa7beeed694b79308550197ad951093b470ed43d0a0d65aa767c"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y76_cpu_dd81fa2cdb754585ab9d4ab0da627f70.json",
+    "sha256": "371c5f0a9b49d900737e7d1060b98b9fb5af5a4375fbd914eae8ad31a31bc987"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y76_stage_confidence_conditioning_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y76_stage_confidence_conditioning/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y76_cpu_version_dd81fa2cdb754585ab9d4ab0da627f70.index",
+    "sha256": "9bd79408dc32a7dd93f0ffb52ca0a9eb547b514834c23a95b3043c666960d1d4"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y76_cpu_version.py",
+      "sha256": "abe1f6cb244574b07d6182e1115cfefb684a1c84ec5c54965930224dbcd09369"
+    },
+    {
+      "path": "scripts/probe_y76_cpu.py",
+      "sha256": "9c35a5e9ba3dd1168e42cd7edc27d47143806f3c5c75897b4b3ce0e6987ee3cf"
+    },
+    {
+      "path": "scripts/prepare_y76_stage_confidence_conditioning.py",
+      "sha256": "e5eb2aaccfa2ecafeeab6336e8d9e1de5ff9bef4dbf3eab11a7995023687d5b1"
+    }
+  ]
+}

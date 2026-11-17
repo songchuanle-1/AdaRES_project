@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y94",
+  "config": "configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "8faef574e01ae29bf5504380ed317dcc33420720",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "retained_branch": "refs/heads/adares-y94-query-geometry-bias",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y94_native.py",
+    "sha256": "c07c51643e4fa37f08056add3a03ff65d5d4ee9f7b6aae3f4d6903208a2576dd"
+  },
+  "planned_command": "python -B scripts/run_y94_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching AdaRES-Y91 full30 checkpoint verification/canonical archive and fresh exclusive idle/unreserved authorized GPU0. Earlier Y93 precedes Y94. No GPU1, power/data/runtime substitution; changed HEAD/current owner needs a NEW binding.",
+  "checks": "Actual original sparse TRAIN two finite task losses/backward/updates; original sampled query positions, one shared bounded geometry bias consumed by six ordered original self attentions, exact original SCG hard-neighborhood exclusions, fourteen shared indicators, independent head/query/expression formula rows, zero then learned bias, finite new/original/query gradients, native modes and memory. Native callbacks remain unexecuted; CPU is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y94_native_9cbbb7d004b84132a4129c4f75781a62_server2_program.py",
+    "sha256": "9ab09afa79af4d19739ac37b06c45fbaec8933221463a29115f742cc9165c4bf"
+  }
+}

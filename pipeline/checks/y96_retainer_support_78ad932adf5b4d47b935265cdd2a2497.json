@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "token": "78ad932adf5b4d47b935265cdd2a2497",
+  "id": "AdaRES-Y96",
+  "source_specialization_only": true,
+  "originals_unchanged": true,
+  "original_templates": [
+    {
+      "path": "scripts/retain_y95_cpu_native.py",
+      "sha256": "a0fdefd78fbd92228e359d796142913bdf3e4f66a717f7e4aeba7d1a73ebd64d"
+    },
+    {
+      "path": "scripts/test_y95_runtime_plan.py",
+      "sha256": "c259ce0942c1af6c0d32b515730ae2838b0488ddc4d622cae81af776a4446aa6"
+    }
+  ],
+  "new_helpers": [
+    {
+      "path": "scripts/retain_y96_cpu_native.py",
+      "sha256": "2265a41d0cf25c3484e69bcbb7b46160956082ecfbfebbaf8b348bbf049f1967"
+    },
+    {
+      "path": "scripts/test_y96_runtime_plan.py",
+      "sha256": "fb95a524d6a47fb27d3567c964c1b2b9bc6c58e7c90405e92d22f1f8c3f083c9"
+    }
+  ],
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/retain_y95_cpu_native.py",
+      "sha256": "a0fdefd78fbd92228e359d796142913bdf3e4f66a717f7e4aeba7d1a73ebd64d"
+    },
+    {
+      "path": "scripts/test_y95_runtime_plan.py",
+      "sha256": "c259ce0942c1af6c0d32b515730ae2838b0488ddc4d622cae81af776a4446aa6"
+    },
+    {
+      "path": "scripts/retain_y96_cpu_native.py",
+      "sha256": "2265a41d0cf25c3484e69bcbb7b46160956082ecfbfebbaf8b348bbf049f1967"
+    },
+    {
+      "path": "scripts/test_y96_runtime_plan.py",
+      "sha256": "fb95a524d6a47fb27d3567c964c1b2b9bc6c58e7c90405e92d22f1f8c3f083c9"
+    },
+    {
+      "path": "scripts/create_y96_retainer.py",
+      "sha256": "4a2add8d24f78f16514ab88406ddfa3c3d8f98382738b696172c779c1abb589d"
+    }
+  ]
+}

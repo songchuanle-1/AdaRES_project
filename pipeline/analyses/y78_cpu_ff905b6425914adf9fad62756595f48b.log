@@ -1,0 +1,9 @@
+Using backend: pytorch
+2026-11-01 09:51:03,633 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=787 unexpected=0
+2026-11-01 09:51:03,924 - INFO - Load train scanrefer: 36665 samples
+2026-11-01 09:51:08,021 - INFO - set random seed: 1999
+/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.
+  warnings.warn(msg, FutureWarning)
+Traceback (most recent call last):
+  File "<stdin>", line 99, in <module>
+AssertionError

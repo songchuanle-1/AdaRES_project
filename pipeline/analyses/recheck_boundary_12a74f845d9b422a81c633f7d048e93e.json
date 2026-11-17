@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "candidate_ids": [
+    "AdaRES-Y46",
+    "AdaRES-Y49"
+  ],
+  "snapshot_time": "2026-10-15T17:48:24.098404+00:00",
+  "compact_due_count": 0,
+  "compact_bootstrap_required": true,
+  "reserve_count": 2,
+  "reserve_budget": 0,
+  "canonical_blocked_recheck_fields": {
+    "AdaRES-Y46": {
+      "last_check_at": "2026-10-15T15:48:50.704714+00:00",
+      "next_check_at": "2026-10-16T01:50:50.964595+08:00"
+    },
+    "AdaRES-Y49": {
+      "last_check_at": "2026-10-15T15:48:50.704714+00:00",
+      "next_check_at": "2026-10-16T01:50:50.964595+08:00"
+    }
+  },
+  "effective_recheck_local": "2026-10-16T01:50:50.964595+08:00",
+  "actual_resource_start_local": "2026-10-16T01:52:29.198360+08:00",
+  "resource_evidence": {
+    "path": "pipeline/analyses/due_resources_12a7_12a74f845d9b422a81c633f7d048e93e.json",
+    "sha256": "12941e87dc94e6d1fe7845f6749f488c59921c0c80f83d09d5107c203dc6026b"
+  },
+  "early_time_guard": "An initial shell time guard returned before invoking the remote probe; no remote attempt or project side effect then.",
+  "interpretation": "Existing candidates not due at snapshot, then became due during this tick. Only one real shared remote probe after original retry. No new candidate pool, broad route audit, mutated snapshot/checker/deadline or free-GPU inference.",
+  "immutable_context_and_pending_state_not_modified": true
+}

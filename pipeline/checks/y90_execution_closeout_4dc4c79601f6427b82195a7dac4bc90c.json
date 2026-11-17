@@ -1,0 +1,108 @@
+{
+  "complete": true,
+  "token": "4dc4c79601f6427b82195a7dac4bc90c",
+  "observed_at": "2026-11-07T07:22:15.541795+08:00",
+  "Y88_original_fixed30_checkpoint_verified_and_archived": true,
+  "Y88_training_best_not_FIRST": 0.5037736296653748,
+  "Y90_real_native_losses": [
+    4.615510940551758,
+    6.31085729598999
+  ],
+  "Y90_native_peak_reserved_bytes": 6983516160,
+  "Y90_actual_native_admission_guards": 23,
+  "Y90_source_resource_protocol_guards": 13,
+  "Y90_actual_training_PID": 2442962,
+  "increasing_native_counters_verified": true,
+  "Y89_PID_and_original_marker_preserved": true,
+  "Y89_terminal_preparation_guards": 25,
+  "Y89_checkpoint_loaded": false,
+  "Y91_original_preparation_preserved": {
+    "code_commit": "a3bd19404f625bb1d9bc358a7e78ef0f86054692",
+    "CPU_result": {
+      "path": "pipeline/analyses/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "a1df9ade614cd688a8151b3179d3958f62b8672b6bf1810bc3fb7c5cb1a149e7"
+    },
+    "CPU_program": {
+      "path": "pipeline/checks/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a_program.py",
+      "sha256": "19c72f606cb7091923ccf383e8500a87771d6908a1d3203d493641b775f5c507"
+    },
+    "native_preparation": {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "ed8a29426963d8423a5ecf69d90afc10208489d650350d9bca332d1fe714df57"
+    },
+    "native_smoke_plan_server1": {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server1_plan.json",
+      "sha256": "9b25b40deb0cdf3fd698a500277cab52780f1e119fd9c281376f93647703ad6a"
+    },
+    "native_smoke_plan_server2_gpu0": {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server2_plan.json",
+      "sha256": "399403aeb492aba51a4ae219fae16ff62ea5a0100a848089e7770fba707908d2"
+    }
+  },
+  "new_admissions": 1,
+  "new_training_launches": 1,
+  "exact_archives": 1,
+  "new_scientific_candidates": 0,
+  "formal_FIRST_evaluation_executed": false,
+  "cost_comparison_executed": false,
+  "GPU1_and_Y57_still_user_paused": true,
+  "queue_running_unchanged": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y88_server1_fixed30_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "9bb5616f4736c7b1b29a6a6cee00a4b7245acfad5c2806c00a15b81594ec706b"
+    },
+    {
+      "path": "pipeline/checks/y88_server1_fixed30_4dc4c79601f6427b82195a7dac4bc90c_archive_binding.json",
+      "sha256": "5748474ec1e58a36c1fedf5dcb7a992a03145fe8b6c134489fc67644d8cef297"
+    },
+    {
+      "path": "pipeline/admissions/AdaRES-Y90.json",
+      "sha256": "f790bc29637612751ae4e483a2ad21efa6c468d273ddadf4523ad182bb585f56"
+    },
+    {
+      "path": "pipeline/analyses/y90_server1_smoke_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "90b12aa0c75d90ed73a8b10a07eeabf9fde2d140bdc31e5d054d255fe1183a5c"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_native_smoke.json",
+      "sha256": "e5ca962a1bf58a73311fb976daa8d9559d83581fe2a3ee2a82b42a9143ad6cba"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y90_4dc4c79601f6427b82195a7dac4bc90c_post_training_freeze.json",
+      "sha256": "ad60ab5a94db03b12405a043be738aae978786d560d3b707357150994ec95395"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y90_4dc4c79601f6427b82195a7dac4bc90c_closeout.json",
+      "sha256": "cd61fb7196dd0d69961cd8931f827981a5c9fefac5ae4a192fffce71f415dae1"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y89_4dc4c79601f6427b82195a7dac4bc90c_closeout.json",
+      "sha256": "41e1071e332348b8053dffa9f60204e6f47bdcfaf487d6ae1c0d140f88509ae6"
+    },
+    {
+      "path": "pipeline/checks/y89_terminal_preparation_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "75b9173de2899275d3f1e81b87946166cd7be4e84f1f6e422499fce6a9085cd1"
+    },
+    {
+      "path": "pipeline/checks/adares-y90_source_selection_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "7597434ab85579e529b1040daa73528f10d394553d9576c66b54c20b4514d4da"
+    },
+    {
+      "path": "pipeline/checks/adares-y90_admission_guards_4dc4c79601f6427b82195a7dac4bc90c.log",
+      "sha256": "02f765f9b64acb6bfaefedf9ee63c94f3d73c99f5c591b3900763ebf93c9535b"
+    },
+    {
+      "path": "scripts/record_y90_execution_closeout.py",
+      "sha256": "de639ee40d8fbd77585668888bd7f38c966014f9a3242bf13cd00f032107f50f"
+    },
+    {
+      "path": "pipeline/checks/y89_terminal_helpers_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "cb023c9e63fba1c686025683219f8ce2f450ebc18690003461d3839aa2928b77"
+    },
+    {
+      "path": "pipeline/checks/y90_execution_preparation_4dc4c79601f6427b82195a7dac4bc90c.json",
+      "sha256": "b7c2ac91c8b76f3e5689ab0ac04ca625c701456819bfb27bdc29e329341d8628"
+    }
+  ]
+}

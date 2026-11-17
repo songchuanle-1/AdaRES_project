@@ -53,10 +53,16 @@ def predictor():
             scores = F.softmax(out["indis"][index], dim=-1)[:, 1]
             selected = int(scores.argmax())
             oracle = int(ious.argmax())
+            positive_oracle = float(ious[positives].max()) if positives.any() else 0.0
+            negative_oracle = float(ious[~positives].max()) if (~positives).any() else 0.0
+            positive_selected = int(scores.masked_fill(~positives.to(scores.device), -1).argmax()) if positives.any() else selected
             rows.append({
                 "scene_index": self.probe_scene_index,
                 "selected_iou": float(ious[selected]),
                 "oracle_iou": float(ious[oracle]),
+                "positive_oracle_iou": positive_oracle,
+                "negative_oracle_iou": negative_oracle,
+                "positive_selected_iou": float(ious[positive_selected]),
                 "selected_positive": bool(positives[selected]),
                 "oracle_positive": bool(positives[oracle]),
                 "positive_count": int(positives.sum()),
@@ -76,12 +82,13 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--scenes", type=int, default=16)
     parser.add_argument("--gpu-id", type=int, default=1)
+    parser.add_argument("--split", choices=("train", "val"), default="val")
     args = parser.parse_args()
 
     gorilla.set_cuda_visible_devices([args.gpu_id], 1)
     gorilla.set_random_seed(1999)
     cfg = gorilla.Config.fromfile(args.config)
-    data_cfg = cfg.data.val.copy()
+    data_cfg = getattr(cfg.data, args.split).copy()
     data_cfg.training = False
     data_cfg.aug = False
     data_cfg.with_elastic = False
@@ -104,12 +111,22 @@ def main():
     model.dec.register_forward_pre_hook(capture)
     model.predict_by_feat = types.MethodType(predictor(), model)
     rows = []
+    repeat_mismatch = 0
     for index in range(min(args.scenes, len(dataset))):
         batch = dataset.collate_fn([dataset[index]])
         model.probe_scene_index = index
         model.probe_labels = batch["sp_ins_labels"]
         with torch.no_grad():
-            rows.extend(model(batch, mode="predict")["rows"])
+            base = model(batch, mode="predict")["rows"]
+            repeat = model(batch, mode="predict")["rows"]
+        repeat_mismatch += sum(
+            a["selected_positive"] != b["selected_positive"]
+            or a["oracle_positive"] != b["oracle_positive"]
+            or abs(a["selected_iou"] - b["selected_iou"]) > 1e-4
+            or abs(a["oracle_iou"] - b["oracle_iou"]) > 1e-4
+            for a, b in zip(base, repeat)
+        )
+        rows.extend(base)
     if not rows:
         raise RuntimeError("No expressions in fixed diagnostic subset")
     errors = [row for row in rows if row["oracle_iou"] - row["selected_iou"] > 0.05]
@@ -118,8 +135,10 @@ def main():
     ]
     result = {
         "checkpoint": args.checkpoint,
+        "split": args.split,
         "scenes": min(args.scenes, len(dataset)),
         "expressions": len(rows),
+        "repeat_mismatch": repeat_mismatch,
         "material_errors": len(errors),
         "error_selected_positive_oracle_negative": len(conflicting),
         "error_oracle_positive": sum(row["oracle_positive"] for row in errors),
@@ -127,6 +146,11 @@ def main():
         "mean_positive_fraction": statistics.fmean(
             row["positive_count"] / row["query_count"] for row in rows
         ),
+        "selected_miou": statistics.fmean(row["selected_iou"] for row in rows),
+        "oracle_miou": statistics.fmean(row["oracle_iou"] for row in rows),
+        "positive_oracle_miou": statistics.fmean(row["positive_oracle_iou"] for row in rows),
+        "negative_oracle_miou": statistics.fmean(row["negative_oracle_iou"] for row in rows),
+        "positive_selected_miou": statistics.fmean(row["positive_selected_iou"] for row in rows),
         "rows": rows,
     }
     Path(args.output).write_text(json.dumps(result, indent=2), encoding="utf-8")

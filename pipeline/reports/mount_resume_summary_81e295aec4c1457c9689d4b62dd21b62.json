@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "project": "AdaRES_project",
+  "token": "81e295aec4c1457c9689d4b62dd21b62",
+  "task": "manual_mount_recovery_of_existing_admitted_training",
+  "human_request": "挂载了 提交训练吧",
+  "preflight_at": "2026-10-20T12:43:54.778330+08:00",
+  "deadline_at": "2026-10-20T13:43:54.778330+08:00",
+  "context_sha256": "25436e1e75a118b1a6ceb25914270a84cd6d97995ccf3769d00aff702cae634f",
+  "pending_sha256": "2947738a33480eb40be6e01ff173a5033765a18528c0f7a7996c58132f44f4f4",
+  "source_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "training_result": "both_existing_runs_resumed_with_verified_native_progress",
+  "postflight_result": "INCOMPLETE: Blocked GPU candidate has a queue opening",
+  "training": [
+    {
+      "id": "AdaRES-Y52", "server": "server-2", "gpu": 1, "pid": 35832,
+      "saved_epoch": 23, "resume_epoch": 24, "total_epochs": 30, "seed": 1999,
+      "preserved_best_mIoU": 0.5094767808914185,
+      "progress_samples": [
+        {"observed_local": "2026-10-20T13:04:51.069718+08:00", "epoch": 24, "step": 127},
+        {"observed_local": "2026-10-20T13:04:57.288393+08:00", "epoch": 24, "step": 138}
+      ],
+      "original_checkpoints_unchanged": true,
+      "model_optimizer_scheduler_restored": true
+    },
+    {
+      "id": "AdaRES-Y54", "server": "server-2", "gpu": 0, "pid": 36864,
+      "saved_epoch": 24, "resume_epoch": 25, "total_epochs": 30, "seed": 1999,
+      "preserved_best_mIoU": 0.5062541365623474,
+      "progress_samples": [
+        {"observed_local": "2026-10-20T13:05:38.537049+08:00", "epoch": 25, "step": 125},
+        {"observed_local": "2026-10-20T13:05:44.789083+08:00", "epoch": 25, "step": 138}
+      ],
+      "original_checkpoints_unchanged": true,
+      "model_optimizer_scheduler_restored": true
+    }
+  ],
+  "semantics": {"unfinished_epoch_replayed": true, "fresh_start": false, "new_candidate": false, "new_admission": false, "new_efficacy_claim": false, "git_commit_or_push": false, "scheduler_changed": false, "gpu_diagnostic_run": false},
+  "local_tests": {"command": "python -B -m unittest test_resume_mounted_training -v", "cwd": "D:/project/AdaRES_project/scripts", "result": "OK", "tests_run": 4, "gpu_used": false},
+  "closure_risk": {
+    "status": "confirmed_by_canonical_finish_exit_1",
+    "candidate_ids": ["AdaRES-Y56", "AdaRES-Y57"],
+    "blocker_kind": "exclusive_gpu_slot",
+    "preflight_active_count": 0,
+    "actual_active_count_after_resume": 2,
+    "checker_reads": "context.queue.active_tasks rather than current queue",
+    "do_not_change": ["snapshot", "deadline", "blocker_kind", "scientific_stage", "checker"],
+    "on_honest_postflight_failure": "Preserve failure, abort owned tick, verify release; leave remote training running."
+  },
+  "evidence": [
+    {"path": "scripts/resume_mounted_training.py", "sha256": "42910e10deca1acf4f6c63fbe9ca32bd1c7e461802abf5ed861b508c03be31d9"},
+    {"path": "scripts/test_resume_mounted_training.py", "sha256": "4a4b757f675b16a3675ad1d112e1f29ad09d814ab9d20d6b2cff071158c3a341"},
+    {"path": "pipeline/reports/mount_resume_AdaRES-Y52_81e295aec4c1457c9689d4b62dd21b62_inspect.json", "sha256": "06cbdcfa953786b98f657fd10bcad2127a141c99c21fa60b1fcbb65ec98dba07"},
+    {"path": "pipeline/reports/mount_resume_AdaRES-Y52_81e295aec4c1457c9689d4b62dd21b62_launch.json", "sha256": "98285ffd93ab2fbe7cf47e8f1a1b2b24aba2ff8ff5bca84461225ad820f2905e"},
+    {"path": "pipeline/reports/mount_resume_AdaRES-Y52_81e295aec4c1457c9689d4b62dd21b62_verify.json", "sha256": "ac38e76595e95130482e432bc7054af01d056c91947c3989cc117a59580bc559"},
+    {"path": "pipeline/reports/mount_resume_AdaRES-Y54_81e295aec4c1457c9689d4b62dd21b62_inspect.json", "sha256": "f442754a1485835e81b61e409c2db6067ec78c04b123c220cda81c174147fbeb"},
+    {"path": "pipeline/reports/mount_resume_AdaRES-Y54_81e295aec4c1457c9689d4b62dd21b62_launch.json", "sha256": "0498d5e07230c86b5e56efcd2b2189fee46af5a11398742adf7f18fe7b48318c"},
+    {"path": "pipeline/reports/mount_resume_AdaRES-Y54_81e295aec4c1457c9689d4b62dd21b62_verify.json", "sha256": "85e87ba60736c1e591783a9fa395d9f4ddd9d78ef271c4fa524345e2742c1f34"}
+  ]
+}

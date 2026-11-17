@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "reviewed_at_local": "2026-10-16T14:37:17.679315+08:00",
+  "y51": {
+    "stage": "rejected",
+    "failure_scope": "hypothesis",
+    "fixture_count": 32,
+    "native_TRAIN_expressions": 32,
+    "unchanged_selected_masks": 65,
+    "raw_foreground_changed_cases": 29,
+    "maximum_score_error": 2.220446049250313e-16,
+    "literal_native_float32_loss_gradient_exact": true
+  },
+  "new_model_variants": 0,
+  "GPU_tests": 0,
+  "training_launches": 0,
+  "new_admissions": 0,
+  "tests": {
+    "path": "pipeline/analyses/y51_gauge_controls_v2_fbd1_fbd16ee677ad4d3aa2bbc403acdc2a67.json",
+    "sha256": "d19532b161c2090ca54156e35f47b69e9b2a8c5d0835e7653abe2c19e68b436c"
+  },
+  "disposition": {
+    "path": "pipeline/analyses/Y51_gauge_disposition_fbd1.md",
+    "sha256": "093f36796b1661cbd04b915502c93405159109daa1aeeb7d4f53e4b756c1b20f"
+  },
+  "review": {
+    "path": "pipeline/reviews/motivation_review_Y51_fbd1.md",
+    "sha256": "9e2ec639bae26c442e78fd818532b2ad59f40899ccfaacbc3542aa67480c9eb3"
+  },
+  "decision": {
+    "path": "pipeline/decisions/20261016-143659_other.md",
+    "sha256": "cc95bfb6c96a195a05b21957097b28a6330d673587435060badc0ca9fd34977c"
+  },
+  "retained_external_block": {
+    "path": "pipeline/analyses/y50_commit_authorization_block_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+    "sha256": "1017346baaa6dcf0ffdbd1b7f5bf335c380b115c29a952131681aeea90017f25"
+  },
+  "blocked_candidate": "AdaRES-Y50",
+  "blocked_retry_after_unchanged": "2026-10-16T18:08:33.053814+08:00",
+  "reason": "Bounded new diagnosis tested and rejected. Remaining registered work retains original external human commit-authorization hold, not a GPU block/no-information-gain/exhaustion/deadline claim."
+}

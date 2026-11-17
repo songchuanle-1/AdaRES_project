@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "4dc4c79601f6427b82195a7dac4bc90c",
+  "id": "AdaRES-Y90",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y90",
+    "label": "AdaRES-Y90 fixed30",
+    "config": "configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y90.json",
+    "scientific_candidate_id": "AdaRES-Y90",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 2442962,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y90_query_peer_affinity_res_20261107_071419.log",
+    "launched": "2026-11-07T07:14:57"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y90 fixed30] configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y90.py",
+    "sha256": "a51b83862f947a3e4be8df03c6ae0d6e6e8e65fef41e67bd74d70d0ecf01d010"
+  }
+}

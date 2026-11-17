@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-23T20:58:39.581625+08:00",
+  "id": "AdaRES-Y60",
+  "pid": 17186,
+  "runtime_evidence": {
+    "path": "pipeline/checks/ef_gpu0_runtime_3e61cded0e934db5bb4f9abd4451c12c.json",
+    "sha256": "9f683814b26e446b570bc14d94c4b3ad570eaba0da9816af1bd7c5480d3ff15e"
+  },
+  "latest_resource_evidence": {
+    "path": "pipeline/checks/gpu0_lifecycle_v3_3e61cded0e934db5bb4f9abd4451c12c.json",
+    "sha256": "5adbfcd8789dc0c9ef0efec9ef518d11b763765904a5990c52df739855b1f67a"
+  },
+  "latest_native_steps": [
+    [
+      1,
+      239
+    ],
+    [
+      1,
+      340
+    ]
+  ],
+  "hardware": {
+    "gpu0": "280.00, 257.02, 74, 16922"
+  },
+  "actual_test_command": [
+    "C:\\song_data\\app\\miniconda\\root\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "test_gpu0_lifecycle_v3"
+  ],
+  "test_returncode": 0,
+  "regression_tests_passed": 8,
+  "test_log": {
+    "path": "pipeline/checks/y60_handoff_3e61cded0e934db5bb4f9abd4451c12c.log",
+    "sha256": "f2c53ce86fe0aefcf6ae8ae62f4dcef8a139f07b7f842d88dfeaf529d78b5683"
+  },
+  "preserved_operational_failure": {
+    "path": "pipeline/checks/lifecycle_idle_failure_3e61cded0e934db5bb4f9abd4451c12c.json",
+    "sha256": "3992f23c9f002ee1d6d2e34df903e596f14bc19420f1d2a3af9c1ea84189c1c7"
+  },
+  "source_evidence": [
+    {
+      "path": "scripts/recheck_gpu0_lifecycle.py",
+      "sha256": "9dd77f989ee372052c905fbcff6f92e274cbde9323a07c3384868edd35172d77"
+    },
+    {
+      "path": "scripts/recheck_gpu0_lifecycle_v2.py",
+      "sha256": "6f346c2b5b3725cb3605403c4695da778bc03474d88764ba4fafbf4cea4a1f6f"
+    },
+    {
+      "path": "scripts/recheck_gpu0_lifecycle_v3.py",
+      "sha256": "7fb4ffbf0b874dc811aab66468359e210358604db003577eef8de47e2bb64252"
+    },
+    {
+      "path": "scripts/test_gpu0_lifecycle_v3.py",
+      "sha256": "9ff3e3adbda881dab4c00d7efed393cead234d6971d1c901e7501d920b7ee903"
+    }
+  ],
+  "old_collectors_preserved": true,
+  "model_changed": false,
+  "new_git_commit": false,
+  "no_GPU1_or_scheduler_change": true,
+  "scientific_efficacy": "Unknown; full frozen evaluation pending."
+}

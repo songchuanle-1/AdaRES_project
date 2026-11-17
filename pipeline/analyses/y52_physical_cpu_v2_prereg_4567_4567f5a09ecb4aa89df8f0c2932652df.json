@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "preregistered_at": "2026-10-16T15:58:51.707555+08:00",
+  "original_failure_log": {
+    "path": "pipeline/analyses/y52_physical_cpu_4567_4567f5a09ecb4aa89df8f0c2932652df.log",
+    "sha256": "86484585353aaa0b35255bf0f47b28dc49a02425a21f938fda86d4b4b76a8e0d"
+  },
+  "original_program": {
+    "path": "pipeline/analyses/y52_physical_cpu_program_4567_4567f5a09ecb4aa89df8f0c2932652df.py",
+    "sha256": "124639b88d455a26e86582c1223a58cd9b1087f8a398bf2a38a031c3a30a2e46"
+  },
+  "candidate_bundle_unchanged": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "program": {
+    "path": "pipeline/analyses/y52_physical_cpu_v2_program_4567_4567f5a09ecb4aa89df8f0c2932652df.py",
+    "sha256": "73a7f5d4882d11696dcf02113ae1f794ed179a05aa7265afeafb5cfac6742d45"
+  },
+  "test_change": "Observe each leaf and an identical candidate repeat. Score and auxiliary-score gradients still require exact equality; other shared-component gradients require finite values and error no greater than measured repeat noise or prospective 8*float32eps*max(1, gradient scale). Exact loss and all unaffected loss terms remain required.",
+  "scope": "Instrumentation clarification only. Do not erase v1 strict-equality failure, count it as native PASS, or infer efficacy; native model gate remains unrun."
+}

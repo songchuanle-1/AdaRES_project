@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "scope": "Targeted source/input/insertion comparison, not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y73",
+      "stage": "blocked",
+      "hypothesis": "The original sampled query state is successively transformed by six contextual refinement stages. A shared zero-initialized residual from that same query slot original state may ease fitting a balance between initial anchor identity and later contextual updates. Existing residual paths already retain information; information loss, novelty and efficacy are not presumed.",
+      "matched_control": "Unchanged W2 plus q_i=q_after_original_qqa_ffn_i+(q_initial-q_after_original_qqa_ffn_i)@W before each of six loop predictions. W[256,256] is exactly zero without RNG (+65536 parameters); original stage0 query tensor is the same undetached anchor for all calls. Original static mask features, query positions/sampling, all input channels/existing2D, coarse/fine equal averaging, Boolean hard gate/SCG/k/gamma, shared confidence heads/targets/losses/selector, released SPFormer, Q128/seed1999/fixed30/native YAML stay unchanged."
+    },
+    {
+      "id": "AdaRES-Y83",
+      "stage": "blocked",
+      "hypothesis": "The active norm_qqa affine transform is shared across six recurrent self/language query fusion updates. Independent per-stage copies with identical LayerNorm statistics/epsilon may ease stage-specific representation fitting. Existing stage FFNs can compensate; trained efficacy, missing information and novelty are not presumed.",
+      "matched_control": "Independent unchanged W2. Keep original norm_qqa at refinement stage0 and copy it without RNG into five private refinement_query_norms for stages1..5 (+2560). Only affine parameter sharing in LayerNorm(query_self+query_qla) changes. Initial state and all seven mask/score/confidence predictions match W2; native eps/dtype/full query channels/Q128, shared out_norm/confidence MLP, static mask, initial prediction, hard attention algorithm/sampling/SCG/k/gamma/geometry, original full input/existing2D/released backbone/targets/loss/selector/seed1999/fixed30/native YAML remain. No scans of parameters or validation-selected schedules/features/thresholds/losses."
+    },
+    {
+      "id": "AdaRES-Y87",
+      "stage": "blocked",
+      "hypothesis": "Original recurrent query refinement adds its self-attention and language-attention states before a shared active LayerNorm and stage FFN. A shared zero-initialized projection of their product at that exact sum may ease fitting conditional interactions. Both states already carry language and spatial context; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2 plus self+language+(self*language)@W before the SAME existing shared norm_qqa and original stage FFN, six calls. One zero W256x256/no RNG/+65536. Retain original coarse/fine half-average, all original tensors/queries/channels/full inputs/2D/backbone/coordinates/sampling/SCG/k/gamma/static masks/gate algorithm, seven shared confidence heads/targets/loss/selector/seed1999/fixed30/native YAML. Initial output/input-gradient anchors exact; nonzero intervention/bypass must affect intended refined masks then restore."
+    },
+    {
+      "id": "AdaRES-Y95",
+      "stage": "blocked",
+      "hypothesis": "Original neighborhood-restricted query self attention refines language-conditioned queries. A parallel shared projection of their full query-set mean into the existing self/language sum may ease fitting a global query context while retaining the local attention path. Self attention already provides context; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2. fused=self_query+query_qla+mean_all128(query_qla)@zeroW256x256, six calls before SAME original norm_qqa and original stage FFNs; +65536/no RNG/total164695173. All queries/channels stay undetached; global context is a separate path, not changed attention neighbors. Preserve original local self-attention/SCG exclusions/k/gamma, coarse/fine half-average, all original inputs/data/2D/backbone/sampling/static masks/head sharing/targets/loss/selector/seed1999/fixed30/native YAML. No threshold/temperature/loss/feature/epoch/validation scan."
+    },
+    {
+      "id": "AdaRES-Y96",
+      "stage": "blocked",
+      "hypothesis": "The original initial-query generator transforms each sampled post-SCG visual seed through three linear layers before initial prediction. A parallel learned linear residual from that SAME seed may ease initial-query fitting while retaining the complete nonlinear generator. The generator can already learn identity-like mappings; no missing information, defect, novelty or benefit is presumed.",
+      "matched_control": "Independent W2. q_init=query_generator(sampled_seed)+sampled_seed@zeroW256x256, once after the original generator and before initial prediction; +65536/total164695173/no RNG. All256 seed channels/all128 selected queries stay undetached. Original sampling indices/post-SCG features/query positions, complete five-layer generator, static mask features, six refinements/coarse-fine average/self-language sum/SCG hard neighborhoods/k/gamma/shared confidence/full inputs/2D/released backbone/targets/loss/selector/seed1999/fixed30/native YAML remain. No scans."
+    },
+    {
+      "id": "AdaRES-Y100",
+      "stage": "training",
+      "hypothesis": "Original full1024 appearance enters visual memory through three linear layers and two ReLUs before sum_norm. A zero-initialized parallel linear bypass of that SAME complete appearance vector may ease visual-memory fitting while retaining the entire original MLP. Existing projection/downstream attention already carry this information; no missing information, defect, novelty or benefit is presumed.",
+      "matched_control": "Independent W2: appearance=input_proj_2d(raw)+raw@zeroW1024x256 before SAME original sum_norm(spatial+appearance); +262144/total164891781/no RNG. Preserve all1024 raw appearance/all32 spatial/all points, complete original projection/normalization/static x_mask/seven static readouts/query generator/refinement/sampling/SCG/k/gamma/shared confidence/hard-gate algorithm/targets/loss/selector/releasedbackbone/data/seed1999/fixed30/native YAML. Single added structural connection, no feature subset/threshold/temperature/loss/epoch/validation scan."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "distinction": "Y101 bypasses each COMPLETE original current-query FFN with its same undetached pre-FFN query. Y73 instead routes original initial-query-minus-refined anchor; Y87/Y95 act BEFORE norm_qqa, Y83 changes its sharing, Y96 acts once at initial generator. Single connection independent W2; no combination, feature selection, numerical retry or reopening."
+}

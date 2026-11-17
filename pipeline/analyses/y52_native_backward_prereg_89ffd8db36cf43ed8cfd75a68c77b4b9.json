@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "preregistered_at": "2026-10-17T12:08:58.557856+08:00",
+  "prior_capture": {
+    "path": "pipeline/analyses/y52_native_capture_binding_v2_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "a27f55ceb187d642d1c258c097c30941700d07ca87a94864e944767948a4ea10"
+  },
+  "bound_setup": {
+    "path": "pipeline/analyses/y52_native_matched_capture_binding_v2_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "73b942321bcb2d745b31c9573c17fdfe4a1c0a59f8749efffcb4dcbe8e48b791"
+  },
+  "body": {
+    "path": "scripts/probe_y52_native_backward_89ff.py",
+    "sha256": "46fe63efbfd798d32c66a38b453c3a2819353bdca62a8381f7a7ab72fa5a1ef8"
+  },
+  "fixed_sample": "SAME eight frozen TRAIN scenes/32 expressions; actual batch_size2 and seed1999 per dataset access; no validation data or sample/threshold selection.",
+  "states": [
+    "released SPFormer with frozen initial candidate state",
+    "fixed trained W2 best e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52, diagnostic only"
+  ],
+  "mechanism_readout": "On SAME native decoder forward, compare original parent Criterion and corrected Criterion on exactly equal real match indices, plus independent corrected repeat with restored RNG. Measure active >0.5 matches, native score losses, full/shared-query and score-only query-gradient deltas versus repeat noise; no fixed task gain threshold.",
+  "expected_direction": "Where quality-target discrepancy is used by the existing score MSE, corrected-vs-parent gradients should differ beyond corrected-repeat noise. Zero activity or no separated signal is inconclusive, not PASS or mechanism rejection. Unexplained nonfinite/adverse results require investigation.",
+  "optimizer_restore": "Reset exact released-init model state, then actual native-config AdamW/PolyLR two optimizer steps, clip0.1. Snapshot model/all optimizer/nonempty states/scheduler/RNG after first; restore after second and require exact equality. No tensors saved to disk.",
+  "limitations": "No new parameters or model revision. Trained parent state is not a trained Y52 result. This is not inference cost/Pareto evidence, trained efficacy, commit authorization or admission.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y52_native_backward_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "602f98ae43bf8cc75933113526b9314cc91314d6e571f60bd070da494b4099a9"
+  }
+}

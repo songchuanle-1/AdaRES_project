@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "原Y68 Train17、Y69 Train8、Y70 Train3均原生步数递增，原PID/source/YAML/准入/生产marker/独占/既有280W/350W/390W保持；无合格waiting或新终态，前轮归档/启动不重放。",
+    "新增Y71早期视觉3D/既有2D乘积交互：零初始化残差在原sum_norm前一次执行。上海20:45:59至20:46:26真实CPU原生YAML/完整模型/发布骨干/TRAIN collate162738点8表达，以及float32/64独立公式/零输出梯度与RNG锚点/置换/错对应/同和不同因子/完整七阶段解码器/原sum_norm真实消费/有限非零新梯度与干预旁路检查通过。",
+    "仅七模型/YAML文件保存87019，原source/YAML协议核一致；双server-2原生两步GPU计划和10项证据负守卫通过并冻结。新增本地HEAD扩展观察器3项负守卫及真实Y68原PID递增通过，生产仍39b/9acd，旧hash-bound脚本和原收据保持。",
+    "三卡本轮canonical物理占用均忙且预约，Y71实际native两步及11项原完整冻结后评/成本等独占资源。未做GPU诊断/准入/生产同步/新训练；保存handoff、七节记忆和旧记忆精确快照，不预签postflight。"
+  ],
+  "decisions": [
+    "Y71仅比较现有两路视觉投影的显式乘积参数化，原全输入/既有2D数据及其余query refinement/置信度/损失/selector/seed1999/fixed30保持，不按验证调参、不重开旧拒绝、不宣称缺信息/新颖或效果。",
+    "真实CPU加载/合成DEC梯度与稀疏TRAIN native任务后向分开；当前无授权空槽，禁止占用原Y68/Y69/Y70。原固定30完整核证/canonical归档后，以对应精确GPU计划做实际两步PASS，才按原完整后评freeze准入并同轮启动。",
+    "复用本项目授权，Y57用户暂停/epoch27专用恢复、科学goal原字节/原数据边界/原收据、既有功耗、server-6禁用和调度频率保持；一项真实独立CPU准备完成即可收尾，不为配额复制候选，无新增用户待办。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y71_preparation_handoff_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "a23d5c6141129a8645ca66a7a34f37969f3f0391a4789f1edc9b3adafebce2c0"
+    },
+    {
+      "path": "pipeline/checks/y71_local_observer_guards_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "f9727d0e6f2005103253440ccee947fe31f074414c717bd99dfd69f85e7e4b5c"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_a785bf5276374d54baef74df31928b84.md",
+      "sha256": "7ea24b8e7c65c7e5415c5a99ea69520f94bce59c30a292e955106e932f6a8769"
+    },
+    {
+      "path": "pipeline/codex_memory.md",
+      "sha256": "3693232a9a392304a5f9fc0319a9b6c049b528963f70c6cec3a9de54b1802422"
+    }
+  ],
+  "postflight": "Pending canonical report/finish."
+}

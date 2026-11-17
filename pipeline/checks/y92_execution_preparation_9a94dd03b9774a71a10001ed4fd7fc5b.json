@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "token": "9a94dd03b9774a71a10001ed4fd7fc5b",
+  "id": "AdaRES-Y92",
+  "code_commit": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "prepared_at": "2026-11-08T04:53:55.385705+08:00",
+  "source_resource_protocol_guards": 17,
+  "scope": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0
+  },
+  "evidence": [
+    {
+      "path": "scripts/advance_y92.py",
+      "sha256": "847b8fe5c0c9f2c196ac1e9969600a8b93d35e2f7e00385047afd027e3b327d2"
+    },
+    {
+      "path": "scripts/y92_deployment.py",
+      "sha256": "42141a488431f81454001f549b816ec57227e751eda90f498b56c75ee4caf9b9"
+    },
+    {
+      "path": "scripts/test_y92_execution_guards.py",
+      "sha256": "d669f2608b70200d053892b210dd7d192fa0fdfeb9dc6fab09ccf07510390385"
+    },
+    {
+      "path": "scripts/test_y92_execution_additional.py",
+      "sha256": "66da66fd8696ca4846c978cec983d4ca7da8d08bcdff9c24db8d14053104af7d"
+    },
+    {
+      "path": "scripts/test_y92_admission.py",
+      "sha256": "fccd9c060c41ef792b4549aaa79f6fbccdb6d0e1c1a8f64724b4fdcbf11bf582"
+    },
+    {
+      "path": "scripts/prepare_y92_execution.py",
+      "sha256": "c014dc4d4556c3b5e99554c2e596bcef2074530a6ca18c93b2648e792d0c59ad"
+    },
+    {
+      "path": "pipeline/checks/y92_execution_preparation_9a94dd03b9774a71a10001ed4fd7fc5b.log",
+      "sha256": "bcc018211e95f080236ea3ae11d94292ac57eeb0f1ccf59f7dddd5a7a55b924a"
+    },
+    {
+      "path": "pipeline/checks/y92_execution_helpers_9a94dd03b9774a71a10001ed4fd7fc5b.json",
+      "sha256": "eb57eb225529fc67e10d0cbd5b6c7cca72f27aefb6f74a141fcc1f628285a3fa"
+    },
+    {
+      "path": "pipeline/checks/y92_additive_binding_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "e4ea1d2aaff391f2ccea086e1c56fdb391445557145d6ef5994fc2d89362884b"
+    }
+  ],
+  "actual_native_executed": false,
+  "actual_native_admission_guards_executed": false,
+  "actual_native_admission_tests_require_real_result": true,
+  "admitted": false,
+  "queued": false,
+  "production_HEAD_preserved": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "index_queue_running_preserved": true,
+  "signed_originals_unchanged": true,
+  "scientific_files_and_native_bodies_unchanged": true,
+  "CPU_scientific_tests_replayed": false,
+  "current_native_plan_activation_unchanged": true,
+  "frozen_review_parent": "AdaRES-Y90",
+  "full_original_review_training_in_memory_identity_tested": true,
+  "next_action": "After exact original Y90 full30 checkpoint verification/archive and fresh exclusive idle server-1 GPU0, run retained Y92 bound native server1 plan. On actual native PASS, prepare a NEW explicitly tested Y91 terminal binding for additive Y92 using that real native evidence before selecting Y92; then select, admit and canonical dispatch/observe same tick. Full original Y90 server1/350W review/training protocol is inherited with method-ID only. Server2 original native alternative remains immutable and needs its own matching execution binding if selected. No GPU1/Y57 use, source selection, receipt or launch now."
+}

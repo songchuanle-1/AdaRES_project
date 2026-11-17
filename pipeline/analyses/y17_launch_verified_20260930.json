@@ -1,0 +1,134 @@
+{
+  "source_marker": "42ffd589bfb5c27fa18d735866ddefa3a543e2ee",
+  "remote_files": [
+    {
+      "path": "configs_song/model_paper5/adares_y17_target_equivalent_pairing_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/__init__.py",
+      "sha256": "d46f98da3a0cd8119f2dcf9ac7af2205a16631940f901cf4d897c172898b14b6"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/backbone.py",
+      "sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/dec.py",
+      "sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/ipdn.py",
+      "sha256": "04e1ecabc1af1fc385a7eb7a2589465cba60a1a868b640412c2940b8da306362"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/loss.py",
+      "sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/paired_dataset.py",
+      "sha256": "b7962ca7dddae5483f46312b504fb3dd993fcda841448cec8a6939238997a88a"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/paired_objective.py",
+      "sha256": "87164c60e73d01d204ce4634fd514f45a8eb4ad58038198e4a12f437293713cf"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/pairing.py",
+      "sha256": "a15fbd63607cfb9d583aa88b01d2dfa0c50adba483a50663f6670331a5afcf64"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_y17_target_equivalent_pairing/sample_model.py",
+      "sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b"
+    },
+    {
+      "path": "tools/probe_adares_y17_contracts.py",
+      "sha256": "a4eeac8fc9d6bfe9ce325fedaae193d6d4a3a595fdf06471acefcdf6457944a1"
+    },
+    {
+      "path": "tools/probe_adares_y17_entry.py",
+      "sha256": "e2bcf4db770ee147b43fe52a9b53008758f45ff34e44212a88c97e9ec6a6879a"
+    },
+    {
+      "path": "tools/probe_adares_y17_inference_resume.py",
+      "sha256": "2343208bce45aee4bd0131fe3a76cbcf88788aae1da62829d59baa4f7dd9f722"
+    },
+    {
+      "path": "tools/probe_adares_y17_native.py",
+      "sha256": "495d58501a13c9ae30707f040926da7161be1734b595e6bdba93676030e5fdf5"
+    },
+    {
+      "path": "tools/test_adares_y17_pairing.py",
+      "sha256": "f59e1143175dd7aef27e698c125eabaa54d4792b9268d2f69c9702c8c83dd5c2"
+    },
+    {
+      "path": "tools/train.py",
+      "sha256": "04afc00889dc58e439197a04be50457664a7906d42d7badfdc96033f9d99b41e"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "AdaRES-Y17",
+      "pid": 109632,
+      "gpu": "1",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y17_target_equivalent_pairing_res_20260930_230343.log",
+      "steps": [
+        {
+          "epoch": 1,
+          "total": 30,
+          "step": 313,
+          "batches": 4686
+        },
+        {
+          "epoch": 1,
+          "total": 30,
+          "step": 314,
+          "batches": 4686
+        },
+        {
+          "epoch": 1,
+          "total": 30,
+          "step": 315,
+          "batches": 4686
+        }
+      ],
+      "command": "/home/songcl/.conda/envs/adares_project/bin/python -S tools/train.py configs_song/model_paper5/adares_y17_target_equivalent_pairing_res.yaml --num_gpus 1 --gpu_ids 1 ",
+      "launch_verified": true,
+      "tail_has_traceback": false
+    },
+    {
+      "id": "AdaRES-Y15",
+      "pid": 18796,
+      "gpu": "0",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y15_query_completion_res_20260930_194938.log",
+      "steps": [
+        {
+          "epoch": 4,
+          "total": 30,
+          "step": 780,
+          "batches": 4686
+        },
+        {
+          "epoch": 4,
+          "total": 30,
+          "step": 781,
+          "batches": 4686
+        },
+        {
+          "epoch": 4,
+          "total": 30,
+          "step": 782,
+          "batches": 4686
+        }
+      ],
+      "command": "/home/songcl/.conda/envs/adares_project/bin/python -S tools/train.py configs_song/model_paper5/adares_y15_query_completion_res.yaml --num_gpus 1 --gpu_ids 0 ",
+      "launch_verified": true,
+      "tail_has_traceback": false
+    }
+  ],
+  "gpu_csv": "0, 15928, 47\n1, 17030, 72\n",
+  "observed_at_local": "2026-09-30T23:06:54.592926+08:00",
+  "observed_at_utc": "2026-09-30T15:06:54.592984+00:00",
+  "candidate": "AdaRES-Y17",
+  "science": "native launch verified; trained efficacy unknown"
+}

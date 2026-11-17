@@ -1,0 +1,223 @@
+{
+  "id": "AdaRES-Y35",
+  "method": "Expression-weighted paired delta; resample whole scan clusters",
+  "seed": 1999,
+  "bootstrap_draws": 10000,
+  "size_cuts_from_training": [
+    1487,
+    3325
+  ],
+  "sources": {
+    "y35": {
+      "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y35_y35_full_eval_e636ce91a12e45488093b07fa2fc092b.json",
+      "sha256": "5d0074e76f0508d9d39ba1219118756cb16bd1974c0623e703d397229b29c994"
+    },
+    "w2": {
+      "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y35_w2_full_eval_e636ce91a12e45488093b07fa2fc092b.json",
+      "sha256": "eec9dd279a74a41e9c198752e43c7613b962bb4b0a3b555a02eb4b23f82fb650"
+    },
+    "b1": {
+      "path": "D:\\project\\AdaRES_project\\pipeline\\analyses\\y35_b1_full_eval_e636ce91a12e45488093b07fa2fc092b.json",
+      "sha256": "4deacbd074a8628a25e1c7d4e9847023c48ca56a85ee937d982fd0d78653165a"
+    }
+  },
+  "summary": {
+    "y35": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5048012137993356,
+      "acc25": 0.6052797644089188,
+      "acc50": 0.5597391670172487,
+      "spmiou": 0.4681811905378843
+    },
+    "w2": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5101051604388791,
+      "acc25": 0.6107488430795119,
+      "acc50": 0.5629995793016407,
+      "spmiou": 0.47371852911683954
+    },
+    "b1": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5022163342023157,
+      "acc25": 0.6104333193100547,
+      "acc50": 0.5529028186790071,
+      "spmiou": 0.46677352061300653
+    }
+  },
+  "versus_w2": {
+    "all": {
+      "expressions": 9508,
+      "scenes": 141,
+      "paired_miou_difference": -0.005303946639543435,
+      "scene_clustered_ci95": [
+        -0.013835981877905017,
+        0.0030564991868457002
+      ],
+      "max_expression_repeat_iou_difference": 0.9763062000274658,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 9.76620725488081e-05,
+      "observed_group_mean_absolute_repeat_difference": 0.0002036881098287869,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "small": {
+      "expressions": 2816,
+      "scenes": 124,
+      "paired_miou_difference": -0.017444125741969237,
+      "scene_clustered_ci95": [
+        -0.03541064302228316,
+        0.0009064563364037118
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "medium": {
+      "expressions": 3304,
+      "scenes": 136,
+      "paired_miou_difference": -0.0058245974153558755,
+      "scene_clustered_ci95": [
+        -0.02009930804396576,
+        0.009021013780194995
+      ],
+      "max_expression_repeat_iou_difference": 0.9763062000274658,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0002954921912916059,
+      "observed_group_mean_absolute_repeat_difference": 0.0005861581562506374,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "large": {
+      "expressions": 3388,
+      "scenes": 135,
+      "paired_miou_difference": 0.0052943339140915585,
+      "scene_clustered_ci95": [
+        -0.008900404501811125,
+        0.019454100072531327
+      ],
+      "max_expression_repeat_iou_difference": 0.026952803134918213,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 1.4089496526977107e-05,
+      "observed_group_mean_absolute_repeat_difference": 1.4089496526977107e-05,
+      "frozen_material_harm_ci_upper_below_zero": false
+    }
+  },
+  "versus_b1": {
+    "all": {
+      "expressions": 9508,
+      "scenes": 141,
+      "paired_miou_difference": 0.002584879597019934,
+      "scene_clustered_ci95": [
+        -0.0063541114919251915,
+        0.011520956168009447
+      ],
+      "max_expression_repeat_iou_difference": 0.9763062000274658,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 7.773535212499533e-06,
+      "observed_group_mean_absolute_repeat_difference": 0.0002036881098287869,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "small": {
+      "expressions": 2816,
+      "scenes": 124,
+      "paired_miou_difference": 0.0048496012426023135,
+      "scene_clustered_ci95": [
+        -0.013543820410023756,
+        0.023755035670348642
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "medium": {
+      "expressions": 3304,
+      "scenes": 136,
+      "paired_miou_difference": 0.007166941314989241,
+      "scene_clustered_ci95": [
+        -0.006872666837707699,
+        0.02165929417282686
+      ],
+      "max_expression_repeat_iou_difference": 0.9763062000274658,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 4.826226332574433e-06,
+      "observed_group_mean_absolute_repeat_difference": 0.0005861581562506374,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "large": {
+      "expressions": 3388,
+      "scenes": 135,
+      "paired_miou_difference": -0.003765943328048121,
+      "scene_clustered_ci95": [
+        -0.01719276208080515,
+        0.00968804367161593
+      ],
+      "max_expression_repeat_iou_difference": 0.03992509841918945,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 1.8360675999800178e-05,
+      "observed_group_mean_absolute_repeat_difference": 1.8360675999800178e-05,
+      "frozen_material_harm_ci_upper_below_zero": false
+    }
+  },
+  "target": 0.515,
+  "target_reached": false,
+  "cost": {
+    "y35": {
+      "parameters": 164958087,
+      "warm_first_chunk_median_seconds": 0.3593295104801655,
+      "peak_allocated_gib": 4.043575286865234,
+      "peak_reserved_gib": 6.486328125,
+      "available_queries": [
+        128
+      ],
+      "selected_queries": 1
+    },
+    "w2": {
+      "parameters": 164629637,
+      "warm_first_chunk_median_seconds": 0.3703231494873762,
+      "peak_allocated_gib": 4.042351245880127,
+      "peak_reserved_gib": 6.486328125,
+      "available_queries": [
+        128
+      ],
+      "selected_queries": 1
+    },
+    "b1": {
+      "parameters": 164430473,
+      "warm_first_chunk_median_seconds": 0.30864740163087845,
+      "peak_allocated_gib": 4.040676593780518,
+      "peak_reserved_gib": 6.484375,
+      "available_queries": [
+        128
+      ],
+      "selected_queries": 1
+    }
+  },
+  "limitations": [
+    "One training seed; best-checkpoint comparison is not causal mechanism proof.",
+    "Two native passes quantify observed repeat noise, not a universal bound.",
+    "Warm first-chunk timing is not a latency distribution or p95/Pareto proof.",
+    "Official unique/multiple metadata unavailable; no subgroup tuning."
+  ],
+  "observed_local": "2026-10-10T12:09:33.672479+08:00"
+}

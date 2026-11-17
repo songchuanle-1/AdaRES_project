@@ -1,0 +1,107 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-11-14T09:44:42.532057+00:00；生成报告时快照年龄：205 秒；模式：event
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：4
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-11-14 17:44:41
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✓] Champion: AdaRES-Y100 — mIoU=0.5164 (target met, exceeded by +0.0014)
+       Epochs: ?, State: done_complete
+  Phase 1: PHASE1_REACHED ✓
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0144
+
+## Phase 2: Story Verification
+  (champion 已达标，检查论文故事是否闭环)
+
+  [✓] Motivation (为什么需要这个方法): covered
+  [✓] Method (我们的方法是什么): covered
+  [?] Gap (champion vs baseline 提升): covered (γ=+0.0144)
+  [✗] Ablation (核心设计是否必要): missing
+  [✗] Stability (多seed稳定性): missing
+  [✗] Generalization (跨setting泛化): missing
+  [✗] Limitation (失败案例分析): missing
+
+  Story: INCOMPLETE ✗ (2/7 elements covered)
+  Phase 2: 需要补充消融/seed实验
+
+  Suggested next steps:
+    - 设计消融实验验证 champion 核心设计选择
+    - 跑 champion 的多 seed 稳定性验证
+
+## Overall
+  PHASE1_REACHED — champion 达标，Phase 2 进行中
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-1 | 0 | 未知 | 未知 | 未知 |
+| server-2 | 0 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-11-14 17:44 : AdaRES_project ==================================================
+
+--- server-1 (192.168.1.175) ---
+  无训练进程
+
+--- server-2 (192.168.1.163) ---
+  [adares_y102_geometry_mask_skip_res] 1/30 尚无验证 - gpu=0
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2: paused=1 running=1
+  server-1:
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| AdaRES-Y102 | configs_song/model_paper5/adares_y102_geometry_mask_skip_res.yaml | server-2 | 0 | 未知 | 未知 | 未知 | 未知 | 未知 | 登记运行；实时进度须核实 |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 1（运行 1 / 认领 0 / 等待 0）；目标 4；准入预算 0。
+- 研究储备 0 / 0；储备准备预算 0，不增加训练并发或启动授权。
+- 储备只计可推进候选及已排队项；另有待人工 7、待资源 0、数值诊断待解 2、未分类阻塞 0。
+- 非终态候选与排队项合计 0；总上限 4。阻塞不授权重开旧路线；其他合法独立工作按剩余预算推进。
+- 候选累计记录 155：complete=19 / rejected=82 / closed=12 / blocked=41 / training=1。
+- 否决范围：unclassified=72 / implementation=7 / hypothesis=3；实现修订累计 7；收据文件 79（含修订或重试，不代表成功率）。
+- 待人工确认（列出动作不代表已授权）：
+| ID | Required Confirmation | Retry After |
+|---|---|---|
+| AdaRES-Y57 | Preserve paused Y57 and its saved model/optimizer/scheduler. Do not resume or restart it under the generic GPU1 resource grant; wait for explicit Y57 continuation. Preserve current Y65/Y66/Y67. | 2026-10-22T00:26:29.471010+08:00 |
+| AdaRES-Y67 | Preserve original complete fixed30 products, signed receipt and full frozen GPU1/390W FIRST/evaluation/cost. Wait for explicit user resource reauthorization; do not use another card or restart training. | 2026-11-04T06:58:39.676817+00:00 |
+| AdaRES-Y70 | Preserve original complete fixed30 products, signed receipt and full frozen GPU1/390W FIRST/evaluation/cost. Wait for explicit user resource reauthorization; do not use another card or restart training. | 2026-11-04T06:58:39.677616+00:00 |
+| AdaRES-Y73 | Preserve original complete fixed30 products, signed receipt and full frozen GPU1/390W FIRST/evaluation/cost. Wait for explicit user resource reauthorization; do not use another card or restart training. | 2026-11-04T06:58:39.678374+00:00 |
+| AdaRES-Y75 | Preserve original complete fixed30 products, signed receipt and full frozen GPU1/390W FIRST/evaluation/cost. Wait for explicit user resource reauthorization; do not use another card or restart training. | 2026-11-04T06:58:39.679091+00:00 |
+| AdaRES-Y78 | Preserve original complete fixed30 products, signed receipt and full frozen GPU1/390W FIRST/evaluation/cost. Wait for explicit user resource reauthorization; do not use another card or restart training. | 2026-11-04T06:58:39.679826+00:00 |
+| AdaRES-Y81 | Preserve original complete fixed30 products, signed receipt and full frozen GPU1/390W FIRST/evaluation/cost. Wait for explicit user resource reauthorization; do not use another card or restart training. | 2026-11-04T06:58:39.680927+00:00 |
+
+## 4. This Tick's Actions
+- 实际资源核验：原server1GPU0被其他项目计算进程[64587]占用，操作系统命令身份已只读确认；原server2GPU0仍为Y102 PID4747占用/保留。没有独占授权空槽，没有调用Y88续评启动器或干预其他项目进程/文件。
+- Y102原进程、源码6文件/原生YAML/环境已核验；实际计数{'phase': 'Train', 'epoch': 1, 'total': 30, 'step': 7, 'count': 4686}，native_progress_confirmed=False。保留原时间和现场，不重启、不加载检查点、不重复此前拒绝的栈附加或管理员请求。
+- 复用原Y88已归集两遍9508/141预测、8项原产物身份/覆盖检查、剩余三种基线续评程序与入口，不重跑已完成CPU/native/终态/预测/成本检查。原失败工作及完整候选输出保持，完整四方法比较/成本/后审计仍待真实原GPU0独占窗口。
+
+## 5. Decisions Made
+- 本轮14到期项按当前实际占用、原用户暂停或原数值失败保留；资源占用进程变化本身不是新研究结果。Y90有效全科学拒绝不重开，Y57单独暂停和GPU1六项后评暂停不变，Y86/Y97原负证据不重跑。
+- 保持goal_rc4及零新创建/准入/训练额度、原数据/源码/权重/收据/资源/功耗/调度/上限/专用恢复要求。真实独占空槽出现后，继续已准备Y88缺失基线并核验原生计数；不迁移GPU1、不跨项目、不用server6、不驱逐任务。无实质变化且无可行动事项时静默。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

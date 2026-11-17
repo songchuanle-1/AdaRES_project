@@ -1,0 +1,16 @@
+{
+  "observed_date_local": "2026-10-02",
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y23_valid_token_support_res/20261001_225332/last.pth",
+  "sha256": "57aafa1f85f7214cf85c91ce525e373716d3a9dcf1b78164e626a4246dd9e685",
+  "bytes": 955396040,
+  "keys": ["meta", "model", "optimizer", "scheduler"],
+  "meta": {"epoch": 4, "best_miou": 0.45115045, "remote_time": "Fri Oct 2 02:02:10 2026"},
+  "verification": "Read-only CPU torch.load and streaming SHA256 after Y23 process stopped; no GPU model or optimizer step.",
+  "y18_pid": 7449,
+  "y18_native_steps": [[21, 30, 2104, 4686], [21, 30, 2113, 4686]],
+  "y18_tail_hashes": ["08e71fd7a02ee779cf66938a5834141104c6e4a4e539d5a98c4b536c7ddd3ae4", "cd236a4cfbecd069ac63d70634e9fa6d054a7c92b9fdb7055f4ae7314850693d"],
+  "resume_epoch": 5,
+  "total_epochs": 30,
+  "pause_last_observed_step": [5, 30, 256, 4686],
+  "limitations": "Epoch5 partial256steps unsaved and replayed on resume. Native checkpoint lacks complete loader/RNG state; no bitwise trajectory claim. Remote clock is offset; remote metadata time is not local time."
+}

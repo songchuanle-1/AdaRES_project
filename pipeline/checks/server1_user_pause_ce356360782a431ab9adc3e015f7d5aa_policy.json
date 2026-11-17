@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "authorization": {
+    "path": "pipeline/authorizations/server1_pause_20261115_ce356360782a431ab9adc3e015f7d5aa.json",
+    "sha256": "856914c2f463b590eb615c4de9cc7168b2328087462fa56756c55523970be3e0"
+  },
+  "stop_evidence": {
+    "path": "pipeline/checks/server1_user_pause_ce356360782a431ab9adc3e015f7d5aa_stop.json",
+    "sha256": "3ba5195f8dfd4c86c9e20090909e694fcd5adca2e3f739dc738d7152aa40c2d5"
+  },
+  "server1_allowed_gpus": [],
+  "server2_allowed_gpus": [
+    0
+  ],
+  "blocked_server1_candidates": [
+    "AdaRES-Y62",
+    "AdaRES-Y63",
+    "AdaRES-Y64",
+    "AdaRES-Y66",
+    "AdaRES-Y69",
+    "AdaRES-Y72",
+    "AdaRES-Y76",
+    "AdaRES-Y79",
+    "AdaRES-Y82",
+    "AdaRES-Y84",
+    "AdaRES-Y88",
+    "AdaRES-Y103"
+  ],
+  "server1_queue_empty": true,
+  "server1_running_registry_absent": true,
+  "goal_and_all_original_receipts_bytes_preserved": true,
+  "queue_running_experiment_ledger_GPU1_pause_unchanged": true,
+  "backups": {
+    "SERVERS.yaml": {
+      "path": "pipeline/snapshots/SERVERS.yaml_before_server1_user_pause_ce356360782a431ab9adc3e015f7d5aa",
+      "sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74"
+    },
+    "AGENTS.md": {
+      "path": "pipeline/snapshots/AGENTS.md_before_server1_user_pause_ce356360782a431ab9adc3e015f7d5aa",
+      "sha256": "d1b675bb2b3e0b1de8383cc38000631d9476e9e5271a16b728fb660f64c8c842"
+    },
+    "research_work.json": {
+      "path": "pipeline/snapshots/research_work.json_before_server1_user_pause_ce356360782a431ab9adc3e015f7d5aa",
+      "sha256": "2b979c8b2ba1693f1693580c73b32da22f777c3454c9a18673221117d554303e"
+    }
+  },
+  "updated_AGENTS": {
+    "path": "AGENTS.md",
+    "sha256": "3c7ec4fa5925a9c74af7f44b4170683c2abb9d028d744de60fe1a2cb57e5ada3"
+  },
+  "updated_SERVERS": {
+    "path": "SERVERS.yaml",
+    "sha256": "4fcb0152acd582565e99f5762a8b58dcda830cbfc827e621a594c3a0db5a18d3"
+  },
+  "hardware_or_schedule_changed": false,
+  "original_Y102_preserved": true,
+  "server1_resume_requires_explicit_user_authorization": true
+}

@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "observed_from": "2026-10-19T17:33:28.242639+08:00",
+  "observed_until": "2026-10-19T17:33:29.285996+08:00",
+  "rows": [
+    {
+      "id": "AdaRES-Y52",
+      "pid": 69064,
+      "gpu": "1",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_164118.log",
+      "values": [
+        0.335
+      ],
+      "best_miou": 0.335,
+      "epochs_no_improve": 0,
+      "scope": "Exact current attempt stdout only; not prior attempts or a frozen terminal reevaluation"
+    },
+    {
+      "id": "AdaRES-Y54",
+      "pid": 47332,
+      "gpu": "0",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y54_fine_support_res_20261019_154936.log",
+      "values": [
+        0.339,
+        0.376
+      ],
+      "best_miou": 0.376,
+      "epochs_no_improve": 0,
+      "scope": "Exact current attempt stdout only; not prior attempts or a frozen terminal reevaluation"
+    }
+  ],
+  "read_only": true,
+  "monitor_or_goal_preflight_repeated": false
+}

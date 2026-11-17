@@ -1,0 +1,89 @@
+{
+  "complete": true,
+  "result": "resumed_training_progress_verified",
+  "token": "76f9c0ca61424281b30c4f491a33b37e",
+  "samples": [
+    {
+      "observed_local": "2026-10-21T12:45:05.203952+08:00",
+      "pid": 13738,
+      "restored": false,
+      "progress": null,
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/20261021_004502.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:45:11.442958+08:00",
+      "pid": 13738,
+      "restored": true,
+      "progress": null,
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/20261021_004502.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:45:17.688899+08:00",
+      "pid": 13738,
+      "restored": true,
+      "progress": [
+        16,
+        0
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/20261021_004502.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:45:23.923532+08:00",
+      "pid": 13738,
+      "restored": true,
+      "progress": [
+        16,
+        0
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/20261021_004502.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:45:30.170813+08:00",
+      "pid": 13738,
+      "restored": true,
+      "progress": [
+        16,
+        0
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/20261021_004502.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:45:36.417787+08:00",
+      "pid": 13738,
+      "restored": true,
+      "progress": [
+        16,
+        1
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/20261021_004502.log"
+      ],
+      "errors": []
+    }
+  ],
+  "checkpoint_preservation": {
+    "best_carried_to": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/best.pth",
+    "best_sha256": "2d9ae3b209c3e40acfa064f801c1eb06978d46d5f908b5f1b7d0f6af139cb54e",
+    "original_last_unchanged": true,
+    "original_best_unchanged": true
+  },
+  "resume_epoch": 16,
+  "pid": 13738,
+  "gpu": "0",
+  "historical_gpu_fault_preserved": true
+}

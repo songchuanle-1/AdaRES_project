@@ -1,0 +1,1434 @@
+{
+  "scope": "train-only frozen identities, current augmented targets",
+  "cohort": [
+    [
+      [
+        "scene0000_00",
+        [
+          2
+        ],
+        "31"
+      ],
+      [
+        "scene0000_00",
+        [
+          39
+        ],
+        "0"
+      ],
+      [
+        "scene0000_00",
+        [
+          15
+        ],
+        "1"
+      ],
+      [
+        "scene0000_00",
+        [
+          7
+        ],
+        "2"
+      ]
+    ],
+    [
+      [
+        "scene0002_00",
+        [
+          16
+        ],
+        "7"
+      ],
+      [
+        "scene0002_00",
+        [
+          17
+        ],
+        "0"
+      ],
+      [
+        "scene0002_00",
+        [
+          11
+        ],
+        "1"
+      ],
+      [
+        "scene0002_00",
+        [
+          42
+        ],
+        "2"
+      ]
+    ],
+    [
+      [
+        "scene0006_00",
+        [
+          10
+        ],
+        "0"
+      ],
+      [
+        "scene0006_00",
+        [
+          11
+        ],
+        "1"
+      ],
+      [
+        "scene0006_00",
+        [
+          6
+        ],
+        "2"
+      ],
+      [
+        "scene0006_00",
+        [
+          7
+        ],
+        "4"
+      ]
+    ],
+    [
+      [
+        "scene0008_00",
+        [
+          12
+        ],
+        "19"
+      ],
+      [
+        "scene0008_00",
+        [
+          0
+        ],
+        "0"
+      ],
+      [
+        "scene0008_00",
+        [
+          6
+        ],
+        "2"
+      ],
+      [
+        "scene0008_00",
+        [
+          16
+        ],
+        "4"
+      ]
+    ],
+    [
+      [
+        "scene0010_00",
+        [
+          24
+        ],
+        "2"
+      ],
+      [
+        "scene0010_00",
+        [
+          51
+        ],
+        "0"
+      ],
+      [
+        "scene0010_00",
+        [
+          43
+        ],
+        "1"
+      ],
+      [
+        "scene0010_00",
+        [
+          10
+        ],
+        "3"
+      ]
+    ],
+    [
+      [
+        "scene0012_00",
+        [
+          20
+        ],
+        "1"
+      ],
+      [
+        "scene0012_00",
+        [
+          3
+        ],
+        "0"
+      ],
+      [
+        "scene0012_00",
+        [
+          4
+        ],
+        "3"
+      ],
+      [
+        "scene0012_00",
+        [
+          7
+        ],
+        "4"
+      ]
+    ],
+    [
+      [
+        "scene0014_00",
+        [
+          19
+        ],
+        "9"
+      ],
+      [
+        "scene0014_00",
+        [
+          20
+        ],
+        "1"
+      ],
+      [
+        "scene0014_00",
+        [
+          21
+        ],
+        "2"
+      ],
+      [
+        "scene0014_00",
+        [
+          10
+        ],
+        "3"
+      ]
+    ],
+    [
+      [
+        "scene0016_00",
+        [
+          38
+        ],
+        "2"
+      ],
+      [
+        "scene0016_00",
+        [
+          8
+        ],
+        "0"
+      ],
+      [
+        "scene0016_00",
+        [
+          5
+        ],
+        "1"
+      ],
+      [
+        "scene0016_00",
+        [
+          44
+        ],
+        "3"
+      ]
+    ]
+  ],
+  "rows": [
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        2
+      ],
+      "ann_id": "31",
+      "peer_object_ids": [
+        39
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.8762409090995789,
+      "student_oracle_iou": 0.036296747624874115,
+      "teacher_gt_disagreement": 0.004596345126628876,
+      "teacher_wrong_disagreement": 0.05509469285607338,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998211860657,
+        "difference_norm": 0.07136338204145432,
+        "max_difference": 0.0018537044525146484,
+        "left_norm": 71.35404968261719,
+        "right_norm": 71.29741668701172
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9997289180755615,
+        "difference_norm": 1.8698569536209106,
+        "max_difference": 0.049396395683288574,
+        "left_norm": 71.35404968261719,
+        "right_norm": 72.19186401367188
+      },
+      "bce_losses": [
+        4.233146667480469,
+        4.230886459350586,
+        4.1870951652526855
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        39
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        2
+      ],
+      "peer_ann_id": "31",
+      "teacher_oracle_iou": 0.732915997505188,
+      "student_oracle_iou": 0.018167195841670036,
+      "teacher_gt_disagreement": 0.006206294987350702,
+      "teacher_wrong_disagreement": 0.05509469285607338,
+      "teacher_vs_gt": {
+        "cosine": 0.9999983310699463,
+        "difference_norm": 0.13764405250549316,
+        "max_difference": 0.0037375688552856445,
+        "left_norm": 67.92893981933594,
+        "right_norm": 67.98936462402344
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9996878504753113,
+        "difference_norm": 1.8780287504196167,
+        "max_difference": 0.05135548114776611,
+        "left_norm": 67.92893981933594,
+        "right_norm": 67.10336303710938
+      },
+      "bce_losses": [
+        3.362548351287842,
+        3.3565139770507812,
+        3.4148924350738525
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        15
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        2
+      ],
+      "peer_ann_id": "31",
+      "teacher_oracle_iou": 1.0,
+      "student_oracle_iou": 0.02117626927793026,
+      "teacher_gt_disagreement": 0.0,
+      "teacher_wrong_disagreement": 0.040850937366485596,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.0,
+        "max_difference": 0.0,
+        "left_norm": 68.1165771484375,
+        "right_norm": 68.1165771484375
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9998192191123962,
+        "difference_norm": 2.414320468902588,
+        "max_difference": 0.062452077865600586,
+        "left_norm": 68.1165771484375,
+        "right_norm": 66.06637573242188
+      },
+      "bce_losses": [
+        3.366722583770752,
+        3.366722583770752,
+        3.347564697265625
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0000_00",
+      "object_ids": [
+        7
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        2
+      ],
+      "peer_ann_id": "31",
+      "teacher_oracle_iou": 0.718812882900238,
+      "student_oracle_iou": 0.07916366308927536,
+      "teacher_gt_disagreement": 0.006771620828658342,
+      "teacher_wrong_disagreement": 0.05312834307551384,
+      "teacher_vs_gt": {
+        "cosine": 0.9999978542327881,
+        "difference_norm": 0.3614474833011627,
+        "max_difference": 0.009522199630737305,
+        "left_norm": 71.11199188232422,
+        "right_norm": 70.78308868408203
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9997463822364807,
+        "difference_norm": 1.975292444229126,
+        "max_difference": 0.055852532386779785,
+        "left_norm": 71.11199188232422,
+        "right_norm": 69.9376449584961
+      },
+      "bce_losses": [
+        3.807878255844116,
+        3.784588098526001,
+        3.8620028495788574
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        16
+      ],
+      "ann_id": "7",
+      "peer_object_ids": [
+        17
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.8160291314125061,
+      "student_oracle_iou": 0.008136508986353874,
+      "teacher_gt_disagreement": 0.000339653342962265,
+      "teacher_wrong_disagreement": 0.026782171800732613,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.004069658927619457,
+        "max_difference": 9.948015213012695e-05,
+        "left_norm": 67.91084289550781,
+        "right_norm": 67.91349029541016
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9997807145118713,
+        "difference_norm": 2.5858402252197266,
+        "max_difference": 0.0705254077911377,
+        "left_norm": 67.91084289550781,
+        "right_norm": 65.73634338378906
+      },
+      "bce_losses": [
+        3.1175153255462646,
+        3.117889165878296,
+        3.0525832176208496
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        17
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        16
+      ],
+      "peer_ann_id": "7",
+      "teacher_oracle_iou": 0.9203091859817505,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0020110169425606728,
+      "teacher_wrong_disagreement": 0.026782171800732613,
+      "teacher_vs_gt": {
+        "cosine": 0.9999991059303284,
+        "difference_norm": 0.17449931800365448,
+        "max_difference": 0.004363894462585449,
+        "left_norm": 69.0281753540039,
+        "right_norm": 69.1797103881836
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9998012781143188,
+        "difference_norm": 2.6005659103393555,
+        "max_difference": 0.06809484958648682,
+        "left_norm": 69.0281753540039,
+        "right_norm": 71.22117614746094
+      },
+      "bce_losses": [
+        3.464543104171753,
+        3.4707391262054443,
+        3.5424466133117676
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        11
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        16
+      ],
+      "peer_ann_id": "7",
+      "teacher_oracle_iou": 0.7822633385658264,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.005622776225209236,
+      "teacher_wrong_disagreement": 0.025235235691070557,
+      "teacher_vs_gt": {
+        "cosine": 0.9999994039535522,
+        "difference_norm": 0.10066886991262436,
+        "max_difference": 0.0025550127029418945,
+        "left_norm": 71.50951385498047,
+        "right_norm": 71.57313537597656
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9998652935028076,
+        "difference_norm": 2.1882247924804688,
+        "max_difference": 0.05626410245895386,
+        "left_norm": 71.50951385498047,
+        "right_norm": 73.3468246459961
+      },
+      "bce_losses": [
+        3.945685625076294,
+        3.9497337341308594,
+        4.045063018798828
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0002_00",
+      "object_ids": [
+        42
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        16
+      ],
+      "peer_ann_id": "7",
+      "teacher_oracle_iou": 1.0,
+      "student_oracle_iou": 0.009326747618615627,
+      "teacher_gt_disagreement": 0.0,
+      "teacher_wrong_disagreement": 0.002999710850417614,
+      "teacher_vs_gt": {
+        "cosine": 1.0,
+        "difference_norm": 0.0,
+        "max_difference": 0.0,
+        "left_norm": 68.41754150390625,
+        "right_norm": 68.41754150390625
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999993443489075,
+        "difference_norm": 0.0954192578792572,
+        "max_difference": 0.002292037010192871,
+        "left_norm": 68.41754150390625,
+        "right_norm": 68.36719512939453
+      },
+      "bce_losses": [
+        3.033477306365967,
+        3.033477306365967,
+        3.02423357963562
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        10
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        11
+      ],
+      "peer_ann_id": "1",
+      "teacher_oracle_iou": 1.0,
+      "student_oracle_iou": 0.050379712134599686,
+      "teacher_gt_disagreement": 0.0,
+      "teacher_wrong_disagreement": 0.00497558806091547,
+      "teacher_vs_gt": {
+        "cosine": 1.0,
+        "difference_norm": 0.0,
+        "max_difference": 0.0,
+        "left_norm": 73.85301208496094,
+        "right_norm": 73.85301208496094
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999983906745911,
+        "difference_norm": 0.27970510721206665,
+        "max_difference": 0.007523655891418457,
+        "left_norm": 73.85301208496094,
+        "right_norm": 74.1004638671875
+      },
+      "bce_losses": [
+        3.602980852127075,
+        3.602980852127075,
+        3.621232032775879
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        11
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        10
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.4564705789089203,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0011334919836372137,
+      "teacher_wrong_disagreement": 0.00497558806091547,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.028904136270284653,
+        "max_difference": 0.000741422176361084,
+        "left_norm": 72.8270034790039,
+        "right_norm": 72.80640411376953
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999984502792358,
+        "difference_norm": 0.2779931128025055,
+        "max_difference": 0.007321834564208984,
+        "left_norm": 72.8270034790039,
+        "right_norm": 72.58090209960938
+      },
+      "bce_losses": [
+        3.520477294921875,
+        3.5184803009033203,
+        3.5028276443481445
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        6
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        10
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.7879133224487305,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0027380455285310745,
+      "teacher_wrong_disagreement": 0.016776662319898605,
+      "teacher_vs_gt": {
+        "cosine": 0.9999986290931702,
+        "difference_norm": 0.22086533904075623,
+        "max_difference": 0.006102442741394043,
+        "left_norm": 72.3981704711914,
+        "right_norm": 72.58289337158203
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999422430992126,
+        "difference_norm": 1.2349486351013184,
+        "max_difference": 0.03557991981506348,
+        "left_norm": 72.3981704711914,
+        "right_norm": 73.35318756103516
+      },
+      "bce_losses": [
+        3.485163450241089,
+        3.4875965118408203,
+        3.494875431060791
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0006_00",
+      "object_ids": [
+        7
+      ],
+      "ann_id": "4",
+      "peer_object_ids": [
+        10
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.9861707091331482,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.00014229986118152738,
+      "teacher_wrong_disagreement": 0.014607816934585571,
+      "teacher_vs_gt": {
+        "cosine": 1.0,
+        "difference_norm": 0.012080773711204529,
+        "max_difference": 0.0003114938735961914,
+        "left_norm": 72.14962768554688,
+        "right_norm": 72.13873291015625
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.999955415725708,
+        "difference_norm": 0.9548680186271667,
+        "max_difference": 0.020096302032470703,
+        "left_norm": 72.14962768554688,
+        "right_norm": 72.81526947021484
+      },
+      "bce_losses": [
+        3.5358798503875732,
+        3.535376787185669,
+        3.556647539138794
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        12
+      ],
+      "ann_id": "19",
+      "peer_object_ids": [
+        0
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 1.0,
+      "student_oracle_iou": 0.007574141025543213,
+      "teacher_gt_disagreement": 0.0,
+      "teacher_wrong_disagreement": 0.020189736038446426,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.0,
+        "max_difference": 0.0,
+        "left_norm": 69.98536682128906,
+        "right_norm": 69.98536682128906
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9998962879180908,
+        "difference_norm": 1.9095954895019531,
+        "max_difference": 0.045496344566345215,
+        "left_norm": 69.98536682128906,
+        "right_norm": 68.35580444335938
+      },
+      "bce_losses": [
+        3.6336190700531006,
+        3.6336190700531006,
+        3.582597494125366
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        0
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        12
+      ],
+      "peer_ann_id": "19",
+      "teacher_oracle_iou": 0.959318995475769,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0008340436615981162,
+      "teacher_wrong_disagreement": 0.020189736038446426,
+      "teacher_vs_gt": {
+        "cosine": 0.9999997615814209,
+        "difference_norm": 0.08768346160650253,
+        "max_difference": 0.002061605453491211,
+        "left_norm": 68.20641326904297,
+        "right_norm": 68.13148498535156
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9998978972434998,
+        "difference_norm": 1.8916453123092651,
+        "max_difference": 0.043631553649902344,
+        "left_norm": 68.20641326904297,
+        "right_norm": 69.82056427001953
+      },
+      "bce_losses": [
+        3.6519880294799805,
+        3.6506295204162598,
+        3.7034964561462402
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        6
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        12
+      ],
+      "peer_ann_id": "19",
+      "teacher_oracle_iou": 0.9925822019577026,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.00013594544725492597,
+      "teacher_wrong_disagreement": 0.01884865202009678,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.012308394536376,
+        "max_difference": 0.00031638145446777344,
+        "left_norm": 68.72779846191406,
+        "right_norm": 68.7387924194336
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999158382415771,
+        "difference_norm": 1.9114810228347778,
+        "max_difference": 0.05140280723571777,
+        "left_norm": 68.72779846191406,
+        "right_norm": 70.4131851196289
+      },
+      "bce_losses": [
+        3.723628520965576,
+        3.724320650100708,
+        3.812610626220703
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0008_00",
+      "object_ids": [
+        16
+      ],
+      "ann_id": "4",
+      "peer_object_ids": [
+        12
+      ],
+      "peer_ann_id": "19",
+      "teacher_oracle_iou": 0.941121518611908,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.00023147468164097518,
+      "teacher_wrong_disagreement": 0.004453131929039955,
+      "teacher_vs_gt": {
+        "cosine": 1.0,
+        "difference_norm": 0.0229331124573946,
+        "max_difference": 0.0006270408630371094,
+        "left_norm": 67.22986602783203,
+        "right_norm": 67.24964904785156
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999955892562866,
+        "difference_norm": 0.3745938241481781,
+        "max_difference": 0.00988781452178955,
+        "left_norm": 67.22986602783203,
+        "right_norm": 67.54530334472656
+      },
+      "bce_losses": [
+        3.242523670196533,
+        3.243797540664673,
+        3.262909412384033
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        24
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        51
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.5914645195007324,
+      "student_oracle_iou": 0.00189312978181988,
+      "teacher_gt_disagreement": 0.013778425753116608,
+      "teacher_wrong_disagreement": 0.033203545957803726,
+      "teacher_vs_gt": {
+        "cosine": 0.9999983310699463,
+        "difference_norm": 0.16169306635856628,
+        "max_difference": 0.004318118095397949,
+        "left_norm": 68.38848114013672,
+        "right_norm": 68.28890228271484
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999165534973145,
+        "difference_norm": 1.5575922727584839,
+        "max_difference": 0.041312992572784424,
+        "left_norm": 68.38848114013672,
+        "right_norm": 69.66552734375
+      },
+      "bce_losses": [
+        3.4064128398895264,
+        3.3995652198791504,
+        3.418328285217285
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        51
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        24
+      ],
+      "peer_ann_id": "2",
+      "teacher_oracle_iou": 0.9426229596138,
+      "student_oracle_iou": 0.027609359472990036,
+      "teacher_gt_disagreement": 0.000430575804784894,
+      "teacher_wrong_disagreement": 0.033203545957803726,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.04360368102788925,
+        "max_difference": 0.0009638667106628418,
+        "left_norm": 72.12738037109375,
+        "right_norm": 72.16569519042969
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999246001243591,
+        "difference_norm": 1.5425701141357422,
+        "max_difference": 0.038596391677856445,
+        "left_norm": 72.12738037109375,
+        "right_norm": 70.85883331298828
+      },
+      "bce_losses": [
+        4.041585922241211,
+        4.044022083282471,
+        4.026630878448486
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        43
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        24
+      ],
+      "peer_ann_id": "2",
+      "teacher_oracle_iou": 0.8939393758773804,
+      "student_oracle_iou": 0.006432053633034229,
+      "teacher_gt_disagreement": 0.0003875182301271707,
+      "teacher_wrong_disagreement": 0.02935296669602394,
+      "teacher_vs_gt": {
+        "cosine": 1.0,
+        "difference_norm": 0.029776370152831078,
+        "max_difference": 0.0008651018142700195,
+        "left_norm": 72.02930450439453,
+        "right_norm": 72.0556640625
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.999930202960968,
+        "difference_norm": 1.8290935754776,
+        "max_difference": 0.041396498680114746,
+        "left_norm": 72.02930450439453,
+        "right_norm": 70.40507507324219
+      },
+      "bce_losses": [
+        3.971971035003662,
+        3.9743893146514893,
+        3.9375
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0010_00",
+      "object_ids": [
+        10
+      ],
+      "ann_id": "3",
+      "peer_object_ids": [
+        24
+      ],
+      "peer_ann_id": "2",
+      "teacher_oracle_iou": 0.9573863744735718,
+      "student_oracle_iou": 0.0035389710683375597,
+      "teacher_gt_disagreement": 0.00035676281549967825,
+      "teacher_wrong_disagreement": 0.03399088233709335,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.03695889562368393,
+        "max_difference": 0.0009042024612426758,
+        "left_norm": 73.0136947631836,
+        "right_norm": 72.9820785522461
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999113082885742,
+        "difference_norm": 1.5549321174621582,
+        "max_difference": 0.03817176818847656,
+        "left_norm": 73.0136947631836,
+        "right_norm": 71.79378509521484
+      },
+      "bce_losses": [
+        4.381739139556885,
+        4.379394054412842,
+        4.361093044281006
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        3
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 0.8959762454032898,
+      "student_oracle_iou": 0.02156783826649189,
+      "teacher_gt_disagreement": 0.004648518282920122,
+      "teacher_wrong_disagreement": 0.06698431819677353,
+      "teacher_vs_gt": {
+        "cosine": 0.999999463558197,
+        "difference_norm": 0.1125040203332901,
+        "max_difference": 0.0026651620864868164,
+        "left_norm": 68.85384368896484,
+        "right_norm": 68.94468688964844
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9993194341659546,
+        "difference_norm": 2.8433778285980225,
+        "max_difference": 0.08072024583816528,
+        "left_norm": 68.85384368896484,
+        "right_norm": 70.0849380493164
+      },
+      "bce_losses": [
+        3.5109169483184814,
+        3.5188772678375244,
+        3.7731523513793945
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        3
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        20
+      ],
+      "peer_ann_id": "1",
+      "teacher_oracle_iou": 0.9363172650337219,
+      "student_oracle_iou": 0.0030548067297786474,
+      "teacher_gt_disagreement": 0.001606228994205594,
+      "teacher_wrong_disagreement": 0.06698431819677353,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.04381353035569191,
+        "max_difference": 0.0009477138519287109,
+        "left_norm": 71.11650848388672,
+        "right_norm": 71.08941650390625
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9993308782577515,
+        "difference_norm": 2.861302137374878,
+        "max_difference": 0.07504147291183472,
+        "left_norm": 71.11650848388672,
+        "right_norm": 69.87663269042969
+      },
+      "bce_losses": [
+        3.759122610092163,
+        3.759068012237549,
+        3.5085270404815674
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        4
+      ],
+      "ann_id": "3",
+      "peer_object_ids": [
+        20
+      ],
+      "peer_ann_id": "1",
+      "teacher_oracle_iou": 0.8740871548652649,
+      "student_oracle_iou": 0.0691637322306633,
+      "teacher_gt_disagreement": 0.0020752311684191227,
+      "teacher_wrong_disagreement": 0.05941802263259888,
+      "teacher_vs_gt": {
+        "cosine": 0.9999979734420776,
+        "difference_norm": 0.2675172984600067,
+        "max_difference": 0.007601261138916016,
+        "left_norm": 70.73941040039062,
+        "right_norm": 70.9654769897461
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9993934035301208,
+        "difference_norm": 2.940243721008301,
+        "max_difference": 0.07195025682449341,
+        "left_norm": 70.73941040039062,
+        "right_norm": 69.09162902832031
+      },
+      "bce_losses": [
+        3.7892212867736816,
+        3.801931142807007,
+        3.531238079071045
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0012_00",
+      "object_ids": [
+        7
+      ],
+      "ann_id": "4",
+      "peer_object_ids": [
+        20
+      ],
+      "peer_ann_id": "1",
+      "teacher_oracle_iou": 0.9193730354309082,
+      "student_oracle_iou": 0.005386972334235907,
+      "teacher_gt_disagreement": 0.0026687474455684423,
+      "teacher_wrong_disagreement": 0.07415631413459778,
+      "teacher_vs_gt": {
+        "cosine": 0.9999995827674866,
+        "difference_norm": 0.10444388538599014,
+        "max_difference": 0.0033800601959228516,
+        "left_norm": 69.5936050415039,
+        "right_norm": 69.51116180419922
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9989970922470093,
+        "difference_norm": 3.234543561935425,
+        "max_difference": 0.08283239603042603,
+        "left_norm": 69.5936050415039,
+        "right_norm": 68.65584564208984
+      },
+      "bce_losses": [
+        3.7575459480285645,
+        3.7559561729431152,
+        3.4938323497772217
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        19
+      ],
+      "ann_id": "9",
+      "peer_object_ids": [
+        20
+      ],
+      "peer_ann_id": "1",
+      "teacher_oracle_iou": 0.9581278562545776,
+      "student_oracle_iou": 0.4268230199813843,
+      "teacher_gt_disagreement": 0.0049836281687021255,
+      "teacher_wrong_disagreement": 0.1437220722436905,
+      "teacher_vs_gt": {
+        "cosine": 0.9999958872795105,
+        "difference_norm": 0.3838244378566742,
+        "max_difference": 0.011398673057556152,
+        "left_norm": 63.55120849609375,
+        "right_norm": 63.212894439697266
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9978799223899841,
+        "difference_norm": 6.927550792694092,
+        "max_difference": 0.17012155055999756,
+        "left_norm": 63.55120849609375,
+        "right_norm": 68.9737777709961
+      },
+      "bce_losses": [
+        3.2033982276916504,
+        3.191580295562744,
+        3.4181787967681885
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        20
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        19
+      ],
+      "peer_ann_id": "9",
+      "teacher_oracle_iou": 0.9846311211585999,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.00046335384831763804,
+      "teacher_wrong_disagreement": 0.1437220722436905,
+      "teacher_vs_gt": {
+        "cosine": 1.0,
+        "difference_norm": 0.03940954804420471,
+        "max_difference": 0.0010570287704467773,
+        "left_norm": 68.07013702392578,
+        "right_norm": 68.0359878540039
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9977816939353943,
+        "difference_norm": 6.982370853424072,
+        "max_difference": 0.1702558994293213,
+        "left_norm": 68.07013702392578,
+        "right_norm": 62.607032775878906
+      },
+      "bce_losses": [
+        3.18898606300354,
+        3.187209367752075,
+        2.9679317474365234
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        21
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        19
+      ],
+      "peer_ann_id": "9",
+      "teacher_oracle_iou": 0.6819654703140259,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.006064787041395903,
+      "teacher_wrong_disagreement": 0.13231326639652252,
+      "teacher_vs_gt": {
+        "cosine": 0.999985933303833,
+        "difference_norm": 0.6011699438095093,
+        "max_difference": 0.013599514961242676,
+        "left_norm": 74.36480712890625,
+        "right_norm": 74.816650390625
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9983298778533936,
+        "difference_norm": 7.516246795654297,
+        "max_difference": 0.17672967910766602,
+        "left_norm": 74.36480712890625,
+        "right_norm": 68.07318115234375
+      },
+      "bce_losses": [
+        4.396880149841309,
+        4.409985542297363,
+        3.9870569705963135
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0014_00",
+      "object_ids": [
+        10
+      ],
+      "ann_id": "3",
+      "peer_object_ids": [
+        19
+      ],
+      "peer_ann_id": "9",
+      "teacher_oracle_iou": 0.9449697136878967,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0029963550623506308,
+      "teacher_wrong_disagreement": 0.16848576068878174,
+      "teacher_vs_gt": {
+        "cosine": 0.9999972581863403,
+        "difference_norm": 0.3064196705818176,
+        "max_difference": 0.007467746734619141,
+        "left_norm": 69.02840423583984,
+        "right_norm": 69.28793334960938
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9984216094017029,
+        "difference_norm": 5.050974369049072,
+        "max_difference": 0.13744938373565674,
+        "left_norm": 69.02840423583984,
+        "right_norm": 65.68174743652344
+      },
+      "bce_losses": [
+        4.019198894500732,
+        4.0369367599487305,
+        3.768447160720825
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        38
+      ],
+      "ann_id": "2",
+      "peer_object_ids": [
+        8
+      ],
+      "peer_ann_id": "0",
+      "teacher_oracle_iou": 1.0,
+      "student_oracle_iou": 0.0208958201110363,
+      "teacher_gt_disagreement": 0.0,
+      "teacher_wrong_disagreement": 0.010272756218910217,
+      "teacher_vs_gt": {
+        "cosine": 0.9999998807907104,
+        "difference_norm": 0.0,
+        "max_difference": 0.0,
+        "left_norm": 70.63481903076172,
+        "right_norm": 70.63481903076172
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999893307685852,
+        "difference_norm": 0.6028078198432922,
+        "max_difference": 0.01711440086364746,
+        "left_norm": 70.63481903076172,
+        "right_norm": 70.128173828125
+      },
+      "bce_losses": [
+        3.29083251953125,
+        3.29083251953125,
+        3.266666889190674
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        8
+      ],
+      "ann_id": "0",
+      "peer_object_ids": [
+        38
+      ],
+      "peer_ann_id": "2",
+      "teacher_oracle_iou": 0.762948215007782,
+      "student_oracle_iou": 0.024723246693611145,
+      "teacher_gt_disagreement": 0.002113151364028454,
+      "teacher_wrong_disagreement": 0.010272756218910217,
+      "teacher_vs_gt": {
+        "cosine": 0.9999997019767761,
+        "difference_norm": 0.07072371244430542,
+        "max_difference": 0.0021429061889648438,
+        "left_norm": 70.4321517944336,
+        "right_norm": 70.37396240234375
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9999893307685852,
+        "difference_norm": 0.6005802750587463,
+        "max_difference": 0.01665329933166504,
+        "left_norm": 70.4321517944336,
+        "right_norm": 70.93644714355469
+      },
+      "bce_losses": [
+        3.4748947620391846,
+        3.471403121948242,
+        3.497408390045166
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        5
+      ],
+      "ann_id": "1",
+      "peer_object_ids": [
+        38
+      ],
+      "peer_ann_id": "2",
+      "teacher_oracle_iou": 0.8119361400604248,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0024061512667685747,
+      "teacher_wrong_disagreement": 0.015191604383289814,
+      "teacher_vs_gt": {
+        "cosine": 0.9999997019767761,
+        "difference_norm": 0.1496613621711731,
+        "max_difference": 0.0036923885345458984,
+        "left_norm": 68.71215057373047,
+        "right_norm": 68.85176086425781
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.999987006187439,
+        "difference_norm": 0.9347143173217773,
+        "max_difference": 0.02341139316558838,
+        "left_norm": 68.71215057373047,
+        "right_norm": 69.57843780517578
+      },
+      "bce_losses": [
+        3.073726177215576,
+        3.0845329761505127,
+        3.1351218223571777
+      ],
+      "finite_gradients": true
+    },
+    {
+      "scan_id": "scene0016_00",
+      "object_ids": [
+        44
+      ],
+      "ann_id": "3",
+      "peer_object_ids": [
+        38
+      ],
+      "peer_ann_id": "2",
+      "teacher_oracle_iou": 0.9753521084785461,
+      "student_oracle_iou": 0.0,
+      "teacher_gt_disagreement": 0.0019266967428848147,
+      "teacher_wrong_disagreement": 0.08065489679574966,
+      "teacher_vs_gt": {
+        "cosine": 0.9999997019767761,
+        "difference_norm": 0.10567962378263474,
+        "max_difference": 0.0026499032974243164,
+        "left_norm": 67.35545349121094,
+        "right_norm": 67.45060729980469
+      },
+      "teacher_vs_wrong": {
+        "cosine": 0.9989675283432007,
+        "difference_norm": 7.274919033050537,
+        "max_difference": 0.1855921745300293,
+        "left_norm": 67.35545349121094,
+        "right_norm": 73.88599395751953
+      },
+      "bce_losses": [
+        3.806183338165283,
+        3.809002637863159,
+        4.003587245941162
+      ],
+      "finite_gradients": true
+    }
+  ],
+  "repeats": [
+    {
+      "scan_id": "scene0000_00",
+      "raw_mask_max_difference": 0.0012067556381225586,
+      "raw_indicator_max_difference": 2.8889626264572144e-05,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0002_00",
+      "raw_mask_max_difference": 0.0003814697265625,
+      "raw_indicator_max_difference": 2.8870999813079834e-06,
+      "binary_flips": 1,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0006_00",
+      "raw_mask_max_difference": 0.0007183253765106201,
+      "raw_indicator_max_difference": 8.668750524520874e-06,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0008_00",
+      "raw_mask_max_difference": 0.024075746536254883,
+      "raw_indicator_max_difference": 0.00017976760864257812,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0010_00",
+      "raw_mask_max_difference": 1.239776611328125e-05,
+      "raw_indicator_max_difference": 9.685754776000977e-08,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0012_00",
+      "raw_mask_max_difference": 0.0005850791931152344,
+      "raw_indicator_max_difference": 1.4379620552062988e-06,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0014_00",
+      "raw_mask_max_difference": 1.239776611328125e-05,
+      "raw_indicator_max_difference": 8.568167686462402e-08,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    },
+    {
+      "scan_id": "scene0016_00",
+      "raw_mask_max_difference": 1.621246337890625e-05,
+      "raw_indicator_max_difference": 8.195638656616211e-08,
+      "binary_flips": 0,
+      "selection_flips": 0,
+      "material_flags_equal": true
+    }
+  ],
+  "complete": true
+}

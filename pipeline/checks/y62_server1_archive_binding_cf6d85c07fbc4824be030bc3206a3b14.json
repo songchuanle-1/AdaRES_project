@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "token": "cf6d85c07fbc4824be030bc3206a3b14",
+  "observed_at": "2026-10-27T02:51:42.509358+08:00",
+  "experiment_status": "done_complete",
+  "epochs": "30/30",
+  "gpu": "0",
+  "running": {
+    "server-2": {},
+    "server-1": {
+      "0": "AdaRES-Y63"
+    }
+  },
+  "successor": {
+    "id": "AdaRES-Y63",
+    "pid": 3071037,
+    "config": "configs_song/model_paper5/adares_y63_peer_bilinear_res.yaml",
+    "launch_verified": true
+  },
+  "terminal_evidence": {
+    "path": "pipeline/checks/y62_server1_fixed30_cf6d85c07fbc4824be030bc3206a3b14.json",
+    "sha256": "a393156b2125927f8e85b31c5bb8d97200634216ff5156719f53749fb16b1026"
+  },
+  "paused_Y57_preserved": true,
+  "remote_mutations": false,
+  "guard_tests": {
+    "command": "python -B -m unittest test_y62_server1_reconciliation test_y61_terminal_handoff",
+    "passed": 16,
+    "failed": 0
+  },
+  "test_sources": [
+    {
+      "path": "scripts/test_y62_server1_reconciliation.py",
+      "sha256": "7e2eb6aa3e6859a4edc8612ee4795d75589125a069d398a23ba24d8614995675"
+    },
+    {
+      "path": "scripts/test_y61_terminal_handoff.py",
+      "sha256": "a4e2574e18622cfc84337e2a184764e95c81fe9ebd6738a2024f0827a0ac03bd"
+    }
+  ]
+}

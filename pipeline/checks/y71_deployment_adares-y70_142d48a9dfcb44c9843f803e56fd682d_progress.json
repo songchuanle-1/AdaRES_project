@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-30T20:50:47.876882-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 20,
+      "total": 30,
+      "step": 1393,
+      "count": 4686
+    },
+    "log_bytes": 25438643
+  },
+  "after": {
+    "observed_at": "2026-10-30T20:50:52.883965-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 20,
+      "total": 30,
+      "step": 1402,
+      "count": 4686
+    },
+    "log_bytes": 25440965
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-30T20:50:47.876882-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 20,
+        "total": 30,
+        "step": 1393,
+        "count": 4686
+      },
+      "log_bytes": 25438643
+    },
+    {
+      "observed_at": "2026-10-30T20:50:52.883965-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 20,
+        "total": 30,
+        "step": 1402,
+        "count": 4686
+      },
+      "log_bytes": 25440965
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 52561,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y70_query_scale_fusion_res_20261030_184633.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "additional_source_files_verified": 6,
+  "additional_YAMLs_verified": 1,
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 53714\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 52561\n",
+  "authorized_gpu_uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+  "gpu": "44, 22738, 65, 390.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y70",
+  "token": "142d48a9dfcb44c9843f803e56fd682d",
+  "observed_start_local": "2026-10-31T08:51:27.229871+08:00",
+  "observed_end_local": "2026-10-31T08:51:32.551064+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y70_y71_exact_deployment.py",
+      "sha256": "a5696c5dacf1d46463ea1cdfbe01af327c794d31b03d5a0887958c262e75c796"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y70_142d48a9dfcb44c9843f803e56fd682d_progress.log",
+      "sha256": "172e8aa9d91e49e4833237392d6f59b29c5e2cc425f7c3d72e2890d16b4d6d93"
+    }
+  ]
+}

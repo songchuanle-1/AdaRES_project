@@ -1,0 +1,725 @@
+{
+  "complete": true,
+  "token": "da9a408055d84e01b0c213c08e252046",
+  "id": "AdaRES-Y96",
+  "observed_at": "2026-11-10T21:04:22.872026+08:00",
+  "payload": {
+    "id": "AdaRES-Y96",
+    "pid": 3893460,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y96_seed_query_skip_res_20261110_165652.log",
+    "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+    "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+    "root": "/data1/songcl/Project/AdaRES_project/AdaRES",
+    "work": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "basename": "adares_y96_seed_query_skip_res",
+    "source_files": {
+      "ipdn/model_paper5/adares_y96_seed_query_skip/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "ipdn/model_paper5/adares_y96_seed_query_skip/dec.py": "2e3e39621f7701e66b5cc8678e2738f1c8b2ef52b9acaef42b5d9f5d18087ea7",
+      "ipdn/model_paper5/adares_y96_seed_query_skip/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "ipdn/model_paper5/adares_y96_seed_query_skip/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "ipdn/model_paper5/adares_y96_seed_query_skip/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "ipdn/model_paper5/adares_y96_seed_query_skip/__init__.py": "73421c81ec85906ec743b37bda877c8da56621279c04fb97ca86bf0cef134347"
+    },
+    "expected_config": {
+      "work_dir": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "train": {
+        "seed": 1999,
+        "epochs": 30,
+        "interval": 1,
+        "pretrain": "/data1/songcl/Project/AdaRES_project/data/sp_unet_backbone.pth",
+        "save_epoch": 100,
+        "grad_clip": 0.1
+      },
+      "test": {
+        "seed": 1999,
+        "test_topk_per_scene": 100,
+        "test_score_thresh": 0.0,
+        "test_npoint_thresh": 100
+      },
+      "dataloader": {
+        "train": {
+          "batch_size": 2,
+          "num_workers": 4,
+          "persistent_workers": true
+        },
+        "val": {
+          "batch_size": 1,
+          "num_workers": 2,
+          "persistent_workers": true
+        },
+        "test": {
+          "batch_size": 1,
+          "num_workers": 1,
+          "persistent_workers": true
+        }
+      },
+      "data": {
+        "train": {
+          "type": "scannetv2_sample_graph_edge",
+          "dataset": "scanrefer",
+          "data_root": "/data1/songcl/Project/AdaRES_project/data/",
+          "prefix": "train",
+          "suffix": ".pth",
+          "training": true,
+          "mode": 4,
+          "aug": true,
+          "with_elastic": true,
+          "use_xyz": true,
+          "voxel_cfg": {
+            "scale": 50,
+            "spatial_shape": [
+              128,
+              512
+            ],
+            "max_npoint": 2500000
+          },
+          "max_des_len": 78,
+          "lang_num_max": 4
+        },
+        "val": {
+          "type": "scannetv2_sample_graph_edge",
+          "dataset": "scanrefer",
+          "data_root": "/data1/songcl/Project/AdaRES_project/data/",
+          "prefix": "val",
+          "suffix": ".pth",
+          "training": false,
+          "aug": false,
+          "with_elastic": false,
+          "use_xyz": true,
+          "voxel_cfg": {
+            "scale": 50,
+            "spatial_shape": [
+              128,
+              512
+            ],
+            "max_npoint": 2500000
+          },
+          "max_des_len": 78,
+          "lang_num_max": 32
+        }
+      },
+      "model": {
+        "input_channel": 6,
+        "blocks": 5,
+        "block_reps": 2,
+        "media": 32,
+        "normalize_before": true,
+        "return_blocks": true,
+        "pool": "mean",
+        "infer_mode": "sem",
+        "fps_num": 256,
+        "task_type": "res",
+        "sampling_module": {
+          "num_proposal": 128,
+          "pc_dim": 256,
+          "lang_dim": 256,
+          "d_model": 256
+        },
+        "dec": {
+          "num_layer": 6,
+          "d_model": 256,
+          "nhead": 8,
+          "hidden_dim": 1024,
+          "dropout": 0.0,
+          "activation_fn": "gelu",
+          "iter_pred": true,
+          "attn_mask": true,
+          "kernel": "top1",
+          "global_feat": "mean",
+          "lang_att": true,
+          "contrastive_align_loss": true,
+          "num_proposal_fine": 512,
+          "num_proposal_query": [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4
+          ],
+          "num_proposal_query_inst": [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4
+          ]
+        },
+        "criterion": {
+          "loss_weight": [
+            1.0,
+            1.0,
+            0.5,
+            5.0,
+            0.1,
+            0.1,
+            0.1,
+            1.0
+          ],
+          "cost_weight": [
+            1.0,
+            1.0,
+            0.1
+          ],
+          "loss_fun": "focal",
+          "match_last_layer": true,
+          "layer_differ_weight": true
+        },
+        "test_cfg": {
+          "topk_insts": 100,
+          "score_thr": 0.0,
+          "npoint_thr": 100
+        },
+        "norm_eval": false,
+        "fix_module": [
+          "text_encoder"
+        ]
+      },
+      "optimizer": {
+        "type": "AdamW",
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "paramwise_cfg": {
+          "text_encoder": {
+            "lr_mult": 0.001
+          },
+          "input_conv": {
+            "lr_mult": 0.01
+          },
+          "unet": {
+            "lr_mult": 0.01
+          },
+          "output_layer": {
+            "lr_mult": 0.01
+          },
+          "dec": {
+            "lr_mult": 1.0
+          }
+        }
+      },
+      "lr_scheduler": {
+        "type": "PolyLR",
+        "max_iters": 70,
+        "power": 4.0,
+        "constant_ending": 0.0
+      }
+    },
+    "allowed_markers": [
+      "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+      "15c3481ff32456160b5a94588565f68f0d2d2c5b"
+    ],
+    "deployments": {
+      "acb8c1769b7f3d66a92d287da8859a06a138b8b0": {
+        "source_files": {},
+        "configs": {}
+      },
+      "15c3481ff32456160b5a94588565f68f0d2d2c5b": {
+        "source_files": {
+          "ipdn/model_paper5/adares_y98_appearance_mask_skip/__init__.py": "7b868dac4fb763fb5840e6ef8f878b25bd1c6c5c90acf7c11b85b9c00fad0038",
+          "ipdn/model_paper5/adares_y98_appearance_mask_skip/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+          "ipdn/model_paper5/adares_y98_appearance_mask_skip/dec.py": "183489098396790ec56cffc14ba9d30b1d795f32483fe7e7cd95f98a9fb0515a",
+          "ipdn/model_paper5/adares_y98_appearance_mask_skip/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+          "ipdn/model_paper5/adares_y98_appearance_mask_skip/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+          "ipdn/model_paper5/adares_y98_appearance_mask_skip/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+        },
+        "configs": {
+          "configs_song/model_paper5/adares_y98_appearance_mask_skip_res.yaml": {
+            "work_dir": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+            "train": {
+              "seed": 1999,
+              "epochs": 30,
+              "interval": 1,
+              "pretrain": "/data1/songcl/Project/AdaRES_project/data/sp_unet_backbone.pth",
+              "save_epoch": 100,
+              "grad_clip": 0.1
+            },
+            "test": {
+              "seed": 1999,
+              "test_topk_per_scene": 100,
+              "test_score_thresh": 0.0,
+              "test_npoint_thresh": 100
+            },
+            "dataloader": {
+              "train": {
+                "batch_size": 2,
+                "num_workers": 4,
+                "persistent_workers": true
+              },
+              "val": {
+                "batch_size": 1,
+                "num_workers": 2,
+                "persistent_workers": true
+              },
+              "test": {
+                "batch_size": 1,
+                "num_workers": 1,
+                "persistent_workers": true
+              }
+            },
+            "data": {
+              "train": {
+                "type": "scannetv2_sample_graph_edge",
+                "dataset": "scanrefer",
+                "data_root": "/data1/songcl/Project/AdaRES_project/data/",
+                "prefix": "train",
+                "suffix": ".pth",
+                "training": true,
+                "mode": 4,
+                "aug": true,
+                "with_elastic": true,
+                "use_xyz": true,
+                "voxel_cfg": {
+                  "scale": 50,
+                  "spatial_shape": [
+                    128,
+                    512
+                  ],
+                  "max_npoint": 2500000
+                },
+                "max_des_len": 78,
+                "lang_num_max": 4
+              },
+              "val": {
+                "type": "scannetv2_sample_graph_edge",
+                "dataset": "scanrefer",
+                "data_root": "/data1/songcl/Project/AdaRES_project/data/",
+                "prefix": "val",
+                "suffix": ".pth",
+                "training": false,
+                "aug": false,
+                "with_elastic": false,
+                "use_xyz": true,
+                "voxel_cfg": {
+                  "scale": 50,
+                  "spatial_shape": [
+                    128,
+                    512
+                  ],
+                  "max_npoint": 2500000
+                },
+                "max_des_len": 78,
+                "lang_num_max": 32
+              }
+            },
+            "model": {
+              "input_channel": 6,
+              "blocks": 5,
+              "block_reps": 2,
+              "media": 32,
+              "normalize_before": true,
+              "return_blocks": true,
+              "pool": "mean",
+              "infer_mode": "sem",
+              "fps_num": 256,
+              "task_type": "res",
+              "sampling_module": {
+                "num_proposal": 128,
+                "pc_dim": 256,
+                "lang_dim": 256,
+                "d_model": 256
+              },
+              "dec": {
+                "num_layer": 6,
+                "d_model": 256,
+                "nhead": 8,
+                "hidden_dim": 1024,
+                "dropout": 0.0,
+                "activation_fn": "gelu",
+                "iter_pred": true,
+                "attn_mask": true,
+                "kernel": "top1",
+                "global_feat": "mean",
+                "lang_att": true,
+                "contrastive_align_loss": true,
+                "num_proposal_fine": 512,
+                "num_proposal_query": [
+                  128,
+                  64,
+                  32,
+                  16,
+                  8,
+                  4
+                ],
+                "num_proposal_query_inst": [
+                  128,
+                  64,
+                  32,
+                  16,
+                  8,
+                  4
+                ]
+              },
+              "criterion": {
+                "loss_weight": [
+                  1.0,
+                  1.0,
+                  0.5,
+                  5.0,
+                  0.1,
+                  0.1,
+                  0.1,
+                  1.0
+                ],
+                "cost_weight": [
+                  1.0,
+                  1.0,
+                  0.1
+                ],
+                "loss_fun": "focal",
+                "match_last_layer": true,
+                "layer_differ_weight": true
+              },
+              "test_cfg": {
+                "topk_insts": 100,
+                "score_thr": 0.0,
+                "npoint_thr": 100
+              },
+              "norm_eval": false,
+              "fix_module": [
+                "text_encoder"
+              ]
+            },
+            "optimizer": {
+              "type": "AdamW",
+              "lr": 0.0001,
+              "weight_decay": 0.0005,
+              "paramwise_cfg": {
+                "text_encoder": {
+                  "lr_mult": 0.001
+                },
+                "input_conv": {
+                  "lr_mult": 0.01
+                },
+                "unet": {
+                  "lr_mult": 0.01
+                },
+                "output_layer": {
+                  "lr_mult": 0.01
+                },
+                "dec": {
+                  "lr_mult": 1.0
+                }
+              }
+            },
+            "lr_scheduler": {
+              "type": "PolyLR",
+              "max_iters": 70,
+              "power": 4.0,
+              "constant_ending": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "declared_location": {
+    "path": "pipeline/checks/y96_terminal_preparation_da9a408055d84e01b0c213c08e252046_location.json",
+    "sha256": "1e428c2fedc61d52d3947cbf51fd046aebae8650ba6bfd31b13bac703c41772a"
+  },
+  "CPU_guard_tests_passed": 30,
+  "dependencies": [
+    {
+      "path": "scripts/finalize_y96_fixed30.py",
+      "sha256": "e91c8d7eb2e01c46c70ae14cff1ccb3edce93b7e5195aec19d3944486a38e0f9"
+    },
+    {
+      "path": "scripts/test_y96_terminal_handoff.py",
+      "sha256": "8dafa16a350ba3bba926b6124a3f535f6791bbcc94865da32856aac673bee901"
+    },
+    {
+      "path": "scripts/prepare_y96_terminal_handoff.py",
+      "sha256": "bbf4aaabd53af6f70d66b5552359671af92a4f606ecbfc71a4fad264cd213728"
+    },
+    {
+      "path": "scripts/y96_terminal_contract.py",
+      "sha256": "194d0d03361f3eb6ab0961e113e1faf1a574429c17a6414b768aa3a0811ef210"
+    },
+    {
+      "path": "scripts/y96_deployment.py",
+      "sha256": "9bac8c9daf17d4ac729b49f4fc62a39e16940d6f25be586aaf2255606c88596f"
+    },
+    {
+      "path": "scripts/create_y96_terminal_helpers.py",
+      "sha256": "466b55c3a55e3e4eef720045c90050f011bfdfa4d75ea83a5cc800832a3c898d"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    },
+    {
+      "path": "scripts/finalize_y96_fixed30_y98.py",
+      "sha256": "062b1968b0d0906cdf1cccb71b22d6b4eb6709e6fec7ebe656367df6e2f375ed"
+    },
+    {
+      "path": "scripts/test_y96_terminal_handoff_y98.py",
+      "sha256": "8175e1f07711b4b0fab5d8b44c1906d3e995328278249c1706ef90faed6caaee"
+    },
+    {
+      "path": "scripts/y96_y98_terminal_contract_v2.py",
+      "sha256": "8c09067ee817064686dd2e4e44f47366475c41efff5c40cfb0689aa9b7754c34"
+    },
+    {
+      "path": "scripts/test_y96_y98_terminal_binding_v3.py",
+      "sha256": "4088075d6913b5837206a90adda8c3353a13a4942d9191f146a7ad06b96592a4"
+    },
+    {
+      "path": "scripts/advance_y98_v2.py",
+      "sha256": "bf3c8d9326b4367c8f0fc65fae85093a14a224114464fe4bb59c93083fb1fc46"
+    },
+    {
+      "path": "scripts/y98_deployment.py",
+      "sha256": "21a5fbfcdf2d8e846fe9a51c8c57261289ad89584111100b8d037bd9f9c5fd1d"
+    },
+    {
+      "path": "scripts/y98_contract.py",
+      "sha256": "7fd285f81ab3505b54200b0bb6977fa7f9224af347f30523cdcd43c28bdc64a3"
+    },
+    {
+      "path": "scripts/run_y98_bound_native_y96.py",
+      "sha256": "885750c336faec775d6606202c2e1f15069131ed21e13f96c7064541788a3fe2"
+    },
+    {
+      "path": "pipeline/analyses/y98_server2_smoke_da9a408055d84e01b0c213c08e252046.json",
+      "sha256": "0785a038775b4df54a18a69143568fc0c7acc099d68b48d3237644d0a1cddf37"
+    },
+    {
+      "path": "pipeline/checks/y98_y96_additive_binding_da9a408055d84e01b0c213c08e252046.json",
+      "sha256": "ac0043ef8ac6307beeb82b4cc99cc68f63cd9c8e85990a1c2d85745dd330d0b3"
+    },
+    {
+      "path": "pipeline/checks/y98_y96_additive_binding_da9a408055d84e01b0c213c08e252046_server2_plan.json",
+      "sha256": "df390985032f822f4772676ff2aa73abd7cc3fb9461fdf33d2da4d23a622d82c"
+    },
+    {
+      "path": "scripts/finish_y96_y98_binding_repair.py",
+      "sha256": "c973dc3de210df398f16e4c28a54c981132b5572c30d1a3b27df6471a3c52189"
+    },
+    {
+      "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_lifecycle.log",
+      "sha256": "403b489b50b3170b178075f233820ed4759ba66be6868772f7bcfbe9eb5a3390"
+    },
+    {
+      "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_additive_v3.log",
+      "sha256": "c18f1f1c15cab683627a64a0f8cdd91b926b8ef027c347e058482761a73f08c1"
+    },
+    {
+      "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_additive.log",
+      "sha256": "b4a9fcdd43c64aae446d0961275cf20a3d178f617232b329ce81c8705fb051b0"
+    }
+  ],
+  "post_training_freeze": {
+    "path": "pipeline/checks/AdaRES-Y96_4198029edcde47b7a8686b8e8dcafad4_post_training_freeze.json",
+    "sha256": "50213e2f1fda98e5e9477eaa5c030952d1d913d3d1aeff86d1fc6aa984dfc154"
+  },
+  "admission": {
+    "path": "pipeline/admissions/AdaRES-Y96_provenance_4198029edcde47b7a8686b8e8dcafad4.json",
+    "sha256": "5dcd15c8da9efca80c530a5c61767fc68f9976a2e0c70aedcef3f5807ea42b1c"
+  },
+  "full_terminal_verification_executed": false,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "training_stopped": false,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "required_before_archive": "Exact PID and same-config train process absent; native Train/Val1..30, stable finite last30/best/model/optimizer/scheduler, unchanged source/YAML/receipt/freeze. Use explicit server-1 GPU0 and350W; retain all original checkpoints and other queue entries.",
+  "next_command": "python -B scripts/finalize_y96_fixed30_y98.py --token <fresh-owned-token>",
+  "evidence": [
+    {
+      "path": "scripts/prepare_y96_terminal_handoff.py",
+      "sha256": "bbf4aaabd53af6f70d66b5552359671af92a4f606ecbfc71a4fad264cd213728"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_preparation_da9a408055d84e01b0c213c08e252046_tests.log",
+      "sha256": "6c29370421c78d748121345c778a0d1ce36450df715f773e4534ba3adde33750"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_preparation_da9a408055d84e01b0c213c08e252046_location_program.py",
+      "sha256": "32211637968d7f45525261a54041acaf8f539f048c6c0422a187e8b6ceb8d41c"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_preparation_da9a408055d84e01b0c213c08e252046_location.json",
+      "sha256": "1e428c2fedc61d52d3947cbf51fd046aebae8650ba6bfd31b13bac703c41772a"
+    },
+    {
+      "path": "pipeline/checks/y96_terminal_preparation_da9a408055d84e01b0c213c08e252046_location.log",
+      "sha256": "c10807c5f9e8b054e006d4b80e267a425efbdcd42b89d89812a9fa73657eff7a"
+    },
+    {
+      "path": "scripts/finalize_y96_fixed30.py",
+      "sha256": "e91c8d7eb2e01c46c70ae14cff1ccb3edce93b7e5195aec19d3944486a38e0f9"
+    },
+    {
+      "path": "scripts/test_y96_terminal_handoff.py",
+      "sha256": "8dafa16a350ba3bba926b6124a3f535f6791bbcc94865da32856aac673bee901"
+    },
+    {
+      "path": "scripts/prepare_y96_terminal_handoff.py",
+      "sha256": "bbf4aaabd53af6f70d66b5552359671af92a4f606ecbfc71a4fad264cd213728"
+    },
+    {
+      "path": "scripts/y96_terminal_contract.py",
+      "sha256": "194d0d03361f3eb6ab0961e113e1faf1a574429c17a6414b768aa3a0811ef210"
+    },
+    {
+      "path": "scripts/y96_deployment.py",
+      "sha256": "9bac8c9daf17d4ac729b49f4fc62a39e16940d6f25be586aaf2255606c88596f"
+    },
+    {
+      "path": "scripts/create_y96_terminal_helpers.py",
+      "sha256": "466b55c3a55e3e4eef720045c90050f011bfdfa4d75ea83a5cc800832a3c898d"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    },
+    {
+      "path": "scripts/finalize_y96_fixed30.py",
+      "sha256": "e91c8d7eb2e01c46c70ae14cff1ccb3edce93b7e5195aec19d3944486a38e0f9"
+    },
+    {
+      "path": "scripts/test_y96_terminal_handoff.py",
+      "sha256": "8dafa16a350ba3bba926b6124a3f535f6791bbcc94865da32856aac673bee901"
+    },
+    {
+      "path": "scripts/prepare_y96_terminal_handoff.py",
+      "sha256": "bbf4aaabd53af6f70d66b5552359671af92a4f606ecbfc71a4fad264cd213728"
+    },
+    {
+      "path": "scripts/y96_terminal_contract.py",
+      "sha256": "194d0d03361f3eb6ab0961e113e1faf1a574429c17a6414b768aa3a0811ef210"
+    },
+    {
+      "path": "scripts/y96_deployment.py",
+      "sha256": "9bac8c9daf17d4ac729b49f4fc62a39e16940d6f25be586aaf2255606c88596f"
+    },
+    {
+      "path": "scripts/create_y96_terminal_helpers.py",
+      "sha256": "466b55c3a55e3e4eef720045c90050f011bfdfa4d75ea83a5cc800832a3c898d"
+    },
+    {
+      "path": "scripts/finalize_y61_fixed30.py",
+      "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+    },
+    {
+      "path": "scripts/finalize_y58_y59_handoff.py",
+      "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+    },
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "scripts/check_ef_execution.py",
+      "sha256": "326b62adc00591fb1b783e74b9bed68e55d9059475d36cc46ee0789365fa1009"
+    },
+    {
+      "path": "scripts/finalize_y96_fixed30_y98.py",
+      "sha256": "062b1968b0d0906cdf1cccb71b22d6b4eb6709e6fec7ebe656367df6e2f375ed"
+    },
+    {
+      "path": "scripts/test_y96_terminal_handoff_y98.py",
+      "sha256": "8175e1f07711b4b0fab5d8b44c1906d3e995328278249c1706ef90faed6caaee"
+    },
+    {
+      "path": "scripts/y96_y98_terminal_contract_v2.py",
+      "sha256": "8c09067ee817064686dd2e4e44f47366475c41efff5c40cfb0689aa9b7754c34"
+    },
+    {
+      "path": "scripts/test_y96_y98_terminal_binding_v3.py",
+      "sha256": "4088075d6913b5837206a90adda8c3353a13a4942d9191f146a7ad06b96592a4"
+    },
+    {
+      "path": "scripts/advance_y98_v2.py",
+      "sha256": "bf3c8d9326b4367c8f0fc65fae85093a14a224114464fe4bb59c93083fb1fc46"
+    },
+    {
+      "path": "scripts/y98_deployment.py",
+      "sha256": "21a5fbfcdf2d8e846fe9a51c8c57261289ad89584111100b8d037bd9f9c5fd1d"
+    },
+    {
+      "path": "scripts/y98_contract.py",
+      "sha256": "7fd285f81ab3505b54200b0bb6977fa7f9224af347f30523cdcd43c28bdc64a3"
+    },
+    {
+      "path": "scripts/run_y98_bound_native_y96.py",
+      "sha256": "885750c336faec775d6606202c2e1f15069131ed21e13f96c7064541788a3fe2"
+    },
+    {
+      "path": "pipeline/analyses/y98_server2_smoke_da9a408055d84e01b0c213c08e252046.json",
+      "sha256": "0785a038775b4df54a18a69143568fc0c7acc099d68b48d3237644d0a1cddf37"
+    },
+    {
+      "path": "pipeline/checks/y98_y96_additive_binding_da9a408055d84e01b0c213c08e252046.json",
+      "sha256": "ac0043ef8ac6307beeb82b4cc99cc68f63cd9c8e85990a1c2d85745dd330d0b3"
+    },
+    {
+      "path": "pipeline/checks/y98_y96_additive_binding_da9a408055d84e01b0c213c08e252046_server2_plan.json",
+      "sha256": "df390985032f822f4772676ff2aa73abd7cc3fb9461fdf33d2da4d23a622d82c"
+    },
+    {
+      "path": "scripts/finish_y96_y98_binding_repair.py",
+      "sha256": "c973dc3de210df398f16e4c28a54c981132b5572c30d1a3b27df6471a3c52189"
+    },
+    {
+      "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_lifecycle.log",
+      "sha256": "403b489b50b3170b178075f233820ed4759ba66be6868772f7bcfbe9eb5a3390"
+    },
+    {
+      "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_additive_v3.log",
+      "sha256": "c18f1f1c15cab683627a64a0f8cdd91b926b8ef027c347e058482761a73f08c1"
+    },
+    {
+      "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_additive.log",
+      "sha256": "b4a9fcdd43c64aae446d0961275cf20a3d178f617232b329ce81c8705fb051b0"
+    },
+    {
+      "path": "scripts/test_y96_y98_terminal_binding_v2.py",
+      "sha256": "d1ac23c17c866644f06935304c2378010bc9a4d93731be4168a153b106486126"
+    },
+    {
+      "path": "scripts/advance_y98.py",
+      "sha256": "a04327d98abaca65f82a261c44c8be916fb22bec110ca1375b1615174b17fe3a"
+    }
+  ],
+  "supersedes": {
+    "path": "pipeline/checks/y96_terminal_preparation_da9a408055d84e01b0c213c08e252046.json",
+    "sha256": "9acc205902559f0fe9faa06d0f28761cfe3218ac80002fb9bd17d4a6334dcdbd"
+  },
+  "additive_guard_tests_passed": 8,
+  "tested_additive_native_evidence": {
+    "path": "pipeline/analyses/y98_server2_smoke_da9a408055d84e01b0c213c08e252046.json",
+    "sha256": "0785a038775b4df54a18a69143568fc0c7acc099d68b48d3237644d0a1cddf37"
+  },
+  "original_helpers_unchanged": true,
+  "original_run_and_protocol_unchanged": true,
+  "operational_failure_scope": "test alias import; actual native/data/scientific controls unchanged",
+  "preserved_failed_test": {
+    "path": "pipeline/checks/y96_y98_terminal_binding_da9a408055d84e01b0c213c08e252046_additive.log",
+    "sha256": "b4a9fcdd43c64aae446d0961275cf20a3d178f617232b329ce81c8705fb051b0"
+  }
+}

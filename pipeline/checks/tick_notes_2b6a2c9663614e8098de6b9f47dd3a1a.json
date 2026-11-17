@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "上海2026-10-23 22:52:33取得本轮design快照，核验实际CODEX_THREAD_ID与AdaRES owner一致、后台调度Disabled；仅server-2 GPU0/280W，Y57仍用户暂停，不跨项目或改调度。",
+    "22:53:47实测Y60原PID17186/命令/cwd/starttime/GPU0归属一致，Train3/30步3954至3977增长；GPU0为82至83C/280W/22744MiB，存在SW热降频，无本次训练尾部错误或新kernel Xid/fallen-off。不将短采样判成硬件修复。证据pipeline/checks/ef_gpu0_runtime_2b6a2c9663614e8098de6b9f47dd3a1a.json。",
+    "22:55:15生命周期v3实查GPU0仍被Y60占用，84C/280W，无独占空槽；Y56/Y58/Y59仅冻结全量后评待办，Y61原七文件/CPU payload/decoder goal一致。当前resource_check/blocked证据同时纳入相应候选；GPU1外部负载未干预。证据pipeline/checks/gpu0_lifecycle_v3_2b6a2c9663614e8098de6b9f47dd3a1a.json。",
+    "复用项目级授权，将Y61原CPU已测七文件本地提交9bea5e906be3a478be50442db521e766c446a1ec，父6ac772a；提交前无waiting/claiming/index内容，提交范围和原CPU payload/current源/Git blob逐字节一致，index复空。没有提交其他文件、push、生产同步或改变Y60。证据pipeline/checks/y61_version_2b6a2c9663614e8098de6b9f47dd3a1a.json。",
+    "新增Y61原生YAML/TRAIN/tools.train两步检查程序并冻结为本轮native_smoke_plan；要求每步共享头7次、query_norm活焦点/断开peer输入序列、有限loss/backward/optimizer、可训练LN和掩码输入梯度、峰显存。8项CPU守卫、Python3.8语法及过期goal/篡改源码拒绝通过；原CPU/完整DEC证据只复核未重跑。没有执行GPU原生检查、准入或入队，不将守卫通过当作任务收益。",
+    "更新七段记忆，仍保留Y57暂停、原失败证据和专用恢复限制；本轮无新候选、模型修订、GPU工作负载、队列或训练启动。按canonical report/finish收尾，收尾结果以实际命令和收据为准。"
+  ],
+  "decisions": [
+    "继续保护Y60原远端6ac版本/固定30轮/seed1999/GPU0 280W；仍有热降频，未获授权不改功耗、风扇或重启，不驱逐GPU1外部任务。",
+    "Y61不再把本地版本保存拖到GPU空闲时：精确CPU已测七文件现已保存，原生两步计划已冻结；真实GPU检查仍只可在新鲜核验的独占空闲GPU0执行，通过后当轮签收据、入队和尝试既有门控派发。",
+    "Y56/Y58/Y59仅按各自不可变冻结计划做全量后评及成本比较；训练日志best不是科学晋升，不重训或重复准入。Y57继续等待用户明确恢复指令，不反复索取同一暂停决定。"
+  ]
+}

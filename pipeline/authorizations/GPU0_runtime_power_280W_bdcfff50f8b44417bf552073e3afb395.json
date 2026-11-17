@@ -1,0 +1,19 @@
+{
+  "scope": "temporary_runtime_gpu_power_limit",
+  "authorization_granted": true,
+  "recorded_on": "2026-10-21",
+  "source_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_reply": "允许仅 GPU0 临时降至280W",
+  "server": "server-2",
+  "host": "192.168.1.163",
+  "gpu_index": 0,
+  "gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+  "previous_observed_limit_watts": 390,
+  "temporary_limit_watts": 280,
+  "runtime_only": true,
+  "preserve_gpu1_limit": true,
+  "no_training_restart": true,
+  "no_model_data_optimizer_or_schedule_changes": true,
+  "no_persistent_boot_service_or_scheduler_changes": true,
+  "note": "This scoped human permission is separate from routine experiment authorization. Recheck current host, UUID, active owner and power bounds before applying. No permission to change other GPUs or claim a hardware repair."
+}

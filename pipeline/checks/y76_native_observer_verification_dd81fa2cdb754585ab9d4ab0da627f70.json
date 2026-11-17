@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y76",
+  "token": "dd81fa2cdb754585ab9d4ab0da627f70",
+  "source_body": {
+    "path": "scripts/probe_y76_native_smoke.py",
+    "sha256": "9691b35b340972a1ffd6768c9bcfc3f75c156582c32f80c7c51c8e3e18fdc791"
+  },
+  "actual_CPU_callback_result": {
+    "path": "pipeline/analyses/y76_native_observer_cpu_attempt3_dd81fa2cdb754585ab9d4ab0da627f70.json",
+    "sha256": "f8a6189ec7f5db39a8ac059eb5f67e5fa95ac2e256afcfd824c94304fbf899ec"
+  },
+  "actual_CPU_callback_log": {
+    "path": "pipeline/analyses/y76_native_observer_cpu_attempt3_dd81fa2cdb754585ab9d4ab0da627f70.log",
+    "sha256": "d8cf63f93f88b25b350234e3e320f9fd4466e025c327f4c61b8ed80abc0c0ff1"
+  },
+  "actual_CPU_program": {
+    "path": "pipeline/checks/y76_native_observer_CPU_dd81fa2cdb754585ab9d4ab0da627f70_program_attempt3.py",
+    "sha256": "e18acfb7ca7e584b4826aa523d212335d05d3e4ea1924a1a393186799c051bc5"
+  },
+  "negative_implementation_evidence": [
+    {
+      "path": "pipeline/checks/y76_native_observer_CPU_dd81fa2cdb754585ab9d4ab0da627f70_program.py",
+      "sha256": "07e828251c109ca1bfc0c65694d27375fd611c720b7209fb89d9543c3737982a"
+    },
+    {
+      "path": "pipeline/analyses/y76_native_observer_cpu_dd81fa2cdb754585ab9d4ab0da627f70.log",
+      "sha256": "aefb3c4322645ac6564217d96cd5b10faca7aec6521917f9185e1a4a057fbb7c"
+    },
+    {
+      "path": "pipeline/checks/y76_native_observer_CPU_dd81fa2cdb754585ab9d4ab0da627f70_program_attempt2.py",
+      "sha256": "dcf82f50b6d33e5a51ed1ee1d427032472e2b451713cd5dcca519e18649a9789"
+    },
+    {
+      "path": "pipeline/analyses/y76_native_observer_cpu_attempt2_dd81fa2cdb754585ab9d4ab0da627f70.log",
+      "sha256": "6a507a9c34a5607c9395946a44490bd1191ace87a331eb6e63af592fac904c0c"
+    }
+  ],
+  "failure_scope": "implementation",
+  "failure_location": "CPU test wrapper dependencies only; original frozen body/model/plans unchanged.",
+  "repair": "Use gorilla optimizer entry and provide native dataloader dependency before defining frozen callbacks.",
+  "synthetic_CPU_steps": 2,
+  "exact_original_head_query_stage_and_query_norm_consumers": true,
+  "seven_finite_nonzero_offset_row_gradients_and_updates": true,
+  "native_GPU_executed": false,
+  "native_GPU_PASS": false,
+  "admitted": false,
+  "scientific_efficacy": "Unknown"
+}

@@ -1,0 +1,77 @@
+{
+  "complete": true,
+  "observed_at_utc": "2026-10-21T07:01:53.761376+00:00",
+  "hostname": "dl01-MS-7C60",
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "before": {
+    "0": {
+      "index": 0,
+      "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 88.0
+    },
+    "1": {
+      "index": 1,
+      "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 68.0
+    }
+  },
+  "after": {
+    "0": {
+      "index": 0,
+      "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "limit_watts": 280.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 88.0
+    },
+    "1": {
+      "index": 1,
+      "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      "limit_watts": 390.0,
+      "min_watts": 100.0,
+      "max_watts": 420.0,
+      "temperature_c": 66.0
+    }
+  },
+  "command": [
+    "sudo",
+    "-S",
+    "-p",
+    "",
+    "--",
+    "/usr/bin/nvidia-smi",
+    "-i",
+    "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+    "-pl",
+    "280"
+  ],
+  "change_returncode": 0,
+  "change_stdout": "Power limit for GPU 00000000:21:00.0 was set to 280.00 W from 390.00 W.\n\nWarning: persistence mode is disabled on device 00000000:21:00.0. See the Known Issues section of the nvidia-smi(1) man page for more information. Run with [--help | -h] switch to get more information on how to enable persistence mode.\nAll done.\n",
+  "change_stderr": "",
+  "gpu0_limit_verified": true,
+  "gpu1_limit_unchanged": true,
+  "runtime_only": true,
+  "training_restarted": false,
+  "persistent_config_changed": false,
+  "authorization": {
+    "path": "pipeline/authorizations/GPU0_runtime_power_280W_bdcfff50f8b44417bf552073e3afb395.json",
+    "sha256": "c90a6d51a211f7938bd6a7bd29ae816585fb39eacee9f6d76687953ed2ddb49e"
+  },
+  "helper": {
+    "path": "scripts/apply_gpu0_runtime_power_authenticated.py",
+    "sha256": "80abdc0780d434f1696694ddec63bc6184ce706b21463d7cc55855402d111896"
+  },
+  "recorded_at": "2026-10-21T15:01:56.225088+08:00",
+  "prior_confirmed_no_change": {
+    "path": "pipeline/checks/gpu0_runtime_power_bdcfff50f8b44417bf552073e3afb395.json",
+    "sha256": "ace041cd98766361904325e9d6acf42ffce7875b847496bea9157c37f4add926"
+  },
+  "credential_saved_or_logged": false,
+  "key_based_SSH_preserved": true
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "249b3cc905a740f39c605648051dbcef",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T19:50:01.390982+00:00",
+  "recorded_at": "2026-10-16T20:03:16.252166+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: preserved full six-section audit, Y50 native progress health evidence and one live GPU resource check after its actual retry became due. Both authorized cards remain occupied: GPU0 foreign task, GPU1 Y50 with increasing native steps. No new scientific or Y52 native gate test. Old65 evidence hashes unchanged; only2 real resource evidence refs appended. Unchanged checker predicts CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. No replayed finish, weakened gates or invented progress. Canonical abort; independently verify lease release.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 16,
+    "input_tokens": 3859528,
+    "cached_input_tokens": 3738624,
+    "output_tokens": 28205,
+    "reasoning_output_tokens": 10167,
+    "total_tokens": 3887733,
+    "uncached_input_tokens": 120904,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 2,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "token": "73fa7b70b98747e8b6daab312536c11c",
+  "id": "AdaRES-Y81",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y81_server2_fixed30_73fa7b70b98747e8b6daab312536c11c.json",
+    "sha256": "39a93acd9ab3e58692c5093f6e17bc303203997099485ed856a4b5b08c448a12"
+  },
+  "before_running": {
+    "server-2": {
+      "1": "AdaRES-Y81",
+      "0": "AdaRES-Y83"
+    },
+    "server-1": {
+      "0": "AdaRES-Y82"
+    }
+  },
+  "after_running": {
+    "server-2": {
+      "0": "AdaRES-Y83"
+    },
+    "server-1": {
+      "0": "AdaRES-Y82"
+    }
+  },
+  "only_exact_Y81_archived": true,
+  "paused_Y57_and_all_other_queue_entries_preserved": true,
+  "remote_mutations": false,
+  "checkpoint_files_retained": true,
+  "full_frozen_evaluation_executed": false,
+  "resource_after": {
+    "path": "pipeline/checks/y81_server2_fixed30_73fa7b70b98747e8b6daab312536c11c_resource.json",
+    "sha256": "78c9bd25451ec65cddf8c3f3f0053c221c156db89502c826fec2bed7f13451fc"
+  },
+  "physical_idle_observed": null,
+  "GPU1_use_paused": true,
+  "CPU_only_terminal_verification": true,
+  "helper": {
+    "path": "scripts/finalize_y81_fixed30.py",
+    "sha256": "99b24a486e5997911910fc441cac215cc60be16cff22fd512475d81d422322fe"
+  }
+}

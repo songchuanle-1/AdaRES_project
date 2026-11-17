@@ -1,0 +1,13 @@
+{"scans": 8}
+{"scans": 16}
+{"scans": 24}
+{"scans": 32}
+{"scans": 40}
+{"scans": 48}
+{"scans": 56}
+{"scans": 64}
+{"mode": "population", "complete": true, "gpu_precheck": {"memory_mib": 1, "util": 0}, "parameters_added": 0, "limitations": ["TRAIN diagnostics and bounded execution tests, not trained efficacy or full-dataloader replay."], "scans": 64, "expressions": 256, "padded_scans": 63, "native_padding_gradient_nonzero": 63, "candidate_padding_gradient_max": 0.0, "candidate_padding_cf_max": 0.0, "native_padding_cf_mean": 0.00014165386239746734, "all_valid_query_gradients_nonzero": true, "all_finite": true}
+
+STDERR:
+Using backend: pytorch
+2026-10-01 22:33:19,016 - INFO - Load train scanrefer: 36665 samples

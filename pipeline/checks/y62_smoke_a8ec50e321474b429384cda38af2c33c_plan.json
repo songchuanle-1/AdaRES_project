@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y62",
+  "profile": "experiment_first",
+  "config": "configs_song/model_paper5/adares_y62_overlap_density_res.yaml",
+  "code_commit": "60466af4c1ade119b2a9f78687ad9d5e21358e2c",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "native_executed": false,
+  "required_resource": "Exclusive idle authorized server-2 GPU0; current lease/live compute/280W; preserve Y61 and Y57.",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps, seven shared calls per step, finite nonzero density-weight gradients, zero first-step anchor and second-step nonzero branch response, resource budget and frozen version.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y62_smoke pipeline/checks/y62_smoke_a8ec50e321474b429384cda38af2c33c_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "program": {
+    "path": "pipeline/checks/y62_smoke_a8ec50e321474b429384cda38af2c33c_program.py",
+    "sha256": "dbd391f6b948f2ed8ce08e1036c3809c6f3b979051df8ad94e738ecb60b216ea"
+  }
+}

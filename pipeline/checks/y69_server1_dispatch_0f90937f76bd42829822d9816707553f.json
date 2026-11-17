@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-30T13:18:35.835371+08:00",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "after": {
+    "gpu": "100, 9814, 350.00",
+    "compute": "1135633"
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y69",
+      "label": "AdaRES-Y69 fixed30",
+      "config": "configs_song/model_paper5/adares_y69_coarse_geometry_bias_res.yaml",
+      "status": "running",
+      "gpu": "0",
+      "server": "server-1",
+      "depends_on": [],
+      "code_commit": "9acd73cdc1b96be003c8450a9e22057248a0f531",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y69.json",
+      "scientific_candidate_id": "AdaRES-Y69",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "dispatch_phase": "progress_pending",
+      "claimed_gpu": "0",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "pid": 1135633,
+      "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y69_coarse_geometry_bias_res_20261030_131753.log",
+      "launched": "2026-10-30T13:18:35"
+    }
+  ],
+  "events": [
+    "队列推送 [AdaRES-Y69 fixed30] configs_song/model_paper5/adares_y69_coarse_geometry_bias_res.yaml → server-1 gpu0"
+  ],
+  "Y57_still_paused": true
+}

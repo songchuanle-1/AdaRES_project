@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "raw_result_id": "AdaRES-Y43",
+  "correction": "Export identity string inherited Y43; tested config/source and independent parameter count bind the actual Y45. Raw receipt unchanged; no repeated measurement.",
+  "raw": {
+    "path": "pipeline/analyses/y45_resources_392a_392a5a9f5fe242d7a3109a50e6060fda.json",
+    "sha256": "56e12910c54fd699cac2438455b9b5421edb93f5580a9d6b69403ccb5e29606d"
+  },
+  "executed_source": {
+    "path": "scripts/probe_y45_resources_392a.py",
+    "sha256": "993c4dbd342ac96a9e276cb8b64aea325089fb83fac5075ea40046c8a15c968c"
+  },
+  "actual_config": "configs_song/model_paper5/adares_y45_metric_decomposition_res.yaml",
+  "summary": {
+    "parent": {
+      "parameters": 164629637,
+      "stress_train_median": 0.9071228069951758,
+      "stress_train_reserved": 13.40234375,
+      "inference_median": 0.08980184250685852,
+      "inference_p95": 0.21391886154888198,
+      "inference_reserved": 1.7578125
+    },
+    "candidate": {
+      "parameters": 164827272,
+      "stress_train_median": 0.9150835650070803,
+      "stress_train_reserved": 13.541015625,
+      "inference_median": 0.08753006300685229,
+      "inference_p95": 0.21450869489708563,
+      "inference_reserved": 1.7578125
+    }
+  },
+  "added_parameters": 197635,
+  "scientific_status": "resource_feasibility_not_trained_Pareto"
+}

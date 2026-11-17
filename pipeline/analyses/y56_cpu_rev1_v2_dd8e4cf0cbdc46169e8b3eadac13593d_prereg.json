@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 1,
+  "preregistered_at": "2026-10-20T22:44:44.963166+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_cpu_rev1_v2_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "ab2237f671bd1d5b94851c753f458e03f2da7ea172c7150cab53483677720977"
+  },
+  "body": {
+    "path": "scripts/probe_y56_cpu_rev1_v2_dd8e.py",
+    "sha256": "4bf00a3191042a6d607da772daf4f8df679fd28cc79f8ff4ac0826741326e3f7"
+  },
+  "setup": {
+    "path": "scripts/setup_y56_rev1_dd8e.py",
+    "sha256": "32743e6b10900487be04af7a68d861edf7f8b45d592d2ee3e808822f42b84612"
+  },
+  "bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "ce2b2f75d08f7ba3dda77d922fe83e1c2d0dc7f0fba9e8331b31c9b6cd1338db"
+  },
+  "retained_harness_failure": {
+    "path": "pipeline/analyses/y56_cpu_rev1_dd8e4cf0cbdc46169e8b3eadac13593d.log",
+    "sha256": "469b91417889dc39b0d143c6e2cb16ffa2c6df4ccec4e566048366bc5acebc46"
+  },
+  "repair": "Use separate revision1 fixture directory rather than overwrite frozen initial files. CPU old-class construction preserves RNG, restoring original seed fixture exactly.",
+  "production_source_or_scientific_gate_change": false,
+  "result": "pending"
+}

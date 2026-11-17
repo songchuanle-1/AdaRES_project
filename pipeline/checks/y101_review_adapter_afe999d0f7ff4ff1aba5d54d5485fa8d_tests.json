@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "passed": true,
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "test_log": "test_busy_memory_rejected (__main__.Guards) ... ok\ntest_busy_utilization_rejected (__main__.Guards) ... ok\ntest_contending_lock_rejected (__main__.Guards) ... ok\ntest_default_gpu0 (__main__.Guards) ... ok\ntest_explicit_gpu0 (__main__.Guards) ... ok\ntest_failed_query_rejected (__main__.Guards) ... ok\ntest_gpu1_rejected_before_imports (__main__.Guards) ... ok\ntest_live_compute_rejected_even_zero_util (__main__.Guards) ... ok\ntest_missing_power_rejected (__main__.Guards) ... ok\ntest_original_resource_accepted (__main__.Guards) ... ok\ntest_other_gpu_rejected (__main__.Guards) ... ok\ntest_scientific_AST_preserved (__main__.Guards) ... ok\ntest_wrong_host_rejected_before_lock (__main__.Guards) ... ok\ntest_wrong_power_rejected (__main__.Guards) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.050s\n\nOK\n",
+  "real_GPU_queries": false,
+  "real_GPU_lock_acquired": false,
+  "checkpoint_loaded": false,
+  "CUDA_used": false,
+  "scientific_evaluation_executed": false,
+  "temporary_directory_cleaned": true
+}

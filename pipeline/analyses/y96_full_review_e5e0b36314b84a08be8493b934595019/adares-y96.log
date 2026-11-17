@@ -1,0 +1,19 @@
+Using backend: pytorch
+2026-11-14 02:04:13,233 - INFO - Load val scanrefer: 9508 samples
+2026-11-14 02:04:15,786 - INFO - set random seed: 1999
+2026-11-14 02:04:21,142 - INFO - set random seed: 1999
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+2026-11-14 02:06:27,737 - INFO - set random seed: 1999
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "/data1/songcl/Project/AdaRES_project/AdaRES/configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml", "config_sha256": "63389f06f14fc2bb7adeceefe1abcf1c8eac71a83ccc0c200ccbeff8872ce667", "checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y96_seed_query_skip_res/20261110_165702/best.pth", "checkpoint_sha256": "74ebba156ac733d1f7fac7c9c4c60d51423c3b784b57ebd89ac970d4dd861185", "checkpoint_meta": {"epoch": 23, "best_miou": 0.5081601738929749}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164695173, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 98, "utilization": 0}, "repeat_max_iou_difference": 1.0, "repeat_miou_difference": 0.00020182468733676018, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.35823043528944254, 0.38838548911735415, 0.3572584120556712, 0.3564737872220576, 0.36411778815090656], "peak_allocated_gib": 4.041882038116455, "peak_reserved_gib": 6.486328125, "elapsed_seconds": 258.79038842068985}
+{"expressions": 9508, "scenes": 141, "miou": 0.5082609879270078, "acc25": 0.6088557004627682, "acc50": 0.5600546907867059, "spmiou": 0.4718844821549471}

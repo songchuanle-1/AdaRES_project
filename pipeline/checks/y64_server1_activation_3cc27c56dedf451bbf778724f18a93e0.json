@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "token": "3cc27c56dedf451bbf778724f18a93e0",
+  "id": "AdaRES-Y64",
+  "observed_at": "2026-10-28T06:49:36.704827+08:00",
+  "observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "98, 0, 350.00",
+    "compute": ""
+  },
+  "previous_plan": {
+    "path": "pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_plan.json",
+    "sha256": "bfcfa275ccc9d1f87f692761c50405bb4d4419e8bcb3fede50cd3b13ca057a11"
+  },
+  "active_plan": {
+    "path": "pipeline/checks/y64_server1_alternative_8c74d05a949b46a993804c557680694c_plan.json",
+    "sha256": "76dc3b7ae533775e072cdf4db021034c8fe065d256688e874fd2767a8b25924d"
+  },
+  "no_queue_or_running_reservations": true,
+  "exclusive_idle_observed": true,
+  "native_executed": false,
+  "GPU_lease_and_idle_must_be_rechecked_by_runner": true,
+  "hardware_changed": false
+}

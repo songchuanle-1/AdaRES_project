@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "token": "75d4b121caff4ecab72bfeac9601eefe",
+  "observed_at": "2026-11-06T15:02:32.340940+08:00",
+  "originals": [
+    {
+      "path": "scripts/finalize_y84_fixed30.py",
+      "sha256": "8fadd56d7fdaced19f664227023c861259b5fe41f1d8fa45925aeb187ffc042e"
+    },
+    {
+      "path": "scripts/prepare_y84_terminal_handoff.py",
+      "sha256": "9ae0dbd3a341fb82f63a088090606c94fa2ec21f266423bd55e0a5d3c77c128a"
+    },
+    {
+      "path": "scripts/test_y84_terminal_handoff.py",
+      "sha256": "262d856543437e6927679e577416796910f3519691e18ccc8dcce274d9812d5e"
+    },
+    {
+      "path": "scripts/y84_terminal_contract.py",
+      "sha256": "d84b31689e043c96655b6f982ffdf928b1c6f50402b5e73d3cadcfd420646216"
+    },
+    {
+      "path": "scripts/finalize_y85_fixed30.py",
+      "sha256": "af6ff42e26d24b7cace4386321c41fc56568009963035cc126a9939b89745241"
+    },
+    {
+      "path": "scripts/prepare_y85_terminal_handoff.py",
+      "sha256": "547883575c44ab050c51d166db0a6a991a0f812263326c942cf7500ddd763e62"
+    },
+    {
+      "path": "scripts/test_y85_terminal_handoff.py",
+      "sha256": "2b61f27d1d80cd6781203a1a7c01a7552865ec24e278e17f0e18381e73abbf0a"
+    },
+    {
+      "path": "scripts/y85_terminal_contract.py",
+      "sha256": "768ab2d8b64066aac8d4734c7e3608dcb89bd2725b1a18be1832d2c60d7cd3bb"
+    }
+  ],
+  "discoveries": {
+    "AdaRES-Y87": {
+      "spec": {
+        "server": "server-2",
+        "pid": 26281,
+        "code_commit": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+        "package": "adares_y87_self_language_product",
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y87_self_language_product_res_20261106_032555.log",
+        "admission_sha256": "300d46379e6072066f775c03ceaf2142d806a9fe02c3ad88f742126f5263e30c",
+        "freeze_sha256": "b5aab97e1d694e64315cf0a0687a2c8c35a6eb5e73f5915cbffb9f36b9eaa3e4",
+        "config": "configs_song/model_paper5/adares_y87_self_language_product_res.yaml",
+        "id": "AdaRES-Y87",
+        "checkpoint_directory": "20261105_142459",
+        "location_evidence": {
+          "path": "pipeline/checks/y87_terminal_original_location_75d4b121caff4ecab72bfeac9601eefe.json",
+          "sha256": "bb64984ce75cf93e79dcbb1368337c5f4715e3c8e9c6a58f8f56545331dbdf3e"
+        }
+      },
+      "evidence": [
+        {
+          "path": "pipeline/checks/y87_terminal_original_location_75d4b121caff4ecab72bfeac9601eefe.py",
+          "sha256": "19a6f7b573cc0bdf9bcfe2fc2864f3e338e9a51c9d52a50f4e504017a9fb7120"
+        },
+        {
+          "path": "pipeline/checks/y87_terminal_original_location_75d4b121caff4ecab72bfeac9601eefe.log",
+          "sha256": "84b3becf0d3f6748eea17cca89a2108752f90beafe8c4b141fee5720bea45621"
+        }
+      ]
+    },
+    "AdaRES-Y88": {
+      "spec": {
+        "server": "server-1",
+        "pid": 3527278,
+        "code_commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+        "package": "adares_y88_mask_query_quadratic",
+        "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y88_mask_query_quadratic_res_20261106_053534.log",
+        "admission_sha256": "39f9a71debe48314d479b42b604565cf557ccbe40e5582e949a66959587b3572",
+        "freeze_sha256": "93bf51b65a580cbdd5a7ade69fae370d8d0e6e6db5ab665645892c775d84aa81",
+        "config": "configs_song/model_paper5/adares_y88_mask_query_quadratic_res.yaml",
+        "id": "AdaRES-Y88",
+        "checkpoint_directory": "20261106_053553",
+        "location_evidence": {
+          "path": "pipeline/checks/y88_terminal_original_location_75d4b121caff4ecab72bfeac9601eefe.json",
+          "sha256": "8b1fe954b39a55a48a57028f86528458ca5105dddf5d2a63d5f8e2c8ad63136f"
+        }
+      },
+      "evidence": [
+        {
+          "path": "pipeline/checks/y88_terminal_original_location_75d4b121caff4ecab72bfeac9601eefe.py",
+          "sha256": "7255eba041cca87db6a748f0a8a37ab72f0894128e61b64f33f98016807afb54"
+        },
+        {
+          "path": "pipeline/checks/y88_terminal_original_location_75d4b121caff4ecab72bfeac9601eefe.log",
+          "sha256": "4e26714b9b08179c513138ecd9bf204ce6cba47792cb6069380e0788498c97c4"
+        }
+      ]
+    }
+  },
+  "generated": [
+    {
+      "path": "scripts/y87_terminal_contract.py",
+      "sha256": "de55d4ca14465e6eab5c75711129df14d6367dd3feb7b64cde8fdabd419bd84c"
+    },
+    {
+      "path": "scripts/finalize_y87_fixed30.py",
+      "sha256": "5ba507537598b588c1154e510a5a16ed79060b3846eb7f3f83a5b577386896d6"
+    },
+    {
+      "path": "scripts/prepare_y87_terminal_handoff.py",
+      "sha256": "40a4dae7d234a7fe24bff1552731edcc3c18f0629f21afd5ca88dc0d06a3b4dc"
+    },
+    {
+      "path": "scripts/test_y87_terminal_handoff.py",
+      "sha256": "9b25bec85b9476b78f8ae52b902aa157cd86e3b2d57a4bbd2e8cd3b9a41a4d0b"
+    },
+    {
+      "path": "scripts/y88_terminal_contract.py",
+      "sha256": "3b518d38a2b72700f65c8a5e036d5f42b04c6acf51c354a1bc86293ba0532b47"
+    },
+    {
+      "path": "scripts/finalize_y88_fixed30.py",
+      "sha256": "e0dfed6bb7e7eecea498d32f569a05b6b8097bfe1045032267374f0100a551d6"
+    },
+    {
+      "path": "scripts/prepare_y88_terminal_handoff.py",
+      "sha256": "d892d20c55f20aa501e16aaee2f77baa42f39ef88c5d88908442b1f88b64444e"
+    },
+    {
+      "path": "scripts/test_y88_terminal_handoff.py",
+      "sha256": "30fb711f635fb95c03e2a52d6ba246297e11902cdeff17e8aa0d3e575b0bf10b"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "scripts/create_y87_y88_terminal_helpers.py",
+      "sha256": "7135e4ad428e38d76e657ca42844697175dd02565a8f12f595aed07eedc4da46"
+    },
+    {
+      "path": "scripts/current_terminal_contract.py",
+      "sha256": "ab77e9dc90edf2c3686faad77c8c798fcae9b1fa7af21f30e79f73cb803e8ae0"
+    }
+  ],
+  "source_specialization_only": true,
+  "original_helpers_unchanged": true,
+  "checkpoint_loaded": false,
+  "full_terminal_verification_executed": false,
+  "archived": false,
+  "queue_changed": false,
+  "training_stopped": false,
+  "remote_mutations": false
+}

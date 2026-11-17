@@ -1,0 +1,54 @@
+{
+  "id": "AdaRES-Y60",
+  "config": "configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+  "server": "server-2",
+  "gpu": "14",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-23T20:54:06.531500",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-24T18:50:43.577316",
+      "status": "done_complete",
+      "best_miou": "0.5075",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 17186,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y60_stage_specific_confidence_res_20261023_205330.log",
+  "launched": "2026-10-23T20:54:06",
+  "final_best": "0.5075",
+  "finished_at": "2026-10-24T18:50:43.577316",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-2\\adares_y60_stage_specific_confidence_res\\fd874a5eafed4a5b84c6c77d939b6b3f\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "03cdf5f4c0014d14909e371fff95c497",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y60.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y60_fixed30_fd874a5eafed4a5b84c6c77d939b6b3f.json",
+    "sha256": "67e0dfb0a3e56796bddb099a7b5620577581decb7d9a229e37f3ad792bfffe5e"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y60_stage_specific_confidence_res/20261023_085324/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5075249075889587,
+      "optimizer_state_count": 603,
+      "scheduler_last_epoch": 30,
+      "sha256": "0080f16b83602aa28ccdbe4f9bd816010f23cbff86ff871722aac57875ae05ec"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y60_stage_specific_confidence_res/20261023_085324/best.pth",
+      "epoch": 16,
+      "best_miou": 0.5075249075889587,
+      "optimizer_state_count": 603,
+      "scheduler_last_epoch": 16,
+      "sha256": "6c7b47fb04ee77b5762a086f1fc6a60e040887304a49ae95a769777dc045ec50"
+    }
+  ]
+}

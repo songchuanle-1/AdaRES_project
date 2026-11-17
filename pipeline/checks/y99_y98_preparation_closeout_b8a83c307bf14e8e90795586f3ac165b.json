@@ -1,0 +1,104 @@
+{
+  "complete": true,
+  "token": "b8a83c307bf14e8e90795586f3ac165b",
+  "observed_at": "2026-11-10T23:15:06.572257+08:00",
+  "observations": {
+    "AdaRES-Y96": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y96_b8a83c307bf14e8e90795586f3ac165b_release.json",
+        "sha256": "531b4d3f64dc2febfad29eef767506e9d35374b135c5b52535c4544b54574896"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 8,
+        "total": 30,
+        "step": 2270,
+        "count": 4686
+      },
+      "pid": 3893460
+    },
+    "AdaRES-Y98": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y98_b8a83c307bf14e8e90795586f3ac165b_release.json",
+        "sha256": "c9b251c1d0ab92eabf459c00dbfc01b8c795cc9fb3fb3ccb7a085b03d5392bce"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 3,
+        "total": 30,
+        "step": 4119,
+        "count": 4686
+      },
+      "pid": 25962
+    }
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "4038ba56ddf5651b4f35a09cd06d5c9ea20c10c70def0700443be418ed292d75"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "ea994d12e9da4a470901baab0611f167abe3c2c97c0d0afd6d8c64b904ec22e6"
+    }
+  },
+  "terminal_preparation": {
+    "path": "pipeline/checks/y98_terminal_preparation_b8a83c307bf14e8e90795586f3ac165b.json",
+    "sha256": "839553e3f93d716153f04a647089d4544fc20584063e4a4d4e95056e97266a0b"
+  },
+  "binding": {
+    "path": "pipeline/checks/y99_y98_additive_binding_b8a83c307bf14e8e90795586f3ac165b.json",
+    "sha256": "862e1f15c6d2907a1b3a9236e29f38c9dcdc10e9aa2022e6bedbf2c02ff3f641"
+  },
+  "new_scientific_candidates": 0,
+  "scientific_CPU_replays": 0,
+  "native_GPU_tasks": 0,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "checkpoints_loaded": false,
+  "terminal_lifecycle_tests": 29,
+  "binding_operational_tests": 10,
+  "original_Y95_archive_replayed": false,
+  "actual_parent_native_reused": {
+    "path": "pipeline/analyses/y98_server2_smoke_da9a408055d84e01b0c213c08e252046.json",
+    "sha256": "0785a038775b4df54a18a69143568fc0c7acc099d68b48d3237644d0a1cddf37"
+  },
+  "wording_correction": "The generated operational attempt's old 'exact Y94 parent native evidence' phrase is stale; actual_parent_native, parent_commit, runner guards and current production parent are Y98. No new native or scientific test is claimed.",
+  "full_original_protocol_preserved": true,
+  "formal_FIRST_or_cost_executed": false,
+  "evidence": [
+    {
+      "path": "scripts/finish_y99_y98_preparation_tick.py",
+      "sha256": "03feaa4c1de2324f25ca393fa53f3e5e3c6e621c2aa1d1577ae82ba06294a900"
+    },
+    {
+      "path": "pipeline/checks/y98_terminal_preparation_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "839553e3f93d716153f04a647089d4544fc20584063e4a4d4e95056e97266a0b"
+    },
+    {
+      "path": "pipeline/checks/y99_y98_additive_binding_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "862e1f15c6d2907a1b3a9236e29f38c9dcdc10e9aa2022e6bedbf2c02ff3f641"
+    },
+    {
+      "path": "pipeline/checks/y95_server2_fixed30_y96_da9a408055d84e01b0c213c08e252046.json",
+      "sha256": "07375a08332edd8344e1a7580d4e5e4843c1972891a1b7f791fa61c9b99b4502"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y96_b8a83c307bf14e8e90795586f3ac165b_release.json",
+      "sha256": "531b4d3f64dc2febfad29eef767506e9d35374b135c5b52535c4544b54574896"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y98_b8a83c307bf14e8e90795586f3ac165b_release.json",
+      "sha256": "c9b251c1d0ab92eabf459c00dbfc01b8c795cc9fb3fb3ccb7a085b03d5392bce"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "4038ba56ddf5651b4f35a09cd06d5c9ea20c10c70def0700443be418ed292d75"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_b8a83c307bf14e8e90795586f3ac165b.json",
+      "sha256": "ea994d12e9da4a470901baab0611f167abe3c2c97c0d0afd6d8c64b904ec22e6"
+    }
+  ]
+}

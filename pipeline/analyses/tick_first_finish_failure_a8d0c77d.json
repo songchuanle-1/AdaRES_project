@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "token": "a8d0c77d45d142c0a6c46b163b956253",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-09T00:49:10.042774+00:00",
+  "recorded_at": "2026-10-09T01:18:42.134827+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Closure not enabled or postflight did not explicitly pass",
+  "closure_rc": 1,
+  "context_committed": false,
+  "lease_release": "retained",
+  "usage": {
+    "status": "partial_window",
+    "calls": 74,
+    "input_tokens": 13549571,
+    "cached_input_tokens": 13323136,
+    "output_tokens": 54826,
+    "reasoning_output_tokens": 12813,
+    "total_tokens": 13604397,
+    "uncached_input_tokens": 226435,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 2,
+    "changed_candidates": 2,
+    "new_evidence_references": 18,
+    "advanced_to_training": 1,
+    "dispositions": {
+      "admission": 0,
+      "training": 1,
+      "rejected": 1,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

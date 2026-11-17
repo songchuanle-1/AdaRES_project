@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "token": "03d64fcf5ccd4b2e8e0e1bd1d5a43985",
+  "id": "AdaRES-Y101",
+  "failure": "ImportError: summarize is defined in original evaluate_adares_frozen_full.py, not analyze_frozen_full.py",
+  "original_source": {
+    "path": "scripts/collect_y101_full_review.py",
+    "sha256": "26c7dc32301d4686ed95e4acbfd2200cee2e0750091a0cd7164c996730e3a9dc"
+  },
+  "corrected_source": {
+    "path": "scripts/collect_y101_full_review_v2.py",
+    "sha256": "c99d301de7331669ddc87a8149d3cf7b0be449178aefacc2b33509dcdb480864"
+  },
+  "correction": "Import the unchanged summary function from the original frozen evaluator; preserve corrected historical paired-analysis functions.",
+  "remote_execution": false,
+  "local_capture_directory_created": false,
+  "GPU_used": false
+}

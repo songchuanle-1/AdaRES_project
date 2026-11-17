@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y80",
+  "token": "eee3af894c7e4816a93bb3d1e7770040",
+  "code_commit": "4e68cd84d56d890222adc2bec8ab59cb0c8715b6",
+  "CPU_native_callbacks_actually_executed": true,
+  "native_body": {
+    "path": "scripts/probe_y80_native_smoke.py",
+    "sha256": "d4405cd8a3c4f93313b82e36ff894f16032be6f688ec66736898a2a801ff94ea"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y80_native_observer_CPU_eee3af894c7e4816a93bb3d1e7770040_program.py",
+    "sha256": "d53bd6332c4d2dfc3f4bb8471db38544fea9d7bf855554d2336ff51d4d9d7375"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y80_native_observer_cpu_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "e6d4f14c792c790f03e3656c6944cd315b26154594c5b0aadc157611ff92b65d"
+  },
+  "exact_callback_functions_and_classes": 15,
+  "original_full_model_pretrain_TRAIN_loaded": true,
+  "two_synthetic_CPU_decoder_optimizer_steps": true,
+  "full_seven_shared_confidence_query_norm_calls": true,
+  "six_exact_current_query_visual_ffn_padding_identities": true,
+  "six_qia_and_five_next_lia_consumers": true,
+  "finite_both_input_and_new_weight_gradients_and_updates": true,
+  "zero_then_nonzero_response": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y80_observer_metadata_repair_eee3af894c7e4816a93bb3d1e7770040.json",
+      "sha256": "aa671739b0947077d3b950cffedcc9e2f2707201a7263aae93fce30c3acc5d77"
+    },
+    {
+      "path": "scripts/save_y80_native_observer_verification.py",
+      "sha256": "f010180c2fe9e48a176675fd60883e520baad277403a646fac771f4b38a88c91"
+    },
+    {
+      "path": "pipeline/analyses/y80_native_observer_cpu_eee3af894c7e4816a93bb3d1e7770040.json",
+      "sha256": "e6d4f14c792c790f03e3656c6944cd315b26154594c5b0aadc157611ff92b65d"
+    },
+    {
+      "path": "pipeline/analyses/y80_native_observer_cpu_eee3af894c7e4816a93bb3d1e7770040.log",
+      "sha256": "c8812faeb78ed09ac3050d87327d95746326dd4ac6d32308c65b4a0d4e71acfd"
+    },
+    {
+      "path": "pipeline/checks/y80_native_observer_CPU_eee3af894c7e4816a93bb3d1e7770040_program.py",
+      "sha256": "d53bd6332c4d2dfc3f4bb8471db38544fea9d7bf855554d2336ff51d4d9d7375"
+    },
+    {
+      "path": "scripts/probe_y80_native_smoke.py",
+      "sha256": "d4405cd8a3c4f93313b82e36ff894f16032be6f688ec66736898a2a801ff94ea"
+    },
+    {
+      "path": "scripts/save_y80_native_observer_verification_attempt2.py",
+      "sha256": "217d5ffb93a3b0f1402cd97570743b2590195ddb082be188df300a7fc860a2fa"
+    },
+    {
+      "path": "scripts/prepare_y80_native_observer_cpu.py",
+      "sha256": "ea36b1c10b996c64db91d3ee040de5ff37cae71fc2a79d7f1d062fc4b5539ac5"
+    }
+  ],
+  "CUDA_initialized": false,
+  "native_sparse_task": false,
+  "native_smoke_passed": false,
+  "admission": false,
+  "efficacy_unknown": true
+}

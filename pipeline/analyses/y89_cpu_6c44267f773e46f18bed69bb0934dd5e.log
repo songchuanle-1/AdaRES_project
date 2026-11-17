@@ -1,0 +1,34 @@
+Using backend: pytorch
+2026-11-05 17:57:58,828 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=798 unexpected=0
+2026-11-05 17:57:59,079 - INFO - Load train scanrefer: 36665 samples
+2026-11-05 17:58:02,771 - INFO - set random seed: 1999
+/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.
+  warnings.warn(msg, FutureWarning)
+Traceback (most recent call last):
+  File "<stdin>", line 339, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/6c44267f773e46f18bed69bb0934dd5e/y89_cpu/adares_y89_stage_evidence_norm/dec.py", line 514, in forward
+    return self.forward_iter_pred(x, fps_seed_sp, batch_offsets, lang_feats, lang_masks, sp_pos, feats_2d, point_mass)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/6c44267f773e46f18bed69bb0934dd5e/y89_cpu/adares_y89_stage_evidence_norm/dec.py", line 418, in forward_iter_pred
+    pred_indis = self.indi_embedding(query, pred_masks, batch_mask, point_mass, i + 1)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1148, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/6c44267f773e46f18bed69bb0934dd5e/y89_cpu/adares_y89_stage_evidence_norm/dec.py", line 195, in forward
+    return self.head(norm(evidence))
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1151, in _call_impl
+    hook_result = hook(self, input, result)
+  File "<stdin>", line 270, in capture_evidence_norm
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py", line 32, in inner_wrapper
+    return_value = fn(*args, **kwargs)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py", line 80, in assert_allclose
+    torch.testing.assert_close(
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_comparison.py", line 1344, in assert_close
+    assert_equal(
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_comparison.py", line 1095, in assert_equal
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 1 / 196864 (0.0%)
+Greatest absolute difference: 1.3787164787615325e-06 at index (0, 34, 551) (up to 1e-06 allowed)
+Greatest relative difference: 5.7795069622068816e-05 at index (0, 34, 551) (up to 1e-05 allowed)

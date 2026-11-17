@@ -1,0 +1,113 @@
+{
+  "id": "AdaRES-Y52",
+  "candidate_id": "AdaRES-Y52",
+  "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+  "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261019-125547_manual_adares-y52.md",
+    "sha256": "4c7a975bcd17244af797cbbfdfbbbed12ffe6e76d1a04a36d27cdd52e4a05fd8"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y52_physical_cpu_v2_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+          "sha256": "1f0b407048ead2565f79223fb930bc70b4f1245fb65cd492b158906573a996ea"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "dadc5feb62d21f0763f19b3741ed44aca8bd5cefced36c90147a5a7666d04f3c"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y52_physical_cpu_v2_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+          "sha256": "1f0b407048ead2565f79223fb930bc70b4f1245fb65cd492b158906573a996ea"
+        },
+        {
+          "path": "pipeline/analyses/y52_native_gate_review_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+          "sha256": "dc7ed186a4935b9b8e72f3e4bee3396f4e14d26f9003541bf69ed2a4fd8b9ec2"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "dadc5feb62d21f0763f19b3741ed44aca8bd5cefced36c90147a5a7666d04f3c"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y52_backward_scalar_compat_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+          "sha256": "6a874c23e808e4470a2b0a31599e72e6e3dcb1a5b350fdc1eb9b69ed500181e9"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "dadc5feb62d21f0763f19b3741ed44aca8bd5cefced36c90147a5a7666d04f3c"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y52_resources_batch_compat_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+          "sha256": "b18aa59d2f9ebc3f5fadd2a8e6d73b598dfaf996bc2906782b79ad607a25316b"
+        },
+        {
+          "path": "pipeline/analyses/prepared_candidates_connectivity_e4e47d5857d44da683b1d9fed03bfe66.json",
+          "sha256": "19c162e1a9398171987f0403ebc9203608eef2bd2a825f4af6179c981d475a60"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "dadc5feb62d21f0763f19b3741ed44aca8bd5cefced36c90147a5a7666d04f3c"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+          "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_commit_binding_e4e47d5857d44da683b1d9fed03bfe66.json",
+          "sha256": "644e7166960a3797cc15c9d812bf350eb8ff1d0bbe77f13df850d09192d2b59d"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "dadc5feb62d21f0763f19b3741ed44aca8bd5cefced36c90147a5a7666d04f3c"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_post_training_freeze_e4e47d5857d44da683b1d9fed03bfe66.json",
+          "sha256": "174a05fa5b710f8c2e5cc249efb1e757aabea5cdbf1351d1ecde48b2208a1e21"
+        },
+        {
+          "path": "pipeline/analyses/AdaRES-Y52_committed_admission_e4e47d5857d44da683b1d9fed03bfe66.md",
+          "sha256": "dadc5feb62d21f0763f19b3741ed44aca8bd5cefced36c90147a5a7666d04f3c"
+        }
+      ]
+    }
+  },
+  "admitted_at": "2026-10-19T12:55:47.112333+08:00",
+  "post_training_plan": {
+    "path": "pipeline/analyses/AdaRES-Y52_post_training_freeze_e4e47d5857d44da683b1d9fed03bfe66.json",
+    "sha256": "174a05fa5b710f8c2e5cc249efb1e757aabea5cdbf1351d1ecde48b2208a1e21"
+  },
+  "limitations": "Released-init auxiliary activity is zero and retained; four fixed trained-parent batches show a nonzero shared-query intervention, not trained Y52 benefit. Trained efficacy and novelty unknown; deployment awaits live checks."
+}

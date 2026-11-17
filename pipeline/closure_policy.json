@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "experiment_first": {
+    "enabled": true,
+    "authorization": {
+      "path": "pipeline/authorizations/experiment_first_20261021.json",
+      "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+    },
+    "waiting_target": 2,
+    "actionable_limit": 4,
+    "max_new_candidates": 2
+  },
+  "sync_strategy": "adares_additive_marker",
+  "launcher": "adares_native",
+  "legacy_terminal_snapshot": {
+    "path": "pipeline/legacy_terminal_snapshot_20260928.json",
+    "sha256": "ca187ff872f84de71cfbd1858621a1465f743f0ca634497d8f24106eac6146ca"
+  }
+}

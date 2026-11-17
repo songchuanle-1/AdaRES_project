@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "observed": {
+    "path": "pipeline/analyses/y45_continuation_1c73_1c732ceca30e444a8c8f2d2dcffee912.json",
+    "sha256": "47d68cd7ece21cc1dbc820041db1b24278a27bd3144187f9e3f546abfec9b978"
+  },
+  "frozen_native_source": {
+    "path": "scripts/probe_y48_joint_native_0cf9.py",
+    "sha256": "df3bfa1c2f84526fb046a0506d2bc2277b2fe242a7fe0701bb686794cfaaec62"
+  },
+  "unchanged_freeze": {
+    "path": "pipeline/analyses/y48_joint_native_freeze_0cf9_0cf9bfefb82447fcb2abf284a77480e2.json",
+    "sha256": "bf161c889fccf59fdd1f16f5da9df9890c0064d753141ade4ddf50e3d1280365"
+  },
+  "actual_test_this_tick": "Live two-card occupation and exact Y45 source/config/PID/cwd with increasing native training steps.",
+  "native_joint_capture_executed": false,
+  "actual_native_mixed_label_groups": null,
+  "all_non_GPU_work_already_executed": true,
+  "repeated_CPU_or_source_tests": false,
+  "scientific_result": "Unchanged partial diagnosis; native mixed-label incidence still unknown.",
+  "retry_after": "2026-10-14T18:29:44.873668+08:00",
+  "limitations": "Resource observation is not scientific validation or training admission; freeze and gates unchanged."
+}

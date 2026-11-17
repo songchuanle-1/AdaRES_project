@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "revision": 1,
+  "preregistered_at": "2026-10-20T23:22:08.249525+08:00",
+  "program": {
+    "path": "pipeline/analyses/y57_anchor_cpu_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "b14a75e286d3a8b520a8071292f2e29a46c12a2ad2b31fc1acdc481d4023f16d"
+  },
+  "body": {
+    "path": "scripts/probe_y57_cpu_5103.py",
+    "sha256": "b85d3172532cc19dc59c4a068fb175b6d6b46e732238be10e26e2da7954bdd7e"
+  },
+  "bundle": {
+    "path": "pipeline/analyses/y57_anchor_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "2d6319cd3291e9a6181a862a97636785543fabd7c755a18304c59846b2371041"
+  },
+  "protocol": "Original CPU controls; actual4TRAIN batches/all7native anchor-gradient sites, same shifted-vector bound; 2warm3stress on largest input,8scene paired costs, unchanged seed30/config.",
+  "result": "pending"
+}

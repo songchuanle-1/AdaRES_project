@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "7f80cf7a8b82435593cce434dddc9103",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-17T00:48:40.567836+00:00",
+  "recorded_at": "2026-10-17T00:52:09.776742+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Resource-only retry 2026-10-17T08:54:19.892139+08:00 is not yet due at the actual close decision; no real queue, goal, whitelist or frozen-prototype change. Cached GPU occupation and native-step evidence is explicitly dated 07:54 Shanghai, current GPU occupation and native steps unknown. Y50 preflight monitor27/30 best0.5032, no new efficacy conclusion. Unchanged checker retains CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening; no new evidence/stage progress or PASS claimed. Ledger hash dfbee176f911c02987f55cb22943dab44961fde702d77eec119ab7196fd301cf and retry unchanged. Complete six-section report and bounded memory verified. No premature resource recheck, artificial wait, gate changes, new tests, admissions or launches. Honest INCOMPLETE; release only owned lease.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 6,
+    "input_tokens": 1007994,
+    "cached_input_tokens": 988928,
+    "output_tokens": 7707,
+    "reasoning_output_tokens": 1787,
+    "total_tokens": 1015701,
+    "uncached_input_tokens": 19066,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

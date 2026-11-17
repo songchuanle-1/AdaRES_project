@@ -1,0 +1,46 @@
+{
+  "actions": [
+    "完成：Y101原进程自然退出，原20261112_200238完整Train/Val1..30、稳定last30/best24、有限模型/优化器544和调度器30/24已首次精确核验并规范归档；保留原权重，不重启。训练best.506299555不替代正式FIRST。",
+    "运行：原server-1 GPU0/350W固定四组后评已首次启动，Y101/Y36/W2/B1各两遍全9508表达式/141场景，已核验原生计数递增；固定工作程序持续持有原GPU0锁，无自动重试、训练或晋升。全量比较/子组/成本及科学结论尚未完成。",
+    "Y102原server-2 GPU0/280W仍{'phase': 'Train', 'epoch': 1, 'total': 30, 'step': 7, 'count': 4686}，current_native_progress_confirmed=False；原进程和失败证据保留，不重复附加调试器或索取相同管理员许可。",
+    "新准备：11项启动CPU边界检查及实际子入口GPU1拒绝检查通过。Windows预检fcntl导入位置错误、评测工具未纳入训练commit的绑定错误均发生在远端任务创建前，已修正操作入口并保留原失败；评测科学逻辑、原冻结工件SHA和训练来源均未放宽。"
+  ],
+  "decisions": [
+    "本轮新增变体/准入/新训练均0，遵守冻结阶段预算。后评使用Y101原冻结server-1 GPU0/350W，未迁移任何原GPU1挂起评测或成本，Y57仍单独暂停；不改goal/原收据/原数据/功耗/调度。",
+    "后续只观察这条精确工作程序及原Y102，完整核验所有原始评测、FIRST、配对置信区间/子组伤害与原成本后再作科学判断；不因PID、训练best或单个完成捕获就宣布达标，不自动重复或重启。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y101_terminal_review_closeout_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "4d920c58ee56a83c2cec1474e550f21469cd67436589c59e5fdf135bedcc5319"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_446fcb81558c4fad8ea5c22797f80490.md",
+      "sha256": "7c9a306f86db91532b8bbe8dcdb956062e17fb82e6346962b97b775786740080"
+    },
+    {
+      "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "f634f9945f01d373390431462c43d64a22c43b92cd76b9c690d8aa75630546cf"
+    },
+    {
+      "path": "pipeline/checks/y101_server1_fixed30_y102_446fcb81558c4fad8ea5c22797f80490_archive_binding.json",
+      "sha256": "eb90beeaff3add4f2d8668be2795e5a635e303e3d8ac90af3f6921fd846dc5b7"
+    },
+    {
+      "path": "pipeline/checks/y101_review_progress_446fcb81558c4fad8ea5c22797f80490_release.json",
+      "sha256": "07b0681e1aa42a45ca54d1159034f61174cd329e9e62f92440db56699523bed0"
+    },
+    {
+      "path": "pipeline/checks/y101_review_closeout_446fcb81558c4fad8ea5c22797f80490_y102_diagnostic.json",
+      "sha256": "c54c7ce47b65b2c8980286553fa88bbcb56de8ac0c660733bfaaee0ec281e08a"
+    },
+    {
+      "path": "pipeline/checks/y101_review_worker_initial_failure_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "aa3a4a58f672bdb376e1f2b36b0765a24bae41d742893e032c6441bda9f18a58"
+    },
+    {
+      "path": "pipeline/checks/y101_review_source_binding_failure_446fcb81558c4fad8ea5c22797f80490.json",
+      "sha256": "a7c33799e3a4ddae19536a14b76c2eac04ce5684da1662c1093e779285a9d689"
+    }
+  ]
+}

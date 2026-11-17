@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y78",
+  "token": "ff905b6425914adf9fad62756595f48b",
+  "CPU_native_callbacks_actually_executed": true,
+  "native_body": {
+    "path": "scripts/probe_y78_native_smoke.py",
+    "sha256": "ea47c31f826b991c33a1a7c5608eb65ae28011edb073efce20b704021497a51f"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y78_native_observer_CPU_ff905b6425914adf9fad62756595f48b_program.py",
+    "sha256": "f17c2ed8163e391341d8a1573dfb6fdb81cbd255d9b0778fd6c3bf6c4332a022"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y78_native_observer_cpu_ff905b6425914adf9fad62756595f48b.json",
+    "sha256": "912cb491c5ef3333cd3b1ee01e235caa0ddecd6776b4b240e82360ac8e6a4884"
+  },
+  "exact_callback_functions_and_classes": 14,
+  "original_full_model_pretrain_TRAIN_loaded": true,
+  "two_synthetic_CPU_decoder_optimizer_steps": true,
+  "full_seven_prediction_confidence_query_norm_calls_and_six_residual_gate_consumers": true,
+  "finite_previous_mask_and_new_weight_gradients_and_updates": true,
+  "zero_then_nonzero_response": true,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y78_native_observer_cpu_ff905b6425914adf9fad62756595f48b.json",
+      "sha256": "912cb491c5ef3333cd3b1ee01e235caa0ddecd6776b4b240e82360ac8e6a4884"
+    },
+    {
+      "path": "pipeline/analyses/y78_native_observer_cpu_ff905b6425914adf9fad62756595f48b.log",
+      "sha256": "4031eb2a26e055e4ab2bb5014026ecf352b207f9482b021c2fd52b0cdde3237f"
+    },
+    {
+      "path": "pipeline/checks/y78_native_observer_CPU_ff905b6425914adf9fad62756595f48b_program.py",
+      "sha256": "f17c2ed8163e391341d8a1573dfb6fdb81cbd255d9b0778fd6c3bf6c4332a022"
+    },
+    {
+      "path": "scripts/probe_y78_native_smoke.py",
+      "sha256": "ea47c31f826b991c33a1a7c5608eb65ae28011edb073efce20b704021497a51f"
+    }
+  ],
+  "CUDA_initialized": false,
+  "native_sparse_task": false,
+  "native_smoke_passed": false,
+  "admission": false,
+  "efficacy_unknown": true
+}

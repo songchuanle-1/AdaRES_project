@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y64",
+  "config": "configs_song/model_paper5/adares_y64_directed_containment_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "e27895f45b6f172454c50d40d1c0184c6aa8dfcb",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "required_resource": "Fresh exclusive idle authorized server-1 GPU0, no queue/running reservation or compute PID, exact hostname and approved private runtime/data/path mappings; keep default350W.",
+  "planned_command": "python -B scripts/run_y64_server1_native_probe.py AdaRES-Y64 --token <CURRENT_TOKEN>",
+  "checks": "Native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; seven shared-head calls each step; independent signed-containment residual formula; exact zero first-step anchor and actual nonzero second-step response; finite nonzero containment parameter/query/mask gradients and peak memory.",
+  "Python38_compile": true,
+  "CPU_guard_tests_passed": 7,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y64_server1_alternative_8c74d05a949b46a993804c557680694c_program.py",
+    "sha256": "0790475f7d0fe834bb69efda9f5478ff60f1e55643774042a4b96c851367fdf6"
+  },
+  "server": "server-1",
+  "gpu": 0,
+  "previous_plan": {
+    "path": "pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_plan.json",
+    "sha256": "bfcfa275ccc9d1f87f692761c50405bb4d4419e8bcb3fede50cd3b13ca057a11"
+  },
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "activation_required": true
+}

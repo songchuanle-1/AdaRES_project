@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "preregistered_at": "2026-10-15T12:56:14.126508+08:00",
+  "source_controls": {
+    "path": "pipeline/analyses/y49_source_controls_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+    "sha256": "ba37cbd04e702d2af8e971be8444262cfc9eab0cfa703a5a0360d18bcd11c6ab"
+  },
+  "actual_native_input_manifest": "Existing immutable TRAIN8 indices0,44,60,101,115,126,137,171; all32 expressions/all128 queries, captureSHA5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89.",
+  "descriptor": "For hard FG/BG induced weak-nearest graph, compute each inverse diagonal of I+D-A using SciPy splu and exact identity solves, then original point-mass-weighted mean. Empty side0; no component filtering or numerical sweep. Normalized unweighted first witness is a special case.",
+  "prototype": "LayerNorm(native query) concatenated with FG/BG scalar readouts, Linear(258,256)/GELU/Linear(256,1); inherited width256, four tensors. Final-foreground residual is a prospective native connection, not executed by CPU prototype.",
+  "tests": "All32 native captured expressions: finite descriptors, repeat, cyclic wrong-mask and query-only controls, four finite/nonzero syntheticCE gradients. Fixed first4 expressions: joint reverse permutation and exact block1vs64 solver checks. Record equal component-mass groups with distinct global values without requiring an invented effect size.",
+  "fixed_precision": "8*float64eps*max(1,nodes)*max(1,absolute-scale), frozen before the test. No whole-input native bitwise determinism claim.",
+  "program": {
+    "path": "scripts/probe_y49_native_capture_cpu_c3e5.py",
+    "sha256": "b24ed8dbeed377e7f2c22bd4bd9647105254411275d9ce68d23d6a496692d2a0"
+  },
+  "limitations": "Task utility, native backward, resources and physical independence remain pending. ExistingY8/Y41 are not reopened; no validation or GPU use."
+}

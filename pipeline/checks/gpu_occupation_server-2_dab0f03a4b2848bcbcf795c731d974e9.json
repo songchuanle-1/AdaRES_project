@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "dab0f03a4b2848bcbcf795c731d974e9",
+  "snapshot_generated_at": "2026-10-27T18:43:26.360591+00:00",
+  "snapshot_sha256": "5e5f9f782f0428c90584459ae940db9629d07a7b8c88effd7632d21586541af7",
+  "servers_sha256": "280bbd05106a77ece1cfad9382a0dd18a7d208ffd733d85bd6e1ebe221bb43f2",
+  "observed_at": "2026-10-27T18:44:01.567870+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y64",
+    "AdaRES-Y65"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 97, 24138, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100, 24156, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13813\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 13814\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token dab0f03a4b2848bcbcf795c731d974e9 --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_dab0f03a4b2848bcbcf795c731d974e9.log",
+    "sha256": "de81b5ef80357fbf4ccebd51775c5cf76dcee72fc7008bad361d627b0f541513"
+  }
+}

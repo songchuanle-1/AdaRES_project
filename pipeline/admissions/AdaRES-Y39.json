@@ -1,0 +1,128 @@
+{
+  "id": "AdaRES-Y39",
+  "config": "configs_song/model_paper5/adares_y39_point_distribution_res.yaml",
+  "code_commit": "79a23936d5bd5980fa337388131762078f52fa07",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261010-202011_next_batch.md",
+    "sha256": "ed2badc76a35ec97ce97aaa11477d1e6b3aebdaec591afee579425b4f94cb266"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y39_pooling_cpu_v2_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "b7e62db37c9969feb5ff03cf47f187a0652ce058d2f7f0580f26e093edc6a7a1"
+        },
+        {
+          "path": "pipeline/analyses/y39_train_ceiling_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "abec2073f2c46ee539693477d1186b0ec1f47225ec81b654198bba47d360b487"
+        },
+        {
+          "path": "pipeline/analyses/y39_extract_cpu_lf_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "d54538d5ee67b4cec1cddbe34fb05ae12f7eb40b22f91343d3d3ee3ef3f3def9"
+        },
+        {
+          "path": "pipeline/analyses/Y39_diagnosis_prereg_48678b81.md",
+          "sha256": "5ea039ce5e7abf16596a5e64ecaee2b0de641c9b3ae2f9b721caeb783f2fc93e"
+        },
+        {
+          "path": "pipeline/analyses/Y39_realization_freeze_48678b81.md",
+          "sha256": "4fd59354e9423249acec5181ff8c0afcf5a14665c3cf0d1d510425ee8d9d665a"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y39_native_controls_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "ad61cc51b750c32a1c0c7482f1aab9f3fcd0220934a22950b086fe52fa56d589"
+        },
+        {
+          "path": "pipeline/analyses/y39_initial_loss_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "1c0b09279e0586492d933eb534aa5984fa7845b66c063d9787c0a54e9734c7f2"
+        },
+        {
+          "path": "pipeline/analyses/y39_readout_cpu_lf_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "a90121345125fc1f42bf82280391cefe6b3f3a4d83240e3c5a7083bfabd139ba"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y39_physical_native_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "1581c333529b77097edc7c7a591fcc2eac8baf17c7ecc38331abae10950bab9e"
+        },
+        {
+          "path": "pipeline/analyses/y39_native_controls_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "ad61cc51b750c32a1c0c7482f1aab9f3fcd0220934a22950b086fe52fa56d589"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y39_resources_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "2716efaa0ae8ae682a6c50956e8fc2ade0a8d624e9d718337d93a72c97fd765f"
+        },
+        {
+          "path": "pipeline/analyses/Y39_resource_freeze_48678b81.md",
+          "sha256": "ca91e8229055291bddd9a7526d29beb9504d4c59aba9bad7a43be0759f9a551a"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y39_source_bundle_lf_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "0b184b9108b10fdc351a992bf3d4b25ae107a6f876ba8d83ee5f4e69c66a4e9e"
+        },
+        {
+          "path": "pipeline/analyses/y39_extract_cpu_lf_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "d54538d5ee67b4cec1cddbe34fb05ae12f7eb40b22f91343d3d3ee3ef3f3def9"
+        },
+        {
+          "path": "pipeline/analyses/y39_readout_cpu_lf_48678b818b134bea9d9c3c3e1f3d3305.json",
+          "sha256": "a90121345125fc1f42bf82280391cefe6b3f3a4d83240e3c5a7083bfabd139ba"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y39_admission_review_48678b81.md",
+          "sha256": "f1df6b463f0f737bb8b7d32cd203513215cc9e59bf60b0c65253b298a32a3e9d"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y39_48678b81.md",
+          "sha256": "8388a67d570366956d691ec3134ab2f1c98d74fc7024823434a408d39f85bdab"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_Y39_48678b81.md",
+          "sha256": "c37cb1fda9a71099493ed5befa9066115985ffe389bd42254d5fcea109d40942"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y39_48678b81.md",
+      "sha256": "8388a67d570366956d691ec3134ab2f1c98d74fc7024823434a408d39f85bdab"
+    }
+  },
+  "limitations": "Near-perfect TRAIN partition ceiling is negative evidence, not a main quantization-bottleneck claim. Initial adverse loss and all wrong controls retained; learned means may encode heterogeneity. No trained benefit, novelty, necessity, no-harm, Pareto or human-approval claim."
+}

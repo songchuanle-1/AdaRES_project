@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y46",
+  "code": {
+    "path": "scripts/probe_y46_native_gate_3c6a.py",
+    "sha256": "78a9a9dd13134f23c2062e997c02303b776d552f845068ea9a4998e1a11036ad"
+  },
+  "CPU_hook_test": {
+    "path": "pipeline/analyses/y46_native_hook_cpu_3c6a_3c6a88e6bd334acb8889d557171b1ce6.json",
+    "sha256": "f5acb320574bbeb13fbf4f12a85033e4b3ca7530a522b3fa8cfb869860f4fb5c"
+  },
+  "frozen_prototype": {
+    "path": "scripts/probe_y46_component_cpu_d179_v2.py",
+    "sha256": "713ad86a68f51142776be20a50295597aa07e06b7fff6d146797f91f6c5a5ecf"
+  },
+  "frozen_class_and_component_function_AST_identical": true,
+  "previous_freeze": {
+    "path": "pipeline/analyses/y46_next_native_freeze_d179_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "5c64424c278c27a4b2ac0755491a55a412861f3c76b7a3bc419579728148bd21"
+  },
+  "native_branch_executed": false,
+  "GPU_occupation": {
+    "path": "pipeline/analyses/y45_continuation_3c6a_3c6a88e6bd334acb8889d557171b1ce6.json",
+    "sha256": "8964af0b61a0a3f2ae0758eb6526b2d8d9ca815489367634952b57211ac8a5fb"
+  },
+  "next_test": "First live-idle authorized server2 GPU with exclusive diagnostic lease: SAME reviewed native loss/backward paired-cost branch TRAIN8. Then actual tools.train optimizer update, released-init controls and physical independent package/gate review; no admission from CPU surrogate.",
+  "limitations": [
+    "CPU FakeDecoder/synthetic CE is instrumentation only, not native backward.",
+    "No weight/threshold/geometry tuning; inherited all-component prototype unchanged.",
+    "No task-level effect-size threshold or trained resource claim."
+  ]
+}

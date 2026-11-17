@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "e400166950804bdc890d260e8efe3077",
+  "id": "AdaRES-Y102",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y102",
+    "label": "AdaRES-Y102 fixed30",
+    "config": "configs_song/model_paper5/adares_y102_geometry_mask_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y102.json",
+    "scientific_candidate_id": "AdaRES-Y102",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 4747,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y102_geometry_mask_skip_res_20261112_235503.log",
+    "launched": "2026-11-12T23:55:38"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y102 fixed30] configs_song/model_paper5/adares_y102_geometry_mask_skip_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y102.py",
+    "sha256": "859c658c3c651eeb6598b6dc68e2c3d50af97b7fc997987e4523bfd9b4af577c"
+  }
+}

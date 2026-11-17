@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y63",
+  "profile": "experiment_first",
+  "config": "configs_song/model_paper5/adares_y63_peer_bilinear_res.yaml",
+  "code_commit": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "native_executed": false,
+  "required_resource": "Exclusive idle authorized server-2 GPU0; current lease/live compute/280W; preserve Y61 and Y57.",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps, seven shared calls per step, finite nonzero bilinear-weight gradients, zero first-step anchor and second-step nonzero branch response, resource budget and frozen version.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y63_smoke pipeline/checks/y63_smoke_10ecd3bb7a2b4b78a7382ea479609ebc_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "program": {
+    "path": "pipeline/checks/y63_smoke_10ecd3bb7a2b4b78a7382ea479609ebc_program.py",
+    "sha256": "7e7d66935afd5becdc19bec5b2831a19ca235e72d30f5be9b6e1be6b25b4aded"
+  }
+}

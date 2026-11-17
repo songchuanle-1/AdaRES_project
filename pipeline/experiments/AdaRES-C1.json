@@ -1,7 +1,7 @@
 {
   "id": "AdaRES-C1",
   "label": "Listwise expected-mask ranking",
-  "status": "running",
+  "status": "done_complete",
   "server": "server-2",
   "gpu": "0",
   "config": "configs_song/model_paper5/adares_c1_listwise_expected_mask_res.yaml",
@@ -24,6 +24,16 @@
       "action": "launched",
       "gpu": "0",
       "evidence": "Native training log reports Train[1/10] and iteration 70/4686."
+    },
+    {
+      "ts": "2026-09-23T08:10:22.400486",
+      "status": "done_complete",
+      "best_miou": "0.4950",
+      "epochs": "10/10"
     }
-  ]
+  ],
+  "final_best": "0.4950",
+  "finished_at": "2026-09-23T08:10:22",
+  "log_local": "",
+  "epochs_final": "10/10"
 }

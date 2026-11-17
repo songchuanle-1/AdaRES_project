@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y59",
+  "preregistered_at": "2026-10-21T00:13:54.108138+08:00",
+  "program": {
+    "path": "pipeline/analyses/y59_native_b7801e9894f742b09038e89d033a8945_program.py",
+    "sha256": "41631228315d14099db2dc43d8c45318796e8b2eedc056c15079ab009932b1d3"
+  },
+  "body": {
+    "path": "scripts/probe_y59_native_b780.py",
+    "sha256": "24d3ebe7121d4079c0e1747d23b04d128ac10ad8890fb2dd69ea40404f817cc3"
+  },
+  "reused_readonly_setup": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_program.py",
+    "sha256": "ed5045122eeb6939310a9d8f3e096da9511e9ae149d184aee7ef29c1374b8fbc"
+  },
+  "dataset_source": {
+    "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/dataset/scannetv2_test.py",
+    "sha256": "1328bad8384392f6a8dac2a6a46126b82000132283706f9398030be1cf0f0cc8"
+  },
+  "protocol": "Exact same native batch0/1 and seed1999, original/fixedfrozen-mode/repeats; hold all other dropout off and BN training, actual loss/backward, preserve every signed delta.",
+  "test_scope": "Trained-parent diagnosis only, not candidate admission; no optimizer or saved weights.",
+  "source_commit": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea",
+  "physical_GPU_authorization_required": [
+    0,
+    1
+  ],
+  "before_any_execution": "Use canonical runner with NEW current foreground token, fresh idle/GPU process checks and exclusive lease. Rebind changed source only after exact immutable source/checkpoint/data validation.",
+  "Python38_parse_compile": true,
+  "missing_GPU_entry_guard_passed": true,
+  "native_executed": false,
+  "result": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "observed_at_local": "2026-10-16T14:08:33.053814+08:00",
+  "current_HEAD": "d18c228fd3796b5a87dbe313075b6ee748b2d51b",
+  "candidate_tracked_paths": [],
+  "candidate_code_commit": null,
+  "policy_path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\references\\closure.md",
+  "policy_sha256": "f50f913b5c1892ea56631405036288f5480bb4c59ef00d81ad8b50c2aa612f09",
+  "policy_quote": "Commit tested candidate code before computing the receipt. No automatic git add/commit.",
+  "blocker_kind": "human_authorization",
+  "blocker": "Tested Y50 bytes are not committed; the canonical contract forbids automatic git add/commit. This tick has no explicit human authorization to create the scoped candidate commit. Do not bind inherited HEAD to absent source.",
+  "attempted_alternatives": [
+    "Independent package/source hashes, native controls, released-init updates and full restore completed.",
+    "Real paired inference and native optimizer stress completed, GPU1 was available.",
+    "Read-only git ls-files confirms no tracked Y50 files; old HEAD cannot truthfully bind them.",
+    "No blanket staging of the dirty worktree, no admission/marker/queue bypass."
+  ],
+  "required_action": "Human explicitly authorizes a scoped tested-byte Y50 commit, or supplies that exact commit; then recheck current goal/source/evidence and use gated dispatcher.",
+  "no_GPU_block_claim": true,
+  "retry_after": "2026-10-16T18:08:33.053814+08:00",
+  "no_admission": true
+}

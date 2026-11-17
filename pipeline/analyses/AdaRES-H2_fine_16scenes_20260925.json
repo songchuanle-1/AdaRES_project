@@ -1,0 +1,7526 @@
+{
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b4_query_competition_res/20260921_210214/best.pth",
+  "scenes": 16,
+  "expressions": 441,
+  "material_errors": 240,
+  "mean_coverage_by_layer": [
+    0.7509321361619666,
+    0.9550121143426484,
+    0.9492826965255261,
+    0.9302042563215676,
+    0.9108030666299418,
+    0.9312679038431639
+  ],
+  "error_mean_coverage_by_layer": [
+    0.7093640451629957,
+    0.9399238674590985,
+    0.9382123805582523,
+    0.9224164453645547,
+    0.895130634556214,
+    0.925705989698569
+  ],
+  "error_final_coverage_below_half": 0,
+  "mean_first_balanced_coverage": 0.7483894575657555,
+  "error_first_balanced_coverage": 0.7084179241210222,
+  "error_balanced_better": 12,
+  "error_balanced_worse": 35,
+  "rows": [
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.5384615659713745,
+        0.9230769276618958,
+        0.9743589758872986,
+        0.9743589758872986,
+        0.9743589758872986,
+        0.9743589758872986
+      ],
+      "first_balanced_coverage": 0.5128205418586731,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9579967856407166,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.6153846383094788,
+        0.692307710647583,
+        0.9615384340286255,
+        0.9615384340286255,
+        0.8461538553237915,
+        0.7692307829856873
+      ],
+      "first_balanced_coverage": 0.6153846383094788,
+      "first_balanced_unique": 211
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8131248354911804,
+      "valid_superpoints": 1620,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.4545454680919647,
+        0.8787878751754761,
+        0.9090909361839294,
+        0.7575757503509521,
+        0.6666666865348816,
+        0.8181818127632141
+      ],
+      "first_balanced_coverage": 0.4545454680919647,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.5941828489303589,
+      "oracle_iou": 0.722623884677887,
+      "valid_superpoints": 1620,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.8600000143051147,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8399999737739563,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.9597055315971375,
+      "oracle_iou": 0.9597055315971375,
+      "valid_superpoints": 1620,
+      "target_superpoints": 66,
+      "coverage_by_layer": [
+        0.40909090638160706,
+        1.0,
+        1.0,
+        0.9848484992980957,
+        0.6969696879386902,
+        0.6060606241226196
+      ],
+      "first_balanced_coverage": 0.40909090638160706,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8079261779785156,
+      "valid_superpoints": 1620,
+      "target_superpoints": 49,
+      "coverage_by_layer": [
+        0.3265306055545807,
+        0.8367347121238708,
+        0.8571428656578064,
+        0.9591836929321289,
+        0.9387755393981934,
+        0.9591836929321289
+      ],
+      "first_balanced_coverage": 0.3265306055545807,
+      "first_balanced_unique": 215
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8299676775932312,
+      "valid_superpoints": 1620,
+      "target_superpoints": 49,
+      "coverage_by_layer": [
+        0.3265306055545807,
+        0.6122449040412903,
+        0.8571428656578064,
+        0.9795918464660645,
+        0.7346938848495483,
+        0.8571428656578064
+      ],
+      "first_balanced_coverage": 0.3265306055545807,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.9560015201568604,
+      "oracle_iou": 0.9914940595626831,
+      "valid_superpoints": 1620,
+      "target_superpoints": 66,
+      "coverage_by_layer": [
+        0.3181818127632141,
+        1.0,
+        1.0,
+        1.0,
+        0.7272727489471436,
+        0.7575757503509521
+      ],
+      "first_balanced_coverage": 0.28787878155708313,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.6932852268218994,
+      "oracle_iou": 0.7706700563430786,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.692307710647583,
+        0.9615384340286255,
+        0.9230769276618958,
+        0.807692289352417,
+        0.7307692170143127,
+        0.6153846383094788
+      ],
+      "first_balanced_coverage": 0.7307692170143127,
+      "first_balanced_unique": 214
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9579967856407166,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.5384615659713745,
+        0.7692307829856873,
+        0.9615384340286255,
+        0.692307710647583,
+        0.7307692170143127,
+        0.7692307829856873
+      ],
+      "first_balanced_coverage": 0.5384615659713745,
+      "first_balanced_unique": 205
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.7044242024421692,
+      "oracle_iou": 0.7772308588027954,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.6538461446762085,
+        0.9615384340286255,
+        0.9615384340286255,
+        0.807692289352417,
+        0.692307710647583,
+        0.6153846383094788
+      ],
+      "first_balanced_coverage": 0.692307710647583,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.6417830586433411,
+      "oracle_iou": 0.7902197241783142,
+      "valid_superpoints": 1620,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7723715305328369,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.6153846383094788,
+        1.0,
+        1.0,
+        0.9487179517745972,
+        0.9743589758872986,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6410256624221802,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.6417830586433411,
+      "oracle_iou": 0.7902197241783142,
+      "valid_superpoints": 1620,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9291251301765442,
+      "valid_superpoints": 1620,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.5249999761581421,
+        0.824999988079071,
+        0.8999999761581421,
+        0.875,
+        0.800000011920929,
+        0.925000011920929
+      ],
+      "first_balanced_coverage": 0.5249999761581421,
+      "first_balanced_unique": 221
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9579967856407166,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.6153846383094788,
+        0.8846153616905212,
+        0.9615384340286255,
+        0.6538461446762085,
+        0.7692307829856873,
+        0.6538461446762085
+      ],
+      "first_balanced_coverage": 0.6153846383094788,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9014396667480469,
+      "valid_superpoints": 1620,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.4749999940395355,
+        0.8500000238418579,
+        0.675000011920929,
+        0.7749999761581421,
+        0.574999988079071,
+        0.8500000238418579
+      ],
+      "first_balanced_coverage": 0.4749999940395355,
+      "first_balanced_unique": 209
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.8148630857467651,
+      "oracle_iou": 0.8338130712509155,
+      "valid_superpoints": 1620,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.3125,
+        1.0,
+        0.9791666865348816,
+        0.875,
+        0.7708333134651184,
+        0.875
+      ],
+      "first_balanced_coverage": 0.3125,
+      "first_balanced_unique": 180
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.6455056071281433,
+      "oracle_iou": 0.7076854705810547,
+      "valid_superpoints": 1620,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.7400000095367432,
+        1.0,
+        0.9599999785423279,
+        1.0,
+        0.9800000190734863,
+        0.9599999785423279
+      ],
+      "first_balanced_coverage": 0.7400000095367432,
+      "first_balanced_unique": 203
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.7968795299530029,
+      "oracle_iou": 0.8787612915039062,
+      "valid_superpoints": 1620,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.48571428656578064,
+        0.8571428656578064,
+        0.800000011920929,
+        0.7428571581840515,
+        0.7714285850524902,
+        0.7714285850524902
+      ],
+      "first_balanced_coverage": 0.48571428656578064,
+      "first_balanced_unique": 200
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8523548245429993,
+      "valid_superpoints": 1620,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.5428571701049805,
+        0.8571428656578064,
+        0.7714285850524902,
+        0.7142857313156128,
+        0.7142857313156128,
+        0.7142857313156128
+      ],
+      "first_balanced_coverage": 0.5142857432365417,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.6120591759681702,
+      "oracle_iou": 0.7483140230178833,
+      "valid_superpoints": 1620,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.7400000095367432,
+        1.0,
+        1.0,
+        1.0,
+        0.9800000190734863,
+        0.9200000166893005
+      ],
+      "first_balanced_coverage": 0.7200000286102295,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.6417830586433411,
+      "oracle_iou": 0.7902197241783142,
+      "valid_superpoints": 1620,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.800000011920929
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.7921642065048218,
+      "oracle_iou": 0.8254277110099792,
+      "valid_superpoints": 1620,
+      "target_superpoints": 49,
+      "coverage_by_layer": [
+        0.4285714328289032,
+        0.9591836929321289,
+        0.9795918464660645,
+        1.0,
+        0.8367347121238708,
+        1.0
+      ],
+      "first_balanced_coverage": 0.4285714328289032,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.8254277110099792,
+      "oracle_iou": 0.8254277110099792,
+      "valid_superpoints": 1620,
+      "target_superpoints": 49,
+      "coverage_by_layer": [
+        0.4285714328289032,
+        0.9795918464660645,
+        0.9795918464660645,
+        1.0,
+        0.9387755393981934,
+        0.9591836929321289
+      ],
+      "first_balanced_coverage": 0.3877550959587097,
+      "first_balanced_unique": 207
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.7096015214920044,
+      "oracle_iou": 0.7409496903419495,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.7307692170143127,
+        0.9230769276618958,
+        0.9230769276618958,
+        0.7307692170143127,
+        0.6153846383094788,
+        0.5769230723381042
+      ],
+      "first_balanced_coverage": 0.7692307829856873,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7825578451156616,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.6153846383094788,
+        1.0,
+        1.0,
+        0.9743589758872986,
+        0.9230769276618958,
+        0.9743589758872986
+      ],
+      "first_balanced_coverage": 0.6410256624221802,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.857692301273346,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.6410256624221802,
+        1.0,
+        1.0,
+        0.9230769276618958,
+        0.9743589758872986,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6410256624221802,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.7562326788902283,
+      "oracle_iou": 0.7562326788902283,
+      "valid_superpoints": 1620,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        0.5,
+        1.0,
+        0.8333333134651184,
+        0.6666666865348816,
+        0.8333333134651184,
+        0.6666666865348816
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 209
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.7804356217384338,
+      "oracle_iou": 0.8315830230712891,
+      "valid_superpoints": 1620,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.3958333432674408,
+        0.9375,
+        0.9583333134651184,
+        0.8958333134651184,
+        0.6666666865348816,
+        0.8333333134651184
+      ],
+      "first_balanced_coverage": 0.3958333432674408,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8715052604675293,
+      "valid_superpoints": 1620,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.2291666716337204,
+        0.9791666865348816,
+        0.5625,
+        0.8541666865348816,
+        0.875,
+        0.8958333134651184
+      ],
+      "first_balanced_coverage": 0.2291666716337204,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 0,
+      "selected_iou": 0.9489414691925049,
+      "oracle_iou": 0.9489414691925049,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.4871794879436493,
+        0.7435897588729858,
+        0.7435897588729858,
+        0.7435897588729858,
+        0.692307710647583,
+        0.7948718070983887
+      ],
+      "first_balanced_coverage": 0.4615384638309479,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8651930093765259,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.5641025900840759,
+        0.8461538553237915,
+        0.692307710647583,
+        0.7179487347602844,
+        0.6153846383094788,
+        0.6410256624221802
+      ],
+      "first_balanced_coverage": 0.5128205418586731,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.8501461744308472,
+      "oracle_iou": 0.9294019937515259,
+      "valid_superpoints": 1620,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.5249999761581421,
+        0.675000011920929,
+        0.8999999761581421,
+        0.7250000238418579,
+        0.675000011920929,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.5249999761581421,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9166173934936523,
+      "oracle_iou": 0.9166173934936523,
+      "valid_superpoints": 1620,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.4848484992980957,
+        0.8787878751754761,
+        0.9696969985961914,
+        0.6969696879386902,
+        0.8787878751754761,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.4545454680919647,
+      "first_balanced_unique": 215
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9321419596672058,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.4736842215061188,
+        0.8947368264198303,
+        0.9736841917037964,
+        0.7631579041481018,
+        0.6842105388641357,
+        0.8157894611358643
+      ],
+      "first_balanced_coverage": 0.4736842215061188,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9166173934936523,
+      "oracle_iou": 0.9166173934936523,
+      "valid_superpoints": 1620,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.4848484992980957,
+        0.9090909361839294,
+        0.8787878751754761,
+        0.8484848737716675,
+        0.8787878751754761,
+        0.9696969985961914
+      ],
+      "first_balanced_coverage": 0.4848484992980957,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729799032211304,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.4736842215061188,
+        0.6315789222717285,
+        1.0,
+        0.7894737124443054,
+        0.7631579041481018,
+        0.7105262875556946
+      ],
+      "first_balanced_coverage": 0.4736842215061188,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9560015201568604,
+      "oracle_iou": 0.9597055315971375,
+      "valid_superpoints": 1620,
+      "target_superpoints": 66,
+      "coverage_by_layer": [
+        0.39393940567970276,
+        1.0,
+        1.0,
+        1.0,
+        0.6818181872367859,
+        0.7575757503509521
+      ],
+      "first_balanced_coverage": 0.3787878751754761,
+      "first_balanced_unique": 209
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6594533920288086,
+      "oracle_iou": 0.6629035472869873,
+      "valid_superpoints": 1620,
+      "target_superpoints": 80,
+      "coverage_by_layer": [
+        0.612500011920929,
+        1.0,
+        1.0,
+        0.987500011920929,
+        0.987500011920929,
+        1.0
+      ],
+      "first_balanced_coverage": 0.612500011920929,
+      "first_balanced_unique": 199
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9166173934936523,
+      "oracle_iou": 0.9166173934936523,
+      "valid_superpoints": 1620,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.4545454680919647,
+        0.9090909361839294,
+        0.8787878751754761,
+        0.8787878751754761,
+        0.9090909361839294,
+        0.9696969985961914
+      ],
+      "first_balanced_coverage": 0.4545454680919647,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9321419596672058,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.5,
+        0.9473684430122375,
+        0.9736841917037964,
+        0.7105262875556946,
+        0.7105262875556946,
+        0.8684210777282715
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 192
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.769560694694519,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.6153846383094788,
+        1.0,
+        1.0,
+        0.9230769276618958,
+        0.8717948794364929,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6410256624221802,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.8146229386329651,
+      "oracle_iou": 0.8338130712509155,
+      "valid_superpoints": 1620,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.2291666716337204,
+        0.8958333134651184,
+        0.9375,
+        0.8333333134651184,
+        0.7291666865348816,
+        0.7916666865348816
+      ],
+      "first_balanced_coverage": 0.25,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6932852268218994,
+      "oracle_iou": 0.7620342373847961,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.692307710647583,
+        0.9615384340286255,
+        0.9615384340286255,
+        0.7307692170143127,
+        0.6153846383094788,
+        0.6153846383094788
+      ],
+      "first_balanced_coverage": 0.692307710647583,
+      "first_balanced_unique": 206
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9579967856407166,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.6538461446762085,
+        0.9615384340286255,
+        0.9615384340286255,
+        0.7692307829856873,
+        0.7692307829856873,
+        0.807692289352417
+      ],
+      "first_balanced_coverage": 0.6538461446762085,
+      "first_balanced_unique": 192
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6532832980155945,
+      "valid_superpoints": 1620,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        0.3333333432674408,
+        0.6666666865348816,
+        0.6666666865348816,
+        0.8333333134651184,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6609472036361694,
+      "oracle_iou": 0.6609472036361694,
+      "valid_superpoints": 1620,
+      "target_superpoints": 80,
+      "coverage_by_layer": [
+        0.625,
+        1.0,
+        1.0,
+        0.987500011920929,
+        0.987500011920929,
+        1.0
+      ],
+      "first_balanced_coverage": 0.625,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9597055315971375,
+      "oracle_iou": 0.9765424728393555,
+      "valid_superpoints": 1620,
+      "target_superpoints": 66,
+      "coverage_by_layer": [
+        0.3484848439693451,
+        1.0,
+        1.0,
+        0.9242424368858337,
+        0.6818181872367859,
+        0.7424242496490479
+      ],
+      "first_balanced_coverage": 0.3333333432674408,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.5641025900840759,
+        0.8717948794364929,
+        0.9230769276618958,
+        0.9230769276618958,
+        0.8974359035491943,
+        0.9230769276618958
+      ],
+      "first_balanced_coverage": 0.5384615659713745,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729799032211304,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.6052631735801697,
+        0.9736841917037964,
+        1.0,
+        0.8684210777282715,
+        0.9210526347160339,
+        0.9473684430122375
+      ],
+      "first_balanced_coverage": 0.6052631735801697,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.8909794092178345,
+      "oracle_iou": 0.9110824465751648,
+      "valid_superpoints": 1620,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.5,
+        0.824999988079071,
+        0.875,
+        0.9750000238418579,
+        0.9750000238418579,
+        0.949999988079071
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9321419596672058,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.5263158082962036,
+        0.8421052694320679,
+        0.9473684430122375,
+        0.6578947305679321,
+        0.9210526347160339,
+        0.7894737124443054
+      ],
+      "first_balanced_coverage": 0.5263158082962036,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6359550356864929,
+      "oracle_iou": 0.7399460077285767,
+      "valid_superpoints": 1620,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.7400000095367432,
+        1.0,
+        0.9800000190734863,
+        1.0,
+        0.9399999976158142,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.7400000095367432,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6178903579711914,
+      "oracle_iou": 0.7341568470001221,
+      "valid_superpoints": 1620,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.800000011920929,
+        0.8999999761581421,
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6573308110237122,
+      "oracle_iou": 0.6685270071029663,
+      "valid_superpoints": 1620,
+      "target_superpoints": 80,
+      "coverage_by_layer": [
+        0.612500011920929,
+        1.0,
+        1.0,
+        0.987500011920929,
+        0.987500011920929,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6000000238418579,
+      "first_balanced_unique": 192
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6441436409950256,
+      "oracle_iou": 0.6633505821228027,
+      "valid_superpoints": 1620,
+      "target_superpoints": 80,
+      "coverage_by_layer": [
+        0.5625,
+        0.9750000238418579,
+        1.0,
+        0.987500011920929,
+        0.987500011920929,
+        1.0
+      ],
+      "first_balanced_coverage": 0.550000011920929,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8787612915039062,
+      "valid_superpoints": 1620,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.5428571701049805,
+        0.8857142925262451,
+        0.800000011920929,
+        0.7428571581840515,
+        0.7714285850524902,
+        0.7714285850524902
+      ],
+      "first_balanced_coverage": 0.5428571701049805,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6417830586433411,
+      "oracle_iou": 0.7902197241783142,
+      "valid_superpoints": 1620,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.800000011920929,
+        0.8999999761581421,
+        1.0,
+        1.0,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 219
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.6578947305679321,
+        0.9210526347160339,
+        1.0,
+        0.9473684430122375,
+        0.9736841917037964,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6315789222717285,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.736063539981842,
+      "oracle_iou": 0.8077762722969055,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.6410256624221802,
+        1.0,
+        1.0,
+        1.0,
+        0.9487179517745972,
+        0.9487179517745972
+      ],
+      "first_balanced_coverage": 0.6410256624221802,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.9729799032211304,
+      "oracle_iou": 0.9729799032211304,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.6315789222717285,
+        0.9473684430122375,
+        1.0,
+        0.9473684430122375,
+        0.9736841917037964,
+        0.9473684430122375
+      ],
+      "first_balanced_coverage": 0.6052631735801697,
+      "first_balanced_unique": 199
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.8059614300727844,
+      "oracle_iou": 0.8059614300727844,
+      "valid_superpoints": 1620,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.4285714328289032,
+        0.7428571581840515,
+        0.7428571581840515,
+        0.6285714507102966,
+        0.6857143044471741,
+        0.48571428656578064
+      ],
+      "first_balanced_coverage": 0.4285714328289032,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 1,
+      "selected_iou": 0.6520700454711914,
+      "oracle_iou": 0.7562326788902283,
+      "valid_superpoints": 1620,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        0.3333333432674408,
+        0.8333333134651184,
+        0.8333333134651184,
+        0.8333333134651184,
+        0.6666666865348816,
+        0.6666666865348816
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 186
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.6930732727050781,
+      "oracle_iou": 0.7965503931045532,
+      "valid_superpoints": 1620,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        0.3333333432674408,
+        0.8333333134651184,
+        0.8333333134651184,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.6334528923034668,
+      "oracle_iou": 0.6535795331001282,
+      "valid_superpoints": 1620,
+      "target_superpoints": 80,
+      "coverage_by_layer": [
+        0.6000000238418579,
+        1.0,
+        1.0,
+        1.0,
+        0.987500011920929,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6000000238418579,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9321419596672058,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.5,
+        0.8421052694320679,
+        0.9210526347160339,
+        0.7105262875556946,
+        0.7368420958518982,
+        0.8421052694320679
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.9597055315971375,
+      "oracle_iou": 0.9914940595626831,
+      "valid_superpoints": 1620,
+      "target_superpoints": 66,
+      "coverage_by_layer": [
+        0.3484848439693451,
+        1.0,
+        1.0,
+        1.0,
+        0.6363636255264282,
+        0.7727272510528564
+      ],
+      "first_balanced_coverage": 0.3484848439693451,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.6794280409812927,
+      "oracle_iou": 0.7560401558876038,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.6538461446762085,
+        0.9615384340286255,
+        0.9230769276618958,
+        0.8461538553237915,
+        0.7307692170143127,
+        0.6153846383094788
+      ],
+      "first_balanced_coverage": 0.6538461446762085,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.9166173934936523,
+      "oracle_iou": 0.9166173934936523,
+      "valid_superpoints": 1620,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.4848484992980957,
+        0.9090909361839294,
+        0.939393937587738,
+        0.8787878751754761,
+        0.8787878751754761,
+        0.9696969985961914
+      ],
+      "first_balanced_coverage": 0.4848484992980957,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.7921642065048218,
+      "oracle_iou": 0.8491748571395874,
+      "valid_superpoints": 1620,
+      "target_superpoints": 49,
+      "coverage_by_layer": [
+        0.36734694242477417,
+        0.918367326259613,
+        0.9795918464660645,
+        1.0,
+        0.918367326259613,
+        1.0
+      ],
+      "first_balanced_coverage": 0.3469387888908386,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9216389060020447,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.44736841320991516,
+        0.8421052694320679,
+        0.9473684430122375,
+        0.6842105388641357,
+        0.6842105388641357,
+        0.7368420958518982
+      ],
+      "first_balanced_coverage": 0.44736841320991516,
+      "first_balanced_unique": 217
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729799032211304,
+      "valid_superpoints": 1620,
+      "target_superpoints": 38,
+      "coverage_by_layer": [
+        0.6052631735801697,
+        0.8421052694320679,
+        0.9736841917037964,
+        0.8947368264198303,
+        0.8684210777282715,
+        0.8947368264198303
+      ],
+      "first_balanced_coverage": 0.5789473652839661,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9489414691925049,
+      "valid_superpoints": 1620,
+      "target_superpoints": 39,
+      "coverage_by_layer": [
+        0.5128205418586731,
+        0.9487179517745972,
+        0.8461538553237915,
+        0.8974359035491943,
+        0.9743589758872986,
+        0.8717948794364929
+      ],
+      "first_balanced_coverage": 0.4871794879436493,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9793559312820435,
+      "valid_superpoints": 1620,
+      "target_superpoints": 26,
+      "coverage_by_layer": [
+        0.6538461446762085,
+        0.9615384340286255,
+        0.9615384340286255,
+        0.9615384340286255,
+        0.7307692170143127,
+        0.9615384340286255
+      ],
+      "first_balanced_coverage": 0.6538461446762085,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 2,
+      "selected_iou": 0.49829351902008057,
+      "oracle_iou": 0.658038318157196,
+      "valid_superpoints": 1620,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.7599999904632568,
+        0.9800000190734863,
+        1.0,
+        0.9200000166893005,
+        0.7400000095367432,
+        0.7799999713897705
+      ],
+      "first_balanced_coverage": 0.7200000286102295,
+      "first_balanced_unique": 222
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8290322422981262,
+      "valid_superpoints": 1431,
+      "target_superpoints": 23,
+      "coverage_by_layer": [
+        1.0,
+        0.95652174949646,
+        0.8695651888847351,
+        0.9130434989929199,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9759119153022766,
+      "valid_superpoints": 1431,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.9090909361839294,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9513343572616577,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.7058823704719543,
+        1.0,
+        1.0,
+        1.0,
+        0.9411764740943909,
+        0.9411764740943909
+      ],
+      "first_balanced_coverage": 0.7058823704719543,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.7647058963775635,
+        0.9411764740943909,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7647058963775635,
+      "first_balanced_unique": 181
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.9081212282180786,
+      "oracle_iou": 0.9081212282180786,
+      "valid_superpoints": 1431,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.4000000059604645,
+        1.0,
+        0.949999988079071,
+        0.8999999761581421,
+        0.949999988079071,
+        0.949999988079071
+      ],
+      "first_balanced_coverage": 0.4000000059604645,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9759119153022766,
+      "valid_superpoints": 1431,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.9090909361839294,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.8333333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8333333134651184,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.9742187261581421,
+      "oracle_iou": 0.9742187261581421,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9759119153022766,
+      "valid_superpoints": 1431,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 178
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9513343572616577,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.7058823704719543,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7058823704719543,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8572121262550354,
+      "valid_superpoints": 1431,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.550000011920929,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.550000011920929,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8140564560890198,
+      "valid_superpoints": 1431,
+      "target_superpoints": 23,
+      "coverage_by_layer": [
+        0.95652174949646,
+        0.95652174949646,
+        0.9130434989929199,
+        0.95652174949646,
+        0.95652174949646,
+        0.9130434989929199
+      ],
+      "first_balanced_coverage": 0.95652174949646,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.8333333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8333333134651184,
+      "first_balanced_unique": 181
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9745173454284668,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.7058823704719543,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7058823704719543,
+      "first_balanced_unique": 169
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.889363706111908,
+      "valid_superpoints": 1431,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.6000000238418579,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.949999988079071,
+        0.949999988079071,
+        0.949999988079071
+      ],
+      "first_balanced_coverage": 0.6000000238418579,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 178
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.3349384665489197,
+      "oracle_iou": 0.9017475843429565,
+      "valid_superpoints": 1431,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.7142857313156128,
+        0.9714285731315613,
+        1.0,
+        0.9714285731315613,
+        0.9714285731315613,
+        0.9714285731315613
+      ],
+      "first_balanced_coverage": 0.6857143044471741,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8177934288978577,
+      "valid_superpoints": 1431,
+      "target_superpoints": 23,
+      "coverage_by_layer": [
+        0.9130434989929199,
+        0.95652174949646,
+        0.9130434989929199,
+        1.0,
+        1.0,
+        0.95652174949646
+      ],
+      "first_balanced_coverage": 0.9130434989929199,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9375,
+      "first_balanced_unique": 187
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9081212282180786,
+      "valid_superpoints": 1431,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.44999998807907104,
+        1.0,
+        0.949999988079071,
+        0.949999988079071,
+        0.949999988079071,
+        0.949999988079071
+      ],
+      "first_balanced_coverage": 0.44999998807907104,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.9742187261581421,
+      "oracle_iou": 0.9742187261581421,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.9742187261581421,
+      "oracle_iou": 0.9742187261581421,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.75,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 180
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.9411764740943909,
+        1.0,
+        1.0,
+        1.0,
+        0.9411764740943909,
+        0.9411764740943909
+      ],
+      "first_balanced_coverage": 0.9411764740943909,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.529411792755127,
+        0.8823529481887817,
+        0.9411764740943909,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.529411792755127,
+      "first_balanced_unique": 175
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9742187261581421,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.8333333134651184,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8328721523284912,
+      "valid_superpoints": 1431,
+      "target_superpoints": 23,
+      "coverage_by_layer": [
+        0.8260869383811951,
+        0.9130434989929199,
+        0.9130434989929199,
+        0.95652174949646,
+        0.9130434989929199,
+        0.9130434989929199
+      ],
+      "first_balanced_coverage": 0.8260869383811951,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.8125,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8125,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.9411764740943909,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9411764740943909,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9572453498840332,
+      "valid_superpoints": 1431,
+      "target_superpoints": 31,
+      "coverage_by_layer": [
+        0.5483871102333069,
+        0.9677419066429138,
+        0.9677419066429138,
+        0.9677419066429138,
+        0.9677419066429138,
+        0.9677419066429138
+      ],
+      "first_balanced_coverage": 0.5483871102333069,
+      "first_balanced_unique": 166
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9375,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 3,
+      "selected_iou": 0.9742187261581421,
+      "oracle_iou": 0.9742187261581421,
+      "valid_superpoints": 1431,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8387096524238586,
+      "valid_superpoints": 1431,
+      "target_superpoints": 23,
+      "coverage_by_layer": [
+        0.8260869383811951,
+        0.95652174949646,
+        0.9130434989929199,
+        0.95652174949646,
+        0.95652174949646,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8260869383811951,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.8235294222831726,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9411764740943909
+      ],
+      "first_balanced_coverage": 0.7647058963775635,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.9846121072769165,
+      "oracle_iou": 0.9925197958946228,
+      "valid_superpoints": 1431,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.6571428775787354,
+        0.9714285731315613,
+        1.0,
+        0.9714285731315613,
+        0.9714285731315613,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6285714507102966,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.8823529481887817,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8823529481887817,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.9718390703201294,
+      "oracle_iou": 0.9718390703201294,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.8125,
+        1.0,
+        0.9375,
+        0.9375,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8125,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9602339267730713,
+      "valid_superpoints": 1431,
+      "target_superpoints": 31,
+      "coverage_by_layer": [
+        0.4838709533214569,
+        0.9677419066429138,
+        0.9677419066429138,
+        0.9677419066429138,
+        0.9677419066429138,
+        0.9677419066429138
+      ],
+      "first_balanced_coverage": 0.4516128897666931,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.9925197958946228,
+      "oracle_iou": 0.9925197958946228,
+      "valid_superpoints": 1431,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.6857143044471741,
+        0.9714285731315613,
+        0.9714285731315613,
+        0.9714285731315613,
+        0.9714285731315613,
+        0.9714285731315613
+      ],
+      "first_balanced_coverage": 0.6857143044471741,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.942105233669281,
+      "valid_superpoints": 1431,
+      "target_superpoints": 31,
+      "coverage_by_layer": [
+        0.3870967626571655,
+        0.9677419066429138,
+        0.9354838728904724,
+        0.9354838728904724,
+        0.9354838728904724,
+        0.9354838728904724
+      ],
+      "first_balanced_coverage": 0.32258063554763794,
+      "first_balanced_unique": 169
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.7058823704719543,
+        0.8823529481887817,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6470588445663452,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9925197958946228,
+      "valid_superpoints": 1431,
+      "target_superpoints": 35,
+      "coverage_by_layer": [
+        0.7142857313156128,
+        0.9714285731315613,
+        0.9428571462631226,
+        0.9714285731315613,
+        0.9714285731315613,
+        0.9714285731315613
+      ],
+      "first_balanced_coverage": 0.7142857313156128,
+      "first_balanced_unique": 161
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.9513343572616577,
+      "oracle_iou": 0.9745173454284668,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.6470588445663452,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6470588445663452,
+      "first_balanced_unique": 165
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.6470588445663452,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6470588445663452,
+      "first_balanced_unique": 186
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.8125,
+        1.0,
+        0.9375,
+        1.0,
+        1.0,
+        0.9375
+      ],
+      "first_balanced_coverage": 0.8125,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9081212282180786,
+      "valid_superpoints": 1431,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.5,
+        1.0,
+        0.8500000238418579,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.9359073638916016,
+      "oracle_iou": 0.9905808568000793,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.5882353186607361,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5882353186607361,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9177933931350708,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9375,
+      "first_balanced_unique": 177
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9759119153022766,
+      "valid_superpoints": 1431,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        1.0,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1431,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.8235294222831726,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7647058963775635,
+      "first_balanced_unique": 192
+    },
+    {
+      "scene_index": 4,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9718390703201294,
+      "valid_superpoints": 1431,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5454545617103577,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.9333333373069763,
+        1.0,
+        0.7333333492279053,
+        0.7333333492279053,
+        0.6666666865348816,
+        0.8666666746139526
+      ],
+      "first_balanced_coverage": 0.9333333373069763,
+      "first_balanced_unique": 138
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9604336023330688,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 141
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9116531014442444,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        1.0,
+        0.9333333373069763,
+        1.0,
+        0.9333333373069763,
+        1.0,
+        0.9333333373069763
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 144
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.514161229133606,
+      "oracle_iou": 0.514161229133606,
+      "valid_superpoints": 868,
+      "target_superpoints": 7,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 123
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9805518984794617,
+      "oracle_iou": 0.9805518984794617,
+      "valid_superpoints": 868,
+      "target_superpoints": 125,
+      "coverage_by_layer": [
+        0.9440000057220459,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9440000057220459,
+      "first_balanced_unique": 136
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "valid_superpoints": 868,
+      "target_superpoints": 9,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 131
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.49213746190071106,
+      "valid_superpoints": 868,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.875,
+        0.625,
+        0.375,
+        0.625
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 132
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.41246291995048523,
+      "valid_superpoints": 868,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 143
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7335926294326782,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.8666666746139526,
+        0.9333333373069763,
+        0.6666666865348816,
+        0.7333333492279053,
+        0.6666666865348816,
+        0.6666666865348816
+      ],
+      "first_balanced_coverage": 0.8666666746139526,
+      "first_balanced_unique": 131
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9169902801513672,
+      "oracle_iou": 0.9169902801513672,
+      "valid_superpoints": 868,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        1.0,
+        0.9375,
+        0.9375,
+        0.9375,
+        0.9375,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 135
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.7817557454109192,
+      "oracle_iou": 0.8144940733909607,
+      "valid_superpoints": 868,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8235294222831726,
+        0.8823529481887817,
+        0.8823529481887817,
+        0.7647058963775635
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 119
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9497504830360413,
+      "oracle_iou": 0.9772132039070129,
+      "valid_superpoints": 868,
+      "target_superpoints": 125,
+      "coverage_by_layer": [
+        0.9200000166893005,
+        1.0,
+        1.0,
+        1.0,
+        0.9760000109672546,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9200000166893005,
+      "first_balanced_unique": 134
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.7245454788208008,
+      "oracle_iou": 0.7245454788208008,
+      "valid_superpoints": 868,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8235294222831726,
+        0.8235294222831726,
+        0.8823529481887817,
+        0.9411764740943909
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 112
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 868,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 111
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "valid_superpoints": 868,
+      "target_superpoints": 9,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 119
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8872628808021545,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8666666746139526,
+        0.9333333373069763,
+        0.8666666746139526,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 126
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.4315628111362457,
+      "valid_superpoints": 868,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.875,
+        0.75,
+        0.75,
+        0.875
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 125
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 868,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 117
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8747967481613159,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        1.0,
+        0.800000011920929,
+        0.7333333492279053,
+        0.6000000238418579,
+        0.6000000238418579,
+        0.800000011920929
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 128
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9641447067260742,
+      "oracle_iou": 0.9823092818260193,
+      "valid_superpoints": 868,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.970588207244873,
+        1.0,
+        1.0,
+        0.970588207244873,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.970588207244873,
+      "first_balanced_unique": 127
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "valid_superpoints": 868,
+      "target_superpoints": 9,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 123
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9179288744926453,
+      "oracle_iou": 0.9488407969474792,
+      "valid_superpoints": 868,
+      "target_superpoints": 28,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.7857142686843872,
+        0.8571428656578064,
+        0.9642857313156128
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 107
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9227907061576843,
+      "oracle_iou": 0.9631068110466003,
+      "valid_superpoints": 868,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        1.0,
+        0.9375,
+        0.9375,
+        0.9375,
+        0.9375,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 136
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9631068110466003,
+      "valid_superpoints": 868,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        1.0,
+        0.9375,
+        0.9375,
+        0.9375,
+        0.9375,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 137
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.9179288744926453,
+      "oracle_iou": 0.9488407969474792,
+      "valid_superpoints": 868,
+      "target_superpoints": 28,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.7857142686843872,
+        0.8928571343421936,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 107
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.2380952388048172,
+      "valid_superpoints": 868,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 142
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9604336023330688,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 128
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.4036199152469635,
+      "oracle_iou": 0.514161229133606,
+      "valid_superpoints": 868,
+      "target_superpoints": 7,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 124
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.6818181872367859,
+      "oracle_iou": 0.7970561981201172,
+      "valid_superpoints": 868,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.9411764740943909,
+        1.0,
+        0.8823529481887817,
+        1.0,
+        1.0,
+        0.7647058963775635
+      ],
+      "first_balanced_coverage": 0.9411764740943909,
+      "first_balanced_unique": 126
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8527048826217651,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.9333333373069763,
+        1.0,
+        0.7333333492279053,
+        0.9333333373069763,
+        0.7333333492279053,
+        0.6666666865348816
+      ],
+      "first_balanced_coverage": 0.9333333373069763,
+      "first_balanced_unique": 126
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5205430388450623,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.9333333373069763,
+        1.0,
+        0.7333333492279053,
+        0.800000011920929,
+        0.7333333492279053,
+        0.7333333492279053
+      ],
+      "first_balanced_coverage": 0.9333333373069763,
+      "first_balanced_unique": 136
+    },
+    {
+      "scene_index": 5,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7157745361328125,
+      "valid_superpoints": 868,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        0.9411764740943909,
+        1.0,
+        0.8823529481887817,
+        0.9411764740943909,
+        0.8823529481887817,
+        0.8823529481887817
+      ],
+      "first_balanced_coverage": 0.9411764740943909,
+      "first_balanced_unique": 118
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5246548056602478,
+      "valid_superpoints": 868,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.9333333373069763,
+        1.0,
+        0.7333333492279053,
+        0.9333333373069763,
+        0.7333333492279053,
+        0.7333333492279053
+      ],
+      "first_balanced_coverage": 0.9333333373069763,
+      "first_balanced_unique": 115
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9169902801513672,
+      "oracle_iou": 0.9169902801513672,
+      "valid_superpoints": 868,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        1.0,
+        0.9375,
+        1.0,
+        0.9375,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 124
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.514161229133606,
+      "oracle_iou": 0.514161229133606,
+      "valid_superpoints": 868,
+      "target_superpoints": 7,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 113
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9641447067260742,
+      "oracle_iou": 0.9721744656562805,
+      "valid_superpoints": 868,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.9117646813392639,
+        1.0,
+        1.0,
+        0.970588207244873,
+        0.970588207244873,
+        0.9411764740943909
+      ],
+      "first_balanced_coverage": 0.9117646813392639,
+      "first_balanced_unique": 129
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.40489593148231506,
+      "oracle_iou": 0.8441238403320312,
+      "valid_superpoints": 868,
+      "target_superpoints": 125,
+      "coverage_by_layer": [
+        0.8799999952316284,
+        1.0,
+        0.9919999837875366,
+        0.9599999785423279,
+        0.800000011920929,
+        0.9200000166893005
+      ],
+      "first_balanced_coverage": 0.8799999952316284,
+      "first_balanced_unique": 110
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "valid_superpoints": 868,
+      "target_superpoints": 9,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 134
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9485006332397461,
+      "oracle_iou": 0.9485006332397461,
+      "valid_superpoints": 868,
+      "target_superpoints": 9,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 130
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.7588871717453003,
+      "oracle_iou": 0.9179288744926453,
+      "valid_superpoints": 868,
+      "target_superpoints": 28,
+      "coverage_by_layer": [
+        1.0,
+        0.9642857313156128,
+        1.0,
+        0.75,
+        0.8928571343421936,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 130
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 868,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 139
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.7588871717453003,
+      "oracle_iou": 0.7658423781394958,
+      "valid_superpoints": 868,
+      "target_superpoints": 28,
+      "coverage_by_layer": [
+        1.0,
+        0.9642857313156128,
+        1.0,
+        0.7142857313156128,
+        0.8928571343421936,
+        0.9642857313156128
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 128
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9169902801513672,
+      "oracle_iou": 0.9169902801513672,
+      "valid_superpoints": 868,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        1.0,
+        0.9375,
+        0.9375,
+        0.9375,
+        0.875,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 125
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.966580331325531,
+      "oracle_iou": 0.9805518984794617,
+      "valid_superpoints": 868,
+      "target_superpoints": 125,
+      "coverage_by_layer": [
+        0.984000027179718,
+        1.0,
+        1.0,
+        0.9919999837875366,
+        0.9679999947547913,
+        0.9760000109672546
+      ],
+      "first_balanced_coverage": 0.984000027179718,
+      "first_balanced_unique": 117
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9676196575164795,
+      "oracle_iou": 0.9823092818260193,
+      "valid_superpoints": 868,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.9411764740943909,
+        1.0,
+        1.0,
+        0.970588207244873,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9411764740943909,
+      "first_balanced_unique": 136
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.7658423781394958,
+      "oracle_iou": 0.9179288744926453,
+      "valid_superpoints": 868,
+      "target_superpoints": 28,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        0.9285714030265808,
+        0.9642857313156128
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 122
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9669733047485352,
+      "oracle_iou": 0.9805518984794617,
+      "valid_superpoints": 868,
+      "target_superpoints": 125,
+      "coverage_by_layer": [
+        0.9520000219345093,
+        0.9919999837875366,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9520000219345093,
+      "first_balanced_unique": 147
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.9676196575164795,
+      "oracle_iou": 0.9823092818260193,
+      "valid_superpoints": 868,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.9411764740943909,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9411764740943909,
+      "first_balanced_unique": 133
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.514161229133606,
+      "oracle_iou": 0.514161229133606,
+      "valid_superpoints": 868,
+      "target_superpoints": 7,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 108
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.514161229133606,
+      "oracle_iou": 0.514161229133606,
+      "valid_superpoints": 868,
+      "target_superpoints": 7,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 102
+    },
+    {
+      "scene_index": 6,
+      "selected_iou": 0.7722558379173279,
+      "oracle_iou": 0.7886142730712891,
+      "valid_superpoints": 868,
+      "target_superpoints": 17,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8823529481887817,
+        0.8823529481887817,
+        0.9411764740943909,
+        0.8235294222831726
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 145
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.04177449271082878,
+      "oracle_iou": 0.9037695527076721,
+      "valid_superpoints": 1077,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.47999998927116394,
+        1.0,
+        0.8799999952316284,
+        0.8399999737739563,
+        0.8399999737739563,
+        0.8399999737739563
+      ],
+      "first_balanced_coverage": 0.47999998927116394,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5853658318519592,
+      "valid_superpoints": 1077,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 216
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.6739336252212524,
+      "oracle_iou": 0.7124068140983582,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.9333333373069763,
+        1.0,
+        0.8666666746139526,
+        0.8666666746139526,
+        0.800000011920929,
+        0.8666666746139526
+      ],
+      "first_balanced_coverage": 0.9333333373069763,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5853658318519592,
+      "valid_superpoints": 1077,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 200
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9463983178138733,
+      "valid_superpoints": 1077,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.9047619104385376,
+        1.0,
+        1.0,
+        0.9523809552192688,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9047619104385376,
+      "first_balanced_unique": 150
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9911942481994629,
+      "oracle_iou": 0.9911942481994629,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 170
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5833333134651184,
+        1.0,
+        1.0,
+        0.9166666865348816,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5833333134651184,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.8345081210136414,
+      "oracle_iou": 0.9037695527076721,
+      "valid_superpoints": 1077,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.7599999904632568,
+        0.9599999785423279,
+        1.0,
+        0.8399999737739563,
+        0.8399999737739563,
+        0.9200000166893005
+      ],
+      "first_balanced_coverage": 0.7599999904632568,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.975702702999115,
+      "oracle_iou": 0.9776432514190674,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 181
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.949999988079071,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7656039595603943,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.7333333492279053,
+        0.8666666746139526,
+        0.9333333373069763,
+        0.9333333373069763,
+        0.8666666746139526,
+        0.9333333373069763
+      ],
+      "first_balanced_coverage": 0.7333333492279053,
+      "first_balanced_unique": 178
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.21253378689289093,
+      "oracle_iou": 0.8113781809806824,
+      "valid_superpoints": 1077,
+      "target_superpoints": 42,
+      "coverage_by_layer": [
+        0.5952380895614624,
+        0.738095223903656,
+        0.8571428656578064,
+        0.8809523582458496,
+        0.8333333134651184,
+        0.8571428656578064
+      ],
+      "first_balanced_coverage": 0.5952380895614624,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8605577945709229,
+      "valid_superpoints": 1077,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.7599999904632568,
+        1.0,
+        0.9599999785423279,
+        0.8399999737739563,
+        0.9200000166893005,
+        0.9599999785423279
+      ],
+      "first_balanced_coverage": 0.7599999904632568,
+      "first_balanced_unique": 178
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.5161290168762207,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 5,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.975576639175415,
+      "oracle_iou": 0.975576639175415,
+      "valid_superpoints": 1077,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 149
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9886401295661926,
+      "oracle_iou": 0.9956889152526855,
+      "valid_superpoints": 1077,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.939393937587738,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.939393937587738,
+      "first_balanced_unique": 151
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.027027027681469917,
+        0.5405405163764954,
+        0.45945945382118225,
+        0.9459459185600281,
+        0.8918918967247009,
+        0.0
+      ],
+      "first_balanced_coverage": 0.027027027681469917,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.6807909607887268,
+      "oracle_iou": 0.6807909607887268,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.75,
+        0.75
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 180
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9755658507347107,
+      "oracle_iou": 0.9821245074272156,
+      "valid_superpoints": 1077,
+      "target_superpoints": 132,
+      "coverage_by_layer": [
+        0.7727272510528564,
+        1.0,
+        1.0,
+        0.9924242496490479,
+        0.8030303120613098,
+        0.9848484992980957
+      ],
+      "first_balanced_coverage": 0.7727272510528564,
+      "first_balanced_unique": 143
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9370535612106323,
+      "oracle_iou": 0.9370535612106323,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.6807909607887268,
+      "oracle_iou": 0.6807909607887268,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        0.75,
+        1.0,
+        1.0,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.8036084175109863,
+      "oracle_iou": 0.8982499837875366,
+      "valid_superpoints": 1077,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.7708333134651184,
+        0.8958333134651184,
+        0.9791666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9583333134651184
+      ],
+      "first_balanced_coverage": 0.7708333134651184,
+      "first_balanced_unique": 145
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9420102834701538,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 5,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 169
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9644302725791931,
+      "valid_superpoints": 1077,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.761904776096344,
+        1.0,
+        1.0,
+        1.0,
+        0.9523809552192688,
+        1.0
+      ],
+      "first_balanced_coverage": 0.761904776096344,
+      "first_balanced_unique": 175
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.4813559353351593,
+      "oracle_iou": 0.6247628331184387,
+      "valid_superpoints": 1077,
+      "target_superpoints": 27,
+      "coverage_by_layer": [
+        0.7777777910232544,
+        0.9629629850387573,
+        0.9629629850387573,
+        0.9629629850387573,
+        0.9629629850387573,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7777777910232544,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9824241399765015,
+      "oracle_iou": 0.9956889152526855,
+      "valid_superpoints": 1077,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.939393937587738,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.939393937587738,
+      "first_balanced_unique": 146
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9096022248268127,
+      "oracle_iou": 0.9644302725791931,
+      "valid_superpoints": 1077,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.8095238208770752,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8095238208770752,
+      "first_balanced_unique": 152
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.949999988079071,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.949999988079071,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.963659942150116,
+      "oracle_iou": 0.9845554828643799,
+      "valid_superpoints": 1077,
+      "target_superpoints": 132,
+      "coverage_by_layer": [
+        0.7121211886405945,
+        0.9848484992980957,
+        1.0,
+        0.9848484992980957,
+        0.6969696879386902,
+        0.6287878751754761
+      ],
+      "first_balanced_coverage": 0.7045454382896423,
+      "first_balanced_unique": 159
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8785310983657837,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        0.75,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 210
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.9370535612106323,
+      "oracle_iou": 0.9370535612106323,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        0.8666666746139526,
+        1.0
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 187
+    },
+    {
+      "scene_index": 7,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9173951148986816,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        0.8666666746139526,
+        1.0
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5833333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5833333134651184,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5833333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5833333134651184,
+      "first_balanced_unique": 186
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9624531269073486,
+      "oracle_iou": 0.9810821413993835,
+      "valid_superpoints": 1077,
+      "target_superpoints": 132,
+      "coverage_by_layer": [
+        0.7424242496490479,
+        0.9848484992980957,
+        0.9848484992980957,
+        0.9621211886405945,
+        0.7348484992980957,
+        0.8030303120613098
+      ],
+      "first_balanced_coverage": 0.7348484992980957,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9754692316055298,
+      "oracle_iou": 0.9956889152526855,
+      "valid_superpoints": 1077,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.9090909361839294,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9090909361839294,
+      "first_balanced_unique": 169
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.8031459450721741,
+      "oracle_iou": 0.8619665503501892,
+      "valid_superpoints": 1077,
+      "target_superpoints": 42,
+      "coverage_by_layer": [
+        0.5476190447807312,
+        0.8095238208770752,
+        0.7857142686843872,
+        0.761904776096344,
+        0.8809523582458496,
+        0.8095238208770752
+      ],
+      "first_balanced_coverage": 0.5476190447807312,
+      "first_balanced_unique": 157
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.6503607034683228,
+      "oracle_iou": 0.7558359503746033,
+      "valid_superpoints": 1077,
+      "target_superpoints": 27,
+      "coverage_by_layer": [
+        0.8148148059844971,
+        0.9629629850387573,
+        0.9629629850387573,
+        0.9629629850387573,
+        0.9259259104728699,
+        0.9629629850387573
+      ],
+      "first_balanced_coverage": 0.8148148059844971,
+      "first_balanced_unique": 177
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.7914494276046753,
+      "oracle_iou": 0.8150851726531982,
+      "valid_superpoints": 1077,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.7567567825317383,
+        0.9189189076423645,
+        0.9459459185600281,
+        0.9729729890823364,
+        0.8918918967247009,
+        0.9729729890823364
+      ],
+      "first_balanced_coverage": 0.7567567825317383,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9754692316055298,
+      "oracle_iou": 0.9956889152526855,
+      "valid_superpoints": 1077,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.8484848737716675,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8484848737716675,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9420102834701538,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 5,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 167
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.5161290168762207,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 5,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 177
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.949999988079071,
+        1.0,
+        1.0,
+        1.0,
+        0.8500000238418579,
+        1.0
+      ],
+      "first_balanced_coverage": 0.949999988079071,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5833333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5833333134651184,
+      "first_balanced_unique": 186
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.6739336252212524,
+      "oracle_iou": 0.7124068140983582,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.9333333373069763,
+        0.9333333373069763,
+        0.8666666746139526,
+        0.8666666746139526,
+        0.800000011920929,
+        0.8666666746139526
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 162
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9644302725791931,
+      "oracle_iou": 0.9644302725791931,
+      "valid_superpoints": 1077,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.9047619104385376,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9047619104385376,
+      "first_balanced_unique": 170
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.039661016315221786,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5833333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9911942481994629,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 166
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9554044008255005,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 153
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "valid_superpoints": 1077,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 161
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.32265499234199524,
+      "oracle_iou": 0.6320316195487976,
+      "valid_superpoints": 1077,
+      "target_superpoints": 27,
+      "coverage_by_layer": [
+        0.7777777910232544,
+        1.0,
+        0.9629629850387573,
+        0.9629629850387573,
+        0.9259259104728699,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7407407164573669,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 5,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 144
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.7475078105926514,
+      "oracle_iou": 0.7803149819374084,
+      "valid_superpoints": 1077,
+      "target_superpoints": 42,
+      "coverage_by_layer": [
+        0.738095223903656,
+        0.7857142686843872,
+        0.9285714030265808,
+        0.8571428656578064,
+        0.9285714030265808,
+        0.8333333134651184
+      ],
+      "first_balanced_coverage": 0.738095223903656,
+      "first_balanced_unique": 180
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.7465116381645203,
+      "oracle_iou": 0.7465116381645203,
+      "valid_superpoints": 1077,
+      "target_superpoints": 3,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.6666666865348816
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.7094195485115051,
+      "oracle_iou": 0.7431972622871399,
+      "valid_superpoints": 1077,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.2702702581882477,
+        0.9729729890823364,
+        0.8648648858070374,
+        1.0,
+        0.9459459185600281,
+        0.8918918967247009
+      ],
+      "first_balanced_coverage": 0.2702702581882477,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.8877634406089783,
+      "oracle_iou": 0.894632875919342,
+      "valid_superpoints": 1077,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.6875,
+        0.8958333134651184,
+        0.9375,
+        0.8958333134651184,
+        0.9375,
+        0.875
+      ],
+      "first_balanced_coverage": 0.6875,
+      "first_balanced_unique": 155
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8785310983657837,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.25,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7474792003631592,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        0.8666666746139526,
+        0.9333333373069763,
+        0.800000011920929,
+        0.9333333373069763
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9506164789199829,
+      "oracle_iou": 0.97826087474823,
+      "valid_superpoints": 1077,
+      "target_superpoints": 132,
+      "coverage_by_layer": [
+        0.7272727489471436,
+        0.9545454382896423,
+        0.9772727489471436,
+        0.9772727489471436,
+        0.6818181872367859,
+        0.689393937587738
+      ],
+      "first_balanced_coverage": 0.7272727489471436,
+      "first_balanced_unique": 155
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.7729660868644714,
+      "oracle_iou": 0.8076441287994385,
+      "valid_superpoints": 1077,
+      "target_superpoints": 42,
+      "coverage_by_layer": [
+        0.5714285969734192,
+        0.8809523582458496,
+        0.8809523582458496,
+        0.8571428656578064,
+        0.8333333134651184,
+        0.8095238208770752
+      ],
+      "first_balanced_coverage": 0.5714285969734192,
+      "first_balanced_unique": 152
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8214136362075806,
+      "valid_superpoints": 1077,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        0.9375,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9375,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.6559241414070129,
+      "oracle_iou": 0.7124068140983582,
+      "valid_superpoints": 1077,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.9333333373069763,
+        0.9333333373069763,
+        0.800000011920929,
+        0.8666666746139526
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 167
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.9911942481994629,
+      "oracle_iou": 0.9911942481994629,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0,
+        0.9166666865348816,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 161
+    },
+    {
+      "scene_index": 8,
+      "selected_iou": 0.6255279183387756,
+      "oracle_iou": 0.7712280750274658,
+      "valid_superpoints": 1077,
+      "target_superpoints": 27,
+      "coverage_by_layer": [
+        0.7777777910232544,
+        1.0,
+        0.9629629850387573,
+        0.9629629850387573,
+        0.8888888955116272,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7777777910232544,
+      "first_balanced_unique": 171
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.7171717286109924,
+      "oracle_iou": 0.7171717286109924,
+      "valid_superpoints": 1077,
+      "target_superpoints": 3,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 169
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8214136362075806,
+      "valid_superpoints": 1077,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        0.9375,
+        0.9375,
+        0.9375,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9037695527076721,
+      "valid_superpoints": 1077,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.6800000071525574,
+        1.0,
+        0.9200000166893005,
+        0.8399999737739563,
+        0.8399999737739563,
+        0.9200000166893005
+      ],
+      "first_balanced_coverage": 0.6800000071525574,
+      "first_balanced_unique": 188
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9911942481994629,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 140
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.5245097875595093,
+      "oracle_iou": 0.9042253494262695,
+      "valid_superpoints": 1077,
+      "target_superpoints": 3,
+      "coverage_by_layer": [
+        0.6666666865348816,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.8214136362075806,
+      "oracle_iou": 0.8214136362075806,
+      "valid_superpoints": 1077,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.9375,
+        1.0,
+        1.0,
+        0.9375,
+        0.9375,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9375,
+      "first_balanced_unique": 165
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.7837483882904053,
+      "oracle_iou": 0.8561543822288513,
+      "valid_superpoints": 1077,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.5405405163764954,
+        1.0,
+        0.9729729890823364,
+        1.0,
+        0.9729729890823364,
+        0.9459459185600281
+      ],
+      "first_balanced_coverage": 0.5135135054588318,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 188
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 177
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.8214136362075806,
+      "oracle_iou": 0.8214136362075806,
+      "valid_superpoints": 1077,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9375,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.975576639175415,
+      "oracle_iou": 0.975576639175415,
+      "valid_superpoints": 1077,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.5853658318519592,
+      "oracle_iou": 0.5853658318519592,
+      "valid_superpoints": 1077,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 167
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.6458752751350403,
+      "oracle_iou": 0.6948052048683167,
+      "valid_superpoints": 1077,
+      "target_superpoints": 3,
+      "coverage_by_layer": [
+        0.6666666865348816,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.024791575968265533,
+      "oracle_iou": 0.5695609450340271,
+      "valid_superpoints": 1077,
+      "target_superpoints": 27,
+      "coverage_by_layer": [
+        0.6296296119689941,
+        0.6296296119689941,
+        0.9629629850387573,
+        0.8888888955116272,
+        0.7777777910232544,
+        0.8888888955116272
+      ],
+      "first_balanced_coverage": 0.6296296119689941,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9363057613372803,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 150
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.46032267808914185,
+      "valid_superpoints": 1077,
+      "target_superpoints": 48,
+      "coverage_by_layer": [
+        0.7708333134651184,
+        0.8958333134651184,
+        0.9166666865348816,
+        0.8958333134651184,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.7708333134651184,
+      "first_balanced_unique": 167
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9911942481994629,
+      "oracle_iou": 0.9911942481994629,
+      "valid_superpoints": 1077,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 147
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9886401295661926,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1077,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.9696969985961914,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9696969985961914,
+      "first_balanced_unique": 144
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8214136362075806,
+      "valid_superpoints": 1077,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.8125,
+        1.0,
+        0.9375,
+        0.9375,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8125,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "valid_superpoints": 1077,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 147
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9271089434623718,
+      "oracle_iou": 0.9560810923576355,
+      "valid_superpoints": 1077,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.8571428656578064,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8571428656578064,
+      "first_balanced_unique": 153
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9742147922515869,
+      "oracle_iou": 0.9777045249938965,
+      "valid_superpoints": 1077,
+      "target_superpoints": 132,
+      "coverage_by_layer": [
+        0.7272727489471436,
+        0.9924242496490479,
+        0.9772727489471436,
+        0.9772727489471436,
+        0.8030303120613098,
+        0.6590909361839294
+      ],
+      "first_balanced_coverage": 0.7272727489471436,
+      "first_balanced_unique": 152
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5853658318519592,
+      "valid_superpoints": 1077,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.975576639175415,
+      "valid_superpoints": 1077,
+      "target_superpoints": 6,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8345081210136414,
+      "valid_superpoints": 1077,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.5199999809265137,
+        0.9599999785423279,
+        0.9200000166893005,
+        0.8399999737739563,
+        0.8799999952316284,
+        0.9599999785423279
+      ],
+      "first_balanced_coverage": 0.5199999809265137,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 9,
+      "selected_iou": 0.9363057613372803,
+      "oracle_iou": 0.9554044008255005,
+      "valid_superpoints": 1077,
+      "target_superpoints": 4,
+      "coverage_by_layer": [
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9438642263412476,
+      "valid_superpoints": 1946,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.8108108043670654,
+        0.9459459185600281,
+        0.9459459185600281,
+        0.9729729890823364,
+        0.9189189076423645,
+        0.9459459185600281
+      ],
+      "first_balanced_coverage": 0.8108108043670654,
+      "first_balanced_unique": 206
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1946,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.761904776096344,
+        0.523809552192688,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7142857313156128,
+      "first_balanced_unique": 238
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9393203854560852,
+      "valid_superpoints": 1946,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.3125,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.3125,
+      "first_balanced_unique": 229
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9648300409317017,
+      "valid_superpoints": 1946,
+      "target_superpoints": 41,
+      "coverage_by_layer": [
+        0.9024389982223511,
+        1.0,
+        0.9756097793579102,
+        1.0,
+        0.9756097793579102,
+        0.9756097793579102
+      ],
+      "first_balanced_coverage": 0.9024389982223511,
+      "first_balanced_unique": 207
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8158755898475647,
+      "valid_superpoints": 1946,
+      "target_superpoints": 18,
+      "coverage_by_layer": [
+        0.6111111044883728,
+        1.0,
+        0.9444444179534912,
+        0.8333333134651184,
+        0.7777777910232544,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5555555820465088,
+      "first_balanced_unique": 213
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.9496183395385742,
+      "oracle_iou": 0.9496183395385742,
+      "valid_superpoints": 1946,
+      "target_superpoints": 13,
+      "coverage_by_layer": [
+        0.9230769276618958,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8461538553237915,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.8043972849845886,
+      "oracle_iou": 0.880741536617279,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.5714285969734192,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.8571428656578064,
+        0.8571428656578064
+      ],
+      "first_balanced_coverage": 0.5714285969734192,
+      "first_balanced_unique": 247
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.647053062915802,
+      "oracle_iou": 0.7756587266921997,
+      "valid_superpoints": 1946,
+      "target_superpoints": 142,
+      "coverage_by_layer": [
+        0.3802816867828369,
+        0.8450704216957092,
+        0.8098591566085815,
+        0.6830986142158508,
+        0.6197183132171631,
+        0.7183098793029785
+      ],
+      "first_balanced_coverage": 0.35915493965148926,
+      "first_balanced_unique": 214
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.5843846797943115,
+      "oracle_iou": 0.5843846797943115,
+      "valid_superpoints": 1946,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.20000000298023224,
+        1.0,
+        0.949999988079071,
+        0.949999988079071,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.20000000298023224,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9517917037010193,
+      "valid_superpoints": 1946,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.6060606241226196,
+        0.7575757503509521,
+        0.9696969985961914,
+        0.939393937587738,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6060606241226196,
+      "first_balanced_unique": 203
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.5843846797943115,
+      "oracle_iou": 0.7100939154624939,
+      "valid_superpoints": 1946,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.20000000298023224,
+        1.0,
+        0.949999988079071,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.75
+      ],
+      "first_balanced_coverage": 0.20000000298023224,
+      "first_balanced_unique": 212
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.837864875793457,
+      "oracle_iou": 0.9394242167472839,
+      "valid_superpoints": 1946,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.41999998688697815,
+        0.9200000166893005,
+        0.8199999928474426,
+        0.9800000190734863,
+        0.9399999976158142,
+        0.8600000143051147
+      ],
+      "first_balanced_coverage": 0.41999998688697815,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.8946840763092041,
+      "oracle_iou": 0.906507134437561,
+      "valid_superpoints": 1946,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.5,
+        0.7647058963775635,
+        0.7647058963775635,
+        0.7058823704719543,
+        0.7352941036224365,
+        0.7058823704719543
+      ],
+      "first_balanced_coverage": 0.529411792755127,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9729596972465515,
+      "valid_superpoints": 1946,
+      "target_superpoints": 24,
+      "coverage_by_layer": [
+        0.4583333432674408,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9583333134651184,
+        0.9583333134651184,
+        0.9583333134651184
+      ],
+      "first_balanced_coverage": 0.4583333432674408,
+      "first_balanced_unique": 219
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.9426929354667664,
+      "oracle_iou": 0.9782280921936035,
+      "valid_superpoints": 1946,
+      "target_superpoints": 41,
+      "coverage_by_layer": [
+        0.8292682766914368,
+        1.0,
+        0.9756097793579102,
+        1.0,
+        0.9756097793579102,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8292682766914368,
+      "first_balanced_unique": 211
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "valid_superpoints": 1946,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 205
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "valid_superpoints": 1946,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 220
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.6911599040031433,
+      "oracle_iou": 0.7636306285858154,
+      "valid_superpoints": 1946,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.15000000596046448,
+        0.949999988079071,
+        0.949999988079071,
+        0.8500000238418579,
+        0.8500000238418579,
+        0.949999988079071
+      ],
+      "first_balanced_coverage": 0.20000000298023224,
+      "first_balanced_unique": 187
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7616099119186401,
+      "valid_superpoints": 1946,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 192
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.839239776134491,
+      "oracle_iou": 0.9312275052070618,
+      "valid_superpoints": 1946,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.47999998927116394,
+        0.8399999737739563,
+        0.8999999761581421,
+        0.9200000166893005,
+        0.9599999785423279,
+        1.0
+      ],
+      "first_balanced_coverage": 0.47999998927116394,
+      "first_balanced_unique": 178
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9261515736579895,
+      "valid_superpoints": 1946,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.529411792755127,
+        0.529411792755127,
+        0.7941176295280457,
+        0.6176470518112183,
+        0.7352941036224365,
+        0.6764705777168274
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 199
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8675691485404968,
+      "valid_superpoints": 1946,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.699999988079071,
+        0.9750000238418579,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "first_balanced_coverage": 0.675000011920929,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.947927713394165,
+      "valid_superpoints": 1946,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.8108108043670654,
+        0.8918918967247009,
+        0.9189189076423645,
+        0.9459459185600281,
+        0.9189189076423645,
+        0.8918918967247009
+      ],
+      "first_balanced_coverage": 0.8108108043670654,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.883865237236023,
+      "valid_superpoints": 1946,
+      "target_superpoints": 18,
+      "coverage_by_layer": [
+        0.6111111044883728,
+        1.0,
+        0.9444444179534912,
+        0.6111111044883728,
+        0.5555555820465088,
+        0.9444444179534912
+      ],
+      "first_balanced_coverage": 0.5555555820465088,
+      "first_balanced_unique": 200
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "valid_superpoints": 1946,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.1599999964237213,
+        0.9599999785423279,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.1599999964237213,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.9246180653572083,
+      "oracle_iou": 0.9496740698814392,
+      "valid_superpoints": 1946,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.5757575631141663,
+        0.9696969985961914,
+        0.939393937587738,
+        0.8484848737716675,
+        0.7878788113594055,
+        0.939393937587738
+      ],
+      "first_balanced_coverage": 0.5151515007019043,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "valid_superpoints": 1946,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.11999999731779099,
+        0.1599999964237213,
+        0.8799999952316284,
+        0.9200000166893005,
+        0.9200000166893005,
+        0.8799999952316284
+      ],
+      "first_balanced_coverage": 0.1599999964237213,
+      "first_balanced_unique": 210
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.9426929354667664,
+      "oracle_iou": 0.9782280921936035,
+      "valid_superpoints": 1946,
+      "target_superpoints": 41,
+      "coverage_by_layer": [
+        0.9512194991111755,
+        0.9756097793579102,
+        0.9756097793579102,
+        0.9756097793579102,
+        0.9756097793579102,
+        0.9756097793579102
+      ],
+      "first_balanced_coverage": 0.9024389982223511,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8247392177581787,
+      "valid_superpoints": 1946,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5,
+        0.9166666865348816,
+        0.8333333134651184,
+        1.0,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 177
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.9906750917434692,
+      "oracle_iou": 0.9906750917434692,
+      "valid_superpoints": 1946,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.07999999821186066,
+        0.9599999785423279,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.1599999964237213,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1946,
+      "target_superpoints": 18,
+      "coverage_by_layer": [
+        0.4444444477558136,
+        0.7222222089767456,
+        0.5,
+        1.0,
+        0.8333333134651184,
+        1.0
+      ],
+      "first_balanced_coverage": 0.4444444477558136,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 10,
+      "selected_iou": 0.9614804983139038,
+      "oracle_iou": 0.9782280921936035,
+      "valid_superpoints": 1946,
+      "target_superpoints": 41,
+      "coverage_by_layer": [
+        0.8780487775802612,
+        0.9756097793579102,
+        0.9756097793579102,
+        1.0,
+        0.9756097793579102,
+        0.9756097793579102
+      ],
+      "first_balanced_coverage": 0.8536585569381714,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.8557766079902649,
+      "oracle_iou": 0.8557766079902649,
+      "valid_superpoints": 1946,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.7749999761581421,
+        0.9750000238418579,
+        0.925000011920929,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 199
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.8863261938095093,
+      "oracle_iou": 0.8863261938095093,
+      "valid_superpoints": 1946,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.925733208656311,
+      "valid_superpoints": 1946,
+      "target_superpoints": 18,
+      "coverage_by_layer": [
+        0.6111111044883728,
+        1.0,
+        0.8888888955116272,
+        0.9444444179534912,
+        0.8888888955116272,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6111111044883728,
+      "first_balanced_unique": 208
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9210057258605957,
+      "valid_superpoints": 1946,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.5400000214576721,
+        0.8799999952316284,
+        0.8999999761581421,
+        0.8799999952316284,
+        0.9599999785423279,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.47999998927116394,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9648300409317017,
+      "valid_superpoints": 1946,
+      "target_superpoints": 41,
+      "coverage_by_layer": [
+        0.7804877758026123,
+        0.9756097793579102,
+        0.9756097793579102,
+        0.9756097793579102,
+        0.9512194991111755,
+        0.9756097793579102
+      ],
+      "first_balanced_coverage": 0.7804877758026123,
+      "first_balanced_unique": 177
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.8205723166465759,
+      "oracle_iou": 0.8656114935874939,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.7857142686843872,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808
+      ],
+      "first_balanced_coverage": 0.7857142686843872,
+      "first_balanced_unique": 240
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.951442301273346,
+      "valid_superpoints": 1946,
+      "target_superpoints": 24,
+      "coverage_by_layer": [
+        0.5416666865348816,
+        0.875,
+        0.875,
+        1.0,
+        0.9583333134651184,
+        0.9583333134651184
+      ],
+      "first_balanced_coverage": 0.5416666865348816,
+      "first_balanced_unique": 216
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "valid_superpoints": 1946,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.11999999731779099,
+        0.9200000166893005,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.1599999964237213,
+      "first_balanced_unique": 228
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9906750917434692,
+      "valid_superpoints": 1946,
+      "target_superpoints": 25,
+      "coverage_by_layer": [
+        0.1599999964237213,
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.1599999964237213,
+      "first_balanced_unique": 209
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.8188724517822266,
+      "oracle_iou": 0.930027961730957,
+      "valid_superpoints": 1946,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.5,
+        0.8999999761581421,
+        0.8399999737739563,
+        0.9399999976158142,
+        0.9599999785423279,
+        0.9200000166893005
+      ],
+      "first_balanced_coverage": 0.47999998927116394,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.6921171545982361,
+      "oracle_iou": 0.753400981426239,
+      "valid_superpoints": 1946,
+      "target_superpoints": 142,
+      "coverage_by_layer": [
+        0.4225352108478546,
+        0.9295774698257446,
+        0.8521126508712769,
+        0.7253521084785461,
+        0.7605633735656738,
+        0.9507042169570923
+      ],
+      "first_balanced_coverage": 0.4225352108478546,
+      "first_balanced_unique": 208
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 225
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7274323105812073,
+      "valid_superpoints": 1946,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.3235294222831726,
+        0.6470588445663452,
+        0.8823529481887817,
+        0.8235294222831726,
+        0.5882353186607361,
+        0.7058823704719543
+      ],
+      "first_balanced_coverage": 0.3235294222831726,
+      "first_balanced_unique": 224
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.6251466274261475,
+      "oracle_iou": 0.7171375751495361,
+      "valid_superpoints": 1946,
+      "target_superpoints": 142,
+      "coverage_by_layer": [
+        0.39436620473861694,
+        0.8591549396514893,
+        0.8732394576072693,
+        0.7323943376541138,
+        0.6760563254356384,
+        0.9014084339141846
+      ],
+      "first_balanced_coverage": 0.39436620473861694,
+      "first_balanced_unique": 199
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8755655884742737,
+      "valid_superpoints": 1946,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.4375,
+      "first_balanced_unique": 235
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.9257478713989258,
+      "oracle_iou": 0.947927713394165,
+      "valid_superpoints": 1946,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.8108108043670654,
+        0.9189189076423645,
+        0.9189189076423645,
+        0.9189189076423645,
+        0.9189189076423645,
+        0.8918918967247009
+      ],
+      "first_balanced_coverage": 0.8108108043670654,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1946,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.523809552192688,
+        0.7142857313156128,
+        1.0,
+        0.9523809552192688,
+        0.9047619104385376,
+        1.0
+      ],
+      "first_balanced_coverage": 0.523809552192688,
+      "first_balanced_unique": 206
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.741442859172821,
+      "valid_superpoints": 1946,
+      "target_superpoints": 142,
+      "coverage_by_layer": [
+        0.3732394278049469,
+        0.8380281925201416,
+        0.7816901206970215,
+        0.7676056623458862,
+        0.6690140962600708,
+        0.8802816867828369
+      ],
+      "first_balanced_coverage": 0.3732394278049469,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.8571428656578064,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8571428656578064,
+      "first_balanced_unique": 203
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7408745288848877,
+      "valid_superpoints": 1946,
+      "target_superpoints": 142,
+      "coverage_by_layer": [
+        0.38732394576072693,
+        0.8802816867828369,
+        0.7816901206970215,
+        0.8098591566085815,
+        0.6901408433914185,
+        0.8873239159584045
+      ],
+      "first_balanced_coverage": 0.38732394576072693,
+      "first_balanced_unique": 199
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1946,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.6190476417541504,
+        1.0,
+        1.0,
+        1.0,
+        0.9523809552192688,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6190476417541504,
+      "first_balanced_unique": 211
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.7861002087593079,
+      "oracle_iou": 0.817345917224884,
+      "valid_superpoints": 1946,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.5,
+        0.9545454382896423,
+        0.9545454382896423,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9545454382896423
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 165
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.7359112501144409,
+      "oracle_iou": 0.7359112501144409,
+      "valid_superpoints": 1946,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.30000001192092896,
+        0.949999988079071,
+        0.8999999761581421,
+        0.8500000238418579,
+        0.800000011920929,
+        0.8500000238418579
+      ],
+      "first_balanced_coverage": 0.30000001192092896,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.7588408589363098,
+      "oracle_iou": 0.8011681437492371,
+      "valid_superpoints": 1946,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.5,
+        0.9545454382896423,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9545454382896423
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1946,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.6190476417541504,
+        1.0,
+        1.0,
+        1.0,
+        0.9047619104385376,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6190476417541504,
+      "first_balanced_unique": 217
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.9417975544929504,
+      "oracle_iou": 0.9544474482536316,
+      "valid_superpoints": 1946,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.7837837934494019,
+        0.8918918967247009,
+        0.9189189076423645,
+        0.9729729890823364,
+        0.8918918967247009,
+        0.8918918967247009
+      ],
+      "first_balanced_coverage": 0.7837837934494019,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.7613688707351685,
+      "oracle_iou": 0.7957273125648499,
+      "valid_superpoints": 1946,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.40909090638160706,
+        0.9545454382896423,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9545454382896423,
+        0.9545454382896423
+      ],
+      "first_balanced_coverage": 0.4545454680919647,
+      "first_balanced_unique": 187
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9496183395385742,
+      "valid_superpoints": 1946,
+      "target_superpoints": 13,
+      "coverage_by_layer": [
+        0.692307710647583,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.692307710647583,
+      "first_balanced_unique": 209
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "valid_superpoints": 1946,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.75,
+      "first_balanced_unique": 215
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9496183395385742,
+      "valid_superpoints": 1946,
+      "target_superpoints": 13,
+      "coverage_by_layer": [
+        0.7692307829856873,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7692307829856873,
+      "first_balanced_unique": 217
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9567354917526245,
+      "valid_superpoints": 1946,
+      "target_superpoints": 24,
+      "coverage_by_layer": [
+        0.5416666865348816,
+        1.0,
+        0.875,
+        1.0,
+        0.9583333134651184,
+        0.9583333134651184
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 209
+    },
+    {
+      "scene_index": 11,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9620192050933838,
+      "valid_superpoints": 1946,
+      "target_superpoints": 24,
+      "coverage_by_layer": [
+        0.5416666865348816,
+        0.875,
+        0.9166666865348816,
+        0.9583333134651184,
+        0.9583333134651184,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5416666865348816,
+      "first_balanced_unique": 223
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.880741536617279,
+      "oracle_iou": 0.880741536617279,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.7857142686843872,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808
+      ],
+      "first_balanced_coverage": 0.7857142686843872,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9230769276618958,
+      "valid_superpoints": 1946,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.4117647111415863,
+        0.5588235259056091,
+        0.6764705777168274,
+        0.8235294222831726,
+        0.6764705777168274,
+        0.6764705777168274
+      ],
+      "first_balanced_coverage": 0.44117647409439087,
+      "first_balanced_unique": 218
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8867442607879639,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.6428571343421936,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808,
+        0.9285714030265808
+      ],
+      "first_balanced_coverage": 0.6428571343421936,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9316211938858032,
+      "valid_superpoints": 1946,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5,
+        1.0,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8755655884742737,
+      "valid_superpoints": 1946,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.3125,
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.3125,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.9393203854560852,
+      "oracle_iou": 0.9393203854560852,
+      "valid_superpoints": 1946,
+      "target_superpoints": 16,
+      "coverage_by_layer": [
+        0.4375,
+        1.0,
+        1.0,
+        1.0,
+        0.9375,
+        0.875
+      ],
+      "first_balanced_coverage": 0.4375,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8557766079902649,
+      "valid_superpoints": 1946,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.675000011920929,
+        0.9750000238418579,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "first_balanced_coverage": 0.625,
+      "first_balanced_unique": 232
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.592851996421814,
+      "oracle_iou": 0.7271919250488281,
+      "valid_superpoints": 1946,
+      "target_superpoints": 20,
+      "coverage_by_layer": [
+        0.20000000298023224,
+        0.8999999761581421,
+        0.949999988079071,
+        0.949999988079071,
+        0.949999988079071,
+        0.800000011920929
+      ],
+      "first_balanced_coverage": 0.20000000298023224,
+      "first_balanced_unique": 213
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1946,
+      "target_superpoints": 21,
+      "coverage_by_layer": [
+        0.523809552192688,
+        0.9523809552192688,
+        1.0,
+        0.9047619104385376,
+        0.8571428656578064,
+        0.9047619104385376
+      ],
+      "first_balanced_coverage": 0.523809552192688,
+      "first_balanced_unique": 219
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9024688601493835,
+      "valid_superpoints": 1946,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.6969696879386902,
+        1.0,
+        0.939393937587738,
+        1.0,
+        0.8787878751754761,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6969696879386902,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.3571428656578064,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.3571428656578064,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.951442301273346,
+      "valid_superpoints": 1946,
+      "target_superpoints": 24,
+      "coverage_by_layer": [
+        0.6666666865348816,
+        1.0,
+        0.9583333134651184,
+        1.0,
+        0.9583333134651184,
+        0.9583333134651184
+      ],
+      "first_balanced_coverage": 0.6666666865348816,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.8557766079902649,
+      "oracle_iou": 0.8557766079902649,
+      "valid_superpoints": 1946,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.75,
+        0.875,
+        0.8999999761581421,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "first_balanced_coverage": 0.699999988079071,
+      "first_balanced_unique": 222
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8863261938095093,
+      "valid_superpoints": 1946,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 211
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.9496183395385742,
+      "oracle_iou": 0.9496183395385742,
+      "valid_superpoints": 1946,
+      "target_superpoints": 13,
+      "coverage_by_layer": [
+        0.692307710647583,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.6153846383094788,
+      "first_balanced_unique": 201
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.9197293519973755,
+      "oracle_iou": 0.9406881928443909,
+      "valid_superpoints": 1946,
+      "target_superpoints": 37,
+      "coverage_by_layer": [
+        0.7297297120094299,
+        0.9189189076423645,
+        0.9189189076423645,
+        0.9459459185600281,
+        0.9189189076423645,
+        0.8918918967247009
+      ],
+      "first_balanced_coverage": 0.6756756901741028,
+      "first_balanced_unique": 212
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8876140713691711,
+      "valid_superpoints": 1946,
+      "target_superpoints": 33,
+      "coverage_by_layer": [
+        0.6363636255264282,
+        0.9090909361839294,
+        0.939393937587738,
+        0.8484848737716675,
+        0.6060606241226196,
+        0.939393937587738
+      ],
+      "first_balanced_coverage": 0.5757575631141663,
+      "first_balanced_unique": 220
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8557766079902649,
+      "valid_superpoints": 1946,
+      "target_superpoints": 40,
+      "coverage_by_layer": [
+        0.6000000238418579,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "first_balanced_coverage": 0.550000011920929,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9073964357376099,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.7857142686843872,
+        0.9285714030265808,
+        0.9285714030265808,
+        1.0,
+        0.9285714030265808,
+        0.9285714030265808
+      ],
+      "first_balanced_coverage": 0.7857142686843872,
+      "first_balanced_unique": 173
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9811066389083862,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.3571428656578064,
+        0.8571428656578064,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.2857142984867096,
+      "first_balanced_unique": 202
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.843397319316864,
+      "oracle_iou": 0.8738863468170166,
+      "valid_superpoints": 1946,
+      "target_superpoints": 50,
+      "coverage_by_layer": [
+        0.41999998688697815,
+        0.8999999761581421,
+        0.9200000166893005,
+        0.8600000143051147,
+        0.8600000143051147,
+        0.8600000143051147
+      ],
+      "first_balanced_coverage": 0.4000000059604645,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8786516785621643,
+      "valid_superpoints": 1946,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5,
+        0.9166666865348816,
+        0.9166666865348816,
+        1.0,
+        0.9166666865348816,
+        0.9166666865348816
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.7759748101234436,
+      "oracle_iou": 0.7889682054519653,
+      "valid_superpoints": 1946,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.5,
+        0.9545454382896423,
+        0.9090909361839294,
+        0.9090909361839294,
+        0.9090909361839294,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5,
+      "first_balanced_unique": 160
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.8835701942443848,
+      "valid_superpoints": 1946,
+      "target_superpoints": 34,
+      "coverage_by_layer": [
+        0.4117647111415863,
+        0.7352941036224365,
+        0.8235294222831726,
+        0.7647058963775635,
+        0.7058823704719543,
+        0.7647058963775635
+      ],
+      "first_balanced_coverage": 0.4117647111415863,
+      "first_balanced_unique": 205
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.9622132182121277,
+      "valid_superpoints": 1946,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        0.9285714030265808,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8571428656578064,
+      "first_balanced_unique": 225
+    },
+    {
+      "scene_index": 12,
+      "selected_iou": 0.748710036277771,
+      "oracle_iou": 0.8769465684890747,
+      "valid_superpoints": 1946,
+      "target_superpoints": 12,
+      "coverage_by_layer": [
+        0.5833333134651184,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5833333134651184,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.45489442348480225,
+      "valid_superpoints": 1085,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 61,
+      "coverage_by_layer": [
+        0.9508196711540222,
+        1.0,
+        1.0,
+        0.9672130942344666,
+        0.9180327653884888,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9344262480735779,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 61,
+      "coverage_by_layer": [
+        0.9180327653884888,
+        1.0,
+        1.0,
+        1.0,
+        0.9508196711540222,
+        0.9836065769195557
+      ],
+      "first_balanced_coverage": 0.9180327653884888,
+      "first_balanced_unique": 164
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9273487329483032,
+      "oracle_iou": 0.9347913265228271,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.6363636255264282,
+        1.0,
+        0.8181818127632141,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.6363636255264282,
+      "first_balanced_unique": 162
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9649758338928223,
+      "oracle_iou": 0.9649758338928223,
+      "valid_superpoints": 1085,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 61,
+      "coverage_by_layer": [
+        0.9344262480735779,
+        1.0,
+        1.0,
+        1.0,
+        0.9836065769195557,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9344262480735779,
+      "first_balanced_unique": 153
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7956690788269043,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 190
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.7576385140419006,
+      "oracle_iou": 0.7576385140419006,
+      "valid_superpoints": 1085,
+      "target_superpoints": 19,
+      "coverage_by_layer": [
+        0.7894737124443054,
+        1.0,
+        1.0,
+        1.0,
+        0.8421052694320679,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7368420958518982,
+      "first_balanced_unique": 207
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9273487329483032,
+      "oracle_iou": 0.9347913265228271,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.7272727489471436,
+        1.0,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.7272727489471436,
+      "first_balanced_unique": 161
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.8865996599197388,
+      "oracle_iou": 0.9004539847373962,
+      "valid_superpoints": 1085,
+      "target_superpoints": 54,
+      "coverage_by_layer": [
+        0.9814814925193787,
+        1.0,
+        0.9444444179534912,
+        0.9444444179534912,
+        0.9444444179534912,
+        0.9629629850387573
+      ],
+      "first_balanced_coverage": 0.9814814925193787,
+      "first_balanced_unique": 160
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "valid_superpoints": 1085,
+      "target_superpoints": 43,
+      "coverage_by_layer": [
+        0.8837209343910217,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8604651093482971,
+      "first_balanced_unique": 204
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 43,
+      "coverage_by_layer": [
+        0.9069767594337463,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9069767594337463,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.8748997449874878,
+      "oracle_iou": 0.916806697845459,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.800000011920929,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 156
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.8846715092658997,
+      "oracle_iou": 0.8846715092658997,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "valid_superpoints": 1085,
+      "target_superpoints": 43,
+      "coverage_by_layer": [
+        0.8372092843055725,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8372092843055725,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.3569444417953491,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.8939393758773804,
+      "oracle_iou": 0.8939393758773804,
+      "valid_superpoints": 1085,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 167
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9443005323410034,
+      "oracle_iou": 0.9769498705863953,
+      "valid_superpoints": 1085,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.9545454382896423,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9545454382896423,
+      "first_balanced_unique": 154
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.6187683343887329,
+      "valid_superpoints": 1085,
+      "target_superpoints": 1,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.7576385140419006,
+      "oracle_iou": 0.784030020236969,
+      "valid_superpoints": 1085,
+      "target_superpoints": 19,
+      "coverage_by_layer": [
+        0.9473684430122375,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9473684430122375,
+      "first_balanced_unique": 155
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9649758338928223,
+      "oracle_iou": 0.9649758338928223,
+      "valid_superpoints": 1085,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.7333333492279053,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7333333492279053,
+      "first_balanced_unique": 186
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.8428931832313538,
+      "oracle_iou": 0.8554177284240723,
+      "valid_superpoints": 1085,
+      "target_superpoints": 55,
+      "coverage_by_layer": [
+        0.8727272748947144,
+        0.9636363387107849,
+        0.9818181991577148,
+        0.9818181991577148,
+        0.9818181991577148,
+        0.9818181991577148
+      ],
+      "first_balanced_coverage": 0.8727272748947144,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.798306405544281,
+      "oracle_iou": 0.8236695528030396,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9273487329483032,
+      "oracle_iou": 0.9347913265228271,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.6363636255264282,
+        1.0,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.6363636255264282,
+      "first_balanced_unique": 150
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.7576385140419006,
+      "oracle_iou": 0.769024670124054,
+      "valid_superpoints": 1085,
+      "target_superpoints": 19,
+      "coverage_by_layer": [
+        0.4736842215061188,
+        1.0,
+        1.0,
+        0.9473684430122375,
+        0.8421052694320679,
+        1.0
+      ],
+      "first_balanced_coverage": 0.4736842215061188,
+      "first_balanced_unique": 141
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.916806697845459,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 168
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7589229941368103,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.699999988079071,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.699999988079071,
+      "first_balanced_unique": 198
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.901098906993866,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        0.875,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 141
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 160
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.6363636255264282,
+        1.0,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.5454545617103577,
+      "first_balanced_unique": 147
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.686710774898529,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 189
+    },
+    {
+      "scene_index": 13,
+      "selected_iou": 0.8681244850158691,
+      "oracle_iou": 0.8817493915557861,
+      "valid_superpoints": 1085,
+      "target_superpoints": 55,
+      "coverage_by_layer": [
+        0.8363636136054993,
+        0.9818181991577148,
+        0.9636363387107849,
+        0.9818181991577148,
+        0.9636363387107849,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8181818127632141,
+      "first_balanced_unique": 157
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.798306405544281,
+      "oracle_iou": 0.798306405544281,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 163
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.798306405544281,
+      "oracle_iou": 0.798306405544281,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.863426923751831,
+      "oracle_iou": 0.8924989700317383,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.875
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 146
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 61,
+      "coverage_by_layer": [
+        0.9016393423080444,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9016393423080444,
+      "first_balanced_unique": 166
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8748997449874878,
+      "oracle_iou": 0.96378093957901,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 184
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9443005323410034,
+      "oracle_iou": 0.9769498705863953,
+      "valid_superpoints": 1085,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 175
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.7576385140419006,
+      "oracle_iou": 0.784030020236969,
+      "valid_superpoints": 1085,
+      "target_superpoints": 19,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9473684430122375,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9473684430122375,
+      "first_balanced_unique": 170
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9653071761131287,
+      "oracle_iou": 0.9769498705863953,
+      "valid_superpoints": 1085,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.9545454382896423,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9545454382896423,
+      "first_balanced_unique": 188
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "valid_superpoints": 1085,
+      "target_superpoints": 43,
+      "coverage_by_layer": [
+        0.8372092843055725,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8372092843055725,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.955439031124115,
+      "oracle_iou": 0.9769498705863953,
+      "valid_superpoints": 1085,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        0.9545454382896423,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9545454382896423,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.798306405544281,
+      "oracle_iou": 0.798306405544281,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9583941698074341,
+      "oracle_iou": 0.9583941698074341,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 196
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8939393758773804,
+      "oracle_iou": 0.9288135766983032,
+      "valid_superpoints": 1085,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9044985771179199,
+      "oracle_iou": 0.9075700044631958,
+      "valid_superpoints": 1085,
+      "target_superpoints": 54,
+      "coverage_by_layer": [
+        0.9259259104728699,
+        1.0,
+        0.9629629850387573,
+        0.9259259104728699,
+        0.9629629850387573,
+        0.9629629850387573
+      ],
+      "first_balanced_coverage": 0.9259259104728699,
+      "first_balanced_unique": 169
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9649758338928223,
+      "oracle_iou": 0.9649758338928223,
+      "valid_superpoints": 1085,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.5333333611488342,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.5333333611488342,
+      "first_balanced_unique": 191
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9338057637214661,
+      "oracle_iou": 0.9699274301528931,
+      "valid_superpoints": 1085,
+      "target_superpoints": 36,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0,
+        0.9722222089767456,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 195
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.916806697845459,
+      "oracle_iou": 0.9175778031349182,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.8999999761581421,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "first_balanced_coverage": 0.8999999761581421,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.44142258167266846,
+      "oracle_iou": 0.7176870703697205,
+      "valid_superpoints": 1085,
+      "target_superpoints": 1,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8942385911941528,
+      "oracle_iou": 0.9044985771179199,
+      "valid_superpoints": 1085,
+      "target_superpoints": 54,
+      "coverage_by_layer": [
+        0.9629629850387573,
+        0.9814814925193787,
+        0.9814814925193787,
+        0.9259259104728699,
+        0.9259259104728699,
+        0.9444444179534912
+      ],
+      "first_balanced_coverage": 0.9629629850387573,
+      "first_balanced_unique": 181
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.7176870703697205,
+      "oracle_iou": 0.7176870703697205,
+      "valid_superpoints": 1085,
+      "target_superpoints": 1,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 203
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9338057637214661,
+      "oracle_iou": 0.9635326862335205,
+      "valid_superpoints": 1085,
+      "target_superpoints": 36,
+      "coverage_by_layer": [
+        0.9444444179534912,
+        1.0,
+        1.0,
+        1.0,
+        0.9722222089767456,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9583941698074341,
+      "oracle_iou": 0.9583941698074341,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.7576385140419006,
+      "oracle_iou": 0.7576385140419006,
+      "valid_superpoints": 1085,
+      "target_superpoints": 19,
+      "coverage_by_layer": [
+        0.8947368264198303,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8947368264198303,
+      "first_balanced_unique": 174
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8939393758773804,
+      "oracle_iou": 0.9233176708221436,
+      "valid_superpoints": 1085,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 194
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8428931832313538,
+      "oracle_iou": 0.8817493915557861,
+      "valid_superpoints": 1085,
+      "target_superpoints": 55,
+      "coverage_by_layer": [
+        0.8909090757369995,
+        0.9818181991577148,
+        0.9636363387107849,
+        0.9636363387107849,
+        0.9636363387107849,
+        0.9818181991577148
+      ],
+      "first_balanced_coverage": 0.8909090757369995,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8575899600982666,
+      "oracle_iou": 0.9288135766983032,
+      "valid_superpoints": 1085,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9285714030265808
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 170
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.9689885377883911,
+      "oracle_iou": 0.9689885377883911,
+      "valid_superpoints": 1085,
+      "target_superpoints": 43,
+      "coverage_by_layer": [
+        0.9069767594337463,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9069767594337463,
+      "first_balanced_unique": 197
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 158
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8952659964561462,
+      "oracle_iou": 0.9055759310722351,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.875,
+        0.875,
+        0.875,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 159
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8428931832313538,
+      "oracle_iou": 0.8633499145507812,
+      "valid_superpoints": 1085,
+      "target_superpoints": 55,
+      "coverage_by_layer": [
+        0.8909090757369995,
+        0.9818181991577148,
+        0.9818181991577148,
+        0.9818181991577148,
+        0.9636363387107849,
+        0.9818181991577148
+      ],
+      "first_balanced_coverage": 0.8909090757369995,
+      "first_balanced_unique": 187
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.8428931832313538,
+      "oracle_iou": 0.8756938576698303,
+      "valid_superpoints": 1085,
+      "target_superpoints": 55,
+      "coverage_by_layer": [
+        0.9454545378684998,
+        0.9636363387107849,
+        0.9818181991577148,
+        0.9636363387107849,
+        0.9818181991577148,
+        0.9818181991577148
+      ],
+      "first_balanced_coverage": 0.9454545378684998,
+      "first_balanced_unique": 161
+    },
+    {
+      "scene_index": 14,
+      "selected_iou": 0.884373664855957,
+      "oracle_iou": 0.9055759310722351,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 154
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.7176870703697205,
+      "valid_superpoints": 1085,
+      "target_superpoints": 1,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9649758338928223,
+      "oracle_iou": 0.9649758338928223,
+      "valid_superpoints": 1085,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.7333333492279053,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7333333492279053,
+      "first_balanced_unique": 185
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.875,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 208
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.8575899600982666,
+      "oracle_iou": 0.8939393758773804,
+      "valid_superpoints": 1085,
+      "target_superpoints": 14,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 192
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.8743192553520203,
+      "oracle_iou": 0.9087386727333069,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        0.875,
+        1.0,
+        1.0,
+        0.75,
+        0.875,
+        1.0
+      ],
+      "first_balanced_coverage": 0.875,
+      "first_balanced_unique": 164
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.5902097821235657,
+      "valid_superpoints": 1085,
+      "target_superpoints": 1,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 179
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 2,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 193
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9338057637214661,
+      "oracle_iou": 0.9559280872344971,
+      "valid_superpoints": 1085,
+      "target_superpoints": 36,
+      "coverage_by_layer": [
+        0.8333333134651184,
+        1.0,
+        1.0,
+        1.0,
+        0.9722222089767456,
+        1.0
+      ],
+      "first_balanced_coverage": 0.7777777910232544,
+      "first_balanced_unique": 186
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9475758075714111,
+      "oracle_iou": 0.9559280872344971,
+      "valid_superpoints": 1085,
+      "target_superpoints": 36,
+      "coverage_by_layer": [
+        0.8888888955116272,
+        1.0,
+        1.0,
+        0.9722222089767456,
+        0.9444444179534912,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8888888955116272,
+      "first_balanced_unique": 162
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.8964584469795227,
+      "oracle_iou": 0.9653071761131287,
+      "valid_superpoints": 1085,
+      "target_superpoints": 22,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 154
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.0,
+      "oracle_iou": 0.11937949806451797,
+      "valid_superpoints": 1085,
+      "target_superpoints": 8,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.875,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 176
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9649758338928223,
+      "oracle_iou": 0.9649758338928223,
+      "valid_superpoints": 1085,
+      "target_superpoints": 15,
+      "coverage_by_layer": [
+        0.8666666746139526,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.8666666746139526,
+      "first_balanced_unique": 172
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.8748997449874878,
+      "oracle_iou": 0.916806697845459,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        1.0,
+        1.0,
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        1.0
+      ],
+      "first_balanced_coverage": 1.0,
+      "first_balanced_unique": 183
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.8912989497184753,
+      "oracle_iou": 0.9082469940185547,
+      "valid_superpoints": 1085,
+      "target_superpoints": 54,
+      "coverage_by_layer": [
+        0.9074074029922485,
+        1.0,
+        0.9629629850387573,
+        0.9259259104728699,
+        0.9444444179534912,
+        0.9444444179534912
+      ],
+      "first_balanced_coverage": 0.9074074029922485,
+      "first_balanced_unique": 182
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9483235478401184,
+      "oracle_iou": 0.9635326862335205,
+      "valid_superpoints": 1085,
+      "target_superpoints": 36,
+      "coverage_by_layer": [
+        0.9166666865348816,
+        1.0,
+        1.0,
+        1.0,
+        0.9722222089767456,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9166666865348816,
+      "first_balanced_unique": 206
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 1.0,
+      "oracle_iou": 1.0,
+      "valid_superpoints": 1085,
+      "target_superpoints": 61,
+      "coverage_by_layer": [
+        0.9180327653884888,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.9016393423080444,
+      "first_balanced_unique": 152
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9347913265228271,
+      "oracle_iou": 0.9347913265228271,
+      "valid_superpoints": 1085,
+      "target_superpoints": 11,
+      "coverage_by_layer": [
+        0.6363636255264282,
+        0.8181818127632141,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.7272727489471436,
+        0.9090909361839294
+      ],
+      "first_balanced_coverage": 0.6363636255264282,
+      "first_balanced_unique": 157
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9583941698074341,
+      "oracle_iou": 0.9583941698074341,
+      "valid_superpoints": 1085,
+      "target_superpoints": 10,
+      "coverage_by_layer": [
+        0.8999999761581421,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_balanced_coverage": 0.800000011920929,
+      "first_balanced_unique": 181
+    },
+    {
+      "scene_index": 15,
+      "selected_iou": 0.9044985771179199,
+      "oracle_iou": 0.9105866551399231,
+      "valid_superpoints": 1085,
+      "target_superpoints": 54,
+      "coverage_by_layer": [
+        0.9259259104728699,
+        1.0,
+        0.9629629850387573,
+        0.9259259104728699,
+        0.9074074029922485,
+        0.9444444179534912
+      ],
+      "first_balanced_coverage": 0.9259259104728699,
+      "first_balanced_unique": 180
+    }
+  ]
+}

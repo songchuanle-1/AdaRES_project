@@ -1,0 +1,107 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y73",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "native_preparation": {
+    "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_version.json",
+    "sha256": "9a066dbfe0b0922722f1772fe5c7c347be26eaf3309ff124b81715ac955e641c"
+  },
+  "result": {
+    "path": "pipeline/analyses/y73_native_observer_cpu_fb6718a8dd684cdfbaa98d6678e7d3c5.json",
+    "sha256": "7bcedfe2eb5e25907421786004a266f18751380372687b69aed7776a40048ee4"
+  },
+  "raw_log": {
+    "path": "pipeline/analyses/y73_native_observer_cpu_fb6718a8dd684cdfbaa98d6678e7d3c5.log",
+    "sha256": "3f45e5fd19a7ad1ba2954b06338b9cda349303a513ad695bc0f801970b7f3070"
+  },
+  "program": {
+    "path": "pipeline/checks/y73_native_observer_cpu_fb6718a8dd684cdfbaa98d6678e7d3c5_program.py",
+    "sha256": "35102db07a67ae3e7ed425b7fc4f9f58a3e14d71f75283ede9d15da02871cb39"
+  },
+  "original_native_body": {
+    "path": "scripts/probe_y73_native_smoke.py",
+    "sha256": "7e0815fe80c896e6780a8bca7afb40648849a3ba765cb66935e2d567b10093a6"
+  },
+  "first_step_all_six_exact_zero": true,
+  "second_step_all_six_nonzero": true,
+  "independent_reference_max_error": 5.5629304718252115e-08,
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 387,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "residual_calls": 6,
+      "prediction_consumption_calls": 6,
+      "current_query_and_initial_anchor_gradients_finite": true,
+      "residual_weight_gradient_max": 68.79592895507812,
+      "parameter_update_max": 0.00010000001930166036
+    },
+    {
+      "all_finite": true,
+      "tensors": 387,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "residual_calls": 6,
+      "prediction_consumption_calls": 6,
+      "current_query_and_initial_anchor_gradients_finite": true,
+      "residual_weight_gradient_max": 383.7442626953125,
+      "parameter_update_max": 0.00010013578139478341
+    }
+  ],
+  "native_sparse_task_executed": false,
+  "GPU_PASS": false,
+  "admitted": false,
+  "efficacy": "unknown",
+  "prior_tick_attempt": {
+    "tick_started_at": "2026-10-30T22:52:26.355188+00:00",
+    "candidate_id": "AdaRES-Y73",
+    "kind": "implementation_test",
+    "result": "passed",
+    "command": "python -B -m unittest discover -s scripts -p test_y73_native_smoke_plan.py -v (executed by scripts/save_y73_native_plans.py --token fb6718a8dd684cdfbaa98d6678e7d3c5)",
+    "observation": "Eleven CPU native-evidence guards passed; exact retained-commit Y73 dual-card native programs prepared, identical scientific body and stale-goal/tampered-source refusal verified. Y71/Y72 original contracts and current HEAD87019/runs retained. No GPU task steps, admission, production sync or efficacy result.",
+    "evidence": [
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_inputs.json",
+        "sha256": "f121c078f0ad7aa2ba309679402d59f11737d581326fea0bf526dffcc1a33987"
+      },
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_guards.log",
+        "sha256": "107e30e9912590a8613a72c911c07153387cd8945acc9b6418632bde04e934f5"
+      },
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_version.json",
+        "sha256": "9a066dbfe0b0922722f1772fe5c7c347be26eaf3309ff124b81715ac955e641c"
+      },
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu0_plan.json",
+        "sha256": "2082df489d0ca2c0fefd94f8d134c28899e276ae6dd8c84a825121472c350b92"
+      },
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_plan.json",
+        "sha256": "8000a6ecc7aa51bf49ea115b55d21d67f468290833a2ddebde2f8c602d9e139f"
+      },
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu0_program.py",
+        "sha256": "9ed748aa8ea1a98eb8a9b4a333c52df77a3c772321d4f3d489a3d465e1afe679"
+      },
+      {
+        "path": "pipeline/checks/y73_native_fb6718a8dd684cdfbaa98d6678e7d3c5_gpu1_program.py",
+        "sha256": "61e417a581773313d903140d07a1b883d9224c4dac403664afc4066d3577c325"
+      },
+      {
+        "path": "scripts/save_y73_native_plans.py",
+        "sha256": "133feb136e44d0070c8dd0330d887aacfec51d3c34091159a1e49c022cc2246e"
+      },
+      {
+        "path": "scripts/probe_y73_native_smoke.py",
+        "sha256": "7e0815fe80c896e6780a8bca7afb40648849a3ba765cb66935e2d567b10093a6"
+      },
+      {
+        "path": "scripts/test_y73_native_smoke_plan.py",
+        "sha256": "05e9980ba2f46d1dc3a7ebda1d7f5d5f67ccde48ae77f306a57a522aeb8c9693"
+      }
+    ]
+  },
+  "limitation": "Actual full CPU model/pretrain/TRAIN collation and synthetic decoder loss/two optimizer steps exercising exact frozen native observer callbacks; not native sparse task backward/optimizer, GPU PASS or efficacy."
+}

@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y66",
+  "config": "configs_song/model_paper5/adares_y66_peer_state_feedback_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "required_resource": "Fresh exclusive idle authorized server-1 GPU0; no canonical queue/running reservation or compute PID; exact hostname, verified project private runtime and deterministic original data/path mappings; default350W unchanged. Preserve Y64 and Y57.",
+  "planned_command": "python -B scripts/run_refinement_server1_native_probe.py AdaRES-Y66 --token <CURRENT_TOKEN>",
+  "checks": "Native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; six peer feedback/seven shared indicators per step; prior native tensor identity; independent per-point union/IoU/raw-peer context for rows0/64/127; actual refinement consumption; exact zero first-step anchor, nonzero second-step projection/response and finite nonzero projection gradients, finite query/mask/input gradients, native modes and peak memory.",
+  "Python38_compile": true,
+  "CPU_guard_tests_passed": 10,
+  "CPU_reference_cases_passed": 8,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y66_server1_alternative_3713e3930090474eb878611f7e2505e3_program.py",
+    "sha256": "cc274e23adb34c7ecc1cc2684b9336238108db78434129b22aa0b902bec1a256"
+  },
+  "server": "server-1",
+  "gpu": 0,
+  "previous_plan": {
+    "path": "pipeline/checks/y66_native_8a6daa70bac546168557d32cfb81d084_plan.json",
+    "sha256": "7e4285a3cbe018ad0ffba23242c35edd2b7fea48cb926fb21ecff9b49d124560"
+  },
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "activation_required": true
+}

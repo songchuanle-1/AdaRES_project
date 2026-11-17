@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y62",
+  "process_absent": true,
+  "boot_id": "9c061241-a93a-4bba-beec-462d1f383c79",
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y62_overlap_density_res_20261025_215723.log",
+  "log_sha256": "1f7ccfb30229992e8c948eedaba1a71f79843adc682c0e44b268222b7e0644fe",
+  "checkpoints": [
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y62_overlap_density_res/20261025_215730/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5082247853279114,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "109fcfb74e04906562bcbd369bf15c5508ad0cd5b3b2e498e929a291f85c3db9"
+    },
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y62_overlap_density_res/20261025_215730/best.pth",
+      "epoch": 21,
+      "best_miou": 0.5082247853279114,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 21,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "30e0d21443d69ed0f7d2779ad550dc71c974acd319600ea7cfa198633e95611d"
+    }
+  ],
+  "final_logged_metrics": [
+    "0.502",
+    "0.554",
+    "0.600"
+  ],
+  "CUDA_initialized": false,
+  "full_frozen_evaluation_executed": false,
+  "hardware_settings_changed": false,
+  "observed_at": "2026-10-27T02:50:45.761414+08:00",
+  "token": "cf6d85c07fbc4824be030bc3206a3b14",
+  "source_checks": {
+    "exact_files": 7,
+    "admission_verified": true,
+    "freeze_preserved": true
+  },
+  "live_observation": {
+    "path": "pipeline/checks/y63_server1_progress_cf6d85c07fbc4824be030bc3206a3b14.json",
+    "sha256": "24351eb75b235fe2beb5581a3fad98d5fd6af72f8dac73d21aa4e7ecafc5a804"
+  },
+  "command": "python -B scripts/reconcile_y62_y63_server1.py finalize --token cf6d85c07fbc4824be030bc3206a3b14",
+  "evidence": [
+    {
+      "path": "scripts/reconcile_y62_y63_server1.py",
+      "sha256": "c6ff12978fd3efa8439b3bc6da13c0e788018d2580148e4cbaee0b67f8f057be"
+    },
+    {
+      "path": "pipeline/checks/y62_server1_location_cf6d85c07fbc4824be030bc3206a3b14.json",
+      "sha256": "4fb8c4f9ecd4fa89b6fddb83094aa7ad699e1039442cf4e0af9811b3e7047943"
+    },
+    {
+      "path": "pipeline/checks/y62_server1_fixed30_cf6d85c07fbc4824be030bc3206a3b14.log",
+      "sha256": "ef46f5e8fddad737991cf20b677f7190185a855e4f6aff2b27c7dc87c7125a4b"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-28T06:55:50.946671+08:00",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "after": {
+    "gpu": "39, 7946, 350.00",
+    "compute": "2752219"
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y64",
+      "label": "AdaRES-Y64 fixed30",
+      "config": "configs_song/model_paper5/adares_y64_directed_containment_res.yaml",
+      "status": "running",
+      "gpu": "0",
+      "server": "server-1",
+      "depends_on": [],
+      "code_commit": "9706a8c36bead4459668ab66a3d1abc39344ef8b",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y64.json",
+      "scientific_candidate_id": "AdaRES-Y64",
+      "patience": 30,
+      "min_epochs": 30,
+      "fixed_epochs": 30,
+      "requires_exclusive_ownership": true,
+      "dispatch_phase": "progress_pending",
+      "claimed_gpu": "0",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "pid": 2752219,
+      "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y64_directed_containment_res_20261028_065511.log",
+      "launched": "2026-10-28T06:55:50"
+    }
+  ],
+  "events": [
+    "队列推送 [AdaRES-Y64 fixed30] configs_song/model_paper5/adares_y64_directed_containment_res.yaml → server-1 gpu0"
+  ],
+  "Y57_still_paused": true
+}

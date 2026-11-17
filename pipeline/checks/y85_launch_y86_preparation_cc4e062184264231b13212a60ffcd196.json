@@ -1,0 +1,150 @@
+{
+  "complete": true,
+  "token": "cc4e062184264231b13212a60ffcd196",
+  "snapshot": "2026-11-04T20:53:08.645276+00:00",
+  "Y83_terminal": {
+    "path": "pipeline/checks/y83_server2_fixed30_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "3a89b0b5584c50fdc1152356131f9b9a40c7cec639d9dd235d5e6097d43bdd25"
+  },
+  "Y83_archive": {
+    "path": "pipeline/checks/y83_server2_fixed30_cc4e062184264231b13212a60ffcd196_archive_binding.json",
+    "sha256": "184118453edec9ab07c87ca657f00d3f2590941c6d32d0d290a5c14b91b56c29"
+  },
+  "original_Y83_frozen_evaluation_hold": {
+    "path": "pipeline/checks/y83_frozen_evaluation_hold_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "a27fa253361a788ba6d00fbe3871677d5b5c51a2cc927f4ae314e460a2c53f67"
+  },
+  "live_training": {
+    "AdaRES-Y84": {
+      "path": "pipeline/checks/production_adares-y84_cc4e062184264231b13212a60ffcd196_sourcepreserved.json",
+      "sha256": "97c1de344535effe5a1167d73490bfdc138a5c870cb7e5570c65a3e0e2c7c3dd"
+    },
+    "AdaRES-Y85": {
+      "path": "pipeline/checks/production_adares-y85_cc4e062184264231b13212a60ffcd196_progress.json",
+      "sha256": "6cafedde63d3cb50a175d2848a1a4e758343a28d1b688c862992a360dd704e2c"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_cc4e062184264231b13212a60ffcd196.json",
+      "sha256": "06acecc74e5d704009d07b5683a2e461ae1b06ed5d9ee27b5d4320b34b4169f6"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_cc4e062184264231b13212a60ffcd196.json",
+      "sha256": "43a8dcc89a5b9e1579ff702340d630cd0a29688027cae0b796b55705d6539693"
+    }
+  },
+  "Y85_native": {
+    "path": "pipeline/checks/AdaRES-Y85_cc4e062184264231b13212a60ffcd196_native_smoke.json",
+    "sha256": "77341f2c8c2fc016f3970299f99edd3297791801c6ac4055a86e8ab98e6a0eb9"
+  },
+  "Y85_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y85.json",
+    "sha256": "c191a90dda4fdf0c2a1992ab5fca9d6164150c20025f6211cd2c3d9708f71c7a"
+  },
+  "Y85_full_frozen_protocol": {
+    "path": "pipeline/checks/AdaRES-Y85_cc4e062184264231b13212a60ffcd196_post_training_freeze.json",
+    "sha256": "4380dc32199f13af68e88833726f19399f3556d57446c2b8d62532298b4117bf"
+  },
+  "source_selection": {
+    "path": "pipeline/checks/adares-y85_source_selection_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "d94bd9add3f5f13ce9332859cd38162d503ac886516d4fcd4d7eb322deb4564a"
+  },
+  "dispatch": {
+    "path": "pipeline/checks/adares-y85_dispatch_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "fbbbe3949d0a6f8253835b58a038268229c6cb45c0e3ff4d9ca0f772261a0264"
+  },
+  "Y85_admission_guards": {
+    "path": "pipeline/checks/adares-y85_admission_guards_cc4e062184264231b13212a60ffcd196.log",
+    "sha256": "06f1a4d97250064479d19c851eade63a1ffbfde73308ebadf20fe972b2be496e"
+  },
+  "Y86_CPU": {
+    "path": "pipeline/analyses/y86_cpu_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "2064d49c49ddc97d28052d516eb7108446cbd414c22516e89b04d50e552f173f"
+  },
+  "Y86_version": {
+    "path": "pipeline/checks/y86_cpu_version_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "c105aee1d4bc68431b0db6e4f36a7ce21be78ff4e8e31f27fe2046bdd7f46b0e"
+  },
+  "Y86_native_preparation": {
+    "path": "pipeline/checks/y86_native_cc4e062184264231b13212a60ffcd196.json",
+    "sha256": "97b666ff7cf4d5e7024f5046c7ee60f901543e2b4bc370a19200ba1479145f7e"
+  },
+  "new_candidates": 1,
+  "new_admissions": 1,
+  "new_launches": 1,
+  "new_archives": 1,
+  "formal_metrics_updated": false,
+  "GPU1_pause_preserved": true,
+  "Y57_pause_preserved": true,
+  "helpers": [
+    {
+      "path": "scripts/create_y83_terminal_helpers.py",
+      "sha256": "ac8d279e37232daa7baf51bdd904f9b1bb8a756c2821e048b89cf28cf41b4a0a"
+    },
+    {
+      "path": "scripts/y83_terminal_contract.py",
+      "sha256": "201033d6dddac32a5f95c07389ec7a18c86ec231741af57022b46444287dd94b"
+    },
+    {
+      "path": "scripts/finalize_y83_fixed30.py",
+      "sha256": "5c846810e91d4a9e9ae9e2da4f8ae1aaf803e19932f727051e50a5e3d1c108d9"
+    },
+    {
+      "path": "scripts/prepare_y83_terminal_handoff.py",
+      "sha256": "2e21d911bd144e3e0fe12cfea54a2927867fde4d5e7054f5fa67a79d40380d66"
+    },
+    {
+      "path": "scripts/test_y83_terminal_handoff.py",
+      "sha256": "fd7276f39d6d40785fa6a9cc6cb19a0cfd10ab8ce72aac7696dec4d7d12d2bad"
+    },
+    {
+      "path": "scripts/create_y85_execution_helpers.py",
+      "sha256": "f3d3ed85a4176a29b92922c154212f4b88e5caa2af0ce15d981a45fdefb9e2d7"
+    },
+    {
+      "path": "scripts/advance_y85.py",
+      "sha256": "6eec184f6ee0bb60a0f2e745590239d739d3cd290fb08512954f80dfafaada7c"
+    },
+    {
+      "path": "scripts/y85_deployment.py",
+      "sha256": "6e86020f2c2c97da7313390d5c2fa73f32cd7f9c17ce840da4d6ca901d702af2"
+    },
+    {
+      "path": "scripts/test_y85_admission.py",
+      "sha256": "6dd3283939c839385b095b70c095afe5156fd3ceb3cf3d21e021b14b183f49ca"
+    },
+    {
+      "path": "scripts/prepare_y86_overlap_skip.py",
+      "sha256": "7b10ca1270c16c397ac4bc89c4ba2c794661a0dcd6eacef46a7d25011b9d4f37"
+    },
+    {
+      "path": "scripts/retain_y86_cpu_native.py",
+      "sha256": "78e4728e384bb72ee0b19aea22e25ec698e0dc0359bdfd5aef86cefc68b33a1b"
+    },
+    {
+      "path": "scripts/y86_observer_core.py",
+      "sha256": "ea5f2e0863d615edabc85cb6973199eb5a8f4c47484b23bc8f3a88b6692fa983"
+    },
+    {
+      "path": "scripts/probe_y86_cpu_body.py",
+      "sha256": "65525f372f6cf107d04c4f3ced90a3261081956732f2dcffdf83a1bc080ff099"
+    },
+    {
+      "path": "scripts/probe_y86_cpu_tail.py",
+      "sha256": "bbb1b818a7db6889ce95417de5a05addf6b4b93ffed701559d3a3df88529b4ad"
+    },
+    {
+      "path": "scripts/probe_y86_native_tail.py",
+      "sha256": "3c4b3ef666b25fe77f6d4483550d4647f753e0ab45da2a55723b4d0475a5e36e"
+    },
+    {
+      "path": "scripts/test_y86_native_plan.py",
+      "sha256": "b866a5d13363f8520012ddc38150c18076d4fe82f8c24a94689a33a0286adf43"
+    },
+    {
+      "path": "scripts/record_y85_y86_closeout.py",
+      "sha256": "3e3c5d30e6d0aa2b48b89ed216eeb2a1596a2dd59de39124eca7b88234d35704"
+    }
+  ]
+}

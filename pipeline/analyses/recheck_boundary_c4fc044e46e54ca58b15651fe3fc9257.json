@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "token": "c4fc044e46e54ca58b15651fe3fc9257",
+  "snapshot_generated_at": "2026-10-15T18:50:06.420361+00:00",
+  "snapshot_due_count": 0,
+  "snapshot_blocked_not_due_count": 2,
+  "resource_observed_start_local": "2026-10-16T02:52:42.567796+08:00",
+  "resource_observed_end_local": "2026-10-16T02:52:48.138788+08:00",
+  "timers": {
+    "AdaRES-Y46": {
+      "prior_retry_after": "2026-10-16T02:52:34.906165+08:00",
+      "previous_last_check_at": "2026-10-15T15:48:50.704714+00:00",
+      "effective_due_at": "2026-10-16T02:52:34.906165+08:00",
+      "due_at_resource_observation": true
+    },
+    "AdaRES-Y49": {
+      "prior_retry_after": "2026-10-16T02:52:34.906165+08:00",
+      "previous_last_check_at": "2026-10-15T15:48:50.704714+00:00",
+      "effective_due_at": "2026-10-16T02:52:34.906165+08:00",
+      "due_at_resource_observation": true
+    }
+  },
+  "resource_evidence": {
+    "path": "pipeline/analyses/due_resources_c4fc_c4fc044e46e54ca58b15651fe3fc9257.json",
+    "sha256": "809c5a15510b0d6b414c7914a16b60fd16de23bd88f13b9355f67da4af2badf2"
+  },
+  "frozen_tests": {
+    "AdaRES-Y46": {
+      "manifest": {
+        "path": "pipeline/analyses/y46_next_production_native_131e_131e82d16cb9437f968b1acd879766b7.json",
+        "sha256": "0c9ba94c9cb7261e5ba8df59cbe6a1682658c505fb98fd71538f26ce1b69a1ac"
+      },
+      "program": {
+        "path": "scripts/probe_y46_production_native_131e.py",
+        "sha256": "1e1affbd1d690cdb2d30039865fd0cf6dac2dc4a0c74f543ce6ce40fbc66e648"
+      }
+    },
+    "AdaRES-Y49": {
+      "manifest": {
+        "path": "pipeline/analyses/y49_next_native_freeze_c3e5_c3e5627500e14e3fa88075dc5544095e.json",
+        "sha256": "512bed923d9ad27fa8bbbe4622d5bbbf591845f651d67b6597e43e2a3931a371"
+      },
+      "program": {
+        "path": "pipeline/analyses/y49_instrumentation_program_c3e5_c3e5627500e14e3fa88075dc5544095e.py",
+        "sha256": "5d762fe9267264a4d8889f4787957c635fab3996ff897cd4fc3329b590db7d54"
+      }
+    }
+  },
+  "frozen_programs_syntax_valid": true,
+  "GPU_branches_executed": false,
+  "new_candidates": 0,
+  "explanation": "Snapshot preceded the fixed retry boundary; SAME two stable candidates were actually due at the single shared resource observation. Full reserve2/2 and preparation0; no new placeholder, checker patch, immutable context edit, repeated CPU experiment or deadline padding. This is not a scientific gate PASS."
+}

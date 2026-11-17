@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y63",
+  "process_absent": true,
+  "boot_id": "9c061241-a93a-4bba-beec-462d1f383c79",
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y63_peer_bilinear_res_20261027_005016.log",
+  "log_sha256": "03f3c461d85baca8b4da33e3345d457425579032bada82ac4be736bcd72b9bd6",
+  "checkpoints": [
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y63_peer_bilinear_res/20261027_005030/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5074337124824524,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "b4f23ec71979b4996076af9c48820b4531a19bfc0781211d93098715842ca92f"
+    },
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y63_peer_bilinear_res/20261027_005030/best.pth",
+      "epoch": 21,
+      "best_miou": 0.5074337124824524,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 21,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "ecaa9070908c3cecff86394fc413a09a347906170c0eee5c2677efc4d2b44eb0"
+    }
+  ],
+  "final_logged_metrics": [
+    "0.497",
+    "0.549",
+    "0.596"
+  ],
+  "CUDA_initialized": false,
+  "full_frozen_evaluation_executed": false,
+  "hardware_settings_changed": false,
+  "observed_at": "2026-10-28T04:47:29.090174+08:00",
+  "token": "afe43c6c4f504b6d9d5052c0af50e4c9",
+  "source_checks": {
+    "exact_model_files": 6,
+    "native_YAML_semantics_verified": true,
+    "source_marker_verified": true,
+    "admission_verified": true,
+    "freeze_preserved": true
+  },
+  "resource_after": {
+    "path": "pipeline/checks/y63_server1_fixed30_afe43c6c4f504b6d9d5052c0af50e4c9_resource.json",
+    "sha256": "f4ea691c7fd3f558737d92709a9ad3aca203f30ddc642751ba04a2e32b9ab5cd"
+  },
+  "CPU_guard_tests_passed": 12,
+  "command": "python -B scripts/finalize_y63_fixed30.py --token afe43c6c4f504b6d9d5052c0af50e4c9",
+  "evidence": [
+    {
+      "path": "scripts/finalize_y63_fixed30.py",
+      "sha256": "69e3d78a0ed07130727aa03d1d6a98d8404a26162fbb4ab2ca8d064b6d0bc164"
+    },
+    {
+      "path": "pipeline/checks/y63_server1_fixed30_afe43c6c4f504b6d9d5052c0af50e4c9_location.json",
+      "sha256": "83901a932e136582294e4e4868434643628847cf58ebfdc210cca9d53fddaa2d"
+    },
+    {
+      "path": "pipeline/checks/y63_server1_fixed30_afe43c6c4f504b6d9d5052c0af50e4c9.log",
+      "sha256": "e601a4db029af2fb0f71a007a2e5541324d7e806fd628e2e5c33947d98f61b3c"
+    },
+    {
+      "path": "pipeline/checks/y63_server1_fixed30_afe43c6c4f504b6d9d5052c0af50e4c9_tests.log",
+      "sha256": "c5797af83fef88ad37f069fbdefb9c3a04151cf345cc6aa00bc7923ec2988e01"
+    },
+    {
+      "path": "pipeline/checks/y63_server1_fixed30_afe43c6c4f504b6d9d5052c0af50e4c9_before.json",
+      "sha256": "a9af98e143589e8429224ff46f16d758d31fd239c4916c660dfdf195c40b3f0b"
+    }
+  ]
+}

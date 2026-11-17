@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "scope": "Targeted consumer comparison, not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y63",
+      "stage": "blocked",
+      "hypothesis": "The W2 confidence MLP receives focal and overlap-weighted peer vectors through concatenated normalized evidence. An explicit dense bilinear residual may make focal/peer cross-channel interactions easier to fit. The original MLP can represent interactions implicitly; this is an architectural optimization comparison, not a missing-information or efficacy claim."
+    },
+    {
+      "id": "AdaRES-Y67",
+      "stage": "blocked",
+      "hypothesis": "One output LayerNorm affine transform is reused for initial and six refined mask/score readouts although their query distributions differ. Independent per-stage affine readout normalization may reduce shared mask/score-gradient interference. This is an architectural allocation test; existing stage layers can implicitly compensate and benefit is unknown."
+    },
+    {
+      "id": "AdaRES-Y72",
+      "stage": "blocked",
+      "hypothesis": "W2 refines visual instance states with language at every decoder stage but predicts all masks against the same static x_mask features. A shared zero-initialized residual from the current refined visual state into each later mask feature tensor may ease conditional mask fitting. Queries already carry contextual information; missing information, novelty and efficacy are not presumed."
+    },
+    {
+      "id": "AdaRES-Y78",
+      "stage": "blocked",
+      "hypothesis": "Each original refinement predicts fresh masks from its query and static mask features; the preceding mask enters only the detached Boolean attention gate. A learned direct residual from the immediately preceding mask logits may ease iterative support refinement. The query already carries history; missing information, novelty and trained efficacy are not presumed."
+    },
+    {
+      "id": "AdaRES-Y81",
+      "stage": "blocked",
+      "hypothesis": "Native W2 predicts refined masks from each current query against expression-independent static mask features. A shared attention residual from the full current refined query set into each later mask feature tensor may ease instance-conditioned mask fitting. Existing language/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed."
+    },
+    {
+      "id": "AdaRES-Y82",
+      "stage": "blocked",
+      "hypothesis": "Native W2 averages coarse and fine query updates. A zero-initialized learned projection of their elementwise product may ease cross-scale interaction fitting. Downstream networks can already represent interactions; novelty, missing information and trained efficacy are not presumed."
+    },
+    {
+      "id": "AdaRES-Y83",
+      "stage": "blocked",
+      "hypothesis": "The active norm_qqa affine transform is shared across six recurrent self/language query fusion updates. Independent per-stage copies with identical LayerNorm statistics/epsilon may ease stage-specific representation fitting. Existing stage FFNs can compensate; trained efficacy, missing information and novelty are not presumed."
+    },
+    {
+      "id": "AdaRES-Y85",
+      "stage": "blocked",
+      "hypothesis": "Original query readouts use LayerNorm while x_mask visual embeddings retain per-superpoint mean and magnitude. A single learned affine LayerNorm of all visual mask-feature channels before batching may change mask-fitting geometry. Removing magnitude/mean may also harm fitting; no native defect, missing information, novelty or efficacy is presumed."
+    },
+    {
+      "id": "AdaRES-Y87",
+      "stage": "training",
+      "hypothesis": "Original recurrent query refinement adds its self-attention and language-attention states before a shared active LayerNorm and stage FFN. A shared zero-initialized projection of their product at that exact sum may ease fitting conditional interactions. Both states already carry language and spatial context; no missing information, defect, novelty or trained benefit is presumed."
+    }
+  ],
+  "parent": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

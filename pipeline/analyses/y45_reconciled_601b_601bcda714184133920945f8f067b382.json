@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "canonical_state": "done_complete",
+  "epochs": "30/30",
+  "observed_at_local": "2026-10-15T10:53:23.112233+08:00",
+  "archived_log": {
+    "path": "Checkpoints/server_2/train_adares_y45_metric_decomposition_res_20261014_142939.log",
+    "sha256": "e958875f65d84dab5b366d6609b921bda21bea45ca0ddf2ac0b6dbb4555db6e0"
+  },
+  "terminal_evidence": {
+    "path": "pipeline/analyses/y45_terminal_601b_601bcda714184133920945f8f067b382.json",
+    "sha256": "a9acee403368ecbde8d6d43c21c4ecd3da586e212575a60f6fc108410cca90bb"
+  },
+  "events": [
+    "[adares_y45_metric_decomposition_res] \u7ec8\u6001=done_complete Best=0.5077 @30/30 on server-2 gpu1\uff1b\u65e5\u5fd7\u2192D:\\project\\AdaRES_project\\Checkpoints\\server_2\\train_adares_y45_metric_decomposition_res_20261014_142939.log\uff08checkpoint \u7559\u8fdc\u7aef\uff09",
+    "[adares_y45_metric_decomposition_res] \u5206\u6790\u5df2\u751f\u6210 \u2192 D:\\project\\AdaRES_project\\pipeline\\analyses\\adares_y45_metric_decomposition_res_done_complete_20261015_105322.md"
+  ],
+  "scientific_efficacy": "unknown_pending_frozen_review",
+  "newly_executed_training": 0,
+  "unchanged_other_candidates": true
+}

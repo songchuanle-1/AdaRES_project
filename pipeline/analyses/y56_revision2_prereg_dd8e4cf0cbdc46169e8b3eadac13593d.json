@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 2,
+  "preregistered_at": "2026-10-20T22:50:44.335767+08:00",
+  "failed_bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "ce2b2f75d08f7ba3dda77d922fe83e1c2d0dc7f0fba9e8331b31c9b6cd1338db"
+  },
+  "failure": {
+    "path": "pipeline/analyses/y56_resource_review_rev1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "deb2a6b205a4e3ac2286eff3e343b3af47d550842d8be59437e97b98973511fa"
+  },
+  "change": "Batch exact raw-query equality; transfer per-expression duplicate flags once. Only query-nonunique rows enter exact joint unique; singleton-query rows retain unique row IDs. Join counts and class IDs without changing graph/weights. No hash approximation or rounding.",
+  "prediction": "Output and input/parameter gradients equal initial Y56, with lower native paired cost. No-copy graph remains bitwise W2. Additional transient boolean query-pair memory is measured.",
+  "tests": "All original CPU/native/resource/structural controls, unchanged10TRAIN scenes and seed. CPU equality to immutable initial source. No new scientific thresholds, parameter changes or validation selection.",
+  "result": "pending",
+  "default_revision_budget_consumed": 2
+}

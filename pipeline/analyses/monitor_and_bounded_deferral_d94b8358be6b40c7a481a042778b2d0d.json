@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "token": "d94b8358be6b40c7a481a042778b2d0d",
+  "generated_at": "2026-10-15T16:54:54.981967+08:00",
+  "snapshot_time": "2026-10-15T08:48:25.939276+00:00",
+  "snapshot": {
+    "path": "pipeline/headless/.tick_model_view.json",
+    "sha256": "833b0b38ce15486123e52d28fd19443771965184ff324a3a2c1c36ef7ae89690"
+  },
+  "actual_new_observation": {
+    "source": "This tick begin canonical monitor only; no repeated preflight or remote probe",
+    "native_monitor_text": "================================================== 2026-10-15 16:48 : AdaRES_project ==================================================\n\n--- server-2 (192.168.1.163) ---\n  [adares_y48_mask_equivalence_res] Best=0.4696 7/30 no_improve=0/30 gpu=1 ? 序列: 0.3834, 0.4319, 0.4384, 0.4623, 0.4696\n\n--- server-6 (100.64.3.28) ---\n  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机\n\n--- 队列: AdaRES_project ---\n  server-2: running=1",
+    "experiment_id": "AdaRES-Y48",
+    "observed_epoch": 7,
+    "fixed_total_epochs": 30,
+    "interim_best_mIoU": 0.4696,
+    "status": "running",
+    "terminal": false,
+    "limitation": "Training log summary only; no new two-snapshot native-step/source-hash/GPU-occupation check this tick; not final efficacy."
+  },
+  "deferred_candidates": [
+    {
+      "id": "AdaRES-Y46",
+      "retry_after": "2026-10-15T16:58:28.912532+08:00",
+      "stage_unchanged": "blocked",
+      "next_action_unchanged": "Run SAME hash-frozen production native program on first genuinely idle authorized card, then matched TRAIN8/inference/stress and six-gate review. Do not repeat unchanged CPU tests or admit from prototype.",
+      "pending_gates_unchanged": [
+        "production_native_backward",
+        "production_tools_train_and_restore",
+        "resources",
+        "final_six_gate_review"
+      ]
+    },
+    {
+      "id": "AdaRES-Y49",
+      "retry_after": "2026-10-15T16:58:28.912532+08:00",
+      "stage_unchanged": "blocked",
+      "next_action_unchanged": "Run SAME hash-frozen actual W2 TRAIN8 native full loss/backward/cached controls/paired costs on a genuinely idle authorized GPU. Preserve zero native component-collision witnesses and all other limits; do not admit or produce variants from CPU gains.",
+      "pending_gates_unchanged": [
+        "native_task_diagnosis",
+        "native_backward",
+        "resources",
+        "independent_production",
+        "released_init_tools_train_restore",
+        "six_gate_review"
+      ]
+    }
+  ],
+  "deferral_reason": "Snapshot and disposition precede existing resource retry; no changed goal/server/resource queue or genuine external unblock evidence. Honor bounded retry rather than repeat GPU probe due to prior tick artifact wake.",
+  "previous_resource_evidence": {
+    "path": "pipeline/analyses/due_resources_092f_092f2ee70be143ad9a41f3c9904c5e81.json",
+    "sha256": "cc517ecce1bcc1666c37e4db8b7d699974b2ec8eae9553c793b83d0305a3cde7"
+  },
+  "previous_disposition": {
+    "path": "pipeline/analyses/due_block_disposition_092f2ee70be143ad9a41f3c9904c5e81.json",
+    "sha256": "606d343cbca32116afee11f055770b7c5908845056d9f0478ef9589cc79d9c00"
+  },
+  "previous_resource_observed_start_local": "2026-10-15T15:55:22.684225+08:00",
+  "previous_resource_observed_end_local": "2026-10-15T15:55:29.840995+08:00",
+  "previous_resource_age_seconds_at_disposition": 3565.140972,
+  "current_GPU_occupation": "unknown; not recollected and not inferred from historical observation",
+  "new_candidates": 0,
+  "admissions": 0,
+  "new_training": 0,
+  "resource_rechecks": 0,
+  "GPU_diagnostics": 0,
+  "scientific_status": "Y48 training_not_efficacy; Y46/Y49 remain blocked with original retry and gates",
+  "current_queue_and_blocked_candidates_unchanged": true
+}

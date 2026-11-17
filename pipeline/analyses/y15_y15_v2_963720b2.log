@@ -1,0 +1,21 @@
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "configs_song/model_paper5/adares_y15_query_completion_res.yaml", "config_sha256": "b2a0e59b48067cd1335c20da31ec1c0e35766e78231aa011fe8b86a231effa99", "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y15_query_completion_res/20260930_071753/best.pth", "checkpoint_sha256": "6a2e29d7f210bc8cd90511363185867c770f2cd8e151d60ec2911380f1898df5", "checkpoint_meta": {"epoch": 27, "best_miou": 0.23032023012638092}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164959365, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 1, "utilization": 0}, "repeat_max_iou_difference": 0.0, "repeat_miou_difference": 0.0, "active_queries": [129], "selected_queries": 1, "warm_first_chunk_seconds": [0.36078260093927383, 0.36938550136983395, 0.3637626003473997, 0.37147513777017593, 0.3667531795799732], "peak_allocated_gib": 4.043579578399658, "peak_reserved_gib": 6.486328125, "elapsed_seconds": 217.9974302276969}
+{"expressions": 9508, "scenes": 141, "miou": 0.2303191651415723, "acc25": 0.36211611274716027, "acc50": 0.17553639040807742, "spmiou": 0.21056480784331877}
+
+STDERR:
+Using backend: pytorch
+2026-10-01 17:23:03,547 - INFO - Load val scanrefer: 9508 samples
+2026-10-01 17:23:05,149 - INFO - set random seed: 1999
+2026-10-01 17:23:10,028 - INFO - set random seed: 1999
+2026-10-01 17:24:55,159 - INFO - set random seed: 1999

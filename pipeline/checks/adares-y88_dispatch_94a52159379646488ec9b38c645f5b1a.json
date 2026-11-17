@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "94a52159379646488ec9b38c645f5b1a",
+  "id": "AdaRES-Y88",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y88",
+    "label": "AdaRES-Y88 fixed30",
+    "config": "configs_song/model_paper5/adares_y88_mask_query_quadratic_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y88.json",
+    "scientific_candidate_id": "AdaRES-Y88",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 3527278,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y88_mask_query_quadratic_res_20261106_053534.log",
+    "launched": "2026-11-06T05:36:32"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y88 fixed30] configs_song/model_paper5/adares_y88_mask_query_quadratic_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y88.py",
+    "sha256": "3737da4fc2555f38241005f5a30519887ddbc2b370127ac57d4c361304fd2119"
+  }
+}

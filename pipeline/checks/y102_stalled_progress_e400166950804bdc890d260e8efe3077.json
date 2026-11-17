@@ -1,0 +1,136 @@
+{
+  "complete": true,
+  "token": "e400166950804bdc890d260e8efe3077",
+  "id": "AdaRES-Y102",
+  "observed_local": "2026-11-13T00:09:24.111151+08:00",
+  "pid": 4747,
+  "observation": {
+    "complete": true,
+    "before": {
+      "observed_at": "2026-11-12T11:07:35.746610-05:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 7,
+        "count": 4686
+      },
+      "log_bytes": 1892
+    },
+    "after": {
+      "observed_at": "2026-11-12T11:07:50.763530-05:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 7,
+        "count": 4686
+      },
+      "log_bytes": 1892
+    },
+    "samples": [
+      {
+        "observed_at": "2026-11-12T11:07:35.746610-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      },
+      {
+        "observed_at": "2026-11-12T11:07:40.752518-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      },
+      {
+        "observed_at": "2026-11-12T11:07:45.758049-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      },
+      {
+        "observed_at": "2026-11-12T11:07:50.763530-05:00",
+        "latest": {
+          "phase": "Train",
+          "epoch": 1,
+          "total": 30,
+          "step": 7,
+          "count": 4686
+        },
+        "log_bytes": 1892
+      }
+    ],
+    "native_progress_confirmed": false,
+    "process_identity_verified": true,
+    "pid": 4747,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y102_geometry_mask_skip_res_20261112_235503.log",
+    "source_files_verified": 6,
+    "native_YAML_semantics_verified": true,
+    "source_marker": "0c6c844719c8466ddd8888d054fe3b7ee658e643",
+    "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 4747\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 9245\n",
+    "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+    "gpu": "0, 16186, 32, 280.00",
+    "no_bounded_tail_error": true,
+    "training_efficacy": "Unknown; full frozen evaluation not executed.",
+    "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization."
+  },
+  "current_native_progress_confirmed": false,
+  "status": "loader_stalled_after_verified_initial_launch",
+  "observed_loader_pid": 5241,
+  "initial_launch_verified": true,
+  "no_restart": true,
+  "no_source_data_seed_protocol_change": true,
+  "administrator_stack_help_required": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/production_adares-y102_e400166950804bdc890d260e8efe3077_final_diagnostic.log",
+      "sha256": "7700bf02d7628fbc23a47723263edee8578f6a9f48022b381c84373ac0af14d1"
+    },
+    {
+      "path": "pipeline/checks/y102_final_progress_e400166950804bdc890d260e8efe3077_stderr.log",
+      "sha256": "1c707920cd99e0c3f9d78e1d5c3da484353c1b9ffafac8d6858a289f2e7f198d"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y102_e400166950804bdc890d260e8efe3077_release.log",
+      "sha256": "2b6a5df101f9bce6f3a27c3328a936e9f9b5f4941ec9a34ff7f345809aa7ec34"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y102_e400166950804bdc890d260e8efe3077_after_diagnostic.log",
+      "sha256": "8e076c4139bbffbf750e6122139bee94cb891d5d90770ac17defe5a002716839"
+    },
+    {
+      "path": "pipeline/checks/y102_progress_diagnostic_e400166950804bdc890d260e8efe3077.json",
+      "sha256": "639e3372ab3b2d9f9b661ea207adcc746bb4640fe711a3df550adb9f16f6f6e0"
+    },
+    {
+      "path": "pipeline/checks/y102_worker_stack_e400166950804bdc890d260e8efe3077.json",
+      "sha256": "9f2ebca644fd5eba4eb373cb7528ed73d5329e35e744501e6168ed62778ae1c1"
+    },
+    {
+      "path": "pipeline/checks/y102_loader_source_e400166950804bdc890d260e8efe3077.json",
+      "sha256": "7fc81b9cf72465d97b17fe2613f331f04277cc1604b5b1fe249c4f1843fa46e9"
+    },
+    {
+      "path": "pipeline/checks/y102_observer_mapping_failure_e400166950804bdc890d260e8efe3077.json",
+      "sha256": "a1f5285d1308713e04f8475ef9d8e8be8eb1f7fe8af4e0f49921c224c7d52621"
+    },
+    {
+      "path": "scripts/finish_y102_stalled_tick.py",
+      "sha256": "f37f98f51f71be564693057e4b9326d0416dcb99b73032b3f6c949029f97c7b3"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "complete": true,
+  "observed_at": "2026-11-15T00:04:13.801808+08:00",
+  "state": {
+    "status": "evaluating",
+    "method": "AdaRES-B1",
+    "child_pid": 799819,
+    "completed_methods": [
+      "AdaRES-Y88",
+      "AdaRES-Y36",
+      "AdaRES-W2"
+    ],
+    "log": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-b1.log",
+    "output": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-b1.json",
+    "id": "AdaRES-Y88",
+    "token": "ce356360782a431ab9adc3e015f7d5aa",
+    "worker_pid": 780639,
+    "observed_at": 1794671993.5081677
+  },
+  "launch": {
+    "complete": true,
+    "id": "AdaRES-Y88",
+    "token": "ce356360782a431ab9adc3e015f7d5aa",
+    "pid": 780639,
+    "folder": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining",
+    "program_sha256": "1ce6f24e845a42dcce91fcf107c5aacb7cf6d26aac71aa90792441290bd86aa5",
+    "process_created": true,
+    "native_progress_confirmed": false,
+    "attempt": 2,
+    "reused_methods": [
+      "AdaRES-Y88"
+    ],
+    "new_methods": [
+      "AdaRES-Y36",
+      "AdaRES-W2",
+      "AdaRES-B1"
+    ]
+  },
+  "processes": [
+    {
+      "pid": 780639,
+      "exists": true,
+      "commandline": "/data1/songcl/Project/AdaRES_project/runtime/adares_project/bin/python -B -S /data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/worker.py ",
+      "status": [
+        "Name:\tpython",
+        "State:\tS (sleeping)",
+        "PPid:\t1",
+        "Uid:\t1002\t1002\t1002\t1002"
+      ]
+    },
+    {
+      "pid": 799819,
+      "exists": true,
+      "commandline": "/data1/songcl/Project/AdaRES_project/runtime/adares_project/bin/python -B -S -c import ast,sys;P0={'paths': ['/data1/songcl/Project/AdaRES_project/AdaRES', '/data1/songcl/Project/AdaRES_project/AdaRES/tools', '/data1/songcl/Project/AdaRES_project/AdaRES/ipdn/lib', '/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages', '/data1/songcl/Project/AdaRES_project/runtime/pointnet2-0.0.0-py3.8-linux-x86_64.egg'], 'source': '\"\"\"Read-only native best-checkpoint evaluation with expression-level repeats.\"\"\"\\n\\nimport argparse\\nimport hashlib\\nimport json\\nimport os\\nimport statistics\\nimport time\\nfrom pathlib import Path\\n\\n\\ndef digest(path):\\n    value = hashlib.sha",
+      "status": [
+        "Name:\tpython",
+        "State:\tR (running)",
+        "PPid:\t780639",
+        "Uid:\t1002\t1002\t1002\t1002"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "launch_intent.json",
+      "bytes": 169,
+      "sha256": "af1bab058eaffac649113d8b6d4c75e9738eb36815a93203002df8530e838d92"
+    },
+    {
+      "name": "adares-b1.json",
+      "bytes": 1422943,
+      "sha256": "72d33e7561edc9ccbd2afefba3d245c92e7894449c51818856d748ac61a89305"
+    },
+    {
+      "name": "adares-y36.json",
+      "bytes": 2840156,
+      "sha256": "f8878963c39c1ad16d2bd94c678b44fb234b8a025306e1a8d6629d38ea637ca6"
+    },
+    {
+      "name": "state.json",
+      "bytes": 530,
+      "sha256": "0473a9c4bd4cfea16a7d03ccadd42c6def1bca2c238e2e592bb2ba8441a42a01"
+    },
+    {
+      "name": "adares-y88.json",
+      "bytes": 2839606,
+      "sha256": "e2a5d7f9f6aad986c141a357557b73200e15bcc0d87c8a5bd01b2ef5ee5aa0f9"
+    },
+    {
+      "name": "launch.json",
+      "bytes": 475,
+      "sha256": "3752477ec659ac2efc838d53011e28fa7217475553d69814a53350f0bedc7699"
+    },
+    {
+      "name": "adares-w2.json",
+      "bytes": 2841783,
+      "sha256": "ede01d8f0fd3795ade702bb17bccbfb33e9781f4db5debc0d9a48224d60d1467"
+    }
+  ],
+  "compute": "799819\n",
+  "remote_mutations": false
+}

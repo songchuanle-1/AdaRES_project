@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "token": "cddfc53edaf54529ba87a49cb65ec8bd",
+  "id": "AdaRES-Y100",
+  "HEAD_preserved": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "actual_native": {
+    "path": "pipeline/analyses/y100_server2_smoke_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "69c8a627d7f8458b2763861b60da72525e3d25a17f1401202c4fbf6a92f50c32"
+  },
+  "exact_originals_preserved": true,
+  "source_specialization_only": true,
+  "native_replayed": false,
+  "admitted": false,
+  "files": [
+    {
+      "path": "scripts/advance_y100.py",
+      "sha256": "eea889ff5f10abaaaecf23980ef987cceb0adbd8d0ee34c7f85bc6c9aa46b367"
+    },
+    {
+      "path": "scripts/y100_deployment.py",
+      "sha256": "9b9f6d5f8c716afbeba610d14c174f82bb568edc1aaaf496bd3cb0079734303c"
+    },
+    {
+      "path": "scripts/prepare_y99_y100_terminal_binding.py",
+      "sha256": "d9e52833fc878fed143217850a81f9f62c54c7578bae119efc481d69c30918b6"
+    },
+    {
+      "path": "scripts/y99_y100_terminal_contract.py",
+      "sha256": "6457d5d5b1979db7ff447cad74fd12d17818fb4cc42fec66a57624783a038dbc"
+    },
+    {
+      "path": "scripts/test_y99_y100_terminal_binding.py",
+      "sha256": "bc435662d3294558bf2c3f5fc7bb0230874953490b8bd7377f18508a1d4b8cf1"
+    },
+    {
+      "path": "scripts/test_y100_admission.py",
+      "sha256": "b29f2305880007aa9b754d45132c4c7aeb0bb1cf1b3d41a50b978e230cd1c805"
+    }
+  ],
+  "originals": [
+    {
+      "path": "scripts/advance_y98_v2.py",
+      "sha256": "bf3c8d9326b4367c8f0fc65fae85093a14a224114464fe4bb59c93083fb1fc46"
+    },
+    {
+      "path": "scripts/y98_deployment.py",
+      "sha256": "21a5fbfcdf2d8e846fe9a51c8c57261289ad89584111100b8d037bd9f9c5fd1d"
+    },
+    {
+      "path": "scripts/prepare_y96_y98_terminal_binding_v2.py",
+      "sha256": "e2574e2c220f690484d207b8f381e5c9499fc022be48f5a9c17be6256241e8b9"
+    },
+    {
+      "path": "scripts/y96_y98_terminal_contract_v2.py",
+      "sha256": "8c09067ee817064686dd2e4e44f47366475c41efff5c40cfb0689aa9b7754c34"
+    },
+    {
+      "path": "scripts/test_y96_y98_terminal_binding_v3.py",
+      "sha256": "4088075d6913b5837206a90adda8c3353a13a4942d9191f146a7ad06b96592a4"
+    },
+    {
+      "path": "scripts/test_y98_admission.py",
+      "sha256": "a0f8a303418ed7d9cefb9552bda5f60b1f1f630cb44c4ca412745643f6eab86f"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "scripts/create_y100_launch_helpers.py",
+      "sha256": "fc48e08b640c6c416f4190b4da4c3737c63f0d9ab1d322f43a31aea5b553dee9"
+    },
+    {
+      "path": "scripts/y100_admission_contract.py",
+      "sha256": "961b4f50b25ca7960645507517dcc48a6dd3792f8b1707aafd754c4991af98e4"
+    }
+  ]
+}

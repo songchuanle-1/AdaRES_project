@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y53",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T13:00:08.943233+08:00",
+  "original_program": {
+    "path": "pipeline/analyses/y53_padding_native_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "3678e7b332444a9ef27ffef087774be93fbc8c3a099cb633c9df7d586188447f"
+  },
+  "failure_evidence": {
+    "path": "pipeline/analyses/y53_padding_native_fde0_fde01739a9864bae9bb342a577235e66.log",
+    "sha256": "621332eedcb996dc528c2d1844872c2cb036994b452a7bff98e323ebb680b773"
+  },
+  "failure_scope": "diagnostic invocation compatibility, not model or hypothesis",
+  "change": "Only split model construction/CUDA assignment from model.eval(). Native IPDN.train override does not return self; do not assign eval result. Every source binding, checkpoint, sample, control, gradient and assertion remains unchanged.",
+  "prediction": "Model remains the actual native IPDN instance in eval mode, so the unchanged fixed TRAIN protocol can run. Other errors or leakage observations remain visible, never forced PASS.",
+  "candidate_model_revisions": 0,
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y53_padding_native_eval_compat_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "5903f2bf7753e833b7d986a4081b528583a8b24d095722b557cb211f11429752"
+  }
+}

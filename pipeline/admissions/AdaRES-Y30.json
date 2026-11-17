@@ -1,0 +1,116 @@
+{
+  "id": "AdaRES-Y30",
+  "config": "configs_song/model_paper5/adares_y30_query_trajectory_res.yaml",
+  "code_commit": "4f5c31f57994b8f9fb640d652c913863dc310a95",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261006-192902_design.md",
+    "sha256": "0b610d49ae157dc00a23ff959a21edcfaeb84a349d347e41e7d72c45269cb7ff"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y30_trajectory_diagnosis_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "9a69a9da318d6257335a415d83597a11151899a1ad545ca751f909ffe776f37c"
+        },
+        {
+          "path": "pipeline/designs/Y30_diagnosis_prereg_86766fcd.md",
+          "sha256": "9cf4e859afc34117c8165ba1cfb85b37a49d7d6eae29e7d81af672429b545a4a"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y30_native_controls_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "e84548802688c6e67be3c3a9d679ac17cff3084e28793faa7736b477cb48163d"
+        },
+        {
+          "path": "pipeline/analyses/y30_initial_loss_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "d7379bbdead3317352852b0c5725859aec103ec9e4419e959b9a283ab5efebd9"
+        },
+        {
+          "path": "pipeline/analyses/y30_physical_native_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "6eddf633dbbf441789d3d1aa79fa76e698d6366a9d73d4eeb20660ffbc593688"
+        },
+        {
+          "path": "pipeline/analyses/y30_permutation_diagnosis_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "376f2daeaaab27d2b616c8bfad598b6c64960fa5c50c974d465fbe7ea77c611d"
+        },
+        {
+          "path": "pipeline/designs/Y30_precision_repair_86766fcd.md",
+          "sha256": "7bccb24cc0c7ccbb699bbe0d5538afdb01d34f74833b7cfa8a0dcf232acb4aa1"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y30_physical_native_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "6eddf633dbbf441789d3d1aa79fa76e698d6366a9d73d4eeb20660ffbc593688"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y30_resources_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "584505d002df4fdd138a930e68f1f11cbdc6f327a58b3a8c4ba9c11de1782dfa"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y30_source_bundle_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "b5aa308e27bd394ef5ade195c45e18855bd7c24cad3ff568b75a17c9738b1727"
+        },
+        {
+          "path": "pipeline/analyses/y30_structure_cpu_fp64_86766fcd883d46c1a9d60563f4213c2e.json",
+          "sha256": "cd440e83e2df8f17d747833f2da07629a8c47b553396131c13c3f230f80ffb2c"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y30_admission_review_86766fcd.md",
+          "sha256": "cd9ac440513c72fd9dc2d1e58fcc15e41a2e13b6d74a764542933fe3014bf47c"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y30_86766fcd.md",
+          "sha256": "36d4b1b75fa8b8a85bdc268a698cf5a1cfa892c8ba69113bb244dae7142d289e"
+        },
+        {
+          "path": "pipeline/designs/Y30_precision_repair_86766fcd.md",
+          "sha256": "7bccb24cc0c7ccbb699bbe0d5538afdb01d34f74833b7cfa8a0dcf232acb4aa1"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_Y30_86766fcd.md",
+          "sha256": "d88054126616e129093c73eea39e8e00380063204e7bff1de8cc41b6aaba704d"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y30_86766fcd.md",
+      "sha256": "36d4b1b75fa8b8a85bdc268a698cf5a1cfa892c8ba69113bb244dae7142d289e"
+    }
+  },
+  "limitations": "Mixed and adverse initial losses, wrong-history controls also learning, native resume noise, original precision failures and repaired measured cost regressions preserved. No trained benefit/harm/necessity/Pareto/novelty claim."
+}

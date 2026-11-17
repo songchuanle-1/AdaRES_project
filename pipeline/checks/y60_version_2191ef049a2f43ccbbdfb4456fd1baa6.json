@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "parent_commit": "a83449f145644745f6d007d7319ec4221623e81c",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/__init__.py",
+      "sha256": "6234c2f14dcd0cd4140061db94dba8aeed7943c9e442ee756bb6c9e2b48bf656"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/dec.py",
+      "sha256": "fcb65f74d7e2d74f65b3a2e0a4b54e25f4e931e22bbbf378cf1651c087712ae0"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y60_stage_specific_confidence/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+      "sha256": "72c5bbb18139a5eea5d57c7aa26ebb2b22597ded41cd5693fec370eaa087138a"
+    }
+  ],
+  "test": {
+    "path": "pipeline/analyses/y60_cpu_2191ef049a2f43ccbbdfb4456fd1baa6.json",
+    "sha256": "85e7a47905fdd25e1e45585e04425492d14e9897b93dbac650e2981827ac8f7c"
+  },
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "native_smoke_passed": false,
+  "admitted": false,
+  "pushed": false,
+  "synchronized": false
+}

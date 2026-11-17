@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y61",
+  "observed_at": "2026-10-25T16:55:18.335991+08:00",
+  "payload": {
+    "id": "AdaRES-Y61",
+    "pid": 78290,
+    "config": "configs_song/model_paper5/adares_y61_peer_value_gradient_res.yaml",
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y61_peer_value_gradient_res_20261024_185831.log",
+    "root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+    "work": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "basename": "adares_y61_peer_value_gradient_res",
+    "checkpoint_directory": "20261024_065822"
+  },
+  "code_commit": "9bea5e906be3a478be50442db521e766c446a1ec",
+  "metadata": {
+    "complete": true,
+    "checkpoint_directory": "20261024_065822",
+    "declared_last_path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y61_peer_value_gradient_res/20261024_065822/last.pth",
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y61_peer_value_gradient_res_20261024_185831.log",
+    "checkpoint_loaded": false,
+    "remote_mutations": false
+  },
+  "readonly_checkpoint_verifier": {
+    "path": "scripts/finalize_y58_y59_handoff.py",
+    "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+  },
+  "helper": {
+    "path": "scripts/finalize_y61_fixed30.py",
+    "sha256": "4402315b88399b95f5234997f0c89a9a1f9043d71b81a0cf8f43947d353707b5"
+  },
+  "tests": {
+    "path": "scripts/test_y61_terminal_handoff.py",
+    "sha256": "a4e2574e18622cfc84337e2a184764e95c81fe9ebd6738a2024f0827a0ac03bd"
+  },
+  "CPU_guard_tests": 19,
+  "CPU_guard_tests_passed": true,
+  "full_terminal_verification_executed": false,
+  "archived": false,
+  "queue_changed": false,
+  "native_smoke_executed": false,
+  "training_stopped": false,
+  "limitation": "Only declared checkpoint location, source identity and CPU controls checked. A live process is not terminal; full last30/best/optimizer/scheduler/log verification and absent exact process are still mandatory before archival."
+}

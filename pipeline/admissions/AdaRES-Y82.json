@@ -1,0 +1,99 @@
+{
+  "profile": "experiment_first",
+  "id": "AdaRES-Y82",
+  "candidate_id": "AdaRES-Y82",
+  "config": "configs_song/model_paper5/adares_y82_scale_product_res.yaml",
+  "code_commit": "5773768ffb87d7fea7432e85fd0da561556aa2fc",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "authorization": {
+    "path": "pipeline/authorizations/experiment_first_20261021.json",
+    "sha256": "9995e06ddaa54275037187c41d1a768895e175cfe6f479aebde1a021d6c34776"
+  },
+  "native_smoke": {
+    "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_native_smoke.json",
+    "sha256": "e2dff383b68301c9eb42529588766f85601ec0cca8b3ff47cdb666f02e6ee8fc"
+  },
+  "post_training_plan": {
+    "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_post_training_freeze.json",
+    "sha256": "c294d2b9ef7014ee3c977a98bb1a8df7c0320e6d09ca5130fc98b181f34c2554"
+  },
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "admitted_at": "2026-11-04T00:59:45.161030+08:00",
+  "gates": {
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_native_smoke.json",
+          "sha256": "e2dff383b68301c9eb42529588766f85601ec0cca8b3ff47cdb666f02e6ee8fc"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_post_training_freeze.json",
+          "sha256": "c294d2b9ef7014ee3c977a98bb1a8df7c0320e6d09ca5130fc98b181f34c2554"
+        },
+        {
+          "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_native_program.py",
+          "sha256": "12274da670c672f015e4a746eeb6a354604f4d4e095dca926808e9054c9d603d"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_native_smoke.json",
+          "sha256": "e2dff383b68301c9eb42529588766f85601ec0cca8b3ff47cdb666f02e6ee8fc"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_post_training_freeze.json",
+          "sha256": "c294d2b9ef7014ee3c977a98bb1a8df7c0320e6d09ca5130fc98b181f34c2554"
+        },
+        {
+          "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_native_program.py",
+          "sha256": "12274da670c672f015e4a746eeb6a354604f4d4e095dca926808e9054c9d603d"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_native_smoke.json",
+          "sha256": "e2dff383b68301c9eb42529588766f85601ec0cca8b3ff47cdb666f02e6ee8fc"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_post_training_freeze.json",
+          "sha256": "c294d2b9ef7014ee3c977a98bb1a8df7c0320e6d09ca5130fc98b181f34c2554"
+        },
+        {
+          "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_native_program.py",
+          "sha256": "12274da670c672f015e4a746eeb6a354604f4d4e095dca926808e9054c9d603d"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_native_smoke.json",
+          "sha256": "e2dff383b68301c9eb42529588766f85601ec0cca8b3ff47cdb666f02e6ee8fc"
+        },
+        {
+          "path": "pipeline/checks/AdaRES-Y82_1fdaad021c7c425f9013d075ef24480d_post_training_freeze.json",
+          "sha256": "c294d2b9ef7014ee3c977a98bb1a8df7c0320e6d09ca5130fc98b181f34c2554"
+        },
+        {
+          "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_native_program.py",
+          "sha256": "12274da670c672f015e4a746eeb6a354604f4d4e095dca926808e9054c9d603d"
+        }
+      ]
+    }
+  },
+  "decision": {
+    "path": "pipeline/decisions/20261104-005945_next_batch.md",
+    "sha256": "f07a12f2231b33792b3e6aa87d00c40ded51904b00ec44fbe923b810e41bece4"
+  }
+}

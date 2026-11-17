@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "native_capture_source": {
+    "path": "scripts/probe_y48_joint_native_0cf9.py",
+    "sha256": "df3bfa1c2f84526fb046a0506d2bc2277b2fe242a7fe0701bb686794cfaaec62"
+  },
+  "source_CPU_controls": {
+    "path": "pipeline/analyses/y48_exchangeability_0cf9_v2_0cf9bfefb82447fcb2abf284a77480e2.json",
+    "sha256": "c155a52fdbd8a713cd7ea0e5a1cf09d3f7d54ca82f18248e0449c2566827b70d"
+  },
+  "bookkeeping_CPU_controls": {
+    "path": "pipeline/analyses/y48_joint_bookkeeping_cpu_0cf9_0cf9bfefb82447fcb2abf284a77480e2.json",
+    "sha256": "80bbeb8d509558d49d29b80282148cf1a2e1b79539ce009e2a9242da088e99c0"
+  },
+  "source_and_failure_evidence": [
+    {
+      "path": "pipeline/analyses/Y48_exchangeability_prereg_0cf9.md",
+      "sha256": "b8ddd2f51917d60029bc6f187d056cad050752e73bcea020d9851010aa5428fd"
+    },
+    {
+      "path": "pipeline/analyses/Y48_native_matching_clarification_0cf9.md",
+      "sha256": "474b2c53b3990863b1e3eec7941510d3cbc925cd40e5d6fe17ee14c2c4b18840"
+    },
+    {
+      "path": "pipeline/analyses/Y48_dtype_contract_v2_0cf9.md",
+      "sha256": "b9dca0acdb91f40e1cbb96b9a04f10bc87553a09991c4e4e4e59c3f4325b47d9"
+    },
+    {
+      "path": "scripts/probe_y48_exchangeability_0cf9.py",
+      "sha256": "76b82efce4004fc531bd0fd10b0de0621389fd5b540d384508c1fa35257479fe"
+    },
+    {
+      "path": "pipeline/analyses/y48_exchangeability_0cf9_0cf9bfefb82447fcb2abf284a77480e2.log",
+      "sha256": "ceb491094cf29ee8b807ca570d9620b0ed5240fdc64e1cc279e8a2ad9d0bd6c6"
+    },
+    {
+      "path": "scripts/probe_y48_exchangeability_0cf9_v2.py",
+      "sha256": "7e59ddcace4fe8d866b32b3b1c787a7d2ef4e96c16d1cb478068cfb71e70f1f2"
+    },
+    {
+      "path": "scripts/probe_y48_joint_native_0cf9.py",
+      "sha256": "df3bfa1c2f84526fb046a0506d2bc2277b2fe242a7fe0701bb686794cfaaec62"
+    }
+  ],
+  "occupation": {
+    "path": "pipeline/analyses/y45_continuation_0cf9_0cf9bfefb82447fcb2abf284a77480e2.json",
+    "sha256": "3caef8ff315ac0c782b852fcaaaf0c032cd170a814528014e75bae21a604657c"
+  },
+  "native_joint_branch_executed": false,
+  "actual_native_mixed_label_groups": null,
+  "nonempty_duplicate_groups": 171,
+  "nonempty_duplicate_queries": 565,
+  "initial_single_match_premise": "disconfirmed; actual nearest plus all in-instance query matching",
+  "next_test": "First live-idle authorized/exclusively leased server2 GPU: SAME native TRAIN8 joint mask/criterion-match capture. Decide whether nonempty identical-mask groups actually contain both native labels, checking identical literal point TP/FP/FN. No cross-capture inference.",
+  "limitations": "Partial source/fixture/cached mask incidence, not an established native contradiction. If joint capture disconfirms useful mixed-label incidence, reject this realization with the actual result. No production target/weight/mask/selector/model changes or admission."
+}

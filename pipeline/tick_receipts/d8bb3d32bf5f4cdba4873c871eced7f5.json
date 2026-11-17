@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "d8bb3d32bf5f4cdba4873c871eced7f5",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-17T11:50:38.556276+00:00",
+  "recorded_at": "2026-10-17T11:53:27.074272+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Unchanged already reported blocker; no finish attempted this tick. Snapshot19:50 has due0, blocked_not_due2, reserve2/2 and preparation_budget0; original Y52 retry20:53 and Y54 retry21:53 untouched. Shared canonical source remains a78da0060b280300359adc58a20f6c325cabb487313492112e8fc0bf4535bee6 and ledger remains d5bef086d1949b149c90e97b40f7046b00109c561fcc9e6f7573398b3313bbc6. Known cached14:55 check: Capacity-gap design made no durable candidate progress; create a stable diagnosis candidate and run its next test before stopping. Preserve current six-section report, seven-section memory and immutable evidence; do not repeat probes/finish, fabricate candidates, alter historical closed records, expand authorizations, or modify runtime/scheduler. Abort current owned lease as INCOMPLETE.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 5,
+    "input_tokens": 1626881,
+    "cached_input_tokens": 1616000,
+    "output_tokens": 5452,
+    "reasoning_output_tokens": 2066,
+    "total_tokens": 1632333,
+    "uncached_input_tokens": 10881,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "token": "446fcb81558c4fad8ea5c22797f80490",
+  "id": "AdaRES-Y101",
+  "actual_child_bootstrap_GPU1_rejected_before_model_imports": true,
+  "returncode": 2,
+  "checkpoint_loaded": false,
+  "GPU_used": false,
+  "evidence": [
+    {
+      "path": "scripts/launch_y101_frozen_review_job.py",
+      "sha256": "3f59013f443b068777c8bdfcafa36569e0fb2fb9c2991e0fe5b5c0dc347bd2e0"
+    },
+    {
+      "path": "scripts/y101_frozen_review_job.py",
+      "sha256": "7285b73fef393147f16ece3ba990c9813388a0a754ec91711609281561a38cb7"
+    },
+    {
+      "path": "pipeline/checks/y101_review_bootstrap_446fcb81558c4fad8ea5c22797f80490.log",
+      "sha256": "08af9a315bc6475bbcc0abe92e288daffce543bb164efa934efe2bcadc2a2e55"
+    },
+    {
+      "path": "pipeline/checks/y101_review_adapter_afe999d0f7ff4ff1aba5d54d5485fa8d.json",
+      "sha256": "043a23373ae32bf1b7d42a61dea9f7fe5bce1528cb6bc2619a2505e74196834f"
+    }
+  ]
+}

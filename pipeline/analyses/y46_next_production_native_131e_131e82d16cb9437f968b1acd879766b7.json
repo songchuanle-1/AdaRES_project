@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y46",
+  "preregistered_at": "2026-10-15T12:04:43.115721+08:00",
+  "implementation_revision": 1,
+  "production_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y46_component_coherence/__init__.py",
+      "sha256": "c540732d6e3334c85008035cc37b8537b0f85383d5f5a6bf663359fbf2b134bb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y46_component_coherence/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y46_component_coherence/dec.py",
+      "sha256": "7dd952f18632392f5e5a050b4aabcfd10de5bcfdad9c81f494de353dfa56cf8f"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y46_component_coherence/ipdn.py",
+      "sha256": "7cb4b1c5490d0839fcdaf18553983b4c991f69e50474d07e83af9f0f8c937a5a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y46_component_coherence/loss.py",
+      "sha256": "836ff790a0a8b9c55cf465a472c9462699f0753a7e87d0ef74a8946edf31565a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y46_component_coherence/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y46_component_coherence_res.yaml",
+      "sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb"
+    }
+  ],
+  "production_source_receipt": {
+    "path": "pipeline/analyses/y46_production_upload_v2_131e_131e82d16cb9437f968b1acd879766b7.json",
+    "sha256": "c08dd2f81230cc864e12526efbef7103b558224da5abd6d0380ea94a204797ee"
+  },
+  "production_CPU_controls": {
+    "path": "pipeline/analyses/y46_production_cpu_131e_131e82d16cb9437f968b1acd879766b7.json",
+    "sha256": "d0bcb6e09ab2775a5536281227b424b5237ebc3081389a953ed599319181132b"
+  },
+  "next_program": {
+    "path": "scripts/probe_y46_production_native_131e.py",
+    "sha256": "1e1affbd1d690cdb2d30039865fd0cf6dac2dc4a0c74f543ce6ce40fbc66e648"
+  },
+  "next_program_compiled": true,
+  "next_program_executed": false,
+  "test": "Actual independent production released-SPFormer initialization; frozen TRAIN indices0,44,60,101 in two native batches; tools.train2 optimizer updates on all8 new tensors; exact saved model/AdamW/PolyLR restore including actual HF metadata tensors; hook registration after restore.",
+  "subsequent_required_tests": [
+    "Same frozen TRAIN8 native matched disabled/wrong/cached-repeat controls and all8 native gradients.",
+    "Paired serial inference batch1, active128 queries/single selection and original parent comparison.",
+    "Parent/candidate native stress on frozen indices728/6780; report warm paired time and peak memory.",
+    "Six-gate substantive review, fixed post-training plan and tested exact source commit before any receipt or queue."
+  ],
+  "allocation": "Only a live-idle server2 GPU0 or GPU1 with no compute process and an acquired exclusive diagnostic lease; preserve every foreign/current job.",
+  "runner": "scripts/run_adares_authorized_probe.py y46_production_native_131e scripts/probe_y46_production_native_131e.py --token <fresh-owned-token> --seconds 900 --gpu --gpu-id <live-idle-authorized-card>",
+  "limitations": "CPU preparation only. Production native backward, optimizer updates and GPU costs remain UNRUN, not PASS. Original3.49-18.66s and cached0.627-8.277s vs parent0.213-0.297s cost risks preserved; no second revision or validation selection."
+}

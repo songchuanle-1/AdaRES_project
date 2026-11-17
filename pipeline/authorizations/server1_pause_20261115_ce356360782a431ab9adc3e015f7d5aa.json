@@ -1,0 +1,31 @@
+{
+  "project": "AdaRES_project",
+  "source_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_reply": "你暂停server1的实验",
+  "recorded_at": "2026-11-14T16:06:22.782797+00:00",
+  "server": "server-1",
+  "expected_hostname": "dl02-MS-7B73",
+  "resource_use_paused": true,
+  "allowed_gpus": [],
+  "prohibited_until_explicit_user_reauthorization": [
+    "server1_training_and_dispatch",
+    "server1_native_checks",
+    "server1_frozen_evaluation_and_cost"
+  ],
+  "supersedes_resource_grant": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "preserve": [
+    "all_original_training_checkpoints_and_receipts",
+    "all_completed_and_partial_frozen_review_outputs",
+    "server2_GPU0_280W",
+    "server2_GPU1_pause",
+    "Y57_separate_pause",
+    "scientific_goal_bytes",
+    "owning_thread_and_schedule"
+  ],
+  "resource_resume_requires_user_authorization": true,
+  "hardware_changes": false,
+  "scope": "AdaRES_project only; preserve all foreign jobs"
+}

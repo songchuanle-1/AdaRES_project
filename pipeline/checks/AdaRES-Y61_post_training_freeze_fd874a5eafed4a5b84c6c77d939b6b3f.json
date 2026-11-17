@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y61",
+  "frozen_at": "2026-10-24T18:57:11.544453+08:00",
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+  },
+  "code_commit": "9bea5e906be3a478be50442db521e766c446a1ec",
+  "training": "Released SPFormer; seed1999; fixed30; native YAML losses/optimizer/scheduler; one GPU; Q128; single argmax; no validation tuning.",
+  "evaluation": {
+    "split": "Full frozen ScanRefer val9508 expressions/141 scenes",
+    "methods": [
+      "AdaRES-Y61",
+      "AdaRES-Y36",
+      "AdaRES-W2",
+      "AdaRES-B1"
+    ],
+    "repeats": 2,
+    "primary": "FIRST",
+    "metrics": [
+      "mIoU",
+      "Acc@0.25",
+      "Acc@0.5",
+      "active_queries",
+      "latency",
+      "peak_memory"
+    ],
+    "scene_cluster_bootstrap": 10000,
+    "bootstrap_seed": 1999,
+    "TRAIN_size_cuts": [
+      1487,
+      3325
+    ],
+    "material_harm": "Prespecified target-size subgroup difference CI upper<0 versus Y36/W2; retain all negatives.",
+    "uncertainty": "Crossing intervals or too few independent scenes are inconclusive; repeats do not measure training-seed uncertainty."
+  },
+  "resource_condition": "GPU0 runtime cap280W; disclose for trained-cost comparison. Two batches do not bound full-dataset memory; external GPU1 load is not controlled.",
+  "scientific_efficacy": "Unknown until trained and full frozen evaluation is complete."
+}

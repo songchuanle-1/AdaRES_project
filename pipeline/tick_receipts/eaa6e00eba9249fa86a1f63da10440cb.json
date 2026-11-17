@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "eaa6e00eba9249fa86a1f63da10440cb",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T08:17:44.452947+00:00",
+  "recorded_at": "2026-10-16T08:24:51.182149+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: unchanged closure predicate sees own-project queue opening although fresh live evidence shows foreign GPU0 PID19723 and own GPU1 Y50 PID31539. SAME Y52 native test needs idle exclusive GPU; CPU preparation already done. Preserve original retry/evidence and training; no repeated failing finish or equivalent diagnostics, no gate/blocker/queue bypass.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 10,
+    "input_tokens": 2230134,
+    "cached_input_tokens": 2205824,
+    "output_tokens": 9397,
+    "reasoning_output_tokens": 3888,
+    "total_tokens": 2239531,
+    "uncached_input_tokens": 24310,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 1,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

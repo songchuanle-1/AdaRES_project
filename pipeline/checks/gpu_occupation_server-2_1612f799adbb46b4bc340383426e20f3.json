@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "1612f799adbb46b4bc340383426e20f3",
+  "snapshot_generated_at": "2026-10-26T08:42:32.282637+00:00",
+  "snapshot_sha256": "7d69ede622df40958023c98708c50433faa9daa491cbba0ef5ede825d9389517",
+  "servers_sha256": "280bbd05106a77ece1cfad9382a0dd18a7d208ffd733d85bd6e1ebe221bb43f2",
+  "observed_at": "2026-10-26T08:42:49.309336+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y64"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 85, 24138, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 83, 24156, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13813\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 13814\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token 1612f799adbb46b4bc340383426e20f3 --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_1612f799adbb46b4bc340383426e20f3.log",
+    "sha256": "bc8f34637151ac2063058b18ebd4b94492b54c880e4001250cc3d53750ef9e88"
+  }
+}

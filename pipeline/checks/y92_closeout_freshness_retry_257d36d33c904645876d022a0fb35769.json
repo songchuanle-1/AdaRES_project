@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "token": "257d36d33c904645876d022a0fb35769",
+  "recorded_at": "2026-11-08T01:19:17.937001+08:00",
+  "original_helper": {
+    "path": "scripts/record_y92_binding_closeout.py",
+    "sha256": "258bd9e14c29e9afe2e54d68d3a12381cf0682c550f0b409bab24881a1739cce"
+  },
+  "retry_helper": {
+    "path": "scripts/record_y92_binding_closeout_v2.py",
+    "sha256": "b7e0a1149da2f7f629d62f1ea0643213920142d91909b7ef49de3b28b73a3f25"
+  },
+  "original_command": "python -B scripts/record_y92_binding_closeout.py --token 257d36d33c904645876d022a0fb35769",
+  "observed_failure": "AssertionError: Refresh the actual observation under a new label",
+  "failure_location": "record -> fresh(observed, observed_local), unchanged 0<=age<300 seconds guard",
+  "first_attempt_wrote_closeout": false,
+  "original_observations": [
+    {
+      "path": "pipeline/checks/production_adares-y90_257d36d33c904645876d022a0fb35769_final.json",
+      "sha256": "73b61c7326e4e6cf88e7acd127f3e95c11d12a1f652ef1f3812048422aa53ad3"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y91_257d36d33c904645876d022a0fb35769_final.json",
+      "sha256": "85eedf9866702671959748c3e9d3886e31294c7488a414d88c916ed4d087beef"
+    }
+  ],
+  "original_occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_final_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "255c24f078b8c27dc47e59b8c544cf306aa2fb05d38bcebd9b631466fb0ae90e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_final_257d36d33c904645876d022a0fb35769.json",
+      "sha256": "74066538cddaf44bcd1e23e8289947eccb34b5d382c27b08e898bf82b86c3152"
+    }
+  ],
+  "original_files_preserved": true,
+  "retry_changes_only_immutable_output_labels": true,
+  "normalized_AST_identical": true,
+  "scientific_or_numerical_controls_changed": false,
+  "CPU_or_native_scientific_tests_replayed": false,
+  "evidence": [
+    {
+      "path": "scripts/finish_y92_binding_tick.py",
+      "sha256": "752807f490e75a63ccef3001d861198f6b8c4cdf87a4002fceb8c6ede636f9e0"
+    }
+  ]
+}

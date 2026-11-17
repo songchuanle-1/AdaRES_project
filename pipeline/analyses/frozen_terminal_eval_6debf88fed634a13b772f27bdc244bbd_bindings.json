@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "prepared_at": "2026-10-20T21:01:42.247597+08:00",
+  "freezes": {
+    "AdaRES-Y52": {
+      "path": "pipeline/analyses/AdaRES-Y52_post_training_freeze_v2_e4e47d5857d44da683b1d9fed03bfe66.json",
+      "sha256": "d34ac4f97112c5db3fbce7314e2a830687488b8dfc2eba1a6857e712083ef028"
+    },
+    "AdaRES-Y54": {
+      "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+      "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+    }
+  },
+  "terminal": {
+    "path": "pipeline/analyses/terminal_bindings_v3_6debf88fed634a13b772f27bdc244bbd.json",
+    "sha256": "87939dea5b7d59955fc6c0f82019a334aa85fd5b2dcea1eb4fa0b5fd54c5f6f6"
+  },
+  "programs": [
+    {
+      "path": "pipeline/analyses/frozen_adares_y52_6debf88fed634a13b772f27bdc244bbd_program.py",
+      "sha256": "e5beba83a470dbe455b786c0c165443d24337e64bd6eafc7e42820f2337875b4"
+    },
+    {
+      "path": "pipeline/analyses/frozen_adares_y54_6debf88fed634a13b772f27bdc244bbd_program.py",
+      "sha256": "467f31c1d7b8219e2633edcf2be887185703f6c8b210eca91560b4d8360c31e3"
+    },
+    {
+      "path": "pipeline/analyses/frozen_w2_6debf88fed634a13b772f27bdc244bbd_program.py",
+      "sha256": "6ae67c5a856090165cc2419db78fb58c06a0954c1df9fc142d1ed17adc66e423"
+    },
+    {
+      "path": "pipeline/analyses/frozen_b1_6debf88fed634a13b772f27bdc244bbd_program.py",
+      "sha256": "679f89b2d875ba493617984939a703d24fd993c14a225e5fce1c946da08087c5"
+    },
+    {
+      "path": "pipeline/analyses/frozen_y36_6debf88fed634a13b772f27bdc244bbd_program.py",
+      "sha256": "88f64cb73d384ea807a6b66d1bcecff1de13befe538debb9949076925b958cfa"
+    }
+  ],
+  "body": {
+    "path": "scripts/probe_terminal_frozen_eval_6deb.py",
+    "sha256": "35c6fcd1ae89feadd9bb57bb9563bd6fa44a1115ad5f69e1bb5d590c1825d900"
+  },
+  "adapter_sha256": "ac627a9106c9d545dcb792be046bd8aa3349dedabf660cfa95bf6faae3765789",
+  "protocol": "All9508expressions/141scenes twice per method; FIRST primary, scene-bootstrap10000/1999 and TRAIN cuts1487/3325/harm rules unchanged.",
+  "comparative_result": "pending"
+}

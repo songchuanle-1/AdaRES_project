@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "tick_token": "bf900942292b41e09fda663f4736180a",
+  "snapshot_at": "2026-10-30T16:49:24.453239+00:00",
+  "observed_at": "2026-10-31T00:59:14.043577+08:00",
+  "CPU_version": {
+    "path": "pipeline/checks/y72_cpu_preparation_bf900942292b41e09fda663f4736180a_version.json",
+    "sha256": "18cb28962ed1be7a83d8a12c6276c431e42c63cd5d07fb84c376db727b33005d"
+  },
+  "CPU_source_snapshot": {
+    "path": "pipeline/checks/y72_cpu_preparation_bf900942292b41e09fda663f4736180a_source_snapshot.json",
+    "sha256": "396f0bdc053ef2797b4205f94570cd44c4ddb3399e4cc7cdb6962c497afad8ff"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y72_cpu_bf900942292b41e09fda663f4736180a.json",
+    "sha256": "22b1f070a43f598b77cb5dee3a4228de5efc177cdf3c9a6bf540602138468112"
+  },
+  "real_training_progress": [
+    {
+      "path": "pipeline/checks/y68_server2_local_y71_phase_bf900942292b41e09fda663f4736180a.json",
+      "sha256": "a2b35cdc2feffde957e974f2d033fed7603f97c56b1f3e492a6e36083a5ce763"
+    },
+    {
+      "path": "pipeline/checks/y70_server2_gpu1_phase_progress_bf900942292b41e09fda663f4736180a.json",
+      "sha256": "a1033a220efbac9aafc617adc3f197e0a9c8859217c962a18b1e0045a42aca8e"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_bf900942292b41e09fda663f4736180a.json",
+      "sha256": "889ada335be8b8da4a93e19c891fdfb2d6970ab09914e117a45fe08bdfbb3d01"
+    }
+  ],
+  "occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_bf900942292b41e09fda663f4736180a.json",
+      "sha256": "1637ad9dddbcffddc6eb7105eb665aba40963eb2c181002f67fb74ba22d20011"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_bf900942292b41e09fda663f4736180a.json",
+      "sha256": "86e7f55ebf4c1b731a47af8f4e9b749b2908c1d9497f4111a030e9619939cb73"
+    }
+  ],
+  "Y71_readiness": {
+    "path": "pipeline/checks/y71_gpu0_readiness_bf900942292b41e09fda663f4736180a_check.json",
+    "sha256": "7cd333be8de69d9f913febc3c19b9304795e5a87771a900ac6e12b498210b934"
+  },
+  "Y71_exact_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "Y72_scoped_commit_pending": true,
+  "Y72_native_GPU_program_pending": true,
+  "Y72_native_GPU_executed": false,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "Y57_paused": true,
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_bf900942292b41e09fda663f4736180a.md",
+    "sha256": "3243b597addd49e5a584976daf9c4e8d71b0d498392d48a7b2c7c86b733577e1"
+  },
+  "recording_repair": {
+    "path": "pipeline/checks/y72_closure_recording_repair_bf900942292b41e09fda663f4736180a.json",
+    "sha256": "1409c0610b7f6e7f694797ec309d0fddad412b9eb06f4b07076b3da165a200a5"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "next_action": "First preserve exact Y71 HEAD87019 handoff. Observe original three runs; Y68 fixed30 verification/canonical archive then fresh idle/unreserved GPU0 then Y71 native two-step PASS then full evaluation freeze/admit/gated dispatch. Protect or rebind live exact-head contracts before Y72 scoped commit/native plan preparation; actual native TRAIN two-step remains mandatory. No CPU-based admission or protected restart."
+}

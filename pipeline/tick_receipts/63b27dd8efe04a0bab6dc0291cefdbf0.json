@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "token": "63b27dd8efe04a0bab6dc0291cefdbf0",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-25T13:39:32.416968+00:00",
+  "recorded_at": "2026-10-25T14:06:32.119181+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Y62 is verified training on newly authorized server-1 GPU0; Y63 admitted and waiting, budget two fulfilled. Preserve both tasks. Existing exclusive_gpu_slot closure predicate still rejects five honest server-2 external-occupation holds despite measured foreign compute. Evidence and full report saved; abort this audit tick only, without stopping training or bypassing the checker.",
+  "context_committed": false,
+  "lease_release": "released",
+  "usage": {
+    "status": "partial_window",
+    "calls": 44,
+    "input_tokens": 12923030,
+    "cached_input_tokens": 12882944,
+    "output_tokens": 50028,
+    "reasoning_output_tokens": 19222,
+    "total_tokens": 12973058,
+    "uncached_input_tokens": 40086,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 7,
+    "new_evidence_references": 42,
+    "advanced_to_training": 1,
+    "dispositions": {
+      "admission": 1,
+      "training": 1,
+      "rejected": 0,
+      "blocked": 5,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  },
+  "lease_released_at": "2026-10-25T14:06:32.951548+00:00"
+}

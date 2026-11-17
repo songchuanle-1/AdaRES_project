@@ -1,0 +1,130 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "token": "e5e0b36314b84a08be8493b934595019",
+  "observed_at": "2026-11-14T03:57:22.732060+08:00",
+  "disposition": "complete_inconclusive",
+  "FIRST_miou": 0.5082609879270078,
+  "target": 0.515,
+  "target_reached": false,
+  "full_native_passes": 8,
+  "paired_scene_bootstrap_draws": 10000,
+  "seed": 1999,
+  "subgroup_material_harm": false,
+  "all_overall_comparison_CIs_include_zero": true,
+  "confirmed_improvement": false,
+  "mechanism_falsified": false,
+  "promotion": false,
+  "training_protocol": "Original released backbone/seed1999/fixed30; best23 original checkpoint, no restart or epoch tuning",
+  "cost_summary": {
+    "candidate": {
+      "train8": {
+        "median_seconds": 0.08699897001497447,
+        "descriptive_p95_seconds": 0.12158167122397572,
+        "peak_allocated_gib": 0.9609675407409668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "median_seconds": 0.20559324300847948,
+        "descriptive_p95_seconds": 0.24266143946442753,
+        "peak_allocated_gib": 1.2439332008361816,
+        "peak_reserved_gib": 1.7578125
+      },
+      "native_train_stress": {
+        "median_seconds": 0.9680259968154132,
+        "peak_allocated_gib": 12.851600170135498,
+        "peak_reserved_gib": 13.40234375
+      }
+    },
+    "parent": {
+      "train8": {
+        "median_seconds": 0.08369991206564009,
+        "descriptive_p95_seconds": 0.12848754276055843,
+        "peak_allocated_gib": 0.9607234001159668,
+        "peak_reserved_gib": 1.234375
+      },
+      "largest_pair": {
+        "median_seconds": 0.20856386004015803,
+        "descriptive_p95_seconds": 0.2422255554702133,
+        "peak_allocated_gib": 1.2436890602111816,
+        "peak_reserved_gib": 1.7578125
+      },
+      "native_train_stress": {
+        "median_seconds": 0.9683766039088368,
+        "peak_allocated_gib": 12.850867748260498,
+        "peak_reserved_gib": 13.400390625
+      }
+    }
+  },
+  "parameters": {
+    "candidate": 164695173,
+    "parent": 164629637
+  },
+  "parameter_delta": 65536,
+  "serial_scene_pairs_verified": true,
+  "native_memory_only_stress_batches": 4,
+  "native_memory_only_updates_including_warmups": 20,
+  "full_cost_and_postaudit_complete": true,
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0
+  },
+  "source_and_original_checkpoint_bytes_preserved": true,
+  "limitations": [
+    "One trained seed/checkpoint per method; native repeats quantify observed prediction noise, not seed variance or a universal bound.",
+    "Point estimates below Y36/W2 and all overall paired CIs cross zero; no demonstrated improvement or equivalence, and no prespecified subgroup harm.",
+    "Frozen TRAIN8 plus two largest-pair scenes; serial warm2/read3 and separate batch2 memory-only native stress; not a full-data memory bound.",
+    "Sequential candidate/parent order and descriptive p95 do not establish causal hardware effects or Pareto dominance."
+  ],
+  "evidence": [
+    {
+      "path": "scripts/complete_y96_scientific_review.py",
+      "sha256": "efe5ec01e1a34108e70a69edede219dd00d8780ee4cf9ed0bb47e28e3481b858"
+    },
+    {
+      "path": "pipeline/analyses/y96_full_review_e5e0b36314b84a08be8493b934595019/formal_comparison.json",
+      "sha256": "a1bc87eaa9e677dcf8c2e49875db5a9b9546e4c7b9b435ac9204f2ac2ea4e007"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y96_4198029edcde47b7a8686b8e8dcafad4_post_training_freeze.json",
+      "sha256": "50213e2f1fda98e5e9477eaa5c030952d1d913d3d1aeff86d1fc6aa984dfc154"
+    },
+    {
+      "path": "pipeline/checks/y96_server1_fixed30_y98_cc7e16a3523147a4be1fa5774e4888ce.json",
+      "sha256": "3999d2d4a3db05cb969797a23fc2a6527b2772771d2c41b00e84eb1eab61c6c0"
+    },
+    {
+      "path": "pipeline/checks/y96_server1_fixed30_y98_cc7e16a3523147a4be1fa5774e4888ce_archive_binding.json",
+      "sha256": "985a7afda4fad77a73d5962743ee72b50b1a89422f553ccf7a5a44c9168e7dfc"
+    },
+    {
+      "path": "pipeline/checks/y96_frozen_cost_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "c9dffa77e6f6fbd7c3c1907e16294d9b54cc168663f057af87894611f091d2f8"
+    },
+    {
+      "path": "pipeline/checks/y96_frozen_cost_e5e0b36314b84a08be8493b934595019.py",
+      "sha256": "1f6ca2b99e00cf079fc5688f8552407e87a15b17f5716ef1422b30f8addd6bc7"
+    },
+    {
+      "path": "pipeline/checks/y96_cost_launch_e5e0b36314b84a08be8493b934595019.json",
+      "sha256": "b6f16586edbc15b35f0ad85a2e130bc81885140d31aa51f34c989c1171a98379"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/remote_manifest.json",
+      "sha256": "a6aa73be1e5861492ea0d97bbb768e82173664b501a5f46a80ca4e2b71c57f80"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/trained_cost.json",
+      "sha256": "92679041f439ab1a76180e2863bd5d499c2b5a9aa85a5855bed2e2e090495ddf"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/postaudit.json",
+      "sha256": "2f8a22416c03882c444af4563c59262d17ec9b6e231047090c23b7cfb687215c"
+    },
+    {
+      "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/worker.log",
+      "sha256": "36f688e937a123a450c9a608aa644921f0f6beeb3061a7120afa3a2632983825"
+    }
+  ]
+}

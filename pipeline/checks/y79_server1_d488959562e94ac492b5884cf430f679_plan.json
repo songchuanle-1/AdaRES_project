@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y79",
+  "config": "configs_song/model_paper5/adares_y79_query_language_feedback_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "e0c7dba199fcf1a009941450d04aeb799418a7e6",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "retained_branch": "refs/heads/adares-y79-query-language-feedback",
+  "planned_command": "python -B scripts/y79_server1_alternative.py run --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved server-1 GPU0 after original Y76 canonical fixed30 archive; exact private runtime/data/path mapping and existing350W. Preserve current Y77/Y78 and all other jobs.",
+  "checks": "Native YAML/tools.train/TRAIN two finite losses/backward/optimizer; six exact current-query/language-FFN/padding identities and undetached feedback gradients, six actual qla and five next-lla consumers, seven shared confidence/query-norm consumers, native float64 attention/context/projection formula, zero first/next-step response, native modes/finite new-weight/previous-mask gradients and real updates/peak memory.",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 11,
+  "Python38_compile": true,
+  "program": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_native_program.py",
+    "sha256": "1177f772b62dffd023b681e6c7fa843c8592ca4bcf92352ebba60ed3d9d2c9d2"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_cpu_program.py",
+    "sha256": "10eb89e3d7775e960e011b46bf11716bbf67f3662d3cd542f85225567988b531"
+  },
+  "runtime_path_mappings": [
+    {
+      "source": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+      "target": "/data1/songcl/Project/AdaRES_project/data"
+    },
+    {
+      "source": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "target": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints"
+    }
+  ],
+  "previous_plan": {
+    "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c_gpu0_plan.json",
+    "sha256": "837bba427c155dd2c81223d4c56a0048f3be3ba9d05929407e9ef51a6fb9e0f3"
+  },
+  "activation_required": true,
+  "activated": false
+}

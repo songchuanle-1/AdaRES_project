@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "token": "01dd8c0ec7cc42dc9bede64a8c5c684c",
+  "id": "AdaRES-Y92",
+  "program": {
+    "path": "pipeline/checks/y92_frozen_cost_01dd8c0ec7cc42dc9bede64a8c5c684c.py",
+    "sha256": "41e42fac5b705f3e0bcaa7e426de0254c056f118771ba16a137b4a29d888cc69"
+  },
+  "original_cost_source": {
+    "path": "scripts/probe_y35_trained_cost_fixed.py",
+    "sha256": "e3859b80ef211cf7d0d0d15a1cfc4441288935a9098a2b71256602ebf189e035"
+  },
+  "scientific_AST_equivalent_after_candidate_identity_parameters_and_outside_timing_progress_markers": true,
+  "markers_outside_all_measurement_intervals": true,
+  "inference_protocol": "Original first8 unique TRAIN scenes plus indices728/6780, batch1, augment/elastic disabled, seed1999, warm2/read3",
+  "native_stress_protocol": "Original two predetermined TRAIN batch2 groups, fresh optimizer, warm2/read3;20 memory-only updates total; no checkpoint writes",
+  "resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0,
+    "note": "Existing power preserved; full paired evaluation/cost on this device; two batches are not a full-dataset memory bound."
+  },
+  "launch_started": false,
+  "checkpoint_loaded": false,
+  "GPU_used": false,
+  "evidence": [
+    {
+      "path": "scripts/y92_frozen_trained_cost.py",
+      "sha256": "0dfc0259a3d59e133bfbfc0e84f7d1c94dc59a9afb82e36c656a4eb3d892bad7"
+    },
+    {
+      "path": "scripts/y101_frozen_trained_cost.py",
+      "sha256": "9aa17f6e1f124bfb3efbb5b7b1f33e7e10e1d968f2144c184340adf9e57ea652"
+    },
+    {
+      "path": "scripts/probe_y35_trained_cost_fixed.py",
+      "sha256": "e3859b80ef211cf7d0d0d15a1cfc4441288935a9098a2b71256602ebf189e035"
+    },
+    {
+      "path": "pipeline/checks/y92_frozen_cost_01dd8c0ec7cc42dc9bede64a8c5c684c.py",
+      "sha256": "41e42fac5b705f3e0bcaa7e426de0254c056f118771ba16a137b4a29d888cc69"
+    },
+    {
+      "path": "pipeline/analyses/y92_full_review_01dd8c0ec7cc42dc9bede64a8c5c684c/formal_comparison.json",
+      "sha256": "a222272c4f629e9257582cf5d3d728e1fc5c7a0a6c0bfa5d01c71771fc6e32e5"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y92_06710ed9596b4721bb1aa67ca0fdaf97_post_training_freeze.json",
+      "sha256": "b866bf8a784b9b44ff63cb1dd7de74fd6288b0b84a1f2280a45c9eaa85a76f95"
+    },
+    {
+      "path": "pipeline/checks/y92_server1_fixed30_y93_ab9cf3f30d5a40d28b3c43f4b85083ab.json",
+      "sha256": "a8f0565fdfb6eebe64bbac699d1c48ddecf2e428f0790086542b446121004127"
+    },
+    {
+      "path": "pipeline/checks/y101_review_runtime_v2_037ef8a032b64a4db7849e6bd58df591.json",
+      "sha256": "b519686927a95336265e360b371a49a25b9da426520b66522aeed3a52d287952"
+    }
+  ]
+}

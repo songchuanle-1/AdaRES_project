@@ -1,0 +1,229 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y82",
+  "config": "configs_song/model_paper5/adares_y82_scale_product_res.yaml",
+  "code_commit": "5773768ffb87d7fea7432e85fd0da561556aa2fc",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.364487648010254
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "fusion_calls": 6,
+      "qla_consumption_calls": 6,
+      "query_norm_consumption_calls": 7,
+      "both_input_gradients_finite": true,
+      "new_gradient_max": 0.003791891736909747,
+      "step": 0,
+      "parameter_update_max": 9.99997355393134e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "fusion_calls": 6,
+      "qla_consumption_calls": 6,
+      "query_norm_consumption_calls": 7,
+      "both_input_gradients_finite": true,
+      "new_gradient_max": 0.002321824664250016,
+      "step": 1,
+      "parameter_update_max": 0.00010013325663749129
+    }
+  ],
+  "fusion_paths": [
+    {
+      "step": 0,
+      "stage": 0,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 1,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 2,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 3,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 4,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 5,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 0,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.01804744079709053,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 1,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.03023737668991089,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 2,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.032218024134635925,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 3,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.03002190589904785,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 4,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.03516045957803726,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 5,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.031848788261413574,
+      "original_coarse_identity": true,
+      "original_fine_identity": true,
+      "both_inputs_undetached": true,
+      "float64_product_projection_reference": true
+    }
+  ],
+  "fusion_calls": 12,
+  "qla_consumption_calls": 12,
+  "query_norm_consumption_calls": 14,
+  "shared_head_calls": 14,
+  "static_mask_features_preserved": true,
+  "original_initial_prediction_preserved": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6702497792,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/data1/songcl/Project/AdaRES_project/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native two-step TRAIN only; no efficacy or full-dataset memory guarantee.",
+  "command": "python -B scripts/y82_server1_alternative.py run --token 1fdaad021c7c425f9013d075ef24480d",
+  "server": "server-1",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y82_server1_smoke_1fdaad021c7c425f9013d075ef24480d.json",
+      "sha256": "3f80b61a23101992e8a9f4b49d39bfb9b7f70ea489d3e4c81227cbc4b40aaf60"
+    },
+    {
+      "path": "pipeline/analyses/y82_server1_smoke_1fdaad021c7c425f9013d075ef24480d.log",
+      "sha256": "579b49241029b0fa06ed1bb8f34cbad1194aec5c1f9b1996cbd8235115cd759f"
+    },
+    {
+      "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_native_program.py",
+      "sha256": "12274da670c672f015e4a746eeb6a354604f4d4e095dca926808e9054c9d603d"
+    },
+    {
+      "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_plan.json",
+      "sha256": "bdabb98c4633bcd676856fcaaae8704d5b2fbec6f8974c9d01784ceda164ffae"
+    }
+  ]
+}

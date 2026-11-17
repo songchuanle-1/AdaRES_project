@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "kind": "read_only_deployment_dependency_not_scientific_evidence",
+  "token": "b5a843848cd34b83bf362acf98c88634",
+  "ids": ["AdaRES-Y52", "AdaRES-Y54"],
+  "observed_client_shanghai": "2026-10-19T13:46:54.7532041+08:00",
+  "host": "192.168.1.163",
+  "user": "songcl",
+  "hostname": "dl01-MS-7C60",
+  "authentication": "Existing SSH key, BatchMode, strict host checking, password and keyboard-interactive authentication disabled; fresh connection with no ControlPath.",
+  "user_reported_mount_restored": true,
+  "current_session_filesystems": [
+    {"target": "/", "source": "/dev/nvme0n1p4", "fstype": "ext4"},
+    {"target": "/var/lib/docker", "source": "/dev/nvme0n1p4[/var/lib/docker]", "fstype": "ext4"}
+  ],
+  "pid1_mountinfo_same_visible_ext4_filesystems": true,
+  "source_path_exists": false,
+  "source_path": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+  "earlier_this_turn_missing_paths": [
+    "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data",
+    "/bak_home/songcl/Project/AdaRES_project/AdaRES/.codex_source_commit"
+  ],
+  "earlier_fstab_lookup": "At client 13:39:15-13:39:16, findmnt --fstab --evaluate --target /bak_home returned no mapping. Its individual return code was not captured; do not infer which volume belongs there.",
+  "earlier_authorized_gpu_observation": "This turn GPU0/GPU1 each reported memory.used=1MiB and utilization=0, with no compute rows. Exact per-probe client timestamp was not recorded; this is not a current reservation or launch guarantee.",
+  "alternate_saved_route": {
+    "client_shanghai": "2026-10-19T13:48:14.5331615+08:00",
+    "alias": "server-02-songcl-gongwang",
+    "result": "Strict host verification rejected the connection: no ED25519 host key known for 222.200.181.37. No alternate-host identity or mount state was established; host checking was not relaxed."
+  },
+  "probe_limitations": [
+    "The first optional findmnt --real command was unsupported on this server; subsequent findmnt without --real and findmnt -N 1 produced the filesystem observations above.",
+    "No disk UUID was identified as the original /bak_home volume; device ordering is not evidence of that identity.",
+    "User-reported restoration and the observed training-host paths do not yet agree; obtain the actual mount path/host before changing deployment mappings.",
+    "Remote wall clock was not used for observation dates.",
+    "Only deployment dependencies were checked; no new scientific gate or training result exists."
+  ],
+  "remote_mutations": 0,
+  "training_launches": 0,
+  "source_marker_created_or_modified": false,
+  "required_next_step": "Confirm the actual restored mount path on server-2 and make the original AdaRES code/checkpoint/data paths visible. Reverify source marker, admitted commit and fresh authorized GPU occupation/leases before canonical dispatch; do not relaunch blindly or repeat already resolved commit consent."
+}

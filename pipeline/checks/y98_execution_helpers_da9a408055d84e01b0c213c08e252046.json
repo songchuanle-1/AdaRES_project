@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "token": "da9a408055d84e01b0c213c08e252046",
+  "id": "AdaRES-Y98",
+  "actual_native": {
+    "path": "pipeline/analyses/y98_server2_smoke_da9a408055d84e01b0c213c08e252046.json",
+    "sha256": "0785a038775b4df54a18a69143568fc0c7acc099d68b48d3237644d0a1cddf37"
+  },
+  "helpers": [
+    {
+      "path": "scripts/advance_y98.py",
+      "sha256": "a04327d98abaca65f82a261c44c8be916fb22bec110ca1375b1615174b17fe3a"
+    },
+    {
+      "path": "scripts/y98_deployment.py",
+      "sha256": "21a5fbfcdf2d8e846fe9a51c8c57261289ad89584111100b8d037bd9f9c5fd1d"
+    },
+    {
+      "path": "scripts/y96_y98_terminal_contract.py",
+      "sha256": "c922cc5ee31dd35d26c0882ab0a0efe9cf565e5413bbb96b2db74def95451b3d"
+    },
+    {
+      "path": "scripts/prepare_y96_y98_terminal_binding.py",
+      "sha256": "b2a481ca3661d04d01c84d83c1ba6d1a8ca71ff50b06acb02f303d7410678fbd"
+    },
+    {
+      "path": "scripts/test_y96_y98_terminal_binding.py",
+      "sha256": "d1ac23c17c866644f06935304c2378010bc9a4d93731be4168a153b106486126"
+    }
+  ],
+  "helper_tests_executed": false,
+  "source_selected": false,
+  "admitted": false,
+  "launched": false,
+  "evidence": [
+    {
+      "path": "scripts/create_y98_execution_helpers.py",
+      "sha256": "3ab3e6032f3cd9ad2e8022d7b0538f8b27eb34cce2d431024491ff10868b6989"
+    },
+    {
+      "path": "scripts/advance_y98.py",
+      "sha256": "a04327d98abaca65f82a261c44c8be916fb22bec110ca1375b1615174b17fe3a"
+    },
+    {
+      "path": "scripts/y98_deployment.py",
+      "sha256": "21a5fbfcdf2d8e846fe9a51c8c57261289ad89584111100b8d037bd9f9c5fd1d"
+    },
+    {
+      "path": "scripts/y96_y98_terminal_contract.py",
+      "sha256": "c922cc5ee31dd35d26c0882ab0a0efe9cf565e5413bbb96b2db74def95451b3d"
+    },
+    {
+      "path": "scripts/prepare_y96_y98_terminal_binding.py",
+      "sha256": "b2a481ca3661d04d01c84d83c1ba6d1a8ca71ff50b06acb02f303d7410678fbd"
+    },
+    {
+      "path": "scripts/test_y96_y98_terminal_binding.py",
+      "sha256": "d1ac23c17c866644f06935304c2378010bc9a4d93731be4168a153b106486126"
+    }
+  ]
+}

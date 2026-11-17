@@ -1,0 +1,59 @@
+BINDINGS = {'commit': '8943c8c460501b200a8dea958964579ffea65f76', 'methods': {'AdaRES-Y52': {'config': 'configs_song/model_paper5/adares_y52_point_target_res.yaml', 'checkpoint': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_034958/best.pth', 'last': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261020_034958/last.pth', 'config_sha256': 'db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6'}, 'AdaRES-Y54': {'config': 'configs_song/model_paper5/adares_y54_fine_support_res.yaml', 'checkpoint': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009/best.pth', 'last': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009/last.pth', 'config_sha256': 'db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6'}, 'Y36': {'config': 'configs_song/model_paper5/adares_y36_local_adjacency_res.yaml', 'checkpoint': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y36_local_adjacency_res/20261009_060041/best.pth', 'checkpoint_sha256': 'f504f6ed548affa54eb7292cf5a7d930158be5dfaac291417f4852ad0f0698d1', 'config_sha256': '1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03'}, 'W2': {'config': 'configs_song/model_paper5/adares_w2_pointmass_competition_res.yaml', 'checkpoint': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth', 'checkpoint_sha256': 'e3407283384b4899524d055ac146c7bd6cf39cedb10e58a44ad74eb522009f52', 'config_sha256': '1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03'}, 'B1': {'config': 'configs_song/model_paper5/adares_b1_standard_res.yaml', 'checkpoint': '/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_b1_standard_res/20260918_010854/best.pth', 'checkpoint_sha256': 'cfc89ec0dc64f240913968f307d19c623f5ff0dc51c8e61de64e35abea05dd8b', 'config_sha256': 'd6d7537176eff38f53474b1dac1b3bed19da131eb52aba2340f0301cf1b7ff51'}}, 'sources': [{'path': 'ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py', 'lf_sha256': '8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722'}, {'path': 'ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py', 'lf_sha256': '1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd'}, {'path': 'ipdn/model_paper5/adares_w2_pointmass_competition/dec.py', 'lf_sha256': '7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac'}, {'path': 'ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py', 'lf_sha256': '63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97'}, {'path': 'ipdn/model_paper5/adares_w2_pointmass_competition/loss.py', 'lf_sha256': '4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084'}, {'path': 'ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py', 'lf_sha256': '03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b'}, {'path': 'ipdn/model_paper5/adares_y52_point_target/__init__.py', 'lf_sha256': '8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722'}, {'path': 'ipdn/model_paper5/adares_y52_point_target/backbone.py', 'lf_sha256': '1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd'}, {'path': 'ipdn/model_paper5/adares_y52_point_target/dec.py', 'lf_sha256': '7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac'}, {'path': 'ipdn/model_paper5/adares_y52_point_target/ipdn.py', 'lf_sha256': '81c1a4751f6c2a8f66bc1f9b62680d5521542fa687e10bcca2b780b65295b52a'}, {'path': 'ipdn/model_paper5/adares_y52_point_target/loss.py', 'lf_sha256': 'dea6f16d23b2800dcd6040b1cd1512affde5a73d685eb26052aeac0c2c8b1f59'}, {'path': 'ipdn/model_paper5/adares_y52_point_target/sample_model.py', 'lf_sha256': '03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b'}, {'path': 'ipdn/model_paper5/adares_y54_fine_support/__init__.py', 'lf_sha256': '8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722'}, {'path': 'ipdn/model_paper5/adares_y54_fine_support/backbone.py', 'lf_sha256': '1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd'}, {'path': 'ipdn/model_paper5/adares_y54_fine_support/dec.py', 'lf_sha256': '1081039d6797587f6e13cb180e26d66f1aaeb00dcbb3a1328e73c83ac58042a0'}, {'path': 'ipdn/model_paper5/adares_y54_fine_support/ipdn.py', 'lf_sha256': '63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97'}, {'path': 'ipdn/model_paper5/adares_y54_fine_support/loss.py', 'lf_sha256': '4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084'}, {'path': 'ipdn/model_paper5/adares_y54_fine_support/sample_model.py', 'lf_sha256': '03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b'}, {'path': 'ipdn/model_paper5/adares_y36_local_adjacency/__init__.py', 'lf_sha256': '8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722'}, {'path': 'ipdn/model_paper5/adares_y36_local_adjacency/backbone.py', 'lf_sha256': '1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd'}, {'path': 'ipdn/model_paper5/adares_y36_local_adjacency/dec.py', 'lf_sha256': 'e1096d36e7dec68d5dc50ba600f3588d0c654bbf644c9d0b6da54db695c3f43a'}, {'path': 'ipdn/model_paper5/adares_y36_local_adjacency/ipdn.py', 'lf_sha256': '63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97'}, {'path': 'ipdn/model_paper5/adares_y36_local_adjacency/loss.py', 'lf_sha256': '4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084'}, {'path': 'ipdn/model_paper5/adares_y36_local_adjacency/sample_model.py', 'lf_sha256': '03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b'}, {'path': 'ipdn/model_paper5/adares_b1_standard/__init__.py', 'lf_sha256': 'a53d119ec051c707f63b7a91bcca47985932f4f82c85e0f7dbcc99eace051eac'}, {'path': 'ipdn/model_paper5/adares_b1_standard/backbone.py', 'lf_sha256': '1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd'}, {'path': 'ipdn/model_paper5/adares_b1_standard/dec.py', 'lf_sha256': '616428fab3580ae4aaaeab887296fa8d899d5d96691cb34b7c8b4edcf5470082'}, {'path': 'ipdn/model_paper5/adares_b1_standard/ipdn.py', 'lf_sha256': '6d32175ce879c32c8ec4cff31106a9cf99b50f8444d70159d4dd8b89ea60bdf6'}, {'path': 'ipdn/model_paper5/adares_b1_standard/loss.py', 'lf_sha256': '86561df2af1664c8bca29b7673c4ea86c400bf169f69c1a32a3ff35eda399d86'}, {'path': 'ipdn/model_paper5/adares_b1_standard/sample_model.py', 'lf_sha256': '03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b'}]}
+'Read exact terminal checkpoints and source bindings; never resume training.'
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import torch
+assert P['physical_gpu'] is None
+root = Path(P['root'])
+assert subprocess.check_output(['hostname']).decode().strip() == 'dl01-MS-7C60'
+assert (root / '.codex_source_commit').read_text().strip() == BINDINGS['commit']
+
+def digest(path):
+    result = hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for block in iter(lambda: stream.read(8 * 1024 * 1024), b''):
+            result.update(block)
+    return result.hexdigest()
+for source in BINDINGS['sources']:
+    raw = (root / source['path']).read_bytes()
+    assert hashlib.sha256(raw.replace(b'\r\n', b'\n')).hexdigest() == source['lf_sha256'], source['path']
+commands = []
+for command_path in Path('/proc').glob('[0-9]*/cmdline'):
+    try:
+        argv = command_path.read_bytes().split(b'\x00')
+    except OSError:
+        continue
+    if b'tools/train.py' in argv:
+        commands.append(argv)
+methods = {}
+for identity, binding in BINDINGS['methods'].items():
+    assert not any((binding['config'].encode() in argv for argv in commands)), identity
+    assert digest(root / binding['config']) == binding['config_sha256']
+    path = Path(binding['checkpoint'])
+    assert path.is_file()
+    sha = digest(path)
+    if binding.get('checkpoint_sha256'):
+        assert sha == binding['checkpoint_sha256'], identity
+    checkpoint = torch.load(str(path), map_location='cpu')
+    meta = checkpoint['meta']
+    observation = dict(path=str(path), sha256=sha, bytes=path.stat().st_size, epoch=int(meta['epoch']), best_miou=float(meta['best_miou']), model_tensors=len(checkpoint['model']))
+    del checkpoint
+    row = dict(binding, checkpoint_sha256=sha, best=observation)
+    if 'last' in binding:
+        last = Path(binding['last'])
+        checkpoint = torch.load(str(last), map_location='cpu')
+        meta = checkpoint['meta']
+        assert int(meta['epoch']) == 30, 'Fixed30 terminal checkpoint missing'
+        optimizer = checkpoint['optimizer']
+        scheduler = checkpoint['scheduler']
+        row['last_observation'] = dict(path=str(last), sha256=digest(last), bytes=last.stat().st_size, epoch=int(meta['epoch']), best_miou=float(meta['best_miou']), optimizer_state_tensors=len(optimizer['state']), scheduler_last_epoch=int(scheduler['last_epoch']))
+        assert optimizer['state'] and int(scheduler['last_epoch']) == 30
+        assert float(meta['best_miou']) == observation['best_miou']
+        del checkpoint
+        row['fixed30_finished'] = True
+    methods[identity] = row
+assert (root / '.codex_source_commit').read_text().strip() == BINDINGS['commit']
+result = dict(complete=True, token=P['token'], code_commit=BINDINGS['commit'], methods=methods, source_bindings=BINDINGS['sources'], boot_id=Path('/proc/sys/kernel/random/boot_id').read_text().strip(), mount=subprocess.check_output(['findmnt', '-n', '-o', 'SOURCE,TARGET,UUID', '--target', '/bak_home']).decode().strip(), no_training_process_for_methods=True, no_checkpoint_or_source_writes=True, limitation='Checkpoint metadata is not a fresh full evaluation. Monitor segment best is not substituted for carried canonical best. No training/restart/admission.')
+Path(P['output']).write_text(json.dumps(result), encoding='utf-8')

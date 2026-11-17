@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "bc9224a83102439c96d5a5cf164b39d2",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T23:50:11.420933+00:00",
+  "recorded_at": "2026-10-16T23:58:16.441729+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Known unchanged closure mismatch: CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. At 07:51 Shanghai retry was not due; actual close-time check at 07:53:52 found it due and continued with exactly one resource probe, no artificial wait. Fresh client window 2026-10-17T07:54:17.263409+08:00 to 07:54:19.892139+08:00 confirms GPU0 foreign PID19723 and GPU1 own Y50 PID31539, neither idle. SAME Y50 Train[26/30] steps1208 to1213/4686, best still0.5032. SAME frozen Y52 retained with two hashed evidence refs, next retry08:54:19.892139+08:00. Final six-section report and seven-section memory verified; preliminary deferred note preserved. No new scientific tests, model revisions, admissions or launches; no repeated known-failing finish or checker/goal changes. Honest INCOMPLETE; release only owned lease.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 14,
+    "input_tokens": 1825728,
+    "cached_input_tokens": 1785216,
+    "output_tokens": 18928,
+    "reasoning_output_tokens": 5971,
+    "total_tokens": 1844656,
+    "uncached_input_tokens": 40512,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 2,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

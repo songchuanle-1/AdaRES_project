@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "token": "c15addc5f96f406593c63f1dd9aa11f0",
+  "kind": "operational_counterexample_not_scientific_candidate",
+  "tested_at": "2026-10-17T14:52:55.190773+08:00",
+  "snapshot_at": "2026-10-17T06:50:09.161507+00:00",
+  "source": {
+    "path": "C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\foreground_tick.py",
+    "sha256": "a78da0060b280300359adc58a20f6c325cabb487313492112e8fc0bf4535bee6",
+    "predicate_line": 233,
+    "cooldown_guard_line": 234
+  },
+  "probe": {
+    "path": "scripts/probe_closed_cooldown_c15a.py",
+    "sha256": "e06a712852668517bfec5dae17bba2bd73d7dd396ac3539e7c1308ac9856a0bc"
+  },
+  "ledger_before_and_after_sha256": "99b9d2b1a8120e847da838150f08be66849913ad30e17955c0903b90a1849eb4",
+  "actual_ledger_predicate": {
+    "pending_count": 14,
+    "pending_stages": {
+      "closed": 12,
+      "blocked": 2
+    },
+    "enters_cooldown_write_branch": false
+  },
+  "counterfactual_remove_closed_in_memory_only": {
+    "pending_count": 2,
+    "pending_stages": {
+      "blocked": 2
+    },
+    "enters_cooldown_write_branch": true
+  },
+  "matched_blocked_only_control": {
+    "pending_count": 2,
+    "pending_stages": {
+      "blocked": 2
+    },
+    "enters_cooldown_write_branch": true
+  },
+  "closed_only_control": {
+    "pending_count": 12,
+    "pending_stages": {
+      "closed": 12
+    },
+    "enters_cooldown_write_branch": false
+  },
+  "actual_pending_ids": [
+    "AdaRES-Y52",
+    "AdaRES-Y54"
+  ],
+  "actual_pending_retry_after": {
+    "AdaRES-Y52": "2026-10-17T16:42:22.893657+08:00",
+    "AdaRES-Y54": "2026-10-17T17:26:21.740407+08:00"
+  },
+  "expired_cooldown": {
+    "token": "58ccdbbf48104660911c2a0c0fc97d3e",
+    "retry_after": "2026-10-02T10:30:00+08:00"
+  },
+  "prior_validated_external_stop": "external_resource_blocked",
+  "conclusion": "The unchanged shared predicate includes terminal legacy closed rows in pending_work. On this real ledger it bypasses external-block cooldown; removing only closed rows in memory activates the same guard. This explains why the prior externally blocked tick did not save a fresh cooldown. It does not establish a model defect or authorize runtime/policy changes.",
+  "unchanged_ledger": true,
+  "unchanged_shared_runtime": true,
+  "no_scheduler_changes": true,
+  "new_candidates": 0,
+  "scientific_tests": 0,
+  "model_changes": 0,
+  "admissions": 0,
+  "training_launches": 0,
+  "limitations": "Isolated source-AST predicate execution, not shared-code repair, not a new mechanism or scientific progress. No actual cooldown file was written or modified."
+}

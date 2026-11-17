@@ -1,0 +1,131 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "preregistered_at": "2026-10-20T22:37:37.610289+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_native_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "f710fc6c076704d0a773d9334653ee74bbc2b91c0694213b2fc4d45a8bc26220"
+  },
+  "body": {
+    "path": "scripts/probe_y56_native_dd8e.py",
+    "sha256": "eea78430f6cb5427edfe3edb2ffa057d60666e69b03b8533f8837fa741f7a403"
+  },
+  "setup": {
+    "path": "scripts/setup_y56_prototype_dd8e.py",
+    "sha256": "c2c4ab39f76c4734315366badc8d46bcacfe81a580286c6f621b5aabd95d8676"
+  },
+  "bundle": {
+    "path": "pipeline/analyses/y56_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "9952cc0c5cda9ade97a3fe16de16f826451c779e00acf459d6844693b6c241c3"
+  },
+  "design": {
+    "path": "pipeline/designs/exp_design_Y56_dd8e.md",
+    "sha256": "67a3c59b52b710a9cbee0dbfade485bb7fe486088efce8cd88c17b636ce76501"
+  },
+  "scenes": [
+    {
+      "dataset_index": 0,
+      "scan_id": "scene0000_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 44,
+      "scan_id": "scene0001_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 60,
+      "scan_id": "scene0002_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 101,
+      "scan_id": "scene0003_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 115,
+      "scan_id": "scene0004_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 126,
+      "scan_id": "scene0005_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 137,
+      "scan_id": "scene0006_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 171,
+      "scan_id": "scene0007_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 426,
+      "scan_id": "scene0028_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "dataset_index": 443,
+      "scan_id": "scene0029_00",
+      "ann_ids": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "sampling": "Fixed original8TRAIN plus prespecified discovery2; discovery-conditioned, not prevalence.",
+  "result": "pending",
+  "optimizer_steps": 0,
+  "no_commit_or_admission": true
+}

@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "token": "e736ab42635143dc8d0e2981ea8cce96",
+  "snapshot": "2026-11-03T22:43:08.135332+00:00",
+  "original_live_training": {
+    "AdaRES-Y81": {
+      "path": "pipeline/checks/production_adares-y81_e736ab42635143dc8d0e2981ea8cce96_closeout.json",
+      "sha256": "25fe8cea89885c55fdc016a19bed8fc2c8e8742b152b190d112e515d81e7eb69"
+    },
+    "AdaRES-Y82": {
+      "path": "pipeline/checks/production_adares-y82_e736ab42635143dc8d0e2981ea8cce96_closeout.json",
+      "sha256": "b17df2b47af1337ece6b4364c3c22f394800415740348e29422084224dc0c0bb"
+    },
+    "AdaRES-Y83": {
+      "path": "pipeline/checks/production_adares-y83_e736ab42635143dc8d0e2981ea8cce96_closeout.json",
+      "sha256": "ce600ec11e3f6bce0781a9a3f04b29b82895b399a498ae990e5f2762c8a620a9"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_e736ab42635143dc8d0e2981ea8cce96.json",
+      "sha256": "6f583fc1e7ce2d8ebff404248d2e22f0724c3b06ce3a036e8afbf97a30725fcc"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_e736ab42635143dc8d0e2981ea8cce96.json",
+      "sha256": "515a9e8fef0bf399f0cbff72e30e9e368b1961b65877292caf9f2d16b44ad02b"
+    }
+  },
+  "retained_native_plans": {
+    "AdaRES-Y84": {
+      "native_smoke_plan_server2_gpu0": {
+        "path": "pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d_gpu0_plan.json",
+        "sha256": "9a1d3d005b767f024ebcaf9e79e6ec5fa55d1ff2f99a4a182d6ab2a603e43750"
+      },
+      "native_smoke_plan_server2_gpu1": {
+        "path": "pipeline/checks/y84_native_1fdaad021c7c425f9013d075ef24480d_gpu1_plan.json",
+        "sha256": "7f5f516d0cd96624e569ff61135edfe8ee93f31e9758c7c570a7a723a9c791e2"
+      }
+    },
+    "AdaRES-Y85": {
+      "native_smoke_plan_server2_gpu0": {
+        "path": "pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu0_plan.json",
+        "sha256": "7b96d7584a5093a17277b93035d13b0dcaf98c88f45d8b809b6482d1bd573d9d"
+      },
+      "native_smoke_plan_server2_gpu1": {
+        "path": "pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu1_plan.json",
+        "sha256": "fa9ca48428242d95d4d8054bd9b9c955edb23cd0004ba6bf4725be0dd860c1b2"
+      }
+    }
+  },
+  "Y80_terminal": {
+    "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96.json",
+    "sha256": "cb716f360ab8110e8db14a87fd29c4d8abb948c79cf01aa6ff5181bf7e41b81f"
+  },
+  "Y80_archive": {
+    "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96_archive_binding.json",
+    "sha256": "35cb7491c1c73ac068d65d7c2846c91fc561a24b8b58d4b751d22b1d7aecaa9a"
+  },
+  "Y83_native": {
+    "path": "pipeline/checks/AdaRES-Y83_e736ab42635143dc8d0e2981ea8cce96_native_smoke.json",
+    "sha256": "c34aaa6528baa1bf84cfe6930eb59945ffaf56fd166c41c046997eb95d8fcb4f"
+  },
+  "Y83_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y83.json",
+    "sha256": "e9f1a93e18201ff6902f7a478f7f2c78bec6661c06bf6a4bfe7a5ef821a6705a"
+  },
+  "Y83_full_freeze": {
+    "path": "pipeline/checks/AdaRES-Y83_e736ab42635143dc8d0e2981ea8cce96_post_training_freeze.json",
+    "sha256": "9d4da2437c977c4772b8105b7bdd83b421eaad349cdf37a7df273f05e94e9997"
+  },
+  "Y85_CPU": {
+    "path": "pipeline/analyses/y85_cpu_e736ab42635143dc8d0e2981ea8cce96.json",
+    "sha256": "05252a6a7c7a1de7e5d827bded942c64b0309a1a2a08922d09c843d70796768d"
+  },
+  "Y85_version": {
+    "path": "pipeline/checks/y85_cpu_version_e736ab42635143dc8d0e2981ea8cce96.json",
+    "sha256": "dc61aaf23950e18dc957c6536a0d42d2088ed1e248c6674ea7257e2b08a64504"
+  },
+  "Y85_native_preparation": {
+    "path": "pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96.json",
+    "sha256": "88ca9c0a1efd099f084a5685fd74e86c39832a10e9b21534ae1f4c0bf5a173a0"
+  },
+  "new_candidates": 1,
+  "new_admissions": 1,
+  "new_launches": 1,
+  "new_archives": 1,
+  "Y84_Y85_native_GPU_executed": false,
+  "formal_metrics_updated": false,
+  "Y57_pause_preserved": true,
+  "helper": {
+    "path": "scripts/record_prepared_y84_y85_wait.py",
+    "sha256": "9d486944e4ac10e652653e2abfa934e61aa3f5e88a7064652a829d173ccabe84"
+  }
+}

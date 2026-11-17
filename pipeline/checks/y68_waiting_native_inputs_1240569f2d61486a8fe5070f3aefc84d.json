@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y68",
+  "token": "1240569f2d61486a8fe5070f3aefc84d",
+  "observed_at": "2026-10-29T20:47:28.784166+08:00",
+  "code_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "exact_frozen_files_verified": 7,
+  "active_plan": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu0_plan.json",
+    "sha256": "cddfb2dfaec88ba4d731175aec0a111b0cdf7994c29151ec860af52077d64aa5"
+  },
+  "GPU1_alternative": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu1_plan.json",
+    "sha256": "22e14e5cc770b6f28719dd93c06ac2757f7cf183cd769908ba10db865310431e"
+  },
+  "scientific_body_and_payload_equal": true,
+  "current_goal_verified": true,
+  "original_three_running_admissions_verified": true,
+  "Y57_paused": true,
+  "native_sparse_GPU_steps_executed": false,
+  "admitted": false,
+  "queued": false,
+  "production_sync": false,
+  "next_missing_test": "Actual sparse TRAIN/tools.train two finite loss/backward/optimizer steps on an unreserved exclusive authorized idle GPU; original full frozen evaluation then admission/dispatch on PASS.",
+  "limitation": "Current input-integrity check only. Physical availability requires fresh canonical proof; CPU checks and phase progress do not prove trained efficacy."
+}

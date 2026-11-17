@@ -1,0 +1,162 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y61",
+  "config": "configs_song/model_paper5/adares_y61_peer_value_gradient_res.yaml",
+  "code_commit": "9bea5e906be3a478be50442db521e766c446a1ec",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "steps": 2,
+  "losses": [
+    7.886719703674316,
+    8.233489990234375
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "split": "train",
+  "data_source": {
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge"
+  },
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0642_00",
+        "scene0429_00"
+      ],
+      "expressions": 8,
+      "points": 315246
+    },
+    {
+      "scan_ids": [
+        "scene0201_00",
+        "scene0475_00"
+      ],
+      "expressions": 8,
+      "points": 310979
+    }
+  ],
+  "gradient_checks": [
+    {
+      "tensors": 539,
+      "indicator_tensors": 10,
+      "all_finite": true,
+      "query_norm_input_requires_grad": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "indicator_calls": 7,
+      "query_and_mask_input_gradients_finite": true,
+      "trainable_query_norm_gradient_nonzero": true
+    },
+    {
+      "tensors": 539,
+      "indicator_tensors": 10,
+      "all_finite": true,
+      "query_norm_input_requires_grad": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "indicator_calls": 7,
+      "query_and_mask_input_gradients_finite": true,
+      "trainable_query_norm_gradient_nonzero": true
+    }
+  ],
+  "shared_head_calls": 14,
+  "query_norm_input_requires_grad": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ],
+  "peak_reserved_bytes": 6599737344,
+  "native_entry": "tools/train.py::train",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "optimizer_steps": 2,
+  "model_weights_saved": false,
+  "validation_used": false,
+  "admission": false,
+  "limitation": "Two-step initialization smoke only; not trained efficacy, full-dataset resource proof or a claim that indirect peer gradients through masks have been removed.",
+  "command": "python -B scripts/run_experiment_first_probe.py y61_smoke pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_program.py --token fd874a5eafed4a5b84c6c77d939b6b3f --seconds 600 --gpu --gpu-id 0",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "observed_at": "2026-10-24T18:57:11.540936+08:00",
+    "live": {
+      "hostname": "dl01-MS-7C60",
+      "source_marker": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+      "source_hashes": {},
+      "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 90, 23726, 24576\n",
+      "gpu_query_rc": 0,
+      "compute": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 50448, 23718\n",
+      "compute_query_rc": 0,
+      "tasks": {}
+    },
+    "power_limit_watts": 280,
+    "required_exclusive_gpu": 0
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y61_smoke_fd874a5eafed4a5b84c6c77d939b6b3f.json",
+      "sha256": "83a5941df60b04d81fef10bb69c40502e29195366cd5c08ea1fb22cb61c2e635"
+    },
+    {
+      "path": "pipeline/analyses/y61_smoke_fd874a5eafed4a5b84c6c77d939b6b3f.log",
+      "sha256": "5ea4eb3ee5d66b1d304ff6ec03ed745578ce180135e4762b7ab4e87132e512e8"
+    },
+    {
+      "path": "pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_program.py",
+      "sha256": "e440f4ff0df60672bf96b0c4210725c8757486bb1a176fafe8147de62e5b26b0"
+    },
+    {
+      "path": "pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_plan.json",
+      "sha256": "7ceccab523b2dee58728bfd161241ed49fdf42ec5a8093b80784410c268e6e11"
+    }
+  ]
+}

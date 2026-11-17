@@ -1,0 +1,40 @@
+{
+  "result": "resumed_training_progress_verified",
+  "samples": [
+    {
+      "observed_local": "2026-10-13T20:06:02.396949+08:00",
+      "pid": 15333,
+      "restored": true,
+      "progress": [
+        14,
+        379
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261013_072921/20261013_072921.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-13T20:06:08.625841+08:00",
+      "pid": 15333,
+      "restored": true,
+      "progress": [
+        14,
+        391
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261013_072921/20261013_072921.log"
+      ],
+      "errors": []
+    }
+  ],
+  "checkpoint_preservation": {
+    "best_carried_to": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y43_point_asymmetry_res/20261013_072921/best.pth",
+    "best_sha256": "2efa5e5b670ac96b7b69be7e957894529065f97eebecd201d6f1a69b96a67a80",
+    "original_last_unchanged": true,
+    "original_best_unchanged": true
+  },
+  "resume_epoch": 14,
+  "pid": 15333,
+  "gpu": "0"
+}

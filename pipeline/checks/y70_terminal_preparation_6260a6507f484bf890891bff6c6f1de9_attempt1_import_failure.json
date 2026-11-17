@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "attempt": 1,
+  "result": "failed",
+  "scope": "local_preparation_import_only",
+  "command": "python -B scripts/prepare_y70_terminal_handoff.py --token 6260a6507f484bf890891bff6c6f1de9",
+  "exit_code": 1,
+  "observed_error": "ModuleNotFoundError: No module named 'reconcile_y62_y63_server2'",
+  "cause": "Mechanical server-label replacement changed the name of the existing generic read-only SSH transport module. Import failed before preparation, writer lock, remote access or checkpoint operations.",
+  "source_evidence": [
+    {
+      "path": "scripts/prepare_y70_terminal_handoff.py",
+      "sha256": "ca805845f9b570df4e0966d8a746e6012e7a5cb6c405e5fbe7a902550481d71e"
+    },
+    {
+      "path": "scripts/finalize_y70_fixed30.py",
+      "sha256": "8a62ad35efbe442250a2cc88c78b1ce3f1074acd41beba1fc6a4fcbcdd4c0690"
+    },
+    {
+      "path": "scripts/test_y70_terminal_handoff.py",
+      "sha256": "b7a2f0b2a4772e3076b65d639a308fa08895d29409d4fecf9b1d379044cbc2d4"
+    }
+  ],
+  "remote_executed": false,
+  "training_affected": false,
+  "original_sources_preserved": true
+}

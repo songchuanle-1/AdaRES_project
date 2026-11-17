@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "implementation_revision": 1,
+  "preregistered_at": "2026-10-16T13:09:35.406825+08:00",
+  "programs": [
+    {
+      "kind": "inference",
+      "path": "pipeline/analyses/y49_production_inference_program_f56b_f56bf800538f452ebf4b11f81ca8fd8c.py",
+      "sha256": "aac1271e2d523ef31c8fd48e74d8953aee2e4cab718b8c922c7815524a9888b9",
+      "template_sha256": "d6914d9f758013dbff4f46796d0e02acc07585478f1f54cd2b76cd32125b252f"
+    },
+    {
+      "kind": "stress",
+      "path": "pipeline/analyses/y49_production_stress_program_f56b_f56bf800538f452ebf4b11f81ca8fd8c.py",
+      "sha256": "e398be633f761adb932ff94e92a5f3fa0b7f6fa57327a881d9180c1d8a2f4933",
+      "template_sha256": "53ae02afcea018ebd95ba78af3dcda1ae8008697a77ed746ad37a9457168ddc9"
+    }
+  ],
+  "recipe": "Same fixed TRAIN8 indices0,44,60,101,115,126,137,171 plus728/6780, serial predict2warmups/3readings and native batch2 stress2warmups/3readings; no numeric model/protocol changes.",
+  "no_admission": true
+}

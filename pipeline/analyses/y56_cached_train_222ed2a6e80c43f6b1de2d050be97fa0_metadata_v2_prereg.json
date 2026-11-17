@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "token": "222ed2a6e80c43f6b1de2d050be97fa0",
+  "preregistered_at": "2026-10-19T09:23:45.824715+00:00",
+  "capture": {
+    "path": "pipeline/analyses/y46_native_capture_d179_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89"
+  },
+  "capturer": {
+    "path": "scripts/probe_y46_native_capture_d179.py",
+    "sha256": "2ba5bad46dab8e4528006cbe1357ee9994ff9f18f9f2e8cc30c4444e042184c3"
+  },
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "body": {
+    "path": "scripts/probe_y56_cached_train_cpu.py",
+    "sha256": "5d87b8a3cd686c0f7fcd0742dbfb95781f9ba55d21a36e67a19d55894bde96bf"
+  },
+  "program": {
+    "path": "pipeline/analyses/y56_cached_train_222ed2a6e80c43f6b1de2d050be97fa0_metadata_v2_program.py",
+    "sha256": "9af74e655cd5a0b14a7ae5578a86b9a7c66266dbe30fddd7d34e23e41c380671"
+  },
+  "fixed_test": "SAME8frozenTRAIN scenes/32expressions/Q128 final cached indicator inputs; exact query/softmask duplicates, separately native hardmask>0 equivalence; no new sampling/thresholds. CPU trained W2 indicator strict state loading, repeat/reversal controls. Conditional transfer one existing exact-copy competitor to another only when singleton focal and all unique prototypes survive; otherwise not_applicable, never synthesize a task positive.",
+  "trained_fixture": "Reuse original fixed float32/64 seed1999 counts[1,63,64]/[1,64,63] loop with strict trained W2 head, repeat/permutation/negative/unique-reference controls.",
+  "prediction": "Measure incidence and separated trained-head effects without requiring a task-gain threshold; zero exact duplicates does not prove absence on all TRAIN batches/layers.",
+  "capture_provenance_limit": "Original capture code specified W2 checkpoint path but did not record its blob SHA at capture time; current replay SHA does not retroactively certify that capture.",
+  "cpu_only": true,
+  "actual_GPU_run": false,
+  "scientific_gate_passed": false,
+  "original_plan": {
+    "path": "pipeline/analyses/y56_cached_train_222ed2a6e80c43f6b1de2d050be97fa0_prereg.json",
+    "sha256": "d8a0ccfa17e03215da759c6d2eea56e731bd90c04ff78eaf06bdf1fadbecc0f0"
+  },
+  "original_failure": {
+    "path": "pipeline/analyses/y56_cached_train_222ed2a6e80c43f6b1de2d050be97fa0_execution.json",
+    "sha256": "54ce01fa0e0f791ff7fcdbc3cab2eadad782c3e3d7c494e64e59ea6a2e8596b5"
+  },
+  "diagnostic_harness_revision": 2,
+  "model_revision": 0,
+  "repair": "Add one JSON checkpoint-metadata NumPy-scalar conversion only; do not edit original program/body/execution/runner. No tensor, weight, readout, fixture or bound change."
+}

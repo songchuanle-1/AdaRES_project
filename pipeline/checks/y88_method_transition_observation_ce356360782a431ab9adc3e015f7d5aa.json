@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "classification": "read_only_compute_membership_snapshot_failure_during_method_transition",
+  "failed_probe": {
+    "path": "pipeline/checks/y88_resume_reuse_verification_ce356360782a431ab9adc3e015f7d5aa.log",
+    "sha256": "e0d9d3195371114369f8765b5def811d8f14635e9ccee87f725914291e6d6b51"
+  },
+  "failed_scientific_test": false,
+  "launch_uncertainty": false,
+  "remote_mutations": false,
+  "original_worker_preserved": true,
+  "original_observer_confirmed_continuing_progress": {
+    "path": "pipeline/checks/y88_review_progress_ce356360782a431ab9adc3e015f7d5aa_resumed_transition.json",
+    "sha256": "38d9f2d80af944f9e921a63597072a0d5097ce548f5a1d451fc22e25b43c786f"
+  },
+  "current_active_snapshot": {
+    "path": "pipeline/checks/y88_resume_reuse_verification_ce356360782a431ab9adc3e015f7d5aa_active.json",
+    "sha256": "6c498d3112217bd0d47e26906a8cb0e887db68dee48d129af49c74eaf81288db"
+  },
+  "completed_candidate_byte_identity_verified": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y88_resume_reuse_verification_ce356360782a431ab9adc3e015f7d5aa.log",
+      "sha256": "e0d9d3195371114369f8765b5def811d8f14635e9ccee87f725914291e6d6b51"
+    },
+    {
+      "path": "pipeline/checks/y88_review_progress_ce356360782a431ab9adc3e015f7d5aa_resumed_transition.json",
+      "sha256": "38d9f2d80af944f9e921a63597072a0d5097ce548f5a1d451fc22e25b43c786f"
+    },
+    {
+      "path": "pipeline/checks/y88_resume_reuse_verification_ce356360782a431ab9adc3e015f7d5aa_active.json",
+      "sha256": "6c498d3112217bd0d47e26906a8cb0e887db68dee48d129af49c74eaf81288db"
+    },
+    {
+      "path": "scripts/record_y88_continuation_progress.py",
+      "sha256": "ebd0bf41136a157451e534ca3034a9b98f2f82db6034b942063349713959ba79"
+    }
+  ]
+}

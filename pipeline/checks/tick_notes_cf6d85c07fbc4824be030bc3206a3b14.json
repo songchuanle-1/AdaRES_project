@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "本轮核验实际CODEX_THREAD_ID与AdaRES_project前台owner一致，后台Pipeline-AdaRES_project为Disabled。前轮4e61在Y63派发后中断，deadline已过；确认无本地python/scp/helper写进程后使用原token canonical abort，收据INCOMPLETE、context_committed=false、lease_release=released。随后新begin获得本轮快照，不重建或延长旧快照。",
+    "上海2026-10-27 02:49:57至02:50:02实测Y63在server-1 GPU0、原PID3071037、第3/30轮1171至1179/4686步增长；精确cwd/config、六模型源码、原生YAML确定性路径适配、生产marker与GPU0独占compute PID核验通过。单次GPU69%、22750MiB、68°C、350W。证据pipeline/checks/y63_server1_progress_cf6d85c07fbc4824be030bc3206a3b14.json。Y63为前轮已派发，本轮没有再次启动。",
+    "对Y62读取完整原生日志和CPU检查点，核实原PID2540376缺席、Train30/30及Val30/30完成。last为epoch30/scheduler30，best为epoch21/scheduler21，两者optimizer状态544、模型及优化器张量有限，文件稳定且保存SHA256。训练best mIoU=0.5082247853279114，冻结全量后评及成本比较尚未执行。证据pipeline/checks/y62_server1_fixed30_cf6d85c07fbc4824be030bc3206a3b14.json。",
+    "在项目写锁内调用canonical finalize_task，明确gpu=0，将Y62归档为done_complete/30/30并拉取原始日志，检查点留原服务器。仅移除Y62残留队列登记，Y63队列及running映射、Y57暂停与所有外来任务保留。Y62进入冻结后评资源挂起。新收尾工具与既有终态保护共16项CPU测试通过，归档绑定记录在pipeline/checks/y62_server1_archive_binding_cf6d85c07fbc4824be030bc3206a3b14.json。",
+    "使用canonical gpu_occupation.py采集两服本轮token/snapshot绑定的原始GPU/compute证据：server-1 GPU0独占Y63；server-2 GPU0外来PID13813、100%/24138MiB，未有授权空槽；另次只读核验server-2 GPU0功耗上限280W、85°C。Y56/Y58/Y59/Y60/Y61/Y62后评和Y64原生检查保留等待资源，未接触暂停GPU1或外来进程。"
+  ],
+  "decisions": [
+    "完成归档与科学有效性分开记录。Y62的0.5082是训练阶段best，不替代冻结全量评估、不改变冠军或宣称方法有效；保持固定30轮、seed1999、原数据、原损失、全量后评协议和全部禁用项。",
+    "Y64已有真实CPU准备；没有空闲授权GPU时，不重复CPU测试冒充原生检查、不挤占Y63或外来任务、不为凑额度新增变体。空槽后核对七文件SHA，完成同原生YAML真实TRAIN至少两步criterion/backward/optimizer及新分支证据，再按既定版本/准入/派发流程推进。",
+    "一次只读使用旧snapshot helper因其硬编码server-2主机名而失败，不代表server-1故障；保留失败结果，使用新项目内server-1专用核验工具完成观察与终态归档，不修改旧哈希绑定证据。",
+    "无本轮新增候选、源码提交、生产同步、准入或训练重启。Y57继续用户暂停，server-2 GPU0保持280W，禁止server-6、跨项目和调度更改。已更新七节记忆；接下来按本轮真实结果执行report/finish并核收据及释放状态，当前记录不提前宣称postflight通过。"
+  ]
+}

@@ -1,0 +1,7 @@
+Using backend: pytorch
+2026-11-01 20:53:54,826 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=787 unexpected=0
+2026-11-01 20:53:55,339 - INFO - Load train scanrefer: 36665 samples
+2026-11-01 20:53:58,668 - INFO - set random seed: 1999
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:15<?, ?it/s, lr=0.0001, eta=0:15:20, iter_time=15.60]Train[1/30]:  50%|██████████          | 1/2 [00:15<00:15, 15.59s/it, lr=0.0001, eta=0:15:20, iter_time=15.60]Train[1/30]:  50%|██████████          | 1/2 [00:16<00:15, 15.59s/it, lr=0.0001, eta=0:07:48, iter_time=8.09] Train[1/30]: 100%|████████████████████| 2/2 [00:16<00:00,  6.76s/it, lr=0.0001, eta=0:07:48, iter_time=8.09]/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:16<00:00,  8.09s/it, lr=0.0001, eta=0:07:48, iter_time=8.09]

@@ -1,0 +1,31 @@
+{
+  "observed_at_local": "2026-10-08T18:25:48.461977+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y33 final mask-conditioned token attention confidence] configs_song/model_paper5/adares_y33_token_attention_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y33",
+    "label": "Y33 final mask-conditioned token attention confidence",
+    "config": "configs_song/model_paper5/adares_y33_token_attention_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "eaf330166aed361ffc2532a52e352b70cba4e2fd",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y33.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 64797,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y33_token_attention_res_20261008_182513.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-08T18:25:48"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y33.json",
+    "sha256": "83924bdf4ae82296e4432b6905154f3a5fcf1529d7ff37d8edab141e35b3ef7f"
+  },
+  "scope": "Canonical gated dispatcher; GPU inventory constrained to1, no repeated preflight."
+}

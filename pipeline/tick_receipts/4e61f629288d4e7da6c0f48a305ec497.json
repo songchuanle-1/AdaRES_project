@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "token": "4e61f629288d4e7da6c0f48a305ec497",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-26T16:49:52.768354+00:00",
+  "recorded_at": "2026-10-26T18:48:11.841221+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Previous foreground turn interrupted after verified Y63 dispatch; original deadline elapsed. Confirmed no local python/scp/training helper writer remains; preserve live remote training and reconcile in fresh snapshot.",
+  "context_committed": false,
+  "lease_release": "released",
+  "usage": {
+    "status": "partial_window",
+    "calls": 15,
+    "input_tokens": 4822096,
+    "cached_input_tokens": 4736896,
+    "output_tokens": 7886,
+    "reasoning_output_tokens": 1352,
+    "total_tokens": 4829982,
+    "uncached_input_tokens": 85200,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  },
+  "lease_released_at": "2026-10-26T18:48:11.867746+00:00"
+}

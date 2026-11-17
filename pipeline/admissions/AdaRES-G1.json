@@ -1,0 +1,58 @@
+{
+  "id": "AdaRES-G1",
+  "config": "configs_song/model_paper5/adares_g1_metric_targets_res.yaml",
+  "code_commit": "0f5f695d478b87750d69561428f6421833e629a9",
+  "goal_sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba",
+  "decision": {
+    "path": "pipeline/decisions/20260925-170228_next_batch.md",
+    "sha256": "dd19a792f704a0bff4372136201e74ada6b2fae8640e919e26fd217f4d6a1b12"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-G1_label_alignment_16scenes_20260925.json", "sha256": "b5ff50336800fdfb5b5fa9a2b5177713d3e98473a46e909ce0038e8f1ae8a134"},
+        {"path": "pipeline/analyses/AdaRES-G1_native_gate_review_20260925-170100.md", "sha256": "64b878fd3f6a7c344673a44cf6d025ed10ab1c5d315c6bd68265d9735523f491"}
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/configs_song/model_paper5/adares_g1_metric_targets_res.yaml", "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"},
+        {"path": "pipeline/analyses/AdaRES-G1_native_gate_review_20260925-170100.md", "sha256": "64b878fd3f6a7c344673a44cf6d025ed10ab1c5d315c6bd68265d9735523f491"}
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/tools/test_adares_g1_metric_targets.py", "sha256": "260bd99d5089159e5cf07e835593ca51554cb2b8155b551e2d0d66f8b86eeb7b"},
+        {"path": "pipeline/analyses/AdaRES-G1_native_gate_review_20260925-170100.md", "sha256": "64b878fd3f6a7c344673a44cf6d025ed10ab1c5d315c6bd68265d9735523f491"}
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/analyses/AdaRES-G1_native_gate_review_20260925-170100.md", "sha256": "64b878fd3f6a7c344673a44cf6d025ed10ab1c5d315c6bd68265d9735523f491"}
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {"path": "AdaRES/ipdn/model_paper5/adares_g1_metric_targets/loss.py", "sha256": "e97960bc6ffeaf02516dd61b768137da7ab417386910ec355b210294765a7e36"},
+        {"path": "pipeline/designs/exp_design_20260925-170100.md", "sha256": "86ccc5bdbe1e5dc398e372506d20bdce443c48e8f0dceeb92c175adf7d67bade"}
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {"path": "pipeline/goal.json", "sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba"},
+        {"path": "pipeline/analyses/AdaRES-G1_native_gate_review_20260925-170100.md", "sha256": "64b878fd3f6a7c344673a44cf6d025ed10ab1c5d315c6bd68265d9735523f491"}
+      ]
+    }
+  },
+  "limitations": [
+    "The 16-scene diagnosis is observational and not a validation tuning set.",
+    "The B4-E30 comparator preserves an epoch-20 optimizer continuation rather than a fresh matched run.",
+    "Native memory is measured on two batches, not a full-run maximum; efficacy and evaluation noise remain unknown."
+  ]
+}

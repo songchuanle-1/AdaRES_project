@@ -1,0 +1,19 @@
+Using backend: pytorch
+2026-11-14 03:57:40,457 - INFO - Load val scanrefer: 9508 samples
+2026-11-14 03:57:43,701 - INFO - set random seed: 1999
+2026-11-14 03:57:49,061 - INFO - set random seed: 1999
+{"pass": 0, "chunks": 60, "total_chunks": 363}
+{"pass": 0, "chunks": 120, "total_chunks": 363}
+{"pass": 0, "chunks": 180, "total_chunks": 363}
+{"pass": 0, "chunks": 240, "total_chunks": 363}
+{"pass": 0, "chunks": 300, "total_chunks": 363}
+{"pass": 0, "chunks": 360, "total_chunks": 363}
+2026-11-14 03:59:56,406 - INFO - set random seed: 1999
+{"pass": 1, "chunks": 60, "total_chunks": 363}
+{"pass": 1, "chunks": 120, "total_chunks": 363}
+{"pass": 1, "chunks": 180, "total_chunks": 363}
+{"pass": 1, "chunks": 240, "total_chunks": 363}
+{"pass": 1, "chunks": 300, "total_chunks": 363}
+{"pass": 1, "chunks": 360, "total_chunks": 363}
+{"config": "/data1/songcl/Project/AdaRES_project/AdaRES/configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml", "config_sha256": "63389f06f14fc2bb7adeceefe1abcf1c8eac71a83ccc0c200ccbeff8872ce667", "checkpoint": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y94_query_geometry_bias_res/20261109_111838/best.pth", "checkpoint_sha256": "bdfa75e26bf4f37e5b36c3328f53a49fbd7c1448ae9443c41d4ad690d5d605cf", "checkpoint_meta": {"epoch": 21, "best_miou": 0.5075652599334717}, "seed": 1999, "ordering": "all val chunks, shuffle=False, drop_last=False", "parameters": 164629661, "completed_passes": 2, "complete": true, "official_unique_multiple": "unknown: official metadata not supplied", "size_cuts_from_training": [1487, 3325], "gpu_precheck": {"memory_mib": 98, "utilization": 0}, "repeat_max_iou_difference": 0.012829899787902832, "repeat_miou_difference": 4.496050823865616e-07, "active_queries": [128], "selected_queries": 1, "warm_first_chunk_seconds": [0.3740276098251343, 0.37922894209623337, 0.3606012361124158, 0.36062481813132763, 0.36244015116244555], "peak_allocated_gib": 4.059475898742676, "peak_reserved_gib": 6.486328125, "elapsed_seconds": 260.12811081204563}
+{"expressions": 9508, "scenes": 141, "miou": 0.5075611062753286, "acc25": 0.6087505258729491, "acc50": 0.5601598653765251, "spmiou": 0.4740257800703793}

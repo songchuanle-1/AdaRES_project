@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y44",
+  "gates": {
+    "diagnosis": true,
+    "controls": true,
+    "native_backward": true,
+    "resources": true,
+    "independence": true,
+    "constraints": true
+  },
+  "constraints_checked": [
+    "Only server2 GPUs0/1, testsGPU1 preserve originalY43GPU0, onejobcard.",
+    "B3 not active; current design budget1 admits only sameY44, no extra candidate.",
+    "B2/B4 fixed30 resume protocols untouched; Y44 released initializer/fixed30/native optimizer and scheduler unchanged.",
+    "ReleasedSPFormer sparseUNet nativepretrain retained; authored independent decoder.",
+    "mIoU/Acc25/Acc50/queries/latency/peakmemory terminal and resource protocols frozen.",
+    "No validation threshold/temperature/loss/feature/axis/epoch sweep; no server6/b005/CFNet-asB0/rankingmargin/occupancy-weight scan.",
+    "Goal.515 unchanged, Phase1unmet/Phase2unapproved/W2retained."
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y44_pairing_cpu_ff34_ff3476973900467da752992f8195291b.json",
+      "sha256": "5e67cbe9ee2ac7e25c7cfe59d5046859ac555acc0557eb4d527333e089226bdf"
+    },
+    {
+      "path": "pipeline/analyses/y44_parent_cpu_ff34_ff3476973900467da752992f8195291b.json",
+      "sha256": "b25ef81e7798a7e67e41fc0d395f88b6d1dd49b8cf8c00f77fda1a48be8a2b4d"
+    },
+    {
+      "path": "pipeline/analyses/y44_source_bundle_ff3476973900467da752992f8195291b.json",
+      "sha256": "db57577e04aeaa0239aa4c486f90801417ee72894aff380e8d0e197b0d28d182"
+    },
+    {
+      "path": "pipeline/analyses/y44_native_controls_ff34_v3_ff3476973900467da752992f8195291b.json",
+      "sha256": "b69d039ee9f4262413860de9fbd93b81d8a13137f01c7ade89dccc553aa25af6"
+    },
+    {
+      "path": "pipeline/analyses/y44_physical_native_ff34_ff3476973900467da752992f8195291b.json",
+      "sha256": "9cab799fb5b5b6dd6eef085eed8f323c307626d5146161708602eb6f3973ce70"
+    },
+    {
+      "path": "pipeline/analyses/y44_initial_loss_ff34_ff3476973900467da752992f8195291b.json",
+      "sha256": "87e252667094de7674e3ad56596974ef2fcb34e6aa0a522a28750c4cf898d723"
+    },
+    {
+      "path": "pipeline/analyses/y44_resources_ff34_ff3476973900467da752992f8195291b.json",
+      "sha256": "45fc9c895523f80f08758515d9b9bf762876f9de962e2da22fb581200480f93d"
+    },
+    {
+      "path": "pipeline/analyses/Y44_native_precision_audit_freeze_ff347697.md",
+      "sha256": "1000ae709184a4915ef3a10038c86a48d80f0a9460f721ea3e81120abef2bb49"
+    },
+    {
+      "path": "pipeline/analyses/y44_native_controls_ff34_v2_ff3476973900467da752992f8195291b.log",
+      "sha256": "be18048a82a0b58b6c563b129e202f327a5877027760c154557bbc798e47a9ec"
+    },
+    {
+      "path": "scripts/probe_y44_native_controls_ff34_v3.py",
+      "sha256": "a406f4588ceeda7937bd485f0d856efb1fc2179e5a60706f385442d29cda5f5f"
+    }
+  ],
+  "observed_at_local": "2026-10-13T06:28:34.390809+08:00",
+  "scientific_status": "six_gate_feasibility_not_efficacy"
+}

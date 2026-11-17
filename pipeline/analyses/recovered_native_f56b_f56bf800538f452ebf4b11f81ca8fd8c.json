@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "observed_at_local": "2026-10-16T12:36:38.164695+08:00",
+  "source_tick": "12be943f16874034808ff67e741653ad",
+  "binding_tick": "f56bf800538f452ebf4b11f81ca8fd8c",
+  "reexecuted_tests": 0,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y46_production_native_12be_12be943f16874034808ff67e741653ad.json",
+      "sha256": "0977e813855756353dc8d8070879a29a9d3351a347c367562b5c26cfb64c4f57"
+    },
+    {
+      "path": "pipeline/analyses/y49_native_12be_12be943f16874034808ff67e741653ad.json",
+      "sha256": "adb47f37b38ff9d343b8f8145f0268e6cdcad3a5539982efbebc0d16387f5cbc"
+    }
+  ],
+  "y46": {
+    "actual_tools_train_steps": 2,
+    "new_tensors": 8,
+    "minimum_gradient": 5.8059631555806845e-06,
+    "all8_updated": true,
+    "exact_model_optimizer_scheduler_restore": true,
+    "pending": [
+      "production matched TRAIN8 controls",
+      "serial inference",
+      "native stress728/6780",
+      "resources",
+      "six gate review"
+    ]
+  },
+  "y49": {
+    "native_scenes": 8,
+    "new_tensors": 4,
+    "minimum_gradient": 0.00015374021313618869,
+    "cached_control_count": 32,
+    "minimum_wrong_gap": 0.010658837854862213,
+    "warmed_parent_seconds": [
+      0.24359467398608103,
+      0.3038047819864005,
+      0.21307421900564805,
+      0.28545284501160495,
+      0.23156937601743266,
+      0.27555967698572204,
+      0.21315428899833933
+    ],
+    "warmed_candidate_seconds": [
+      0.969936934998259,
+      11.854369509004755,
+      0.41404053100268357,
+      3.900610606011469,
+      1.543195056001423,
+      2.2622404180001467,
+      0.3958036840194836
+    ],
+    "native_same_component_partition_witnesses": 0,
+    "pending": [
+      "native task diagnosis",
+      "independent production",
+      "released initialization/tools.train/restore",
+      "resources",
+      "six gate review"
+    ]
+  },
+  "limitations": [
+    "The source tests ran in the interrupted previous tick, not again in this tick.",
+    "All previous failures and cost risks retained.",
+    "No efficacy/novelty/necessity/resource admission or training launch established."
+  ]
+}

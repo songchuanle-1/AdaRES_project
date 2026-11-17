@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "token": "1fdaad021c7c425f9013d075ef24480d",
+  "id": "AdaRES-Y79",
+  "original_server": "server-1",
+  "original_gpu": 0,
+  "power_limit_watts": 350,
+  "actual_reserved_owner": "AdaRES-Y82",
+  "occupation": {
+    "path": "pipeline/checks/gpu_occupation_server-1_postarchive_1fdaad021c7c425f9013d075ef24480d.json",
+    "sha256": "a09da55e72a1ff36feea06429ce437d33296f85632fa27a31a60b963887adad8"
+  },
+  "terminal": {
+    "path": "pipeline/checks/y79_server1_fixed30_1fdaad021c7c425f9013d075ef24480d.json",
+    "sha256": "91f524f56a6ecf4bd423389672c4b8bd706dd091c84620b89df4cdebb783b473"
+  },
+  "full_frozen_evaluation_executed": false,
+  "helper": {
+    "path": "scripts/park_y79_frozen_evaluation.py",
+    "sha256": "0e8df6b81fccfeb12a660ec4a33b3c1c2a56e50e72e2b07945b0741e656b5c93"
+  }
+}

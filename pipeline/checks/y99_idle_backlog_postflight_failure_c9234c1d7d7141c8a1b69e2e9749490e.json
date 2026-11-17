@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "token": "c9234c1d7d7141c8a1b69e2e9749490e",
+  "observed_failure": "CLOSURE_INCOMPLETE: Pending candidate limit exceeded; advance or resolve existing work. POSTFLIGHT FAILED: lease retained.",
+  "cause": "Official occupation collector truthfully released16 legacy exclusive-GPU0 waits into validation while idle; this exceeded the unchanged pending_limit4.",
+  "resolution": "Advance one prepared original-device Y96 frozen review and verify increasing native counters. Rebind only the other15 original GPU0 waits to its actual physical occupation; no fake resource block, no pending-limit/goal/phase/checker changes.",
+  "original_idle_closeout": {
+    "path": "pipeline/checks/y99_complete_closeout_c9234c1d7d7141c8a1b69e2e9749490e.json",
+    "sha256": "ca23db7ca42978deef45efc0f13d7504b9124d57bbdbe2d2fa8f7a934c25304a"
+  },
+  "failed_drafts": [
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_memory_c9234c1d7d7141c8a1b69e2e9749490e.md",
+      "sha256": "0dea020b6203bad295ce3343c184565d4fc96dc987b80176ca7add1d696d1e1d"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_notes_c9234c1d7d7141c8a1b69e2e9749490e.json",
+      "sha256": "f97a8affb36d4adc346b8658d14b2025dfb746e805c61dd3b0e2c579ad3b63fb"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_report_c9234c1d7d7141c8a1b69e2e9749490e.md",
+      "sha256": "7857b8f0d70ac451e60aa81dfde987f1c6c30c0d0a30002957c3723a001f7b30"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_receipt_c9234c1d7d7141c8a1b69e2e9749490e.json",
+      "sha256": "a009423146956817cd5bd5e99794abfbeef6834b61fbe335b9f1ff0480f1563d"
+    }
+  ],
+  "new_actual_Y96_launch": {
+    "path": "pipeline/checks/y96_review_launch_c9234c1d7d7141c8a1b69e2e9749490e.json",
+    "sha256": "e33b0381883d740e9d057cf69bd2ae9d677972bcedfbfa7bbef9af5e1948672e"
+  },
+  "native_progress": {
+    "path": "pipeline/checks/y96_review_progress_c9234c1d7d7141c8a1b69e2e9749490e_live.json",
+    "sha256": "4fd23e63762bcf22b621f74e86a044e51a892c0ad9b3bf694d195dc4b5e380f3"
+  },
+  "evidence": [
+    {
+      "path": "scripts/reconcile_y99_y96_tick.py",
+      "sha256": "6f1f959fffbe9f651d98bcde9a2ad440155b5096f870536ffe74e4af5a4ad65f"
+    },
+    {
+      "path": "scripts/finish_y99_complete_tick.py",
+      "sha256": "35eadb502f7fb95716b5902fbfb57048b8e043ae2792422ef4a244596ddc8ff5"
+    },
+    {
+      "path": "scripts/finish_y99_complete_tick_v2.py",
+      "sha256": "7f3490e1d905a4bb15b99a52a428818675a69dae7209100a3c5b7701f67d48c7"
+    },
+    {
+      "path": "pipeline/checks/y96_review_launch_c9234c1d7d7141c8a1b69e2e9749490e.json",
+      "sha256": "e33b0381883d740e9d057cf69bd2ae9d677972bcedfbfa7bbef9af5e1948672e"
+    },
+    {
+      "path": "pipeline/checks/y96_review_progress_c9234c1d7d7141c8a1b69e2e9749490e_live.json",
+      "sha256": "4fd23e63762bcf22b621f74e86a044e51a892c0ad9b3bf694d195dc4b5e380f3"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_memory_c9234c1d7d7141c8a1b69e2e9749490e.md",
+      "sha256": "0dea020b6203bad295ce3343c184565d4fc96dc987b80176ca7add1d696d1e1d"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_notes_c9234c1d7d7141c8a1b69e2e9749490e.json",
+      "sha256": "f97a8affb36d4adc346b8658d14b2025dfb746e805c61dd3b0e2c579ad3b63fb"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_report_c9234c1d7d7141c8a1b69e2e9749490e.md",
+      "sha256": "7857b8f0d70ac451e60aa81dfde987f1c6c30c0d0a30002957c3723a001f7b30"
+    },
+    {
+      "path": "pipeline/snapshots/y99_failed_closeout_receipt_c9234c1d7d7141c8a1b69e2e9749490e.json",
+      "sha256": "a009423146956817cd5bd5e99794abfbeef6834b61fbe335b9f1ff0480f1563d"
+    }
+  ]
+}

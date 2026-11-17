@@ -1,0 +1,118 @@
+{
+  "train_q1": 0.005642953794449568,
+  "train_q3": 0.023025653325021267,
+  "cohorts": {
+    "train64": {
+      "expressions": 1660,
+      "scenes": 64,
+      "original": {
+        "small": {
+          "expressions": 417,
+          "scenes": 45,
+          "selected_delta": -0.07743933909445358,
+          "oracle_delta": -0.012912084265864439,
+          "scene_mean_selected_delta": -0.046302282687631396,
+          "scene_mean_oracle_delta": -0.0066478262312056275
+        },
+        "middle": {
+          "expressions": 828,
+          "scenes": 62,
+          "selected_delta": -0.054827897887056075,
+          "oracle_delta": -0.002683381167586875,
+          "scene_mean_selected_delta": -0.05299819820803202,
+          "scene_mean_oracle_delta": -0.0011686246730486937
+        },
+        "large": {
+          "expressions": 415,
+          "scenes": 60,
+          "selected_delta": -0.03371801695909845,
+          "oracle_delta": -0.008783665694386126,
+          "scene_mean_selected_delta": -0.04493565168034427,
+          "scene_mean_oracle_delta": -0.009627150263392706
+        }
+      },
+      "within_scene_rotated": {
+        "small": {
+          "expressions": 417,
+          "scenes": 45,
+          "selected_delta": -0.05326423131385081,
+          "oracle_delta": -0.010780189141666861,
+          "scene_mean_selected_delta": -0.0361247994996498,
+          "scene_mean_oracle_delta": -0.005694361413532609
+        },
+        "middle": {
+          "expressions": 828,
+          "scenes": 62,
+          "selected_delta": -0.07000574443471316,
+          "oracle_delta": -0.006906021494364393,
+          "scene_mean_selected_delta": -0.06473921360983394,
+          "scene_mean_oracle_delta": -0.004667613513132643
+        },
+        "large": {
+          "expressions": 415,
+          "scenes": 60,
+          "selected_delta": -0.02772708443633045,
+          "oracle_delta": -0.002500904432262283,
+          "scene_mean_selected_delta": -0.04804748606478644,
+          "scene_mean_oracle_delta": 0.003255898030869129
+        }
+      }
+    },
+    "val32": {
+      "expressions": 851,
+      "scenes": 32,
+      "original": {
+        "small": {
+          "expressions": 105,
+          "scenes": 17,
+          "selected_delta": -0.017762930052621025,
+          "oracle_delta": -0.020603774487972258,
+          "scene_mean_selected_delta": -0.06578234371935286,
+          "scene_mean_oracle_delta": -0.013622323666010053
+        },
+        "middle": {
+          "expressions": 469,
+          "scenes": 30,
+          "selected_delta": -0.019492648391009393,
+          "oracle_delta": 0.009645291328080681,
+          "scene_mean_selected_delta": -0.0036973781272558693,
+          "scene_mean_oracle_delta": 0.009673673224634805
+        },
+        "large": {
+          "expressions": 277,
+          "scenes": 29,
+          "selected_delta": 0.002793372059005585,
+          "oracle_delta": -0.005349188500053724,
+          "scene_mean_selected_delta": 0.013489927741306503,
+          "scene_mean_oracle_delta": -0.006110513167681827
+        }
+      },
+      "within_scene_rotated": {
+        "small": {
+          "expressions": 105,
+          "scenes": 17,
+          "selected_delta": -0.002407790081841605,
+          "oracle_delta": 0.0052119243890047075,
+          "scene_mean_selected_delta": 0.019482834902909398,
+          "scene_mean_oracle_delta": -0.010749547174757616
+        },
+        "middle": {
+          "expressions": 469,
+          "scenes": 30,
+          "selected_delta": -0.033056160802446576,
+          "oracle_delta": -0.0006831116450112511,
+          "scene_mean_selected_delta": -0.04780924362206661,
+          "scene_mean_oracle_delta": -0.002302682580713656
+        },
+        "large": {
+          "expressions": 277,
+          "scenes": 29,
+          "selected_delta": 0.019937767813634464,
+          "oracle_delta": 0.002352517681525825,
+          "scene_mean_selected_delta": 0.011357262674352768,
+          "scene_mean_oracle_delta": 0.0026370931610542334
+        }
+      }
+    }
+  }
+}

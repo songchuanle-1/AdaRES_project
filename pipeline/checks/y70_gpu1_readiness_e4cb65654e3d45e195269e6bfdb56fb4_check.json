@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "token": "e4cb65654e3d45e195269e6bfdb56fb4",
+  "id": "AdaRES-Y70",
+  "operation": "check",
+  "observed_start_local": "2026-10-30T16:56:29.695432+08:00",
+  "observed_end_local": "2026-10-30T16:56:29.921720+08:00",
+  "queue_blockers": [
+    "AdaRES-Y67"
+  ],
+  "live": {
+    "hostname": "dl01-MS-7C60",
+    "memory_used_mib": 22720.0,
+    "utilization_percent": 56.0,
+    "power_limit_watts": 390.0,
+    "compute_pids": [
+      100811
+    ]
+  },
+  "Y67_canonical_fixed30_complete": false,
+  "ready": false,
+  "native_GPU_executed": false,
+  "native_plan": {
+    "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_plan.json",
+    "sha256": "7d99e9d76ba3d25f1cff637cf1406951f9a4d350431b279f6dc2c891c8739813"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "evidence": [
+    {
+      "path": "scripts/run_y70_gpu1_probe.py",
+      "sha256": "b8489deacb15377b4634a33b8b70b2ae3aea1491600bae325a51620c61888072"
+    },
+    {
+      "path": "pipeline/checks/y70_gpu1_readiness_e4cb65654e3d45e195269e6bfdb56fb4_check.log",
+      "sha256": "c5ca64857442d62d53f23bb031799da008c17649dec335d990ae2cce306a7226"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_program.py",
+      "sha256": "bff4eead628ee0d465be42cc4eaf4da2b5bc3c86f995bb629e4d6342a82210f4"
+    }
+  ],
+  "limitation": "Read-only queue/source/physical readiness check; no CUDA initialization, native task step or efficacy claim."
+}

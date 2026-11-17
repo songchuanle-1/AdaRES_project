@@ -1,0 +1,183 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "reviewed_at": "2026-10-17T12:42:22.887006+08:00",
+  "tested_bundle": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "native_backward": {
+    "path": "pipeline/analyses/y52_backward_scalar_compat_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "6a874c23e808e4470a2b0a31599e72e6e3dcb1a5b350fdc1eb9b69ed500181e9"
+  },
+  "native_resources": {
+    "path": "pipeline/analyses/y52_resources_batch_compat_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "b18aa59d2f9ebc3f5fadd2a8e6d73b598dfaf996bc2906782b79ad607a25316b"
+  },
+  "trained_parent_predict": {
+    "path": "pipeline/analyses/y52_predict_readout_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "6de0aea355ffefc81874439580eb57d04a3cf41bd7137645a0cb26b5f823aa99"
+  },
+  "parent_initial_zero_activity_preserved": true,
+  "trained_parent_gradient_batches": 4,
+  "max_shared_query_gradient_delta": 0.00012113276170566678,
+  "nonempty_state_restore": {
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "python_rng": true,
+    "numpy_rng": true,
+    "torch_rng": true,
+    "cuda_rng": true
+  },
+  "parameter_delta": 0,
+  "training_peak_reserved_bytes": 7832862720,
+  "trained_parent_behavior": [
+    {
+      "batch": 0,
+      "matched": {
+        "probability_max_abs": 1.4901161193847656e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 8.791685104370117e-07,
+        "mask_points_changed": 262095,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 1,
+      "matched": {
+        "probability_max_abs": 1.519918441772461e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 1.3445785498333862e-06,
+        "mask_points_changed": 415599,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 2,
+      "matched": {
+        "probability_max_abs": 1.430511474609375e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 1.3187527656555176e-06,
+        "mask_points_changed": 943610,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 3,
+      "matched": {
+        "probability_max_abs": 1.3113021850585938e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 2.086162567138672e-07,
+        "mask_points_changed": 283496,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 4,
+      "matched": {
+        "probability_max_abs": 1.6689300537109375e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 2.980232238769531e-07,
+        "mask_points_changed": 543128,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 5,
+      "matched": {
+        "probability_max_abs": 2.175569534301758e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 8.344650268554688e-07,
+        "mask_points_changed": 418013,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 6,
+      "matched": {
+        "probability_max_abs": 2.3245811462402344e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 5.364418029785156e-07,
+        "mask_points_changed": 615820,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    },
+    {
+      "batch": 7,
+      "matched": {
+        "probability_max_abs": 1.9073486328125e-06,
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "confidence_max_abs": 3.5762786865234375e-07,
+        "mask_points_changed": 288782,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "repeat_max": {
+        "binary_mask_points_changed": 0,
+        "selected_query_changes": 0,
+        "maximum_expression_iou_difference": 0.0
+      },
+      "within_measured_behavioral_repeats": true
+    }
+  ],
+  "inference_within_measured_behavioral_repeats": true,
+  "uncommitted_seven_file_bundle": true,
+  "existing_authorization_Y50_only": {
+    "path": "pipeline/authorizations/AdaRES-Y50_commit.json",
+    "sha256": "98ca31a33d1905e61ad0c61ce8994fd5f8a5cf3ea3e0ede12e7afdb75690906b"
+  },
+  "gate_scope": "Native task-relevant target/gradient intervention, finite train graph and bounded resource/restore controls; no new trainable tensors. Released-init score inactivity retained, fixed trained-parent activation not represented as trained Y52 benefit.",
+  "limitations": "No trained Y52 accuracy or global Pareto guarantee. Float probability counts alone are not binary-mask changes. Exact commit binding and admission receipt remain absent; no automatic Git commit.",
+  "disposition": "Await explicit human scoped commit permission"
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "4030dbcec9c5437380f1cbd92d2c3ccc",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T12:50:34.809460+00:00",
+  "recorded_at": "2026-10-16T13:04:47.699214+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: due client20:58:33-20:58:38+08 observation found foreign GPU0 PID19723 and own GPU1 Y50 PID31539, no idle authorized exclusive card or diagnostic lease. SAME frozen Y52 remains blocked; historical capture schema lacks actual FPS/sample/matching indices, cannot fabricate native matched-query evidence. No new scientific tests/model changes/revisions/admissions/launches. Y50 original process matches, but two short TRAIN9/30 samples4686/4686 and bounded VAL9/30 samples363/363 did not advance; retain process and uncertainty, infer neither healthy current progress nor a hang from PID/utilization. Begin process best0.4823 is not efficacy. All45 Y52 evidence hashes, immutable snapshot/pending, six-section report and seven-section memory verified. Unchanged closure queue-opening rejecting predicate remains true; prior exact failed check CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. No repeated known-failing finish or checker/blocker/queue bypass. Retry21:58:38+08 derives from actual resource observation, not schedule. Save receipt and abort this tick only; preserve both jobs and evidence, independently verify release.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 16,
+    "input_tokens": 3355201,
+    "cached_input_tokens": 3311616,
+    "output_tokens": 24333,
+    "reasoning_output_tokens": 12375,
+    "total_tokens": 3379534,
+    "uncached_input_tokens": 43585,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 3,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

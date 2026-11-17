@@ -1,0 +1,76 @@
+{
+  "id": "AdaRES-Y96",
+  "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+  "server": "server-1",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-11-10T16:57:33.148758",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-11-11T17:59:40.763363",
+      "status": "done_complete",
+      "best_miou": "0.5082",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 3893460,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y96_seed_query_skip_res_20261110_165652.log",
+  "launched": "2026-11-10T16:57:33",
+  "final_best": "0.5082",
+  "finished_at": "2026-11-11T17:59:40.763363",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-1\\adares_y96_seed_query_skip_res\\cc7e16a3523147a4be1fa5774e4888ce\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "61cdee00134543cf9142ab9e7ef6243a",
+  "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y96_provenance_4198029edcde47b7a8686b8e8dcafad4.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y96_server1_fixed30_y98_cc7e16a3523147a4be1fa5774e4888ce.json",
+    "sha256": "3999d2d4a3db05cb969797a23fc2a6527b2772771d2c41b00e84eb1eab61c6c0"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y96_seed_query_skip_res/20261110_165702/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5081601738929749,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "b6fcab6fe1cefb7c84b22cdfca530c0cf3483dfe1f61f958e4bf8e5ab19a36d1"
+    },
+    {
+      "path": "/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y96_seed_query_skip_res/20261110_165702/best.pth",
+      "epoch": 23,
+      "best_miou": 0.5081601738929749,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 23,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "74ebba156ac733d1f7fac7c9c4c60d51423c3b784b57ebd89ac970d4dd861185"
+    }
+  ],
+  "formal_FIRST_miou": 0.5082609879270078,
+  "complete_scientific_review": {
+    "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/complete_scientific_review.json",
+    "sha256": "a9c2024c78085d06b3d8fbf994a86868aa864eac5bb2704efa16698f53563573"
+  },
+  "full_frozen_evaluation_result": {
+    "path": "pipeline/analyses/y96_full_review_e5e0b36314b84a08be8493b934595019/formal_comparison.json",
+    "sha256": "a1bc87eaa9e677dcf8c2e49875db5a9b9546e4c7b9b435ac9204f2ac2ea4e007"
+  },
+  "full_trained_cost_result": {
+    "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/trained_cost.json",
+    "sha256": "92679041f439ab1a76180e2863bd5d499c2b5a9aa85a5855bed2e2e090495ddf"
+  },
+  "post_measurement_audit": {
+    "path": "pipeline/analyses/y96_trained_cost_e5e0b36314b84a08be8493b934595019/postaudit.json",
+    "sha256": "2f8a22416c03882c444af4563c59262d17ec9b6e231047090c23b7cfb687215c"
+  },
+  "scientific_disposition": "complete_inconclusive"
+}

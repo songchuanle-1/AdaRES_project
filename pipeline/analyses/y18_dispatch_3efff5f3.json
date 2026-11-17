@@ -1,0 +1,41 @@
+{
+  "at_local": "2026-10-01T23:35:14.890811+08:00",
+  "candidate": "AdaRES-Y18",
+  "events": [],
+  "tasks": [
+    {
+      "id": "AdaRES-Y18",
+      "label": "Y18 exact point-measure mask supervision",
+      "config": "configs_song/model_paper5/adares_y18_point_measure_res.yaml",
+      "status": "waiting",
+      "depends_on": [],
+      "code_commit": "f0a704f9fa517c00452c31a53b21912c02911c8c",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y18.json",
+      "requires_exclusive_ownership": true,
+      "min_epochs": 30,
+      "patience": 30,
+      "total_epochs": 30
+    },
+    {
+      "id": "AdaRES-Y15",
+      "label": "Y15 language-conditioned candidate completion",
+      "config": "configs_song/model_paper5/adares_y15_query_completion_res.yaml",
+      "status": "running",
+      "depends_on": [],
+      "code_commit": "2bb1c107b27fbfdbdf2d6ffd25b43bb5bf4f3e6c",
+      "admission_receipt": "pipeline/admissions/AdaRES-Y15.json",
+      "requires_exclusive_ownership": true,
+      "min_epochs": 30,
+      "patience": 30,
+      "total_epochs": 30,
+      "pid": 18796,
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y15_query_completion_res_20260930_194938.log",
+      "server": "server-2",
+      "gpu": "0",
+      "launch_verified": true,
+      "launch_verification": "training_progress",
+      "launched": "2026-09-30T19:50:13"
+    }
+  ],
+  "scope": "Canonical dispatch only; no repeated monitor/goal preflight"
+}

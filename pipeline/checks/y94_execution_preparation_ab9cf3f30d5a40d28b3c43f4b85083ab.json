@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "token": "ab9cf3f30d5a40d28b3c43f4b85083ab",
+  "id": "AdaRES-Y94",
+  "code_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "observed_at": "2026-11-09T11:07:08.296597+08:00",
+  "operational_guards": 10,
+  "actual_native_admission_guards": 19,
+  "actual_native_evidence": {
+    "path": "pipeline/analyses/y94_server1_smoke_ab9cf3f30d5a40d28b3c43f4b85083ab.json",
+    "sha256": "9810b2f9aa80b2cbca1ceac5e1c84b289964777af3c7c1bc04c425f26026f5e2"
+  },
+  "source_selected": false,
+  "admitted": false,
+  "training_launched": false,
+  "production_HEAD_preserved": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "index_queue_running_preserved": true,
+  "originals_unchanged": true,
+  "evidence": [
+    {
+      "path": "scripts/create_y94_execution_helpers.py",
+      "sha256": "b27002f8a20f5cc5d628d011ded0f53b0e39684e301f5165744e19c15ad75f0a"
+    },
+    {
+      "path": "scripts/advance_y92.py",
+      "sha256": "847b8fe5c0c9f2c196ac1e9969600a8b93d35e2f7e00385047afd027e3b327d2"
+    },
+    {
+      "path": "scripts/y93_deployment.py",
+      "sha256": "84597020a76fd8452c1608bff35ee88db44b59885ddc3872b03d48b70baf0c38"
+    },
+    {
+      "path": "scripts/advance_y94.py",
+      "sha256": "36ca775be3cb9ae73240d12cfe24807b2466f888c3f99cea959551836dcf1b6b"
+    },
+    {
+      "path": "scripts/y94_deployment.py",
+      "sha256": "49e4d737c47fd850703577486ba79425ce771518721682351f751a0906d604db"
+    },
+    {
+      "path": "pipeline/checks/y94_execution_ab9cf3f30d5a40d28b3c43f4b85083ab_test_y94_execution_guards.log",
+      "sha256": "52f4c41c721cc66f5c8180f136361a9224ebafefdfa37d8bbce02871b0d1908f"
+    },
+    {
+      "path": "pipeline/checks/y94_execution_ab9cf3f30d5a40d28b3c43f4b85083ab_test_y94_admission.log",
+      "sha256": "c02b8828bd80a9c6882e852aad879f91b81debc732ddfef732ca91d7c534cc8e"
+    },
+    {
+      "path": "scripts/test_y94_execution_guards.py",
+      "sha256": "7bc43e1032fbbf0bc023cddadbbbfeb494082523fb5244ea0f99f956256d858b"
+    },
+    {
+      "path": "scripts/test_y94_admission.py",
+      "sha256": "9417276d94a1d93d0a615296358a73763389cd2469c85fdddd41be8aedd43638"
+    }
+  ]
+}

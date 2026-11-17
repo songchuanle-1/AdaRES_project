@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-11-08T06:54:58.954160+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 28,
+      "total": 30,
+      "step": 3477,
+      "count": 4686
+    },
+    "log_bytes": 36631088
+  },
+  "after": {
+    "observed_at": "2026-11-08T06:55:03.959757+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 28,
+      "total": 30,
+      "step": 3486,
+      "count": 4686
+    },
+    "log_bytes": 36633734
+  },
+  "samples": [
+    {
+      "observed_at": "2026-11-08T06:54:58.954160+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 28,
+        "total": 30,
+        "step": 3477,
+        "count": 4686
+      },
+      "log_bytes": 36631088
+    },
+    {
+      "observed_at": "2026-11-08T06:55:03.959757+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 28,
+        "total": 30,
+        "step": 3486,
+        "count": 4686
+      },
+      "log_bytes": 36633734
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 2442962,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y90_query_peer_affinity_res_20261107_071419.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 2442962\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "gpu": "34, 22762, 66, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y90",
+  "token": "44cda724c0684229aad8ca06bfcb427f",
+  "observed_local": "2026-11-08T06:55:03.398174+08:00",
+  "evidence": [
+    {
+      "path": "scripts/y91_deployment.py",
+      "sha256": "027498d0b26023193453cf6eb461bc3869e98790575b7fd40d7f77d01d300a27"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y90_44cda724c0684229aad8ca06bfcb427f_progress.log",
+      "sha256": "11b2044fc974225cde6ccdc940993eace317ffa8f1ed01fb0b712638f99df84c"
+    }
+  ]
+}

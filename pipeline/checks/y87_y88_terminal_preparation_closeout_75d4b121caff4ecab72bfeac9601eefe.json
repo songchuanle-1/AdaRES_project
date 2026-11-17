@@ -1,0 +1,86 @@
+{
+  "complete": true,
+  "token": "75d4b121caff4ecab72bfeac9601eefe",
+  "observed_at": "2026-11-06T07:13:31.247608+00:00",
+  "generator": {
+    "path": "pipeline/checks/y87_y88_terminal_helpers_75d4b121caff4ecab72bfeac9601eefe.json",
+    "sha256": "3b26d623ce6a86dfbd1b02757c59a826446ba91ef64a2227bd9ee26356edd986"
+  },
+  "terminal_plans": {
+    "AdaRES-Y87": {
+      "path": "pipeline/checks/y87_terminal_preparation_75d4b121caff4ecab72bfeac9601eefe.json",
+      "sha256": "668995b6590a7356acf9a574245528be227f0da75ca8b0180d316b5af3c0437b"
+    },
+    "AdaRES-Y88": {
+      "path": "pipeline/checks/y88_terminal_preparation_75d4b121caff4ecab72bfeac9601eefe.json",
+      "sha256": "0de6507d9c7ee119823678ff3714680aa5d088f9e0a6cb43927a4f5bd8f4188f"
+    }
+  },
+  "tests": [
+    {
+      "path": "pipeline/checks/y87_terminal_preparation_75d4b121caff4ecab72bfeac9601eefe_tests.log",
+      "sha256": "98b3241729ada142a6c59380f075648d3852249b136a8d0f145ef3490894c431"
+    },
+    {
+      "path": "pipeline/checks/y88_terminal_preparation_75d4b121caff4ecab72bfeac9601eefe_tests.log",
+      "sha256": "5576950954e7dacde4f86a9574637304df063b6b7f51319dc0697a56c1210e4c"
+    }
+  ],
+  "CPU_guard_tests_passed": 50,
+  "active": {
+    "AdaRES-Y87": {
+      "phase": {
+        "phase": "Train",
+        "epoch": 17,
+        "total": 30,
+        "step": 1422,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y87_75d4b121caff4ecab72bfeac9601eefe_latest.json",
+        "sha256": "9b466312f9d048a51f743e64cbf0aba157e8bac25d98fc617d48948964474c4b"
+      }
+    },
+    "AdaRES-Y88": {
+      "phase": {
+        "phase": "Train",
+        "epoch": 12,
+        "total": 30,
+        "step": 893,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y88_75d4b121caff4ecab72bfeac9601eefe_latest.json",
+        "sha256": "d8a439c1e0a25aaaef3e0d39ff54ed7ba06e012635c3fb3a662a709f3ea717ec"
+      }
+    }
+  },
+  "prior_preparations_preserved": {
+    "AdaRES-Y89": {
+      "path": "pipeline/checks/y89_cpu_version_6c44267f773e46f18bed69bb0934dd5e.json",
+      "sha256": "a940610d90398b1f877d1439bd0fc4999d1d17d44e48df4e9a605b1cece91f65"
+    },
+    "AdaRES-Y90": {
+      "path": "pipeline/checks/y90_cpu_version_1c6bba9b68404903951324169dd02d86.json",
+      "sha256": "d490dd81a7d83b2b3f0d41e4ca168ee0a6466e8d4a8737b53bd1fc760e77e62b"
+    },
+    "AdaRES-Y91": {
+      "path": "pipeline/checks/y91_cpu_version_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "b8b2639846ce988300e7b87c20b8563b423b3d0427de6b51d657e0bd1953b1e6"
+    }
+  },
+  "only_local_lifecycle_helpers_added": true,
+  "new_scientific_candidates": 0,
+  "admissions": 0,
+  "launches": 0,
+  "archives": 0,
+  "checkpoint_loaded": false,
+  "full_terminal_verification_executed": false,
+  "native_GPU_executed": false,
+  "formal_frozen_FIRST_updated": false,
+  "production_HEAD_preserved": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "queue_changed": false,
+  "training_stopped": false,
+  "GPU1_paused": true,
+  "Y57_separately_paused": true
+}

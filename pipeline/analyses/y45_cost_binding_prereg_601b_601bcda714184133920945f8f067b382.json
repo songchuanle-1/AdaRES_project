@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "preregistered_at": "2026-10-15T11:05:25.972125+08:00",
+  "source": {
+    "path": "scripts/probe_y44_trained_cost_392a.py",
+    "sha256": "734a251d3c727f2c4e0cb24ad01202b528be44b8c75ad0beff0eaa744ac12d7e"
+  },
+  "generated": {
+    "path": "scripts/probe_y45_trained_cost_601b.py",
+    "sha256": "d09a2c2c31d29823ba8deb60aef6ddb67b0fc260a7519d0b9f662026155c9053"
+  },
+  "only_changed_constant_bindings": {
+    "/tmp/adares_y44_terminal_392a_": 2,
+    "/tmp/adares_y44_frozen_392a_": 1,
+    "y44": 1,
+    "AdaRES-Y44": 1
+  },
+  "protocol": "Unchanged TRAIN8/largest-pair, native predict2warmups3samples, separate trained native optimizer stress2warmups3samples; ephemeral updates only."
+}

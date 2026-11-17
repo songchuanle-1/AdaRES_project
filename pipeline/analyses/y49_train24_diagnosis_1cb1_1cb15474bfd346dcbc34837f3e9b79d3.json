@@ -1,0 +1,1565 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "observed_at_local": "2026-10-16T13:35:59.124656+08:00",
+  "capture_sha256": "277a11859224110feec8819de03f3d1aa3ae6bc37074d42f9fa5b29b4e842c11",
+  "production_decoder_sha256": "50cfd1e821c188ddcb44bb929a6ffb84a186f0af89e1deb002aae10ca7e3bf31",
+  "numeric_AST_unchanged": true,
+  "return_container_only": "numpy.float64 instead of torch.double, no numeric AST modification",
+  "native_scenes": 24,
+  "native_expressions": 96,
+  "old_TRAIN8_32_witness_count": 0,
+  "new_expressions_with_witnesses": 0,
+  "new_witness_groups": 0,
+  "total_seconds": 27.363420100184157,
+  "inverse_calls": 6314,
+  "cyclic_calls": 0,
+  "cyclic_inverse_seconds": 0,
+  "forest_inverse_seconds": 23.14329779217951,
+  "cyclic_profile": [],
+  "rows": [
+    {
+      "scan_id": "scene0008_00",
+      "dataset_index": 178,
+      "ann_id": "0",
+      "nodes": 1701,
+      "unique_selected_sets": 82,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002314424077104693
+      ],
+      "inverse_calls": 81,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.4564838989172131
+    },
+    {
+      "scan_id": "scene0008_00",
+      "dataset_index": 178,
+      "ann_id": "1",
+      "nodes": 1701,
+      "unique_selected_sets": 96,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.005631360604934854
+      ],
+      "inverse_calls": 95,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.5458959001116455
+    },
+    {
+      "scan_id": "scene0008_00",
+      "dataset_index": 178,
+      "ann_id": "2",
+      "nodes": 1701,
+      "unique_selected_sets": 84,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0053254911348046274
+      ],
+      "inverse_calls": 83,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.47058610059320927
+    },
+    {
+      "scan_id": "scene0008_00",
+      "dataset_index": 178,
+      "ann_id": "3",
+      "nodes": 1701,
+      "unique_selected_sets": 72,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0022554971281925074
+      ],
+      "inverse_calls": 71,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.40465499949641526
+    },
+    {
+      "scan_id": "scene0009_00",
+      "dataset_index": 200,
+      "ann_id": "0",
+      "nodes": 506,
+      "unique_selected_sets": 72,
+      "equal_mass_groups": 12,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.017125298593612004
+      ],
+      "inverse_calls": 71,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.13057680008932948
+    },
+    {
+      "scan_id": "scene0009_00",
+      "dataset_index": 200,
+      "ann_id": "1",
+      "nodes": 506,
+      "unique_selected_sets": 26,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0028920602421322883
+      ],
+      "inverse_calls": 25,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.046664799796417356
+    },
+    {
+      "scan_id": "scene0009_00",
+      "dataset_index": 200,
+      "ann_id": "2",
+      "nodes": 506,
+      "unique_selected_sets": 62,
+      "equal_mass_groups": 9,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008142400416673246
+      ],
+      "inverse_calls": 61,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.12291159946471453
+    },
+    {
+      "scan_id": "scene0009_00",
+      "dataset_index": 200,
+      "ann_id": "3",
+      "nodes": 506,
+      "unique_selected_sets": 56,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.07606127739728263
+      ],
+      "inverse_calls": 55,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.10423490079119802
+    },
+    {
+      "scan_id": "scene0010_00",
+      "dataset_index": 216,
+      "ann_id": "0",
+      "nodes": 1184,
+      "unique_selected_sets": 72,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0018351611478106822
+      ],
+      "inverse_calls": 71,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.2851215989794582
+    },
+    {
+      "scan_id": "scene0010_00",
+      "dataset_index": 216,
+      "ann_id": "1",
+      "nodes": 1184,
+      "unique_selected_sets": 86,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.004172392604850583
+      ],
+      "inverse_calls": 85,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.34034950006753206
+    },
+    {
+      "scan_id": "scene0010_00",
+      "dataset_index": 216,
+      "ann_id": "2",
+      "nodes": 1184,
+      "unique_selected_sets": 150,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.004994543938527496
+      ],
+      "inverse_calls": 149,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.5915345996618271
+    },
+    {
+      "scan_id": "scene0010_00",
+      "dataset_index": 216,
+      "ann_id": "3",
+      "nodes": 1184,
+      "unique_selected_sets": 96,
+      "equal_mass_groups": 9,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.003092968825539222
+      ],
+      "inverse_calls": 95,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.3768242003861815
+    },
+    {
+      "scan_id": "scene0012_00",
+      "dataset_index": 249,
+      "ann_id": "0",
+      "nodes": 1540,
+      "unique_selected_sets": 60,
+      "equal_mass_groups": 9,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0029440131866390606
+      ],
+      "inverse_calls": 59,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.30045720050111413
+    },
+    {
+      "scan_id": "scene0012_00",
+      "dataset_index": 249,
+      "ann_id": "1",
+      "nodes": 1540,
+      "unique_selected_sets": 108,
+      "equal_mass_groups": 2,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0056329563057314624
+      ],
+      "inverse_calls": 107,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.5374886996578425
+    },
+    {
+      "scan_id": "scene0012_00",
+      "dataset_index": 249,
+      "ann_id": "2",
+      "nodes": 1540,
+      "unique_selected_sets": 132,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008150115181038031
+      ],
+      "inverse_calls": 131,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.6687258002348244
+    },
+    {
+      "scan_id": "scene0012_00",
+      "dataset_index": 249,
+      "ann_id": "3",
+      "nodes": 1540,
+      "unique_selected_sets": 104,
+      "equal_mass_groups": 11,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002990312426562447
+      ],
+      "inverse_calls": 103,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.5382968981284648
+    },
+    {
+      "scan_id": "scene0013_00",
+      "dataset_index": 259,
+      "ann_id": "0",
+      "nodes": 284,
+      "unique_selected_sets": 62,
+      "equal_mass_groups": 17,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.1167611077972831
+      ],
+      "inverse_calls": 61,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.07074180105701089
+    },
+    {
+      "scan_id": "scene0013_00",
+      "dataset_index": 259,
+      "ann_id": "1",
+      "nodes": 284,
+      "unique_selected_sets": 64,
+      "equal_mass_groups": 16,
+      "witnesses": [],
+      "descriptor_ranges": [
+        0.8149694683908046,
+        0.11693068085475533
+      ],
+      "inverse_calls": 63,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.07187899947166443
+    },
+    {
+      "scan_id": "scene0013_00",
+      "dataset_index": 259,
+      "ann_id": "2",
+      "nodes": 284,
+      "unique_selected_sets": 62,
+      "equal_mass_groups": 18,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.11693068085475533
+      ],
+      "inverse_calls": 61,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.0703224006574601
+    },
+    {
+      "scan_id": "scene0013_00",
+      "dataset_index": 259,
+      "ann_id": "3",
+      "nodes": 284,
+      "unique_selected_sets": 52,
+      "equal_mass_groups": 13,
+      "witnesses": [],
+      "descriptor_ranges": [
+        0.9063444108761329,
+        0.11573275456754184
+      ],
+      "inverse_calls": 51,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.05923250108025968
+    },
+    {
+      "scan_id": "scene0014_00",
+      "dataset_index": 265,
+      "ann_id": "0",
+      "nodes": 650,
+      "unique_selected_sets": 60,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.017403725173484097
+      ],
+      "inverse_calls": 59,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.13675530068576336
+    },
+    {
+      "scan_id": "scene0014_00",
+      "dataset_index": 265,
+      "ann_id": "1",
+      "nodes": 650,
+      "unique_selected_sets": 34,
+      "equal_mass_groups": 9,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008385370552900118
+      ],
+      "inverse_calls": 33,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.07889129943214357
+    },
+    {
+      "scan_id": "scene0014_00",
+      "dataset_index": 265,
+      "ann_id": "2",
+      "nodes": 650,
+      "unique_selected_sets": 34,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.010969229039591744
+      ],
+      "inverse_calls": 33,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.07773649925366044
+    },
+    {
+      "scan_id": "scene0014_00",
+      "dataset_index": 265,
+      "ann_id": "3",
+      "nodes": 650,
+      "unique_selected_sets": 72,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.010629858543121817
+      ],
+      "inverse_calls": 71,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.16715219942852855
+    },
+    {
+      "scan_id": "scene0016_00",
+      "dataset_index": 281,
+      "ann_id": "0",
+      "nodes": 927,
+      "unique_selected_sets": 40,
+      "equal_mass_groups": 3,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002608956782233607
+      ],
+      "inverse_calls": 39,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.12879140046425164
+    },
+    {
+      "scan_id": "scene0016_00",
+      "dataset_index": 281,
+      "ann_id": "1",
+      "nodes": 927,
+      "unique_selected_sets": 86,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.003728459293027009
+      ],
+      "inverse_calls": 85,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.2821346002165228
+    },
+    {
+      "scan_id": "scene0016_00",
+      "dataset_index": 281,
+      "ann_id": "2",
+      "nodes": 927,
+      "unique_selected_sets": 76,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0047087427823716554
+      ],
+      "inverse_calls": 75,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.250135799869895
+    },
+    {
+      "scan_id": "scene0016_00",
+      "dataset_index": 281,
+      "ann_id": "3",
+      "nodes": 927,
+      "unique_selected_sets": 110,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.006998410632562346
+      ],
+      "inverse_calls": 109,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.36068889824673533
+    },
+    {
+      "scan_id": "scene0017_00",
+      "dataset_index": 299,
+      "ann_id": "0",
+      "nodes": 1256,
+      "unique_selected_sets": 64,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.019381737679259436
+      ],
+      "inverse_calls": 63,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.2765614993404597
+    },
+    {
+      "scan_id": "scene0017_00",
+      "dataset_index": 299,
+      "ann_id": "1",
+      "nodes": 1256,
+      "unique_selected_sets": 56,
+      "equal_mass_groups": 9,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.018475689930083194
+      ],
+      "inverse_calls": 55,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.24416319909505546
+    },
+    {
+      "scan_id": "scene0017_00",
+      "dataset_index": 299,
+      "ann_id": "2",
+      "nodes": 1256,
+      "unique_selected_sets": 50,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.00525298366520599
+      ],
+      "inverse_calls": 49,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.2110357009805739
+    },
+    {
+      "scan_id": "scene0017_00",
+      "dataset_index": 299,
+      "ann_id": "3",
+      "nodes": 1256,
+      "unique_selected_sets": 72,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.005296510999980741
+      ],
+      "inverse_calls": 71,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.3009830988012254
+    },
+    {
+      "scan_id": "scene0018_00",
+      "dataset_index": 312,
+      "ann_id": "0",
+      "nodes": 775,
+      "unique_selected_sets": 56,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0023344725862908255
+      ],
+      "inverse_calls": 55,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.1493922001682222
+    },
+    {
+      "scan_id": "scene0018_00",
+      "dataset_index": 312,
+      "ann_id": "1",
+      "nodes": 775,
+      "unique_selected_sets": 88,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.003762962341232301
+      ],
+      "inverse_calls": 87,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.23375930171459913
+    },
+    {
+      "scan_id": "scene0018_00",
+      "dataset_index": 312,
+      "ann_id": "2",
+      "nodes": 775,
+      "unique_selected_sets": 20,
+      "equal_mass_groups": 2,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.007132675326779414
+      ],
+      "inverse_calls": 19,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.05325590027496219
+    },
+    {
+      "scan_id": "scene0018_00",
+      "dataset_index": 312,
+      "ann_id": "3",
+      "nodes": 775,
+      "unique_selected_sets": 54,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0031954360647286073
+      ],
+      "inverse_calls": 53,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.149055699352175
+    },
+    {
+      "scan_id": "scene0020_00",
+      "dataset_index": 325,
+      "ann_id": "0",
+      "nodes": 1282,
+      "unique_selected_sets": 48,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.009302039419744723
+      ],
+      "inverse_calls": 47,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.20770650054328144
+    },
+    {
+      "scan_id": "scene0020_00",
+      "dataset_index": 325,
+      "ann_id": "1",
+      "nodes": 1282,
+      "unique_selected_sets": 186,
+      "equal_mass_groups": 1,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.03144731415860791
+      ],
+      "inverse_calls": 185,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.8073123015929013
+    },
+    {
+      "scan_id": "scene0020_00",
+      "dataset_index": 325,
+      "ann_id": "2",
+      "nodes": 1282,
+      "unique_selected_sets": 62,
+      "equal_mass_groups": 3,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008255528637254428
+      ],
+      "inverse_calls": 61,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.26283419877290726
+    },
+    {
+      "scan_id": "scene0020_00",
+      "dataset_index": 325,
+      "ann_id": "3",
+      "nodes": 1282,
+      "unique_selected_sets": 182,
+      "equal_mass_groups": 2,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.02904984174427072
+      ],
+      "inverse_calls": 181,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.7651675008237362
+    },
+    {
+      "scan_id": "scene0021_00",
+      "dataset_index": 336,
+      "ann_id": "0",
+      "nodes": 406,
+      "unique_selected_sets": 82,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.07394610561639958
+      ],
+      "inverse_calls": 81,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.12140710023231804
+    },
+    {
+      "scan_id": "scene0021_00",
+      "dataset_index": 336,
+      "ann_id": "1",
+      "nodes": 406,
+      "unique_selected_sets": 30,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.005695142416777044
+      ],
+      "inverse_calls": 29,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.04510029964148998
+    },
+    {
+      "scan_id": "scene0021_00",
+      "dataset_index": 336,
+      "ann_id": "2",
+      "nodes": 406,
+      "unique_selected_sets": 56,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.011102708670852057
+      ],
+      "inverse_calls": 55,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.08321519964374602
+    },
+    {
+      "scan_id": "scene0021_00",
+      "dataset_index": 336,
+      "ann_id": "3",
+      "nodes": 406,
+      "unique_selected_sets": 90,
+      "equal_mass_groups": 10,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.07948448741645697
+      ],
+      "inverse_calls": 89,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.13372130133211613
+    },
+    {
+      "scan_id": "scene0022_00",
+      "dataset_index": 345,
+      "ann_id": "0",
+      "nodes": 1099,
+      "unique_selected_sets": 52,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0018738818342053376
+      ],
+      "inverse_calls": 51,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.19023310067132115
+    },
+    {
+      "scan_id": "scene0022_00",
+      "dataset_index": 345,
+      "ann_id": "1",
+      "nodes": 1099,
+      "unique_selected_sets": 52,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0021390994741523617
+      ],
+      "inverse_calls": 51,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.18961120094172657
+    },
+    {
+      "scan_id": "scene0022_00",
+      "dataset_index": 345,
+      "ann_id": "2",
+      "nodes": 1099,
+      "unique_selected_sets": 82,
+      "equal_mass_groups": 10,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002926526764729487
+      ],
+      "inverse_calls": 81,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.29774679988622665
+    },
+    {
+      "scan_id": "scene0022_00",
+      "dataset_index": 345,
+      "ann_id": "3",
+      "nodes": 1099,
+      "unique_selected_sets": 72,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0026810205299439005
+      ],
+      "inverse_calls": 71,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.2610044991597533
+    },
+    {
+      "scan_id": "scene0023_00",
+      "dataset_index": 362,
+      "ann_id": "0",
+      "nodes": 1170,
+      "unique_selected_sets": 90,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.023970595963859864
+      ],
+      "inverse_calls": 89,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.3429994990583509
+    },
+    {
+      "scan_id": "scene0023_00",
+      "dataset_index": 362,
+      "ann_id": "1",
+      "nodes": 1170,
+      "unique_selected_sets": 134,
+      "equal_mass_groups": 13,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.015230377304453091
+      ],
+      "inverse_calls": 133,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.5147590998094529
+    },
+    {
+      "scan_id": "scene0023_00",
+      "dataset_index": 362,
+      "ann_id": "2",
+      "nodes": 1170,
+      "unique_selected_sets": 52,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.003756733297575976
+      ],
+      "inverse_calls": 51,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.2000987995415926
+    },
+    {
+      "scan_id": "scene0023_00",
+      "dataset_index": 362,
+      "ann_id": "3",
+      "nodes": 1170,
+      "unique_selected_sets": 18,
+      "equal_mass_groups": 2,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0065951287963370575
+      ],
+      "inverse_calls": 17,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.06839620042592287
+    },
+    {
+      "scan_id": "scene0024_00",
+      "dataset_index": 376,
+      "ann_id": "0",
+      "nodes": 2057,
+      "unique_selected_sets": 36,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002542749511900033
+      ],
+      "inverse_calls": 35,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.23386869998648763
+    },
+    {
+      "scan_id": "scene0024_00",
+      "dataset_index": 376,
+      "ann_id": "1",
+      "nodes": 2057,
+      "unique_selected_sets": 16,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        0.6666666666666666,
+        0.009916758278158966
+      ],
+      "inverse_calls": 15,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.12256699963472784
+    },
+    {
+      "scan_id": "scene0024_00",
+      "dataset_index": 376,
+      "ann_id": "2",
+      "nodes": 2057,
+      "unique_selected_sets": 110,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.004431192891954372
+      ],
+      "inverse_calls": 109,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.7241201980505139
+    },
+    {
+      "scan_id": "scene0024_00",
+      "dataset_index": 376,
+      "ann_id": "3",
+      "nodes": 2057,
+      "unique_selected_sets": 44,
+      "equal_mass_groups": 1,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.03096642832205898
+      ],
+      "inverse_calls": 43,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.28601979929953814
+    },
+    {
+      "scan_id": "scene0026_00",
+      "dataset_index": 399,
+      "ann_id": "0",
+      "nodes": 1052,
+      "unique_selected_sets": 44,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.010695972362535833
+      ],
+      "inverse_calls": 43,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.15265859989449382
+    },
+    {
+      "scan_id": "scene0026_00",
+      "dataset_index": 399,
+      "ann_id": "1",
+      "nodes": 1052,
+      "unique_selected_sets": 42,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.010964125698003646
+      ],
+      "inverse_calls": 41,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.1451665002387017
+    },
+    {
+      "scan_id": "scene0026_00",
+      "dataset_index": 399,
+      "ann_id": "2",
+      "nodes": 1052,
+      "unique_selected_sets": 42,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        0.7237529691211402,
+        0.016648918938025448
+      ],
+      "inverse_calls": 41,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.1472040992230177
+    },
+    {
+      "scan_id": "scene0026_00",
+      "dataset_index": 399,
+      "ann_id": "3",
+      "nodes": 1052,
+      "unique_selected_sets": 28,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.009949063427315386
+      ],
+      "inverse_calls": 27,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.09711179928854108
+    },
+    {
+      "scan_id": "scene0027_00",
+      "dataset_index": 416,
+      "ann_id": "0",
+      "nodes": 694,
+      "unique_selected_sets": 60,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.015484863966559237
+      ],
+      "inverse_calls": 59,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.1418419007677585
+    },
+    {
+      "scan_id": "scene0027_00",
+      "dataset_index": 416,
+      "ann_id": "1",
+      "nodes": 694,
+      "unique_selected_sets": 34,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008985355537439177
+      ],
+      "inverse_calls": 33,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.08226069901138544
+    },
+    {
+      "scan_id": "scene0027_00",
+      "dataset_index": 416,
+      "ann_id": "2",
+      "nodes": 694,
+      "unique_selected_sets": 96,
+      "equal_mass_groups": 15,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.06479554825240108
+      ],
+      "inverse_calls": 95,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.23211590060964227
+    },
+    {
+      "scan_id": "scene0027_00",
+      "dataset_index": 416,
+      "ann_id": "3",
+      "nodes": 694,
+      "unique_selected_sets": 98,
+      "equal_mass_groups": 10,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.024547479261796235
+      ],
+      "inverse_calls": 97,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.23640699870884418
+    },
+    {
+      "scan_id": "scene0028_00",
+      "dataset_index": 426,
+      "ann_id": "0",
+      "nodes": 1538,
+      "unique_selected_sets": 34,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0024422253142214467
+      ],
+      "inverse_calls": 33,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.17003030027262866
+    },
+    {
+      "scan_id": "scene0028_00",
+      "dataset_index": 426,
+      "ann_id": "1",
+      "nodes": 1538,
+      "unique_selected_sets": 66,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.004564180204863266
+      ],
+      "inverse_calls": 65,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.3312315000221133
+    },
+    {
+      "scan_id": "scene0028_00",
+      "dataset_index": 426,
+      "ann_id": "2",
+      "nodes": 1538,
+      "unique_selected_sets": 42,
+      "equal_mass_groups": 1,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.004089611099456714
+      ],
+      "inverse_calls": 41,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.20758450031280518
+    },
+    {
+      "scan_id": "scene0028_00",
+      "dataset_index": 426,
+      "ann_id": "3",
+      "nodes": 1538,
+      "unique_selected_sets": 14,
+      "equal_mass_groups": 3,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002534346461873227
+      ],
+      "inverse_calls": 13,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.06988000008277595
+    },
+    {
+      "scan_id": "scene0029_00",
+      "dataset_index": 443,
+      "ann_id": "0",
+      "nodes": 255,
+      "unique_selected_sets": 50,
+      "equal_mass_groups": 11,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.012192900603050671
+      ],
+      "inverse_calls": 49,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.05199339985847473
+    },
+    {
+      "scan_id": "scene0029_00",
+      "dataset_index": 443,
+      "ann_id": "1",
+      "nodes": 255,
+      "unique_selected_sets": 16,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0032091265264074798
+      ],
+      "inverse_calls": 15,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.016861500684171915
+    },
+    {
+      "scan_id": "scene0029_00",
+      "dataset_index": 443,
+      "ann_id": "2",
+      "nodes": 255,
+      "unique_selected_sets": 16,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.03192108637548008
+      ],
+      "inverse_calls": 15,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.016687200870364904
+    },
+    {
+      "scan_id": "scene0029_00",
+      "dataset_index": 443,
+      "ann_id": "3",
+      "nodes": 255,
+      "unique_selected_sets": 24,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.03196168031756896
+      ],
+      "inverse_calls": 23,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.024688399862498045
+    },
+    {
+      "scan_id": "scene0031_00",
+      "dataset_index": 457,
+      "ann_id": "0",
+      "nodes": 1985,
+      "unique_selected_sets": 104,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.016829049326309686
+      ],
+      "inverse_calls": 103,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.6675480997655541
+    },
+    {
+      "scan_id": "scene0031_00",
+      "dataset_index": 457,
+      "ann_id": "1",
+      "nodes": 1985,
+      "unique_selected_sets": 74,
+      "equal_mass_groups": 10,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0025429935902518963
+      ],
+      "inverse_calls": 73,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.48627269943244755
+    },
+    {
+      "scan_id": "scene0031_00",
+      "dataset_index": 457,
+      "ann_id": "2",
+      "nodes": 1985,
+      "unique_selected_sets": 94,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.013668295513160289
+      ],
+      "inverse_calls": 93,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.6020232995506376
+    },
+    {
+      "scan_id": "scene0031_00",
+      "dataset_index": 457,
+      "ann_id": "3",
+      "nodes": 1985,
+      "unique_selected_sets": 100,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.006843348945629213
+      ],
+      "inverse_calls": 99,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.6323761995881796
+    },
+    {
+      "scan_id": "scene0032_00",
+      "dataset_index": 473,
+      "ann_id": "0",
+      "nodes": 377,
+      "unique_selected_sets": 10,
+      "equal_mass_groups": 2,
+      "witnesses": [],
+      "descriptor_ranges": [
+        0.641093229744728,
+        0.017821286901775757
+      ],
+      "inverse_calls": 9,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.014032999984920025
+    },
+    {
+      "scan_id": "scene0032_00",
+      "dataset_index": 473,
+      "ann_id": "1",
+      "nodes": 377,
+      "unique_selected_sets": 30,
+      "equal_mass_groups": 6,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.037028763450163815
+      ],
+      "inverse_calls": 29,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.041678899666294456
+    },
+    {
+      "scan_id": "scene0032_00",
+      "dataset_index": 473,
+      "ann_id": "2",
+      "nodes": 377,
+      "unique_selected_sets": 12,
+      "equal_mass_groups": 3,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.018691788414056054
+      ],
+      "inverse_calls": 11,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.017208100063726306
+    },
+    {
+      "scan_id": "scene0032_00",
+      "dataset_index": 473,
+      "ann_id": "3",
+      "nodes": 377,
+      "unique_selected_sets": 48,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.03671884773906009
+      ],
+      "inverse_calls": 47,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.0670948987826705
+    },
+    {
+      "scan_id": "scene0033_00",
+      "dataset_index": 480,
+      "ann_id": "0",
+      "nodes": 1138,
+      "unique_selected_sets": 74,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.0477523578485014
+      ],
+      "inverse_calls": 73,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.27707299985922873
+    },
+    {
+      "scan_id": "scene0033_00",
+      "dataset_index": 480,
+      "ann_id": "1",
+      "nodes": 1138,
+      "unique_selected_sets": 162,
+      "equal_mass_groups": 7,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.05303938142451381
+      ],
+      "inverse_calls": 161,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.6067559996154159
+    },
+    {
+      "scan_id": "scene0033_00",
+      "dataset_index": 480,
+      "ann_id": "2",
+      "nodes": 1138,
+      "unique_selected_sets": 170,
+      "equal_mass_groups": 11,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.05443756171327285
+      ],
+      "inverse_calls": 169,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.6339183005038649
+    },
+    {
+      "scan_id": "scene0033_00",
+      "dataset_index": 480,
+      "ann_id": "3",
+      "nodes": 1138,
+      "unique_selected_sets": 198,
+      "equal_mass_groups": 10,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.052904148420069186
+      ],
+      "inverse_calls": 197,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.7396199023351073
+    },
+    {
+      "scan_id": "scene0034_00",
+      "dataset_index": 495,
+      "ann_id": "0",
+      "nodes": 801,
+      "unique_selected_sets": 42,
+      "equal_mass_groups": 3,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.007182012646725244
+      ],
+      "inverse_calls": 41,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.11367689981125295
+    },
+    {
+      "scan_id": "scene0034_00",
+      "dataset_index": 495,
+      "ann_id": "1",
+      "nodes": 801,
+      "unique_selected_sets": 4,
+      "equal_mass_groups": 1,
+      "witnesses": [],
+      "descriptor_ranges": [
+        0.5914634146341463,
+        0.0066526248292183565
+      ],
+      "inverse_calls": 3,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.010761199984699488
+    },
+    {
+      "scan_id": "scene0034_00",
+      "dataset_index": 495,
+      "ann_id": "2",
+      "nodes": 801,
+      "unique_selected_sets": 34,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.003983560276860754
+      ],
+      "inverse_calls": 33,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.0915473997592926
+    },
+    {
+      "scan_id": "scene0034_00",
+      "dataset_index": 495,
+      "ann_id": "3",
+      "nodes": 801,
+      "unique_selected_sets": 58,
+      "equal_mass_groups": 3,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.004929105524455246
+      ],
+      "inverse_calls": 57,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.15567219885997474
+    },
+    {
+      "scan_id": "scene0035_00",
+      "dataset_index": 511,
+      "ann_id": "0",
+      "nodes": 509,
+      "unique_selected_sets": 18,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.002629218924703025
+      ],
+      "inverse_calls": 17,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.03211189969442785
+    },
+    {
+      "scan_id": "scene0035_00",
+      "dataset_index": 511,
+      "ann_id": "1",
+      "nodes": 509,
+      "unique_selected_sets": 40,
+      "equal_mass_groups": 9,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.012313006483578803
+      ],
+      "inverse_calls": 39,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.0721785994246602
+    },
+    {
+      "scan_id": "scene0035_00",
+      "dataset_index": 511,
+      "ann_id": "2",
+      "nodes": 509,
+      "unique_selected_sets": 26,
+      "equal_mass_groups": 5,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.02079769773882778
+      ],
+      "inverse_calls": 25,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.04686419968493283
+    },
+    {
+      "scan_id": "scene0035_00",
+      "dataset_index": 511,
+      "ann_id": "3",
+      "nodes": 509,
+      "unique_selected_sets": 26,
+      "equal_mass_groups": 4,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.021180210421699597
+      ],
+      "inverse_calls": 25,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.0470978997182101
+    },
+    {
+      "scan_id": "scene0036_00",
+      "dataset_index": 521,
+      "ann_id": "0",
+      "nodes": 451,
+      "unique_selected_sets": 62,
+      "equal_mass_groups": 11,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008938496772588844
+      ],
+      "inverse_calls": 61,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.10033529833890498
+    },
+    {
+      "scan_id": "scene0036_00",
+      "dataset_index": 521,
+      "ann_id": "1",
+      "nodes": 451,
+      "unique_selected_sets": 104,
+      "equal_mass_groups": 12,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.009710301230381635
+      ],
+      "inverse_calls": 103,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.16838900139555335
+    },
+    {
+      "scan_id": "scene0036_00",
+      "dataset_index": 521,
+      "ann_id": "2",
+      "nodes": 451,
+      "unique_selected_sets": 92,
+      "equal_mass_groups": 17,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.008959549713341675
+      ],
+      "inverse_calls": 91,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.1498125004582107
+    },
+    {
+      "scan_id": "scene0036_00",
+      "dataset_index": 521,
+      "ann_id": "3",
+      "nodes": 451,
+      "unique_selected_sets": 58,
+      "equal_mass_groups": 8,
+      "witnesses": [],
+      "descriptor_ranges": [
+        1.0,
+        0.006827845459687176
+      ],
+      "inverse_calls": 57,
+      "cyclic_calls": 0,
+      "inverse_seconds": 0.09415990067645907
+    }
+  ],
+  "limitations": [
+    "Prediction-blind frozen extension, no validation selection or optimizer updates.",
+    "A component-mass collision is not a collision of full parent query/pooled feature inputs.",
+    "TRAIN GT used only for passive per-witness diagnostic, never an inference input.",
+    "Profile is diagnostic CPU time, not production native resource admission or efficacy.",
+    "Original32-expression zero witness evidence and native runtime spikes remain binding."
+  ]
+}

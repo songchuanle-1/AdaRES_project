@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y93",
+  "config": "configs_song/model_paper5/adares_y93_evidence_hidden_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "retained_branch": "refs/heads/adares-y93-evidence-hidden-skip-on-y92",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y93_bound_native_v2.py",
+    "sha256": "d921a9acc4adfe4ac3dd189aea6f016a09cddee52496757a0309ee92454b6298"
+  },
+  "planned_command": "python -B scripts/run_y93_bound_native_v2.py --server server-1 --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved authorized GPU0, after exact matching AdaRES-Y92 fixed30 checkpoint verification/canonical archive. No GPU1 or power/data/runtime substitution.",
+  "checks": "Original TRAIN two finite task losses/backward/updates; fourteen exact original full769 evidence and second-hidden residual/final-linear consumers,70 original MLP-layer calls, native gates, zero then learned residual response, finite original/new/input gradients, modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y93_additive_binding_06710ed9596b4721bb1aa67ca0fdaf97_server1_program.py",
+    "sha256": "a8dbd225d77f8c167784443dc250043c039b744a2c2e4072b3cfcb60d0812c02"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y93_native_c13001fa6abe4bc18cd4dfc36e588ed5_server1_plan.json",
+    "sha256": "1988f002a2850a0d0a0e92f2155e6372bc61ea772146553a4dff85c0b5543856"
+  },
+  "additive_parent": "27d6f67e7121a5168bbfeca9db745377e0bd49e5"
+}

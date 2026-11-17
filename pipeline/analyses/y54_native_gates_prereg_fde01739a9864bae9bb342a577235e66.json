@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T13:18:26.402605+08:00",
+  "bundle": {
+    "path": "pipeline/analyses/y54_prototype_bundle_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "5fe5b6d4b2d58ba2fe14cec37577ebed20b65f8ea5beaa6b3a7d4c6f9f3b40cf"
+  },
+  "body": {
+    "path": "scripts/probe_y54_native_gates_fde0.py",
+    "sha256": "8209193a87f66ea8c59c8e5026015b964ae3f97d25a8369ec205a996e8c560fb"
+  },
+  "helpers": {
+    "path": "scripts/probe_y52_native_backward_89ff.py",
+    "sha256": "46fe63efbfd798d32c66a38b453c3a2819353bdca62a8381f7a7ab72fa5a1ef8"
+  },
+  "setup_source": {
+    "path": "scripts/probe_y52_native_matched_capture.py",
+    "sha256": "245a708b74597c05aef960fb9015835158c9880865fa406579edf1beab3cdbe0"
+  },
+  "fixed_test": "Independent SAME seven-file prototype, exact raw parent hashes plus normalized local-parent equality, released SPFormer native loader/seed1999. SAME8TRAIN scenes/4batchsize2 pairs: real sparse/FPS/native loss/backward, all6fine-layer finite nonzero valid/attention gradients and zero actual invalid-source gradient; indicator gradient active. Fixed point-largest original pair2warmups/3measures finite reserved<24GiB. Native AdamW/PolyLR2steps with nonempty model/optimizer/scheduler/allRNG exact RAM restore. Matched parameter/state schema. SAME trained-W2 weights parent/candidate8single-scene predict,2warmups/3measures, binary/argmax/IoU parity versus independent repeats plus latency/memory. Read unique existing Y36 best archive hash only, never select by new validation.",
+  "expected": "Corrected invalid fine supports contribute zero gradient while valid native task paths remain finite and active. No added parameters, finite within-card memory and supported single-scene inference behavior within measured repeats; report all limitations or failures honestly, no fixed task gain or tolerance tuning.",
+  "limits": "No checkpoint weights saved or deployed, Git commit, admission, queue or training launch. Fixed trained W2 is diagnostic only. Physically independent namespace; not Y52 or Y50 intervention.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y54_native_gates_program_fde01739a9864bae9bb342a577235e66.py",
+    "sha256": "81e094a9dee73340488b1c407ae0d96a50d3283e4c1f0b71b1dec280726bd25c"
+  }
+}

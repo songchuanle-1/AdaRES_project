@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y64",
+  "token": "3ac8220cdf5341ca96cbb688c52e270f",
+  "snapshot_generated_at": "2026-10-27T04:48:20.805476+00:00",
+  "code_commit": "e27895f45b6f172454c50d40d1c0184c6aa8dfcb",
+  "native_smoke_plan": {
+    "path": "pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_plan.json",
+    "sha256": "bfcfa275ccc9d1f87f692761c50405bb4d4419e8bcb3fede50cd3b13ca057a11"
+  },
+  "program": {
+    "path": "pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_program.py",
+    "sha256": "2aa93add765134cb1d014b9fdb12e764a243ff756c2bcb438af36741bb17be94"
+  },
+  "exact_seven_files_current_worktree_and_commit_match": true,
+  "current_goal_and_train_entry_match": true,
+  "native_executed": false,
+  "native_smoke_passed": false,
+  "admitted": false,
+  "queue_changed": false,
+  "resource_evidence": {
+    "path": "pipeline/checks/gpu_occupation_server-2_3ac8220cdf5341ca96cbb688c52e270f.json",
+    "sha256": "134a108183df2e4b920593d6dcb2035155269a1d4bfda13b03202af703935d87"
+  },
+  "limitation": "Identity and actual busy-resource recheck only; no repeat CPU controls or native GPU steps."
+}

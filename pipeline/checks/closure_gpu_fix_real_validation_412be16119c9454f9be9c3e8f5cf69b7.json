@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "validate_work_passed": true,
+  "occupation_evidence": {
+    "path": "pipeline/checks/gpu_occupation_server-2_412be16119c9454f9be9c3e8f5cf69b7.json",
+    "sha256": "73a25cc999e88b8c539c4aee87765495765b0cb6f3f45166c7e04bd75641c649"
+  },
+  "tasks": [
+    {
+      "id": "AdaRES-Y62",
+      "status": "running",
+      "server": "server-1",
+      "gpu": "0",
+      "pid": 2540376,
+      "launch_verified": true
+    },
+    {
+      "id": "AdaRES-Y63",
+      "status": "waiting",
+      "server": "server-1",
+      "gpu": 0,
+      "pid": null,
+      "launch_verified": null
+    }
+  ],
+  "Y57_paused": true,
+  "full_postflight_passed": false,
+  "note": "Real current full research-work validation only; canonical finish remains required."
+}

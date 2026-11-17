@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-25T21:55:40.641055+08:00",
+  "previous_plan": {
+    "path": "pipeline/checks/adares_y63_server1_63b27dd8efe04a0bab6dc0291cefdbf0_plan.json",
+    "sha256": "977c9dab4fe1b83ff8d361e86bebc6401e47c976693ab9e4fef7119f0c256b60"
+  },
+  "current_plan": {
+    "path": "pipeline/checks/adares_y63_server1_power350_63b27dd8efe04a0bab6dc0291cefdbf0_plan.json",
+    "sha256": "fe9b411a160c8f10186978936c1f29ff95f181cb27f3178dd401c173ac99683c"
+  },
+  "failure_log": {
+    "path": "pipeline/analyses/adares_y63_server1_smoke_63b27dd8efe04a0bab6dc0291cefdbf0.log",
+    "sha256": "f944c60dad89251f722d1c2acc20a40e8a8eb997e159292d1b032139f62e1b50"
+  },
+  "failure_scope": "Runtime resource guard inherited server-2 280W; before model/data/backward execution.",
+  "observed_server1_power": 350.0,
+  "hardware_changed": false,
+  "model_and_YAML_changed": false,
+  "limitation": "This changes only the frozen host-specific guard to the observed authorized server-1 default, not a scientific or numeric model gate."
+}

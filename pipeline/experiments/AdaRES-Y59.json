@@ -1,0 +1,54 @@
+{
+  "id": "AdaRES-Y59",
+  "config": "configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-22T22:48:00.312881",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-23T20:49:31.638812",
+      "status": "done_complete",
+      "best_miou": "0.4957",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 28712,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y59_frozen_text_mode_res_20261022_224724.log",
+  "launched": "2026-10-22T22:48:00",
+  "final_best": "0.4957",
+  "finished_at": "2026-10-23T20:49:31.638812",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-2\\adares_y59_frozen_text_mode_res\\3e61cded0e934db5bb4f9abd4451c12c\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "da9ce7b7fe75487489e44bc6e57d74a2",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y59.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y59_fixed30_3e61cded0e934db5bb4f9abd4451c12c.json",
+    "sha256": "0c00de9a832602e02d42118a93e1b61554c4129c9fc13ebf3a90a00d676f3d23"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y59_frozen_text_mode_res/20261022_104722/last.pth",
+      "epoch": 30,
+      "best_miou": 0.4956555962562561,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 30,
+      "sha256": "b322549fb87f049a48cf38cb33cb4c1656903cee4f9658abb43061a5b6eecc54"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y59_frozen_text_mode_res/20261022_104722/best.pth",
+      "epoch": 13,
+      "best_miou": 0.4956555962562561,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 13,
+      "sha256": "f0459360c74832c4409e29b0f811d37f7c7aced46ff85583ddb26fd1a815352f"
+    }
+  ]
+}

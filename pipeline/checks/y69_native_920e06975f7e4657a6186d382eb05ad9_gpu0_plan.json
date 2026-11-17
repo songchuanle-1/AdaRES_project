@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y69",
+  "config": "configs_song/model_paper5/adares_y69_coarse_geometry_bias_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "9acd73cdc1b96be003c8450a9e22057248a0f531",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "required_resource": "Fresh exclusive authorized idle server-2 GPU0; canonical terminal archive/empty reservation; no compute PID; exact hostname/private runtime/original data; existing280.0W unchanged. Preserve all live Y66/Y67/Y68 and paused Y57.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y69_gpu0_smoke pipeline/checks/y69_native_920e06975f7e4657a6186d382eb05ad9_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Actual native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; one shared geometry bias consumed by six ordered coarse visual attention stages, seven shared indicators, actual combined attention masks equal learned bias with original Boolean hard exclusions and key padding preserved; exact expression-expanded source positions/FPS/sampling query-position correspondence; independent head0/head7/query0/query127/first-last-expression displacement formula; zero first-step/nonzero second-step response, new weight[8,3] finite nonzero gradient/actual update and finite source/query gradients; native modes and peak memory.",
+  "CPU_guard_tests_passed": 10,
+  "Python38_compile": true,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y69_native_920e06975f7e4657a6186d382eb05ad9_gpu0_program.py",
+    "sha256": "03356c30d890569534d3221f62f5912582e3322f06842a9b308552645ee58437"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 2,
+  "preregistered_at": "2026-10-20T22:51:42.763662+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_resources_rev2_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "9772c975d9e6366d40f5c115f81e1723af52791c68c533f8345dde80ddbe4dfa"
+  },
+  "body": {
+    "path": "scripts/probe_y56_resources_dd8e.py",
+    "sha256": "83de04b00a20f3d6864220cf236eda8cb6023c4f5e44e6200c4056e20bdb546e"
+  },
+  "setup": {
+    "path": "scripts/setup_y56_rev2_dd8e.py",
+    "sha256": "efd87f8cb3f347a4c011ef0d85fd1be860501afca0f98e117feb8a14791b6339"
+  },
+  "bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev2_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "815753574eee259eab414463c513e5db19ff262e8a7ca4778acf0288a5eb902d"
+  },
+  "unchanged_cohort_controls_and_gates": true,
+  "original_reference_equality_test": true,
+  "result": "pending"
+}

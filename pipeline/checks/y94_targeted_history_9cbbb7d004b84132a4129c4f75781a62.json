@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "scope": "Targeted causal location comparison, not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y27",
+      "stage": "complete",
+      "hypothesis": "W2 confidence explicitly observes overlapping competitors but not mask-derived object-relative spatial arrangements. A new learned ordered-pair centroid/query attention path in confidence may resolve relational ambiguity among disjoint candidates. Earlier query features already contain geometry; efficacy and added-path necessity remain falsifiable, not presumed.",
+      "matched_control": "FIRST64 DISTINCT native TRAIN scenes, at most4 existing chunk descriptions, seed1999/W2 best; cache identical final query/mask/mass/positions. Report relation/other-entity annotation incidence and selected-v-oracle point IoU. Subsequent physical relative-peer versus disabled, zero/rolled centroids, translation, joint-permutation and detached-peer matched controls; no validation search."
+    },
+    {
+      "id": "AdaRES-Y26",
+      "stage": "rejected",
+      "hypothesis": "Native query-language cross-attention computes a LayerNorm result but discards it before query self-attention. Its affine parameters therefore cannot learn language-conditioned query calibration. Reconnecting only the existing qla postnorm may remove residual common-mode/scale nuisance and restore a task-loss gradient path; this is a falsifiable implementation mechanism, not a promised accuracy improvement.",
+      "matched_control": "Frozen first64 distinct TRAIN scenes in dataset order, at most4 descriptions, seed1999, identical cached native decoder inputs and W2 checkpoint. Compare native/repeat/identity-return hook, existing qla LayerNorm reconnected, and unit-RMS-only normalization. First8 trained and first4 released-initialization native backward batches compare connected versus detached affine parameters at identical forward values. No padding/token subset, threshold, temperature, loss-weight or validation scan."
+    },
+    {
+      "id": "AdaRES-Y25",
+      "stage": "rejected",
+      "hypothesis": "The native detached Boolean previous-mask cross-attention gate can hide GT target point mass from geometrically matched positive queries, preventing later refinement from reading excluded target evidence. A training-only continuous mask-probability attention prior could reopen the evidence/gradient path without added parameters or changing native inference.",
+      "matched_control": "Frozen W2 native TRAIN outputs and matching indices, exact Boolean gate versus all-valid attention and continuous log-mask-probability bias; same masks, queries, valid padding and annotated target mass. Repeat captures; report fallback and fully/partly locked targets without subset selection. Distinguish from G1 absolute quality targets, Y20 global gradient conflict, and Y23 language padding support."
+    },
+    {
+      "id": "AdaRES-Y54",
+      "stage": "complete",
+      "hypothesis": "In native two-scene TRAIN batches, fine 3D attention may include nonexistent padded superpoints when a scene has fewer than the fixed512fine supports. Fine-source gathering loses the scene validity mask and spatial nearest-neighbor selection can treat padded coordinates as real. This could contaminate query confidence with batch-composition nuisance; diagnose actual native attention/support incidence before proposing a correction.",
+      "matched_control": "Use the SAME eight frozen TRAIN scenes in their original four batchsize2 pairs, fixed trained W2 diagnostic weights and seed1999. Preserve actual sparse forward/FPS/coarse ranking. Derive and verify exact gathered support validity from actual coarse attention and native positions. Compare parent/repeat, padding-only source intervention and valid-source control; compare native fine block against correctly masked support plus nearest-neighbor masking. All-valid expressions are negative controls. No task-gain threshold or validation selection."
+    },
+    {
+      "id": "AdaRES-Y69",
+      "stage": "blocked",
+      "hypothesis": "A learned head-specific bounded relative-coordinate bias on the six coarse visual cross-attention logits may ease spatial mask refinement. Native fine attention already uses isotropic SCG distances, and seed/features can encode geometry; this is a direct coarse-attention parameterization comparison, not missing information, novelty or proven efficacy.",
+      "matched_control": "Unchanged W2 plus shared weight[8,3], exact zero/no RNG (+24 parameters). bias[b,h,q,m]=sum_a tanh(weight[h,a])*(abs(qpos[b,q,a]-spos[b,m,a])/(1+abs(delta)))**2, computed once and used by six coarse visual attentions. Original detached Boolean masks remain exact hard exclusions; key padding remains excluded. Fine SCG/k/gamma, shared confidence head/targets/losses/selector, native all-channel input, released SPFormer, Q128/seed1999/fixed30 YAML all unchanged."
+    },
+    {
+      "id": "AdaRES-Y77",
+      "stage": "blocked",
+      "hypothesis": "Original sampled seed coordinates determine native SCG neighborhoods, while the initial query content is generated from existing visual states. A direct learned projection of each original query position relative to the all-point-mass scene centroid may ease fitting spatially grounded initial masks/confidence. Visual features and SCG already encode geometry; missing information, novelty and trained benefit are not presumed.",
+      "matched_control": "Unchanged W2 plus q_init=q_generated+(original_query_pos-point_mass_weighted_mean(all_original_valid_scene_sp_pos))@W once immediately before original initial prediction. W[3,256] exactly zero/no RNG (+768). All three existing coordinates and all valid original scene point masses contribute; zero-mass empty-scene branch is a no-op. Preserve original sampling indices/query positions, static mask features, all six original refinements/hard gates/SCG/k/gamma/coarse-fine fusion, seven shared confidence calls/targets/losses/selector, original full input/existing2D/released backbone/Q128/seed1999/fixed30/native YAML. This is an initial representation connection, with no frequency/threshold/loss-weight sweep or validation selection."
+    },
+    {
+      "id": "AdaRES-Y87",
+      "stage": "blocked",
+      "hypothesis": "Original recurrent query refinement adds its self-attention and language-attention states before a shared active LayerNorm and stage FFN. A shared zero-initialized projection of their product at that exact sum may ease fitting conditional interactions. Both states already carry language and spatial context; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2 plus self+language+(self*language)@W before the SAME existing shared norm_qqa and original stage FFN, six calls. One zero W256x256/no RNG/+65536. Retain original coarse/fine half-average, all original tensors/queries/channels/full inputs/2D/backbone/coordinates/sampling/SCG/k/gamma/static masks/gate algorithm, seven shared confidence heads/targets/loss/selector/seed1999/fixed30/native YAML. Initial output/input-gradient anchors exact; nonzero intervention/bypass must affect intended refined masks then restore."
+    },
+    {
+      "id": "AdaRES-Y91",
+      "stage": "training",
+      "hypothesis": "The original shared confidence MLP maps normalized evidence through two GELU hidden states. Conditioning the second state channel-wise on the first may ease fitting nonlinear evidence interactions. The original MLP can represent such interactions implicitly; no defect, missing information, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2. h1=GELU(L1(evidence_norm(original_evidence))), h2=GELU(L2(h1)); final logits=L3(h2*(1+tanh(h1@W/sqrt256))). Shared zeroW256x256/no RNG/+65536. Original five MLP layers and both norms retain initial weights and seven-stage sharing; all original query/mask/mass/overlap/context/evidence, masks/scores/Boolean gates, full inputs/existing2D/releasedbackbone/sampling/SCG/targets-loss-selector/seed1999/fixed30/native YAML unchanged. Exact zero output/RNG and close input-gradient anchors; confidence-only intervention/bypass and original hidden consumers/finite new gradients/two updates required. No numerical/feature/validation scan."
+    },
+    {
+      "id": "AdaRES-Y92",
+      "stage": "training",
+      "hypothesis": "Original static visual mask embeddings are used by a dot product with normalized queries. A shared zero-initialized projection of squared visual channels before original batching may ease visual-side nonlinear mask fitting. The original x_mask MLP already has nonlinear capacity; no defect, missing information, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2; features_mask=x_mask+x_mask.square()@zeroW256x256 once before the SAME original batching and seven mask dots. One W/no RNG/+65536. Query normalization, score and shared confidence consumers stay original. Original all channels/points/data/2D/backbone/sampling/SCG/refinement/point masses/gate algorithm/targets/loss/selector/seed1999/fixed30 and native YAML unchanged. Exact zero output/RNG/weight/seven-stage anchors and input gradients; nonzero initial mask response/unchanged initial scores and exact bypass required."
+    },
+    {
+      "id": "AdaRES-Y93",
+      "stage": "blocked",
+      "hypothesis": "The original normalized full competition evidence reaches final confidence through two GELU hidden states. A learned residual from that same evidence into the second hidden state may ease confidence fitting while retaining the nonlinear path. The MLP already has nonlinear capacity; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2. E=evidence_norm(original full769 evidence); h1=GELU(L1(E)); h2=GELU(L2(h1)); logits=L3(h2+E@zeroW769x256). Shared/no RNG/+196864/total164826501. Retain original five MLP layers, both norms, all769 dimensions, seven-stage sharing, original query/mask/mass/overlap/context/evidence and all original masks/scores/data/fullinputs/2D/backbone/sampling/SCG/Boolean gates/targets-loss-selector/seed1999/fixed30/native YAML. Zero anchors and input gradients, full evidence/second-hidden consumers, confidence-only intervention/exact bypass and two finite synthetic updates required; no feature/threshold/weight/validation scan."
+    }
+  ]
+}

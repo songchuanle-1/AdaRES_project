@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "code_commit": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "parent_commit": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+  "retained_branch": "refs/heads/adares-y88-mask-query-quadratic",
+  "working_HEAD": "47ec0813cb4131ddf3e0a08db4fa9ac877123685",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y88_cpu_version_94a52159379646488ec9b38c645f5b1a_source_snapshot.json",
+    "sha256": "9100c490c2f0cd1e05ebc970d65a96a5e34ad2a7c3ca212474d7d0139bebe9f5"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y88_cpu_94a52159379646488ec9b38c645f5b1a.json",
+    "sha256": "3a79252554dc91c3a4f62aa690e9ddad1dea9c3106ddfa5dec82bc7df31a587b"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y88_cpu_94a52159379646488ec9b38c645f5b1a_program.py",
+    "sha256": "4af44eb573a00297a210a3969d6a84a57aef74769d74c34d3bd4f78ab426bd83"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y88_mask_query_quadratic_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y88_mask_query_quadratic/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y88_cpu_version_94a52159379646488ec9b38c645f5b1a.index",
+    "sha256": "95f40d376988e8db514c4947876fd68292f7582d1268e2c3a86fa40909b92324"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y88_cpu_native.py",
+    "sha256": "fcf6898be771de76e6ef968b9a7b81c4235546db0a1224d79fb177cfcb450f37"
+  }
+}

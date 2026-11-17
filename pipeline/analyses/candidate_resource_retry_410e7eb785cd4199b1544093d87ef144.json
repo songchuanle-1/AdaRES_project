@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "candidate_ids": [
+    "AdaRES-Y46",
+    "AdaRES-Y48"
+  ],
+  "observed": {
+    "path": "pipeline/analyses/y45_continuation_resource_410e7eb785cd4199b1544093d87ef144.json",
+    "sha256": "6f119372488b87de9eee44a22568089e58e94c2d26248dfeb7dc5895f2c971c5"
+  },
+  "unchanged_frozen_artifacts": {
+    "AdaRES-Y46": [
+      {
+        "path": "scripts/probe_y46_native_gate_3c6a.py",
+        "sha256": "78a9a9dd13134f23c2062e997c02303b776d552f845068ea9a4998e1a11036ad"
+      },
+      {
+        "path": "pipeline/analyses/y46_native_gate_freeze_3c6a_3c6a88e6bd334acb8889d557171b1ce6.json",
+        "sha256": "6ae218babc6326145aaf03c0dce754517c4df4f737eeb49542855ab4a769bb01"
+      }
+    ],
+    "AdaRES-Y48": [
+      {
+        "path": "scripts/probe_y48_joint_native_0cf9.py",
+        "sha256": "df3bfa1c2f84526fb046a0506d2bc2277b2fe242a7fe0701bb686794cfaaec62"
+      },
+      {
+        "path": "pipeline/analyses/y48_joint_native_freeze_0cf9_0cf9bfefb82447fcb2abf284a77480e2.json",
+        "sha256": "bf161c889fccf59fdd1f16f5da9df9890c0064d753141ade4ddf50e3d1280365"
+      }
+    ]
+  },
+  "actual_test": "Live GPU0/1 occupation and exact Y45 PID/config/cwd/seven source hashes with increasing native steps.",
+  "new_native_diagnostics_executed": 0,
+  "repeated_CPU_or_source_controls": false,
+  "scientific_status_unchanged": {
+    "AdaRES-Y46": "CPU_hook_validated_native_feasibility_blocked",
+    "AdaRES-Y48": "partial_diagnosis_native_ownership_conflict_unknown"
+  },
+  "pending_gates_unchanged": {
+    "AdaRES-Y46": [
+      "native_backward",
+      "resources",
+      "independence",
+      "constraints"
+    ],
+    "AdaRES-Y48": [
+      "diagnosis",
+      "controls",
+      "native_backward",
+      "resources",
+      "independence",
+      "constraints"
+    ]
+  },
+  "actual_native_mixed_label_groups": null,
+  "retry_after": "2026-10-15T03:20:24.604263+08:00",
+  "limitations": "Fresh resource evidence only, not scientific validation, route exhaustion, or admission."
+}

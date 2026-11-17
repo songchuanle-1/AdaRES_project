@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "2683c4548e244340a4d06c50bec79b2e",
+  "id": "AdaRES-Y93",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y93",
+    "label": "AdaRES-Y93 fixed30",
+    "config": "configs_song/model_paper5/adares_y93_evidence_hidden_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y93.json",
+    "scientific_candidate_id": "AdaRES-Y93",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 47380,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y93_evidence_hidden_skip_res_20261108_212628.log",
+    "launched": "2026-11-08T21:27:03"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y93 fixed30] configs_song/model_paper5/adares_y93_evidence_hidden_skip_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y93.py",
+    "sha256": "56e6cd3d4b072ae7e2b6b0d61923429ecbde9b8133ba5b20733b2c0ed3fba7a3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "prepared_at": "2026-10-20T20:52:10.517572+08:00",
+  "freezes": {
+    "AdaRES-Y52": {
+      "path": "pipeline/analyses/AdaRES-Y52_post_training_freeze_v2_e4e47d5857d44da683b1d9fed03bfe66.json",
+      "sha256": "d34ac4f97112c5db3fbce7314e2a830687488b8dfc2eba1a6857e712083ef028"
+    },
+    "AdaRES-Y54": {
+      "path": "pipeline/analyses/y54_post_training_freeze_fde01739a9864bae9bb342a577235e66.json",
+      "sha256": "96f268c3ad22121cbe750801693fdda5cc52792ad4215de5608af274232f056b"
+    }
+  },
+  "program": {
+    "path": "pipeline/analyses/terminal_bindings_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "0adcea90f38cc3ac2228123378995c5da05f88b4e742e7769a0c26ec4a1d2081"
+  },
+  "body": {
+    "path": "scripts/probe_terminal_bindings_6deb.py",
+    "sha256": "a2fea5cad5a36995d470e2d1495ac61445961be15de9bd30f3762b744fc8b1bb"
+  },
+  "operation": "Read-only best/last full-SHA metadata/source/no-process inspection, then unchanged frozen evaluation. No training or new selection."
+}

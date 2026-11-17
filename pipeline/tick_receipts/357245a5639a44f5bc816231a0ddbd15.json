@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "357245a5639a44f5bc816231a0ddbd15",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-17T12:48:39.354595+00:00",
+  "recorded_at": "2026-10-17T12:58:02.012278+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Unchanged known closure/cooldown mismatch: frozen closed stages prevent blocked-only cooldown; no durable candidate progress in snapshot (due=0, reserve_budget=0). Did not repeat cached CLOSURE_INCOMPLETE finish or fabricate diagnosis; no new finish attempted. Full audit preserved; Y52 wall-clock retry requires a fresh bound due view, not mutated snapshot/helper. Release this owned tick as INCOMPLETE.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 14,
+    "input_tokens": 1900872,
+    "cached_input_tokens": 1470720,
+    "output_tokens": 16757,
+    "reasoning_output_tokens": 3971,
+    "total_tokens": 1917629,
+    "uncached_input_tokens": 430152,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

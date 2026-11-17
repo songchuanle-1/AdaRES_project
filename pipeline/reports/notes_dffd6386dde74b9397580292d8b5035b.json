@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "用户明确“不小心重启机器了 你重新resume吧”，本轮仅恢复AdaRES-Y52/Y54同一训练。15:43:46.631611规范快照仍为steady/登记active2，但原生monitor明确无训练进程、旧两项均deathwatch1/3；0-3段保留此恢复前事实，不把旧running/返回0当实际运行。",
+    "独立SSH密钥核验server-2身份dl01-MS-7C60、当前boot830d73c5-f75a-4da9-ae89-5c34057618d0、/bak_home原UUID磁盘正常、数据目录存在，原PID35832/36864均不存在；各卡启动前1MiB/0%且无compute进程。检查真实配置、已准入源码和最近已验证attempt的完整哈希证据链，未退回更早断点。",
+    "最新完整断点为Y52 epoch26/best .5097084641456604、Y54 epoch27/best .5063441395759583，每项optimizer543状态与非空scheduler均在，scheduler.last_epoch与保存epoch一致。恢复Y52到GPU1/PID5442/epoch27，Y54到GPU0/PID5702/epoch28，--resume路径精确绑定上次native目录的last.pth。",
+    "2026-10-20上海15:50:15.401777至15:50:34.076607，Y52 Train[27/30]0至6；15:50:49.914310至15:50:56.135395，Y54 Train[28/30]24至37。新PID/cwd/config/单GPU/--resume均核验，restored=true且无训练错误，确认为原生步数增长而非只有进程。",
+    "模型、优化器和学习率调度器完整恢复，fixed30/seed1999不变，未完成epoch从该轮开头重放，不是从头重训。原last/best哈希未改，原best复制到各新native目录。历史best不是本轮新评估，本轮新best/Acc@50/spmIOU未知，不补零。",
+    "原队列任务槽位复用并完成running.json/实验history登记，两项launch_verified=true/training_progress；旧中断和全部历史证据保留。新增版本化受限恢复脚本及测试，旧4项+新5项共9项CPU单元测试通过；未修改旧恢复脚本、模型或训练协议。",
+    "两项各inspect/launch/verify共六份证据已哈希绑定候选，另有helper/test哈希及恢复汇总pipeline/reports/reboot_resume_summary_dffd6386dde74b9397580292d8b5035b.json。更新七段记忆和完整六段报告；无新候选、Git提交/推送、准入、GPU诊断或调度改动，没有新科学收益结论。"
+  ],
+  "decisions": [
+    "依当前所属会话明确重启后恢复授权执行，不索要额外授权。两条manual决策已记录；继续同一fixed30训练至原30轮，保持冻结全9508表达/141scene双FIRST与子组伤害评估，不用验证集调轮数。历史冠军Y36 .5110/目标.5150/差.0040不变。",
+    "Y56/Y57仍inconclusive，原exclusive_gpu_slot、冻结下一项和负证据不变；恢复后两卡占满，不停止训练腾卡，也不在本轮重跑既有诊断。旧deathwatch仅清除本次已核实恢复的两项，不放宽通用死亡判定。",
+    "本轮snapshot模式保持steady，不改快照、pending、期限、校验器或历史失败证据；手动恢复实际动作明确写入4-5段，不能套用“无动作”。规范finish成功且独立核实锁/pending消失后才称收尾完成；当前不预称PASS。收据用量只代表begin至receipt可见窗口，不是账单；未知不是零，缓存含input/推理含output，释放后不补写项目。"
+  ]
+}

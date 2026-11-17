@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "preregistered_at": "2026-10-17T11:59:51.106686+08:00",
+  "failure_scope": "implementation: diagnostic source binding only",
+  "reason": "Original strict raw-parent guard stopped before model construction because deployment uses different CRLF/LF encodings. Every parent canonical-LF SHA256 agrees exactly; no model source semantics changed.",
+  "change": "Only payload parent_files raw SHA256 values are rebound to measured remote bytes. The runtime raw-byte assertions and capture body are unchanged. No relaxed source guard.",
+  "prediction": "The same strict raw-byte checks will accept the measured newline-equivalent deployment, then run the SAME eight-scene/32-expression native TRAIN capture; every remaining assertion stays active.",
+  "comparisons": [
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py",
+      "frozen_local_raw": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "observed_remote_raw": "c540732d6e3334c85008035cc37b8537b0f85383d5f5a6bf663359fbf2b134bb",
+      "canonical_lf_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "frozen_local_raw": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "observed_remote_raw": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "canonical_lf_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "frozen_local_raw": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "observed_remote_raw": "6362d882662b0e51594cd4af994359b93f99497affc93600322a34ca6c349b01",
+      "canonical_lf_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "frozen_local_raw": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "observed_remote_raw": "7cb4b1c5490d0839fcdaf18553983b4c991f69e50474d07e83af9f0f8c937a5a",
+      "canonical_lf_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "frozen_local_raw": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "observed_remote_raw": "836ff790a0a8b9c55cf465a472c9462699f0753a7e87d0ef74a8946edf31565a",
+      "canonical_lf_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+    },
+    {
+      "path": "ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py",
+      "frozen_local_raw": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "observed_remote_raw": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "canonical_lf_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b"
+    }
+  ],
+  "preserved_failure": {
+    "path": "pipeline/analyses/y52_native_capture_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.log",
+    "sha256": "5200318ba364cabe7ba689272aa50fda630cec1541266223506eac90c3d4c4d2"
+  },
+  "inventory": {
+    "path": "pipeline/analyses/y52_source_y50_exit_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "3017a4a2abcecb29f2459de1f40574abeb8eecf07c52d88d45b420f43411106f"
+  },
+  "original_program": {
+    "path": "pipeline/analyses/y52_native_matched_capture_program_5b882c0928b14a3bab6799e9d15a5bf4.py",
+    "sha256": "315c0f6af7944f20b8bc7af50716bf1c874c87c4b8af9f96552f24f1e08eb621"
+  },
+  "body": {
+    "path": "scripts/probe_y52_native_matched_capture.py",
+    "sha256": "245a708b74597c05aef960fb9015835158c9880865fa406579edf1beab3cdbe0"
+  },
+  "resource": {
+    "path": "pipeline/analyses/y52_resources_exit_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "0717a7a0f7550b4ccd5e34b86907752b6954ea1aa23dd2d6fccf0f4319e0b7b6"
+  },
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "previous_design_cycle": {
+    "stop_reason": "external_resource_blocked",
+    "attempted_ids": [
+      "AdaRES-Y52"
+    ],
+    "evidence": [
+      {
+        "path": "pipeline/analyses/y52_due_resources_2d57_2d57dd4f5c44484bb30ba82bd0288bf3.json",
+        "sha256": "0d70e93351cd91bd039ee868dc7cb801ba8b12d83c9cdd6e9555d67684788485"
+      },
+      {
+        "path": "pipeline/analyses/y52_resource_recheck_2d57dd4f5c44484bb30ba82bd0288bf3.json",
+        "sha256": "1dbd0790caef3d1b944f9edb134ef749aa92a09614dfe77b9d7b3073053ea248"
+      }
+    ],
+    "resume_condition": "An authorized server-2 GPU0 or GPU1 is genuinely idle with no compute PID, memory<1024MiB/util<10%, and its exclusive diagnostic lease can be acquired; preserve both existing jobs and recheck live state.",
+    "retry_after": "2026-10-17T11:51:10.488677+08:00"
+  },
+  "frozen_test": "Unchanged seed1999/released backbone/eight TRAIN scenes/32 expressions/batch_size2/actual sparse forward, FPS and final+auxiliary matches. No backward, optimizer, saved weights, efficacy or admission claim.",
+  "result": "pending",
+  "candidate_model_revisions": 0,
+  "limitation": "AST digests from different Python versions are not compared. Canonical source-byte equality, exact observed raw binding and unchanged runtime assertions are required; actual GPU idleness and exclusive lease must still be checked again.",
+  "program": {
+    "path": "pipeline/analyses/y52_native_matched_capture_binding_v2_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "73b942321bcb2d745b31c9573c17fdfe4a1c0a59f8749efffcb4dcbe8e48b791"
+  }
+}

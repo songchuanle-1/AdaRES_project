@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "4198029edcde47b7a8686b8e8dcafad4",
+  "id": "AdaRES-Y96",
+  "original_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y96.json",
+    "sha256": "e68789390b95040aad82625c0b2ca095cd360f2b8a54a9c230dd162dd984a066"
+  },
+  "original_smoke": {
+    "path": "pipeline/checks/AdaRES-Y96_4198029edcde47b7a8686b8e8dcafad4_native_smoke.json",
+    "sha256": "dc1ca73101b8cdee4391b416b1ddac1070ea630052f91351019db2fff970ef72"
+  },
+  "actual_native_execution_token": "411304d6e92840b8844bb9ed860554fb",
+  "actual_native_result": {
+    "path": "pipeline/analyses/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb.json",
+    "sha256": "8ac136917c0e5210ab4058e0dda2019607f26284fa3417b911546b441bd40c4d"
+  },
+  "activation": {
+    "path": "pipeline/checks/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb_activation.json",
+    "sha256": "2f423c24fbdb9655f946fd2ab28160945a4c119b2e6cdd9968b7376a0210f02b"
+  },
+  "corrected_smoke": {
+    "path": "pipeline/checks/y96_native_provenance_4198029edcde47b7a8686b8e8dcafad4_smoke.json",
+    "sha256": "a2f14107e76cb186ea96e1d69731698c84e475f369d7e389f5f1120a2e49991c"
+  },
+  "corrected_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y96_provenance_4198029edcde47b7a8686b8e8dcafad4.json",
+    "sha256": "5dcd15c8da9efca80c530a5c61767fc68f9976a2e0c70aedcef3f5807ea42b1c"
+  },
+  "scientific_values_unchanged": true,
+  "original_files_unchanged": true,
+  "native_reexecuted": false,
+  "runtime_mutations": false,
+  "PID_unchanged": 3893460,
+  "helper": {
+    "path": "scripts/correct_y96_reused_native_provenance.py",
+    "sha256": "db8f6cd20b3a76bff24b06eea60f22e6360ba670ffc18d8e824c82ac1496faf8"
+  }
+}

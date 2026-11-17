@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "mode": "algebra",
+  "tool_sha256": "4312072d1089863681a7a8bf52c5cc1db28f498d308241a2db273913f7c36373",
+  "cases": 1000,
+  "max_value_error": 4.440892098500626e-16,
+  "max_gradient_error": 8.326672684688674e-17,
+  "unit_mass_control_error": 5.90853466153618e-08,
+  "max_unequal_mass_bce_change": 0.544909370300154,
+  "max_mixed_label_bce_change": 0.544909370300154,
+  "invalid_cases_rejected": 3,
+  "multi_scene_alignment": true,
+  "scope": "Exact arithmetic equivalence, not trained benefit",
+  "smoothing_caveat": "Equal superpoint sizes >1 change Dice +1 smoothing; only unit masses recover the unchanged native Dice exactly."
+}

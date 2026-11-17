@@ -1,0 +1,84 @@
+{
+  "complete": true,
+  "result": "resumed_training_progress_verified",
+  "token": "76f9c0ca61424281b30c4f491a33b37e",
+  "samples": [
+    {
+      "observed_local": "2026-10-21T12:47:36.796836+08:00",
+      "pid": 16317,
+      "restored": false,
+      "progress": null,
+      "native_logs": [],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:47:43.017604+08:00",
+      "pid": 16317,
+      "restored": false,
+      "progress": null,
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/20261021_004739.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:47:49.225758+08:00",
+      "pid": 16317,
+      "restored": true,
+      "progress": null,
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/20261021_004739.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:47:55.455273+08:00",
+      "pid": 16317,
+      "restored": true,
+      "progress": [
+        18,
+        0
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/20261021_004739.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:48:01.684777+08:00",
+      "pid": 16317,
+      "restored": true,
+      "progress": [
+        18,
+        0
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/20261021_004739.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-21T12:48:07.952593+08:00",
+      "pid": 16317,
+      "restored": true,
+      "progress": [
+        18,
+        5
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/20261021_004739.log"
+      ],
+      "errors": []
+    }
+  ],
+  "checkpoint_preservation": {
+    "best_carried_to": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/best.pth",
+    "best_sha256": "56c1631e60b17b7e8475da24c9399f765b085072d4833f3aabad9838623043eb",
+    "original_last_unchanged": true,
+    "original_best_unchanged": true
+  },
+  "resume_epoch": 18,
+  "pid": 16317,
+  "gpu": "1",
+  "historical_gpu_fault_preserved": true
+}

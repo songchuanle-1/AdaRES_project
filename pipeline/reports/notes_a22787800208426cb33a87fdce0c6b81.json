@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "本轮上海22:48:01取得实验优先design快照，实际会话归属匹配、后台Disabled，仅server-2 GPU0获准且保持280W。预检在物理空卡上已由既有门控派发原waiting Y59；快照running2是Y58旧deathwatch登记加Y59新登记，不是同卡双训练。creation_budget0，没有新候选或新准入。",
+    "22:50:55通过新只读v2 observer核验Y59 PID28712/命令/cwd/starttime/GPU0归属，Train1/30 step339至361实际递增，尾部无错误；GPU0=280W/71至73C/16896MiB，无当次热降频、新内核Xid/fallen-off。GPU1外部compute未干预；短采样不能证明硬件根因修复。证据pipeline/checks/ef_gpu0_runtime_a22787800208426cb33a87fdce0c6b81.json。",
+    "22:57:29完整CPU读取Y58实际最后公告目录20261021_130636内last.pth/best.pth，验证模型/optimizer/scheduler/meta、文件稳定性及SHA：last为epoch30、optimizer543项/scheduler30，best为epoch24、best mIoU=0.5034376382827759。原PID77094及同config训练不存在，完整Train30和Val30/363、最后保存日志均实核；没有伪造deathwatch3次。证据pipeline/checks/y58_fixed30_handoff_a22787800208426cb33a87fdce0c6b81.json及.log。",
+    "使用既有canonical finalize_task归档Y58=done_complete并保留完整原日志和远端checkpoint，只清理Y58旧登记；保留新Y59原PID及训练，running.json现在仅server-2 GPU0=Y59、队列1running/0waiting。Y58转为等待GPU0的冻结全量后评，不宣称科学晋升或效益；Y59已核验后candidate转training。Y57原暂停状态与恢复要求不动。",
+    "22:58:05检查Y60到期资源：原生YAML/七文件/冻结payload/commit/当前goal相符，唯一GPU0仍忙，无native smoke；Y59 Train1/30 step1118至1213继续增长，GPU0=280W/82C/16920MiB、内核无新Xid。Y59尚无验证结果，指标未知不是0。证据pipeline/checks/prepared_resources_a22787800208426cb33a87fdce0c6b81.json，tick_attempt=Y60/resource_check/blocked；Y61七文件与原CPU不可变payload亦实核一致，未重跑模型测试。",
+    "本轮没有模型/YAML修改、Git提交、新候选或准入；有1项真实训练完成归档、1项原已准入任务的既有派发及真实启动。冻结快照事实表仍明确标注预检时点，后续实际交接在本节记录。记忆已更新，接下来canonical finish，不预称校验成功。"
+  ],
+  "decisions": [
+    "用完整epoch30检查点和原进程/终态日志证据完成同一Y58的权威归档，不把旧登记当作仍运行，也不干预已启动Y59。Y58最后/最佳权重及原冻结评估计划保留，训练完成不是科学成功。决策pipeline/decisions/20261022-225910_other.md。",
+    "后续保护Y59固定30轮，用v2 observer显式选择AdaRES-Y59；不调用要求Y58仍运行或Y59仍waiting的旧helper，不重放本次finalizer。Y60/Y61原生两步及Y56/Y58冻结后评待独占GPU0，保持当前HEAD和历史证据；不改硬件、调度，不恢复Y57或转用GPU1/server-6，不重复索取常规许可。"
+  ]
+}

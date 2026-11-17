@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "cc0da7eddd07457196c6bce50bf476d7",
+  "snapshot_generated_at": "2026-10-25T14:51:42.519143+00:00",
+  "snapshot_sha256": "1816d71b89223cb8440cee723404b90621c6b5c2ad11c7fec443ff93f3405142",
+  "servers_sha256": "280bbd05106a77ece1cfad9382a0dd18a7d208ffd733d85bd6e1ebe221bb43f2",
+  "observed_at": "2026-10-25T14:52:19.965264+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 100, 24136, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100, 24156, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13813\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 13814\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token cc0da7eddd07457196c6bce50bf476d7 --server server-2",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_cc0da7eddd07457196c6bce50bf476d7.log",
+    "sha256": "bf79d5cb317a9f74ebc9d5209d414c8ec32c5fdbed4eeb80c39dced5210425f0"
+  }
+}

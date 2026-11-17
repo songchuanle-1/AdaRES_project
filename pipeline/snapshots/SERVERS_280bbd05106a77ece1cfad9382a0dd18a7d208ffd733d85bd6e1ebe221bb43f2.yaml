@@ -1,0 +1,60 @@
+# AdaRES_project — self-authored 3D-RES baseline
+servers:
+  local:
+    host: 192.168.1.175
+    user: songcl
+    role: workstation
+    gpu: {count: 0, type: none}
+    remote_code_root: D:/project/AdaRES_project/AdaRES
+    data_root: D:/data/
+    work_dir: D:/project/AdaRES_project/Checkpoints
+
+  server-1:
+    host: 192.168.1.175
+    user: songcl
+    role: gpu_server
+    expected_hostname: dl02-MS-7B73
+    allowed_gpus: [0]
+    max_tasks_per_gpu: 1
+    single_gpu_tasks_only: true
+    gpu: {count: 1, type: RTX3090}
+    remote_code_root: /data1/songcl/Project/AdaRES_project/AdaRES
+    python: /data1/songcl/Project/AdaRES_project/runtime/adares_project/bin/python
+    site_packages: /data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages
+    pointnet_egg: /data1/songcl/Project/AdaRES_project/runtime/pointnet2-0.0.0-py3.8-linux-x86_64.egg
+    runtime_library_path: /data1/songcl/Project/AdaRES_project/runtime/cuda113lib64
+    data_root: /data1/songcl/Project/AdaRES_project/data/
+    work_dir: /data1/songcl/Project/AdaRES_project/AdaRES_checkpoints
+    resource_authorization: pipeline/authorizations/server1_gpu0_20261025.json
+    runtime_path_mappings:
+      - {source: /bak_home/songcl/3D_visual_grounding/data/ipdn_data/data, target: /data1/songcl/Project/AdaRES_project/data}
+      - {source: /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints, target: /data1/songcl/Project/AdaRES_project/AdaRES_checkpoints}
+
+  server-2:
+    host: 192.168.1.163
+    expected_hostname: dl01-MS-7C60
+    user: songcl
+    role: gpu_server
+    # User-authorized temporary GPU0-only trial; Y57/GPU1 is paused.
+    allowed_gpus: [0]
+    max_tasks_per_gpu: 1
+    single_gpu_tasks_only: true
+    gpu: {count: 2, type: RTX3090}
+    remote_code_root: /bak_home/songcl/Project/AdaRES_project/AdaRES
+    conda_source: /home/dl01/anaconda3/etc/profile.d/conda.sh
+    conda_env: adares_project
+    python: /home/songcl/.conda/envs/adares_project/bin/python
+    site_packages: /home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages
+    pointnet_egg: /home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg
+    data_root: /bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/
+    work_dir: /bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints
+
+  server-6:
+    host: 100.64.3.28
+    user: songcl
+    role: gpu_server
+    allowed_gpus: []
+    gpu: {count: 8, type: H100-80GB}
+    remote_code_root: /data3/songcl/Project/AdaRES_project/AdaRES
+    data_root: /data3/songcl/data/data_cluster/
+    work_dir: /data3/songcl/Project/AdaRES_project/AdaRES_checkpoints

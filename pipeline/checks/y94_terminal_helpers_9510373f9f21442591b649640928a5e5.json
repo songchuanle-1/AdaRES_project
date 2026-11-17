@@ -1,0 +1,106 @@
+{
+  "complete": true,
+  "token": "9510373f9f21442591b649640928a5e5",
+  "id": "AdaRES-Y94",
+  "spec": {
+    "id": "AdaRES-Y94",
+    "server": "server-1",
+    "pid": 218513,
+    "code_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+    "config": "configs_song/model_paper5/adares_y94_query_geometry_bias_res.yaml",
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y94_query_geometry_bias_res_20261109_111829.log",
+    "package": "adares_y94_query_geometry_bias",
+    "admission_sha256": "b9deb51efa3c274283f8a23ae678d42a4f0c11a29e758d19ae696e80df13cb84",
+    "freeze_sha256": "7e40371552d170a1d764f9dab160a8dcb12b0b6fe512e5c978313cb7b642241b",
+    "checkpoint_directory": "20261109_111838",
+    "location_evidence": {
+      "path": "pipeline/checks/y94_terminal_original_location_9510373f9f21442591b649640928a5e5.json",
+      "sha256": "17a4919015244b7b335841ccd85044e21e3c81eb47e3eb3e0f087b1705dfa1a9"
+    }
+  },
+  "prepared_at": "2026-11-09T12:56:56.521030+08:00",
+  "originals": [
+    {
+      "path": "scripts/finalize_y88_fixed30.py",
+      "sha256": "e0dfed6bb7e7eecea498d32f569a05b6b8097bfe1045032267374f0100a551d6"
+    },
+    {
+      "path": "scripts/test_y88_terminal_handoff.py",
+      "sha256": "30fb711f635fb95c03e2a52d6ba246297e11902cdeff17e8aa0d3e575b0bf10b"
+    },
+    {
+      "path": "scripts/prepare_y88_terminal_handoff.py",
+      "sha256": "d892d20c55f20aa501e16aaee2f77baa42f39ef88c5d88908442b1f88b64444e"
+    },
+    {
+      "path": "scripts/y88_terminal_contract.py",
+      "sha256": "3b518d38a2b72700f65c8a5e036d5f42b04c6acf51c354a1bc86293ba0532b47"
+    },
+    {
+      "path": "scripts/finalize_y89_fixed30.py",
+      "sha256": "7934fe8e41137c455342d4b2635cc4f9a0c2c2f426a05584d4a0dbda61cb0007"
+    },
+    {
+      "path": "scripts/prepare_y89_terminal_handoff.py",
+      "sha256": "f5d3928c360772c3eee3d59949985fbc630b4e62fdf682e042486903c031d3ef"
+    },
+    {
+      "path": "scripts/test_y89_terminal_handoff.py",
+      "sha256": "2894ccebe55c847dc88dfca06e2bf66c918a19836ac9c333d7f04d0683a1d6c2"
+    },
+    {
+      "path": "scripts/y89_terminal_contract.py",
+      "sha256": "d9541aacdb87f4d52df52c578f11af5da34f1ad7f0cd00876fb7f68c0050058f"
+    },
+    {
+      "path": "scripts/create_y90_terminal_helpers.py",
+      "sha256": "abd0b006374b68dfb3e6da02bd2740d74ecfd970d411b679a9aeff205d6b62cb"
+    },
+    {
+      "path": "pipeline/checks/y94_terminal_creator_9510373f9f21442591b649640928a5e5.py",
+      "sha256": "f91f79324d34f7897937bb64387ec333e7873f48234fc42d28fdfcf8a34752d7"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y94_terminal_original_location_9510373f9f21442591b649640928a5e5.py",
+      "sha256": "d6de182c097ada6203d0bf1d9a33e16ecf6586432a95d9a2ab8597fff278cd58"
+    },
+    {
+      "path": "pipeline/checks/y94_terminal_original_location_9510373f9f21442591b649640928a5e5.json",
+      "sha256": "17a4919015244b7b335841ccd85044e21e3c81eb47e3eb3e0f087b1705dfa1a9"
+    },
+    {
+      "path": "pipeline/checks/y94_terminal_original_location_9510373f9f21442591b649640928a5e5.log",
+      "sha256": "b2909e4867a84b499ef3986676977bfd087141f574b09fe7afbfd149e0e005e0"
+    },
+    {
+      "path": "scripts/create_y94_terminal_helpers.py",
+      "sha256": "37c2b1d53f2c15247f70cda95282db8678b74c97f39ae9765683d53e5a12bb25"
+    },
+    {
+      "path": "scripts/finalize_y94_fixed30.py",
+      "sha256": "fe76fc1a6812a81a0e8653529477b0bcdaecfd290d5ff9fab0d418b12dc182ec"
+    },
+    {
+      "path": "scripts/test_y94_terminal_handoff.py",
+      "sha256": "14de8d14e63b59bc1244206d6a43b349ee63ed9087d92cc17316e67e44912199"
+    },
+    {
+      "path": "scripts/prepare_y94_terminal_handoff.py",
+      "sha256": "c1c4d4bdaccc95b43ae29532245043468698f4c041cf8f68e90144907f1343b8"
+    },
+    {
+      "path": "scripts/y94_terminal_contract.py",
+      "sha256": "80f9a37fecefccd145ac1c34e54085387204567afe7b5d29d4373703b19e381e"
+    }
+  ],
+  "source_specialization_only": true,
+  "original_helpers_unchanged": true,
+  "checkpoint_loaded": false,
+  "archived": false,
+  "queue_changed": false,
+  "remote_mutations": false,
+  "main_index_unchanged": true,
+  "other_candidates_unchanged": true
+}

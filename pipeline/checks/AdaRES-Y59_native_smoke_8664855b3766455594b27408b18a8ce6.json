@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y59",
+  "config": "configs_song/model_paper5/adares_y59_frozen_text_mode_res.yaml",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "steps": 2,
+  "losses": [
+    7.715206623077393,
+    8.459735870361328
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "split": "train",
+  "data_source": {
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge"
+  },
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0642_00",
+        "scene0429_00"
+      ],
+      "expressions": 8,
+      "points": 315246
+    },
+    {
+      "scan_ids": [
+        "scene0201_00",
+        "scene0475_00"
+      ],
+      "expressions": 8,
+      "points": 310979
+    }
+  ],
+  "gradient_checks": [
+    {
+      "tensors": 539,
+      "indicator_tensors": 10,
+      "all_finite": true
+    },
+    {
+      "tensors": 539,
+      "indicator_tensors": 10,
+      "all_finite": true
+    }
+  ],
+  "peak_reserved_bytes": 6488588288,
+  "native_entry": "tools/train.py::train",
+  "native_YAML_sha256": "3065969e73e463a47a0eefd876350332ccb84a0994864f736b864c8c9570d2d0",
+  "optimizer_steps": 2,
+  "model_weights_saved": false,
+  "validation_used": false,
+  "admission": false,
+  "limitation": "Two-step initialization smoke only, not trained efficacy or a full-dataset resource guarantee.",
+  "command": "python -B scripts/run_experiment_first_probe.py adares_y59_head_smoke pipeline/checks/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6_program.py --token 8664855b3766455594b27408b18a8ce6 --seconds 600 --gpu --gpu-id 0",
+  "physical_gpu": 0,
+  "evidence": [
+    {
+      "path": "pipeline/analyses/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6.json",
+      "sha256": "82a9db504c2de897d0df8516a507e61f210650877c04747e803ec8a095daa400"
+    },
+    {
+      "path": "pipeline/analyses/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6.log",
+      "sha256": "aec92d565c1723b6ae4acbcf49aa86bb846e32cf95e2d785c15e85a2f8b9ec09"
+    },
+    {
+      "path": "pipeline/checks/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6_program.py",
+      "sha256": "31a168d2551fe92c039c07787bde9c923522a241422589ddc41a10f0c7836436"
+    },
+    {
+      "path": "pipeline/checks/adares_y59_head_smoke_8664855b3766455594b27408b18a8ce6_binding.json",
+      "sha256": "f0e66113d2c594bb7ee44cd1a4bf6090200bf6054d0f5122528bc3d58275633c"
+    }
+  ],
+  "note": "Verbatim native observations plus invocation/evidence binding; raw output retained unchanged."
+}

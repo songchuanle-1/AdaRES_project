@@ -1,0 +1,20 @@
+{
+  "id": "AdaRES-D1",
+  "config": "configs_song/model_paper5/adares_d1_full_query_comparison_res.yaml",
+  "code_commit": "d7064cd697e651eeb79b2522e10c44c0f55edb15",
+  "goal_sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba",
+  "gates": {
+    "diagnosis": {"passed": true, "evidence": [{"path": "pipeline/analyses/AdaRES-D1_gate_review_20260924-085000.md", "sha256": "245775788c6b785bae5ffd21c2d3f2bca6249ffbfeaae80566914b890a22984a"}]},
+    "controls": {"passed": true, "evidence": [{"path": "AdaRES/configs_song/model_paper5/adares_d1_full_query_comparison_res.yaml", "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"}, {"path": "pipeline/analyses/AdaRES-D1_gate_review_20260924-085000.md", "sha256": "245775788c6b785bae5ffd21c2d3f2bca6249ffbfeaae80566914b890a22984a"}]},
+    "native_backward": {"passed": true, "evidence": [{"path": "pipeline/analyses/AdaRES-D1_larger_batch_probe_20260924-075300.md", "sha256": "101f7e1be8099af438158e0ddac5ed8750f53f67f2bdcd7e7ad9cf3bd2b59d90"}, {"path": "AdaRES/tools/test_adares_d1_full_query_comparison.py", "sha256": "a9c38f31abcc9bd8496cb3200e29805e001b0e92c85652505041d711b8d0ad20"}]},
+    "resources": {"passed": true, "evidence": [{"path": "pipeline/analyses/AdaRES-D1_larger_batch_probe_20260924-075300.md", "sha256": "101f7e1be8099af438158e0ddac5ed8750f53f67f2bdcd7e7ad9cf3bd2b59d90"}]},
+    "independence": {"passed": true, "evidence": [{"path": "AdaRES/ipdn/model_paper5/adares_d1_full_query_comparison/dec.py", "sha256": "9a6d4d2f9caf04396093c8b3f22dea5152efe692b807ab71c7159a5cd88b2ec4"}]},
+    "constraints": {"passed": true, "evidence": [{"path": "pipeline/goal.json", "sha256": "9faaebd50be929b2f31702576fa775b25f5e7ba167384f56ff1e2950cd27e6ba"}, {"path": "pipeline/analyses/AdaRES-D1_gate_review_20260924-085000.md", "sha256": "245775788c6b785bae5ffd21c2d3f2bca6249ffbfeaae80566914b890a22984a"}]}
+  },
+  "deployment": "Eight additive archive files verified on server-2; remote .codex_source_commit equals code_commit. Production entry point was not overwritten.",
+  "limitations": [
+    "The 16-scene diagnosis is not full-validation causal evidence.",
+    "Training worst-case memory and trained-model latency remain to be measured.",
+    "Fresh 30-epoch B4-E30 is an existing protocol control, not a warm-start adaptation control."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "本轮8c69 canonical begin/design已核实际会话和Disabled后台调度，新授权三卡仍原PID在跑。初次观察Y65 Train24 3105→3115、Y66 Train16 3123→3130、Y67 Train9 2564→2573；本地时间2026-10-30 00:48前后，未用server-2偏移时钟作本地时间。",
+    "已完成一项安全CPU准备：新增scripts/observe_server2_y68_additive_phase.py和12项守卫，原882d→db35的Y67七文件及db35→9af的Y68七文件必须严格全为A状态新增、其余路径不得变化；只核原Y65或Y67固定身份/GPU/功耗及原生阶段，并核当前已部署全部新增源码/YAML。旧脚本/原收据保持。守卫记录pipeline/checks/y68_additive_observer_guards_8c69ca0fdf95453d8728ba55867dd9e7.log。",
+    "新观察器真实查询当前db35运行态通过：Y65同PID112356 Train24 3372→3380/4686、Y67同PID100811 Train9 2845→2854/4686。新增六个Y67源码及原生YAML和原六源码/config均核等同；queue/running/goal和两原收据核未变。证明pipeline/checks/y68_additive_observer_preparation_8c69ca0fdf95453d8728ba55867dd9e7.json SHA5947c8b9e268fa04d40d58b6a9c54ee8ed899729d52fe351dc8dffff2338f8b0。未来9af未部署，未冒充未来运行验证、native或效益。",
+    "Y68当前HEAD9af/goal/七模型文件和双GPU原生计划/program哈希完整；未重放CPU或prepare/save。最新canonical占用server-2 GPU0 Y65/112356/22720MiB、GPU1 Y67/100811/22716MiB；server-1 GPU0 Y66/1973300/22836MiB，均预约无空槽。pipeline/checks/gpu_occupation_server-2_8c69ca0fdf95453d8728ba55867dd9e7.json；pipeline/checks/gpu_occupation_server-1_8c69ca0fdf95453d8728ba55867dd9e7.json。tick_attempt为实测resource_check/blocked。",
+    "七标题记忆103行已更新当前token/快照/前收据/新观察器/阶段/等待动作；无新增终态、故障、准入或新训练。"
+  ],
+  "decisions": [
+    "Y68保留blocked等待真实授权空槽，不挤占三原运行；其原生两步PASS后再冻结原完整后评/准入/同轮派发。八项原固定30后评/成本继续等资源，不重训。",
+    "新增观察器仅登记精确882d/db35/9af链，当前只实测db35；未来9af部署后必须再核keeper runtime。旧hash-bound脚本/原准入不改；不把准备测试或原生进度当训练收益。",
+    "server-2 GPU0保持280W、GPU1既有390W及server-1既有350W不改；Y57实验自身继续暂停及原epoch27恢复限制，server-6/跨项目/频率变更禁止。",
+    "健康训练和资源等待无需用户处理，内部观察兼容准备不触发例行通知。report后finish并核收据/锁/上下文释放；释放后不写项目。"
+  ]
+}

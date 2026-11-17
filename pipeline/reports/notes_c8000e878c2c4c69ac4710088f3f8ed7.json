@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "仅处理AdaRES_project。重新核对正式skill前台规则、experiment_first、AGENTS、原goal字节、SERVERS、最新GPU1暂停授权及实际owner会话；Pipeline-AdaRES_project保持Disabled。一次begin取得本轮快照，先查运行和派发现有合格任务，ready waiting为0，无新终态或操作故障。",
+    "运行：原Y93 PID47380在server-2 GPU0/280W，Train28/30 step1353/4686；原Y94 PID218513在server-1 GPU0/350W，Train9/30 step4431/4686。当前token只读观察确认原源码、YAML、marker、准入收据及原生步数递增，未重启或停止。",
+    "canonical gpu_occupation分别实际查询两台授权服务器的hostname、物理GPU和compute PIDs，并绑定本轮token/快照/候选。server-1 GPU0为原Y94，server-2 GPU0为原Y93，两张授权GPU0均busy且reserved，无可独占空闲卡。保留collector真实resource_check，不冒充原生检查或科学PASS。",
+    "已有四个CPU准备候选Y95/Y96/Y98/Y99等待真实GPU原生检查，优先Y95。没有重放已完成CPU、版本、控制或原生计划准备；本轮新候选0、CPU科学尝试0、GPU原生0、准入0、启动0、归档0、正式评测0。保留全部失败和旧收据，未将候选准备或训练best当作正式FIRST。",
+    "精确备份原七节memory并更新本轮原任务和资源证据。生成本轮完整审计报告后调用官方finish，以实际收据及租约释放核验为准；报告和memory不预签收尾成功。"
+  ],
+  "decisions": [
+    "本轮没有新科学决策。资源仍被原训练占用，保持现有候选优先级，不为额度新增占位变体、重复检查、抢占任务或伪造waiting。健康运行和无行动项的资源等待不触发用户通知。",
+    "下一步先观察Y93/Y94并尝试已准入任务。Y93自然fixed30结束后仅按原专用工具完整核验精确原目录20261108_082521的last/best/model/optimizer/scheduler和全量日志并canonical归档；日志结束不代替完整checkpoint核验。之后仅现场独占空闲未保留的server-2 GPU0可执行当前HEADY94绑定的Y95原生检查。",
+    "Y95实际native PASS后，先基于实际原生证据建立并测试Y94兼容终态绑定，再在授权当轮完成精确源选择、完整原freeze/receipt/准入、安全派发和原生计数递增核验。Y96/Y98及未来HEAD或owner变化须新测试绑定，保留原CPU/版本证据，不盲目执行旧绑定。",
+    "所有server-2 GPU1使用和原GPU1冻结后评/成本继续暂停，不迁移替代；Y57独立暂停，原epoch27模型/optimizer/scheduler保持。server-1 GPU0沿用350W、server-2 GPU0保持280W，每卡一个实验；不接触server-6、不跨项目、不改变调度或功耗。保持原数据、私有runtime、部署映射、seed1999/固定30轮及完整FIRST/成本协议。无新增需用户处理事项。"
+  ]
+}

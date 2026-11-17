@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y39",
+  "previous_head": "67f4a1b2a4e7cac0eaa1a6074104cfc4193c2773",
+  "code_commit": "79a23936d5bd5980fa337388131762078f52fa07",
+  "changed_paths": [
+    "AdaRES/configs_song/model_paper5/adares_y39_point_distribution_res.yaml",
+    "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/__init__.py",
+    "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/backbone.py",
+    "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/dec.py",
+    "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/ipdn.py",
+    "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/loss.py",
+    "AdaRES/ipdn/model_paper5/adares_y39_point_distribution/sample_model.py"
+  ],
+  "output": "[master 79a2393] Add Y39 point-distribution confidence experiment\n 7 files changed, 1841 insertions(+)\n create mode 100644 AdaRES/configs_song/model_paper5/adares_y39_point_distribution_res.yaml\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y39_point_distribution/__init__.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y39_point_distribution/backbone.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y39_point_distribution/dec.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y39_point_distribution/ipdn.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y39_point_distribution/loss.py\n create mode 100644 AdaRES/ipdn/model_paper5/adares_y39_point_distribution/sample_model.py",
+  "origin_push": false,
+  "observed_at_local": "2026-10-10T20:19:25.607864+08:00"
+}

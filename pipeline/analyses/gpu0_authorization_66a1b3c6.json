@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "project": "AdaRES_project",
+  "token": "66a1b3c656de42a097ee3681032ce29d",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "authorization": {
+    "user_message": "GPU0授权",
+    "date_local": "2026-10-09",
+    "timezone": "Asia/Shanghai",
+    "server": "server-2",
+    "allowed_gpus_before": [1],
+    "allowed_gpus_after": [0, 1],
+    "max_tasks_per_gpu": 1,
+    "single_gpu_tasks_only": true,
+    "other_projects_authorized": false,
+    "server_6_authorized": false,
+    "admission_gates_changed": false
+  },
+  "identity": {
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "expected_hostname": "dl01-MS-7C60",
+    "observed_hostname": "dl01-MS-7C60",
+    "ssh_batch_mode": true,
+    "password_access_used": false
+  },
+  "resource_observation": {
+    "gpu": 0,
+    "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+    "name": "NVIDIA GeForce RTX 3090",
+    "device_query_local_start": "2026-10-09T08:40:03.6844118+08:00",
+    "device_query_local_end": "2026-10-09T08:40:04.5530939+08:00",
+    "device_query_exit": 0,
+    "raw_device_csv": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 1, 24576, 0",
+    "memory_used_mib": 1,
+    "memory_total_mib": 24576,
+    "utilization_percent": 0,
+    "compute_query_local_start": "2026-10-09T08:40:03.6841943+08:00",
+    "compute_query_local_end": "2026-10-09T08:40:04.5560564+08:00",
+    "compute_query_exit": 0,
+    "raw_compute_csv": "",
+    "compute_processes": [],
+    "limits": "Point-in-time read-only device and compute-process observations, not a reservation or guarantee of future availability. Recheck before any GPU work."
+  },
+  "execution": {
+    "training_started": false,
+    "training_stopped": false,
+    "training_restarted": false,
+    "existing_jobs_modified": false,
+    "scheduler_modified": false,
+    "new_candidate_admitted": false,
+    "y33_preflight_epoch": 22,
+    "y33_preflight_rounded_best_miou": 0.5051,
+    "y33_preflight_at": "2026-10-09T08:39:13.359743+08:00",
+    "scientific_status": "training; frozen trained efficacy unknown",
+    "tick_finish_status": "pending when written"
+  }
+}

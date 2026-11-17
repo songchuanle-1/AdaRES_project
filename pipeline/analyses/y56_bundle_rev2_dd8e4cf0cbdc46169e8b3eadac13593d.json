@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "revision": 2,
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/dec.py",
+      "sha256": "75542f5fafc3ff10b966ccedea54c8b4b9d39c520b3801cb80fa52b3af73d6eb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y56_unique_competitors/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "previous_bundle": {
+    "path": "pipeline/analyses/y56_bundle_rev1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "ce2b2f75d08f7ba3dda77d922fe83e1c2d0dc7f0fba9e8331b31c9b6cd1338db"
+  },
+  "original_bundle": {
+    "path": "pipeline/analyses/y56_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "9952cc0c5cda9ade97a3fe16de16f826451c779e00acf459d6844693b6c241c3"
+  },
+  "original_source_archive": {
+    "path": "pipeline/analyses/y56_cpu_dd8e4cf0cbdc46169e8b3eadac13593d_program.py",
+    "sha256": "d4db4642bc5e97153f8faa15bed7936b18a90e7694791a7cc56a53bb101b4cd6"
+  },
+  "preregistration": {
+    "path": "pipeline/analyses/y56_revision2_prereg_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "3c1996f8e395fda77311e33e8f10b5e8d669f13a8396a272c7990f58423b8417"
+  },
+  "created_at": "2026-10-20T22:51:42.680485+08:00",
+  "formal_uncommitted": true,
+  "semantics_unchanged": true,
+  "parameter_delta_expected": 0
+}

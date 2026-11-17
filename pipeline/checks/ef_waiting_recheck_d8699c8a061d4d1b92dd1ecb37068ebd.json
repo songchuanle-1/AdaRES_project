@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-22T02:56:03.174291+08:00",
+  "command": "python -B - (lease-bound receipt/frozen-source and waiting-GPU0 check)",
+  "checks": [
+    {
+      "id": "AdaRES-Y58",
+      "status": "running",
+      "gpu": "0",
+      "files": 7,
+      "receipt_valid": true,
+      "source_YAML_commit_goal_match": true,
+      "native_smoke": {
+        "path": "pipeline/checks/AdaRES-Y58_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+        "sha256": "d70e9f90579963b8d4be9f6a571bbb2376299ecca86142bc9d924efd16e30ee8"
+      }
+    },
+    {
+      "id": "AdaRES-Y59",
+      "status": "waiting",
+      "gpu": 0,
+      "files": 7,
+      "receipt_valid": true,
+      "source_YAML_commit_goal_match": true,
+      "native_smoke": {
+        "path": "pipeline/checks/AdaRES-Y59_native_smoke_8664855b3766455594b27408b18a8ce6.json",
+        "sha256": "02877867ed0cc01499e2463099e2fe665da818e167d7a88e67f04478f51de9f1"
+      }
+    }
+  ],
+  "runtime": {
+    "path": "pipeline/checks/ef_gpu0_runtime_d8699c8a061d4d1b92dd1ecb37068ebd.json",
+    "sha256": "89ab7b96c6e9b57c00d53c432e1354006296ba6c4bfa888440144a43b747f55b"
+  },
+  "result": "blocked_GPU0_occupied_by_protected_Y58",
+  "Y57_still_paused": true,
+  "GPU1_unauthorized": true,
+  "new_admissions": 0,
+  "new_training": 0,
+  "model_or_hardware_changes": false,
+  "limitation": "Source/receipt/resource recheck only; no new native smoke, implementation test or efficacy result."
+}

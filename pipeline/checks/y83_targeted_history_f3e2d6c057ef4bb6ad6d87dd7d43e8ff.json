@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "scope": "Targeted architecture/source comparison only; not exhaustive novelty.",
+  "matches": [
+    {
+      "id": "AdaRES-Y26",
+      "stage": "rejected",
+      "hypothesis": "Native query-language cross-attention computes a LayerNorm result but discards it before query self-attention. Its affine parameters therefore cannot learn language-conditioned query calibration. Reconnecting only the existing qla postnorm may remove residual common-mode/scale nuisance and restore a task-loss gradient path; this is a falsifiable implementation mechanism, not a promised accuracy improvement.",
+      "matched_control": "Frozen first64 distinct TRAIN scenes in dataset order, at most4 descriptions, seed1999, identical cached native decoder inputs and W2 checkpoint. Compare native/repeat/identity-return hook, existing qla LayerNorm reconnected, and unit-RMS-only normalization. First8 trained and first4 released-initialization native backward batches compare connected versus detached affine parameters at identical forward values. No padding/token subset, threshold, temperature, loss-weight or validation scan."
+    },
+    {
+      "id": "AdaRES-Y58",
+      "stage": "blocked",
+      "hypothesis": "Cross-scene training normalization moments can introduce unrelated-mate dependence into focal confidence; diagnose actual native task relevance before any correction.",
+      "matched_control": "Fixed focal features/data/weights; only unrelated mate changes, train BN versus fixed-stat and per-scene component moments. Exact repeat/permutation and fixed-input native-indicator separability negatives, no validation selection."
+    },
+    {
+      "id": "AdaRES-Y60",
+      "stage": "blocked",
+      "hypothesis": "One indicator shared across all seven decoder stages couples confidence fitting for different refinement states. Independent stage-specific indicator heads may let the final head fit its own mask/query distribution without intermediate-stage head-gradient interference. This is a structural training comparison, not an efficacy claim.",
+      "matched_control": "Unchanged AdaRES-W2 native YAML and all seven confidence losses. Clone the initial head for every refinement stage without consuming RNG; keep point-mass competition, masks, selector, targets, optimizer, seed1999 and fixed30."
+    },
+    {
+      "id": "AdaRES-Y67",
+      "stage": "blocked",
+      "hypothesis": "One output LayerNorm affine transform is reused for initial and six refined mask/score readouts although their query distributions differ. Independent per-stage affine readout normalization may reduce shared mask/score-gradient interference. This is an architectural allocation test; existing stage layers can implicitly compensate and benefit is unknown.",
+      "matched_control": "Unchanged W2 native YAML, seven shared confidence-indicator calls and all native losses. Copy the existing out_norm into six private refinement LayerNorms without RNG, retaining stage0 out_norm. Only prediction_head affine sharing changes; Q128/seed1999/fixed30/released SPFormer/selector/Boolean attention gate remain unchanged. +3072 parameters."
+    },
+    {
+      "id": "AdaRES-Y73",
+      "stage": "blocked",
+      "hypothesis": "The original sampled query state is successively transformed by six contextual refinement stages. A shared zero-initialized residual from that same query slot original state may ease fitting a balance between initial anchor identity and later contextual updates. Existing residual paths already retain information; information loss, novelty and efficacy are not presumed.",
+      "matched_control": "Unchanged W2 plus q_i=q_after_original_qqa_ffn_i+(q_initial-q_after_original_qqa_ffn_i)@W before each of six loop predictions. W[256,256] is exactly zero without RNG (+65536 parameters); original stage0 query tensor is the same undetached anchor for all calls. Original static mask features, query positions/sampling, all input channels/existing2D, coarse/fine equal averaging, Boolean hard gate/SCG/k/gamma, shared confidence heads/targets/losses/selector, released SPFormer, Q128/seed1999/fixed30/native YAML stay unchanged."
+    },
+    {
+      "id": "AdaRES-Y76",
+      "stage": "blocked",
+      "hypothesis": "W2 applies one shared confidence head to initial and six refined queries without an explicit stage input. A learned stage-specific additive query offset may condition that same function on refinement stage while retaining head sharing. Queries may already encode stage; no missing information, novelty or efficacy is presumed.",
+      "matched_control": "Unchanged W2 plus query_for_confidence=query+offset[stage], stage0..6, offset[7,256] exactly zero/no RNG (+1792). Only the shared QueryCompetitionIndicator query normalization receives the offset. Masks, scores, sampling, six refinement paths, point-mass overlap, all channels, one shared confidence MLP and targets/losses, selector, original2D/released backbone/Q128/seed1999/fixed30/native YAML remain unchanged. No stage-count, loss-weight or validation-based sweep."
+    },
+    {
+      "id": "AdaRES-Y79",
+      "stage": "training",
+      "hypothesis": "Native language states refine through language self-attention and visual cross-attention before providing query-language updates, without a direct current instance-query-set input. An added attention residual from all current queries into language states may ease iterative instance-aware language fitting. Existing visual/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus language_next=language_ffn_output+clean((softmax(language_ffn_output@current_query.T/sqrt(d))@current_query)@W), shared W[256,256] exactly zero/no RNG (+65536), six calls after original language/visual FFNs and before original query coarse/fine and query-language attention. Padded language residual rows zeroed, all128 original queries/all language channels retained and undetached. Original initial prediction, static masks, sampling/positions, six refinements/coarse-fine mixture/hard Boolean gates/SCG/k/gamma, seven shared confidence targets/losses/argmax, all inputs/existing2D/released backbone/Q128/seed1999/fixed30/native YAML remain. Standard fixed sqrt(d) in this new attention; no temperature, threshold, feature, loss, epoch or validation search."
+    },
+    {
+      "id": "AdaRES-Y80",
+      "stage": "training",
+      "hypothesis": "Native visual states refine through native language-to-visual cross-attention before providing query-to-instance attention, without a direct current instance-query-set input. An added attention residual from all current queries into visual states may ease iterative instance-aware visual memory fitting. Existing visual/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus visual_next=visual_ffn_output+clean((softmax(visual_ffn_output@current_query.T/sqrt(d))@current_query)@W), shared W[256,256] exactly zero/no RNG (+65536), six calls after original language/visual FFNs and before original query coarse/fine attention. Padded visual residual rows zeroed, all128 original queries/all visual channels retained and undetached. Original initial prediction, static masks, sampling/positions, six refinements/coarse-fine mixture/hard Boolean gates/SCG/k/gamma, seven shared confidence targets/losses/argmax, all inputs/existing2D/released backbone/Q128/seed1999/fixed30/native YAML remain. Standard fixed sqrt(d) in this new attention; no temperature, threshold, feature, loss, epoch or validation search."
+    },
+    {
+      "id": "AdaRES-Y81",
+      "stage": "training",
+      "hypothesis": "Native W2 predicts refined masks from each current query against expression-independent static mask features. A shared attention residual from the full current refined query set into each later mask feature tensor may ease instance-conditioned mask fitting. Existing language/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus mask_features_i=mask_base+clean((softmax(mask_base@current_refined_queries.T/sqrt(d))@current_refined_queries)@W), shared W[256,256] exactly zero/no RNG (+65536). Six calls before original loop prediction heads; original initial prediction unchanged, original static mask base reused without accumulating updates, padded residual rows zero. All128 queries and all channels retained and undetached. Original sampling/geometry/coarse-fine equal fusion/Boolean gate algorithm/SCG/k/gamma, seven shared confidence heads/targets/losses/argmax, all inputs/existing2D/released backbone/Q128/seed1999/fixed30/native YAML remain. Fixed standard sqrt(d) scaling only; no temperature/threshold/loss/feature/epoch/validation search."
+    },
+    {
+      "id": "AdaRES-Y82",
+      "stage": "blocked",
+      "hypothesis": "Native W2 averages coarse and fine query updates. A zero-initialized learned projection of their elementwise product may ease cross-scale interaction fitting. Downstream networks can already represent interactions; novelty, missing information and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus fused=(coarse+fine)/2+(coarse*fine)@W in the six original fusion locations. One shared zero W256x256/no RNG/+65536; both original branch tensors and all128 queries/all channels remain undetached. Initial prediction, original static masks/Boolean gates/sampling/SCG/geometry/k/gamma, all original inputs/existing2D/backbone and seven shared confidence heads/targets/losses/selector, seed1999/fixed30/native YAML remain. No threshold/temperature/loss/feature/epoch or validation search."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

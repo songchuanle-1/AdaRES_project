@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "config": "configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "parent_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "retained_branch": "refs/heads/adares-y72-visual-mask-refinement",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "required_resource": "Fresh exclusive idle/unreserved authorized server-2 GPU0; canonical terminal archive, no compute PID, exact host/private runtime/original data and existing power. Preserve original Y68/Y69/Y70 and paused Y57. Prefer nearer frozen Y71.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y72_gpu0_smoke pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Original native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; six current ila_ffn identities and original static mask/padding identities, six actual refined prediction consumers, seven shared indicators, independent scalar formula at first/last expressions and first/middle/last valid feature rows/channel0/127/255, initial zero/next-step response, padding unchanged, finite new gradient/actual weight update and source-feature gradients, native modes/peak memory.",
+  "guard_tests_passed": 11,
+  "Python38_compile": true,
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "working_HEAD_preserved": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "program": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_program.py",
+    "sha256": "ff2feef2a03b754eef3af96fe819b7645000ce95fa2cbef8563bdf1b854a9e4e"
+  }
+}

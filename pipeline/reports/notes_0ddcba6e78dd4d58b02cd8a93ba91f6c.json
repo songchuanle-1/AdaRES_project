@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "仅处理AdaRES_project。实际CODEX_THREAD_ID与前台owner一致，后台Pipeline-AdaRES_project仍Disabled；已读取当前AGENTS、goal、SERVERS、closure及GPU1暂停授权，科学goal和暂停记录哈希保持。begin已执行进展/目标/合格队列派发检查，ready waiting为0，无新终态或操作故障。",
+    "原Y91/server2 GPU0/PID83827从Train19/30的3851/4686推进至Val19/30的338/363；原Y92/server1 GPU0/PID1305468从Train5/30的2557推进至3434/4686。当前y92_deployment实际核验原source、YAML、receipt、runtime、marker、280W/350W和递增原生计数，未中断或重启训练。末次观察仅证明继续训练，不是完整checkpoint或正式FIRST。",
+    "优先复查已有独立Y93与Y94：两项已完成CPU和版本/原生计划准备，均尚未执行GPU原生任务或准入；Y93优先。当前原Y91/Y92未到fixed30终态，完整精确checkpoint核验归档及匹配GPU0空槽条件均未满足。保留原工具绑定，不重放旧CPU、版本、准备或归档，不按额度强加第三项候选。",
+    "末次canonical gpu_occupation分别实测两台授权服务器：server1 GPU0由原Y92 PID1305468占用且保留，server2 GPU0由原Y91 PID83827占用且保留，均无空闲授权GPU。server2 GPU1只读库存显示外部PID3701，未使用或处置。资源证据已由正式collector归入对应候选并更新真实resource_check tick_attempt，未冒充科学实验或准入。",
+    "本轮新增候选0、CPU科学测试0、GPU原生任务0、准入0、训练启动0、归档0；无新科学或操作失败。七节短记忆先备份再更新，历史失败/负结果/原运行收据保持。按原300秒时效收集末次原生进度与物理占用后执行官方report/finish，不预先宣称postflight成功。"
+  ],
+  "decisions": [
+    "两张授权GPU0继续各自原独立实验；待匹配当前owner自然fixed30并完整精确checkpoint核验归档后，再以实时独占空闲及当前有效绑定执行Y93原生两步检查，通过后同轮推进完整冻结协议、准入、安全同步、派发及递增步数核验。Y94排在Y93之后。",
+    "Y91未来精确终态入口仍为finalize_y91_fixed30_y92.py、原目录20261107_102124；Y92为finalize_y92_fixed30.py、原目录20261108_090202。本轮两者均未到终态，不加载或归档checkpoint，不用日志进度替代完整校验。任何后续HEAD/owner变更须先新增经测试绑定，不改旧hash-bound工具。",
+    "server2 GPU1全部AdaRES使用及原GPU1冻结后评/成本继续挂起，Y57另行暂停；不迁移或替换资源。仅server1 GPU0既有350W与server2 GPU0固定280W，一卡一实验；禁止server6，不改调度、功率、goal、gates、数据或恢复协议。无新正式FIRST、成本、晋升或需用户处理事项；健康运行及资源等待保持静默。"
+  ]
+}

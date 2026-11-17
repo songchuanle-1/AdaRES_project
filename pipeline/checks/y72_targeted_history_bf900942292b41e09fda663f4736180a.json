@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "scope": "Candidate hypothesis/matched_control/historical_scope text only; no full-history or literature novelty claim.",
+  "phrases": [
+    "dynamic mask",
+    "refined visual",
+    "mask refinement features",
+    "visual-to-mask",
+    "stage mask"
+  ],
+  "matches": [],
+  "parent_equal_fusion_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "parent_fusion": "loop prediction_head(query, mask_feats, batch_mask) uses the unchanged shared mask feature tensor"
+}

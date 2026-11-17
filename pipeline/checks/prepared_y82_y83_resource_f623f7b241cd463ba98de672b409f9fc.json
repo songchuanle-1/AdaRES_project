@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "token": "f623f7b241cd463ba98de672b409f9fc",
+  "snapshot": "2026-11-03T14:50:34.261529+00:00",
+  "original_live_training": {
+    "AdaRES-Y79": {
+      "path": "pipeline/checks/production_adares-y79_f623f7b241cd463ba98de672b409f9fc_progress.json",
+      "sha256": "9fdf49320a40c5a1d44538c77568beffe3af09b0becad6362ad98b7de3214860"
+    },
+    "AdaRES-Y80": {
+      "path": "pipeline/checks/production_adares-y80_f623f7b241cd463ba98de672b409f9fc_progress.json",
+      "sha256": "faf3e266d0c5b180a22618b8472d4f353dc461b64e8eaae5d9189d101d4a81cb"
+    },
+    "AdaRES-Y81": {
+      "path": "pipeline/checks/production_adares-y81_f623f7b241cd463ba98de672b409f9fc_progress.json",
+      "sha256": "437e20ca4b9280e6c0849f2409c28cd5ab498d14632245063c88fc8ee06951ed"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_f623f7b241cd463ba98de672b409f9fc.json",
+      "sha256": "611be1dda36f1732769e3477978866545c846857b7606ac6fcda77ca4a3919f8"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_f623f7b241cd463ba98de672b409f9fc.json",
+      "sha256": "827156d120d4a02c1df7e89e4ae780cfe69236bddb35ac07a106f4752906d89e"
+    }
+  },
+  "retained_native_plans": {
+    "AdaRES-Y82": {
+      "native_smoke_plan_server2_gpu0": {
+        "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu0_plan.json",
+        "sha256": "916e12be835642a2bbfe857e71ce44b9055da6c34fabc313c3581c51975faa1f"
+      },
+      "native_smoke_plan_server2_gpu1": {
+        "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu1_plan.json",
+        "sha256": "a3b5f3d051de446c7db38eddc07f2b6253ea84219f2a5d18b61cb0838b3c93d7"
+      }
+    },
+    "AdaRES-Y83": {
+      "native_smoke_plan_server2_gpu0": {
+        "path": "pipeline/checks/y83_native_f3e2d6c057ef4bb6ad6d87dd7d43e8ff_gpu0_plan.json",
+        "sha256": "170fe78bfc90d400ab7d0e751026b12d9652ea4b6e94b1576948fa91ff9822f8"
+      },
+      "native_smoke_plan_server2_gpu1": {
+        "path": "pipeline/checks/y83_native_f3e2d6c057ef4bb6ad6d87dd7d43e8ff_gpu1_plan.json",
+        "sha256": "451c44b4d714199c61d200254f2737c236e40f5ab183612041e3b0c72277d033"
+      }
+    }
+  },
+  "Y83_CPU": {
+    "path": "pipeline/analyses/y83_cpu_f3e2d6c057ef4bb6ad6d87dd7d43e8ff.json",
+    "sha256": "cbed96a38d8d1948ce8874a8be4f645dcd07edada883565a3924d25762d5df44"
+  },
+  "Y83_version": {
+    "path": "pipeline/checks/y83_cpu_version_f3e2d6c057ef4bb6ad6d87dd7d43e8ff.json",
+    "sha256": "e87f07dd7e6145e2dacfed508522a6fead1783fb84933873b1c6316d1fa23eee"
+  },
+  "Y83_native_preparation": {
+    "path": "pipeline/checks/y83_native_f3e2d6c057ef4bb6ad6d87dd7d43e8ff.json",
+    "sha256": "62d4e35c48f01ebaf0c7bae672f9c94f5d8bf5ee99d94124e09e3c295298a6fe"
+  },
+  "new_Y83_preparation": false,
+  "native_GPU_executed": false,
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_launches": 0,
+  "new_archives": 0,
+  "formal_metrics_updated": false,
+  "Y57_pause_preserved": true,
+  "helper": {
+    "path": "scripts/record_prepared_y82_y83_wait_v2.py",
+    "sha256": "f572b9e6781701b06fc8cc6a49bca037e680a458953974f4f181455a4d80f739"
+  }
+}

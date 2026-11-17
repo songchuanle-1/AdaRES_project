@@ -1,0 +1,80 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y73",
+  "observed_at": "2026-10-31T04:49:47.737418+08:00",
+  "code_commit": "7da625ab750447eaad76e82309c89d887df93994",
+  "parent_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "retained_branch": "refs/heads/adares-y73-initial-query-anchor",
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "main_index_unchanged": true,
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/__init__.py",
+      "sha256": "f5b2ad6c0ea243e1f83b7072291c4a8bf31903c378756be88407cf603313bbe6"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/dec.py",
+      "sha256": "8e67ae0c1eda01492af6267dab4ee62a4f4d7004e3db314219d650e1ad0da09f"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y73_initial_query_anchor/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y73_initial_query_anchor_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "source_snapshot": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_source_snapshot.json",
+    "sha256": "9384ea8c23525cb6441212ba9320a968aed43e45d1dac549a67148daeb171be0"
+  },
+  "commit_record": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_commit.json",
+    "sha256": "98fe8eab38a9a7fb27af1486cd4736ae65a69236417460c4ea66811cf63821d6"
+  },
+  "isolated_index": {
+    "path": "pipeline/checks/y73_cpu_version_e3df20ab451547c8942b3966cb88e01a_isolated.index",
+    "sha256": "a601a1f02d9579751f6075411e801b2386937e5b3e67e81ae5cab51f4c304dd8"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y73_cpu_e3df20ab451547c8942b3966cb88e01a.json",
+    "sha256": "0732d29888ec8e69b1f4d53c649ef9a3e1cf492363ca55cf6b8b59c9a4e9bea1"
+  },
+  "Y71_and_Y72_frozen_sources_and_plans_verified": true,
+  "Y68_terminal_local_contract_preserved": true,
+  "original_admissions_valid": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_GPU_program_prepared": false,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y73_cpu_version.py",
+      "sha256": "5574eb282e4bcae5581353a43a984c487ef4e4c5f7e33cf2bb047080371bc60c"
+    },
+    {
+      "path": "scripts/prepare_y73_initial_query_anchor.py",
+      "sha256": "6a3665e4cca1f2a77e8923eb530f2612165d53b79257a467ebee54876140a43b"
+    },
+    {
+      "path": "scripts/probe_y73_cpu.py",
+      "sha256": "285aef1b49f257b545169eca33be6f1c6bcb073f10ebf5b4b1f40dab3da7d694"
+    }
+  ],
+  "limitation": "CPU implementation and exact branch version only; native sparse TRAIN two-step task loss/backward/optimizer and efficacy remain unobserved."
+}

@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y53",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "preregistered_at": "2026-10-17T12:51:36.685807+08:00",
+  "hypothesis_id": "decoder_padding_to_query_confidence_leak",
+  "hypothesis": "Masked language-padding feature values may leak through the native decoder into query confidence, although they represent no words. Test actual decoder attention/aggregation, not the semantic-alignment loss denominator addressed by historical Y23. If all native confidence paths mask these positions and matched interventions have no effect beyond repeat noise, reject THIS leakage premise without creating a model variant.",
+  "matched_control": "Keep actual class, parameters, valid-language positions, 3D/query inputs and RNG fixed; compare padding-only feature replacement, an unchanged independent repeat, and a valid-token positive-control replacement. Audit every native path consuming lang_masks. Run exact native module controls first and a frozen TRAIN native-model/decoder-input capture if a task-relevant uncertainty remains. Do not tune mask thresholds, weights, temperature, sample or training epochs.",
+  "source_bindings": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    }
+  ],
+  "historical_distinction": "Y23 complete hypothesis semantic-alignment-padding-denominator-leak concerns contrastive loss support; this candidate concerns forward decoder/query-confidence invariance. Do not reopen Y23 or reuse its training result as new evidence.",
+  "first_test": "Inspect byte-bound native decoder paths and execute actual attention/aggregation module controls with padding-only, unchanged-repeat and valid-token perturbations; record nonzero graph gradients or exact masked invariance, not a synthetic efficacy PASS.",
+  "falsification": "Source trace plus controls showing padding positions excluded from all relevant native forward paths falsify the proposed missing-padding mechanism; positive control must demonstrate sensitivity to valid words. Otherwise continue diagnosis, never label absent tests as PASS.",
+  "limits": "No model/config change, validation or accuracy claim, training/Git commit/admission, old-candidate reopen or new scheduler. A component screen does not satisfy full native/resource gates.",
+  "result": "pending"
+}

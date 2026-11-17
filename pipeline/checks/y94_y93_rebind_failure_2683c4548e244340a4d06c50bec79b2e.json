@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "token": "2683c4548e244340a4d06c50bec79b2e",
+  "id": "AdaRES-Y94",
+  "command": "python -B scripts/rebind_y94_on_y93.py --token 2683c4548e244340a4d06c50bec79b2e",
+  "result": "failed",
+  "failure_scope": "implementation",
+  "error": "TypeError: git() got an unexpected keyword argument 'env'",
+  "location": "scripts/rebind_y94_on_y93.py:221 git('read-tree', Y93, env=env)",
+  "source": {
+    "path": "scripts/rebind_y94_on_y93.py",
+    "sha256": "ea83fa54ccd451aef0382b1562604b4819840b3b4928f8d037d9753ec710c2f1"
+  },
+  "observation": "Failure occurred at the first private-index Git call before commit/branch/native-runner generation or candidate update. Preserve original helper. This is not a scientific/model/native failure."
+}

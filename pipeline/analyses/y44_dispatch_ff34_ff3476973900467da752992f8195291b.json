@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "observed_at_local": "2026-10-13T06:30:30.177643+08:00",
+  "task": {
+    "id": "AdaRES-Y44",
+    "label": "Y44 all-coordinate feature-association confidence",
+    "config": "configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "c65ad2fcba4ef10b71ea6ae58ed01109568bd0cd",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y44.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 30175,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y44_coordinate_feature_res_20261013_062953.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-13T06:30:30"
+  },
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y44 all-coordinate feature-association confidence] configs_song/model_paper5/adares_y44_coordinate_feature_res.yaml \u2192 server-2 gpu1"
+  ],
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y44.json",
+    "sha256": "69a90d4b6b3ca766b5e3253b86ac3d877bd1abf2d5da549d8f6ea4c315e31ce6"
+  },
+  "preserved_y43_exact": true,
+  "scope": "Canonical GPU1 dispatch, not repeated preflight."
+}

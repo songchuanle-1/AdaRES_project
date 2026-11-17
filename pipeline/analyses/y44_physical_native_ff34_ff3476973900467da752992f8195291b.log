@@ -1,0 +1,17 @@
+Using backend: pytorch
+2026-10-12 17:49:38,272 - INFO - Load train scanrefer: 36665 samples
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:17<?, ?it/s, lr=0.0001, eta=0:16:50, iter_time=17.13]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.13s/it, lr=0.0001, eta=0:16:50, iter_time=17.13]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.13s/it, lr=0.0001, eta=0:08:31, iter_time=8.81] Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  7.35s/it, lr=0.0001, eta=0:08:31, iter_time=8.81]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  8.81s/it, lr=0.0001, eta=0:08:31, iter_time=8.81]
+2026-10-12 17:50:08,869 - WARNING - The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: text_encoder.embeddings.position_ids, text_encoder.embeddings.token_type_ids
+
+2026-10-12 17:50:08,869 - INFO - Loading checkpoint from /tmp/adares_y44_physical_native_ff34_ff3476973900467da752992f8195291b.pth
+2026-10-12 17:50:09,016 - INFO - Loading optimizer from /tmp/adares_y44_physical_native_ff34_ff3476973900467da752992f8195291b.pth
+2026-10-12 17:50:09,017 - INFO - Loading scheduler from /tmp/adares_y44_physical_native_ff34_ff3476973900467da752992f8195291b.pth
+2026-10-12 17:50:12,272 - INFO - Load train scanrefer: 36665 samples
+2026-10-12 17:50:16,662 - INFO - set random seed: 1999
+2026-10-12 17:50:16,957 - INFO - set random seed: 1999
+2026-10-12 17:50:17,473 - INFO - set random seed: 1999
+2026-10-12 17:50:17,805 - INFO - set random seed: 1999

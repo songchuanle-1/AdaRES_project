@@ -1,0 +1,15 @@
+# Native diagnostic cycle: N1, N2, N3
+
+2026-09-26 18:31 Asia/Shanghai. No training admission or queue mutation.
+
+## N1: Mask/indicator gradient interference
+At B4-E30 best checkpoint, native training batches [0,1], [256,257], [64,65], [128,129] gave indicator-versus-mask gradient cosines on `dec.x_mask.0.weight` of -0.868, -0.079, +0.194 and -0.194. Corresponding unweighted indicator/mask gradient norm ratios were 0.251, 0.773, 0.822 and 1.420. The initialized B4 batches [0,1] and [256,257] had -0.982 and -0.997 cosines but indicator gradient norms below 1% of mask norm. G1 initialized batch [0,1] also had -0.987. On trained B4, detached mask evidence preserved forward losses and zeroed the indicator gradient into mask projection. A fixed, RNG-restored, single-parameter SGD step on [0,1] changed mask loss by +0.00008852 with live evidence versus +0.00008772 with detach, a roughly 0.00000080 difference. This is a controlled path test, not a full optimizer step or a training efficacy estimate. Gradient signs are mixed across trained batches. Reject detach-only as an ablation; no supported independent confidence mechanism or admission.
+
+## N2: Same-referent expression consistency
+In the fixed 16 validation scenes, 135 object groups supplied 323 same-object expression pairs. The selected masks disagreed (IoU <0.5) for 146 of 316 pairs with consistent oracle masks (IoU >=0.5); 76 discordant pairs had one selected IoU <0.25 and the other >=0.5. But the label-free nearest-language proxy grouped the same object in only 121/441 expressions (27.4%). Mask overlap alone identified the same object in 171/354 overlapping scene pairs (48.3%). Both proxy measurements are observational and derived from a fixed validation subset. Reject these grouping rules; no validation cutoff search or oracle-object-ID use at inference.
+
+## N3: Distinct-target selection collisions
+Native training batches contained 44 distinct-target expression pairs in eight scenes. Trained B4 produced two selected-mask collisions (mask IoU >=0.5). The same fixed criterion over 64 training scenes found only 6 collisions in 365 distinct-target pairs (1.6%). One collision scene accounted for three pairs; individual confidence readouts remained high. A collision-only loss would have sparse exposure in the native batch protocol, and the current screen does not establish a general performance bottleneck. Reject this specific exclusivity mechanism, not all cross-expression reasoning.
+
+## Limitations and route decision
+These are bounded native screens, not a broad literature novelty review or proof that no future route exists. The G1 and B4 checkpoints are not a fresh matched training-seed control. No candidate was admitted: N1 lacks a non-ablation mechanism, N2 lacks reliable label-free grouping, and N3 has sparse qualifying pairs. The next cycle should start from a predeclared, independently motivated confidence mechanism with a native matched intervention; do not rename or tune these three failures.

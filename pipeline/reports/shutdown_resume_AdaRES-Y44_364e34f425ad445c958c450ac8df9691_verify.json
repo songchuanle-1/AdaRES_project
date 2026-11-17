@@ -1,0 +1,40 @@
+{
+  "result": "resumed_training_progress_verified",
+  "samples": [
+    {
+      "observed_local": "2026-10-13T20:06:21.546067+08:00",
+      "pid": 15520,
+      "restored": true,
+      "progress": [
+        9,
+        404
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y44_coordinate_feature_res/20261013_072931/20261013_072931.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-13T20:06:27.783663+08:00",
+      "pid": 15520,
+      "restored": true,
+      "progress": [
+        9,
+        415
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y44_coordinate_feature_res/20261013_072931/20261013_072931.log"
+      ],
+      "errors": []
+    }
+  ],
+  "checkpoint_preservation": {
+    "best_carried_to": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y44_coordinate_feature_res/20261013_072931/best.pth",
+    "best_sha256": "f07eedae9476aaacd234764bdd79d27e8e96ca3d4cdd489a1f41429cac7a4c69",
+    "original_last_unchanged": true,
+    "original_best_unchanged": true
+  },
+  "resume_epoch": 9,
+  "pid": 15520,
+  "gpu": "1"
+}

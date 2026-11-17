@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y67",
+  "config": "configs_song/model_paper5/adares_y67_stage_readout_norm_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 1,
+  "required_resource": "Explicitly reauthorized server-2 GPU1, exact UUID/private runtime/original data, exclusive idle/no compute or canonical reservation; existing390W unchanged, preserve Y65 GPU0 280W/Y66/Y57 pause.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y67_gpu1_smoke pipeline/checks/y67_gpu1_native_6fb151dc55354c0f995b544bd00e0bfd_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 1",
+  "checks": "Native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; seven private norms once per step; independent LayerNorm rows0/64/127; exact normalized tensor consumption by native mask/score paths and mask consumption by shared indicator; all14 affine gradients finite/nonzero with actual optimizer parameter updates; unchanged training modes and peak memory.",
+  "Python38_compile": true,
+  "CPU_guard_tests_passed": 8,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y67_gpu1_native_6fb151dc55354c0f995b544bd00e0bfd_program.py",
+    "sha256": "c96984f812d0d951edfb9a94587cdc10ba4c6109d270466532fc1dfa22de6a06"
+  },
+  "previous_plan": {
+    "path": "pipeline/checks/y67_native_5c23754c16ac4b16b8a37d6c57ba2dbc_plan.json",
+    "sha256": "712eed27e83aab8a4094b2943ac4c02cbc92039d6fbe6c1639341d6b1880077e"
+  },
+  "runtime_power_limit_watts": 390.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  }
+}

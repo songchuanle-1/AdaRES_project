@@ -1,0 +1,159 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y100",
+  "config": "configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml",
+  "code_commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.338587284088135
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "prediction_calls": 7,
+      "query_norm_consumption_calls": 7,
+      "appearance_input_calls": 1,
+      "original_appearance_projection_calls": 1,
+      "original_spatial_projection_calls": 1,
+      "original_base_mask_calls": 1,
+      "original_sum_norm_calls": 1,
+      "first_language_memory_consumers": 1,
+      "coarse_gate_consumers": 6,
+      "original_visual_parameter_tensors": 14,
+      "base_adapted_fusion_and_mask_gradients_finite": true,
+      "raw_appearance_requires_grad": false,
+      "frozen_text_encoder_preserved": true,
+      "new_gradient_max": 0.0035864573437720537,
+      "step": 0,
+      "parameter_update_max": 9.999972098739818e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "prediction_calls": 7,
+      "query_norm_consumption_calls": 7,
+      "appearance_input_calls": 1,
+      "original_appearance_projection_calls": 1,
+      "original_spatial_projection_calls": 1,
+      "original_base_mask_calls": 1,
+      "original_sum_norm_calls": 1,
+      "first_language_memory_consumers": 1,
+      "coarse_gate_consumers": 6,
+      "original_visual_parameter_tensors": 14,
+      "base_adapted_fusion_and_mask_gradients_finite": true,
+      "raw_appearance_requires_grad": false,
+      "frozen_text_encoder_preserved": true,
+      "new_gradient_max": 0.0027682252693921328,
+      "step": 1,
+      "parameter_update_max": 0.00010013114660978317
+    }
+  ],
+  "appearance_input_paths": [
+    {
+      "step": 0,
+      "weight_nonzero": false,
+      "appearance_feature_delta_max": 0.0,
+      "raw_appearance_requires_grad": false,
+      "original_full1024_appearance_identity": true,
+      "original_full32_spatial_identity": true,
+      "original_appearance_projection_identity": true,
+      "both_inputs_undetached": true,
+      "float64_full_appearance_projection_reference": true,
+      "original_sum_norm_consumes_skip": true,
+      "original_language_memory_consumes_skip": true,
+      "all_seven_original_static_masks_preserved": true
+    },
+    {
+      "step": 1,
+      "weight_nonzero": true,
+      "appearance_feature_delta_max": 0.05700291693210602,
+      "raw_appearance_requires_grad": false,
+      "original_full1024_appearance_identity": true,
+      "original_full32_spatial_identity": true,
+      "original_appearance_projection_identity": true,
+      "both_inputs_undetached": true,
+      "float64_full_appearance_projection_reference": true,
+      "original_sum_norm_consumes_skip": true,
+      "original_language_memory_consumes_skip": true,
+      "all_seven_original_static_masks_preserved": true
+    }
+  ],
+  "appearance_input_calls": 2,
+  "original_appearance_projection_calls": 2,
+  "original_spatial_projection_calls": 2,
+  "original_sum_norm_calls": 2,
+  "first_language_memory_consumers": 2,
+  "original_base_mask_calls": 2,
+  "coarse_gate_consumers": 12,
+  "query_norm_consumption_calls": 14,
+  "shared_head_calls": 14,
+  "static_mask_features_preserved": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6819938304,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual original native two-step TRAIN only; not trained efficacy or a full-dataset memory guarantee.",
+  "command": "python -B scripts/run_y100_native_v2.py --server server-2 --token cddfc53edaf54529ba87a49cb65ec8bd",
+  "server": "server-2",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y100_server2_smoke_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "69c8a627d7f8458b2763861b60da72525e3d25a17f1401202c4fbf6a92f50c32"
+    },
+    {
+      "path": "pipeline/analyses/y100_server2_smoke_cddfc53edaf54529ba87a49cb65ec8bd.log",
+      "sha256": "11f3f9a866065b25f0ead480a540a4d342a2a63ea1269cfdb3698ddf33c05e9e"
+    },
+    {
+      "path": "pipeline/checks/y100_native_288dfa4d3bb741eaa67afacfdc81f241_server2_program.py",
+      "sha256": "462b267eb82a8d7ba4480fcb447201f37c4c805423a7a6e0df44542a6e87fbae"
+    },
+    {
+      "path": "pipeline/checks/y100_native_288dfa4d3bb741eaa67afacfdc81f241_v2_server2_plan.json",
+      "sha256": "888c496ac94440f757a329b1dffb6c3b4573feb25236369325862688e6c47064"
+    }
+  ]
+}

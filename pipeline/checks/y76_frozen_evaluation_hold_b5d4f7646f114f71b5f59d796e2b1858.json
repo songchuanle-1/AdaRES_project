@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "token": "b5d4f7646f114f71b5f59d796e2b1858",
+  "id": "AdaRES-Y76",
+  "original_terminal": {
+    "path": "pipeline/checks/y76_server1_fixed30_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "d542632e0fc9f640f2423914b3f7ab862e95ff1ab29cca5ff8bbd90e3fe44832"
+  },
+  "original_freeze": {
+    "path": "pipeline/checks/AdaRES-Y76_f29b4e70ebc342a4a60290f409abba53_post_training_freeze.json",
+    "sha256": "f718adab58cb3c9f12f23718faf319988b2f438b9ece55f3ae634fd1c3d5bdd6"
+  },
+  "frozen_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0,
+    "note": "Existing power preserved; paired evaluation/cost on same device; two native batches are not a full-dataset memory bound."
+  },
+  "slot_owner": "AdaRES-Y79",
+  "owner_progress": {
+    "path": "pipeline/checks/production_adares-y79_b5d4f7646f114f71b5f59d796e2b1858_final.json",
+    "sha256": "f381a062b19fdf5a7655c863ff3f065fa6794c46ac0e432fd8b0372df86f6c44"
+  },
+  "frozen_bytes_changed": false,
+  "evaluation_executed": false,
+  "helper": {
+    "path": "scripts/record_b5d4f764_handoff.py",
+    "sha256": "4b66bb97d2c5f4af0fbd96ffce3e01531de7f584beb93269fce094c5b802db53"
+  }
+}

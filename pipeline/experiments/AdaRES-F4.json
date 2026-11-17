@@ -1,0 +1,34 @@
+{
+  "id": "AdaRES-F4",
+  "config": "configs_song/model_paper5/adares_f4_mask_reanchor_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "done_complete",
+  "baseline": "AdaRES-B4-E30",
+  "baseline_miou": 0.5094,
+  "epochs": 30,
+  "code_commit": "597e56a852f1039bc44e72ffcdba6f1a363e07bd",
+  "admission": "pipeline/admissions/AdaRES-F4.json",
+  "pid": 46513,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_f4_mask_reanchor_res_20260924_151020.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "history": [
+    {
+      "ts": "2026-09-24T15:10:27.785838",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-09-25T13:47:04.983795",
+      "status": "done_complete",
+      "best_miou": "0.5060",
+      "epochs": "30/30"
+    }
+  ],
+  "launched": "2026-09-24T15:10:27",
+  "final_best": "0.5060",
+  "finished_at": "2026-09-25T13:47:04",
+  "log_local": "",
+  "epochs_final": "30/30"
+}

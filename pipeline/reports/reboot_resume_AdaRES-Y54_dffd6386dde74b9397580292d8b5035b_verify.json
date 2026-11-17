@@ -1,0 +1,41 @@
+{
+  "result": "resumed_training_progress_verified",
+  "token": "dffd6386dde74b9397580292d8b5035b",
+  "samples": [
+    {
+      "observed_local": "2026-10-20T15:50:49.914310+08:00",
+      "pid": 5702,
+      "restored": true,
+      "progress": [
+        28,
+        24
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009/20261020_035009.log"
+      ],
+      "errors": []
+    },
+    {
+      "observed_local": "2026-10-20T15:50:56.135395+08:00",
+      "pid": 5702,
+      "restored": true,
+      "progress": [
+        28,
+        37
+      ],
+      "native_logs": [
+        "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009/20261020_035009.log"
+      ],
+      "errors": []
+    }
+  ],
+  "checkpoint_preservation": {
+    "best_carried_to": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y54_fine_support_res/20261020_035009/best.pth",
+    "best_sha256": "b603db6c031ea6aaaa3d08f6191097262761f987bd12188b57e518397424cf47",
+    "original_last_unchanged": true,
+    "original_best_unchanged": true
+  },
+  "resume_epoch": 28,
+  "pid": 5702,
+  "gpu": "0"
+}

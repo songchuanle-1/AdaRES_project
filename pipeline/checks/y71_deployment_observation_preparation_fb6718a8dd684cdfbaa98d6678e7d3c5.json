@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "working_HEAD": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "allowed_production_markers_for_Y70": [
+    "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+    "87019e7c2f640f99cb82a3e5b396321fc5b54d25"
+  ],
+  "allowed_marker_for_Y71": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "exact_Y71_seven_additions_only": true,
+  "keeper_original_PID": 52561,
+  "CPU_guard_tests_passed": 6,
+  "evidence": [
+    {
+      "path": "scripts/observe_y70_y71_exact_deployment.py",
+      "sha256": "a5696c5dacf1d46463ea1cdfbe01af327c794d31b03d5a0887958c262e75c796"
+    },
+    {
+      "path": "scripts/test_y71_deployment_observer.py",
+      "sha256": "7d869de4ab47926e64a8f0e7f3fbb80f7c852c7c8270dec08fc0241ca5b64d20"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_observer_guards_fb6718a8dd684cdfbaa98d6678e7d3c5.log",
+      "sha256": "04ed48d1459a4173a7ebd0121d366507b36b59c70a4dc3575ee183a693290285"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y70_fb6718a8dd684cdfbaa98d6678e7d3c5_before_y71.json",
+      "sha256": "7bd47eed84e9c38e5c2e66980892159a00785d9146190c0ea8fd82b6d71e6e60"
+    }
+  ],
+  "production_sync": false,
+  "native_Y71_executed": false
+}

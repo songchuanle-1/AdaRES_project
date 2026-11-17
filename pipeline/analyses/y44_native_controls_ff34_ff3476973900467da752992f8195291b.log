@@ -1,0 +1,18 @@
+Using backend: pytorch
+2026-10-12 17:39:56,967 - INFO - Load train scanrefer: 36665 samples
+2026-10-12 17:40:00,777 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 168, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/ipdn.py", line 67, in forward
+    return self.loss(**batch)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/utils/utils.py", line 20, in wrapper
+    return func(*new_args, **new_kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y44_coordinate_feature/ipdn.py", line 82, in loss
+    sp_feats, point_cross = self.extract_feat(input, superpoints, p2v_map, coords_float)
+  File "<stdin>", line 134, in captured_extract
+TypeError: argsort() received an invalid combination of arguments - got (Tensor, stable=bool), but expected one of:
+ * (Tensor input, int dim, bool descending)
+ * (Tensor input, name dim, bool descending)
+

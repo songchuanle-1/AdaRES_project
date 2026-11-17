@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "994db457a3b00444b6ace4f0c9b7f3b6e047c83e",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "additive_parent": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "retained_branch": "refs/heads/adares-y96-seed-query-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y96_native.py",
+    "sha256": "3214e4432a5bc515b2c81c3a8bd61f58143b273ba234cfc16e8738d2dedaf200"
+  },
+  "planned_command": "python -B scripts/run_y96_native.py --server server-1 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching AdaRES-Y92 full30/full checkpoint canonical archive and fresh exclusive idle/unreserved GPU0; earlier Y94 and Y95 have priority. No GPU1, power/runtime/data substitution or changed HEAD/owner without a new tested binding.",
+  "checks": "Actual original YAML/sparse TRAIN two finite task losses/backward/updates; original generated query and undetached sampled seed, original sampled SCG seeds, five original generator layers, float64 projections, initial and first coarse consumers, hard coarse gates, shared heads, finite new/original/both-input gradients, zero then learned skip, native modes and memory. CPU is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_server1_program.py",
+    "sha256": "bebc5a33f287a5b73adfdbfa3750e459461a4f3d0e79750f0b20c50aa6aa4696"
+  }
+}

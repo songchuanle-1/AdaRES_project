@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "b8bc4d8180774f7a8ccac5819670c991",
+  "observed_at": "2026-11-07T01:21:59.841048+08:00",
+  "scope": "test_expectation_only",
+  "actual_guard_rejected_unauthorized_resource": true,
+  "observation": "Original test expected AssertionError but canonical resource guard raised ValueError. Only the exact allowed_gpus case now requires ValueError; all other test expectations and controls unchanged.",
+  "model_changed": false,
+  "native_plan_changed": false,
+  "resource_guard_changed": false,
+  "original_finalizers_changed": false,
+  "scientific_revision": false,
+  "evidence": [
+    {
+      "path": "scripts/prepare_y88_y89_terminal_binding.py",
+      "sha256": "b26241241f6c3f7a87bd9bd73a1daf6d68e8cef45a7cb44c70129c5d572c6d63"
+    },
+    {
+      "path": "pipeline/checks/y88_y89_terminal_binding_b8bc4d8180774f7a8ccac5819670c991_lifecycle.log",
+      "sha256": "2bffc1367c0bcc5793a9874fea269fd39ff5b7918ff5529b22f4c56b12261814"
+    },
+    {
+      "path": "pipeline/checks/y88_y89_terminal_binding_b8bc4d8180774f7a8ccac5819670c991_additive.log",
+      "sha256": "35c9fe1eaf2ca87c644331cb6eeef1b07c6c40de195e1078cb3053e911eb438c"
+    },
+    {
+      "path": "scripts/test_y88_y89_binding.py",
+      "sha256": "86dda1d754fa0cd7c34660f7af08a79c65dc0ef43e0d89bcbee9d48c0672613b"
+    },
+    {
+      "path": "scripts/test_y88_y89_binding_v2.py",
+      "sha256": "f6049fb52d2e6295bf87f5fe0a4f46c4fde812f79b22518ec14accacd0989091"
+    },
+    {
+      "path": "scripts/prepare_y88_y89_terminal_binding_v2.py",
+      "sha256": "e483f464dc0a5ee63858abe3bb42ff9489947a05fb747d2436c90d0e395e53ae"
+    }
+  ]
+}

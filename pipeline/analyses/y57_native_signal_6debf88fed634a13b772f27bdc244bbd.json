@@ -1,0 +1,1201 @@
+{
+  "complete": true,
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "inputs": {
+    "Y56": [
+      "/tmp/adares_y56_native_batch2_6debf88fed634a13b772f27bdc244bbd.json",
+      "dff483ac71a5353b509289aaab76b3b3893cedeed29bfad35ee7601f0915a08d"
+    ],
+    "Y57": [
+      "/tmp/adares_y57_native_task_6debf88fed634a13b772f27bdc244bbd.json",
+      "af0d796001a0b74174a103701a4f809d0605a5010955464a015d360ab5975846"
+    ]
+  },
+  "primary_layer": 6,
+  "primary": {
+    "layer": 6,
+    "primary": true,
+    "scenes": 8,
+    "expressions": 32,
+    "queries": 4096,
+    "associations": {
+      "dispersion_error_rho": {
+        "mean": 0.31061679551593113,
+        "descriptive_scene_bootstrap95": [
+          0.170127702401117,
+          0.46276473230635407
+        ]
+      },
+      "dispersion_quality_rho": {
+        "mean": 0.39137330719006314,
+        "descriptive_scene_bootstrap95": [
+          0.2760158493660494,
+          0.5067108446566144
+        ]
+      },
+      "rotated_label_error_rho": {
+        "mean": 0.25609953677211134,
+        "descriptive_scene_bootstrap95": [
+          0.13546590310840506,
+          0.38230159740661046
+        ]
+      }
+    },
+    "folds": [
+      {
+        "scene": "scene0000_00",
+        "queries": 512,
+        "baseline_mse": 0.016764597713149948,
+        "confidence_dispersion_mse": 0.01410208131773484,
+        "confidence_rotated_dispersion_mse": 0.016950589465137614,
+        "gain_over_confidence": 0.002662516395415107,
+        "gain_over_matched_rotated_control": 0.0028485081474027736,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0001_00",
+        "queries": 512,
+        "baseline_mse": 0.03760260048724541,
+        "confidence_dispersion_mse": 0.03964412464838744,
+        "confidence_rotated_dispersion_mse": 0.03709722421793779,
+        "gain_over_confidence": -0.0020415241611420262,
+        "gain_over_matched_rotated_control": -0.002546900430449646,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0002_00",
+        "queries": 512,
+        "baseline_mse": 0.027448460608018744,
+        "confidence_dispersion_mse": 0.020417427319995178,
+        "confidence_rotated_dispersion_mse": 0.027360442697462958,
+        "gain_over_confidence": 0.007031033288023566,
+        "gain_over_matched_rotated_control": 0.0069430153774677796,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0003_00",
+        "queries": 512,
+        "baseline_mse": 0.02035285343294803,
+        "confidence_dispersion_mse": 0.010722651279582537,
+        "confidence_rotated_dispersion_mse": 0.020457405266597915,
+        "gain_over_confidence": 0.009630202153365491,
+        "gain_over_matched_rotated_control": 0.009734753987015378,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0004_00",
+        "queries": 512,
+        "baseline_mse": 0.03626951218168692,
+        "confidence_dispersion_mse": 0.029525409265086726,
+        "confidence_rotated_dispersion_mse": 0.03673282281762755,
+        "gain_over_confidence": 0.006744102916600193,
+        "gain_over_matched_rotated_control": 0.0072074135525408214,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0005_00",
+        "queries": 512,
+        "baseline_mse": 0.05224232534209415,
+        "confidence_dispersion_mse": 0.03615659765079179,
+        "confidence_rotated_dispersion_mse": 0.05204922696661371,
+        "gain_over_confidence": 0.016085727691302364,
+        "gain_over_matched_rotated_control": 0.015892629315821923,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0006_00",
+        "queries": 512,
+        "baseline_mse": 0.021174290353399933,
+        "confidence_dispersion_mse": 0.018613569687488417,
+        "confidence_rotated_dispersion_mse": 0.021473159217486767,
+        "gain_over_confidence": 0.002560720665911516,
+        "gain_over_matched_rotated_control": 0.00285958952999835,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "scene": "scene0007_00",
+        "queries": 512,
+        "baseline_mse": 0.03738546340048198,
+        "confidence_dispersion_mse": 0.025654943288209123,
+        "confidence_rotated_dispersion_mse": 0.037536999607580265,
+        "gain_over_confidence": 0.011730520112272859,
+        "gain_over_matched_rotated_control": 0.011882056319371143,
+        "design_ranks": [
+          2,
+          3,
+          3
+        ]
+      }
+    ],
+    "loso_gain_over_confidence": {
+      "mean": 0.006800412382718633,
+      "descriptive_scene_bootstrap95": [
+        0.0031053110897802986,
+        0.010495994393745522
+      ]
+    },
+    "loso_gain_over_matched_control": {
+      "mean": 0.006852633224896065,
+      "descriptive_scene_bootstrap95": [
+        0.0031025809308067535,
+        0.010543327568881126
+      ]
+    }
+  },
+  "exploratory_layers": [
+    {
+      "layer": 0,
+      "primary": false,
+      "scenes": 8,
+      "expressions": 32,
+      "queries": 4096,
+      "associations": {
+        "dispersion_error_rho": {
+          "mean": -0.061814564354056044,
+          "descriptive_scene_bootstrap95": [
+            -0.21854274200009155,
+            0.09783185600164804
+          ]
+        },
+        "dispersion_quality_rho": {
+          "mean": 0.1452614068528363,
+          "descriptive_scene_bootstrap95": [
+            0.026423660872783722,
+            0.2460045017993182
+          ]
+        },
+        "rotated_label_error_rho": {
+          "mean": -0.05735091729994507,
+          "descriptive_scene_bootstrap95": [
+            -0.1919615011559238,
+            0.08749791221988863
+          ]
+        }
+      },
+      "folds": [
+        {
+          "scene": "scene0000_00",
+          "queries": 512,
+          "baseline_mse": 0.016303811941000827,
+          "confidence_dispersion_mse": 0.015849138000544424,
+          "confidence_rotated_dispersion_mse": 0.016328108128679752,
+          "gain_over_confidence": 0.0004546739404564029,
+          "gain_over_matched_rotated_control": 0.00047897012813532744,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0001_00",
+          "queries": 512,
+          "baseline_mse": 0.029679222530675897,
+          "confidence_dispersion_mse": 0.030206020186499153,
+          "confidence_rotated_dispersion_mse": 0.02968496371388369,
+          "gain_over_confidence": -0.0005267976558232558,
+          "gain_over_matched_rotated_control": -0.000521056472615463,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0002_00",
+          "queries": 512,
+          "baseline_mse": 0.009890047679012193,
+          "confidence_dispersion_mse": 0.011106706300354147,
+          "confidence_rotated_dispersion_mse": 0.009892202428528602,
+          "gain_over_confidence": -0.0012166586213419543,
+          "gain_over_matched_rotated_control": -0.0012145038718255445,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0003_00",
+          "queries": 512,
+          "baseline_mse": 0.022712128037043453,
+          "confidence_dispersion_mse": 0.022172562806658837,
+          "confidence_rotated_dispersion_mse": 0.02277833792276322,
+          "gain_over_confidence": 0.0005395652303846164,
+          "gain_over_matched_rotated_control": 0.0006057751161043824,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0004_00",
+          "queries": 512,
+          "baseline_mse": 0.025276725890496895,
+          "confidence_dispersion_mse": 0.025579327143768718,
+          "confidence_rotated_dispersion_mse": 0.02528058771348309,
+          "gain_over_confidence": -0.0003026012532718232,
+          "gain_over_matched_rotated_control": -0.0002987394302856293,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0005_00",
+          "queries": 512,
+          "baseline_mse": 0.06752683455638578,
+          "confidence_dispersion_mse": 0.06728392493053706,
+          "confidence_rotated_dispersion_mse": 0.06755874347211183,
+          "gain_over_confidence": 0.00024290962584871956,
+          "gain_over_matched_rotated_control": 0.00027481854157476726,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0006_00",
+          "queries": 512,
+          "baseline_mse": 0.013177292442350537,
+          "confidence_dispersion_mse": 0.01280152720208397,
+          "confidence_rotated_dispersion_mse": 0.013201998291165107,
+          "gain_over_confidence": 0.0003757652402665672,
+          "gain_over_matched_rotated_control": 0.00040047108908113777,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0007_00",
+          "queries": 512,
+          "baseline_mse": 0.03532898296308604,
+          "confidence_dispersion_mse": 0.03489501209473703,
+          "confidence_rotated_dispersion_mse": 0.03534588551534814,
+          "gain_over_confidence": 0.0004339708683490165,
+          "gain_over_matched_rotated_control": 0.00045087342061111285,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        }
+      ],
+      "loso_gain_over_confidence": {
+        "mean": 1.0342185853616341e-07,
+        "descriptive_scene_bootstrap95": [
+          -0.0004438061017995655,
+          0.0003601523043483792
+        ]
+      },
+      "loso_gain_over_matched_control": {
+        "mean": 2.2076065097511362e-05,
+        "descriptive_scene_bootstrap95": [
+          -0.00042999967593419016,
+          0.00039412381613071614
+        ]
+      }
+    },
+    {
+      "layer": 1,
+      "primary": false,
+      "scenes": 8,
+      "expressions": 32,
+      "queries": 4096,
+      "associations": {
+        "dispersion_error_rho": {
+          "mean": 0.37409961688564364,
+          "descriptive_scene_bootstrap95": [
+            0.22430680335561248,
+            0.5044255573612891
+          ]
+        },
+        "dispersion_quality_rho": {
+          "mean": 0.23844355979257822,
+          "descriptive_scene_bootstrap95": [
+            0.10339217872732812,
+            0.345681991391422
+          ]
+        },
+        "rotated_label_error_rho": {
+          "mean": 0.3237487982970152,
+          "descriptive_scene_bootstrap95": [
+            0.19103232724088992,
+            0.4447096814342611
+          ]
+        }
+      },
+      "folds": [
+        {
+          "scene": "scene0000_00",
+          "queries": 512,
+          "baseline_mse": 0.01730416649854989,
+          "confidence_dispersion_mse": 0.016497564575511874,
+          "confidence_rotated_dispersion_mse": 0.017278882310421788,
+          "gain_over_confidence": 0.0008066019230380181,
+          "gain_over_matched_rotated_control": 0.0007813177349099143,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0001_00",
+          "queries": 512,
+          "baseline_mse": 0.03852571602520345,
+          "confidence_dispersion_mse": 0.0383230982339519,
+          "confidence_rotated_dispersion_mse": 0.038515587759405945,
+          "gain_over_confidence": 0.00020261779125155255,
+          "gain_over_matched_rotated_control": 0.0001924895254540454,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0002_00",
+          "queries": 512,
+          "baseline_mse": 0.012307522416529751,
+          "confidence_dispersion_mse": 0.012078632980688626,
+          "confidence_rotated_dispersion_mse": 0.012279492713250842,
+          "gain_over_confidence": 0.00022888943584112482,
+          "gain_over_matched_rotated_control": 0.00020085973256221516,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0003_00",
+          "queries": 512,
+          "baseline_mse": 0.012830965627660474,
+          "confidence_dispersion_mse": 0.012945870915118778,
+          "confidence_rotated_dispersion_mse": 0.012971306711781011,
+          "gain_over_confidence": -0.0001149052874583039,
+          "gain_over_matched_rotated_control": 2.5435796662233445e-05,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0004_00",
+          "queries": 512,
+          "baseline_mse": 0.02728943250878239,
+          "confidence_dispersion_mse": 0.025849819205122464,
+          "confidence_rotated_dispersion_mse": 0.027286007208702362,
+          "gain_over_confidence": 0.0014396133036599264,
+          "gain_over_matched_rotated_control": 0.0014361880035798982,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0005_00",
+          "queries": 512,
+          "baseline_mse": 0.03618368746074142,
+          "confidence_dispersion_mse": 0.03793581531511879,
+          "confidence_rotated_dispersion_mse": 0.03614600215573617,
+          "gain_over_confidence": -0.0017521278543773666,
+          "gain_over_matched_rotated_control": -0.0017898131593826194,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0006_00",
+          "queries": 512,
+          "baseline_mse": 0.014258864596845416,
+          "confidence_dispersion_mse": 0.013540846605716906,
+          "confidence_rotated_dispersion_mse": 0.014324427099653331,
+          "gain_over_confidence": 0.0007180179911285105,
+          "gain_over_matched_rotated_control": 0.0007835804939364255,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0007_00",
+          "queries": 512,
+          "baseline_mse": 0.024547534966768054,
+          "confidence_dispersion_mse": 0.023258002537905668,
+          "confidence_rotated_dispersion_mse": 0.02457507368848642,
+          "gain_over_confidence": 0.001289532428862386,
+          "gain_over_matched_rotated_control": 0.0013170711505807522,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        }
+      ],
+      "loso_gain_over_confidence": {
+        "mean": 0.000352279966493231,
+        "descriptive_scene_bootstrap95": [
+          -0.00036330767484942764,
+          0.0009268216946925505
+        ]
+      },
+      "loso_gain_over_matched_control": {
+        "mean": 0.0003683911597878581,
+        "descriptive_scene_bootstrap95": [
+          -0.0003562503473690233,
+          0.0009394542998647603
+        ]
+      }
+    },
+    {
+      "layer": 2,
+      "primary": false,
+      "scenes": 8,
+      "expressions": 32,
+      "queries": 4096,
+      "associations": {
+        "dispersion_error_rho": {
+          "mean": 0.4252158058276872,
+          "descriptive_scene_bootstrap95": [
+            0.31709865981505214,
+            0.5417945860419336
+          ]
+        },
+        "dispersion_quality_rho": {
+          "mean": 0.3437783581448878,
+          "descriptive_scene_bootstrap95": [
+            0.22212874593049242,
+            0.4560863069728551
+          ]
+        },
+        "rotated_label_error_rho": {
+          "mean": 0.36085602739882805,
+          "descriptive_scene_bootstrap95": [
+            0.2754882991324849,
+            0.45419673755522105
+          ]
+        }
+      },
+      "folds": [
+        {
+          "scene": "scene0000_00",
+          "queries": 512,
+          "baseline_mse": 0.013745496603870378,
+          "confidence_dispersion_mse": 0.012051794024210517,
+          "confidence_rotated_dispersion_mse": 0.013780067447184591,
+          "gain_over_confidence": 0.0016937025796598618,
+          "gain_over_matched_rotated_control": 0.0017282734229740748,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0001_00",
+          "queries": 512,
+          "baseline_mse": 0.03032777355065318,
+          "confidence_dispersion_mse": 0.03263589949956445,
+          "confidence_rotated_dispersion_mse": 0.029998643489323837,
+          "gain_over_confidence": -0.0023081259489112667,
+          "gain_over_matched_rotated_control": -0.0026372560102406115,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0002_00",
+          "queries": 512,
+          "baseline_mse": 0.026082448577111287,
+          "confidence_dispersion_mse": 0.021709288479495145,
+          "confidence_rotated_dispersion_mse": 0.025809846906381426,
+          "gain_over_confidence": 0.004373160097616142,
+          "gain_over_matched_rotated_control": 0.0041005584268862805,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0003_00",
+          "queries": 512,
+          "baseline_mse": 0.01785319232889338,
+          "confidence_dispersion_mse": 0.017276983751338286,
+          "confidence_rotated_dispersion_mse": 0.018275865973173485,
+          "gain_over_confidence": 0.0005762085775550957,
+          "gain_over_matched_rotated_control": 0.000998882221835199,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0004_00",
+          "queries": 512,
+          "baseline_mse": 0.023977324855554635,
+          "confidence_dispersion_mse": 0.023229405100916846,
+          "confidence_rotated_dispersion_mse": 0.02402228099089159,
+          "gain_over_confidence": 0.0007479197546377894,
+          "gain_over_matched_rotated_control": 0.0007928758899747451,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0005_00",
+          "queries": 512,
+          "baseline_mse": 0.0460923163897596,
+          "confidence_dispersion_mse": 0.03658076836805935,
+          "confidence_rotated_dispersion_mse": 0.045632026771498455,
+          "gain_over_confidence": 0.009511548021700247,
+          "gain_over_matched_rotated_control": 0.009051258403439101,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0006_00",
+          "queries": 512,
+          "baseline_mse": 0.020070545565005975,
+          "confidence_dispersion_mse": 0.017832287603132567,
+          "confidence_rotated_dispersion_mse": 0.020583631652679228,
+          "gain_over_confidence": 0.0022382579618734078,
+          "gain_over_matched_rotated_control": 0.0027513440495466612,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0007_00",
+          "queries": 512,
+          "baseline_mse": 0.021998792828841696,
+          "confidence_dispersion_mse": 0.019293247042864475,
+          "confidence_rotated_dispersion_mse": 0.022024205405549592,
+          "gain_over_confidence": 0.002705545785977221,
+          "gain_over_matched_rotated_control": 0.0027309583626851167,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        }
+      ],
+      "loso_gain_over_confidence": {
+        "mean": 0.0024422771037635625,
+        "descriptive_scene_bootstrap95": [
+          0.00040892314517937314,
+          0.004888013866768063
+        ]
+      },
+      "loso_gain_over_matched_control": {
+        "mean": 0.002439611845887571,
+        "descriptive_scene_bootstrap95": [
+          0.0004113439314166269,
+          0.004761773953755434
+        ]
+      }
+    },
+    {
+      "layer": 3,
+      "primary": false,
+      "scenes": 8,
+      "expressions": 32,
+      "queries": 4096,
+      "associations": {
+        "dispersion_error_rho": {
+          "mean": 0.47073602877220283,
+          "descriptive_scene_bootstrap95": [
+            0.3961761033135529,
+            0.5649479244157435
+          ]
+        },
+        "dispersion_quality_rho": {
+          "mean": 0.40006221048440865,
+          "descriptive_scene_bootstrap95": [
+            0.29561055821825816,
+            0.5088777462769786
+          ]
+        },
+        "rotated_label_error_rho": {
+          "mean": 0.3987302362776964,
+          "descriptive_scene_bootstrap95": [
+            0.33283363709714336,
+            0.4647259938369804
+          ]
+        }
+      },
+      "folds": [
+        {
+          "scene": "scene0000_00",
+          "queries": 512,
+          "baseline_mse": 0.009828140768829145,
+          "confidence_dispersion_mse": 0.007756194047233706,
+          "confidence_rotated_dispersion_mse": 0.009854428529166452,
+          "gain_over_confidence": 0.0020719467215954395,
+          "gain_over_matched_rotated_control": 0.0020982344819327464,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0001_00",
+          "queries": 512,
+          "baseline_mse": 0.040258482008190904,
+          "confidence_dispersion_mse": 0.034377570094421606,
+          "confidence_rotated_dispersion_mse": 0.03990519804553419,
+          "gain_over_confidence": 0.005880911913769299,
+          "gain_over_matched_rotated_control": 0.005527627951112585,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0002_00",
+          "queries": 512,
+          "baseline_mse": 0.02860157691565162,
+          "confidence_dispersion_mse": 0.021113493355146135,
+          "confidence_rotated_dispersion_mse": 0.028474170166384826,
+          "gain_over_confidence": 0.007488083560505485,
+          "gain_over_matched_rotated_control": 0.007360676811238691,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0003_00",
+          "queries": 512,
+          "baseline_mse": 0.01186271710804112,
+          "confidence_dispersion_mse": 0.00961200834705628,
+          "confidence_rotated_dispersion_mse": 0.012032912845411605,
+          "gain_over_confidence": 0.00225070876098484,
+          "gain_over_matched_rotated_control": 0.0024209044983553255,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0004_00",
+          "queries": 512,
+          "baseline_mse": 0.041018764420919424,
+          "confidence_dispersion_mse": 0.032413822434086324,
+          "confidence_rotated_dispersion_mse": 0.04115452000096796,
+          "gain_over_confidence": 0.0086049419868331,
+          "gain_over_matched_rotated_control": 0.008740697566881638,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0005_00",
+          "queries": 512,
+          "baseline_mse": 0.05369353368510808,
+          "confidence_dispersion_mse": 0.03496107703898113,
+          "confidence_rotated_dispersion_mse": 0.053117766619084655,
+          "gain_over_confidence": 0.018732456646126952,
+          "gain_over_matched_rotated_control": 0.018156689580103524,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0006_00",
+          "queries": 512,
+          "baseline_mse": 0.019844026967654613,
+          "confidence_dispersion_mse": 0.019406479052401858,
+          "confidence_rotated_dispersion_mse": 0.02012893086992825,
+          "gain_over_confidence": 0.00043754791525275546,
+          "gain_over_matched_rotated_control": 0.0007224518175263928,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0007_00",
+          "queries": 512,
+          "baseline_mse": 0.029482524835005193,
+          "confidence_dispersion_mse": 0.023582169311783648,
+          "confidence_rotated_dispersion_mse": 0.029563531681938558,
+          "gain_over_confidence": 0.0059003555232215454,
+          "gain_over_matched_rotated_control": 0.005981362370154911,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        }
+      ],
+      "loso_gain_over_confidence": {
+        "mean": 0.0064208691285361765,
+        "descriptive_scene_bootstrap95": [
+          0.003135426533153035,
+          0.010512641816100652
+        ]
+      },
+      "loso_gain_over_matched_control": {
+        "mean": 0.006376080634663227,
+        "descriptive_scene_bootstrap95": [
+          0.003234853947724502,
+          0.010306937125149282
+        ]
+      }
+    },
+    {
+      "layer": 4,
+      "primary": false,
+      "scenes": 8,
+      "expressions": 32,
+      "queries": 4096,
+      "associations": {
+        "dispersion_error_rho": {
+          "mean": 0.4100450209439663,
+          "descriptive_scene_bootstrap95": [
+            0.31832611357809926,
+            0.5288634035661965
+          ]
+        },
+        "dispersion_quality_rho": {
+          "mean": 0.4106624231444511,
+          "descriptive_scene_bootstrap95": [
+            0.3059288805248859,
+            0.5217149010424229
+          ]
+        },
+        "rotated_label_error_rho": {
+          "mean": 0.35438256786760663,
+          "descriptive_scene_bootstrap95": [
+            0.28124105875755356,
+            0.4421950821735946
+          ]
+        }
+      },
+      "folds": [
+        {
+          "scene": "scene0000_00",
+          "queries": 512,
+          "baseline_mse": 0.01369238265605965,
+          "confidence_dispersion_mse": 0.010762601577823301,
+          "confidence_rotated_dispersion_mse": 0.01389839713069916,
+          "gain_over_confidence": 0.002929781078236349,
+          "gain_over_matched_rotated_control": 0.003135795552875858,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0001_00",
+          "queries": 512,
+          "baseline_mse": 0.041548835541572404,
+          "confidence_dispersion_mse": 0.03446295296080604,
+          "confidence_rotated_dispersion_mse": 0.041285900834199404,
+          "gain_over_confidence": 0.007085882580766367,
+          "gain_over_matched_rotated_control": 0.006822947873393367,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0002_00",
+          "queries": 512,
+          "baseline_mse": 0.02683498759159016,
+          "confidence_dispersion_mse": 0.019737930514990967,
+          "confidence_rotated_dispersion_mse": 0.02679571391524958,
+          "gain_over_confidence": 0.007097057076599193,
+          "gain_over_matched_rotated_control": 0.0070577834002586125,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0003_00",
+          "queries": 512,
+          "baseline_mse": 0.012317459497888246,
+          "confidence_dispersion_mse": 0.008403638496287825,
+          "confidence_rotated_dispersion_mse": 0.012340471646868426,
+          "gain_over_confidence": 0.003913821001600421,
+          "gain_over_matched_rotated_control": 0.003936833150580601,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0004_00",
+          "queries": 512,
+          "baseline_mse": 0.04118625938052403,
+          "confidence_dispersion_mse": 0.03215174138623233,
+          "confidence_rotated_dispersion_mse": 0.04119832197546175,
+          "gain_over_confidence": 0.009034517994291703,
+          "gain_over_matched_rotated_control": 0.00904658058922942,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0005_00",
+          "queries": 512,
+          "baseline_mse": 0.04563773279190192,
+          "confidence_dispersion_mse": 0.029415384703680342,
+          "confidence_rotated_dispersion_mse": 0.045317929510869034,
+          "gain_over_confidence": 0.016222348088221577,
+          "gain_over_matched_rotated_control": 0.015902544807188692,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0006_00",
+          "queries": 512,
+          "baseline_mse": 0.019622153322496373,
+          "confidence_dispersion_mse": 0.019137159032995434,
+          "confidence_rotated_dispersion_mse": 0.019843932424189966,
+          "gain_over_confidence": 0.0004849942895009396,
+          "gain_over_matched_rotated_control": 0.0007067733911945324,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0007_00",
+          "queries": 512,
+          "baseline_mse": 0.03647227639295808,
+          "confidence_dispersion_mse": 0.022510828996929633,
+          "confidence_rotated_dispersion_mse": 0.03644111946190101,
+          "gain_over_confidence": 0.013961447396028448,
+          "gain_over_matched_rotated_control": 0.013930290464971379,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        }
+      ],
+      "loso_gain_over_confidence": {
+        "mean": 0.007591231188155624,
+        "descriptive_scene_bootstrap95": [
+          0.004277199315208225,
+          0.011137396270635926
+        ]
+      },
+      "loso_gain_over_matched_control": {
+        "mean": 0.007567443653711558,
+        "descriptive_scene_bootstrap95": [
+          0.0043559563904323265,
+          0.011036964791784372
+        ]
+      }
+    },
+    {
+      "layer": 5,
+      "primary": false,
+      "scenes": 8,
+      "expressions": 32,
+      "queries": 4096,
+      "associations": {
+        "dispersion_error_rho": {
+          "mean": 0.3556459654252884,
+          "descriptive_scene_bootstrap95": [
+            0.25279380296792026,
+            0.47692354736998716
+          ]
+        },
+        "dispersion_quality_rho": {
+          "mean": 0.4124323763401475,
+          "descriptive_scene_bootstrap95": [
+            0.31341931597034484,
+            0.5220180882689041
+          ]
+        },
+        "rotated_label_error_rho": {
+          "mean": 0.30552314851904416,
+          "descriptive_scene_bootstrap95": [
+            0.22402211419611792,
+            0.3968995302986518
+          ]
+        }
+      },
+      "folds": [
+        {
+          "scene": "scene0000_00",
+          "queries": 512,
+          "baseline_mse": 0.01379137814015673,
+          "confidence_dispersion_mse": 0.011962462729978052,
+          "confidence_rotated_dispersion_mse": 0.013953886282269835,
+          "gain_over_confidence": 0.0018289154101786779,
+          "gain_over_matched_rotated_control": 0.0019914235522917826,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0001_00",
+          "queries": 512,
+          "baseline_mse": 0.038305482363852526,
+          "confidence_dispersion_mse": 0.03508415765856532,
+          "confidence_rotated_dispersion_mse": 0.03782253591005387,
+          "gain_over_confidence": 0.003221324705287208,
+          "gain_over_matched_rotated_control": 0.002738378251488552,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0002_00",
+          "queries": 512,
+          "baseline_mse": 0.027199266476934214,
+          "confidence_dispersion_mse": 0.020142157024872147,
+          "confidence_rotated_dispersion_mse": 0.027084333187860767,
+          "gain_over_confidence": 0.007057109452062067,
+          "gain_over_matched_rotated_control": 0.00694217616298862,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0003_00",
+          "queries": 512,
+          "baseline_mse": 0.022189472115715515,
+          "confidence_dispersion_mse": 0.011339215964009261,
+          "confidence_rotated_dispersion_mse": 0.022261250631876818,
+          "gain_over_confidence": 0.010850256151706254,
+          "gain_over_matched_rotated_control": 0.010922034667867557,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0004_00",
+          "queries": 512,
+          "baseline_mse": 0.03313215014317775,
+          "confidence_dispersion_mse": 0.02982554499798492,
+          "confidence_rotated_dispersion_mse": 0.03352265515574363,
+          "gain_over_confidence": 0.003306605145192827,
+          "gain_over_matched_rotated_control": 0.0036971101577587123,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0005_00",
+          "queries": 512,
+          "baseline_mse": 0.04947907110153983,
+          "confidence_dispersion_mse": 0.03212915519600938,
+          "confidence_rotated_dispersion_mse": 0.049058340503418056,
+          "gain_over_confidence": 0.01734991590553045,
+          "gain_over_matched_rotated_control": 0.016929185307408674,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0006_00",
+          "queries": 512,
+          "baseline_mse": 0.02131179160877201,
+          "confidence_dispersion_mse": 0.01925642953748266,
+          "confidence_rotated_dispersion_mse": 0.021499390410024515,
+          "gain_over_confidence": 0.0020553620712893475,
+          "gain_over_matched_rotated_control": 0.0022429608725418534,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "scene": "scene0007_00",
+          "queries": 512,
+          "baseline_mse": 0.03941336302999862,
+          "confidence_dispersion_mse": 0.02556832223195733,
+          "confidence_rotated_dispersion_mse": 0.039496225959371745,
+          "gain_over_confidence": 0.013845040798041292,
+          "gain_over_matched_rotated_control": 0.013927903727414415,
+          "design_ranks": [
+            2,
+            3,
+            3
+          ]
+        }
+      ],
+      "loso_gain_over_confidence": {
+        "mean": 0.007439316204911015,
+        "descriptive_scene_bootstrap95": [
+          0.00385347857545887,
+          0.011450193710102724
+        ]
+      },
+      "loso_gain_over_matched_control": {
+        "mean": 0.007423896587470021,
+        "descriptive_scene_bootstrap95": [
+          0.0038843516686883285,
+          0.011349812611220225
+        ]
+      }
+    }
+  ],
+  "native_incidence": [
+    {
+      "layer": 0,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 881,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 78
+    },
+    {
+      "layer": 1,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 2892,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 8
+    },
+    {
+      "layer": 2,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 3039,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 4
+    },
+    {
+      "layer": 3,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 2368,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 23
+    },
+    {
+      "layer": 4,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 2653,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 8
+    },
+    {
+      "layer": 5,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 2651,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 14
+    },
+    {
+      "layer": 6,
+      "expressions": 32,
+      "exact_joint_duplicate_excess": 0,
+      "hard_mask_duplicate_excess": 3047,
+      "minimum_query_unique": 128,
+      "minimum_soft_mask_unique": 128,
+      "minimum_hard_mask_unique": 3
+    }
+  ],
+  "units": {
+    "independent_scene_clusters": 8,
+    "expressions": 32,
+    "queries_per_expression": 128,
+    "correlated_expression_layer_records": 224
+  },
+  "protocol": "LOSO OLS: confidence only, confidence+dispersion, matched confidence+within-expression cyclic-shift1 dispersion. Train-fold standardization, unclipped prediction, no regularization/threshold/feature/layer search. Scene bootstrap10000/1999 descriptive only.",
+  "limits": "Conditional only on confidence, NOT all native head inputs. Not causal identification, production model fitting, selector modification, pre-training efficacy gate, native-backward PASS, or population benefit.",
+  "production_model_or_config_changes": false,
+  "training_launches": 0,
+  "weights_saved": false,
+  "native_backward": false,
+  "admission": false
+}

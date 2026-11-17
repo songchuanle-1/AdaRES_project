@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "config": "configs_song/model_paper5/adares_y90_query_peer_affinity_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "9a64d22c41bb8527ca7ca1abba4340546506b1b1",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "cb4a5813755d38b3d1593bb803726aabd7d0a79b",
+  "retained_branch": "refs/heads/adares-y90-query-peer-affinity",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_y90_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved matching authorized GPU0 after original owner exact fixed30 canonical archive; no GPU1 or power/data/runtime substitution.",
+  "checks": "Original native TRAIN two finite task losses/backward/updates; fourteen exact query/overlap/bounded affinity/weighted-context/shared-head consumers, original gates/max-overlap, zero then learned gate and aggregate context response, finite original/new/input gradients, native modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y90_native_1c6bba9b68404903951324169dd02d86_server2_program.py",
+    "sha256": "01ed179781b47336857ad207803feff09e1ca4cd2abaec9fa6d703633c24fe6a"
+  }
+}

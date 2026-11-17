@@ -1,0 +1,17 @@
+Using backend: pytorch
+2026-10-04 06:12:18,455 - INFO - Load train scanrefer: 36665 samples
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]Train[1/30]:   0%|                    | 0/2 [00:17<?, ?it/s, lr=0.0001, eta=0:16:45, iter_time=17.04]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.04s/it, lr=0.0001, eta=0:16:45, iter_time=17.04]Train[1/30]:  50%|██████████          | 1/2 [00:17<00:17, 17.04s/it, lr=0.0001, eta=0:08:27, iter_time=8.76] Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  7.29s/it, lr=0.0001, eta=0:08:27, iter_time=8.76]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:17<00:00,  8.76s/it, lr=0.0001, eta=0:08:27, iter_time=8.76]
+2026-10-04 06:12:48,384 - WARNING - The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: text_encoder.embeddings.position_ids, text_encoder.embeddings.token_type_ids
+
+2026-10-04 06:12:48,385 - INFO - Loading checkpoint from /tmp/adares_y26_physical_native_a1a9809f76d0430b8ad4a7ddaf0ec99e.pth
+2026-10-04 06:12:48,523 - INFO - Loading optimizer from /tmp/adares_y26_physical_native_a1a9809f76d0430b8ad4a7ddaf0ec99e.pth
+2026-10-04 06:12:48,524 - INFO - Loading scheduler from /tmp/adares_y26_physical_native_a1a9809f76d0430b8ad4a7ddaf0ec99e.pth
+2026-10-04 06:12:51,219 - INFO - Load train scanrefer: 36665 samples
+2026-10-04 06:12:55,654 - INFO - set random seed: 1999
+2026-10-04 06:12:55,944 - INFO - set random seed: 1999
+2026-10-04 06:12:56,445 - INFO - set random seed: 1999
+2026-10-04 06:12:56,763 - INFO - set random seed: 1999

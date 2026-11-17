@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "dd81fa2cdb754585ab9d4ab0da627f70",
+  "id": "AdaRES-Y74",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y74",
+    "label": "AdaRES-Y74 fixed30",
+    "config": "configs_song/model_paper5/adares_y74_language_update_gate_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y74.json",
+    "scientific_candidate_id": "AdaRES-Y74",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 49891,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y74_language_update_gate_res_20261101_065827.log",
+    "launched": "2026-11-01T06:59:02"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y74 fixed30] configs_song/model_paper5/adares_y74_language_update_gate_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y74.py",
+    "sha256": "5fef5ab8b8e5fab9f14ea6a09202c8656122b91c508be8a3c97460a96fda286e"
+  }
+}

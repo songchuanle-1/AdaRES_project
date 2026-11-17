@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "仅处理 AdaRES_project；实际 CODEX_THREAD_ID 与前台 owner 一致，后台 Pipeline-AdaRES_project 仍为 Disabled。begin 已查进展并尝试派发现有合格队列；本轮快照 ready waiting 为0，未出现可派发合格任务。",
+    "真实原生进度核验：Y90 初次观察为 Train28/30、3486/4686；Y91 为 Train11/30、2606/4686。两者原 PID、来源链、实际运行文件、原生 YAML、350W/280W 与递增原生步数均已确认；收尾再以 final 标签刷新，精确计数保留在当轮生产观察证据，不把运行登记或 PID 单独当作健康证据。",
+    "两台授权 GPU0 均由原训练占用；收尾顺序收集 canonical 只读物理占用并保留其实际 resource_check/tick_attempt。没有停止、重启、迁移、抢占、checkpoint加载、提前归档或GPU原生测试。",
+    "本轮只做状态及资源核验，未新增候选、CPU科学运行、GPU原生任务、操作准备、准入、入队、训练启动或归档；已有 Y92/Y93 实现和证据保持，不重放已完成的CPU、原生计划、操作守卫或终态helper，不把合成CPU或有限梯度当效果结论。",
+    "已备份并更新七节短记忆，保留历史快照链和原运行收据；完整六节报告由官方 renderer 生成。科学目标字节、数据协议、原独立运行环境、精确路径映射、seed1999/fixed30及全部原冻结FIRST/成本要求保持，未产生新的正式效果或晋升结论。"
+  ],
+  "decisions": [
+    "沿用既定顺序，Y92先于Y93。Y90仍在原server1 GPU0训练，尚不满足Y92真实原生检查前置；等待其自然fixed30、原last/best/model/optimizer/scheduler稳定有限及TrainVal/source/YAML/receipt/freeze完整精确核验归档，再以实时独占空闲350W GPU0执行保留的bound native计划。日志结束不替代完整checkpoint验证。",
+    "Y92真实native通过后，用实际证据为仍在跑的Y91新建并测试支持附加Y92的精确终态绑定，再选择、准入、canonical派发并核验递增步数；旧签名helper不得修改。Y93如遇HEAD/owner改变须先建立新的同字节运行绑定，不擅自执行旧绑定。",
+    "server2 GPU1全部AdaRES使用及其原冻结后评/成本继续用户暂停，Y57实验另行暂停；不迁移或替换历史资源。仅server1 GPU0既有350W与server2 GPU0固定280W，各卡一个独立实验；禁止server6，不改功率或调度。阻塞条件未变，无新用户处理事项。"
+  ]
+}

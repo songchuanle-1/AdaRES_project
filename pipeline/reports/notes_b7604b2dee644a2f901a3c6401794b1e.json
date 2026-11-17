@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "本轮快照为上海2026-10-25 18:49:37，已核实际会话归属并由canonical begin先查询进展、尝试派发。项目running0/claiming0/waiting0，仅Y57处于用户暂停；快照new_terminal Y61来自前b5a轮已完成归档，不是本轮新完成，未重复终结或恢复。",
+    "18:52:10使用既有已测试scripts/recheck_gpu0_lifecycle_v4.py真实检查server-2。hostname为dl01-MS-7C60，GPU0仍由未登记于本项目的compute PID13813占用、利用率100%、显存24136MiB、87°C、上限280W/实测278.25W，无独占授权空槽。GPU1只读采样见PID13814，不使用或更改，不干预其他任务。",
+    "当前资源证据pipeline/checks/gpu0_lifecycle_v4_b7604b2dee644a2f901a3c6401794b1e.json，SHA256 321b02fb2693a03192ba7a297ae04473380b0b97cd9041083ed0454c4e6af999。真实核验Y56/Y58/Y59/Y60/Y61五项完整终态及原冻结文件；Y62/Y63各7文件、当前goal/commit82fbd9f与冻结原生计划一致。tick_attempt=Y56/resource_check/blocked，新证据归全部七项候选并保留具体资源阻塞；未执行GPU原生检查或全量后评。",
+    "更新七段紧凑记忆并生成完整六段审计报告后，首次finish返回1：CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening，明确保留当前租约。本轮执行状态INCOMPLETE，不是训练或候选假设失败；不重复相同finish。本轮无新增模型、配置、测试代码、Git提交、准入、入队、训练、push、生产同步、硬件或调度变化。",
+    "已保存收尾失败证据pipeline/checks/postflight_queue_opening_b7604b2dee644a2f901a3c6401794b1e.json，SHA256 60c0e31d3dae2bd08e3485bbaa86c6551a4370ff1d46666b01e4bc1303759905；checker源码SHA472bd2f6d317f9d1b81a40c7d108e76d5e9560da4d4950114c148428f06b8576及具体条件留档。该检查只看本项目队列开口，未反映GPU0外来compute PID13813的实测占用；未更改检查器、快照或blocker类别，未伪造队列。接下来canonical abort并独立核验释放状态。"
+  ],
+  "decisions": [
+    "当前唯一授权GPU0仍被其他compute占用，继续保留Y62/Y63两项已CPU准备的变体；GPU空槽不足属于实证资源阻塞，CPU证据不能替代真实原生稀疏YAML/TRAIN两步loss/backward/path/resource检查。不为凑额度重复合成检查或制造额外候选，不驱逐任务、不借用GPU1。",
+    "五项固定30实验已历史完成，原冻结全量后评与成本比较尚待空槽；训练best不是冻结评估或晋升依据。本轮没有新的效益结论，也不重复归档、准入或重训。Y57继续用户暂停，不恢复、不迁移、不从预训练重启。",
+    "下轮先查真实资源；GPU0确认独占空闲且版本/current goal/280W一致后，优先Y62当前rebound原生计划，显式--gpu-id 0。只有真实PASS才生成匹配候选的新准入适配并用既有canonical派发、核验原生步数递增。常规项目操作已有授权，无须再次审批。",
+    "实际资源仍与上轮相同，Y61完成不重复通知；但本轮收尾新增校验失败需如实简报。依据foreground规则“If the checker cannot accept an honest disposition ... abort and report INCOMPLETE”，保留当前真实阻塞与故障证据，补报后仅中止本轮tick、核验释放，不改训练、其他进程、调度或通知策略。",
+    "后续先查实际资源；如空队列与外来GPU占用及相同checker谓词均未变，不重放已知失败finish，也不靠替换阻塞类别绕过。流水线校验与真实外来占用不兼容需要具体维护处理；目前没有获准改变科学门槛或资源白名单。"
+  ]
+}

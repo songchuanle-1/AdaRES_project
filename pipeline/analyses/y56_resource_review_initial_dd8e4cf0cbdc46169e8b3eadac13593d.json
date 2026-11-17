@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "failure_scope": "implementation",
+  "resource_gate_passed": false,
+  "candidate_to_parent_latency_ratios": [
+    1.9673608872088355,
+    2.0684947089165124,
+    2.9364777467857617,
+    1.819066012286007,
+    2.104182088721573,
+    2.1225379268092546,
+    2.326347173124843,
+    1.885989204531798,
+    2.25064973670924,
+    1.7308628220066435
+  ],
+  "reason": "Joint 128x(d+valid_support) exact unique runs even when raw queries are all distinct; 1.73-2.94x native inference cost is not accepted as lightweight. No cutoff is retuned.",
+  "result": {
+    "path": "pipeline/analyses/y56_resources_gpu1_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "1081d9d567906744b128ef6eb65507447c0c5914d10e799d555067bb4e29c69e"
+  },
+  "preserved_bundle": {
+    "path": "pipeline/analyses/y56_bundle_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+    "sha256": "9952cc0c5cda9ade97a3fe16de16f826451c779e00acf459d6844693b6c241c3"
+  },
+  "parameters_delta": 0,
+  "scope": "Runtime implementation, not hypothesis falsification; preserve all controls/native results."
+}

@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "本轮已核验实际owner、项目实验优先授权及server-2 GPU0/1单卡单实验边界；begin先监控、检查goal和尝试已有合格任务派发，无waiting任务。准入预算2不等于必须制造2项候选，先续做已实现且最近可入队的Y58/Y59。",
+    "实际执行python -B scripts/check_ef_execution.py --token f27d10d52a2b4fabadfd1c28afd46c65：两项各7个源/YAML文件的冻结payload、工作区、已测试Git commit a83449f、原生train源及current goal完全一致；注入过期goal和篡改ipdn源码的负控制均正确拒绝。这是完整性/执行准备检查，不是原生GPU smoke。",
+    "项目内检查脚本首次在结果落盘时因checks目录未建出现FileNotFoundError，未写候选/队列、未执行GPU后向；补上输出目录创建后重跑通过。初始源与错误记录保留，不作为候选科学失败。",
+    "随后移除检查脚本要求Y56/Y57原进程必须同时存在的固定前提，按当前running/claiming和实际GPU compute占用判资源；模拟已归档任务释放空卡可识别，模拟未确认running/claiming槽位不被抢占，两控制均通过。旧检查器原字节及hash绑定归档，未覆盖负面记录。模拟控制不代表真实资源已空闲。",
+    "表0-3对应上海02:44:22预检。最新实采上海2026-10-21 02:49:44：Y56原PID83638/GPU0第5/30轮step4049到4127，Y57原PID95947/GPU1第5/30轮step2968到3051；原cwd/config/实际compute PID与GPU UUID核实。本轮两次快照间仍增长，当前best mIoU分别.4503282606601715/.4315843880176544，各4次验证，非最终效果。",
+    "真实GPU0/1分别22606/17326MiB、利用率47%/61%，没有授权独占空槽；检查保留现有训练和队列槽位，不借剩余显存共跑。Y58/Y59两步native loss/backward仍未执行，无准入/新训练/新waiting，queue仍2running/0waiting/0claiming。",
+    "本轮没有改候选模型/YAML、没有新变体或Git提交、没有改调度/资源/goal/数据协议；完成当前resource_check真实证据与七段记忆/决策留档。报告尚待canonical finish，不预称其结果。"
+  ],
+  "decisions": [
+    "2026-10-21 02:50 上海 other：优先检查最近可入队的Y58/Y59，不重复旧科学评审或常规授权；固化当前goal/测试提交/源码/YAML一致性，并修复项目检查器的固定双进程前提，详见pipeline/decisions/20261021-025057_other.md。",
+    "无授权空整卡时不运行真实GPU后向、不假签native_smoke或准入凭据；保留两个既有独立实现及原生YAML，current tick_attempt=resource_check/blocked，与当前新测证据绑定。不为填额度新增重复变体，不建立全局研究冷却。",
+    "资源或队列打开时，先核验当前租约/目标/精确版本与实际资源并协调running/claiming保留槽，再执行既有两步原生smoke，通过后当轮入队与尝试门控派发；无需原Y56/Y57同时仍存活，无需重复常规授权。"
+  ]
+}

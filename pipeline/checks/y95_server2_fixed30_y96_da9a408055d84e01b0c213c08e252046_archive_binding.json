@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "token": "da9a408055d84e01b0c213c08e252046",
+  "id": "AdaRES-Y95",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y95_server2_fixed30_y96_da9a408055d84e01b0c213c08e252046.json",
+    "sha256": "07375a08332edd8344e1a7580d4e5e4843c1972891a1b7f791fa61c9b99b4502"
+  },
+  "before_running": {
+    "server-2": {
+      "0": "AdaRES-Y95"
+    },
+    "server-1": {
+      "0": "AdaRES-Y96"
+    }
+  },
+  "after_running": {
+    "server-1": {
+      "0": "AdaRES-Y96"
+    }
+  },
+  "only_exact_Y89_archived": true,
+  "paused_Y57_and_all_other_queue_entries_preserved": true,
+  "remote_mutations": false,
+  "checkpoint_files_retained": true,
+  "full_frozen_evaluation_executed": false,
+  "resource_after": {
+    "path": "pipeline/checks/y95_server2_fixed30_y96_da9a408055d84e01b0c213c08e252046_resource.json",
+    "sha256": "57de312ae8cddd3d1ff6bed193153e049fdc1ff8c0b705405c653296ea33e324"
+  },
+  "physical_idle_observed": true,
+  "helper": {
+    "path": "scripts/finalize_y95_fixed30_y96.py",
+    "sha256": "a7469b444239ad0622712585cf2cc21aa69d80e6ca96beffd72ec58a539fe477"
+  }
+}

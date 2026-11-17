@@ -1,0 +1,124 @@
+{
+  "id": "AdaRES-Y56",
+  "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+  "server": "server-2",
+  "gpu": "0",
+  "status": "done_complete",
+  "history": [
+    {
+      "ts": "2026-10-20T23:13:51.643822",
+      "action": "launched",
+      "gpu": "0"
+    },
+    {
+      "ts": "2026-10-21T12:45:38.916861+08:00",
+      "action": "resumed_after_authorized_gpu_reboot",
+      "interruption": {
+        "id": "AdaRES-Y56",
+        "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+        "server": "server-2",
+        "gpu": "0",
+        "status": "running",
+        "history": [
+          {
+            "ts": "2026-10-20T23:13:51.643822",
+            "action": "launched",
+            "gpu": "0"
+          }
+        ],
+        "pid": 83638,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y56_unique_competitors_res_20261020_231317.log",
+        "launch_verified": true,
+        "launch_verification": "training_progress",
+        "launched": "2026-10-20T23:13:51"
+      },
+      "human_request": "继续训练",
+      "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/last.pth",
+      "evidence": "pipeline/reports/gpu_reboot_resume_AdaRES-Y56_76f9c0ca61424281b30c4f491a33b37e_verify.json"
+    },
+    {
+      "ts": "2026-10-22T00:57:49.176752",
+      "status": "done_complete",
+      "best_miou": "0.5110",
+      "epochs": "30/30"
+    }
+  ],
+  "pid": 13738,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/gpu_reboot_resume_adares_y56_unique_competitors_res_76f9c0ca61424281b30c4f491a33b37e.log",
+  "launched": "2026-10-20T23:13:51",
+  "label": "AdaRES-Y56 unique competitors fixed30",
+  "depends_on": [],
+  "patience": 30,
+  "min_epochs": 30,
+  "fixed_epochs": 30,
+  "requires_exclusive_ownership": true,
+  "scientific_candidate_id": "AdaRES-Y56",
+  "dispatch_phase": "progress_verified",
+  "claimed_gpu": "0",
+  "total_epochs": 30,
+  "resume_attempt_token": "76f9c0ca61424281b30c4f491a33b37e",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261020_111322/last.pth",
+  "resume_checkpoint_sha256": "d82f4205156abab656e1c779edbe0bff9db686712e47b56c3f472476d6799df5",
+  "reboot_boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "resumed_at": "2026-10-21T12:45:38.827574+08:00",
+  "resume_epoch": 16,
+  "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502",
+  "carried_best": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/best.pth",
+  "runtime_hardware_history": [
+    {
+      "observed_at": "2026-10-21T07:01:53.761376+00:00",
+      "server": "server-2",
+      "gpu": 0,
+      "gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      "previous_limit_watts": 390,
+      "runtime_limit_watts": 280,
+      "authorization": {
+        "path": "pipeline/authorizations/GPU0_runtime_power_280W_bdcfff50f8b44417bf552073e3afb395.json",
+        "sha256": "c90a6d51a211f7938bd6a7bd29ae816585fb39eacee9f6d76687953ed2ddb49e"
+      },
+      "evidence": {
+        "path": "pipeline/checks/gpu0_runtime_power_authenticated_bdcfff50f8b44417bf552073e3afb395.json",
+        "sha256": "f309395e0e0d20fcd48fb4f96e5ec3909adf09201afbeb35e35685d873c0bcbe"
+      },
+      "note": "Explicit human approval; only runtime GPU0 power limit changed. GPU1 power, model/data/optimizer/seed/fixed30 and original process unchanged. Future timing/resource comparisons must retain this hardware-condition change."
+    }
+  ],
+  "runtime_hardware_verifications": [
+    {
+      "path": "pipeline/checks/gpu0_post_power_verify_bdcfff50f8b44417bf552073e3afb395.json",
+      "sha256": "9cf1839111511efb682d1bed5e55003870482977cab2a82703dea7d9318b90e4"
+    }
+  ],
+  "final_best": "0.5110",
+  "finished_at": "2026-10-22T00:57:49.176752",
+  "log_local": "D:\\project\\AdaRES_project\\Checkpoints\\server-2\\adares_y56_unique_competitors_res\\8664855b3766455594b27408b18a8ce6\\fixed30.log",
+  "epochs_final": "30/30",
+  "archive_id": "9dfd4f9a9215497eaa8245a8d9c051f1",
+  "code_commit": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y56.json",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "terminal_evidence": {
+    "path": "pipeline/checks/y56_fixed30_8664855b3766455594b27408b18a8ce6.json",
+    "sha256": "27e9bdc6d8164b63763cb75b4f121cd0c065ee6c12483ebc264660ab2cdb8b6d"
+  },
+  "terminal_checkpoint_metadata": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5109891295433044,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 30,
+      "sha256": "41a173c705df049d30a9a4fddfb4f765da3dbe5bb180776305b09f0073a84c86"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y56_unique_competitors_res/20261021_004502/best.pth",
+      "epoch": 24,
+      "best_miou": 0.5109891295433044,
+      "optimizer_state_count": 543,
+      "scheduler_last_epoch": 24,
+      "sha256": "ec339d21a17c1df36a8e0c17bb262cbb58fe3153c6a5ddd6f1cb165d02dede65"
+    }
+  ]
+}

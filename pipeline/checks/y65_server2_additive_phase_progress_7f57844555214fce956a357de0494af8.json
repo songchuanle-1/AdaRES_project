@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-29T10:54:49.707963-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 22,
+      "total": 30,
+      "step": 2496,
+      "count": 4686
+    },
+    "log_bytes": 28385011
+  },
+  "after": {
+    "observed_at": "2026-10-29T10:54:54.715064-04:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 22,
+      "total": 30,
+      "step": 2503,
+      "count": 4686
+    },
+    "log_bytes": 28386957
+  },
+  "samples": [
+    {
+      "observed_at": "2026-10-29T10:54:49.707963-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 22,
+        "total": 30,
+        "step": 2496,
+        "count": 4686
+      },
+      "log_bytes": 28385011
+    },
+    {
+      "observed_at": "2026-10-29T10:54:54.715064-04:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 22,
+        "total": 30,
+        "step": 2503,
+        "count": 4686
+      },
+      "log_bytes": 28386957
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 112356,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y65_confidence_feedback_res_20261029_065005.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "882d61537fe7ffcb383c8f51f12fea36d1e53a6d",
+  "production_marker": "db35f2870d252e6888e3525b142785938f00ad4a",
+  "additive_source_equivalence_verified": true,
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 112356\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 100811\n",
+  "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+  "gpu": "0, 22720, 76, 280.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y65",
+  "token": "7f57844555214fce956a357de0494af8",
+  "observed_start_local": "2026-10-29T22:55:23.526689+08:00",
+  "observed_end_local": "2026-10-29T22:55:29.982861+08:00",
+  "evidence": [
+    {
+      "path": "scripts/observe_y65_server2_additive_phase.py",
+      "sha256": "9a7cc6f7413fa3cd7c09733a1fe5f678da15eea0bc53723fbf6ae35002caeb5a"
+    },
+    {
+      "path": "pipeline/checks/y65_server2_additive_phase_progress_7f57844555214fce956a357de0494af8.log",
+      "sha256": "5ff9928d692a691724326efe1e07eddeeba3d82509cdfb8316d6cd61af8b8229"
+    }
+  ]
+}

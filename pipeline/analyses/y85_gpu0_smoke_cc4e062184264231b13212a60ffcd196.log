@@ -1,0 +1,9 @@
+Using backend: pytorch
+2026-11-04 15:57:55,793 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=788 unexpected=0
+2026-11-04 15:57:56,559 - INFO - Load train scanrefer: 36665 samples
+2026-11-04 15:58:00,361 - INFO - set random seed: 1999
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.
+  warnings.warn(msg, FutureWarning)
+Train[1/30]:   0%|                    | 0/2 [00:09<?, ?it/s, lr=0.0001, eta=0:09:45, iter_time=9.92]Train[1/30]:  50%|██████████          | 1/2 [00:09<00:09,  9.92s/it, lr=0.0001, eta=0:09:45, iter_time=9.92]Train[1/30]:  50%|██████████          | 1/2 [00:10<00:09,  9.92s/it, lr=0.0001, eta=0:05:03, iter_time=5.23]Train[1/30]: 100%|████████████████████| 2/2 [00:10<00:00,  4.40s/it, lr=0.0001, eta=0:05:03, iter_time=5.23]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:124: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Seems like `optimizer.step()` has been overridden after learning rate scheduler "
+Train[1/30]: 100%|████████████████████| 2/2 [00:10<00:00,  5.23s/it, lr=0.0001, eta=0:05:03, iter_time=5.23]

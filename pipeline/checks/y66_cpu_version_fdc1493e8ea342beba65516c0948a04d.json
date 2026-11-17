@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y66",
+  "observed_at": "2026-10-28T08:51:56.373075+08:00",
+  "parent_head": "9706a8c36bead4459668ab66a3d1abc39344ef8b",
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/__init__.py",
+      "sha256": "4663bb2d7051e6ad60dcaddc60ea91ab2294b53f2e89e5ba964cff2bc5796cc4"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/dec.py",
+      "sha256": "520b25d1bebd138fc0b11a8b33df6a4a34293a5165207e2223b0dd0a6671fe78"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y66_peer_state_feedback/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y66_peer_state_feedback_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "cpu_test": {
+    "path": "pipeline/analyses/y66_cpu_fdc1493e8ea342beba65516c0948a04d.json",
+    "sha256": "6021feaefb6fb9f4be92c8a6c3ca5bd3915c280ac3b9b8d9857538bb99123944"
+  },
+  "uncommitted": true,
+  "production_sync": false,
+  "native_smoke_passed": false,
+  "admitted": false,
+  "limitation": "CPU preparation only; not a commit, native GPU task test or efficacy result."
+}

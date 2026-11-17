@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "token": "51b59cbd3689461786e0e69a741f17f9",
+  "id": "AdaRES-Y79",
+  "failure_scope": "artifact_association",
+  "observed_postflight_failure": "Current test evidence is not bound to its candidate",
+  "cause": "Canonical server1 occupation attaches to required_server=server1 candidates; Y79 active required_server remains server2 while its inactive server1 plan is tested and retained. Its tick_attempt cited server1 evidence without adding it to candidate evidence.",
+  "correction": "Attach the actual current-token server1 occupation to Y79 as evidence for its inactive authorized server1 alternative. Keep original measured resource and all scientific/version/data/source/queue/gate bytes unchanged.",
+  "evidence": {
+    "path": "pipeline/checks/gpu_occupation_server-1_finish_51b59cbd3689461786e0e69a741f17f9.json",
+    "sha256": "9c61d1ee366e4a3d10e66c8ab63a831f0c2543b14a112fd91e82c12a5c1a29c3"
+  },
+  "related_inactive_plan": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_plan.json",
+    "sha256": "f73ed1199ec141d983d366d6091d656a887bf4cbe0473bb0f0cf8c4626daa44e"
+  },
+  "queue_and_running_unchanged": true,
+  "scientific_probe_failed": false
+}

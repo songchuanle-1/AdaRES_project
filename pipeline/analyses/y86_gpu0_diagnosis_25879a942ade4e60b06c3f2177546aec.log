@@ -1,0 +1,33 @@
+Using backend: pytorch
+2026-11-05 14:07:17,616 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=787 unexpected=0
+2026-11-05 14:07:17,844 - INFO - Load train scanrefer: 36665 samples
+2026-11-05 14:07:21,264 - INFO - set random seed: 1999
+Train[1/30]:   0%|                    | 0/2 [00:00<?, ?it/s]/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/testing/_deprecated.py:35: FutureWarning: torch.testing.assert_allclose() is deprecated since 1.12 and will be removed in 1.14. Use torch.testing.assert_close() instead. For detailed upgrade instructions see https://github.com/pytorch/pytorch/issues/61844.
+  warnings.warn(msg, FutureWarning)
+Train[1/30]:   0%|                    | 0/2 [00:09<?, ?it/s, lr=0.0001, eta=0:09:39, iter_time=9.82]Train[1/30]:  50%|██████████          | 1/2 [00:09<00:09,  9.82s/it, lr=0.0001, eta=0:09:39, iter_time=9.82]Traceback (most recent call last):
+  File "<stdin>", line 269, in <module>
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/tools/train.py", line 137, in train
+    loss, log_vars = model(batch, mode='loss')
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1148, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/25879a942ade4e60b06c3f2177546aec/y86_gpu0_diagnosis/adares_y86_overlap_readout_skip/ipdn.py", line 109, in forward
+    return self.loss(**batch)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/utils/utils.py", line 20, in wrapper
+    return func(*new_args, **new_kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/25879a942ade4e60b06c3f2177546aec/y86_gpu0_diagnosis/adares_y86_overlap_readout_skip/ipdn.py", line 137, in loss
+    out = self.dec(sp_feats, fps_seed_sp, batch_offsets, lang_feats, lang_masks, sp_coords_float, feats_2d, point_mass)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1148, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/25879a942ade4e60b06c3f2177546aec/y86_gpu0_diagnosis/adares_y86_overlap_readout_skip/dec.py", line 523, in forward
+    return self.forward_iter_pred(x, fps_seed_sp, batch_offsets, lang_feats, lang_masks, sp_pos, feats_2d, point_mass)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/25879a942ade4e60b06c3f2177546aec/y86_gpu0_diagnosis/adares_y86_overlap_readout_skip/dec.py", line 427, in forward_iter_pred
+    pred_indis = self.indi_embedding(query, pred_masks, batch_mask, point_mass)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1148, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/pipeline/probes/25879a942ade4e60b06c3f2177546aec/y86_gpu0_diagnosis/adares_y86_overlap_readout_skip/dec.py", line 204, in forward
+    return self.overlap_readout(self.head(self.evidence_norm(evidence)), max_overlap)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1151, in _call_impl
+    hook_result = hook(self, input, result)
+  File "<stdin>", line 130, in capture_shortcut
+AssertionError: {'step': 1, 'stage': 4, 'weight_nonzero': True, 'weight': [9.998925816034898e-05, -9.998925816034898e-05], 'overlap_min': 3.4242677884321893e-06, 'overlap_max': 1.3414648492471315e-05, 'logit_min': -0.13454684615135193, 'logit_max': -0.030427347868680954, 'confidence_delta_max': 0.0, 'original_assertion_unchanged': True}
+Train[1/30]:  50%|██████████          | 1/2 [00:16<00:16, 16.28s/it, lr=0.0001, eta=0:09:39, iter_time=9.82]

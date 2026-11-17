@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "mode": "profile",
+  "gpu_precheck": {
+    "memory_mib": 1,
+    "utilization": 0
+  },
+  "config_sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb",
+  "tool_sha256": "55bba1925dcf07af4eb0c9296ffbcdfa14178814508144f7129634fa26710bef",
+  "class_module": "ipdn.model_paper5.adares_w2_pointmass_competition.ipdn",
+  "scans": [
+    "scene0054_00",
+    "scene0497_00",
+    "scene0465_00"
+  ],
+  "parameters": 164629637,
+  "rows": [
+    {
+      "scans": [
+        "scene0054_00",
+        "scene0497_00"
+      ],
+      "points": 1055503,
+      "superpoints": 7618,
+      "readings": [
+        {
+          "seconds": 0.963662676513195,
+          "peak_allocated_gib": 13.54960584640503,
+          "peak_reserved_gib": 14.076171875,
+          "loss": 11.719794273376465
+        },
+        {
+          "seconds": 0.9753673728555441,
+          "peak_allocated_gib": 13.54960584640503,
+          "peak_reserved_gib": 14.078125,
+          "loss": 10.484212875366211
+        },
+        {
+          "seconds": 0.9822127725929022,
+          "peak_allocated_gib": 13.54960584640503,
+          "peak_reserved_gib": 14.078125,
+          "loss": 9.92048168182373
+        }
+      ]
+    },
+    {
+      "scans": [
+        "scene0465_00"
+      ],
+      "points": 387654,
+      "superpoints": 3259,
+      "readings": [
+        {
+          "seconds": 0.4473939538002014,
+          "peak_allocated_gib": 5.26600456237793,
+          "peak_reserved_gib": 5.515625,
+          "loss": 4.77623176574707
+        },
+        {
+          "seconds": 0.45771754160523415,
+          "peak_allocated_gib": 5.26600456237793,
+          "peak_reserved_gib": 5.515625,
+          "loss": 4.8249030113220215
+        },
+        {
+          "seconds": 0.4518089033663273,
+          "peak_allocated_gib": 5.26600456237793,
+          "peak_reserved_gib": 5.515625,
+          "loss": 4.4783034324646
+        }
+      ]
+    }
+  ]
+}

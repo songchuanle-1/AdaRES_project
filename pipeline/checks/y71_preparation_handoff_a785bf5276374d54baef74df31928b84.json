@@ -1,0 +1,92 @@
+{
+  "complete": true,
+  "token": "a785bf5276374d54baef74df31928b84",
+  "observed_at_local": "2026-10-30T20:50:59.644968+08:00",
+  "tick_started_at": "2026-10-30T12:43:01.688528+00:00",
+  "deadline_at": "2026-10-30T13:43:01.688528+00:00",
+  "id": "AdaRES-Y71",
+  "code_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "scoped_model_YAML_files": 7,
+  "original_parent_decoder_restored_exact": true,
+  "four_support_sources_and_native_YAML_byte_identical": true,
+  "actual_CPU_native_model_pretrain_TRAIN_collation_passed": true,
+  "CPU_component_and_full_decoder_controls_passed": true,
+  "additional_parameters": 65536,
+  "total_parameters": 164695173,
+  "native_guard_tests_passed": 10,
+  "local_observer_guard_tests_passed": 3,
+  "same_scientific_body_for_both_GPU_plans": true,
+  "native_GPU_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "original_queue_and_running_byte_identical": true,
+  "Y57_still_user_paused": true,
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "memory_before": {
+    "path": "pipeline/snapshots/codex_memory_before_a785bf5276374d54baef74df31928b84.md",
+    "sha256": "7ea24b8e7c65c7e5415c5a99ea69520f94bce59c30a292e955106e932f6a8769"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y71_cpu_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "891ee546be732e19d1fba16019340d4957b4199a7960a36c2090524c93076107"
+    },
+    {
+      "path": "pipeline/analyses/y71_cpu_a785bf5276374d54baef74df31928b84.log",
+      "sha256": "77cde2a97515dc6bde1d56952e75aecbda8dbc7763782a366e04e4edaa529ced"
+    },
+    {
+      "path": "pipeline/checks/y71_targeted_history_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "2fe9a71dec28d6988fa39e2af734ea2a7ccd381c6409cfc2cc9288aded602f71"
+    },
+    {
+      "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_version.json",
+      "sha256": "99d20651d44e9951d134cca76ac60817f80a1bb536bd951458a8477f23bc7471"
+    },
+    {
+      "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_guards.log",
+      "sha256": "332d310bc4184d27fc7d646979e4ce34431664af293f1827f81abe2b122f2651"
+    },
+    {
+      "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu0_plan.json",
+      "sha256": "2efeb8013ae810e2381b2edb5c0d2b3e4ab7a70a96dc400e968a9f5a71e70779"
+    },
+    {
+      "path": "pipeline/checks/y71_native_a785bf5276374d54baef74df31928b84_gpu1_plan.json",
+      "sha256": "344d93ac750028d9ff94ccd3cf5d2c4d406b1f34d53153f51a3e3055d777153a"
+    },
+    {
+      "path": "pipeline/checks/y70_server2_gpu1_phase_progress_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "3b1f6776a015d25a7f200055978e1ccf1da1e0f1319137a50b04325261d3b2f2"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "be1b56fbe068c497ccf04755cf7450fafc02c2c0eec2ba1ecd15e758f09dbf51"
+    },
+    {
+      "path": "pipeline/checks/y68_server2_local_y71_phase_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "d592fecd15954b887ad93427f572e024d87e0e097495261d1df0cac9c32d4d15"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "906b9b9a1e52df758405d47c1a605f89ccf3f2540344fe95694b1d4578bcacb9"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "2ca1d8308baa28315b6e24380f238cb2a99febb04720365aa5d5c8763c0bd754"
+    },
+    {
+      "path": "pipeline/checks/y71_local_observer_guards_a785bf5276374d54baef74df31928b84.json",
+      "sha256": "f9727d0e6f2005103253440ccee947fe31f074414c717bd99dfd69f85e7e4b5c"
+    }
+  ],
+  "limitations": [
+    "CPU fixture decoder backward is not actual sparse TRAIN task backward.",
+    "Real GPU two-step PASS remains mandatory before admission; no trained efficacy result.",
+    "All authorized cards currently busy; preserve existing jobs."
+  ],
+  "postflight": "Pending canonical report/finish."
+}

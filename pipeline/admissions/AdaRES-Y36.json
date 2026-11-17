@@ -1,0 +1,112 @@
+{
+  "id": "AdaRES-Y36",
+  "config": "configs_song/model_paper5/adares_y36_local_adjacency_res.yaml",
+  "code_commit": "6725f9bd6a8f9b47addae6a4b8336d004f73f1ae",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261009-183232_next_batch.md",
+    "sha256": "10345d7943dfc6801000c234d1a4ea16770b7c44e2d261f7dbc12daa36a23101"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y36_edge_diagnosis_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "458730d4ab5641dc88f8dd03fa389b2c38eb5226cf753e81dea1581d9161dd50"
+        },
+        {
+          "path": "pipeline/analyses/Y36_diagnosis_prereg_8fd5e469.md",
+          "sha256": "0edf894dbbd63a309bc00217698ba715d6a20375a9abe8136a60b8c1574c1140"
+        },
+        {
+          "path": "pipeline/analyses/Y36_realization_freeze_8fd5e469.md",
+          "sha256": "5bc7b8649c8ae3c2a8d4a7384eae6a7d5ae9cbbee6994eac0a03caef26264944"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y36_native_controls_v2_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "09eb9e3a98144bab8299a1d7c48265f9bb8c3bb5b768f17e8cb0a1676ca90681"
+        },
+        {
+          "path": "pipeline/analyses/y36_initial_loss_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "b7788ad9325653ba6123d44390918e4d73804f1aa7ba1d75e18599b4c4ff080c"
+        },
+        {
+          "path": "pipeline/analyses/y36_structure_cpu_lf_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "94c47cbf7062f0df5d95b0461e926ecb9cb9587ed3c508852d929b970bb1250a"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y36_physical_native_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "559bc84c689f47a57694389101fce2be6dbdaeeadfe4eaa1ddd63dc8d29fd211"
+        },
+        {
+          "path": "pipeline/analyses/y36_native_controls_v2_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "09eb9e3a98144bab8299a1d7c48265f9bb8c3bb5b768f17e8cb0a1676ca90681"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y36_resources_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "f751c97a155e954d70b44d5a3c1d641af2f2e3dda91e2e673d7e091ce5019663"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y36_source_bundle_lf_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "96a2e9621d96847b8621438813dc3a1cbc07e3ac883a61f163a526db04cf5f39"
+        },
+        {
+          "path": "pipeline/analyses/y36_structure_cpu_lf_8fd5e469dee241da8f21da7c870c0d3f.json",
+          "sha256": "94c47cbf7062f0df5d95b0461e926ecb9cb9587ed3c508852d929b970bb1250a"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y36_admission_review_8fd5e469.md",
+          "sha256": "66099d0e315447798e382177a0c64473a125a4560509073d01f2086c7f898cb0"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y36_8fd5e469.md",
+          "sha256": "3c1ce2d2f753566d4f4a539836f94d9d30b729dc6302e226fc25553c0befab99"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_Y36_8fd5e469.md",
+          "sha256": "a026d6554e0f5f164d848bca304b92a32e8c0193915ff684150892976d7b8c17"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y36_8fd5e469.md",
+      "sha256": "3c1ce2d2f753566d4f4a539836f94d9d30b729dc6302e226fc25553c0befab99"
+    }
+  },
+  "limitations": "Adverse initialization, wrong-control learning, numerical continuation and resource increases retained. No efficacy/necessity/novelty/trainedPareto/human-approval assertion."
+}

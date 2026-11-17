@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y88",
+  "token": "ce356360782a431ab9adc3e015f7d5aa",
+  "observed_at": "2026-11-14T23:57:59.923244+08:00",
+  "state": {
+    "status": "evaluating",
+    "method": "AdaRES-W2",
+    "child_pid": 790954,
+    "completed_methods": [
+      "AdaRES-Y88",
+      "AdaRES-Y36"
+    ],
+    "log": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-w2.log",
+    "output": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y88/ce356360782a431ab9adc3e015f7d5aa_remaining/adares-w2.json",
+    "id": "AdaRES-Y88",
+    "token": "ce356360782a431ab9adc3e015f7d5aa",
+    "worker_pid": 780639,
+    "observed_at": 1794671693.046693
+  },
+  "compute_pids": [
+    790954
+  ],
+  "child_compute_observed": true,
+  "reused_files": [
+    {
+      "name": "adares-y88.json",
+      "bytes": 2839606,
+      "sha256": "e2a5d7f9f6aad986c141a357557b73200e15bcc0d87c8a5bd01b2ef5ee5aa0f9"
+    },
+    {
+      "name": "adares-y88.log",
+      "bytes": 2180,
+      "sha256": "b1c7048b5ead2ef3dec567b0f92e4cfb72bae03d05664cfc57805ca3f62bb35d"
+    }
+  ],
+  "completed_candidate_replayed": false,
+  "remote_mutations": false,
+  "checkpoint_loaded": false
+}

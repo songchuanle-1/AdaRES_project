@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y61",
+  "observed_at": "2026-10-25T16:59:34.765460+08:00",
+  "observed_wrong_gpu": "9",
+  "verified_gpu": "0",
+  "terminal_proof": {
+    "path": "pipeline/checks/y61_fixed30_b5a42dc4481640c28115e9cff887f862.json",
+    "sha256": "df67e93c62c76a39928d829e2151dd081ef8d0848e765da05a0ef791af999219"
+  },
+  "actual_runtime": {
+    "path": "pipeline/checks/ef_gpu0_runtime_be3a6c9c4ae04d489329781059e74e60.json",
+    "sha256": "ecbe5db96e4df6768c7786ea366f1d689c656ba208ae37f50baeaaa1794f8139"
+  },
+  "snapshots": {
+    "before_experiment": {
+      "path": "pipeline/checks/y61_archive_gpu_repair_b5a42dc4481640c28115e9cff887f862_before_experiment.json",
+      "sha256": "ad11b7a1aa48dcf3c46af5b53722bb441fbb0c23ae9f115f6cc3e59cde657c43"
+    },
+    "after_experiment": {
+      "path": "pipeline/checks/y61_archive_gpu_repair_b5a42dc4481640c28115e9cff887f862_after_experiment.json",
+      "sha256": "2869e492bbff0916a3394c74d628e4126fe4620fb933947ba1899bb70bb05418"
+    },
+    "before_ledger": {
+      "path": "pipeline/checks/y61_archive_gpu_repair_b5a42dc4481640c28115e9cff887f862_before_ledger.csv",
+      "sha256": "e9ec25ccf4f7d754cd169591ffe30cc9f14f24807e78bda73b3e772a547f6e97"
+    },
+    "after_ledger": {
+      "path": "pipeline/checks/y61_archive_gpu_repair_b5a42dc4481640c28115e9cff887f862_after_ledger.csv",
+      "sha256": "2040e609a56b7af220f850d7aa9f732537a0b4028e499c87dc54dafcafb16c24"
+    },
+    "before_analysis": {
+      "path": "pipeline/checks/y61_archive_gpu_repair_b5a42dc4481640c28115e9cff887f862_before_analysis.md",
+      "sha256": "7836676da511f52ee39bf93d15072ef3bd43afa40bdf43f07a6921aecd138300"
+    },
+    "after_analysis": {
+      "path": "pipeline/checks/y61_archive_gpu_repair_b5a42dc4481640c28115e9cff887f862_after_analysis.md",
+      "sha256": "ae9463ec3e7049a2615012714d3e517756bdceda5c13e81ed4c703f8cee898fa"
+    }
+  },
+  "CPU_guard_tests": 8,
+  "explanation": "Canonical finalize_task accepts GPU after ep; the Y61 helper passed 30-best_epoch there. Correct only this metadata using verified GPU0 run identity.",
+  "fields_changed": [
+    "experiment.gpu",
+    "Y61 CSV row.gpus",
+    "Y61 generated analysis GPU line"
+  ],
+  "archive_replayed": false,
+  "model_or_checkpoint_changed": false,
+  "queue_or_running_changed": false,
+  "remote_mutations": false,
+  "source": {
+    "path": "scripts/reconcile_y61_archive_gpu.py",
+    "sha256": "166f68dfc2021baeb4eb91a170cccd80ffcaabe4823777b9401e3aa1492c00a7"
+  },
+  "tests": {
+    "path": "scripts/test_y61_archive_gpu.py",
+    "sha256": "3c5ef852e091402eaf8322dfcc9890b704dec7b1fd0438161995a509ef6da93f"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "AdaRES-Y17",
+  "config": "configs_song/model_paper5/adares_y17_target_equivalent_pairing_res.yaml",
+  "code_commit": "42ffd589bfb5c27fa18d735866ddefa3a543e2ee",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20260930-213334_next_batch.md",
+    "sha256": "8150df7ff77b174dbc9849e19ececce0050b673804ffcca0b3df9d297a064c76"
+  },
+  "gates": {
+    "diagnosis": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/AdaRES-Y17_same_target_train16_20260930.json", "sha256": "b42df8e32c47e1d240c897f5052a7711217cce0e0decb4f615a3ceae4eff3f52"}
+    ]},
+    "controls": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y17_physical_controls_20260930.json", "sha256": "8951c8f0a3f6382d28af4684f0112c927e4e8a95f47d36f6eba20fc142b010a9"},
+      {"path": "pipeline/analyses/y17_unit_20260930.json", "sha256": "1cd97d0e71d462845b088aa111a65f3ef3d692b6a0247fce1294c5ef20fbd23a"}
+    ]},
+    "native_backward": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/AdaRES-Y17_physical_native_20260930.json", "sha256": "85825d7e629d0183a68e6278437ab05a279612699ae0bbb40167b730dfcc4523"},
+      {"path": "pipeline/analyses/y17_entry_20260930.json", "sha256": "11f553b3b700c55c0275b279d8a415ee3fadf6bed2a96c75a3d0ca32000518a9"}
+    ]},
+    "resources": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y17_physical_stress_20260930.json", "sha256": "fae703cddd1ec95ee0ec4d57ba1e4badfe66bf31df3f4dfbe20674ed096f4093"},
+      {"path": "pipeline/analyses/y17_physical_inference_20260930.json", "sha256": "dbf16cc0f7403ce494d870167cdee1628a6c3fc834004a50a20164260e6b735e"}
+    ]},
+    "independence": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/AdaRES-Y17_source_audit_20260930.json", "sha256": "654812fc9277ec4fe15555dbe49654c7a18526ee804b816a58584bc270ef192e"},
+      {"path": "pipeline/analyses/y17_byte_normalization_20260930.json", "sha256": "ef112c60d56ee9614f6cc61b66d0f4e20dbf79196029b952baf88f36ffe81432"}
+    ]},
+    "constraints": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/AdaRES-Y17_admission_review_20260930.md", "sha256": "73dfb7a7f8352d0d22af24c045348a4e6cf41574f838ffb714195f4f83cfc72c"},
+      {"path": "pipeline/designs/AdaRES-Y17_paired_training_design_20260930.md", "sha256": "f9352fd41681b4a762eb801085623271ffff5c70964106e84f8d5b372ca30ef6"},
+      {"path": "pipeline/analyses/y17_sync_safety_20260930.json", "sha256": "6ac63e477f9bd24a0ad61b3ce5c29e5277b3bf0c091dba01ab9c96331c9abf59"}
+    ]}
+  },
+  "deployment_revision": {
+    "previous_code_commit": "90c75192ce990c66972e82f229b87ddad02421e5",
+    "at": "2026-09-30T22:54:08+08:00",
+    "change": "Only deployment helpers changed; model/config/native path unchanged. Python3.8 guard tests passed; hash-restricted CRLF normalization verified. MSYS_NO_PATHCONV preserves audited remote POSIX path."
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {"epochs": 30, "seed": 1999, "gpu": "1", "server": "server-2"},
+  "limitations": "Generic smoothing, tiny JS and native argmax mismatch remain; causal efficacy requires exact regrouped pair-off control."
+}

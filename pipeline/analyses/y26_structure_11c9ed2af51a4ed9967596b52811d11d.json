@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y26",
+  "observed_local": "2026-10-04T19:09:15.065820+08:00",
+  "exact_ast_matches_only_qla_normalization_reconnection": true,
+  "additional_trainable_parameters": 0,
+  "new_nontrivial_information_interaction": false,
+  "smell_signals": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "admission_eligible": false,
+  "candidate_sha256": "9ea63b489034311008a4c4ab90ef7116b3701f698bd1972e0e5c1ab3e3950003",
+  "parent_sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+  "policy_sha256": "3f3bbb768a6335e4dbfbcfd3f25633c8374648a218ed1aba0b4386dd830e82f1",
+  "decision": "Reject autonomous successor eligibility of norm-only realization; engineering diagnosis preserved.",
+  "limitations": [
+    "No trained Y26 effect was measured; not a harmful-efficacy rejection.",
+    "Previous six engineering gates omitted mandatory smell check; previous outputs remain immutable."
+  ]
+}

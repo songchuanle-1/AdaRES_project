@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "scope": "readonly_observer_string_escaping_only",
+  "failed_evidence": [
+    {
+      "path": "pipeline/checks/terminal_readiness_adares-y69_e5ca4e47b09f466ea2a1dc215c0acf3c.py",
+      "sha256": "24796f014ebcc12fe391cf3d4820649ba19ffe323f75eb4e9f2834df669c8844"
+    },
+    {
+      "path": "pipeline/checks/terminal_readiness_adares-y69_e5ca4e47b09f466ea2a1dc215c0acf3c.log",
+      "sha256": "0d0efcee8d9b79b897d8421d08ef2a4ab17251a6d4588ee158dab1dc2b6c621f"
+    }
+  ],
+  "observed_error": "SyntaxError: EOL while scanning string literal; program construction expanded CR/LF inside regex.",
+  "repair": "Separate attempt2 source uses a raw string and Python3.8 AST check before SSH. Original source/log preserved.",
+  "evidence": [
+    {
+      "path": "pipeline/checks/terminal_readiness_adares-y69_e5ca4e47b09f466ea2a1dc215c0acf3c_attempt2.py",
+      "sha256": "d655de5d9b9b45830d87d258d56095edd4f3a7d28b3d098e7de051fdc7cb41e7"
+    },
+    {
+      "path": "pipeline/checks/terminal_readiness_adares-y69_e5ca4e47b09f466ea2a1dc215c0acf3c_attempt2.log",
+      "sha256": "9e9bcbe29b578e512715cd4547040ea1ce59e261c496c271f2830c5e26577c6c"
+    },
+    {
+      "path": "pipeline/checks/terminal_readiness_adares-y69_e5ca4e47b09f466ea2a1dc215c0acf3c_attempt2.json",
+      "sha256": "c218222d6f4de0ef9204282131101bea0c15b30ebed01759544dd89137e72fb8"
+    }
+  ],
+  "training_mutated": false
+}

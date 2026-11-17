@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y82",
+  "token": "1fdaad021c7c425f9013d075ef24480d",
+  "original_plan": {
+    "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e_gpu0_plan.json",
+    "sha256": "916e12be835642a2bbfe857e71ce44b9055da6c34fabc313c3581c51975faa1f"
+  },
+  "alternative_plan": {
+    "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_plan.json",
+    "sha256": "bdabb98c4633bcd676856fcaaae8704d5b2fbec6f8974c9d01784ceda164ffae"
+  },
+  "original_model_and_YAML_payload_identical": true,
+  "code_commit_and_goal_unchanged": true,
+  "diagnostic_scientific_body_reversible_exact": true,
+  "exact_callback_functions": 12,
+  "CPU_callback_evidence": {
+    "path": "pipeline/checks/y82_native_bd93870b90dd48b7b5366e46173cc01e.json",
+    "sha256": "1a450adf2e85912333500ce302f1053401bcd2c4a95aaa10e447eb781cd316e0"
+  },
+  "exact_original_data": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "actual_server1_observation": {
+    "hostname": "dl02-MS-7B73",
+    "gpu": "98, 0, 350.00",
+    "compute": ""
+  },
+  "guard_tests_passed": 8,
+  "guard_log": {
+    "path": "pipeline/checks/y82_server1_1fdaad021c7c425f9013d075ef24480d_guards.log",
+    "sha256": "24047148b7a6cc7dfe0454256e2bf1f8ce85bb7e7254f028d582130d1f410ffb"
+  },
+  "Y79_terminal": {
+    "path": "pipeline/checks/y79_server1_fixed30_1fdaad021c7c425f9013d075ef24480d.json",
+    "sha256": "91f524f56a6ecf4bd423389672c4b8bd706dd091c84620b89df4cdebb783b473"
+  },
+  "native_executed": false,
+  "hardware_changed": false,
+  "production_sync": false,
+  "queue_changed": false,
+  "evidence": [
+    {
+      "path": "scripts/y82_server1_alternative.py",
+      "sha256": "75ffab5d0e1f6dc4b8c800ea122ae046eec5004bc9a65523cf60efc28198700c"
+    },
+    {
+      "path": "scripts/test_y82_server1_alternative.py",
+      "sha256": "d961a2474f6d86dcdf12f7fca4103637300c72ed6a71570c9369d7e43b634deb"
+    },
+    {
+      "path": "scripts/y82_observer_core.py",
+      "sha256": "c08c0c08910c879879c603088c26f14dfb67e3f11d88fcb502be6f6e989c544f"
+    }
+  ]
+}

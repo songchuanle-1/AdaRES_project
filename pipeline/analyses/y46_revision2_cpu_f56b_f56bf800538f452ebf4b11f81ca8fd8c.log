@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<stdin>", line 99, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1148, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "<stdin>", line 88, in forward
+  File "<stdin>", line 88, in <listcomp>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1151, in _call_impl
+    hook_result = hook(self, input, result)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y46_component_coherence/dec.py", line 242, in indicator
+    residual = self.prototype(query[b], converted)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/bak_home/songcl/Project/AdaRES_project/AdaRES/ipdn/model_paper5/adares_y46_component_coherence/dec.py", line 193, in forward
+    order = torch.argsort(groups, stable=True)
+TypeError: argsort() received an invalid combination of arguments - got (Tensor, stable=bool), but expected one of:
+ * (Tensor input, int dim, bool descending)
+ * (Tensor input, name dim, bool descending)
+

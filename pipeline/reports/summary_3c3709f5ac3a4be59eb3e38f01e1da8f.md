@@ -1,0 +1,72 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-10-02T23:48:24.352519+00:00；生成报告时快照年龄：51 秒；模式：event
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：0
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-10-03 07:48:24
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-W2 — mIoU=0.5100 (gap to target: +0.0050)
+       Epochs: 30/30, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0080
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5100, target=0.5150, gap=+0.0050
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-2 | 1 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-10-03 07:48 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  [adares_y23_valid_token_support_res] Best=0.5080 17/30 no_improve=0/30 gpu=1 ? 序列: 0.4940, 0.5030, 0.5020, 0.5000, 0.5080
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2: running=1
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| AdaRES-Y23 | configs_song/model_paper5/adares_y23_valid_token_support_res.yaml | server-2 | 1 | 未知 | 未知 | 未知 | 未知 | 未知 | running |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 1（运行 1 / 认领 0 / 等待 0）；目标 1；准入预算 0。
+
+## 4. This Tick's Actions
+- 2026-10-03 07:48:24+08快照，模式event，原因仅research_artifact_changed。核对最新归属/目标/资源/项目指令/显式closure；Windows后台任务仍Disabled，本轮正常monitor和goal返回0。
+- 复用脚本事实表：同一Y23在GPU1运行，monitor摘要17/30、恢复日志Best=0.5080、no_improve=0/30；活跃1/目标1、准入预算0、到期候选0、新终态0。中间日志不是冻结全量评估、因果有效性或新冠军证明，缺失指标仍未知。
+- 无需处理的新故障、终态或到期候选，不重复preflight、原生采样、恢复启动和闭合方向评估；GPU0未查询/使用，GPU1利用率/显存未另行探测。仅更新七节记忆和六段报告，历史恢复/失败证据和冻结协议保持不变。
+- 科学状态Y23 training、最终效果未知，目标未达；本轮执行状态以finish和独立锁释放核验为准。收据生成前用量窗口及计数未知；实际无新候选、新测试、新证据引用或阶段推进。
+
+## 5. Decisions Made
+- 无新增研究决策；继续同一Y23固定30轮，到终态执行原冻结全量评估。不依据中间验证指标调参、早停或填充变体，不操作GPU0、其他项目、后台或调度。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

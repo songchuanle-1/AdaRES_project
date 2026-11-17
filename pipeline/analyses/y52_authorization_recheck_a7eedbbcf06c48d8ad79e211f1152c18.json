@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "a7eedbbcf06c48d8ad79e211f1152c18",
+  "checked_at": "2026-10-17T21:50:17.053829+08:00",
+  "snapshot_at": "2026-10-17T13:48:34.051912+00:00",
+  "kind": "due_authorization_dependency_recheck_not_scientific_test",
+  "prior_retry_after": "2026-10-17T20:53:10.188457+08:00",
+  "next_retry_after_if_still_blocked": "2026-10-18T01:50:17.053829+08:00",
+  "scoped_authorization": {
+    "path": "pipeline/authorizations/AdaRES-Y52_commit.json",
+    "exists": false
+  },
+  "tested_bundle": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "retained_native_review": {
+    "path": "pipeline/analyses/y52_native_gate_review_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "dc7ed186a4935b9b8e72f3e4bee3396f4e14d26f9003541bf69ed2a4fd8b9ec2"
+  },
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "expected_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "matches_tested_bytes": true
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "expected_sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "matches_tested_bytes": true
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "expected_sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "matches_tested_bytes": true
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/ipdn.py",
+      "sha256": "81c1a4751f6c2a8f66bc1f9b62680d5521542fa687e10bcca2b780b65295b52a",
+      "expected_sha256": "81c1a4751f6c2a8f66bc1f9b62680d5521542fa687e10bcca2b780b65295b52a",
+      "matches_tested_bytes": true
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/loss.py",
+      "sha256": "dea6f16d23b2800dcd6040b1cd1512affde5a73d685eb26052aeac0c2c8b1f59",
+      "expected_sha256": "dea6f16d23b2800dcd6040b1cd1512affde5a73d685eb26052aeac0c2c8b1f59",
+      "matches_tested_bytes": true
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "expected_sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "matches_tested_bytes": true
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y52_point_target_res.yaml",
+      "sha256": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6",
+      "expected_sha256": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6",
+      "matches_tested_bytes": true
+    }
+  ],
+  "git_head": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+  "git_optional_locks": "0",
+  "git_index_entries": [],
+  "scoped_git_status": [
+    "?? AdaRES/configs_song/model_paper5/adares_y52_point_target_res.yaml",
+    "?? AdaRES/ipdn/model_paper5/adares_y52_point_target/__init__.py",
+    "?? AdaRES/ipdn/model_paper5/adares_y52_point_target/backbone.py",
+    "?? AdaRES/ipdn/model_paper5/adares_y52_point_target/dec.py",
+    "?? AdaRES/ipdn/model_paper5/adares_y52_point_target/ipdn.py",
+    "?? AdaRES/ipdn/model_paper5/adares_y52_point_target/loss.py",
+    "?? AdaRES/ipdn/model_paper5/adares_y52_point_target/sample_model.py"
+  ],
+  "no_new_supplied_matching_commit": true,
+  "all_seven_bytes_unchanged": true,
+  "all_seven_untracked": true,
+  "original_unblock_condition": "Human explicitly authorizes only the seven exact tested Y52 files, or supplies their exact commit; then revalidate hashes/current goal and six gates, issue bound receipt and use canonical dispatcher with fresh idle checks. Do not deploy diagnostic W2 weights.",
+  "other_candidates_sha256_before": "82722ffb182711641e80e999e09343bb385cc6a2673aa0ce1a46d4449dbe0d1c",
+  "native_or_resource_gates_rerun": false,
+  "GPU_probed_or_used": false,
+  "new_scientific_candidates": 0,
+  "model_changes": 0,
+  "commits": 0,
+  "admissions": 0,
+  "training_launches": 0,
+  "interpretation": "A due four-hour dependency check, not a new gate PASS, trained gain or GPU shortage. Existing Y50-only permission is not extended; no historical candidate or tested source changed.",
+  "helper": {
+    "path": "scripts/recheck_candidate_commit_dependency.py",
+    "sha256": "326b2beaeefa5b54b03bb1493daeca0bbe6498656d4ff79132b1072630224648"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "actions": [
+    "本轮实际资源复查：原server1GPU0仍为其他项目诊断PID3312380占用，原server2GPU0仍为Y102 PID4747占用/保留；没有合法独占空槽，未启动任何GPU任务或重试上轮已拒绝的恢复。",
+    "Y102原进程源码6文件/原生YAML/私有环境身份已核验；实际计数{'phase': 'Train', 'epoch': 1, 'total': 30, 'step': 7, 'count': 4686}，native_progress_confirmed=False。保留原观察时间和现场，不重启、不加载检查点、不重复此前拒绝的栈附加或索取管理员许可。",
+    "复用原证据：Y90完整效能负结果/首轮未接受成本/资源恢复意图拒绝及目录不存在证明均保留；Y88原26文件/原YAML/私有环境及11身份边界准备保留，无重跑。资源条件未变不等于新研究结果。"
+  ],
+  "decisions": [
+    "保持零新创建/准入/训练、所有原资源/数据/功耗/调度/上限/禁用项，13项原server1GPU0工作等待真实空槽；上轮成本恢复需未来先重核原GPU0独占可用和拒绝意图/目录未创建，再以新不可变标签继续，不能盲重试或直接接受首轮未确认独占成本。",
+    "本轮15到期项为原GPU0资源等待、Y57单独用户暂停、Y97原和revision1数值失败；GPU1六项暂停/Y86原失败/原收据和专用恢复规则保持。无实质变化且无可行动项时不发用户通知；不跨项目、不用server6、不干预其他项目任务。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/unchanged_resource_wait_closeout_5843513403fb4ee9801a5a251ebf3f63.json",
+      "sha256": "fed34444a182e4ff045ce3a1fc02135bb5d78174361ba3b3b8eb5e67abc9f03c"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_5843513403fb4ee9801a5a251ebf3f63.md",
+      "sha256": "def4bec3a50a3139cae64b5bb0341456ebb594cdef4eb564b2ba96cbb4d39c18"
+    },
+    {
+      "path": "pipeline/checks/resource_wait_5843513403fb4ee9801a5a251ebf3f63_y102_diagnostic.json",
+      "sha256": "89920c26fe89f838b405dd3594bd8e3c4dd5444782ce29d33b810d1d48c03ad1"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_resource_recovery_refusal_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "f88028c92324b470f971e29e55422cd3cd8810350d395a4f5e77aa245081e4e5"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_resource_recovery_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "9bee3f6a62632b87a2bf79a1dc0901f9f4f5719cbd152366389495786e31499e"
+    },
+    {
+      "path": "pipeline/checks/y88_review_binding_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "4a808a22221ff84f55db155a44fb98746aefc9f6901701b9d243baf0dbb1af7e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_5843513403fb4ee9801a5a251ebf3f63.json",
+      "sha256": "cabefd203e5acfff56f7b3f388bfc905f54e8d36ed55aac15fd3263bf3e5b157"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_5843513403fb4ee9801a5a251ebf3f63.json",
+      "sha256": "5b0fb2d3c1b3142f748a7f0469837cd1cdad55d057c5d6a7579227f6fb1474f5"
+    }
+  ]
+}

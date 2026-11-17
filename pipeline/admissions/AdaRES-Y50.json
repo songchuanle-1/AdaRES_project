@@ -1,0 +1,133 @@
+{
+  "id": "AdaRES-Y50",
+  "candidate_id": "AdaRES-Y50",
+  "config": "configs_song/model_paper5/adares_y50_joint_incidence_res.yaml",
+  "code_commit": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261016-145524_next_batch.md",
+    "sha256": "fb73ad3637954d3760e606996226f5ae70d6318c3803341259c80c0ae6d500cf"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y50_diagnosis_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "715249a306de526d3f0cb3da85ae70ef85029770d2eb91f308e929bc7308fe1b"
+        },
+        {
+          "path": "pipeline/analyses/y50_diagnosis_prereg_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "d1a77a94bbb176fb1c7c072838e5b7e29ed60dca92bf6ec956708b51ae152a4a"
+        },
+        {
+          "path": "pipeline/analyses/Y50_authorized_admission_review_7548.md",
+          "sha256": "eeb08418106980513efc07c90d117afd4ff8872de1389656d346495160b65c81"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y50_production_cpu_v2_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "e03f37ef1f646fe8bddcf7fc378cf180c2bd10e9a4990a32e4ef2bfc0cd01b06"
+        },
+        {
+          "path": "pipeline/analyses/y50_production_controls_v2_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "b19249b9a271fb49c0da3fc22f61172b08cc65e54b11b1ec8c8616d3799be677"
+        },
+        {
+          "path": "pipeline/analyses/Y50_authorized_admission_review_7548.md",
+          "sha256": "eeb08418106980513efc07c90d117afd4ff8872de1389656d346495160b65c81"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y50_production_native_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "7758fe6fee3bf31300ada6be993a309bfaf59be775d40ddcdbc83b7116c47a73"
+        },
+        {
+          "path": "pipeline/analyses/y50_production_controls_v2_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "b19249b9a271fb49c0da3fc22f61172b08cc65e54b11b1ec8c8616d3799be677"
+        },
+        {
+          "path": "pipeline/analyses/Y50_authorized_admission_review_7548.md",
+          "sha256": "eeb08418106980513efc07c90d117afd4ff8872de1389656d346495160b65c81"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y50_production_stress_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "a151f2402cbd022aa13be23b2b7e4a78537a5c23b51c751bfb49fd69fb835d83"
+        },
+        {
+          "path": "pipeline/analyses/y50_production_controls_v2_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "b19249b9a271fb49c0da3fc22f61172b08cc65e54b11b1ec8c8616d3799be677"
+        },
+        {
+          "path": "pipeline/analyses/y50_prelaunch_7548_75486f9263d34214b3bd2e1412c69639.json",
+          "sha256": "a5ff263e5ebcf36e9a5a4343b9aa6493d6ee5718906d59700b5b251d4c95356c"
+        },
+        {
+          "path": "pipeline/analyses/Y50_authorized_admission_review_7548.md",
+          "sha256": "eeb08418106980513efc07c90d117afd4ff8872de1389656d346495160b65c81"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y50_production_cpu_v2_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "e03f37ef1f646fe8bddcf7fc378cf180c2bd10e9a4990a32e4ef2bfc0cd01b06"
+        },
+        {
+          "path": "pipeline/analyses/y50_production_bundle_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "2dfd88afafd55823f785f6399c4ebc3a46c2f8d5815d5f84eca6a16fa6e7530e"
+        },
+        {
+          "path": "pipeline/analyses/y50_commit_binding_7548_75486f9263d34214b3bd2e1412c69639.json",
+          "sha256": "31e0836db927d447ac5045862978d050b14a38587aba6041d76c1f704afea506"
+        },
+        {
+          "path": "pipeline/analyses/y50_prelaunch_7548_75486f9263d34214b3bd2e1412c69639.json",
+          "sha256": "a5ff263e5ebcf36e9a5a4343b9aa6493d6ee5718906d59700b5b251d4c95356c"
+        },
+        {
+          "path": "pipeline/analyses/Y50_authorized_admission_review_7548.md",
+          "sha256": "eeb08418106980513efc07c90d117afd4ff8872de1389656d346495160b65c81"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/goal.json",
+          "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+        },
+        {
+          "path": "pipeline/authorizations/AdaRES-Y50_commit.json",
+          "sha256": "98ca31a33d1905e61ad0c61ce8994fd5f8a5cf3ea3e0ede12e7afdb75690906b"
+        },
+        {
+          "path": "pipeline/analyses/y50_post_training_freeze_1cb1_1cb15474bfd346dcbc34837f3e9b79d3.json",
+          "sha256": "295cb04e409deb6994c7fa59b84caf6b19a13f644d6838fe657281caa0e970aa"
+        },
+        {
+          "path": "pipeline/analyses/Y50_authorized_admission_review_7548.md",
+          "sha256": "eeb08418106980513efc07c90d117afd4ff8872de1389656d346495160b65c81"
+        }
+      ]
+    }
+  },
+  "authorized_at": "2026-10-16T14:55:24.776127+08:00",
+  "scientific_limitations": "Admission permits a falsifiable fixed-protocol training run, not proven efficacy or novelty."
+}

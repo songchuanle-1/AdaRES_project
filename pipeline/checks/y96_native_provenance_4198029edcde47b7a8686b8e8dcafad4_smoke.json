@@ -1,0 +1,150 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "config": "configs_song/model_paper5/adares_y96_seed_query_skip_res.yaml",
+  "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615510940551758,
+    6.309134006500244
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "prediction_calls": 7,
+      "query_norm_consumption_calls": 7,
+      "generator_layer_calls": 5,
+      "initialization_calls": 1,
+      "coarse_gate_consumers": 6,
+      "both_input_gradients_finite": true,
+      "new_gradient_max": 0.0009815744124352932,
+      "step": 0,
+      "parameter_update_max": 9.999898611567914e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "prediction_calls": 7,
+      "query_norm_consumption_calls": 7,
+      "generator_layer_calls": 5,
+      "initialization_calls": 1,
+      "coarse_gate_consumers": 6,
+      "both_input_gradients_finite": true,
+      "new_gradient_max": 0.0005394580657593906,
+      "step": 1,
+      "parameter_update_max": 0.00010012692655436695
+    }
+  ],
+  "initialization_paths": [
+    {
+      "step": 0,
+      "weight_nonzero": false,
+      "query_delta_max": 0.0,
+      "original_sampled_SCG_seed_exact": true,
+      "original_generator_input_identity": true,
+      "original_five_generator_layers_consumed": true,
+      "original_generated_output_identity": true,
+      "both_inputs_undetached": true,
+      "float64_seed_projection_reference": true,
+      "original_initial_prediction_consumes_skip": true,
+      "original_first_coarse_consumes_skip": true
+    },
+    {
+      "step": 1,
+      "weight_nonzero": true,
+      "query_delta_max": 0.01958555355668068,
+      "original_sampled_SCG_seed_exact": true,
+      "original_generator_input_identity": true,
+      "original_five_generator_layers_consumed": true,
+      "original_generated_output_identity": true,
+      "both_inputs_undetached": true,
+      "float64_seed_projection_reference": true,
+      "original_initial_prediction_consumes_skip": true,
+      "original_first_coarse_consumes_skip": true
+    }
+  ],
+  "initialization_calls": 2,
+  "generator_layer_calls": 10,
+  "coarse_gate_consumers": 12,
+  "query_norm_consumption_calls": 14,
+  "shared_head_calls": 14,
+  "static_mask_features_preserved": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6759120896,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/data1/songcl/Project/AdaRES_project/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual original native two-step TRAIN only; not trained efficacy or a full-dataset memory guarantee.",
+  "command": "python -B scripts/run_y96_bound_native_y95.py --server server-1 --token 411304d6e92840b8844bb9ed860554fb",
+  "server": "server-1",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb.json",
+      "sha256": "8ac136917c0e5210ab4058e0dda2019607f26284fa3417b911546b441bd40c4d"
+    },
+    {
+      "path": "pipeline/analyses/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb.log",
+      "sha256": "6cbd50bb684e5af913a8034a9f12e31f37d6ef66899bc6ba7be6214fb0326e67"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server1_program.py",
+      "sha256": "8d224bdd63e0167f6014500839fe5f5b8e04f3bf0e08f8de4ebe88bc62854dc8"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server1_plan.json",
+      "sha256": "0be9f4cc41dff3831317ce6aea3bd59d9537ae6a2f145ab2040919b3ee54a93c"
+    },
+    {
+      "path": "pipeline/checks/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb_activation.json",
+      "sha256": "2f423c24fbdb9655f946fd2ab28160945a4c119b2e6cdd9968b7376a0210f02b"
+    },
+    {
+      "path": "pipeline/analyses/y96_server1_smoke_411304d6e92840b8844bb9ed860554fb.json",
+      "sha256": "8ac136917c0e5210ab4058e0dda2019607f26284fa3417b911546b441bd40c4d"
+    }
+  ],
+  "native_execution_token": "411304d6e92840b8844bb9ed860554fb",
+  "provenance_note": "Actual native execution was in the earlier tick; this admission reuses the unchanged result and performs no new native execution.",
+  "original_admission_command_label": "python -B scripts/run_y96_bound_native_y95.py --server server-1 --token 4198029edcde47b7a8686b8e8dcafad4"
+}

@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "state": {
+    "status": "evaluating",
+    "method": "AdaRES-Y101",
+    "child_pid": 1833051,
+    "completed_methods": [],
+    "log": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y101/446fcb81558c4fad8ea5c22797f80490/adares-y101.log",
+    "output": "/data1/songcl/Project/AdaRES_project/pipeline/review_jobs/AdaRES-Y101/446fcb81558c4fad8ea5c22797f80490/adares-y101.json",
+    "id": "AdaRES-Y101",
+    "token": "446fcb81558c4fad8ea5c22797f80490",
+    "worker_pid": 1831866,
+    "observed_at": 1794578557.1105456
+  },
+  "processes": [
+    {
+      "pid": 1831866,
+      "status": [
+        "Name:\tpython",
+        "Umask:\t0002",
+        "State:\tS (sleeping)",
+        "Tgid:\t1831866",
+        "Ngid:\t0",
+        "Pid:\t1831866"
+      ],
+      "wchan": "do_wait",
+      "stat": [
+        "210",
+        "41",
+        "3",
+        "8"
+      ]
+    },
+    {
+      "pid": 1833051,
+      "status": [
+        "Name:\tpython",
+        "Umask:\t0002",
+        "State:\tD (disk sleep)",
+        "Tgid:\t1833051",
+        "Ngid:\t0",
+        "Pid:\t1833051"
+      ],
+      "wchan": "__wait_on_buffer",
+      "stat": [
+        "745",
+        "134",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "log_tail": "",
+  "remote_mutations": false,
+  "stack_attachment": false
+}

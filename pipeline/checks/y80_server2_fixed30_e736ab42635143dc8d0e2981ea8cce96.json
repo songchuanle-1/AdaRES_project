@@ -1,0 +1,141 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y80",
+  "process_absent": true,
+  "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y80_query_visual_feedback_res_20261103_070003.log",
+  "log_sha256": "43067d1b8ae04ad5a457e7819c3ddaf99338b49cbf94a51884e20afb1d0d1bc7",
+  "checkpoints": [
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y80_query_visual_feedback_res/20261102_175917/last.pth",
+      "epoch": 30,
+      "best_miou": 0.5096525549888611,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 30,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "204f00850b0f3d6a58a50bd1d6d03a4a89a08ff5a97b388751f109f5b8de9ba0"
+    },
+    {
+      "path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y80_query_visual_feedback_res/20261102_175917/best.pth",
+      "epoch": 20,
+      "best_miou": 0.5096525549888611,
+      "optimizer_state_count": 544,
+      "scheduler_last_epoch": 20,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "sha256": "5351c22e39e2ccc726c065b2f114a81e87e7baa14ebc5d63bcb7dc47323510e3"
+    }
+  ],
+  "completed_epochs": {
+    "Train": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "Val": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "final_logged_metrics": [
+    "0.503",
+    "0.553",
+    "0.605"
+  ],
+  "CUDA_initialized": false,
+  "full_frozen_evaluation_executed": false,
+  "hardware_settings_changed": false,
+  "observed_at": "2026-11-04T06:44:50.893400+08:00",
+  "token": "e736ab42635143dc8d0e2981ea8cce96",
+  "source_checks": {
+    "exact_model_files": 6,
+    "native_YAML_semantics_verified": true,
+    "source_marker_verified": true,
+    "admission_verified": true,
+    "freeze_preserved": true
+  },
+  "resource_after": {
+    "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96_resource.json",
+    "sha256": "e21301d66335213548fb5d01cde2456503d335747a13d69d4b3f9606faae5e5a"
+  },
+  "CPU_guard_tests_passed": 25,
+  "command": "python -B scripts/finalize_y80_fixed30.py --token e736ab42635143dc8d0e2981ea8cce96",
+  "evidence": [
+    {
+      "path": "scripts/finalize_y80_fixed30.py",
+      "sha256": "07c7f7db160401ae0825699a0a512c3d08da924cccec1ed82f0d48aebc101c51"
+    },
+    {
+      "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96_location.json",
+      "sha256": "20316133d742af127c154002e44bc7dec23f5898f70a3e0fea7308769e5aa151"
+    },
+    {
+      "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96.log",
+      "sha256": "e09bb0b424081d8badecc67151495cca864f7da2592fac699736fc7d44863629"
+    },
+    {
+      "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96_tests.log",
+      "sha256": "b05a57369bad9a75dfd97f714aa3118beb4cf149a67a775090c4b9f7825f4aa4"
+    },
+    {
+      "path": "pipeline/checks/y80_server2_fixed30_e736ab42635143dc8d0e2981ea8cce96_before.json",
+      "sha256": "6518eac8bb408be16958d81c43459f3878b98ee0e6652bf6ea8ae34e9be7f34a"
+    }
+  ]
+}

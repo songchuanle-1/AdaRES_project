@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "5103a354430e47b3b7a04162dcaae8af",
+  "preregistered_at": "2026-10-20T21:47:47.172791+08:00",
+  "tested_bundle": {
+    "path": "pipeline/analyses/y57_prototype_bundle_5103a354430e47b3b7a04162dcaae8af.json",
+    "sha256": "d2cfcd7dd68cace99d50e1008f420d31a15da44982a4fd45d589286cfb1c5bf8"
+  },
+  "program": {
+    "path": "pipeline/analyses/y57_cpu_5103a354430e47b3b7a04162dcaae8af_program.py",
+    "sha256": "757a0d3498ca15e3770684a3ded5be34e5a0aed48b6678cbacdbff605ae79a31"
+  },
+  "body": {
+    "path": "scripts/probe_y57_cpu_5103.py",
+    "sha256": "b85d3172532cc19dc59c4a068fb175b6d6b46e732238be10e26e2da7954bdd7e"
+  },
+  "setup": {
+    "path": "scripts/setup_y57_prototype_5103.py",
+    "sha256": "63ed04a38fc55a4aa3e07affdc24cab41b6365561a2b3ba2ea85d05597608855"
+  },
+  "sample": "Original8TRAIN scenes/32expressions, four native batch2 pairs; no selection by outcome.",
+  "controls": "Keep all769inputs, append full256variance. Repeat/joint permutation, same1025width query-axis cyclic-shift1 variance, equal-peer/no-overlap/padding negatives.",
+  "native": "Released-SPFormer initialization only, unchanged loss. Every changed-shape parameter and all indicator tensors finite nonzero gradients; variance evidence and new first-layer columns actually reached. No optimizer or saved weights.",
+  "resources": "Exact66048parameter delta; largest input-point-count batch among fixed4, 2warmups/3native backward timings under24GiB. Parent/candidate same common initial weights, batch1 native predicts on all8fixed scenes,2warmups/3timings.",
+  "limits": "Pre-training activity/resources only; no task-gain requirement, efficacy, global Pareto, novelty, Git authorization or admission. Retain all negatives.",
+  "result": "pending"
+}

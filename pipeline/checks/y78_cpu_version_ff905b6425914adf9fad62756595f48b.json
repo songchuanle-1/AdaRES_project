@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y78",
+  "code_commit": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "parent_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "retained_branch": "refs/heads/adares-y78-mask-logit-residual",
+  "working_HEAD": "c3849ead0b8e4f9320d3e353d561016b3b495ce1",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y78_cpu_version_ff905b6425914adf9fad62756595f48b_source_snapshot.json",
+    "sha256": "5086dac0d2f3d81cde0711f9cea87394a89bed505ccbe6125367a9b857a6b194"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y78_cpu_attempt3_ff905b6425914adf9fad62756595f48b.json",
+    "sha256": "8b479f8efbf89acc5d08bffbfe71cb67d5f8cc43b76627ebfa57d5d53eecdb54"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y78_mask_logit_residual_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y78_mask_logit_residual/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y78_cpu_version_ff905b6425914adf9fad62756595f48b.index",
+    "sha256": "9f6b34213abbd1c74a9685a455854686f9d20d33bc0661645f5970bd9896eaed"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y78_cpu_version.py",
+      "sha256": "3ae543c232a6bb032c5877946fc2c84f088a580a58c2915ad9dadbb61d846693"
+    },
+    {
+      "path": "scripts/probe_y78_cpu_attempt3.py",
+      "sha256": "731fed102e4138390fdab91a519163de0bf445b04cf75d6a6906a70ccf6224c4"
+    },
+    {
+      "path": "scripts/prepare_y78_mask_logit_residual.py",
+      "sha256": "0a566b78d18616993f441fb12882cbf54c720ffee90709d102bb064aa5c3a12b"
+    }
+  ]
+}

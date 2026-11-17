@@ -1,0 +1,41 @@
+{
+  "actions": [
+    "运行：Y101 Train25/30 step425/4686，原PID2263581/源码/原生YAML/精确数据/私有环境/350W与原生递增已核验。",
+    "Y102 仍Train1step7/4686，当前原生进度未恢复。原PID4747/server2GPU0/280W/源码/原数据加载子进程保留，当前只读诊断已存；没有停止或重启。",
+    "本轮event，due_count9项为已核验挂起候选、无可派发待跑任务，准入/创建/预备预算仍0。未重做缺保存声明的目录检查、未重试权限拒绝的调用栈读取、未重做旧归档或已通过科学测试；Y103旧绑定和未执行原生计划保持。",
+    "Y100训练best导致自动阶段门控，正式FIRST及完整原设备后评尚未执行，不宣布目标达成。本轮新变体/原生GPU检查/准入/新训练/归档/FIRST/成本均0。",
+    "新准备：Y101原定server-1 GPU0/350W完整后评的Y36、W2、B1三份对照权重已预置；复制前后完整SHA均与原冻结值一致，未覆盖原文件。三份独立原生YAML只使用既有两项路径映射，不改活动训练代码或配置。",
+    "首次参考源码原始字节检查失败已保留；按原冻结LF清单复核18文件全部一致，W2/B1仅CRLF差异。未重跑科学测试，未加载检查点，未使用GPU或执行正式FIRST/成本。"
+  ],
+  "decisions": [
+    "遵守本轮冻结阶段预算；保留两条原运行、Y102既有挂起条件及全部失败证据，不用反复等价测试制造进展。下一轮先查真实进度与预算，后续须满足完整原检查点/归档和独占授权资源。",
+    "仅AdaRES，GPU1全用途暂停和Y57单独暂停保持；不跨项目、不用server6、不迁移冻结后评/成本、不改科学goal/原收据/数据/功耗/调度。既有管理员调用栈协助事项没有新增授权，不重复提出相同确认。",
+    "Y101后评仍须等原训练自然30轮、精确原有限last/best/模型/优化器/调度器与完整Train-Val核验及归档、原server-1 GPU0独占、经测试的资源锁适配和完整配对后评。本次预置不迁移任何原GPU1挂起后评，不改变零准入预算或宣布达标。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/adares_observation_fedad03ae838499fafb71397c992731c_closeout.json",
+      "sha256": "23c70f7830b98cf08b2bfc6b38901bd14c35e86cc2219f26be9521b2ad69d1ea"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_fedad03ae838499fafb71397c992731c.md",
+      "sha256": "b2c77b27ddfb8cb3de116b092619ce56d5f0c5e9315e454151a86dd3563cf0c7"
+    },
+    {
+      "path": "pipeline/checks/y101_review_asset_closeout_fedad03ae838499fafb71397c992731c.json",
+      "sha256": "dce5ec8f6c0ab8b53687b5db3262ec85de096011a023ddcc1ade7b4b5a5bbdab"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c.json",
+      "sha256": "703987e187d202204e24070d62b98ab6f989deb13f3b81107245d55718522006"
+    },
+    {
+      "path": "pipeline/checks/y101_review_asset_clarification_fedad03ae838499fafb71397c992731c.json",
+      "sha256": "253100539b0b2167c48c5240a6b39647fbef416e14768823abcab0f613eb329d"
+    },
+    {
+      "path": "scripts/finish_y101_review_assets_tick.py",
+      "sha256": "4c232c0f8079e380d0c09553fd5ca286f94ab8bfc758f609fe531265a5226d59"
+    }
+  ]
+}

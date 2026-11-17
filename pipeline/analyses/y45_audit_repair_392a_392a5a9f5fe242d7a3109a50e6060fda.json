@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "original_source_sha256": "76082e1ccc862e10f60f6234be0f2929bc5f96f5d1a82bf169d366c275d9fc83",
+  "repaired_audit_sha256": "0e334a7124325a1ac3008d23d179d235bcbe1df14d07fd318318219f83d37bb5",
+  "change": "Only normalize Python3.8 ast.Index in the audit; all model/config code unchanged.",
+  "parent_sources": {
+    "backbone.py": {
+      "local_sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "native_sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "AST_equal": true
+    },
+    "dec.py": {
+      "local_sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "native_sha256": "6362d882662b0e51594cd4af994359b93f99497affc93600322a34ca6c349b01",
+      "AST_equal": true
+    },
+    "ipdn.py": {
+      "local_sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "native_sha256": "7cb4b1c5490d0839fcdaf18553983b4c991f69e50474d07e83af9f0f8c937a5a",
+      "AST_equal": true
+    },
+    "loss.py": {
+      "local_sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "native_sha256": "836ff790a0a8b9c55cf465a472c9462699f0753a7e87d0ef74a8946edf31565a",
+      "AST_equal": true
+    },
+    "sample_model.py": {
+      "local_sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "native_sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "AST_equal": true
+    },
+    "__init__.py": {
+      "local_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "native_sha256": "c540732d6e3334c85008035cc37b8537b0f85383d5f5a6bf663359fbf2b134bb",
+      "AST_equal": true
+    }
+  }
+}

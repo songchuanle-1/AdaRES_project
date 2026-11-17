@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "22:43:35上海begin已核验实际会话与AdaRES owner一致、后台调度Disabled；最新单卡条款及SERVERS.yaml=[0]继续生效。监控1项Y56 running/1项Y57 paused/0 waiting，无新增终态或派发错误，不恢复GPU1、不跨项目或改调度。",
+    "Y58/Y59/Y60的实际资源retry为21:28，已到期；本轮复用scripts/check_prepared_resources_gpu0_trial.py进行一次真实复核。三项各7文件、冻结payload、当前源码/YAML、Git提交与goal全部一致，无模型或测试程序修改。现有compact due0由exclusive_gpu_slot按队列开槽才唤醒的既有规则导致，不倒改快照、共享流程或blocker分类。",
+    "22:44:47实核Y56原PID13738完整命令/cwd及Train29/30 step378至478递增，尾部无异常。当前续训日志best mIoU=0.5109891295433044、四轮未刷新；不是冻结全量评估、新冠军或显著收益结论。固定30轮/seed1999及原优化器/调度器继续保持，不早停或重启。",
+    "同次GPU0=280W/83C/245.44W/22684MiB；性能状态SW Thermal Slowdown再次Active、HW Thermal Slowdown未激活。内核读取成功、无新Xid/fallen-off，boot未变。GPU1=390W/73C/385.7W/util100%/23526MiB且有外部负载，未干预该进程或设置。实测证据pipeline/checks/prepared_resources_5fea2958a0334c44a6dfc19d82916cf6.json。",
+    "唯一获准的GPU0仍忙，Y58/Y59/Y60本轮未执行原生YAML/TRAIN两步smoke，继续各自资源阻塞，retry为23:44:47、队列开槽提前唤醒。本轮resource_check/blocked及证据绑定Y58并归入三项候选；没有把资源检查或历史CPU测试写为原生smoke PASS。",
+    "Y57保持用户暂停/dispatch_hold及另行用户恢复条件，原epoch27模型/optimizer/scheduler检查点和日志保留。本轮无新候选、模型/YAML修订、CPU诊断、Git提交、同步、准入、入队、训练启动、功耗/风扇/驱动或调度变更。"
+  ],
+  "decisions": [
+    "保留原Y56/GPU0训练和用户已批准的280W，按固定30轮继续；不挤占它做候选检查、不恢复Y57或GPU1授权。GPU1外部训练不属于本项目授权，保留不干预。",
+    "本次83C仍热降频，说明此前一次无热降频采样不能代表全程稳定；不把核心温度下降等同散热修复，也不把热降频当作新掉卡/模型失败。根因仍未知，没有扩大管理操作授权。严格整机单卡散热对照仍需外部GPU1空闲窗口，不重复索取已经覆盖的普通训练权限。",
+    "GPU0真正空闲后，用当前租约和实时资源核验推进已实现Y58/Y59再Y60：必须原生YAML真实TRAIN至少两步有限loss/backward、意图路径和峰值检查通过才准入/入队，并同轮尝试既有门控派发。准备工作已保留，不为了凑额度新增占位候选，也不等待整条训练结束才能收尾本轮。",
+    "本报告不预称postflight通过；随后执行canonical finish并核验收据、context提交及租约释放，释放后不补写报告或共享状态。"
+  ]
+}

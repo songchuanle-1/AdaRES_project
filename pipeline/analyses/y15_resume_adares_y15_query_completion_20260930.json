@@ -1,0 +1,71 @@
+{
+  "module": "ipdn.model_paper5.adares_y15_query_completion",
+  "scans": [
+    "scene0000_00",
+    "scene0001_00"
+  ],
+  "scope": "same augmented batch, native gorilla save/resume",
+  "first_step": {
+    "loss": 9.471268653869629,
+    "finite": true,
+    "gradient_tensors": 9
+  },
+  "uninterrupted": {
+    "loss": 7.138270378112793,
+    "finite": true,
+    "gradient_tensors": 9
+  },
+  "before_continuation": {
+    "model": {
+      "equal": true,
+      "max": 0.0
+    },
+    "optimizer": {
+      "equal": true,
+      "max": 0.0
+    },
+    "scheduler": {
+      "equal": true,
+      "max": 0
+    },
+    "meta_epoch": 1,
+    "student_contains_teacher": false,
+    "fresh_teacher_absent": true,
+    "allowed_nonpersistent_keys": [
+      "text_encoder.embeddings.position_ids",
+      "text_encoder.embeddings.token_type_ids"
+    ]
+  },
+  "lazy_continuation": {
+    "model": {
+      "equal": false,
+      "max": 3.084540367126465e-05
+    },
+    "optimizer": {
+      "equal": false,
+      "max": 1.507578417658806e-08
+    },
+    "gradients": {
+      "equal": false,
+      "max": 1.4901161193847656e-08
+    },
+    "loss_difference": -4.76837158203125e-07
+  },
+  "warmed_repeat": {
+    "model": {
+      "equal": false,
+      "max": 3.0517578125e-05
+    },
+    "optimizer": {
+      "equal": false,
+      "max": 1.507578417658806e-08
+    },
+    "gradients": {
+      "equal": false,
+      "max": 1.4901161193847656e-08
+    },
+    "loss_difference": -4.76837158203125e-07
+  },
+  "complete": true,
+  "limitation": "RNG explicitly replayed by probe, not native whole-dataloader resume guarantee"
+}

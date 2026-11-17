@@ -1,0 +1,30 @@
+{
+  "actions": [
+    "仅处理AdaRES_project；本轮所属会话/lease、Disabled后台调度、正式skill/experiment_first、AGENTS/goal/SERVERS/暂停资源记录已核验。begin已先查询进展并尝试已有合格派发，ready waiting为0。",
+    "运行：AdaRES-Y92 Val17/30，步227/363；AdaRES-Y93 Train3/30，步3221/4686。原PID、source、YAML、receipt、私有runtime、350W/280W及原生步数递增通过，canonical物理占用确认两GPU0 busy+reserved。没有使用GPU1或干扰外部任务。",
+    "完成：Y93原生保存声明只读核实实际目录20261108_082521，新建精确终态工具及29项生命周期守卫通过；绑定原PID47380/log/source/YAML/receipt/freeze，不按启动时间猜目录，未加载checkpoint、停止训练或执行归档。旧hash-bound工具保持。",
+    "新准备：独立Y95在原self/language和中加入全128查询mean投影旁路，原本地self注意力/SCG/gates保持。首次实际原YAML/完整CPU模型/发布骨干/TRAIN162738点8表达、float32/64独立标量/置换/复制/改同伴保持焦点/零均值/七阶段W2及输入梯度/干预和精确旁路、两合成更新通过；CPU不是稀疏GPU原生任务或收益证据。",
+    "Y95只保留七个实际测试新增文件，私有index分支直接基于原生已测Y93；生产HEAD/index/无关worktree/队列和较早Y94保持。10项真实证据守卫与8项runtime/goal/source/owner负例守卫全部通过，无跳过，保存两授权GPU0原生计划及精确runner。GPU任务未执行、未准入、未同步或派发。",
+    "本轮新增候选1、CPU候选实测1、GPU原生任务0、准入0、启动0、归档0。原9508表达/141场景完整FIRST/原同设备cost/重复对照/scene bootstrap/有害子组/data/seed1999/fixed30/gates/现有功耗/调度和专用恢复均保持，未声称收益或达标。",
+    "记忆已先逐字节备份再压缩为七节短记录，完整历史与负证据沿snapshot链保留。收尾连续刷新实际训练及canonical物理占用并保存真实collector resource_check，随后正式report/finish；没有预先声称postflight通过。"
+  ],
+  "decisions": [
+    "Y94先于Y95；真实原生两步、原full freeze/admission、安全同步和递增counter仍是训练前必需步骤。当前两卡均busy，CPU不代替准入，不挤占现有或外部任务。",
+    "未来Y92仅用finalize_y92_fixed30_y93.py和原20261108_090202；Y93用本轮finalize_y93_fixed30.py/29守卫和原20261108_082521。自然fixed30完整checkpoint核验后方可归档；任何新增HEAD/owner需新的已测绑定。已归档Y91和更早实验不重放。",
+    "server2 GPU1全部使用与原GPU1后评/cost继续用户暂停，不迁移替代；Y57单独暂停，各自恢复需用户明确授权。禁止server6，不改变科学goal字节、原receipt、data/runtime/mappings、功率或调度；无需新增用户处理。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y95_preparation_closeout_a7f1a4ec5ffc4c3a9837805bc45ce950.json",
+      "sha256": "f0972b53e9719d9a8227fdd01ab9ee19fa4f39063f608feb7f5162e72dd8d8e0"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_a7f1a4ec5ffc4c3a9837805bc45ce950.md",
+      "sha256": "8b3bd5d9331c80217d36e5ac5e5b59be0a3f93753de28cab5fb3e41f247f81a5"
+    },
+    {
+      "path": "pipeline/decisions/20261108-232640_next_batch.md",
+      "sha256": "b5b318d8e817497b0f39e09434164186ab84ae75fc5e1fe720d01e26defba06d"
+    }
+  ]
+}

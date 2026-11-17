@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "token": "412be16119c9454f9be9c3e8f5cf69b7",
+  "expected_pre_fix_reproduction": {
+    "test": "test_fresh_foreign_compute_allows_empty_project_queue",
+    "exit_code": 1,
+    "error": "Blocked GPU candidate has a queue opening",
+    "expected_failure": true,
+    "log": "pipeline/checks/closure_gpu_fix_before_412be16119c9454f9be9c3e8f5cf69b7.log"
+  },
+  "targeted": {
+    "tests": 19,
+    "exit_code": 0,
+    "passed": true,
+    "log": "pipeline/checks/closure_gpu_fix_targeted_412be16119c9454f9be9c3e8f5cf69b7.log"
+  },
+  "regression": {
+    "tests": 147,
+    "exit_code": 0,
+    "passed": true,
+    "modules": [
+      "test_closure",
+      "test_foreground_tick",
+      "test_tick_context",
+      "test_closure_multiview",
+      "test_source_integrity"
+    ],
+    "log": "pipeline/checks/closure_gpu_fix_regression_summary_412be16119c9454f9be9c3e8f5cf69b7.log",
+    "log_scope": "Final result chunk from the actual test process, including intentional negative-fixture messages; earlier fixture output omitted."
+  },
+  "distinct_tests_passed": 166,
+  "negative_cases": [
+    "idle authorized GPU",
+    "wrong whitelist/host/hostname/candidate",
+    "unapproved busy GPU cannot hide allowed idle GPU",
+    "missing GPU",
+    "failed query",
+    "stale/future/old token/snapshot",
+    "tampered or unbound raw evidence",
+    "fabricated reserved-GPU summary",
+    "paused record and queue preservation",
+    "failed collection preserves persistent dispositions"
+  ],
+  "full_production_finish": "pending"
+}

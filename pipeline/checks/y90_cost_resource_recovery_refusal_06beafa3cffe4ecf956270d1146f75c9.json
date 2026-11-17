@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y90",
+  "token": "06beafa3cffe4ecf956270d1146f75c9",
+  "status": "resource_guard_refused_before_folder_or_process_creation",
+  "launch_uncertainty_resolved": true,
+  "GPU_job_started": false,
+  "new_cost_measurements": false,
+  "reason": "GPU0 compute was present at guarded launch line5 before folder creation; subsequent read-only reconciliation proves recovery folder/receipt absent and identifies other-project diagnostic compute3312380.",
+  "recovery_plan": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "9bee3f6a62632b87a2bf79a1dc0901f9f4f5719cbd152366389495786e31499e"
+  },
+  "launch_intent": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_intent_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "d8bdca66023f588497979ebbcddd5f1f20e7ef8adaae1ad4de242ae83a8bb1b9"
+  },
+  "failed_launch_log": {
+    "path": "pipeline/checks/y90_cost_resource_recovery_launch_06beafa3cffe4ecf956270d1146f75c9.log",
+    "sha256": "d40eaa31165dbb7eeba618fb0a102cff3a7c4b124b652031073c94c4e79176cf"
+  },
+  "reconciliation": {
+    "path": "pipeline/checks/y90_cost_recovery_reconciliation_06beafa3cffe4ecf956270d1146f75c9.json",
+    "sha256": "5362d3cca78fe85a4958e7060a697bfb866c3dc7c7a0691ff2e3d33d2333a639"
+  },
+  "foreign_jobs_untouched": true,
+  "original_scientific_core_unchanged": true,
+  "next_action": "Wait for a fresh exclusive original server1GPU0/350W window. Reconcile this refused intent and use a new immutable launch-attempt label before a scoped recovery; never blindly replay the refused launch or finalize the contended original cost.",
+  "evidence": [
+    {
+      "path": "scripts/finish_y90_resource_contention_tick.py",
+      "sha256": "4b9085963562d1afda0ddf2320c1365f1c87f5bbe24b93abaa18a164e1d72a08"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_resource_recovery_launch_06beafa3cffe4ecf956270d1146f75c9.log",
+      "sha256": "d40eaa31165dbb7eeba618fb0a102cff3a7c4b124b652031073c94c4e79176cf"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_recovery_reconciliation_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "5362d3cca78fe85a4958e7060a697bfb866c3dc7c7a0691ff2e3d33d2333a639"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_resource_recovery_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "9bee3f6a62632b87a2bf79a1dc0901f9f4f5719cbd152366389495786e31499e"
+    },
+    {
+      "path": "pipeline/checks/y90_cost_resource_recovery_intent_06beafa3cffe4ecf956270d1146f75c9.json",
+      "sha256": "d8bdca66023f588497979ebbcddd5f1f20e7ef8adaae1ad4de242ae83a8bb1b9"
+    },
+    {
+      "path": "pipeline/analyses/y90_cost_resource_contended_06beafa3cffe4ecf956270d1146f75c9/resource_disposition.json",
+      "sha256": "4289b3c984727b57b293b80d07c72b6ff51b812af3b6b9622f155805fc4cff77"
+    }
+  ]
+}

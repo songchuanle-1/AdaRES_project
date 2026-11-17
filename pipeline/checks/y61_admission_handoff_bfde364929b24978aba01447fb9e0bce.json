@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-24T02:51:21.378613+08:00",
+  "id": "AdaRES-Y61",
+  "exact_files": 7,
+  "source_goal_commit_match": true,
+  "CPU_guard_tests": 15,
+  "CPU_guard_tests_passed": true,
+  "real_current_tick_smoke_exists": false,
+  "original_smoke_plan": {
+    "path": "pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_plan.json",
+    "sha256": "7ceccab523b2dee58728bfd161241ed49fdf42ec5a8093b80784410c268e6e11"
+  },
+  "running_ids": [
+    "AdaRES-Y60"
+  ],
+  "native_smoke_executed": false,
+  "admitted": false,
+  "queue_changed": false,
+  "production_sync": false,
+  "next_command": "python -B scripts/admit_dispatch_y61_gpu0.py admit --token <CURRENT_TOKEN>",
+  "command": "python -B scripts/admit_dispatch_y61_gpu0.py check --token bfde364929b24978aba01447fb9e0bce",
+  "evidence": [
+    {
+      "path": "scripts/admit_dispatch_y61_gpu0.py",
+      "sha256": "217cbb149213c37071d0ba22f5cd13f12dca1f94ad10817501b5be16d149c895"
+    },
+    {
+      "path": "scripts/test_y61_admission_handoff.py",
+      "sha256": "22dbb5c71a4e1f9d5f247d59f10968cf3d2730b8bcab2828c380987e1b3e4ef2"
+    },
+    {
+      "path": "pipeline/checks/y61_smoke_2b6a2c9663614e8098de6b9f47dd3a1a_program.py",
+      "sha256": "e440f4ff0df60672bf96b0c4210725c8757486bb1a176fafe8147de62e5b26b0"
+    }
+  ],
+  "limitation": "Precheck and negative controls only. Real GPU0 idle checks/native two-step results/admission and increasing production steps remain required."
+}

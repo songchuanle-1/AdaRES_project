@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "token": "c15addc5f96f406593c63f1dd9aa11f0",
+  "kind": "operational_postflight_failure_not_scientific_result",
+  "observed_at": "2026-10-17T14:55:58.4290766+08:00",
+  "finish_attempts": 1,
+  "finish_return_code": 1,
+  "exact_closure_output": "CLOSURE_INCOMPLETE: Capacity-gap design made no durable candidate progress; create a stable diagnosis candidate and run its next test before stopping",
+  "exact_finish_output": "POSTFLIGHT FAILED: lease retained; continue this tick or explicitly abort",
+  "receipt_at_observation": {"status": "INCOMPLETE", "closure_rc": 1, "context_committed": false, "lease_release": "retained"},
+  "regression_evidence": {"path": "pipeline/analyses/closed_stage_cooldown_regression_c15addc5f96f406593c63f1dd9aa11f0.json", "sha256": "6203b9d508bae2b43f391a3b0d9b981a2553289eeb9bf3ebb56ca3d076060aff"},
+  "real_disposition": "No new scientific candidate or model evidence this tick; two existing human-authorization blocks remain not due and bounded reserve is already two. Keep original research ledger and its legacy closed rows untouched. Isolated operational regression is not scientific progress and must not be relabeled as a diagnosis candidate to satisfy closure.",
+  "next_execution_action": "Abort the owned token with this exact failure after rendering final audit notes, then independently verify foreground lease and pending state are gone. No repeated finish, no policy/runtime change, no post-release project writes.",
+  "shared_runtime_repair": "Not performed; requires explicit narrowly scoped authorization outside this project-only heartbeat. Do not alter historical evidence or scheduler to clear the guard.",
+  "scientific_status": {"new_training_metric": false, "new_candidates": 0, "model_changes": 0, "admissions": 0, "training_launches": 0},
+  "abort_result": "pending_at_artifact_creation"
+}

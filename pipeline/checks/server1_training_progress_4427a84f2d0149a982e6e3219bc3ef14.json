@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-10-26T08:50:33.008972+08:00",
+    "latest": [
+      13,
+      30,
+      2058,
+      4686
+    ],
+    "log_bytes": 16457025
+  },
+  "after": {
+    "observed_at": "2026-10-26T08:50:38.013959+08:00",
+    "latest": [
+      13,
+      30,
+      2065,
+      4686
+    ],
+    "log_bytes": 16458929
+  },
+  "pid": 2540376,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y62_overlap_density_res_20261025_215723.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "82fbd9fb1fc56da6afee5b145f59cfa533464707",
+  "gpu": "100, 22744, 70, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; no validation result yet.",
+  "evidence": [
+    {
+      "path": "scripts/capture_server1_training.py",
+      "sha256": "21e91d6a921308807f406f8e449c8e995941c02aebbbc302653e431fc32fef75"
+    },
+    {
+      "path": "pipeline/checks/server1_training_progress_4427a84f2d0149a982e6e3219bc3ef14.log",
+      "sha256": "71bc6f4aae0a2c9417247cf26a9d4031411d3fa94cbba1d5a284e7e15de431b2"
+    }
+  ]
+}

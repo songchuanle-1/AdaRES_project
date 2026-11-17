@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "04:47:17上海begin核验实际会话所属、后台Disabled、当前goal及最新GPU0-only资源限制，先监控并尝试既有队列。Y58 running/Y59合法waiting/Y57 paused，无新增终态或部署故障；GPU0忙，未启动第二任务。",
+    "04:48:00复用只读观察器核验Y58原PID77094/命令/cwd/starttime/GPU0归属，真实Train6/30 step1113至1136增长且日志增加，尾部无错误。GPU0保持280W/82C/22718MiB，本次无热降频、新Xid/fallen-off。GPU1外部compute仍在，未干预；sample_healthy=false仅因整机非单卡隔离，不是Y58失败。当前证据pipeline/checks/ef_gpu0_runtime_c40b015441174a9b893694ebb2691580.json。",
+    "当前租约/项目锁下重新核对Y58/Y59各7文件、冻结payload、原生YAML、Git提交、goal与准入收据，均一致。唯一授权GPU0被Y58实际占用，Y59继续FIFO等待；resource_check/blocked及新证据绑定Y59，未改其deployment阶段或伪造授权/空闲问题。证据pipeline/checks/ef_waiting_recheck_c40b015441174a9b893694ebb2691580.json。",
+    "Y56冻结后评、Y60原生smoke及Y57用户暂停条件全部保留。本轮无新候选、模型/YAML修改、Git提交、原生smoke、准入、同步、训练启动、硬件或调度变更；仅状态/资源复核，没有新的研究结论或需用户处理的事项。"
+  ],
+  "decisions": [
+    "继续保护Y58固定30轮/seed1999与GPU0的280W限制，保持一卡一实验；Y59仅在GPU0真实开槽时由既有门控接续，不抢占运行任务或借GPU1。Y57不自动恢复、不重复索权。",
+    "现有Y60实现保留，仍需独占GPU0原生两步测试后才可准入；Y56全量冻结评估不因日志指标被跳过，不为待跑目标创建占位副本或把资源检查冒充科学成果。",
+    "当前82C无热降频是短采样，不能证明历史硬件问题已解决；未改功耗/风扇/驱动或干预外部任务。本轮无实质状态变化，不重复发布研究简报；按canonical report/finish收尾，核验context提交与租约释放后不补写。"
+  ]
+}

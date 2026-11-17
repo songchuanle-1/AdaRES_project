@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "frozen_at": "2026-10-16T14:08:33.053814+08:00",
+  "inherited_plan": {
+    "path": "pipeline/designs/exp_design_Y48_601b.md",
+    "sha256": "9d10671d6405a11ca101fef4163e2b83e6f74884c3712e6522695dd5e1db1943"
+  },
+  "protocol": {
+    "backbone": "released SPFormer",
+    "seed": 1999,
+    "epochs": 30,
+    "GPUs": 1,
+    "queries": 128,
+    "selector": "single argmax",
+    "evaluation": "Y50/W2/B1 full9508expressions/141scenes, twice EACH; FIRST primary, preserve repeat noise.",
+    "metrics": [
+      "mIoU",
+      "Acc@0.25",
+      "Acc@0.5",
+      "active queries",
+      "latency",
+      "peak memory"
+    ],
+    "scene_bootstrap_replicates": 10000,
+    "bootstrap_seed": 1999,
+    "inherited_TRAIN_size_cuts": [
+      1487,
+      3325
+    ],
+    "harm_rule": "For preregistered target-size subgroups, delta CI upper<0 versus either W2 or B1 triggers harm review; intervals crossing0 are inconclusive.",
+    "prohibition": "No validation threshold/temperature/loss-weight/feature/epoch selection; no automatic promotion or Phase2."
+  },
+  "status": "Frozen prospectively, no trained Y50 results or dispatch yet."
+}

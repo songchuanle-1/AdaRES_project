@@ -1,0 +1,430 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y70",
+  "config": "configs_song/model_paper5/adares_y70_query_scale_fusion_res.yaml",
+  "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.315747261047363
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "fusion_stage_calls": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "consumption_stage_calls": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indicator_calls": 7,
+      "fusion_weight_gradient_max": 0.0003968430100940168,
+      "parameter_update_max": 9.999747999245301e-05,
+      "all_three_branch_input_gradients_finite": true,
+      "original_coarse_Boolean_masks_preserved": true
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "fusion_stage_calls": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "consumption_stage_calls": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indicator_calls": 7,
+      "fusion_weight_gradient_max": 0.0002444454003125429,
+      "parameter_update_max": 0.00010011162521550432,
+      "all_three_branch_input_gradients_finite": true,
+      "original_coarse_Boolean_masks_preserved": true
+    }
+  ],
+  "fusion_paths": [
+    {
+      "stage": 0,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 2.9802322387695312e-08,
+      "fusion_delta_max": 0.0,
+      "query_abs_max": 0.3883589506149292,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 1,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1920928955078125e-07,
+      "fusion_delta_max": 0.0,
+      "query_abs_max": 3.1066362857818604,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 2,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1920928955078125e-07,
+      "fusion_delta_max": 0.0,
+      "query_abs_max": 3.301950216293335,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 3,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 5.960464477539063e-08,
+      "fusion_delta_max": 0.0,
+      "query_abs_max": 3.7312002182006836,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 4,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1920928955078125e-07,
+      "fusion_delta_max": 0.0,
+      "query_abs_max": 3.0296738147735596,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 5,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1920928955078125e-07,
+      "fusion_delta_max": 0.0,
+      "query_abs_max": 3.9077210426330566,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 0,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.937246163485895e-08,
+      "fusion_delta_max": 0.000847935676574707,
+      "query_abs_max": 0.42487218976020813,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 1,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1643622199741799e-07,
+      "fusion_delta_max": 0.023999929428100586,
+      "query_abs_max": 3.2545437812805176,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 2,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.5503601202837558e-07,
+      "fusion_delta_max": 0.024506106972694397,
+      "query_abs_max": 3.2986114025115967,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 3,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 9.712572368592021e-08,
+      "fusion_delta_max": 0.023982584476470947,
+      "query_abs_max": 3.212244749069214,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 4,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1463173787973346e-07,
+      "fusion_delta_max": 0.01729714870452881,
+      "query_abs_max": 2.9453914165496826,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    },
+    {
+      "stage": 5,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.0174218223468756e-07,
+      "fusion_delta_max": 0.0154266357421875,
+      "query_abs_max": 2.9236395359039307,
+      "native_branch_identity_verified": true,
+      "downstream_consumption_verified": true
+    }
+  ],
+  "fusion_calls": 12,
+  "consumption_stage_calls": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "shared_head_calls": 14,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6748635136,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Two actual native TRAIN task steps verify execution and gradients only, not trained efficacy or a full-dataset memory bound.",
+  "command": "python -B scripts/run_experiment_first_probe.py y70_gpu1_smoke pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_program.py --token 330fe836434040e192c53860504f5045 --seconds 600 --gpu --gpu-id 1",
+  "physical_gpu": 1,
+  "admission_resource_check": {
+    "observed_at": "2026-10-30T18:45:20.141149+08:00",
+    "live": {
+      "hostname": "dl01-MS-7C60",
+      "source_marker": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+      "source_hashes": {},
+      "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 84, 22800, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+      "gpu_query_rc": 0,
+      "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 20742, 22790\n",
+      "compute_query_rc": 0,
+      "tasks": {}
+    },
+    "power_limit_watts": 390,
+    "required_exclusive_gpu": 1
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y70_gpu1_smoke_330fe836434040e192c53860504f5045.json",
+      "sha256": "c55c701162f2e6e3a2d84ae03dbc9793b593228df119d4e531d3c8ec7c0ee3a8"
+    },
+    {
+      "path": "pipeline/analyses/y70_gpu1_smoke_330fe836434040e192c53860504f5045.log",
+      "sha256": "5ded1994f08f04304ec6d33fa087fd6f608170de633ddfa6d587f01ff8a8ba50"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_program.py",
+      "sha256": "bff4eead628ee0d465be42cc4eaf4da2b5bc3c86f995bb629e4d6342a82210f4"
+    },
+    {
+      "path": "pipeline/checks/y70_native_4a24ed9f1ae4415088ee2968ec59a73f_gpu1_plan.json",
+      "sha256": "7d99e9d76ba3d25f1cff637cf1406951f9a4d350431b279f6dc2c891c8739813"
+    }
+  ]
+}

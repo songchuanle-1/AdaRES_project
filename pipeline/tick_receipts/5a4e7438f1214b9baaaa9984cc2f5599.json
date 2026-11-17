@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "5a4e7438f1214b9baaaa9984cc2f5599",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-17T21:50:10.710454+00:00",
+  "recorded_at": "2026-10-17T21:56:01.720664+00:00",
+  "status": "INCOMPLETE",
+  "reason": "Unchanged known closure/cooldown conflict; no candidate progress, snapshot due=0 and reserve preparation budget=0. Both authorization retries are later than this tick deadline (2026-10-18 06:50:17 Shanghai). Shared runtime, ledger, retry/wake and historical evidence unchanged. No new finish attempted; cached CLOSURE_INCOMPLETE retained without fabricated diagnosis. Full six-section audit saved; release owned tick as INCOMPLETE.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 5,
+    "input_tokens": 1694143,
+    "cached_input_tokens": 1677824,
+    "output_tokens": 6199,
+    "reasoning_output_tokens": 1391,
+    "total_tokens": 1700342,
+    "uncached_input_tokens": 16319,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

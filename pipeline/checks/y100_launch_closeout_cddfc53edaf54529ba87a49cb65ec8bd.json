@@ -1,0 +1,144 @@
+{
+  "complete": true,
+  "token": "cddfc53edaf54529ba87a49cb65ec8bd",
+  "observed_at": "2026-11-11T21:55:17.269784+08:00",
+  "observations": {
+    "AdaRES-Y99": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y99_cddfc53edaf54529ba87a49cb65ec8bd_release.json",
+        "sha256": "c6bc5fff3f060975b8b0d8ff779df34ee186ce00d35ceca3874ce8037123de63"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 5,
+        "total": 30,
+        "step": 2843,
+        "count": 4686
+      },
+      "pid": 2980836
+    },
+    "AdaRES-Y100": {
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y100_cddfc53edaf54529ba87a49cb65ec8bd_release.json",
+        "sha256": "40a81278ff923ca2740f16852eff20479e108543967edf545a2c622e35fc648e"
+      },
+      "phase": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 80,
+        "count": 4686
+      },
+      "pid": 19305
+    }
+  },
+  "occupations": {
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "314c9d256a862c3579922893c3527180942a12fce0f6a43e189cc2906eb3767f"
+    },
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "ba1303b229842830337a6b70e126db6cd660f03feb3f4dd07a6e25ef7b66068b"
+    }
+  },
+  "original_Y98_terminal": {
+    "path": "pipeline/checks/y98_server2_fixed30_y99_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "517b4ccefb32bb362011892e7184b894fe1a4c53f82026e17d9610314f876741"
+  },
+  "original_Y99_handoff": {
+    "path": "pipeline/checks/y99_y100_terminal_binding_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "15d62469552afa3de331883607881d67dc50e27eb12a238a99730dcfaa437601"
+  },
+  "actual_Y100_native": {
+    "path": "pipeline/analyses/y100_server2_smoke_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "69c8a627d7f8458b2763861b60da72525e3d25a17f1401202c4fbf6a92f50c32"
+  },
+  "source_selection": {
+    "path": "pipeline/checks/adares-y100_source_selection_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "ad67d37d240bbad0bdc4327ba4841616471944363f4458de136cbf8ba5215922"
+  },
+  "dispatch": {
+    "path": "pipeline/checks/adares-y100_dispatch_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "0a71a181729a4d0293e4db64cc65f12bdcdfcb1c6ed9863293d3c927532addfb"
+  },
+  "source_helpers": {
+    "path": "pipeline/checks/y100_launch_helpers_cddfc53edaf54529ba87a49cb65ec8bd.json",
+    "sha256": "b6161b1d0821613998dab624060b1685bed9abf2d54f2c080db46062e13f86f4"
+  },
+  "preserved_Y98_live_observer_failure": {
+    "path": "pipeline/checks/production_adares-y98_cddfc53edaf54529ba87a49cb65ec8bd_start.log",
+    "sha256": "ca1d560d0abefb10e1d0bf06d1489b9404d6c4e5c92d0a247b6227231d8894dc"
+  },
+  "observer_failure_resolution": "Exact original PID absent; full fixed30 original checkpoints subsequently verified and archived. No restart or weakening of observation.",
+  "new_scientific_candidates": 0,
+  "scientific_CPU_replays": 0,
+  "native_GPU_tasks": 1,
+  "admissions": 1,
+  "launches": 1,
+  "archives": 1,
+  "original_terminal_lifecycle_tests": 29,
+  "additive_terminal_lifecycle_tests": 30,
+  "additive_terminal_tests": 8,
+  "admission_guard_tests": 11,
+  "full_original_protocol_preserved": true,
+  "formal_FIRST_or_cost_executed": false,
+  "evidence": [
+    {
+      "path": "scripts/finish_y100_launch_tick.py",
+      "sha256": "d1d3f59f3e57ae4891c1eeb07f451ce91cf549fff77972d9e3b6b8c9ed86ccc3"
+    },
+    {
+      "path": "pipeline/checks/adares-y100_source_selection_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "ad67d37d240bbad0bdc4327ba4841616471944363f4458de136cbf8ba5215922"
+    },
+    {
+      "path": "pipeline/checks/adares-y100_dispatch_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "0a71a181729a4d0293e4db64cc65f12bdcdfcb1c6ed9863293d3c927532addfb"
+    },
+    {
+      "path": "pipeline/admissions/AdaRES-Y100.json",
+      "sha256": "7091f206c21429c02349c73e68d5e2b06ca3adc9f585465450870ac2a0e019f2"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y100_cddfc53edaf54529ba87a49cb65ec8bd_post_training_freeze.json",
+      "sha256": "cb9b9a80fb6f9f9b116f9e9a35a515b3c4fb542eb6f4128cbee0ed5d389eff01"
+    },
+    {
+      "path": "pipeline/checks/y98_server2_fixed30_y99_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "517b4ccefb32bb362011892e7184b894fe1a4c53f82026e17d9610314f876741"
+    },
+    {
+      "path": "pipeline/checks/y99_y100_terminal_binding_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "15d62469552afa3de331883607881d67dc50e27eb12a238a99730dcfaa437601"
+    },
+    {
+      "path": "pipeline/checks/adares-y100_admission_guards_cddfc53edaf54529ba87a49cb65ec8bd.log",
+      "sha256": "45b2859f40ed2c044ef344585c2c499fefc0d6d5439c8c574bad14d99066c7de"
+    },
+    {
+      "path": "pipeline/checks/y100_launch_helpers_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "b6161b1d0821613998dab624060b1685bed9abf2d54f2c080db46062e13f86f4"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y98_cddfc53edaf54529ba87a49cb65ec8bd_start.log",
+      "sha256": "ca1d560d0abefb10e1d0bf06d1489b9404d6c4e5c92d0a247b6227231d8894dc"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y99_cddfc53edaf54529ba87a49cb65ec8bd_release.json",
+      "sha256": "c6bc5fff3f060975b8b0d8ff779df34ee186ce00d35ceca3874ce8037123de63"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y100_cddfc53edaf54529ba87a49cb65ec8bd_release.json",
+      "sha256": "40a81278ff923ca2740f16852eff20479e108543967edf545a2c622e35fc648e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_release_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "314c9d256a862c3579922893c3527180942a12fce0f6a43e189cc2906eb3767f"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_release_cddfc53edaf54529ba87a49cb65ec8bd.json",
+      "sha256": "ba1303b229842830337a6b70e126db6cd660f03feb3f4dd07a6e25ef7b66068b"
+    }
+  ]
+}

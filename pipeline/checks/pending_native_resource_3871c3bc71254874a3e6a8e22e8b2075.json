@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "token": "3871c3bc71254874a3e6a8e22e8b2075",
+  "snapshot": "2026-11-02T02:47:01.248735+00:00",
+  "observed_at": "2026-11-02T10:51:01.767541+08:00",
+  "candidate_ids": [
+    "AdaRES-Y78",
+    "AdaRES-Y79"
+  ],
+  "retained_native_plans": {
+    "AdaRES-Y78": {
+      "0": {
+        "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu0_plan.json",
+        "sha256": "eb2dca6e779963893c9ea94c9a112db71379e71a4423dfa7add352d5f7e2e0b7"
+      },
+      "1": {
+        "path": "pipeline/checks/y78_native_ff905b6425914adf9fad62756595f48b_gpu1_plan.json",
+        "sha256": "3d558538aa54441398ee92cf77839e1df295df781b96b7a493d19f1668faebd9"
+      }
+    },
+    "AdaRES-Y79": {
+      "0": {
+        "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c_gpu0_plan.json",
+        "sha256": "837bba427c155dd2c81223d4c56a0048f3be3ba9d05929407e9ef51a6fb9e0f3"
+      },
+      "1": {
+        "path": "pipeline/checks/y79_native_08e82df71e3743dcb86c0eec4d39460c_gpu1_plan.json",
+        "sha256": "81fa6598715f4521889f8dd02394f5bcd0a53bcc84b40c13f510156464d8d8cc"
+      }
+    }
+  },
+  "original_training": {
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_3871c3bc71254874a3e6a8e22e8b2075_progress.json",
+      "sha256": "5f36639c60634468ed639addd508a25833b7d177dc5be92055f2eac55a0b9fe8"
+    },
+    "AdaRES-Y76": {
+      "path": "pipeline/checks/production_adares-y76_3871c3bc71254874a3e6a8e22e8b2075_progress.json",
+      "sha256": "35483954dbdbda9b36c598236e090ce7d514fb92ede6010c643ea5dca72da90c"
+    },
+    "AdaRES-Y77": {
+      "path": "pipeline/checks/production_adares-y77_3871c3bc71254874a3e6a8e22e8b2075_progress.json",
+      "sha256": "9afe2c498da23d3e247fbb05e30632066af4d0227f6a1a162b550e5dbd25504a"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_3871c3bc71254874a3e6a8e22e8b2075.json",
+      "sha256": "ca8676b93bcb7f9d415787362df650664900c8fd70b9e10e78a9d7188620605a"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_3871c3bc71254874a3e6a8e22e8b2075.json",
+      "sha256": "f73fdae5cf9938d97d469026b403a170cefb220e919c4638bcb1220a98d73e2a"
+    }
+  },
+  "original_Y75_terminal_preparation": {
+    "path": "pipeline/checks/y75_terminal_preparation_909e7705ed74484fbc9bb4d16c7dbb59.json",
+    "sha256": "1e2ec654157b569a6fda192170e42737b7f80e6b216e14424b9ee1e82b624b33"
+  },
+  "terminal_dependencies_unchanged": true,
+  "working_HEAD": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "new_candidates": 0,
+  "new_admissions": 0,
+  "new_launches": 0,
+  "new_archives": 0,
+  "native_GPU_steps_executed": false,
+  "formal_metrics_updated": false,
+  "evidence": [
+    {
+      "path": "scripts/record_pending_native_resource_tick.py",
+      "sha256": "1778fe6d6302c13bcdf10a3429d6a0b879a7b960ba618ff8da26464f87c0f2ef"
+    }
+  ],
+  "conclusion": "All three original native jobs advance. Two retained CPU-tested native-plan candidates still require an exclusive matching GPU; all authorized devices are busy/reserved. No repeat of completed controls, no new admission or efficacy claim."
+}

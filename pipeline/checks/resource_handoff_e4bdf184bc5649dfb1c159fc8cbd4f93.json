@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "token": "e4bdf184bc5649dfb1c159fc8cbd4f93",
+  "snapshot_at": "2026-10-31T02:42:57.286013+00:00",
+  "actual_training_progress": [
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y71_e4bdf184bc5649dfb1c159fc8cbd4f93_progress.json",
+      "sha256": "08d37e3da9dd7304e101336012a85d2a5c6addb97a030ccb347dd706ef387d3c"
+    },
+    {
+      "path": "pipeline/checks/y71_deployment_adares-y70_e4bdf184bc5649dfb1c159fc8cbd4f93_progress.json",
+      "sha256": "7a23e1aeed625d1cf21ad53ef0c1a0ba8d5bb2a13df9e8c72cce3d486f1b0c90"
+    },
+    {
+      "path": "pipeline/checks/y69_server1_phase_progress_e4bdf184bc5649dfb1c159fc8cbd4f93.json",
+      "sha256": "ceaadb4662a89fc293732cb5b8ed7623d68413eaa09245200307e0f39874e8c5"
+    }
+  ],
+  "fresh_occupation": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_e4bdf184bc5649dfb1c159fc8cbd4f93.json",
+      "sha256": "7d66506b1a0646398c0ace19e4f5b5375cf96e8bdd2fc7fffc648808fe13496b"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_e4bdf184bc5649dfb1c159fc8cbd4f93.json",
+      "sha256": "5877b73d6894ddbeeb1c6e54db2cfbdac603c2b13206ff20b1846708be3bd5cc"
+    }
+  ],
+  "prepared_native_integrity": {
+    "path": "pipeline/checks/prepared_native_integrity_e4bdf184bc5649dfb1c159fc8cbd4f93.json",
+    "sha256": "019c6b7f347a47ad5b27e832913e0ddd45baf18df664ae025071626912f7cb9b"
+  },
+  "running_ids": [
+    "AdaRES-Y71",
+    "AdaRES-Y70",
+    "AdaRES-Y69"
+  ],
+  "running_pids": [
+    53714,
+    52561,
+    1135633
+  ],
+  "all_authorized_GPUs_busy_and_reserved": true,
+  "prepared_plans_verified": 5,
+  "original_Y72_server1_alternative_still_inactive": true,
+  "Y57_paused": true,
+  "new_candidate_ids": [],
+  "new_model_changes": 0,
+  "new_admissions": 0,
+  "new_dispatches": 0,
+  "native_GPU_executed": false,
+  "new_formal_evaluation_result": false,
+  "old_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_e4bdf184bc5649dfb1c159fc8cbd4f93.md",
+    "sha256": "205695a3cffa14eaa4574148b791affe3973ad21ee40ff4ae795889168241145"
+  },
+  "goal": {
+    "path": "pipeline/goal.json",
+    "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+  },
+  "next_action": "Continue exact original running observers. Preserve all original jobs and existing five Y72/Y73 native plans; no completed preparation, Y68 finalization or Y71 launch replay. After actual resource/canonical reservation change, select the exact authorized idle plan and perform real native TRAIN two-step checks before original full evaluation/cost freeze/admission/verified dispatch. For server1, first fully verify original Y69 fixed30 checkpoints/log/source/receipt and canonical archive. Preserve live source contracts before production commit selection; Y57 stays paused."
+}

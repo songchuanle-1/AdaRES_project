@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "token": "4ed7c7328cd94b5aada4ff5595443ef4",
+  "CPU_tests_passed": 34,
+  "tests": [
+    {
+      "test": "test_y68_terminal_handoff",
+      "tests_passed": 12,
+      "log": {
+        "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_test_y68_terminal_handoff.log",
+        "sha256": "9769029f8950df21a947cedff15d793cb5c41e57a294a0d3ee47a535b79e5168"
+      }
+    },
+    {
+      "test": "test_y71_readiness_handoff",
+      "tests_passed": 8,
+      "log": {
+        "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_test_y71_readiness_handoff.log",
+        "sha256": "81108b6cf362336cdfc8972edfd42410462f1e89d4b86d6735ece70a0abedb0a"
+      }
+    },
+    {
+      "test": "test_y71_gpu0_admission",
+      "tests_passed": 14,
+      "log": {
+        "path": "pipeline/checks/y71_handoff_preparation_4ed7c7328cd94b5aada4ff5595443ef4_test_y71_gpu0_admission.log",
+        "sha256": "a10bee868956fa487b702167ee69e70dea484fe85d37a1f93a209ed8fab842b1"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/finalize_y68_fixed30.py",
+      "sha256": "fe10392fbd02a355cb371e6218f99aea8d980df6e1e62d7e0b99743b84becc81"
+    },
+    {
+      "path": "scripts/y68_terminal_contract.py",
+      "sha256": "ba293f5a8dc02536788a15e2fcd663b53ce07796f5a558a9e37f6a2cebf867b0"
+    },
+    {
+      "path": "scripts/test_y68_terminal_handoff.py",
+      "sha256": "7f0c1b267501d3f062db6b5c2758fb35d1447e24db66f7796737f7de5a09c5c6"
+    },
+    {
+      "path": "scripts/run_y71_gpu0_probe.py",
+      "sha256": "9e048bc60ac3e7df402894514f5c7401b812b4860fb204d0e2f8125128e84664"
+    },
+    {
+      "path": "scripts/test_y71_readiness_handoff.py",
+      "sha256": "ece84d603c2de7d0b820981e6626b5794768fc44694272afe6fdc21b68e8dedb"
+    },
+    {
+      "path": "scripts/admit_dispatch_y71_gpu0.py",
+      "sha256": "35456be23af711b7c389263f3c6f6ed37f0be0378ef51ac1923964f4d7c63428"
+    },
+    {
+      "path": "scripts/test_y71_gpu0_admission.py",
+      "sha256": "5791e3e0e75fc8331f21fb545cb7010d9ab4dcd4fe821352fb70bcaaca2b11fa"
+    }
+  ],
+  "Python38_syntax_passed": true,
+  "terminal_archive_executed": false,
+  "checkpoint_completion_verified": false,
+  "native_GPU_executed": false,
+  "admitted": false,
+  "limitation": "Lifecycle/resource/native-result rejection fixtures only. Actual original Y68 fixed30 proof and real native Y71 TRAIN two-step result remain mandatory."
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "pause_Y57_and_temporary_GPU0_only_trial",
+  "authorization_granted": true,
+  "recorded_on": "2026-10-21",
+  "source_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_reply": "y57断开吧  先试用单卡GPU0跑",
+  "server": "server-2",
+  "pause_experiment": "AdaRES-Y57",
+  "pause_gpu": 1,
+  "preserve_running_experiment": "AdaRES-Y56",
+  "continue_gpu": 0,
+  "temporary_allowed_gpus": [0],
+  "preserve_latest_saved_checkpoint_optimizer_and_scheduler": true,
+  "no_automatic_Y57_resume_or_GPU1_refill": true,
+  "no_migration_or_restart_of_Y56": true,
+  "no_driver_reset_GPU_unbind_or_physical_power_off": true,
+  "no_training_protocol_or_gpu_power_limit_change": true,
+  "note": "Pause Y57 training, not scientific rejection or successful completion. Preserve the original run and latest completed checkpoint; unsaved current-epoch work is not promised resumable. Continue the current Y56 on GPU0 and restrict this project's automatic GPU use to GPU0 until the user changes the trial instruction."
+}

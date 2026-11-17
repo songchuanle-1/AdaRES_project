@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "observed_start_local": "2026-10-16T14:56:19.547445+08:00",
+  "observed_end_local": "2026-10-16T14:57:04.274251+08:00",
+  "canonical_dispatch": true,
+  "task": {
+    "id": "AdaRES-Y50",
+    "label": "Y50 joint-incidence confidence fixed30",
+    "config": "configs_song/model_paper5/adares_y50_joint_incidence_res.yaml",
+    "status": "running",
+    "gpu": "1",
+    "depends_on": [],
+    "code_commit": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y50.json",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "requires_exclusive_ownership": true,
+    "scientific_candidate_id": "AdaRES-Y50",
+    "pid": 31539,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y50_joint_incidence_res_20261016_145628.log",
+    "server": "server-2",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-16T14:57:04"
+  },
+  "events": [
+    "队列推送 [Y50 joint-incidence confidence fixed30] configs_song/model_paper5/adares_y50_joint_incidence_res.yaml → server-2 gpu1"
+  ],
+  "code_commit": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+  "limitation": "A launched PID alone is not success; require native increasing steps and launch_verified."
+}

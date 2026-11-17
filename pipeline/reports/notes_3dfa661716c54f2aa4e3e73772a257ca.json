@@ -1,0 +1,12 @@
+{
+  "actions": [
+    "已核验实际CODEX_THREAD_ID与AdaRES前台owner相符，后台Pipeline-AdaRES_project保持Disabled；本轮为实验优先design，开始时间上海08:45:46，仅server-2 GPU0获准。",
+    "08:46:43实查Y58原PID77094的命令、cwd、starttime及GPU0归属，Train11/30原生步数4196至4217递增，尾部无错误。GPU0维持280W/84C，当次无热降频、新内核Xid或fallen-off；GPU1仍有外部负载，不干预，也不宣称整机单卡隔离或硬件修复。新证据pipeline/checks/ef_gpu0_runtime_3dfa661716c54f2aa4e3e73772a257ca.json。",
+    "08:47:33执行Y60到期资源检查，七个已准备文件、原生YAML、冻结payload、提交及当前goal相符；唯一获准GPU0仍由Y58占用，无独占空槽，未执行Y60原生GPU smoke。Y58此时Train11/30步4234至4311递增，前10轮日志best mIoU=0.48806169629096985，仅为中途指标。证据pipeline/checks/prepared_resources_3dfa661716c54f2aa4e3e73772a257ca.json绑定Y60及本轮resource_check/blocked。资源脚本旧blocker文案的Y56名称过时，本次live/training明确为Y58。",
+    "额外调用现有closure.admission和validate_frozen，实核Y58/Y59准入收据与各七文件、YAML、冻结版本、当前goal一致；Y58仍running/gpu0，Y59仍waiting/gpu0。没有新候选、提交、准入、模型修订、同步、训练启动或完成项；Y56既有完成不重复归档，Y57仍用户暂停。七段记忆已更新，尚未宣称收尾校验成功。"
+  ],
+  "decisions": [
+    "继续保护Y58固定30轮；GPU0真实释放后由既有门控按FIFO派发Y59，不能共卡、挤占外部任务或转用GPU1/server-6。Y60原生两步检查与Y56冻结后评按原计划等待独占GPU0，本轮资源复查不是smoke PASS或效益证据。",
+    "维持GPU0临时280W上限及GPU0-only试运行。Y57原epoch27模型/optimizer/scheduler检查点和未来从epoch28续训要求不变，未获新用户指令不恢复；既有项目操作授权已覆盖常规后续工作，无需追加授权或重复询问。"
+  ]
+}

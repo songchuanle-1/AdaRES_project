@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "preregistered_at": "2026-10-20T20:45:27.066220+08:00",
+  "source_setup": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_program.py",
+    "sha256": "ed5045122eeb6939310a9d8f3e096da9511e9ae149d184aee7ef29c1374b8fbc"
+  },
+  "body": {
+    "path": "scripts/probe_y56_broader_incidence_6deb.py",
+    "sha256": "b502fbabb241b8c2a6b9a6d7653f14f58f426548f2cd25c861accf97de1f7c3b"
+  },
+  "program": {
+    "path": "pipeline/analyses/y56_broader_incidence_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "6f0d9bdb0e9dfdfb338730d7f85f42d1bb957d5811ba9a833e9a054e94a5a905"
+  },
+  "same_stable_id": true,
+  "result": "pending",
+  "no_validation_tuning": true,
+  "no_production_model_or_training": true,
+  "sample": "First32TRAIN dataset indices excluding the old8indices, four expressions per scene/all7layers/batch2/Q128; freeze before predictions.",
+  "readouts": "Exact joint query+softmask duplicate excess; query/softmask/hardmask uniqueness reported separately. No approximate threshold invented.",
+  "prediction": "May be zero or positive; no zero population claim, no forced copies.",
+  "disposition": "If zero in both fixed cohorts, conclude this planned exact-copy diagnosis has no observed task incidence, complete diagnostic without implementing a correction or rejecting counterfactual algebra."
+}

@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y64",
+  "config": "configs_song/model_paper5/adares_y64_directed_containment_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "e27895f45b6f172454c50d40d1c0184c6aa8dfcb",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "required_resource": "Fresh exclusive authorized idle server-2 GPU0, exact hostname/current lease, no compute PID, memory<1024MiB/util<10, keep approved 280W. Preserve running Y63 and paused Y57.",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y64_smoke pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "checks": "Native YAML/TRAIN/tools.train two finite loss/backward/optimizer steps; seven shared-head calls each step; independent signed-containment residual formula; exact zero first-step anchor and actual nonzero second-step response; finite nonzero containment parameter/query/mask gradients and peak memory.",
+  "Python38_compile": true,
+  "CPU_guard_tests_passed": 7,
+  "native_executed": false,
+  "CPU_checks_do_not_replace_native_backward": true,
+  "program": {
+    "path": "pipeline/checks/y64_native_975bfddfe5334e868527ad637cba467f_program.py",
+    "sha256": "2aa93add765134cb1d014b9fdb12e764a243ff756c2bcb438af36741bb17be94"
+  }
+}

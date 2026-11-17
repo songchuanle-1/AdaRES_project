@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "b1bc5f5603064769bd9f1300adfe7a53",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T10:50:29.023908+00:00",
+  "recorded_at": "2026-10-16T11:02:42.074743+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: due live client observation18:55:36-18:55:38+08 still found foreign GPU0 PID19723 and own GPU1 Y50 PID31539; no authorized idle exclusive slot. SAME frozen Y52 prior CPU controls were not replayed; native TRAIN/backward/resource/restore remain unrun. Y50 actual native steps4558->4563 in epoch6/30 confirmed, begin best0.4593 only. Current immutable snapshot/pending hashes and all33 Y52 evidence hashes verified. Unchanged closure checker queue-opening rejecting predicate remains true; prior exact failed check is CLOSURE_INCOMPLETE: Blocked GPU candidate has a queue opening. No known-failing finish replay, no blocker/queue/gate bypass. Six-section audit and seven-section memory saved, retry19:55:38+08 bound to real observation. Abort this tick only, preserve both jobs and all evidence, independently verify lease release.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 19,
+    "input_tokens": 2701186,
+    "cached_input_tokens": 2281600,
+    "output_tokens": 26251,
+    "reasoning_output_tokens": 10079,
+    "total_tokens": 2727437,
+    "uncached_input_tokens": 419586,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 3,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

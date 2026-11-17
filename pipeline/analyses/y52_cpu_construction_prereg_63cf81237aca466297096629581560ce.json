@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "63cf81237aca466297096629581560ce",
+  "preregistered_at": "2026-10-16T17:55:39.719544+08:00",
+  "prototype": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "body": {
+    "path": "scripts/probe_y52_full_cpu_construction.py",
+    "sha256": "fcf8c9e16492e8d244f81dab71d3b076ec0b4aa6e44280b47b0a3521890d239b"
+  },
+  "test": "Physically import the exact six independent files from a temporary namespace, construct actual full IPDN on CPU at seed1999, and compare all parameter counts/state shapes and exact initial tensors with actual W2 under identical constructor configuration.",
+  "purpose": "Exercise full-package imports/constructor integration not covered by prior loss-only CPU imports; SAME candidate, not an implementation revision.",
+  "prediction": "Independent package constructs with zero added parameters and exact fixed-seed parent initialization; mismatch is an implementation or instrumentation failure to preserve, not automatic hypothesis falsification.",
+  "scope": "CUDA hidden; no forward/backward/training, no released-backbone training, no model/checkpoint weights saved or deployed. Native TRAIN/backward/resource/restore gates remain pending.",
+  "timeout_seconds": 180
+}

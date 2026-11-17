@@ -1,0 +1,132 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y96",
+  "token": "4380bd58933d48daa5860115c763a934",
+  "observed_at": "2026-11-09T23:00:41.329176+08:00",
+  "code_commit": "acb8c1769b7f3d66a92d287da8859a06a138b8b0",
+  "parent_commit": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "working_HEAD": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "prepared_from_HEAD": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "matching_current_owners": {
+    "server-1": "AdaRES-Y94",
+    "server-2": "AdaRES-Y95"
+  },
+  "retained_branch": "refs/heads/adares-y96-seed-query-skip-on-y95",
+  "original_commit": "994db457a3b00444b6ace4f0c9b7f3b6e047c83e",
+  "scientific_files_identical": true,
+  "native_program_bodies_identical": true,
+  "only_frozen_code_commit_metadata_changed": true,
+  "guard_tests_passed": 10,
+  "native_executed": false,
+  "admitted": false,
+  "scientific_revision": false,
+  "actual_parent_native": {
+    "path": "pipeline/analyses/y95_server2_smoke_60b5973bb7e64cd5acc81581a9b3d691.json",
+    "sha256": "9e7b34a7b2308a431472dec24d5babd024db07dd2ee90599dc9b15dab7582f57"
+  },
+  "native_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server1_plan.json",
+      "sha256": "0be9f4cc41dff3831317ce6aea3bd59d9537ae6a2f145ab2040919b3ee54a93c"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server2_plan.json",
+      "sha256": "a1d06f06426d686e54b71524a49f84f60fbbf74be910aedf45fcc042cd63be01"
+    }
+  },
+  "original_binding": {
+    "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497.json",
+    "sha256": "87456acabf54a157921dff20ed579aafea943c0a6ffe8bfb9f3f09518d08dabc"
+  },
+  "production_HEAD_index_queue_preserved": true,
+  "evidence": [
+    {
+      "path": "scripts/rebind_y96_on_y95.py",
+      "sha256": "88da1f5d5b62579ea6fa102d13bb577939bc05f5bc0420bd815d5f2da952974e"
+    },
+    {
+      "path": "scripts/run_y96_bound_native_y95.py",
+      "sha256": "209244defa705ae6e7c5bacaf51105659c20c7802d346768b7f98f5476f2e48c"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934.log",
+      "sha256": "577903a0c7cc27e1900fd138eb4cb5179e58b22fe933052f9acc96f5e3fa79ef"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934.index",
+      "sha256": "a13a148252db9bbf732c0b6295bf6e76e4830be6f8565c801f269f142343e332"
+    },
+    {
+      "path": "pipeline/analyses/y95_server2_smoke_60b5973bb7e64cd5acc81581a9b3d691.json",
+      "sha256": "9e7b34a7b2308a431472dec24d5babd024db07dd2ee90599dc9b15dab7582f57"
+    },
+    {
+      "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_server1_plan.json",
+      "sha256": "311c4d4405bbf3bf000b5bcb9d34d0c7ba539b509087995faece1c0a3543a41d"
+    },
+    {
+      "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_server1_program.py",
+      "sha256": "bebc5a33f287a5b73adfdbfa3750e459461a4f3d0e79750f0b20c50aa6aa4696"
+    },
+    {
+      "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_server2_plan.json",
+      "sha256": "ba3edf6933cb8cac509a8ac1ac24f5aafb95cec3cf29dbc73c177272a0922772"
+    },
+    {
+      "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_server2_program.py",
+      "sha256": "fa92df43def299f8d1ce4664255e94c7b9568c1ed0910619e8a59fbdefe102d1"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server1_plan.json",
+      "sha256": "0be9f4cc41dff3831317ce6aea3bd59d9537ae6a2f145ab2040919b3ee54a93c"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server2_plan.json",
+      "sha256": "a1d06f06426d686e54b71524a49f84f60fbbf74be910aedf45fcc042cd63be01"
+    },
+    {
+      "path": "scripts/run_y96_native.py",
+      "sha256": "3214e4432a5bc515b2c81c3a8bd61f58143b273ba234cfc16e8738d2dedaf200"
+    },
+    {
+      "path": "scripts/retain_y96_cpu_native.py",
+      "sha256": "2265a41d0cf25c3484e69bcbb7b46160956082ecfbfebbaf8b348bbf049f1967"
+    },
+    {
+      "path": "scripts/test_y96_runtime_plan.py",
+      "sha256": "fb95a524d6a47fb27d3567c964c1b2b9bc6c58e7c90405e92d22f1f8c3f083c9"
+    },
+    {
+      "path": "pipeline/checks/y96_cpu_version_78ad932adf5b4d47b935265cdd2a2497.json",
+      "sha256": "87456acabf54a157921dff20ed579aafea943c0a6ffe8bfb9f3f09518d08dabc"
+    },
+    {
+      "path": "pipeline/analyses/y96_cpu_78ad932adf5b4d47b935265cdd2a2497.json",
+      "sha256": "eed445c54522f2ad8a27863e6e779ab591e392087bde37e4c38d62230db034a7"
+    },
+    {
+      "path": "pipeline/checks/y96_cpu_78ad932adf5b4d47b935265cdd2a2497_program.py",
+      "sha256": "683171b195fa0c9373194943aef14b00d88f852b4941b9f9919d59f7bf9589e9"
+    },
+    {
+      "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497.json",
+      "sha256": "7343d29245eaae41b7cc8d335a0e59d1412a302aadfe92d76d2484d8bc4c83ad"
+    },
+    {
+      "path": "pipeline/checks/y96_native_78ad932adf5b4d47b935265cdd2a2497_body.py",
+      "sha256": "fac570058b4cb777c1e4e44e933e804f5d6273ecbdaddaebadf577332b815581"
+    },
+    {
+      "path": "scripts/y96_observer_core.py",
+      "sha256": "48d2d10114300951ae3855ba6fa8acc512825f888f8a1603845662018bc14ace"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server1_program.py",
+      "sha256": "8d224bdd63e0167f6014500839fe5f5b8e04f3bf0e08f8de4ebe88bc62854dc8"
+    },
+    {
+      "path": "pipeline/checks/y96_y95_additive_binding_4380bd58933d48daa5860115c763a934_server2_program.py",
+      "sha256": "9b808e01181a4be28deff18bb8671d7401ab77f099938f3f554c70d71dd27fbb"
+    }
+  ]
+}

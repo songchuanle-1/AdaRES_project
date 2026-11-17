@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "preregistered_at": "2026-10-20T20:45:26.989043+08:00",
+  "source_setup": {
+    "path": "pipeline/analyses/y57_native_task_ef2c7bd97d37400ea1b1a32da2909760_program.py",
+    "sha256": "a1b06194514a22fb2da6cbd81a56bb579e6bbd41efb45e69ee3ae60b9c00b1a4"
+  },
+  "body": {
+    "path": "scripts/probe_y57_full_input_signal_6deb.py",
+    "sha256": "78e74e86195e42d003602743170005171d419b06dcd961a018549f55e44bbb4e"
+  },
+  "program": {
+    "path": "pipeline/analyses/y57_full_input_signal_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "2e4b3260330421b7ffbdd3a2af9f7799ac1819f6bbacd113e639490d5bc65c42"
+  },
+  "same_stable_id": true,
+  "result": "pending",
+  "no_validation_tuning": true,
+  "no_production_model_or_training": true,
+  "sample": "Same8TRAIN scenes/32expressions/Q128, final layer6 only; no layer selection.",
+  "readouts": "Reconstruct all769native normalized head inputs. LOSO quality ridge: all inputs+confidence versus plus dispersion; same-capacity within-expression cyclic-shift1 dispersion negative control.",
+  "fitting": "Fixed sum-SSE+1*L2, train-fold-only standardization, unpenalized intercept, no clipping/alpha/feature/seed search. All8folds retained.",
+  "uncertainty": "Paired whole-scene descriptive bootstrap10000/1999; eight scene clusters, not4096independent queries.",
+  "prediction": "Aligned dispersion may improve held-out MSE over full-input and shifted controls; null/reverse retained, not an admission threshold.",
+  "limits": "Only a fixed function class, not conditional independence or causality."
+}

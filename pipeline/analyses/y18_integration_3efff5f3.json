@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "mode": "integration",
+  "gpu_precheck": {
+    "memory_mib": 1,
+    "utilization": 0
+  },
+  "config_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "tool_sha256": "55bba1925dcf07af4eb0c9296ffbcdfa14178814508144f7129634fa26710bef",
+  "class_module": "ipdn.model_paper5.adares_y18_point_measure.ipdn",
+  "scans": [
+    "scene0000_00",
+    "scene0001_00",
+    "scene0002_00",
+    "scene0003_00"
+  ],
+  "parameters": 164629637,
+  "native_train": {
+    "losses": [
+      9.948142051696777,
+      6.606708526611328
+    ],
+    "model_change": {
+      "equal": false,
+      "max": 11.205154418945312
+    }
+  },
+  "before_continuation": {
+    "model": {
+      "equal": true,
+      "max": 0.0
+    },
+    "optimizer": {
+      "equal": true,
+      "max": 0.0
+    },
+    "scheduler": {
+      "equal": true,
+      "max": 0
+    },
+    "meta_epoch": 1
+  },
+  "continuation": {
+    "loss_difference": 0.0,
+    "model": {
+      "equal": false,
+      "max": 3.0517578125e-05
+    },
+    "optimizer": {
+      "equal": false,
+      "max": 7.637936505489051e-09
+    },
+    "decoder_gradient_tensors": 400
+  },
+  "limitation": "Explicit RNG same-batch replay; not whole-dataloader resume"
+}

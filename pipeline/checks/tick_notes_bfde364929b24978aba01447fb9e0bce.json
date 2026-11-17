@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "上海2026-10-24 02:45:11取得design快照，核实实际CODEX_THREAD_ID与owner一致、后台调度Disabled；experiment_first启用，capacity1/running1/waiting0，无新增终态或连接部署故障。仅server-2 GPU0/280W，保留Y57暂停和外部GPU1任务。",
+    "02:46:00实核Y60原PID17186/命令/cwd/starttime/GPU0归属，Train9/30步1019至1041增长。GPU0为84至86C/280W/22744MiB，当次未见热降频、训练尾部错误或新kernel Xid/fallen-off，不代表历史散热问题解决。证据pipeline/checks/ef_gpu0_runtime_bfde364929b24978aba01447fb9e0bce.json。",
+    "02:46:51通过生命周期v3实查GPU0仍由Y60占用；Y56/Y58/Y59已完成训练的终态与不可变冻结后评证据一致，Y61七文件/9bea提交/原生计划/current goal一致。tick_attempt为Y56/resource_check/blocked，证据同时列入候选；没有GPU原生检查或新准入。证据pipeline/checks/gpu0_lifecycle_v3_bfde364929b24978aba01447fb9e0bce.json。",
+    "发现现有专用准入派发helper仍绑定Y60，补充scripts/admit_dispatch_y61_gpu0.py及test_y61_admission_handoff.py，不改hash绑定旧工具、Y61模型/YAML或已冻结原生检查计划。Y61入口要求真实当前轮native raw/log、精确goal/commit/YAML、两步有限loss/backward、七阶段共享头路径、当前独占GPU0/280W及Y60 canonical done_complete后才可准入，沿用既有门控launcher和原生进度核验。",
+    "本地15项CPU schema/负控制及Python3.8语法检查通过；覆盖缺真实结果、NaN/少步、错ID/版本/goal/YAML、未TRAIN、错误peer分支、运行任务/忙卡拒绝相应操作。正schema fixture是合成回归输入，不是真实训练或准入证据。实际check复核Y61精确版本/冻结计划，原始smoke未生成、admitted/native_smoke_executed/queue_changed均false，queue/running哈希未变。证据pipeline/checks/y61_admission_handoff_bfde364929b24978aba01447fb9e0bce.json。",
+    "本轮无新候选、模型修订、Git提交、GPU工作负载、同步、准入、入队或训练启动；HEAD仍9bea5e906be3a478be50442db521e766c446a1ec，Y60不重启/迁移，Y57继续暂停。更新七段记忆，按canonical report/finish收尾，未预称校验成功。"
+  ],
+  "decisions": [
+    "本轮先补齐已准备Y61的原生检查到准入派发交接入口，不借用Y60身份签收据，不改旧hash证据。新入口本地预检通过不能触发实际准入或代替GPU两步；未满足原生/资源条件时继续保留Y61原ID和计划。",
+    "继续保护Y60原部署6ac/固定30轮/seed1999/280W及Y57暂停。独占GPU0空闲后按原冻结计划后评Y56/Y58/Y59，Y61使用当前token执行原两步计划，真实PASS后再调用Y61专用admit及dispatch并核验原生步数。不扩大资源、改调度或重复索取已有常规授权。"
+  ]
+}

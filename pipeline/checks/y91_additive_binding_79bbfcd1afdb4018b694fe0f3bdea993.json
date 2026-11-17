@@ -1,0 +1,225 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y91",
+  "token": "79bbfcd1afdb4018b694fe0f3bdea993",
+  "observed_at": "2026-11-07T08:56:10.003295+08:00",
+  "code_commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "parent_commit": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "working_HEAD": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "retained_branch": "refs/heads/adares-y91-hidden-confidence-gate-on-y90",
+  "original_commit": "a3bd19404f625bb1d9bc358a7e78ef0f86054692",
+  "original_branch": "refs/heads/adares-y91-hidden-confidence-gate",
+  "original_version": {
+    "path": "pipeline/checks/y91_cpu_version_b9a0d47206c64e4f83fcd6a80c45599a.json",
+    "sha256": "b8b2639846ce988300e7b87c20b8563b423b3d0427de6b51d657e0bd1953b1e6"
+  },
+  "original_CPU_result": {
+    "path": "pipeline/analyses/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a.json",
+    "sha256": "a1df9ade614cd688a8151b3179d3958f62b8672b6bf1810bc3fb7c5cb1a149e7"
+  },
+  "original_CPU_program": {
+    "path": "pipeline/checks/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a_program.py",
+    "sha256": "19c72f606cb7091923ccf383e8500a87771d6908a1d3203d493641b775f5c507"
+  },
+  "original_native_preparation": {
+    "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a.json",
+    "sha256": "ed8a29426963d8423a5ecf69d90afc10208489d650350d9bca332d1fe714df57"
+  },
+  "original_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server1_plan.json",
+      "sha256": "9b25b40deb0cdf3fd698a500277cab52780f1e119fd9c281376f93647703ad6a"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server2_plan.json",
+      "sha256": "399403aeb492aba51a4ae219fae16ff62ea5a0100a848089e7770fba707908d2"
+    }
+  },
+  "native_plans": {
+    "server-1": {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server1_plan.json",
+      "sha256": "d2faf45426319f5e81702fa5bb7a71e2e5196c0771b29fdebed687fbc9bef2b4"
+    },
+    "server-2": {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server2_plan.json",
+      "sha256": "2194073c4fae9d59deb2cb6531815bcd3e961c7aea5635ca7d79588354ba4f1c"
+    }
+  },
+  "matching_current_owners": {
+    "server-1": "AdaRES-Y90",
+    "server-2": "AdaRES-Y89"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/sample_model.py"
+    ]
+  ],
+  "scientific_files_identical": true,
+  "native_program_bodies_identical": true,
+  "only_frozen_code_commit_metadata_changed": true,
+  "original_evidence_retained": true,
+  "main_index_unchanged": true,
+  "other_candidates_unchanged": true,
+  "queue_unchanged": true,
+  "native_executed": false,
+  "CPU_scientific_experiments_replayed": false,
+  "admitted": false,
+  "production_sync": false,
+  "scientific_revision": false,
+  "guard_tests_passed": 14,
+  "evidence": [
+    {
+      "path": "scripts/rebind_y91_on_y90.py",
+      "sha256": "2bcdff688d523ff08d70cb17b6aae13129c5477a8eca6966fb685b089e36c510"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_proposal.json",
+      "sha256": "63e7f25aabe821109c620208d0f3da2f2027349eef5317f2b934d162946772b8"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993.log",
+      "sha256": "f7b14efaa1389b24f077c04d0c7949b2e530324ff7577fc066999cba28b1a482"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993.index",
+      "sha256": "e62a821e94300469d85284e0044eb308e5aedda94e55c3965735fe6b87548a7f"
+    },
+    {
+      "path": "pipeline/checks/y91_cpu_version_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "b8b2639846ce988300e7b87c20b8563b423b3d0427de6b51d657e0bd1953b1e6"
+    },
+    {
+      "path": "pipeline/analyses/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "a1df9ade614cd688a8151b3179d3958f62b8672b6bf1810bc3fb7c5cb1a149e7"
+    },
+    {
+      "path": "pipeline/checks/y91_cpu_b9a0d47206c64e4f83fcd6a80c45599a_program.py",
+      "sha256": "19c72f606cb7091923ccf383e8500a87771d6908a1d3203d493641b775f5c507"
+    },
+    {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a.json",
+      "sha256": "ed8a29426963d8423a5ecf69d90afc10208489d650350d9bca332d1fe714df57"
+    },
+    {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_body.py",
+      "sha256": "ac5c48b48938c3fbcd76f80737ce14b27ab02a35848a24bff24f81939da2d299"
+    },
+    {
+      "path": "scripts/y91_observer_core.py",
+      "sha256": "7b6aa441388fcd6075732effb55cbd589c45b3c9c767c3cbd22dfef4cf9e5285"
+    },
+    {
+      "path": "pipeline/goal.json",
+      "sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/__init__.py",
+      "sha256": "c16c67612cf04f79a9a8266e2396a60458904feda2de5ac55bf11cb1be14dd97"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/dec.py",
+      "sha256": "91c8de5fedf471577870d98e342fe2b1c175aab39dba3a3c96c61c5fcbd2d348"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y91_hidden_confidence_gate/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    },
+    {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server1_plan.json",
+      "sha256": "9b25b40deb0cdf3fd698a500277cab52780f1e119fd9c281376f93647703ad6a"
+    },
+    {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server1_program.py",
+      "sha256": "e4851c37c355a185e561a9dbeb02cb688060047bd632f1d0a152ebb230e1d3f2"
+    },
+    {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server2_plan.json",
+      "sha256": "399403aeb492aba51a4ae219fae16ff62ea5a0100a848089e7770fba707908d2"
+    },
+    {
+      "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server2_program.py",
+      "sha256": "71813f232aa55ddcc2706accd2af77145f9d4e73d9a99919139ba049bc91fb36"
+    },
+    {
+      "path": "scripts/run_y91_native.py",
+      "sha256": "bde257a75c3ce0e6b7812c1d327f1ef10d3775399b054d16f822099485766523"
+    },
+    {
+      "path": "scripts/run_y91_bound_native.py",
+      "sha256": "2999bbd63faf96953d3d78ec0973b3a7a6f5ddd21bd4c6dec0f2c7d3f508e810"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server1_plan.json",
+      "sha256": "d2faf45426319f5e81702fa5bb7a71e2e5196c0771b29fdebed687fbc9bef2b4"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server2_plan.json",
+      "sha256": "2194073c4fae9d59deb2cb6531815bcd3e961c7aea5635ca7d79588354ba4f1c"
+    },
+    {
+      "path": "scripts/run_y91_native.py",
+      "sha256": "bde257a75c3ce0e6b7812c1d327f1ef10d3775399b054d16f822099485766523"
+    },
+    {
+      "path": "scripts/run_y90_native.py",
+      "sha256": "32dce30999687e2b401b4f975d1456b497137394efb609b30cf998bbb7895dc5"
+    },
+    {
+      "path": "scripts/run_y90_bound_native.py",
+      "sha256": "38e6df9b791b3142967879f5862cbaa87d18b76ae710b4253a75bf2ac8ec6ee4"
+    },
+    {
+      "path": "scripts/rebind_y90_on_y89.py",
+      "sha256": "d40986247f490e481e050223890a8cd20149948a1c576c84f06506fc38150e2c"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server1_program.py",
+      "sha256": "209baeee0ead6d419aab77725987119a0eddad4c7a8f55409fb33152c9826545"
+    },
+    {
+      "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server2_program.py",
+      "sha256": "d3573676afd1dde8f8f7e4324a723f9d4f7d1c32551c43f76e1e7f4da9a52723"
+    }
+  ]
+}

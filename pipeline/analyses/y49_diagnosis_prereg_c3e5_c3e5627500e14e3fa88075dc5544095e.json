@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y49",
+  "hypothesis_id": "global-mask-resolvent-coherence",
+  "preregistered_at": "2026-10-15T12:51:37.060560+08:00",
+  "hypothesis": "A mask's connected-component mass/mean summaries and one-hop confidence summaries need not encode global within-mask graph connectivity. Test whether a fixed graph resolvent exposes an explicit, distinguishable confidence information path before considering a model.",
+  "matched_control": "Actual W2/Y36/Y46 confidence readouts on controlled constant-feature masks; hold point mass, component partition/mass and all inherited local summaries fixed where the sources permit. Contrast exact global topology, not a different numerical weight.",
+  "first_test": "Audit the actual W2/Y36/Y46 and relevant closed Y41/Y8 implementations. Construct a pair of connected regular graphs with equal node/component masses and identical constant tokens; compare actual reachable parent summary functions and the fixed unit resolvent trace tr((I+L)^-1)/n. Include joint permutations and repeatability; native geometry incidence is a separate required test.",
+  "graph_rule": "Only inherited exact-nearest-tie graph for native tensors. Combinatorial witnesses must be labelled constructed, not claimed to be realizable native geometry. No new radius/k, graph threshold, diffusion-time sweep, filtering, validation selection or trained benefit claim.",
+  "interpretation": "If actual sources already compute this quantity, or matched controls cannot separate a genuine information path, retain that disconfirmation on this same ID. Information distinction alone is not task diagnosis, utility, novelty, native reachability or admission.",
+  "possible_followup": "Only after source/control support: test prediction-blind frozen TRAIN8 captures and a bounded explicit global-topology readout, then full native controls/backward/resources/independence. Do not clone Y46's component-head optimization or reopen a rejected route.",
+  "source_evidence": [
+    {
+      "path": "pipeline/analyses/Y46_topology_prereg_d179.md",
+      "sha256": "1488ccd13610f33caf72c5f2e03c9987498f102ddb134366336da9b762042352"
+    },
+    {
+      "path": "pipeline/goal.json",
+      "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y92",
+  "config": "configs_song/model_paper5/adares_y92_mask_feature_quadratic_res.yaml",
+  "code_commit": "27d6f67e7121a5168bbfeca9db745377e0bd49e5",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.318481922149658
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "projection_calls": 1,
+      "original_mask_consumers": 7,
+      "original_score_consumers": 7,
+      "indicator_calls": 7,
+      "query_norm_consumption_calls": 7,
+      "coarse_gate_consumers": 6,
+      "input_gradients_finite": true,
+      "new_gradient_max": 0.0004652144853025675,
+      "step": 0,
+      "parameter_update_max": 9.999785834224895e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "projection_calls": 1,
+      "original_mask_consumers": 7,
+      "original_score_consumers": 7,
+      "indicator_calls": 7,
+      "query_norm_consumption_calls": 7,
+      "coarse_gate_consumers": 6,
+      "input_gradients_finite": true,
+      "new_gradient_max": 0.00033801133395172656,
+      "step": 1,
+      "parameter_update_max": 0.00010011704580392689
+    }
+  ],
+  "projection_paths": [
+    {
+      "step": 0,
+      "weight_nonzero": false,
+      "delta_max": 0.0,
+      "original_x_mask_output_identity": true,
+      "input_undetached": true,
+      "float64_quadratic_projection_reference": true,
+      "shared_module_identity": true,
+      "all_seven_original_mask_consumers": true
+    },
+    {
+      "step": 1,
+      "weight_nonzero": true,
+      "delta_max": 0.004662245512008667,
+      "original_x_mask_output_identity": true,
+      "input_undetached": true,
+      "float64_quadratic_projection_reference": true,
+      "shared_module_identity": true,
+      "all_seven_original_mask_consumers": true
+    }
+  ],
+  "projection_calls": 2,
+  "original_mask_consumers": 14,
+  "original_score_consumers": 14,
+  "shared_head_calls": 14,
+  "query_norm_consumption_calls": 14,
+  "coarse_gate_consumers": 12,
+  "shared_transformed_visual_mask_features_consumed": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6717177856,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/data1/songcl/Project/AdaRES_project/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native TRAIN two-step task only; efficacy and full-dataset resource bounds unmeasured.",
+  "command": "python -B scripts/run_y92_bound_native.py --server server-1 --token 06710ed9596b4721bb1aa67ca0fdaf97",
+  "server": "server-1",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y92_server1_smoke_06710ed9596b4721bb1aa67ca0fdaf97.json",
+      "sha256": "5b16edc7e5eaa9692aa996f34de73b2663ca8ce0e31d0421365539dd4f073c27"
+    },
+    {
+      "path": "pipeline/analyses/y92_server1_smoke_06710ed9596b4721bb1aa67ca0fdaf97.log",
+      "sha256": "ecbfa1498b2822e933e1faf41aa9d6accc210897b15c474c7e985a53fade25c6"
+    },
+    {
+      "path": "pipeline/checks/y92_additive_binding_257d36d33c904645876d022a0fb35769_server1_program.py",
+      "sha256": "e35e8e6f7ea0b07ce6febd6cddf0af866c77b7b6c43b2dd2b2d78d660ee7ce3d"
+    },
+    {
+      "path": "pipeline/checks/y92_additive_binding_257d36d33c904645876d022a0fb35769_server1_plan.json",
+      "sha256": "1318291c6699cfc3a61ede7f910543efc31cb2c3d5f12d74ccbef0dbcf390fd0"
+    }
+  ]
+}

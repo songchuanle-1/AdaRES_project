@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y69",
+  "token": "920e06975f7e4657a6186d382eb05ad9",
+  "failure_scope": "implementation",
+  "scope": "diagnostic reference only",
+  "original_body": {
+    "path": "scripts/probe_y69_cpu.py",
+    "sha256": "57222ce795c615bdebace2c4f76cb481a71db2a80396c39e5cf48ea8b554b402"
+  },
+  "original_program": {
+    "path": "pipeline/checks/y69_cpu_920e06975f7e4657a6186d382eb05ad9_program.py",
+    "sha256": "d29706a6e4221f49b8a395e8dbe40493347c53994f7fee3bc57e77ada20e6ed6"
+  },
+  "original_failure": {
+    "path": "pipeline/analyses/y69_cpu_920e06975f7e4657a6186d382eb05ad9.log",
+    "sha256": "0b50b5969d3eee2aa2805e4606637db4d4e71d1a76f0f7da709a49bf8af766cd"
+  },
+  "new_body": {
+    "path": "scripts/probe_y69_cpu_attempt2.py",
+    "sha256": "b2dab93630a6bc3e0c994022b89510f0e05474f8627fa478025e4005535bd74e"
+  },
+  "new_program": {
+    "path": "pipeline/checks/y69_cpu_attempt2_920e06975f7e4657a6186d382eb05ad9_program.py",
+    "sha256": "e4a89bb829cfe804be44d4600d352bd94d3dea568cb74e52f3e148e577a4638a"
+  },
+  "actual_native_source": "functional.py:5115-5117 reshapes both weight tensors to batch,head,query,key then returns sum(dim=1)/num_heads.",
+  "correction": "Compare averaged exported pre-softmax logits with baseline + mean of the head-specific bias. Original hard exclusions, zero anchor, independent component formula and actual per-head model path remain unchanged.",
+  "seven_model_and_YAML_files_unchanged": true,
+  "second_test_executed": false,
+  "scientific_efficacy_unknown": true
+}

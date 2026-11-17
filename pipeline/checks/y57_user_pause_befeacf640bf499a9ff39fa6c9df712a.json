@@ -1,0 +1,97 @@
+{
+  "complete": true,
+  "stopped_pid": 16317,
+  "signal": "SIGTERM",
+  "descendant_pids": [
+    16645,
+    16693,
+    16741,
+    16789,
+    17078,
+    17080,
+    17176,
+    17225,
+    24754,
+    24755
+  ],
+  "keeper_pid": 13738,
+  "keeper_process_unchanged": true,
+  "gpu1_compute_pids": [],
+  "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/last.pth",
+  "checkpoint_sha256": "994c3bae5b7cc4f398a7dbed1ac408bdb28a67da31eefc6b5d0cc753a7cd724b",
+  "best_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/best.pth",
+  "best_sha256": "f9d637f3018ecde3c4789e3c11f08092937cfe42c473c0f9d3ffa1627b564bde",
+  "checkpoint_meta": {
+    "epoch": 27,
+    "best_miou": 0.5028846859931946,
+    "optimizer_state_count": 543,
+    "scheduler_last_epoch": 27
+  },
+  "resume_epoch": 28,
+  "original_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/gpu_reboot_resume_adares_y57_peer_second_moment_res_76f9c0ca61424281b30c4f491a33b37e.log",
+  "original_log_sha256": "41d5afea95dda73b1c9887b61b45414323b6fdf82588fb60f23afecb6664450e",
+  "last_progress": [
+    "Train",
+    "28",
+    "30",
+    "2773",
+    "4686"
+  ],
+  "before_devices": {
+    "0": [
+      "0",
+      " GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      " 280.00",
+      " 84",
+      " 29",
+      " 22684",
+      " 24576"
+    ],
+    "1": [
+      "1",
+      " GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      " 390.00",
+      " 64",
+      " 33",
+      " 17098",
+      " 24576"
+    ]
+  },
+  "after_devices": {
+    "0": [
+      "0",
+      " GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+      " 280.00",
+      " 84",
+      " 58",
+      " 22684",
+      " 24576"
+    ],
+    "1": [
+      "1",
+      " GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79",
+      " 390.00",
+      " 62",
+      " 0",
+      " 1",
+      " 24576"
+    ]
+  },
+  "preserved_model_optimizer_scheduler": true,
+  "training_protocol_changed": false,
+  "hardware_settings_changed": false,
+  "note": "Latest fully saved checkpoint preserved. Unsaved current-epoch progress/RNG state is not promised recovered.",
+  "observed_at": "2026-10-21T20:26:27.494834+08:00",
+  "authorization": {
+    "path": "pipeline/authorizations/GPU0_only_trial_befeacf640bf499a9ff39fa6c9df712a.json",
+    "sha256": "cfeffad9e04bfc9ddb034712d30244b390f27ad8035d75d2df92cf7131b5b51c"
+  },
+  "helper": {
+    "path": "scripts/pause_y57_gpu0_trial.py",
+    "sha256": "1fc03635a6054ede5d16398704b608f36f14f95e47184cac46cfcd0cc4b91098"
+  },
+  "local_log_copy": {
+    "path": "Checkpoints/server-2/adares_y57_peer_second_moment_res/befeacf640bf499a9ff39fa6c9df712a/user_paused.log",
+    "sha256": "41d5afea95dda73b1c9887b61b45414323b6fdf82588fb60f23afecb6664450e"
+  }
+}

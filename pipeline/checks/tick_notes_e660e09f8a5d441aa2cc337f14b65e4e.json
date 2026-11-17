@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "上海2026-10-24 12:50:02取得design快照，核实实际CODEX_THREAD_ID与AdaRES owner一致、后台调度Disabled；experiment_first启用，running1/waiting0，无新增终态或操作故障。仅server-2 GPU0/280W，保留Y57暂停及外部GPU1任务，不跨项目或改调度。",
+    "12:50:52实核Y60原PID17186/命令/cwd/starttime/GPU0归属，Train23/30步1401至1424增长；GPU0为83至84C/280W/22746MiB，SW Thermal Slowdown仍Active，无本次训练尾部错误或新kernel Xid/fallen-off，不证明散热根因解决。证据pipeline/checks/ef_gpu0_runtime_e660e09f8a5d441aa2cc337f14b65e4e.json。",
+    "12:51:03生命周期v3实查唯一授权GPU0仍由Y60占用；Y56/Y58/Y59既有终态及不可变后评冻结证据一致，Y61七文件/9bea提交/原生计划/current goal一致。tick_attempt为Y56/resource_check/blocked，证据同时归入对应候选；未干预GPU1。证据pipeline/checks/gpu0_lifecycle_v3_e660e09f8a5d441aa2cc337f14b65e4e.json。",
+    "现有手动归档入口绑定旧Y59身份，新增scripts/finalize_y60_fixed30.py及test_y60_terminal_handoff.py；不改旧hash绑定工具。11项CPU schema/负控制及Python3.8语法通过，覆盖运行中、未满30轮、空optimizer/重置scheduler、错误ID/GPU1/暂停变化、错误检查点目录或非有限指标时拒绝相应归档。合成fixture仅是回归，不作训练完成证据。",
+    "仅实际执行新入口check，复核Y60原准入/6ac源码/冻结计划并从原生保存公告核实目录20261023_085324，保存原PID17186/config/log和目录的哈希绑定交接计划。没有加载检查点、停止训练或执行finalize，queue/running哈希及HEAD9bea不变。未来原进程确已消失才允许完整last30/best/model/optimizer/scheduler/终态日志核验后走canonical finalize_task，已canonical完成不重放。证据pipeline/checks/y60_terminal_handoff_e660e09f8a5d441aa2cc337f14b65e4e.json。",
+    "无新候选、模型/YAML修改、Git提交、原生CPU/GPU测试、生产同步、准入、入队或训练启动，无新增科学效益结论。Y60原训练继续、Y57暂停不动，Y61保留既有原生计划/准入派发入口。更新七段记忆后按canonical report/finish收尾，结果以实际收据为准，不预称成功。"
+  ],
+  "decisions": [
+    "趁Y60仍在训练，准备它自己的守卫归档入口与目录绑定计划，不重放Y59 finalizer，不提前归档或伪造deathwatch。只有原进程确已消失、完整30轮日志和模型/optimizer/scheduler检查通过后才调用canonical归档；本轮只准备，不标记训练完成。",
+    "继续保护GPU0-only/280W、Y60固定30轮/seed1999及Y57暂停。空卡后按原冻结计划后评，Y61真实原生两步PASS后才准入派发；不改调度、资源授权、训练协议或历史结论。"
+  ]
+}

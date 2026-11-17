@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y103",
+  "config": "configs_song/model_paper5/adares_y103_spatial_input_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "960babebd812098efde2eb1b188e612028ae571e",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_pause_20261104.json",
+    "sha256": "3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45"
+  },
+  "working_HEAD_preserved": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "additive_parent": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "retained_branch": "refs/heads/adares-y103-spatial-input-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y103_native.py",
+    "sha256": "5559f81d3dc96ed6206f110c4a31d348a41062f01b40a66a00fb52483959a19e"
+  },
+  "planned_command": "python -B scripts/run_y103_native.py --server server-2 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching original AdaRES-Y100 natural fixed30/full finite exact original checkpoint verification/canonical archive and fresh exclusive idle/unreserved authorized GPU0; exact HEAD/runtime/data/350W280W. No GPU1, power change or substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite backward/optimizer steps; complete original spatial and appearance projections/full32 raw spatial bypass/sum_norm/visual memory/static7/shared heads/hard gates/full gradients/native modes/budget. CPU feasibility is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_server2_program.py",
+    "sha256": "9e175af5641cae646ebdd61e9676edd8969b713cbcf722830b2ee83dd37aa10b"
+  }
+}

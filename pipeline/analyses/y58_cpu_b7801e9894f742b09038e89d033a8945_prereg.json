@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y58",
+  "preregistered_at": "2026-10-20T23:55:32.008008+08:00",
+  "program": {
+    "path": "pipeline/analyses/y58_cpu_b7801e9894f742b09038e89d033a8945_program.py",
+    "sha256": "bf986c030e6d9a3d7f4dde696958036dbbe2b32e5ed32230fefae0fc40425153"
+  },
+  "body": {
+    "path": "scripts/probe_y58_cpu_b780.py",
+    "sha256": "7a3756d69a75e2de42ae15c9d62b2005899a435f75b2f0ee85e0acbeb192abcb"
+  },
+  "source_review": {
+    "path": "pipeline/analyses/y58_source_review_b7801e9894f742b09038e89d033a8945.json",
+    "sha256": "de24a89d5da1973202a2a1ce92603c7d8632c8edaf9999a29f85b70b49111b43"
+  },
+  "protocol": "Original seed1999; real output_layer.0 trained affine/running stats, float32/64, focal32/mate48 synthetic features, pooled-vs-separated/fixed-stat/repeat/permutation; actual trained W2 head separability.",
+  "result": "pending",
+  "no_native_or_admission_claim": true
+}

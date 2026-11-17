@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y60",
+  "observed_at": "2026-10-24T12:54:46.349051+08:00",
+  "payload": {
+    "id": "AdaRES-Y60",
+    "pid": 17186,
+    "config": "configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y60_stage_specific_confidence_res_20261023_205330.log",
+    "root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+    "work": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+    "basename": "adares_y60_stage_specific_confidence_res",
+    "checkpoint_directory": "20261023_085324"
+  },
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "metadata": {
+    "complete": true,
+    "checkpoint_directory": "20261023_085324",
+    "declared_last_path": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y60_stage_specific_confidence_res/20261023_085324/last.pth",
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y60_stage_specific_confidence_res_20261023_205330.log",
+    "checkpoint_loaded": false,
+    "remote_mutations": false
+  },
+  "readonly_checkpoint_verifier": {
+    "path": "scripts/finalize_y58_y59_handoff.py",
+    "sha256": "56dbe66be1d0a90f8f5b805b60989a08f94a2b4a729efbcc0d56b6d487833512"
+  },
+  "helper": {
+    "path": "scripts/finalize_y60_fixed30.py",
+    "sha256": "1a4907633572ca27afb56ec8c5cb763ffc27902c9c7c95cb87ede077b68c2216"
+  },
+  "tests": {
+    "path": "scripts/test_y60_terminal_handoff.py",
+    "sha256": "d6483d760a763e988478783ad9e511f5cfc18b4de752948ccf348a7f02870847"
+  },
+  "CPU_guard_tests": 11,
+  "CPU_guard_tests_passed": true,
+  "full_terminal_verification_executed": false,
+  "archived": false,
+  "queue_changed": false,
+  "native_smoke_executed": false,
+  "training_stopped": false,
+  "limitation": "Only declared checkpoint location, source identity and CPU controls checked. A live process is not terminal; full last30/best/optimizer/scheduler/log verification and absent exact process are still mandatory before archival."
+}

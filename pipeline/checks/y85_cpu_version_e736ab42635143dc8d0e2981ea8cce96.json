@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y85",
+  "code_commit": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+  "parent_commit": "7bef2cd313b870583c970c56580be5a78097234d",
+  "retained_branch": "refs/heads/adares-y85-mask-feature-norm",
+  "working_HEAD": "2818322e6049b2541f1590a4fa9ad6854b3c598d",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y85_cpu_version_e736ab42635143dc8d0e2981ea8cce96_source_snapshot.json",
+    "sha256": "2f6935b5692cdce892d83d79f10a25bfa2d1a626b170789db748afb2ef10c5d5"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y85_cpu_e736ab42635143dc8d0e2981ea8cce96.json",
+    "sha256": "05252a6a7c7a1de7e5d827bded942c64b0309a1a2a08922d09c843d70796768d"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y85_mask_feature_norm_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y85_mask_feature_norm/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y85_cpu_version_e736ab42635143dc8d0e2981ea8cce96.index",
+    "sha256": "b842326923ff6aba27a9d2774c2922c498ff64415efc4131645575fc27eeecbf"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y85_cpu_version.py",
+      "sha256": "37e53c8c68fa1d1770e069cf0006c8253ce0b35f8fbf08a5c344fc7395937105"
+    },
+    {
+      "path": "scripts/probe_y85_cpu.py",
+      "sha256": "4891f9f03ae9f68a18d6b9174acfcc641409ed89acbfa4ee70257a0958021a65"
+    },
+    {
+      "path": "scripts/prepare_y85_mask_feature_norm.py",
+      "sha256": "4c5ac7a054a80c92dca78bf862248ee9be2aefe97df9d9902cb232515cd3fb1b"
+    }
+  ]
+}

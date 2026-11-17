@@ -1,0 +1,46 @@
+test_actual_native_bound_full_contract (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_actual_native_bound_full_contract) ... FAIL
+test_actual_native_evidence_mandatory (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_actual_native_evidence_mandatory) ... FAIL
+test_exact_additions_and_unchanged_original_source (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_exact_additions_and_unchanged_original_source) ... ok
+test_foreign_modified_missing_additions_refused (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_foreign_modified_missing_additions_refused) ... ok
+test_only_original_and_actual_native_markers (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_only_original_and_actual_native_markers) ... ok
+test_original_owner_identity_cannot_change (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_original_owner_identity_cannot_change) ... ok
+test_original_run_directory_and_signed_receipts (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_original_run_directory_and_signed_receipts) ... ok
+test_private_runtime_and_exact_mappings_cannot_change (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_private_runtime_and_exact_mappings_cannot_change) ... ok
+
+======================================================================
+FAIL: test_actual_native_bound_full_contract (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_actual_native_bound_full_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\project\AdaRES_project\scripts\test_y96_y98_terminal_binding_v2.py", line 39, in test_actual_native_bound_full_contract
+    self.assertEqual(binding.build_contract(task, server)['allowed_markers'], [deploy.Y96, deploy.Y98])
+                     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y96_y98_terminal_contract.py", line 37, in build_contract
+    native_evidence(tick.load(ROOT / 'pipeline/research_work.json'))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y96_y98_terminal_contract.py", line 19, in native_evidence
+    validate_result(tick.load(closure.artifact(ROOT, entry)), candidate, frozen)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y95_contract.py", line 49, in validate_result
+    assert value["complete"] is True and value["id"] == candidate["id"] == frozen["variant"]["id"] == CID
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+======================================================================
+FAIL: test_actual_native_evidence_mandatory (test_y96_y98_terminal_binding_v2.AdditiveBinding.test_actual_native_evidence_mandatory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\project\AdaRES_project\scripts\test_y96_y98_terminal_binding_v2.py", line 56, in test_actual_native_evidence_mandatory
+    self.assertEqual(binding.native_evidence(work), candidate['native_smoke_result'])
+                     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\project\AdaRES_project\scripts\y96_y98_terminal_contract.py", line 19, in native_evidence
+    validate_result(tick.load(closure.artifact(ROOT, entry)), candidate, frozen)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y95_contract.py", line 49, in validate_result
+    assert value["complete"] is True and value["id"] == candidate["id"] == frozen["variant"]["id"] == CID
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.314s
+
+FAILED (failures=2)

@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "token": "e400166950804bdc890d260e8efe3077",
+  "recorded_at": "2026-11-13T00:00:44.063159+08:00",
+  "failure_scope": "operational_observer_mapping",
+  "actual_command": "python -B scripts/finish_y102_launch_tick.py --token e400166950804bdc890d260e8efe3077",
+  "failed_child_command": "python -B scripts/y102_deployment.py observe --id AdaRES-Y101 --token e400166950804bdc890d260e8efe3077 --label release",
+  "actual_error": "AssertionError at y102_deployment.py line80: assert (task['server'], str(task['gpu']), task['code_commit']) == (name, '0', commit)",
+  "reason": "Template observer retained server-2 for original Y101 and server-1 for new Y102. Actual queue/receipts remain Y101/server-1 and Y102/server-2.",
+  "failure_before_remote_activation": true,
+  "original_helpers": [
+    {
+      "path": "scripts/y102_deployment.py",
+      "sha256": "54eee2e78c101f89283ac3ddfc99af089f09182313e6c1e705c049497bcf6e3c"
+    },
+    {
+      "path": "scripts/finish_y102_launch_tick.py",
+      "sha256": "f09ee688e5a29b96681ac52c6179733d9e1ec6dc7940cab5e0b7b0e92e1a4c46"
+    }
+  ],
+  "corrected_observer": {
+    "path": "scripts/y102_observer_v2.py",
+    "sha256": "f579556e909e20b7cc5451ca1f8517497785fd9e1f9a803afce17a39e9c7d58d"
+  },
+  "no_training_restart": true,
+  "no_native_or_scientific_replay": true,
+  "old_receipts_and_terminal_proof_preserved": true
+}

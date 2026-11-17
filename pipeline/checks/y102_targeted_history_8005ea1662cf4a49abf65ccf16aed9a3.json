@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "scope": "Targeted source/input/destination comparison; not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y31",
+      "stage": "complete",
+      "hypothesis": "Explicit mask-supported central second spatial moments can supply geometric shape evidence to standard confidence beyond its terminal query. Upstream implicit geometry exists; necessity and trained efficacy are unknown. Distinct from visual readback, peer centroids and ordered histories.",
+      "matched_control": "Physical W2 parent/fixed30/seed1999/native128queries/one standard argmax; first64 distinct TRAIN scenes/up to4 descriptions retained without outcome selection. Freeze six symmetric covariance entries and native point versus labeled superpoint support before measurements. Disabled/repeat/joint query permutation/point permutation/translation/equal-centroid equal-mass different-shape/shuffled-shape controls."
+    },
+    {
+      "id": "AdaRES-Y27",
+      "stage": "complete",
+      "hypothesis": "W2 confidence explicitly observes overlapping competitors but not mask-derived object-relative spatial arrangements. A new learned ordered-pair centroid/query attention path in confidence may resolve relational ambiguity among disjoint candidates. Earlier query features already contain geometry; efficacy and added-path necessity remain falsifiable, not presumed.",
+      "matched_control": "FIRST64 DISTINCT native TRAIN scenes, at most4 existing chunk descriptions, seed1999/W2 best; cache identical final query/mask/mass/positions. Report relation/other-entity annotation incidence and selected-v-oracle point IoU. Subsequent physical relative-peer versus disabled, zero/rolled centroids, translation, joint-permutation and detached-peer matched controls; no validation search."
+    },
+    {
+      "id": "AdaRES-Y53",
+      "stage": "rejected",
+      "hypothesis": "Masked language-padding feature values may leak through the native decoder into query confidence, although they represent no words. Test actual decoder attention/aggregation, not the semantic-alignment loss denominator addressed by historical Y23. If all native confidence paths mask these positions and matched interventions have no effect beyond repeat noise, reject THIS leakage premise without creating a model variant.",
+      "matched_control": "Keep actual class, parameters, valid-language positions, 3D/query inputs and RNG fixed; compare padding-only feature replacement, an unchanged independent repeat, and a valid-token positive-control replacement. Audit every native path consuming lang_masks. Run exact native module controls first and a frozen TRAIN native-model/decoder-input capture if a task-relevant uncertainty remains. Do not tune mask thresholds, weights, temperature, sample or training epochs."
+    },
+    {
+      "id": "AdaRES-Y55",
+      "stage": "rejected",
+      "hypothesis": "Sentence expansion may misalign W2's point-count mass with the scene/superpoint represented by each expanded feature row, corrupting metric-aligned query competition. The suspected defect is cross-module ordering, not changing the point-mass formula or score target.",
+      "matched_control": "Execute unchanged IPDN.point_masses and expand_and_fps bodies, DEC.get_batches and the exact native indicator on CPU. Independently count original point memberships with Counter and index the reference by expanded original-superpoint identity. Use three frozen unequal replication fixtures and the existing eight TRAIN scenes/four pairs/32 expressions, same seed1999. Identical-repeat/independent-reference controls must agree exactly; deliberately shifted valid masses are a sensitivity control. Substitute only FPS with deterministic CPU indices, explicitly not a full native/FPS test; FPS indices never change feature expansion order."
+    },
+    {
+      "id": "AdaRES-Y69",
+      "stage": "blocked",
+      "hypothesis": "A learned head-specific bounded relative-coordinate bias on the six coarse visual cross-attention logits may ease spatial mask refinement. Native fine attention already uses isotropic SCG distances, and seed/features can encode geometry; this is a direct coarse-attention parameterization comparison, not missing information, novelty or proven efficacy.",
+      "matched_control": "Unchanged W2 plus shared weight[8,3], exact zero/no RNG (+24 parameters). bias[b,h,q,m]=sum_a tanh(weight[h,a])*(abs(qpos[b,q,a]-spos[b,m,a])/(1+abs(delta)))**2, computed once and used by six coarse visual attentions. Original detached Boolean masks remain exact hard exclusions; key padding remains excluded. Fine SCG/k/gamma, shared confidence head/targets/losses/selector, native all-channel input, released SPFormer, Q128/seed1999/fixed30 YAML all unchanged."
+    },
+    {
+      "id": "AdaRES-Y77",
+      "stage": "blocked",
+      "hypothesis": "Original sampled seed coordinates determine native SCG neighborhoods, while the initial query content is generated from existing visual states. A direct learned projection of each original query position relative to the all-point-mass scene centroid may ease fitting spatially grounded initial masks/confidence. Visual features and SCG already encode geometry; missing information, novelty and trained benefit are not presumed.",
+      "matched_control": "Unchanged W2 plus q_init=q_generated+(original_query_pos-point_mass_weighted_mean(all_original_valid_scene_sp_pos))@W once immediately before original initial prediction. W[3,256] exactly zero/no RNG (+768). All three existing coordinates and all valid original scene point masses contribute; zero-mass empty-scene branch is a no-op. Preserve original sampling indices/query positions, static mask features, all six original refinements/hard gates/SCG/k/gamma/coarse-fine fusion, seven shared confidence calls/targets/losses/selector, original full input/existing2D/released backbone/Q128/seed1999/fixed30/native YAML. This is an initial representation connection, with no frequency/threshold/loss-weight sweep or validation selection."
+    },
+    {
+      "id": "AdaRES-Y85",
+      "stage": "blocked",
+      "hypothesis": "Original query readouts use LayerNorm while x_mask visual embeddings retain per-superpoint mean and magnitude. A single learned affine LayerNorm of all visual mask-feature channels before batching may change mask-fitting geometry. Removing magnitude/mean may also harm fitting; no native defect, missing information, novelty or efficacy is presumed.",
+      "matched_control": "Independent unchanged W2 except mask_feats=LayerNorm(x_mask(x)) once before original get_batches, used by all seven original mask/score readouts. New512 affine parameters, default original LayerNorm epsilon1e-5, no RNG. Keep all256channels/all original superpoints, original query/out_norm/confidence sharing, original coordinates/full input/existing2D/backbone/sampling/SCG/k/gamma/static feature reuse/hard-gate algorithm/targets-loss-selector/seed1999/fixed30/native YAML. Native masks and gates may differ as the intended transform; no threshold/loss/epoch/feature scan. Bypassing only the new norm must restore all W2 outputs and input gradients."
+    },
+    {
+      "id": "AdaRES-Y94",
+      "stage": "blocked",
+      "hypothesis": "Original query self-attention uses sampled-position SCG hard neighborhoods but no learned axis-specific position bias inside those same allowed neighborhoods. A shared bounded head-specific bias from original query-position pairs may ease relational query fitting. Features/SCG already encode geometry; no missing information, defect, novelty or efficacy is presumed.",
+      "matched_control": "Independent W2; add zero/no-RNG weight[8,3] (+24,total164629661) once, bias=sum_a tanh(W[h,a])*(abs(qpos_i-qpos_j)/(1+abs(delta)))**2. Apply only to six original query-self attention logits, retaining exact SCG hard exclusions, neighborhoods/k/gamma, coarse/fine/language attention, original norms/FFNs/shared confidence/masks/scores/inputs/data/targets-loss-selector/seed1999/fixed30 YAML. No additional norm, pooling, supervision or scan."
+    },
+    {
+      "id": "AdaRES-Y98",
+      "stage": "blocked",
+      "hypothesis": "Original static mask features come from sparse spatial features, while the full existing 2D appearance features influence the query/visual-memory path. A separate learned direct full appearance residual into static mask features may ease appearance-sensitive mask fitting. Query interactions already carry appearance; no missing information, defect, novelty or benefit is presumed.",
+      "matched_control": "Independent W2. mask_static=x_mask(x)+raw_existing_2D@zeroW1024x256 once before the SAME original get_batches and all seven mask readouts; +262144/total164891781/no RNG. Retain the complete original x_mask and input_proj_2d/visual fusion, all1024 existing appearance channels/all original sparse features/points/query channels, original query norms/scores/shared confidence, coordinates/sampling/SCG/coarse-fine half-average/self-language sum/six refinements/hard-gate algorithm/targets-loss-selector/releasedbackbone/seed1999/fixed30/native YAML. No new data, feature/threshold/temperature/loss/epoch or validation scan."
+    },
+    {
+      "id": "AdaRES-Y99",
+      "stage": "training",
+      "hypothesis": "Original x_mask is a nonlinear two-linear-layer MLP of the full sparse spatial input. A zero-initialized parallel linear bypass of that same full32-channel input may ease direct spatial mask fitting and gradient flow while retaining the entire original MLP. The MLP already represents this information; no missing information, defect, novelty or benefit is presumed.",
+      "matched_control": "Independent W2. mask_static=x_mask(x)+x@zeroW32x256 once before SAME original get_batches and all seven mask readouts; +8192/total164637829/no RNG. Preserve complete original x_mask, input_proj(x), input_proj_2d/full1024 appearance and sum_norm, all32 spatial channels/all points/full inputs, original query norms/scores/shared indicator/refinement/sampling/SCG/k/gamma/hard-gate algorithm/coarse-fine average/self-language sum/targets-loss-selector/releasedbackbone/seed1999/fixed30/native YAML. This adds one structural connection, not a feature/threshold/temperature/loss/epoch/validation scan."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  },
+  "distinction": "Y102 routes all original full-scene3D centered coordinates into original static mask embeddings AFTER original batching. Y77 routes only sampled original query positions into initial queries; Y69/Y94 act on attention logits; Y27/Y31 mask-derived geometry acts on confidence. No new geometry labels or changed data/padding/SCG; no combination or reopening."
+}

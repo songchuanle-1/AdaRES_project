@@ -1,0 +1,11 @@
+# AdaRES-D1 Larger-Batch Resource and Control Check
+
+- 2026-09-24 07:19-07:21 +08:00, server-2 GPU1, native adares_project environment. No optimizer step, training launch, production model sync, or queue dispatch.
+- D1 and B4 configs are byte-identical: fresh released SPFormer backbone, seed 1999, 30 epochs, batch size 2, same data, optimizer, LR scheduler, and inference settings. Package backbone.py, ipdn.py, loss.py, and sample_model.py are byte-identical; decoder indicator logic and package label differ.
+- Existing B4-E30 is a 30-epoch control with the same settings, continued from B4 epoch 20 preserving optimizer/scheduler state. It is not a matched warm-start adaptation control. D1 remains a fresh-pretrain design.
+- Fixed ScanRefer training pair [256,257]: 320147 voxel coordinates and 481874 input points; earlier pair [0,1] had 157450 voxels and 162738 points, pair [128,129] had 171218 voxels and 239004 points. Sizes are measured after dataset collation; [256,257] is not asserted to be dataset maximum.
+- D1 full-model forward/backward: loss 10.9011, finite nonzero indicator-head gradient 1.88595, pairwise-head gradient 0.0008784, decoder out-norm gradient 0.92286; 9.396 GiB peak allocated, 10.105 GiB peak reserved, 24.084 seconds.
+- B4 on the same pair and GPU: loss 11.0877, finite nonzero indicator-head and decoder gradients; 5.873 GiB peak allocated, 6.396 GiB peak reserved, 24.050 seconds. Sequential cold processes are not steady throughput. D1 exceeds B4 by 3.709 GiB reserved here.
+- Prior bounded D1 reserved peaks were 8.443 GiB [0,1] and 7.740 GiB [128,129], all below the GPU's 24 GiB capacity. Worst-case training memory, full-validation resources, and trained D1 accuracy remain unestablished.
+- D1 config staged only at /tmp/adares_d1_probe_songcl/d1_probe.yaml because the production model tree has not been synced. Initial missing-config attempt stopped before construction; staging enabled the successful rerun. No production path was changed.
+- Next: formal hard-gate admission review and receipt using bounded evidence, then controlled production sync and safe monitor dispatch only if gates pass. Verify training progress after dispatch. Do not substitute a warm start.

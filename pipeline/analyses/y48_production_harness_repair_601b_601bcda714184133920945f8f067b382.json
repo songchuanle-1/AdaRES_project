@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "failure_scope": "implementation",
+  "preregistered_at": "2026-10-15T11:28:40.683539+08:00",
+  "failed_source": {
+    "path": "scripts/probe_y48_production_601b.py",
+    "sha256": "ced7febe633ba904d79b3d0e129e3ac553280ad653b76db3cdcbf05449012416"
+  },
+  "failed_log": {
+    "path": "pipeline/analyses/y48_production_601b_601bcda714184133920945f8f067b382.log",
+    "sha256": "c092c9a29848a9ee9024cdf702874fbd51d737df9ef87c5e88e57c6894983f06"
+  },
+  "source": {
+    "path": "scripts/probe_y48_production_601b_v2.py",
+    "sha256": "2a70c15fb9c02f787b800d45b7f98145ec98d6353e09538c956f0ba0b396abf2"
+  },
+  "defect": "Inherited full-model predict does not handle this two-scene TRAIN fixture; actual tools.train already performed two steps before the failing diagnostic.",
+  "change": "Only diagnostic predict uses SAME first4 TRAIN scenes, serial batch1/no augmentation, matching existing frozen evaluator convention. Training remains two native batch2 steps; model and scientific intervention unchanged.",
+  "prediction": "Serial predict/physical-parent equality succeeds; all source/CPU/train/update/restore/stress checks rerun from released initialization.",
+  "model_changes": 0,
+  "result": "pending"
+}

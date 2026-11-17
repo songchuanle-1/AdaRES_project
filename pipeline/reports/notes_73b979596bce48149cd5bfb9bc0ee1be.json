@@ -1,0 +1,30 @@
+{
+  "actions": [
+    "仅处理AdaRES_project；已核验实际owner会话、Disabled后台调度、正式skill/experiment_first、AGENTS/goal/SERVERS及最新GPU1暂停记录。begin先查进展并尝试已有合格派发；初始ready waiting为0，无新终态。",
+    "运行：AdaRES-Y92 Train22/30，步2852/4686；AdaRES-Y93 Train8/30，步3934/4686；原PID/source/YAML/receipt/私有runtime、350W/280W及原生步数递增核实，canonical物理占用确认两GPU0 busy+reserved。GPU1及外部进程未干扰。",
+    "新实现Y97独立全token语言输入二次投影，保留原投影及同一lang_norm；原YAML、完整CPU模型和发布骨干/TRAIN初始化后，小组件批次置换torch.equal守卫首次实际执行失败，未生成CPU通过结果。",
+    "保存原失败程序和raw日志；单独CPU小组件诊断重复相同未改守卫，float32最大差1.1920928955078125e-7、64/70逐位相等，float64最大差2.220446049250313e-16、69/70逐位相等。虽处于原独立标量128eps容差内，但只作诊断证据，不能替代逐位守卫PASS。",
+    "Y97按实现数值问题挂起，不放宽检查、不修改原模型/YAML、不进行修复或科学修订、不重命名重开。后续完整decoder锚点、共享native回调、两步反向均未执行；未留版、未生成native计划、未GPU检查、未准入/同步/派发。后创建的contract/tests/retainer源码均未执行，不冒充18项守卫通过。",
+    "较早Y94/Y95/Y96完整CPU准备/独立版本/native计划保持，不重复科学检查；原Y92/Y93终态计划只读核对哈希，未加载checkpoint或执行归档，已归档实验不重放。",
+    "本轮新增科学候选1、CPU候选检查1失败、CPU小组件诊断1、GPU原生0、准入0、启动0、归档0。七节记忆先精确备份，连续刷新当前训练及canonical物理占用后正式report/finish；保留collector实际resource_check，不预先宣称收尾结果。"
+  ],
+  "decisions": [
+    "Y97是implementation数值守卫失败，不是训练无效、缺用户授权或假设被反证。保留全部原证据与原检查；未来仅同一ID下事前登记、证据支持且预算内的局部实现修订可重测原完整控制，不凭计时重跑或改容差。",
+    "原Y92/Y93继续。Y94、Y95、Y96按原优先顺序等待匹配原owner自然30轮/完整有限checkpoint精确核验归档及实时独占空闲GPU0，然后真实native通过才按原freeze/admission/安全同步和递增counter推进。Y97挂起不阻断其他工作。",
+    "完整原FIRST/同设备cost、数据/私有环境/mappings/seed1999-fixed30/有害子组/禁用/功耗/调度/恢复要求、科学goal字节和原receipt保持。GPU1全部使用与原GPU1后评/cost继续暂停，Y57另行暂停，不迁移替代，禁止server6；无需新用户操作。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y97_numerical_closeout_73b979596bce48149cd5bfb9bc0ee1be.json",
+      "sha256": "5e84e6242b429f1314b6e7ab573214beb2c9da2469623309af88bc548864c3e4"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_73b979596bce48149cd5bfb9bc0ee1be.md",
+      "sha256": "2e129de13103d3181166a33ba6c310d6180eb92907967fb3724c55781037dc12"
+    },
+    {
+      "path": "pipeline/decisions/20261109-032711_other.md",
+      "sha256": "6128e0e99af316efd55588a66f31fb86380551971bbd3a2a00919add32c8dda5"
+    }
+  ]
+}

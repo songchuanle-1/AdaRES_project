@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "token": "c13001fa6abe4bc18cd4dfc36e588ed5",
+  "originals": [
+    {
+      "path": "scripts/y91_observer_core.py",
+      "sha256": "7b6aa441388fcd6075732effb55cbd589c45b3c9c767c3cbd22dfef4cf9e5285"
+    },
+    {
+      "path": "scripts/probe_y91_cpu_tail.py",
+      "sha256": "c399c887e62328f5983728d869917e4e0a1a3511f9fe2e18154114cf89b81a50"
+    },
+    {
+      "path": "scripts/probe_y91_native_tail.py",
+      "sha256": "5dab597b6a76f84f9192c27cdd2f18ab7987414d413ac8a84cb4a7158ebd8d6b"
+    },
+    {
+      "path": "scripts/y91_contract.py",
+      "sha256": "d6d65c1d91612e4879858aa48116ddf7a892dbfa47bffc2d392f355f4d725260"
+    },
+    {
+      "path": "scripts/test_y91_preparation.py",
+      "sha256": "f73c5fc5d53ea9793a3693c0ef1e1a704d86423c5df548569b8eeb67ad96446b"
+    },
+    {
+      "path": "scripts/test_y91_runtime_plan.py",
+      "sha256": "6e27bf8bcfbabeb466e1f941ac0dee6a2a6eadc203476e4f25bdb25e4d6da671"
+    }
+  ],
+  "generated": [
+    {
+      "path": "scripts/y93_observer_core.py",
+      "sha256": "d52f2a036e176894e79f95b2bd8d99b3941afc7f174b48f745775008662252be"
+    },
+    {
+      "path": "scripts/probe_y93_cpu_tail.py",
+      "sha256": "7aa2aea937283695c8d055e24093f25d80e86e01ef079695f7ac2b4715befe14"
+    },
+    {
+      "path": "scripts/probe_y93_native_tail.py",
+      "sha256": "be766c430cb9eb80b1e9d5b6a77b4a89873e25d1264e278a1f0bdaee13109e71"
+    },
+    {
+      "path": "scripts/y93_contract.py",
+      "sha256": "d6343426df2333a4f180ae8359de09c2d9d3b99888b8be88ed9a766c60324f8c"
+    },
+    {
+      "path": "scripts/test_y93_preparation.py",
+      "sha256": "c4cfff112e0dbd5fb65531455de9c4e36ba0b00a9e5c12f8bc250268a6132b34"
+    },
+    {
+      "path": "scripts/test_y93_runtime_plan.py",
+      "sha256": "cfeadeb6206c640c090320c3a93c32abe0865430fb2f3a21397c06988e46019a"
+    }
+  ],
+  "connection": "full normalized evidence plus original second hidden, not an internal multiplicative gate",
+  "original_helpers_preserved": true,
+  "CPU_executed": false,
+  "native_executed": false,
+  "helper": {
+    "path": "scripts/create_y93_support.py",
+    "sha256": "f1a4ed4ebe2ad015c98287a69893c9ea0bf03c6132aed9894f50de12a3d085cd"
+  }
+}

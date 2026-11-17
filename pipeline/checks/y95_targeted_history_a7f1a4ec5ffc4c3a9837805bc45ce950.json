@@ -1,0 +1,82 @@
+{
+  "complete": true,
+  "scope": "Targeted consumer/mechanism comparison; not novelty proof.",
+  "matches": [
+    {
+      "id": "AdaRES-Y33",
+      "stage": "rejected",
+      "hypothesis": "A final confidence readout can use query-conditioned attention over individual language-conditioned tokens within soft foreground/background mask supports, beyond Y28 first-moment mean pooling. Upstream attention exists; necessity, novelty and efficacy are unknown.",
+      "matched_control": "Physical W2 copy, final indicator residual only; identical parent initialization/queries/masks/auxiliary losses. CPU equal-FG/BG-mean different-token-distribution control, native first64 TRAIN scenes/up to4 descriptions, cached TRAIN8/init4 controls and native two steps/resume/resources. Fixed30/seed1999/native128/one argmax/no numeric or validation search/GPU1 only."
+    },
+    {
+      "id": "AdaRES-Y26",
+      "stage": "rejected",
+      "hypothesis": "Native query-language cross-attention computes a LayerNorm result but discards it before query self-attention. Its affine parameters therefore cannot learn language-conditioned query calibration. Reconnecting only the existing qla postnorm may remove residual common-mode/scale nuisance and restore a task-loss gradient path; this is a falsifiable implementation mechanism, not a promised accuracy improvement.",
+      "matched_control": "Frozen first64 distinct TRAIN scenes in dataset order, at most4 descriptions, seed1999, identical cached native decoder inputs and W2 checkpoint. Compare native/repeat/identity-return hook, existing qla LayerNorm reconnected, and unit-RMS-only normalization. First8 trained and first4 released-initialization native backward batches compare connected versus detached affine parameters at identical forward values. No padding/token subset, threshold, temperature, loss-weight or validation scan."
+    },
+    {
+      "id": "AdaRES-Y25",
+      "stage": "rejected",
+      "hypothesis": "The native detached Boolean previous-mask cross-attention gate can hide GT target point mass from geometrically matched positive queries, preventing later refinement from reading excluded target evidence. A training-only continuous mask-probability attention prior could reopen the evidence/gradient path without added parameters or changing native inference.",
+      "matched_control": "Frozen W2 native TRAIN outputs and matching indices, exact Boolean gate versus all-valid attention and continuous log-mask-probability bias; same masks, queries, valid padding and annotated target mass. Repeat captures; report fallback and fully/partly locked targets without subset selection. Distinguish from G1 absolute quality targets, Y20 global gradient conflict, and Y23 language padding support."
+    },
+    {
+      "id": "AdaRES-Y57",
+      "stage": "blocked",
+      "hypothesis": "Fixed focal query/masks/masses/overlap/counts and peer normalized weighted mean can hide changed peer feature second moments. Test representational capacity, not model harm or validation gain.",
+      "matched_control": "All inherited8TRAIN scenes/32expressions/Q128, focal index0 fixed before predictions, both float32/64. Per-row centered Householder reflection, coordinate0 projected orthogonal to constant vector and weighted standardized peer mean; no direction search. Repeat/reversal and identical-peer controls; strict trained W2 checkpoint."
+    },
+    {
+      "id": "AdaRES-Y65",
+      "stage": "blocked",
+      "hypothesis": "W2 predicts confidence at seven stages but never explicitly feeds that confidence into the next query refinement. A learned relative-confidence feedback direction may let later mask/query refinement use the current competition estimate. This is a recurrent architecture hypothesis; existing queries may already encode equivalent information and neither benefit nor improved calibration is presumed.",
+      "matched_control": "Unchanged W2 plus q_next_input=q+(softmax(indis)[...,1]-mean_query(p))*v, v[256] initialized to exact zero without RNG. One shared vector and six feedback calls between the seven original prediction stages. No detach, threshold, selector, extra loss, temperature, feature subset, seed or epoch changes. All original confidence/mask/auxiliary losses and released SPFormer remain unchanged."
+    },
+    {
+      "id": "AdaRES-Y66",
+      "stage": "blocked",
+      "hypothesis": "W2 uses overlap-weighted peer states only to read out confidence, while query refinement does not explicitly consume that competition context. A zero-initialized learned projection of full peer states into the next refinement may make masks and confidence co-adapt. Existing self-attention can represent peer interactions; neither missing information nor efficacy is presumed.",
+      "matched_control": "Unchanged W2 plus q_next_input=q+C(q,masks,masses)@W, where C is the row-normalized off-diagonal soft point-mass-IoU weighted mean of raw peer queries. Shared W[256,256] starts at exact zero without RNG. Six feedback calls before coarse query-to-instance attention, seven unchanged confidence losses, released SPFormer, fixed30/seed1999 and native YAML."
+    },
+    {
+      "id": "AdaRES-Y79",
+      "stage": "blocked",
+      "hypothesis": "Native language states refine through language self-attention and visual cross-attention before providing query-language updates, without a direct current instance-query-set input. An added attention residual from all current queries into language states may ease iterative instance-aware language fitting. Existing visual/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus language_next=language_ffn_output+clean((softmax(language_ffn_output@current_query.T/sqrt(d))@current_query)@W), shared W[256,256] exactly zero/no RNG (+65536), six calls after original language/visual FFNs and before original query coarse/fine and query-language attention. Padded language residual rows zeroed, all128 original queries/all language channels retained and undetached. Original initial prediction, static masks, sampling/positions, six refinements/coarse-fine mixture/hard Boolean gates/SCG/k/gamma, seven shared confidence targets/losses/argmax, all inputs/existing2D/released backbone/Q128/seed1999/fixed30/native YAML remain. Standard fixed sqrt(d) in this new attention; no temperature, threshold, feature, loss, epoch or validation search."
+    },
+    {
+      "id": "AdaRES-Y80",
+      "stage": "blocked",
+      "hypothesis": "Native visual states refine through native language-to-visual cross-attention before providing query-to-instance attention, without a direct current instance-query-set input. An added attention residual from all current queries into visual states may ease iterative instance-aware visual memory fitting. Existing visual/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus visual_next=visual_ffn_output+clean((softmax(visual_ffn_output@current_query.T/sqrt(d))@current_query)@W), shared W[256,256] exactly zero/no RNG (+65536), six calls after original language/visual FFNs and before original query coarse/fine attention. Padded visual residual rows zeroed, all128 original queries/all visual channels retained and undetached. Original initial prediction, static masks, sampling/positions, six refinements/coarse-fine mixture/hard Boolean gates/SCG/k/gamma, seven shared confidence targets/losses/argmax, all inputs/existing2D/released backbone/Q128/seed1999/fixed30/native YAML remain. Standard fixed sqrt(d) in this new attention; no temperature, threshold, feature, loss, epoch or validation search."
+    },
+    {
+      "id": "AdaRES-Y81",
+      "stage": "blocked",
+      "hypothesis": "Native W2 predicts refined masks from each current query against expression-independent static mask features. A shared attention residual from the full current refined query set into each later mask feature tensor may ease instance-conditioned mask fitting. Existing language/query paths can carry equivalent context; missing information, novelty and trained efficacy are not presumed.",
+      "matched_control": "Independent unchanged W2 plus mask_features_i=mask_base+clean((softmax(mask_base@current_refined_queries.T/sqrt(d))@current_refined_queries)@W), shared W[256,256] exactly zero/no RNG (+65536). Six calls before original loop prediction heads; original initial prediction unchanged, original static mask base reused without accumulating updates, padded residual rows zero. All128 queries and all channels retained and undetached. Original sampling/geometry/coarse-fine equal fusion/Boolean gate algorithm/SCG/k/gamma, seven shared confidence heads/targets/losses/argmax, all inputs/existing2D/released backbone/Q128/seed1999/fixed30/native YAML remain. Fixed standard sqrt(d) scaling only; no temperature/threshold/loss/feature/epoch/validation search."
+    },
+    {
+      "id": "AdaRES-Y84",
+      "stage": "blocked",
+      "hypothesis": "Native initial queries use sampled local visual states before six refinements. A direct learned projection of point-mass-weighted mean scene visual features into initial queries may ease global-context fitting. Later cross-attention already provides global information; no missing information, novelty or efficacy is presumed.",
+      "matched_control": "Independent unchanged W2 plus q_init=q_generated+weighted_mean(all valid original inst_feats, point_mass)@W once before initial prediction. Shared zero W256x256/no RNG/+65536. Use all256 channels and all valid original superpoints/masses; masked or zero-total support contributes zero. Preserve all original coordinates/sampling/SCG/k/gamma/hard gates/static masks/full input/existing2D/released backbone/shared confidence/targets/loss/selector/seed1999/fixed30/native YAML. No validation scans."
+    },
+    {
+      "id": "AdaRES-Y87",
+      "stage": "blocked",
+      "hypothesis": "Original recurrent query refinement adds its self-attention and language-attention states before a shared active LayerNorm and stage FFN. A shared zero-initialized projection of their product at that exact sum may ease fitting conditional interactions. Both states already carry language and spatial context; no missing information, defect, novelty or trained benefit is presumed.",
+      "matched_control": "Independent W2 plus self+language+(self*language)@W before the SAME existing shared norm_qqa and original stage FFN, six calls. One zero W256x256/no RNG/+65536. Retain original coarse/fine half-average, all original tensors/queries/channels/full inputs/2D/backbone/coordinates/sampling/SCG/k/gamma/static masks/gate algorithm, seven shared confidence heads/targets/loss/selector/seed1999/fixed30/native YAML. Initial output/input-gradient anchors exact; nonzero intervention/bypass must affect intended refined masks then restore."
+    },
+    {
+      "id": "AdaRES-Y94",
+      "stage": "blocked",
+      "hypothesis": "Original query self-attention uses sampled-position SCG hard neighborhoods but no learned axis-specific position bias inside those same allowed neighborhoods. A shared bounded head-specific bias from original query-position pairs may ease relational query fitting. Features/SCG already encode geometry; no missing information, defect, novelty or efficacy is presumed.",
+      "matched_control": "Independent W2; add zero/no-RNG weight[8,3] (+24,total164629661) once, bias=sum_a tanh(W[h,a])*(abs(qpos_i-qpos_j)/(1+abs(delta)))**2. Apply only to six original query-self attention logits, retaining exact SCG hard exclusions, neighborhoods/k/gamma, coarse/fine/language attention, original norms/FFNs/shared confidence/masks/scores/inputs/data/targets-loss-selector/seed1999/fixed30 YAML. No additional norm, pooling, supervision or scan."
+    }
+  ],
+  "parent_source": {
+    "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+    "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+  }
+}

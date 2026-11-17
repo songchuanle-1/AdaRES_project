@@ -1,0 +1,91 @@
+{
+  "id": "AdaRES-Y57",
+  "config": "configs_song/model_paper5/adares_y57_peer_second_moment_res.yaml",
+  "server": "server-2",
+  "gpu": "1",
+  "status": "paused",
+  "history": [
+    {
+      "ts": "2026-10-20T23:29:14.062820",
+      "action": "launched",
+      "gpu": "1"
+    },
+    {
+      "ts": "2026-10-21T12:48:10.801946+08:00",
+      "action": "resumed_after_authorized_gpu_reboot",
+      "interruption": {
+        "id": "AdaRES-Y57",
+        "config": "configs_song/model_paper5/adares_y57_peer_second_moment_res.yaml",
+        "server": "server-2",
+        "gpu": "1",
+        "status": "running",
+        "history": [
+          {
+            "ts": "2026-10-20T23:29:14.062820",
+            "action": "launched",
+            "gpu": "1"
+          }
+        ],
+        "pid": 95947,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y57_peer_second_moment_res_20261020_232844.log",
+        "launch_verified": true,
+        "launch_verification": "training_progress",
+        "launched": "2026-10-20T23:29:14"
+      },
+      "human_request": "继续训练",
+      "boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261020_112850/last.pth",
+      "evidence": "pipeline/reports/gpu_reboot_resume_AdaRES-Y57_76f9c0ca61424281b30c4f491a33b37e_verify.json"
+    },
+    {
+      "ts": "2026-10-21T20:26:27.494834+08:00",
+      "action": "user_paused",
+      "gpu": "1",
+      "pid": 16317,
+      "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/last.pth",
+      "saved_epoch": 27,
+      "evidence": {
+        "path": "pipeline/checks/y57_user_pause_befeacf640bf499a9ff39fa6c9df712a.json",
+        "sha256": "7cfef7b2971bb7b40a0e0d309b708bbddccb9eb7659ddf92f8c326168effd520"
+      },
+      "authorization": {
+        "path": "pipeline/authorizations/GPU0_only_trial_befeacf640bf499a9ff39fa6c9df712a.json",
+        "sha256": "cfeffad9e04bfc9ddb034712d30244b390f27ad8035d75d2df92cf7131b5b51c"
+      },
+      "scientifically_complete": false
+    }
+  ],
+  "pid": 16317,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/gpu_reboot_resume_adares_y57_peer_second_moment_res_76f9c0ca61424281b30c4f491a33b37e.log",
+  "launch_verified": true,
+  "launch_verification": "training_progress",
+  "launched": "2026-10-20T23:29:13",
+  "label": "AdaRES-Y57 initial moment anchor fixed30",
+  "depends_on": [],
+  "code_commit": "05dc2c0424e33f460f96a4ab4938b0d05e7dc6ea",
+  "admission_receipt": "pipeline/admissions/AdaRES-Y57.json",
+  "patience": 30,
+  "min_epochs": 30,
+  "fixed_epochs": 30,
+  "requires_exclusive_ownership": true,
+  "scientific_candidate_id": "AdaRES-Y57",
+  "dispatch_phase": "progress_verified",
+  "claimed_gpu": "1",
+  "total_epochs": 30,
+  "resume_attempt_token": "76f9c0ca61424281b30c4f491a33b37e",
+  "resume": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261020_112850/last.pth",
+  "resume_checkpoint_sha256": "6035147b6c67324a726631f005dd5c628e29e2c17d03255f6ea552c4ce0db483",
+  "reboot_boot_id": "81549f32-5f49-4ef5-b91e-2b1144a6bfb3",
+  "resumed_at": "2026-10-21T12:48:10.688739+08:00",
+  "resume_epoch": 18,
+  "resumed_work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739",
+  "carried_best": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/best.pth",
+  "paused_at": "2026-10-21T20:26:27.494834+08:00",
+  "pause_evidence": {
+    "path": "pipeline/checks/y57_user_pause_befeacf640bf499a9ff39fa6c9df712a.json",
+    "sha256": "7cfef7b2971bb7b40a0e0d309b708bbddccb9eb7659ddf92f8c326168effd520"
+  },
+  "resume_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y57_peer_second_moment_res/20261021_004739/last.pth",
+  "resume_requires_user_authorization": true,
+  "dispatch_hold": "User pause requested: GPU0-only trial; no automatic Y57 resume"
+}

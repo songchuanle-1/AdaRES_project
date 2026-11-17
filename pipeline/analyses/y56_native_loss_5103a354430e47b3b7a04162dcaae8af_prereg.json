@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "token": "5103a354430e47b3b7a04162dcaae8af",
+  "preregistered_at": "2026-10-20T22:17:56.010179+08:00",
+  "program": {
+    "path": "pipeline/analyses/y56_native_loss_5103a354430e47b3b7a04162dcaae8af_program.py",
+    "sha256": "00d0f85529e32c61897f4cf0452783ef1c51759958d0685b7efd028340c83a6a"
+  },
+  "body": {
+    "path": "scripts/probe_y56_native_loss_5103.py",
+    "sha256": "fd4ec4b522a865fd765189049ebbb61e14b37f2fe75e1ed3a5e5ac9d56264f5d"
+  },
+  "setup": {
+    "path": "pipeline/analyses/y56_native_batch2_222ed2a6e80c43f6b1de2d050be97fa0_program.py",
+    "sha256": "ed5045122eeb6939310a9d8f3e096da9511e9ae149d184aee7ef29c1374b8fbc"
+  },
+  "discovery": {
+    "path": "pipeline/analyses/y56_broader_unique_6debf88fed634a13b772f27bdc244bbd.json",
+    "sha256": "c02ac3d48780e9b5557e9edacaecdcc8a98b9c27d0b35074fb4ee7e14a607cee"
+  },
+  "sample": "Fixed real-copy pair8 and metadata-first pair0/all16expressions/all7layers; conditioned on prior discovery.",
+  "protocol": "Same trainedW2/seed1999/actual masks/GT. Original/repeat/inverse-count head context only. No-copy rows use original exact graph. Native task loss and each logit-layer gradient, all head gradients. No optimizer, saved weights, source/config mutation or admission.",
+  "prediction": "Rare initial-layer correction may or may not reach native loss. Preserve loss sign, zero cases and repeats; do not claim efficacy, final selector harm, or population prevalence.",
+  "result": "pending"
+}

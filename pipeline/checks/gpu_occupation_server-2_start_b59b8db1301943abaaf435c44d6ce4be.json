@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "kind": "exclusive_gpu_occupation",
+  "complete": true,
+  "read_only": true,
+  "project": "AdaRES_project",
+  "token": "b59b8db1301943abaaf435c44d6ce4be",
+  "snapshot_generated_at": "2026-11-14T09:44:42.532057+00:00",
+  "snapshot_sha256": "0eb0085403615ddb7c7060c7f4d3e8ca3f5c1290cc44ab1b7c1503390c87e356",
+  "servers_sha256": "04f74c10fd629b072ba49dd876012b92552e1923baff4526d701a6116a7eed74",
+  "observed_at": "2026-11-14T09:45:10.581716+00:00",
+  "candidate_ids": [
+    "AdaRES-Y56",
+    "AdaRES-Y58",
+    "AdaRES-Y59",
+    "AdaRES-Y60",
+    "AdaRES-Y61",
+    "AdaRES-Y65",
+    "AdaRES-Y68",
+    "AdaRES-Y71",
+    "AdaRES-Y74",
+    "AdaRES-Y77",
+    "AdaRES-Y80",
+    "AdaRES-Y83",
+    "AdaRES-Y85",
+    "AdaRES-Y87",
+    "AdaRES-Y89",
+    "AdaRES-Y91",
+    "AdaRES-Y93",
+    "AdaRES-Y95",
+    "AdaRES-Y98",
+    "AdaRES-Y100"
+  ],
+  "scope": {
+    "server": "server-2",
+    "host": "192.168.1.163",
+    "user": "songcl",
+    "allowed_gpus": [
+      0
+    ],
+    "max_tasks_per_gpu": 1
+  },
+  "queries": {
+    "hostname": {
+      "rc": 0,
+      "stdout": "dl01-MS-7C60\n",
+      "stderr": "",
+      "command": [
+        "hostname"
+      ]
+    },
+    "gpu": {
+      "rc": 0,
+      "stdout": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 0, 16186, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 97, 22806, 24576\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,utilization.gpu,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ]
+    },
+    "compute": {
+      "rc": 0,
+      "stdout": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 4747\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 3050\n",
+      "stderr": "",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid",
+        "--format=csv,noheader,nounits"
+      ]
+    }
+  },
+  "command": "python -B 'C:\\Users\\chuanle song\\.codex\\skills\\songcl_research_pipeline\\gpu_occupation.py' AdaRES_project --token b59b8db1301943abaaf435c44d6ce4be --server server-2 --label start",
+  "raw_log": {
+    "path": "pipeline/checks/gpu_occupation_server-2_start_b59b8db1301943abaaf435c44d6ce4be.log",
+    "sha256": "ac063a3938359d67beb8e9d1d98506147ea66a3b40deff3595c8369a7fe4a515"
+  }
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\project\AdaRES_project\scripts\y102_observer_v2.py", line 29, in <module>
+    try:observe(a.token,a.id,a.label)
+        ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y102_observer_v2.py", line 24, in observe
+    corrected_observer()(token,cid,label)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\project\AdaRES_project\scripts\y102_observer_v2.py", line 29, in observe
+    try:observe(a.token,a.id,a.label)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,44 @@
+{
+  "id": "AdaRES-Y18",
+  "config": "configs_song/model_paper5/adares_y18_point_measure_res.yaml",
+  "code_commit": "00cf78fcbb2b18debb9754a57189249984b5045f",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261001-232900_next_batch.md",
+    "sha256": "99d9a6102c22cab32cd27aff8a8faf2811b0e36948b0cf4233c7bb2b556faa29"
+  },
+  "gates": {
+    "diagnosis": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y18_algebra_v2_3efff5f3.json", "sha256": "eab614f816ec1035f109b4a4eb53e76e2dfb81e2c9aa3bdd52724bc32e2a6a51"},
+      {"path": "pipeline/analyses/y18_controls_summary_3efff5f3.json", "sha256": "8920f02bb1707ff669d81a374fc185d9a47b46994eb65080fb0ca5b1acf31848"}
+    ]},
+    "controls": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y18_controls_summary_3efff5f3.json", "sha256": "8920f02bb1707ff669d81a374fc185d9a47b46994eb65080fb0ca5b1acf31848"},
+      {"path": "pipeline/analyses/y18_inference_controls_3efff5f3.json", "sha256": "e721c2c617e90690da4218264cd2f4e03588a976b862473f2f84ffa7696e173c"}
+    ]},
+    "native_backward": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y18_native8_3efff5f3.json", "sha256": "888a0824c6acec8c42832cb2d17b5f2d58d44a99a1a31f38ed98112eae36e530"},
+      {"path": "pipeline/analyses/y18_integration_3efff5f3.json", "sha256": "239d35c1211f875868c411eb48e166372f4581ad17f0001bb202f92432529109"}
+    ]},
+    "resources": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y18_profile_v2_3efff5f3.json", "sha256": "47315b0350272521482d8ef6a4d086e6becd998beb59c18694eac4600578217b"},
+      {"path": "pipeline/analyses/y18_w2_profile_3efff5f3.json", "sha256": "f121d01e73894a39b2e68bb2f4b4ec265806b6d93e7d68be691a4e7b903dee39"}
+    ]},
+    "independence": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/y18_sources_3efff5f3.json", "sha256": "330de8afaa66eccde56793395e536671ae4dd12ca00703ae389806c978ea5a6e"}
+    ]},
+    "constraints": {"passed": true, "evidence": [
+      {"path": "pipeline/analyses/AdaRES-Y18_admission_review_3efff5f3.md", "sha256": "dc481de8ba4a34b206197ced33fd52a146b28e104ebf5ad417364163698a01b5"},
+      {"path": "pipeline/designs/exp_design_Y18_20261001.md", "sha256": "41669c6d02eea259add2b42fd18092752b7662c0e142fef7df69fbbeeaa4e10a"}
+    ]}
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "deployment_revision": {
+    "previous_code_commit": "f0a704f9fa517c00452c31a53b21912c02911c8c",
+    "at": "2026-10-01T23:36:34+08:00",
+    "change": "Only project sync.sh changed: use cygpath -m for local Git root under MSYS_NO_PATHCONV. Bash syntax verified with installed Git(x86) runtime. All model/config/probe source unchanged; additive remote hash checks retained.",
+    "evidence": {"path": "scripts/sync.sh", "sha256": "57a8443a81f465a55aff132742df133fe2510604c782e2e48e18c950dcb1d19c"}
+  },
+  "frozen_protocol": {"epochs": 30, "seed": 1999, "gpu": "1", "server": "server-2"},
+  "limitations": "4 adverse training-diagnosis scenes; mixed-label and smoothing changes coupled; ~9% higher training time; inference numerical and checkpoint continuation noise retained; novelty, causal necessity and trained efficacy unknown."
+}

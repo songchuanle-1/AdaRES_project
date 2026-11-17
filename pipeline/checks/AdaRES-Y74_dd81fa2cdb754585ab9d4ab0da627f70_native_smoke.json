@@ -1,0 +1,437 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y74",
+  "config": "configs_song/model_paper5/adares_y74_language_update_gate_res.yaml",
+  "code_commit": "3c91105459f773326910b1eeaf16450e2d6b90ac",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.321258068084717
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "gate_calls": 6,
+      "qqa_consumption_calls": 6,
+      "language_and_incoming_query_gradients_finite": true,
+      "gate_weight_gradient_max": 0.0008303570793941617,
+      "parameter_update_max": 9.999879694078118e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "gate_calls": 6,
+      "qqa_consumption_calls": 6,
+      "language_and_incoming_query_gradients_finite": true,
+      "gate_weight_gradient_max": 0.0005580927827395499,
+      "parameter_update_max": 0.00010012707934947684
+    }
+  ],
+  "gate_paths": [
+    {
+      "stage": 0,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 0.0,
+      "gate_delta_max": 0.0,
+      "language_update_abs_max": 2.1200337409973145,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 1,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 0.0,
+      "gate_delta_max": 0.0,
+      "language_update_abs_max": 2.594155788421631,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 2,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 0.0,
+      "gate_delta_max": 0.0,
+      "language_update_abs_max": 2.245077610015869,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 3,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 0.0,
+      "gate_delta_max": 0.0,
+      "language_update_abs_max": 1.9291985034942627,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 4,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 0.0,
+      "gate_delta_max": 0.0,
+      "language_update_abs_max": 2.2623934745788574,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 5,
+      "weight_nonzero": false,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 0.0,
+      "gate_delta_max": 0.0,
+      "language_update_abs_max": 2.3981857299804688,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 0,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 5.96711755562751e-08,
+      "gate_delta_max": 0.028229713439941406,
+      "language_update_abs_max": 2.050400495529175,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 1,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.1721558035304724e-07,
+      "gate_delta_max": 0.055310964584350586,
+      "language_update_abs_max": 2.6069047451019287,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 2,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 5.7077236936819986e-08,
+      "gate_delta_max": 0.042871952056884766,
+      "language_update_abs_max": 2.1417670249938965,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 3,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.0730486721399757e-07,
+      "gate_delta_max": 0.03164172172546387,
+      "language_update_abs_max": 1.7758474349975586,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 4,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 1.195622796323903e-07,
+      "gate_delta_max": 0.03194582462310791,
+      "language_update_abs_max": 2.1614599227905273,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    },
+    {
+      "stage": 5,
+      "weight_nonzero": true,
+      "expressions": 8,
+      "queries": 128,
+      "reference_expression_rows": [
+        0,
+        7
+      ],
+      "reference_queries": [
+        0,
+        127
+      ],
+      "reference_channels": [
+        0,
+        127,
+        255
+      ],
+      "reference_error_max": 5.783145629045805e-08,
+      "gate_delta_max": 0.028545260429382324,
+      "language_update_abs_max": 1.990034580230713,
+      "native_qla_output_identity_verified": true,
+      "incoming_visual_query_identity_verified": true,
+      "both_inputs_undetached_verified": true,
+      "qqa_consumption_verified": true,
+      "static_mask_features_preserved": true,
+      "padding_identity_verified": true
+    }
+  ],
+  "gate_calls": 12,
+  "qqa_consumption_calls": 12,
+  "shared_head_calls": 14,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6744440832,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native two-step TRAIN only; no efficacy or full-dataset memory guarantee.",
+  "command": "python -B scripts/run_experiment_first_probe.py y74_gpu0_smoke pipeline/checks/y74_native_808558ef00a24c338c85891e0ac326af_gpu0_program.py --token dd81fa2cdb754585ab9d4ab0da627f70 --seconds 600 --gpu --gpu-id 0",
+  "server": "server-2",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y74_gpu0_smoke_dd81fa2cdb754585ab9d4ab0da627f70.json",
+      "sha256": "1339b56a21166454c679626f4f962bc72b901424c9e89692cf7345c4e3f7ccef"
+    },
+    {
+      "path": "pipeline/analyses/y74_gpu0_smoke_dd81fa2cdb754585ab9d4ab0da627f70.log",
+      "sha256": "dec87e4a913886347548a9a10201f2f4e4b87b9798ede420d6e06a483c3c56de"
+    },
+    {
+      "path": "pipeline/checks/y74_native_808558ef00a24c338c85891e0ac326af_gpu0_program.py",
+      "sha256": "d1aa4c6f745ab5c2a552d242c693a2e6082f5216f8ab118b036987079a31f46f"
+    },
+    {
+      "path": "pipeline/checks/y74_native_808558ef00a24c338c85891e0ac326af_gpu0_plan.json",
+      "sha256": "911040ebf6d1e1b4c94271c7389aacf3e0ac858b4519d209dd651f418911e66a"
+    }
+  ]
+}

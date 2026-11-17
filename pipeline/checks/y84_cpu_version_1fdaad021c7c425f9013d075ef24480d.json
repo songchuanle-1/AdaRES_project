@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y84",
+  "code_commit": "7bef2cd313b870583c970c56580be5a78097234d",
+  "parent_commit": "2818322e6049b2541f1590a4fa9ad6854b3c598d",
+  "retained_branch": "refs/heads/adares-y84-visual-query-init",
+  "working_HEAD": "5773768ffb87d7fea7432e85fd0da561556aa2fc",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y84_cpu_version_1fdaad021c7c425f9013d075ef24480d_source_snapshot.json",
+    "sha256": "5326bb0108c944a6103aeac683dd69e5a46877bf33641508668fccad370f19e0"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y84_cpu_1fdaad021c7c425f9013d075ef24480d.json",
+    "sha256": "d894562a859c2163c679552b58c14480b4e608863d4601c363aadd86cc09b9d5"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y84_visual_query_init_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y84_visual_query_init/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y84_cpu_version_1fdaad021c7c425f9013d075ef24480d.index",
+    "sha256": "68c2c8f0db4315be7aedc41754e503a145b1a7821f519d8bddde1caa335ccf12"
+  },
+  "original_admissions_and_frozen_sources_verified": true,
+  "queue_and_running_preserved": true,
+  "Y57_paused": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "evidence": [
+    {
+      "path": "scripts/save_y84_cpu_version.py",
+      "sha256": "c5109d183abdc4d9d2e2cf84fd18a2107f0a06c083c108ab832667a6212db701"
+    },
+    {
+      "path": "scripts/probe_y84_cpu.py",
+      "sha256": "eee1f248df97f5117e1a2f1c2e3ed23ac30a97a802d2d667da7ee9ffd8f2f85e"
+    },
+    {
+      "path": "scripts/prepare_y84_visual_query_init.py",
+      "sha256": "9b2cb7076fd0be3fbb355ce89a468174b3fb0530775d313f152d2a5ea36152b8"
+    }
+  ]
+}

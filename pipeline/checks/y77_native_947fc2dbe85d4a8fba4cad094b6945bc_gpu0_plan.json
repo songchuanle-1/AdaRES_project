@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y77",
+  "config": "configs_song/model_paper5/adares_y77_geometry_query_init_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "498e721ea05e96aeb6f948d9cf8cd7a91b65ae22",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-2",
+  "gpu": 0,
+  "runtime_power_limit_watts": 280.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server2_gpu1_20261029.json",
+    "sha256": "6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838"
+  },
+  "working_HEAD_preserved": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "retained_branch": "refs/heads/adares-y77-geometry-query-init",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y77_gpu0_smoke pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu0_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id 0",
+  "required_resource": "Fresh exclusive authorized idle/unreserved server-2 GPU0 after canonical terminal archive; exact host/private runtime/original data/unchanged power. Preserve live tasks, Y57 pause and original full evaluation protocol.",
+  "checks": "Native YAML/tools.train/TRAIN two finite losses/backward/optimizer; one original generated query/original padded scene geometry/mass storage and sampled-position identities, twelve original SCG position consumers and actual initial prediction consumer, static mask/padding identities, seven shared confidence heads, independent scalar point-mass-centroid and position projection formula, zero first/next-step response, native modes/finite original-query/new-weight gradients/real updates/peak memory.",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 11,
+  "Python38_compile": true,
+  "program": {
+    "path": "pipeline/checks/y77_native_947fc2dbe85d4a8fba4cad094b6945bc_gpu0_program.py",
+    "sha256": "982b10610464d198c13ebde6bc3d94dd1ab5757bb41da882939b78fcf1188b74"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y58",
+  "preregistered_at": "2026-10-20T23:56:32.391082+08:00",
+  "program": {
+    "path": "pipeline/analyses/y58_cpu_v2_b7801e9894f742b09038e89d033a8945_program.py",
+    "sha256": "1f3e101dd7c88b4df1bd4efe080970358623b162f0eab7dfa03c15b2bd311e56"
+  },
+  "body": {
+    "path": "scripts/probe_y58_cpu_v2_b780.py",
+    "sha256": "d296d2a649ee63f8e0e4df17a1d9b6bd8f2c5195b3e202f4f9aff8b227273a9c"
+  },
+  "static_driver_correction": "Replace Python3.9-only removeprefix with prefix-length slicing. Original version unrun; no outcomes, fixture or scientific gate changed.",
+  "result": "pending"
+}

@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "observed_at": "2026-11-14T21:53:47.967896+08:00",
+  "compute_pids": [
+    452838
+  ],
+  "processes": [
+    {
+      "pid": 452838,
+      "exists": true,
+      "status": [
+        "Name:\tpython",
+        "State:\tR (running)",
+        "PPid:\t452835",
+        "Uid:\t1002\t1002\t1002\t1002"
+      ],
+      "commandline": "/data1/songcl/H100_project/glc_project/envs/project_multiview_paper/bin/python scripts/evaluate_projection_fix_full.py train=train_mvggt_refer_m53_pcd train.resume=/data1/songcl/H100_project/lgc_project/multiview_checkpoints/outputs/m53_pcd/ckpts/best_model work_dir=/data1/songcl/H100_project/lgc_project/projection_fix_full_20261114/work name=projection_full_full train.num_workers=2 test.num_workers=2 train_dataset.ScanNet.data_root=/data1/songcl/data/multiview test_dataset.ScanNet.data_root=/data1/songcl/H100_project/lgc_project/sampling_full_20261114/dataset/multiview +test.max_img_per_gpu=8 log.use_tensorboard=false +projection_fix_full.output_dir=/data1/songcl/H100_project/lgc_project/projection_fix_full_20261114/full +projection_fix_full.sample_plan=/data1/songcl/H100_project/lgc_project/projection_fix_full_20261114/plan.json +projection_fix_full.legacy_reference=/data1/songcl/H100_project/lgc_project/fusion_attribution_500_20261114/diagnostic/queries.jsonl +projection_fix_full.corrected_reference=/data1/songcl/H100_project/lgc_project/projection_fix_500_20261114/diagnostic/queries.jsonl +projection_fix_full.max_queries=0 +projection_fix_full.verify_native_queries=2 +projection_fix_full.resume=false hydra.run.dir=/data1/songcl/H100_project/lgc_project/projection_fix_full_20261114/full/hydra "
+    }
+  ],
+  "old_Y88_worker_absent": true,
+  "old_Y88_child_absent": true,
+  "remote_mutations": false,
+  "project_files_read": false,
+  "foreign_project_files_read": false,
+  "GPU_used": false,
+  "checkpoint_loaded": false
+}

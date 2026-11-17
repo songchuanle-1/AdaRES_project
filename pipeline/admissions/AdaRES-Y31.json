@@ -1,0 +1,108 @@
+{
+  "id": "AdaRES-Y31",
+  "config": "configs_song/model_paper5/adares_y31_mask_shape_res.yaml",
+  "code_commit": "5f2489de78196e8d89c004e452a665c0946f2a94",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "decision": {
+    "path": "pipeline/decisions/20261007-190939_next_batch.md",
+    "sha256": "c4766a1dbbae60c59df19eb6aee66926157deac089c878c116132099222a3d8c"
+  },
+  "gates": {
+    "diagnosis": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y31_shape_diagnosis_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "e1f22d8243643faa63c348d025ebae6ddfba86cbfb32465c7c64c0ba19bb46ea"
+        },
+        {
+          "path": "pipeline/analyses/Y31_diagnosis_prereg_626ebd89.md",
+          "sha256": "918cbca368841816b93286fc8513d2ce1b981174f13fe31293a0da4dbeaa305b"
+        }
+      ]
+    },
+    "controls": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y31_native_controls_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "679f4484cf693859a65cb0b62c3c180b093e203af112846b5a74ac38eb3689ca"
+        },
+        {
+          "path": "pipeline/analyses/y31_initial_loss_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "bfd694dbf625e3b1924efb0bcbc703b246674f921c59b7e9b7d24ca54f0dc76b"
+        },
+        {
+          "path": "pipeline/analyses/y31_structure_cpu_lf_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "239b60417173b2750d759ec363771664f299d8dd661318cb424b873e29a82c14"
+        }
+      ]
+    },
+    "native_backward": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y31_physical_native_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "be9bf70d80798058ba1a527c684f416e4b64e4083e9c900566de738bfdbeca7e"
+        },
+        {
+          "path": "pipeline/analyses/y31_native_controls_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "679f4484cf693859a65cb0b62c3c180b093e203af112846b5a74ac38eb3689ca"
+        }
+      ]
+    },
+    "resources": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y31_resources_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "28bd24e568756036f27ddb30db12aad513a146f18a4db2621daf34a194727156"
+        }
+      ]
+    },
+    "independence": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/y31_source_bundle_lf_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "79badd8ec8d13504b1239b7260b182e8f1fedda4a0c65d1d54ed06e9a51cac7d"
+        },
+        {
+          "path": "pipeline/analyses/y31_structure_cpu_lf_626ebd89c7094c31953d05dac9d0dc8d.json",
+          "sha256": "239b60417173b2750d759ec363771664f299d8dd661318cb424b873e29a82c14"
+        }
+      ]
+    },
+    "constraints": {
+      "passed": true,
+      "evidence": [
+        {
+          "path": "pipeline/analyses/Y31_admission_review_626ebd89.md",
+          "sha256": "a54d42f01008eb3171412d27989c3cf13fda5dbafee4388efd2c7aa9a5f3e0b5"
+        },
+        {
+          "path": "pipeline/designs/exp_design_Y31_626ebd89.md",
+          "sha256": "62f264ec31794535ea209e9e0ef9081fe02de49b7fc217ca921936a39646df62"
+        },
+        {
+          "path": "pipeline/reviews/motivation_review_Y31_626ebd89.md",
+          "sha256": "dc03cc53a788d3df446684a9bc72af9a69d492f427837af5dc18e7b323fb9182"
+        }
+      ]
+    }
+  },
+  "scientific_status": "admitted_for_falsifiable_training_not_efficacy",
+  "frozen_protocol": {
+    "epochs": 30,
+    "seed": 1999,
+    "server": "server-2",
+    "allowed_gpus": [
+      1
+    ],
+    "post_training_design": {
+      "path": "pipeline/designs/exp_design_Y31_626ebd89.md",
+      "sha256": "62f264ec31794535ea209e9e0ef9081fe02de49b7fc217ca921936a39646df62"
+    }
+  },
+  "limitations": "Superpoint-centroid covariance approximation, adverse initial losses, wrong/uniform shape learnability, resume numerical differences and measured cost regressions retained. No trained efficacy, necessity, Pareto or novelty claim."
+}

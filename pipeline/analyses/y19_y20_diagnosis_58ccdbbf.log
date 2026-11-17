@@ -1,0 +1,13 @@
+{"scans": 8}
+{"scans": 16}
+{"scans": 24}
+{"scans": 32}
+{"scans": 40}
+{"scans": 48}
+{"scans": 56}
+{"scans": 64}
+{"candidate_ids": ["AdaRES-Y19", "AdaRES-Y20"], "manifest_sha256": "2f9cbf673bdfed3b1ba7694ac45e9c355fc08a85731c046f59d2761e46480df7", "y19": {"g1_source_sha256": "da11e921f05fbed7439220a5ef72b72562e35eb2ff188fdd9a264fc457977dcf", "executed_comparison": [{"masses": [1, 1, 1], "quality": [1.0, 0.5, 0.0], "loss_difference": 0.0, "gradient_max_difference": 0.0}, {"masses": [1, 4, 2], "quality": [1.0, 0.20000000298023224, 0.0], "loss_difference": 0.10553765296936035, "gradient_max_difference": 0.0216141939163208}], "interpretation": "Point-expanded objective equals actual G1 at equal point mass; unequal mass changes its target/weights, not the all-query soft-target mechanism."}, "y20": {"scans": 64, "expressions": 256, "mean_gradient_cosine": 0.02776981474744389, "negative_scenes": 21, "positive_scenes": 43, "mean_opposite_fraction": 0.16047901548881782, "maximum_repeat_logit_difference": 8.664070129394531, "maximum_detached_logit_difference": 8.664070129394531, "maximum_native_detached_loss_difference": 1.4156103134155273e-05, "all_finite": true, "all_detached_mask_grad_zero": true, "all_detached_head_grad_nonzero": true, "peak_reserved_gib": 14.673828125}, "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_w2_pointmass_competition_res/20260926_145041/best.pth", "complete": true, "limitations": ["TRAIN diagnostic only, one frozen checkpoint; not trained efficacy.", "Gradients target final indicator mask route, not whole-parameter gradient interactions.", "Repeated native training captures may have numeric noise; no tuning."]}
+
+STDERR:
+Using backend: pytorch
+2026-10-01 19:24:54,629 - INFO - Load train scanrefer: 36665 samples

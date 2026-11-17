@@ -1,0 +1,21 @@
+Using backend: pytorch
+2026-10-16 23:36:30,645 - INFO - Pretrain filtered: loaded=274 skipped=7 missing=786 unexpected=0
+2026-10-16 23:36:31,039 - INFO - Load train scanrefer: 36665 samples
+2026-10-16 23:36:34,632 - INFO - set random seed: 1999
+2026-10-16 23:36:34,872 - INFO - set random seed: 1999
+2026-10-16 23:36:35,103 - INFO - set random seed: 1999
+2026-10-16 23:36:35,767 - INFO - set random seed: 1999
+2026-10-16 23:36:35,917 - INFO - set random seed: 1999
+2026-10-16 23:36:36,194 - INFO - set random seed: 1999
+2026-10-16 23:36:36,396 - INFO - set random seed: 1999
+2026-10-16 23:36:36,790 - INFO - set random seed: 1999
+2026-10-16 23:36:37,838 - INFO - set random seed: 1999
+2026-10-16 23:36:56,251 - INFO - set random seed: 1999
+2026-10-16 23:36:57,531 - INFO - set random seed: 1999
+2026-10-16 23:36:58,828 - INFO - set random seed: 1999
+Traceback (most recent call last):
+  File "<stdin>", line 232, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1604, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for IPDN:
+	Unexpected key(s) in state_dict: "text_encoder.embeddings.position_ids", "text_encoder.embeddings.token_type_ids". 

@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y72",
+  "code_commit": "c60c903941d6cd7ffcc343d7c13610f2ba416caa",
+  "parent_commit": "87019e7c2f640f99cb82a3e5b396321fc5b54d25",
+  "retained_branch": "refs/heads/adares-y72-visual-mask-refinement",
+  "exact_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/__init__.py",
+      "sha256": "0857cbfce46f7ed6d44e639d3d97eba6278358bd60607dcc5acc01cb14736a34"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/dec.py",
+      "sha256": "8426e969f04daf0b0b69891a7b346d12133b0807d9305feeb9b01e5ecff04ddb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y72_visual_mask_refinement/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y72_visual_mask_refinement_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "CPU_source_snapshot": {
+    "path": "pipeline/checks/y72_cpu_preparation_bf900942292b41e09fda663f4736180a_source_snapshot.json",
+    "sha256": "396f0bdc053ef2797b4205f94570cd44c4ddb3399e4cc7cdb6962c497afad8ff"
+  },
+  "CPU_test": {
+    "path": "pipeline/analyses/y72_cpu_bf900942292b41e09fda663f4736180a.json",
+    "sha256": "22b1f070a43f598b77cb5dee3a4228de5efc177cdf3c9a6bf540602138468112"
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_guards.log",
+    "sha256": "914e88a534d0e80ecd8762212fa24283ccdf99259b8f501c14e9b06427edc6fa"
+  },
+  "guard_tests_passed": 11,
+  "commit_record": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_commit.json",
+    "sha256": "47c712f270364c5000fe666e1107e0ca842836d45bb3087504499d13d98d58af"
+  },
+  "isolated_index": {
+    "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_isolated.index",
+    "sha256": "bd60a4bd1f099d18cea5c973d73709ad71792d8f30c081185ee35a50c7999de8"
+  },
+  "main_index_unchanged": true,
+  "working_HEAD_unchanged": true,
+  "Y71_seven_files_and_plan_verified": true,
+  "Y68_terminal_local_source_contract_verified": true,
+  "queue_and_running_preserved": true,
+  "original_admissions_valid": true,
+  "original_runs": [
+    {
+      "id": "AdaRES-Y68",
+      "pid": 20742,
+      "code_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+      "server": "server-2",
+      "gpu": "0"
+    },
+    {
+      "id": "AdaRES-Y70",
+      "pid": 52561,
+      "code_commit": "39bdb8d9783512e70cdc2763e9a6097ab0f67a0f",
+      "server": "server-2",
+      "gpu": "1"
+    },
+    {
+      "id": "AdaRES-Y69",
+      "pid": 1135633,
+      "code_commit": "9acd73cdc1b96be003c8450a9e22057248a0f531",
+      "server": "server-1",
+      "gpu": "0"
+    }
+  ],
+  "Y57_paused": true,
+  "native_plans": {
+    "0": {
+      "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu0_plan.json",
+      "sha256": "a3a875a2992f0a43ef4eb50849f9312115959a71134456b2dc64d0535f0efa1c"
+    },
+    "1": {
+      "path": "pipeline/checks/y72_native_a285e143eb2d438c8fc08d95b55e256e_gpu1_plan.json",
+      "sha256": "1fded5fd2c82600a9db4005247f1d2430bdeb5b9c4f92057eea92c612a604a18"
+    }
+  },
+  "native_executed": false,
+  "admitted": false,
+  "pushed": false,
+  "production_sync": false,
+  "stale_goal_refused": true,
+  "tampered_source_refused": true,
+  "evidence": [
+    {
+      "path": "scripts/save_y72_native_plans.py",
+      "sha256": "fb72d0915b6ba468dc924d39a3ea3a127729b7be2846bf797dcdffd5031f42e6"
+    },
+    {
+      "path": "scripts/probe_y72_native_smoke.py",
+      "sha256": "68065ff47e759ac107bb72503d4224da43ee874dc4d40216d63342e1b9b2280a"
+    },
+    {
+      "path": "scripts/test_y72_native_smoke_plan.py",
+      "sha256": "520c907f822239039e5e1721b89982ef88045ac3906a516034ead7674e30ec3b"
+    }
+  ],
+  "limitation": "CPU guard/version preparation only; native sparse task loss/backward/optimizer and efficacy unobserved."
+}

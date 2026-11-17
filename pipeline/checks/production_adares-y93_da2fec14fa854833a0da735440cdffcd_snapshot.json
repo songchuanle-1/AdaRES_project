@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-11-09T01:43:44.093140-05:00",
+    "latest": {
+      "phase": "Val",
+      "epoch": 22,
+      "total": 30,
+      "step": 256,
+      "count": 363
+    },
+    "log_bytes": 29051344
+  },
+  "after": {
+    "observed_at": "2026-11-09T01:43:49.101284-05:00",
+    "latest": {
+      "phase": "Val",
+      "epoch": 22,
+      "total": 30,
+      "step": 277,
+      "count": 363
+    },
+    "log_bytes": 29053184
+  },
+  "samples": [
+    {
+      "observed_at": "2026-11-09T01:43:44.093140-05:00",
+      "latest": {
+        "phase": "Val",
+        "epoch": 22,
+        "total": 30,
+        "step": 256,
+        "count": 363
+      },
+      "log_bytes": 29051344
+    },
+    {
+      "observed_at": "2026-11-09T01:43:49.101284-05:00",
+      "latest": {
+        "phase": "Val",
+        "epoch": 22,
+        "total": 30,
+        "step": 277,
+        "count": 363
+      },
+      "log_bytes": 29053184
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 47380,
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y93_evidence_hidden_skip_res_20261108_212628.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "daa93b4375f144f0e79da92f85fe1fe27e877e18",
+  "compute_owners": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 47380\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 7560\n",
+  "authorized_gpu_uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146",
+  "gpu": "71, 22724, 80, 280.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y93",
+  "token": "da2fec14fa854833a0da735440cdffcd",
+  "observed_local": "2026-11-09T14:45:05.208893+08:00",
+  "evidence": [
+    {
+      "path": "scripts/y94_deployment.py",
+      "sha256": "49e4d737c47fd850703577486ba79425ce771518721682351f751a0906d604db"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y93_da2fec14fa854833a0da735440cdffcd_snapshot.log",
+      "sha256": "0bd97bc2cd7e0023233408360ba7576a95251eabae67be203244fc14fe8274d2"
+    }
+  ]
+}

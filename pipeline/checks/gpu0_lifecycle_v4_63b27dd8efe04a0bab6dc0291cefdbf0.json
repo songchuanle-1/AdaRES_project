@@ -1,0 +1,102 @@
+{
+  "complete": true,
+  "observed_at": "2026-10-25T21:59:05.701660+08:00",
+  "records": [
+    {
+      "id": "AdaRES-Y56",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/analyses/AdaRES-Y56_post_training_freeze_dd8e4cf0cbdc46169e8b3eadac13593d.json",
+          "sha256": "2aaed3181c54c66ee595a42453005e776f34fc70e6bd086251f61924c1f85a83"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y56_fixed30_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "27e9bdc6d8164b63763cb75b4f121cd0c065ee6c12483ebc264660ab2cdb8b6d"
+        },
+        "status": "done_complete"
+      }
+    },
+    {
+      "id": "AdaRES-Y58",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/checks/AdaRES-Y58_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "aee7b40f93b410e10c98b3d47866bd2b3c306c33ebc4222a0cab392f42598722"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y58_fixed30_handoff_a22787800208426cb33a87fdce0c6b81.json",
+          "sha256": "e44798d050d5807c65f2d4f5da83cfdd213f09f0da881be4a39881bb2d32142f"
+        },
+        "status": "done_complete"
+      }
+    },
+    {
+      "id": "AdaRES-Y59",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/checks/AdaRES-Y59_post_training_freeze_8664855b3766455594b27408b18a8ce6.json",
+          "sha256": "839d6aabab1ec30f739c80f7aa94bf90028b9583a9308aa7fefe74668b424e66"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y59_fixed30_3e61cded0e934db5bb4f9abd4451c12c.json",
+          "sha256": "0c00de9a832602e02d42118a93e1b61554c4129c9fc13ebf3a90a00d676f3d23"
+        },
+        "status": "done_complete"
+      }
+    },
+    {
+      "id": "AdaRES-Y60",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/checks/AdaRES-Y60_post_training_freeze_3e61cded0e934db5bb4f9abd4451c12c.json",
+          "sha256": "5b8f075838ca9b0d23ac847c43777ab13add730854affa8623ae7ef541165efc"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y60_fixed30_fd874a5eafed4a5b84c6c77d939b6b3f.json",
+          "sha256": "67e0dfb0a3e56796bddb099a7b5620577581decb7d9a229e37f3ad792bfffe5e"
+        },
+        "status": "done_complete"
+      }
+    },
+    {
+      "id": "AdaRES-Y61",
+      "kind": "frozen_evaluation",
+      "checks": {
+        "freeze": {
+          "path": "pipeline/checks/AdaRES-Y61_post_training_freeze_fd874a5eafed4a5b84c6c77d939b6b3f.json",
+          "sha256": "9ec50b2cc52516fa053afeb9f42961faf198575395b025ce1188edf132b6de03"
+        },
+        "terminal": {
+          "path": "pipeline/checks/y61_fixed30_b5a42dc4481640c28115e9cff887f862.json",
+          "sha256": "df67e93c62c76a39928d829e2151dd081ef8d0848e765da05a0ef791af999219"
+        },
+        "status": "done_complete"
+      }
+    }
+  ],
+  "live": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "9bea5e906be3a478be50442db521e766c446a1ec",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 94, 24136, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 83, 24156, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 13813, 24128\nGPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, 13814, 24148\n",
+    "compute_query_rc": 0,
+    "tasks": {}
+  },
+  "hardware": {
+    "gpu0": "280.00, 276.75, 86, 24136"
+  },
+  "idle_authorized_gpus": [],
+  "unregistered_gpu0_pids": [
+    "13813"
+  ],
+  "native_smoke_executed": false,
+  "queue_changed": false,
+  "hardware_changed": false,
+  "command": "python -B scripts/recheck_gpu0_lifecycle_v4.py --token 63b27dd8efe04a0bab6dc0291cefdbf0"
+}

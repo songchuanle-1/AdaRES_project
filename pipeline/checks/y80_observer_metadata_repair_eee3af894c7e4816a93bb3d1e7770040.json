@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "failure_scope": "implementation_metadata_wrapper",
+  "failed_helper": {
+    "path": "scripts/save_y80_native_observer_verification.py",
+    "sha256": "f010180c2fe9e48a176675fd60883e520baad277403a646fac771f4b38a88c91"
+  },
+  "corrected_helper": {
+    "path": "scripts/save_y80_native_observer_verification_attempt2.py",
+    "sha256": "217d5ffb93a3b0f1402cd97570743b2590195ddb082be188df300a7fc860a2fa"
+  },
+  "observed_failure": "Metadata assertion expected152738 points after overbroad16-to15 callback-count text substitution; actual unchanged original TRAIN output is162738 points.",
+  "actual_CPU_result": {
+    "path": "pipeline/analyses/y80_native_observer_cpu_eee3af894c7e4816a93bb3d1e7770040.json",
+    "sha256": "e6d4f14c792c790f03e3656c6944cd315b26154594c5b0aadc157611ff92b65d"
+  },
+  "actual_probe_passed": true,
+  "model_native_plans_and_actual_CPU_result_unchanged": true
+}

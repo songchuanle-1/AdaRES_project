@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "910bf6ab43fe4a3881bb680cc7fa8a08",
+  "id": "AdaRES-Y91",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y91",
+    "label": "AdaRES-Y91 fixed30",
+    "config": "configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y91.json",
+    "scientific_candidate_id": "AdaRES-Y91",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 83827,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y91_hidden_confidence_gate_res_20261107_232228.log",
+    "launched": "2026-11-07T23:23:03"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y91 fixed30] configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y91.py",
+    "sha256": "f6eafda99fd4c5c4aa1cbe96dcbc2fb9cfe23966627360b40bcb8afa90b84b53"
+  }
+}

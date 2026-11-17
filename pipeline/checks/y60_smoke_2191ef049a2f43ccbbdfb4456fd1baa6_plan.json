@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y60",
+  "profile": "experiment_first",
+  "program": {
+    "path": "pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_program.py",
+    "sha256": "e3f3aa26cc24043f94a7a11e65284718356dfc79d15dd35c4791e2ec9947f861"
+  },
+  "config": "configs_song/model_paper5/adares_y60_stage_specific_confidence_res.yaml",
+  "code_commit": "6ac772a0c3eb4b5e598d25ce00c0ab7f203ce1e3",
+  "goal_sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966",
+  "planned_command": "python -B scripts/run_experiment_first_probe.py y60_smoke pipeline/checks/y60_smoke_2191ef049a2f43ccbbdfb4456fd1baa6_program.py --token <CURRENT_TOKEN> --seconds 600 --gpu --gpu-id <IDLE_AUTHORIZED_GPU>",
+  "required_resource": "Exclusive authorized server-2 GPU0/1, idle compute and reconciled queue reservations.",
+  "checks": "Native YAML and TRAIN loader, native tools/train.py::train for two finite optimizer steps; each of seven heads executes twice and receives finite nonzero final-weight gradients; same released backbone/seed1999/fixed30; measure GPU peak below card capacity.",
+  "Python38_compile": true,
+  "missing_GPU_entry_refused": true,
+  "native_executed": false
+}

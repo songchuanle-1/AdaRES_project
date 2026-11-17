@@ -1,0 +1,131 @@
+{
+  "complete": true,
+  "token": "037ef8a032b64a4db7849e6bd58df591",
+  "id": "AdaRES-Y101",
+  "observed_at": "2026-11-13T19:56:59.531402+08:00",
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0,
+    "note": "Existing power preserved; full paired evaluation/cost on this device; two batches are not a full-dataset memory bound."
+  },
+  "methods": [
+    "AdaRES-Y101",
+    "AdaRES-Y36",
+    "AdaRES-W2",
+    "AdaRES-B1"
+  ],
+  "isolated_CPU_imports_passed": 4,
+  "private_python_and_site_packages_verified": true,
+  "private_pointnet_egg_and_sparseconv_imported": true,
+  "original_native_train_resolver_verified": true,
+  "all_four_native_YAML_semantics_verified": true,
+  "adapter_definitions_imported_without_main": true,
+  "launch_python_paths": [
+    "/data1/songcl/Project/AdaRES_project/AdaRES",
+    "/data1/songcl/Project/AdaRES_project/AdaRES/tools",
+    "/data1/songcl/Project/AdaRES_project/AdaRES/ipdn/lib",
+    "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages",
+    "/data1/songcl/Project/AdaRES_project/runtime/pointnet2-0.0.0-py3.8-linux-x86_64.egg"
+  ],
+  "launch_python": "/data1/songcl/Project/AdaRES_project/runtime/adares_project/bin/python",
+  "launch_runtime_library_path": "/data1/songcl/Project/AdaRES_project/runtime/cuda113lib64",
+  "actual_command_prefix": "PYTHONDONTWRITEBYTECODE=1 PYTHONUTF8=1 CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/data1/songcl/Project/AdaRES_project/runtime/cuda113lib64 /data1/songcl/Project/AdaRES_project/runtime/adares_project/bin/python -B -S -",
+  "results": [
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y101.json",
+      "sha256": "20c3a8f3efa337729b07e7506283b161b056e862f049dfeb74872696cdc92c12"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y36.json",
+      "sha256": "c215554bbfa797cf9e135df70d701a173a22ef5e22475088afbcdd16d92c6e7c"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-w2.json",
+      "sha256": "f7705763bbc8ae034d9d94d8f16cce0cea45e0baf75f8d2d2b2f1c5301c4c231"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-b1.json",
+      "sha256": "f01bcf4cf3d02def3cb921d38429165efe8267cc3173a9023098a4f7da66c134"
+    }
+  ],
+  "model_created": false,
+  "dataset_created": false,
+  "checkpoint_loaded": false,
+  "CUDA_initialized": false,
+  "real_GPU_queries": false,
+  "adapter_deployed": false,
+  "evaluation_executed": false,
+  "evaluation_ready": false,
+  "remaining": "Await original natural Y101 fixed30/exact finite terminal proof/canonical archive, fresh exclusive originalserver1GPU0/350W, final guarded executable launch and full paired FIRST/bootstrap/subgroup/cost. Runtime import PASS is not GPU/data/effectiveness or target achievement.",
+  "evidence": [
+    {
+      "path": "scripts/prepare_y101_review_runtime_binding_v2.py",
+      "sha256": "150644762511674661fff2c9e89d7f3f8410cf294c0d1ab81099a4377ca87c46"
+    },
+    {
+      "path": "pipeline/checks/y101_review_adapter_afe999d0f7ff4ff1aba5d54d5485fa8d.json",
+      "sha256": "043a23373ae32bf1b7d42a61dea9f7fe5bce1528cb6bc2619a2505e74196834f"
+    },
+    {
+      "path": "pipeline/checks/y101_reference_stage_fedad03ae838499fafb71397c992731c.json",
+      "sha256": "703987e187d202204e24070d62b98ab6f989deb13f3b81107245d55718522006"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y101_16ace440440346cebe23c272fdbba622_post_training_freeze.json",
+      "sha256": "e624a80505b35aa2fa09fa55bde64ed8f8e1915dbe385da3073db5b44bc81db1"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y101_037ef8a032b64a4db7849e6bd58df591_start.json",
+      "sha256": "6f0dc836e374f78566f225a60e97b05e0e36fac093f7f89741d39a483a4d1b33"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y101.py",
+      "sha256": "26cb05ccb4bf4250a9abeda095dc71935d635ecd30fce51b5df4a02b626be45d"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y101.log",
+      "sha256": "0f1e8cfaae3b5db80a8223e4d75b394edd88845bdfc818c1f60b8bcc2b35150c"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y101.json",
+      "sha256": "20c3a8f3efa337729b07e7506283b161b056e862f049dfeb74872696cdc92c12"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y36.py",
+      "sha256": "c252f9e9f49969ddfc973002983b06b57c16f66bf4dfd6a37ba4f98c4191b139"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y36.log",
+      "sha256": "9f23e033613c054ea78d530f4288cbbcecca1e4a6e3397fbaf85096f60375295"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-y36.json",
+      "sha256": "c215554bbfa797cf9e135df70d701a173a22ef5e22475088afbcdd16d92c6e7c"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-w2.py",
+      "sha256": "a10d93ec912c84d94caf1bcbf310e5bc9bd2d409cd91c13bdacf31d74ba0d349"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-w2.log",
+      "sha256": "23997d0d7389ae1b4389af1602d16240fc289deb76c6ddd5a6cd3f5d293d3676"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-w2.json",
+      "sha256": "f7705763bbc8ae034d9d94d8f16cce0cea45e0baf75f8d2d2b2f1c5301c4c231"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-b1.py",
+      "sha256": "896e0b69adca37b75551e9b8a4edc8bd733b2bd400aff46ad261c44d91a7e5f0"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-b1.log",
+      "sha256": "272e3c0a9ea6c6ec3363d1d6dd0f723d44feac037625df469d34c7b3b40746a9"
+    },
+    {
+      "path": "pipeline/checks/y101_review_import_v2_037ef8a032b64a4db7849e6bd58df591_adares-b1.json",
+      "sha256": "f01bcf4cf3d02def3cb921d38429165efe8267cc3173a9023098a4f7da66c134"
+    }
+  ]
+}

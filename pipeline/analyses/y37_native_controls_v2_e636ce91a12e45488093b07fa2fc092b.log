@@ -1,0 +1,20 @@
+Using backend: pytorch
+2026-10-09 23:44:00,078 - INFO - Load train scanrefer: 36665 samples
+2026-10-09 23:44:03,876 - INFO - set random seed: 1999
+{"phase": "trained", "scan_id": "scene0000_00", "mask_gradient_delta": 1.4765316791454097e-07}
+{"phase": "trained", "scan_id": "scene0001_00", "mask_gradient_delta": 2.9926155775683583e-07}
+{"phase": "trained", "scan_id": "scene0002_00", "mask_gradient_delta": 8.6380549646492e-07}
+{"phase": "trained", "scan_id": "scene0003_00", "mask_gradient_delta": 1.2717406150386523e-07}
+{"phase": "trained", "scan_id": "scene0004_00", "mask_gradient_delta": 8.843142040859675e-08}
+{"phase": "trained", "scan_id": "scene0005_00", "mask_gradient_delta": 1.7890007484311354e-06}
+{"phase": "trained", "scan_id": "scene0006_00", "mask_gradient_delta": 2.2997792825663055e-07}
+{"phase": "trained", "scan_id": "scene0007_00", "mask_gradient_delta": 3.499644094517862e-07}
+2026-10-09 23:44:24,195 - INFO - set random seed: 1999
+{"phase": "released_init", "scan_id": "scene0000_00", "mask_gradient_delta": 2.6347985112806782e-05}
+{"phase": "released_init", "scan_id": "scene0001_00", "mask_gradient_delta": 4.340118266554782e-06}
+{"phase": "released_init", "scan_id": "scene0002_00", "mask_gradient_delta": 2.3725385744910454e-06}
+{"phase": "released_init", "scan_id": "scene0003_00", "mask_gradient_delta": 6.256659617065452e-06}
+Traceback (most recent call last):
+  File "<stdin>", line 149, in <module>
+  File "<stdin>", line 149, in <genexpr>
+KeyError: 'pair_gradients'

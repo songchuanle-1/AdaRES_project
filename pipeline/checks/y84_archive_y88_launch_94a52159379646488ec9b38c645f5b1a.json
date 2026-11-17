@@ -1,0 +1,117 @@
+{
+  "complete": true,
+  "token": "94a52159379646488ec9b38c645f5b1a",
+  "observed_at": "2026-11-06T05:38:51.237486+08:00",
+  "original_Y84": {
+    "path": "pipeline/checks/y84_server1_fixed30_94a52159379646488ec9b38c645f5b1a.json",
+    "sha256": "13f1ab6de24e49ffb19f1af3754d764a4f2c80b4855858e78b9c4359f6a9abc1"
+  },
+  "Y84_training_best_only": 0.5020241737365723,
+  "active": {
+    "AdaRES-Y88": {
+      "server": "server-1",
+      "pid": 3527278,
+      "phase": {
+        "phase": "Train",
+        "epoch": 1,
+        "total": 30,
+        "step": 69,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y88_94a52159379646488ec9b38c645f5b1a_progress.json",
+        "sha256": "01221f0ebe6ddfdda9f3dd4639983776c737c086ee3ded567aed6614a18b09e5"
+      }
+    },
+    "AdaRES-Y87": {
+      "server": "server-2",
+      "pid": 26281,
+      "phase": {
+        "phase": "Train",
+        "epoch": 4,
+        "total": 30,
+        "step": 375,
+        "count": 4686
+      },
+      "evidence": {
+        "path": "pipeline/checks/production_adares-y87_94a52159379646488ec9b38c645f5b1a_latest.json",
+        "sha256": "6956bdd2eb2e3d7405fee1b245dea6486bc68b0c052815f43d978830e0ee379f"
+      }
+    }
+  },
+  "Y88_native_losses": [
+    4.615511417388916,
+    6.349765777587891
+  ],
+  "Y88_native_peak_reserved_bytes": 6698303488,
+  "new_candidates": 1,
+  "admissions": 1,
+  "launches": 1,
+  "archives": 1,
+  "formal_frozen_FIRST_updated": false,
+  "GPU1_paused": true,
+  "Y57_separately_paused": true,
+  "original_data_runtime_paths_power_protocol_retained": true,
+  "failed_helper_and_repair_preserved": {
+    "first_helper": {
+      "path": "scripts/create_y88_execution_helpers.py",
+      "sha256": "09d672096cd3ce27cb6f3de5c51f4972ac378162740fe94dfca2c608199439d2"
+    },
+    "repaired_helper": {
+      "path": "scripts/create_y88_execution_helpers_v2.py",
+      "sha256": "6f23f7f7ebb149cdb168b9aec0cc2b9a2504de6ace79d6ee4fc168354a6fbb32"
+    },
+    "first_failure": "ValueError: template had no def activate boundary; failed before writing generated files.",
+    "fix": "Use the actual __main__ boundary only. Original failed helper retained; no model/YAML/native guard revision."
+  },
+  "previous_memory": {
+    "path": "pipeline/snapshots/codex_memory_before_94a52159379646488ec9b38c645f5b1a.md",
+    "sha256": "6058b3418719a2b712a706b79dbc546369355cb0ab00fb5bfc7107bc221a39da"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y84_server1_fixed30_94a52159379646488ec9b38c645f5b1a.json",
+      "sha256": "13f1ab6de24e49ffb19f1af3754d764a4f2c80b4855858e78b9c4359f6a9abc1"
+    },
+    {
+      "path": "pipeline/checks/y84_server1_fixed30_94a52159379646488ec9b38c645f5b1a_archive_binding.json",
+      "sha256": "edc9feed32cf93de3b315509fab7fdceac4356aac593f67699a15f49aeb0ee5a"
+    },
+    {
+      "path": "pipeline/checks/y88_cpu_version_94a52159379646488ec9b38c645f5b1a.json",
+      "sha256": "d8b8a82a66d20f466ba406573dbd0dcf01450624b1a0c2b40bc258be0dccefac"
+    },
+    {
+      "path": "pipeline/checks/y88_native_94a52159379646488ec9b38c645f5b1a.json",
+      "sha256": "95f796e7aad237f12321382673fb517194def2179c5b500966281336cd4c3ff0"
+    },
+    {
+      "path": "pipeline/analyses/y88_server1_smoke_94a52159379646488ec9b38c645f5b1a.json",
+      "sha256": "b15c1afc47349cb191c7c18d45e02f9c6a2ce6ac0bd0f38ef851a86190fc4a79"
+    },
+    {
+      "path": "pipeline/admissions/AdaRES-Y88.json",
+      "sha256": "39f9a71debe48314d479b42b604565cf557ccbe40e5582e949a66959587b3572"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y88_94a52159379646488ec9b38c645f5b1a_post_training_freeze.json",
+      "sha256": "93bf51b65a580cbdd5a7ade69fae370d8d0e6e6db5ab665645892c775d84aa81"
+    },
+    {
+      "path": "pipeline/checks/adares-y88_source_selection_94a52159379646488ec9b38c645f5b1a.json",
+      "sha256": "4fed1aa4fc957c356b37b1875693bc4037dacdfab7885cafbb09c00763edcfbd"
+    },
+    {
+      "path": "pipeline/checks/adares-y88_admission_guards_94a52159379646488ec9b38c645f5b1a.log",
+      "sha256": "89f3fe56e7683666413687c6bdbbf7673ce4163619ab0cce221f26176f1c19eb"
+    },
+    {
+      "path": "pipeline/checks/adares-y88_dispatch_94a52159379646488ec9b38c645f5b1a.json",
+      "sha256": "471d063e471a13904c1d8abef152d132b9fbaa1133fc2a9a27b043fcbe400b63"
+    },
+    {
+      "path": "scripts/record_y84_y88_closeout.py",
+      "sha256": "0e82571cd2188f6f8042a150315f379d7a5a5d24ccbdfec0111c6507b05a3bc4"
+    }
+  ]
+}

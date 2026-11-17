@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y52",
+  "token": "89ffd8db36cf43ed8cfd75a68c77b4b9",
+  "preregistered_at": "2026-10-17T12:39:34.675194+08:00",
+  "prior": {
+    "path": "pipeline/analyses/y52_resources_batch_compat_89ff_89ffd8db36cf43ed8cfd75a68c77b4b9.json",
+    "sha256": "b18aa59d2f9ebc3f5fadd2a8e6d73b598dfaf996bc2906782b79ad607a25316b"
+  },
+  "original_program": {
+    "path": "pipeline/analyses/y52_resources_batch_compat_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "949822f0785f568381cc30a3cbdb1fcbdfacf1b94ea7a6a0acaeb2a4500f2096"
+  },
+  "fixed_input": "Same8TRAIN scenes/32expressions and native single-scene predict. Fixed W2 trained checkpoint already used prospectively for gradient diagnosis; strict real-state loading with exact legacy-static buffers only.",
+  "readout": "Retain raw probability inequality counts; additionally measure max probability/confidence difference, native threshold0.5 binary-mask differences, selected argmax changes and per-expression IoU differences, EACH versus independent same-model repeats. No tolerance tuning or accuracy claim.",
+  "prediction": "Inference unchanged by point-target training correction; compare matched output differences with repeat differences. Unexplained behavioral discrepancies remain inconclusive, never forced PASS.",
+  "limits": "No new model weights, model revision, validation selection, commit, admission or training. Fixed W2 checkpoint is NOT a trained Y52 checkpoint.",
+  "result": "pending",
+  "program": {
+    "path": "pipeline/analyses/y52_predict_readout_program_89ffd8db36cf43ed8cfd75a68c77b4b9.py",
+    "sha256": "802dbd8fef261f926aa5d256cacf54f04700fff97fb467ccd0d83a35b526445b"
+  }
+}

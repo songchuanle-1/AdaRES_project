@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "token": "d488959562e94ac492b5884cf430f679",
+  "id": "AdaRES-Y79",
+  "plan": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_plan.json",
+    "sha256": "f73ed1199ec141d983d366d6091d656a887bf4cbe0473bb0f0cf8c4626daa44e"
+  },
+  "binding": {
+    "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_binding.json",
+    "sha256": "4f000b30275a6f6ffa29878d58d49e85a947c6bdadc11b54a733cf9ec4203384"
+  },
+  "actual_CPU_result": {
+    "path": "pipeline/analyses/y79_server1_CPU_runtime_d488959562e94ac492b5884cf430f679.json",
+    "sha256": "ad2a558a04f27cfbe510fdf53a659a3c55ce7b85dcf1a7ff2a48a483914ab4e8"
+  },
+  "original_callback_functions_exact": 16,
+  "actual_private_runtime_original_data_CPU_tested": true,
+  "native_GPU_executed": false,
+  "inactive": true,
+  "active_original_server2_plan_preserved": true,
+  "evidence": [
+    {
+      "path": "pipeline/checks/y79_native_observer_CPU_08e82df71e3743dcb86c0eec4d39460c_program.py",
+      "sha256": "12437e39c09c614782dd3ea2b74f1eec5f0e93ae5bd19491e4bcd0861bbb82c3"
+    },
+    {
+      "path": "pipeline/checks/y79_server1_d488959562e94ac492b5884cf430f679_cpu_program.py",
+      "sha256": "10eb89e3d7775e960e011b46bf11716bbf67f3662d3cd542f85225567988b531"
+    },
+    {
+      "path": "pipeline/analyses/y79_server1_CPU_runtime_d488959562e94ac492b5884cf430f679.log",
+      "sha256": "aa6a75f9b831243c2adfafa28f8e5c57c2b9baa17fd9e0df2e4c8a2cda25a5ba"
+    },
+    {
+      "path": "scripts/record_d4889595_handoff.py",
+      "sha256": "689c28f4ea0cf6985d2d61da006a54aa048d3b77a7148914f8a46af3ff64de32"
+    }
+  ]
+}

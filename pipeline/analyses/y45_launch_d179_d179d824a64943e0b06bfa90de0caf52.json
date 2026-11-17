@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y45",
+  "pid": 78001,
+  "gpu": 1,
+  "config": "configs_song/model_paper5/adares_y45_metric_decomposition_res.yaml",
+  "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y45_metric_decomposition_res_20261014_142939.log",
+  "code_commit": "338a3d7a5b21fa463d116e566b482f0733fde9c2",
+  "native_steps_increased": true,
+  "captures": [
+    {
+      "epoch": 1,
+      "epochs": 30,
+      "step": 270,
+      "total_steps": 4686
+    },
+    {
+      "epoch": 1,
+      "epochs": 30,
+      "step": 280,
+      "total_steps": 4686
+    }
+  ],
+  "source_hashes_verified": true,
+  "limitations": [
+    "Bounded native steps, not efficacy or whole-log crash absence."
+  ],
+  "observed_start_local": "2026-10-14T14:32:18.907356+08:00",
+  "observed_end_local": "2026-10-14T14:32:24.317253+08:00"
+}

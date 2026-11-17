@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "token": "0fd2c3224f6443388fdffa1fb7c5904e",
+  "observed_at": "2026-11-01T15:23:08.421180+08:00",
+  "original_live_training": {
+    "AdaRES-Y72": {
+      "path": "pipeline/checks/production_adares-y72_0fd2c3224f6443388fdffa1fb7c5904e_final.json",
+      "sha256": "2a57a2250ef56cdb77c36be2e3ddf468de9883ca45cfece5902ebd3e6b8654c1"
+    },
+    "AdaRES-Y74": {
+      "path": "pipeline/checks/production_adares-y74_0fd2c3224f6443388fdffa1fb7c5904e_final.json",
+      "sha256": "34a8e1b2aac5c8c93b6a0048484df1bb625f4215365297ae9f73c1d6810e9ed0"
+    },
+    "AdaRES-Y75": {
+      "path": "pipeline/checks/production_adares-y75_0fd2c3224f6443388fdffa1fb7c5904e_final.json",
+      "sha256": "5b2bcf70bc2d87182b41bb8ff844c2651e54915e752f3d2ad0ea613a48fc82b1"
+    }
+  },
+  "occupation": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_0fd2c3224f6443388fdffa1fb7c5904e.json",
+      "sha256": "a4ba4cf3f62bc22f917bcbadea20f536863981f2599e2de195765afab39dd603"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_0fd2c3224f6443388fdffa1fb7c5904e.json",
+      "sha256": "0765b92d5a55b78c4706b37149ce078b7447e4910e3dcffea5d4942937d8a924"
+    }
+  },
+  "Y73_terminal": {
+    "path": "pipeline/checks/y73_server2_fixed30_0fd2c3224f6443388fdffa1fb7c5904e.json",
+    "sha256": "b0fdedafc5ea93526be35391169dc15ee4213499d56e72ad05a5ddf33029a990"
+  },
+  "Y73_archive_binding": {
+    "path": "pipeline/checks/y73_server2_fixed30_0fd2c3224f6443388fdffa1fb7c5904e_archive_binding.json",
+    "sha256": "60e78bf751b926f5feec38ea0a12a2142777746eb279c4ce73cbb4760d33395a"
+  },
+  "Y73_original_freeze": {
+    "path": "pipeline/checks/AdaRES-Y73_e5ca4e47b09f466ea2a1dc215c0acf3c_post_training_freeze.json",
+    "sha256": "2c36697dc3d729ad8f2834e821caa9179b37c95cd0d9d809aa9a9b3f299155b7"
+  },
+  "Y75_native_smoke": {
+    "path": "pipeline/checks/AdaRES-Y75_0fd2c3224f6443388fdffa1fb7c5904e_native_smoke.json",
+    "sha256": "5211b4180a31e1c5ef19bb6e26929c76287b6d1280a79c7a9396d83e1597e0db"
+  },
+  "Y75_admission": {
+    "path": "pipeline/admissions/AdaRES-Y75.json",
+    "sha256": "56797fa68a250d2c184d41ec955d94f12e118514c30b4b6c9571a78a4502859d"
+  },
+  "Y75_original_full_evaluation_protocol_preserved": true,
+  "Y72_terminal_preparation": {
+    "path": "pipeline/checks/y72_terminal_preparation_0fd2c3224f6443388fdffa1fb7c5904e.json",
+    "sha256": "e08b47302a29301fadb1fcdd79e88827e305a40519a706b06c088d20f51617d4"
+  },
+  "Y76_native_plans": [
+    {
+      "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu0_plan.json",
+      "sha256": "c32ec64c054cadffb9ea34d49a7a0b3e8e8ce9a1668695920c0db78c72fd366c"
+    },
+    {
+      "path": "pipeline/checks/y76_native_dd81fa2cdb754585ab9d4ab0da627f70_gpu1_plan.json",
+      "sha256": "c87bf5936d869793e8710d6674fef4b4e1b42f8726936ccdebeb121d975580c9"
+    },
+    {
+      "path": "pipeline/checks/y76_server1_0fd2c3224f6443388fdffa1fb7c5904e_plan.json",
+      "sha256": "a7d4863a649c9a25be197629da1ec9fa9b362e8f88813fe93ffc2a567be0e791"
+    }
+  ],
+  "Y76_server1_CPU": {
+    "path": "pipeline/analyses/y76_server1_CPU_runtime_0fd2c3224f6443388fdffa1fb7c5904e.json",
+    "sha256": "a6720b11681beadbc173bdfe9389e166fb998bb1fd9382de5df83aa125e0a6ea"
+  },
+  "new_candidates": 0,
+  "new_admissions": 1,
+  "new_dispatches": 1,
+  "new_archives": [
+    "AdaRES-Y73"
+  ],
+  "native_GPU_executed": true,
+  "Y57_pause_preserved": true,
+  "formal_FIRST_metrics_updated": false,
+  "source_HEAD": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "conclusion": "Y73 full original fixed30 verification/archive completed. Y75 actual original native two-step PASS/admission/gated launch/increasing counters verified. Y72 completion guards and Y76 private server1 exact runtime/data/path/CPU callbacks prepared; no Y76 GPU PASS."
+}

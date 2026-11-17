@@ -1,0 +1,102 @@
+{
+  "scope": "same prediction tensors, only target pairing changes",
+  "rows": [
+    {
+      "scans": [
+        "scene0000_00",
+        "scene0001_00"
+      ],
+      "pair_count": 4,
+      "native": 4.929176330566406,
+      "same": 0.0017402507364749908,
+      "wrong": 0.0012303811963647604,
+      "off": -0.0,
+      "total_native_plus_js_exact": true,
+      "same_vs_wrong": {
+        "cosine": 0.9500700235366821,
+        "difference_norm": 0.008067217655479908,
+        "left_norm": 0.01666293665766716,
+        "right_norm": 0.009662830270826817
+      },
+      "same_vs_native": {
+        "cosine": 0.4413210451602936,
+        "difference_norm": 4.061244964599609,
+        "left_norm": 0.01666293665766716,
+        "right_norm": 4.068571090698242
+      }
+    },
+    {
+      "scans": [
+        "scene0002_00",
+        "scene0003_00"
+      ],
+      "pair_count": 4,
+      "native": 5.783941268920898,
+      "same": 0.0020459736697375774,
+      "wrong": 0.0017320836195722222,
+      "off": -0.0,
+      "total_native_plus_js_exact": true,
+      "same_vs_wrong": {
+        "cosine": 0.9238711595535278,
+        "difference_norm": 0.0071703651919960976,
+        "left_norm": 0.018420113250613213,
+        "right_norm": 0.015706539154052734
+      },
+      "same_vs_native": {
+        "cosine": 0.4298030138015747,
+        "difference_norm": 5.044554710388184,
+        "left_norm": 0.018420113250613213,
+        "right_norm": 5.0524444580078125
+      }
+    },
+    {
+      "scans": [
+        "scene0004_00",
+        "scene0005_00"
+      ],
+      "pair_count": 4,
+      "native": 4.6031012535095215,
+      "same": 0.002268086187541485,
+      "wrong": 0.001703707966953516,
+      "off": -0.0,
+      "total_native_plus_js_exact": true,
+      "same_vs_wrong": {
+        "cosine": 0.9191739559173584,
+        "difference_norm": 0.009567469358444214,
+        "left_norm": 0.021804239600896835,
+        "right_norm": 0.015824194997549057
+      },
+      "same_vs_native": {
+        "cosine": 0.4976068139076233,
+        "difference_norm": 3.6353297233581543,
+        "left_norm": 0.021804239600896835,
+        "right_norm": 3.6461305618286133
+      }
+    },
+    {
+      "scans": [
+        "scene0006_00",
+        "scene0007_00"
+      ],
+      "pair_count": 4,
+      "native": 3.5154244899749756,
+      "same": 0.001003699260763824,
+      "wrong": 0.002098649740219116,
+      "off": -0.0,
+      "total_native_plus_js_exact": true,
+      "same_vs_wrong": {
+        "cosine": 0.8593961596488953,
+        "difference_norm": 0.011922676116228104,
+        "left_norm": 0.00887744314968586,
+        "right_norm": 0.018654055893421173
+      },
+      "same_vs_native": {
+        "cosine": 0.4441838264465332,
+        "difference_norm": 2.0356996059417725,
+        "left_norm": 0.00887744314968586,
+        "right_norm": 2.0396273136138916
+      }
+    }
+  ],
+  "complete": true
+}

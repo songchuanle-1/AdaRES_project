@@ -1,0 +1,563 @@
+{
+  "scope": "released-init native augmented paired partial gradients",
+  "production_loss_changed": false,
+  "rows": [
+    {
+      "scan_ids": [
+        "scene0000_00",
+        "scene0001_00"
+      ],
+      "object_idss": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "losses": {
+        "native": 4.929176330566406,
+        "same": 0.0017402510857209563,
+        "wrong": 0.0012303817784413695,
+        "native_indicator": 11.937020301818848
+      },
+      "native_loss_keys": [
+        "score_loss",
+        "mask_bce_loss",
+        "mask_dice_loss",
+        "sem_loss",
+        "indi_loss",
+        "sample_loss",
+        "layer_0_score_loss",
+        "layer_0_mask_bce_loss",
+        "layer_0_mask_dice_loss",
+        "layer_0_sem_loss",
+        "layer_0_indi_loss",
+        "layer_1_score_loss",
+        "layer_1_mask_bce_loss",
+        "layer_1_mask_dice_loss",
+        "layer_1_sem_loss",
+        "layer_1_indi_loss",
+        "layer_2_score_loss",
+        "layer_2_mask_bce_loss",
+        "layer_2_mask_dice_loss",
+        "layer_2_sem_loss",
+        "layer_2_indi_loss",
+        "layer_3_score_loss",
+        "layer_3_mask_bce_loss",
+        "layer_3_mask_dice_loss",
+        "layer_3_sem_loss",
+        "layer_3_indi_loss",
+        "layer_4_score_loss",
+        "layer_4_mask_bce_loss",
+        "layer_4_mask_dice_loss",
+        "layer_4_sem_loss",
+        "layer_4_indi_loss",
+        "layer_5_score_loss",
+        "layer_5_mask_bce_loss",
+        "layer_5_mask_dice_loss",
+        "layer_5_sem_loss",
+        "layer_5_indi_loss",
+        "loss"
+      ],
+      "parameter_groups": {
+        "dec.indi_embedding.": {
+          "tensor_count": 10,
+          "norms": {
+            "native": 0.3470921814441681,
+            "same": 1.443421388103161e-05,
+            "wrong": 6.081426818127511e-06,
+            "native_indicator": 5.507834434509277
+          },
+          "same_vs_native": {
+            "cosine": -0.034060802310705185,
+            "difference_norm": 0.3470926880836487,
+            "left_norm": 1.443421388103161e-05,
+            "right_norm": 0.3470921814441681,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.8043100237846375,
+            "difference_norm": 1.0204146747128107e-05,
+            "left_norm": 1.443421388103161e-05,
+            "right_norm": 6.081426818127511e-06,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": -0.02096518501639366,
+            "difference_norm": 5.5078349113464355,
+            "left_norm": 1.443421388103161e-05,
+            "right_norm": 5.507834434509277,
+            "finite": true
+          }
+        },
+        "dec.input_proj.": {
+          "tensor_count": 4,
+          "norms": {
+            "native": 4.053739070892334,
+            "same": 0.01666293665766716,
+            "wrong": 0.009662819094955921,
+            "native_indicator": 0.6318893432617188
+          },
+          "same_vs_native": {
+            "cosine": 0.4429386556148529,
+            "difference_norm": 4.046385765075684,
+            "left_norm": 0.01666293665766716,
+            "right_norm": 4.053739070892334,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.9500700831413269,
+            "difference_norm": 0.008067228831350803,
+            "left_norm": 0.01666293665766716,
+            "right_norm": 0.009662819094955921,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": 0.07184472680091858,
+            "difference_norm": 0.6309111714363098,
+            "left_norm": 0.01666293665766716,
+            "right_norm": 0.6318893432617188,
+            "finite": true
+          }
+        }
+      }
+    },
+    {
+      "scan_ids": [
+        "scene0002_00",
+        "scene0003_00"
+      ],
+      "object_idss": [
+        [
+          11
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          12
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "losses": {
+        "native": 5.783941268920898,
+        "same": 0.0020459801889955997,
+        "wrong": 0.0017320826882496476,
+        "native_indicator": 13.607306480407715
+      },
+      "native_loss_keys": [
+        "score_loss",
+        "mask_bce_loss",
+        "mask_dice_loss",
+        "sem_loss",
+        "indi_loss",
+        "sample_loss",
+        "layer_0_score_loss",
+        "layer_0_mask_bce_loss",
+        "layer_0_mask_dice_loss",
+        "layer_0_sem_loss",
+        "layer_0_indi_loss",
+        "layer_1_score_loss",
+        "layer_1_mask_bce_loss",
+        "layer_1_mask_dice_loss",
+        "layer_1_sem_loss",
+        "layer_1_indi_loss",
+        "layer_2_score_loss",
+        "layer_2_mask_bce_loss",
+        "layer_2_mask_dice_loss",
+        "layer_2_sem_loss",
+        "layer_2_indi_loss",
+        "layer_3_score_loss",
+        "layer_3_mask_bce_loss",
+        "layer_3_mask_dice_loss",
+        "layer_3_sem_loss",
+        "layer_3_indi_loss",
+        "layer_4_score_loss",
+        "layer_4_mask_bce_loss",
+        "layer_4_mask_dice_loss",
+        "layer_4_sem_loss",
+        "layer_4_indi_loss",
+        "layer_5_score_loss",
+        "layer_5_mask_bce_loss",
+        "layer_5_mask_dice_loss",
+        "layer_5_sem_loss",
+        "layer_5_indi_loss",
+        "loss"
+      ],
+      "parameter_groups": {
+        "dec.indi_embedding.": {
+          "tensor_count": 10,
+          "norms": {
+            "native": 0.5919085741043091,
+            "same": 2.0392715669004247e-05,
+            "wrong": 1.2596958185895346e-05,
+            "native_indicator": 9.565152168273926
+          },
+          "same_vs_native": {
+            "cosine": 0.03281228989362717,
+            "difference_norm": 0.5919079780578613,
+            "left_norm": 2.0392715669004247e-05,
+            "right_norm": 0.5919085741043091,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.2944328486919403,
+            "difference_norm": 2.0573641450027935e-05,
+            "left_norm": 2.0392715669004247e-05,
+            "right_norm": 1.2596958185895346e-05,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": 0.015749678015708923,
+            "difference_norm": 9.56515121459961,
+            "left_norm": 2.0392715669004247e-05,
+            "right_norm": 9.565152168273926,
+            "finite": true
+          }
+        },
+        "dec.input_proj.": {
+          "tensor_count": 4,
+          "norms": {
+            "native": 5.017653465270996,
+            "same": 0.018420172855257988,
+            "wrong": 0.01570650190114975,
+            "native_indicator": 1.0251575708389282
+          },
+          "same_vs_native": {
+            "cosine": 0.43277931213378906,
+            "difference_norm": 5.009708881378174,
+            "left_norm": 0.018420172855257988,
+            "right_norm": 5.017653465270996,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.9238716959953308,
+            "difference_norm": 0.0071703772991895676,
+            "left_norm": 0.018420172855257988,
+            "right_norm": 0.01570650190114975,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": 0.07924031466245651,
+            "difference_norm": 1.023862600326538,
+            "left_norm": 0.018420172855257988,
+            "right_norm": 1.0251575708389282,
+            "finite": true
+          }
+        }
+      }
+    },
+    {
+      "scan_ids": [
+        "scene0004_00",
+        "scene0005_00"
+      ],
+      "object_idss": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          4
+        ],
+        [
+          4
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "losses": {
+        "native": 4.60310173034668,
+        "same": 0.002268093405291438,
+        "wrong": 0.0017037040088325739,
+        "native_indicator": 11.283732414245605
+      },
+      "native_loss_keys": [
+        "score_loss",
+        "mask_bce_loss",
+        "mask_dice_loss",
+        "sem_loss",
+        "indi_loss",
+        "sample_loss",
+        "layer_0_score_loss",
+        "layer_0_mask_bce_loss",
+        "layer_0_mask_dice_loss",
+        "layer_0_sem_loss",
+        "layer_0_indi_loss",
+        "layer_1_score_loss",
+        "layer_1_mask_bce_loss",
+        "layer_1_mask_dice_loss",
+        "layer_1_sem_loss",
+        "layer_1_indi_loss",
+        "layer_2_score_loss",
+        "layer_2_mask_bce_loss",
+        "layer_2_mask_dice_loss",
+        "layer_2_sem_loss",
+        "layer_2_indi_loss",
+        "layer_3_score_loss",
+        "layer_3_mask_bce_loss",
+        "layer_3_mask_dice_loss",
+        "layer_3_sem_loss",
+        "layer_3_indi_loss",
+        "layer_4_score_loss",
+        "layer_4_mask_bce_loss",
+        "layer_4_mask_dice_loss",
+        "layer_4_sem_loss",
+        "layer_4_indi_loss",
+        "layer_5_score_loss",
+        "layer_5_mask_bce_loss",
+        "layer_5_mask_dice_loss",
+        "layer_5_sem_loss",
+        "layer_5_indi_loss",
+        "loss"
+      ],
+      "parameter_groups": {
+        "dec.indi_embedding.": {
+          "tensor_count": 10,
+          "norms": {
+            "native": 0.24453429877758026,
+            "same": 1.923045056173578e-05,
+            "wrong": 9.801345186133403e-06,
+            "native_indicator": 3.931750535964966
+          },
+          "same_vs_native": {
+            "cosine": -0.053122736513614655,
+            "difference_norm": 0.24453532695770264,
+            "left_norm": 1.923045056173578e-05,
+            "right_norm": 0.24453429877758026,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.4740244448184967,
+            "difference_norm": 1.6946512914728373e-05,
+            "left_norm": 1.923045056173578e-05,
+            "right_norm": 9.801345186133403e-06,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": -0.03462548553943634,
+            "difference_norm": 3.931751012802124,
+            "left_norm": 1.923045056173578e-05,
+            "right_norm": 3.931750535964966,
+            "finite": true
+          }
+        },
+        "dec.input_proj.": {
+          "tensor_count": 4,
+          "norms": {
+            "native": 3.6379213333129883,
+            "same": 0.02180423028767109,
+            "wrong": 0.015824081376194954,
+            "native_indicator": 0.4548395276069641
+          },
+          "same_vs_native": {
+            "cosine": 0.49873319268226624,
+            "difference_norm": 3.627095937728882,
+            "left_norm": 0.02180423028767109,
+            "right_norm": 3.6379213333129883,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.9191728830337524,
+            "difference_norm": 0.009567552246153355,
+            "left_norm": 0.02180423028767109,
+            "right_norm": 0.015824081376194954,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": -0.04826487973332405,
+            "difference_norm": 0.45641183853149414,
+            "left_norm": 0.02180423028767109,
+            "right_norm": 0.4548395276069641,
+            "finite": true
+          }
+        }
+      }
+    },
+    {
+      "scan_ids": [
+        "scene0006_00",
+        "scene0007_00"
+      ],
+      "object_idss": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "losses": {
+        "native": 3.5154242515563965,
+        "same": 0.0010039969347417355,
+        "wrong": 0.0020993142388761044,
+        "native_indicator": 8.596762657165527
+      },
+      "native_loss_keys": [
+        "score_loss",
+        "mask_bce_loss",
+        "mask_dice_loss",
+        "sem_loss",
+        "indi_loss",
+        "sample_loss",
+        "layer_0_score_loss",
+        "layer_0_mask_bce_loss",
+        "layer_0_mask_dice_loss",
+        "layer_0_sem_loss",
+        "layer_0_indi_loss",
+        "layer_1_score_loss",
+        "layer_1_mask_bce_loss",
+        "layer_1_mask_dice_loss",
+        "layer_1_sem_loss",
+        "layer_1_indi_loss",
+        "layer_2_score_loss",
+        "layer_2_mask_bce_loss",
+        "layer_2_mask_dice_loss",
+        "layer_2_sem_loss",
+        "layer_2_indi_loss",
+        "layer_3_score_loss",
+        "layer_3_mask_bce_loss",
+        "layer_3_mask_dice_loss",
+        "layer_3_sem_loss",
+        "layer_3_indi_loss",
+        "layer_4_score_loss",
+        "layer_4_mask_bce_loss",
+        "layer_4_mask_dice_loss",
+        "layer_4_sem_loss",
+        "layer_4_indi_loss",
+        "layer_5_score_loss",
+        "layer_5_mask_bce_loss",
+        "layer_5_mask_dice_loss",
+        "layer_5_sem_loss",
+        "layer_5_indi_loss",
+        "loss"
+      ],
+      "parameter_groups": {
+        "dec.indi_embedding.": {
+          "tensor_count": 10,
+          "norms": {
+            "native": 0.1639701873064041,
+            "same": 5.862179023097269e-06,
+            "wrong": 1.4938784261175897e-05,
+            "native_indicator": 2.858657121658325
+          },
+          "same_vs_native": {
+            "cosine": -0.019884463399648666,
+            "difference_norm": 0.16397030651569366,
+            "left_norm": 5.862179023097269e-06,
+            "right_norm": 0.1639701873064041,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.44947701692581177,
+            "difference_norm": 1.3371894056035671e-05,
+            "left_norm": 5.862179023097269e-06,
+            "right_norm": 1.4938784261175897e-05,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": -0.01973106898367405,
+            "difference_norm": 2.8586573600769043,
+            "left_norm": 5.862179023097269e-06,
+            "right_norm": 2.858657121658325,
+            "finite": true
+          }
+        },
+        "dec.input_proj.": {
+          "tensor_count": 4,
+          "norms": {
+            "native": 2.0330240726470947,
+            "same": 0.008879736997187138,
+            "wrong": 0.01865941658616066,
+            "native_indicator": 0.37896594405174255
+          },
+          "same_vs_native": {
+            "cosine": 0.4456436038017273,
+            "difference_norm": 2.0290825366973877,
+            "left_norm": 0.008879736997187138,
+            "right_norm": 2.0330240726470947,
+            "finite": true
+          },
+          "same_vs_wrong": {
+            "cosine": 0.8595073223114014,
+            "difference_norm": 0.011924712918698788,
+            "left_norm": 0.008879736997187138,
+            "right_norm": 0.01865941658616066,
+            "finite": true
+          },
+          "same_vs_indicator": {
+            "cosine": -0.06373436003923416,
+            "difference_norm": 0.3796353340148926,
+            "left_norm": 0.008879736997187138,
+            "right_norm": 0.37896594405174255,
+            "finite": true
+          }
+        }
+      }
+    }
+  ],
+  "complete": true
+}

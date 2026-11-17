@@ -1,0 +1,234 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y95",
+  "config": "configs_song/model_paper5/adares_y95_query_set_mean_res.yaml",
+  "code_commit": "968112d44c506dcdd8dcf7709af997fb731e73b0",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "native_YAML_sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03",
+  "native_entry": "tools/train.py::train",
+  "split": "train",
+  "steps": 2,
+  "optimizer_steps": 2,
+  "losses": [
+    4.615511417388916,
+    6.33158540725708
+  ],
+  "native_data_loaded": true,
+  "backward_finite": true,
+  "intended_path_observed": true,
+  "batches": [
+    {
+      "scan_ids": [
+        "scene0332_00",
+        "scene0170_00"
+      ],
+      "expressions": 8,
+      "points": 134280
+    },
+    {
+      "scan_ids": [
+        "scene0493_00",
+        "scene0642_00"
+      ],
+      "expressions": 8,
+      "points": 350887
+    }
+  ],
+  "gradient_checks": [
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "fusion_calls": 6,
+      "coarse_gate_consumers": 6,
+      "original_norm_consumption_calls": 6,
+      "original_ffn_consumption_calls": 6,
+      "query_norm_consumption_calls": 7,
+      "both_input_gradients_finite": true,
+      "new_gradient_max": 0.0009841136634349823,
+      "step": 0,
+      "parameter_update_max": 9.999897156376392e-05
+    },
+    {
+      "all_finite": true,
+      "tensors": 540,
+      "indicator_tensors": 10,
+      "indicator_calls": 7,
+      "fusion_calls": 6,
+      "coarse_gate_consumers": 6,
+      "original_norm_consumption_calls": 6,
+      "original_ffn_consumption_calls": 6,
+      "query_norm_consumption_calls": 7,
+      "both_input_gradients_finite": true,
+      "new_gradient_max": 0.000610167917329818,
+      "step": 1,
+      "parameter_update_max": 0.00010013103747041896
+    }
+  ],
+  "fusion_paths": [
+    {
+      "step": 0,
+      "stage": 0,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 1,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 2,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 3,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 4,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 0,
+      "stage": 5,
+      "weight_nonzero": false,
+      "fusion_delta_max": 0.0,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 0,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.02089083194732666,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 1,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.02406775951385498,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 2,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.02597951889038086,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 3,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.02452227473258972,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 4,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.02224630117416382,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    },
+    {
+      "step": 1,
+      "stage": 5,
+      "weight_nonzero": true,
+      "fusion_delta_max": 0.017305374145507812,
+      "original_self_identity": true,
+      "original_language_identity": true,
+      "both_inputs_undetached": true,
+      "float64_all_query_mean_projection_reference": true
+    }
+  ],
+  "fusion_calls": 12,
+  "original_norm_consumption_calls": 12,
+  "original_ffn_consumption_calls": 12,
+  "query_norm_consumption_calls": 14,
+  "shared_head_calls": 14,
+  "static_mask_features_preserved": true,
+  "original_initial_prediction_preserved": true,
+  "original_hard_gate_algorithm_preserved": true,
+  "native_modes_verified": true,
+  "peak_reserved_bytes": 6689914880,
+  "data_source": {
+    "dataset_class": "ipdn.dataset.scannetv2_test.ScanNetDataset_sample_graph_edge",
+    "config_data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/"
+  },
+  "validation_used": false,
+  "model_weights_saved": false,
+  "admission": false,
+  "limitation": "Actual native two-step TRAIN only; no efficacy or full-dataset memory guarantee.",
+  "command": "python -B scripts/run_y95_bound_native_y94.py --server server-2 --token 60b5973bb7e64cd5acc81581a9b3d691",
+  "server": "server-2",
+  "physical_gpu": 0,
+  "admission_resource_check": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "evidence": [
+    {
+      "path": "pipeline/analyses/y95_server2_smoke_60b5973bb7e64cd5acc81581a9b3d691.json",
+      "sha256": "9e7b34a7b2308a431472dec24d5babd024db07dd2ee90599dc9b15dab7582f57"
+    },
+    {
+      "path": "pipeline/analyses/y95_server2_smoke_60b5973bb7e64cd5acc81581a9b3d691.log",
+      "sha256": "723f42dd90ebc0626aa491b5a53999c4751477d47a51088a211c92ba4e005431"
+    },
+    {
+      "path": "pipeline/checks/y95_y94_additive_binding_9510373f9f21442591b649640928a5e5_server2_program.py",
+      "sha256": "37fc28fab89729dea70d5104090d4ed847a1d20bc125cf3a42e1ae1b7c46f797"
+    },
+    {
+      "path": "pipeline/checks/y95_y94_additive_binding_9510373f9f21442591b649640928a5e5_server2_plan.json",
+      "sha256": "91f7558eea88ae9a10d120997387b0293fdea4504eb1fe4a220fe56e41faec48"
+    }
+  ]
+}

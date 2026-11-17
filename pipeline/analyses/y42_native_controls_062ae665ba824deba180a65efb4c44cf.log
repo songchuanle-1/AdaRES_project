@@ -1,0 +1,10 @@
+Using backend: pytorch
+Traceback (most recent call last):
+  File "<stdin>", line 33, in <module>
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/gorilla/config/_config.py", line 162, in fromfile
+    cfg_dict, cfg_text = Config._file2dict(filename)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/gorilla/config/_config.py", line 89, in _file2dict
+    check_file(filename)
+  File "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages/gorilla/utils/path.py", line 30, in check_file
+    raise FileNotFoundError(msg_tmpl.format(filepath))
+FileNotFoundError: file `/bak_home/songcl/Project/AdaRES_project/AdaRES/configs_song/model_paper5/adares_y42_point_cocovariance_res.yaml` not exist or is a directory

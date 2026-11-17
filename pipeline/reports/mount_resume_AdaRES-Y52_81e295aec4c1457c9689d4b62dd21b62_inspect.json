@@ -1,0 +1,221 @@
+{
+  "complete": true,
+  "token": "81e295aec4c1457c9689d4b62dd21b62",
+  "human_request": "\u6302\u8f7d\u4e86 \u63d0\u4ea4\u8bad\u7ec3\u5427",
+  "authorization": "Current direct owning-user mount recovery and training request",
+  "observed_local": "2026-10-20T12:59:00.701810+08:00",
+  "task": {
+    "id": "AdaRES-Y52",
+    "label": "AdaRES-Y52 fixed30",
+    "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+    "server": "server-2",
+    "gpu": "1",
+    "status": "stopped_unknown",
+    "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "total_epochs": 30,
+    "scientific_candidate_id": "AdaRES-Y52",
+    "requires_exclusive_ownership": true,
+    "pid": 69064,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_164118.log"
+  },
+  "original_experiment": {
+    "id": "AdaRES-Y52",
+    "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+    "server": "server-2",
+    "gpu": "1",
+    "status": "stopped_unknown",
+    "history": [
+      {
+        "ts": "2026-10-19T13:59:35.343050",
+        "action": "launched",
+        "gpu": "0"
+      },
+      {
+        "ts": "2026-10-19T16:16:16.116034+08:00",
+        "action": "interrupted_before_first_checkpoint_user_requested_restart",
+        "original": {
+          "id": "AdaRES-Y52",
+          "label": "AdaRES-Y52 fixed30",
+          "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+          "status": "running",
+          "gpu": "0",
+          "depends_on": [],
+          "code_commit": "8943c8c460501b200a8dea958964579ffea65f76",
+          "admission_receipt": "pipeline/admissions/AdaRES-Y52_v2.json",
+          "patience": 30,
+          "min_epochs": 30,
+          "fixed_epochs": 30,
+          "requires_exclusive_ownership": true,
+          "scientific_candidate_id": "AdaRES-Y52",
+          "pid": 15934,
+          "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_135853.log",
+          "server": "server-2",
+          "launch_verified": true,
+          "launch_verification": "training_progress",
+          "launched": "2026-10-19T13:59:35"
+        },
+        "evidence": {
+          "path": "pipeline/analyses/y52_mount_restart_097ff69b175b49c59fbcf414fb0bd4f5_before.json",
+          "sha256": "8055a19c5dac5dd31116fe0204a67f61f4ca1b1071509e130c1dde0b97780833"
+        },
+        "human_request": "\u6302\u8f7d\u4e86 \u63d0\u4ea4\u8bad\u7ec3\u5427"
+      },
+      {
+        "ts": "2026-10-19T16:41:54.049369",
+        "action": "launched",
+        "gpu": "1"
+      },
+      {
+        "ts": "2026-10-20T12:43:43.357545",
+        "status": "stopped_unknown",
+        "best_miou": "0.5090",
+        "epochs": "24/30"
+      }
+    ],
+    "pid": 69064,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_164118.log",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-19T16:41:54",
+    "final_best": "0.5090",
+    "finished_at": "2026-10-20T12:43:43.357545",
+    "log_local": "",
+    "epochs_final": "24/30",
+    "archive_id": "9efc2d1e65a04c72a74ef68737b3c7d4"
+  },
+  "prior_verified_run": {
+    "path": "pipeline/analyses/mounted_training_verified_097ff69b175b49c59fbcf414fb0bd4f5.json",
+    "sha256": "c63ff2486a9d13cf9bd88283bad8cb5f6eaba3eece366cf899429ae8d690ba67"
+  },
+  "tested_bundle": {
+    "path": "pipeline/analyses/y52_prototype_bundle_4567_4567f5a09ecb4aa89df8f0c2932652df.json",
+    "sha256": "7143994f8fa827c0c3c8c62e5ad9740989470c0da1b69ad8cd4e3d24ea340446"
+  },
+  "payload": {
+    "action": "inspect",
+    "server": {
+      "name": "server-2",
+      "host": "192.168.1.163",
+      "user": "songcl",
+      "remote_code_root": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+      "data_root": "/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/",
+      "work_dir": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints",
+      "conda_source": "/home/dl01/anaconda3/etc/profile.d/conda.sh",
+      "conda_env": "adares_project",
+      "python": "/home/songcl/.conda/envs/adares_project/bin/python",
+      "site_packages": "/home/songcl/.conda/envs/adares_project/lib/python3.8/site-packages",
+      "pointnet_egg": "/home/songcl/.local/lib/python3.8/site-packages/pointnet2-0.0.0-py3.8-linux-x86_64.egg",
+      "allowed_gpus": [
+        0,
+        1
+      ],
+      "max_tasks_per_gpu": 1,
+      "max_tasks": null,
+      "dispatch_enabled": true,
+      "registered_pid_probe": false,
+      "allow_external_overlay": false,
+      "task_memory_mb": 20000,
+      "jumphost": null
+    },
+    "config": "configs_song/model_paper5/adares_y52_point_target_res.yaml",
+    "id": "AdaRES-Y52",
+    "gpu": "1",
+    "files": [
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/__init__.py",
+        "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/backbone.py",
+        "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/dec.py",
+        "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/ipdn.py",
+        "sha256": "81c1a4751f6c2a8f66bc1f9b62680d5521542fa687e10bcca2b780b65295b52a"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/loss.py",
+        "sha256": "dea6f16d23b2800dcd6040b1cd1512affde5a73d685eb26052aeac0c2c8b1f59"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y52_point_target/sample_model.py",
+        "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+      },
+      {
+        "path": "AdaRES/configs_song/model_paper5/adares_y52_point_target_res.yaml",
+        "sha256": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6"
+      },
+      {
+        "path": "AdaRES/tools/train.py",
+        "sha256": "04afc00889dc58e439197a04be50457664a7906d42d7badfdc96033f9d99b41e"
+      }
+    ],
+    "original_log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y52_point_target_res_20261019_164118.log",
+    "original_pid": 69064,
+    "source_marker": "8943c8c460501b200a8dea958964579ffea65f76"
+  },
+  "observation": {
+    "checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261019_040852/last.pth",
+    "saved_epoch": 23,
+    "resume_epoch": 24,
+    "best_checkpoint": "/bak_home/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y52_point_target_res/20261019_040852/best.pth",
+    "meta": {
+      "epoch": 23,
+      "best_miou": 0.5094767808914185
+    },
+    "scheduler": {
+      "max_iters": 70,
+      "power": 4.0,
+      "constant_ending": 0.0,
+      "base_lrs": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "last_epoch": 23,
+      "_step_count": 24,
+      "verbose": false,
+      "_get_lr_called_within_step": false,
+      "_last_lr": [
+        2.032353602665557e-05,
+        2.032353602665557e-05,
+        2.032353602665557e-05,
+        2.032353602665557e-05,
+        2.032353602665557e-05
+      ]
+    },
+    "optimizer_state_count": 543,
+    "optimizer_step_range": [
+      107753.0,
+      107778.0
+    ],
+    "learning_rates": [
+      2.032353602665557e-05,
+      2.032353602665557e-05,
+      2.032353602665557e-05,
+      2.032353602665557e-05,
+      2.032353602665557e-05
+    ],
+    "original_last_progress": [
+      "24",
+      "2263"
+    ],
+    "gpu_before": {
+      "memory_mib": 1,
+      "util_percent": 0,
+      "compute_processes": []
+    },
+    "checkpoint_sha256": "3a09db382f287e45b3c771164eaa6e9bd5b664444b46bf3b0c0af7c17350976d",
+    "best_sha256": "d8b5f00b3797e9bd0edf32eb0f55515473d62abf269e8eab75720685f7e8462a"
+  }
+}

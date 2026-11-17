@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y48",
+  "canonical_state": "done_complete",
+  "observed_at_local": "2026-10-16T10:56:51.881430+08:00",
+  "epochs": "30/30",
+  "best_training_miou": 0.5034010410308838,
+  "terminal_evidence": {
+    "path": "pipeline/analyses/y48_terminal_12be_12be943f16874034808ff67e741653ad.json",
+    "sha256": "c3550654264b90eb17ecc977bf02b7a2ca502ad6d90ae51bf73fbfa41860e0a1"
+  },
+  "archived_log": {
+    "path": "Checkpoints/server_2/train_adares_y48_mask_equivalence_res_20261015_113625.log",
+    "sha256": "ba0ae184c5c9e614f95fc4cb05abab2a1af0a5dae873e385bc1cde5525d1e308"
+  },
+  "events": [
+    "[adares_y48_mask_equivalence_res] 终态=done_complete Best=0.5034 @30/30 on server-2 gpu1；日志→D:\\project\\AdaRES_project\\Checkpoints\\server_2\\train_adares_y48_mask_equivalence_res_20261015_113625.log（checkpoint 留远端）",
+    "[adares_y48_mask_equivalence_res] 分析已生成 → D:\\project\\AdaRES_project\\pipeline\\analyses\\adares_y48_mask_equivalence_res_done_complete_20261016_105651.md"
+  ],
+  "changed_existing_candidates": [
+    "AdaRES-Y46",
+    "AdaRES-Y48",
+    "AdaRES-Y49"
+  ],
+  "scientific_efficacy": "unknown_pending_frozen_review",
+  "new_training": 0
+}

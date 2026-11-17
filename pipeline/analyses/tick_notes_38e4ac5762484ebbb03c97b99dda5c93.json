@@ -1,0 +1,13 @@
+{
+  "actions": [
+    "仅AdaRES_project，owner、实验优先授权及server-2 GPU0/1单卡单实验限制核验；后台仍Disabled。begin先监控、检查目标及尝试派发既有合格任务，队列无waiting/claiming可派发；无新终态或操作故障。",
+    "实际执行python -B scripts/check_ef_execution.py --token 38e4ac5762484ebbb03c97b99dda5c93。Y58/Y59各7文件的源码/YAML、冻结smoke payload、Git测试提交a83449f、current goal和原生训练源仍一致；过期goal/篡改源码负控制拒绝。仅复查执行前完整性与资源，不重复CPU构造、不声称原生后向通过。",
+    "最新采集上海2026-10-21 04:43:24：Y56原PID83638/GPU0第8/30轮step1618至1709，best mIoU .46950018405914307（最近验证.4646662175655365）；Y57原PID95947/GPU1第8/30轮step1075至1169，best .46456223726272583。各7次注册原生验证，实际cwd/config及原生递增步数核实；仍是训练中间结果，不按波动调参或改fixed30。",
+    "实际GPU/全部compute与running/claiming槽位检查无授权空整卡。两个模拟生命周期控制不是实际资源释放；保持原训练，不借剩余显存共跑。Y58/Y59仍等两步native smoke，未准入、未入队或启动新训练，queue保持2running/0waiting/0claiming。",
+    "本轮没有新增变体、候选、代码修改、提交、失败或修订；仅保存当前真实resource_check/blocked证据与七段记忆。未跨项目、未改调度/goal/数据协议/授权边界，不重复请求常规许可。报告尚待canonical finish，不预称其结果。"
+  ],
+  "decisions": [
+    "本轮无新研究决策，保持已有独立Y58/Y59、其原生YAML及精确测试版本，等待整卡资源，不为配额制造重复候选或更改运行训练。",
+    "授权整卡实际空闲并核验当前目标/版本/租约后，继续既有两步真实TRAIN native smoke，通过即当轮入队并尝试现有门控派发；无需额外常规授权，无全局研究冷却。"
+  ]
+}

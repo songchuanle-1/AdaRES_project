@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "observed_at": "2026-11-14T17:46:02.193608+08:00",
+  "compute_pids": [
+    64587
+  ],
+  "processes": [
+    {
+      "pid": 64587,
+      "exists": true,
+      "status": [
+        "Name:\tpython",
+        "State:\tR (running)",
+        "PPid:\t64585",
+        "Uid:\t1002\t1002\t1002\t1002"
+      ],
+      "commandline": "/data1/songcl/H100_project/glc_project/envs/project_multiview_paper/bin/python scripts/evaluate_fixed_score_views.py train=train_mvggt_refer_lowres_seed1111 train.resume=/data1/songcl/H100_project/lgc_project/multiview_checkpoints/outputs/lowres_seed1111/ckpts/best_model work_dir=/data1/songcl/H100_project/lgc_project/fixed_view_visibility_20261114/work name=fixed_views_full_baseline train.num_workers=2 test.num_workers=2 train_dataset.ScanNet.data_root=/data1/songcl/data/multiview test_dataset.ScanNet.data_root=/data1/songcl/H100_project/lgc_project/sampling_full_20261114/dataset/multiview +test.max_img_per_gpu=8 log.use_tensorboard=false +fixed_score_views.output_dir=/data1/songcl/H100_project/lgc_project/fixed_view_visibility_20261114/full/baseline +fixed_score_views.model_label=baseline +fixed_score_views.max_queries=0 +fixed_score_views.verify_native_queries=2 +fixed_score_views.resume=false hydra.run.dir=/data1/songcl/H100_project/lgc_project/fixed_view_visibility_20261114/full/baseline/hydra "
+    }
+  ],
+  "old_Y88_worker_absent": true,
+  "old_Y88_child_absent": true,
+  "remote_mutations": false,
+  "project_files_read": false,
+  "foreign_project_files_read": false,
+  "GPU_used": false,
+  "checkpoint_loaded": false
+}

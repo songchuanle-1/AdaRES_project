@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "token": "f1530bdf58584643a61863e448871a72",
+  "kind": "read_only_operational_regression_not_scientific_failure",
+  "path_observation_at": "2026-10-19T14:51:58.6453880+08:00",
+  "pid_cpu_observation_at": "2026-10-19T14:53:17.3981422+08:00",
+  "hostname": "dl01-MS-7C60",
+  "host": "192.168.1.163",
+  "authenticated_ssh_key_connection": true,
+  "bak_home_filesystem": {"target": "/", "source": "/dev/nvme0n1p4", "fstype": "ext4"},
+  "configured_source_exists": false,
+  "configured_checkpoint_directory_exists": false,
+  "configured_dataset_directory_exists": false,
+  "source_marker_readable": false,
+  "original_y52_pid": 15934,
+  "original_y52_proc_directory_exists": false,
+  "compute_process_rows": [],
+  "visible_gpus": [
+    {"index": "0", "uuid": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146", "memory_mib": 1, "utilization_percent": 0},
+    {"index": "1", "uuid": "GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79", "memory_mib": 1, "utilization_percent": 0}
+  ],
+  "cpu_probe": {"interpreter": "/home/songcl/.conda/envs/adares_project/bin/python", "torch": "1.12.1+cu113", "tensor_device": "cpu", "threads": 1, "cuda_visible_devices": ""},
+  "canonical_registry": {"Y52": "running; monitor deathwatch 1/3, no manual terminal override", "Y54": "waiting; canonical source synchronization stopped before launch"},
+  "unknown": ["why the mount disappeared again", "whether the server rebooted", "checkpoint availability and recoverable optimizer/scheduler state", "final Y52 training metric"],
+  "remote_mutations": 0,
+  "training_launches": 0,
+  "required_action": "Restore the verified original /bak_home data mount on server-2 and check why it did not remain available. Then inspect the original Y52 log/checkpoints and reconcile its disappeared PID before any authorized resume; never recreate empty source/data paths or blindly restart from released weights. Y54 remains admitted and waiting for canonical source/resource/progress checks."
+}

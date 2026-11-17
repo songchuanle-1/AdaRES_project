@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y99",
+  "token": "4c32de6116d64e45a3eed8d90e5ea115",
+  "code_commit": "e5151a722778af3eecb28d0d4f6ae75e18a60e0c",
+  "CPU_version": {
+    "path": "pipeline/checks/y99_cpu_version_4c32de6116d64e45a3eed8d90e5ea115.json",
+    "sha256": "04ab0e26e8c6bf618fc3515aa9374b922ee6e3b271ee09fed5bb5c2c97874ddb"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y99_cpu_4c32de6116d64e45a3eed8d90e5ea115.json",
+    "sha256": "02261fefb2b6f8e05994603054d15920d5e41203ec9abd8efb4bbc17df631d99"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y99_cpu_4c32de6116d64e45a3eed8d90e5ea115_program.py",
+    "sha256": "ad15d195a760b0cbb08a0f1735e7c72345a6132c640c0ffac30e4a67afb80f34"
+  },
+  "native_plans": {
+    "server-2": {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server2_plan.json",
+      "sha256": "a5fbd4e4b798e0fe0fbd34947b33b81a3082c36a468904bd94fd594e96329b07"
+    },
+    "server-1": {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server1_plan.json",
+      "sha256": "1429b688e615cce60b1409e5c2609a68e119955eef5c45c41794df629d755c58"
+    }
+  },
+  "guard_tests": {
+    "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_guards.log",
+    "sha256": "839314eaaa33a02f8addb5049017f4d0ca69d62e097ce4910ae7eaead93cc331"
+  },
+  "guard_tests_passed": 10,
+  "runtime_guard_tests": {
+    "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_runtime_guards.log",
+    "sha256": "e8b474ee5db58cfacb08e25deb1895e9715d250693ad6a78311b6e911a1f689d"
+  },
+  "runtime_guard_tests_passed": 8,
+  "native_observer_body": {
+    "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_body.py",
+    "sha256": "cd9022082fbd0ec3560e68e57030764e246f25f383b76a041bf0ad7b99125d03"
+  },
+  "native_observer_callbacks_executed_on_GPU": false,
+  "same_callbacks_actually_executed_on_CPU": true,
+  "original_data_proof": {
+    "path": "pipeline/checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json",
+    "sha256": "8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f"
+  },
+  "original_Y93_Y94_and_earlier_Y95_Y96_Y98_preserved": true,
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y99_cpu_native.py",
+    "sha256": "c4d3c0b1298ae83070a640d0f2edc3cc4c941c6e92a3d3ba63b2aa636b6b2816"
+  },
+  "evidence": [
+    {
+      "path": "scripts/run_y98_native.py",
+      "sha256": "0c693f4d10a243fb10793087065a52e496cb99d2d6eccadf29ef75e6d38f8117"
+    },
+    {
+      "path": "scripts/test_y98_runtime_plan.py",
+      "sha256": "9309f3264f76670219838a1f04acbadec0827f480be1232212a3a276a70a8b8f"
+    },
+    {
+      "path": "scripts/run_y99_native.py",
+      "sha256": "1464cc9e2a4dee501111f718767fef0c2705b9a1c9a3f5d8242f3533b5a65fc9"
+    },
+    {
+      "path": "scripts/test_y99_runtime_plan.py",
+      "sha256": "277b8ff7c51df8023c0bd495d18ecbb68f6988c2c686fc04255f5d0e9d81c073"
+    },
+    {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server2_program.py",
+      "sha256": "358c1e1f04a54dde6ef7434d4e4c92ce68a5b979faa4400e1e4778b9b0cc5061"
+    },
+    {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server1_program.py",
+      "sha256": "7f7ebb1e0c39821e4783f6274dca40a0e59087df5c52f43c8c73a48d1aec18c0"
+    },
+    {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server2_plan.json",
+      "sha256": "a5fbd4e4b798e0fe0fbd34947b33b81a3082c36a468904bd94fd594e96329b07"
+    },
+    {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_server1_plan.json",
+      "sha256": "1429b688e615cce60b1409e5c2609a68e119955eef5c45c41794df629d755c58"
+    },
+    {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_guards.log",
+      "sha256": "839314eaaa33a02f8addb5049017f4d0ca69d62e097ce4910ae7eaead93cc331"
+    },
+    {
+      "path": "pipeline/checks/y99_native_4c32de6116d64e45a3eed8d90e5ea115_runtime_guards.log",
+      "sha256": "e8b474ee5db58cfacb08e25deb1895e9715d250693ad6a78311b6e911a1f689d"
+    }
+  ]
+}

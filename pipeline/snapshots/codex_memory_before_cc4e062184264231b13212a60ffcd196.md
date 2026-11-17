@@ -1,0 +1,52 @@
+# AdaRES_project Research Memory
+## Goal And Phase
+- Current token 404a3cb0b8cc441fa264f6ff249a02d1; snapshot 2026-11-04T18:51:19.799951+00:00; deadline 2026-11-04T19:51:19.799951+00:00; never extend.
+- Actual CODEX_THREAD_ID=owner01a07e32-78bf-7670-925b-370911ea48db; Pipeline-AdaRES_project Disabled; experiment_first enabled.
+- Only server-1 GPU0 existing350W and server-2 GPU0 fixed280W, one independent experiment per card. GPU1 all use paused by user2026-11-04; Y57 separately paused; no server-6/cross-project/schedule/power changes.
+- Resource authority: pipeline/authorizations/server2_gpu1_pause_20261104.json SHA3715a2a5726e90c68e2e64ac22090fbcd5475e08b8edd6ab4dca6ed42fed5d45. Supersedes old GPU1 grant without changing scientific goal/receipts.
+- Scientific goal SHA4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a remains byte-identical.
+- PROJECT_ROOT=D:/project; PYTHONDONTWRITEBYTECODE=1; PYTHONUTF8=1; python -B. SSH keys work; no password file read or sudo assumptions.
+- Previous exact seven-section memory: pipeline/snapshots/codex_memory_before_404a3cb0b8cc441fa264f6ff249a02d1.md SHAf40b4b32ea4cbebc107d0e584f2b308db773b7069e024bbe815e05beaa35ff4f; all historical evidence, bans and dedicated recovery requirements retained.
+## Champion And Baseline
+- 目标mIoU .5150；历史CSV Y36 .5110。冻结FIRST：Y36 .510725438294、W2 .510107995189、B1 .502221764356、Y52 .509708428366、Y54 .506342952986。本轮无正式全量FIRST/成本更新；训练best不替代FIRST或晋升。
+- 原后评协议：9508表达/141场景、候选+Y36/W2/B1各两次、FIRST主结果、scene bootstrap10000/seed1999、TRAIN cuts1487/3325、原subgroup harm/mIoU/Acc25/50/activequeries/latency/memory和同卡cost。Y54大目标对Y36伤害CI[-.02678985,-.00070265]与Y52总体跨0保留；单seed不估seed方差。
+## Active Hypotheses
+- Y84 visual_query_init: independent W2, initial generated query plus point-mass-weighted full valid original visual mean @ zero W256x256, once before initial prediction; +65536, total164695173, no RNG. Original inputs/heads/gates/sampling/seed1999/fixed30 retained. No efficacy claim.
+- Y84 original server1 native YAML/TRAIN two-step PASS: losses [4.615511417388916, 6.3089141845703125], peak_reserved_bytes=6685720576; actual identities/initial-zero-then-learned response/shared head/query_norm/finite new-original-input gradients/optimizer updates passed. Only two batches, not full-dataset memory guarantee.
+- Y84 native: pipeline/checks/AdaRES-Y84_404a3cb0b8cc441fa264f6ff249a02d1_native_smoke.json SHA11792b3b35b10ec8231c4d39a8335c89aa48ec08c0f761b760dedf92a58f9c60; raw: pipeline/analyses/y84_server1_smoke_404a3cb0b8cc441fa264f6ff249a02d1.json SHA020ace19776e6aedc965196fc7be3f6aba3e630cd8aee2234fcc81222b78ab5c;19 guards all passed including actual record (no skip).
+- Y84 receipt: pipeline/admissions/AdaRES-Y84.json SHAc8ba93aa472ad4c54bd4af1904b5205a7426c7650445cae391cb603cca75f8aa; unchanged full evaluation/training freeze: pipeline/checks/AdaRES-Y84_404a3cb0b8cc441fa264f6ff249a02d1_post_training_freeze.json SHAd3e38757764ede03fb84028fee837a8ed392d477fc32e0eb391d7676cb3b650c.
+- Y84 source selection: pipeline/checks/adares-y84_source_selection_404a3cb0b8cc441fa264f6ff249a02d1.json SHAb049de706019468beda2f64064ccc200b986e53399f745d4fc966a5272654c2a; only seven actually tested additive files, other index/working files preserved; old signed helpers unchanged. master/server1 marker now7bef2cd313b870583c970c56580be5a78097234d; server2 marker remains2818322e6049b2541f1590a4fa9ad6854b3c598d.
+- Y85 mask_feature_norm remains prepared, blocked on original server2GPU0/280W. Shared LayerNorm256 on full x_mask(x) before batching, +512/total164630149/no RNG. Active changes masks/gate values; only bypass restores W2 outputs/gradients. No rerun CPU preparation.
+- Y85 source: pipeline/checks/y85_cpu_version_e736ab42635143dc8d0e2981ea8cce96.json SHAdc61aaf23950e18dc957c6536a0d42d2088ed1e248c6674ea7257e2b08a64504; original GPU0 plan: pipeline/checks/y85_native_e736ab42635143dc8d0e2981ea8cce96_gpu0_plan.json SHA7b96d7584a5093a17277b93035d13b0dcaf98c88f45d8b809b6482d1bd573d9d; retained GPU1 plan forbidden. No native GPU PASS/admission; no server1 plan.
+## Closed Or Failed Directions
+- Y80实际CPU及原native回调首次执行通过；元数据核验helper把15函数数目的宽文本替换误及162738点为152738，初次assert失败；attempt2仅修元数据预期，原模型/计划/实测结果不变，失败helper/repair证据保留于CPU verification。
+- 保留Y53/Y55/Y50/Y51/Y49rev1/Y46/Y48等拒绝及goal bans；F1否决mask-entropy，禁val扫描entropy/margin/occupancy/threshold/temperature/loss/feature subsets/epoch数，不改名重开。旧Y22/Y23与全部专用恢复见AGENTS和精确备份。
+- Y78原两CPU wrapper失败.py/.log保持：float64置换逐位比较1.11e-16舍入在原128eps范围；decoder-only缺原text_encoder优化器group，attempt3完整model绑定通过。模型与YAML未改，revision0；不是机制否决或GPU PASS。Y79在08e82轮CPU/model/原生回调检查首次即通过。
+- 所有已完成fixed30模型/原checkpoint/日志/freeze/receipt保留，不重训、不重放终态helper。原server1私有torch/CUDA11.3库、server2掉卡与专用恢复要求均不变。
+- 收尾wrapper初次误假设canonical occupation不会改tick_attempt，实际末次server1资源证据绑定Y62；attempt2保留该真实资源记录并重新绑定本轮已执行Y79 CPU结果。原失败helper及repair证据保留，模型/科学控制/队列未改。repair：pipeline/checks/closeout_wrapper_repair_08e82df71e3743dcb86c0eec4d39460c.json SHA364e230b88f573c54a5e62fdfece02640555d884a0ca09d93a1106b3a99d4d09。
+- Y81在b5d4轮实际CPU和完整原native回调CPU检查首次通过；未出现科学失败或模型修订。旧helper/失败程序/原日志保持不可变；不得修改旧hash-bound helper来支持新HEAD。
+- bd938轮Y80实际GPU与17准入守卫、Y82实际CPU/11native计划守卫首次通过；旧hash-bound helper/失败probe/原日志均保持，不为新HEAD修改旧helper。
+- Y78归档准备v1复查发现两个遗留GPU0字段（归档后断言/后评required_gpu），当时尚未执行归档；v1全部源码和原plan保留。v2从已核GPU1 task派生字段并新增两项终态后资源守卫，22检查通过；当前terminal_handoff_plan绑定v2及supersedes链，不改变科学模型。 在5d338轮仅v2完整真实归档成功，原v1未运行归档。
+- Y84 preparation schema tests initially skipped the unavailable real GPU record honestly; after actual native execution all19 tests passed with no skip. No scientific model revision or falsification.
+## Running And Queue
+- Y82 naturally fixed30 complete, canonically archived on original server1GPU0; stable finite last30/best21, model/optimizer544/scheduler30-21; native Train/Val1..30 and original source/YAML/receipt/freeze verified. Original20261104_010148 retained. Training best 0.5076494812965393 is not FIRST.
+- Y82 terminal: pipeline/checks/y82_server1_fixed30_404a3cb0b8cc441fa264f6ff249a02d1.json SHAb4761b1df81d44a9e4518c6382f883273c6526696b0ce8e78f16bc35336bc553; archive: pipeline/checks/y82_server1_fixed30_404a3cb0b8cc441fa264f6ff249a02d1_archive_binding.json SHA9fc60b2fce94fbbc41f2385a4b4c04eece45dcc387015b50a948c985bdf8792d; original full server1GPU0/350W review held by verified Y84, no substitution/retrain.
+- 26 completed fixed30 models Y56 and Y58..Y82 await their original full frozen FIRST/cost; GPU1 routes remain human authorization holds. Do not replay original archival/checkpoint loading.
+- Y81 already canonically archived in73fa; original best .5078033804893494 is training-only. Do not live-observe/restart it. GPU1 pause remains.
+- Y57 separately paused at original epoch27/model/optimizer543/scheduler27; only explicit Y57 continuation permits28..30, never generic GPU1 reauthorization or restart from pretrain.
+- AdaRES-Y83 Train29/30 step1672/4686; server-2 GPU0 PID20849; exact source/YAML/receipt/marker/compute/power/increasing counters verified: pipeline/checks/production_adares-y83_404a3cb0b8cc441fa264f6ff249a02d1_sourcepreserved.json SHAf24c106881633078c109d93261417383dbdb041b906f5d326deaf1e579b1c4a7
+- AdaRES-Y84 Train1/30 step130/4686; server-1 GPU0 PID243952; exact source/YAML/receipt/marker/compute/power/increasing counters verified: pipeline/checks/production_adares-y84_404a3cb0b8cc441fa264f6ff249a02d1_progress.json SHA87c0a80a7649e6c096db0dc154e535c0eb546909de245488ca9487fa47f27219
+- server1=songcl@192.168.1.175/dl02-MS-7B73，root=/data1/songcl/Project/AdaRES_project，private python=.../runtime/adares_project/bin/python，sitepackages=.../lib/python3.8/site-packages，pointnet=.../runtime/pointnet2-0.0.0-py3.8-linux-x86_64.egg，LD_LIBRARY_PATH=.../runtime/cuda113lib64，原精确data=.../data/，work=.../AdaRES_checkpoints；仅SERVERS两授权path mappings，原数据证明保持。
+- server2=songcl@192.168.1.163/dl01-MS-7C60，root=/bak_home/songcl/Project/AdaRES_project，code=.../AdaRES，python=/home/songcl/.conda/envs/adares_project/bin/python，原data=/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/；原环境/data保持。
+- Current observer: python -B scripts/y84_deployment.py observe --id AdaRES-Y83|AdaRES-Y84 --token NEW_TOKEN --label progress. Old y83 observer cannot accept new local HEAD; never alter old hash-bound helpers.
+- Fresh occupations: pipeline/checks/gpu_occupation_server-2_finish_404a3cb0b8cc441fa264f6ff249a02d1.json SHA22f9e8f187b2e9b4610531a6c230655f14c8d9c7511d79c9bfe4307be953b861; pipeline/checks/gpu_occupation_server-1_finish_404a3cb0b8cc441fa264f6ff249a02d1.json SHA3481ec5160b1073bc6923547cae5434f76a5e767cd5ce8e3265c4b4c8d8e4e2c; both authorized GPU0 busy/reserved. Finish evidence age<300s.
+## Open Questions And Risks
+- Full original9508 expressions/141 scenes, candidate+Y36/W2/B1 twice each, FIRST primary, scene bootstrap10000/seed1999, TRAIN cuts1487/3325 and original subgroup harm/mIoU/Acc25/50/activequeries/latency/memory/same-device cost remain unchanged.
+- No new formal FIRST/cost or promotion. Training best and native finite gradients do not establish benefit, full-data memory bounds or hardware repair.
+- GPU1 full evaluation/cost remains paused without migration/substitution. Y57 needs its separate explicit continuation. No other routine project operation needs renewed permission.
+- Next tick observe Y83/Y84 and dispatch ready work first. Y85 is nearest prepared original native candidate; execute only on fresh authorized idle unreserved server2GPU0 after exact current owner terminal verification/archival. Do not rerun CPU prep, Y82 finalization or old wait/launch closeout scripts.
+## Last Tick
+- 404a3cb0b8cc441fa264f6ff249a02d1: Y82 complete checkpoint verification/archive; Y84 actual original native two-step PASS,19 guards, exact seven-file source selection, original complete freeze/receipt/admission/safe dispatch and increasing training verified.
+- AdaRES-Y83 Train29/30 step1672/4686; AdaRES-Y84 Train1/30 step130/4686; new candidates0/admissions1/launches1/archives1; no formal FIRST/cost. Y85 prepared GPU0 plan retained, no GPU1 use.
+- Handoff: pipeline/checks/y82_archive_y84_launch_404a3cb0b8cc441fa264f6ff249a02d1.json SHAa7a65e2a4dbed7b221560f4331eb5d94fef04b51a0f8ef231b32ace28c52b1d7; both pauses, exact data/private runtime/path mapping/scientific goal/old receipts and schedule preserved.
+- After official report/finish read only FINALIZED/PASS/context_committed/released and absent owned lock/pending/archive_pending; never preclaim or write after release.

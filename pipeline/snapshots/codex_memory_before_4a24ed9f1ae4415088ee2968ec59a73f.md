@@ -1,0 +1,54 @@
+# AdaRES_project Research Memory
+## Goal And Phase
+- 当前token 0f90937f76bd42829822d9816707553f；快照2026-10-30T04:49:18.609356+00:00，deadline2026-10-30T05:49:18.609356+00:00（上海12:49:18至13:49:18），不延长。CODEX_THREAD_ID=01a07e32-78bf-7670-925b-370911ea48db核匹配owner，Pipeline-AdaRES_project Disabled。
+- 前48c537da3f22438bb4282909e459aa46已核FINALIZED/PASS/context_committed/released，释放2026-10-30T02:50:54.779468+00:00。本轮科研动作完成，实际收尾以tick_receipts/0f90937f76bd42829822d9816707553f.json为准，本文不预签postflight。
+- experiment_first=true；快照capacity3/running3/waiting0/ready0、candidate_budget2/creation2；本轮Y66完成归档，既存Y69真实native两步后1项准入并同轮启动。无需凑满准入配额；无待跑就绪项，现三卡均有训练。
+- 最新用户授权：server-1 GPU0（既有350W）和server-2 GPU0/1（分别280W/既有390W），每卡一独立实验；不得改功耗/硬件、驱逐、跨项目、重启受保护运行、改变调度频率或使用server-6。Y57实验本身继续用户暂停。
+- grant=authorizations/server2_gpu1_20261029.json，SHA6b24941bb4e278650fb8964af29657bf1d9f71a0bdd6b58c0f241564cec2d838；该资源授权和最新AGENTS覆盖冻结goal旧GPU1句。科学goal字节SHA4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a保持，原运行收据不重签。
+- PROJECT_ROOT=D:/project，PYTHONDONTWRITEBYTECODE=1，PYTHONUTF8=1，始终python -B。密钥SSH可用；未读密码文件，不推定sudo。只处理AdaRES_project。
+- 历史110行详细机制/修订/终态/恢复记忆精确保存：pipeline/snapshots/codex_memory_before_0f90937f76bd42829822d9816707553f.md，SHA8e892332cc5128818d9d8a3c7be5bd4768e2fc19f29d56ad4a5d9910970d6009；本文件压缩为当前状态，不覆盖旧证据。
+## Champion And Baseline
+- 目标mIoU .5150；历史CSV Y36 .5110、差.0040。冻结FIRST：Y36约.510725438294、W2 .510107995189、B1 .502221764356、Y52 .509708428366、Y54 .506342952986。Y36对W2收益仍不确定，不用训练best晋升。
+- Y54大目标相对Y36 CI[-.02678985,-.00070265]伤害保留，Y52总体CI跨0；单seed1999不量化seed不确定性。完整后评：9508表达/141场景，候选+Y36/W2/B1各两次，FIRST主结果，scene bootstrap10000/seed1999，TRAIN cuts1487/3325，原harm/mIoU/Acc25/50/activequeries/latency/memory及同卡成本协议不变。
+## Active Hypotheses
+- Y69=adares_y69_coarse_geometry_bias；六次coarse视觉cross-attention共享8头×3轴零初始化权重，+24参数/总164629661。bias=sum_a tanh(W[h,a])*(abs(qpos-spos)/(1+abs(delta)))**2，一次计算六处消费；原Boolean hard exclusions/key padding保留。fine SCG/k/gamma、共享confidence头/targets/losses/selector/全通道/Q128/seed1999/fixed30均不变。
+- 原fine已有各向同性几何、query可隐式表达几何；Y69仅比较显式coarse参数化，不宣称缺信息/文献新颖/收益。不重开Y25/Y26/Y9/Y28/Y33/Y40/Y50，亦非Y65/66反馈、Y67norm或Y68语言调制。
+- Y69七模型/YAML限定提交9acd73cdc1b96be003c8450a9e22057248a0f531(parent9af)，不要提交无关helper/artifacts改变HEAD。旧CPU首失败为head-mean reference误比较，模型未改；旧失败/repair及CPU第二次PASS均留档，不重放。
+- 本轮server-1备选合法activate：checks/y69_server1_activation_0f90937f76bd42829822d9816707553f.json；active plan=checks/y69_server1_alternative_48c537da3f22438bb4282909e459aa46_plan.json，SHAb82a55d7c567e0181759807d7cc9edb81e384dc4c03b5a0411626040955a885d。Y66真正固定30并canonical归档且GPU空后才激活。
+- CPU runtime preflight首次仅漏建项目probe父目录，模型/数据加载前失败；attempt2只补目录和JSON scan-id规范化，模型/YAML/native科学body/goal/commit均未改。成功checks/y69_server1_cpu_runtime_preflight_0f90937f76bd42829822d9816707553f_attempt2.json，SHA676bf4f21258f2e2f6af4f0c65feb4b3d010d5f9b9a79e84ad882783ec8fd6c6；完整模型164629661/真实TRAIN162738点8表达，CUDA未初始化，不代替GPU结果。
+- Y69上海13:12:48至13:13:42真实server-1 GPU0原生YAML/TRAIN/tools.train两步PASS：loss7.886719703674316/8.231616020202637，4不同场景16表达，540有限梯度张量及10共享indicator参数；每步一次geometry/六coarse/六真实attention/七indicator，独立轴公式和原位置/FPS/sampling/hard mask/keypadding消费检查通过。
+- Y69新W梯度max4.107094810024137e-06/6.783044227631763e-06，真实更新max9.975711873266846e-05/9.96626476990059e-05；首bias零、次步max.00018773523333948106，源/query梯度有限。峰6633291776B；无val选择/保存诊断权重，非效益或全量显存保证。analyses/adares_y69_server1_smoke_0f90937f76bd42829822d9816707553f.json，SHAed09aa8d4fb1bdc320f3d2f4c98b6bdbab96a40c19013b61354cc5d0b874eb6c。
+- Y69新server-1准入14项负守卫PASS，原Y64完整training/evaluation协议深复制并核结构相等，只改变方法ID/commit/资源。receipt=admissions/AdaRES-Y69.json SHA1d27590e9078ba91089f9f83fadbeab75d969483e0daa4605aa598d77297694e；freeze=checks/AdaRES-Y69_server1_0f90937f76bd42829822d9816707553f_post_training_freeze.json SHA f135d0f45ec7b5f930fbf2c0c9b836575c74abd0e01e75fedc39359ec0f708b4。
+- Y68=adares_y68_language_mask_modulation；mask_feats乘1+tanh(mean_valid(projected_language)@W)，W[256,256]零初始化，+65536/总164695173，一次调制原七预测阶段；原confidence/targets/loss/selector/attention gate/全通道/Q128/seed1999/fixed30不变。原CPU/真实两步/准入/派发已完成，不重放。
+- Y67=adares_y67_stage_readout_norm；保留stage0 out_norm，六个独立LayerNorm解除预测读出仿射共享，+3072/总164632709；原七共享confidence/损失和Q128/seed1999/fixed30/selector/Boolean gate不变。旧CPU诊断inplace版本错误/repair及真实检查保留。
+- Y66=adares_y66_peer_state_feedback；六次细化前q+=C@W，C为原point-mass IoU去自边/行归一的raw peer query均值，W[256,256]零初始化，+65536/总164695173。Y65为中心化标量confidence乘256向量的六次反馈；两项均未改变原hard gate，现都固定30完成，效益未知。
+- Y62 overlap-density(+2)、Y63 peer-bilinear(+131072)、Y64 directed-containment(+512)及Y56/Y58/Y59/Y60/Y61原实现与科学控制保留；原模型/配置/协议/失败证据路径详见历史记忆和各candidate，不重复训练或准入。
+## Closed Or Failed Directions
+- Y53/Y55/Y50/Y51/Y49rev1/Y46/Y48等旧拒绝/关闭和goal bans不变；F1否决mask-entropy，禁止val扫描entropy/margin/occupancy/threshold/temperature/loss/feature subsets/epoch数，不改名重开。
+- 局部诊断失败与机制反证区分。Y69旧CPU reference、Y67旧CPU inplace和本轮CPU目录wrapper问题均保留原失败并有独立修复记录，不能改写原log/program或宣称训练获益。
+- server-1私有torch可执行栈4字节修复、私有CUDA11.3库、server-1默认350W资源计划及精确路径适配均有原证据；不触碰系统/其他环境/硬件。Y62/Y63等首次native前失败和旧goal绑定均保留。
+- 旧finalize误import/GPU9映射已修复，今后finalize_task显式gpu=task['gpu']；已完成finalizer/restore不重放。历史Y23专用resume依赖与同模型/优化器/调度器续训约束仍由AGENTS及旧证据保留，不改为generic waiting。
+## Running And Queue
+- Y69 server-1 GPU0/PID1135633/code及生产9acd/350W，canonical gated sync/dispatch已完成；原生Train1/30于上海13:18:56至13:19:01从38增至46/4686，六源码/YAML/marker/原准入/独占/功耗均核验。checks/y69_server1_dispatch_0f90937f76bd42829822d9816707553f.json SHAe4dbd8932dc52fba972681b0ee9ab469fd1b5d91cbae4739d1c4f1ba08405fc9；phase_progress同token SHA9af2f80ab48420b51c0960e8dda87a350b1ed994ac15e1798ef7eea82bf46287。
+- Y69后续只用scripts/observe_y69_server1_phase.py --token <NEW_TOKEN>观察原PID/Train或Val原生步数。不要重放本轮activation/native/admit/dispatch或覆盖本token已有输出。普通训练不设置诊断exclusive_ownership标志。
+- Y68 server-2 GPU0/PID20742/code及生产9af4deca98f121cbbe88e65ac7e233035f76b888/280W；本轮Val7/30 189→206/363，checks/y68_server2_gpu0_phase_progress_0f90937f76bd42829822d9816707553f.json SHA4c1168a3b8bfc2aec0714927a34b26371fcdd6efa81a9fa22337ae736c9b4442。只用scripts/observe_y68_server2_gpu0_phase.py。
+- Y67 server-2 GPU1/PID100811/原code db35/生产9af/既有390W；本轮Train24/30 2801→2810/4686，checks/server2_y69_local_adares-y67_0f90937f76bd42829822d9816707553f.json SHA83b77859e68caecf3a5c29d9dd5cf882183dbe6675ffe50557556e9f2c50ba88。只用scripts/observe_server2_with_local_y69.py --candidate AdaRES-Y67；严格接受本地9af→9acd七个新增Y69文件而远端保持既存生产，不改旧hash-bound observer。
+- Y66本轮Shanghai13:09:55核原PID1973300退出及Train/Val30完整；canonical done_complete/30/30归档并释放旧GPU0预约，新Y69才使用该卡。训练best .5087608098983765/epoch23；last30/scheduler30/optimizer544、best23/scheduler23/optimizer544，模型/优化器有限，checkpoint稳定SHA分别aa14cbc7375f59e7a5ad1a9159ae856e236a1bb247685db492869e668d8f072b/41f84f3e05dd9e081cb7a0163d5ba425c415f6915e01a35b11c401558c2cee8a。
+- Y66 proof=checks/y66_server1_fixed30_0f90937f76bd42829822d9816707553f.json SHA338869f75142b2d8d7eb6e3542360d218378a0ebae0a2d9b55547b6a58aec669；archive_binding同前缀SHA7a45ca89e2f00b944c1943acd43ef767dce22898eee0d9dbb715e8e1482f196a。新finalize_y66_fixed30.py及12项生命周期守卫已执行完成，勿重放。完整日志Checkpoints/server-1/adares_y66_peer_state_feedback_res/0f90937f76bd42829822d9816707553f/fixed30.log；原last/best留原远端。
+- Y66检查点目录/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints/adares_y66_peer_state_feedback_res/20261029_105456；原receipt d78feba0b2628b5d198f899c7d563e1ae59f16cce0f7d8e081bce44652575435保持。Y66当前blocked/validation/exclusive_gpu_slot，仅等原全量冻结后评，不重训或用训练best晋升。
+- Y56/Y58/Y59/Y60/Y61/Y62/Y63/Y64/Y65/Y66共10项fixed30均已完成，原完整冻结后评/成本待独占资源。Y65 best .5093602538108826、Y64 .5028731822967529、Y63 .5074337124824524、Y62 .5082247853279114；均训练日志指标，不替代FIRST。
+- 本轮canonical occupation：checks/gpu_occupation_server-2_0f90937f76bd42829822d9816707553f.json SHA0ae812523ae16bf3dc819b52733a8d41dc65b76a07a95704c56ec3a6f5f8f928（两卡20742/100811均占用/预约）；server-1同token SHA4c1e78549b59c1cf19cc910d5c0b09b7cef5817d177ac1ebed4c4ed1e4a36c76（1135633占用/预约）。绑定10项原后评hold；finish若超过300秒须新label刷新，不覆盖。
+- server-1=192.168.1.175/hostname dl02-MS-7B73，根/data1/songcl/Project/AdaRES_project/code AdaRES；私有runtime/adares_project/bin/python为Python3.8.13/Torch1.12.1+cu113，sitepackages+pointnet2 egg+cuda113lib64。server-2=192.168.1.163/dl01-MS-7C60，根/bak_home/songcl/Project/AdaRES_project，python=/home/songcl/.conda/envs/adares_project/bin/python。
+- server-1 data=/data1/songcl/Project/AdaRES_project/data/，work=/data1/songcl/Project/AdaRES_project/AdaRES_checkpoints；server-2原data=/bak_home/songcl/3D_visual_grounding/data/ipdn_data/data/。精确数据核验checks/server1_data_verified_63b27dd8efe04a0bab6dc0291cefdbf0.json SHA8c590fa828fbc6c0df840c21ba88b1802cc0d2323eb0a124a57aa328b0c2361f；100766文件/原7差异私有替换逐字节同SHA、train1201/val312 refer文件保持。
+- Y57继续paused/dispatch_hold/resume_requires_user_authorization；20261021_004739/last.pth完整epoch27/optimizer543/scheduler27/best .5028846859931946。只有明确Y57继续授权才从28续同模型/优化器/调度器至固定30，不迁移、不从pretrain重启；GPU1独立资源授权不是resume。
+## Open Questions And Risks
+- 完整后评/训练效益/成本、official unique/multiple、seed方差和server-2掉卡/散热/Xid79根因仍未知；本轮既存82C样本不是新增硬件结论，不改变功耗或宣称修复。原数据盘/检查点恢复限制保留。
+- 本地HEAD9acd仅server-1生产部署9acd；server-2生产保持9af，Y67/Y68原运行源码/配置/收据不变。追加部署以后必须另核存活keeper兼容，不接受任意后代marker或只信commit不核源码。
+- 旧审计closure队列空位误判已于412be轮修复；只接受本轮canonical gpu_occupation token/snapshot/scope/hostname/原raw哈希且<300秒，空闲/失败/缺设备/旧token/篡改均拒绝。原19+147=166测试及真实校验/bugfix记录保留，不为finish修改checker。
+- Y22 rejected旧goal原字节已反向恢复SHA53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966并改指不可变snapshot，历史状态/原SHA/科学记录不变；变更可变配置前须保存原绑定精确字节。
+- adaRES heartbeat已核ACTIVE/每2小时/BYMINUTE47/本owner，最新资源/Y57独立暂停提示已通过应用保存和TOML核验；不改调度/通知策略、不开新任务或嵌套codex exec。完整历史机制与修复证据见本轮memory_before快照。
+## Last Tick
+- 本0f90937f76bd42829822d9816707553f首先查三原运行；Y68 Val7和Y67 Train24原生递增，Y66 Train30后完整完成并canonical归档。Y66十二项终态守卫、模型/优化器/调度器/原source/YAML/完整log检查通过，原checkpoint保留。
+- Y69项目私有环境CPU实际加载后，合法激活server-1计划并真实GPU两步；十四项准入守卫和原完整冻结协议保留通过，签发准入并同轮canonical派发，PID1135633第1轮38→46确认。CPU首wrapper失败及修复另存，未覆盖原证据或训练数据协议。
+- 本轮final handoff=pipeline/checks/y69_server1_final_handoff_0f90937f76bd42829822d9816707553f_metadata_corrected.json SHA4c2ae69818552f2b5c48065d9310b945b219baf38d091b2584be00031b9e3afc，绑定Y66归档/Y69两步/准入/实际dispatch/递增/三卡物理占用和Y57暂停。当前无用户必须处理项；完整后评等空闲资源，效益未知。
+- 下轮先查Y69/Y68/Y67原PID；真正固定30完成才核原last/best/优化器/调度器/完整日志并canonical归档，空槽再推进原冻结后评或合格既有候选。已完成检查/激活/准入/派发/finalizer不重放。按foreground report/finish核FINALIZED/PASS/context_committed/released、锁/pending清理；释放后不补写。

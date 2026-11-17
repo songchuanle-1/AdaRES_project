@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "仅AdaRES_project。核验实际owner、Disabled后台调度、正式skill/experiment_first、AGENTS/goal/SERVERS/最新GPU1暂停后begin；先查询进展及派发现有合格队列，ready waiting为0。",
+    "运行：AdaRES-Y94 Train7/30，步4570/4686；AdaRES-Y93 Train26/30，步573/4686。原PID/source/YAML/收据/私有runtime/原数据、350W/280W与原生步数递增确认；canonical只读物理占用两个授权GPU0均busy+reserved。没有抢占、GPU1使用、live checkpoint加载、stop/restart/migration/新终态归档。",
+    "新准备：独立W2变体Y99，保留完整原静态掩码MLP并添加全部32维原稀疏输入的线性零初始化旁路，一次、+8192参数/no RNG、七阶段共用。全部原空间/外观输入及投影、坐标/采样/SCG、六次精炼/共享confidence/原损失和gate算法保留。与Y98外观直达、Y72循环visual、Y81 query-attended、Y92平方已投影特征不同；未做新数据/特征删减选择/阈值或验证集扫参、组合或重开旧拒绝。",
+    "Y99首次实际CPU执行通过：原YAML/fullmodel/releasedbackbone/TRAIN162738点8表达，float32/64独立scalar/no-RNG/行及输入输出通道置换/零/符号/局部干预/双输入梯度，七阶段W2权重/RNG/输出精确锚点与输入梯度锚点，初始和最终mask干预、初始scores不变及exact bypass，完整原32维身份/两原visual投影/原batching/静态七consumer。两步合成更新有限，各387梯度张量，更新后mask-feature差0.002486199140548706。",
+    "仅七项已测新增文件保留在实际native通过的HEADY94父版本，使用独立index，主HEAD/index/现有训练/较早Y95-Y96-Y98原工件保持。10项实际证据和8项runtime guard首次通过；server1/server2独立原生YAML/私有环境/350W-280W/精确数据映射计划就绪。同一native callback已实际在CPU执行，GPU未执行，不冒充native PASS/准入或full-data memory。",
+    "本轮新科学ID1、科学CPU尝试1、GPU原生0、准入0、启动0、归档0。Y95执行绑定/server2准入前检查、Y96/Y98以及Y97原始和修订1数值失败均保持。精确备份七节记忆、刷新原训练及canonical占用、保留collector实际resource_check，再正式report/finish，不预称收尾结果。"
+  ],
+  "decisions": [
+    "不强凑第二候选或伪造waiting。Y99排在Y95/Y96/Y98之后；仅当前HEADY94、匹配原Y94/server1或Y93/server2自然30轮完整有限原检查点核验/canonical归档、实时独占空闲GPU0后执行run_y99_native.py。未来HEAD或owner变化须新同字节测试绑定，不重放CPU/version/plan；实际native通过再当轮完整freeze/receipt/准入/精确source/安全派发/递增counter。",
+    "科学goal字节、原签名收据、原数据/私有runtime/mappings/seed1999固定30轮、禁用和专用恢复/功耗/调度保持。完整9508表达141场景/candidate+Y36-W2-B1各两次/FIRST/场景bootstrap10000-seed1999/TRAIN1487-3325/全部有害子组和指标/原设备cost不变。GPU1全部使用与原GPU1冻结后评继续暂停，Y57独立暂停；禁止server6/跨项目/外部任务干预。CPU可行性不是训练收益，正式效果待原冻结评测，无新用户操作需求。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y99_preparation_closeout_4c32de6116d64e45a3eed8d90e5ea115.json",
+      "sha256": "2aaa422558c421b913fb27db0f5cbad74a034932418c9a2a97ff3e97d7e845d2"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_4c32de6116d64e45a3eed8d90e5ea115.md",
+      "sha256": "d49b26f5ba357e6dc55d7a2e4c4d611616f2484dae2b4ca8ac108e94490bf931"
+    },
+    {
+      "path": "pipeline/decisions/20261109-171344_next_batch.md",
+      "sha256": "e7c3a78230fc06bc049dee3cc0a7f64a8f29167f22ace1fd999d527b888fdbe1"
+    }
+  ]
+}

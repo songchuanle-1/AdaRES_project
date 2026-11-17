@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y51",
+  "preregistered_at": "2026-10-16T14:20:09.857498+08:00",
+  "hypothesis": "The deployed native confidence ordering might depend on a per-query common logit shift that is invisible to its native two-class confidence CE. Test the exact native inference/loss extraction before considering any change; this is a deployment-consistency diagnosis, not a proposed calibration/ranking variant.",
+  "matched_control": "Same query masks, labels, logits and native extractor, with fixed common shift k_q=(-1)^q added to BOTH class logits per query. Compare actual native CE, confidence values, chosen single-argmax and selected mask. Mask contents, selector, source and checkpoint are never changed.",
+  "protocol": [
+    "Read only native W2 ipdn.py/loss.py/dec.py, hash exact source and extract the actual confidence-to-selection AST.",
+    "Fixed32 seeds1999..2030/full128 queries/float64 fixtures, same original8eps*nodes*Q numerical envelope; exact integer margin fixtures separately verify order without floating uncertainty.",
+    "If the actual native score is gauge-invariant and all matched selections stay unchanged, reject this hypothesized mismatch, not all confidence mechanisms.",
+    "If a mismatch is observed, retain native evidence and investigate task relevance and goal constraints; no automatic selector change or admission.",
+    "Preserve historical ranking/readout closures, Y50 unchanged human-authorization block, validation freezes and all GPU permissions."
+  ],
+  "no_model_variant": true,
+  "no_validation_selection": true,
+  "no_GPU_required": true,
+  "no_admission": true
+}

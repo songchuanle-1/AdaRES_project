@@ -1,0 +1,31 @@
+{
+  "observed_at_local": "2026-10-03T21:28:42.192015+08:00",
+  "events": [
+    "\u961f\u5217\u63a8\u9001 [Y25 train-only mask-feedback support] configs_song/model_paper5/adares_y25_mask_feedback_res.yaml \u2192 server-2 gpu1"
+  ],
+  "task": {
+    "id": "AdaRES-Y25",
+    "label": "Y25 train-only mask-feedback support",
+    "config": "configs_song/model_paper5/adares_y25_mask_feedback_res.yaml",
+    "status": "running",
+    "depends_on": [],
+    "code_commit": "94918c1a008e21c72b9478c28f934e8b329e0c97",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y25.json",
+    "requires_exclusive_ownership": true,
+    "min_epochs": 30,
+    "patience": 30,
+    "total_epochs": 30,
+    "pid": 98611,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y25_mask_feedback_res_20261003_212806.log",
+    "server": "server-2",
+    "gpu": "1",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "launched": "2026-10-03T21:28:42"
+  },
+  "receipt": {
+    "path": "pipeline/admissions/AdaRES-Y25.json",
+    "sha256": "8beb22dd07a8a14d07645890d3584b2277c0782250c913978ee639345f3a40a2"
+  },
+  "scope": "Canonical gated dispatcher; GPU inventory constrained to1, no monitor/goal preflight repeated."
+}

@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "<stdin>", line 46, in <module>
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/data1/songcl/Project/AdaRES_project/AdaRES/tools/train.py", line 14, in <module>
+    from ipdn.dataset import build_dataloader, build_dataset
+  File "/data1/songcl/Project/AdaRES_project/AdaRES/ipdn/dataset/__init__.py", line 5, in <module>
+    from .scannetv2_test import ScanNetDataset_sample_graph_edge
+  File "/data1/songcl/Project/AdaRES_project/AdaRES/ipdn/dataset/scannetv2_test.py", line 14, in <module>
+    import dgl
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages/dgl/__init__.py", line 13, in <module>
+    from .backend import load_backend, backend_name
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages/dgl/backend/__init__.py", line 95, in <module>
+    load_backend(get_preferred_backend())
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages/dgl/backend/__init__.py", line 41, in load_backend
+    from .._ffi.base import load_tensor_adapter # imports DGL C library
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages/dgl/_ffi/base.py", line 44, in <module>
+    _LIB, _LIB_NAME, _DIR_NAME = _load_lib()
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/site-packages/dgl/_ffi/base.py", line 34, in _load_lib
+    lib = ctypes.CDLL(lib_path[0])
+  File "/data1/songcl/Project/AdaRES_project/runtime/adares_project/lib/python3.8/ctypes/__init__.py", line 373, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libcusparse.so.11: cannot open shared object file: No such file or directory

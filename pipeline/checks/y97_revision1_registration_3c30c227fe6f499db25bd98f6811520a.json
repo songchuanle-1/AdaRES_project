@@ -1,0 +1,264 @@
+{
+  "complete": true,
+  "token": "3c30c227fe6f499db25bd98f6811520a",
+  "id": "AdaRES-Y97",
+  "registered_at": "2026-11-09T04:58:18.275646+08:00",
+  "original_candidate": {
+    "id": "AdaRES-Y97",
+    "profile": "experiment_first",
+    "stage": "blocked",
+    "comparison_baseline": "AdaRES-W2",
+    "implementation_package": "adares_y97_language_quadratic_input",
+    "config": "configs_song/model_paper5/adares_y97_language_quadratic_input_res.yaml",
+    "hypothesis": "Original decoder input language uses a full768-to256 linear projection before its consumed LayerNorm. Adding a zero-initialized projection of the SAME raw token-channel squares may ease nonlinear token fitting before sampling and six refinements. Contextual embeddings/downstream networks already have nonlinear capacity; no missing information, defect, novelty or benefit is presumed.",
+    "matched_control": "Independent W2. L=lang_norm(lang_proj(T)+T.square()@zeroW768x256), once for all original tokens/all768 channels; +196608/total164826245/no RNG. Keep original projection/bias and SAME active language norm/epsilon, original token masks/frozen text encoder modes, all input features/2D/backbone/sampling algorithm/query count/coordinates/SCG/k/gamma/hard-gate algorithm/static masks/six refinements/shared confidence/targets/loss/selector/seed1999/fixed30/native YAML. Sampling values can change only as a consequence of the intended learned token representation; no scans.",
+    "historical_scope": "Y75 multiplies generated queries by pooled projected language; Y79 adds current-query feedback to recurrent language memory. This changes every original token's initial representation before the original norm, not pooling, a final confidence readbackY33/Y35, Y23 semantic-loss padding, rejected Y26 discarded qla norm or Y53 padding premise. Y88/Y92 mask-side quadratic paths and Y93/Y96 hidden/seed skips are not combined or reopened; text encoder remains frozen.",
+    "prepared_native_body": {
+      "path": "pipeline/checks/y97_native_73b979596bce48149cd5bfb9bc0ee1be_body.py",
+      "sha256": "502b5c251fc2eea430cdcfd34ea4668ba187eed8033bf72b19aec69591ed74ac"
+    },
+    "observer_core": {
+      "path": "scripts/y97_observer_core.py",
+      "sha256": "5523e046b785fc1caba5720dbc6a6a08487cd4aa26efbe26917faefc58ca754a"
+    },
+    "next_action": "Preserve original failed CPU program/log, model/YAML bytes and exact component reproduction. Aware numerical implementation hold; do not replay or replace equality with tolerance. Only preregister one evidence-backed execution change under same Y97 before retest, with full affected controls unchanged. Earlier Y94/Y95/Y96 and original Y92/Y93 continue.",
+    "evidence": [
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/__init__.py",
+        "sha256": "82e013e616abb0b5446cf83709c703c7752e33763df1106c8b0dbd1c43042ff1"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/backbone.py",
+        "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/dec.py",
+        "sha256": "c25405e499bb2f88575b2bcdd298e9f8f69fd63741c03560a07adc7530410dee"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/ipdn.py",
+        "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/loss.py",
+        "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/sample_model.py",
+        "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+      },
+      {
+        "path": "AdaRES/configs_song/model_paper5/adares_y97_language_quadratic_input_res.yaml",
+        "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+      },
+      {
+        "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+        "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+      },
+      {
+        "path": "pipeline/checks/y97_native_73b979596bce48149cd5bfb9bc0ee1be_body.py",
+        "sha256": "502b5c251fc2eea430cdcfd34ea4668ba187eed8033bf72b19aec69591ed74ac"
+      },
+      {
+        "path": "pipeline/checks/y97_targeted_history_73b979596bce48149cd5bfb9bc0ee1be.json",
+        "sha256": "03075879ea6256fcef5b298ebcc3ab22681b92e639ccc18ca536fd0d5bc60c37"
+      },
+      {
+        "path": "scripts/prepare_y97_language_quadratic_input.py",
+        "sha256": "8eb9468215e9cb6b53ce833ebcd23112dc4542e8496ece972e5ece1f99ac3531"
+      },
+      {
+        "path": "scripts/y97_observer_core.py",
+        "sha256": "5523e046b785fc1caba5720dbc6a6a08487cd4aa26efbe26917faefc58ca754a"
+      },
+      {
+        "path": "scripts/probe_y97_cpu_controls.py",
+        "sha256": "e011262e13127fa45a10a45168289a4fee7533b23deb10ff8549ae125aa01b0a"
+      },
+      {
+        "path": "scripts/probe_y96_cpu_tail.py",
+        "sha256": "7bbd1e1350a779c62b9c1aef0bb160ac088b46a16c8a7b83425a407cd683cc38"
+      },
+      {
+        "path": "scripts/probe_y96_native_tail.py",
+        "sha256": "26499302e04b48876aa39ada38a3c61bdd63fd5d458369ab04bcd3e1d756a0f3"
+      },
+      {
+        "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+        "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+      },
+      {
+        "path": "pipeline/analyses/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be.log",
+        "sha256": "68da9bd9fd9bb9368e452fe0403e1146f3dbcdd724d8819c5eb52a79fc0358db"
+      },
+      {
+        "path": "pipeline/checks/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+        "sha256": "259e0b2758cf66ebd69d9806a6fcfabeba04b07a772b91f783378213698d764a"
+      },
+      {
+        "path": "scripts/diagnose_y97_batch_permutation.py",
+        "sha256": "3f1a8d4c8dcfcbad88d0537daae9d4b691643dab6ee6692601e90cb28bda184f"
+      },
+      {
+        "path": "pipeline/checks/y97_CPU_numerical_failure_73b979596bce48149cd5bfb9bc0ee1be.json",
+        "sha256": "d9875d4734907fca95bd7ae43f731d5af5feed79af3ffe35bf4e9bea2441ca9a"
+      },
+      {
+        "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+        "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+      },
+      {
+        "path": "pipeline/analyses/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be.log",
+        "sha256": "68da9bd9fd9bb9368e452fe0403e1146f3dbcdd724d8819c5eb52a79fc0358db"
+      },
+      {
+        "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.json",
+        "sha256": "a5f850ca02cc7e4c1aa64558bdcc7d06d8da906a4716969457c0cb2a646b6ec1"
+      },
+      {
+        "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "pipeline/checks/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+        "sha256": "259e0b2758cf66ebd69d9806a6fcfabeba04b07a772b91f783378213698d764a"
+      },
+      {
+        "path": "scripts/record_y97_numerical_hold.py",
+        "sha256": "bff68b3946e9154585c820cfb607707a9197ecce2b5ea5eae7fba9ca258aeec7"
+      },
+      {
+        "path": "scripts/diagnose_y97_batch_permutation.py",
+        "sha256": "3f1a8d4c8dcfcbad88d0537daae9d4b691643dab6ee6692601e90cb28bda184f"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/__init__.py",
+        "sha256": "82e013e616abb0b5446cf83709c703c7752e33763df1106c8b0dbd1c43042ff1"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/backbone.py",
+        "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/dec.py",
+        "sha256": "c25405e499bb2f88575b2bcdd298e9f8f69fd63741c03560a07adc7530410dee"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/ipdn.py",
+        "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/loss.py",
+        "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+      },
+      {
+        "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/sample_model.py",
+        "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+      },
+      {
+        "path": "AdaRES/configs_song/model_paper5/adares_y97_language_quadratic_input_res.yaml",
+        "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+      },
+      {
+        "path": "pipeline/checks/y97_numerical_closeout_73b979596bce48149cd5bfb9bc0ee1be.json",
+        "sha256": "5e84e6242b429f1314b6e7ab573214beb2c9da2469623309af88bc548864c3e4"
+      }
+    ],
+    "blocked_from_stage": "implementation",
+    "blocker_kind": "numerical_control_failure",
+    "failure_scope": "implementation",
+    "CPU_failure": {
+      "path": "pipeline/checks/y97_CPU_numerical_failure_73b979596bce48149cd5bfb9bc0ee1be.json",
+      "sha256": "d9875d4734907fca95bd7ae43f731d5af5feed79af3ffe35bf4e9bea2441ca9a"
+    },
+    "CPU_program": {
+      "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+      "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+    },
+    "component_diagnosis": {
+      "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.json",
+      "sha256": "a5f850ca02cc7e4c1aa64558bdcc7d06d8da906a4716969457c0cb2a646b6ec1"
+    },
+    "blocker": "Original CPU full-token quadratic-input component failed its exact batch-permutation bitwise guard before full decoder tests. Exact repeat measured float32 1epsilon/float64 1epsilon differences; original unchanged guard still FAIL, no CPU/native PASS or admission.",
+    "retry_after": "2026-11-09T07:22:14.439880+08:00",
+    "unblock_condition": "New numerical evidence or a pre-registered bounded SAME-ID implementation revision that passes the original unchanged bitwise/scalar/full decoder/native controls. No timer-based replay, guard relaxation, rejection of the mechanism, or renamed replacement."
+  },
+  "revision": {
+    "revision": 1,
+    "failure_scope": "implementation",
+    "reason": "The original collapsed-row GEMM gives one-epsilon differences after batch permutation. Working diagnosis: output-row placement changes the floating-point reduction kernel; this is not evidence against the quadratic-language hypothesis.",
+    "change": "Evaluate the SAME raw-token square projection using one fixed-shape torch.mv per token, then stack and add the original projected tensor. Keep every parameter, initialization, full token/channel, active norm, consumer and protocol unchanged. Use a separate rev1 package under the SAME AdaRES-Y97 ID so original model/YAML paths remain immutable.",
+    "prediction": "The original exact component batch-permutation guard should pass while scalar, sign, token-locality, gradient, RNG, seven-stage W2, bypass and two-update guards remain unchanged. The full observer STILL demands exact equality with its original batched-matmul expression; a mismatch there is a failed revision, not permission to replace the guard.",
+    "preregistered_at": "2026-11-09T04:58:18.275646+08:00",
+    "failure_evidence": [
+      {
+        "path": "pipeline/checks/y97_CPU_numerical_failure_73b979596bce48149cd5bfb9bc0ee1be.json",
+        "sha256": "d9875d4734907fca95bd7ae43f731d5af5feed79af3ffe35bf4e9bea2441ca9a"
+      },
+      {
+        "path": "pipeline/analyses/y97_batch_permutation_diagnosis_73b979596bce48149cd5bfb9bc0ee1be.json",
+        "sha256": "a5f850ca02cc7e4c1aa64558bdcc7d06d8da906a4716969457c0cb2a646b6ec1"
+      }
+    ],
+    "result": "pending",
+    "evidence": [],
+    "result_evidence": []
+  },
+  "original_CPU_program": {
+    "path": "pipeline/checks/y97_cpu_73b979596bce48149cd5bfb9bc0ee1be_program.py",
+    "sha256": "1d566109283850b1f56cb6d0584c28deaa75cba7eaa91335055c3d1e17e06477"
+  },
+  "original_native_body": {
+    "path": "pipeline/checks/y97_native_73b979596bce48149cd5bfb9bc0ee1be_body.py",
+    "sha256": "502b5c251fc2eea430cdcfd34ea4668ba187eed8033bf72b19aec69591ed74ac"
+  },
+  "original_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/__init__.py",
+      "sha256": "82e013e616abb0b5446cf83709c703c7752e33763df1106c8b0dbd1c43042ff1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/dec.py",
+      "sha256": "c25405e499bb2f88575b2bcdd298e9f8f69fd63741c03560a07adc7530410dee"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y97_language_quadratic_input/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y97_language_quadratic_input_res.yaml",
+      "sha256": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    }
+  ],
+  "original_component_controls": {
+    "path": "scripts/probe_y97_cpu_controls.py",
+    "sha256": "e011262e13127fa45a10a45168289a4fee7533b23deb10ff8549ae125aa01b0a"
+  },
+  "original_observer_core": {
+    "path": "scripts/y97_observer_core.py",
+    "sha256": "5523e046b785fc1caba5720dbc6a6a08487cd4aa26efbe26917faefc58ca754a"
+  },
+  "replacement_old": "        return projected + raw_tokens.square() @ self.weight",
+  "replacement_new": "        tokens = raw_tokens.reshape(-1, raw_tokens.shape[-1])\n        quadratic = torch.stack(\n            [torch.mv(self.weight.t(), token.square()) for token in tokens.unbind(0)],\n            dim=0,\n        ).reshape_as(projected)\n        return projected + quadratic",
+  "all_original_guards_unchanged": true,
+  "guard_relaxation_authorized": false,
+  "validation_used": false,
+  "original_training_untouched": true,
+  "native_GPU_authorized_by_this_registration": false,
+  "helper": {
+    "path": "scripts/revise_y97_tokenwise_projection.py",
+    "sha256": "019d53560dabe17dd4e55380e581b822afdb97654eb2c18829057829dd89d87d"
+  }
+}

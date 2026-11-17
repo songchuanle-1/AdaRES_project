@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y99",
+  "code_commit": "e5151a722778af3eecb28d0d4f6ae75e18a60e0c",
+  "parent_commit": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "retained_branch": "refs/heads/adares-y99-spatial-mask-skip",
+  "working_HEAD": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "main_index_unchanged": true,
+  "source_snapshot": {
+    "path": "pipeline/checks/y99_cpu_version_4c32de6116d64e45a3eed8d90e5ea115_source_snapshot.json",
+    "sha256": "a2eff12d0201a30d696357c895c66e82e1f2164530e0a64e74a0907a2bb1b415"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y99_cpu_4c32de6116d64e45a3eed8d90e5ea115.json",
+    "sha256": "02261fefb2b6f8e05994603054d15920d5e41203ec9abd8efb4bbc17df631d99"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y99_cpu_4c32de6116d64e45a3eed8d90e5ea115_program.py",
+    "sha256": "ad15d195a760b0cbb08a0f1735e7c72345a6132c640c0ffac30e4a67afb80f34"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y99_spatial_mask_skip_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y99_spatial_mask_skip/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y99_cpu_version_4c32de6116d64e45a3eed8d90e5ea115.index",
+    "sha256": "dde2f4440a156f06f9170a77befbe42602b83e21e2226ed74fb512d64c8c1acd"
+  },
+  "matching_current_owners": {
+    "server-1": "AdaRES-Y94",
+    "server-2": "AdaRES-Y93"
+  },
+  "CPU_tested_scientific_files_exact": true,
+  "earlier_Y94_preserved": true,
+  "earlier_Y95_Y96_Y98_preserved": true,
+  "actual_parent_native": {
+    "path": "pipeline/analyses/y94_server1_smoke_ab9cf3f30d5a40d28b3c43f4b85083ab.json",
+    "sha256": "9810b2f9aa80b2cbca1ceac5e1c84b289964777af3c7c1bc04c425f26026f5e2"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y99_cpu_native.py",
+    "sha256": "c4d3c0b1298ae83070a640d0f2edc3cc4c941c6e92a3d3ba63b2aa636b6b2816"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y99_cpu_version_4c32de6116d64e45a3eed8d90e5ea115_source_snapshot.json",
+      "sha256": "a2eff12d0201a30d696357c895c66e82e1f2164530e0a64e74a0907a2bb1b415"
+    },
+    {
+      "path": "pipeline/analyses/y99_cpu_4c32de6116d64e45a3eed8d90e5ea115.json",
+      "sha256": "02261fefb2b6f8e05994603054d15920d5e41203ec9abd8efb4bbc17df631d99"
+    },
+    {
+      "path": "pipeline/checks/y99_cpu_4c32de6116d64e45a3eed8d90e5ea115_program.py",
+      "sha256": "ad15d195a760b0cbb08a0f1735e7c72345a6132c640c0ffac30e4a67afb80f34"
+    },
+    {
+      "path": "pipeline/checks/y99_cpu_version_4c32de6116d64e45a3eed8d90e5ea115.index",
+      "sha256": "dde2f4440a156f06f9170a77befbe42602b83e21e2226ed74fb512d64c8c1acd"
+    },
+    {
+      "path": "scripts/retain_y99_cpu_native.py",
+      "sha256": "c4d3c0b1298ae83070a640d0f2edc3cc4c941c6e92a3d3ba63b2aa636b6b2816"
+    },
+    {
+      "path": "pipeline/analyses/y94_server1_smoke_ab9cf3f30d5a40d28b3c43f4b85083ab.json",
+      "sha256": "9810b2f9aa80b2cbca1ceac5e1c84b289964777af3c7c1bc04c425f26026f5e2"
+    }
+  ]
+}

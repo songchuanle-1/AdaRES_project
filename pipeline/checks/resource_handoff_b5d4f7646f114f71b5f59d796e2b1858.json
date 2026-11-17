@@ -1,0 +1,101 @@
+{
+  "complete": true,
+  "token": "b5d4f7646f114f71b5f59d796e2b1858",
+  "snapshot": "2026-11-02T14:52:14.480128+00:00",
+  "observed_at": "2026-11-02T23:18:56.454938+08:00",
+  "original_live_training": {
+    "AdaRES-Y77": {
+      "path": "pipeline/checks/production_adares-y77_b5d4f7646f114f71b5f59d796e2b1858_final.json",
+      "sha256": "ee18f872791871790d6196fd36ff17b7c3912a1b49ae259338fa99f5ce62e671"
+    },
+    "AdaRES-Y78": {
+      "path": "pipeline/checks/production_adares-y78_b5d4f7646f114f71b5f59d796e2b1858_final.json",
+      "sha256": "2aaae952a4c576d841e8ba29b9a04883b90a405a28c9b62e6e31f24942bfec75"
+    },
+    "AdaRES-Y79": {
+      "path": "pipeline/checks/production_adares-y79_b5d4f7646f114f71b5f59d796e2b1858_final.json",
+      "sha256": "f381a062b19fdf5a7655c863ff3f065fa6794c46ac0e432fd8b0372df86f6c44"
+    }
+  },
+  "occupations": {
+    "server-2": {
+      "path": "pipeline/checks/gpu_occupation_server-2_finish_b5d4f7646f114f71b5f59d796e2b1858.json",
+      "sha256": "15076a9d964d21bc7d76624eae58f2d5da79f16c9cfce9cf8e2e4532018c652c"
+    },
+    "server-1": {
+      "path": "pipeline/checks/gpu_occupation_server-1_finish_b5d4f7646f114f71b5f59d796e2b1858.json",
+      "sha256": "f1a553b49fe0d03ace0ca2a9256621b6a48eb290839a0bca489906915d2b2104"
+    }
+  },
+  "Y76_terminal": {
+    "path": "pipeline/checks/y76_server1_fixed30_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "d542632e0fc9f640f2423914b3f7ab862e95ff1ab29cca5ff8bbd90e3fe44832"
+  },
+  "Y76_archive": {
+    "path": "pipeline/checks/y76_server1_fixed30_b5d4f7646f114f71b5f59d796e2b1858_archive_binding.json",
+    "sha256": "d65e4b51a3c48a248d3d4ff96bfd57a26653d78a71c1bc04a656901f1a371cc4"
+  },
+  "Y76_original_freeze": {
+    "path": "pipeline/checks/AdaRES-Y76_f29b4e70ebc342a4a60290f409abba53_post_training_freeze.json",
+    "sha256": "f718adab58cb3c9f12f23718faf319988b2f438b9ece55f3ae634fd1c3d5bdd6"
+  },
+  "Y76_frozen_evaluation_hold": {
+    "path": "pipeline/checks/y76_frozen_evaluation_hold_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "a93e0286d6b6c94eebba9b92367a137da31ecbf625fd7fac965808c99ef61178"
+  },
+  "Y79_actual_native_smoke": {
+    "path": "pipeline/checks/AdaRES-Y79_b5d4f7646f114f71b5f59d796e2b1858_native_smoke.json",
+    "sha256": "911189a48f5c4d18c5e3275b1d3f4e92c667e2650c5abcfdaaa867648ab2b379"
+  },
+  "Y79_receipt": {
+    "path": "pipeline/admissions/AdaRES-Y79.json",
+    "sha256": "202eea9e539eb32bec278717496f68d223766663fa2ba936e7a16ef253185382"
+  },
+  "Y79_original_complete_freeze": {
+    "path": "pipeline/checks/AdaRES-Y79_b5d4f7646f114f71b5f59d796e2b1858_post_training_freeze.json",
+    "sha256": "aa599b14dfd67270e78fb4571b316922f134472b1f41eb4d2215d485eb5e4ede"
+  },
+  "Y79_source_selection": {
+    "path": "pipeline/checks/adares-y79_source_selection_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "ddbc63e403c981f4ba59ded341c91c6efc5b49770544032548ca0a904242fb40"
+  },
+  "Y79_dispatch": {
+    "path": "pipeline/checks/adares-y79_dispatch_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "31af86039eebfcc8c6106286263a42ae6f0ba64005f2588fdf6c9cde34f2a45e"
+  },
+  "Y79_admission_guards": {
+    "path": "pipeline/checks/adares-y79_admission_guards_b5d4f7646f114f71b5f59d796e2b1858.log",
+    "sha256": "1fe3a0af4500356fbb452569d113df92fde69cce9e7266b566722ff089ecf521"
+  },
+  "Y81_CPU_version": {
+    "path": "pipeline/checks/y81_cpu_version_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "006cf2d7c383c512639ccd7d324e411344e48423408585e2c219c2d1c1abcb2f"
+  },
+  "Y81_exact_CPU_native_callbacks": {
+    "path": "pipeline/checks/y81_native_observer_verification_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "dd0f406dd898e28c24e9cb73467d5320729d6284d2e7c18fab8a43782b62801c"
+  },
+  "Y81_native_preparation": {
+    "path": "pipeline/checks/y81_native_b5d4f7646f114f71b5f59d796e2b1858.json",
+    "sha256": "98d46ba0100809e2f515d607600d39ee2445529fcde440e849292d21fa70ed3a"
+  },
+  "source_HEAD": "e0c7dba199fcf1a009941450d04aeb799418a7e6",
+  "server1_source_marker": "e0c7dba199fcf1a009941450d04aeb799418a7e6",
+  "server2_source_marker": "5eee1e50c9e1d65bf113a4b8757bfc27d028a821",
+  "new_candidates": 1,
+  "new_admissions": 1,
+  "new_dispatches": 1,
+  "archived": [
+    "AdaRES-Y76"
+  ],
+  "prepared_native_pending": [
+    "AdaRES-Y80",
+    "AdaRES-Y81"
+  ],
+  "Y57_pause_preserved": true,
+  "formal_metrics_updated": false,
+  "helper": {
+    "path": "scripts/record_b5d4f764_handoff.py",
+    "sha256": "4b66bb97d2c5f4af0fbd96ffce3e01531de7f584beb93269fce094c5b802db53"
+  }
+}

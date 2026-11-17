@@ -1,0 +1,404 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y94",
+  "token": "cb9af7d40b9c460fa7ca330bd7ae9a8e",
+  "observed_at": "2026-11-14T05:47:10.190909+08:00",
+  "full_passes_verified": 8,
+  "methods": [
+    "AdaRES-Y94",
+    "AdaRES-Y36",
+    "AdaRES-W2",
+    "AdaRES-B1"
+  ],
+  "split": "Frozen ScanRefer val9508/141",
+  "primary": "FIRST",
+  "summary": {
+    "AdaRES-Y94": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5075611062753286,
+      "acc25": 0.6087505258729491,
+      "acc50": 0.5601598653765251,
+      "spmiou": 0.4740257800703793
+    },
+    "AdaRES-Y36": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5107254382940857,
+      "acc25": 0.609697097181321,
+      "acc50": 0.5614219604543542,
+      "spmiou": 0.4747351478206334
+    },
+    "AdaRES-W2": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5099022211829254,
+      "acc25": 0.6105384938998738,
+      "acc50": 0.5627892301220025,
+      "spmiou": 0.4735318415017182
+    },
+    "AdaRES-B1": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5022217643559687,
+      "acc25": 0.6104333193100547,
+      "acc50": 0.5529028186790071,
+      "spmiou": 0.466782141151034
+    }
+  },
+  "repeats": {
+    "AdaRES-Y94": {
+      "max_expression_difference": 0.012829899787902832,
+      "miou_difference": 4.496050823865616e-07
+    },
+    "AdaRES-Y36": {
+      "max_expression_difference": 0.03670918941497803,
+      "miou_difference": 3.860873939331988e-06
+    },
+    "AdaRES-W2": {
+      "max_expression_difference": 0.9763062000274658,
+      "miou_difference": 0.0002050293553863547
+    },
+    "AdaRES-B1": {
+      "max_expression_difference": 0.9738956093788147,
+      "miou_difference": 9.953620231195615e-05
+    }
+  },
+  "comparisons": {
+    "AdaRES-Y36": {
+      "all": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": -0.003164332018757117,
+        "scene_clustered_ci95": [
+          -0.010966769220321365,
+          0.004426390562729961
+        ],
+        "max_expression_repeat_iou_difference": 0.03670918941497803,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 3.8608739393119506e-06,
+        "observed_group_mean_absolute_repeat_difference": 3.8608739393119506e-06,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "small": {
+        "expressions": 2816,
+        "scenes": 124,
+        "paired_miou_difference": -0.008242407457001636,
+        "scene_clustered_ci95": [
+          -0.02349871587426272,
+          0.006392908624081194
+        ],
+        "max_expression_repeat_iou_difference": 0.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.0,
+        "observed_group_mean_absolute_repeat_difference": 0.0,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "medium": {
+        "expressions": 3304,
+        "scenes": 136,
+        "paired_miou_difference": 0.0006736730244833769,
+        "scene_clustered_ci95": [
+          -0.012495958063493722,
+          0.013614583406023274
+        ],
+        "max_expression_repeat_iou_difference": 0.03670918941497803,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 1.1110529483952187e-05,
+        "observed_group_mean_absolute_repeat_difference": 1.1110529483952187e-05,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "large": {
+        "expressions": 3388,
+        "scenes": 135,
+        "paired_miou_difference": -0.002686441885572355,
+        "scene_clustered_ci95": [
+          -0.016102913968570616,
+          0.011151854919611834
+        ],
+        "max_expression_repeat_iou_difference": 0.012829899787902832,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 1.261760662128399e-06,
+        "observed_group_mean_absolute_repeat_difference": 6.311970027306567e-06,
+        "frozen_material_harm_ci_upper_below_zero": false
+      }
+    },
+    "AdaRES-W2": {
+      "all": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": -0.002341114907596813,
+        "scene_clustered_ci95": [
+          -0.010496223058132002,
+          0.005992707751070532
+        ],
+        "max_expression_repeat_iou_difference": 0.9763062000274658,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.00020502935538634965,
+        "observed_group_mean_absolute_repeat_difference": 0.0002094009185118188,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "small": {
+        "expressions": 2816,
+        "scenes": 124,
+        "paired_miou_difference": -0.01673754047576701,
+        "scene_clustered_ci95": [
+          -0.03112226172233613,
+          -0.0024482440385502685
+        ],
+        "max_expression_repeat_iou_difference": 0.0,
+        "material_harm_within_observed_noise": true,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "negative interval",
+        "historical_abs_mean_repeat_difference": 0.0,
+        "observed_group_mean_absolute_repeat_difference": 0.0,
+        "frozen_material_harm_ci_upper_below_zero": true
+      },
+      "medium": {
+        "expressions": 3304,
+        "scenes": 136,
+        "paired_miou_difference": -0.002597934000992349,
+        "scene_clustered_ci95": [
+          -0.01609156351667115,
+          0.01191438143270903
+        ],
+        "max_expression_repeat_iou_difference": 0.9763062000274658,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.0002954921912916059,
+        "observed_group_mean_absolute_repeat_difference": 0.0002954921912916059,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "large": {
+        "expressions": 3388,
+        "scenes": 135,
+        "paired_miou_difference": 0.00987519698276509,
+        "scene_clustered_ci95": [
+          -0.0037788624302021205,
+          0.024087354956455694
+        ],
+        "max_expression_repeat_iou_difference": 0.9331651926040649,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.0002872234093819205,
+        "observed_group_mean_absolute_repeat_difference": 0.00029949165678362074,
+        "frozen_material_harm_ci_upper_below_zero": false
+      }
+    },
+    "AdaRES-B1": {
+      "all": {
+        "expressions": 9508,
+        "scenes": 141,
+        "paired_miou_difference": 0.005339341919359862,
+        "scene_clustered_ci95": [
+          -0.0035811714455491507,
+          0.014318384799390975
+        ],
+        "max_expression_repeat_iou_difference": 0.9738956093788147,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 9.953620231196716e-05,
+        "observed_group_mean_absolute_repeat_difference": 0.00010532194017411081,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "small": {
+        "expressions": 2816,
+        "scenes": 124,
+        "paired_miou_difference": 0.005556186508804537,
+        "scene_clustered_ci95": [
+          -0.01202706794778188,
+          0.02269202993672863
+        ],
+        "max_expression_repeat_iou_difference": 0.0,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.0,
+        "observed_group_mean_absolute_repeat_difference": 0.0,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "medium": {
+        "expressions": 3304,
+        "scenes": 136,
+        "paired_miou_difference": 0.010094569922288424,
+        "scene_clustered_ci95": [
+          -0.004670606609811019,
+          0.024166847341383437
+        ],
+        "max_expression_repeat_iou_difference": 0.02337038516998291,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 7.073361128929452e-06,
+        "observed_group_mean_absolute_repeat_difference": 7.073361128929452e-06,
+        "frozen_material_harm_ci_upper_below_zero": false
+      },
+      "large": {
+        "expressions": 3388,
+        "scenes": 135,
+        "paired_miou_difference": 0.0005217776674259242,
+        "scene_clustered_ci95": [
+          -0.014357654326913721,
+          0.015200848835355187
+        ],
+        "max_expression_repeat_iou_difference": 0.9738956093788147,
+        "material_harm_within_observed_noise": false,
+        "positive_difference_beyond_observed_noise": false,
+        "status": "interval includes zero",
+        "historical_abs_mean_repeat_difference": 0.0002862339423707694,
+        "observed_group_mean_absolute_repeat_difference": 0.000288674917947303,
+        "frozen_material_harm_ci_upper_below_zero": false
+      }
+    }
+  },
+  "frozen_material_subgroup_harm": [
+    {
+      "reference": "AdaRES-W2",
+      "group": "small",
+      "delta": -0.01673754047576701,
+      "ci95": [
+        -0.03112226172233613,
+        -0.0024482440385502685
+      ]
+    }
+  ],
+  "target": 0.515,
+  "target_reached": false,
+  "original_resource": {
+    "server": "server-1",
+    "gpu": 0,
+    "power_limit_watts": 350.0,
+    "note": "Existing power preserved; full paired evaluation/cost on this device; two batches are not a full-dataset memory bound."
+  },
+  "bootstrap_draws": 10000,
+  "seed": 1999,
+  "TRAIN_size_cuts": [
+    1487,
+    3325
+  ],
+  "corrected_original_repeat_noise": "mean absolute per-expression repeat difference; frozen Y23/Y27 correction reused unchanged",
+  "worker_historical_repeat_noise_retained": true,
+  "worker_used_original_corrected_repeat_noise": true,
+  "worker_CI_values_identical": true,
+  "native_GPU_passes_replayed": false,
+  "new_predictions": false,
+  "formal_complete_cost_review": false,
+  "scientific_disposition_pending_cost_and_postaudit": true,
+  "cost_from_full_capture": {
+    "AdaRES-Y94": {
+      "parameters": 164629661,
+      "warm_first_chunk_seconds": [
+        0.3740276098251343,
+        0.37922894209623337,
+        0.3606012361124158,
+        0.36062481813132763,
+        0.36244015116244555
+      ],
+      "peak_allocated_gib": 4.059475898742676,
+      "peak_reserved_gib": 6.486328125
+    },
+    "AdaRES-Y36": {
+      "parameters": 165089671,
+      "warm_first_chunk_seconds": [
+        0.37978061800822616,
+        0.3832928757183254,
+        0.38724441919475794,
+        0.3813226600177586,
+        0.3827277747914195
+      ],
+      "peak_allocated_gib": 4.044065475463867,
+      "peak_reserved_gib": 6.490234375
+    },
+    "AdaRES-W2": {
+      "parameters": 164629637,
+      "warm_first_chunk_seconds": [
+        0.36804929468780756,
+        0.361328958068043,
+        0.36557211307808757,
+        0.365008776076138,
+        0.35548547096550465
+      ],
+      "peak_allocated_gib": 4.042351245880127,
+      "peak_reserved_gib": 6.486328125
+    },
+    "AdaRES-B1": {
+      "parameters": 164430473,
+      "warm_first_chunk_seconds": [
+        0.2838957803323865,
+        0.28673900617286563,
+        0.28567399689927697,
+        0.28664546087384224,
+        0.29337758710607886
+      ],
+      "peak_allocated_gib": 4.040676593780518,
+      "peak_reserved_gib": 6.484375
+    }
+  },
+  "evidence": [
+    {
+      "path": "scripts/collect_y94_full_review.py",
+      "sha256": "b318ce5d015f28f683cbcb555877384e77f8a9e7f99e722d00b461b475453fde"
+    },
+    {
+      "path": "scripts/analyze_frozen_full.py",
+      "sha256": "cc9e50470844c5658062e6337658950fdbc75195c6702f9f1f79a50db5ae441f"
+    },
+    {
+      "path": "scripts/analyze_y23_frozen_terminal.py",
+      "sha256": "20fa7e30532e05ad528360368a1734bd872121b2c5591536c26d8eea057917a0"
+    },
+    {
+      "path": "scripts/analyze_y27_frozen_terminal.py",
+      "sha256": "7360a2f6117af443db24459947e6304987d56a5f636fdacc6192d5b003f1f875"
+    },
+    {
+      "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/remote_manifest.json",
+      "sha256": "8b287c8cc15848c97c219b9df578e6d5c88603e098de4fc594439eee0f8c1e50"
+    },
+    {
+      "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/paired_result.json",
+      "sha256": "8ff6ea8582b83568372dba07d52f945a9b80e4c4cb1dc7ba6c6ec770f50c5971"
+    },
+    {
+      "path": "pipeline/checks/AdaRES-Y94_ab9cf3f30d5a40d28b3c43f4b85083ab_post_training_freeze.json",
+      "sha256": "7e40371552d170a1d764f9dab160a8dcb12b0b6fe512e5c978313cb7b642241b"
+    },
+    {
+      "path": "pipeline/checks/y94_server1_fixed30_y95_411304d6e92840b8844bb9ed860554fb.json",
+      "sha256": "88d83fded3c676030e2a5ac1ef99c549fbbfe9687919102f9c9f8018cead4bf9"
+    },
+    {
+      "path": "pipeline/checks/y94_review_binding_e5e0b36314b84a08be8493b934595019_execution.py",
+      "sha256": "291baa0e73e7a0ea5c2410b866f79abc4c555ca609c619983635c35c26b1d21d"
+    },
+    {
+      "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/adares-y94.json",
+      "sha256": "bf728c5ec31482803ce257129dfb8dbfdb50dcb5e0fb83a72fd5aa8688a248d5"
+    },
+    {
+      "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/adares-y36.json",
+      "sha256": "d10566ff560d38827bf4bc3b93ab3303e64d73d3e6456c5e1e8235d972caac2e"
+    },
+    {
+      "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/adares-w2.json",
+      "sha256": "f3781c1cb99c924971f2a4d68ff9ad8c980ea01a2531317662413224c46686bd"
+    },
+    {
+      "path": "pipeline/analyses/y94_full_review_cb9af7d40b9c460fa7ca330bd7ae9a8e/adares-b1.json",
+      "sha256": "7f31c34f28290d345a1958fae020262b92ec1c88a7396cfe3a7280fb70abb143"
+    }
+  ]
+}

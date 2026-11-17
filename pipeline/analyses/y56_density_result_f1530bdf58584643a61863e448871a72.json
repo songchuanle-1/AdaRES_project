@@ -1,0 +1,156 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "component": "exact committed native indicator class",
+  "torch_version": "1.12.1+cu113",
+  "device": "cpu",
+  "cuda_visible_devices": "",
+  "threads": 1,
+  "structural_fixture_signal": true,
+  "rows": [
+    {
+      "fixture": "contrastive_competitors",
+      "dtype": "torch.float32",
+      "query_count": 128,
+      "feature_dim": 256,
+      "counts_before": [
+        1,
+        63,
+        64
+      ],
+      "counts_after": [
+        1,
+        64,
+        63
+      ],
+      "focal_query_equal": true,
+      "focal_mask_equal": true,
+      "native_focal_logit_delta": 0.0011455714702606201,
+      "native_focal_context_delta": 0.03383052349090576,
+      "corrected_focal_logit_delta": 5.960464477539063e-08,
+      "corrected_unique_reference_error": 7.450580596923828e-08,
+      "corrected_context_unique_reference_error": 3.5762786865234375e-06,
+      "repeat_error": 0.0,
+      "permutation_error": 8.940696716308594e-08,
+      "identity_reference_error": 0.0,
+      "numerical_bound": 4.680918937083334e-05,
+      "component_backward_finite": true,
+      "component_gradient_norms": [
+        0.09514777362346649,
+        0.09516533464193344
+      ],
+      "parameter_state_unchanged": true
+    },
+    {
+      "fixture": "identical_competitor_features_negative",
+      "dtype": "torch.float32",
+      "query_count": 128,
+      "feature_dim": 256,
+      "counts_before": [
+        1,
+        63,
+        64
+      ],
+      "counts_after": [
+        1,
+        64,
+        63
+      ],
+      "focal_query_equal": true,
+      "focal_mask_equal": true,
+      "native_focal_logit_delta": 8.195638656616211e-08,
+      "native_focal_context_delta": 3.814697265625e-06,
+      "corrected_focal_logit_delta": 4.470348358154297e-08,
+      "corrected_unique_reference_error": 5.960464477539063e-08,
+      "corrected_context_unique_reference_error": 3.814697265625e-06,
+      "repeat_error": 0.0,
+      "permutation_error": 8.195638656616211e-08,
+      "identity_reference_error": 0.0,
+      "numerical_bound": 6.244418182177469e-05,
+      "component_backward_finite": true,
+      "component_gradient_norms": [
+        0.07929426431655884,
+        0.07926817238330841
+      ],
+      "parameter_state_unchanged": true
+    },
+    {
+      "fixture": "contrastive_competitors",
+      "dtype": "torch.float64",
+      "query_count": 128,
+      "feature_dim": 256,
+      "counts_before": [
+        1,
+        63,
+        64
+      ],
+      "counts_after": [
+        1,
+        64,
+        63
+      ],
+      "focal_query_equal": true,
+      "focal_mask_equal": true,
+      "native_focal_logit_delta": 0.0009693179842363703,
+      "native_focal_context_delta": 0.03431552636730684,
+      "corrected_focal_logit_delta": 1.6653345369377348e-16,
+      "corrected_unique_reference_error": 9.71445146547012e-17,
+      "corrected_context_unique_reference_error": 7.771561172376096e-15,
+      "repeat_error": 0.0,
+      "permutation_error": 2.983724378680108e-16,
+      "identity_reference_error": 0.0,
+      "numerical_bound": 1.0313325906671427e-13,
+      "component_backward_finite": true,
+      "component_gradient_norms": [
+        0.08098604507732401,
+        0.081001470435477
+      ],
+      "parameter_state_unchanged": true
+    },
+    {
+      "fixture": "identical_competitor_features_negative",
+      "dtype": "torch.float64",
+      "query_count": 128,
+      "feature_dim": 256,
+      "counts_before": [
+        1,
+        63,
+        64
+      ],
+      "counts_after": [
+        1,
+        64,
+        63
+      ],
+      "focal_query_equal": true,
+      "focal_mask_equal": true,
+      "native_focal_logit_delta": 2.498001805406602e-16,
+      "native_focal_context_delta": 7.993605777301127e-15,
+      "corrected_focal_logit_delta": 1.1102230246251565e-16,
+      "corrected_unique_reference_error": 2.220446049250313e-16,
+      "corrected_context_unique_reference_error": 7.105427357601002e-15,
+      "repeat_error": 0.0,
+      "permutation_error": 3.608224830031759e-16,
+      "identity_reference_error": 0.0,
+      "numerical_bound": 1.2553473471021724e-13,
+      "component_backward_finite": true,
+      "component_gradient_norms": [
+        0.06976385356056224,
+        0.06974316217671012
+      ],
+      "parameter_state_unchanged": true
+    }
+  ],
+  "formal_model_files": 0,
+  "training_launches": 0,
+  "gpu_tests": 0,
+  "full_native_backward": false,
+  "limitations": [
+    "Fixed counterfactual CPU tensors and a randomly initialized native head, not actual TRAIN incidence or trained efficacy.",
+    "Only focal singleton query readout is tested; the inverse-count reference is not a formally implemented model or all-query theorem.",
+    "Unique-three-query reference is diagnostic only; both compared multiplicity arms retain the native128-query budget.",
+    "Numerical bounds derive from dtype epsilon and128-term arithmetic, not a pre-training task-gain threshold.",
+    "No sparse backbone, real FPS, matcher, optimizer/restore/resource gate, checkpoint or novel-method claim.",
+    "No changes to Y48 ownership targets, Y52 score targets, Y54 support masks or a running experiment."
+  ]
+}

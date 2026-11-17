@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "cc4e062184264231b13212a60ffcd196",
+  "id": "AdaRES-Y85",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y85",
+    "label": "AdaRES-Y85 fixed30",
+    "config": "configs_song/model_paper5/adares_y85_mask_feature_norm_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "aa9d8db3ea05432181ada752eaeeca27952aae27",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y85.json",
+    "scientific_candidate_id": "AdaRES-Y85",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 22090,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y85_mask_feature_norm_res_20261105_050720.log",
+    "launched": "2026-11-05T05:07:56"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y85 fixed30] configs_song/model_paper5/adares_y85_mask_feature_norm_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y85.py",
+    "sha256": "6eec184f6ee0bb60a0f2e745590239d739d3cd290fb08512954f80dfafaada7c"
+  }
+}

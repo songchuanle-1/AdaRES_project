@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y42",
+  "files": [
+    {
+      "path": "scripts/upload_y42_test_bundle.py",
+      "sha256": "e691c3751908ff87aa1dfee3e7ece6ed917e267866834134fed8c80ea47dc500",
+      "parent_sha256": "137c649a99ef5b8a6be14be0406f9daec47ce3038327cce19fd4ea0166f84a84"
+    },
+    {
+      "path": "scripts/probe_y42_native_controls.py",
+      "sha256": "0a3f2b6ed2ea78fdeb74f43bfd64db2170d3a140949946dae75bd100c41f5498",
+      "parent_sha256": "e791df1dde39ebb0fdd0f0d4f26690fd79b05c04ec669c509320867e5b2e343d"
+    },
+    {
+      "path": "scripts/probe_y42_physical_native.py",
+      "sha256": "ff2f9550444fdaecb6cc57ea306f33fddf605eef1e7cb8a44cf88f9d89756f74",
+      "parent_sha256": "8fabcc35f93038a8e492c3f16c6db7e0c701415bcbc330b4059eb6a500180490"
+    },
+    {
+      "path": "scripts/probe_y42_resources.py",
+      "sha256": "511d79e0731461b52d2fc59924d9cb36a3b114955d85bf8fe75aa9a801f6e3df",
+      "parent_sha256": "8a0f1a2c1a8fdc8c41b9c6732d7a3fcb50edb67ba0e94ca946fb5015ffd32a4a"
+    },
+    {
+      "path": "scripts/probe_y42_initial_loss_investigation.py",
+      "sha256": "7ae3600cf766d1685e78dfc484d0b514157f5ef0583cc16eaaacf5d5173dadda",
+      "parent_sha256": "d75c49aef707740d469e3625648460c217414f6343eb59fe2e0ac4e6c1a8c573"
+    }
+  ],
+  "frozen_samples": "TRAIN first8 distinct scenes/init4/maxpair728,6780",
+  "native_wrong_control": "Roll off-diagonal covariance only; keep all diagonal entries fixed.",
+  "limitations": [
+    "Protocol binding only, not an executed gate."
+  ]
+}

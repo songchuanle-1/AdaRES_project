@@ -1,0 +1,23 @@
+{
+  "actions": [
+    "仅AdaRES_project。核对实际owner、Disabled后台调度及正式前台/experiment_first规则、AGENTS/goal/SERVERS/最新GPU1暂停后begin；先核运行及派发现有合格任务，ready waiting为0。快照列出的Y93是上轮已完整核验归档的终态，本轮未重做checkpoint核验或归档。",
+    "原Y94 PID218513/server-1 GPU0/350W和原Y95 PID34484/server-2 GPU0/280W的source、YAML、收据、私有runtime及原生计数递增成立。canonical只读物理查询确认两张授权GPU0均busy+reserved，无可独占空闲卡；未抢占、改功耗或使用GPU1。",
+    "新准备：Y95专用精确原终态工具，实际日志声明原保存目录20261109_081912，不是启动时间20261109_212023。29项生命周期guard通过，原收据/freeze/源和全部旧工具保留；未加载运行中的checkpoint、停止/重启/迁移训练或提前归档。",
+    "推进已有Y96：相同七个CPU已测新增文件绑定到实际native通过的HEADY95，匹配当前Y94/server1和Y95/server2；10项新操作guard通过。两份原native程序体、CPU结果/程序、回调和冻结科学/runtime/data内容不变，仅code_commit元数据更新；主HEAD/index/queue和其他候选保持。未重放CPU科学测试或GPU原生检查。",
+    "本轮新科学ID0、CPU科学尝试0、GPU原生0、准入0、启动0、归档0、正式评测0。原Y98/Y99准备和Y97原始/修订1失败保持。精确备份七节记忆，保留collector真实resource_check，以官方report/finish收据和租约释放为准，不预签收尾结果。"
+  ],
+  "decisions": [
+    "既有三个CPU准备候选优先，不新增占位变体或重放已通过的科学检查。Y96先行；仅在当前HEADY95、匹配原运行自然fixed30完整checkpoint核验/canonical归档、实时独占空闲且未保留的授权GPU0上执行run_y96_bound_native_y95.py。实际native通过再建立另一在跑任务的新测试终态兼容绑定，并当轮完成设备匹配的完整原freeze/receipt/准入/精确source/安全派发/递增步数。未来HEAD/owner变化须新绑定。",
+    "本轮仅运行保护和待跑操作准备，无新增效果结果或用户行动项。保留科学goal字节、全部原签名收据、精确数据/私有runtime/部署映射/seed1999固定30轮和完整FIRST/有害子组/原设备成本协议。全部GPU1使用及原GPU1冻结后评继续暂停，Y57独立暂停；不跨项目、不用server6、不改调度、不干预外部任务。"
+  ],
+  "evidence": [
+    {
+      "path": "pipeline/checks/y96_y95_binding_closeout_4380bd58933d48daa5860115c763a934.json",
+      "sha256": "6a49ea77caa14d404bcfab8aa112e35dde2fc3d9dd4245864345db39681f3235"
+    },
+    {
+      "path": "pipeline/snapshots/codex_memory_before_4380bd58933d48daa5860115c763a934.md",
+      "sha256": "f501b066bad88646fd69b98390f34be8d7f473c37892b0a6f58d3cf11d40ad70"
+    }
+  ]
+}

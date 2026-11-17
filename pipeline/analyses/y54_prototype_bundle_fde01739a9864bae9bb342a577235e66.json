@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y54",
+  "token": "fde01739a9864bae9bb342a577235e66",
+  "created_at": "2026-10-17T13:14:22.508061+08:00",
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/dec.py",
+      "sha256": "1081039d6797587f6e13cb180e26d66f1aaeb00dcbb3a1328e73c83ac58042a0"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y54_fine_support/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y54_fine_support_res.yaml",
+      "sha256": "db0bc4b5dc121617e57864ed95694c3857774d850dfe9aaafa496829245b70d6"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/__init__.py",
+      "sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "normalized_sha256": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "normalized_sha256": "1eb4ac3483961e708c23b0abad396c181dbf38c56fcca559d88b9622af46bafd"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13",
+      "normalized_sha256": "7e60c1cecfc8fa7809f7c836fa6fef1366806bd23c08e2890508ea26a711acac"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "normalized_sha256": "63c8f30bda20300d98d3d9a8a6478fc1a841cbaa3b334ee71688711e06375d97"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/loss.py",
+      "sha256": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "normalized_sha256": "4aa2818948ebfd9fe416b3b310a053384508ef92c3b67831833fece560523084"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "normalized_sha256": "03fd683acc6d49d9b53e634b42bd150a3259a1a15c7dc8fe2badf115870a345b"
+    }
+  ],
+  "diagnosis": {
+    "path": "pipeline/analyses/y54_fine_support_native_fde0_fde01739a9864bae9bb342a577235e66.json",
+    "sha256": "e6293fc4fdf76c14967e08b6ae5ffb1aa53f3e44b6557b27ca80990b0e0384c3"
+  },
+  "motivation_review": {
+    "path": "pipeline/reviews/motivation_review_Y54_fde0.md",
+    "sha256": "0d65b09e9a0d43abf5398b0e08b5c1da926b69b00cb36bcd079054cd48ed62bd"
+  },
+  "design": {
+    "path": "pipeline/designs/exp_design_Y54_fde0.md",
+    "sha256": "70213e6570f7ecc23fd18d0fd9cfc644a9608d78660abc0eec28da98a5ae55d6"
+  },
+  "method_scope": "Only DEC.forward_iter_pred: gather original validity at native fine indices; pass to spatial neighbor k_mask and fine cross-attention batch_mask. Removing these3AST edits exactly recovers the entire original decoder AST.",
+  "inverse_AST_equals_parent": true,
+  "unchanged_other_five_model_files": true,
+  "model_config_value_identical": true,
+  "new_parameters_expected": 0,
+  "actual_parameters": "pending_native_measurement",
+  "code_status": "Independent local uncommitted prototype, not deployed/admitted/trained; diagnostic temp package only under guarded runner.",
+  "literature_novelty": "not established; implementation defect correction, not a novelty claim"
+}

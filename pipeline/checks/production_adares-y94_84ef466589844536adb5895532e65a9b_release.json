@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "before": {
+    "observed_at": "2026-11-10T12:47:59.730480+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 30,
+      "total": 30,
+      "step": 2888,
+      "count": 4686
+    },
+    "log_bytes": 39094369
+  },
+  "after": {
+    "observed_at": "2026-11-10T12:48:04.738418+08:00",
+    "latest": {
+      "phase": "Train",
+      "epoch": 30,
+      "total": 30,
+      "step": 2896,
+      "count": 4686
+    },
+    "log_bytes": 39096657
+  },
+  "samples": [
+    {
+      "observed_at": "2026-11-10T12:47:59.730480+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 30,
+        "total": 30,
+        "step": 2888,
+        "count": 4686
+      },
+      "log_bytes": 39094369
+    },
+    {
+      "observed_at": "2026-11-10T12:48:04.738418+08:00",
+      "latest": {
+        "phase": "Train",
+        "epoch": 30,
+        "total": 30,
+        "step": 2896,
+        "count": 4686
+      },
+      "log_bytes": 39096657
+    }
+  ],
+  "native_progress_confirmed": true,
+  "process_identity_verified": true,
+  "pid": 218513,
+  "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y94_query_geometry_bias_res_20261109_111829.log",
+  "source_files_verified": 6,
+  "native_YAML_semantics_verified": true,
+  "source_marker": "3f1c351f8a04e12745526e9abb3dbac46af806f1",
+  "compute_owners": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983, 218513\n",
+  "authorized_gpu_uuid": "GPU-84357f7d-86b4-2cfb-2595-7207048cf983",
+  "gpu": "29, 22764, 66, 350.00",
+  "no_bounded_tail_error": true,
+  "training_efficacy": "Unknown; full frozen evaluation not executed.",
+  "limitation": "A live process without advancing native Train/Val counters is unconfirmed, never a restart authorization.",
+  "id": "AdaRES-Y94",
+  "token": "84ef466589844536adb5895532e65a9b",
+  "observed_local": "2026-11-10T12:48:04.084556+08:00",
+  "evidence": [
+    {
+      "path": "scripts/y95_deployment.py",
+      "sha256": "1ae7740a749261d4e46a8cbba454c22f452d3fa02db8a0ef4d859385d9e5c61f"
+    },
+    {
+      "path": "pipeline/checks/production_adares-y94_84ef466589844536adb5895532e65a9b_release.log",
+      "sha256": "5d52b00b38e5884cc707e73b36b177aeeb81b15b87cebecd620eac79a224d3ef"
+    }
+  ]
+}

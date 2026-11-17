@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "fee7cd9791374014a04c930fec333c0d",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-09-28T03:49:31.631719+00:00",
+  "recorded_at": "2026-09-28T03:53:59.893222+00:00",
+  "status": "INCOMPLETE",
+  "reason": "False design due work: 12 legacy closed candidates classified pending despite valid research cooldown; AdaRES-only tick cannot alter canonical skill",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 14,
+    "input_tokens": 1868960,
+    "cached_input_tokens": 1854080,
+    "output_tokens": 6174,
+    "reasoning_output_tokens": 4234,
+    "total_tokens": 1875134,
+    "uncached_input_tokens": 14880,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 0,
+    "new_evidence_references": 0,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 0,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

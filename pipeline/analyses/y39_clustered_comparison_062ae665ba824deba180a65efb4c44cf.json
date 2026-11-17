@@ -1,0 +1,212 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y39",
+  "source": {
+    "path": "pipeline/analyses/y39_frozen_full_current_062ae665ba824deba180a65efb4c44cf.json",
+    "sha256": "cdb0188acbae92545e501549ce5102bcd78309f8dde0fc4126e6a1039cad44b7"
+  },
+  "observed_at_local": "2026-10-11T22:11:23.809606+08:00",
+  "primary": "FIRST full pass, not favorable repeat",
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 1999,
+    "unit": "whole scene"
+  },
+  "summary": {
+    "y39": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5077059831652888,
+      "acc25": 0.6069625578460244,
+      "acc50": 0.5612116112747161,
+      "spmiou": 0.47172301744895867
+    },
+    "w2": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5100098499225277,
+      "acc25": 0.6106436684896929,
+      "acc50": 0.5628944047118216,
+      "spmiou": 0.47363446779863744
+    },
+    "b1": {
+      "expressions": 9508,
+      "scenes": 141,
+      "miou": 0.5022241613397069,
+      "acc25": 0.6104333193100547,
+      "acc50": 0.5529028186790071,
+      "spmiou": 0.4667872147840617
+    }
+  },
+  "repeated_miou": {
+    "y39": 0.507808725806613,
+    "w2": 0.5100038698614873,
+    "b1": 0.5021116153516919
+  },
+  "versus_w2": {
+    "all": {
+      "expressions": 9508,
+      "scenes": 141,
+      "paired_miou_difference": -0.0023038667572389342,
+      "scene_clustered_ci95": [
+        -0.011360390287967127,
+        0.006338310071024288
+      ],
+      "max_expression_repeat_iou_difference": 1.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.00010274264132419854,
+      "observed_group_mean_absolute_repeat_difference": 0.00010813185909890707,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "small": {
+      "expressions": 2816,
+      "scenes": 124,
+      "paired_miou_difference": -0.01478904003812948,
+      "scene_clustered_ci95": [
+        -0.03357102232718385,
+        0.0035091848338199153
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "medium": {
+      "expressions": 3304,
+      "scenes": 136,
+      "paired_miou_difference": -0.0012344996694765183,
+      "scene_clustered_ci95": [
+        -0.017869434110588066,
+        0.015348056539380605
+      ],
+      "max_expression_repeat_iou_difference": 1.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0003026634382566586,
+      "observed_group_mean_absolute_repeat_difference": 0.0003026634382566586,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "large": {
+      "expressions": 3388,
+      "scenes": 135,
+      "paired_miou_difference": 0.007030566271397652,
+      "scene_clustered_ci95": [
+        -0.006048592759100051,
+        0.019860846973716227
+      ],
+      "max_expression_repeat_iou_difference": 0.026952803134918213,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 7.955372826126982e-06,
+      "observed_group_mean_absolute_repeat_difference": 8.299207884418077e-06,
+      "frozen_material_harm_ci_upper_below_zero": false
+    }
+  },
+  "versus_b1": {
+    "all": {
+      "expressions": 9508,
+      "scenes": 141,
+      "paired_miou_difference": 0.005481821825581824,
+      "scene_clustered_ci95": [
+        -0.0032655849737820318,
+        0.014512773945359362
+      ],
+      "max_expression_repeat_iou_difference": 1.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.00011254598801508138,
+      "observed_group_mean_absolute_repeat_difference": 0.00011254598801508138,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "small": {
+      "expressions": 2816,
+      "scenes": 124,
+      "paired_miou_difference": 0.007504686946442069,
+      "scene_clustered_ci95": [
+        -0.010661115016271356,
+        0.025791154100790026
+      ],
+      "max_expression_repeat_iou_difference": 0.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0,
+      "observed_group_mean_absolute_repeat_difference": 0.0,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "medium": {
+      "expressions": 3304,
+      "scenes": 136,
+      "paired_miou_difference": 0.011753496445095862,
+      "scene_clustered_ci95": [
+        -0.003610299236571647,
+        0.02730582395116013
+      ],
+      "max_expression_repeat_iou_difference": 1.0,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0003026634382566586,
+      "observed_group_mean_absolute_repeat_difference": 0.0003026634382566586,
+      "frozen_material_harm_ci_upper_below_zero": false
+    },
+    "large": {
+      "expressions": 3388,
+      "scenes": 135,
+      "paired_miou_difference": -0.002315699167103191,
+      "scene_clustered_ci95": [
+        -0.016266890416575582,
+        0.0117128623213298
+      ],
+      "max_expression_repeat_iou_difference": 0.9738956093788147,
+      "material_harm_within_observed_noise": false,
+      "positive_difference_beyond_observed_noise": false,
+      "status": "interval includes zero",
+      "historical_abs_mean_repeat_difference": 0.0003123915146205051,
+      "observed_group_mean_absolute_repeat_difference": 0.0003123915146205051,
+      "frozen_material_harm_ci_upper_below_zero": false
+    }
+  },
+  "target": 0.515,
+  "target_reached": false,
+  "cost_first_chunk_only": {
+    "y39": {
+      "parameters": 164901255,
+      "median_seconds": 0.33574487641453743,
+      "peak_allocated_gib": 4.073186874389648,
+      "peak_reserved_gib": 6.48828125,
+      "repeat_max_iou_difference": 1.0,
+      "repeat_miou_difference": 0.00010274264132414945
+    },
+    "w2": {
+      "parameters": 164629637,
+      "median_seconds": 0.33525175601243973,
+      "peak_allocated_gib": 4.042351245880127,
+      "peak_reserved_gib": 6.486328125,
+      "repeat_max_iou_difference": 0.029905617237091064,
+      "repeat_miou_difference": 5.980061040467e-06
+    },
+    "b1": {
+      "parameters": 164430473,
+      "median_seconds": 0.2694346271455288,
+      "peak_allocated_gib": 4.040676593780518,
+      "peak_reserved_gib": 6.484375,
+      "repeat_max_iou_difference": 0.9738956093788147,
+      "repeat_miou_difference": 0.00011254598801502258
+    }
+  },
+  "limitations": [
+    "Official unique/multiple metadata unknown.",
+    "Two repeats are empirical noise, not training-seed uncertainty.",
+    "First-chunk cost is not trained paired Pareto evidence.",
+    "No novelty, upstream blindness, equivalence, necessity or no-harm claim."
+  ]
+}

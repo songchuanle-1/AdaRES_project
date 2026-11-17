@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "4567f5a09ecb4aa89df8f0c2932652df",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T07:18:04.823630+00:00",
+  "recorded_at": "2026-10-16T08:13:52.501774+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: closure reports own-project queue opening while live GPU0 has foreign PID19723 and GPU1 has Y50 PID31539; preserve real blocked Y52, scientific evidence and running training; do not bypass checker or invent queue entry.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 56,
+    "input_tokens": 8501636,
+    "cached_input_tokens": 8367488,
+    "output_tokens": 52443,
+    "reasoning_output_tokens": 17911,
+    "total_tokens": 8554079,
+    "uncached_input_tokens": 134148,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 1,
+    "changed_candidates": 1,
+    "new_evidence_references": 21,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

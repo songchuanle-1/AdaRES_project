@@ -1,0 +1,35 @@
+{
+  "project": "AdaRES_project",
+  "authorization_granted": true,
+  "recorded_on": "2026-10-29",
+  "source_thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "human_reply": "server2 GPU1也可以使用",
+  "server": "server-2",
+  "host": "192.168.1.163",
+  "expected_hostname": "dl01-MS-7C60",
+  "allowed_gpus": [
+    0,
+    1
+  ],
+  "newly_authorized_gpu": 1,
+  "max_tasks_per_gpu": 1,
+  "operations": [
+    "native_checks",
+    "admission_queue_and_training",
+    "original_frozen_evaluation"
+  ],
+  "preserve": [
+    "server1_gpu0_authorization",
+    "server2_gpu0_280W",
+    "all_existing_runs",
+    "Y57_separate_user_pause_and_checkpoint_resume_requirements",
+    "original_data",
+    "seed1999_fixed30",
+    "no_server6",
+    "no_scheduler_frequency_change"
+  ],
+  "Y57_resume_authorized": false,
+  "hardware_changes_authorized": false,
+  "goal_resource_sentence_override": "The resource-only GPU0/GPU1 pause sentence in the frozen goal is superseded for GPU1 availability by this explicit grant. Y57 itself remains paused; scientific goal/data/protocol and existing receipt hashes stay exact.",
+  "frozen_scientific_goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a"
+}

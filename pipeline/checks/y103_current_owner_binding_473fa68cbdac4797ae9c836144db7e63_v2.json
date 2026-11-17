@@ -1,0 +1,160 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y103",
+  "code_commit": "960babebd812098efde2eb1b188e612028ae571e",
+  "parent_commit": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "retained_branch": "refs/heads/adares-y103-spatial-input-skip",
+  "working_HEAD": "6fb26984ae652efbba177ab20c39575c44a69517",
+  "main_index_unchanged": true,
+  "CPU_tested_scientific_files_exact": true,
+  "original_Y99_Y100_preserved": true,
+  "original_owner_rows": [
+    {
+      "id": "AdaRES-Y101",
+      "server": "server-1",
+      "gpu": "0",
+      "pid": 2263581,
+      "code_commit": "6fb26984ae652efbba177ab20c39575c44a69517",
+      "config": "configs_song/model_paper5/adares_y101_query_ffn_skip_res.yaml",
+      "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y101_query_ffn_skip_res_20261112_200229.log",
+      "status": "running",
+      "launch_verified": true
+    },
+    {
+      "id": "AdaRES-Y100",
+      "server": "server-2",
+      "gpu": "0",
+      "pid": 19305,
+      "code_commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+      "config": "configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml",
+      "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y100_appearance_input_skip_res_20261111_215359.log",
+      "status": "running",
+      "launch_verified": true
+    }
+  ],
+  "source_snapshot": {
+    "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63_source_snapshot.json",
+    "sha256": "638d48ad9aefe6b4e3588511d69f1fb07dfd81049175aa0daef7b0be31fddb9e"
+  },
+  "CPU_result": {
+    "path": "pipeline/analyses/y103_cpu_473fa68cbdac4797ae9c836144db7e63.json",
+    "sha256": "fa59e46699f3e65ce575ae34e4ff6c0a7953204faee4139f6da529e71473702e"
+  },
+  "CPU_program": {
+    "path": "pipeline/checks/y103_cpu_473fa68cbdac4797ae9c836144db7e63_program.py",
+    "sha256": "4d5b28b8f73e358ceadc7810bf060bf9b93d97671ce161dd1ea592f65908fca9"
+  },
+  "exact_delta": [
+    [
+      "A",
+      "AdaRES/configs_song/model_paper5/adares_y103_spatial_input_skip_res.yaml"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/__init__.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/backbone.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/dec.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/ipdn.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/loss.py"
+    ],
+    [
+      "A",
+      "AdaRES/ipdn/model_paper5/adares_y103_spatial_input_skip/sample_model.py"
+    ]
+  ],
+  "isolated_index": {
+    "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63.index",
+    "sha256": "2e7d3e55ccd71ef8e22e84ac41ea2a68aefa8f6d332f2019a4f3e5770a862bd2"
+  },
+  "matching_current_owners": {
+    "server-1": "AdaRES-Y101",
+    "server-2": "AdaRES-Y100"
+  },
+  "actual_parent_native": {
+    "path": "pipeline/analyses/y101_server1_smoke_16ace440440346cebe23c272fdbba622.json",
+    "sha256": "754b0002f7197e527006a65aa1af706dfb5a13780ee754bc15fa33c1ac13ce8d"
+  },
+  "native_executed": false,
+  "admitted": false,
+  "production_sync": false,
+  "helper": {
+    "path": "scripts/retain_y103_cpu_native.py",
+    "sha256": "7ce25ef830f4ffc194097ecda870b16b76a14ffbcd8e508b400254c58b4e1af6"
+  },
+  "evidence": [
+    {
+      "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63_source_snapshot.json",
+      "sha256": "638d48ad9aefe6b4e3588511d69f1fb07dfd81049175aa0daef7b0be31fddb9e"
+    },
+    {
+      "path": "pipeline/analyses/y103_cpu_473fa68cbdac4797ae9c836144db7e63.json",
+      "sha256": "fa59e46699f3e65ce575ae34e4ff6c0a7953204faee4139f6da529e71473702e"
+    },
+    {
+      "path": "pipeline/analyses/y103_cpu_473fa68cbdac4797ae9c836144db7e63.log",
+      "sha256": "ef1402a42bdb888292e08dd9d4a7c55dca9cd884c6b5441cfcfd18ac88a946df"
+    },
+    {
+      "path": "pipeline/checks/y103_cpu_473fa68cbdac4797ae9c836144db7e63_program.py",
+      "sha256": "4d5b28b8f73e358ceadc7810bf060bf9b93d97671ce161dd1ea592f65908fca9"
+    },
+    {
+      "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63.index",
+      "sha256": "2e7d3e55ccd71ef8e22e84ac41ea2a68aefa8f6d332f2019a4f3e5770a862bd2"
+    },
+    {
+      "path": "pipeline/checks/y103_CPU_guards_473fa68cbdac4797ae9c836144db7e63.log",
+      "sha256": "34874515727cbcb6873d076b468cd578205022297e5b80f5176a404fa17e0a4e"
+    },
+    {
+      "path": "scripts/retain_y103_cpu_native.py",
+      "sha256": "7ce25ef830f4ffc194097ecda870b16b76a14ffbcd8e508b400254c58b4e1af6"
+    },
+    {
+      "path": "pipeline/analyses/y101_server1_smoke_16ace440440346cebe23c272fdbba622.json",
+      "sha256": "754b0002f7197e527006a65aa1af706dfb5a13780ee754bc15fa33c1ac13ce8d"
+    }
+  ],
+  "token": "473fa68cbdac4797ae9c836144db7e63",
+  "observed_at": "2026-11-12T22:03:24.034513+08:00",
+  "supersedes": {
+    "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63.json",
+    "sha256": "af6c37c25551e6ce6373b3bbe3e2906b6437a4f12a2146f412dbf7fecb5fa5aa"
+  },
+  "original_Y101_Y100_preserved": true,
+  "operational_metadata_correction": "Original retained owner rows already name exact original Y101/PID2263581 and Y100/PID19305. The template saved its legacy preservation keyword; add the current-owner field after explicit source/receipt/owner/index verification. Preserve original version/failed plans and raw log; no scientific payload, native program body, version or control changed.",
+  "correction_evidence": [
+    {
+      "path": "scripts/complete_y103_runtime_metadata_v2.py",
+      "sha256": "6e0114f0cf90fb0adfd7d4c23efb66f3bc8516d6139a83d44fda40a843c42224"
+    },
+    {
+      "path": "pipeline/checks/y103_native_473fa68cbdac4797ae9c836144db7e63_runtime_guards.log",
+      "sha256": "aede59e1316bfc0beed5ff60172ed9f74c15cfb591b9b0c48e2262bd35bd2b01"
+    },
+    {
+      "path": "pipeline/checks/y103_cpu_version_473fa68cbdac4797ae9c836144db7e63.json",
+      "sha256": "af6c37c25551e6ce6373b3bbe3e2906b6437a4f12a2146f412dbf7fecb5fa5aa"
+    },
+    {
+      "path": "pipeline/analyses/y103_cpu_473fa68cbdac4797ae9c836144db7e63.json",
+      "sha256": "fa59e46699f3e65ce575ae34e4ff6c0a7953204faee4139f6da529e71473702e"
+    },
+    {
+      "path": "pipeline/checks/y103_cpu_473fa68cbdac4797ae9c836144db7e63_program.py",
+      "sha256": "4d5b28b8f73e358ceadc7810bf060bf9b93d97671ce161dd1ea592f65908fca9"
+    }
+  ]
+}

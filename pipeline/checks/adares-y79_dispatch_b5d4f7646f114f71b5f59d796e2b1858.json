@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "b5d4f7646f114f71b5f59d796e2b1858",
+  "id": "AdaRES-Y79",
+  "before": {
+    "gpu": "0, 98, 350.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y79",
+    "label": "AdaRES-Y79 fixed30",
+    "config": "configs_song/model_paper5/adares_y79_query_language_feedback_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-1",
+    "depends_on": [],
+    "code_commit": "e0c7dba199fcf1a009941450d04aeb799418a7e6",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y79.json",
+    "scientific_candidate_id": "AdaRES-Y79",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 2218231,
+    "log": "/data1/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y79_query_language_feedback_res_20261102_230139.log",
+    "launched": "2026-11-02T23:02:18"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y79 fixed30] configs_song/model_paper5/adares_y79_query_language_feedback_res.yaml → server-1 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y79_server1.py",
+    "sha256": "de23db4389bd0723c3a31952352a3eeefae790fc217c76365d61f73560212a38"
+  }
+}

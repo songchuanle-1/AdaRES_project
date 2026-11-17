@@ -1,0 +1,26 @@
+{
+  "id": "AdaRES-Y57",
+  "previous_program": {
+    "path": "pipeline/analyses/y57_full_input_signal_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "2e4b3260330421b7ffbdd3a2af9f7799ac1819f6bbacd113e639490d5bc65c42"
+  },
+  "scalar_result": {
+    "path": "pipeline/analyses/y57_full_input_signal_6debf88fed634a13b772f27bdc244bbd.json",
+    "sha256": "b88bfc2dc2b66ba44aafeb892e186481085372764644761320836952cca99157"
+  },
+  "scope": "Diagnostic measurement revision1, not a production implementation revision.",
+  "reason": "Original hypothesis concerns per-channel second moments. Scalar L2 discards orientation; fixed full-input scalar test gave mean MSE gain -.0003759429 with interval crossing0. Do not tune ridge or select channels.",
+  "change": "Use ALL256diagonal variance channels instead of their L2 norm, corresponding exactly to original moment-aliasing witness. Same baseline all769head inputs+confidence, same fixed unit ridge/LOSO/no clipping. Same-capacity negative cyclic shift1 along QUERY axis only.",
+  "controls": "Same8scenes/32expressions, final layer6 primary, same checkpoint/source/GT; train-fold standardization, no feature/layer/alpha/seed scan.",
+  "prediction": "Aligned full second moments may add information in this fixed function class. Null/reverse preserved; no efficacy/admission threshold.",
+  "limitations": "Adaptive follow-up after scalar null, not independent confirmation or an exhaustive conditional independence test. No formal model yet.",
+  "complete": true,
+  "token": "6debf88fed634a13b772f27bdc244bbd",
+  "preregistered_at": "2026-10-20T20:56:17.381482+08:00",
+  "program": {
+    "path": "pipeline/analyses/y57_vector_signal_6debf88fed634a13b772f27bdc244bbd_program.py",
+    "sha256": "7da3e7a1ea9a9302f2f31e18b348be509722df411100927550f07219febd0d82"
+  },
+  "result": "pending",
+  "no_admission_or_training": true
+}

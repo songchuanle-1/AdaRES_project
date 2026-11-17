@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y91",
+  "config": "configs_song/model_paper5/adares_y91_hidden_confidence_gate_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "59baf94e9d3e406afa13b2ddc96968cdcc976cae",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "retained_branch": "refs/heads/adares-y91-hidden-confidence-gate-on-y90",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "planned_command": "python -B scripts/run_y91_bound_native.py --server server-1 --token <CURRENT_TOKEN>",
+  "required_resource": "Fresh exclusive idle/unreserved authorized GPU0, after exact matching AdaRES-Y90 fixed30 checkpoint verification/canonical archive. No GPU1 or power/data/runtime substitution.",
+  "checks": "Original native TRAIN two finite task losses/backward/updates; fourteen exact original query/mask/mass/evidence, first/second hidden gate and final linear consumers; all70 original MLP layer calls, original gates, zero then learned hidden response, finite original/new/input gradients, modes/memory.",
+  "program": {
+    "path": "pipeline/checks/y91_additive_binding_79bbfcd1afdb4018b694fe0f3bdea993_server1_program.py",
+    "sha256": "209baeee0ead6d419aab77725987119a0eddad4c7a8f55409fb33152c9826545"
+  },
+  "supersedes": {
+    "path": "pipeline/checks/y91_native_b9a0d47206c64e4f83fcd6a80c45599a_server1_plan.json",
+    "sha256": "9b25b40deb0cdf3fd698a500277cab52780f1e119fd9c281376f93647703ad6a"
+  },
+  "additive_parent": "2d2cccb4f6f6ef9daf960b0ac255a3a3ee5e9f71",
+  "execution_helper": {
+    "path": "scripts/run_y91_bound_native.py",
+    "sha256": "2999bbd63faf96953d3d78ec0973b3a7a6f5ddd21bd4c6dec0f2c7d3f508e810"
+  }
+}

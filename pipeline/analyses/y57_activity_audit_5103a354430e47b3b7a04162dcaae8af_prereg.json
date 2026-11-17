@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y57",
+  "token": "5103a354430e47b3b7a04162dcaae8af",
+  "preregistered_at": "2026-10-20T22:12:38.997161+08:00",
+  "original_program": {
+    "path": "pipeline/analyses/y57_native_v2_5103a354430e47b3b7a04162dcaae8af_program.py",
+    "sha256": "166bb0e8310fdd560fcc0224e798a4ee4a1248dc40adcfe96b482c8fed15af8c"
+  },
+  "interrupted_log": {
+    "path": "pipeline/analyses/y57_native_v2_5103a354430e47b3b7a04162dcaae8af.log",
+    "sha256": "586d8e9031fb0e3baae4769b8cd01376c2398a371b003cda9d04e9decb3e7074"
+  },
+  "failure_log": {
+    "path": "pipeline/analyses/y57_native_v2_retry_5103a354430e47b3b7a04162dcaae8af.log",
+    "sha256": "d1079b7c55d1569f473b99b4541fde74408a5914537b45dda82cd8fad1fde309"
+  },
+  "program": {
+    "path": "pipeline/analyses/y57_activity_audit_5103a354430e47b3b7a04162dcaae8af_program.py",
+    "sha256": "4e5ecaa6d2576ebb65c6d81bd5cd2cfca463664be10c5b9324c76f55dbbfb180"
+  },
+  "body": {
+    "path": "scripts/probe_y57_activity_audit_5103.py",
+    "sha256": "bbe4e0e547447abba87b5a93482e2f4c078dd47955ef62dd6908ee19c65e6020"
+  },
+  "sample": "All same8TRAIN scenes/32expressions/four batch2 pairs/all7layers. No sample/threshold search.",
+  "test": "Record original unchanged bounds and pass booleans for released initialization and separate trained-W2 diagnostic state. Preserve all native loss gradients/new columns. Strictly map only three changed shapes, common tensors exact, no saved weights/optimizer.",
+  "prediction": "May distinguish weak initial feature variance/control signal from unreachable path. No original control failure is converted to a PASS by this audit.",
+  "result": "pending"
+}

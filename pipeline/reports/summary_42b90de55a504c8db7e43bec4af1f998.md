@@ -1,0 +1,85 @@
+# Research Pipeline Report - AdaRES_project
+快照时间：2026-10-15T11:51:59.937626+00:00；生成报告时快照年龄：239 秒；模式：design
+
+## 0. Goal Status
+- 目标：mIoU / 0.515；数据集：ScanRefer
+- 目标检查返回码：0
+- Champion / Gap / Phase：以下为本轮目标检查原始结果，缺项为未知。
+```text
+================================================================================
+  Goal Check Report — 2026-10-15 19:51:59
+================================================================================
+  Target: AdaRES: improve a faithful standard-indicator 3D referring expression segmentation baseline by learning query confidence from metric-aligned evidence, targeting ScanRefer mIoU >= 0.515.
+
+## Phase 1: Metric Target
+  Target: mIoU ≥ 0.5150
+  [✗] Champion: AdaRES-Y36 — mIoU=0.5110 (gap to target: +0.0040)
+       Epochs: ?, State: done_complete
+  Phase 1: NOT YET — continue exploring ✗
+
+## Baseline
+  Baseline: AdaRES-B1 — mIoU=0.5020
+  Champion vs Baseline: γ = +0.0090
+
+## Phase 2: Story Verification
+  (等待 Phase 1 达标后启动)
+
+## Overall
+  Phase 1: champion=0.5110, target=0.5150, gap=+0.0040
+================================================================================
+```
+
+## 1. GPU Overview
+- 仅列授权卡；未采集利用率、显存或进程时标为未知，不推断空闲。
+| Server | GPU | Util | Memory | Process |
+|---|---|---|---|---|
+| server-2 | 0 | 未知 | 未知 | 未知 |
+| server-2 | 1 | 未知 | 未知 | 未知 |
+- 可用 GPU：未做实时占用确认，不能据此分配。
+- 监控摘要（begin 已执行，不再重复探测）：
+```text
+================================================== 2026-10-15 19:51 : AdaRES_project ==================================================
+
+--- server-2 (192.168.1.163) ---
+  [adares_y48_mask_equivalence_res] Best=0.4846 11/30 no_improve=0/30 gpu=1 ? 序列: 0.4696, 0.4659, 0.4668, 0.4836, 0.4846
+
+--- server-6 (100.64.3.28) ---
+  [白名单] SERVERS.yaml allowed_gpus=[] ，本项目流水线跳过该机
+
+--- 队列: AdaRES_project ---
+  server-2: running=1
+```
+
+## 2. Running Experiments
+| ID | Config | Server | GPU | Epoch | Best mIoU | Acc@50 | spmIOU | No-Impr | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| AdaRES-Y48 | configs_song/model_paper5/adares_y48_mask_equivalence_res.yaml | server-2 | 1 | 未知 | 未知 | 未知 | 未知 | 未知 | running |
+
+## 3. Queue Status
+| Position | ID | Config | Status | Depends On | Server |
+|---|---|---|---|---|---|
+| 未知 | 无 | 未知 | 无排队 | 未知 | 未知 |
+- 活跃 1（运行 1 / 认领 0 / 等待 0）；目标 2；准入预算 1。
+- 研究储备 2 / 2；储备准备预算 0，不增加训练并发或启动授权。
+- 候选累计记录 101：complete=14 / rejected=72 / closed=12 / blocked=2 / training=1。
+- 否决范围：unclassified=72；实现修订累计 1；收据文件 29（含修订或重试，不代表成功率）。
+
+## 4. This Tick's Actions
+- 本轮快照2026-10-15T11:51:59.937626+00:00（本地19:51:59），真实截止2026-10-15T12:51:59.937626+00:00；begin/preflight各一次，0-3段沿用脚本事实表，finish尚未执行，执行状态待核验。首个只读规则请求审批超时后唯一重试成功，无项目副作用。
+- Y46/Y49原资源retry为19:52:20+08；实际观测窗口2026-10-15T19:54:03.728152+08:00至2026-10-15T19:54:11.425367+08:00已在原retry之后。两项稳定ID共享一次资源复查，不重复preflight或无变化CPU控制；储备2/2、准备预算0、准入预算1。
+- 原Y48/PID8877/cwd/配置/argvGPU1一致，7项源码/配置哈希与原准入提交逐项相同；第11/30轮原生步数3859至3869/4686，原训练持续推进，无重启、迁移或新训练启动。
+- 现场授权2张卡：本任务Y48占GPU1（PID8877、78%、22720/24576MiB），其他任务占GPU0（PID19723、81%、23942/24576MiB），空闲0。未分配诊断CUDA上下文，未干预当前或外部训练。0-3段未知项是较早preflight，本段给出稍后现场时间。
+- begin日志摘要Y48第11/30轮、阶段best mIoU=0.4846（上轮0.4836），仍低于历史champion且目标0.515未达成；这是学习曲线，不是终态效用、显著性或晋升证明。Acc@50/spmIoU等未新增采集，未知，不用早期分数调参或重启。
+- 两候选冻结清单/下一原生程序哈希未变，语法编译通过但GPU分支未运行；Y46生产native/tools.train/完整恢复/资源门槛仍待办，成本风险保留；Y49原生同component分区差异见证为0等限制保留，不把CPU或本轮资源检查算PASS。
+- 科学状态Y48=training_not_efficacy、Y46/Y49=blocked。以external_resource_blocked真实收尾，下次有界可复查2026-10-15T20:54:11.425367+08:00（现场观测结束后1小时，不是自动化触发承诺）；真实资源/目标/证据变化可提前唤醒，仍需现场空闲与独占诊断租约。
+- 实际产出1次共享资源/训练进度检查、1份哈希绑定双候选阻塞处置、候选证据和7节短记忆更新、六段中文报告；新候选0、准入0、新训练0、GPU诊断0、修订0，无重复CPU控制或终态重测。
+- 收据尚未生成，用量/调用数暂未知；仅begin至收据的本地可见窗口，早期读取/最终回复/迟到记录不计。缓存含在输入、推理含在输出，不重复加总或视为账单；finish后只读核对，不在租约释放后回写。
+
+## 5. Decisions Made
+- 无新科学结论或新设计。储备已满、下一原生测试被实际GPU占用阻塞时保留原稳定ID和门槛，不凑变体、不虚构路线穷尽、不降低准入或等待截止。
+- 下一真实空卡先续Y46同修订1生产原生测试及Y49同冻结native测试，完成实际门槛后才决定准入；授权不等于空闲或独占，保护GPU0其他任务和GPU1原Y48。
+- Y48保留原released-SPFormer/seed1999/单卡/固定30轮和冻结终态9508表达、141场景、每方法两次FIRST主结果、W2/B1比较及子组风险评价，不按早期验证提升改协议。
+- 操作仅AdaRES_project/server2 GPU0、1；后台Pipeline-AdaRES_project保持Disabled，未操作其他项目、server6、调度、新任务或嵌套执行。下一保存自动化时刻未知。
+- finish明确PASS/COMPLETE且独立确认本轮租约消失才称COMPLETED；否则保留证据并abort，不把科学blocked与执行完成或科学PASS混为一谈。
+
+Next tick: 以已保存自动化为准；本脚本未读取调度时间。

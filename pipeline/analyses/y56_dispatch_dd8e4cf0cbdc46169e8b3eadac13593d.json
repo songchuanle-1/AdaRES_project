@@ -1,0 +1,135 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y56",
+  "observed_at": "2026-10-20T23:13:52.067291+08:00",
+  "before": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "8943c8c460501b200a8dea958964579ffea65f76",
+    "source_hashes": {},
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 0, 1, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y56": {
+        "pid": null,
+        "log": null,
+        "process_live": false,
+        "cmdline": [],
+        "cwd": null,
+        "tail": ""
+      }
+    }
+  },
+  "after": {
+    "hostname": "dl01-MS-7C60",
+    "source_marker": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+    "source_hashes": {
+      "ipdn/model_paper5/adares_y56_unique_competitors/__init__.py": "8014a039f2388c8ca57692438985474724a17785186036e5208771b856072722",
+      "ipdn/model_paper5/adares_y56_unique_competitors/backbone.py": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca",
+      "ipdn/model_paper5/adares_y56_unique_competitors/dec.py": "75542f5fafc3ff10b966ccedea54c8b4b9d39c520b3801cb80fa52b3af73d6eb",
+      "ipdn/model_paper5/adares_y56_unique_competitors/ipdn.py": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9",
+      "ipdn/model_paper5/adares_y56_unique_competitors/loss.py": "9e6e5925523114caba6213d181b11181abd2820b292730999986b068816046d1",
+      "ipdn/model_paper5/adares_y56_unique_competitors/sample_model.py": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36",
+      "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml": "1a170434f63da98e10f59c5b17473cde5cf3ff6be0e4381e2771f322853ffa03"
+    },
+    "authorized_device_inventory": "0, GPU-e0b11432-b7aa-2006-1903-dcc739f26146, NVIDIA GeForce RTX 3090, 50, 9794, 24576\n1, GPU-f740248b-4c9e-c8bb-b14b-99d0b9eb6c79, NVIDIA GeForce RTX 3090, 0, 1, 24576\n",
+    "gpu_query_rc": 0,
+    "compute": "GPU-e0b11432-b7aa-2006-1903-dcc739f26146, 83638, 9786\n",
+    "compute_query_rc": 0,
+    "tasks": {
+      "AdaRES-Y56": {
+        "pid": 83638,
+        "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y56_unique_competitors_res_20261020_231317.log",
+        "process_live": true,
+        "cmdline": [
+          "/home/songcl/.conda/envs/adares_project/bin/python",
+          "-S",
+          "tools/train.py",
+          "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+          "--num_gpus",
+          "1",
+          "--gpu_ids",
+          "0"
+        ],
+        "cwd": "/bak_home/songcl/Project/AdaRES_project/AdaRES",
+        "tail": "Using backend: pytorch\n2026-10-20 11:13:22,961 - INFO - set random seed: 1999\nset CUDA_VISIBLE_DEVICES as 0\n\rTrain[1/30]:   0%|                    | 0/4686 [00:00<?, ?it/s]\rTrain[1/30]:   0%|                    | 0/4686 [00:19<?, ?it/s, lr=0.0001, eta=31 days, 3:51:49, iter_time=19.15]\rTrain[1/30]:   0%|                    | 1/4686 [00:19<24:55:24, 19.15s/it, lr=0.0001, eta=31 days, 3:51:49, iter_time=19.15]\rTrain[1/30]:   0%|                    | 1/4686 [00:19<24:55:24, 19.15s/it, lr=0.0001, eta=15 days, 23:59:45, iter_time=9.83]\rTrain[1/30]:   0%|                    | 2/4686 [00:19<10:39:17,  8.19s/it, lr=0.0001, eta=15 days, 23:59:45, iter_time=9.83]\rTrain[1/30]:   0%|                    | 2/4686 [00:20<10:39:17,  8.19s/it, lr=0.0001, eta=10 days, 21:15:09, iter_time=6.69]\rTrain[1/30]:   0%|                    | 3/4686 [00:20<6:01:42,  4.63s/it, lr=0.0001, eta=10 days, 21:15:09, iter_time=6.69] \rTrain[1/30]:   0%|                    | 3/4686 [00:20<6:01:42,  4.63s/it, lr=0.0001, eta=8 days, 8:23:53, iter_time=5.13]  \rTrain[1/30]:   0%|                    | 4/4686 [00:20<3:52:56,  2.99s/it, lr=0.0001, eta=8 days, 8:23:53, iter_time=5.13]\rTrain[1/30]:   0%|                    | 4/4686 [00:21<3:52:56,  2.99s/it, lr=0.0001, eta=6 days, 21:14:58, iter_time=4.23]\rTrain[1/30]:   0%|                    | 5/4686 [00:21<2:46:40,  2.14s/it, lr=0.0001, eta=6 days, 21:14:58, iter_time=4.23]"
+      }
+    }
+  },
+  "events": [
+    "队列推送 [AdaRES-Y56 unique competitors fixed30] configs_song/model_paper5/adares_y56_unique_competitors_res.yaml → server-2 gpu0"
+  ],
+  "task": {
+    "id": "AdaRES-Y56",
+    "label": "AdaRES-Y56 unique competitors fixed30",
+    "config": "configs_song/model_paper5/adares_y56_unique_competitors_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "depends_on": [],
+    "code_commit": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y56.json",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "requires_exclusive_ownership": true,
+    "scientific_candidate_id": "AdaRES-Y56",
+    "dispatch_phase": "progress_pending",
+    "server": "server-2",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 83638,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y56_unique_competitors_res_20261020_231317.log",
+    "launched": "2026-10-20T23:13:51"
+  },
+  "code_commit": "200486ee12bcf3d7e82393d009d06214dfe83e38",
+  "exact_deployed_tested_bytes": true,
+  "native_steps": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "limitation": "Execution evidence only; no trained benefit or final metric yet."
+}

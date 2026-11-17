@@ -22,8 +22,9 @@ def parse_args():
         description="Profile an AdaRES checkpoint with a fixed protocol."
     )
     parser.add_argument("config")
-    parser.add_argument("checkpoint")
+    parser.add_argument("checkpoint", nargs="?")
     parser.add_argument("--model-module", default="ipdn")
+    parser.add_argument("--package-dir", type=Path)
     parser.add_argument("--output-json", required=True)
     parser.add_argument("--gpu-id", type=int, default=0)
     parser.add_argument("--scenes", type=int, default=16)
@@ -62,6 +63,9 @@ def main():
     gorilla.set_random_seed(args.seed)
 
     cfg = gorilla.Config.fromfile(args.config)
+    if args.package_dir:
+        import ipdn.model_paper5
+        ipdn.model_paper5.__path__.append(str(args.package_dir.resolve()))
     data_cfg = cfg.data.val.copy()
     data_cfg.training = False
     data_cfg.aug = False
@@ -76,7 +80,8 @@ def main():
     model = model_module.IPDN(**cfg.model)
     model = model.cuda()
     model.eval()
-    load_checkpoint(model, args.checkpoint)
+    if args.checkpoint:
+        load_checkpoint(model, args.checkpoint)
 
     latencies_ms = []
     active_queries = []
@@ -116,7 +121,7 @@ def main():
 
     result = {
         "config": os.path.abspath(args.config),
-        "checkpoint": os.path.abspath(args.checkpoint),
+        "checkpoint": os.path.abspath(args.checkpoint) if args.checkpoint else None,
         "model_module": args.model_module,
         "seed": args.seed,
         "scenes": scene_count,

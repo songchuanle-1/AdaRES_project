@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y94",
+  "token": "2683c4548e244340a4d06c50bec79b2e",
+  "observed_at": "2026-11-08T21:23:58.173615+08:00",
+  "original_failure": {
+    "path": "pipeline/checks/y94_y93_rebind_failure_2683c4548e244340a4d06c50bec79b2e.json",
+    "sha256": "b48dfe20164704edbf7e8601d9a4f6d6a5ffd8e41678bd9b67191f24db2cb7c1"
+  },
+  "original_failed_helper": {
+    "path": "scripts/rebind_y94_on_y93.py",
+    "sha256": "ea83fa54ccd451aef0382b1562604b4819840b3b4928f8d037d9753ec710c2f1"
+  },
+  "repair_helper": {
+    "path": "scripts/rebind_y94_on_y93_v2.py",
+    "sha256": "44b0ba3dd0d73708b30b1c6ebc84e2a6db11d0f7db8394cccbb515e08611be30"
+  },
+  "environment_capable_git": {
+    "path": "scripts/retain_y91_cpu_native.py",
+    "sha256": "a30c5c9a92613a46e037c46651a5bc277976de5c0211ce35d3e4316163a75c4a"
+  },
+  "ten_original_binding_guards_unchanged": true,
+  "model_and_native_program_bodies_unchanged": true,
+  "no_scientific_revision": true,
+  "production_HEAD_index_queue_running_preserved": true,
+  "binding": {
+    "path": "pipeline/checks/y94_y93_additive_binding_2683c4548e244340a4d06c50bec79b2e.json",
+    "sha256": "437d51952a3702ad341771a09c85b371a2eba9056bf54ab446283f33a04cfab4"
+  }
+}

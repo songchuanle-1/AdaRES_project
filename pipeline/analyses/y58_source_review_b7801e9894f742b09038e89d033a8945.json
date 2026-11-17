@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y58",
+  "observed_at": "2026-10-20T23:55:32.003271+08:00",
+  "BN_source_options": {
+    "eps": 0.0001,
+    "momentum": 0.1
+  },
+  "source": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/ipdn.py",
+      "sha256": "55160dfb062353054f6d2d5a09d971a6dc779be2e8fe34e6906187576a623ad9"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_w2_pointmass_competition/dec.py",
+      "sha256": "d27757a6ab963c7af9476210d0b4d63aead241c33bfc28e5ebff74ef876c0b13"
+    }
+  ],
+  "train_norm_eval": false,
+  "indicator_has_batch_mixing": false,
+  "targeted_related_records": [
+    {
+      "id": "AdaRES-Y23",
+      "stage": "complete",
+      "hypothesis_id": "semantic-alignment-padding-denominator-leak"
+    },
+    {
+      "id": "AdaRES-Y41",
+      "stage": "complete",
+      "hypothesis_id": "final-mask-boundary-probability-mass"
+    },
+    {
+      "id": "AdaRES-Y58",
+      "stage": "diagnosis",
+      "hypothesis_id": "cross_scene_normalization_mixture_confidence_drift"
+    }
+  ],
+  "interpretation": "No matching cross-scene backbone BN mechanism found in the targeted ledger fields. Y23 padding denominator and Y41 boundary normalization are different, not reopened. This is not a literature novelty proof. Actual native task relevance remains pending."
+}

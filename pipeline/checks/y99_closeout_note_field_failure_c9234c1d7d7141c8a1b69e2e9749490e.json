@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "token": "c9234c1d7d7141c8a1b69e2e9749490e",
+  "observed_failure": "Authored report audit compared complete resource_condition to only server/gpu/power dict; unchanged legacy freezes also contain scientific limitation note. Failed before closeout/memory/report/finish. Original observer diagnostic already completed and retained.",
+  "original_helper": {
+    "path": "scripts/finish_y99_complete_tick.py",
+    "sha256": "35eadb502f7fb95716b5902fbfb57048b8e043ae2792422ef4a244596ddc8ff5"
+  },
+  "original_diagnostic": {
+    "path": "pipeline/checks/y99_complete_c9234c1d7d7141c8a1b69e2e9749490e_y102_diagnostic.json",
+    "sha256": "61ff551c0593a53307a669647ec05b32dc7f257c7fe6ef9029c42e590fe623d9"
+  },
+  "correction": "Require exact candidate/server-1/GPU0/350W identity fields, retain the additional original note unchanged. No old freeze/record/receipt/canonical checker/scientific protocol changes. Reuse exact existing diagnostic rather than repeat SSH.",
+  "evidence": [
+    {
+      "path": "scripts/finish_y99_complete_tick.py",
+      "sha256": "35eadb502f7fb95716b5902fbfb57048b8e043ae2792422ef4a244596ddc8ff5"
+    },
+    {
+      "path": "pipeline/checks/y99_complete_c9234c1d7d7141c8a1b69e2e9749490e_y102_diagnostic.json",
+      "sha256": "61ff551c0593a53307a669647ec05b32dc7f257c7fe6ef9029c42e590fe623d9"
+    },
+    {
+      "path": "scripts/finish_y99_complete_tick_v2.py",
+      "sha256": "7f3490e1d905a4bb15b99a52a428818675a69dae7209100a3c5b7701f67d48c7"
+    }
+  ]
+}

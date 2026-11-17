@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "token": "63cf81237aca466297096629581560ce",
+  "thread_id": "01a07e32-78bf-7670-925b-370911ea48db",
+  "started_at": "2026-10-16T09:49:26.831204+00:00",
+  "recorded_at": "2026-10-16T10:01:17.342808+00:00",
+  "status": "INCOMPLETE",
+  "reason": "INCOMPLETE: due live resource check still found foreign GPU0 PID19723 and own GPU1 Y50 PID31539, no idle exclusive slot. SAME Y52 gained real full CPU namespace/constructor/exact-init control, not native TRAIN/resource PASS. Unchanged checker exact queue-opening rejecting predicate remains true; do not replay known-failing finish or bypass blocker/queue/gates. Preserve new evidence/retry18:52:56+08, release this tick only, keep training running.",
+  "context_committed": false,
+  "lease_release": "pending",
+  "usage": {
+    "status": "partial_window",
+    "calls": 15,
+    "input_tokens": 4350401,
+    "cached_input_tokens": 4312448,
+    "output_tokens": 20352,
+    "reasoning_output_tokens": 10500,
+    "total_tokens": 4370753,
+    "uncached_input_tokens": 37953,
+    "malformed_records": 0,
+    "boundary": "Local response records appended after begin and visible before receipt; excludes earlier reads, late usage, and final answer. Not a billing total."
+  },
+  "outcomes": {
+    "status": "observed",
+    "new_candidates": 0,
+    "changed_candidates": 1,
+    "new_evidence_references": 8,
+    "advanced_to_training": 0,
+    "dispositions": {
+      "admission": 0,
+      "training": 0,
+      "rejected": 0,
+      "blocked": 1,
+      "complete": 0
+    },
+    "meaning": "Artifact/stage changes only, not a claim of scientific benefit."
+  }
+}

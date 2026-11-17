@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y100",
+  "config": "configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml",
+  "profile": "experiment_first",
+  "code_commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+  "goal_sha256": "4b0d4443a0c38a297a2b9022f4756f6992cf956d7a89374990c0e0fc60224f5a",
+  "server": "server-1",
+  "gpu": 0,
+  "runtime_power_limit_watts": 350.0,
+  "resource_authorization": {
+    "path": "pipeline/authorizations/server1_gpu0_20261025.json",
+    "sha256": "bef8248c4136533fc49d612dfe68ab06120c0831660e6dc85e7c7bc0b5694c01"
+  },
+  "working_HEAD_preserved": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "additive_parent": "53f5b028bdf24e8b41dd934931d1fedc99843d8d",
+  "retained_branch": "refs/heads/adares-y100-appearance-input-skip",
+  "native_executed": false,
+  "admitted": false,
+  "native_PASS_required": true,
+  "guard_tests_passed": 10,
+  "Python38_compile": true,
+  "execution_helper": {
+    "path": "scripts/run_y100_native_v2.py",
+    "sha256": "b2d7ad2ed1497bd8ff6492f3af98be57d47197d515d2d8007e74619af3cebae8"
+  },
+  "planned_command": "python -B scripts/run_y100_native_v2.py --server server-1 --token <CURRENT_TOKEN>",
+  "required_resource": "Matching original AdaRES-Y99 natural fixed30/full finite exact original checkpoint verification/canonical archive, fresh exclusive idle/unreserved GPU0, exact HEAD/private runtime/data/mappings/350W280W. No GPU1 or resource substitution.",
+  "checks": "Actual original YAML/sparse TRAIN two finite backward/optimizer steps, full1024 raw identity/original projection/sum_norm/first visual memory/static seven mask readouts/shared confidence and original gates/new+original gradients/native modes/budget. CPU feasibility is not native PASS.",
+  "program": {
+    "path": "pipeline/checks/y100_native_288dfa4d3bb741eaa67afacfdc81f241_server1_program.py",
+    "sha256": "05d087f3c7bb9548c1c720c28e62fab1271a8e50af3f75ced5c0f9a9f480f12d"
+  },
+  "preserved_original_plan": {
+    "path": "pipeline/checks/y100_native_288dfa4d3bb741eaa67afacfdc81f241_server1_plan.json",
+    "sha256": "3e916ad7740ecc55300ed88503eadf72f437df1333812df9487057b415f2ee21"
+  },
+  "native_program_body_unchanged": true
+}

@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y50",
+  "observed_at_local": "2026-10-16T14:49:46.887569+08:00",
+  "authorization": {
+    "path": "pipeline/authorizations/AdaRES-Y50_commit.json",
+    "sha256": "98ca31a33d1905e61ad0c61ce8994fd5f8a5cf3ea3e0ede12e7afdb75690906b"
+  },
+  "code_commit": "26ee1cec57c53ee2f94d6969d0bb637565b6ed59",
+  "parent_commit": "d18c228fd3796b5a87dbe313075b6ee748b2d51b",
+  "files": [
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/__init__.py",
+      "sha256": "c540732d6e3334c85008035cc37b8537b0f85383d5f5a6bf663359fbf2b134bb"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/backbone.py",
+      "sha256": "57db8747d3c38136f568837d70e75ceea23e101900679db4931724ecb57665ca"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/dec.py",
+      "sha256": "1587458066bd8b33396ad927f8268146ed4d8ac4043f44adf534aeef8fd5ef37"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/ipdn.py",
+      "sha256": "7cb4b1c5490d0839fcdaf18553983b4c991f69e50474d07e83af9f0f8c937a5a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/loss.py",
+      "sha256": "836ff790a0a8b9c55cf465a472c9462699f0753a7e87d0ef74a8946edf31565a"
+    },
+    {
+      "path": "AdaRES/ipdn/model_paper5/adares_y50_joint_incidence/sample_model.py",
+      "sha256": "674e7ef698c6e81ed1c35f14680e1ec748f5c783ed879a6ca72f099b6450bc36"
+    },
+    {
+      "path": "AdaRES/configs_song/model_paper5/adares_y50_joint_incidence_res.yaml",
+      "sha256": "d4c35ff10712bfb9ece3e25daa9c3b63143ce313f43eaf19735abaa31f6693eb"
+    }
+  ],
+  "exact_committed_tested_bytes": true,
+  "only_seven_additions": true,
+  "unrelated_index_unchanged": true,
+  "no_admission_or_launch_yet": true
+}

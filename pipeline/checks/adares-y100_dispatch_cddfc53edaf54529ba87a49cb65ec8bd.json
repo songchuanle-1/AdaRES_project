@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "token": "cddfc53edaf54529ba87a49cb65ec8bd",
+  "id": "AdaRES-Y100",
+  "before": {
+    "gpu": "0, 1, 280.00",
+    "compute": ""
+  },
+  "task": {
+    "id": "AdaRES-Y100",
+    "label": "AdaRES-Y100 fixed30",
+    "config": "configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml",
+    "status": "running",
+    "gpu": "0",
+    "server": "server-2",
+    "depends_on": [],
+    "code_commit": "294de23f52e4ff93ebbf370c17c13d9a7d02e10b",
+    "admission_receipt": "pipeline/admissions/AdaRES-Y100.json",
+    "scientific_candidate_id": "AdaRES-Y100",
+    "patience": 30,
+    "min_epochs": 30,
+    "fixed_epochs": 30,
+    "dispatch_phase": "progress_pending",
+    "claimed_gpu": "0",
+    "launch_verified": true,
+    "launch_verification": "training_progress",
+    "pid": 19305,
+    "log": "/bak_home/songcl/Project/AdaRES_project/AdaRES/logs/train_adares_y100_appearance_input_skip_res_20261111_215359.log",
+    "launched": "2026-11-11T21:54:34"
+  },
+  "events": [
+    "队列推送 [AdaRES-Y100 fixed30] configs_song/model_paper5/adares_y100_appearance_input_skip_res.yaml → server-2 gpu0"
+  ],
+  "other_queue_entries_preserved": true,
+  "helper": {
+    "path": "scripts/advance_y100.py",
+    "sha256": "eea889ff5f10abaaaecf23980ef987cceb0adbd8d0ee34c7f85bc6c9aa46b367"
+  }
+}

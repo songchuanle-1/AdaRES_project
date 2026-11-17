@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y46",
+  "source_evidence": [
+    {
+      "path": "scripts/probe_y46_component_cpu_d179_v2.py",
+      "sha256": "713ad86a68f51142776be20a50295597aa07e06b7fff6d146797f91f6c5a5ecf"
+    },
+    {
+      "path": "scripts/probe_y46_native_capture_d179.py",
+      "sha256": "2ba5bad46dab8e4528006cbe1357ee9994ff9f18f9f2e8cc30c4444e042184c3"
+    },
+    {
+      "path": "scripts/probe_y46_parent_controls_d179.py",
+      "sha256": "a21458f34da681cd7b37af17f2fe4a2053e88e79046b826c5f704e578c99284d"
+    },
+    {
+      "path": "pipeline/analyses/Y46_topology_prereg_d179.md",
+      "sha256": "1488ccd13610f33caf72c5f2e03c9987498f102ddb134366336da9b762042352"
+    },
+    {
+      "path": "pipeline/analyses/Y46_parent_controls_prereg_d179.md",
+      "sha256": "0ddd460a25ea14cada5c6e2d77c7376d151ed329c810f4ec790513db970034b2"
+    }
+  ],
+  "capture": {
+    "path": "pipeline/analyses/y46_native_capture_d179_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "5716585e9624d06ff5ecd90ddddec1faf95db9333199daf1b5eaa86907219d89"
+  },
+  "CPU_controls": {
+    "path": "pipeline/analyses/y46_component_cpu_d179_v2_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "4b8b400c9c83fd5ba8cf6fd4c9ad4cd780a1a99807771144838ed16a131250a9"
+  },
+  "actual_parent_controls": {
+    "path": "pipeline/analyses/y46_parent_controls_d179_d179d824a64943e0b06bfa90de0caf52.json",
+    "sha256": "db842083d5d4f050acfdf5ae1e9b2deac510d3ee56969d0f5c7cd5d5917d8a5b"
+  },
+  "retained_serialization_failure": [
+    {
+      "path": "scripts/probe_y46_component_cpu_d179.py",
+      "sha256": "99904ebe9b440e461bbe4b05482e391a3c2403fede22e23e070f2b2e051c0260"
+    },
+    {
+      "path": "pipeline/analyses/y46_component_cpu_d179_d179d824a64943e0b06bfa90de0caf52.log",
+      "sha256": "e783674e5ecd0ee085ad4713d2f23b37dca0a0dba21701179b1474cc4fda908c"
+    }
+  ],
+  "next_test": "On the first live-idle authorized server2 GPU, test SAME frozen all-component prototype attached to final W2 indicator's native loss on TRAIN8: all8 finite nonzero gradients, disable-parent/cyclic-wrong/cached-repeat, paired time/memory and real tools.train optimizer update. Then build/review independent production package only if that native feasibility is supported.",
+  "protocol": "Keep every FG/BG component; inherited exact-nearest-tie graph, masks>0, point mass/native256; no validation tuning, component filtering, diagnostic weight deployment or admission.",
+  "constraints": {
+    "path": "pipeline/goal.json",
+    "sha256": "53da862754afe00739a75c5ea6b1f184e0358813225b8f8c0c024a355737c966"
+  },
+  "limitations": "CPU prototype square-loss gradients are not native backward. CPU302.85s on32 expressions is not paired deployment latency; native overhead is unmeasured. Physical production package, full backward and resource gates remain pending."
+}

@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y75",
+  "token": "0fd2c3224f6443388fdffa1fb7c5904e",
+  "code_commit": "9bf15a255ed2c960429ecf57ab47de05c484b631",
+  "native_plan": {
+    "path": "pipeline/checks/y75_native_e04205f48d2f4f5eb7898ec10c1981d0_gpu1_plan.json",
+    "sha256": "a8d84f0117b10a97d5eed5f2d95b9b4b9f0b37945e32d6138783f86533b27e45"
+  },
+  "dependencies": [
+    {
+      "path": "scripts/y75_deployment.py",
+      "sha256": "bae278e05c0e6bff727a82acb1e4f61847ba4ca0f77f8dd1fc28f5d21700b770"
+    },
+    {
+      "path": "scripts/advance_y75.py",
+      "sha256": "50273737afce98d4c63bd6a1442809f83d8927abf60d1b9e43e4ac4729f329b7"
+    },
+    {
+      "path": "scripts/test_y75_admission.py",
+      "sha256": "8b488a2aa33e50f9e031b3491b971b3d3bc84424d30f4191f1d951e608b3301b"
+    },
+    {
+      "path": "scripts/test_y75_deployment_guards.py",
+      "sha256": "48d3e0bbcddc5b40492fa0e03f4fd67408c3d2f1ce029b555490604a550d84c0"
+    }
+  ],
+  "actual_deployment_guards": {
+    "path": "pipeline/checks/y75_deployment_guards_0fd2c3224f6443388fdffa1fb7c5904e.log",
+    "sha256": "e6d79548854bee433cb720bf9c4ce984efdb5b93d3b5b70a18bdf6bd5e9b89aa"
+  },
+  "guard_tests_passed": 6,
+  "original_keeper_source_bytes_verified": true,
+  "required_before_activation": "Y73 canonical fixed30 verification/archive, fresh exclusive server2 GPU1/390W idle with no compute PID or queue/running reservation.",
+  "native_GPU_executed": false,
+  "native_admission_tests_pending_real_result": true,
+  "admitted": false,
+  "source_HEAD_changed": false,
+  "production_sync": false
+}

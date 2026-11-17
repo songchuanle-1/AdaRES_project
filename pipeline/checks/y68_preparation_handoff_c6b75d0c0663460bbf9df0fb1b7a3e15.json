@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "id": "AdaRES-Y68",
+  "token": "c6b75d0c0663460bbf9df0fb1b7a3e15",
+  "observed_at": "2026-10-29T19:02:23.235204+08:00",
+  "CPU_result": {
+    "path": "pipeline/analyses/y68_cpu_c6b75d0c0663460bbf9df0fb1b7a3e15.json",
+    "sha256": "7845856ba1346f138353fd434b37732045d0d8b8e8c09704894cfdc8e80bba0a"
+  },
+  "code_commit": "9af4deca98f121cbbe88e65ac7e233035f76b888",
+  "active_GPU0_plan": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu0_plan.json",
+    "sha256": "cddfb2dfaec88ba4d731175aec0a111b0cdf7994c29151ec860af52077d64aa5"
+  },
+  "inactive_GPU1_alternative": {
+    "path": "pipeline/checks/y68_native_c6b75d0c0663460bbf9df0fb1b7a3e15_gpu1_plan.json",
+    "sha256": "22e14e5cc770b6f28719dd93c06ac2757f7cf183cd769908ba10db865310431e"
+  },
+  "scientific_body_and_payload_equal": true,
+  "exact_committed_model_and_YAML_files": 7,
+  "CPU_native_guard_tests_passed": 10,
+  "native_sparse_GPU_steps_executed": false,
+  "admitted": false,
+  "queued": false,
+  "production_sync": false,
+  "existing_run_code_commits_preserved": true,
+  "production_markers_unchanged": true,
+  "Y57_paused": true,
+  "resource_evidence": [
+    {
+      "path": "pipeline/checks/gpu_occupation_server-2_c6b75d0c0663460bbf9df0fb1b7a3e15.json",
+      "sha256": "2038d45993e51c2bbce4548941d28a1569cd4361c425de622833ef3fe8ba761e"
+    },
+    {
+      "path": "pipeline/checks/gpu_occupation_server-1_c6b75d0c0663460bbf9df0fb1b7a3e15.json",
+      "sha256": "9aabd1c21e45ee5e8693ab250ff3a8b2b51d18c6a6c70bc4bee9f2be36c5a1d1"
+    }
+  ],
+  "limitation": "Preparation only. CPU native constructor/TRAIN data and synthetic decoder controls do not replace actual sparse task optimizer steps or efficacy evidence."
+}
